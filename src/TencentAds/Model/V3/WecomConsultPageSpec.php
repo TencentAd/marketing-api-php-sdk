@@ -58,7 +58,8 @@ class WecomConsultPageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageId' => 'int'
+        'pageId' => 'int',
+        'groupType' => '\TencentAds\Model\V3\GroupType'
     ];
 
     /**
@@ -67,7 +68,8 @@ class WecomConsultPageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageId' => 'int64'
+        'pageId' => 'int64',
+        'groupType' => null
     ];
 
     /**
@@ -97,7 +99,8 @@ class WecomConsultPageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageId' => 'page_id'
+        'pageId' => 'page_id',
+        'groupType' => 'group_type'
     ];
 
     /**
@@ -106,7 +109,8 @@ class WecomConsultPageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageId' => 'setPageId'
+        'pageId' => 'setPageId',
+        'groupType' => 'setGroupType'
     ];
 
     /**
@@ -115,7 +119,8 @@ class WecomConsultPageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageId' => 'getPageId'
+        'pageId' => 'getPageId',
+        'groupType' => 'getGroupType'
     ];
 
     /**
@@ -179,6 +184,7 @@ class WecomConsultPageSpec implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
+        $this->container['groupType'] = isset($data['groupType']) ? $data['groupType'] : null;
     }
 
     /**
@@ -225,6 +231,30 @@ class WecomConsultPageSpec implements ModelInterface, ArrayAccess
     public function setPageId($pageId)
     {
         $this->container['pageId'] = $pageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets groupType
+     *
+     * @return \TencentAds\Model\V3\GroupType|mixed
+     */
+    public function getGroupType()
+    {
+        return $this->container['groupType'];
+    }
+
+    /**
+     * Sets groupType
+     *
+     * @param \TencentAds\Model\V3\GroupType|mixed $groupType groupType
+     *
+     * @return $this
+     */
+    public function setGroupType($groupType)
+    {
+        $this->container['groupType'] = $groupType;
 
         return $this;
     }

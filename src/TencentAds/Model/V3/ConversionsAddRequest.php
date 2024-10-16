@@ -78,7 +78,10 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'attributionWindow' => 'int',
         'deepBehaviorAdvancedGoal' => '\TencentAds\Model\V3\OptimizationGoal',
         'deepOptimizationGoalType' => '\TencentAds\Model\V3\DeepOptimizationGoalType',
-        'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal'
+        'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal',
+        'incubationOptimizationGoal' => '\TencentAds\Model\V3\OptimizationGoal',
+        'conversionTemplateId' => 'int',
+        'customReportIndex' => 'int[]'
     ];
 
     /**
@@ -108,7 +111,10 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'attributionWindow' => 'int64',
         'deepBehaviorAdvancedGoal' => null,
         'deepOptimizationGoalType' => null,
-        'forwardLinkAssist' => null
+        'forwardLinkAssist' => null,
+        'incubationOptimizationGoal' => null,
+        'conversionTemplateId' => 'int64',
+        'customReportIndex' => 'int64'
     ];
 
     /**
@@ -159,7 +165,10 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'attributionWindow' => 'attribution_window',
         'deepBehaviorAdvancedGoal' => 'deep_behavior_advanced_goal',
         'deepOptimizationGoalType' => 'deep_optimization_goal_type',
-        'forwardLinkAssist' => 'forward_link_assist'
+        'forwardLinkAssist' => 'forward_link_assist',
+        'incubationOptimizationGoal' => 'incubation_optimization_goal',
+        'conversionTemplateId' => 'conversion_template_id',
+        'customReportIndex' => 'custom_report_index'
     ];
 
     /**
@@ -189,7 +198,10 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'attributionWindow' => 'setAttributionWindow',
         'deepBehaviorAdvancedGoal' => 'setDeepBehaviorAdvancedGoal',
         'deepOptimizationGoalType' => 'setDeepOptimizationGoalType',
-        'forwardLinkAssist' => 'setForwardLinkAssist'
+        'forwardLinkAssist' => 'setForwardLinkAssist',
+        'incubationOptimizationGoal' => 'setIncubationOptimizationGoal',
+        'conversionTemplateId' => 'setConversionTemplateId',
+        'customReportIndex' => 'setCustomReportIndex'
     ];
 
     /**
@@ -219,7 +231,10 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'attributionWindow' => 'getAttributionWindow',
         'deepBehaviorAdvancedGoal' => 'getDeepBehaviorAdvancedGoal',
         'deepOptimizationGoalType' => 'getDeepOptimizationGoalType',
-        'forwardLinkAssist' => 'getForwardLinkAssist'
+        'forwardLinkAssist' => 'getForwardLinkAssist',
+        'incubationOptimizationGoal' => 'getIncubationOptimizationGoal',
+        'conversionTemplateId' => 'getConversionTemplateId',
+        'customReportIndex' => 'getCustomReportIndex'
     ];
 
     /**
@@ -304,6 +319,9 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         $this->container['deepBehaviorAdvancedGoal'] = isset($data['deepBehaviorAdvancedGoal']) ? $data['deepBehaviorAdvancedGoal'] : null;
         $this->container['deepOptimizationGoalType'] = isset($data['deepOptimizationGoalType']) ? $data['deepOptimizationGoalType'] : null;
         $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
+        $this->container['incubationOptimizationGoal'] = isset($data['incubationOptimizationGoal']) ? $data['incubationOptimizationGoal'] : null;
+        $this->container['conversionTemplateId'] = isset($data['conversionTemplateId']) ? $data['conversionTemplateId'] : null;
+        $this->container['customReportIndex'] = isset($data['customReportIndex']) ? $data['customReportIndex'] : null;
     }
 
     /**
@@ -854,6 +872,78 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     public function setForwardLinkAssist($forwardLinkAssist)
     {
         $this->container['forwardLinkAssist'] = $forwardLinkAssist;
+
+        return $this;
+    }
+
+    /**
+     * Gets incubationOptimizationGoal
+     *
+     * @return \TencentAds\Model\V3\OptimizationGoal|mixed
+     */
+    public function getIncubationOptimizationGoal()
+    {
+        return $this->container['incubationOptimizationGoal'];
+    }
+
+    /**
+     * Sets incubationOptimizationGoal
+     *
+     * @param \TencentAds\Model\V3\OptimizationGoal|mixed $incubationOptimizationGoal incubationOptimizationGoal
+     *
+     * @return $this
+     */
+    public function setIncubationOptimizationGoal($incubationOptimizationGoal)
+    {
+        $this->container['incubationOptimizationGoal'] = $incubationOptimizationGoal;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionTemplateId
+     *
+     * @return int|mixed
+     */
+    public function getConversionTemplateId()
+    {
+        return $this->container['conversionTemplateId'];
+    }
+
+    /**
+     * Sets conversionTemplateId
+     *
+     * @param int|mixed $conversionTemplateId conversionTemplateId
+     *
+     * @return $this
+     */
+    public function setConversionTemplateId($conversionTemplateId)
+    {
+        $this->container['conversionTemplateId'] = $conversionTemplateId;
+
+        return $this;
+    }
+
+    /**
+     * Gets customReportIndex
+     *
+     * @return int[]|mixed
+     */
+    public function getCustomReportIndex()
+    {
+        return $this->container['customReportIndex'];
+    }
+
+    /**
+     * Sets customReportIndex
+     *
+     * @param int[]|mixed $customReportIndex customReportIndex
+     *
+     * @return $this
+     */
+    public function setCustomReportIndex($customReportIndex)
+    {
+        $this->container['customReportIndex'] = $customReportIndex;
 
         return $this;
     }

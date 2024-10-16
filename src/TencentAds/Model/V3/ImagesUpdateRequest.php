@@ -58,6 +58,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
+        'organizationId' => 'int',
         'imageId' => 'string',
         'description' => 'string'
     ];
@@ -69,6 +70,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
+        'organizationId' => 'int64',
         'imageId' => null,
         'description' => null
     ];
@@ -101,6 +103,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
+        'organizationId' => 'organization_id',
         'imageId' => 'image_id',
         'description' => 'description'
     ];
@@ -112,6 +115,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
+        'organizationId' => 'setOrganizationId',
         'imageId' => 'setImageId',
         'description' => 'setDescription'
     ];
@@ -123,6 +127,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
+        'organizationId' => 'getOrganizationId',
         'imageId' => 'getImageId',
         'description' => 'getDescription'
     ];
@@ -188,6 +193,7 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
         $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
     }
@@ -236,6 +242,30 @@ class ImagesUpdateRequest implements ModelInterface, ArrayAccess
     public function setAccountId($accountId)
     {
         $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets organizationId
+     *
+     * @return int|mixed
+     */
+    public function getOrganizationId()
+    {
+        return $this->container['organizationId'];
+    }
+
+    /**
+     * Sets organizationId
+     *
+     * @param int|mixed $organizationId organizationId
+     *
+     * @return $this
+     */
+    public function setOrganizationId($organizationId)
+    {
+        $this->container['organizationId'] = $organizationId;
 
         return $this;
     }

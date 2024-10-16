@@ -61,7 +61,13 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeId' => 'int',
         'elementResultList' => '\TencentAds\Model\V3\ElementResultListStruct[]',
         'siteSetResultList' => '\TencentAds\Model\V3\SiteSetResultListStruct[]',
-        'rejectMessageList' => 'string[]'
+        'rejectMessageList' => 'string[]',
+        'delayMessageList' => 'string[]',
+        'isAllComponentComposePending' => 'bool',
+        'totalComponentComposeCount' => 'int',
+        'rejectComponentComposeCount' => 'int',
+        'passComponentComposeCount' => 'int',
+        'rejectComponentComposeInfoList' => '\TencentAds\Model\V3\RejectComponentComposeInfoStruct[]'
     ];
 
     /**
@@ -73,7 +79,13 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeId' => 'int64',
         'elementResultList' => null,
         'siteSetResultList' => null,
-        'rejectMessageList' => null
+        'rejectMessageList' => null,
+        'delayMessageList' => null,
+        'isAllComponentComposePending' => null,
+        'totalComponentComposeCount' => 'int64',
+        'rejectComponentComposeCount' => 'int64',
+        'passComponentComposeCount' => 'int64',
+        'rejectComponentComposeInfoList' => null
     ];
 
     /**
@@ -106,7 +118,13 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeId' => 'dynamic_creative_id',
         'elementResultList' => 'element_result_list',
         'siteSetResultList' => 'site_set_result_list',
-        'rejectMessageList' => 'reject_message_list'
+        'rejectMessageList' => 'reject_message_list',
+        'delayMessageList' => 'delay_message_list',
+        'isAllComponentComposePending' => 'is_all_component_compose_pending',
+        'totalComponentComposeCount' => 'total_component_compose_count',
+        'rejectComponentComposeCount' => 'reject_component_compose_count',
+        'passComponentComposeCount' => 'pass_component_compose_count',
+        'rejectComponentComposeInfoList' => 'reject_component_compose_info_list'
     ];
 
     /**
@@ -118,7 +136,13 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeId' => 'setDynamicCreativeId',
         'elementResultList' => 'setElementResultList',
         'siteSetResultList' => 'setSiteSetResultList',
-        'rejectMessageList' => 'setRejectMessageList'
+        'rejectMessageList' => 'setRejectMessageList',
+        'delayMessageList' => 'setDelayMessageList',
+        'isAllComponentComposePending' => 'setIsAllComponentComposePending',
+        'totalComponentComposeCount' => 'setTotalComponentComposeCount',
+        'rejectComponentComposeCount' => 'setRejectComponentComposeCount',
+        'passComponentComposeCount' => 'setPassComponentComposeCount',
+        'rejectComponentComposeInfoList' => 'setRejectComponentComposeInfoList'
     ];
 
     /**
@@ -130,7 +154,13 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
         'dynamicCreativeId' => 'getDynamicCreativeId',
         'elementResultList' => 'getElementResultList',
         'siteSetResultList' => 'getSiteSetResultList',
-        'rejectMessageList' => 'getRejectMessageList'
+        'rejectMessageList' => 'getRejectMessageList',
+        'delayMessageList' => 'getDelayMessageList',
+        'isAllComponentComposePending' => 'getIsAllComponentComposePending',
+        'totalComponentComposeCount' => 'getTotalComponentComposeCount',
+        'rejectComponentComposeCount' => 'getRejectComponentComposeCount',
+        'passComponentComposeCount' => 'getPassComponentComposeCount',
+        'rejectComponentComposeInfoList' => 'getRejectComponentComposeInfoList'
     ];
 
     /**
@@ -197,6 +227,12 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
         $this->container['elementResultList'] = isset($data['elementResultList']) ? $data['elementResultList'] : null;
         $this->container['siteSetResultList'] = isset($data['siteSetResultList']) ? $data['siteSetResultList'] : null;
         $this->container['rejectMessageList'] = isset($data['rejectMessageList']) ? $data['rejectMessageList'] : null;
+        $this->container['delayMessageList'] = isset($data['delayMessageList']) ? $data['delayMessageList'] : null;
+        $this->container['isAllComponentComposePending'] = isset($data['isAllComponentComposePending']) ? $data['isAllComponentComposePending'] : null;
+        $this->container['totalComponentComposeCount'] = isset($data['totalComponentComposeCount']) ? $data['totalComponentComposeCount'] : null;
+        $this->container['rejectComponentComposeCount'] = isset($data['rejectComponentComposeCount']) ? $data['rejectComponentComposeCount'] : null;
+        $this->container['passComponentComposeCount'] = isset($data['passComponentComposeCount']) ? $data['passComponentComposeCount'] : null;
+        $this->container['rejectComponentComposeInfoList'] = isset($data['rejectComponentComposeInfoList']) ? $data['rejectComponentComposeInfoList'] : null;
     }
 
     /**
@@ -315,6 +351,150 @@ class ReviewResultListStruct implements ModelInterface, ArrayAccess
     public function setRejectMessageList($rejectMessageList)
     {
         $this->container['rejectMessageList'] = $rejectMessageList;
+
+        return $this;
+    }
+
+    /**
+     * Gets delayMessageList
+     *
+     * @return string[]|mixed
+     */
+    public function getDelayMessageList()
+    {
+        return $this->container['delayMessageList'];
+    }
+
+    /**
+     * Sets delayMessageList
+     *
+     * @param string[]|mixed $delayMessageList delayMessageList
+     *
+     * @return $this
+     */
+    public function setDelayMessageList($delayMessageList)
+    {
+        $this->container['delayMessageList'] = $delayMessageList;
+
+        return $this;
+    }
+
+    /**
+     * Gets isAllComponentComposePending
+     *
+     * @return bool|mixed
+     */
+    public function getIsAllComponentComposePending()
+    {
+        return $this->container['isAllComponentComposePending'];
+    }
+
+    /**
+     * Sets isAllComponentComposePending
+     *
+     * @param bool|mixed $isAllComponentComposePending isAllComponentComposePending
+     *
+     * @return $this
+     */
+    public function setIsAllComponentComposePending($isAllComponentComposePending)
+    {
+        $this->container['isAllComponentComposePending'] = $isAllComponentComposePending;
+
+        return $this;
+    }
+
+    /**
+     * Gets totalComponentComposeCount
+     *
+     * @return int|mixed
+     */
+    public function getTotalComponentComposeCount()
+    {
+        return $this->container['totalComponentComposeCount'];
+    }
+
+    /**
+     * Sets totalComponentComposeCount
+     *
+     * @param int|mixed $totalComponentComposeCount totalComponentComposeCount
+     *
+     * @return $this
+     */
+    public function setTotalComponentComposeCount($totalComponentComposeCount)
+    {
+        $this->container['totalComponentComposeCount'] = $totalComponentComposeCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets rejectComponentComposeCount
+     *
+     * @return int|mixed
+     */
+    public function getRejectComponentComposeCount()
+    {
+        return $this->container['rejectComponentComposeCount'];
+    }
+
+    /**
+     * Sets rejectComponentComposeCount
+     *
+     * @param int|mixed $rejectComponentComposeCount rejectComponentComposeCount
+     *
+     * @return $this
+     */
+    public function setRejectComponentComposeCount($rejectComponentComposeCount)
+    {
+        $this->container['rejectComponentComposeCount'] = $rejectComponentComposeCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets passComponentComposeCount
+     *
+     * @return int|mixed
+     */
+    public function getPassComponentComposeCount()
+    {
+        return $this->container['passComponentComposeCount'];
+    }
+
+    /**
+     * Sets passComponentComposeCount
+     *
+     * @param int|mixed $passComponentComposeCount passComponentComposeCount
+     *
+     * @return $this
+     */
+    public function setPassComponentComposeCount($passComponentComposeCount)
+    {
+        $this->container['passComponentComposeCount'] = $passComponentComposeCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets rejectComponentComposeInfoList
+     *
+     * @return \TencentAds\Model\V3\RejectComponentComposeInfoStruct[]|mixed
+     */
+    public function getRejectComponentComposeInfoList()
+    {
+        return $this->container['rejectComponentComposeInfoList'];
+    }
+
+    /**
+     * Sets rejectComponentComposeInfoList
+     *
+     * @param \TencentAds\Model\V3\RejectComponentComposeInfoStruct[]|mixed $rejectComponentComposeInfoList rejectComponentComposeInfoList
+     *
+     * @return $this
+     */
+    public function setRejectComponentComposeInfoList($rejectComponentComposeInfoList)
+    {
+        $this->container['rejectComponentComposeInfoList'] = $rejectComponentComposeInfoList;
 
         return $this;
     }

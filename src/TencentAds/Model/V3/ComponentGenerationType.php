@@ -1,6 +1,6 @@
 <?php
 /**
- * BidStrategy
+ * ComponentGenerationType
  *
  * PHP version 5
  *
@@ -31,24 +31,23 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * BidStrategy Class Doc Comment
+ * ComponentGenerationType Class Doc Comment
  *
  * @category Class
- * @description 出价策略
+ * @description 创意组件产生类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class BidStrategy
+class ComponentGenerationType
 {
     /**
      * Possible values of this enum
      */
-    const UNSUPPORTED = 'BID_STRATEGY_UNSUPPORTED';
-    const AVERAGE_COST = 'BID_STRATEGY_AVERAGE_COST';
-    const TARGET_COST = 'BID_STRATEGY_TARGET_COST';
-    const PRIORITY_LOW_COST = 'BID_STRATEGY_PRIORITY_LOW_COST';
-    const PRIORITY_CAP_COST = 'BID_STRATEGY_PRIORITY_CAP_COST';
+    const USER_CREATE = 'COMPONENT_GENERATION_TYPE_USER_CREATE';
+    const SYSTEM_DERIVE = 'COMPONENT_GENERATION_TYPE_SYSTEM_DERIVE';
+    const SYSTEM_GENERATE = 'COMPONENT_GENERATION_TYPE_SYSTEM_GENERATE';
+    const BXJG = 'COMPONENT_GENERATION_TYPE_BXJG';
     
     /**
      * Gets allowable values of the enum
@@ -57,11 +56,10 @@ class BidStrategy
     public static function getAllowableEnumValues()
     {
         return [
-            self::UNSUPPORTED,
-            self::AVERAGE_COST,
-            self::TARGET_COST,
-            self::PRIORITY_LOW_COST,
-            self::PRIORITY_CAP_COST,
+            self::USER_CREATE,
+            self::SYSTEM_DERIVE,
+            self::SYSTEM_GENERATE,
+            self::BXJG,
         ];
     }
 }

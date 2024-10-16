@@ -40,8 +40,9 @@ class ConversionLinksApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $secondCategoryType = isset($params['second_category_type']) ? $params['second_category_type'] : null;
+            $optimizationGoalStruct = isset($params['optimization_goal_struct']) ? $params['optimization_goal_struct'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->conversionLinksGet($accountId, $secondCategoryType, $fields);
+            $response = $this->apiInstance->conversionLinksGet($accountId, $secondCategoryType, $optimizationGoalStruct, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -58,8 +59,9 @@ class ConversionLinksApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $secondCategoryType = isset($params['second_category_type']) ? $params['second_category_type'] : null;
+            $optimizationGoalStruct = isset($params['optimization_goal_struct']) ? $params['optimization_goal_struct'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->conversionLinksGetAsync($accountId, $secondCategoryType, $fields);
+            $response = $this->apiInstance->conversionLinksGetAsync($accountId, $secondCategoryType, $optimizationGoalStruct, $fields);
             return $response;
         });
     }

@@ -72,6 +72,7 @@ class ConversionTargetType
     const LIKE = 'CONVERSION_TARGET_LIKE';
     const DONATION = 'CONVERSION_TARGET_DONATION';
     const GOOD_DEED = 'CONVERSION_TARGET_GOOD_DEED';
+    const MEITUAN_RANK = 'CONVERSION_TARGET_MEITUAN_RANK';
     
     /**
      * Gets allowable values of the enum
@@ -108,6 +109,7 @@ class ConversionTargetType
             self::LIKE,
             self::DONATION,
             self::GOOD_DEED,
+            self::MEITUAN_RANK,
         ];
     }
 }

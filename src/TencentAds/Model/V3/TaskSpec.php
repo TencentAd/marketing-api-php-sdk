@@ -81,7 +81,10 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'deleteDynamicCreativeSpec' => '\TencentAds\Model\V3\DeleteDynamicCreativeItem[]',
         'processUserPageObjectSpec' => '\TencentAds\Model\V3\ProcessUserPageObjectItem[]',
         'createScheduledUpdateAdgroupDailyBudgetSpec' => '\TencentAds\Model\V3\CreateScheduledUpdateAdgroupDailyBudgetItem[]',
-        'deleteScheduledTaskSpec' => '\TencentAds\Model\V3\DeleteScheduledTaskItem[]'
+        'deleteScheduledTaskSpec' => '\TencentAds\Model\V3\DeleteScheduledTaskItem[]',
+        'updateAdgroupTargetingTaskSpec' => '\TencentAds\Model\V3\UpdateAdgroupTargetingTaskItem[]',
+        'updateAdgroupEcomPkamSpec' => '\TencentAds\Model\V3\UpdateAdgroupEcomPkamItem[]',
+        'updateAdgroupDeriveConfSpec' => '\TencentAds\Model\V3\UpdateAdgroupDeriveConfItem[]'
     ];
 
     /**
@@ -113,7 +116,10 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'deleteDynamicCreativeSpec' => null,
         'processUserPageObjectSpec' => null,
         'createScheduledUpdateAdgroupDailyBudgetSpec' => null,
-        'deleteScheduledTaskSpec' => null
+        'deleteScheduledTaskSpec' => null,
+        'updateAdgroupTargetingTaskSpec' => null,
+        'updateAdgroupEcomPkamSpec' => null,
+        'updateAdgroupDeriveConfSpec' => null
     ];
 
     /**
@@ -166,7 +172,10 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'deleteDynamicCreativeSpec' => 'delete_dynamic_creative_spec',
         'processUserPageObjectSpec' => 'process_user_page_object_spec',
         'createScheduledUpdateAdgroupDailyBudgetSpec' => 'create_scheduled_update_adgroup_daily_budget_spec',
-        'deleteScheduledTaskSpec' => 'delete_scheduled_task_spec'
+        'deleteScheduledTaskSpec' => 'delete_scheduled_task_spec',
+        'updateAdgroupTargetingTaskSpec' => 'update_adgroup_targeting_task_spec',
+        'updateAdgroupEcomPkamSpec' => 'update_adgroup_ecom_pkam_spec',
+        'updateAdgroupDeriveConfSpec' => 'update_adgroup_derive_conf_spec'
     ];
 
     /**
@@ -198,7 +207,10 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'deleteDynamicCreativeSpec' => 'setDeleteDynamicCreativeSpec',
         'processUserPageObjectSpec' => 'setProcessUserPageObjectSpec',
         'createScheduledUpdateAdgroupDailyBudgetSpec' => 'setCreateScheduledUpdateAdgroupDailyBudgetSpec',
-        'deleteScheduledTaskSpec' => 'setDeleteScheduledTaskSpec'
+        'deleteScheduledTaskSpec' => 'setDeleteScheduledTaskSpec',
+        'updateAdgroupTargetingTaskSpec' => 'setUpdateAdgroupTargetingTaskSpec',
+        'updateAdgroupEcomPkamSpec' => 'setUpdateAdgroupEcomPkamSpec',
+        'updateAdgroupDeriveConfSpec' => 'setUpdateAdgroupDeriveConfSpec'
     ];
 
     /**
@@ -230,7 +242,10 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'deleteDynamicCreativeSpec' => 'getDeleteDynamicCreativeSpec',
         'processUserPageObjectSpec' => 'getProcessUserPageObjectSpec',
         'createScheduledUpdateAdgroupDailyBudgetSpec' => 'getCreateScheduledUpdateAdgroupDailyBudgetSpec',
-        'deleteScheduledTaskSpec' => 'getDeleteScheduledTaskSpec'
+        'deleteScheduledTaskSpec' => 'getDeleteScheduledTaskSpec',
+        'updateAdgroupTargetingTaskSpec' => 'getUpdateAdgroupTargetingTaskSpec',
+        'updateAdgroupEcomPkamSpec' => 'getUpdateAdgroupEcomPkamSpec',
+        'updateAdgroupDeriveConfSpec' => 'getUpdateAdgroupDeriveConfSpec'
     ];
 
     /**
@@ -317,6 +332,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         $this->container['processUserPageObjectSpec'] = isset($data['processUserPageObjectSpec']) ? $data['processUserPageObjectSpec'] : null;
         $this->container['createScheduledUpdateAdgroupDailyBudgetSpec'] = isset($data['createScheduledUpdateAdgroupDailyBudgetSpec']) ? $data['createScheduledUpdateAdgroupDailyBudgetSpec'] : null;
         $this->container['deleteScheduledTaskSpec'] = isset($data['deleteScheduledTaskSpec']) ? $data['deleteScheduledTaskSpec'] : null;
+        $this->container['updateAdgroupTargetingTaskSpec'] = isset($data['updateAdgroupTargetingTaskSpec']) ? $data['updateAdgroupTargetingTaskSpec'] : null;
+        $this->container['updateAdgroupEcomPkamSpec'] = isset($data['updateAdgroupEcomPkamSpec']) ? $data['updateAdgroupEcomPkamSpec'] : null;
+        $this->container['updateAdgroupDeriveConfSpec'] = isset($data['updateAdgroupDeriveConfSpec']) ? $data['updateAdgroupDeriveConfSpec'] : null;
     }
 
     /**
@@ -915,6 +933,78 @@ class TaskSpec implements ModelInterface, ArrayAccess
     public function setDeleteScheduledTaskSpec($deleteScheduledTaskSpec)
     {
         $this->container['deleteScheduledTaskSpec'] = $deleteScheduledTaskSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateAdgroupTargetingTaskSpec
+     *
+     * @return \TencentAds\Model\V3\UpdateAdgroupTargetingTaskItem[]|mixed
+     */
+    public function getUpdateAdgroupTargetingTaskSpec()
+    {
+        return $this->container['updateAdgroupTargetingTaskSpec'];
+    }
+
+    /**
+     * Sets updateAdgroupTargetingTaskSpec
+     *
+     * @param \TencentAds\Model\V3\UpdateAdgroupTargetingTaskItem[]|mixed $updateAdgroupTargetingTaskSpec updateAdgroupTargetingTaskSpec
+     *
+     * @return $this
+     */
+    public function setUpdateAdgroupTargetingTaskSpec($updateAdgroupTargetingTaskSpec)
+    {
+        $this->container['updateAdgroupTargetingTaskSpec'] = $updateAdgroupTargetingTaskSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateAdgroupEcomPkamSpec
+     *
+     * @return \TencentAds\Model\V3\UpdateAdgroupEcomPkamItem[]|mixed
+     */
+    public function getUpdateAdgroupEcomPkamSpec()
+    {
+        return $this->container['updateAdgroupEcomPkamSpec'];
+    }
+
+    /**
+     * Sets updateAdgroupEcomPkamSpec
+     *
+     * @param \TencentAds\Model\V3\UpdateAdgroupEcomPkamItem[]|mixed $updateAdgroupEcomPkamSpec updateAdgroupEcomPkamSpec
+     *
+     * @return $this
+     */
+    public function setUpdateAdgroupEcomPkamSpec($updateAdgroupEcomPkamSpec)
+    {
+        $this->container['updateAdgroupEcomPkamSpec'] = $updateAdgroupEcomPkamSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateAdgroupDeriveConfSpec
+     *
+     * @return \TencentAds\Model\V3\UpdateAdgroupDeriveConfItem[]|mixed
+     */
+    public function getUpdateAdgroupDeriveConfSpec()
+    {
+        return $this->container['updateAdgroupDeriveConfSpec'];
+    }
+
+    /**
+     * Sets updateAdgroupDeriveConfSpec
+     *
+     * @param \TencentAds\Model\V3\UpdateAdgroupDeriveConfItem[]|mixed $updateAdgroupDeriveConfSpec updateAdgroupDeriveConfSpec
+     *
+     * @return $this
+     */
+    public function setUpdateAdgroupDeriveConfSpec($updateAdgroupDeriveConfSpec)
+    {
+        $this->container['updateAdgroupDeriveConfSpec'] = $updateAdgroupDeriveConfSpec;
 
         return $this;
     }

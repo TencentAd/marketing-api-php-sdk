@@ -92,18 +92,19 @@ class MarketingTargetAssetDetailApi
      *
      * 获取推广内容资产详情
      *
-     * @param  int|mixed $accountId accountId (required)
      * @param  int|mixed $marketingAssetId marketingAssetId (required)
      * @param  string|mixed $marketingTargetType marketingTargetType (required)
+     * @param  int|mixed $accountId accountId (optional)
+     * @param  int|mixed $organizationId organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\MarketingTargetAssetDetailGetResponse|mixed
      */
-    public function marketingTargetAssetDetailGet($accountId, $marketingAssetId, $marketingTargetType, $fields = null)
+    public function marketingTargetAssetDetailGet($marketingAssetId, $marketingTargetType, $accountId = null, $organizationId = null, $fields = null)
     {
-        list($response) = $this->marketingTargetAssetDetailGetWithHttpInfo($accountId, $marketingAssetId, $marketingTargetType, $fields);
+        list($response) = $this->marketingTargetAssetDetailGetWithHttpInfo($marketingAssetId, $marketingTargetType, $accountId, $organizationId, $fields);
         return $response;
     }
 
@@ -112,19 +113,20 @@ class MarketingTargetAssetDetailApi
      *
      * 获取推广内容资产详情
      *
-     * @param  int|mixed $accountId (required)
      * @param  int|mixed $marketingAssetId (required)
      * @param  string|mixed $marketingTargetType (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\MarketingTargetAssetDetailGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function marketingTargetAssetDetailGetWithHttpInfo($accountId, $marketingAssetId, $marketingTargetType, $fields = null)
+    public function marketingTargetAssetDetailGetWithHttpInfo($marketingAssetId, $marketingTargetType, $accountId = null, $organizationId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\MarketingTargetAssetDetailGetResponse';
-        $request = $this->marketingTargetAssetDetailGetRequest($accountId, $marketingAssetId, $marketingTargetType, $fields);
+        $request = $this->marketingTargetAssetDetailGetRequest($marketingAssetId, $marketingTargetType, $accountId, $organizationId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -190,17 +192,18 @@ class MarketingTargetAssetDetailApi
      *
      * 获取推广内容资产详情
      *
-     * @param  int|mixed $accountId (required)
      * @param  int|mixed $marketingAssetId (required)
      * @param  string|mixed $marketingTargetType (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function marketingTargetAssetDetailGetAsync($accountId, $marketingAssetId, $marketingTargetType, $fields = null)
+    public function marketingTargetAssetDetailGetAsync($marketingAssetId, $marketingTargetType, $accountId = null, $organizationId = null, $fields = null)
     {
-        return $this->marketingTargetAssetDetailGetAsyncWithHttpInfo($accountId, $marketingAssetId, $marketingTargetType, $fields)
+        return $this->marketingTargetAssetDetailGetAsyncWithHttpInfo($marketingAssetId, $marketingTargetType, $accountId, $organizationId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -213,18 +216,19 @@ class MarketingTargetAssetDetailApi
      *
      * 获取推广内容资产详情
      *
-     * @param  int|mixed $accountId (required)
      * @param  int|mixed $marketingAssetId (required)
      * @param  string|mixed $marketingTargetType (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function marketingTargetAssetDetailGetAsyncWithHttpInfo($accountId, $marketingAssetId, $marketingTargetType, $fields = null)
+    public function marketingTargetAssetDetailGetAsyncWithHttpInfo($marketingAssetId, $marketingTargetType, $accountId = null, $organizationId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\MarketingTargetAssetDetailGetResponse';
-        $request = $this->marketingTargetAssetDetailGetRequest($accountId, $marketingAssetId, $marketingTargetType, $fields);
+        $request = $this->marketingTargetAssetDetailGetRequest($marketingAssetId, $marketingTargetType, $accountId, $organizationId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -266,22 +270,17 @@ class MarketingTargetAssetDetailApi
     /**
      * Create request for operation 'marketingTargetAssetDetailGet'
      *
-     * @param  int|mixed $accountId (required)
      * @param  int|mixed $marketingAssetId (required)
      * @param  string|mixed $marketingTargetType (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function marketingTargetAssetDetailGetRequest($accountId, $marketingAssetId, $marketingTargetType, $fields = null)
+    protected function marketingTargetAssetDetailGetRequest($marketingAssetId, $marketingTargetType, $accountId = null, $organizationId = null, $fields = null)
     {
-        // verify the required parameter 'accountId' is set
-        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling marketingTargetAssetDetailGet'
-            );
-        }
         // verify the required parameter 'marketingAssetId' is set
         if ($marketingAssetId === null || (is_array($marketingAssetId) && count($marketingAssetId) === 0)) {
             throw new \InvalidArgumentException(
@@ -313,6 +312,10 @@ class MarketingTargetAssetDetailApi
         // query params
         if ($marketingTargetType !== null) {
             $queryParams['marketing_target_type'] = ObjectSerializer::toQueryValue($marketingTargetType);
+        }
+        // query params
+        if ($organizationId !== null) {
+            $queryParams['organization_id'] = ObjectSerializer::toQueryValue($organizationId);
         }
         // query params
         if (is_array($fields)) {

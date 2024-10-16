@@ -672,7 +672,8 @@ class ComponentsApi
      *
      * 获取创意组件
      *
-     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $accountId accountId (optional)
+     * @param  int|mixed $organizationId organizationId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
@@ -683,9 +684,9 @@ class ComponentsApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\ComponentsGetResponse|mixed
      */
-    public function componentsGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function componentsGet($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
     {
-        list($response) = $this->componentsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        list($response) = $this->componentsGetWithHttpInfo($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields);
         return $response;
     }
 
@@ -694,7 +695,8 @@ class ComponentsApi
      *
      * 获取创意组件
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -705,10 +707,10 @@ class ComponentsApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\ComponentsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function componentsGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function componentsGetWithHttpInfo($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\ComponentsGetResponse';
-        $request = $this->componentsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->componentsGetRequest($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -774,7 +776,8 @@ class ComponentsApi
      *
      * 获取创意组件
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -784,9 +787,9 @@ class ComponentsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function componentsGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function componentsGetAsync($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
     {
-        return $this->componentsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields)
+        return $this->componentsGetAsyncWithHttpInfo($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -799,7 +802,8 @@ class ComponentsApi
      *
      * 获取创意组件
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -809,10 +813,10 @@ class ComponentsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function componentsGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function componentsGetAsyncWithHttpInfo($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\ComponentsGetResponse';
-        $request = $this->componentsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->componentsGetRequest($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -854,7 +858,8 @@ class ComponentsApi
     /**
      * Create request for operation 'componentsGet'
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -864,14 +869,8 @@ class ComponentsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function componentsGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    protected function componentsGetRequest($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
     {
-        // verify the required parameter 'accountId' is set
-        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling componentsGet'
-            );
-        }
 
         $resourcePath = '/components/get';
         $formParams = [];
@@ -883,6 +882,10 @@ class ComponentsApi
         // query params
         if ($accountId !== null) {
             $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
+        }
+        // query params
+        if ($organizationId !== null) {
+            $queryParams['organization_id'] = ObjectSerializer::toQueryValue($organizationId);
         }
         // query params
         if (is_array($filtering)) {

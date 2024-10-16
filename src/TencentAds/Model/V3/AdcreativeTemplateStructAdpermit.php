@@ -65,7 +65,10 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'siteSet' => 'string[]',
         'creativeComponents' => '\TencentAds\Model\V3\AdcreativeElement[]',
         'unsupportSitesetDetailSpec' => '\TencentAds\Model\V3\UnsupportSiteAdpermit[]',
-        'supportDynamicAbilitySpecList' => '\TencentAds\Model\V3\SupportDynamicAbilitySpecList'
+        'supportDynamicAbilitySpecList' => '\TencentAds\Model\V3\SupportDynamicAbilitySpecList',
+        'supportMpa' => 'bool',
+        'supportMpaImageTemplate' => 'bool',
+        'supportMpaVideoTemplate' => 'bool'
     ];
 
     /**
@@ -81,7 +84,10 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'siteSet' => null,
         'creativeComponents' => null,
         'unsupportSitesetDetailSpec' => null,
-        'supportDynamicAbilitySpecList' => null
+        'supportDynamicAbilitySpecList' => null,
+        'supportMpa' => null,
+        'supportMpaImageTemplate' => null,
+        'supportMpaVideoTemplate' => null
     ];
 
     /**
@@ -118,7 +124,10 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'siteSet' => 'site_set',
         'creativeComponents' => 'creative_components',
         'unsupportSitesetDetailSpec' => 'unsupport_siteset_detail_spec',
-        'supportDynamicAbilitySpecList' => 'support_dynamic_ability_spec_list'
+        'supportDynamicAbilitySpecList' => 'support_dynamic_ability_spec_list',
+        'supportMpa' => 'support_mpa',
+        'supportMpaImageTemplate' => 'support_mpa_image_template',
+        'supportMpaVideoTemplate' => 'support_mpa_video_template'
     ];
 
     /**
@@ -134,7 +143,10 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'siteSet' => 'setSiteSet',
         'creativeComponents' => 'setCreativeComponents',
         'unsupportSitesetDetailSpec' => 'setUnsupportSitesetDetailSpec',
-        'supportDynamicAbilitySpecList' => 'setSupportDynamicAbilitySpecList'
+        'supportDynamicAbilitySpecList' => 'setSupportDynamicAbilitySpecList',
+        'supportMpa' => 'setSupportMpa',
+        'supportMpaImageTemplate' => 'setSupportMpaImageTemplate',
+        'supportMpaVideoTemplate' => 'setSupportMpaVideoTemplate'
     ];
 
     /**
@@ -150,7 +162,10 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'siteSet' => 'getSiteSet',
         'creativeComponents' => 'getCreativeComponents',
         'unsupportSitesetDetailSpec' => 'getUnsupportSitesetDetailSpec',
-        'supportDynamicAbilitySpecList' => 'getSupportDynamicAbilitySpecList'
+        'supportDynamicAbilitySpecList' => 'getSupportDynamicAbilitySpecList',
+        'supportMpa' => 'getSupportMpa',
+        'supportMpaImageTemplate' => 'getSupportMpaImageTemplate',
+        'supportMpaVideoTemplate' => 'getSupportMpaVideoTemplate'
     ];
 
     /**
@@ -221,6 +236,9 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         $this->container['creativeComponents'] = isset($data['creativeComponents']) ? $data['creativeComponents'] : null;
         $this->container['unsupportSitesetDetailSpec'] = isset($data['unsupportSitesetDetailSpec']) ? $data['unsupportSitesetDetailSpec'] : null;
         $this->container['supportDynamicAbilitySpecList'] = isset($data['supportDynamicAbilitySpecList']) ? $data['supportDynamicAbilitySpecList'] : null;
+        $this->container['supportMpa'] = isset($data['supportMpa']) ? $data['supportMpa'] : null;
+        $this->container['supportMpaImageTemplate'] = isset($data['supportMpaImageTemplate']) ? $data['supportMpaImageTemplate'] : null;
+        $this->container['supportMpaVideoTemplate'] = isset($data['supportMpaVideoTemplate']) ? $data['supportMpaVideoTemplate'] : null;
     }
 
     /**
@@ -435,6 +453,78 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
     public function setSupportDynamicAbilitySpecList($supportDynamicAbilitySpecList)
     {
         $this->container['supportDynamicAbilitySpecList'] = $supportDynamicAbilitySpecList;
+
+        return $this;
+    }
+
+    /**
+     * Gets supportMpa
+     *
+     * @return bool|mixed
+     */
+    public function getSupportMpa()
+    {
+        return $this->container['supportMpa'];
+    }
+
+    /**
+     * Sets supportMpa
+     *
+     * @param bool|mixed $supportMpa supportMpa
+     *
+     * @return $this
+     */
+    public function setSupportMpa($supportMpa)
+    {
+        $this->container['supportMpa'] = $supportMpa;
+
+        return $this;
+    }
+
+    /**
+     * Gets supportMpaImageTemplate
+     *
+     * @return bool|mixed
+     */
+    public function getSupportMpaImageTemplate()
+    {
+        return $this->container['supportMpaImageTemplate'];
+    }
+
+    /**
+     * Sets supportMpaImageTemplate
+     *
+     * @param bool|mixed $supportMpaImageTemplate supportMpaImageTemplate
+     *
+     * @return $this
+     */
+    public function setSupportMpaImageTemplate($supportMpaImageTemplate)
+    {
+        $this->container['supportMpaImageTemplate'] = $supportMpaImageTemplate;
+
+        return $this;
+    }
+
+    /**
+     * Gets supportMpaVideoTemplate
+     *
+     * @return bool|mixed
+     */
+    public function getSupportMpaVideoTemplate()
+    {
+        return $this->container['supportMpaVideoTemplate'];
+    }
+
+    /**
+     * Sets supportMpaVideoTemplate
+     *
+     * @param bool|mixed $supportMpaVideoTemplate supportMpaVideoTemplate
+     *
+     * @return $this
+     */
+    public function setSupportMpaVideoTemplate($supportMpaVideoTemplate)
+    {
+        $this->container['supportMpaVideoTemplate'] = $supportMpaVideoTemplate;
 
         return $this;
     }

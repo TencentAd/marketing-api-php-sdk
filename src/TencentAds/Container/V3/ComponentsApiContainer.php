@@ -107,12 +107,13 @@ class ComponentsApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $isDeleted = isset($params['is_deleted']) ? $params['is_deleted'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->componentsGet($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+            $response = $this->apiInstance->componentsGet($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -128,12 +129,13 @@ class ComponentsApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $isDeleted = isset($params['is_deleted']) ? $params['is_deleted'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->componentsGetAsync($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+            $response = $this->apiInstance->componentsGetAsync($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields);
             return $response;
         });
     }

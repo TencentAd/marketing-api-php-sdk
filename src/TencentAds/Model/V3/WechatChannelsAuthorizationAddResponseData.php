@@ -61,7 +61,8 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
         'authorizationQrCodeUrl' => 'string',
         'authorizationDescription' => 'string',
         'authorizationExpiredTime' => 'int',
-        'authorizationAgreement' => 'string'
+        'authorizationAgreement' => 'string',
+        'wechatChannelsAccountId' => 'string'
     ];
 
     /**
@@ -74,7 +75,8 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
         'authorizationQrCodeUrl' => null,
         'authorizationDescription' => null,
         'authorizationExpiredTime' => 'int64',
-        'authorizationAgreement' => null
+        'authorizationAgreement' => null,
+        'wechatChannelsAccountId' => null
     ];
 
     /**
@@ -108,7 +110,8 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
         'authorizationQrCodeUrl' => 'authorization_qr_code_url',
         'authorizationDescription' => 'authorization_description',
         'authorizationExpiredTime' => 'authorization_expired_time',
-        'authorizationAgreement' => 'authorization_agreement'
+        'authorizationAgreement' => 'authorization_agreement',
+        'wechatChannelsAccountId' => 'wechat_channels_account_id'
     ];
 
     /**
@@ -121,7 +124,8 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
         'authorizationQrCodeUrl' => 'setAuthorizationQrCodeUrl',
         'authorizationDescription' => 'setAuthorizationDescription',
         'authorizationExpiredTime' => 'setAuthorizationExpiredTime',
-        'authorizationAgreement' => 'setAuthorizationAgreement'
+        'authorizationAgreement' => 'setAuthorizationAgreement',
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
     ];
 
     /**
@@ -134,7 +138,8 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
         'authorizationQrCodeUrl' => 'getAuthorizationQrCodeUrl',
         'authorizationDescription' => 'getAuthorizationDescription',
         'authorizationExpiredTime' => 'getAuthorizationExpiredTime',
-        'authorizationAgreement' => 'getAuthorizationAgreement'
+        'authorizationAgreement' => 'getAuthorizationAgreement',
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
     ];
 
     /**
@@ -202,6 +207,7 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
         $this->container['authorizationDescription'] = isset($data['authorizationDescription']) ? $data['authorizationDescription'] : null;
         $this->container['authorizationExpiredTime'] = isset($data['authorizationExpiredTime']) ? $data['authorizationExpiredTime'] : null;
         $this->container['authorizationAgreement'] = isset($data['authorizationAgreement']) ? $data['authorizationAgreement'] : null;
+        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
     }
 
     /**
@@ -344,6 +350,30 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
     public function setAuthorizationAgreement($authorizationAgreement)
     {
         $this->container['authorizationAgreement'] = $authorizationAgreement;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountId
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountId()
+    {
+        return $this->container['wechatChannelsAccountId'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountId
+     *
+     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountId($wechatChannelsAccountId)
+    {
+        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
 
         return $this;
     }

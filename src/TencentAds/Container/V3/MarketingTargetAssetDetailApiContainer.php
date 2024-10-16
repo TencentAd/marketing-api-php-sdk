@@ -38,11 +38,12 @@ class MarketingTargetAssetDetailApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $marketingAssetId = isset($params['marketing_asset_id']) ? $params['marketing_asset_id'] : null;
             $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->marketingTargetAssetDetailGet($accountId, $marketingAssetId, $marketingTargetType, $fields);
+            $response = $this->apiInstance->marketingTargetAssetDetailGet($marketingAssetId, $marketingTargetType, $accountId, $organizationId, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -57,11 +58,12 @@ class MarketingTargetAssetDetailApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $marketingAssetId = isset($params['marketing_asset_id']) ? $params['marketing_asset_id'] : null;
             $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->marketingTargetAssetDetailGetAsync($accountId, $marketingAssetId, $marketingTargetType, $fields);
+            $response = $this->apiInstance->marketingTargetAssetDetailGetAsync($marketingAssetId, $marketingTargetType, $accountId, $organizationId, $fields);
             return $response;
         });
     }

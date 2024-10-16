@@ -41,8 +41,9 @@ class ChannelsLivenoticeinfoApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $finderUsername = isset($params['finder_username']) ? $params['finder_username'] : null;
             $nickname = isset($params['nickname']) ? $params['nickname'] : null;
+            $wechatChannelsAccountId = isset($params['wechat_channels_account_id']) ? $params['wechat_channels_account_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->channelsLivenoticeinfoGet($accountId, $finderUsername, $nickname, $fields);
+            $response = $this->apiInstance->channelsLivenoticeinfoGet($accountId, $finderUsername, $nickname, $wechatChannelsAccountId, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -60,8 +61,9 @@ class ChannelsLivenoticeinfoApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $finderUsername = isset($params['finder_username']) ? $params['finder_username'] : null;
             $nickname = isset($params['nickname']) ? $params['nickname'] : null;
+            $wechatChannelsAccountId = isset($params['wechat_channels_account_id']) ? $params['wechat_channels_account_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->channelsLivenoticeinfoGetAsync($accountId, $finderUsername, $nickname, $fields);
+            $response = $this->apiInstance->channelsLivenoticeinfoGetAsync($accountId, $finderUsername, $nickname, $wechatChannelsAccountId, $fields);
             return $response;
         });
     }

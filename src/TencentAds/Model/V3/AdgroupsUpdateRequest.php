@@ -70,7 +70,6 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'targeting' => '\TencentAds\Model\V3\WriteTargetingSetting',
         'sceneSpec' => '\TencentAds\Model\V3\SceneTargetingForWrite',
         'userActionSets' => '\TencentAds\Model\V3\UserActionSetStruct[]',
-        'bidStrategy' => '\TencentAds\Model\V3\BidStrategy',
         'deepConversionSpec' => '\TencentAds\Model\V3\DeepConversionSpec',
         'conversionId' => 'int',
         'deepConversionBehaviorBid' => 'int',
@@ -114,7 +113,6 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'targeting' => null,
         'sceneSpec' => null,
         'userActionSets' => null,
-        'bidStrategy' => null,
         'deepConversionSpec' => null,
         'conversionId' => 'int64',
         'deepConversionBehaviorBid' => 'int64',
@@ -179,7 +177,6 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'targeting' => 'targeting',
         'sceneSpec' => 'scene_spec',
         'userActionSets' => 'user_action_sets',
-        'bidStrategy' => 'bid_strategy',
         'deepConversionSpec' => 'deep_conversion_spec',
         'conversionId' => 'conversion_id',
         'deepConversionBehaviorBid' => 'deep_conversion_behavior_bid',
@@ -223,7 +220,6 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'targeting' => 'setTargeting',
         'sceneSpec' => 'setSceneSpec',
         'userActionSets' => 'setUserActionSets',
-        'bidStrategy' => 'setBidStrategy',
         'deepConversionSpec' => 'setDeepConversionSpec',
         'conversionId' => 'setConversionId',
         'deepConversionBehaviorBid' => 'setDeepConversionBehaviorBid',
@@ -267,7 +263,6 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'targeting' => 'getTargeting',
         'sceneSpec' => 'getSceneSpec',
         'userActionSets' => 'getUserActionSets',
-        'bidStrategy' => 'getBidStrategy',
         'deepConversionSpec' => 'getDeepConversionSpec',
         'conversionId' => 'getConversionId',
         'deepConversionBehaviorBid' => 'getDeepConversionBehaviorBid',
@@ -365,7 +360,6 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['targeting'] = isset($data['targeting']) ? $data['targeting'] : null;
         $this->container['sceneSpec'] = isset($data['sceneSpec']) ? $data['sceneSpec'] : null;
         $this->container['userActionSets'] = isset($data['userActionSets']) ? $data['userActionSets'] : null;
-        $this->container['bidStrategy'] = isset($data['bidStrategy']) ? $data['bidStrategy'] : null;
         $this->container['deepConversionSpec'] = isset($data['deepConversionSpec']) ? $data['deepConversionSpec'] : null;
         $this->container['conversionId'] = isset($data['conversionId']) ? $data['conversionId'] : null;
         $this->container['deepConversionBehaviorBid'] = isset($data['deepConversionBehaviorBid']) ? $data['deepConversionBehaviorBid'] : null;
@@ -722,30 +716,6 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setUserActionSets($userActionSets)
     {
         $this->container['userActionSets'] = $userActionSets;
-
-        return $this;
-    }
-
-    /**
-     * Gets bidStrategy
-     *
-     * @return \TencentAds\Model\V3\BidStrategy|mixed
-     */
-    public function getBidStrategy()
-    {
-        return $this->container['bidStrategy'];
-    }
-
-    /**
-     * Sets bidStrategy
-     *
-     * @param \TencentAds\Model\V3\BidStrategy|mixed $bidStrategy bidStrategy
-     *
-     * @return $this
-     */
-    public function setBidStrategy($bidStrategy)
-    {
-        $this->container['bidStrategy'] = $bidStrategy;
 
         return $this;
     }

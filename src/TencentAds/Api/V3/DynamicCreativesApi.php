@@ -678,14 +678,16 @@ class DynamicCreativesApi
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  string[]|mixed $fields fields (optional)
      * @param  bool|mixed $isDeleted isDeleted (optional)
+     * @param  string|mixed $paginationMode paginationMode (optional)
+     * @param  string|mixed $cursor cursor (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\DynamicCreativesGetResponse|mixed
      */
-    public function dynamicCreativesGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null, $isDeleted = null)
+    public function dynamicCreativesGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null, $isDeleted = null, $paginationMode = null, $cursor = null)
     {
-        list($response) = $this->dynamicCreativesGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields, $isDeleted);
+        list($response) = $this->dynamicCreativesGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields, $isDeleted, $paginationMode, $cursor);
         return $response;
     }
 
@@ -700,15 +702,17 @@ class DynamicCreativesApi
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  string|mixed $paginationMode (optional)
+     * @param  string|mixed $cursor (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\DynamicCreativesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function dynamicCreativesGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null, $isDeleted = null)
+    public function dynamicCreativesGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null, $isDeleted = null, $paginationMode = null, $cursor = null)
     {
         $returnType = '\TencentAds\Model\V3\DynamicCreativesGetResponse';
-        $request = $this->dynamicCreativesGetRequest($accountId, $filtering, $page, $pageSize, $fields, $isDeleted);
+        $request = $this->dynamicCreativesGetRequest($accountId, $filtering, $page, $pageSize, $fields, $isDeleted, $paginationMode, $cursor);
 
         try {
             $options = $this->createHttpClientOption();
@@ -780,13 +784,15 @@ class DynamicCreativesApi
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  string|mixed $paginationMode (optional)
+     * @param  string|mixed $cursor (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function dynamicCreativesGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null, $isDeleted = null)
+    public function dynamicCreativesGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null, $isDeleted = null, $paginationMode = null, $cursor = null)
     {
-        return $this->dynamicCreativesGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields, $isDeleted)
+        return $this->dynamicCreativesGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields, $isDeleted, $paginationMode, $cursor)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -805,14 +811,16 @@ class DynamicCreativesApi
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  string|mixed $paginationMode (optional)
+     * @param  string|mixed $cursor (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function dynamicCreativesGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null, $isDeleted = null)
+    public function dynamicCreativesGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null, $isDeleted = null, $paginationMode = null, $cursor = null)
     {
         $returnType = '\TencentAds\Model\V3\DynamicCreativesGetResponse';
-        $request = $this->dynamicCreativesGetRequest($accountId, $filtering, $page, $pageSize, $fields, $isDeleted);
+        $request = $this->dynamicCreativesGetRequest($accountId, $filtering, $page, $pageSize, $fields, $isDeleted, $paginationMode, $cursor);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -860,11 +868,13 @@ class DynamicCreativesApi
      * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields (optional)
      * @param  bool|mixed $isDeleted (optional)
+     * @param  string|mixed $paginationMode (optional)
+     * @param  string|mixed $cursor (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function dynamicCreativesGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null, $isDeleted = null)
+    protected function dynamicCreativesGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null, $isDeleted = null, $paginationMode = null, $cursor = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -909,6 +919,14 @@ class DynamicCreativesApi
         // query params
         if ($isDeleted !== null) {
             $queryParams['is_deleted'] = ObjectSerializer::toQueryValue($isDeleted);
+        }
+        // query params
+        if ($paginationMode !== null) {
+            $queryParams['pagination_mode'] = ObjectSerializer::toQueryValue($paginationMode);
+        }
+        // query params
+        if ($cursor !== null) {
+            $queryParams['cursor'] = ObjectSerializer::toQueryValue($cursor);
         }
 
 

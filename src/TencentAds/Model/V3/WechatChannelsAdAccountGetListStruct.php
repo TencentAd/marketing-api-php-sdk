@@ -71,7 +71,8 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'finderFailMsg' => 'string',
-        'finderFailRet' => 'int'
+        'finderFailRet' => 'int',
+        'wechatChannelsAccountId' => 'string'
     ];
 
     /**
@@ -93,7 +94,8 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'finderFailMsg' => null,
-        'finderFailRet' => 'int64'
+        'finderFailRet' => 'int64',
+        'wechatChannelsAccountId' => null
     ];
 
     /**
@@ -136,7 +138,8 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'finderFailMsg' => 'finder_fail_msg',
-        'finderFailRet' => 'finder_fail_ret'
+        'finderFailRet' => 'finder_fail_ret',
+        'wechatChannelsAccountId' => 'wechat_channels_account_id'
     ];
 
     /**
@@ -158,7 +161,8 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'finderFailMsg' => 'setFinderFailMsg',
-        'finderFailRet' => 'setFinderFailRet'
+        'finderFailRet' => 'setFinderFailRet',
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
     ];
 
     /**
@@ -180,7 +184,8 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'finderFailMsg' => 'getFinderFailMsg',
-        'finderFailRet' => 'getFinderFailRet'
+        'finderFailRet' => 'getFinderFailRet',
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
     ];
 
     /**
@@ -257,6 +262,7 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['finderFailMsg'] = isset($data['finderFailMsg']) ? $data['finderFailMsg'] : null;
         $this->container['finderFailRet'] = isset($data['finderFailRet']) ? $data['finderFailRet'] : null;
+        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
     }
 
     /**
@@ -615,6 +621,30 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
     public function setFinderFailRet($finderFailRet)
     {
         $this->container['finderFailRet'] = $finderFailRet;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountId
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountId()
+    {
+        return $this->container['wechatChannelsAccountId'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountId
+     *
+     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountId($wechatChannelsAccountId)
+    {
+        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
 
         return $this;
     }

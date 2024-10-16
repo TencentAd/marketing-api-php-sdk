@@ -58,6 +58,7 @@ class VideosDeleteRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
+        'organizationId' => 'int',
         'videoId' => 'int'
     ];
 
@@ -68,6 +69,7 @@ class VideosDeleteRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
+        'organizationId' => 'int64',
         'videoId' => 'int64'
     ];
 
@@ -99,6 +101,7 @@ class VideosDeleteRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
+        'organizationId' => 'organization_id',
         'videoId' => 'video_id'
     ];
 
@@ -109,6 +112,7 @@ class VideosDeleteRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
+        'organizationId' => 'setOrganizationId',
         'videoId' => 'setVideoId'
     ];
 
@@ -119,6 +123,7 @@ class VideosDeleteRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
+        'organizationId' => 'getOrganizationId',
         'videoId' => 'getVideoId'
     ];
 
@@ -183,6 +188,7 @@ class VideosDeleteRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
         $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
     }
 
@@ -230,6 +236,30 @@ class VideosDeleteRequest implements ModelInterface, ArrayAccess
     public function setAccountId($accountId)
     {
         $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets organizationId
+     *
+     * @return int|mixed
+     */
+    public function getOrganizationId()
+    {
+        return $this->container['organizationId'];
+    }
+
+    /**
+     * Sets organizationId
+     *
+     * @param int|mixed $organizationId organizationId
+     *
+     * @return $this
+     */
+    public function setOrganizationId($organizationId)
+    {
+        $this->container['organizationId'] = $organizationId;
 
         return $this;
     }

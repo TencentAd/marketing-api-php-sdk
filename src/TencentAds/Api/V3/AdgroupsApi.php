@@ -678,14 +678,16 @@ class AdgroupsApi
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  bool|mixed $isDeleted isDeleted (optional)
      * @param  string[]|mixed $fields fields (optional)
+     * @param  string|mixed $paginationMode paginationMode (optional)
+     * @param  string|mixed $cursor cursor (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\AdgroupsGetResponse|mixed
      */
-    public function adgroupsGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adgroupsGet($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null, $paginationMode = null, $cursor = null)
     {
-        list($response) = $this->adgroupsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        list($response) = $this->adgroupsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields, $paginationMode, $cursor);
         return $response;
     }
 
@@ -700,15 +702,17 @@ class AdgroupsApi
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
      * @param  string[]|mixed $fields (optional)
+     * @param  string|mixed $paginationMode (optional)
+     * @param  string|mixed $cursor (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\AdgroupsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function adgroupsGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adgroupsGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null, $paginationMode = null, $cursor = null)
     {
         $returnType = '\TencentAds\Model\V3\AdgroupsGetResponse';
-        $request = $this->adgroupsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->adgroupsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields, $paginationMode, $cursor);
 
         try {
             $options = $this->createHttpClientOption();
@@ -780,13 +784,15 @@ class AdgroupsApi
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
      * @param  string[]|mixed $fields (optional)
+     * @param  string|mixed $paginationMode (optional)
+     * @param  string|mixed $cursor (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function adgroupsGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adgroupsGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null, $paginationMode = null, $cursor = null)
     {
-        return $this->adgroupsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields)
+        return $this->adgroupsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $isDeleted, $fields, $paginationMode, $cursor)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -805,14 +811,16 @@ class AdgroupsApi
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
      * @param  string[]|mixed $fields (optional)
+     * @param  string|mixed $paginationMode (optional)
+     * @param  string|mixed $cursor (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function adgroupsGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function adgroupsGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null, $paginationMode = null, $cursor = null)
     {
         $returnType = '\TencentAds\Model\V3\AdgroupsGetResponse';
-        $request = $this->adgroupsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->adgroupsGetRequest($accountId, $filtering, $page, $pageSize, $isDeleted, $fields, $paginationMode, $cursor);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -860,11 +868,13 @@ class AdgroupsApi
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
      * @param  string[]|mixed $fields (optional)
+     * @param  string|mixed $paginationMode (optional)
+     * @param  string|mixed $cursor (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function adgroupsGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    protected function adgroupsGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null, $paginationMode = null, $cursor = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -909,6 +919,14 @@ class AdgroupsApi
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
+        }
+        // query params
+        if ($paginationMode !== null) {
+            $queryParams['pagination_mode'] = ObjectSerializer::toQueryValue($paginationMode);
+        }
+        // query params
+        if ($cursor !== null) {
+            $queryParams['cursor'] = ObjectSerializer::toQueryValue($cursor);
         }
 
 

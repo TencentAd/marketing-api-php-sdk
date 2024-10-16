@@ -44,12 +44,13 @@ class ExcludedDimension
     /**
      * Possible values of this enum
      */
-    const CAMPAIGN = 'EXCLUDED_DIMENSION_CAMPAIGN';
-    const UID = 'EXCLUDED_DIMENSION_UID';
-    const BUSINESS_MANAGER = 'EXCLUDED_DIMENSION_BUSINESS_MANAGER';
-    const COMPANY_ACCOUNT = 'EXCLUDED_DIMENSION_COMPANY_ACCOUNT';
-    const APP = 'EXCLUDED_DIMENSION_APP';
-    const PRODUCT = 'EXCLUDED_DIMENSION_PRODUCT';
+    const EXCLUDED_DIMENSION_CAMPAIGN = 'EXCLUDED_DIMENSION_CAMPAIGN';
+    const EXCLUDED_DIMENSION_UID = 'EXCLUDED_DIMENSION_UID';
+    const EXCLUDED_DIMENSION_BUSINESS_MANAGER = 'EXCLUDED_DIMENSION_BUSINESS_MANAGER';
+    const EXCLUDED_DIMENSION_COMPANY_ACCOUNT = 'EXCLUDED_DIMENSION_COMPANY_ACCOUNT';
+    const EXCLUDED_DIMENSION_APP = 'EXCLUDED_DIMENSION_APP';
+    const EXCLUDED_DIMENSION_PRODUCT = 'EXCLUDED_DIMENSION_PRODUCT';
+    const EXCLUDE_DIMENSION_WORKTABLE = 'EXCLUDE_DIMENSION_WORKTABLE';
     
     /**
      * Gets allowable values of the enum
@@ -58,12 +59,13 @@ class ExcludedDimension
     public static function getAllowableEnumValues()
     {
         return [
-            self::CAMPAIGN,
-            self::UID,
-            self::BUSINESS_MANAGER,
-            self::COMPANY_ACCOUNT,
-            self::APP,
-            self::PRODUCT,
+            self::EXCLUDED_DIMENSION_CAMPAIGN,
+            self::EXCLUDED_DIMENSION_UID,
+            self::EXCLUDED_DIMENSION_BUSINESS_MANAGER,
+            self::EXCLUDED_DIMENSION_COMPANY_ACCOUNT,
+            self::EXCLUDED_DIMENSION_APP,
+            self::EXCLUDED_DIMENSION_PRODUCT,
+            self::EXCLUDE_DIMENSION_WORKTABLE,
         ];
     }
 }

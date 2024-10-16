@@ -61,7 +61,8 @@ class LiveRoomComponentsAddRequest implements ModelInterface, ArrayAccess
         'componentName' => 'string',
         'componentType' => '\TencentAds\Model\V3\CreativeComponentType',
         'finderUsername' => 'string',
-        'componentSpec' => '\TencentAds\Model\V3\LiveRoomComponentSpecStruct'
+        'componentSpec' => '\TencentAds\Model\V3\LiveRoomComponentSpecStruct',
+        'wechatChannelsAccountId' => 'string'
     ];
 
     /**
@@ -74,7 +75,8 @@ class LiveRoomComponentsAddRequest implements ModelInterface, ArrayAccess
         'componentName' => null,
         'componentType' => null,
         'finderUsername' => null,
-        'componentSpec' => null
+        'componentSpec' => null,
+        'wechatChannelsAccountId' => null
     ];
 
     /**
@@ -108,7 +110,8 @@ class LiveRoomComponentsAddRequest implements ModelInterface, ArrayAccess
         'componentName' => 'component_name',
         'componentType' => 'component_type',
         'finderUsername' => 'finder_username',
-        'componentSpec' => 'component_spec'
+        'componentSpec' => 'component_spec',
+        'wechatChannelsAccountId' => 'wechat_channels_account_id'
     ];
 
     /**
@@ -121,7 +124,8 @@ class LiveRoomComponentsAddRequest implements ModelInterface, ArrayAccess
         'componentName' => 'setComponentName',
         'componentType' => 'setComponentType',
         'finderUsername' => 'setFinderUsername',
-        'componentSpec' => 'setComponentSpec'
+        'componentSpec' => 'setComponentSpec',
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
     ];
 
     /**
@@ -134,7 +138,8 @@ class LiveRoomComponentsAddRequest implements ModelInterface, ArrayAccess
         'componentName' => 'getComponentName',
         'componentType' => 'getComponentType',
         'finderUsername' => 'getFinderUsername',
-        'componentSpec' => 'getComponentSpec'
+        'componentSpec' => 'getComponentSpec',
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
     ];
 
     /**
@@ -202,6 +207,7 @@ class LiveRoomComponentsAddRequest implements ModelInterface, ArrayAccess
         $this->container['componentType'] = isset($data['componentType']) ? $data['componentType'] : null;
         $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
         $this->container['componentSpec'] = isset($data['componentSpec']) ? $data['componentSpec'] : null;
+        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
     }
 
     /**
@@ -344,6 +350,30 @@ class LiveRoomComponentsAddRequest implements ModelInterface, ArrayAccess
     public function setComponentSpec($componentSpec)
     {
         $this->container['componentSpec'] = $componentSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountId
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountId()
+    {
+        return $this->container['wechatChannelsAccountId'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountId
+     *
+     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountId($wechatChannelsAccountId)
+    {
+        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * CropCustomizedSpecAndResize
+ * RewardquestWechatChannelsSpecFreeTradeAdInfo
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CropCustomizedSpecAndResize Class Doc Comment
+ * RewardquestWechatChannelsSpecFreeTradeAdInfo Class Doc Comment
  *
  * @category Class
- * @description 自定义裁剪后缩放信息
+ * @description 小任务中间页
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
+class RewardquestWechatChannelsSpecFreeTradeAdInfo implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'crop_customized_spec_and_resize';
+    protected static $swaggerModelName = 'rewardquest_wechat_channels_spec_free_trade_ad_info';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +58,14 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cropWidth' => 'int',
-        'cropHeight' => 'int',
-        'axisX' => 'int',
-        'axisY' => 'int',
-        'resizeWidth' => 'int',
-        'resizeHeight' => 'int'
+        'thumb' => '\TencentAds\Model\RewardquestWechatChannelsSpecImageInfo',
+        'imageList' => '\TencentAds\Model\RewardquestWechatChannelsSpecImageInfo[]',
+        'title' => 'string',
+        'desc' => 'string',
+        'backColorRgb' => 'string',
+        'dynamicShowType' => '\TencentAds\Model\ConversionDataType',
+        'dynamicShowText' => '\TencentAds\Model\ConversionTargetType',
+        'btnText' => '\TencentAds\Model\LinkUrlLinkNameType'
     ];
 
     /**
@@ -72,12 +74,14 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'cropWidth' => 'int64',
-        'cropHeight' => 'int64',
-        'axisX' => 'int64',
-        'axisY' => 'int64',
-        'resizeWidth' => 'int64',
-        'resizeHeight' => 'int64'
+        'thumb' => null,
+        'imageList' => null,
+        'title' => null,
+        'desc' => null,
+        'backColorRgb' => null,
+        'dynamicShowType' => null,
+        'dynamicShowText' => null,
+        'btnText' => null
     ];
 
     /**
@@ -107,12 +111,14 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'cropWidth' => 'crop_width',
-        'cropHeight' => 'crop_height',
-        'axisX' => 'axis_x',
-        'axisY' => 'axis_y',
-        'resizeWidth' => 'resize_width',
-        'resizeHeight' => 'resize_height'
+        'thumb' => 'thumb',
+        'imageList' => 'image_list',
+        'title' => 'title',
+        'desc' => 'desc',
+        'backColorRgb' => 'back_color_rgb',
+        'dynamicShowType' => 'dynamic_show_type',
+        'dynamicShowText' => 'dynamic_show_text',
+        'btnText' => 'btn_text'
     ];
 
     /**
@@ -121,12 +127,14 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'cropWidth' => 'setCropWidth',
-        'cropHeight' => 'setCropHeight',
-        'axisX' => 'setAxisX',
-        'axisY' => 'setAxisY',
-        'resizeWidth' => 'setResizeWidth',
-        'resizeHeight' => 'setResizeHeight'
+        'thumb' => 'setThumb',
+        'imageList' => 'setImageList',
+        'title' => 'setTitle',
+        'desc' => 'setDesc',
+        'backColorRgb' => 'setBackColorRgb',
+        'dynamicShowType' => 'setDynamicShowType',
+        'dynamicShowText' => 'setDynamicShowText',
+        'btnText' => 'setBtnText'
     ];
 
     /**
@@ -135,12 +143,14 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'cropWidth' => 'getCropWidth',
-        'cropHeight' => 'getCropHeight',
-        'axisX' => 'getAxisX',
-        'axisY' => 'getAxisY',
-        'resizeWidth' => 'getResizeWidth',
-        'resizeHeight' => 'getResizeHeight'
+        'thumb' => 'getThumb',
+        'imageList' => 'getImageList',
+        'title' => 'getTitle',
+        'desc' => 'getDesc',
+        'backColorRgb' => 'getBackColorRgb',
+        'dynamicShowType' => 'getDynamicShowType',
+        'dynamicShowText' => 'getDynamicShowText',
+        'btnText' => 'getBtnText'
     ];
 
     /**
@@ -203,12 +213,14 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['cropWidth'] = isset($data['cropWidth']) ? $data['cropWidth'] : null;
-        $this->container['cropHeight'] = isset($data['cropHeight']) ? $data['cropHeight'] : null;
-        $this->container['axisX'] = isset($data['axisX']) ? $data['axisX'] : null;
-        $this->container['axisY'] = isset($data['axisY']) ? $data['axisY'] : null;
-        $this->container['resizeWidth'] = isset($data['resizeWidth']) ? $data['resizeWidth'] : null;
-        $this->container['resizeHeight'] = isset($data['resizeHeight']) ? $data['resizeHeight'] : null;
+        $this->container['thumb'] = isset($data['thumb']) ? $data['thumb'] : null;
+        $this->container['imageList'] = isset($data['imageList']) ? $data['imageList'] : null;
+        $this->container['title'] = isset($data['title']) ? $data['title'] : null;
+        $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
+        $this->container['backColorRgb'] = isset($data['backColorRgb']) ? $data['backColorRgb'] : null;
+        $this->container['dynamicShowType'] = isset($data['dynamicShowType']) ? $data['dynamicShowType'] : null;
+        $this->container['dynamicShowText'] = isset($data['dynamicShowText']) ? $data['dynamicShowText'] : null;
+        $this->container['btnText'] = isset($data['btnText']) ? $data['btnText'] : null;
     }
 
     /**
@@ -236,145 +248,193 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets cropWidth
+     * Gets thumb
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\RewardquestWechatChannelsSpecImageInfo|mixed
      */
-    public function getCropWidth()
+    public function getThumb()
     {
-        return $this->container['cropWidth'];
+        return $this->container['thumb'];
     }
 
     /**
-     * Sets cropWidth
+     * Sets thumb
      *
-     * @param int|mixed $cropWidth cropWidth
+     * @param \TencentAds\Model\RewardquestWechatChannelsSpecImageInfo|mixed $thumb thumb
      *
      * @return $this
      */
-    public function setCropWidth($cropWidth)
+    public function setThumb($thumb)
     {
-        $this->container['cropWidth'] = $cropWidth;
+        $this->container['thumb'] = $thumb;
 
         return $this;
     }
 
     /**
-     * Gets cropHeight
+     * Gets imageList
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\RewardquestWechatChannelsSpecImageInfo[]|mixed
      */
-    public function getCropHeight()
+    public function getImageList()
     {
-        return $this->container['cropHeight'];
+        return $this->container['imageList'];
     }
 
     /**
-     * Sets cropHeight
+     * Sets imageList
      *
-     * @param int|mixed $cropHeight cropHeight
+     * @param \TencentAds\Model\RewardquestWechatChannelsSpecImageInfo[]|mixed $imageList imageList
      *
      * @return $this
      */
-    public function setCropHeight($cropHeight)
+    public function setImageList($imageList)
     {
-        $this->container['cropHeight'] = $cropHeight;
+        $this->container['imageList'] = $imageList;
 
         return $this;
     }
 
     /**
-     * Gets axisX
+     * Gets title
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getAxisX()
+    public function getTitle()
     {
-        return $this->container['axisX'];
+        return $this->container['title'];
     }
 
     /**
-     * Sets axisX
+     * Sets title
      *
-     * @param int|mixed $axisX axisX
+     * @param string|mixed $title title
      *
      * @return $this
      */
-    public function setAxisX($axisX)
+    public function setTitle($title)
     {
-        $this->container['axisX'] = $axisX;
+        $this->container['title'] = $title;
 
         return $this;
     }
 
     /**
-     * Gets axisY
+     * Gets desc
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getAxisY()
+    public function getDesc()
     {
-        return $this->container['axisY'];
+        return $this->container['desc'];
     }
 
     /**
-     * Sets axisY
+     * Sets desc
      *
-     * @param int|mixed $axisY axisY
+     * @param string|mixed $desc desc
      *
      * @return $this
      */
-    public function setAxisY($axisY)
+    public function setDesc($desc)
     {
-        $this->container['axisY'] = $axisY;
+        $this->container['desc'] = $desc;
 
         return $this;
     }
 
     /**
-     * Gets resizeWidth
+     * Gets backColorRgb
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getResizeWidth()
+    public function getBackColorRgb()
     {
-        return $this->container['resizeWidth'];
+        return $this->container['backColorRgb'];
     }
 
     /**
-     * Sets resizeWidth
+     * Sets backColorRgb
      *
-     * @param int|mixed $resizeWidth resizeWidth
+     * @param string|mixed $backColorRgb backColorRgb
      *
      * @return $this
      */
-    public function setResizeWidth($resizeWidth)
+    public function setBackColorRgb($backColorRgb)
     {
-        $this->container['resizeWidth'] = $resizeWidth;
+        $this->container['backColorRgb'] = $backColorRgb;
 
         return $this;
     }
 
     /**
-     * Gets resizeHeight
+     * Gets dynamicShowType
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\ConversionDataType|mixed
      */
-    public function getResizeHeight()
+    public function getDynamicShowType()
     {
-        return $this->container['resizeHeight'];
+        return $this->container['dynamicShowType'];
     }
 
     /**
-     * Sets resizeHeight
+     * Sets dynamicShowType
      *
-     * @param int|mixed $resizeHeight resizeHeight
+     * @param \TencentAds\Model\ConversionDataType|mixed $dynamicShowType dynamicShowType
      *
      * @return $this
      */
-    public function setResizeHeight($resizeHeight)
+    public function setDynamicShowType($dynamicShowType)
     {
-        $this->container['resizeHeight'] = $resizeHeight;
+        $this->container['dynamicShowType'] = $dynamicShowType;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicShowText
+     *
+     * @return \TencentAds\Model\ConversionTargetType|mixed
+     */
+    public function getDynamicShowText()
+    {
+        return $this->container['dynamicShowText'];
+    }
+
+    /**
+     * Sets dynamicShowText
+     *
+     * @param \TencentAds\Model\ConversionTargetType|mixed $dynamicShowText dynamicShowText
+     *
+     * @return $this
+     */
+    public function setDynamicShowText($dynamicShowText)
+    {
+        $this->container['dynamicShowText'] = $dynamicShowText;
+
+        return $this;
+    }
+
+    /**
+     * Gets btnText
+     *
+     * @return \TencentAds\Model\LinkUrlLinkNameType|mixed
+     */
+    public function getBtnText()
+    {
+        return $this->container['btnText'];
+    }
+
+    /**
+     * Sets btnText
+     *
+     * @param \TencentAds\Model\LinkUrlLinkNameType|mixed $btnText btnText
+     *
+     * @return $this
+     */
+    public function setBtnText($btnText)
+    {
+        $this->container['btnText'] = $btnText;
 
         return $this;
     }

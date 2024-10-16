@@ -1,6 +1,6 @@
 <?php
 /**
- * CropCustomizedSpecAndResize
+ * WalletGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CropCustomizedSpecAndResize Class Doc Comment
+ * WalletGetResponse Class Doc Comment
  *
  * @category Class
- * @description 自定义裁剪后缩放信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
+class WalletGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'crop_customized_spec_and_resize';
+    protected static $swaggerModelName = 'WalletGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +57,11 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cropWidth' => 'int',
-        'cropHeight' => 'int',
-        'axisX' => 'int',
-        'axisY' => 'int',
-        'resizeWidth' => 'int',
-        'resizeHeight' => 'int'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\V3\WalletGetResponseData'
     ];
 
     /**
@@ -72,12 +70,11 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'cropWidth' => 'int64',
-        'cropHeight' => 'int64',
-        'axisX' => 'int64',
-        'axisY' => 'int64',
-        'resizeWidth' => 'int64',
-        'resizeHeight' => 'int64'
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -107,12 +104,11 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'cropWidth' => 'crop_width',
-        'cropHeight' => 'crop_height',
-        'axisX' => 'axis_x',
-        'axisY' => 'axis_y',
-        'resizeWidth' => 'resize_width',
-        'resizeHeight' => 'resize_height'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -121,12 +117,11 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'cropWidth' => 'setCropWidth',
-        'cropHeight' => 'setCropHeight',
-        'axisX' => 'setAxisX',
-        'axisY' => 'setAxisY',
-        'resizeWidth' => 'setResizeWidth',
-        'resizeHeight' => 'setResizeHeight'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -135,12 +130,11 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'cropWidth' => 'getCropWidth',
-        'cropHeight' => 'getCropHeight',
-        'axisX' => 'getAxisX',
-        'axisY' => 'getAxisY',
-        'resizeWidth' => 'getResizeWidth',
-        'resizeHeight' => 'getResizeHeight'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -203,12 +197,11 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['cropWidth'] = isset($data['cropWidth']) ? $data['cropWidth'] : null;
-        $this->container['cropHeight'] = isset($data['cropHeight']) ? $data['cropHeight'] : null;
-        $this->container['axisX'] = isset($data['axisX']) ? $data['axisX'] : null;
-        $this->container['axisY'] = isset($data['axisY']) ? $data['axisY'] : null;
-        $this->container['resizeWidth'] = isset($data['resizeWidth']) ? $data['resizeWidth'] : null;
-        $this->container['resizeHeight'] = isset($data['resizeHeight']) ? $data['resizeHeight'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -236,145 +229,121 @@ class CropCustomizedSpecAndResize implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets cropWidth
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getCropWidth()
+    public function getCode()
     {
-        return $this->container['cropWidth'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets cropWidth
+     * Sets code
      *
-     * @param int|mixed $cropWidth cropWidth
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setCropWidth($cropWidth)
+    public function setCode($code)
     {
-        $this->container['cropWidth'] = $cropWidth;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets cropHeight
+     * Gets message
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getCropHeight()
+    public function getMessage()
     {
-        return $this->container['cropHeight'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets cropHeight
+     * Sets message
      *
-     * @param int|mixed $cropHeight cropHeight
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setCropHeight($cropHeight)
+    public function setMessage($message)
     {
-        $this->container['cropHeight'] = $cropHeight;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets axisX
+     * Gets messageCn
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getAxisX()
+    public function getMessageCn()
     {
-        return $this->container['axisX'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets axisX
+     * Sets messageCn
      *
-     * @param int|mixed $axisX axisX
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setAxisX($axisX)
+    public function setMessageCn($messageCn)
     {
-        $this->container['axisX'] = $axisX;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets axisY
+     * Gets errors
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
      */
-    public function getAxisY()
+    public function getErrors()
     {
-        return $this->container['axisY'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets axisY
+     * Sets errors
      *
-     * @param int|mixed $axisY axisY
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setAxisY($axisY)
+    public function setErrors($errors)
     {
-        $this->container['axisY'] = $axisY;
+        $this->container['errors'] = $errors;
 
         return $this;
     }
 
     /**
-     * Gets resizeWidth
+     * Gets data
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\WalletGetResponseData|mixed
      */
-    public function getResizeWidth()
+    public function getData()
     {
-        return $this->container['resizeWidth'];
+        return $this->container['data'];
     }
 
     /**
-     * Sets resizeWidth
+     * Sets data
      *
-     * @param int|mixed $resizeWidth resizeWidth
+     * @param \TencentAds\Model\V3\WalletGetResponseData|mixed $data data
      *
      * @return $this
      */
-    public function setResizeWidth($resizeWidth)
+    public function setData($data)
     {
-        $this->container['resizeWidth'] = $resizeWidth;
-
-        return $this;
-    }
-
-    /**
-     * Gets resizeHeight
-     *
-     * @return int|mixed
-     */
-    public function getResizeHeight()
-    {
-        return $this->container['resizeHeight'];
-    }
-
-    /**
-     * Sets resizeHeight
-     *
-     * @param int|mixed $resizeHeight resizeHeight
-     *
-     * @return $this
-     */
-    public function setResizeHeight($resizeHeight)
-    {
-        $this->container['resizeHeight'] = $resizeHeight;
+        $this->container['data'] = $data;
 
         return $this;
     }

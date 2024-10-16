@@ -59,7 +59,6 @@ class WechatMiniGamePageSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'miniGameTrackingParameter' => 'string',
-        'backupOption' => '\TencentAds\Model\V3\BackUpOption',
         'miniGameId' => 'string'
     ];
 
@@ -70,7 +69,6 @@ class WechatMiniGamePageSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'miniGameTrackingParameter' => null,
-        'backupOption' => null,
         'miniGameId' => null
     ];
 
@@ -102,7 +100,6 @@ class WechatMiniGamePageSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
-        'backupOption' => 'backup_option',
         'miniGameId' => 'mini_game_id'
     ];
 
@@ -113,7 +110,6 @@ class WechatMiniGamePageSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
-        'backupOption' => 'setBackupOption',
         'miniGameId' => 'setMiniGameId'
     ];
 
@@ -124,7 +120,6 @@ class WechatMiniGamePageSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
-        'backupOption' => 'getBackupOption',
         'miniGameId' => 'getMiniGameId'
     ];
 
@@ -189,7 +184,6 @@ class WechatMiniGamePageSpec implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
-        $this->container['backupOption'] = isset($data['backupOption']) ? $data['backupOption'] : null;
         $this->container['miniGameId'] = isset($data['miniGameId']) ? $data['miniGameId'] : null;
     }
 
@@ -237,30 +231,6 @@ class WechatMiniGamePageSpec implements ModelInterface, ArrayAccess
     public function setMiniGameTrackingParameter($miniGameTrackingParameter)
     {
         $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
-
-        return $this;
-    }
-
-    /**
-     * Gets backupOption
-     *
-     * @return \TencentAds\Model\V3\BackUpOption|mixed
-     */
-    public function getBackupOption()
-    {
-        return $this->container['backupOption'];
-    }
-
-    /**
-     * Sets backupOption
-     *
-     * @param \TencentAds\Model\V3\BackUpOption|mixed $backupOption backupOption
-     *
-     * @return $this
-     */
-    public function setBackupOption($backupOption)
-    {
-        $this->container['backupOption'] = $backupOption;
 
         return $this;
     }

@@ -43,8 +43,9 @@ class ChannelsUserpageobjectsApiContainer extends ApiContainer
             $nickname = isset($params['nickname']) ? $params['nickname'] : null;
             $lastBuffer = isset($params['last_buffer']) ? $params['last_buffer'] : null;
             $count = isset($params['count']) ? $params['count'] : null;
+            $wechatChannelsAccountId = isset($params['wechat_channels_account_id']) ? $params['wechat_channels_account_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->channelsUserpageobjectsGet($accountId, $finderUsername, $nickname, $lastBuffer, $count, $fields);
+            $response = $this->apiInstance->channelsUserpageobjectsGet($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -64,8 +65,9 @@ class ChannelsUserpageobjectsApiContainer extends ApiContainer
             $nickname = isset($params['nickname']) ? $params['nickname'] : null;
             $lastBuffer = isset($params['last_buffer']) ? $params['last_buffer'] : null;
             $count = isset($params['count']) ? $params['count'] : null;
+            $wechatChannelsAccountId = isset($params['wechat_channels_account_id']) ? $params['wechat_channels_account_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->channelsUserpageobjectsGetAsync($accountId, $finderUsername, $nickname, $lastBuffer, $count, $fields);
+            $response = $this->apiInstance->channelsUserpageobjectsGetAsync($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $fields);
             return $response;
         });
     }

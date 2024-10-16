@@ -60,7 +60,8 @@ class ComponentsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int',
         'componentCustomName' => 'string',
         'componentValue' => '\TencentAds\Model\V3\ComponentValue',
-        'componentSubType' => '\TencentAds\Model\V3\ComponentSubType'
+        'componentSubType' => '\TencentAds\Model\V3\ComponentSubType',
+        'organizationId' => 'int'
     ];
 
     /**
@@ -72,7 +73,8 @@ class ComponentsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'int64',
         'componentCustomName' => null,
         'componentValue' => null,
-        'componentSubType' => null
+        'componentSubType' => null,
+        'organizationId' => 'int64'
     ];
 
     /**
@@ -105,7 +107,8 @@ class ComponentsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'account_id',
         'componentCustomName' => 'component_custom_name',
         'componentValue' => 'component_value',
-        'componentSubType' => 'component_sub_type'
+        'componentSubType' => 'component_sub_type',
+        'organizationId' => 'organization_id'
     ];
 
     /**
@@ -117,7 +120,8 @@ class ComponentsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'setAccountId',
         'componentCustomName' => 'setComponentCustomName',
         'componentValue' => 'setComponentValue',
-        'componentSubType' => 'setComponentSubType'
+        'componentSubType' => 'setComponentSubType',
+        'organizationId' => 'setOrganizationId'
     ];
 
     /**
@@ -129,7 +133,8 @@ class ComponentsAddRequest implements ModelInterface, ArrayAccess
         'accountId' => 'getAccountId',
         'componentCustomName' => 'getComponentCustomName',
         'componentValue' => 'getComponentValue',
-        'componentSubType' => 'getComponentSubType'
+        'componentSubType' => 'getComponentSubType',
+        'organizationId' => 'getOrganizationId'
     ];
 
     /**
@@ -196,6 +201,7 @@ class ComponentsAddRequest implements ModelInterface, ArrayAccess
         $this->container['componentCustomName'] = isset($data['componentCustomName']) ? $data['componentCustomName'] : null;
         $this->container['componentValue'] = isset($data['componentValue']) ? $data['componentValue'] : null;
         $this->container['componentSubType'] = isset($data['componentSubType']) ? $data['componentSubType'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
     }
 
     /**
@@ -314,6 +320,30 @@ class ComponentsAddRequest implements ModelInterface, ArrayAccess
     public function setComponentSubType($componentSubType)
     {
         $this->container['componentSubType'] = $componentSubType;
+
+        return $this;
+    }
+
+    /**
+     * Gets organizationId
+     *
+     * @return int|mixed
+     */
+    public function getOrganizationId()
+    {
+        return $this->container['organizationId'];
+    }
+
+    /**
+     * Sets organizationId
+     *
+     * @param int|mixed $organizationId organizationId
+     *
+     * @return $this
+     */
+    public function setOrganizationId($organizationId)
+    {
+        $this->container['organizationId'] = $organizationId;
 
         return $this;
     }

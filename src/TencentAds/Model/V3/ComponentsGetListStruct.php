@@ -59,12 +59,14 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
+        'organizationId' => 'int',
         'componentId' => 'int',
         'componentValue' => '\TencentAds\Model\V3\ComponentValue',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'componentSubType' => '\TencentAds\Model\V3\ComponentSubType',
         'componentCustomName' => 'string',
+        'generationType' => '\TencentAds\Model\V3\ComponentGenerationType',
         'isDeleted' => 'bool'
     ];
 
@@ -75,12 +77,14 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
+        'organizationId' => 'int64',
         'componentId' => 'int64',
         'componentValue' => null,
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'componentSubType' => null,
         'componentCustomName' => null,
+        'generationType' => null,
         'isDeleted' => null
     ];
 
@@ -112,12 +116,14 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
+        'organizationId' => 'organization_id',
         'componentId' => 'component_id',
         'componentValue' => 'component_value',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'componentSubType' => 'component_sub_type',
         'componentCustomName' => 'component_custom_name',
+        'generationType' => 'generation_type',
         'isDeleted' => 'is_deleted'
     ];
 
@@ -128,12 +134,14 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
+        'organizationId' => 'setOrganizationId',
         'componentId' => 'setComponentId',
         'componentValue' => 'setComponentValue',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'componentSubType' => 'setComponentSubType',
         'componentCustomName' => 'setComponentCustomName',
+        'generationType' => 'setGenerationType',
         'isDeleted' => 'setIsDeleted'
     ];
 
@@ -144,12 +152,14 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
+        'organizationId' => 'getOrganizationId',
         'componentId' => 'getComponentId',
         'componentValue' => 'getComponentValue',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'componentSubType' => 'getComponentSubType',
         'componentCustomName' => 'getComponentCustomName',
+        'generationType' => 'getGenerationType',
         'isDeleted' => 'getIsDeleted'
     ];
 
@@ -214,12 +224,14 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
         $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
         $this->container['componentValue'] = isset($data['componentValue']) ? $data['componentValue'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['componentSubType'] = isset($data['componentSubType']) ? $data['componentSubType'] : null;
         $this->container['componentCustomName'] = isset($data['componentCustomName']) ? $data['componentCustomName'] : null;
+        $this->container['generationType'] = isset($data['generationType']) ? $data['generationType'] : null;
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
     }
 
@@ -267,6 +279,30 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
     public function setAccountId($accountId)
     {
         $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets organizationId
+     *
+     * @return int|mixed
+     */
+    public function getOrganizationId()
+    {
+        return $this->container['organizationId'];
+    }
+
+    /**
+     * Sets organizationId
+     *
+     * @param int|mixed $organizationId organizationId
+     *
+     * @return $this
+     */
+    public function setOrganizationId($organizationId)
+    {
+        $this->container['organizationId'] = $organizationId;
 
         return $this;
     }
@@ -411,6 +447,30 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
     public function setComponentCustomName($componentCustomName)
     {
         $this->container['componentCustomName'] = $componentCustomName;
+
+        return $this;
+    }
+
+    /**
+     * Gets generationType
+     *
+     * @return \TencentAds\Model\V3\ComponentGenerationType|mixed
+     */
+    public function getGenerationType()
+    {
+        return $this->container['generationType'];
+    }
+
+    /**
+     * Sets generationType
+     *
+     * @param \TencentAds\Model\V3\ComponentGenerationType|mixed $generationType generationType
+     *
+     * @return $this
+     */
+    public function setGenerationType($generationType)
+    {
+        $this->container['generationType'] = $generationType;
 
         return $this;
     }

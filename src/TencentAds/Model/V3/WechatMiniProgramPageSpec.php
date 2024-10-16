@@ -61,7 +61,6 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
         'miniProgramId' => 'string',
         'miniProgramPath' => 'string',
         'miniProgramPaths' => 'string[]',
-        'backupOption' => '\TencentAds\Model\V3\BackUpOption',
         'mpaMiniProgramWildcardUrl' => 'string'
     ];
 
@@ -74,7 +73,6 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
         'miniProgramId' => null,
         'miniProgramPath' => null,
         'miniProgramPaths' => null,
-        'backupOption' => null,
         'mpaMiniProgramWildcardUrl' => null
     ];
 
@@ -108,7 +106,6 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
         'miniProgramId' => 'mini_program_id',
         'miniProgramPath' => 'mini_program_path',
         'miniProgramPaths' => 'mini_program_paths',
-        'backupOption' => 'backup_option',
         'mpaMiniProgramWildcardUrl' => 'mpa_mini_program_wildcard_url'
     ];
 
@@ -121,7 +118,6 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
         'miniProgramId' => 'setMiniProgramId',
         'miniProgramPath' => 'setMiniProgramPath',
         'miniProgramPaths' => 'setMiniProgramPaths',
-        'backupOption' => 'setBackupOption',
         'mpaMiniProgramWildcardUrl' => 'setMpaMiniProgramWildcardUrl'
     ];
 
@@ -134,7 +130,6 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
         'miniProgramId' => 'getMiniProgramId',
         'miniProgramPath' => 'getMiniProgramPath',
         'miniProgramPaths' => 'getMiniProgramPaths',
-        'backupOption' => 'getBackupOption',
         'mpaMiniProgramWildcardUrl' => 'getMpaMiniProgramWildcardUrl'
     ];
 
@@ -201,7 +196,6 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
         $this->container['miniProgramId'] = isset($data['miniProgramId']) ? $data['miniProgramId'] : null;
         $this->container['miniProgramPath'] = isset($data['miniProgramPath']) ? $data['miniProgramPath'] : null;
         $this->container['miniProgramPaths'] = isset($data['miniProgramPaths']) ? $data['miniProgramPaths'] : null;
-        $this->container['backupOption'] = isset($data['backupOption']) ? $data['backupOption'] : null;
         $this->container['mpaMiniProgramWildcardUrl'] = isset($data['mpaMiniProgramWildcardUrl']) ? $data['mpaMiniProgramWildcardUrl'] : null;
     }
 
@@ -297,30 +291,6 @@ class WechatMiniProgramPageSpec implements ModelInterface, ArrayAccess
     public function setMiniProgramPaths($miniProgramPaths)
     {
         $this->container['miniProgramPaths'] = $miniProgramPaths;
-
-        return $this;
-    }
-
-    /**
-     * Gets backupOption
-     *
-     * @return \TencentAds\Model\V3\BackUpOption|mixed
-     */
-    public function getBackupOption()
-    {
-        return $this->container['backupOption'];
-    }
-
-    /**
-     * Sets backupOption
-     *
-     * @param \TencentAds\Model\V3\BackUpOption|mixed $backupOption backupOption
-     *
-     * @return $this
-     */
-    public function setBackupOption($backupOption)
-    {
-        $this->container['backupOption'] = $backupOption;
 
         return $this;
     }

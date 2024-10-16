@@ -71,7 +71,8 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
         'componentWechatChannelSpec' => '\TencentAds\Model\V3\ComponentWechatChannelSpec',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
-        'isPublishEnabled' => 'bool'
+        'isPublishEnabled' => 'bool',
+        'wechatChannelsAccountId' => 'string'
     ];
 
     /**
@@ -93,7 +94,8 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
         'componentWechatChannelSpec' => null,
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
-        'isPublishEnabled' => null
+        'isPublishEnabled' => null,
+        'wechatChannelsAccountId' => null
     ];
 
     /**
@@ -136,7 +138,8 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
         'componentWechatChannelSpec' => 'component_wechat_channel_spec',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
-        'isPublishEnabled' => 'is_publish_enabled'
+        'isPublishEnabled' => 'is_publish_enabled',
+        'wechatChannelsAccountId' => 'wechat_channels_account_id'
     ];
 
     /**
@@ -158,7 +161,8 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
         'componentWechatChannelSpec' => 'setComponentWechatChannelSpec',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
-        'isPublishEnabled' => 'setIsPublishEnabled'
+        'isPublishEnabled' => 'setIsPublishEnabled',
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
     ];
 
     /**
@@ -180,7 +184,8 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
         'componentWechatChannelSpec' => 'getComponentWechatChannelSpec',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
-        'isPublishEnabled' => 'getIsPublishEnabled'
+        'isPublishEnabled' => 'getIsPublishEnabled',
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
     ];
 
     /**
@@ -257,6 +262,7 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['isPublishEnabled'] = isset($data['isPublishEnabled']) ? $data['isPublishEnabled'] : null;
+        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
     }
 
     /**
@@ -615,6 +621,30 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
     public function setIsPublishEnabled($isPublishEnabled)
     {
         $this->container['isPublishEnabled'] = $isPublishEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountId
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountId()
+    {
+        return $this->container['wechatChannelsAccountId'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountId
+     *
+     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountId($wechatChannelsAccountId)
+    {
+        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
 
         return $this;
     }

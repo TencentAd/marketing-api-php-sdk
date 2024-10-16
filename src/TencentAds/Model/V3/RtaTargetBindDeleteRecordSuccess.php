@@ -60,7 +60,8 @@ class RtaTargetBindDeleteRecordSuccess implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'targetType' => 'int',
-        'isMp' => 'int'
+        'isMp' => 'int',
+        'outerTargetId' => 'string'
     ];
 
     /**
@@ -71,7 +72,8 @@ class RtaTargetBindDeleteRecordSuccess implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'id' => 'int64',
         'targetType' => 'int64',
-        'isMp' => 'int64'
+        'isMp' => 'int64',
+        'outerTargetId' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class RtaTargetBindDeleteRecordSuccess implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'id' => 'Id',
         'targetType' => 'TargetType',
-        'isMp' => 'IsMp'
+        'isMp' => 'IsMp',
+        'outerTargetId' => 'OuterTargetId'
     ];
 
     /**
@@ -114,7 +117,8 @@ class RtaTargetBindDeleteRecordSuccess implements ModelInterface, ArrayAccess
     protected static $setters = [
         'id' => 'setId',
         'targetType' => 'setTargetType',
-        'isMp' => 'setIsMp'
+        'isMp' => 'setIsMp',
+        'outerTargetId' => 'setOuterTargetId'
     ];
 
     /**
@@ -125,7 +129,8 @@ class RtaTargetBindDeleteRecordSuccess implements ModelInterface, ArrayAccess
     protected static $getters = [
         'id' => 'getId',
         'targetType' => 'getTargetType',
-        'isMp' => 'getIsMp'
+        'isMp' => 'getIsMp',
+        'outerTargetId' => 'getOuterTargetId'
     ];
 
     /**
@@ -191,6 +196,7 @@ class RtaTargetBindDeleteRecordSuccess implements ModelInterface, ArrayAccess
         $this->container['id'] = isset($data['id']) ? $data['id'] : null;
         $this->container['targetType'] = isset($data['targetType']) ? $data['targetType'] : null;
         $this->container['isMp'] = isset($data['isMp']) ? $data['isMp'] : null;
+        $this->container['outerTargetId'] = isset($data['outerTargetId']) ? $data['outerTargetId'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class RtaTargetBindDeleteRecordSuccess implements ModelInterface, ArrayAccess
     public function setIsMp($isMp)
     {
         $this->container['isMp'] = $isMp;
+
+        return $this;
+    }
+
+    /**
+     * Gets outerTargetId
+     *
+     * @return string|mixed
+     */
+    public function getOuterTargetId()
+    {
+        return $this->container['outerTargetId'];
+    }
+
+    /**
+     * Sets outerTargetId
+     *
+     * @param string|mixed $outerTargetId outerTargetId
+     *
+     * @return $this
+     */
+    public function setOuterTargetId($outerTargetId)
+    {
+        $this->container['outerTargetId'] = $outerTargetId;
 
         return $this;
     }

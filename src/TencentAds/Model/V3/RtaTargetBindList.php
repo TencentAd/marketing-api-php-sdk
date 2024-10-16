@@ -60,7 +60,8 @@ class RtaTargetBindList implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'page' => 'int',
         'size' => 'int',
-        'outerTargetId' => 'string'
+        'outerTargetId' => 'string',
+        'uId' => 'int'
     ];
 
     /**
@@ -71,7 +72,8 @@ class RtaTargetBindList implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'page' => 'int64',
         'size' => 'int64',
-        'outerTargetId' => null
+        'outerTargetId' => null,
+        'uId' => 'int64'
     ];
 
     /**
@@ -103,7 +105,8 @@ class RtaTargetBindList implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'page' => 'Page',
         'size' => 'Size',
-        'outerTargetId' => 'OuterTargetId'
+        'outerTargetId' => 'OuterTargetId',
+        'uId' => 'UId'
     ];
 
     /**
@@ -114,7 +117,8 @@ class RtaTargetBindList implements ModelInterface, ArrayAccess
     protected static $setters = [
         'page' => 'setPage',
         'size' => 'setSize',
-        'outerTargetId' => 'setOuterTargetId'
+        'outerTargetId' => 'setOuterTargetId',
+        'uId' => 'setUId'
     ];
 
     /**
@@ -125,7 +129,8 @@ class RtaTargetBindList implements ModelInterface, ArrayAccess
     protected static $getters = [
         'page' => 'getPage',
         'size' => 'getSize',
-        'outerTargetId' => 'getOuterTargetId'
+        'outerTargetId' => 'getOuterTargetId',
+        'uId' => 'getUId'
     ];
 
     /**
@@ -191,6 +196,7 @@ class RtaTargetBindList implements ModelInterface, ArrayAccess
         $this->container['page'] = isset($data['page']) ? $data['page'] : null;
         $this->container['size'] = isset($data['size']) ? $data['size'] : null;
         $this->container['outerTargetId'] = isset($data['outerTargetId']) ? $data['outerTargetId'] : null;
+        $this->container['uId'] = isset($data['uId']) ? $data['uId'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class RtaTargetBindList implements ModelInterface, ArrayAccess
     public function setOuterTargetId($outerTargetId)
     {
         $this->container['outerTargetId'] = $outerTargetId;
+
+        return $this;
+    }
+
+    /**
+     * Gets uId
+     *
+     * @return int|mixed
+     */
+    public function getUId()
+    {
+        return $this->container['uId'];
+    }
+
+    /**
+     * Sets uId
+     *
+     * @param int|mixed $uId uId
+     *
+     * @return $this
+     */
+    public function setUId($uId)
+    {
+        $this->container['uId'] = $uId;
 
         return $this;
     }

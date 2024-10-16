@@ -672,20 +672,21 @@ class MarketingTargetAssetsApi
      *
      * 获取可投放推广内容资产列表
      *
-     * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $marketingTargetType marketingTargetType (required)
+     * @param  int|mixed $accountId accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
+     * @param  int|mixed $organizationId organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\MarketingTargetAssetsGetResponse|mixed
      */
-    public function marketingTargetAssetsGet($accountId, $marketingTargetType, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function marketingTargetAssetsGet($marketingTargetType, $accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
-        list($response) = $this->marketingTargetAssetsGetWithHttpInfo($accountId, $marketingTargetType, $filtering, $page, $pageSize, $fields);
+        list($response) = $this->marketingTargetAssetsGetWithHttpInfo($marketingTargetType, $accountId, $filtering, $page, $pageSize, $organizationId, $fields);
         return $response;
     }
 
@@ -694,21 +695,22 @@ class MarketingTargetAssetsApi
      *
      * 获取可投放推广内容资产列表
      *
-     * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\MarketingTargetAssetsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function marketingTargetAssetsGetWithHttpInfo($accountId, $marketingTargetType, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function marketingTargetAssetsGetWithHttpInfo($marketingTargetType, $accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\MarketingTargetAssetsGetResponse';
-        $request = $this->marketingTargetAssetsGetRequest($accountId, $marketingTargetType, $filtering, $page, $pageSize, $fields);
+        $request = $this->marketingTargetAssetsGetRequest($marketingTargetType, $accountId, $filtering, $page, $pageSize, $organizationId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -774,19 +776,20 @@ class MarketingTargetAssetsApi
      *
      * 获取可投放推广内容资产列表
      *
-     * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function marketingTargetAssetsGetAsync($accountId, $marketingTargetType, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function marketingTargetAssetsGetAsync($marketingTargetType, $accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
-        return $this->marketingTargetAssetsGetAsyncWithHttpInfo($accountId, $marketingTargetType, $filtering, $page, $pageSize, $fields)
+        return $this->marketingTargetAssetsGetAsyncWithHttpInfo($marketingTargetType, $accountId, $filtering, $page, $pageSize, $organizationId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -799,20 +802,21 @@ class MarketingTargetAssetsApi
      *
      * 获取可投放推广内容资产列表
      *
-     * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function marketingTargetAssetsGetAsyncWithHttpInfo($accountId, $marketingTargetType, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function marketingTargetAssetsGetAsyncWithHttpInfo($marketingTargetType, $accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\MarketingTargetAssetsGetResponse';
-        $request = $this->marketingTargetAssetsGetRequest($accountId, $marketingTargetType, $filtering, $page, $pageSize, $fields);
+        $request = $this->marketingTargetAssetsGetRequest($marketingTargetType, $accountId, $filtering, $page, $pageSize, $organizationId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -854,24 +858,19 @@ class MarketingTargetAssetsApi
     /**
      * Create request for operation 'marketingTargetAssetsGet'
      *
-     * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function marketingTargetAssetsGetRequest($accountId, $marketingTargetType, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    protected function marketingTargetAssetsGetRequest($marketingTargetType, $accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
-        // verify the required parameter 'accountId' is set
-        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling marketingTargetAssetsGet'
-            );
-        }
         // verify the required parameter 'marketingTargetType' is set
         if ($marketingTargetType === null || (is_array($marketingTargetType) && count($marketingTargetType) === 0)) {
             throw new \InvalidArgumentException(
@@ -908,6 +907,10 @@ class MarketingTargetAssetsApi
         // query params
         if ($pageSize !== null) {
             $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
+        }
+        // query params
+        if ($organizationId !== null) {
+            $queryParams['organization_id'] = ObjectSerializer::toQueryValue($organizationId);
         }
         // query params
         if (is_array($fields)) {

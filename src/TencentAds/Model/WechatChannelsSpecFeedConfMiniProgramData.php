@@ -1,6 +1,6 @@
 <?php
 /**
- * CropCustomizedSpec
+ * WechatChannelsSpecFeedConfMiniProgramData
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CropCustomizedSpec Class Doc Comment
+ * WechatChannelsSpecFeedConfMiniProgramData Class Doc Comment
  *
  * @category Class
- * @description 裁剪信息
+ * @description 小程序跳转
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CropCustomizedSpec implements ModelInterface, ArrayAccess
+class WechatChannelsSpecFeedConfMiniProgramData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'crop_customized_spec';
+    protected static $swaggerModelName = 'wechat_channels_spec_feed_conf_mini_program_data';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +58,9 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'width' => 'int',
-        'height' => 'int',
-        'axisX' => 'int',
-        'axisY' => 'int'
+        'miniProgramGhId' => 'string',
+        'miniProgramPath' => 'string',
+        'miniProgramAppId' => 'string'
     ];
 
     /**
@@ -70,10 +69,9 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'width' => 'int64',
-        'height' => 'int64',
-        'axisX' => 'int64',
-        'axisY' => 'int64'
+        'miniProgramGhId' => null,
+        'miniProgramPath' => null,
+        'miniProgramAppId' => null
     ];
 
     /**
@@ -103,10 +101,9 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'width' => 'width',
-        'height' => 'height',
-        'axisX' => 'axis_x',
-        'axisY' => 'axis_y'
+        'miniProgramGhId' => 'mini_program_gh_id',
+        'miniProgramPath' => 'mini_program_path',
+        'miniProgramAppId' => 'mini_program_app_id'
     ];
 
     /**
@@ -115,10 +112,9 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'width' => 'setWidth',
-        'height' => 'setHeight',
-        'axisX' => 'setAxisX',
-        'axisY' => 'setAxisY'
+        'miniProgramGhId' => 'setMiniProgramGhId',
+        'miniProgramPath' => 'setMiniProgramPath',
+        'miniProgramAppId' => 'setMiniProgramAppId'
     ];
 
     /**
@@ -127,10 +123,9 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'width' => 'getWidth',
-        'height' => 'getHeight',
-        'axisX' => 'getAxisX',
-        'axisY' => 'getAxisY'
+        'miniProgramGhId' => 'getMiniProgramGhId',
+        'miniProgramPath' => 'getMiniProgramPath',
+        'miniProgramAppId' => 'getMiniProgramAppId'
     ];
 
     /**
@@ -193,10 +188,9 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
-        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
-        $this->container['axisX'] = isset($data['axisX']) ? $data['axisX'] : null;
-        $this->container['axisY'] = isset($data['axisY']) ? $data['axisY'] : null;
+        $this->container['miniProgramGhId'] = isset($data['miniProgramGhId']) ? $data['miniProgramGhId'] : null;
+        $this->container['miniProgramPath'] = isset($data['miniProgramPath']) ? $data['miniProgramPath'] : null;
+        $this->container['miniProgramAppId'] = isset($data['miniProgramAppId']) ? $data['miniProgramAppId'] : null;
     }
 
     /**
@@ -224,97 +218,73 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets width
+     * Gets miniProgramGhId
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getWidth()
+    public function getMiniProgramGhId()
     {
-        return $this->container['width'];
+        return $this->container['miniProgramGhId'];
     }
 
     /**
-     * Sets width
+     * Sets miniProgramGhId
      *
-     * @param int|mixed $width width
+     * @param string|mixed $miniProgramGhId miniProgramGhId
      *
      * @return $this
      */
-    public function setWidth($width)
+    public function setMiniProgramGhId($miniProgramGhId)
     {
-        $this->container['width'] = $width;
+        $this->container['miniProgramGhId'] = $miniProgramGhId;
 
         return $this;
     }
 
     /**
-     * Gets height
+     * Gets miniProgramPath
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getHeight()
+    public function getMiniProgramPath()
     {
-        return $this->container['height'];
+        return $this->container['miniProgramPath'];
     }
 
     /**
-     * Sets height
+     * Sets miniProgramPath
      *
-     * @param int|mixed $height height
+     * @param string|mixed $miniProgramPath miniProgramPath
      *
      * @return $this
      */
-    public function setHeight($height)
+    public function setMiniProgramPath($miniProgramPath)
     {
-        $this->container['height'] = $height;
+        $this->container['miniProgramPath'] = $miniProgramPath;
 
         return $this;
     }
 
     /**
-     * Gets axisX
+     * Gets miniProgramAppId
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getAxisX()
+    public function getMiniProgramAppId()
     {
-        return $this->container['axisX'];
+        return $this->container['miniProgramAppId'];
     }
 
     /**
-     * Sets axisX
+     * Sets miniProgramAppId
      *
-     * @param int|mixed $axisX axisX
+     * @param string|mixed $miniProgramAppId miniProgramAppId
      *
      * @return $this
      */
-    public function setAxisX($axisX)
+    public function setMiniProgramAppId($miniProgramAppId)
     {
-        $this->container['axisX'] = $axisX;
-
-        return $this;
-    }
-
-    /**
-     * Gets axisY
-     *
-     * @return int|mixed
-     */
-    public function getAxisY()
-    {
-        return $this->container['axisY'];
-    }
-
-    /**
-     * Sets axisY
-     *
-     * @param int|mixed $axisY axisY
-     *
-     * @return $this
-     */
-    public function setAxisY($axisY)
-    {
-        $this->container['axisY'] = $axisY;
+        $this->container['miniProgramAppId'] = $miniProgramAppId;
 
         return $this;
     }

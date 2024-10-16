@@ -102,16 +102,15 @@ class CreativeTemplateApi
      * @param  string[]|mixed $siteSet siteSet (optional)
      * @param  string|mixed $dynamicCreativeType dynamicCreativeType (optional)
      * @param  int|mixed $creativeTemplateId creativeTemplateId (optional)
-     * @param  int|mixed $conversionLinkAssetId conversionLinkAssetId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\CreativeTemplateGetResponse|mixed
      */
-    public function creativeTemplateGet($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $conversionLinkAssetId = null, $fields = null)
+    public function creativeTemplateGet($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $fields = null)
     {
-        list($response) = $this->creativeTemplateGetWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $conversionLinkAssetId, $fields);
+        list($response) = $this->creativeTemplateGetWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $fields);
         return $response;
     }
 
@@ -130,17 +129,16 @@ class CreativeTemplateApi
      * @param  string[]|mixed $siteSet (optional)
      * @param  string|mixed $dynamicCreativeType (optional)
      * @param  int|mixed $creativeTemplateId (optional)
-     * @param  int|mixed $conversionLinkAssetId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\CreativeTemplateGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function creativeTemplateGetWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $conversionLinkAssetId = null, $fields = null)
+    public function creativeTemplateGetWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\CreativeTemplateGetResponse';
-        $request = $this->creativeTemplateGetRequest($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $conversionLinkAssetId, $fields);
+        $request = $this->creativeTemplateGetRequest($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -216,15 +214,14 @@ class CreativeTemplateApi
      * @param  string[]|mixed $siteSet (optional)
      * @param  string|mixed $dynamicCreativeType (optional)
      * @param  int|mixed $creativeTemplateId (optional)
-     * @param  int|mixed $conversionLinkAssetId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function creativeTemplateGetAsync($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $conversionLinkAssetId = null, $fields = null)
+    public function creativeTemplateGetAsync($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $fields = null)
     {
-        return $this->creativeTemplateGetAsyncWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $conversionLinkAssetId, $fields)
+        return $this->creativeTemplateGetAsyncWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -247,16 +244,15 @@ class CreativeTemplateApi
      * @param  string[]|mixed $siteSet (optional)
      * @param  string|mixed $dynamicCreativeType (optional)
      * @param  int|mixed $creativeTemplateId (optional)
-     * @param  int|mixed $conversionLinkAssetId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function creativeTemplateGetAsyncWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $conversionLinkAssetId = null, $fields = null)
+    public function creativeTemplateGetAsyncWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\CreativeTemplateGetResponse';
-        $request = $this->creativeTemplateGetRequest($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $conversionLinkAssetId, $fields);
+        $request = $this->creativeTemplateGetRequest($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -308,13 +304,12 @@ class CreativeTemplateApi
      * @param  string[]|mixed $siteSet (optional)
      * @param  string|mixed $dynamicCreativeType (optional)
      * @param  int|mixed $creativeTemplateId (optional)
-     * @param  int|mixed $conversionLinkAssetId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function creativeTemplateGetRequest($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $conversionLinkAssetId = null, $fields = null)
+    protected function creativeTemplateGetRequest($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -396,10 +391,6 @@ class CreativeTemplateApi
         // query params
         if ($creativeTemplateId !== null) {
             $queryParams['creative_template_id'] = ObjectSerializer::toQueryValue($creativeTemplateId);
-        }
-        // query params
-        if ($conversionLinkAssetId !== null) {
-            $queryParams['conversion_link_asset_id'] = ObjectSerializer::toQueryValue($conversionLinkAssetId);
         }
         // query params
         if (is_array($fields)) {

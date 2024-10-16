@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * IndividualQualification Class Doc Comment
  *
  * @category Class
- * @description 个人身份证明
+ * @description 身份证明
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

@@ -33,14 +33,19 @@ use TencentAds\Container\V3\BidwordApiContainer;
 use TencentAds\Container\V3\BidwordFlowApiContainer;
 use TencentAds\Container\V3\BrandApiContainer;
 use TencentAds\Container\V3\BusinessPointApiContainer;
+use TencentAds\Container\V3\CategoriesApiContainer;
+use TencentAds\Container\V3\CategoriesAttributeApiContainer;
+use TencentAds\Container\V3\ChannelsCommentApiContainer;
 use TencentAds\Container\V3\ChannelsFinderobjectApiContainer;
 use TencentAds\Container\V3\ChannelsLivenoticeinfoApiContainer;
 use TencentAds\Container\V3\ChannelsUserpageobjectsApiContainer;
 use TencentAds\Container\V3\CommentListApiContainer;
 use TencentAds\Container\V3\ComponentElementUrgeReviewApiContainer;
 use TencentAds\Container\V3\ComponentReviewResultsApiContainer;
+use TencentAds\Container\V3\ComponentSharingApiContainer;
 use TencentAds\Container\V3\ComponentsApiContainer;
 use TencentAds\Container\V3\ComponentsMetadataApiContainer;
+use TencentAds\Container\V3\ConversionLinkAssetAvailableApiContainer;
 use TencentAds\Container\V3\ConversionLinkAssetsApiContainer;
 use TencentAds\Container\V3\ConversionLinksApiContainer;
 use TencentAds\Container\V3\ConversionsApiContainer;
@@ -117,6 +122,7 @@ use TencentAds\Container\V3\MuseAiTaskApiContainer;
 use TencentAds\Container\V3\MuseAiUgcApiContainer;
 use TencentAds\Container\V3\OauthApiContainer;
 use TencentAds\Container\V3\ObjectCommentFlagApiContainer;
+use TencentAds\Container\V3\OperationLogListApiContainer;
 use TencentAds\Container\V3\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\V3\OrganizationAccountRelationApiContainer;
 use TencentAds\Container\V3\PagesApiContainer;
@@ -157,6 +163,7 @@ use TencentAds\Container\V3\VideoChannelFansDataApiContainer;
 use TencentAds\Container\V3\VideoChannelLeadsDataApiContainer;
 use TencentAds\Container\V3\VideoChannelLiveDataApiContainer;
 use TencentAds\Container\V3\VideosApiContainer;
+use TencentAds\Container\V3\WalletApiContainer;
 use TencentAds\Container\V3\WechatChannelsAccountsApiContainer;
 use TencentAds\Container\V3\WechatChannelsAdAccountApiContainer;
 use TencentAds\Container\V3\WechatChannelsAdAccountCertificationFileApiContainer;
@@ -171,6 +178,7 @@ use TencentAds\Container\V3\WechatPagesCsgrouplistApiContainer;
 use TencentAds\Container\V3\WechatPagesCustomApiContainer;
 use TencentAds\Container\V3\WechatPagesGrantinfoApiContainer;
 use TencentAds\Container\V3\WildcardsApiContainer;
+use TencentAds\Container\V3\WxGamePlayablePageApiContainer;
 use TencentAds\Container\V3\WxPackageAccountApiContainer;
 use TencentAds\Container\V3\WxPackagePackageApiContainer;
 use TencentAds\Container\V3\XijingComplexTemplateApiContainer;
@@ -279,6 +287,15 @@ class App
     /** @var BusinessPointApiContainer */
     public $businessPointApiContainer;
 
+    /** @var CategoriesApiContainer */
+    public $categoriesApiContainer;
+
+    /** @var CategoriesAttributeApiContainer */
+    public $categoriesAttributeApiContainer;
+
+    /** @var ChannelsCommentApiContainer */
+    public $channelsCommentApiContainer;
+
     /** @var ChannelsFinderobjectApiContainer */
     public $channelsFinderobjectApiContainer;
 
@@ -297,11 +314,17 @@ class App
     /** @var ComponentReviewResultsApiContainer */
     public $componentReviewResultsApiContainer;
 
+    /** @var ComponentSharingApiContainer */
+    public $componentSharingApiContainer;
+
     /** @var ComponentsApiContainer */
     public $componentsApiContainer;
 
     /** @var ComponentsMetadataApiContainer */
     public $componentsMetadataApiContainer;
+
+    /** @var ConversionLinkAssetAvailableApiContainer */
+    public $conversionLinkAssetAvailableApiContainer;
 
     /** @var ConversionLinkAssetsApiContainer */
     public $conversionLinkAssetsApiContainer;
@@ -531,6 +554,9 @@ class App
     /** @var ObjectCommentFlagApiContainer */
     public $objectCommentFlagApiContainer;
 
+    /** @var OperationLogListApiContainer */
+    public $operationLogListApiContainer;
+
     /** @var OptimizationGoalPermissionsApiContainer */
     public $optimizationGoalPermissionsApiContainer;
 
@@ -651,6 +677,9 @@ class App
     /** @var VideosApiContainer */
     public $videosApiContainer;
 
+    /** @var WalletApiContainer */
+    public $walletApiContainer;
+
     /** @var WechatChannelsAccountsApiContainer */
     public $wechatChannelsAccountsApiContainer;
 
@@ -692,6 +721,9 @@ class App
 
     /** @var WildcardsApiContainer */
     public $wildcardsApiContainer;
+
+    /** @var WxGamePlayablePageApiContainer */
+    public $wxGamePlayablePageApiContainer;
 
     /** @var WxPackageAccountApiContainer */
     public $wxPackageAccountApiContainer;
@@ -1168,6 +1200,48 @@ class App
 
 
     /**
+     * @return CategoriesApiContainer
+     */
+    public function categories()
+    {
+        if (empty($this->categoriesApiContainer)) {
+            $container = new CategoriesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->categoriesApiContainer = $container;
+        }
+        return $this->categoriesApiContainer;
+    }
+
+
+    /**
+     * @return CategoriesAttributeApiContainer
+     */
+    public function categoriesAttribute()
+    {
+        if (empty($this->categoriesAttributeApiContainer)) {
+            $container = new CategoriesAttributeApiContainer();
+            $container->init($this, $this->getClient());
+            $this->categoriesAttributeApiContainer = $container;
+        }
+        return $this->categoriesAttributeApiContainer;
+    }
+
+
+    /**
+     * @return ChannelsCommentApiContainer
+     */
+    public function channelsComment()
+    {
+        if (empty($this->channelsCommentApiContainer)) {
+            $container = new ChannelsCommentApiContainer();
+            $container->init($this, $this->getClient());
+            $this->channelsCommentApiContainer = $container;
+        }
+        return $this->channelsCommentApiContainer;
+    }
+
+
+    /**
      * @return ChannelsFinderobjectApiContainer
      */
     public function channelsFinderobject()
@@ -1252,6 +1326,20 @@ class App
 
 
     /**
+     * @return ComponentSharingApiContainer
+     */
+    public function componentSharing()
+    {
+        if (empty($this->componentSharingApiContainer)) {
+            $container = new ComponentSharingApiContainer();
+            $container->init($this, $this->getClient());
+            $this->componentSharingApiContainer = $container;
+        }
+        return $this->componentSharingApiContainer;
+    }
+
+
+    /**
      * @return ComponentsApiContainer
      */
     public function components()
@@ -1276,6 +1364,20 @@ class App
             $this->componentsMetadataApiContainer = $container;
         }
         return $this->componentsMetadataApiContainer;
+    }
+
+
+    /**
+     * @return ConversionLinkAssetAvailableApiContainer
+     */
+    public function conversionLinkAssetAvailable()
+    {
+        if (empty($this->conversionLinkAssetAvailableApiContainer)) {
+            $container = new ConversionLinkAssetAvailableApiContainer();
+            $container->init($this, $this->getClient());
+            $this->conversionLinkAssetAvailableApiContainer = $container;
+        }
+        return $this->conversionLinkAssetAvailableApiContainer;
     }
 
 
@@ -2344,6 +2446,20 @@ class App
 
 
     /**
+     * @return OperationLogListApiContainer
+     */
+    public function operationLogList()
+    {
+        if (empty($this->operationLogListApiContainer)) {
+            $container = new OperationLogListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->operationLogListApiContainer = $container;
+        }
+        return $this->operationLogListApiContainer;
+    }
+
+
+    /**
      * @return OptimizationGoalPermissionsApiContainer
      */
     public function optimizationGoalPermissions()
@@ -2904,6 +3020,20 @@ class App
 
 
     /**
+     * @return WalletApiContainer
+     */
+    public function wallet()
+    {
+        if (empty($this->walletApiContainer)) {
+            $container = new WalletApiContainer();
+            $container->init($this, $this->getClient());
+            $this->walletApiContainer = $container;
+        }
+        return $this->walletApiContainer;
+    }
+
+
+    /**
      * @return WechatChannelsAccountsApiContainer
      */
     public function wechatChannelsAccounts()
@@ -3096,6 +3226,20 @@ class App
             $this->wildcardsApiContainer = $container;
         }
         return $this->wildcardsApiContainer;
+    }
+
+
+    /**
+     * @return WxGamePlayablePageApiContainer
+     */
+    public function wxGamePlayablePage()
+    {
+        if (empty($this->wxGamePlayablePageApiContainer)) {
+            $container = new WxGamePlayablePageApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wxGamePlayablePageApiContainer = $container;
+        }
+        return $this->wxGamePlayablePageApiContainer;
     }
 
 

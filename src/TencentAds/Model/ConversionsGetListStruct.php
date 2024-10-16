@@ -85,7 +85,10 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoalMinPrice' => 'int',
         'deepBehaviorAdvancedGoalMaxPrice' => 'int',
         'deepOptimizationGoalType' => '\TencentAds\Model\DeepOptimizationGoalType',
-        'forwardLinkAssist' => '\TencentAds\Model\IntOptimizationGoal'
+        'forwardLinkAssist' => '\TencentAds\Model\IntOptimizationGoal',
+        'incubationOptimizationGoal' => '\TencentAds\Model\IntOptimizationGoal',
+        'disableMessage' => 'string',
+        'inspectionFreeSwitch' => 'bool'
     ];
 
     /**
@@ -121,7 +124,10 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoalMinPrice' => 'int64',
         'deepBehaviorAdvancedGoalMaxPrice' => 'int64',
         'deepOptimizationGoalType' => null,
-        'forwardLinkAssist' => null
+        'forwardLinkAssist' => null,
+        'incubationOptimizationGoal' => null,
+        'disableMessage' => null,
+        'inspectionFreeSwitch' => null
     ];
 
     /**
@@ -178,7 +184,10 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoalMinPrice' => 'deep_behavior_advanced_goal_min_price',
         'deepBehaviorAdvancedGoalMaxPrice' => 'deep_behavior_advanced_goal_max_price',
         'deepOptimizationGoalType' => 'deep_optimization_goal_type',
-        'forwardLinkAssist' => 'forward_link_assist'
+        'forwardLinkAssist' => 'forward_link_assist',
+        'incubationOptimizationGoal' => 'incubation_optimization_goal',
+        'disableMessage' => 'disable_message',
+        'inspectionFreeSwitch' => 'inspection_free_switch'
     ];
 
     /**
@@ -214,7 +223,10 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoalMinPrice' => 'setDeepBehaviorAdvancedGoalMinPrice',
         'deepBehaviorAdvancedGoalMaxPrice' => 'setDeepBehaviorAdvancedGoalMaxPrice',
         'deepOptimizationGoalType' => 'setDeepOptimizationGoalType',
-        'forwardLinkAssist' => 'setForwardLinkAssist'
+        'forwardLinkAssist' => 'setForwardLinkAssist',
+        'incubationOptimizationGoal' => 'setIncubationOptimizationGoal',
+        'disableMessage' => 'setDisableMessage',
+        'inspectionFreeSwitch' => 'setInspectionFreeSwitch'
     ];
 
     /**
@@ -250,7 +262,10 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoalMinPrice' => 'getDeepBehaviorAdvancedGoalMinPrice',
         'deepBehaviorAdvancedGoalMaxPrice' => 'getDeepBehaviorAdvancedGoalMaxPrice',
         'deepOptimizationGoalType' => 'getDeepOptimizationGoalType',
-        'forwardLinkAssist' => 'getForwardLinkAssist'
+        'forwardLinkAssist' => 'getForwardLinkAssist',
+        'incubationOptimizationGoal' => 'getIncubationOptimizationGoal',
+        'disableMessage' => 'getDisableMessage',
+        'inspectionFreeSwitch' => 'getInspectionFreeSwitch'
     ];
 
     /**
@@ -341,6 +356,9 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['deepBehaviorAdvancedGoalMaxPrice'] = isset($data['deepBehaviorAdvancedGoalMaxPrice']) ? $data['deepBehaviorAdvancedGoalMaxPrice'] : null;
         $this->container['deepOptimizationGoalType'] = isset($data['deepOptimizationGoalType']) ? $data['deepOptimizationGoalType'] : null;
         $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
+        $this->container['incubationOptimizationGoal'] = isset($data['incubationOptimizationGoal']) ? $data['incubationOptimizationGoal'] : null;
+        $this->container['disableMessage'] = isset($data['disableMessage']) ? $data['disableMessage'] : null;
+        $this->container['inspectionFreeSwitch'] = isset($data['inspectionFreeSwitch']) ? $data['inspectionFreeSwitch'] : null;
     }
 
     /**
@@ -1035,6 +1053,78 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     public function setForwardLinkAssist($forwardLinkAssist)
     {
         $this->container['forwardLinkAssist'] = $forwardLinkAssist;
+
+        return $this;
+    }
+
+    /**
+     * Gets incubationOptimizationGoal
+     *
+     * @return \TencentAds\Model\IntOptimizationGoal|mixed
+     */
+    public function getIncubationOptimizationGoal()
+    {
+        return $this->container['incubationOptimizationGoal'];
+    }
+
+    /**
+     * Sets incubationOptimizationGoal
+     *
+     * @param \TencentAds\Model\IntOptimizationGoal|mixed $incubationOptimizationGoal incubationOptimizationGoal
+     *
+     * @return $this
+     */
+    public function setIncubationOptimizationGoal($incubationOptimizationGoal)
+    {
+        $this->container['incubationOptimizationGoal'] = $incubationOptimizationGoal;
+
+        return $this;
+    }
+
+    /**
+     * Gets disableMessage
+     *
+     * @return string|mixed
+     */
+    public function getDisableMessage()
+    {
+        return $this->container['disableMessage'];
+    }
+
+    /**
+     * Sets disableMessage
+     *
+     * @param string|mixed $disableMessage disableMessage
+     *
+     * @return $this
+     */
+    public function setDisableMessage($disableMessage)
+    {
+        $this->container['disableMessage'] = $disableMessage;
+
+        return $this;
+    }
+
+    /**
+     * Gets inspectionFreeSwitch
+     *
+     * @return bool|mixed
+     */
+    public function getInspectionFreeSwitch()
+    {
+        return $this->container['inspectionFreeSwitch'];
+    }
+
+    /**
+     * Sets inspectionFreeSwitch
+     *
+     * @param bool|mixed $inspectionFreeSwitch inspectionFreeSwitch
+     *
+     * @return $this
+     */
+    public function setInspectionFreeSwitch($inspectionFreeSwitch)
+    {
+        $this->container['inspectionFreeSwitch'] = $inspectionFreeSwitch;
 
         return $this;
     }

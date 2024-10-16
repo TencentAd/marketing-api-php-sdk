@@ -1,6 +1,6 @@
 <?php
 /**
- * CropSmartSpec
+ * RewardquestWechatChannelsSpecImageInfo
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CropSmartSpec Class Doc Comment
+ * RewardquestWechatChannelsSpecImageInfo Class Doc Comment
  *
  * @category Class
- * @description 智能裁剪信息
+ * @description 视频号图片信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CropSmartSpec implements ModelInterface, ArrayAccess
+class RewardquestWechatChannelsSpecImageInfo implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'crop_smart_spec';
+    protected static $swaggerModelName = 'rewardquest_wechat_channels_spec_image_info';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,11 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'url' => 'string',
         'width' => 'int',
-        'height' => 'int'
+        'height' => 'int',
+        'size' => 'int',
+        'materialId' => 'int'
     ];
 
     /**
@@ -68,8 +71,11 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'url' => null,
         'width' => 'int64',
-        'height' => 'int64'
+        'height' => 'int64',
+        'size' => 'int64',
+        'materialId' => 'int64'
     ];
 
     /**
@@ -99,8 +105,11 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'url' => 'url',
         'width' => 'width',
-        'height' => 'height'
+        'height' => 'height',
+        'size' => 'size',
+        'materialId' => 'material_id'
     ];
 
     /**
@@ -109,8 +118,11 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'url' => 'setUrl',
         'width' => 'setWidth',
-        'height' => 'setHeight'
+        'height' => 'setHeight',
+        'size' => 'setSize',
+        'materialId' => 'setMaterialId'
     ];
 
     /**
@@ -119,8 +131,11 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'url' => 'getUrl',
         'width' => 'getWidth',
-        'height' => 'getHeight'
+        'height' => 'getHeight',
+        'size' => 'getSize',
+        'materialId' => 'getMaterialId'
     ];
 
     /**
@@ -183,8 +198,11 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['width'] = isset($data['width']) ? $data['width'] : null;
         $this->container['height'] = isset($data['height']) ? $data['height'] : null;
+        $this->container['size'] = isset($data['size']) ? $data['size'] : null;
+        $this->container['materialId'] = isset($data['materialId']) ? $data['materialId'] : null;
     }
 
     /**
@@ -210,6 +228,30 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets url
+     *
+     * @return string|mixed
+     */
+    public function getUrl()
+    {
+        return $this->container['url'];
+    }
+
+    /**
+     * Sets url
+     *
+     * @param string|mixed $url url
+     *
+     * @return $this
+     */
+    public function setUrl($url)
+    {
+        $this->container['url'] = $url;
+
+        return $this;
+    }
 
     /**
      * Gets width
@@ -255,6 +297,54 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
     public function setHeight($height)
     {
         $this->container['height'] = $height;
+
+        return $this;
+    }
+
+    /**
+     * Gets size
+     *
+     * @return int|mixed
+     */
+    public function getSize()
+    {
+        return $this->container['size'];
+    }
+
+    /**
+     * Sets size
+     *
+     * @param int|mixed $size size
+     *
+     * @return $this
+     */
+    public function setSize($size)
+    {
+        $this->container['size'] = $size;
+
+        return $this;
+    }
+
+    /**
+     * Gets materialId
+     *
+     * @return int|mixed
+     */
+    public function getMaterialId()
+    {
+        return $this->container['materialId'];
+    }
+
+    /**
+     * Sets materialId
+     *
+     * @param int|mixed $materialId materialId
+     *
+     * @return $this
+     */
+    public function setMaterialId($materialId)
+    {
+        $this->container['materialId'] = $materialId;
 
         return $this;
     }

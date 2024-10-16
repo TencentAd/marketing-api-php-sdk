@@ -112,7 +112,9 @@ class AdgroupsApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $isDeleted = isset($params['is_deleted']) ? $params['is_deleted'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->adgroupsGet($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+            $paginationMode = isset($params['pagination_mode']) ? $params['pagination_mode'] : null;
+            $cursor = isset($params['cursor']) ? $params['cursor'] : null;
+            $response = $this->apiInstance->adgroupsGet($accountId, $filtering, $page, $pageSize, $isDeleted, $fields, $paginationMode, $cursor);
             return $this->handleResponse($response);
         });
     }
@@ -133,7 +135,9 @@ class AdgroupsApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $isDeleted = isset($params['is_deleted']) ? $params['is_deleted'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->adgroupsGetAsync($accountId, $filtering, $page, $pageSize, $isDeleted, $fields);
+            $paginationMode = isset($params['pagination_mode']) ? $params['pagination_mode'] : null;
+            $cursor = isset($params['cursor']) ? $params['cursor'] : null;
+            $response = $this->apiInstance->adgroupsGetAsync($accountId, $filtering, $page, $pageSize, $isDeleted, $fields, $paginationMode, $cursor);
             return $response;
         });
     }

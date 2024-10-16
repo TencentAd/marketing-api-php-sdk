@@ -57,6 +57,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'registrationType' => '\TencentAds\Model\V3\CustomerRegistrationType',
         'corporationName' => 'string',
         'corporationLicence' => 'string',
         'certificationImageId' => 'string',
@@ -75,6 +76,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'registrationType' => null,
         'corporationName' => null,
         'corporationLicence' => null,
         'certificationImageId' => null,
@@ -114,6 +116,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'registrationType' => 'registration_type',
         'corporationName' => 'corporation_name',
         'corporationLicence' => 'corporation_licence',
         'certificationImageId' => 'certification_image_id',
@@ -132,6 +135,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'registrationType' => 'setRegistrationType',
         'corporationName' => 'setCorporationName',
         'corporationLicence' => 'setCorporationLicence',
         'certificationImageId' => 'setCertificationImageId',
@@ -150,6 +154,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'registrationType' => 'getRegistrationType',
         'corporationName' => 'getCorporationName',
         'corporationLicence' => 'getCorporationLicence',
         'certificationImageId' => 'getCertificationImageId',
@@ -222,6 +227,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['registrationType'] = isset($data['registrationType']) ? $data['registrationType'] : null;
         $this->container['corporationName'] = isset($data['corporationName']) ? $data['corporationName'] : null;
         $this->container['corporationLicence'] = isset($data['corporationLicence']) ? $data['corporationLicence'] : null;
         $this->container['certificationImageId'] = isset($data['certificationImageId']) ? $data['certificationImageId'] : null;
@@ -257,6 +263,30 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets registrationType
+     *
+     * @return \TencentAds\Model\V3\CustomerRegistrationType|mixed
+     */
+    public function getRegistrationType()
+    {
+        return $this->container['registrationType'];
+    }
+
+    /**
+     * Sets registrationType
+     *
+     * @param \TencentAds\Model\V3\CustomerRegistrationType|mixed $registrationType registrationType
+     *
+     * @return $this
+     */
+    public function setRegistrationType($registrationType)
+    {
+        $this->container['registrationType'] = $registrationType;
+
+        return $this;
+    }
 
     /**
      * Gets corporationName

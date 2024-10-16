@@ -85,7 +85,16 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoalMinPrice' => 'int',
         'deepBehaviorAdvancedGoalMaxPrice' => 'int',
         'deepOptimizationGoalType' => '\TencentAds\Model\V3\DeepOptimizationGoalType',
-        'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal'
+        'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal',
+        'incubationOptimizationGoal' => '\TencentAds\Model\V3\OptimizationGoal',
+        'conversionLinkInfo' => '\TencentAds\Model\V3\ConversionLinkInfo',
+        'disableCode' => 'int',
+        'disableMessage' => 'string',
+        'inspectionFreeSwitch' => 'bool',
+        'customReportNodeList' => 'int[]',
+        'mustReportNodeList' => 'int[]',
+        'recommendReportNodeList' => 'int[]',
+        'conversionLinkNodes' => '\TencentAds\Model\V3\LinkNodeStruct[]'
     ];
 
     /**
@@ -121,7 +130,16 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoalMinPrice' => 'int64',
         'deepBehaviorAdvancedGoalMaxPrice' => 'int64',
         'deepOptimizationGoalType' => null,
-        'forwardLinkAssist' => null
+        'forwardLinkAssist' => null,
+        'incubationOptimizationGoal' => null,
+        'conversionLinkInfo' => null,
+        'disableCode' => 'int64',
+        'disableMessage' => null,
+        'inspectionFreeSwitch' => null,
+        'customReportNodeList' => 'int64',
+        'mustReportNodeList' => 'int64',
+        'recommendReportNodeList' => 'int64',
+        'conversionLinkNodes' => null
     ];
 
     /**
@@ -178,7 +196,16 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoalMinPrice' => 'deep_behavior_advanced_goal_min_price',
         'deepBehaviorAdvancedGoalMaxPrice' => 'deep_behavior_advanced_goal_max_price',
         'deepOptimizationGoalType' => 'deep_optimization_goal_type',
-        'forwardLinkAssist' => 'forward_link_assist'
+        'forwardLinkAssist' => 'forward_link_assist',
+        'incubationOptimizationGoal' => 'incubation_optimization_goal',
+        'conversionLinkInfo' => 'conversion_link_info',
+        'disableCode' => 'disable_code',
+        'disableMessage' => 'disable_message',
+        'inspectionFreeSwitch' => 'inspection_free_switch',
+        'customReportNodeList' => 'custom_report_node_list',
+        'mustReportNodeList' => 'must_report_node_list',
+        'recommendReportNodeList' => 'recommend_report_node_list',
+        'conversionLinkNodes' => 'conversion_link_nodes'
     ];
 
     /**
@@ -214,7 +241,16 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoalMinPrice' => 'setDeepBehaviorAdvancedGoalMinPrice',
         'deepBehaviorAdvancedGoalMaxPrice' => 'setDeepBehaviorAdvancedGoalMaxPrice',
         'deepOptimizationGoalType' => 'setDeepOptimizationGoalType',
-        'forwardLinkAssist' => 'setForwardLinkAssist'
+        'forwardLinkAssist' => 'setForwardLinkAssist',
+        'incubationOptimizationGoal' => 'setIncubationOptimizationGoal',
+        'conversionLinkInfo' => 'setConversionLinkInfo',
+        'disableCode' => 'setDisableCode',
+        'disableMessage' => 'setDisableMessage',
+        'inspectionFreeSwitch' => 'setInspectionFreeSwitch',
+        'customReportNodeList' => 'setCustomReportNodeList',
+        'mustReportNodeList' => 'setMustReportNodeList',
+        'recommendReportNodeList' => 'setRecommendReportNodeList',
+        'conversionLinkNodes' => 'setConversionLinkNodes'
     ];
 
     /**
@@ -250,7 +286,16 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'deepBehaviorAdvancedGoalMinPrice' => 'getDeepBehaviorAdvancedGoalMinPrice',
         'deepBehaviorAdvancedGoalMaxPrice' => 'getDeepBehaviorAdvancedGoalMaxPrice',
         'deepOptimizationGoalType' => 'getDeepOptimizationGoalType',
-        'forwardLinkAssist' => 'getForwardLinkAssist'
+        'forwardLinkAssist' => 'getForwardLinkAssist',
+        'incubationOptimizationGoal' => 'getIncubationOptimizationGoal',
+        'conversionLinkInfo' => 'getConversionLinkInfo',
+        'disableCode' => 'getDisableCode',
+        'disableMessage' => 'getDisableMessage',
+        'inspectionFreeSwitch' => 'getInspectionFreeSwitch',
+        'customReportNodeList' => 'getCustomReportNodeList',
+        'mustReportNodeList' => 'getMustReportNodeList',
+        'recommendReportNodeList' => 'getRecommendReportNodeList',
+        'conversionLinkNodes' => 'getConversionLinkNodes'
     ];
 
     /**
@@ -341,6 +386,15 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['deepBehaviorAdvancedGoalMaxPrice'] = isset($data['deepBehaviorAdvancedGoalMaxPrice']) ? $data['deepBehaviorAdvancedGoalMaxPrice'] : null;
         $this->container['deepOptimizationGoalType'] = isset($data['deepOptimizationGoalType']) ? $data['deepOptimizationGoalType'] : null;
         $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
+        $this->container['incubationOptimizationGoal'] = isset($data['incubationOptimizationGoal']) ? $data['incubationOptimizationGoal'] : null;
+        $this->container['conversionLinkInfo'] = isset($data['conversionLinkInfo']) ? $data['conversionLinkInfo'] : null;
+        $this->container['disableCode'] = isset($data['disableCode']) ? $data['disableCode'] : null;
+        $this->container['disableMessage'] = isset($data['disableMessage']) ? $data['disableMessage'] : null;
+        $this->container['inspectionFreeSwitch'] = isset($data['inspectionFreeSwitch']) ? $data['inspectionFreeSwitch'] : null;
+        $this->container['customReportNodeList'] = isset($data['customReportNodeList']) ? $data['customReportNodeList'] : null;
+        $this->container['mustReportNodeList'] = isset($data['mustReportNodeList']) ? $data['mustReportNodeList'] : null;
+        $this->container['recommendReportNodeList'] = isset($data['recommendReportNodeList']) ? $data['recommendReportNodeList'] : null;
+        $this->container['conversionLinkNodes'] = isset($data['conversionLinkNodes']) ? $data['conversionLinkNodes'] : null;
     }
 
     /**
@@ -1035,6 +1089,222 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     public function setForwardLinkAssist($forwardLinkAssist)
     {
         $this->container['forwardLinkAssist'] = $forwardLinkAssist;
+
+        return $this;
+    }
+
+    /**
+     * Gets incubationOptimizationGoal
+     *
+     * @return \TencentAds\Model\V3\OptimizationGoal|mixed
+     */
+    public function getIncubationOptimizationGoal()
+    {
+        return $this->container['incubationOptimizationGoal'];
+    }
+
+    /**
+     * Sets incubationOptimizationGoal
+     *
+     * @param \TencentAds\Model\V3\OptimizationGoal|mixed $incubationOptimizationGoal incubationOptimizationGoal
+     *
+     * @return $this
+     */
+    public function setIncubationOptimizationGoal($incubationOptimizationGoal)
+    {
+        $this->container['incubationOptimizationGoal'] = $incubationOptimizationGoal;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionLinkInfo
+     *
+     * @return \TencentAds\Model\V3\ConversionLinkInfo|mixed
+     */
+    public function getConversionLinkInfo()
+    {
+        return $this->container['conversionLinkInfo'];
+    }
+
+    /**
+     * Sets conversionLinkInfo
+     *
+     * @param \TencentAds\Model\V3\ConversionLinkInfo|mixed $conversionLinkInfo conversionLinkInfo
+     *
+     * @return $this
+     */
+    public function setConversionLinkInfo($conversionLinkInfo)
+    {
+        $this->container['conversionLinkInfo'] = $conversionLinkInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets disableCode
+     *
+     * @return int|mixed
+     */
+    public function getDisableCode()
+    {
+        return $this->container['disableCode'];
+    }
+
+    /**
+     * Sets disableCode
+     *
+     * @param int|mixed $disableCode disableCode
+     *
+     * @return $this
+     */
+    public function setDisableCode($disableCode)
+    {
+        $this->container['disableCode'] = $disableCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets disableMessage
+     *
+     * @return string|mixed
+     */
+    public function getDisableMessage()
+    {
+        return $this->container['disableMessage'];
+    }
+
+    /**
+     * Sets disableMessage
+     *
+     * @param string|mixed $disableMessage disableMessage
+     *
+     * @return $this
+     */
+    public function setDisableMessage($disableMessage)
+    {
+        $this->container['disableMessage'] = $disableMessage;
+
+        return $this;
+    }
+
+    /**
+     * Gets inspectionFreeSwitch
+     *
+     * @return bool|mixed
+     */
+    public function getInspectionFreeSwitch()
+    {
+        return $this->container['inspectionFreeSwitch'];
+    }
+
+    /**
+     * Sets inspectionFreeSwitch
+     *
+     * @param bool|mixed $inspectionFreeSwitch inspectionFreeSwitch
+     *
+     * @return $this
+     */
+    public function setInspectionFreeSwitch($inspectionFreeSwitch)
+    {
+        $this->container['inspectionFreeSwitch'] = $inspectionFreeSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets customReportNodeList
+     *
+     * @return int[]|mixed
+     */
+    public function getCustomReportNodeList()
+    {
+        return $this->container['customReportNodeList'];
+    }
+
+    /**
+     * Sets customReportNodeList
+     *
+     * @param int[]|mixed $customReportNodeList customReportNodeList
+     *
+     * @return $this
+     */
+    public function setCustomReportNodeList($customReportNodeList)
+    {
+        $this->container['customReportNodeList'] = $customReportNodeList;
+
+        return $this;
+    }
+
+    /**
+     * Gets mustReportNodeList
+     *
+     * @return int[]|mixed
+     */
+    public function getMustReportNodeList()
+    {
+        return $this->container['mustReportNodeList'];
+    }
+
+    /**
+     * Sets mustReportNodeList
+     *
+     * @param int[]|mixed $mustReportNodeList mustReportNodeList
+     *
+     * @return $this
+     */
+    public function setMustReportNodeList($mustReportNodeList)
+    {
+        $this->container['mustReportNodeList'] = $mustReportNodeList;
+
+        return $this;
+    }
+
+    /**
+     * Gets recommendReportNodeList
+     *
+     * @return int[]|mixed
+     */
+    public function getRecommendReportNodeList()
+    {
+        return $this->container['recommendReportNodeList'];
+    }
+
+    /**
+     * Sets recommendReportNodeList
+     *
+     * @param int[]|mixed $recommendReportNodeList recommendReportNodeList
+     *
+     * @return $this
+     */
+    public function setRecommendReportNodeList($recommendReportNodeList)
+    {
+        $this->container['recommendReportNodeList'] = $recommendReportNodeList;
+
+        return $this;
+    }
+
+    /**
+     * Gets conversionLinkNodes
+     *
+     * @return \TencentAds\Model\V3\LinkNodeStruct[]|mixed
+     */
+    public function getConversionLinkNodes()
+    {
+        return $this->container['conversionLinkNodes'];
+    }
+
+    /**
+     * Sets conversionLinkNodes
+     *
+     * @param \TencentAds\Model\V3\LinkNodeStruct[]|mixed $conversionLinkNodes conversionLinkNodes
+     *
+     * @return $this
+     */
+    public function setConversionLinkNodes($conversionLinkNodes)
+    {
+        $this->container['conversionLinkNodes'] = $conversionLinkNodes;
 
         return $this;
     }

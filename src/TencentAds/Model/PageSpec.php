@@ -62,8 +62,11 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageUrl' => 'string',
         'miniProgramSpec' => '\TencentAds\Model\AdcreativeMiniProgramSpec',
         'miniGameSpec' => '\TencentAds\Model\MiniGameSpec',
+        'wechatChannelsSpec' => '\TencentAds\Model\WechatChannelsSpec',
         'overrideCanvasHeadOption' => '\TencentAds\Model\OverrideCanvasHeadOption',
         'dynamicProductSpec' => '\TencentAds\Model\DynamicProductSpec',
+        'wechatOfficialAccountSpec' => '\TencentAds\Model\LandingPageWechatOfficialAccountSpec',
+        'searchBrandAreaSpec' => '\TencentAds\Model\SearchBrandAreaSpec',
         'channelsShopProductSpec' => '\TencentAds\Model\ChannelsShopProductSpec'
     ];
 
@@ -77,8 +80,11 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageUrl' => null,
         'miniProgramSpec' => null,
         'miniGameSpec' => null,
+        'wechatChannelsSpec' => null,
         'overrideCanvasHeadOption' => null,
         'dynamicProductSpec' => null,
+        'wechatOfficialAccountSpec' => null,
+        'searchBrandAreaSpec' => null,
         'channelsShopProductSpec' => null
     ];
 
@@ -113,8 +119,11 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageUrl' => 'page_url',
         'miniProgramSpec' => 'mini_program_spec',
         'miniGameSpec' => 'mini_game_spec',
+        'wechatChannelsSpec' => 'wechat_channels_spec',
         'overrideCanvasHeadOption' => 'override_canvas_head_option',
         'dynamicProductSpec' => 'dynamic_product_spec',
+        'wechatOfficialAccountSpec' => 'wechat_official_account_spec',
+        'searchBrandAreaSpec' => 'search_brand_area_spec',
         'channelsShopProductSpec' => 'channels_shop_product_spec'
     ];
 
@@ -128,8 +137,11 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageUrl' => 'setPageUrl',
         'miniProgramSpec' => 'setMiniProgramSpec',
         'miniGameSpec' => 'setMiniGameSpec',
+        'wechatChannelsSpec' => 'setWechatChannelsSpec',
         'overrideCanvasHeadOption' => 'setOverrideCanvasHeadOption',
         'dynamicProductSpec' => 'setDynamicProductSpec',
+        'wechatOfficialAccountSpec' => 'setWechatOfficialAccountSpec',
+        'searchBrandAreaSpec' => 'setSearchBrandAreaSpec',
         'channelsShopProductSpec' => 'setChannelsShopProductSpec'
     ];
 
@@ -143,8 +155,11 @@ class PageSpec implements ModelInterface, ArrayAccess
         'pageUrl' => 'getPageUrl',
         'miniProgramSpec' => 'getMiniProgramSpec',
         'miniGameSpec' => 'getMiniGameSpec',
+        'wechatChannelsSpec' => 'getWechatChannelsSpec',
         'overrideCanvasHeadOption' => 'getOverrideCanvasHeadOption',
         'dynamicProductSpec' => 'getDynamicProductSpec',
+        'wechatOfficialAccountSpec' => 'getWechatOfficialAccountSpec',
+        'searchBrandAreaSpec' => 'getSearchBrandAreaSpec',
         'channelsShopProductSpec' => 'getChannelsShopProductSpec'
     ];
 
@@ -212,8 +227,11 @@ class PageSpec implements ModelInterface, ArrayAccess
         $this->container['pageUrl'] = isset($data['pageUrl']) ? $data['pageUrl'] : null;
         $this->container['miniProgramSpec'] = isset($data['miniProgramSpec']) ? $data['miniProgramSpec'] : null;
         $this->container['miniGameSpec'] = isset($data['miniGameSpec']) ? $data['miniGameSpec'] : null;
+        $this->container['wechatChannelsSpec'] = isset($data['wechatChannelsSpec']) ? $data['wechatChannelsSpec'] : null;
         $this->container['overrideCanvasHeadOption'] = isset($data['overrideCanvasHeadOption']) ? $data['overrideCanvasHeadOption'] : null;
         $this->container['dynamicProductSpec'] = isset($data['dynamicProductSpec']) ? $data['dynamicProductSpec'] : null;
+        $this->container['wechatOfficialAccountSpec'] = isset($data['wechatOfficialAccountSpec']) ? $data['wechatOfficialAccountSpec'] : null;
+        $this->container['searchBrandAreaSpec'] = isset($data['searchBrandAreaSpec']) ? $data['searchBrandAreaSpec'] : null;
         $this->container['channelsShopProductSpec'] = isset($data['channelsShopProductSpec']) ? $data['channelsShopProductSpec'] : null;
     }
 
@@ -338,6 +356,30 @@ class PageSpec implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets wechatChannelsSpec
+     *
+     * @return \TencentAds\Model\WechatChannelsSpec|mixed
+     */
+    public function getWechatChannelsSpec()
+    {
+        return $this->container['wechatChannelsSpec'];
+    }
+
+    /**
+     * Sets wechatChannelsSpec
+     *
+     * @param \TencentAds\Model\WechatChannelsSpec|mixed $wechatChannelsSpec wechatChannelsSpec
+     *
+     * @return $this
+     */
+    public function setWechatChannelsSpec($wechatChannelsSpec)
+    {
+        $this->container['wechatChannelsSpec'] = $wechatChannelsSpec;
+
+        return $this;
+    }
+
+    /**
      * Gets overrideCanvasHeadOption
      *
      * @return \TencentAds\Model\OverrideCanvasHeadOption|mixed
@@ -381,6 +423,54 @@ class PageSpec implements ModelInterface, ArrayAccess
     public function setDynamicProductSpec($dynamicProductSpec)
     {
         $this->container['dynamicProductSpec'] = $dynamicProductSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatOfficialAccountSpec
+     *
+     * @return \TencentAds\Model\LandingPageWechatOfficialAccountSpec|mixed
+     */
+    public function getWechatOfficialAccountSpec()
+    {
+        return $this->container['wechatOfficialAccountSpec'];
+    }
+
+    /**
+     * Sets wechatOfficialAccountSpec
+     *
+     * @param \TencentAds\Model\LandingPageWechatOfficialAccountSpec|mixed $wechatOfficialAccountSpec wechatOfficialAccountSpec
+     *
+     * @return $this
+     */
+    public function setWechatOfficialAccountSpec($wechatOfficialAccountSpec)
+    {
+        $this->container['wechatOfficialAccountSpec'] = $wechatOfficialAccountSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets searchBrandAreaSpec
+     *
+     * @return \TencentAds\Model\SearchBrandAreaSpec|mixed
+     */
+    public function getSearchBrandAreaSpec()
+    {
+        return $this->container['searchBrandAreaSpec'];
+    }
+
+    /**
+     * Sets searchBrandAreaSpec
+     *
+     * @param \TencentAds\Model\SearchBrandAreaSpec|mixed $searchBrandAreaSpec searchBrandAreaSpec
+     *
+     * @return $this
+     */
+    public function setSearchBrandAreaSpec($searchBrandAreaSpec)
+    {
+        $this->container['searchBrandAreaSpec'] = $searchBrandAreaSpec;
 
         return $this;
     }

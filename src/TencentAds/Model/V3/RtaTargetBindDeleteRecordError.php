@@ -61,6 +61,7 @@ class RtaTargetBindDeleteRecordError implements ModelInterface, ArrayAccess
         'id' => 'int',
         'targetType' => 'int',
         'isMp' => 'int',
+        'outerTargetId' => 'string',
         'reason' => 'string'
     ];
 
@@ -73,6 +74,7 @@ class RtaTargetBindDeleteRecordError implements ModelInterface, ArrayAccess
         'id' => 'int64',
         'targetType' => 'int64',
         'isMp' => 'int64',
+        'outerTargetId' => null,
         'reason' => null
     ];
 
@@ -106,6 +108,7 @@ class RtaTargetBindDeleteRecordError implements ModelInterface, ArrayAccess
         'id' => 'Id',
         'targetType' => 'TargetType',
         'isMp' => 'IsMp',
+        'outerTargetId' => 'OuterTargetId',
         'reason' => 'reason'
     ];
 
@@ -118,6 +121,7 @@ class RtaTargetBindDeleteRecordError implements ModelInterface, ArrayAccess
         'id' => 'setId',
         'targetType' => 'setTargetType',
         'isMp' => 'setIsMp',
+        'outerTargetId' => 'setOuterTargetId',
         'reason' => 'setReason'
     ];
 
@@ -130,6 +134,7 @@ class RtaTargetBindDeleteRecordError implements ModelInterface, ArrayAccess
         'id' => 'getId',
         'targetType' => 'getTargetType',
         'isMp' => 'getIsMp',
+        'outerTargetId' => 'getOuterTargetId',
         'reason' => 'getReason'
     ];
 
@@ -196,6 +201,7 @@ class RtaTargetBindDeleteRecordError implements ModelInterface, ArrayAccess
         $this->container['id'] = isset($data['id']) ? $data['id'] : null;
         $this->container['targetType'] = isset($data['targetType']) ? $data['targetType'] : null;
         $this->container['isMp'] = isset($data['isMp']) ? $data['isMp'] : null;
+        $this->container['outerTargetId'] = isset($data['outerTargetId']) ? $data['outerTargetId'] : null;
         $this->container['reason'] = isset($data['reason']) ? $data['reason'] : null;
     }
 
@@ -291,6 +297,30 @@ class RtaTargetBindDeleteRecordError implements ModelInterface, ArrayAccess
     public function setIsMp($isMp)
     {
         $this->container['isMp'] = $isMp;
+
+        return $this;
+    }
+
+    /**
+     * Gets outerTargetId
+     *
+     * @return string|mixed
+     */
+    public function getOuterTargetId()
+    {
+        return $this->container['outerTargetId'];
+    }
+
+    /**
+     * Sets outerTargetId
+     *
+     * @param string|mixed $outerTargetId outerTargetId
+     *
+     * @return $this
+     */
+    public function setOuterTargetId($outerTargetId)
+    {
+        $this->container['outerTargetId'] = $outerTargetId;
 
         return $this;
     }

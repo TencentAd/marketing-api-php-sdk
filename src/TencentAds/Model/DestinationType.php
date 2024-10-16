@@ -98,6 +98,7 @@ class DestinationType
     const SEARCH_BRAND_AREA = 'PAGE_TYPE_SEARCH_BRAND_AREA';
     const WECHAT_CHANNELS_PROFILE = 'PAGE_TYPE_WECHAT_CHANNELS_PROFILE';
     const WECHAT_CHANNELS_SHOP_PRODUCT = 'PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT';
+    const WECHAT_QUERY_PAGE = 'PAGE_TYPE_WECHAT_QUERY_PAGE';
     
     /**
      * Gets allowable values of the enum
@@ -160,6 +161,7 @@ class DestinationType
             self::SEARCH_BRAND_AREA,
             self::WECHAT_CHANNELS_PROFILE,
             self::WECHAT_CHANNELS_SHOP_PRODUCT,
+            self::WECHAT_QUERY_PAGE,
         ];
     }
 }

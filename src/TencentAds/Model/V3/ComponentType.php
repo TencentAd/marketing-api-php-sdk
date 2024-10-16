@@ -78,6 +78,7 @@ class ComponentType
     const SOCIAL_SKILL = 'SOCIAL_SKILL';
     const MINI_CARD_LINK = 'MINI_CARD_LINK';
     const SUBLINK = 'SUBLINK';
+    const CONSULT_LINK = 'CONSULT_LINK';
     const V2_TITLE = 'V2_TITLE';
     const V2_DESCRIPTION = 'V2_DESCRIPTION';
     const V2_LONG_SUBLINK = 'V2_LONG_SUBLINK';
@@ -152,6 +153,7 @@ class ComponentType
             self::SOCIAL_SKILL,
             self::MINI_CARD_LINK,
             self::SUBLINK,
+            self::CONSULT_LINK,
             self::V2_TITLE,
             self::V2_DESCRIPTION,
             self::V2_LONG_SUBLINK,

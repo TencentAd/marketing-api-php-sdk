@@ -57,6 +57,7 @@ class DeepConversionWorthGoal
     const _1_DAY_PURCHASE_ROAS = 'GOAL_1DAY_PURCHASE_ROAS';
     const _1_DAY_MONETIZATION_ROAS = 'GOAL_1DAY_MONETIZATION_ROAS';
     const _7_DAY_MONETIZATION_ROAS = 'GOAL_7DAY_MONETIZATION_ROAS';
+    const FULL_PRICE_COURSE_CONVERSION_ROAS = 'GOAL_FULL_PRICE_COURSE_CONVERSION_ROAS';
     
     /**
      * Gets allowable values of the enum
@@ -78,6 +79,7 @@ class DeepConversionWorthGoal
             self::_1_DAY_PURCHASE_ROAS,
             self::_1_DAY_MONETIZATION_ROAS,
             self::_7_DAY_MONETIZATION_ROAS,
+            self::FULL_PRICE_COURSE_CONVERSION_ROAS,
         ];
     }
 }

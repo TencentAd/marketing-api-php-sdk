@@ -75,6 +75,8 @@ class SiteSetDefinition
     const MOBILE_UNION_DELETED = 'SITE_SET_MOBILE_UNION_DELETED';
     const THIRDPARTY = 'SITE_SET_THIRDPARTY';
     const JD_WAICAI = 'SITE_SET_JD_WAICAI';
+    const TENCENT_AMS = 'SITE_SET_TENCENT_AMS';
+    const OVERSEAS = 'SITE_SET_OVERSEAS';
     const PCQQ = 'SITE_SET_PCQQ';
     const KANDIAN = 'SITE_SET_KANDIAN';
     const QQ_MUSIC_GAME = 'SITE_SET_QQ_MUSIC_GAME';
@@ -137,6 +139,8 @@ class SiteSetDefinition
             self::MOBILE_UNION_DELETED,
             self::THIRDPARTY,
             self::JD_WAICAI,
+            self::TENCENT_AMS,
+            self::OVERSEAS,
             self::PCQQ,
             self::KANDIAN,
             self::QQ_MUSIC_GAME,

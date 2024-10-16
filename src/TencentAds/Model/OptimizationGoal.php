@@ -151,6 +151,7 @@ class OptimizationGoal
     const LOW_PRICE_INSURANCE_PAYMENT = 'OPTIMIZATIONGOAL_LOW_PRICE_INSURANCE_PAYMENT';
     const UNDERWRITING = 'OPTIMIZATIONGOAL_UNDERWRITING';
     const FIRST_WITHDRAW = 'OPTIMIZATIONGOAL_FIRST_WITHDRAW';
+    const BRIDGING_COURSE_COMPLETED = 'OPTIMIZATIONGOAL_BRIDGING_COURSE_COMPLETED';
     
     /**
      * Gets allowable values of the enum
@@ -266,6 +267,7 @@ class OptimizationGoal
             self::LOW_PRICE_INSURANCE_PAYMENT,
             self::UNDERWRITING,
             self::FIRST_WITHDRAW,
+            self::BRIDGING_COURSE_COMPLETED,
         ];
     }
 }

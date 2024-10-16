@@ -38,12 +38,13 @@ class VideosApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $videoFile = isset($params['video_file']) ? $params['video_file'] : null;
             $signature = isset($params['signature']) ? $params['signature'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $description = isset($params['description']) ? $params['description'] : null;
             $adcreativeTemplateId = isset($params['adcreative_template_id']) ? $params['adcreative_template_id'] : null;
-            $response = $this->apiInstance->videosAdd($accountId, $videoFile, $signature, $description, $adcreativeTemplateId);
+            $response = $this->apiInstance->videosAdd($videoFile, $signature, $accountId, $organizationId, $description, $adcreativeTemplateId);
             return $this->handleResponse($response);
         });
     }
@@ -58,12 +59,13 @@ class VideosApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $videoFile = isset($params['video_file']) ? $params['video_file'] : null;
             $signature = isset($params['signature']) ? $params['signature'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $description = isset($params['description']) ? $params['description'] : null;
             $adcreativeTemplateId = isset($params['adcreative_template_id']) ? $params['adcreative_template_id'] : null;
-            $response = $this->apiInstance->videosAddAsync($accountId, $videoFile, $signature, $description, $adcreativeTemplateId);
+            $response = $this->apiInstance->videosAddAsync($videoFile, $signature, $accountId, $organizationId, $description, $adcreativeTemplateId);
             return $response;
         });
     }
@@ -115,13 +117,14 @@ class VideosApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $labelId = isset($params['label_id']) ? $params['label_id'] : null;
             $businessScenario = isset($params['business_scenario']) ? $params['business_scenario'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->videosGet($accountId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
+            $response = $this->apiInstance->videosGet($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -137,13 +140,14 @@ class VideosApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $labelId = isset($params['label_id']) ? $params['label_id'] : null;
             $businessScenario = isset($params['business_scenario']) ? $params['business_scenario'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->videosGetAsync($accountId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
+            $response = $this->apiInstance->videosGetAsync($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
             return $response;
         });
     }

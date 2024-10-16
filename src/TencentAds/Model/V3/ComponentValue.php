@@ -88,6 +88,7 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'appPromotionVideo' => '\TencentAds\Model\V3\AppPromotionVideoComponent',
         'videoShowcase' => '\TencentAds\Model\V3\VideoShowcaseComponent',
         'imageShowcase' => '\TencentAds\Model\V3\ImageShowcaseComponent',
+        'socialSkill' => '\TencentAds\Model\V3\SocialSkillComponent',
         'miniCardLink' => '\TencentAds\Model\V3\MiniCardLinkComponent',
         'floatingZoneList' => '\TencentAds\Model\V3\FloatingZoneListComponent'
     ];
@@ -128,6 +129,7 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'appPromotionVideo' => null,
         'videoShowcase' => null,
         'imageShowcase' => null,
+        'socialSkill' => null,
         'miniCardLink' => null,
         'floatingZoneList' => null
     ];
@@ -189,6 +191,7 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'appPromotionVideo' => 'app_promotion_video',
         'videoShowcase' => 'video_showcase',
         'imageShowcase' => 'image_showcase',
+        'socialSkill' => 'social_skill',
         'miniCardLink' => 'mini_card_link',
         'floatingZoneList' => 'floating_zone_list'
     ];
@@ -229,6 +232,7 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'appPromotionVideo' => 'setAppPromotionVideo',
         'videoShowcase' => 'setVideoShowcase',
         'imageShowcase' => 'setImageShowcase',
+        'socialSkill' => 'setSocialSkill',
         'miniCardLink' => 'setMiniCardLink',
         'floatingZoneList' => 'setFloatingZoneList'
     ];
@@ -269,6 +273,7 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'appPromotionVideo' => 'getAppPromotionVideo',
         'videoShowcase' => 'getVideoShowcase',
         'imageShowcase' => 'getImageShowcase',
+        'socialSkill' => 'getSocialSkill',
         'miniCardLink' => 'getMiniCardLink',
         'floatingZoneList' => 'getFloatingZoneList'
     ];
@@ -363,6 +368,7 @@ class ComponentValue implements ModelInterface, ArrayAccess
         $this->container['appPromotionVideo'] = isset($data['appPromotionVideo']) ? $data['appPromotionVideo'] : null;
         $this->container['videoShowcase'] = isset($data['videoShowcase']) ? $data['videoShowcase'] : null;
         $this->container['imageShowcase'] = isset($data['imageShowcase']) ? $data['imageShowcase'] : null;
+        $this->container['socialSkill'] = isset($data['socialSkill']) ? $data['socialSkill'] : null;
         $this->container['miniCardLink'] = isset($data['miniCardLink']) ? $data['miniCardLink'] : null;
         $this->container['floatingZoneList'] = isset($data['floatingZoneList']) ? $data['floatingZoneList'] : null;
     }
@@ -1107,6 +1113,30 @@ class ComponentValue implements ModelInterface, ArrayAccess
     public function setImageShowcase($imageShowcase)
     {
         $this->container['imageShowcase'] = $imageShowcase;
+
+        return $this;
+    }
+
+    /**
+     * Gets socialSkill
+     *
+     * @return \TencentAds\Model\V3\SocialSkillComponent|mixed
+     */
+    public function getSocialSkill()
+    {
+        return $this->container['socialSkill'];
+    }
+
+    /**
+     * Sets socialSkill
+     *
+     * @param \TencentAds\Model\V3\SocialSkillComponent|mixed $socialSkill socialSkill
+     *
+     * @return $this
+     */
+    public function setSocialSkill($socialSkill)
+    {
+        $this->container['socialSkill'] = $socialSkill;
 
         return $this;
     }

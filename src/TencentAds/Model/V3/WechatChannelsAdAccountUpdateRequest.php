@@ -63,7 +63,8 @@ class WechatChannelsAdAccountUpdateRequest implements ModelInterface, ArrayAcces
         'nickname' => 'string',
         'headImageId' => 'string',
         'certificationList' => '\TencentAds\Model\V3\AdAccountCertification[]',
-        'exportUsername' => 'string'
+        'exportUsername' => 'string',
+        'wechatChannelsAccountId' => 'string'
     ];
 
     /**
@@ -78,7 +79,8 @@ class WechatChannelsAdAccountUpdateRequest implements ModelInterface, ArrayAcces
         'nickname' => null,
         'headImageId' => null,
         'certificationList' => null,
-        'exportUsername' => null
+        'exportUsername' => null,
+        'wechatChannelsAccountId' => null
     ];
 
     /**
@@ -114,7 +116,8 @@ class WechatChannelsAdAccountUpdateRequest implements ModelInterface, ArrayAcces
         'nickname' => 'nickname',
         'headImageId' => 'head_image_id',
         'certificationList' => 'certification_list',
-        'exportUsername' => 'export_username'
+        'exportUsername' => 'export_username',
+        'wechatChannelsAccountId' => 'wechat_channels_account_id'
     ];
 
     /**
@@ -129,7 +132,8 @@ class WechatChannelsAdAccountUpdateRequest implements ModelInterface, ArrayAcces
         'nickname' => 'setNickname',
         'headImageId' => 'setHeadImageId',
         'certificationList' => 'setCertificationList',
-        'exportUsername' => 'setExportUsername'
+        'exportUsername' => 'setExportUsername',
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
     ];
 
     /**
@@ -144,7 +148,8 @@ class WechatChannelsAdAccountUpdateRequest implements ModelInterface, ArrayAcces
         'nickname' => 'getNickname',
         'headImageId' => 'getHeadImageId',
         'certificationList' => 'getCertificationList',
-        'exportUsername' => 'getExportUsername'
+        'exportUsername' => 'getExportUsername',
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
     ];
 
     /**
@@ -214,6 +219,7 @@ class WechatChannelsAdAccountUpdateRequest implements ModelInterface, ArrayAcces
         $this->container['headImageId'] = isset($data['headImageId']) ? $data['headImageId'] : null;
         $this->container['certificationList'] = isset($data['certificationList']) ? $data['certificationList'] : null;
         $this->container['exportUsername'] = isset($data['exportUsername']) ? $data['exportUsername'] : null;
+        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
     }
 
     /**
@@ -404,6 +410,30 @@ class WechatChannelsAdAccountUpdateRequest implements ModelInterface, ArrayAcces
     public function setExportUsername($exportUsername)
     {
         $this->container['exportUsername'] = $exportUsername;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountId
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountId()
+    {
+        return $this->container['wechatChannelsAccountId'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountId
+     *
+     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountId($wechatChannelsAccountId)
+    {
+        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
 
         return $this;
     }

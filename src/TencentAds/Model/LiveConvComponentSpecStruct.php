@@ -59,6 +59,7 @@ class LiveConvComponentSpecStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'pageId' => 'int',
+        'pageType' => '\TencentAds\Model\DestinationType',
         'title' => 'string',
         'imgUrl' => 'string',
         'imgId' => 'string',
@@ -73,6 +74,7 @@ class LiveConvComponentSpecStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'pageId' => 'int64',
+        'pageType' => null,
         'title' => null,
         'imgUrl' => null,
         'imgId' => null,
@@ -108,6 +110,7 @@ class LiveConvComponentSpecStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'pageId' => 'page_id',
+        'pageType' => 'page_type',
         'title' => 'title',
         'imgUrl' => 'img_url',
         'imgId' => 'img_id',
@@ -122,6 +125,7 @@ class LiveConvComponentSpecStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'pageId' => 'setPageId',
+        'pageType' => 'setPageType',
         'title' => 'setTitle',
         'imgUrl' => 'setImgUrl',
         'imgId' => 'setImgId',
@@ -136,6 +140,7 @@ class LiveConvComponentSpecStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'pageId' => 'getPageId',
+        'pageType' => 'getPageType',
         'title' => 'getTitle',
         'imgUrl' => 'getImgUrl',
         'imgId' => 'getImgId',
@@ -204,6 +209,7 @@ class LiveConvComponentSpecStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
+        $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['title'] = isset($data['title']) ? $data['title'] : null;
         $this->container['imgUrl'] = isset($data['imgUrl']) ? $data['imgUrl'] : null;
         $this->container['imgId'] = isset($data['imgId']) ? $data['imgId'] : null;
@@ -255,6 +261,30 @@ class LiveConvComponentSpecStruct implements ModelInterface, ArrayAccess
     public function setPageId($pageId)
     {
         $this->container['pageId'] = $pageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageType
+     *
+     * @return \TencentAds\Model\DestinationType|mixed
+     */
+    public function getPageType()
+    {
+        return $this->container['pageType'];
+    }
+
+    /**
+     * Sets pageType
+     *
+     * @param \TencentAds\Model\DestinationType|mixed $pageType pageType
+     *
+     * @return $this
+     */
+    public function setPageType($pageType)
+    {
+        $this->container['pageType'] = $pageType;
 
         return $this;
     }

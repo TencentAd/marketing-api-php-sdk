@@ -112,7 +112,9 @@ class DynamicCreativesApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
             $isDeleted = isset($params['is_deleted']) ? $params['is_deleted'] : null;
-            $response = $this->apiInstance->dynamicCreativesGet($accountId, $filtering, $page, $pageSize, $fields, $isDeleted);
+            $paginationMode = isset($params['pagination_mode']) ? $params['pagination_mode'] : null;
+            $cursor = isset($params['cursor']) ? $params['cursor'] : null;
+            $response = $this->apiInstance->dynamicCreativesGet($accountId, $filtering, $page, $pageSize, $fields, $isDeleted, $paginationMode, $cursor);
             return $this->handleResponse($response);
         });
     }
@@ -133,7 +135,9 @@ class DynamicCreativesApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
             $isDeleted = isset($params['is_deleted']) ? $params['is_deleted'] : null;
-            $response = $this->apiInstance->dynamicCreativesGetAsync($accountId, $filtering, $page, $pageSize, $fields, $isDeleted);
+            $paginationMode = isset($params['pagination_mode']) ? $params['pagination_mode'] : null;
+            $cursor = isset($params['cursor']) ? $params['cursor'] : null;
+            $response = $this->apiInstance->dynamicCreativesGetAsync($accountId, $filtering, $page, $pageSize, $fields, $isDeleted, $paginationMode, $cursor);
             return $response;
         });
     }

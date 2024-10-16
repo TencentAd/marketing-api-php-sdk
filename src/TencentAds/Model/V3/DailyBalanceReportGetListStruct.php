@@ -67,7 +67,12 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
         'transOut' => 'int',
         'creditModify' => 'int',
         'balance' => 'int',
-        'preauthBalance' => 'int'
+        'preauthBalance' => 'int',
+        'preauthOutPay' => 'int',
+        'preauthInRefund' => 'int',
+        'acctOutPay' => 'int',
+        'acctOutPayShare' => 'int',
+        'shareOutPay' => 'int'
     ];
 
     /**
@@ -85,7 +90,12 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
         'transOut' => 'int64',
         'creditModify' => 'int64',
         'balance' => 'int64',
-        'preauthBalance' => 'int64'
+        'preauthBalance' => 'int64',
+        'preauthOutPay' => 'int64',
+        'preauthInRefund' => 'int64',
+        'acctOutPay' => 'int64',
+        'acctOutPayShare' => 'int64',
+        'shareOutPay' => 'int64'
     ];
 
     /**
@@ -124,7 +134,12 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
         'transOut' => 'trans_out',
         'creditModify' => 'credit_modify',
         'balance' => 'balance',
-        'preauthBalance' => 'preauth_balance'
+        'preauthBalance' => 'preauth_balance',
+        'preauthOutPay' => 'preauth_out_pay',
+        'preauthInRefund' => 'preauth_in_refund',
+        'acctOutPay' => 'acct_out_pay',
+        'acctOutPayShare' => 'acct_out_pay_share',
+        'shareOutPay' => 'share_out_pay'
     ];
 
     /**
@@ -142,7 +157,12 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
         'transOut' => 'setTransOut',
         'creditModify' => 'setCreditModify',
         'balance' => 'setBalance',
-        'preauthBalance' => 'setPreauthBalance'
+        'preauthBalance' => 'setPreauthBalance',
+        'preauthOutPay' => 'setPreauthOutPay',
+        'preauthInRefund' => 'setPreauthInRefund',
+        'acctOutPay' => 'setAcctOutPay',
+        'acctOutPayShare' => 'setAcctOutPayShare',
+        'shareOutPay' => 'setShareOutPay'
     ];
 
     /**
@@ -160,7 +180,12 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
         'transOut' => 'getTransOut',
         'creditModify' => 'getCreditModify',
         'balance' => 'getBalance',
-        'preauthBalance' => 'getPreauthBalance'
+        'preauthBalance' => 'getPreauthBalance',
+        'preauthOutPay' => 'getPreauthOutPay',
+        'preauthInRefund' => 'getPreauthInRefund',
+        'acctOutPay' => 'getAcctOutPay',
+        'acctOutPayShare' => 'getAcctOutPayShare',
+        'shareOutPay' => 'getShareOutPay'
     ];
 
     /**
@@ -233,6 +258,11 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
         $this->container['creditModify'] = isset($data['creditModify']) ? $data['creditModify'] : null;
         $this->container['balance'] = isset($data['balance']) ? $data['balance'] : null;
         $this->container['preauthBalance'] = isset($data['preauthBalance']) ? $data['preauthBalance'] : null;
+        $this->container['preauthOutPay'] = isset($data['preauthOutPay']) ? $data['preauthOutPay'] : null;
+        $this->container['preauthInRefund'] = isset($data['preauthInRefund']) ? $data['preauthInRefund'] : null;
+        $this->container['acctOutPay'] = isset($data['acctOutPay']) ? $data['acctOutPay'] : null;
+        $this->container['acctOutPayShare'] = isset($data['acctOutPayShare']) ? $data['acctOutPayShare'] : null;
+        $this->container['shareOutPay'] = isset($data['shareOutPay']) ? $data['shareOutPay'] : null;
     }
 
     /**
@@ -495,6 +525,126 @@ class DailyBalanceReportGetListStruct implements ModelInterface, ArrayAccess
     public function setPreauthBalance($preauthBalance)
     {
         $this->container['preauthBalance'] = $preauthBalance;
+
+        return $this;
+    }
+
+    /**
+     * Gets preauthOutPay
+     *
+     * @return int|mixed
+     */
+    public function getPreauthOutPay()
+    {
+        return $this->container['preauthOutPay'];
+    }
+
+    /**
+     * Sets preauthOutPay
+     *
+     * @param int|mixed $preauthOutPay preauthOutPay
+     *
+     * @return $this
+     */
+    public function setPreauthOutPay($preauthOutPay)
+    {
+        $this->container['preauthOutPay'] = $preauthOutPay;
+
+        return $this;
+    }
+
+    /**
+     * Gets preauthInRefund
+     *
+     * @return int|mixed
+     */
+    public function getPreauthInRefund()
+    {
+        return $this->container['preauthInRefund'];
+    }
+
+    /**
+     * Sets preauthInRefund
+     *
+     * @param int|mixed $preauthInRefund preauthInRefund
+     *
+     * @return $this
+     */
+    public function setPreauthInRefund($preauthInRefund)
+    {
+        $this->container['preauthInRefund'] = $preauthInRefund;
+
+        return $this;
+    }
+
+    /**
+     * Gets acctOutPay
+     *
+     * @return int|mixed
+     */
+    public function getAcctOutPay()
+    {
+        return $this->container['acctOutPay'];
+    }
+
+    /**
+     * Sets acctOutPay
+     *
+     * @param int|mixed $acctOutPay acctOutPay
+     *
+     * @return $this
+     */
+    public function setAcctOutPay($acctOutPay)
+    {
+        $this->container['acctOutPay'] = $acctOutPay;
+
+        return $this;
+    }
+
+    /**
+     * Gets acctOutPayShare
+     *
+     * @return int|mixed
+     */
+    public function getAcctOutPayShare()
+    {
+        return $this->container['acctOutPayShare'];
+    }
+
+    /**
+     * Sets acctOutPayShare
+     *
+     * @param int|mixed $acctOutPayShare acctOutPayShare
+     *
+     * @return $this
+     */
+    public function setAcctOutPayShare($acctOutPayShare)
+    {
+        $this->container['acctOutPayShare'] = $acctOutPayShare;
+
+        return $this;
+    }
+
+    /**
+     * Gets shareOutPay
+     *
+     * @return int|mixed
+     */
+    public function getShareOutPay()
+    {
+        return $this->container['shareOutPay'];
+    }
+
+    /**
+     * Sets shareOutPay
+     *
+     * @param int|mixed $shareOutPay shareOutPay
+     *
+     * @return $this
+     */
+    public function setShareOutPay($shareOutPay)
+    {
+        $this->container['shareOutPay'] = $shareOutPay;
 
         return $this;
     }

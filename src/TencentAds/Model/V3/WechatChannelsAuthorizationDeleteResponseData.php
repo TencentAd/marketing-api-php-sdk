@@ -58,7 +58,8 @@ class WechatChannelsAuthorizationDeleteResponseData implements ModelInterface, A
       */
     protected static $swaggerTypes = [
         'authorizationId' => 'string',
-        'finderUsername' => 'string'
+        'finderUsername' => 'string',
+        'wechatChannelsAccountId' => 'string'
     ];
 
     /**
@@ -68,7 +69,8 @@ class WechatChannelsAuthorizationDeleteResponseData implements ModelInterface, A
       */
     protected static $swaggerFormats = [
         'authorizationId' => null,
-        'finderUsername' => null
+        'finderUsername' => null,
+        'wechatChannelsAccountId' => null
     ];
 
     /**
@@ -99,7 +101,8 @@ class WechatChannelsAuthorizationDeleteResponseData implements ModelInterface, A
      */
     protected static $attributeMap = [
         'authorizationId' => 'authorization_id',
-        'finderUsername' => 'finder_username'
+        'finderUsername' => 'finder_username',
+        'wechatChannelsAccountId' => 'wechat_channels_account_id'
     ];
 
     /**
@@ -109,7 +112,8 @@ class WechatChannelsAuthorizationDeleteResponseData implements ModelInterface, A
      */
     protected static $setters = [
         'authorizationId' => 'setAuthorizationId',
-        'finderUsername' => 'setFinderUsername'
+        'finderUsername' => 'setFinderUsername',
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
     ];
 
     /**
@@ -119,7 +123,8 @@ class WechatChannelsAuthorizationDeleteResponseData implements ModelInterface, A
      */
     protected static $getters = [
         'authorizationId' => 'getAuthorizationId',
-        'finderUsername' => 'getFinderUsername'
+        'finderUsername' => 'getFinderUsername',
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
     ];
 
     /**
@@ -184,6 +189,7 @@ class WechatChannelsAuthorizationDeleteResponseData implements ModelInterface, A
     {
         $this->container['authorizationId'] = isset($data['authorizationId']) ? $data['authorizationId'] : null;
         $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
+        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
     }
 
     /**
@@ -254,6 +260,30 @@ class WechatChannelsAuthorizationDeleteResponseData implements ModelInterface, A
     public function setFinderUsername($finderUsername)
     {
         $this->container['finderUsername'] = $finderUsername;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountId
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountId()
+    {
+        return $this->container['wechatChannelsAccountId'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountId
+     *
+     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountId($wechatChannelsAccountId)
+    {
+        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
 
         return $this;
     }

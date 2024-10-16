@@ -114,9 +114,11 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'searchExpandTargetingSwitch' => '\TencentAds\Model\SearchExpandTargetingSwitch',
         'ecomPkamSwitch' => '\TencentAds\Model\EcomPkamSwitch',
         'bidScene' => '\TencentAds\Model\BidScene',
+        'searchIntelligentExtension' => '\TencentAds\Model\ModelSwitch',
         'forwardLinkAssist' => '\TencentAds\Model\OptimizationGoal',
         'shortPlayPayType' => '\TencentAds\Model\ShortPlayPayType',
         'sellStrategyId' => 'int',
+        'feedbackId' => 'int',
         'accountId' => 'int'
     ];
 
@@ -183,9 +185,11 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'searchExpandTargetingSwitch' => null,
         'ecomPkamSwitch' => null,
         'bidScene' => null,
+        'searchIntelligentExtension' => null,
         'forwardLinkAssist' => null,
         'shortPlayPayType' => null,
         'sellStrategyId' => 'int64',
+        'feedbackId' => 'int64',
         'accountId' => 'int64'
     ];
 
@@ -273,9 +277,11 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
         'ecomPkamSwitch' => 'ecom_pkam_switch',
         'bidScene' => 'bid_scene',
+        'searchIntelligentExtension' => 'search_intelligent_extension',
         'forwardLinkAssist' => 'forward_link_assist',
         'shortPlayPayType' => 'short_play_pay_type',
         'sellStrategyId' => 'sell_strategy_id',
+        'feedbackId' => 'feedback_id',
         'accountId' => 'account_id'
     ];
 
@@ -342,9 +348,11 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
         'ecomPkamSwitch' => 'setEcomPkamSwitch',
         'bidScene' => 'setBidScene',
+        'searchIntelligentExtension' => 'setSearchIntelligentExtension',
         'forwardLinkAssist' => 'setForwardLinkAssist',
         'shortPlayPayType' => 'setShortPlayPayType',
         'sellStrategyId' => 'setSellStrategyId',
+        'feedbackId' => 'setFeedbackId',
         'accountId' => 'setAccountId'
     ];
 
@@ -411,9 +419,11 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
         'ecomPkamSwitch' => 'getEcomPkamSwitch',
         'bidScene' => 'getBidScene',
+        'searchIntelligentExtension' => 'getSearchIntelligentExtension',
         'forwardLinkAssist' => 'getForwardLinkAssist',
         'shortPlayPayType' => 'getShortPlayPayType',
         'sellStrategyId' => 'getSellStrategyId',
+        'feedbackId' => 'getFeedbackId',
         'accountId' => 'getAccountId'
     ];
 
@@ -534,9 +544,11 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
         $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
         $this->container['bidScene'] = isset($data['bidScene']) ? $data['bidScene'] : null;
+        $this->container['searchIntelligentExtension'] = isset($data['searchIntelligentExtension']) ? $data['searchIntelligentExtension'] : null;
         $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
         $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
         $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
+        $this->container['feedbackId'] = isset($data['feedbackId']) ? $data['feedbackId'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1933,6 +1945,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets searchIntelligentExtension
+     *
+     * @return \TencentAds\Model\ModelSwitch|mixed
+     */
+    public function getSearchIntelligentExtension()
+    {
+        return $this->container['searchIntelligentExtension'];
+    }
+
+    /**
+     * Sets searchIntelligentExtension
+     *
+     * @param \TencentAds\Model\ModelSwitch|mixed $searchIntelligentExtension searchIntelligentExtension
+     *
+     * @return $this
+     */
+    public function setSearchIntelligentExtension($searchIntelligentExtension)
+    {
+        $this->container['searchIntelligentExtension'] = $searchIntelligentExtension;
+
+        return $this;
+    }
+
+    /**
      * Gets forwardLinkAssist
      *
      * @return \TencentAds\Model\OptimizationGoal|mixed
@@ -2000,6 +2036,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setSellStrategyId($sellStrategyId)
     {
         $this->container['sellStrategyId'] = $sellStrategyId;
+
+        return $this;
+    }
+
+    /**
+     * Gets feedbackId
+     *
+     * @return int|mixed
+     */
+    public function getFeedbackId()
+    {
+        return $this->container['feedbackId'];
+    }
+
+    /**
+     * Sets feedbackId
+     *
+     * @param int|mixed $feedbackId feedbackId
+     *
+     * @return $this
+     */
+    public function setFeedbackId($feedbackId)
+    {
+        $this->container['feedbackId'] = $feedbackId;
 
         return $this;
     }

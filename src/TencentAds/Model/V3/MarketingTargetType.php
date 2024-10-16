@@ -103,6 +103,7 @@ class MarketingTargetType
     const TWO_WHEEL_VEHICLE = 'MARKETING_TARGET_TYPE_TWO_WHEEL_VEHICLE';
     const GOVERNMENT_AFFAIRS = 'MARKETING_TARGET_TYPE_GOVERNMENT_AFFAIRS';
     const CAR_ECOLOGY = 'MARKETING_TARGET_TYPE_CAR_ECOLOGY';
+    const WECHAT_STORE_PRODUCT = 'MARKETING_TARGET_TYPE_WECHAT_STORE_PRODUCT';
     
     /**
      * Gets allowable values of the enum
@@ -170,6 +171,7 @@ class MarketingTargetType
             self::TWO_WHEEL_VEHICLE,
             self::GOVERNMENT_AFFAIRS,
             self::CAR_ECOLOGY,
+            self::WECHAT_STORE_PRODUCT,
         ];
     }
 }

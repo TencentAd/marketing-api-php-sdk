@@ -65,7 +65,8 @@ class CategoryInfo implements ModelInterface, ArrayAccess
         'cate3Id' => 'string',
         'cate3Name' => 'string',
         'cate4Id' => 'string',
-        'cate4Name' => 'string'
+        'cate4Name' => 'string',
+        'cate3Disabled' => 'bool'
     ];
 
     /**
@@ -81,7 +82,8 @@ class CategoryInfo implements ModelInterface, ArrayAccess
         'cate3Id' => null,
         'cate3Name' => null,
         'cate4Id' => null,
-        'cate4Name' => null
+        'cate4Name' => null,
+        'cate3Disabled' => null
     ];
 
     /**
@@ -118,7 +120,8 @@ class CategoryInfo implements ModelInterface, ArrayAccess
         'cate3Id' => 'cate3_id',
         'cate3Name' => 'cate3_name',
         'cate4Id' => 'cate4_id',
-        'cate4Name' => 'cate4_name'
+        'cate4Name' => 'cate4_name',
+        'cate3Disabled' => 'cate3_disabled'
     ];
 
     /**
@@ -134,7 +137,8 @@ class CategoryInfo implements ModelInterface, ArrayAccess
         'cate3Id' => 'setCate3Id',
         'cate3Name' => 'setCate3Name',
         'cate4Id' => 'setCate4Id',
-        'cate4Name' => 'setCate4Name'
+        'cate4Name' => 'setCate4Name',
+        'cate3Disabled' => 'setCate3Disabled'
     ];
 
     /**
@@ -150,7 +154,8 @@ class CategoryInfo implements ModelInterface, ArrayAccess
         'cate3Id' => 'getCate3Id',
         'cate3Name' => 'getCate3Name',
         'cate4Id' => 'getCate4Id',
-        'cate4Name' => 'getCate4Name'
+        'cate4Name' => 'getCate4Name',
+        'cate3Disabled' => 'getCate3Disabled'
     ];
 
     /**
@@ -221,6 +226,7 @@ class CategoryInfo implements ModelInterface, ArrayAccess
         $this->container['cate3Name'] = isset($data['cate3Name']) ? $data['cate3Name'] : null;
         $this->container['cate4Id'] = isset($data['cate4Id']) ? $data['cate4Id'] : null;
         $this->container['cate4Name'] = isset($data['cate4Name']) ? $data['cate4Name'] : null;
+        $this->container['cate3Disabled'] = isset($data['cate3Disabled']) ? $data['cate3Disabled'] : null;
     }
 
     /**
@@ -435,6 +441,30 @@ class CategoryInfo implements ModelInterface, ArrayAccess
     public function setCate4Name($cate4Name)
     {
         $this->container['cate4Name'] = $cate4Name;
+
+        return $this;
+    }
+
+    /**
+     * Gets cate3Disabled
+     *
+     * @return bool|mixed
+     */
+    public function getCate3Disabled()
+    {
+        return $this->container['cate3Disabled'];
+    }
+
+    /**
+     * Sets cate3Disabled
+     *
+     * @param bool|mixed $cate3Disabled cate3Disabled
+     *
+     * @return $this
+     */
+    public function setCate3Disabled($cate3Disabled)
+    {
+        $this->container['cate3Disabled'] = $cate3Disabled;
 
         return $this;
     }

@@ -39,8 +39,9 @@ class MarketingTargetTypesApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->marketingTargetTypesGet($accountId, $fields);
+            $response = $this->apiInstance->marketingTargetTypesGet($accountId, $organizationId, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -56,8 +57,9 @@ class MarketingTargetTypesApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->marketingTargetTypesGetAsync($accountId, $fields);
+            $response = $this->apiInstance->marketingTargetTypesGetAsync($accountId, $organizationId, $fields);
             return $response;
         });
     }

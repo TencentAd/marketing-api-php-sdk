@@ -101,7 +101,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'int[]',
         'autoDerivedLandingPageSwitch' => 'bool',
         'ecomPkamSwitch' => '\TencentAds\Model\EcomPkamSwitch',
+        'searchIntelligentExtension' => '\TencentAds\Model\ModelSwitch',
         'searchExpandTargetingSwitch' => '\TencentAds\Model\SearchExpandTargetingSwitch',
+        'feedbackId' => 'int',
         'accountId' => 'int'
     ];
 
@@ -155,7 +157,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'int64',
         'autoDerivedLandingPageSwitch' => null,
         'ecomPkamSwitch' => null,
+        'searchIntelligentExtension' => null,
         'searchExpandTargetingSwitch' => null,
+        'feedbackId' => 'int64',
         'accountId' => 'int64'
     ];
 
@@ -230,7 +234,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'dynamic_creative_id_set',
         'autoDerivedLandingPageSwitch' => 'auto_derived_landing_page_switch',
         'ecomPkamSwitch' => 'ecom_pkam_switch',
+        'searchIntelligentExtension' => 'search_intelligent_extension',
         'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
+        'feedbackId' => 'feedback_id',
         'accountId' => 'account_id'
     ];
 
@@ -284,7 +290,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'setDynamicCreativeIdSet',
         'autoDerivedLandingPageSwitch' => 'setAutoDerivedLandingPageSwitch',
         'ecomPkamSwitch' => 'setEcomPkamSwitch',
+        'searchIntelligentExtension' => 'setSearchIntelligentExtension',
         'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
+        'feedbackId' => 'setFeedbackId',
         'accountId' => 'setAccountId'
     ];
 
@@ -338,7 +346,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'dynamicCreativeIdSet' => 'getDynamicCreativeIdSet',
         'autoDerivedLandingPageSwitch' => 'getAutoDerivedLandingPageSwitch',
         'ecomPkamSwitch' => 'getEcomPkamSwitch',
+        'searchIntelligentExtension' => 'getSearchIntelligentExtension',
         'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
+        'feedbackId' => 'getFeedbackId',
         'accountId' => 'getAccountId'
     ];
 
@@ -446,7 +456,9 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['dynamicCreativeIdSet'] = isset($data['dynamicCreativeIdSet']) ? $data['dynamicCreativeIdSet'] : null;
         $this->container['autoDerivedLandingPageSwitch'] = isset($data['autoDerivedLandingPageSwitch']) ? $data['autoDerivedLandingPageSwitch'] : null;
         $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
+        $this->container['searchIntelligentExtension'] = isset($data['searchIntelligentExtension']) ? $data['searchIntelligentExtension'] : null;
         $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
+        $this->container['feedbackId'] = isset($data['feedbackId']) ? $data['feedbackId'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
     }
 
@@ -1531,6 +1543,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets searchIntelligentExtension
+     *
+     * @return \TencentAds\Model\ModelSwitch|mixed
+     */
+    public function getSearchIntelligentExtension()
+    {
+        return $this->container['searchIntelligentExtension'];
+    }
+
+    /**
+     * Sets searchIntelligentExtension
+     *
+     * @param \TencentAds\Model\ModelSwitch|mixed $searchIntelligentExtension searchIntelligentExtension
+     *
+     * @return $this
+     */
+    public function setSearchIntelligentExtension($searchIntelligentExtension)
+    {
+        $this->container['searchIntelligentExtension'] = $searchIntelligentExtension;
+
+        return $this;
+    }
+
+    /**
      * Gets searchExpandTargetingSwitch
      *
      * @return \TencentAds\Model\SearchExpandTargetingSwitch|mixed
@@ -1550,6 +1586,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setSearchExpandTargetingSwitch($searchExpandTargetingSwitch)
     {
         $this->container['searchExpandTargetingSwitch'] = $searchExpandTargetingSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets feedbackId
+     *
+     * @return int|mixed
+     */
+    public function getFeedbackId()
+    {
+        return $this->container['feedbackId'];
+    }
+
+    /**
+     * Sets feedbackId
+     *
+     * @param int|mixed $feedbackId feedbackId
+     *
+     * @return $this
+     */
+    public function setFeedbackId($feedbackId)
+    {
+        $this->container['feedbackId'] = $feedbackId;
 
         return $this;
     }

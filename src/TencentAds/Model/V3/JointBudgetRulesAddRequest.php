@@ -61,7 +61,8 @@ class JointBudgetRulesAddRequest implements ModelInterface, ArrayAccess
         'jointBudgetRuleName' => 'string',
         'dailyBudget' => 'int',
         'totalBudget' => 'int',
-        'adgroupIdList' => 'int[]'
+        'adgroupIdList' => 'int[]',
+        'jointBudgetRuleType' => '\TencentAds\Model\V3\JointBudgetRuleType'
     ];
 
     /**
@@ -74,7 +75,8 @@ class JointBudgetRulesAddRequest implements ModelInterface, ArrayAccess
         'jointBudgetRuleName' => null,
         'dailyBudget' => 'int64',
         'totalBudget' => 'int64',
-        'adgroupIdList' => 'int64'
+        'adgroupIdList' => 'int64',
+        'jointBudgetRuleType' => null
     ];
 
     /**
@@ -108,7 +110,8 @@ class JointBudgetRulesAddRequest implements ModelInterface, ArrayAccess
         'jointBudgetRuleName' => 'joint_budget_rule_name',
         'dailyBudget' => 'daily_budget',
         'totalBudget' => 'total_budget',
-        'adgroupIdList' => 'adgroup_id_list'
+        'adgroupIdList' => 'adgroup_id_list',
+        'jointBudgetRuleType' => 'joint_budget_rule_type'
     ];
 
     /**
@@ -121,7 +124,8 @@ class JointBudgetRulesAddRequest implements ModelInterface, ArrayAccess
         'jointBudgetRuleName' => 'setJointBudgetRuleName',
         'dailyBudget' => 'setDailyBudget',
         'totalBudget' => 'setTotalBudget',
-        'adgroupIdList' => 'setAdgroupIdList'
+        'adgroupIdList' => 'setAdgroupIdList',
+        'jointBudgetRuleType' => 'setJointBudgetRuleType'
     ];
 
     /**
@@ -134,7 +138,8 @@ class JointBudgetRulesAddRequest implements ModelInterface, ArrayAccess
         'jointBudgetRuleName' => 'getJointBudgetRuleName',
         'dailyBudget' => 'getDailyBudget',
         'totalBudget' => 'getTotalBudget',
-        'adgroupIdList' => 'getAdgroupIdList'
+        'adgroupIdList' => 'getAdgroupIdList',
+        'jointBudgetRuleType' => 'getJointBudgetRuleType'
     ];
 
     /**
@@ -202,6 +207,7 @@ class JointBudgetRulesAddRequest implements ModelInterface, ArrayAccess
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
         $this->container['totalBudget'] = isset($data['totalBudget']) ? $data['totalBudget'] : null;
         $this->container['adgroupIdList'] = isset($data['adgroupIdList']) ? $data['adgroupIdList'] : null;
+        $this->container['jointBudgetRuleType'] = isset($data['jointBudgetRuleType']) ? $data['jointBudgetRuleType'] : null;
     }
 
     /**
@@ -344,6 +350,30 @@ class JointBudgetRulesAddRequest implements ModelInterface, ArrayAccess
     public function setAdgroupIdList($adgroupIdList)
     {
         $this->container['adgroupIdList'] = $adgroupIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets jointBudgetRuleType
+     *
+     * @return \TencentAds\Model\V3\JointBudgetRuleType|mixed
+     */
+    public function getJointBudgetRuleType()
+    {
+        return $this->container['jointBudgetRuleType'];
+    }
+
+    /**
+     * Sets jointBudgetRuleType
+     *
+     * @param \TencentAds\Model\V3\JointBudgetRuleType|mixed $jointBudgetRuleType jointBudgetRuleType
+     *
+     * @return $this
+     */
+    public function setJointBudgetRuleType($jointBudgetRuleType)
+    {
+        $this->container['jointBudgetRuleType'] = $jointBudgetRuleType;
 
         return $this;
     }

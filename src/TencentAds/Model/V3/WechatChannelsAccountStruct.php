@@ -63,7 +63,13 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'wechatChannelsSpamBlock' => 'bool',
-        'wechatChannelsSpamSlient' => 'bool'
+        'wechatChannelsSpamSlient' => 'bool',
+        'wechatChannelsAccountIcon' => 'string',
+        'authorizationType' => '\TencentAds\Model\V3\WechatChannelsAuthType',
+        'authorizationScope' => '\TencentAds\Model\V3\WechatChannelsAuthScope',
+        'isBlocked' => 'bool',
+        'isPrivate' => 'bool',
+        'isAdAcct' => 'bool'
     ];
 
     /**
@@ -77,7 +83,13 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'wechatChannelsSpamBlock' => null,
-        'wechatChannelsSpamSlient' => null
+        'wechatChannelsSpamSlient' => null,
+        'wechatChannelsAccountIcon' => null,
+        'authorizationType' => null,
+        'authorizationScope' => null,
+        'isBlocked' => null,
+        'isPrivate' => null,
+        'isAdAcct' => null
     ];
 
     /**
@@ -112,7 +124,13 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'wechatChannelsSpamBlock' => 'wechat_channels_spam_block',
-        'wechatChannelsSpamSlient' => 'wechat_channels_spam_slient'
+        'wechatChannelsSpamSlient' => 'wechat_channels_spam_slient',
+        'wechatChannelsAccountIcon' => 'wechat_channels_account_icon',
+        'authorizationType' => 'authorization_type',
+        'authorizationScope' => 'authorization_scope',
+        'isBlocked' => 'is_blocked',
+        'isPrivate' => 'is_private',
+        'isAdAcct' => 'is_ad_acct'
     ];
 
     /**
@@ -126,7 +144,13 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'wechatChannelsSpamBlock' => 'setWechatChannelsSpamBlock',
-        'wechatChannelsSpamSlient' => 'setWechatChannelsSpamSlient'
+        'wechatChannelsSpamSlient' => 'setWechatChannelsSpamSlient',
+        'wechatChannelsAccountIcon' => 'setWechatChannelsAccountIcon',
+        'authorizationType' => 'setAuthorizationType',
+        'authorizationScope' => 'setAuthorizationScope',
+        'isBlocked' => 'setIsBlocked',
+        'isPrivate' => 'setIsPrivate',
+        'isAdAcct' => 'setIsAdAcct'
     ];
 
     /**
@@ -140,7 +164,13 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'wechatChannelsSpamBlock' => 'getWechatChannelsSpamBlock',
-        'wechatChannelsSpamSlient' => 'getWechatChannelsSpamSlient'
+        'wechatChannelsSpamSlient' => 'getWechatChannelsSpamSlient',
+        'wechatChannelsAccountIcon' => 'getWechatChannelsAccountIcon',
+        'authorizationType' => 'getAuthorizationType',
+        'authorizationScope' => 'getAuthorizationScope',
+        'isBlocked' => 'getIsBlocked',
+        'isPrivate' => 'getIsPrivate',
+        'isAdAcct' => 'getIsAdAcct'
     ];
 
     /**
@@ -209,6 +239,12 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['wechatChannelsSpamBlock'] = isset($data['wechatChannelsSpamBlock']) ? $data['wechatChannelsSpamBlock'] : null;
         $this->container['wechatChannelsSpamSlient'] = isset($data['wechatChannelsSpamSlient']) ? $data['wechatChannelsSpamSlient'] : null;
+        $this->container['wechatChannelsAccountIcon'] = isset($data['wechatChannelsAccountIcon']) ? $data['wechatChannelsAccountIcon'] : null;
+        $this->container['authorizationType'] = isset($data['authorizationType']) ? $data['authorizationType'] : null;
+        $this->container['authorizationScope'] = isset($data['authorizationScope']) ? $data['authorizationScope'] : null;
+        $this->container['isBlocked'] = isset($data['isBlocked']) ? $data['isBlocked'] : null;
+        $this->container['isPrivate'] = isset($data['isPrivate']) ? $data['isPrivate'] : null;
+        $this->container['isAdAcct'] = isset($data['isAdAcct']) ? $data['isAdAcct'] : null;
     }
 
     /**
@@ -375,6 +411,150 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
     public function setWechatChannelsSpamSlient($wechatChannelsSpamSlient)
     {
         $this->container['wechatChannelsSpamSlient'] = $wechatChannelsSpamSlient;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountIcon
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountIcon()
+    {
+        return $this->container['wechatChannelsAccountIcon'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountIcon
+     *
+     * @param string|mixed $wechatChannelsAccountIcon wechatChannelsAccountIcon
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountIcon($wechatChannelsAccountIcon)
+    {
+        $this->container['wechatChannelsAccountIcon'] = $wechatChannelsAccountIcon;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizationType
+     *
+     * @return \TencentAds\Model\V3\WechatChannelsAuthType|mixed
+     */
+    public function getAuthorizationType()
+    {
+        return $this->container['authorizationType'];
+    }
+
+    /**
+     * Sets authorizationType
+     *
+     * @param \TencentAds\Model\V3\WechatChannelsAuthType|mixed $authorizationType authorizationType
+     *
+     * @return $this
+     */
+    public function setAuthorizationType($authorizationType)
+    {
+        $this->container['authorizationType'] = $authorizationType;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizationScope
+     *
+     * @return \TencentAds\Model\V3\WechatChannelsAuthScope|mixed
+     */
+    public function getAuthorizationScope()
+    {
+        return $this->container['authorizationScope'];
+    }
+
+    /**
+     * Sets authorizationScope
+     *
+     * @param \TencentAds\Model\V3\WechatChannelsAuthScope|mixed $authorizationScope authorizationScope
+     *
+     * @return $this
+     */
+    public function setAuthorizationScope($authorizationScope)
+    {
+        $this->container['authorizationScope'] = $authorizationScope;
+
+        return $this;
+    }
+
+    /**
+     * Gets isBlocked
+     *
+     * @return bool|mixed
+     */
+    public function getIsBlocked()
+    {
+        return $this->container['isBlocked'];
+    }
+
+    /**
+     * Sets isBlocked
+     *
+     * @param bool|mixed $isBlocked isBlocked
+     *
+     * @return $this
+     */
+    public function setIsBlocked($isBlocked)
+    {
+        $this->container['isBlocked'] = $isBlocked;
+
+        return $this;
+    }
+
+    /**
+     * Gets isPrivate
+     *
+     * @return bool|mixed
+     */
+    public function getIsPrivate()
+    {
+        return $this->container['isPrivate'];
+    }
+
+    /**
+     * Sets isPrivate
+     *
+     * @param bool|mixed $isPrivate isPrivate
+     *
+     * @return $this
+     */
+    public function setIsPrivate($isPrivate)
+    {
+        $this->container['isPrivate'] = $isPrivate;
+
+        return $this;
+    }
+
+    /**
+     * Gets isAdAcct
+     *
+     * @return bool|mixed
+     */
+    public function getIsAdAcct()
+    {
+        return $this->container['isAdAcct'];
+    }
+
+    /**
+     * Sets isAdAcct
+     *
+     * @param bool|mixed $isAdAcct isAdAcct
+     *
+     * @return $this
+     */
+    public function setIsAdAcct($isAdAcct)
+    {
+        $this->container['isAdAcct'] = $isAdAcct;
 
         return $this;
     }

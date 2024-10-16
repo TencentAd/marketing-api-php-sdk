@@ -58,10 +58,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cropCustomizedSpec' => '\TencentAds\Model\CropCustomizedSpec',
-        'cropSmartSpec' => '\TencentAds\Model\CropSmartSpec',
-        'resizeSpec' => '\TencentAds\Model\ResizeSpec',
-        'cropCustomizedSpecAndResize' => '\TencentAds\Model\CropCustomizedSpecAndResize'
+        'resizeSpec' => '\TencentAds\Model\ResizeSpec'
     ];
 
     /**
@@ -70,10 +67,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'cropCustomizedSpec' => null,
-        'cropSmartSpec' => null,
-        'resizeSpec' => null,
-        'cropCustomizedSpecAndResize' => null
+        'resizeSpec' => null
     ];
 
     /**
@@ -103,10 +97,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'cropCustomizedSpec' => 'crop_customized_spec',
-        'cropSmartSpec' => 'crop_smart_spec',
-        'resizeSpec' => 'resize_spec',
-        'cropCustomizedSpecAndResize' => 'crop_customized_spec_and_resize'
+        'resizeSpec' => 'resize_spec'
     ];
 
     /**
@@ -115,10 +106,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'cropCustomizedSpec' => 'setCropCustomizedSpec',
-        'cropSmartSpec' => 'setCropSmartSpec',
-        'resizeSpec' => 'setResizeSpec',
-        'cropCustomizedSpecAndResize' => 'setCropCustomizedSpecAndResize'
+        'resizeSpec' => 'setResizeSpec'
     ];
 
     /**
@@ -127,10 +115,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'cropCustomizedSpec' => 'getCropCustomizedSpec',
-        'cropSmartSpec' => 'getCropSmartSpec',
-        'resizeSpec' => 'getResizeSpec',
-        'cropCustomizedSpecAndResize' => 'getCropCustomizedSpecAndResize'
+        'resizeSpec' => 'getResizeSpec'
     ];
 
     /**
@@ -193,10 +178,7 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['cropCustomizedSpec'] = isset($data['cropCustomizedSpec']) ? $data['cropCustomizedSpec'] : null;
-        $this->container['cropSmartSpec'] = isset($data['cropSmartSpec']) ? $data['cropSmartSpec'] : null;
         $this->container['resizeSpec'] = isset($data['resizeSpec']) ? $data['resizeSpec'] : null;
-        $this->container['cropCustomizedSpecAndResize'] = isset($data['cropCustomizedSpecAndResize']) ? $data['cropCustomizedSpecAndResize'] : null;
     }
 
     /**
@@ -224,54 +206,6 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets cropCustomizedSpec
-     *
-     * @return \TencentAds\Model\CropCustomizedSpec|mixed
-     */
-    public function getCropCustomizedSpec()
-    {
-        return $this->container['cropCustomizedSpec'];
-    }
-
-    /**
-     * Sets cropCustomizedSpec
-     *
-     * @param \TencentAds\Model\CropCustomizedSpec|mixed $cropCustomizedSpec cropCustomizedSpec
-     *
-     * @return $this
-     */
-    public function setCropCustomizedSpec($cropCustomizedSpec)
-    {
-        $this->container['cropCustomizedSpec'] = $cropCustomizedSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets cropSmartSpec
-     *
-     * @return \TencentAds\Model\CropSmartSpec|mixed
-     */
-    public function getCropSmartSpec()
-    {
-        return $this->container['cropSmartSpec'];
-    }
-
-    /**
-     * Sets cropSmartSpec
-     *
-     * @param \TencentAds\Model\CropSmartSpec|mixed $cropSmartSpec cropSmartSpec
-     *
-     * @return $this
-     */
-    public function setCropSmartSpec($cropSmartSpec)
-    {
-        $this->container['cropSmartSpec'] = $cropSmartSpec;
-
-        return $this;
-    }
-
-    /**
      * Gets resizeSpec
      *
      * @return \TencentAds\Model\ResizeSpec|mixed
@@ -291,30 +225,6 @@ class CropOperationSpec implements ModelInterface, ArrayAccess
     public function setResizeSpec($resizeSpec)
     {
         $this->container['resizeSpec'] = $resizeSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets cropCustomizedSpecAndResize
-     *
-     * @return \TencentAds\Model\CropCustomizedSpecAndResize|mixed
-     */
-    public function getCropCustomizedSpecAndResize()
-    {
-        return $this->container['cropCustomizedSpecAndResize'];
-    }
-
-    /**
-     * Sets cropCustomizedSpecAndResize
-     *
-     * @param \TencentAds\Model\CropCustomizedSpecAndResize|mixed $cropCustomizedSpecAndResize cropCustomizedSpecAndResize
-     *
-     * @return $this
-     */
-    public function setCropCustomizedSpecAndResize($cropCustomizedSpecAndResize)
-    {
-        $this->container['cropCustomizedSpecAndResize'] = $cropCustomizedSpecAndResize;
 
         return $this;
     }

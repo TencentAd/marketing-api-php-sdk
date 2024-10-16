@@ -58,7 +58,8 @@ class DynamicCreativesGetResponseData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'list' => '\TencentAds\Model\V3\DynamicCreativesGetListStruct[]',
-        'pageInfo' => '\TencentAds\Model\V3\PageInfo'
+        'pageInfo' => '\TencentAds\Model\V3\PageInfo',
+        'cursorPageInfo' => '\TencentAds\Model\V3\CursorPageInfoStruct'
     ];
 
     /**
@@ -68,7 +69,8 @@ class DynamicCreativesGetResponseData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'list' => null,
-        'pageInfo' => null
+        'pageInfo' => null,
+        'cursorPageInfo' => null
     ];
 
     /**
@@ -99,7 +101,8 @@ class DynamicCreativesGetResponseData implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'list' => 'list',
-        'pageInfo' => 'page_info'
+        'pageInfo' => 'page_info',
+        'cursorPageInfo' => 'cursor_page_info'
     ];
 
     /**
@@ -109,7 +112,8 @@ class DynamicCreativesGetResponseData implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'list' => 'setList',
-        'pageInfo' => 'setPageInfo'
+        'pageInfo' => 'setPageInfo',
+        'cursorPageInfo' => 'setCursorPageInfo'
     ];
 
     /**
@@ -119,7 +123,8 @@ class DynamicCreativesGetResponseData implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'list' => 'getList',
-        'pageInfo' => 'getPageInfo'
+        'pageInfo' => 'getPageInfo',
+        'cursorPageInfo' => 'getCursorPageInfo'
     ];
 
     /**
@@ -184,6 +189,7 @@ class DynamicCreativesGetResponseData implements ModelInterface, ArrayAccess
     {
         $this->container['list'] = isset($data['list']) ? $data['list'] : null;
         $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
+        $this->container['cursorPageInfo'] = isset($data['cursorPageInfo']) ? $data['cursorPageInfo'] : null;
     }
 
     /**
@@ -254,6 +260,30 @@ class DynamicCreativesGetResponseData implements ModelInterface, ArrayAccess
     public function setPageInfo($pageInfo)
     {
         $this->container['pageInfo'] = $pageInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets cursorPageInfo
+     *
+     * @return \TencentAds\Model\V3\CursorPageInfoStruct|mixed
+     */
+    public function getCursorPageInfo()
+    {
+        return $this->container['cursorPageInfo'];
+    }
+
+    /**
+     * Sets cursorPageInfo
+     *
+     * @param \TencentAds\Model\V3\CursorPageInfoStruct|mixed $cursorPageInfo cursorPageInfo
+     *
+     * @return $this
+     */
+    public function setCursorPageInfo($cursorPageInfo)
+    {
+        $this->container['cursorPageInfo'] = $cursorPageInfo;
 
         return $this;
     }

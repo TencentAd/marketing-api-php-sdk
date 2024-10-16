@@ -1,6 +1,6 @@
 <?php
 /**
- * BackUpOption
+ * OperatorPlatformType
  *
  * PHP version 5
  *
@@ -31,22 +31,27 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * BackUpOption Class Doc Comment
+ * OperatorPlatformType Class Doc Comment
  *
  * @category Class
- * @description 微信小程序/微信小游戏蹊径落地页开关选项
+ * @description 操作平台类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class BackUpOption
+class OperatorPlatformType
 {
     /**
      * Possible values of this enum
      */
-    const UNKNOWN = 'BACKUP_OPTION_UNKNOWN';
-    const DEFAULT_ON = 'BACKUP_OPTION_DEFAULT_ON';
-    const DEFAULT_OFF = 'BACKUP_OPTION_DEFAULT_OFF';
+    const UNKNOWN = 'OPERATOR_PLATFORM_UNKNOWN';
+    const MARKETING_API = 'OPERATOR_PLATFORM_MARKETING_API';
+    const ADQ = 'OPERATOR_PLATFORM_ADQ';
+    const AUDIT = 'OPERATOR_PLATFORM_AUDIT';
+    const MINISITE = 'OPERATOR_PLATFORM_MINISITE';
+    const SMART_ENGINE = 'OPERATOR_PLATFORM_SMART_ENGINE';
+    const SEARCH_EDITOR = 'OPERATOR_PLATFORM_SEARCH_EDITOR';
+    const MARKETING_ASSET = 'OPERATOR_PLATFORM_MARKETING_ASSET';
     
     /**
      * Gets allowable values of the enum
@@ -56,8 +61,13 @@ class BackUpOption
     {
         return [
             self::UNKNOWN,
-            self::DEFAULT_ON,
-            self::DEFAULT_OFF,
+            self::MARKETING_API,
+            self::ADQ,
+            self::AUDIT,
+            self::MINISITE,
+            self::SMART_ENGINE,
+            self::SEARCH_EDITOR,
+            self::MARKETING_ASSET,
         ];
     }
 }

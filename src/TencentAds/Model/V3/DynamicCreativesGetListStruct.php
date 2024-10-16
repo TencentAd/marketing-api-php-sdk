@@ -69,11 +69,12 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'string',
         'pageTrackUrl' => 'string',
         'configuredStatus' => '\TencentAds\Model\V3\ConfiguredStatus',
-        'enableBreakthroughSiteset' => 'bool',
         'isDeleted' => 'bool',
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
-        'marketingAssetVerification' => '\TencentAds\Model\V3\MarketingAssetVerification'
+        'marketingAssetVerification' => '\TencentAds\Model\V3\MarketingAssetVerification',
+        'source' => '\TencentAds\Model\V3\AdCreativeSource',
+        'assetInconsistentStatus' => '\TencentAds\Model\V3\AssetInconsistentStatus'
     ];
 
     /**
@@ -93,11 +94,12 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => null,
         'pageTrackUrl' => null,
         'configuredStatus' => null,
-        'enableBreakthroughSiteset' => null,
         'isDeleted' => null,
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
-        'marketingAssetVerification' => null
+        'marketingAssetVerification' => null,
+        'source' => null,
+        'assetInconsistentStatus' => null
     ];
 
     /**
@@ -138,11 +140,12 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'click_tracking_url',
         'pageTrackUrl' => 'page_track_url',
         'configuredStatus' => 'configured_status',
-        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'isDeleted' => 'is_deleted',
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
-        'marketingAssetVerification' => 'marketing_asset_verification'
+        'marketingAssetVerification' => 'marketing_asset_verification',
+        'source' => 'source',
+        'assetInconsistentStatus' => 'asset_inconsistent_status'
     ];
 
     /**
@@ -162,11 +165,12 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'setClickTrackingUrl',
         'pageTrackUrl' => 'setPageTrackUrl',
         'configuredStatus' => 'setConfiguredStatus',
-        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'isDeleted' => 'setIsDeleted',
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
-        'marketingAssetVerification' => 'setMarketingAssetVerification'
+        'marketingAssetVerification' => 'setMarketingAssetVerification',
+        'source' => 'setSource',
+        'assetInconsistentStatus' => 'setAssetInconsistentStatus'
     ];
 
     /**
@@ -186,11 +190,12 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'getClickTrackingUrl',
         'pageTrackUrl' => 'getPageTrackUrl',
         'configuredStatus' => 'getConfiguredStatus',
-        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'isDeleted' => 'getIsDeleted',
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
-        'marketingAssetVerification' => 'getMarketingAssetVerification'
+        'marketingAssetVerification' => 'getMarketingAssetVerification',
+        'source' => 'getSource',
+        'assetInconsistentStatus' => 'getAssetInconsistentStatus'
     ];
 
     /**
@@ -264,11 +269,12 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['clickTrackingUrl'] = isset($data['clickTrackingUrl']) ? $data['clickTrackingUrl'] : null;
         $this->container['pageTrackUrl'] = isset($data['pageTrackUrl']) ? $data['pageTrackUrl'] : null;
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
-        $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['marketingAssetVerification'] = isset($data['marketingAssetVerification']) ? $data['marketingAssetVerification'] : null;
+        $this->container['source'] = isset($data['source']) ? $data['source'] : null;
+        $this->container['assetInconsistentStatus'] = isset($data['assetInconsistentStatus']) ? $data['assetInconsistentStatus'] : null;
     }
 
     /**
@@ -560,30 +566,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets enableBreakthroughSiteset
-     *
-     * @return bool|mixed
-     */
-    public function getEnableBreakthroughSiteset()
-    {
-        return $this->container['enableBreakthroughSiteset'];
-    }
-
-    /**
-     * Sets enableBreakthroughSiteset
-     *
-     * @param bool|mixed $enableBreakthroughSiteset enableBreakthroughSiteset
-     *
-     * @return $this
-     */
-    public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
-    {
-        $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
-
-        return $this;
-    }
-
-    /**
      * Gets isDeleted
      *
      * @return bool|mixed
@@ -675,6 +657,54 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setMarketingAssetVerification($marketingAssetVerification)
     {
         $this->container['marketingAssetVerification'] = $marketingAssetVerification;
+
+        return $this;
+    }
+
+    /**
+     * Gets source
+     *
+     * @return \TencentAds\Model\V3\AdCreativeSource|mixed
+     */
+    public function getSource()
+    {
+        return $this->container['source'];
+    }
+
+    /**
+     * Sets source
+     *
+     * @param \TencentAds\Model\V3\AdCreativeSource|mixed $source source
+     *
+     * @return $this
+     */
+    public function setSource($source)
+    {
+        $this->container['source'] = $source;
+
+        return $this;
+    }
+
+    /**
+     * Gets assetInconsistentStatus
+     *
+     * @return \TencentAds\Model\V3\AssetInconsistentStatus|mixed
+     */
+    public function getAssetInconsistentStatus()
+    {
+        return $this->container['assetInconsistentStatus'];
+    }
+
+    /**
+     * Sets assetInconsistentStatus
+     *
+     * @param \TencentAds\Model\V3\AssetInconsistentStatus|mixed $assetInconsistentStatus assetInconsistentStatus
+     *
+     * @return $this
+     */
+    public function setAssetInconsistentStatus($assetInconsistentStatus)
+    {
+        $this->container['assetInconsistentStatus'] = $assetInconsistentStatus;
 
         return $this;
     }

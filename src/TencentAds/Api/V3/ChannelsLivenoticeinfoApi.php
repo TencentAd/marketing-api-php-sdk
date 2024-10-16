@@ -95,15 +95,16 @@ class ChannelsLivenoticeinfoApi
      * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $finderUsername finderUsername (optional)
      * @param  string|mixed $nickname nickname (optional)
+     * @param  string|mixed $wechatChannelsAccountId wechatChannelsAccountId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\ChannelsLivenoticeinfoGetResponse|mixed
      */
-    public function channelsLivenoticeinfoGet($accountId, $finderUsername = null, $nickname = null, $fields = null)
+    public function channelsLivenoticeinfoGet($accountId, $finderUsername = null, $nickname = null, $wechatChannelsAccountId = null, $fields = null)
     {
-        list($response) = $this->channelsLivenoticeinfoGetWithHttpInfo($accountId, $finderUsername, $nickname, $fields);
+        list($response) = $this->channelsLivenoticeinfoGetWithHttpInfo($accountId, $finderUsername, $nickname, $wechatChannelsAccountId, $fields);
         return $response;
     }
 
@@ -115,16 +116,17 @@ class ChannelsLivenoticeinfoApi
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $finderUsername (optional)
      * @param  string|mixed $nickname (optional)
+     * @param  string|mixed $wechatChannelsAccountId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\ChannelsLivenoticeinfoGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function channelsLivenoticeinfoGetWithHttpInfo($accountId, $finderUsername = null, $nickname = null, $fields = null)
+    public function channelsLivenoticeinfoGetWithHttpInfo($accountId, $finderUsername = null, $nickname = null, $wechatChannelsAccountId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\ChannelsLivenoticeinfoGetResponse';
-        $request = $this->channelsLivenoticeinfoGetRequest($accountId, $finderUsername, $nickname, $fields);
+        $request = $this->channelsLivenoticeinfoGetRequest($accountId, $finderUsername, $nickname, $wechatChannelsAccountId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -193,14 +195,15 @@ class ChannelsLivenoticeinfoApi
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $finderUsername (optional)
      * @param  string|mixed $nickname (optional)
+     * @param  string|mixed $wechatChannelsAccountId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function channelsLivenoticeinfoGetAsync($accountId, $finderUsername = null, $nickname = null, $fields = null)
+    public function channelsLivenoticeinfoGetAsync($accountId, $finderUsername = null, $nickname = null, $wechatChannelsAccountId = null, $fields = null)
     {
-        return $this->channelsLivenoticeinfoGetAsyncWithHttpInfo($accountId, $finderUsername, $nickname, $fields)
+        return $this->channelsLivenoticeinfoGetAsyncWithHttpInfo($accountId, $finderUsername, $nickname, $wechatChannelsAccountId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -216,15 +219,16 @@ class ChannelsLivenoticeinfoApi
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $finderUsername (optional)
      * @param  string|mixed $nickname (optional)
+     * @param  string|mixed $wechatChannelsAccountId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function channelsLivenoticeinfoGetAsyncWithHttpInfo($accountId, $finderUsername = null, $nickname = null, $fields = null)
+    public function channelsLivenoticeinfoGetAsyncWithHttpInfo($accountId, $finderUsername = null, $nickname = null, $wechatChannelsAccountId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\ChannelsLivenoticeinfoGetResponse';
-        $request = $this->channelsLivenoticeinfoGetRequest($accountId, $finderUsername, $nickname, $fields);
+        $request = $this->channelsLivenoticeinfoGetRequest($accountId, $finderUsername, $nickname, $wechatChannelsAccountId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -269,12 +273,13 @@ class ChannelsLivenoticeinfoApi
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $finderUsername (optional)
      * @param  string|mixed $nickname (optional)
+     * @param  string|mixed $wechatChannelsAccountId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function channelsLivenoticeinfoGetRequest($accountId, $finderUsername = null, $nickname = null, $fields = null)
+    protected function channelsLivenoticeinfoGetRequest($accountId, $finderUsername = null, $nickname = null, $wechatChannelsAccountId = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -301,6 +306,10 @@ class ChannelsLivenoticeinfoApi
         // query params
         if ($nickname !== null) {
             $queryParams['nickname'] = ObjectSerializer::toQueryValue($nickname);
+        }
+        // query params
+        if ($wechatChannelsAccountId !== null) {
+            $queryParams['wechat_channels_account_id'] = ObjectSerializer::toQueryValue($wechatChannelsAccountId);
         }
         // query params
         if (is_array($fields)) {

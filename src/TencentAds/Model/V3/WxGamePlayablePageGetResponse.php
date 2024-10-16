@@ -1,6 +1,6 @@
 <?php
 /**
- * CropCustomizedSpec
+ * WxGamePlayablePageGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CropCustomizedSpec Class Doc Comment
+ * WxGamePlayablePageGetResponse Class Doc Comment
  *
  * @category Class
- * @description 裁剪信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CropCustomizedSpec implements ModelInterface, ArrayAccess
+class WxGamePlayablePageGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'crop_customized_spec';
+    protected static $swaggerModelName = 'WxGamePlayablePageGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,10 +57,11 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'width' => 'int',
-        'height' => 'int',
-        'axisX' => 'int',
-        'axisY' => 'int'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\V3\WxGamePlayablePageGetResponseData'
     ];
 
     /**
@@ -70,10 +70,11 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'width' => 'int64',
-        'height' => 'int64',
-        'axisX' => 'int64',
-        'axisY' => 'int64'
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -103,10 +104,11 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'width' => 'width',
-        'height' => 'height',
-        'axisX' => 'axis_x',
-        'axisY' => 'axis_y'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -115,10 +117,11 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'width' => 'setWidth',
-        'height' => 'setHeight',
-        'axisX' => 'setAxisX',
-        'axisY' => 'setAxisY'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -127,10 +130,11 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'width' => 'getWidth',
-        'height' => 'getHeight',
-        'axisX' => 'getAxisX',
-        'axisY' => 'getAxisY'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -193,10 +197,11 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
-        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
-        $this->container['axisX'] = isset($data['axisX']) ? $data['axisX'] : null;
-        $this->container['axisY'] = isset($data['axisY']) ? $data['axisY'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -224,97 +229,121 @@ class CropCustomizedSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets width
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getWidth()
+    public function getCode()
     {
-        return $this->container['width'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets width
+     * Sets code
      *
-     * @param int|mixed $width width
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setWidth($width)
+    public function setCode($code)
     {
-        $this->container['width'] = $width;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets height
+     * Gets message
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getHeight()
+    public function getMessage()
     {
-        return $this->container['height'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets height
+     * Sets message
      *
-     * @param int|mixed $height height
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setHeight($height)
+    public function setMessage($message)
     {
-        $this->container['height'] = $height;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets axisX
+     * Gets messageCn
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getAxisX()
+    public function getMessageCn()
     {
-        return $this->container['axisX'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets axisX
+     * Sets messageCn
      *
-     * @param int|mixed $axisX axisX
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setAxisX($axisX)
+    public function setMessageCn($messageCn)
     {
-        $this->container['axisX'] = $axisX;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets axisY
+     * Gets errors
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
      */
-    public function getAxisY()
+    public function getErrors()
     {
-        return $this->container['axisY'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets axisY
+     * Sets errors
      *
-     * @param int|mixed $axisY axisY
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setAxisY($axisY)
+    public function setErrors($errors)
     {
-        $this->container['axisY'] = $axisY;
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\V3\WxGamePlayablePageGetResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\V3\WxGamePlayablePageGetResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

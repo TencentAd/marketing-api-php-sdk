@@ -177,9 +177,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'int',
         'guideToFollowPageInteractionAmount' => 'int',
         'guideToFollowPageInteractionUsers' => 'int',
-        'landingPageViewCount' => 'int',
-        'landingPageEffectiveRate' => 'double',
-        'landingPageUserCount' => 'int',
         'platformKeyPageViewUserCount' => 'int',
         'pageConsultCount' => 'int',
         'consultUvCount' => 'int',
@@ -753,6 +750,61 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomNegativePv' => 'int',
         'securityLowPriceOrderPv' => 'int',
         'securityHighPriceOrderPv' => 'int',
+        'miniGameRate' => 'double',
+        'retentionPlaDedupPv' => 'int',
+        'retentionPlaDedupRate' => 'double',
+        'adMonetizationPlaDedupPv' => 'int',
+        'adMonetizationPlaDedupActive1dPv' => 'int',
+        'adMonetizationPlaDedupActive3dPv' => 'int',
+        'adMonetizationPlaDedupActive7dPv' => 'int',
+        'adMonetizationBkPlaDedupPv' => 'int',
+        'miniGameBfIncomePlaRoi' => 'double',
+        'miniGameBfIncomePlaArpu' => 'int',
+        'adMonetizationBkPlaCost' => 'int',
+        'adMonetizationBkPlaDedupActive1dPv' => 'int',
+        'adMonetizationBkPlaActive24hAmount' => 'int',
+        'adMonetizationBkPlaDedupActive24hPv' => 'int',
+        'adMonetizationBkPlaDedupActive24hRoi' => 'double',
+        'adMonetizationBkPlaDedupActive24hArpu' => 'int',
+        'adMonetizationBkPlaDedupActive24hCost' => 'int',
+        'adMonetizationBkPlaActive3dAmount' => 'int',
+        'adMonetizationBkPlaActive3dRoi' => 'double',
+        'adMonetizationBkPlaActive7dAmount' => 'int',
+        'adMonetizationBkPlaActive14dAmount' => 'int',
+        'adMonetizationBkPlaActive7dRoi' => 'double',
+        'adMonetizationBkPlaActive14dRoi' => 'double',
+        'clkAppservicePv' => 'int',
+        'purchaseBkActive1dAmount' => 'int',
+        'purchaseDedupBkActive1dPv' => 'int',
+        'purchaseDedupPv' => 'int',
+        'mixPurchaseAmount' => 'int',
+        'mixPayArpu' => 'int',
+        'mixPayCost' => 'int',
+        'mixPayRoi' => 'double',
+        'mixPurchaseActive24hAmount' => 'int',
+        'mixPayActive24hRoi' => 'double',
+        'mixPurchaseAmountFirstDay' => 'int',
+        'mixPayRoiFirstDay' => 'double',
+        'mixPurchaseActive3dAmount' => 'int',
+        'mixPayActive3dRoi' => 'double',
+        'mixPurchaseActive7dAmount' => 'int',
+        'mixPayActive7dRoi' => 'double',
+        'mixPurchaseActive14dAmount' => 'int',
+        'mixPayActive14dRoi' => 'double',
+        'mixPurchaseDedupPv' => 'int',
+        'purchaseRegAmount' => 'int',
+        'purchaseDedupRegPv' => 'int',
+        'purchaseRegActive24hAmount' => 'int',
+        'purchaseRegActive3dAmount' => 'int',
+        'purchaseRegActive7dAmount' => 'int',
+        'purchaseRegActive14dAmount' => 'int',
+        'purchaseRegActive1dPv' => 'int',
+        'purchaseDedupRegActive1dPv' => 'int',
+        'purchaseRegActive1dAmount' => 'int',
+        'clkHotElementPv' => 'int',
+        'clkHotElementUv' => 'int',
+        'hotElementCtr' => 'double',
+        'securityNegativeDedupPv' => 'int',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -762,9 +814,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'componentType' => 'string',
         'imageIds' => 'string',
         'videoIds' => 'string',
-        'expAvgRank' => 'double',
-        'expOverallTopPv' => 'int',
-        'clkTopPv' => 'int',
         'cvsExpPv' => 'int',
         'cvsExpUv' => 'int',
         'cvsCpnClkPv' => 'int',
@@ -806,9 +855,15 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'bidword' => 'string',
         'matchType' => 'int',
         'device' => 'int',
+        'expAvgRank' => 'double',
+        'expOverallTopPv' => 'int',
+        'clkTopPv' => 'int',
         'queryword' => 'string',
         'imageId' => 'string',
         'videoId' => 'string',
+        'marketingTargetTypeId' => 'int',
+        'marketingAssetId' => 'int',
+        'marketingAssetName' => 'string',
         'projectId' => 'int',
         'projectName' => 'string'
     ];
@@ -938,9 +993,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'int64',
         'guideToFollowPageInteractionAmount' => 'int64',
         'guideToFollowPageInteractionUsers' => 'int64',
-        'landingPageViewCount' => 'int64',
-        'landingPageEffectiveRate' => 'double',
-        'landingPageUserCount' => 'int64',
         'platformKeyPageViewUserCount' => 'int64',
         'pageConsultCount' => 'int64',
         'consultUvCount' => 'int64',
@@ -1514,6 +1566,61 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomNegativePv' => 'int64',
         'securityLowPriceOrderPv' => 'int64',
         'securityHighPriceOrderPv' => 'int64',
+        'miniGameRate' => 'double',
+        'retentionPlaDedupPv' => 'int64',
+        'retentionPlaDedupRate' => 'double',
+        'adMonetizationPlaDedupPv' => 'int64',
+        'adMonetizationPlaDedupActive1dPv' => 'int64',
+        'adMonetizationPlaDedupActive3dPv' => 'int64',
+        'adMonetizationPlaDedupActive7dPv' => 'int64',
+        'adMonetizationBkPlaDedupPv' => 'int64',
+        'miniGameBfIncomePlaRoi' => 'double',
+        'miniGameBfIncomePlaArpu' => 'int64',
+        'adMonetizationBkPlaCost' => 'int64',
+        'adMonetizationBkPlaDedupActive1dPv' => 'int64',
+        'adMonetizationBkPlaActive24hAmount' => 'int64',
+        'adMonetizationBkPlaDedupActive24hPv' => 'int64',
+        'adMonetizationBkPlaDedupActive24hRoi' => 'double',
+        'adMonetizationBkPlaDedupActive24hArpu' => 'int64',
+        'adMonetizationBkPlaDedupActive24hCost' => 'int64',
+        'adMonetizationBkPlaActive3dAmount' => 'int64',
+        'adMonetizationBkPlaActive3dRoi' => 'double',
+        'adMonetizationBkPlaActive7dAmount' => 'int64',
+        'adMonetizationBkPlaActive14dAmount' => 'int64',
+        'adMonetizationBkPlaActive7dRoi' => 'double',
+        'adMonetizationBkPlaActive14dRoi' => 'double',
+        'clkAppservicePv' => 'int64',
+        'purchaseBkActive1dAmount' => 'int64',
+        'purchaseDedupBkActive1dPv' => 'int64',
+        'purchaseDedupPv' => 'int64',
+        'mixPurchaseAmount' => 'int64',
+        'mixPayArpu' => 'int64',
+        'mixPayCost' => 'int64',
+        'mixPayRoi' => 'double',
+        'mixPurchaseActive24hAmount' => 'int64',
+        'mixPayActive24hRoi' => 'double',
+        'mixPurchaseAmountFirstDay' => 'int64',
+        'mixPayRoiFirstDay' => 'double',
+        'mixPurchaseActive3dAmount' => 'int64',
+        'mixPayActive3dRoi' => 'double',
+        'mixPurchaseActive7dAmount' => 'int64',
+        'mixPayActive7dRoi' => 'double',
+        'mixPurchaseActive14dAmount' => 'int64',
+        'mixPayActive14dRoi' => 'double',
+        'mixPurchaseDedupPv' => 'int64',
+        'purchaseRegAmount' => 'int64',
+        'purchaseDedupRegPv' => 'int64',
+        'purchaseRegActive24hAmount' => 'int64',
+        'purchaseRegActive3dAmount' => 'int64',
+        'purchaseRegActive7dAmount' => 'int64',
+        'purchaseRegActive14dAmount' => 'int64',
+        'purchaseRegActive1dPv' => 'int64',
+        'purchaseDedupRegActive1dPv' => 'int64',
+        'purchaseRegActive1dAmount' => 'int64',
+        'clkHotElementPv' => 'int64',
+        'clkHotElementUv' => 'int64',
+        'hotElementCtr' => 'double',
+        'securityNegativeDedupPv' => 'int64',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -1523,9 +1630,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'componentType' => null,
         'imageIds' => null,
         'videoIds' => null,
-        'expAvgRank' => 'double',
-        'expOverallTopPv' => 'int64',
-        'clkTopPv' => 'int64',
         'cvsExpPv' => 'int64',
         'cvsExpUv' => 'int64',
         'cvsCpnClkPv' => 'int64',
@@ -1567,9 +1671,15 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'bidword' => null,
         'matchType' => 'int64',
         'device' => 'int64',
+        'expAvgRank' => 'double',
+        'expOverallTopPv' => 'int64',
+        'clkTopPv' => 'int64',
         'queryword' => null,
         'imageId' => null,
         'videoId' => null,
+        'marketingTargetTypeId' => 'int64',
+        'marketingAssetId' => 'int64',
+        'marketingAssetName' => null,
         'projectId' => 'int64',
         'projectName' => null
     ];
@@ -1720,9 +1830,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'guide_to_follow_page_viewers',
         'guideToFollowPageInteractionAmount' => 'guide_to_follow_page_interaction_amount',
         'guideToFollowPageInteractionUsers' => 'guide_to_follow_page_interaction_users',
-        'landingPageViewCount' => 'landing_page_view_count',
-        'landingPageEffectiveRate' => 'landing_page_effective_rate',
-        'landingPageUserCount' => 'landing_page_user_count',
         'platformKeyPageViewUserCount' => 'platform_key_page_view_user_count',
         'pageConsultCount' => 'page_consult_count',
         'consultUvCount' => 'consult_uv_count',
@@ -2296,6 +2403,61 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomNegativePv' => 'after_add_wecom_negative_pv',
         'securityLowPriceOrderPv' => 'security_low_price_order_pv',
         'securityHighPriceOrderPv' => 'security_high_price_order_pv',
+        'miniGameRate' => 'mini_game_rate',
+        'retentionPlaDedupPv' => 'retention_pla_dedup_pv',
+        'retentionPlaDedupRate' => 'retention_pla_dedup_rate',
+        'adMonetizationPlaDedupPv' => 'ad_monetization_pla_dedup_pv',
+        'adMonetizationPlaDedupActive1dPv' => 'ad_monetization_pla_dedup_active_1d_pv',
+        'adMonetizationPlaDedupActive3dPv' => 'ad_monetization_pla_dedup_active_3d_pv',
+        'adMonetizationPlaDedupActive7dPv' => 'ad_monetization_pla_dedup_active_7d_pv',
+        'adMonetizationBkPlaDedupPv' => 'ad_monetization_bk_pla_dedup_pv',
+        'miniGameBfIncomePlaRoi' => 'mini_game_bf_income_pla_roi',
+        'miniGameBfIncomePlaArpu' => 'mini_game_bf_income_pla_arpu',
+        'adMonetizationBkPlaCost' => 'ad_monetization_bk_pla_cost',
+        'adMonetizationBkPlaDedupActive1dPv' => 'ad_monetization_bk_pla_dedup_active_1d_pv',
+        'adMonetizationBkPlaActive24hAmount' => 'ad_monetization_bk_pla_active_24h_amount',
+        'adMonetizationBkPlaDedupActive24hPv' => 'ad_monetization_bk_pla_dedup_active_24h_pv',
+        'adMonetizationBkPlaDedupActive24hRoi' => 'ad_monetization_bk_pla_dedup_active_24h_roi',
+        'adMonetizationBkPlaDedupActive24hArpu' => 'ad_monetization_bk_pla_dedup_active_24h_arpu',
+        'adMonetizationBkPlaDedupActive24hCost' => 'ad_monetization_bk_pla_dedup_active_24h_cost',
+        'adMonetizationBkPlaActive3dAmount' => 'ad_monetization_bk_pla_active_3d_amount',
+        'adMonetizationBkPlaActive3dRoi' => 'ad_monetization_bk_pla_active_3d_roi',
+        'adMonetizationBkPlaActive7dAmount' => 'ad_monetization_bk_pla_active_7d_amount',
+        'adMonetizationBkPlaActive14dAmount' => 'ad_monetization_bk_pla_active_14d_amount',
+        'adMonetizationBkPlaActive7dRoi' => 'ad_monetization_bk_pla_active_7d_roi',
+        'adMonetizationBkPlaActive14dRoi' => 'ad_monetization_bk_pla_active_14d_roi',
+        'clkAppservicePv' => 'clk_appservice_pv',
+        'purchaseBkActive1dAmount' => 'purchase_bk_active_1d_amount',
+        'purchaseDedupBkActive1dPv' => 'purchase_dedup_bk_active_1d_pv',
+        'purchaseDedupPv' => 'purchase_dedup_pv',
+        'mixPurchaseAmount' => 'mix_purchase_amount',
+        'mixPayArpu' => 'mix_pay_arpu',
+        'mixPayCost' => 'mix_pay_cost',
+        'mixPayRoi' => 'mix_pay_roi',
+        'mixPurchaseActive24hAmount' => 'mix_purchase_active_24h_amount',
+        'mixPayActive24hRoi' => 'mix_pay_active_24h_roi',
+        'mixPurchaseAmountFirstDay' => 'mix_purchase_amount_first_day',
+        'mixPayRoiFirstDay' => 'mix_pay_roi_first_day',
+        'mixPurchaseActive3dAmount' => 'mix_purchase_active_3d_amount',
+        'mixPayActive3dRoi' => 'mix_pay_active_3d_roi',
+        'mixPurchaseActive7dAmount' => 'mix_purchase_active_7d_amount',
+        'mixPayActive7dRoi' => 'mix_pay_active_7d_roi',
+        'mixPurchaseActive14dAmount' => 'mix_purchase_active_14d_amount',
+        'mixPayActive14dRoi' => 'mix_pay_active_14d_roi',
+        'mixPurchaseDedupPv' => 'mix_purchase_dedup_pv',
+        'purchaseRegAmount' => 'purchase_reg_amount',
+        'purchaseDedupRegPv' => 'purchase_dedup_reg_pv',
+        'purchaseRegActive24hAmount' => 'purchase_reg_active_24h_amount',
+        'purchaseRegActive3dAmount' => 'purchase_reg_active_3d_amount',
+        'purchaseRegActive7dAmount' => 'purchase_reg_active_7d_amount',
+        'purchaseRegActive14dAmount' => 'purchase_reg_active_14d_amount',
+        'purchaseRegActive1dPv' => 'purchase_reg_active_1d_pv',
+        'purchaseDedupRegActive1dPv' => 'purchase_dedup_reg_active_1d_pv',
+        'purchaseRegActive1dAmount' => 'purchase_reg_active_1d_amount',
+        'clkHotElementPv' => 'clk_hot_element_pv',
+        'clkHotElementUv' => 'clk_hot_element_uv',
+        'hotElementCtr' => 'hot_element_ctr',
+        'securityNegativeDedupPv' => 'security_negative_dedup_pv',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -2305,9 +2467,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'componentType' => 'component_type',
         'imageIds' => 'image_ids',
         'videoIds' => 'video_ids',
-        'expAvgRank' => 'exp_avg_rank',
-        'expOverallTopPv' => 'exp_overall_top_pv',
-        'clkTopPv' => 'clk_top_pv',
         'cvsExpPv' => 'cvs_exp_pv',
         'cvsExpUv' => 'cvs_exp_uv',
         'cvsCpnClkPv' => 'cvs_cpn_clk_pv',
@@ -2349,9 +2508,15 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'bidword' => 'bidword',
         'matchType' => 'match_type',
         'device' => 'device',
+        'expAvgRank' => 'exp_avg_rank',
+        'expOverallTopPv' => 'exp_overall_top_pv',
+        'clkTopPv' => 'clk_top_pv',
         'queryword' => 'queryword',
         'imageId' => 'image_id',
         'videoId' => 'video_id',
+        'marketingTargetTypeId' => 'marketing_target_type_id',
+        'marketingAssetId' => 'marketing_asset_id',
+        'marketingAssetName' => 'marketing_asset_name',
         'projectId' => 'project_id',
         'projectName' => 'project_name'
     ];
@@ -2481,9 +2646,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'setGuideToFollowPageViewers',
         'guideToFollowPageInteractionAmount' => 'setGuideToFollowPageInteractionAmount',
         'guideToFollowPageInteractionUsers' => 'setGuideToFollowPageInteractionUsers',
-        'landingPageViewCount' => 'setLandingPageViewCount',
-        'landingPageEffectiveRate' => 'setLandingPageEffectiveRate',
-        'landingPageUserCount' => 'setLandingPageUserCount',
         'platformKeyPageViewUserCount' => 'setPlatformKeyPageViewUserCount',
         'pageConsultCount' => 'setPageConsultCount',
         'consultUvCount' => 'setConsultUvCount',
@@ -3057,6 +3219,61 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomNegativePv' => 'setAfterAddWecomNegativePv',
         'securityLowPriceOrderPv' => 'setSecurityLowPriceOrderPv',
         'securityHighPriceOrderPv' => 'setSecurityHighPriceOrderPv',
+        'miniGameRate' => 'setMiniGameRate',
+        'retentionPlaDedupPv' => 'setRetentionPlaDedupPv',
+        'retentionPlaDedupRate' => 'setRetentionPlaDedupRate',
+        'adMonetizationPlaDedupPv' => 'setAdMonetizationPlaDedupPv',
+        'adMonetizationPlaDedupActive1dPv' => 'setAdMonetizationPlaDedupActive1dPv',
+        'adMonetizationPlaDedupActive3dPv' => 'setAdMonetizationPlaDedupActive3dPv',
+        'adMonetizationPlaDedupActive7dPv' => 'setAdMonetizationPlaDedupActive7dPv',
+        'adMonetizationBkPlaDedupPv' => 'setAdMonetizationBkPlaDedupPv',
+        'miniGameBfIncomePlaRoi' => 'setMiniGameBfIncomePlaRoi',
+        'miniGameBfIncomePlaArpu' => 'setMiniGameBfIncomePlaArpu',
+        'adMonetizationBkPlaCost' => 'setAdMonetizationBkPlaCost',
+        'adMonetizationBkPlaDedupActive1dPv' => 'setAdMonetizationBkPlaDedupActive1dPv',
+        'adMonetizationBkPlaActive24hAmount' => 'setAdMonetizationBkPlaActive24hAmount',
+        'adMonetizationBkPlaDedupActive24hPv' => 'setAdMonetizationBkPlaDedupActive24hPv',
+        'adMonetizationBkPlaDedupActive24hRoi' => 'setAdMonetizationBkPlaDedupActive24hRoi',
+        'adMonetizationBkPlaDedupActive24hArpu' => 'setAdMonetizationBkPlaDedupActive24hArpu',
+        'adMonetizationBkPlaDedupActive24hCost' => 'setAdMonetizationBkPlaDedupActive24hCost',
+        'adMonetizationBkPlaActive3dAmount' => 'setAdMonetizationBkPlaActive3dAmount',
+        'adMonetizationBkPlaActive3dRoi' => 'setAdMonetizationBkPlaActive3dRoi',
+        'adMonetizationBkPlaActive7dAmount' => 'setAdMonetizationBkPlaActive7dAmount',
+        'adMonetizationBkPlaActive14dAmount' => 'setAdMonetizationBkPlaActive14dAmount',
+        'adMonetizationBkPlaActive7dRoi' => 'setAdMonetizationBkPlaActive7dRoi',
+        'adMonetizationBkPlaActive14dRoi' => 'setAdMonetizationBkPlaActive14dRoi',
+        'clkAppservicePv' => 'setClkAppservicePv',
+        'purchaseBkActive1dAmount' => 'setPurchaseBkActive1dAmount',
+        'purchaseDedupBkActive1dPv' => 'setPurchaseDedupBkActive1dPv',
+        'purchaseDedupPv' => 'setPurchaseDedupPv',
+        'mixPurchaseAmount' => 'setMixPurchaseAmount',
+        'mixPayArpu' => 'setMixPayArpu',
+        'mixPayCost' => 'setMixPayCost',
+        'mixPayRoi' => 'setMixPayRoi',
+        'mixPurchaseActive24hAmount' => 'setMixPurchaseActive24hAmount',
+        'mixPayActive24hRoi' => 'setMixPayActive24hRoi',
+        'mixPurchaseAmountFirstDay' => 'setMixPurchaseAmountFirstDay',
+        'mixPayRoiFirstDay' => 'setMixPayRoiFirstDay',
+        'mixPurchaseActive3dAmount' => 'setMixPurchaseActive3dAmount',
+        'mixPayActive3dRoi' => 'setMixPayActive3dRoi',
+        'mixPurchaseActive7dAmount' => 'setMixPurchaseActive7dAmount',
+        'mixPayActive7dRoi' => 'setMixPayActive7dRoi',
+        'mixPurchaseActive14dAmount' => 'setMixPurchaseActive14dAmount',
+        'mixPayActive14dRoi' => 'setMixPayActive14dRoi',
+        'mixPurchaseDedupPv' => 'setMixPurchaseDedupPv',
+        'purchaseRegAmount' => 'setPurchaseRegAmount',
+        'purchaseDedupRegPv' => 'setPurchaseDedupRegPv',
+        'purchaseRegActive24hAmount' => 'setPurchaseRegActive24hAmount',
+        'purchaseRegActive3dAmount' => 'setPurchaseRegActive3dAmount',
+        'purchaseRegActive7dAmount' => 'setPurchaseRegActive7dAmount',
+        'purchaseRegActive14dAmount' => 'setPurchaseRegActive14dAmount',
+        'purchaseRegActive1dPv' => 'setPurchaseRegActive1dPv',
+        'purchaseDedupRegActive1dPv' => 'setPurchaseDedupRegActive1dPv',
+        'purchaseRegActive1dAmount' => 'setPurchaseRegActive1dAmount',
+        'clkHotElementPv' => 'setClkHotElementPv',
+        'clkHotElementUv' => 'setClkHotElementUv',
+        'hotElementCtr' => 'setHotElementCtr',
+        'securityNegativeDedupPv' => 'setSecurityNegativeDedupPv',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -3066,9 +3283,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'componentType' => 'setComponentType',
         'imageIds' => 'setImageIds',
         'videoIds' => 'setVideoIds',
-        'expAvgRank' => 'setExpAvgRank',
-        'expOverallTopPv' => 'setExpOverallTopPv',
-        'clkTopPv' => 'setClkTopPv',
         'cvsExpPv' => 'setCvsExpPv',
         'cvsExpUv' => 'setCvsExpUv',
         'cvsCpnClkPv' => 'setCvsCpnClkPv',
@@ -3110,9 +3324,15 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'bidword' => 'setBidword',
         'matchType' => 'setMatchType',
         'device' => 'setDevice',
+        'expAvgRank' => 'setExpAvgRank',
+        'expOverallTopPv' => 'setExpOverallTopPv',
+        'clkTopPv' => 'setClkTopPv',
         'queryword' => 'setQueryword',
         'imageId' => 'setImageId',
         'videoId' => 'setVideoId',
+        'marketingTargetTypeId' => 'setMarketingTargetTypeId',
+        'marketingAssetId' => 'setMarketingAssetId',
+        'marketingAssetName' => 'setMarketingAssetName',
         'projectId' => 'setProjectId',
         'projectName' => 'setProjectName'
     ];
@@ -3242,9 +3462,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'guideToFollowPageViewers' => 'getGuideToFollowPageViewers',
         'guideToFollowPageInteractionAmount' => 'getGuideToFollowPageInteractionAmount',
         'guideToFollowPageInteractionUsers' => 'getGuideToFollowPageInteractionUsers',
-        'landingPageViewCount' => 'getLandingPageViewCount',
-        'landingPageEffectiveRate' => 'getLandingPageEffectiveRate',
-        'landingPageUserCount' => 'getLandingPageUserCount',
         'platformKeyPageViewUserCount' => 'getPlatformKeyPageViewUserCount',
         'pageConsultCount' => 'getPageConsultCount',
         'consultUvCount' => 'getConsultUvCount',
@@ -3818,6 +4035,61 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomNegativePv' => 'getAfterAddWecomNegativePv',
         'securityLowPriceOrderPv' => 'getSecurityLowPriceOrderPv',
         'securityHighPriceOrderPv' => 'getSecurityHighPriceOrderPv',
+        'miniGameRate' => 'getMiniGameRate',
+        'retentionPlaDedupPv' => 'getRetentionPlaDedupPv',
+        'retentionPlaDedupRate' => 'getRetentionPlaDedupRate',
+        'adMonetizationPlaDedupPv' => 'getAdMonetizationPlaDedupPv',
+        'adMonetizationPlaDedupActive1dPv' => 'getAdMonetizationPlaDedupActive1dPv',
+        'adMonetizationPlaDedupActive3dPv' => 'getAdMonetizationPlaDedupActive3dPv',
+        'adMonetizationPlaDedupActive7dPv' => 'getAdMonetizationPlaDedupActive7dPv',
+        'adMonetizationBkPlaDedupPv' => 'getAdMonetizationBkPlaDedupPv',
+        'miniGameBfIncomePlaRoi' => 'getMiniGameBfIncomePlaRoi',
+        'miniGameBfIncomePlaArpu' => 'getMiniGameBfIncomePlaArpu',
+        'adMonetizationBkPlaCost' => 'getAdMonetizationBkPlaCost',
+        'adMonetizationBkPlaDedupActive1dPv' => 'getAdMonetizationBkPlaDedupActive1dPv',
+        'adMonetizationBkPlaActive24hAmount' => 'getAdMonetizationBkPlaActive24hAmount',
+        'adMonetizationBkPlaDedupActive24hPv' => 'getAdMonetizationBkPlaDedupActive24hPv',
+        'adMonetizationBkPlaDedupActive24hRoi' => 'getAdMonetizationBkPlaDedupActive24hRoi',
+        'adMonetizationBkPlaDedupActive24hArpu' => 'getAdMonetizationBkPlaDedupActive24hArpu',
+        'adMonetizationBkPlaDedupActive24hCost' => 'getAdMonetizationBkPlaDedupActive24hCost',
+        'adMonetizationBkPlaActive3dAmount' => 'getAdMonetizationBkPlaActive3dAmount',
+        'adMonetizationBkPlaActive3dRoi' => 'getAdMonetizationBkPlaActive3dRoi',
+        'adMonetizationBkPlaActive7dAmount' => 'getAdMonetizationBkPlaActive7dAmount',
+        'adMonetizationBkPlaActive14dAmount' => 'getAdMonetizationBkPlaActive14dAmount',
+        'adMonetizationBkPlaActive7dRoi' => 'getAdMonetizationBkPlaActive7dRoi',
+        'adMonetizationBkPlaActive14dRoi' => 'getAdMonetizationBkPlaActive14dRoi',
+        'clkAppservicePv' => 'getClkAppservicePv',
+        'purchaseBkActive1dAmount' => 'getPurchaseBkActive1dAmount',
+        'purchaseDedupBkActive1dPv' => 'getPurchaseDedupBkActive1dPv',
+        'purchaseDedupPv' => 'getPurchaseDedupPv',
+        'mixPurchaseAmount' => 'getMixPurchaseAmount',
+        'mixPayArpu' => 'getMixPayArpu',
+        'mixPayCost' => 'getMixPayCost',
+        'mixPayRoi' => 'getMixPayRoi',
+        'mixPurchaseActive24hAmount' => 'getMixPurchaseActive24hAmount',
+        'mixPayActive24hRoi' => 'getMixPayActive24hRoi',
+        'mixPurchaseAmountFirstDay' => 'getMixPurchaseAmountFirstDay',
+        'mixPayRoiFirstDay' => 'getMixPayRoiFirstDay',
+        'mixPurchaseActive3dAmount' => 'getMixPurchaseActive3dAmount',
+        'mixPayActive3dRoi' => 'getMixPayActive3dRoi',
+        'mixPurchaseActive7dAmount' => 'getMixPurchaseActive7dAmount',
+        'mixPayActive7dRoi' => 'getMixPayActive7dRoi',
+        'mixPurchaseActive14dAmount' => 'getMixPurchaseActive14dAmount',
+        'mixPayActive14dRoi' => 'getMixPayActive14dRoi',
+        'mixPurchaseDedupPv' => 'getMixPurchaseDedupPv',
+        'purchaseRegAmount' => 'getPurchaseRegAmount',
+        'purchaseDedupRegPv' => 'getPurchaseDedupRegPv',
+        'purchaseRegActive24hAmount' => 'getPurchaseRegActive24hAmount',
+        'purchaseRegActive3dAmount' => 'getPurchaseRegActive3dAmount',
+        'purchaseRegActive7dAmount' => 'getPurchaseRegActive7dAmount',
+        'purchaseRegActive14dAmount' => 'getPurchaseRegActive14dAmount',
+        'purchaseRegActive1dPv' => 'getPurchaseRegActive1dPv',
+        'purchaseDedupRegActive1dPv' => 'getPurchaseDedupRegActive1dPv',
+        'purchaseRegActive1dAmount' => 'getPurchaseRegActive1dAmount',
+        'clkHotElementPv' => 'getClkHotElementPv',
+        'clkHotElementUv' => 'getClkHotElementUv',
+        'hotElementCtr' => 'getHotElementCtr',
+        'securityNegativeDedupPv' => 'getSecurityNegativeDedupPv',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -3827,9 +4099,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'componentType' => 'getComponentType',
         'imageIds' => 'getImageIds',
         'videoIds' => 'getVideoIds',
-        'expAvgRank' => 'getExpAvgRank',
-        'expOverallTopPv' => 'getExpOverallTopPv',
-        'clkTopPv' => 'getClkTopPv',
         'cvsExpPv' => 'getCvsExpPv',
         'cvsExpUv' => 'getCvsExpUv',
         'cvsCpnClkPv' => 'getCvsCpnClkPv',
@@ -3871,9 +4140,15 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         'bidword' => 'getBidword',
         'matchType' => 'getMatchType',
         'device' => 'getDevice',
+        'expAvgRank' => 'getExpAvgRank',
+        'expOverallTopPv' => 'getExpOverallTopPv',
+        'clkTopPv' => 'getClkTopPv',
         'queryword' => 'getQueryword',
         'imageId' => 'getImageId',
         'videoId' => 'getVideoId',
+        'marketingTargetTypeId' => 'getMarketingTargetTypeId',
+        'marketingAssetId' => 'getMarketingAssetId',
+        'marketingAssetName' => 'getMarketingAssetName',
         'projectId' => 'getProjectId',
         'projectName' => 'getProjectName'
     ];
@@ -4057,9 +4332,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['guideToFollowPageViewers'] = isset($data['guideToFollowPageViewers']) ? $data['guideToFollowPageViewers'] : null;
         $this->container['guideToFollowPageInteractionAmount'] = isset($data['guideToFollowPageInteractionAmount']) ? $data['guideToFollowPageInteractionAmount'] : null;
         $this->container['guideToFollowPageInteractionUsers'] = isset($data['guideToFollowPageInteractionUsers']) ? $data['guideToFollowPageInteractionUsers'] : null;
-        $this->container['landingPageViewCount'] = isset($data['landingPageViewCount']) ? $data['landingPageViewCount'] : null;
-        $this->container['landingPageEffectiveRate'] = isset($data['landingPageEffectiveRate']) ? $data['landingPageEffectiveRate'] : null;
-        $this->container['landingPageUserCount'] = isset($data['landingPageUserCount']) ? $data['landingPageUserCount'] : null;
         $this->container['platformKeyPageViewUserCount'] = isset($data['platformKeyPageViewUserCount']) ? $data['platformKeyPageViewUserCount'] : null;
         $this->container['pageConsultCount'] = isset($data['pageConsultCount']) ? $data['pageConsultCount'] : null;
         $this->container['consultUvCount'] = isset($data['consultUvCount']) ? $data['consultUvCount'] : null;
@@ -4633,6 +4905,61 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['afterAddWecomNegativePv'] = isset($data['afterAddWecomNegativePv']) ? $data['afterAddWecomNegativePv'] : null;
         $this->container['securityLowPriceOrderPv'] = isset($data['securityLowPriceOrderPv']) ? $data['securityLowPriceOrderPv'] : null;
         $this->container['securityHighPriceOrderPv'] = isset($data['securityHighPriceOrderPv']) ? $data['securityHighPriceOrderPv'] : null;
+        $this->container['miniGameRate'] = isset($data['miniGameRate']) ? $data['miniGameRate'] : null;
+        $this->container['retentionPlaDedupPv'] = isset($data['retentionPlaDedupPv']) ? $data['retentionPlaDedupPv'] : null;
+        $this->container['retentionPlaDedupRate'] = isset($data['retentionPlaDedupRate']) ? $data['retentionPlaDedupRate'] : null;
+        $this->container['adMonetizationPlaDedupPv'] = isset($data['adMonetizationPlaDedupPv']) ? $data['adMonetizationPlaDedupPv'] : null;
+        $this->container['adMonetizationPlaDedupActive1dPv'] = isset($data['adMonetizationPlaDedupActive1dPv']) ? $data['adMonetizationPlaDedupActive1dPv'] : null;
+        $this->container['adMonetizationPlaDedupActive3dPv'] = isset($data['adMonetizationPlaDedupActive3dPv']) ? $data['adMonetizationPlaDedupActive3dPv'] : null;
+        $this->container['adMonetizationPlaDedupActive7dPv'] = isset($data['adMonetizationPlaDedupActive7dPv']) ? $data['adMonetizationPlaDedupActive7dPv'] : null;
+        $this->container['adMonetizationBkPlaDedupPv'] = isset($data['adMonetizationBkPlaDedupPv']) ? $data['adMonetizationBkPlaDedupPv'] : null;
+        $this->container['miniGameBfIncomePlaRoi'] = isset($data['miniGameBfIncomePlaRoi']) ? $data['miniGameBfIncomePlaRoi'] : null;
+        $this->container['miniGameBfIncomePlaArpu'] = isset($data['miniGameBfIncomePlaArpu']) ? $data['miniGameBfIncomePlaArpu'] : null;
+        $this->container['adMonetizationBkPlaCost'] = isset($data['adMonetizationBkPlaCost']) ? $data['adMonetizationBkPlaCost'] : null;
+        $this->container['adMonetizationBkPlaDedupActive1dPv'] = isset($data['adMonetizationBkPlaDedupActive1dPv']) ? $data['adMonetizationBkPlaDedupActive1dPv'] : null;
+        $this->container['adMonetizationBkPlaActive24hAmount'] = isset($data['adMonetizationBkPlaActive24hAmount']) ? $data['adMonetizationBkPlaActive24hAmount'] : null;
+        $this->container['adMonetizationBkPlaDedupActive24hPv'] = isset($data['adMonetizationBkPlaDedupActive24hPv']) ? $data['adMonetizationBkPlaDedupActive24hPv'] : null;
+        $this->container['adMonetizationBkPlaDedupActive24hRoi'] = isset($data['adMonetizationBkPlaDedupActive24hRoi']) ? $data['adMonetizationBkPlaDedupActive24hRoi'] : null;
+        $this->container['adMonetizationBkPlaDedupActive24hArpu'] = isset($data['adMonetizationBkPlaDedupActive24hArpu']) ? $data['adMonetizationBkPlaDedupActive24hArpu'] : null;
+        $this->container['adMonetizationBkPlaDedupActive24hCost'] = isset($data['adMonetizationBkPlaDedupActive24hCost']) ? $data['adMonetizationBkPlaDedupActive24hCost'] : null;
+        $this->container['adMonetizationBkPlaActive3dAmount'] = isset($data['adMonetizationBkPlaActive3dAmount']) ? $data['adMonetizationBkPlaActive3dAmount'] : null;
+        $this->container['adMonetizationBkPlaActive3dRoi'] = isset($data['adMonetizationBkPlaActive3dRoi']) ? $data['adMonetizationBkPlaActive3dRoi'] : null;
+        $this->container['adMonetizationBkPlaActive7dAmount'] = isset($data['adMonetizationBkPlaActive7dAmount']) ? $data['adMonetizationBkPlaActive7dAmount'] : null;
+        $this->container['adMonetizationBkPlaActive14dAmount'] = isset($data['adMonetizationBkPlaActive14dAmount']) ? $data['adMonetizationBkPlaActive14dAmount'] : null;
+        $this->container['adMonetizationBkPlaActive7dRoi'] = isset($data['adMonetizationBkPlaActive7dRoi']) ? $data['adMonetizationBkPlaActive7dRoi'] : null;
+        $this->container['adMonetizationBkPlaActive14dRoi'] = isset($data['adMonetizationBkPlaActive14dRoi']) ? $data['adMonetizationBkPlaActive14dRoi'] : null;
+        $this->container['clkAppservicePv'] = isset($data['clkAppservicePv']) ? $data['clkAppservicePv'] : null;
+        $this->container['purchaseBkActive1dAmount'] = isset($data['purchaseBkActive1dAmount']) ? $data['purchaseBkActive1dAmount'] : null;
+        $this->container['purchaseDedupBkActive1dPv'] = isset($data['purchaseDedupBkActive1dPv']) ? $data['purchaseDedupBkActive1dPv'] : null;
+        $this->container['purchaseDedupPv'] = isset($data['purchaseDedupPv']) ? $data['purchaseDedupPv'] : null;
+        $this->container['mixPurchaseAmount'] = isset($data['mixPurchaseAmount']) ? $data['mixPurchaseAmount'] : null;
+        $this->container['mixPayArpu'] = isset($data['mixPayArpu']) ? $data['mixPayArpu'] : null;
+        $this->container['mixPayCost'] = isset($data['mixPayCost']) ? $data['mixPayCost'] : null;
+        $this->container['mixPayRoi'] = isset($data['mixPayRoi']) ? $data['mixPayRoi'] : null;
+        $this->container['mixPurchaseActive24hAmount'] = isset($data['mixPurchaseActive24hAmount']) ? $data['mixPurchaseActive24hAmount'] : null;
+        $this->container['mixPayActive24hRoi'] = isset($data['mixPayActive24hRoi']) ? $data['mixPayActive24hRoi'] : null;
+        $this->container['mixPurchaseAmountFirstDay'] = isset($data['mixPurchaseAmountFirstDay']) ? $data['mixPurchaseAmountFirstDay'] : null;
+        $this->container['mixPayRoiFirstDay'] = isset($data['mixPayRoiFirstDay']) ? $data['mixPayRoiFirstDay'] : null;
+        $this->container['mixPurchaseActive3dAmount'] = isset($data['mixPurchaseActive3dAmount']) ? $data['mixPurchaseActive3dAmount'] : null;
+        $this->container['mixPayActive3dRoi'] = isset($data['mixPayActive3dRoi']) ? $data['mixPayActive3dRoi'] : null;
+        $this->container['mixPurchaseActive7dAmount'] = isset($data['mixPurchaseActive7dAmount']) ? $data['mixPurchaseActive7dAmount'] : null;
+        $this->container['mixPayActive7dRoi'] = isset($data['mixPayActive7dRoi']) ? $data['mixPayActive7dRoi'] : null;
+        $this->container['mixPurchaseActive14dAmount'] = isset($data['mixPurchaseActive14dAmount']) ? $data['mixPurchaseActive14dAmount'] : null;
+        $this->container['mixPayActive14dRoi'] = isset($data['mixPayActive14dRoi']) ? $data['mixPayActive14dRoi'] : null;
+        $this->container['mixPurchaseDedupPv'] = isset($data['mixPurchaseDedupPv']) ? $data['mixPurchaseDedupPv'] : null;
+        $this->container['purchaseRegAmount'] = isset($data['purchaseRegAmount']) ? $data['purchaseRegAmount'] : null;
+        $this->container['purchaseDedupRegPv'] = isset($data['purchaseDedupRegPv']) ? $data['purchaseDedupRegPv'] : null;
+        $this->container['purchaseRegActive24hAmount'] = isset($data['purchaseRegActive24hAmount']) ? $data['purchaseRegActive24hAmount'] : null;
+        $this->container['purchaseRegActive3dAmount'] = isset($data['purchaseRegActive3dAmount']) ? $data['purchaseRegActive3dAmount'] : null;
+        $this->container['purchaseRegActive7dAmount'] = isset($data['purchaseRegActive7dAmount']) ? $data['purchaseRegActive7dAmount'] : null;
+        $this->container['purchaseRegActive14dAmount'] = isset($data['purchaseRegActive14dAmount']) ? $data['purchaseRegActive14dAmount'] : null;
+        $this->container['purchaseRegActive1dPv'] = isset($data['purchaseRegActive1dPv']) ? $data['purchaseRegActive1dPv'] : null;
+        $this->container['purchaseDedupRegActive1dPv'] = isset($data['purchaseDedupRegActive1dPv']) ? $data['purchaseDedupRegActive1dPv'] : null;
+        $this->container['purchaseRegActive1dAmount'] = isset($data['purchaseRegActive1dAmount']) ? $data['purchaseRegActive1dAmount'] : null;
+        $this->container['clkHotElementPv'] = isset($data['clkHotElementPv']) ? $data['clkHotElementPv'] : null;
+        $this->container['clkHotElementUv'] = isset($data['clkHotElementUv']) ? $data['clkHotElementUv'] : null;
+        $this->container['hotElementCtr'] = isset($data['hotElementCtr']) ? $data['hotElementCtr'] : null;
+        $this->container['securityNegativeDedupPv'] = isset($data['securityNegativeDedupPv']) ? $data['securityNegativeDedupPv'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -4642,9 +4969,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['componentType'] = isset($data['componentType']) ? $data['componentType'] : null;
         $this->container['imageIds'] = isset($data['imageIds']) ? $data['imageIds'] : null;
         $this->container['videoIds'] = isset($data['videoIds']) ? $data['videoIds'] : null;
-        $this->container['expAvgRank'] = isset($data['expAvgRank']) ? $data['expAvgRank'] : null;
-        $this->container['expOverallTopPv'] = isset($data['expOverallTopPv']) ? $data['expOverallTopPv'] : null;
-        $this->container['clkTopPv'] = isset($data['clkTopPv']) ? $data['clkTopPv'] : null;
         $this->container['cvsExpPv'] = isset($data['cvsExpPv']) ? $data['cvsExpPv'] : null;
         $this->container['cvsExpUv'] = isset($data['cvsExpUv']) ? $data['cvsExpUv'] : null;
         $this->container['cvsCpnClkPv'] = isset($data['cvsCpnClkPv']) ? $data['cvsCpnClkPv'] : null;
@@ -4686,9 +5010,15 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
         $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
         $this->container['device'] = isset($data['device']) ? $data['device'] : null;
+        $this->container['expAvgRank'] = isset($data['expAvgRank']) ? $data['expAvgRank'] : null;
+        $this->container['expOverallTopPv'] = isset($data['expOverallTopPv']) ? $data['expOverallTopPv'] : null;
+        $this->container['clkTopPv'] = isset($data['clkTopPv']) ? $data['clkTopPv'] : null;
         $this->container['queryword'] = isset($data['queryword']) ? $data['queryword'] : null;
         $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
         $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
+        $this->container['marketingTargetTypeId'] = isset($data['marketingTargetTypeId']) ? $data['marketingTargetTypeId'] : null;
+        $this->container['marketingAssetId'] = isset($data['marketingAssetId']) ? $data['marketingAssetId'] : null;
+        $this->container['marketingAssetName'] = isset($data['marketingAssetName']) ? $data['marketingAssetName'] : null;
         $this->container['projectId'] = isset($data['projectId']) ? $data['projectId'] : null;
         $this->container['projectName'] = isset($data['projectName']) ? $data['projectName'] : null;
     }
@@ -7569,78 +7899,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setGuideToFollowPageInteractionUsers($guideToFollowPageInteractionUsers)
     {
         $this->container['guideToFollowPageInteractionUsers'] = $guideToFollowPageInteractionUsers;
-
-        return $this;
-    }
-
-    /**
-     * Gets landingPageViewCount
-     *
-     * @return int|mixed
-     */
-    public function getLandingPageViewCount()
-    {
-        return $this->container['landingPageViewCount'];
-    }
-
-    /**
-     * Sets landingPageViewCount
-     *
-     * @param int|mixed $landingPageViewCount landingPageViewCount
-     *
-     * @return $this
-     */
-    public function setLandingPageViewCount($landingPageViewCount)
-    {
-        $this->container['landingPageViewCount'] = $landingPageViewCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets landingPageEffectiveRate
-     *
-     * @return double|mixed
-     */
-    public function getLandingPageEffectiveRate()
-    {
-        return $this->container['landingPageEffectiveRate'];
-    }
-
-    /**
-     * Sets landingPageEffectiveRate
-     *
-     * @param double|mixed $landingPageEffectiveRate landingPageEffectiveRate
-     *
-     * @return $this
-     */
-    public function setLandingPageEffectiveRate($landingPageEffectiveRate)
-    {
-        $this->container['landingPageEffectiveRate'] = $landingPageEffectiveRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets landingPageUserCount
-     *
-     * @return int|mixed
-     */
-    public function getLandingPageUserCount()
-    {
-        return $this->container['landingPageUserCount'];
-    }
-
-    /**
-     * Sets landingPageUserCount
-     *
-     * @param int|mixed $landingPageUserCount landingPageUserCount
-     *
-     * @return $this
-     */
-    public function setLandingPageUserCount($landingPageUserCount)
-    {
-        $this->container['landingPageUserCount'] = $landingPageUserCount;
 
         return $this;
     }
@@ -21398,6 +21656,1326 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets miniGameRate
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameRate()
+    {
+        return $this->container['miniGameRate'];
+    }
+
+    /**
+     * Sets miniGameRate
+     *
+     * @param double|mixed $miniGameRate miniGameRate
+     *
+     * @return $this
+     */
+    public function setMiniGameRate($miniGameRate)
+    {
+        $this->container['miniGameRate'] = $miniGameRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets retentionPlaDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getRetentionPlaDedupPv()
+    {
+        return $this->container['retentionPlaDedupPv'];
+    }
+
+    /**
+     * Sets retentionPlaDedupPv
+     *
+     * @param int|mixed $retentionPlaDedupPv retentionPlaDedupPv
+     *
+     * @return $this
+     */
+    public function setRetentionPlaDedupPv($retentionPlaDedupPv)
+    {
+        $this->container['retentionPlaDedupPv'] = $retentionPlaDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets retentionPlaDedupRate
+     *
+     * @return double|mixed
+     */
+    public function getRetentionPlaDedupRate()
+    {
+        return $this->container['retentionPlaDedupRate'];
+    }
+
+    /**
+     * Sets retentionPlaDedupRate
+     *
+     * @param double|mixed $retentionPlaDedupRate retentionPlaDedupRate
+     *
+     * @return $this
+     */
+    public function setRetentionPlaDedupRate($retentionPlaDedupRate)
+    {
+        $this->container['retentionPlaDedupRate'] = $retentionPlaDedupRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationPlaDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationPlaDedupPv()
+    {
+        return $this->container['adMonetizationPlaDedupPv'];
+    }
+
+    /**
+     * Sets adMonetizationPlaDedupPv
+     *
+     * @param int|mixed $adMonetizationPlaDedupPv adMonetizationPlaDedupPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationPlaDedupPv($adMonetizationPlaDedupPv)
+    {
+        $this->container['adMonetizationPlaDedupPv'] = $adMonetizationPlaDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationPlaDedupActive1dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationPlaDedupActive1dPv()
+    {
+        return $this->container['adMonetizationPlaDedupActive1dPv'];
+    }
+
+    /**
+     * Sets adMonetizationPlaDedupActive1dPv
+     *
+     * @param int|mixed $adMonetizationPlaDedupActive1dPv adMonetizationPlaDedupActive1dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationPlaDedupActive1dPv($adMonetizationPlaDedupActive1dPv)
+    {
+        $this->container['adMonetizationPlaDedupActive1dPv'] = $adMonetizationPlaDedupActive1dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationPlaDedupActive3dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationPlaDedupActive3dPv()
+    {
+        return $this->container['adMonetizationPlaDedupActive3dPv'];
+    }
+
+    /**
+     * Sets adMonetizationPlaDedupActive3dPv
+     *
+     * @param int|mixed $adMonetizationPlaDedupActive3dPv adMonetizationPlaDedupActive3dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationPlaDedupActive3dPv($adMonetizationPlaDedupActive3dPv)
+    {
+        $this->container['adMonetizationPlaDedupActive3dPv'] = $adMonetizationPlaDedupActive3dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationPlaDedupActive7dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationPlaDedupActive7dPv()
+    {
+        return $this->container['adMonetizationPlaDedupActive7dPv'];
+    }
+
+    /**
+     * Sets adMonetizationPlaDedupActive7dPv
+     *
+     * @param int|mixed $adMonetizationPlaDedupActive7dPv adMonetizationPlaDedupActive7dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationPlaDedupActive7dPv($adMonetizationPlaDedupActive7dPv)
+    {
+        $this->container['adMonetizationPlaDedupActive7dPv'] = $adMonetizationPlaDedupActive7dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationBkPlaDedupPv()
+    {
+        return $this->container['adMonetizationBkPlaDedupPv'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaDedupPv
+     *
+     * @param int|mixed $adMonetizationBkPlaDedupPv adMonetizationBkPlaDedupPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaDedupPv($adMonetizationBkPlaDedupPv)
+    {
+        $this->container['adMonetizationBkPlaDedupPv'] = $adMonetizationBkPlaDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfIncomePlaRoi
+     *
+     * @return double|mixed
+     */
+    public function getMiniGameBfIncomePlaRoi()
+    {
+        return $this->container['miniGameBfIncomePlaRoi'];
+    }
+
+    /**
+     * Sets miniGameBfIncomePlaRoi
+     *
+     * @param double|mixed $miniGameBfIncomePlaRoi miniGameBfIncomePlaRoi
+     *
+     * @return $this
+     */
+    public function setMiniGameBfIncomePlaRoi($miniGameBfIncomePlaRoi)
+    {
+        $this->container['miniGameBfIncomePlaRoi'] = $miniGameBfIncomePlaRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameBfIncomePlaArpu
+     *
+     * @return int|mixed
+     */
+    public function getMiniGameBfIncomePlaArpu()
+    {
+        return $this->container['miniGameBfIncomePlaArpu'];
+    }
+
+    /**
+     * Sets miniGameBfIncomePlaArpu
+     *
+     * @param int|mixed $miniGameBfIncomePlaArpu miniGameBfIncomePlaArpu
+     *
+     * @return $this
+     */
+    public function setMiniGameBfIncomePlaArpu($miniGameBfIncomePlaArpu)
+    {
+        $this->container['miniGameBfIncomePlaArpu'] = $miniGameBfIncomePlaArpu;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaCost
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationBkPlaCost()
+    {
+        return $this->container['adMonetizationBkPlaCost'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaCost
+     *
+     * @param int|mixed $adMonetizationBkPlaCost adMonetizationBkPlaCost
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaCost($adMonetizationBkPlaCost)
+    {
+        $this->container['adMonetizationBkPlaCost'] = $adMonetizationBkPlaCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaDedupActive1dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationBkPlaDedupActive1dPv()
+    {
+        return $this->container['adMonetizationBkPlaDedupActive1dPv'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaDedupActive1dPv
+     *
+     * @param int|mixed $adMonetizationBkPlaDedupActive1dPv adMonetizationBkPlaDedupActive1dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaDedupActive1dPv($adMonetizationBkPlaDedupActive1dPv)
+    {
+        $this->container['adMonetizationBkPlaDedupActive1dPv'] = $adMonetizationBkPlaDedupActive1dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaActive24hAmount
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationBkPlaActive24hAmount()
+    {
+        return $this->container['adMonetizationBkPlaActive24hAmount'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaActive24hAmount
+     *
+     * @param int|mixed $adMonetizationBkPlaActive24hAmount adMonetizationBkPlaActive24hAmount
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaActive24hAmount($adMonetizationBkPlaActive24hAmount)
+    {
+        $this->container['adMonetizationBkPlaActive24hAmount'] = $adMonetizationBkPlaActive24hAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaDedupActive24hPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationBkPlaDedupActive24hPv()
+    {
+        return $this->container['adMonetizationBkPlaDedupActive24hPv'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaDedupActive24hPv
+     *
+     * @param int|mixed $adMonetizationBkPlaDedupActive24hPv adMonetizationBkPlaDedupActive24hPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaDedupActive24hPv($adMonetizationBkPlaDedupActive24hPv)
+    {
+        $this->container['adMonetizationBkPlaDedupActive24hPv'] = $adMonetizationBkPlaDedupActive24hPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaDedupActive24hRoi
+     *
+     * @return double|mixed
+     */
+    public function getAdMonetizationBkPlaDedupActive24hRoi()
+    {
+        return $this->container['adMonetizationBkPlaDedupActive24hRoi'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaDedupActive24hRoi
+     *
+     * @param double|mixed $adMonetizationBkPlaDedupActive24hRoi adMonetizationBkPlaDedupActive24hRoi
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaDedupActive24hRoi($adMonetizationBkPlaDedupActive24hRoi)
+    {
+        $this->container['adMonetizationBkPlaDedupActive24hRoi'] = $adMonetizationBkPlaDedupActive24hRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaDedupActive24hArpu
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationBkPlaDedupActive24hArpu()
+    {
+        return $this->container['adMonetizationBkPlaDedupActive24hArpu'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaDedupActive24hArpu
+     *
+     * @param int|mixed $adMonetizationBkPlaDedupActive24hArpu adMonetizationBkPlaDedupActive24hArpu
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaDedupActive24hArpu($adMonetizationBkPlaDedupActive24hArpu)
+    {
+        $this->container['adMonetizationBkPlaDedupActive24hArpu'] = $adMonetizationBkPlaDedupActive24hArpu;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaDedupActive24hCost
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationBkPlaDedupActive24hCost()
+    {
+        return $this->container['adMonetizationBkPlaDedupActive24hCost'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaDedupActive24hCost
+     *
+     * @param int|mixed $adMonetizationBkPlaDedupActive24hCost adMonetizationBkPlaDedupActive24hCost
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaDedupActive24hCost($adMonetizationBkPlaDedupActive24hCost)
+    {
+        $this->container['adMonetizationBkPlaDedupActive24hCost'] = $adMonetizationBkPlaDedupActive24hCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaActive3dAmount
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationBkPlaActive3dAmount()
+    {
+        return $this->container['adMonetizationBkPlaActive3dAmount'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaActive3dAmount
+     *
+     * @param int|mixed $adMonetizationBkPlaActive3dAmount adMonetizationBkPlaActive3dAmount
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaActive3dAmount($adMonetizationBkPlaActive3dAmount)
+    {
+        $this->container['adMonetizationBkPlaActive3dAmount'] = $adMonetizationBkPlaActive3dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaActive3dRoi
+     *
+     * @return double|mixed
+     */
+    public function getAdMonetizationBkPlaActive3dRoi()
+    {
+        return $this->container['adMonetizationBkPlaActive3dRoi'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaActive3dRoi
+     *
+     * @param double|mixed $adMonetizationBkPlaActive3dRoi adMonetizationBkPlaActive3dRoi
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaActive3dRoi($adMonetizationBkPlaActive3dRoi)
+    {
+        $this->container['adMonetizationBkPlaActive3dRoi'] = $adMonetizationBkPlaActive3dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaActive7dAmount
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationBkPlaActive7dAmount()
+    {
+        return $this->container['adMonetizationBkPlaActive7dAmount'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaActive7dAmount
+     *
+     * @param int|mixed $adMonetizationBkPlaActive7dAmount adMonetizationBkPlaActive7dAmount
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaActive7dAmount($adMonetizationBkPlaActive7dAmount)
+    {
+        $this->container['adMonetizationBkPlaActive7dAmount'] = $adMonetizationBkPlaActive7dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaActive14dAmount
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationBkPlaActive14dAmount()
+    {
+        return $this->container['adMonetizationBkPlaActive14dAmount'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaActive14dAmount
+     *
+     * @param int|mixed $adMonetizationBkPlaActive14dAmount adMonetizationBkPlaActive14dAmount
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaActive14dAmount($adMonetizationBkPlaActive14dAmount)
+    {
+        $this->container['adMonetizationBkPlaActive14dAmount'] = $adMonetizationBkPlaActive14dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaActive7dRoi
+     *
+     * @return double|mixed
+     */
+    public function getAdMonetizationBkPlaActive7dRoi()
+    {
+        return $this->container['adMonetizationBkPlaActive7dRoi'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaActive7dRoi
+     *
+     * @param double|mixed $adMonetizationBkPlaActive7dRoi adMonetizationBkPlaActive7dRoi
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaActive7dRoi($adMonetizationBkPlaActive7dRoi)
+    {
+        $this->container['adMonetizationBkPlaActive7dRoi'] = $adMonetizationBkPlaActive7dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationBkPlaActive14dRoi
+     *
+     * @return double|mixed
+     */
+    public function getAdMonetizationBkPlaActive14dRoi()
+    {
+        return $this->container['adMonetizationBkPlaActive14dRoi'];
+    }
+
+    /**
+     * Sets adMonetizationBkPlaActive14dRoi
+     *
+     * @param double|mixed $adMonetizationBkPlaActive14dRoi adMonetizationBkPlaActive14dRoi
+     *
+     * @return $this
+     */
+    public function setAdMonetizationBkPlaActive14dRoi($adMonetizationBkPlaActive14dRoi)
+    {
+        $this->container['adMonetizationBkPlaActive14dRoi'] = $adMonetizationBkPlaActive14dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkAppservicePv
+     *
+     * @return int|mixed
+     */
+    public function getClkAppservicePv()
+    {
+        return $this->container['clkAppservicePv'];
+    }
+
+    /**
+     * Sets clkAppservicePv
+     *
+     * @param int|mixed $clkAppservicePv clkAppservicePv
+     *
+     * @return $this
+     */
+    public function setClkAppservicePv($clkAppservicePv)
+    {
+        $this->container['clkAppservicePv'] = $clkAppservicePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseBkActive1dAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseBkActive1dAmount()
+    {
+        return $this->container['purchaseBkActive1dAmount'];
+    }
+
+    /**
+     * Sets purchaseBkActive1dAmount
+     *
+     * @param int|mixed $purchaseBkActive1dAmount purchaseBkActive1dAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseBkActive1dAmount($purchaseBkActive1dAmount)
+    {
+        $this->container['purchaseBkActive1dAmount'] = $purchaseBkActive1dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseDedupBkActive1dPv
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseDedupBkActive1dPv()
+    {
+        return $this->container['purchaseDedupBkActive1dPv'];
+    }
+
+    /**
+     * Sets purchaseDedupBkActive1dPv
+     *
+     * @param int|mixed $purchaseDedupBkActive1dPv purchaseDedupBkActive1dPv
+     *
+     * @return $this
+     */
+    public function setPurchaseDedupBkActive1dPv($purchaseDedupBkActive1dPv)
+    {
+        $this->container['purchaseDedupBkActive1dPv'] = $purchaseDedupBkActive1dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseDedupPv()
+    {
+        return $this->container['purchaseDedupPv'];
+    }
+
+    /**
+     * Sets purchaseDedupPv
+     *
+     * @param int|mixed $purchaseDedupPv purchaseDedupPv
+     *
+     * @return $this
+     */
+    public function setPurchaseDedupPv($purchaseDedupPv)
+    {
+        $this->container['purchaseDedupPv'] = $purchaseDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPurchaseAmount
+     *
+     * @return int|mixed
+     */
+    public function getMixPurchaseAmount()
+    {
+        return $this->container['mixPurchaseAmount'];
+    }
+
+    /**
+     * Sets mixPurchaseAmount
+     *
+     * @param int|mixed $mixPurchaseAmount mixPurchaseAmount
+     *
+     * @return $this
+     */
+    public function setMixPurchaseAmount($mixPurchaseAmount)
+    {
+        $this->container['mixPurchaseAmount'] = $mixPurchaseAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPayArpu
+     *
+     * @return int|mixed
+     */
+    public function getMixPayArpu()
+    {
+        return $this->container['mixPayArpu'];
+    }
+
+    /**
+     * Sets mixPayArpu
+     *
+     * @param int|mixed $mixPayArpu mixPayArpu
+     *
+     * @return $this
+     */
+    public function setMixPayArpu($mixPayArpu)
+    {
+        $this->container['mixPayArpu'] = $mixPayArpu;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPayCost
+     *
+     * @return int|mixed
+     */
+    public function getMixPayCost()
+    {
+        return $this->container['mixPayCost'];
+    }
+
+    /**
+     * Sets mixPayCost
+     *
+     * @param int|mixed $mixPayCost mixPayCost
+     *
+     * @return $this
+     */
+    public function setMixPayCost($mixPayCost)
+    {
+        $this->container['mixPayCost'] = $mixPayCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPayRoi
+     *
+     * @return double|mixed
+     */
+    public function getMixPayRoi()
+    {
+        return $this->container['mixPayRoi'];
+    }
+
+    /**
+     * Sets mixPayRoi
+     *
+     * @param double|mixed $mixPayRoi mixPayRoi
+     *
+     * @return $this
+     */
+    public function setMixPayRoi($mixPayRoi)
+    {
+        $this->container['mixPayRoi'] = $mixPayRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPurchaseActive24hAmount
+     *
+     * @return int|mixed
+     */
+    public function getMixPurchaseActive24hAmount()
+    {
+        return $this->container['mixPurchaseActive24hAmount'];
+    }
+
+    /**
+     * Sets mixPurchaseActive24hAmount
+     *
+     * @param int|mixed $mixPurchaseActive24hAmount mixPurchaseActive24hAmount
+     *
+     * @return $this
+     */
+    public function setMixPurchaseActive24hAmount($mixPurchaseActive24hAmount)
+    {
+        $this->container['mixPurchaseActive24hAmount'] = $mixPurchaseActive24hAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPayActive24hRoi
+     *
+     * @return double|mixed
+     */
+    public function getMixPayActive24hRoi()
+    {
+        return $this->container['mixPayActive24hRoi'];
+    }
+
+    /**
+     * Sets mixPayActive24hRoi
+     *
+     * @param double|mixed $mixPayActive24hRoi mixPayActive24hRoi
+     *
+     * @return $this
+     */
+    public function setMixPayActive24hRoi($mixPayActive24hRoi)
+    {
+        $this->container['mixPayActive24hRoi'] = $mixPayActive24hRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPurchaseAmountFirstDay
+     *
+     * @return int|mixed
+     */
+    public function getMixPurchaseAmountFirstDay()
+    {
+        return $this->container['mixPurchaseAmountFirstDay'];
+    }
+
+    /**
+     * Sets mixPurchaseAmountFirstDay
+     *
+     * @param int|mixed $mixPurchaseAmountFirstDay mixPurchaseAmountFirstDay
+     *
+     * @return $this
+     */
+    public function setMixPurchaseAmountFirstDay($mixPurchaseAmountFirstDay)
+    {
+        $this->container['mixPurchaseAmountFirstDay'] = $mixPurchaseAmountFirstDay;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPayRoiFirstDay
+     *
+     * @return double|mixed
+     */
+    public function getMixPayRoiFirstDay()
+    {
+        return $this->container['mixPayRoiFirstDay'];
+    }
+
+    /**
+     * Sets mixPayRoiFirstDay
+     *
+     * @param double|mixed $mixPayRoiFirstDay mixPayRoiFirstDay
+     *
+     * @return $this
+     */
+    public function setMixPayRoiFirstDay($mixPayRoiFirstDay)
+    {
+        $this->container['mixPayRoiFirstDay'] = $mixPayRoiFirstDay;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPurchaseActive3dAmount
+     *
+     * @return int|mixed
+     */
+    public function getMixPurchaseActive3dAmount()
+    {
+        return $this->container['mixPurchaseActive3dAmount'];
+    }
+
+    /**
+     * Sets mixPurchaseActive3dAmount
+     *
+     * @param int|mixed $mixPurchaseActive3dAmount mixPurchaseActive3dAmount
+     *
+     * @return $this
+     */
+    public function setMixPurchaseActive3dAmount($mixPurchaseActive3dAmount)
+    {
+        $this->container['mixPurchaseActive3dAmount'] = $mixPurchaseActive3dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPayActive3dRoi
+     *
+     * @return double|mixed
+     */
+    public function getMixPayActive3dRoi()
+    {
+        return $this->container['mixPayActive3dRoi'];
+    }
+
+    /**
+     * Sets mixPayActive3dRoi
+     *
+     * @param double|mixed $mixPayActive3dRoi mixPayActive3dRoi
+     *
+     * @return $this
+     */
+    public function setMixPayActive3dRoi($mixPayActive3dRoi)
+    {
+        $this->container['mixPayActive3dRoi'] = $mixPayActive3dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPurchaseActive7dAmount
+     *
+     * @return int|mixed
+     */
+    public function getMixPurchaseActive7dAmount()
+    {
+        return $this->container['mixPurchaseActive7dAmount'];
+    }
+
+    /**
+     * Sets mixPurchaseActive7dAmount
+     *
+     * @param int|mixed $mixPurchaseActive7dAmount mixPurchaseActive7dAmount
+     *
+     * @return $this
+     */
+    public function setMixPurchaseActive7dAmount($mixPurchaseActive7dAmount)
+    {
+        $this->container['mixPurchaseActive7dAmount'] = $mixPurchaseActive7dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPayActive7dRoi
+     *
+     * @return double|mixed
+     */
+    public function getMixPayActive7dRoi()
+    {
+        return $this->container['mixPayActive7dRoi'];
+    }
+
+    /**
+     * Sets mixPayActive7dRoi
+     *
+     * @param double|mixed $mixPayActive7dRoi mixPayActive7dRoi
+     *
+     * @return $this
+     */
+    public function setMixPayActive7dRoi($mixPayActive7dRoi)
+    {
+        $this->container['mixPayActive7dRoi'] = $mixPayActive7dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPurchaseActive14dAmount
+     *
+     * @return int|mixed
+     */
+    public function getMixPurchaseActive14dAmount()
+    {
+        return $this->container['mixPurchaseActive14dAmount'];
+    }
+
+    /**
+     * Sets mixPurchaseActive14dAmount
+     *
+     * @param int|mixed $mixPurchaseActive14dAmount mixPurchaseActive14dAmount
+     *
+     * @return $this
+     */
+    public function setMixPurchaseActive14dAmount($mixPurchaseActive14dAmount)
+    {
+        $this->container['mixPurchaseActive14dAmount'] = $mixPurchaseActive14dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPayActive14dRoi
+     *
+     * @return double|mixed
+     */
+    public function getMixPayActive14dRoi()
+    {
+        return $this->container['mixPayActive14dRoi'];
+    }
+
+    /**
+     * Sets mixPayActive14dRoi
+     *
+     * @param double|mixed $mixPayActive14dRoi mixPayActive14dRoi
+     *
+     * @return $this
+     */
+    public function setMixPayActive14dRoi($mixPayActive14dRoi)
+    {
+        $this->container['mixPayActive14dRoi'] = $mixPayActive14dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixPurchaseDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getMixPurchaseDedupPv()
+    {
+        return $this->container['mixPurchaseDedupPv'];
+    }
+
+    /**
+     * Sets mixPurchaseDedupPv
+     *
+     * @param int|mixed $mixPurchaseDedupPv mixPurchaseDedupPv
+     *
+     * @return $this
+     */
+    public function setMixPurchaseDedupPv($mixPurchaseDedupPv)
+    {
+        $this->container['mixPurchaseDedupPv'] = $mixPurchaseDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseRegAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseRegAmount()
+    {
+        return $this->container['purchaseRegAmount'];
+    }
+
+    /**
+     * Sets purchaseRegAmount
+     *
+     * @param int|mixed $purchaseRegAmount purchaseRegAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseRegAmount($purchaseRegAmount)
+    {
+        $this->container['purchaseRegAmount'] = $purchaseRegAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseDedupRegPv
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseDedupRegPv()
+    {
+        return $this->container['purchaseDedupRegPv'];
+    }
+
+    /**
+     * Sets purchaseDedupRegPv
+     *
+     * @param int|mixed $purchaseDedupRegPv purchaseDedupRegPv
+     *
+     * @return $this
+     */
+    public function setPurchaseDedupRegPv($purchaseDedupRegPv)
+    {
+        $this->container['purchaseDedupRegPv'] = $purchaseDedupRegPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseRegActive24hAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseRegActive24hAmount()
+    {
+        return $this->container['purchaseRegActive24hAmount'];
+    }
+
+    /**
+     * Sets purchaseRegActive24hAmount
+     *
+     * @param int|mixed $purchaseRegActive24hAmount purchaseRegActive24hAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseRegActive24hAmount($purchaseRegActive24hAmount)
+    {
+        $this->container['purchaseRegActive24hAmount'] = $purchaseRegActive24hAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseRegActive3dAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseRegActive3dAmount()
+    {
+        return $this->container['purchaseRegActive3dAmount'];
+    }
+
+    /**
+     * Sets purchaseRegActive3dAmount
+     *
+     * @param int|mixed $purchaseRegActive3dAmount purchaseRegActive3dAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseRegActive3dAmount($purchaseRegActive3dAmount)
+    {
+        $this->container['purchaseRegActive3dAmount'] = $purchaseRegActive3dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseRegActive7dAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseRegActive7dAmount()
+    {
+        return $this->container['purchaseRegActive7dAmount'];
+    }
+
+    /**
+     * Sets purchaseRegActive7dAmount
+     *
+     * @param int|mixed $purchaseRegActive7dAmount purchaseRegActive7dAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseRegActive7dAmount($purchaseRegActive7dAmount)
+    {
+        $this->container['purchaseRegActive7dAmount'] = $purchaseRegActive7dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseRegActive14dAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseRegActive14dAmount()
+    {
+        return $this->container['purchaseRegActive14dAmount'];
+    }
+
+    /**
+     * Sets purchaseRegActive14dAmount
+     *
+     * @param int|mixed $purchaseRegActive14dAmount purchaseRegActive14dAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseRegActive14dAmount($purchaseRegActive14dAmount)
+    {
+        $this->container['purchaseRegActive14dAmount'] = $purchaseRegActive14dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseRegActive1dPv
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseRegActive1dPv()
+    {
+        return $this->container['purchaseRegActive1dPv'];
+    }
+
+    /**
+     * Sets purchaseRegActive1dPv
+     *
+     * @param int|mixed $purchaseRegActive1dPv purchaseRegActive1dPv
+     *
+     * @return $this
+     */
+    public function setPurchaseRegActive1dPv($purchaseRegActive1dPv)
+    {
+        $this->container['purchaseRegActive1dPv'] = $purchaseRegActive1dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseDedupRegActive1dPv
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseDedupRegActive1dPv()
+    {
+        return $this->container['purchaseDedupRegActive1dPv'];
+    }
+
+    /**
+     * Sets purchaseDedupRegActive1dPv
+     *
+     * @param int|mixed $purchaseDedupRegActive1dPv purchaseDedupRegActive1dPv
+     *
+     * @return $this
+     */
+    public function setPurchaseDedupRegActive1dPv($purchaseDedupRegActive1dPv)
+    {
+        $this->container['purchaseDedupRegActive1dPv'] = $purchaseDedupRegActive1dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseRegActive1dAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseRegActive1dAmount()
+    {
+        return $this->container['purchaseRegActive1dAmount'];
+    }
+
+    /**
+     * Sets purchaseRegActive1dAmount
+     *
+     * @param int|mixed $purchaseRegActive1dAmount purchaseRegActive1dAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseRegActive1dAmount($purchaseRegActive1dAmount)
+    {
+        $this->container['purchaseRegActive1dAmount'] = $purchaseRegActive1dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkHotElementPv
+     *
+     * @return int|mixed
+     */
+    public function getClkHotElementPv()
+    {
+        return $this->container['clkHotElementPv'];
+    }
+
+    /**
+     * Sets clkHotElementPv
+     *
+     * @param int|mixed $clkHotElementPv clkHotElementPv
+     *
+     * @return $this
+     */
+    public function setClkHotElementPv($clkHotElementPv)
+    {
+        $this->container['clkHotElementPv'] = $clkHotElementPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkHotElementUv
+     *
+     * @return int|mixed
+     */
+    public function getClkHotElementUv()
+    {
+        return $this->container['clkHotElementUv'];
+    }
+
+    /**
+     * Sets clkHotElementUv
+     *
+     * @param int|mixed $clkHotElementUv clkHotElementUv
+     *
+     * @return $this
+     */
+    public function setClkHotElementUv($clkHotElementUv)
+    {
+        $this->container['clkHotElementUv'] = $clkHotElementUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets hotElementCtr
+     *
+     * @return double|mixed
+     */
+    public function getHotElementCtr()
+    {
+        return $this->container['hotElementCtr'];
+    }
+
+    /**
+     * Sets hotElementCtr
+     *
+     * @param double|mixed $hotElementCtr hotElementCtr
+     *
+     * @return $this
+     */
+    public function setHotElementCtr($hotElementCtr)
+    {
+        $this->container['hotElementCtr'] = $hotElementCtr;
+
+        return $this;
+    }
+
+    /**
+     * Gets securityNegativeDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getSecurityNegativeDedupPv()
+    {
+        return $this->container['securityNegativeDedupPv'];
+    }
+
+    /**
+     * Sets securityNegativeDedupPv
+     *
+     * @param int|mixed $securityNegativeDedupPv securityNegativeDedupPv
+     *
+     * @return $this
+     */
+    public function setSecurityNegativeDedupPv($securityNegativeDedupPv)
+    {
+        $this->container['securityNegativeDedupPv'] = $securityNegativeDedupPv;
+
+        return $this;
+    }
+
+    /**
      * Gets adgroupId
      *
      * @return int|mixed
@@ -21609,78 +23187,6 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setVideoIds($videoIds)
     {
         $this->container['videoIds'] = $videoIds;
-
-        return $this;
-    }
-
-    /**
-     * Gets expAvgRank
-     *
-     * @return double|mixed
-     */
-    public function getExpAvgRank()
-    {
-        return $this->container['expAvgRank'];
-    }
-
-    /**
-     * Sets expAvgRank
-     *
-     * @param double|mixed $expAvgRank expAvgRank
-     *
-     * @return $this
-     */
-    public function setExpAvgRank($expAvgRank)
-    {
-        $this->container['expAvgRank'] = $expAvgRank;
-
-        return $this;
-    }
-
-    /**
-     * Gets expOverallTopPv
-     *
-     * @return int|mixed
-     */
-    public function getExpOverallTopPv()
-    {
-        return $this->container['expOverallTopPv'];
-    }
-
-    /**
-     * Sets expOverallTopPv
-     *
-     * @param int|mixed $expOverallTopPv expOverallTopPv
-     *
-     * @return $this
-     */
-    public function setExpOverallTopPv($expOverallTopPv)
-    {
-        $this->container['expOverallTopPv'] = $expOverallTopPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets clkTopPv
-     *
-     * @return int|mixed
-     */
-    public function getClkTopPv()
-    {
-        return $this->container['clkTopPv'];
-    }
-
-    /**
-     * Sets clkTopPv
-     *
-     * @param int|mixed $clkTopPv clkTopPv
-     *
-     * @return $this
-     */
-    public function setClkTopPv($clkTopPv)
-    {
-        $this->container['clkTopPv'] = $clkTopPv;
 
         return $this;
     }
@@ -22670,6 +24176,78 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets expAvgRank
+     *
+     * @return double|mixed
+     */
+    public function getExpAvgRank()
+    {
+        return $this->container['expAvgRank'];
+    }
+
+    /**
+     * Sets expAvgRank
+     *
+     * @param double|mixed $expAvgRank expAvgRank
+     *
+     * @return $this
+     */
+    public function setExpAvgRank($expAvgRank)
+    {
+        $this->container['expAvgRank'] = $expAvgRank;
+
+        return $this;
+    }
+
+    /**
+     * Gets expOverallTopPv
+     *
+     * @return int|mixed
+     */
+    public function getExpOverallTopPv()
+    {
+        return $this->container['expOverallTopPv'];
+    }
+
+    /**
+     * Sets expOverallTopPv
+     *
+     * @param int|mixed $expOverallTopPv expOverallTopPv
+     *
+     * @return $this
+     */
+    public function setExpOverallTopPv($expOverallTopPv)
+    {
+        $this->container['expOverallTopPv'] = $expOverallTopPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkTopPv
+     *
+     * @return int|mixed
+     */
+    public function getClkTopPv()
+    {
+        return $this->container['clkTopPv'];
+    }
+
+    /**
+     * Sets clkTopPv
+     *
+     * @param int|mixed $clkTopPv clkTopPv
+     *
+     * @return $this
+     */
+    public function setClkTopPv($clkTopPv)
+    {
+        $this->container['clkTopPv'] = $clkTopPv;
+
+        return $this;
+    }
+
+    /**
      * Gets queryword
      *
      * @return string|mixed
@@ -22737,6 +24315,78 @@ class DailyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setVideoId($videoId)
     {
         $this->container['videoId'] = $videoId;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingTargetTypeId
+     *
+     * @return int|mixed
+     */
+    public function getMarketingTargetTypeId()
+    {
+        return $this->container['marketingTargetTypeId'];
+    }
+
+    /**
+     * Sets marketingTargetTypeId
+     *
+     * @param int|mixed $marketingTargetTypeId marketingTargetTypeId
+     *
+     * @return $this
+     */
+    public function setMarketingTargetTypeId($marketingTargetTypeId)
+    {
+        $this->container['marketingTargetTypeId'] = $marketingTargetTypeId;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingAssetId
+     *
+     * @return int|mixed
+     */
+    public function getMarketingAssetId()
+    {
+        return $this->container['marketingAssetId'];
+    }
+
+    /**
+     * Sets marketingAssetId
+     *
+     * @param int|mixed $marketingAssetId marketingAssetId
+     *
+     * @return $this
+     */
+    public function setMarketingAssetId($marketingAssetId)
+    {
+        $this->container['marketingAssetId'] = $marketingAssetId;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingAssetName
+     *
+     * @return string|mixed
+     */
+    public function getMarketingAssetName()
+    {
+        return $this->container['marketingAssetName'];
+    }
+
+    /**
+     * Sets marketingAssetName
+     *
+     * @param string|mixed $marketingAssetName marketingAssetName
+     *
+     * @return $this
+     */
+    public function setMarketingAssetName($marketingAssetName)
+    {
+        $this->container['marketingAssetName'] = $marketingAssetName;
 
         return $this;
     }

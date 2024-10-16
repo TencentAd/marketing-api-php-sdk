@@ -115,6 +115,7 @@ class ComponentSubType
     const IMAGE_LIST_3_X2_3 = 'IMAGE_LIST_3X2_3';
     const IMAGE_LIST_1_X1_1 = 'IMAGE_LIST_1X1_1';
     const IMAGE_LIST_16_X9_1 = 'IMAGE_LIST_16X9_1';
+    const IMAGE_LIST_1_X1_9 = 'IMAGE_LIST_1X1_9';
     const ELEMENT_STORY = 'ELEMENT_STORY';
     const DESCRIPTION = 'DESCRIPTION';
     const TITLE = 'TITLE';
@@ -140,6 +141,7 @@ class ComponentSubType
     const SOCIAL_SKILL = 'SOCIAL_SKILL';
     const MINI_CARD_LINK = 'MINI_CARD_LINK';
     const FLOATING_ZONE_IMAGE_TEXT_LIST = 'FLOATING_ZONE_IMAGE_TEXT_LIST';
+    const CONSULT_LINK = 'CONSULT_LINK';
     const BRAND = 'BRAND';
     const BRAND_PAGE = 'BRAND_PAGE';
     const BRAND_SEARCH = 'BRAND_SEARCH';
@@ -252,6 +254,7 @@ class ComponentSubType
             self::IMAGE_LIST_3_X2_3,
             self::IMAGE_LIST_1_X1_1,
             self::IMAGE_LIST_16_X9_1,
+            self::IMAGE_LIST_1_X1_9,
             self::ELEMENT_STORY,
             self::DESCRIPTION,
             self::TITLE,
@@ -277,6 +280,7 @@ class ComponentSubType
             self::SOCIAL_SKILL,
             self::MINI_CARD_LINK,
             self::FLOATING_ZONE_IMAGE_TEXT_LIST,
+            self::CONSULT_LINK,
             self::BRAND,
             self::BRAND_PAGE,
             self::BRAND_SEARCH,

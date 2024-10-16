@@ -85,7 +85,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'dailyBudget' => 'int',
         'sceneSpec' => '\TencentAds\Model\V3\SceneTargetingForWrite',
         'userActionSets' => '\TencentAds\Model\V3\UserActionSetStruct[]',
-        'bidStrategy' => '\TencentAds\Model\V3\BidStrategy',
         'deepConversionSpec' => '\TencentAds\Model\V3\DeepConversionSpec',
         'conversionId' => 'int',
         'deepConversionBehaviorBid' => 'int',
@@ -127,7 +126,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'sellStrategyId' => 'int',
         'ogCompletionType' => '\TencentAds\Model\V3\OgCompletionType',
         'costGuaranteeStatus' => '\TencentAds\Model\V3\CostGuaranteeStatus',
-        'costGuaranteeMoney' => 'int'
+        'costGuaranteeMoney' => 'int',
+        'additionalProductSpec' => '\TencentAds\Model\V3\AdditionalProductSpec',
+        'enableBreakthroughSiteset' => 'bool'
     ];
 
     /**
@@ -163,7 +164,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'dailyBudget' => 'int64',
         'sceneSpec' => null,
         'userActionSets' => null,
-        'bidStrategy' => null,
         'deepConversionSpec' => null,
         'conversionId' => 'int64',
         'deepConversionBehaviorBid' => 'int64',
@@ -205,7 +205,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'sellStrategyId' => 'int64',
         'ogCompletionType' => null,
         'costGuaranteeStatus' => null,
-        'costGuaranteeMoney' => 'int64'
+        'costGuaranteeMoney' => 'int64',
+        'additionalProductSpec' => null,
+        'enableBreakthroughSiteset' => null
     ];
 
     /**
@@ -262,7 +264,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'dailyBudget' => 'daily_budget',
         'sceneSpec' => 'scene_spec',
         'userActionSets' => 'user_action_sets',
-        'bidStrategy' => 'bid_strategy',
         'deepConversionSpec' => 'deep_conversion_spec',
         'conversionId' => 'conversion_id',
         'deepConversionBehaviorBid' => 'deep_conversion_behavior_bid',
@@ -304,7 +305,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'sellStrategyId' => 'sell_strategy_id',
         'ogCompletionType' => 'og_completion_type',
         'costGuaranteeStatus' => 'cost_guarantee_status',
-        'costGuaranteeMoney' => 'cost_guarantee_money'
+        'costGuaranteeMoney' => 'cost_guarantee_money',
+        'additionalProductSpec' => 'additional_product_spec',
+        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset'
     ];
 
     /**
@@ -340,7 +343,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'dailyBudget' => 'setDailyBudget',
         'sceneSpec' => 'setSceneSpec',
         'userActionSets' => 'setUserActionSets',
-        'bidStrategy' => 'setBidStrategy',
         'deepConversionSpec' => 'setDeepConversionSpec',
         'conversionId' => 'setConversionId',
         'deepConversionBehaviorBid' => 'setDeepConversionBehaviorBid',
@@ -382,7 +384,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'sellStrategyId' => 'setSellStrategyId',
         'ogCompletionType' => 'setOgCompletionType',
         'costGuaranteeStatus' => 'setCostGuaranteeStatus',
-        'costGuaranteeMoney' => 'setCostGuaranteeMoney'
+        'costGuaranteeMoney' => 'setCostGuaranteeMoney',
+        'additionalProductSpec' => 'setAdditionalProductSpec',
+        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset'
     ];
 
     /**
@@ -418,7 +422,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'dailyBudget' => 'getDailyBudget',
         'sceneSpec' => 'getSceneSpec',
         'userActionSets' => 'getUserActionSets',
-        'bidStrategy' => 'getBidStrategy',
         'deepConversionSpec' => 'getDeepConversionSpec',
         'conversionId' => 'getConversionId',
         'deepConversionBehaviorBid' => 'getDeepConversionBehaviorBid',
@@ -460,7 +463,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'sellStrategyId' => 'getSellStrategyId',
         'ogCompletionType' => 'getOgCompletionType',
         'costGuaranteeStatus' => 'getCostGuaranteeStatus',
-        'costGuaranteeMoney' => 'getCostGuaranteeMoney'
+        'costGuaranteeMoney' => 'getCostGuaranteeMoney',
+        'additionalProductSpec' => 'getAdditionalProductSpec',
+        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset'
     ];
 
     /**
@@ -550,7 +555,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
         $this->container['sceneSpec'] = isset($data['sceneSpec']) ? $data['sceneSpec'] : null;
         $this->container['userActionSets'] = isset($data['userActionSets']) ? $data['userActionSets'] : null;
-        $this->container['bidStrategy'] = isset($data['bidStrategy']) ? $data['bidStrategy'] : null;
         $this->container['deepConversionSpec'] = isset($data['deepConversionSpec']) ? $data['deepConversionSpec'] : null;
         $this->container['conversionId'] = isset($data['conversionId']) ? $data['conversionId'] : null;
         $this->container['deepConversionBehaviorBid'] = isset($data['deepConversionBehaviorBid']) ? $data['deepConversionBehaviorBid'] : null;
@@ -593,6 +597,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['ogCompletionType'] = isset($data['ogCompletionType']) ? $data['ogCompletionType'] : null;
         $this->container['costGuaranteeStatus'] = isset($data['costGuaranteeStatus']) ? $data['costGuaranteeStatus'] : null;
         $this->container['costGuaranteeMoney'] = isset($data['costGuaranteeMoney']) ? $data['costGuaranteeMoney'] : null;
+        $this->container['additionalProductSpec'] = isset($data['additionalProductSpec']) ? $data['additionalProductSpec'] : null;
+        $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
     }
 
     /**
@@ -1263,30 +1269,6 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setUserActionSets($userActionSets)
     {
         $this->container['userActionSets'] = $userActionSets;
-
-        return $this;
-    }
-
-    /**
-     * Gets bidStrategy
-     *
-     * @return \TencentAds\Model\V3\BidStrategy|mixed
-     */
-    public function getBidStrategy()
-    {
-        return $this->container['bidStrategy'];
-    }
-
-    /**
-     * Sets bidStrategy
-     *
-     * @param \TencentAds\Model\V3\BidStrategy|mixed $bidStrategy bidStrategy
-     *
-     * @return $this
-     */
-    public function setBidStrategy($bidStrategy)
-    {
-        $this->container['bidStrategy'] = $bidStrategy;
 
         return $this;
     }
@@ -2295,6 +2277,54 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setCostGuaranteeMoney($costGuaranteeMoney)
     {
         $this->container['costGuaranteeMoney'] = $costGuaranteeMoney;
+
+        return $this;
+    }
+
+    /**
+     * Gets additionalProductSpec
+     *
+     * @return \TencentAds\Model\V3\AdditionalProductSpec|mixed
+     */
+    public function getAdditionalProductSpec()
+    {
+        return $this->container['additionalProductSpec'];
+    }
+
+    /**
+     * Sets additionalProductSpec
+     *
+     * @param \TencentAds\Model\V3\AdditionalProductSpec|mixed $additionalProductSpec additionalProductSpec
+     *
+     * @return $this
+     */
+    public function setAdditionalProductSpec($additionalProductSpec)
+    {
+        $this->container['additionalProductSpec'] = $additionalProductSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets enableBreakthroughSiteset
+     *
+     * @return bool|mixed
+     */
+    public function getEnableBreakthroughSiteset()
+    {
+        return $this->container['enableBreakthroughSiteset'];
+    }
+
+    /**
+     * Sets enableBreakthroughSiteset
+     *
+     * @param bool|mixed $enableBreakthroughSiteset enableBreakthroughSiteset
+     *
+     * @return $this
+     */
+    public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
+    {
+        $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
 
         return $this;
     }

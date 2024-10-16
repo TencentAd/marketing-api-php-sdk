@@ -59,6 +59,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
+        'registrationType' => '\TencentAds\Model\V3\CustomerRegistrationType',
         'dailyBudget' => 'int',
         'systemStatus' => '\TencentAds\Model\V3\CustomerSystemStatus',
         'rejectMessage' => 'string',
@@ -66,7 +67,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
         'corporationLicence' => 'string',
         'certificationImageId' => 'string',
         'certificationImage' => 'string',
-        'individualQualification' => '\TencentAds\Model\V3\IndividualQualification',
+        'individualQualification' => '\TencentAds\Model\V3\IndividualQualificationRsp',
         'systemIndustryId' => 'int',
         'customizedIndustry' => 'string',
         'introductionUrl' => 'string',
@@ -91,6 +92,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
+        'registrationType' => null,
         'dailyBudget' => 'int64',
         'systemStatus' => null,
         'rejectMessage' => null,
@@ -144,6 +146,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
+        'registrationType' => 'registration_type',
         'dailyBudget' => 'daily_budget',
         'systemStatus' => 'system_status',
         'rejectMessage' => 'reject_message',
@@ -176,6 +179,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
+        'registrationType' => 'setRegistrationType',
         'dailyBudget' => 'setDailyBudget',
         'systemStatus' => 'setSystemStatus',
         'rejectMessage' => 'setRejectMessage',
@@ -208,6 +212,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
+        'registrationType' => 'getRegistrationType',
         'dailyBudget' => 'getDailyBudget',
         'systemStatus' => 'getSystemStatus',
         'rejectMessage' => 'getRejectMessage',
@@ -294,6 +299,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['registrationType'] = isset($data['registrationType']) ? $data['registrationType'] : null;
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
         $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
         $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
@@ -363,6 +369,30 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function setAccountId($accountId)
     {
         $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets registrationType
+     *
+     * @return \TencentAds\Model\V3\CustomerRegistrationType|mixed
+     */
+    public function getRegistrationType()
+    {
+        return $this->container['registrationType'];
+    }
+
+    /**
+     * Sets registrationType
+     *
+     * @param \TencentAds\Model\V3\CustomerRegistrationType|mixed $registrationType registrationType
+     *
+     * @return $this
+     */
+    public function setRegistrationType($registrationType)
+    {
+        $this->container['registrationType'] = $registrationType;
 
         return $this;
     }
@@ -538,7 +568,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets individualQualification
      *
-     * @return \TencentAds\Model\V3\IndividualQualification|mixed
+     * @return \TencentAds\Model\V3\IndividualQualificationRsp|mixed
      */
     public function getIndividualQualification()
     {
@@ -548,7 +578,7 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets individualQualification
      *
-     * @param \TencentAds\Model\V3\IndividualQualification|mixed $individualQualification individualQualification
+     * @param \TencentAds\Model\V3\IndividualQualificationRsp|mixed $individualQualification individualQualification
      *
      * @return $this
      */

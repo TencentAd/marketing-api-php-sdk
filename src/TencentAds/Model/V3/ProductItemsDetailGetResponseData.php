@@ -60,6 +60,8 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
         'feedId' => 'int',
         'systemStatus' => '\TencentAds\Model\V3\AuditStatus',
         'rejectMessage' => 'string',
+        'spuLinkStatus' => '\TencentAds\Model\V3\SpuLinkStatus',
+        'productVerificationResults' => '\TencentAds\Model\V3\ProductVerificationResult[]',
         'productItemSpec' => '\TencentAds\Model\V3\ProductInfoSpec'
     ];
 
@@ -72,6 +74,8 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
         'feedId' => 'int64',
         'systemStatus' => null,
         'rejectMessage' => null,
+        'spuLinkStatus' => null,
+        'productVerificationResults' => null,
         'productItemSpec' => null
     ];
 
@@ -105,6 +109,8 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
         'feedId' => 'feed_id',
         'systemStatus' => 'system_status',
         'rejectMessage' => 'reject_message',
+        'spuLinkStatus' => 'spu_link_status',
+        'productVerificationResults' => 'product_verification_results',
         'productItemSpec' => 'product_item_spec'
     ];
 
@@ -117,6 +123,8 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
         'feedId' => 'setFeedId',
         'systemStatus' => 'setSystemStatus',
         'rejectMessage' => 'setRejectMessage',
+        'spuLinkStatus' => 'setSpuLinkStatus',
+        'productVerificationResults' => 'setProductVerificationResults',
         'productItemSpec' => 'setProductItemSpec'
     ];
 
@@ -129,6 +137,8 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
         'feedId' => 'getFeedId',
         'systemStatus' => 'getSystemStatus',
         'rejectMessage' => 'getRejectMessage',
+        'spuLinkStatus' => 'getSpuLinkStatus',
+        'productVerificationResults' => 'getProductVerificationResults',
         'productItemSpec' => 'getProductItemSpec'
     ];
 
@@ -195,6 +205,8 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
         $this->container['feedId'] = isset($data['feedId']) ? $data['feedId'] : null;
         $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
         $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
+        $this->container['spuLinkStatus'] = isset($data['spuLinkStatus']) ? $data['spuLinkStatus'] : null;
+        $this->container['productVerificationResults'] = isset($data['productVerificationResults']) ? $data['productVerificationResults'] : null;
         $this->container['productItemSpec'] = isset($data['productItemSpec']) ? $data['productItemSpec'] : null;
     }
 
@@ -290,6 +302,54 @@ class ProductItemsDetailGetResponseData implements ModelInterface, ArrayAccess
     public function setRejectMessage($rejectMessage)
     {
         $this->container['rejectMessage'] = $rejectMessage;
+
+        return $this;
+    }
+
+    /**
+     * Gets spuLinkStatus
+     *
+     * @return \TencentAds\Model\V3\SpuLinkStatus|mixed
+     */
+    public function getSpuLinkStatus()
+    {
+        return $this->container['spuLinkStatus'];
+    }
+
+    /**
+     * Sets spuLinkStatus
+     *
+     * @param \TencentAds\Model\V3\SpuLinkStatus|mixed $spuLinkStatus spuLinkStatus
+     *
+     * @return $this
+     */
+    public function setSpuLinkStatus($spuLinkStatus)
+    {
+        $this->container['spuLinkStatus'] = $spuLinkStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets productVerificationResults
+     *
+     * @return \TencentAds\Model\V3\ProductVerificationResult[]|mixed
+     */
+    public function getProductVerificationResults()
+    {
+        return $this->container['productVerificationResults'];
+    }
+
+    /**
+     * Sets productVerificationResults
+     *
+     * @param \TencentAds\Model\V3\ProductVerificationResult[]|mixed $productVerificationResults productVerificationResults
+     *
+     * @return $this
+     */
+    public function setProductVerificationResults($productVerificationResults)
+    {
+        $this->container['productVerificationResults'] = $productVerificationResults;
 
         return $this;
     }

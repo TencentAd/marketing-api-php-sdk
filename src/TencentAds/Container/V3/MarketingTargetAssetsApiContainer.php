@@ -106,13 +106,14 @@ class MarketingTargetAssetsApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->marketingTargetAssetsGet($accountId, $marketingTargetType, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->marketingTargetAssetsGet($marketingTargetType, $accountId, $filtering, $page, $pageSize, $organizationId, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -127,13 +128,14 @@ class MarketingTargetAssetsApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->marketingTargetAssetsGetAsync($accountId, $marketingTargetType, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->marketingTargetAssetsGetAsync($marketingTargetType, $accountId, $filtering, $page, $pageSize, $organizationId, $fields);
             return $response;
         });
     }

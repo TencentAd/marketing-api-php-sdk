@@ -61,7 +61,8 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'finderUsername' => 'string',
         'description' => 'string',
         'medias' => '\TencentAds\Model\V3\Medias',
-        'flag' => 'int'
+        'flag' => 'int',
+        'wechatChannelsAccountId' => 'string'
     ];
 
     /**
@@ -73,7 +74,8 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'finderUsername' => null,
         'description' => null,
         'medias' => null,
-        'flag' => 'int64'
+        'flag' => 'int64',
+        'wechatChannelsAccountId' => null
     ];
 
     /**
@@ -106,7 +108,8 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'finderUsername' => 'finder_username',
         'description' => 'description',
         'medias' => 'medias',
-        'flag' => 'flag'
+        'flag' => 'flag',
+        'wechatChannelsAccountId' => 'wechat_channels_account_id'
     ];
 
     /**
@@ -118,7 +121,8 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'finderUsername' => 'setFinderUsername',
         'description' => 'setDescription',
         'medias' => 'setMedias',
-        'flag' => 'setFlag'
+        'flag' => 'setFlag',
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
     ];
 
     /**
@@ -130,7 +134,8 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'finderUsername' => 'getFinderUsername',
         'description' => 'getDescription',
         'medias' => 'getMedias',
-        'flag' => 'getFlag'
+        'flag' => 'getFlag',
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
     ];
 
     /**
@@ -197,6 +202,7 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['medias'] = isset($data['medias']) ? $data['medias'] : null;
         $this->container['flag'] = isset($data['flag']) ? $data['flag'] : null;
+        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
     public function setFlag($flag)
     {
         $this->container['flag'] = $flag;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountId
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountId()
+    {
+        return $this->container['wechatChannelsAccountId'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountId
+     *
+     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountId($wechatChannelsAccountId)
+    {
+        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
 
         return $this;
     }

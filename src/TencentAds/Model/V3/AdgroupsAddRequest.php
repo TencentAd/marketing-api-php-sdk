@@ -75,7 +75,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'targeting' => '\TencentAds\Model\V3\WriteTargetingSetting',
         'sceneSpec' => '\TencentAds\Model\V3\SceneTargetingForWrite',
         'userActionSets' => '\TencentAds\Model\V3\UserActionSetStruct[]',
-        'bidStrategy' => '\TencentAds\Model\V3\BidStrategy',
         'deepConversionSpec' => '\TencentAds\Model\V3\DeepConversionSpec',
         'conversionId' => 'int',
         'deepConversionBehaviorBid' => 'int',
@@ -110,8 +109,9 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => '\TencentAds\Model\V3\ShortPlayPayType',
         'sellStrategyId' => 'int',
         'dynamicAdType' => '\TencentAds\Model\V3\DynamicAdType',
-        'ogCompletionType' => '\TencentAds\Model\V3\OgCompletionType',
-        'cloudUnionSpec' => '\TencentAds\Model\V3\CloudUnionSpec'
+        'cloudUnionSpec' => '\TencentAds\Model\V3\CloudUnionSpec',
+        'additionalProductSpec' => '\TencentAds\Model\V3\AdditionalProductSpec',
+        'enableBreakthroughSiteset' => 'bool'
     ];
 
     /**
@@ -138,7 +138,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'targeting' => null,
         'sceneSpec' => null,
         'userActionSets' => null,
-        'bidStrategy' => null,
         'deepConversionSpec' => null,
         'conversionId' => 'int64',
         'deepConversionBehaviorBid' => 'int64',
@@ -173,8 +172,9 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => null,
         'sellStrategyId' => 'int64',
         'dynamicAdType' => null,
-        'ogCompletionType' => null,
-        'cloudUnionSpec' => null
+        'cloudUnionSpec' => null,
+        'additionalProductSpec' => null,
+        'enableBreakthroughSiteset' => null
     ];
 
     /**
@@ -222,7 +222,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'targeting' => 'targeting',
         'sceneSpec' => 'scene_spec',
         'userActionSets' => 'user_action_sets',
-        'bidStrategy' => 'bid_strategy',
         'deepConversionSpec' => 'deep_conversion_spec',
         'conversionId' => 'conversion_id',
         'deepConversionBehaviorBid' => 'deep_conversion_behavior_bid',
@@ -257,8 +256,9 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'short_play_pay_type',
         'sellStrategyId' => 'sell_strategy_id',
         'dynamicAdType' => 'dynamic_ad_type',
-        'ogCompletionType' => 'og_completion_type',
-        'cloudUnionSpec' => 'cloud_union_spec'
+        'cloudUnionSpec' => 'cloud_union_spec',
+        'additionalProductSpec' => 'additional_product_spec',
+        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset'
     ];
 
     /**
@@ -285,7 +285,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'targeting' => 'setTargeting',
         'sceneSpec' => 'setSceneSpec',
         'userActionSets' => 'setUserActionSets',
-        'bidStrategy' => 'setBidStrategy',
         'deepConversionSpec' => 'setDeepConversionSpec',
         'conversionId' => 'setConversionId',
         'deepConversionBehaviorBid' => 'setDeepConversionBehaviorBid',
@@ -320,8 +319,9 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'setShortPlayPayType',
         'sellStrategyId' => 'setSellStrategyId',
         'dynamicAdType' => 'setDynamicAdType',
-        'ogCompletionType' => 'setOgCompletionType',
-        'cloudUnionSpec' => 'setCloudUnionSpec'
+        'cloudUnionSpec' => 'setCloudUnionSpec',
+        'additionalProductSpec' => 'setAdditionalProductSpec',
+        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset'
     ];
 
     /**
@@ -348,7 +348,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'targeting' => 'getTargeting',
         'sceneSpec' => 'getSceneSpec',
         'userActionSets' => 'getUserActionSets',
-        'bidStrategy' => 'getBidStrategy',
         'deepConversionSpec' => 'getDeepConversionSpec',
         'conversionId' => 'getConversionId',
         'deepConversionBehaviorBid' => 'getDeepConversionBehaviorBid',
@@ -383,8 +382,9 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'getShortPlayPayType',
         'sellStrategyId' => 'getSellStrategyId',
         'dynamicAdType' => 'getDynamicAdType',
-        'ogCompletionType' => 'getOgCompletionType',
-        'cloudUnionSpec' => 'getCloudUnionSpec'
+        'cloudUnionSpec' => 'getCloudUnionSpec',
+        'additionalProductSpec' => 'getAdditionalProductSpec',
+        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset'
     ];
 
     /**
@@ -465,7 +465,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['targeting'] = isset($data['targeting']) ? $data['targeting'] : null;
         $this->container['sceneSpec'] = isset($data['sceneSpec']) ? $data['sceneSpec'] : null;
         $this->container['userActionSets'] = isset($data['userActionSets']) ? $data['userActionSets'] : null;
-        $this->container['bidStrategy'] = isset($data['bidStrategy']) ? $data['bidStrategy'] : null;
         $this->container['deepConversionSpec'] = isset($data['deepConversionSpec']) ? $data['deepConversionSpec'] : null;
         $this->container['conversionId'] = isset($data['conversionId']) ? $data['conversionId'] : null;
         $this->container['deepConversionBehaviorBid'] = isset($data['deepConversionBehaviorBid']) ? $data['deepConversionBehaviorBid'] : null;
@@ -500,8 +499,9 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
         $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
         $this->container['dynamicAdType'] = isset($data['dynamicAdType']) ? $data['dynamicAdType'] : null;
-        $this->container['ogCompletionType'] = isset($data['ogCompletionType']) ? $data['ogCompletionType'] : null;
         $this->container['cloudUnionSpec'] = isset($data['cloudUnionSpec']) ? $data['cloudUnionSpec'] : null;
+        $this->container['additionalProductSpec'] = isset($data['additionalProductSpec']) ? $data['additionalProductSpec'] : null;
+        $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
     }
 
     /**
@@ -956,30 +956,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setUserActionSets($userActionSets)
     {
         $this->container['userActionSets'] = $userActionSets;
-
-        return $this;
-    }
-
-    /**
-     * Gets bidStrategy
-     *
-     * @return \TencentAds\Model\V3\BidStrategy|mixed
-     */
-    public function getBidStrategy()
-    {
-        return $this->container['bidStrategy'];
-    }
-
-    /**
-     * Sets bidStrategy
-     *
-     * @param \TencentAds\Model\V3\BidStrategy|mixed $bidStrategy bidStrategy
-     *
-     * @return $this
-     */
-    public function setBidStrategy($bidStrategy)
-    {
-        $this->container['bidStrategy'] = $bidStrategy;
 
         return $this;
     }
@@ -1801,30 +1777,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets ogCompletionType
-     *
-     * @return \TencentAds\Model\V3\OgCompletionType|mixed
-     */
-    public function getOgCompletionType()
-    {
-        return $this->container['ogCompletionType'];
-    }
-
-    /**
-     * Sets ogCompletionType
-     *
-     * @param \TencentAds\Model\V3\OgCompletionType|mixed $ogCompletionType ogCompletionType
-     *
-     * @return $this
-     */
-    public function setOgCompletionType($ogCompletionType)
-    {
-        $this->container['ogCompletionType'] = $ogCompletionType;
-
-        return $this;
-    }
-
-    /**
      * Gets cloudUnionSpec
      *
      * @return \TencentAds\Model\V3\CloudUnionSpec|mixed
@@ -1844,6 +1796,54 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setCloudUnionSpec($cloudUnionSpec)
     {
         $this->container['cloudUnionSpec'] = $cloudUnionSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets additionalProductSpec
+     *
+     * @return \TencentAds\Model\V3\AdditionalProductSpec|mixed
+     */
+    public function getAdditionalProductSpec()
+    {
+        return $this->container['additionalProductSpec'];
+    }
+
+    /**
+     * Sets additionalProductSpec
+     *
+     * @param \TencentAds\Model\V3\AdditionalProductSpec|mixed $additionalProductSpec additionalProductSpec
+     *
+     * @return $this
+     */
+    public function setAdditionalProductSpec($additionalProductSpec)
+    {
+        $this->container['additionalProductSpec'] = $additionalProductSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets enableBreakthroughSiteset
+     *
+     * @return bool|mixed
+     */
+    public function getEnableBreakthroughSiteset()
+    {
+        return $this->container['enableBreakthroughSiteset'];
+    }
+
+    /**
+     * Sets enableBreakthroughSiteset
+     *
+     * @param bool|mixed $enableBreakthroughSiteset enableBreakthroughSiteset
+     *
+     * @return $this
+     */
+    public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
+    {
+        $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
 
         return $this;
     }

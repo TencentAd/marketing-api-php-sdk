@@ -38,9 +38,10 @@ class ImagesApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $uploadType = isset($params['upload_type']) ? $params['upload_type'] : null;
             $signature = isset($params['signature']) ? $params['signature'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $file = isset($params['file']) ? $params['file'] : null;
             $bytes = isset($params['bytes']) ? $params['bytes'] : null;
             $imageUsage = isset($params['image_usage']) ? $params['image_usage'] : null;
@@ -48,7 +49,7 @@ class ImagesApiContainer extends ApiContainer
             $resizeWidth = isset($params['resize_width']) ? $params['resize_width'] : null;
             $resizeHeight = isset($params['resize_height']) ? $params['resize_height'] : null;
             $resizeFileSize = isset($params['resize_file_size']) ? $params['resize_file_size'] : null;
-            $response = $this->apiInstance->imagesAdd($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize);
+            $response = $this->apiInstance->imagesAdd($uploadType, $signature, $accountId, $organizationId, $file, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize);
             return $this->handleResponse($response);
         });
     }
@@ -63,9 +64,10 @@ class ImagesApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $uploadType = isset($params['upload_type']) ? $params['upload_type'] : null;
             $signature = isset($params['signature']) ? $params['signature'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $file = isset($params['file']) ? $params['file'] : null;
             $bytes = isset($params['bytes']) ? $params['bytes'] : null;
             $imageUsage = isset($params['image_usage']) ? $params['image_usage'] : null;
@@ -73,7 +75,7 @@ class ImagesApiContainer extends ApiContainer
             $resizeWidth = isset($params['resize_width']) ? $params['resize_width'] : null;
             $resizeHeight = isset($params['resize_height']) ? $params['resize_height'] : null;
             $resizeFileSize = isset($params['resize_file_size']) ? $params['resize_file_size'] : null;
-            $response = $this->apiInstance->imagesAddAsync($accountId, $uploadType, $signature, $file, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize);
+            $response = $this->apiInstance->imagesAddAsync($uploadType, $signature, $accountId, $organizationId, $file, $bytes, $imageUsage, $description, $resizeWidth, $resizeHeight, $resizeFileSize);
             return $response;
         });
     }
@@ -125,13 +127,14 @@ class ImagesApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $labelId = isset($params['label_id']) ? $params['label_id'] : null;
             $businessScenario = isset($params['business_scenario']) ? $params['business_scenario'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->imagesGet($accountId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
+            $response = $this->apiInstance->imagesGet($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -147,13 +150,14 @@ class ImagesApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $labelId = isset($params['label_id']) ? $params['label_id'] : null;
             $businessScenario = isset($params['business_scenario']) ? $params['business_scenario'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->imagesGetAsync($accountId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
+            $response = $this->apiInstance->imagesGetAsync($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
             return $response;
         });
     }

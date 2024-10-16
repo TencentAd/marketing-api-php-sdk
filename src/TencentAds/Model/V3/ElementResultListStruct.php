@@ -58,6 +58,7 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'elementId' => 'int',
         'imageId' => 'string',
         'videoId' => 'string',
         'elementName' => 'string',
@@ -75,6 +76,7 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'elementId' => 'int64',
         'imageId' => null,
         'videoId' => null,
         'elementName' => null,
@@ -113,6 +115,7 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'elementId' => 'element_id',
         'imageId' => 'image_id',
         'videoId' => 'video_id',
         'elementName' => 'element_name',
@@ -130,6 +133,7 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'elementId' => 'setElementId',
         'imageId' => 'setImageId',
         'videoId' => 'setVideoId',
         'elementName' => 'setElementName',
@@ -147,6 +151,7 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'elementId' => 'getElementId',
         'imageId' => 'getImageId',
         'videoId' => 'getVideoId',
         'elementName' => 'getElementName',
@@ -218,6 +223,7 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['elementId'] = isset($data['elementId']) ? $data['elementId'] : null;
         $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
         $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
         $this->container['elementName'] = isset($data['elementName']) ? $data['elementName'] : null;
@@ -252,6 +258,30 @@ class ElementResultListStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets elementId
+     *
+     * @return int|mixed
+     */
+    public function getElementId()
+    {
+        return $this->container['elementId'];
+    }
+
+    /**
+     * Sets elementId
+     *
+     * @param int|mixed $elementId elementId
+     *
+     * @return $this
+     */
+    public function setElementId($elementId)
+    {
+        $this->container['elementId'] = $elementId;
+
+        return $this;
+    }
 
     /**
      * Gets imageId

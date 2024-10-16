@@ -1,6 +1,6 @@
 <?php
 /**
- * CropSmartSpec
+ * DeriveTemplateConf
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CropSmartSpec Class Doc Comment
+ * DeriveTemplateConf Class Doc Comment
  *
  * @category Class
- * @description 智能裁剪信息
+ * @description 衍生创意自定义模版信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CropSmartSpec implements ModelInterface, ArrayAccess
+class DeriveTemplateConf implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'crop_smart_spec';
+    protected static $swaggerModelName = 'derive_template_conf';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,7 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'width' => 'int',
-        'height' => 'int'
+        'templateConfList' => '\TencentAds\Model\V3\TemplateConfItem[]'
     ];
 
     /**
@@ -68,8 +67,7 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'width' => 'int64',
-        'height' => 'int64'
+        'templateConfList' => null
     ];
 
     /**
@@ -99,8 +97,7 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'width' => 'width',
-        'height' => 'height'
+        'templateConfList' => 'template_conf_list'
     ];
 
     /**
@@ -109,8 +106,7 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'width' => 'setWidth',
-        'height' => 'setHeight'
+        'templateConfList' => 'setTemplateConfList'
     ];
 
     /**
@@ -119,8 +115,7 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'width' => 'getWidth',
-        'height' => 'getHeight'
+        'templateConfList' => 'getTemplateConfList'
     ];
 
     /**
@@ -183,8 +178,7 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
-        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
+        $this->container['templateConfList'] = isset($data['templateConfList']) ? $data['templateConfList'] : null;
     }
 
     /**
@@ -212,49 +206,25 @@ class CropSmartSpec implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets width
+     * Gets templateConfList
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\TemplateConfItem[]|mixed
      */
-    public function getWidth()
+    public function getTemplateConfList()
     {
-        return $this->container['width'];
+        return $this->container['templateConfList'];
     }
 
     /**
-     * Sets width
+     * Sets templateConfList
      *
-     * @param int|mixed $width width
+     * @param \TencentAds\Model\V3\TemplateConfItem[]|mixed $templateConfList templateConfList
      *
      * @return $this
      */
-    public function setWidth($width)
+    public function setTemplateConfList($templateConfList)
     {
-        $this->container['width'] = $width;
-
-        return $this;
-    }
-
-    /**
-     * Gets height
-     *
-     * @return int|mixed
-     */
-    public function getHeight()
-    {
-        return $this->container['height'];
-    }
-
-    /**
-     * Sets height
-     *
-     * @param int|mixed $height height
-     *
-     * @return $this
-     */
-    public function setHeight($height)
-    {
-        $this->container['height'] = $height;
+        $this->container['templateConfList'] = $templateConfList;
 
         return $this;
     }

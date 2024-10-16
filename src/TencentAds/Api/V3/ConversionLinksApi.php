@@ -94,15 +94,16 @@ class ConversionLinksApi
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $secondCategoryType secondCategoryType (required)
+     * @param  \TencentAds\Model\V3\LinkOptimizationGoalStruct|mixed $optimizationGoalStruct optimizationGoalStruct (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\ConversionLinksGetResponse|mixed
      */
-    public function conversionLinksGet($accountId, $secondCategoryType, $fields = null)
+    public function conversionLinksGet($accountId, $secondCategoryType, $optimizationGoalStruct = null, $fields = null)
     {
-        list($response) = $this->conversionLinksGetWithHttpInfo($accountId, $secondCategoryType, $fields);
+        list($response) = $this->conversionLinksGetWithHttpInfo($accountId, $secondCategoryType, $optimizationGoalStruct, $fields);
         return $response;
     }
 
@@ -113,16 +114,17 @@ class ConversionLinksApi
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $secondCategoryType (required)
+     * @param  \TencentAds\Model\V3\LinkOptimizationGoalStruct|mixed $optimizationGoalStruct (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\ConversionLinksGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function conversionLinksGetWithHttpInfo($accountId, $secondCategoryType, $fields = null)
+    public function conversionLinksGetWithHttpInfo($accountId, $secondCategoryType, $optimizationGoalStruct = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\ConversionLinksGetResponse';
-        $request = $this->conversionLinksGetRequest($accountId, $secondCategoryType, $fields);
+        $request = $this->conversionLinksGetRequest($accountId, $secondCategoryType, $optimizationGoalStruct, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -190,14 +192,15 @@ class ConversionLinksApi
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $secondCategoryType (required)
+     * @param  \TencentAds\Model\V3\LinkOptimizationGoalStruct|mixed $optimizationGoalStruct (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function conversionLinksGetAsync($accountId, $secondCategoryType, $fields = null)
+    public function conversionLinksGetAsync($accountId, $secondCategoryType, $optimizationGoalStruct = null, $fields = null)
     {
-        return $this->conversionLinksGetAsyncWithHttpInfo($accountId, $secondCategoryType, $fields)
+        return $this->conversionLinksGetAsyncWithHttpInfo($accountId, $secondCategoryType, $optimizationGoalStruct, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -212,15 +215,16 @@ class ConversionLinksApi
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $secondCategoryType (required)
+     * @param  \TencentAds\Model\V3\LinkOptimizationGoalStruct|mixed $optimizationGoalStruct (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function conversionLinksGetAsyncWithHttpInfo($accountId, $secondCategoryType, $fields = null)
+    public function conversionLinksGetAsyncWithHttpInfo($accountId, $secondCategoryType, $optimizationGoalStruct = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\ConversionLinksGetResponse';
-        $request = $this->conversionLinksGetRequest($accountId, $secondCategoryType, $fields);
+        $request = $this->conversionLinksGetRequest($accountId, $secondCategoryType, $optimizationGoalStruct, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -264,12 +268,13 @@ class ConversionLinksApi
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $secondCategoryType (required)
+     * @param  \TencentAds\Model\V3\LinkOptimizationGoalStruct|mixed $optimizationGoalStruct (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function conversionLinksGetRequest($accountId, $secondCategoryType, $fields = null)
+    protected function conversionLinksGetRequest($accountId, $secondCategoryType, $optimizationGoalStruct = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -298,6 +303,10 @@ class ConversionLinksApi
         // query params
         if ($secondCategoryType !== null) {
             $queryParams['second_category_type'] = ObjectSerializer::toQueryValue($secondCategoryType);
+        }
+        // query params
+        if ($optimizationGoalStruct !== null) {
+            $queryParams['optimization_goal_struct'] = ObjectSerializer::toQueryValue($optimizationGoalStruct);
         }
         // query params
         if (is_array($fields)) {

@@ -92,9 +92,10 @@ class VideosApi
      *
      * 添加视频文件
      *
-     * @param  int|mixed $accountId accountId (required)
      * @param  \SplFileObject|mixed $videoFile videoFile (required)
      * @param  string|mixed $signature signature (required)
+     * @param  int|mixed $accountId accountId (optional)
+     * @param  int|mixed $organizationId organizationId (optional)
      * @param  string|mixed $description description (optional)
      * @param  int|mixed $adcreativeTemplateId adcreativeTemplateId (optional)
      *
@@ -102,9 +103,9 @@ class VideosApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\VideosAddResponse|mixed
      */
-    public function videosAdd($accountId, $videoFile, $signature, $description = null, $adcreativeTemplateId = null)
+    public function videosAdd($videoFile, $signature, $accountId = null, $organizationId = null, $description = null, $adcreativeTemplateId = null)
     {
-        list($response) = $this->videosAddWithHttpInfo($accountId, $videoFile, $signature, $description, $adcreativeTemplateId);
+        list($response) = $this->videosAddWithHttpInfo($videoFile, $signature, $accountId, $organizationId, $description, $adcreativeTemplateId);
         return $response;
     }
 
@@ -113,9 +114,10 @@ class VideosApi
      *
      * 添加视频文件
      *
-     * @param  int|mixed $accountId (required)
      * @param  \SplFileObject|mixed $videoFile (required)
      * @param  string|mixed $signature (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string|mixed $description (optional)
      * @param  int|mixed $adcreativeTemplateId (optional)
      *
@@ -123,10 +125,10 @@ class VideosApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\VideosAddResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function videosAddWithHttpInfo($accountId, $videoFile, $signature, $description = null, $adcreativeTemplateId = null)
+    public function videosAddWithHttpInfo($videoFile, $signature, $accountId = null, $organizationId = null, $description = null, $adcreativeTemplateId = null)
     {
         $returnType = '\TencentAds\Model\V3\VideosAddResponse';
-        $request = $this->videosAddRequest($accountId, $videoFile, $signature, $description, $adcreativeTemplateId);
+        $request = $this->videosAddRequest($videoFile, $signature, $accountId, $organizationId, $description, $adcreativeTemplateId);
 
         try {
             $options = $this->createHttpClientOption();
@@ -192,18 +194,19 @@ class VideosApi
      *
      * 添加视频文件
      *
-     * @param  int|mixed $accountId (required)
      * @param  \SplFileObject|mixed $videoFile (required)
      * @param  string|mixed $signature (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string|mixed $description (optional)
      * @param  int|mixed $adcreativeTemplateId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function videosAddAsync($accountId, $videoFile, $signature, $description = null, $adcreativeTemplateId = null)
+    public function videosAddAsync($videoFile, $signature, $accountId = null, $organizationId = null, $description = null, $adcreativeTemplateId = null)
     {
-        return $this->videosAddAsyncWithHttpInfo($accountId, $videoFile, $signature, $description, $adcreativeTemplateId)
+        return $this->videosAddAsyncWithHttpInfo($videoFile, $signature, $accountId, $organizationId, $description, $adcreativeTemplateId)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -216,19 +219,20 @@ class VideosApi
      *
      * 添加视频文件
      *
-     * @param  int|mixed $accountId (required)
      * @param  \SplFileObject|mixed $videoFile (required)
      * @param  string|mixed $signature (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string|mixed $description (optional)
      * @param  int|mixed $adcreativeTemplateId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function videosAddAsyncWithHttpInfo($accountId, $videoFile, $signature, $description = null, $adcreativeTemplateId = null)
+    public function videosAddAsyncWithHttpInfo($videoFile, $signature, $accountId = null, $organizationId = null, $description = null, $adcreativeTemplateId = null)
     {
         $returnType = '\TencentAds\Model\V3\VideosAddResponse';
-        $request = $this->videosAddRequest($accountId, $videoFile, $signature, $description, $adcreativeTemplateId);
+        $request = $this->videosAddRequest($videoFile, $signature, $accountId, $organizationId, $description, $adcreativeTemplateId);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -270,23 +274,18 @@ class VideosApi
     /**
      * Create request for operation 'videosAdd'
      *
-     * @param  int|mixed $accountId (required)
      * @param  \SplFileObject|mixed $videoFile (required)
      * @param  string|mixed $signature (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string|mixed $description (optional)
      * @param  int|mixed $adcreativeTemplateId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function videosAddRequest($accountId, $videoFile, $signature, $description = null, $adcreativeTemplateId = null)
+    protected function videosAddRequest($videoFile, $signature, $accountId = null, $organizationId = null, $description = null, $adcreativeTemplateId = null)
     {
-        // verify the required parameter 'accountId' is set
-        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling videosAdd'
-            );
-        }
         // verify the required parameter 'videoFile' is set
         if ($videoFile === null || (is_array($videoFile) && count($videoFile) === 0)) {
             throw new \InvalidArgumentException(
@@ -312,6 +311,10 @@ class VideosApi
         // form params
         if ($accountId !== null) {
             $formParams['account_id'] = ObjectSerializer::toFormValue($accountId);
+        }
+        // form params
+        if ($organizationId !== null) {
+            $formParams['organization_id'] = ObjectSerializer::toFormValue($organizationId);
         }
         // form params
         if ($videoFile !== null) {
@@ -726,7 +729,8 @@ class VideosApi
      *
      * 获取视频文件
      *
-     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $accountId accountId (optional)
+     * @param  int|mixed $organizationId organizationId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
@@ -738,9 +742,9 @@ class VideosApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\VideosGetResponse|mixed
      */
-    public function videosGet($accountId, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
+    public function videosGet($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
     {
-        list($response) = $this->videosGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
+        list($response) = $this->videosGetWithHttpInfo($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
         return $response;
     }
 
@@ -749,7 +753,8 @@ class VideosApi
      *
      * 获取视频文件
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -761,10 +766,10 @@ class VideosApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\VideosGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function videosGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
+    public function videosGetWithHttpInfo($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\VideosGetResponse';
-        $request = $this->videosGetRequest($accountId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
+        $request = $this->videosGetRequest($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -830,7 +835,8 @@ class VideosApi
      *
      * 获取视频文件
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -841,9 +847,9 @@ class VideosApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function videosGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
+    public function videosGetAsync($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
     {
-        return $this->videosGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields)
+        return $this->videosGetAsyncWithHttpInfo($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -856,7 +862,8 @@ class VideosApi
      *
      * 获取视频文件
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -867,10 +874,10 @@ class VideosApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function videosGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
+    public function videosGetAsyncWithHttpInfo($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\VideosGetResponse';
-        $request = $this->videosGetRequest($accountId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
+        $request = $this->videosGetRequest($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -912,7 +919,8 @@ class VideosApi
     /**
      * Create request for operation 'videosGet'
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -923,14 +931,8 @@ class VideosApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function videosGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
+    protected function videosGetRequest($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
     {
-        // verify the required parameter 'accountId' is set
-        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling videosGet'
-            );
-        }
 
         $resourcePath = '/videos/get';
         $formParams = [];
@@ -942,6 +944,10 @@ class VideosApi
         // query params
         if ($accountId !== null) {
             $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
+        }
+        // query params
+        if ($organizationId !== null) {
+            $queryParams['organization_id'] = ObjectSerializer::toQueryValue($organizationId);
         }
         // query params
         if (is_array($filtering)) {
