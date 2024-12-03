@@ -57,7 +57,7 @@ class BatchRequestsAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\V3\ResponseStruct[]'
+        'list' => '\TencentAds\Model\V3\BatchRequestsAddResponseStruct[]'
     ];
 
     /**
@@ -207,7 +207,7 @@ class BatchRequestsAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\V3\ResponseStruct[]|mixed
+     * @return \TencentAds\Model\V3\BatchRequestsAddResponseStruct[]|mixed
      */
     public function getList()
     {
@@ -217,7 +217,7 @@ class BatchRequestsAddResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\V3\ResponseStruct[]|mixed $list list
+     * @param \TencentAds\Model\V3\BatchRequestsAddResponseStruct[]|mixed $list list
      *
      * @return $this
      */

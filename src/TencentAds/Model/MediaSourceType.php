@@ -52,6 +52,8 @@ class MediaSourceType
     const DERIVE = 'SOURCE_TYPE_DERIVE';
     const DERIVATION = 'SOURCE_TYPE_DERIVATION';
     const AIGC = 'SOURCE_TYPE_AIGC';
+    const HUXUAN = 'SOURCE_TYPE_HUXUAN';
+    const HUXUAN_DERIVE = 'SOURCE_TYPE_HUXUAN_DERIVE';
     
     /**
      * Gets allowable values of the enum
@@ -68,6 +70,8 @@ class MediaSourceType
             self::DERIVE,
             self::DERIVATION,
             self::AIGC,
+            self::HUXUAN,
+            self::HUXUAN_DERIVE,
         ];
     }
 }

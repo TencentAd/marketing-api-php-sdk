@@ -62,7 +62,8 @@ class ComponentMetadataValueField implements ModelInterface, ArrayAccess
         'type' => '\TencentAds\Model\V3\ComponentMetadataFieldType',
         'structure' => '\TencentAds\Model\V3\ComponentMetadataValueFieldStructureField[]',
         'isArray' => 'bool',
-        'valid' => '\TencentAds\Model\V3\ComponentMetadataValueValid'
+        'valid' => '\TencentAds\Model\V3\ComponentMetadataValueValid',
+        'label' => 'string'
     ];
 
     /**
@@ -75,7 +76,8 @@ class ComponentMetadataValueField implements ModelInterface, ArrayAccess
         'type' => null,
         'structure' => null,
         'isArray' => null,
-        'valid' => null
+        'valid' => null,
+        'label' => null
     ];
 
     /**
@@ -109,7 +111,8 @@ class ComponentMetadataValueField implements ModelInterface, ArrayAccess
         'type' => 'type',
         'structure' => 'structure',
         'isArray' => 'is_array',
-        'valid' => 'valid'
+        'valid' => 'valid',
+        'label' => 'label'
     ];
 
     /**
@@ -122,7 +125,8 @@ class ComponentMetadataValueField implements ModelInterface, ArrayAccess
         'type' => 'setType',
         'structure' => 'setStructure',
         'isArray' => 'setIsArray',
-        'valid' => 'setValid'
+        'valid' => 'setValid',
+        'label' => 'setLabel'
     ];
 
     /**
@@ -135,7 +139,8 @@ class ComponentMetadataValueField implements ModelInterface, ArrayAccess
         'type' => 'getType',
         'structure' => 'getStructure',
         'isArray' => 'getIsArray',
-        'valid' => 'getValid'
+        'valid' => 'getValid',
+        'label' => 'getLabel'
     ];
 
     /**
@@ -203,6 +208,7 @@ class ComponentMetadataValueField implements ModelInterface, ArrayAccess
         $this->container['structure'] = isset($data['structure']) ? $data['structure'] : null;
         $this->container['isArray'] = isset($data['isArray']) ? $data['isArray'] : null;
         $this->container['valid'] = isset($data['valid']) ? $data['valid'] : null;
+        $this->container['label'] = isset($data['label']) ? $data['label'] : null;
     }
 
     /**
@@ -345,6 +351,30 @@ class ComponentMetadataValueField implements ModelInterface, ArrayAccess
     public function setValid($valid)
     {
         $this->container['valid'] = $valid;
+
+        return $this;
+    }
+
+    /**
+     * Gets label
+     *
+     * @return string|mixed
+     */
+    public function getLabel()
+    {
+        return $this->container['label'];
+    }
+
+    /**
+     * Sets label
+     *
+     * @param string|mixed $label label
+     *
+     * @return $this
+     */
+    public function setLabel($label)
+    {
+        $this->container['label'] = $label;
 
         return $this;
     }

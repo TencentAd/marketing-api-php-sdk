@@ -67,6 +67,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'creativeComponents' => '\TencentAds\Model\V3\CreativeComponents',
         'impressionTrackingUrl' => 'string',
         'clickTrackingUrl' => 'string',
+        'programCreativeInfo' => '\TencentAds\Model\V3\ProgramCreativeInfo',
         'pageTrackUrl' => 'string',
         'configuredStatus' => '\TencentAds\Model\V3\ConfiguredStatus',
         'isDeleted' => 'bool',
@@ -74,7 +75,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int',
         'marketingAssetVerification' => '\TencentAds\Model\V3\MarketingAssetVerification',
         'source' => '\TencentAds\Model\V3\AdCreativeSource',
-        'assetInconsistentStatus' => '\TencentAds\Model\V3\AssetInconsistentStatus'
+        'assetInconsistentStatus' => '\TencentAds\Model\V3\AssetInconsistentStatus',
+        'potentialStatus' => '\TencentAds\Model\V3\DynamicCreativePotentialStatus'
     ];
 
     /**
@@ -92,6 +94,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'creativeComponents' => null,
         'impressionTrackingUrl' => null,
         'clickTrackingUrl' => null,
+        'programCreativeInfo' => null,
         'pageTrackUrl' => null,
         'configuredStatus' => null,
         'isDeleted' => null,
@@ -99,7 +102,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int64',
         'marketingAssetVerification' => null,
         'source' => null,
-        'assetInconsistentStatus' => null
+        'assetInconsistentStatus' => null,
+        'potentialStatus' => null
     ];
 
     /**
@@ -138,6 +142,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'creativeComponents' => 'creative_components',
         'impressionTrackingUrl' => 'impression_tracking_url',
         'clickTrackingUrl' => 'click_tracking_url',
+        'programCreativeInfo' => 'program_creative_info',
         'pageTrackUrl' => 'page_track_url',
         'configuredStatus' => 'configured_status',
         'isDeleted' => 'is_deleted',
@@ -145,7 +150,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'last_modified_time',
         'marketingAssetVerification' => 'marketing_asset_verification',
         'source' => 'source',
-        'assetInconsistentStatus' => 'asset_inconsistent_status'
+        'assetInconsistentStatus' => 'asset_inconsistent_status',
+        'potentialStatus' => 'potential_status'
     ];
 
     /**
@@ -163,6 +169,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'creativeComponents' => 'setCreativeComponents',
         'impressionTrackingUrl' => 'setImpressionTrackingUrl',
         'clickTrackingUrl' => 'setClickTrackingUrl',
+        'programCreativeInfo' => 'setProgramCreativeInfo',
         'pageTrackUrl' => 'setPageTrackUrl',
         'configuredStatus' => 'setConfiguredStatus',
         'isDeleted' => 'setIsDeleted',
@@ -170,7 +177,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'setLastModifiedTime',
         'marketingAssetVerification' => 'setMarketingAssetVerification',
         'source' => 'setSource',
-        'assetInconsistentStatus' => 'setAssetInconsistentStatus'
+        'assetInconsistentStatus' => 'setAssetInconsistentStatus',
+        'potentialStatus' => 'setPotentialStatus'
     ];
 
     /**
@@ -188,6 +196,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'creativeComponents' => 'getCreativeComponents',
         'impressionTrackingUrl' => 'getImpressionTrackingUrl',
         'clickTrackingUrl' => 'getClickTrackingUrl',
+        'programCreativeInfo' => 'getProgramCreativeInfo',
         'pageTrackUrl' => 'getPageTrackUrl',
         'configuredStatus' => 'getConfiguredStatus',
         'isDeleted' => 'getIsDeleted',
@@ -195,7 +204,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'getLastModifiedTime',
         'marketingAssetVerification' => 'getMarketingAssetVerification',
         'source' => 'getSource',
-        'assetInconsistentStatus' => 'getAssetInconsistentStatus'
+        'assetInconsistentStatus' => 'getAssetInconsistentStatus',
+        'potentialStatus' => 'getPotentialStatus'
     ];
 
     /**
@@ -267,6 +277,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['creativeComponents'] = isset($data['creativeComponents']) ? $data['creativeComponents'] : null;
         $this->container['impressionTrackingUrl'] = isset($data['impressionTrackingUrl']) ? $data['impressionTrackingUrl'] : null;
         $this->container['clickTrackingUrl'] = isset($data['clickTrackingUrl']) ? $data['clickTrackingUrl'] : null;
+        $this->container['programCreativeInfo'] = isset($data['programCreativeInfo']) ? $data['programCreativeInfo'] : null;
         $this->container['pageTrackUrl'] = isset($data['pageTrackUrl']) ? $data['pageTrackUrl'] : null;
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
@@ -275,6 +286,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['marketingAssetVerification'] = isset($data['marketingAssetVerification']) ? $data['marketingAssetVerification'] : null;
         $this->container['source'] = isset($data['source']) ? $data['source'] : null;
         $this->container['assetInconsistentStatus'] = isset($data['assetInconsistentStatus']) ? $data['assetInconsistentStatus'] : null;
+        $this->container['potentialStatus'] = isset($data['potentialStatus']) ? $data['potentialStatus'] : null;
     }
 
     /**
@@ -518,6 +530,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets programCreativeInfo
+     *
+     * @return \TencentAds\Model\V3\ProgramCreativeInfo|mixed
+     */
+    public function getProgramCreativeInfo()
+    {
+        return $this->container['programCreativeInfo'];
+    }
+
+    /**
+     * Sets programCreativeInfo
+     *
+     * @param \TencentAds\Model\V3\ProgramCreativeInfo|mixed $programCreativeInfo programCreativeInfo
+     *
+     * @return $this
+     */
+    public function setProgramCreativeInfo($programCreativeInfo)
+    {
+        $this->container['programCreativeInfo'] = $programCreativeInfo;
+
+        return $this;
+    }
+
+    /**
      * Gets pageTrackUrl
      *
      * @return string|mixed
@@ -705,6 +741,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setAssetInconsistentStatus($assetInconsistentStatus)
     {
         $this->container['assetInconsistentStatus'] = $assetInconsistentStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets potentialStatus
+     *
+     * @return \TencentAds\Model\V3\DynamicCreativePotentialStatus|mixed
+     */
+    public function getPotentialStatus()
+    {
+        return $this->container['potentialStatus'];
+    }
+
+    /**
+     * Sets potentialStatus
+     *
+     * @param \TencentAds\Model\V3\DynamicCreativePotentialStatus|mixed $potentialStatus potentialStatus
+     *
+     * @return $this
+     */
+    public function setPotentialStatus($potentialStatus)
+    {
+        $this->container['potentialStatus'] = $potentialStatus;
 
         return $this;
     }

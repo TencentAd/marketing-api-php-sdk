@@ -92,18 +92,19 @@ class AsyncReportFilesApi
      *
      * 获取文件接口
      *
-     * @param  int|mixed $accountId accountId (required)
      * @param  int|mixed $taskId taskId (required)
      * @param  int|mixed $fileId fileId (required)
+     * @param  int|mixed $accountId accountId (optional)
+     * @param  int|mixed $organizationId organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string|mixed
      */
-    public function asyncReportFilesGet($accountId, $taskId, $fileId, $fields = null)
+    public function asyncReportFilesGet($taskId, $fileId, $accountId = null, $organizationId = null, $fields = null)
     {
-        list($response) = $this->asyncReportFilesGetWithHttpInfo($accountId, $taskId, $fileId, $fields);
+        list($response) = $this->asyncReportFilesGetWithHttpInfo($taskId, $fileId, $accountId, $organizationId, $fields);
         return $response;
     }
 
@@ -112,19 +113,20 @@ class AsyncReportFilesApi
      *
      * 获取文件接口
      *
-     * @param  int|mixed $accountId (required)
      * @param  int|mixed $taskId (required)
      * @param  int|mixed $fileId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
-    public function asyncReportFilesGetWithHttpInfo($accountId, $taskId, $fileId, $fields = null)
+    public function asyncReportFilesGetWithHttpInfo($taskId, $fileId, $accountId = null, $organizationId = null, $fields = null)
     {
         $returnType = 'string';
-        $request = $this->asyncReportFilesGetRequest($accountId, $taskId, $fileId, $fields);
+        $request = $this->asyncReportFilesGetRequest($taskId, $fileId, $accountId, $organizationId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -190,17 +192,18 @@ class AsyncReportFilesApi
      *
      * 获取文件接口
      *
-     * @param  int|mixed $accountId (required)
      * @param  int|mixed $taskId (required)
      * @param  int|mixed $fileId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function asyncReportFilesGetAsync($accountId, $taskId, $fileId, $fields = null)
+    public function asyncReportFilesGetAsync($taskId, $fileId, $accountId = null, $organizationId = null, $fields = null)
     {
-        return $this->asyncReportFilesGetAsyncWithHttpInfo($accountId, $taskId, $fileId, $fields)
+        return $this->asyncReportFilesGetAsyncWithHttpInfo($taskId, $fileId, $accountId, $organizationId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -213,18 +216,19 @@ class AsyncReportFilesApi
      *
      * 获取文件接口
      *
-     * @param  int|mixed $accountId (required)
      * @param  int|mixed $taskId (required)
      * @param  int|mixed $fileId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function asyncReportFilesGetAsyncWithHttpInfo($accountId, $taskId, $fileId, $fields = null)
+    public function asyncReportFilesGetAsyncWithHttpInfo($taskId, $fileId, $accountId = null, $organizationId = null, $fields = null)
     {
         $returnType = 'string';
-        $request = $this->asyncReportFilesGetRequest($accountId, $taskId, $fileId, $fields);
+        $request = $this->asyncReportFilesGetRequest($taskId, $fileId, $accountId, $organizationId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -266,22 +270,17 @@ class AsyncReportFilesApi
     /**
      * Create request for operation 'asyncReportFilesGet'
      *
-     * @param  int|mixed $accountId (required)
      * @param  int|mixed $taskId (required)
      * @param  int|mixed $fileId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function asyncReportFilesGetRequest($accountId, $taskId, $fileId, $fields = null)
+    protected function asyncReportFilesGetRequest($taskId, $fileId, $accountId = null, $organizationId = null, $fields = null)
     {
-        // verify the required parameter 'accountId' is set
-        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling asyncReportFilesGet'
-            );
-        }
         // verify the required parameter 'taskId' is set
         if ($taskId === null || (is_array($taskId) && count($taskId) === 0)) {
             throw new \InvalidArgumentException(
@@ -313,6 +312,10 @@ class AsyncReportFilesApi
         // query params
         if ($fileId !== null) {
             $queryParams['file_id'] = ObjectSerializer::toQueryValue($fileId);
+        }
+        // query params
+        if ($organizationId !== null) {
+            $queryParams['organization_id'] = ObjectSerializer::toQueryValue($organizationId);
         }
         // query params
         if (is_array($fields)) {

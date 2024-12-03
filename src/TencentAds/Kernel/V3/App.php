@@ -135,6 +135,8 @@ use TencentAds\Container\V3\ProductSeriesApiContainer;
 use TencentAds\Container\V3\ProductsSystemStatusApiContainer;
 use TencentAds\Container\V3\ProfilesApiContainer;
 use TencentAds\Container\V3\ProgrammedApiContainer;
+use TencentAds\Container\V3\ProgrammedCommponentPreviewApiContainer;
+use TencentAds\Container\V3\ProgrammedCommponentResultApiContainer;
 use TencentAds\Container\V3\ProgrammedMaterialMappingsApiContainer;
 use TencentAds\Container\V3\ProgrammedTemplateApiContainer;
 use TencentAds\Container\V3\QualificationImagesApiContainer;
@@ -177,6 +179,10 @@ use TencentAds\Container\V3\WechatPagesCsgroupUserApiContainer;
 use TencentAds\Container\V3\WechatPagesCsgrouplistApiContainer;
 use TencentAds\Container\V3\WechatPagesCustomApiContainer;
 use TencentAds\Container\V3\WechatPagesGrantinfoApiContainer;
+use TencentAds\Container\V3\WechatShopApiContainer;
+use TencentAds\Container\V3\WechatShopAuthorizationApiContainer;
+use TencentAds\Container\V3\WechatShopAuthorizationStatusApiContainer;
+use TencentAds\Container\V3\WechatShopAuthorizationValidationApiContainer;
 use TencentAds\Container\V3\WildcardsApiContainer;
 use TencentAds\Container\V3\WxGamePlayablePageApiContainer;
 use TencentAds\Container\V3\WxPackageAccountApiContainer;
@@ -593,6 +599,12 @@ class App
     /** @var ProgrammedApiContainer */
     public $programmedApiContainer;
 
+    /** @var ProgrammedCommponentPreviewApiContainer */
+    public $programmedCommponentPreviewApiContainer;
+
+    /** @var ProgrammedCommponentResultApiContainer */
+    public $programmedCommponentResultApiContainer;
+
     /** @var ProgrammedMaterialMappingsApiContainer */
     public $programmedMaterialMappingsApiContainer;
 
@@ -718,6 +730,18 @@ class App
 
     /** @var WechatPagesGrantinfoApiContainer */
     public $wechatPagesGrantinfoApiContainer;
+
+    /** @var WechatShopApiContainer */
+    public $wechatShopApiContainer;
+
+    /** @var WechatShopAuthorizationApiContainer */
+    public $wechatShopAuthorizationApiContainer;
+
+    /** @var WechatShopAuthorizationStatusApiContainer */
+    public $wechatShopAuthorizationStatusApiContainer;
+
+    /** @var WechatShopAuthorizationValidationApiContainer */
+    public $wechatShopAuthorizationValidationApiContainer;
 
     /** @var WildcardsApiContainer */
     public $wildcardsApiContainer;
@@ -2628,6 +2652,34 @@ class App
 
 
     /**
+     * @return ProgrammedCommponentPreviewApiContainer
+     */
+    public function programmedCommponentPreview()
+    {
+        if (empty($this->programmedCommponentPreviewApiContainer)) {
+            $container = new ProgrammedCommponentPreviewApiContainer();
+            $container->init($this, $this->getClient());
+            $this->programmedCommponentPreviewApiContainer = $container;
+        }
+        return $this->programmedCommponentPreviewApiContainer;
+    }
+
+
+    /**
+     * @return ProgrammedCommponentResultApiContainer
+     */
+    public function programmedCommponentResult()
+    {
+        if (empty($this->programmedCommponentResultApiContainer)) {
+            $container = new ProgrammedCommponentResultApiContainer();
+            $container->init($this, $this->getClient());
+            $this->programmedCommponentResultApiContainer = $container;
+        }
+        return $this->programmedCommponentResultApiContainer;
+    }
+
+
+    /**
      * @return ProgrammedMaterialMappingsApiContainer
      */
     public function programmedMaterialMappings()
@@ -3212,6 +3264,62 @@ class App
             $this->wechatPagesGrantinfoApiContainer = $container;
         }
         return $this->wechatPagesGrantinfoApiContainer;
+    }
+
+
+    /**
+     * @return WechatShopApiContainer
+     */
+    public function wechatShop()
+    {
+        if (empty($this->wechatShopApiContainer)) {
+            $container = new WechatShopApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatShopApiContainer = $container;
+        }
+        return $this->wechatShopApiContainer;
+    }
+
+
+    /**
+     * @return WechatShopAuthorizationApiContainer
+     */
+    public function wechatShopAuthorization()
+    {
+        if (empty($this->wechatShopAuthorizationApiContainer)) {
+            $container = new WechatShopAuthorizationApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatShopAuthorizationApiContainer = $container;
+        }
+        return $this->wechatShopAuthorizationApiContainer;
+    }
+
+
+    /**
+     * @return WechatShopAuthorizationStatusApiContainer
+     */
+    public function wechatShopAuthorizationStatus()
+    {
+        if (empty($this->wechatShopAuthorizationStatusApiContainer)) {
+            $container = new WechatShopAuthorizationStatusApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatShopAuthorizationStatusApiContainer = $container;
+        }
+        return $this->wechatShopAuthorizationStatusApiContainer;
+    }
+
+
+    /**
+     * @return WechatShopAuthorizationValidationApiContainer
+     */
+    public function wechatShopAuthorizationValidation()
+    {
+        if (empty($this->wechatShopAuthorizationValidationApiContainer)) {
+            $container = new WechatShopAuthorizationValidationApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatShopAuthorizationValidationApiContainer = $container;
+        }
+        return $this->wechatShopAuthorizationValidationApiContainer;
     }
 
 

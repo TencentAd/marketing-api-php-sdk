@@ -38,11 +38,12 @@ class AsyncReportFilesApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $taskId = isset($params['task_id']) ? $params['task_id'] : null;
             $fileId = isset($params['file_id']) ? $params['file_id'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->asyncReportFilesGet($accountId, $taskId, $fileId, $fields);
+            $response = $this->apiInstance->asyncReportFilesGet($taskId, $fileId, $accountId, $organizationId, $fields);
             return $response;
         });
     }
@@ -57,11 +58,12 @@ class AsyncReportFilesApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $taskId = isset($params['task_id']) ? $params['task_id'] : null;
             $fileId = isset($params['file_id']) ? $params['file_id'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->asyncReportFilesGetAsync($accountId, $taskId, $fileId, $fields);
+            $response = $this->apiInstance->asyncReportFilesGetAsync($taskId, $fileId, $accountId, $organizationId, $fields);
             return $response;
         });
     }

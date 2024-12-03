@@ -69,7 +69,11 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'authorizationScope' => '\TencentAds\Model\V3\WechatChannelsAuthScope',
         'isBlocked' => 'bool',
         'isPrivate' => 'bool',
-        'isAdAcct' => 'bool'
+        'isAdAcct' => 'bool',
+        'authorizationBeginTime' => 'int',
+        'authorizationTtl' => 'int',
+        'isDisable' => 'bool',
+        'disableMessage' => 'string'
     ];
 
     /**
@@ -89,7 +93,11 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'authorizationScope' => null,
         'isBlocked' => null,
         'isPrivate' => null,
-        'isAdAcct' => null
+        'isAdAcct' => null,
+        'authorizationBeginTime' => 'int64',
+        'authorizationTtl' => 'int64',
+        'isDisable' => null,
+        'disableMessage' => null
     ];
 
     /**
@@ -130,7 +138,11 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'authorizationScope' => 'authorization_scope',
         'isBlocked' => 'is_blocked',
         'isPrivate' => 'is_private',
-        'isAdAcct' => 'is_ad_acct'
+        'isAdAcct' => 'is_ad_acct',
+        'authorizationBeginTime' => 'authorization_begin_time',
+        'authorizationTtl' => 'authorization_ttl',
+        'isDisable' => 'is_disable',
+        'disableMessage' => 'disable_message'
     ];
 
     /**
@@ -150,7 +162,11 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'authorizationScope' => 'setAuthorizationScope',
         'isBlocked' => 'setIsBlocked',
         'isPrivate' => 'setIsPrivate',
-        'isAdAcct' => 'setIsAdAcct'
+        'isAdAcct' => 'setIsAdAcct',
+        'authorizationBeginTime' => 'setAuthorizationBeginTime',
+        'authorizationTtl' => 'setAuthorizationTtl',
+        'isDisable' => 'setIsDisable',
+        'disableMessage' => 'setDisableMessage'
     ];
 
     /**
@@ -170,7 +186,11 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'authorizationScope' => 'getAuthorizationScope',
         'isBlocked' => 'getIsBlocked',
         'isPrivate' => 'getIsPrivate',
-        'isAdAcct' => 'getIsAdAcct'
+        'isAdAcct' => 'getIsAdAcct',
+        'authorizationBeginTime' => 'getAuthorizationBeginTime',
+        'authorizationTtl' => 'getAuthorizationTtl',
+        'isDisable' => 'getIsDisable',
+        'disableMessage' => 'getDisableMessage'
     ];
 
     /**
@@ -245,6 +265,10 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         $this->container['isBlocked'] = isset($data['isBlocked']) ? $data['isBlocked'] : null;
         $this->container['isPrivate'] = isset($data['isPrivate']) ? $data['isPrivate'] : null;
         $this->container['isAdAcct'] = isset($data['isAdAcct']) ? $data['isAdAcct'] : null;
+        $this->container['authorizationBeginTime'] = isset($data['authorizationBeginTime']) ? $data['authorizationBeginTime'] : null;
+        $this->container['authorizationTtl'] = isset($data['authorizationTtl']) ? $data['authorizationTtl'] : null;
+        $this->container['isDisable'] = isset($data['isDisable']) ? $data['isDisable'] : null;
+        $this->container['disableMessage'] = isset($data['disableMessage']) ? $data['disableMessage'] : null;
     }
 
     /**
@@ -555,6 +579,102 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
     public function setIsAdAcct($isAdAcct)
     {
         $this->container['isAdAcct'] = $isAdAcct;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizationBeginTime
+     *
+     * @return int|mixed
+     */
+    public function getAuthorizationBeginTime()
+    {
+        return $this->container['authorizationBeginTime'];
+    }
+
+    /**
+     * Sets authorizationBeginTime
+     *
+     * @param int|mixed $authorizationBeginTime authorizationBeginTime
+     *
+     * @return $this
+     */
+    public function setAuthorizationBeginTime($authorizationBeginTime)
+    {
+        $this->container['authorizationBeginTime'] = $authorizationBeginTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizationTtl
+     *
+     * @return int|mixed
+     */
+    public function getAuthorizationTtl()
+    {
+        return $this->container['authorizationTtl'];
+    }
+
+    /**
+     * Sets authorizationTtl
+     *
+     * @param int|mixed $authorizationTtl authorizationTtl
+     *
+     * @return $this
+     */
+    public function setAuthorizationTtl($authorizationTtl)
+    {
+        $this->container['authorizationTtl'] = $authorizationTtl;
+
+        return $this;
+    }
+
+    /**
+     * Gets isDisable
+     *
+     * @return bool|mixed
+     */
+    public function getIsDisable()
+    {
+        return $this->container['isDisable'];
+    }
+
+    /**
+     * Sets isDisable
+     *
+     * @param bool|mixed $isDisable isDisable
+     *
+     * @return $this
+     */
+    public function setIsDisable($isDisable)
+    {
+        $this->container['isDisable'] = $isDisable;
+
+        return $this;
+    }
+
+    /**
+     * Gets disableMessage
+     *
+     * @return string|mixed
+     */
+    public function getDisableMessage()
+    {
+        return $this->container['disableMessage'];
+    }
+
+    /**
+     * Sets disableMessage
+     *
+     * @param string|mixed $disableMessage disableMessage
+     *
+     * @return $this
+     */
+    public function setDisableMessage($disableMessage)
+    {
+        $this->container['disableMessage'] = $disableMessage;
 
         return $this;
     }

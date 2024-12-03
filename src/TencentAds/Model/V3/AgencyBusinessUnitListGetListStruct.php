@@ -59,7 +59,8 @@ class AgencyBusinessUnitListGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'organizationId' => 'int',
-        'businessUnitName' => 'string'
+        'businessUnitName' => 'string',
+        'managerUserIdList' => 'int[]'
     ];
 
     /**
@@ -69,7 +70,8 @@ class AgencyBusinessUnitListGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'organizationId' => 'int64',
-        'businessUnitName' => null
+        'businessUnitName' => null,
+        'managerUserIdList' => 'int64'
     ];
 
     /**
@@ -100,7 +102,8 @@ class AgencyBusinessUnitListGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'organizationId' => 'organization_id',
-        'businessUnitName' => 'business_unit_name'
+        'businessUnitName' => 'business_unit_name',
+        'managerUserIdList' => 'manager_user_id_list'
     ];
 
     /**
@@ -110,7 +113,8 @@ class AgencyBusinessUnitListGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'organizationId' => 'setOrganizationId',
-        'businessUnitName' => 'setBusinessUnitName'
+        'businessUnitName' => 'setBusinessUnitName',
+        'managerUserIdList' => 'setManagerUserIdList'
     ];
 
     /**
@@ -120,7 +124,8 @@ class AgencyBusinessUnitListGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'organizationId' => 'getOrganizationId',
-        'businessUnitName' => 'getBusinessUnitName'
+        'businessUnitName' => 'getBusinessUnitName',
+        'managerUserIdList' => 'getManagerUserIdList'
     ];
 
     /**
@@ -185,6 +190,7 @@ class AgencyBusinessUnitListGetListStruct implements ModelInterface, ArrayAccess
     {
         $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
         $this->container['businessUnitName'] = isset($data['businessUnitName']) ? $data['businessUnitName'] : null;
+        $this->container['managerUserIdList'] = isset($data['managerUserIdList']) ? $data['managerUserIdList'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class AgencyBusinessUnitListGetListStruct implements ModelInterface, ArrayAccess
     public function setBusinessUnitName($businessUnitName)
     {
         $this->container['businessUnitName'] = $businessUnitName;
+
+        return $this;
+    }
+
+    /**
+     * Gets managerUserIdList
+     *
+     * @return int[]|mixed
+     */
+    public function getManagerUserIdList()
+    {
+        return $this->container['managerUserIdList'];
+    }
+
+    /**
+     * Sets managerUserIdList
+     *
+     * @param int[]|mixed $managerUserIdList managerUserIdList
+     *
+     * @return $this
+     */
+    public function setManagerUserIdList($managerUserIdList)
+    {
+        $this->container['managerUserIdList'] = $managerUserIdList;
 
         return $this;
     }

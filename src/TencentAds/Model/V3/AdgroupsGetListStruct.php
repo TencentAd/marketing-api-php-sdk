@@ -125,10 +125,12 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'shortPlayPayType' => '\TencentAds\Model\V3\ShortPlayPayType',
         'sellStrategyId' => 'int',
         'ogCompletionType' => '\TencentAds\Model\V3\OgCompletionType',
+        'aoiOptimizationStrategy' => '\TencentAds\Model\V3\AoiOptimizationStrategy',
         'costGuaranteeStatus' => '\TencentAds\Model\V3\CostGuaranteeStatus',
         'costGuaranteeMoney' => 'int',
         'additionalProductSpec' => '\TencentAds\Model\V3\AdditionalProductSpec',
-        'enableBreakthroughSiteset' => 'bool'
+        'enableBreakthroughSiteset' => 'bool',
+        'liveRecommendStrategyEnabled' => 'bool'
     ];
 
     /**
@@ -204,10 +206,12 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'shortPlayPayType' => null,
         'sellStrategyId' => 'int64',
         'ogCompletionType' => null,
+        'aoiOptimizationStrategy' => null,
         'costGuaranteeStatus' => null,
         'costGuaranteeMoney' => 'int64',
         'additionalProductSpec' => null,
-        'enableBreakthroughSiteset' => null
+        'enableBreakthroughSiteset' => null,
+        'liveRecommendStrategyEnabled' => null
     ];
 
     /**
@@ -304,10 +308,12 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'short_play_pay_type',
         'sellStrategyId' => 'sell_strategy_id',
         'ogCompletionType' => 'og_completion_type',
+        'aoiOptimizationStrategy' => 'aoi_optimization_strategy',
         'costGuaranteeStatus' => 'cost_guarantee_status',
         'costGuaranteeMoney' => 'cost_guarantee_money',
         'additionalProductSpec' => 'additional_product_spec',
-        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset'
+        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
+        'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled'
     ];
 
     /**
@@ -383,10 +389,12 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'setShortPlayPayType',
         'sellStrategyId' => 'setSellStrategyId',
         'ogCompletionType' => 'setOgCompletionType',
+        'aoiOptimizationStrategy' => 'setAoiOptimizationStrategy',
         'costGuaranteeStatus' => 'setCostGuaranteeStatus',
         'costGuaranteeMoney' => 'setCostGuaranteeMoney',
         'additionalProductSpec' => 'setAdditionalProductSpec',
-        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset'
+        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
+        'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled'
     ];
 
     /**
@@ -462,10 +470,12 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'getShortPlayPayType',
         'sellStrategyId' => 'getSellStrategyId',
         'ogCompletionType' => 'getOgCompletionType',
+        'aoiOptimizationStrategy' => 'getAoiOptimizationStrategy',
         'costGuaranteeStatus' => 'getCostGuaranteeStatus',
         'costGuaranteeMoney' => 'getCostGuaranteeMoney',
         'additionalProductSpec' => 'getAdditionalProductSpec',
-        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset'
+        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
+        'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled'
     ];
 
     /**
@@ -595,10 +605,12 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
         $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
         $this->container['ogCompletionType'] = isset($data['ogCompletionType']) ? $data['ogCompletionType'] : null;
+        $this->container['aoiOptimizationStrategy'] = isset($data['aoiOptimizationStrategy']) ? $data['aoiOptimizationStrategy'] : null;
         $this->container['costGuaranteeStatus'] = isset($data['costGuaranteeStatus']) ? $data['costGuaranteeStatus'] : null;
         $this->container['costGuaranteeMoney'] = isset($data['costGuaranteeMoney']) ? $data['costGuaranteeMoney'] : null;
         $this->container['additionalProductSpec'] = isset($data['additionalProductSpec']) ? $data['additionalProductSpec'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
+        $this->container['liveRecommendStrategyEnabled'] = isset($data['liveRecommendStrategyEnabled']) ? $data['liveRecommendStrategyEnabled'] : null;
     }
 
     /**
@@ -2234,6 +2246,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets aoiOptimizationStrategy
+     *
+     * @return \TencentAds\Model\V3\AoiOptimizationStrategy|mixed
+     */
+    public function getAoiOptimizationStrategy()
+    {
+        return $this->container['aoiOptimizationStrategy'];
+    }
+
+    /**
+     * Sets aoiOptimizationStrategy
+     *
+     * @param \TencentAds\Model\V3\AoiOptimizationStrategy|mixed $aoiOptimizationStrategy aoiOptimizationStrategy
+     *
+     * @return $this
+     */
+    public function setAoiOptimizationStrategy($aoiOptimizationStrategy)
+    {
+        $this->container['aoiOptimizationStrategy'] = $aoiOptimizationStrategy;
+
+        return $this;
+    }
+
+    /**
      * Gets costGuaranteeStatus
      *
      * @return \TencentAds\Model\V3\CostGuaranteeStatus|mixed
@@ -2325,6 +2361,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
     {
         $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveRecommendStrategyEnabled
+     *
+     * @return bool|mixed
+     */
+    public function getLiveRecommendStrategyEnabled()
+    {
+        return $this->container['liveRecommendStrategyEnabled'];
+    }
+
+    /**
+     * Sets liveRecommendStrategyEnabled
+     *
+     * @param bool|mixed $liveRecommendStrategyEnabled liveRecommendStrategyEnabled
+     *
+     * @return $this
+     */
+    public function setLiveRecommendStrategyEnabled($liveRecommendStrategyEnabled)
+    {
+        $this->container['liveRecommendStrategyEnabled'] = $liveRecommendStrategyEnabled;
 
         return $this;
     }

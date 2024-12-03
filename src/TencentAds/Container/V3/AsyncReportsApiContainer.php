@@ -76,8 +76,9 @@ class AsyncReportsApiContainer extends ApiContainer
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->asyncReportsGet($accountId, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->asyncReportsGet($accountId, $filtering, $page, $pageSize, $organizationId, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -96,8 +97,9 @@ class AsyncReportsApiContainer extends ApiContainer
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->asyncReportsGetAsync($accountId, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->asyncReportsGetAsync($accountId, $filtering, $page, $pageSize, $organizationId, $fields);
             return $response;
         });
     }

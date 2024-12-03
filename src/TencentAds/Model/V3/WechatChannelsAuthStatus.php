@@ -51,6 +51,7 @@ class WechatChannelsAuthStatus
     const EXPIRED = 'EXPIRED';
     const AUDIT_PENDING = 'AUDIT_PENDING';
     const AUDIT_REFUSED = 'AUDIT_REFUSED';
+    const PENDING_CONFIRM = 'PENDING_CONFIRM';
     
     /**
      * Gets allowable values of the enum
@@ -66,6 +67,7 @@ class WechatChannelsAuthStatus
             self::EXPIRED,
             self::AUDIT_PENDING,
             self::AUDIT_REFUSED,
+            self::PENDING_CONFIRM,
         ];
     }
 }

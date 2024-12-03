@@ -111,6 +111,7 @@ class ComponentType
     const V2_MDPA_TITLE = 'V2_MDPA_TITLE';
     const V2_MDPA_DESCRIPTION = 'V2_MDPA_DESCRIPTION';
     const SEARCH_ALGORITHM_GEN = 'SEARCH_ALGORITHM_GEN';
+    const SEARCH_DERIVATIVE_TITLE = 'SEARCH_DERIVATIVE_TITLE';
     
     /**
      * Gets allowable values of the enum
@@ -186,6 +187,7 @@ class ComponentType
             self::V2_MDPA_TITLE,
             self::V2_MDPA_DESCRIPTION,
             self::SEARCH_ALGORITHM_GEN,
+            self::SEARCH_DERIVATIVE_TITLE,
         ];
     }
 }

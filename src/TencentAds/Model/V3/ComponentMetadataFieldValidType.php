@@ -48,6 +48,7 @@ class ComponentMetadataFieldValidType
     const TEXT = 'TEXT';
     const IMAGE = 'IMAGE';
     const VIDEO = 'VIDEO';
+    const BARRAGE = 'BARRAGE';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +61,7 @@ class ComponentMetadataFieldValidType
             self::TEXT,
             self::IMAGE,
             self::VIDEO,
+            self::BARRAGE,
         ];
     }
 }

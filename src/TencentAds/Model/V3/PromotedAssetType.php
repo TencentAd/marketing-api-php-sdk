@@ -104,6 +104,7 @@ class PromotedAssetType
     const GOVERNMENT_AFFAIRS = 'PROMOTED_ASSET_TYPE_GOVERNMENT_AFFAIRS';
     const CAR_ECOLOGY = 'PROMOTED_ASSET_TYPE_CAR_ECOLOGY';
     const WECHAT_STORE_PRODUCT = 'PROMOTED_ASSET_TYPE_WECHAT_STORE_PRODUCT';
+    const APP_HARMONY = 'PROMOTED_ASSET_TYPE_APP_HARMONY';
     
     /**
      * Gets allowable values of the enum
@@ -172,6 +173,7 @@ class PromotedAssetType
             self::GOVERNMENT_AFFAIRS,
             self::CAR_ECOLOGY,
             self::WECHAT_STORE_PRODUCT,
+            self::APP_HARMONY,
         ];
     }
 }

@@ -62,7 +62,10 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'description' => 'string',
         'medias' => '\TencentAds\Model\V3\Medias',
         'flag' => 'int',
-        'wechatChannelsAccountId' => 'string'
+        'wechatChannelsAccountId' => 'string',
+        'wechatChannelsAccountName' => 'string',
+        'bulletCommentSwitchOpen' => 'bool',
+        'bulletCommentSupported' => 'bool'
     ];
 
     /**
@@ -75,7 +78,10 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'description' => null,
         'medias' => null,
         'flag' => 'int64',
-        'wechatChannelsAccountId' => null
+        'wechatChannelsAccountId' => null,
+        'wechatChannelsAccountName' => null,
+        'bulletCommentSwitchOpen' => null,
+        'bulletCommentSupported' => null
     ];
 
     /**
@@ -109,7 +115,10 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'description' => 'description',
         'medias' => 'medias',
         'flag' => 'flag',
-        'wechatChannelsAccountId' => 'wechat_channels_account_id'
+        'wechatChannelsAccountId' => 'wechat_channels_account_id',
+        'wechatChannelsAccountName' => 'wechat_channels_account_name',
+        'bulletCommentSwitchOpen' => 'bullet_comment_switch_open',
+        'bulletCommentSupported' => 'bullet_comment_supported'
     ];
 
     /**
@@ -122,7 +131,10 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'description' => 'setDescription',
         'medias' => 'setMedias',
         'flag' => 'setFlag',
-        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
+        'wechatChannelsAccountName' => 'setWechatChannelsAccountName',
+        'bulletCommentSwitchOpen' => 'setBulletCommentSwitchOpen',
+        'bulletCommentSupported' => 'setBulletCommentSupported'
     ];
 
     /**
@@ -135,7 +147,10 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'description' => 'getDescription',
         'medias' => 'getMedias',
         'flag' => 'getFlag',
-        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
+        'wechatChannelsAccountName' => 'getWechatChannelsAccountName',
+        'bulletCommentSwitchOpen' => 'getBulletCommentSwitchOpen',
+        'bulletCommentSupported' => 'getBulletCommentSupported'
     ];
 
     /**
@@ -203,6 +218,9 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         $this->container['medias'] = isset($data['medias']) ? $data['medias'] : null;
         $this->container['flag'] = isset($data['flag']) ? $data['flag'] : null;
         $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
+        $this->container['wechatChannelsAccountName'] = isset($data['wechatChannelsAccountName']) ? $data['wechatChannelsAccountName'] : null;
+        $this->container['bulletCommentSwitchOpen'] = isset($data['bulletCommentSwitchOpen']) ? $data['bulletCommentSwitchOpen'] : null;
+        $this->container['bulletCommentSupported'] = isset($data['bulletCommentSupported']) ? $data['bulletCommentSupported'] : null;
     }
 
     /**
@@ -345,6 +363,78 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
     public function setWechatChannelsAccountId($wechatChannelsAccountId)
     {
         $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountName
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountName()
+    {
+        return $this->container['wechatChannelsAccountName'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountName
+     *
+     * @param string|mixed $wechatChannelsAccountName wechatChannelsAccountName
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountName($wechatChannelsAccountName)
+    {
+        $this->container['wechatChannelsAccountName'] = $wechatChannelsAccountName;
+
+        return $this;
+    }
+
+    /**
+     * Gets bulletCommentSwitchOpen
+     *
+     * @return bool|mixed
+     */
+    public function getBulletCommentSwitchOpen()
+    {
+        return $this->container['bulletCommentSwitchOpen'];
+    }
+
+    /**
+     * Sets bulletCommentSwitchOpen
+     *
+     * @param bool|mixed $bulletCommentSwitchOpen bulletCommentSwitchOpen
+     *
+     * @return $this
+     */
+    public function setBulletCommentSwitchOpen($bulletCommentSwitchOpen)
+    {
+        $this->container['bulletCommentSwitchOpen'] = $bulletCommentSwitchOpen;
+
+        return $this;
+    }
+
+    /**
+     * Gets bulletCommentSupported
+     *
+     * @return bool|mixed
+     */
+    public function getBulletCommentSupported()
+    {
+        return $this->container['bulletCommentSupported'];
+    }
+
+    /**
+     * Sets bulletCommentSupported
+     *
+     * @param bool|mixed $bulletCommentSupported bulletCommentSupported
+     *
+     * @return $this
+     */
+    public function setBulletCommentSupported($bulletCommentSupported)
+    {
+        $this->container['bulletCommentSupported'] = $bulletCommentSupported;
 
         return $this;
     }

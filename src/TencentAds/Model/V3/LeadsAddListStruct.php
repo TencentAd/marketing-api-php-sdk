@@ -60,7 +60,7 @@ class LeadsAddListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'index' => 'int',
         'outerLeadsId' => 'string',
-        'detailedErrCode' => 'string',
+        'detailedErrCode' => 'int',
         'detailedErrMsg' => 'string'
     ];
 
@@ -72,7 +72,7 @@ class LeadsAddListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'index' => 'int64',
         'outerLeadsId' => null,
-        'detailedErrCode' => null,
+        'detailedErrCode' => 'int64',
         'detailedErrMsg' => null
     ];
 
@@ -274,7 +274,7 @@ class LeadsAddListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets detailedErrCode
      *
-     * @return string|mixed
+     * @return int|mixed
      */
     public function getDetailedErrCode()
     {
@@ -284,7 +284,7 @@ class LeadsAddListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets detailedErrCode
      *
-     * @param string|mixed $detailedErrCode detailedErrCode
+     * @param int|mixed $detailedErrCode detailedErrCode
      *
      * @return $this
      */

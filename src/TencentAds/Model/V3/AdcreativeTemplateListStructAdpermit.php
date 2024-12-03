@@ -62,7 +62,10 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
         'creativeTemplateStyle' => 'string',
         'creativeTemplateAppellation' => 'string',
         'creativeSampleImage' => 'string',
-        'siteSet' => '\TencentAds\Model\V3\SiteSetDefinition'
+        'siteSet' => '\TencentAds\Model\V3\SiteSetDefinition',
+        'creativeTemplateSize' => 'string',
+        'supportBidModeList' => 'string[]',
+        'supportSiteSetInfo' => '\TencentAds\Model\V3\SupportSiteSetStruct[]'
     ];
 
     /**
@@ -75,7 +78,10 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
         'creativeTemplateStyle' => null,
         'creativeTemplateAppellation' => null,
         'creativeSampleImage' => null,
-        'siteSet' => null
+        'siteSet' => null,
+        'creativeTemplateSize' => null,
+        'supportBidModeList' => null,
+        'supportSiteSetInfo' => null
     ];
 
     /**
@@ -109,7 +115,10 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
         'creativeTemplateStyle' => 'creative_template_style',
         'creativeTemplateAppellation' => 'creative_template_appellation',
         'creativeSampleImage' => 'creative_sample_image',
-        'siteSet' => 'site_set'
+        'siteSet' => 'site_set',
+        'creativeTemplateSize' => 'creative_template_size',
+        'supportBidModeList' => 'support_bid_mode_list',
+        'supportSiteSetInfo' => 'support_site_set_info'
     ];
 
     /**
@@ -122,7 +131,10 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
         'creativeTemplateStyle' => 'setCreativeTemplateStyle',
         'creativeTemplateAppellation' => 'setCreativeTemplateAppellation',
         'creativeSampleImage' => 'setCreativeSampleImage',
-        'siteSet' => 'setSiteSet'
+        'siteSet' => 'setSiteSet',
+        'creativeTemplateSize' => 'setCreativeTemplateSize',
+        'supportBidModeList' => 'setSupportBidModeList',
+        'supportSiteSetInfo' => 'setSupportSiteSetInfo'
     ];
 
     /**
@@ -135,7 +147,10 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
         'creativeTemplateStyle' => 'getCreativeTemplateStyle',
         'creativeTemplateAppellation' => 'getCreativeTemplateAppellation',
         'creativeSampleImage' => 'getCreativeSampleImage',
-        'siteSet' => 'getSiteSet'
+        'siteSet' => 'getSiteSet',
+        'creativeTemplateSize' => 'getCreativeTemplateSize',
+        'supportBidModeList' => 'getSupportBidModeList',
+        'supportSiteSetInfo' => 'getSupportSiteSetInfo'
     ];
 
     /**
@@ -203,6 +218,9 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
         $this->container['creativeTemplateAppellation'] = isset($data['creativeTemplateAppellation']) ? $data['creativeTemplateAppellation'] : null;
         $this->container['creativeSampleImage'] = isset($data['creativeSampleImage']) ? $data['creativeSampleImage'] : null;
         $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
+        $this->container['creativeTemplateSize'] = isset($data['creativeTemplateSize']) ? $data['creativeTemplateSize'] : null;
+        $this->container['supportBidModeList'] = isset($data['supportBidModeList']) ? $data['supportBidModeList'] : null;
+        $this->container['supportSiteSetInfo'] = isset($data['supportSiteSetInfo']) ? $data['supportSiteSetInfo'] : null;
     }
 
     /**
@@ -345,6 +363,78 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
     public function setSiteSet($siteSet)
     {
         $this->container['siteSet'] = $siteSet;
+
+        return $this;
+    }
+
+    /**
+     * Gets creativeTemplateSize
+     *
+     * @return string|mixed
+     */
+    public function getCreativeTemplateSize()
+    {
+        return $this->container['creativeTemplateSize'];
+    }
+
+    /**
+     * Sets creativeTemplateSize
+     *
+     * @param string|mixed $creativeTemplateSize creativeTemplateSize
+     *
+     * @return $this
+     */
+    public function setCreativeTemplateSize($creativeTemplateSize)
+    {
+        $this->container['creativeTemplateSize'] = $creativeTemplateSize;
+
+        return $this;
+    }
+
+    /**
+     * Gets supportBidModeList
+     *
+     * @return string[]|mixed
+     */
+    public function getSupportBidModeList()
+    {
+        return $this->container['supportBidModeList'];
+    }
+
+    /**
+     * Sets supportBidModeList
+     *
+     * @param string[]|mixed $supportBidModeList supportBidModeList
+     *
+     * @return $this
+     */
+    public function setSupportBidModeList($supportBidModeList)
+    {
+        $this->container['supportBidModeList'] = $supportBidModeList;
+
+        return $this;
+    }
+
+    /**
+     * Gets supportSiteSetInfo
+     *
+     * @return \TencentAds\Model\V3\SupportSiteSetStruct[]|mixed
+     */
+    public function getSupportSiteSetInfo()
+    {
+        return $this->container['supportSiteSetInfo'];
+    }
+
+    /**
+     * Sets supportSiteSetInfo
+     *
+     * @param \TencentAds\Model\V3\SupportSiteSetStruct[]|mixed $supportSiteSetInfo supportSiteSetInfo
+     *
+     * @return $this
+     */
+    public function setSupportSiteSetInfo($supportSiteSetInfo)
+    {
+        $this->container['supportSiteSetInfo'] = $supportSiteSetInfo;
 
         return $this;
     }

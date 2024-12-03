@@ -68,7 +68,8 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
         'wechatPosition' => 'int[]',
         'mobileUnionCategory' => 'int[]',
         'qbsearchScene' => 'string[]',
-        'wechatChannelsScene' => 'int[]'
+        'wechatChannelsScene' => 'int[]',
+        'pcScene' => 'string[]'
     ];
 
     /**
@@ -87,7 +88,8 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
         'wechatPosition' => 'int64',
         'mobileUnionCategory' => 'int64',
         'qbsearchScene' => null,
-        'wechatChannelsScene' => 'int64'
+        'wechatChannelsScene' => 'int64',
+        'pcScene' => null
     ];
 
     /**
@@ -127,7 +129,8 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
         'wechatPosition' => 'wechat_position',
         'mobileUnionCategory' => 'mobile_union_category',
         'qbsearchScene' => 'qbsearch_scene',
-        'wechatChannelsScene' => 'wechat_channels_scene'
+        'wechatChannelsScene' => 'wechat_channels_scene',
+        'pcScene' => 'pc_scene'
     ];
 
     /**
@@ -146,7 +149,8 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
         'wechatPosition' => 'setWechatPosition',
         'mobileUnionCategory' => 'setMobileUnionCategory',
         'qbsearchScene' => 'setQbsearchScene',
-        'wechatChannelsScene' => 'setWechatChannelsScene'
+        'wechatChannelsScene' => 'setWechatChannelsScene',
+        'pcScene' => 'setPcScene'
     ];
 
     /**
@@ -165,7 +169,8 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
         'wechatPosition' => 'getWechatPosition',
         'mobileUnionCategory' => 'getMobileUnionCategory',
         'qbsearchScene' => 'getQbsearchScene',
-        'wechatChannelsScene' => 'getWechatChannelsScene'
+        'wechatChannelsScene' => 'getWechatChannelsScene',
+        'pcScene' => 'getPcScene'
     ];
 
     /**
@@ -239,6 +244,7 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
         $this->container['mobileUnionCategory'] = isset($data['mobileUnionCategory']) ? $data['mobileUnionCategory'] : null;
         $this->container['qbsearchScene'] = isset($data['qbsearchScene']) ? $data['qbsearchScene'] : null;
         $this->container['wechatChannelsScene'] = isset($data['wechatChannelsScene']) ? $data['wechatChannelsScene'] : null;
+        $this->container['pcScene'] = isset($data['pcScene']) ? $data['pcScene'] : null;
     }
 
     /**
@@ -525,6 +531,30 @@ class SceneTargetingForWrite implements ModelInterface, ArrayAccess
     public function setWechatChannelsScene($wechatChannelsScene)
     {
         $this->container['wechatChannelsScene'] = $wechatChannelsScene;
+
+        return $this;
+    }
+
+    /**
+     * Gets pcScene
+     *
+     * @return string[]|mixed
+     */
+    public function getPcScene()
+    {
+        return $this->container['pcScene'];
+    }
+
+    /**
+     * Sets pcScene
+     *
+     * @param string[]|mixed $pcScene pcScene
+     *
+     * @return $this
+     */
+    public function setPcScene($pcScene)
+    {
+        $this->container['pcScene'] = $pcScene;
 
         return $this;
     }

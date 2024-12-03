@@ -56,6 +56,7 @@ class ReportDailyLevel
     const ADVERTISER_TOTAL = 'REPORT_LEVEL_ADVERTISER_TOTAL';
     const MARKETING_ASSET = 'REPORT_LEVEL_MARKETING_ASSET';
     const PRODUCT_CATALOG = 'REPORT_LEVEL_PRODUCT_CATALOG';
+    const PROJECT = 'REPORT_LEVEL_PROJECT';
     
     /**
      * Gets allowable values of the enum
@@ -76,6 +77,7 @@ class ReportDailyLevel
             self::ADVERTISER_TOTAL,
             self::MARKETING_ASSET,
             self::PRODUCT_CATALOG,
+            self::PROJECT,
         ];
     }
 }

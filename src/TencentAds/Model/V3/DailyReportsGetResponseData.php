@@ -57,7 +57,7 @@ class DailyReportsGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\V3\DailyReportApiListStruct[]',
+        'list' => '\TencentAds\Model\V3\ReportStruct[]',
         'pageInfo' => '\TencentAds\Model\V3\PageInfo'
     ];
 
@@ -213,7 +213,7 @@ class DailyReportsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\V3\DailyReportApiListStruct[]|mixed
+     * @return \TencentAds\Model\V3\ReportStruct[]|mixed
      */
     public function getList()
     {
@@ -223,7 +223,7 @@ class DailyReportsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\V3\DailyReportApiListStruct[]|mixed $list list
+     * @param \TencentAds\Model\V3\ReportStruct[]|mixed $list list
      *
      * @return $this
      */

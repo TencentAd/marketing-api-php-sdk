@@ -92,24 +92,25 @@ class DailyReportsApi
      *
      * 获取日报表
      *
-     * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $level level (required)
      * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange dateRange (required)
      * @param  string[]|mixed $groupBy groupBy (required)
      * @param  string[]|mixed $fields fields (required)
-     * @param  \TencentAds\Model\V3\IntegratedListApiFilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $accountId accountId (optional)
+     * @param  \TencentAds\Model\V3\DailyReportsFilteringStruct[]|mixed $filtering filtering (optional)
      * @param  \TencentAds\Model\V3\OrderByStruct[]|mixed $orderBy orderBy (optional)
      * @param  string|mixed $timeLine timeLine (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
+     * @param  int|mixed $organizationId organizationId (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\DailyReportsGetResponse|mixed
      */
-    public function dailyReportsGet($accountId, $level, $dateRange, $groupBy, $fields, $filtering = null, $orderBy = null, $timeLine = null, $page = null, $pageSize = null)
+    public function dailyReportsGet($level, $dateRange, $groupBy, $fields, $accountId = null, $filtering = null, $orderBy = null, $timeLine = null, $page = null, $pageSize = null, $organizationId = null)
     {
-        list($response) = $this->dailyReportsGetWithHttpInfo($accountId, $level, $dateRange, $groupBy, $fields, $filtering, $orderBy, $timeLine, $page, $pageSize);
+        list($response) = $this->dailyReportsGetWithHttpInfo($level, $dateRange, $groupBy, $fields, $accountId, $filtering, $orderBy, $timeLine, $page, $pageSize, $organizationId);
         return $response;
     }
 
@@ -118,25 +119,26 @@ class DailyReportsApi
      *
      * 获取日报表
      *
-     * @param  int|mixed $accountId (required)
      * @param  string|mixed $level (required)
      * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange (required)
      * @param  string[]|mixed $groupBy (required)
      * @param  string[]|mixed $fields (required)
-     * @param  \TencentAds\Model\V3\IntegratedListApiFilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $accountId (optional)
+     * @param  \TencentAds\Model\V3\DailyReportsFilteringStruct[]|mixed $filtering (optional)
      * @param  \TencentAds\Model\V3\OrderByStruct[]|mixed $orderBy (optional)
      * @param  string|mixed $timeLine (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\DailyReportsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function dailyReportsGetWithHttpInfo($accountId, $level, $dateRange, $groupBy, $fields, $filtering = null, $orderBy = null, $timeLine = null, $page = null, $pageSize = null)
+    public function dailyReportsGetWithHttpInfo($level, $dateRange, $groupBy, $fields, $accountId = null, $filtering = null, $orderBy = null, $timeLine = null, $page = null, $pageSize = null, $organizationId = null)
     {
         $returnType = '\TencentAds\Model\V3\DailyReportsGetResponse';
-        $request = $this->dailyReportsGetRequest($accountId, $level, $dateRange, $groupBy, $fields, $filtering, $orderBy, $timeLine, $page, $pageSize);
+        $request = $this->dailyReportsGetRequest($level, $dateRange, $groupBy, $fields, $accountId, $filtering, $orderBy, $timeLine, $page, $pageSize, $organizationId);
 
         try {
             $options = $this->createHttpClientOption();
@@ -202,23 +204,24 @@ class DailyReportsApi
      *
      * 获取日报表
      *
-     * @param  int|mixed $accountId (required)
      * @param  string|mixed $level (required)
      * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange (required)
      * @param  string[]|mixed $groupBy (required)
      * @param  string[]|mixed $fields (required)
-     * @param  \TencentAds\Model\V3\IntegratedListApiFilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $accountId (optional)
+     * @param  \TencentAds\Model\V3\DailyReportsFilteringStruct[]|mixed $filtering (optional)
      * @param  \TencentAds\Model\V3\OrderByStruct[]|mixed $orderBy (optional)
      * @param  string|mixed $timeLine (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function dailyReportsGetAsync($accountId, $level, $dateRange, $groupBy, $fields, $filtering = null, $orderBy = null, $timeLine = null, $page = null, $pageSize = null)
+    public function dailyReportsGetAsync($level, $dateRange, $groupBy, $fields, $accountId = null, $filtering = null, $orderBy = null, $timeLine = null, $page = null, $pageSize = null, $organizationId = null)
     {
-        return $this->dailyReportsGetAsyncWithHttpInfo($accountId, $level, $dateRange, $groupBy, $fields, $filtering, $orderBy, $timeLine, $page, $pageSize)
+        return $this->dailyReportsGetAsyncWithHttpInfo($level, $dateRange, $groupBy, $fields, $accountId, $filtering, $orderBy, $timeLine, $page, $pageSize, $organizationId)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -231,24 +234,25 @@ class DailyReportsApi
      *
      * 获取日报表
      *
-     * @param  int|mixed $accountId (required)
      * @param  string|mixed $level (required)
      * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange (required)
      * @param  string[]|mixed $groupBy (required)
      * @param  string[]|mixed $fields (required)
-     * @param  \TencentAds\Model\V3\IntegratedListApiFilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $accountId (optional)
+     * @param  \TencentAds\Model\V3\DailyReportsFilteringStruct[]|mixed $filtering (optional)
      * @param  \TencentAds\Model\V3\OrderByStruct[]|mixed $orderBy (optional)
      * @param  string|mixed $timeLine (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function dailyReportsGetAsyncWithHttpInfo($accountId, $level, $dateRange, $groupBy, $fields, $filtering = null, $orderBy = null, $timeLine = null, $page = null, $pageSize = null)
+    public function dailyReportsGetAsyncWithHttpInfo($level, $dateRange, $groupBy, $fields, $accountId = null, $filtering = null, $orderBy = null, $timeLine = null, $page = null, $pageSize = null, $organizationId = null)
     {
         $returnType = '\TencentAds\Model\V3\DailyReportsGetResponse';
-        $request = $this->dailyReportsGetRequest($accountId, $level, $dateRange, $groupBy, $fields, $filtering, $orderBy, $timeLine, $page, $pageSize);
+        $request = $this->dailyReportsGetRequest($level, $dateRange, $groupBy, $fields, $accountId, $filtering, $orderBy, $timeLine, $page, $pageSize, $organizationId);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -290,28 +294,23 @@ class DailyReportsApi
     /**
      * Create request for operation 'dailyReportsGet'
      *
-     * @param  int|mixed $accountId (required)
      * @param  string|mixed $level (required)
      * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange (required)
      * @param  string[]|mixed $groupBy (required)
      * @param  string[]|mixed $fields (required)
-     * @param  \TencentAds\Model\V3\IntegratedListApiFilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $accountId (optional)
+     * @param  \TencentAds\Model\V3\DailyReportsFilteringStruct[]|mixed $filtering (optional)
      * @param  \TencentAds\Model\V3\OrderByStruct[]|mixed $orderBy (optional)
      * @param  string|mixed $timeLine (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function dailyReportsGetRequest($accountId, $level, $dateRange, $groupBy, $fields, $filtering = null, $orderBy = null, $timeLine = null, $page = null, $pageSize = null)
+    protected function dailyReportsGetRequest($level, $dateRange, $groupBy, $fields, $accountId = null, $filtering = null, $orderBy = null, $timeLine = null, $page = null, $pageSize = null, $organizationId = null)
     {
-        // verify the required parameter 'accountId' is set
-        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling dailyReportsGet'
-            );
-        }
         // verify the required parameter 'level' is set
         if ($level === null || (is_array($level) && count($level) === 0)) {
             throw new \InvalidArgumentException(
@@ -395,6 +394,10 @@ class DailyReportsApi
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
+        }
+        // query params
+        if ($organizationId !== null) {
+            $queryParams['organization_id'] = ObjectSerializer::toQueryValue($organizationId);
         }
 
 

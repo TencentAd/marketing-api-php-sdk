@@ -90,8 +90,10 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
         'customCostCap' => 'int',
         'feedbackId' => 'int',
+        'aoiOptimizationStrategy' => '\TencentAds\Model\V3\AoiOptimizationStrategy',
         'searchExpandTargetingSwitch' => '\TencentAds\Model\V3\SearchExpandTargetingSwitch',
-        'cloudUnionSpec' => '\TencentAds\Model\V3\CloudUnionSpec'
+        'cloudUnionSpec' => '\TencentAds\Model\V3\CloudUnionSpec',
+        'liveRecommendStrategyEnabled' => 'bool'
     ];
 
     /**
@@ -133,8 +135,10 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'costConstraintScene' => null,
         'customCostCap' => 'int64',
         'feedbackId' => 'int64',
+        'aoiOptimizationStrategy' => null,
         'searchExpandTargetingSwitch' => null,
-        'cloudUnionSpec' => null
+        'cloudUnionSpec' => null,
+        'liveRecommendStrategyEnabled' => null
     ];
 
     /**
@@ -197,8 +201,10 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'costConstraintScene' => 'cost_constraint_scene',
         'customCostCap' => 'custom_cost_cap',
         'feedbackId' => 'feedback_id',
+        'aoiOptimizationStrategy' => 'aoi_optimization_strategy',
         'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
-        'cloudUnionSpec' => 'cloud_union_spec'
+        'cloudUnionSpec' => 'cloud_union_spec',
+        'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled'
     ];
 
     /**
@@ -240,8 +246,10 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'costConstraintScene' => 'setCostConstraintScene',
         'customCostCap' => 'setCustomCostCap',
         'feedbackId' => 'setFeedbackId',
+        'aoiOptimizationStrategy' => 'setAoiOptimizationStrategy',
         'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
-        'cloudUnionSpec' => 'setCloudUnionSpec'
+        'cloudUnionSpec' => 'setCloudUnionSpec',
+        'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled'
     ];
 
     /**
@@ -283,8 +291,10 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'costConstraintScene' => 'getCostConstraintScene',
         'customCostCap' => 'getCustomCostCap',
         'feedbackId' => 'getFeedbackId',
+        'aoiOptimizationStrategy' => 'getAoiOptimizationStrategy',
         'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
-        'cloudUnionSpec' => 'getCloudUnionSpec'
+        'cloudUnionSpec' => 'getCloudUnionSpec',
+        'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled'
     ];
 
     /**
@@ -380,8 +390,10 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['costConstraintScene'] = isset($data['costConstraintScene']) ? $data['costConstraintScene'] : null;
         $this->container['customCostCap'] = isset($data['customCostCap']) ? $data['customCostCap'] : null;
         $this->container['feedbackId'] = isset($data['feedbackId']) ? $data['feedbackId'] : null;
+        $this->container['aoiOptimizationStrategy'] = isset($data['aoiOptimizationStrategy']) ? $data['aoiOptimizationStrategy'] : null;
         $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
         $this->container['cloudUnionSpec'] = isset($data['cloudUnionSpec']) ? $data['cloudUnionSpec'] : null;
+        $this->container['liveRecommendStrategyEnabled'] = isset($data['liveRecommendStrategyEnabled']) ? $data['liveRecommendStrategyEnabled'] : null;
     }
 
     /**
@@ -1201,6 +1213,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets aoiOptimizationStrategy
+     *
+     * @return \TencentAds\Model\V3\AoiOptimizationStrategy|mixed
+     */
+    public function getAoiOptimizationStrategy()
+    {
+        return $this->container['aoiOptimizationStrategy'];
+    }
+
+    /**
+     * Sets aoiOptimizationStrategy
+     *
+     * @param \TencentAds\Model\V3\AoiOptimizationStrategy|mixed $aoiOptimizationStrategy aoiOptimizationStrategy
+     *
+     * @return $this
+     */
+    public function setAoiOptimizationStrategy($aoiOptimizationStrategy)
+    {
+        $this->container['aoiOptimizationStrategy'] = $aoiOptimizationStrategy;
+
+        return $this;
+    }
+
+    /**
      * Gets searchExpandTargetingSwitch
      *
      * @return \TencentAds\Model\V3\SearchExpandTargetingSwitch|mixed
@@ -1244,6 +1280,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setCloudUnionSpec($cloudUnionSpec)
     {
         $this->container['cloudUnionSpec'] = $cloudUnionSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveRecommendStrategyEnabled
+     *
+     * @return bool|mixed
+     */
+    public function getLiveRecommendStrategyEnabled()
+    {
+        return $this->container['liveRecommendStrategyEnabled'];
+    }
+
+    /**
+     * Sets liveRecommendStrategyEnabled
+     *
+     * @param bool|mixed $liveRecommendStrategyEnabled liveRecommendStrategyEnabled
+     *
+     * @return $this
+     */
+    public function setLiveRecommendStrategyEnabled($liveRecommendStrategyEnabled)
+    {
+        $this->container['liveRecommendStrategyEnabled'] = $liveRecommendStrategyEnabled;
 
         return $this;
     }

@@ -38,17 +38,18 @@ class DailyReportsApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $level = isset($params['level']) ? $params['level'] : null;
             $dateRange = isset($params['date_range']) ? $params['date_range'] : null;
             $groupBy = isset($params['group_by']) ? $params['group_by'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $orderBy = isset($params['order_by']) ? $params['order_by'] : null;
             $timeLine = isset($params['time_line']) ? $params['time_line'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
-            $response = $this->apiInstance->dailyReportsGet($accountId, $level, $dateRange, $groupBy, $fields, $filtering, $orderBy, $timeLine, $page, $pageSize);
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
+            $response = $this->apiInstance->dailyReportsGet($level, $dateRange, $groupBy, $fields, $accountId, $filtering, $orderBy, $timeLine, $page, $pageSize, $organizationId);
             return $this->handleResponse($response);
         });
     }
@@ -63,17 +64,18 @@ class DailyReportsApiContainer extends ApiContainer
     {
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
-            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $level = isset($params['level']) ? $params['level'] : null;
             $dateRange = isset($params['date_range']) ? $params['date_range'] : null;
             $groupBy = isset($params['group_by']) ? $params['group_by'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
+            $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $orderBy = isset($params['order_by']) ? $params['order_by'] : null;
             $timeLine = isset($params['time_line']) ? $params['time_line'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
-            $response = $this->apiInstance->dailyReportsGetAsync($accountId, $level, $dateRange, $groupBy, $fields, $filtering, $orderBy, $timeLine, $page, $pageSize);
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
+            $response = $this->apiInstance->dailyReportsGetAsync($level, $dateRange, $groupBy, $fields, $accountId, $filtering, $orderBy, $timeLine, $page, $pageSize, $organizationId);
             return $response;
         });
     }

@@ -109,9 +109,12 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => '\TencentAds\Model\V3\ShortPlayPayType',
         'sellStrategyId' => 'int',
         'dynamicAdType' => '\TencentAds\Model\V3\DynamicAdType',
+        'aoiOptimizationStrategy' => '\TencentAds\Model\V3\AoiOptimizationStrategy',
         'cloudUnionSpec' => '\TencentAds\Model\V3\CloudUnionSpec',
         'additionalProductSpec' => '\TencentAds\Model\V3\AdditionalProductSpec',
-        'enableBreakthroughSiteset' => 'bool'
+        'enableBreakthroughSiteset' => 'bool',
+        'liveRecommendStrategyEnabled' => 'bool',
+        'searchExpansionSwitch' => '\TencentAds\Model\V3\SearchExpansionSwitch'
     ];
 
     /**
@@ -172,9 +175,12 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => null,
         'sellStrategyId' => 'int64',
         'dynamicAdType' => null,
+        'aoiOptimizationStrategy' => null,
         'cloudUnionSpec' => null,
         'additionalProductSpec' => null,
-        'enableBreakthroughSiteset' => null
+        'enableBreakthroughSiteset' => null,
+        'liveRecommendStrategyEnabled' => null,
+        'searchExpansionSwitch' => null
     ];
 
     /**
@@ -256,9 +262,12 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'short_play_pay_type',
         'sellStrategyId' => 'sell_strategy_id',
         'dynamicAdType' => 'dynamic_ad_type',
+        'aoiOptimizationStrategy' => 'aoi_optimization_strategy',
         'cloudUnionSpec' => 'cloud_union_spec',
         'additionalProductSpec' => 'additional_product_spec',
-        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset'
+        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
+        'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled',
+        'searchExpansionSwitch' => 'search_expansion_switch'
     ];
 
     /**
@@ -319,9 +328,12 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'setShortPlayPayType',
         'sellStrategyId' => 'setSellStrategyId',
         'dynamicAdType' => 'setDynamicAdType',
+        'aoiOptimizationStrategy' => 'setAoiOptimizationStrategy',
         'cloudUnionSpec' => 'setCloudUnionSpec',
         'additionalProductSpec' => 'setAdditionalProductSpec',
-        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset'
+        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
+        'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled',
+        'searchExpansionSwitch' => 'setSearchExpansionSwitch'
     ];
 
     /**
@@ -382,9 +394,12 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'getShortPlayPayType',
         'sellStrategyId' => 'getSellStrategyId',
         'dynamicAdType' => 'getDynamicAdType',
+        'aoiOptimizationStrategy' => 'getAoiOptimizationStrategy',
         'cloudUnionSpec' => 'getCloudUnionSpec',
         'additionalProductSpec' => 'getAdditionalProductSpec',
-        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset'
+        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
+        'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled',
+        'searchExpansionSwitch' => 'getSearchExpansionSwitch'
     ];
 
     /**
@@ -499,9 +514,12 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
         $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
         $this->container['dynamicAdType'] = isset($data['dynamicAdType']) ? $data['dynamicAdType'] : null;
+        $this->container['aoiOptimizationStrategy'] = isset($data['aoiOptimizationStrategy']) ? $data['aoiOptimizationStrategy'] : null;
         $this->container['cloudUnionSpec'] = isset($data['cloudUnionSpec']) ? $data['cloudUnionSpec'] : null;
         $this->container['additionalProductSpec'] = isset($data['additionalProductSpec']) ? $data['additionalProductSpec'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
+        $this->container['liveRecommendStrategyEnabled'] = isset($data['liveRecommendStrategyEnabled']) ? $data['liveRecommendStrategyEnabled'] : null;
+        $this->container['searchExpansionSwitch'] = isset($data['searchExpansionSwitch']) ? $data['searchExpansionSwitch'] : null;
     }
 
     /**
@@ -1777,6 +1795,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets aoiOptimizationStrategy
+     *
+     * @return \TencentAds\Model\V3\AoiOptimizationStrategy|mixed
+     */
+    public function getAoiOptimizationStrategy()
+    {
+        return $this->container['aoiOptimizationStrategy'];
+    }
+
+    /**
+     * Sets aoiOptimizationStrategy
+     *
+     * @param \TencentAds\Model\V3\AoiOptimizationStrategy|mixed $aoiOptimizationStrategy aoiOptimizationStrategy
+     *
+     * @return $this
+     */
+    public function setAoiOptimizationStrategy($aoiOptimizationStrategy)
+    {
+        $this->container['aoiOptimizationStrategy'] = $aoiOptimizationStrategy;
+
+        return $this;
+    }
+
+    /**
      * Gets cloudUnionSpec
      *
      * @return \TencentAds\Model\V3\CloudUnionSpec|mixed
@@ -1844,6 +1886,54 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
     {
         $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveRecommendStrategyEnabled
+     *
+     * @return bool|mixed
+     */
+    public function getLiveRecommendStrategyEnabled()
+    {
+        return $this->container['liveRecommendStrategyEnabled'];
+    }
+
+    /**
+     * Sets liveRecommendStrategyEnabled
+     *
+     * @param bool|mixed $liveRecommendStrategyEnabled liveRecommendStrategyEnabled
+     *
+     * @return $this
+     */
+    public function setLiveRecommendStrategyEnabled($liveRecommendStrategyEnabled)
+    {
+        $this->container['liveRecommendStrategyEnabled'] = $liveRecommendStrategyEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets searchExpansionSwitch
+     *
+     * @return \TencentAds\Model\V3\SearchExpansionSwitch|mixed
+     */
+    public function getSearchExpansionSwitch()
+    {
+        return $this->container['searchExpansionSwitch'];
+    }
+
+    /**
+     * Sets searchExpansionSwitch
+     *
+     * @param \TencentAds\Model\V3\SearchExpansionSwitch|mixed $searchExpansionSwitch searchExpansionSwitch
+     *
+     * @return $this
+     */
+    public function setSearchExpansionSwitch($searchExpansionSwitch)
+    {
+        $this->container['searchExpansionSwitch'] = $searchExpansionSwitch;
 
         return $this;
     }

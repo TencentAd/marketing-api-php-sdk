@@ -77,6 +77,7 @@ class PromotedObjectType
     const APP_QUICK_APP = 'PROMOTED_OBJECT_TYPE_APP_QUICK_APP';
     const WECHAT_ARTICLE = 'PROMOTED_OBJECT_TYPE_WECHAT_ARTICLE';
     const WECHAT_PAY_COUPON = 'PROMOTED_OBJECT_TYPE_WECHAT_PAY_COUPON';
+    const HARMONY_APP = 'PROMOTED_OBJECT_TYPE_HARMONY_APP';
     
     /**
      * Gets allowable values of the enum
@@ -118,6 +119,7 @@ class PromotedObjectType
             self::APP_QUICK_APP,
             self::WECHAT_ARTICLE,
             self::WECHAT_PAY_COUPON,
+            self::HARMONY_APP,
         ];
     }
 }

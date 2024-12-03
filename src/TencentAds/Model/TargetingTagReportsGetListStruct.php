@@ -733,9 +733,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD14PlaRoi' => 'double',
         'miniGamePayD30PlaRoi' => 'double',
         'projectId' => 'int',
-        'projectName' => 'string',
-        'purchasePv' => 'int',
-        'regPv' => 'int'
+        'projectName' => 'string'
     ];
 
     /**
@@ -1419,9 +1417,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD14PlaRoi' => 'double',
         'miniGamePayD30PlaRoi' => 'double',
         'projectId' => 'int64',
-        'projectName' => null,
-        'purchasePv' => 'int64',
-        'regPv' => 'int64'
+        'projectName' => null
     ];
 
     /**
@@ -2126,9 +2122,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD14PlaRoi' => 'mini_game_pay_d14_pla_roi',
         'miniGamePayD30PlaRoi' => 'mini_game_pay_d30_pla_roi',
         'projectId' => 'project_id',
-        'projectName' => 'project_name',
-        'purchasePv' => 'purchase_pv',
-        'regPv' => 'reg_pv'
+        'projectName' => 'project_name'
     ];
 
     /**
@@ -2812,9 +2806,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD14PlaRoi' => 'setMiniGamePayD14PlaRoi',
         'miniGamePayD30PlaRoi' => 'setMiniGamePayD30PlaRoi',
         'projectId' => 'setProjectId',
-        'projectName' => 'setProjectName',
-        'purchasePv' => 'setPurchasePv',
-        'regPv' => 'setRegPv'
+        'projectName' => 'setProjectName'
     ];
 
     /**
@@ -3498,9 +3490,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD14PlaRoi' => 'getMiniGamePayD14PlaRoi',
         'miniGamePayD30PlaRoi' => 'getMiniGamePayD30PlaRoi',
         'projectId' => 'getProjectId',
-        'projectName' => 'getProjectName',
-        'purchasePv' => 'getPurchasePv',
-        'regPv' => 'getRegPv'
+        'projectName' => 'getProjectName'
     ];
 
     /**
@@ -4239,8 +4229,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGamePayD30PlaRoi'] = isset($data['miniGamePayD30PlaRoi']) ? $data['miniGamePayD30PlaRoi'] : null;
         $this->container['projectId'] = isset($data['projectId']) ? $data['projectId'] : null;
         $this->container['projectName'] = isset($data['projectName']) ? $data['projectName'] : null;
-        $this->container['purchasePv'] = isset($data['purchasePv']) ? $data['purchasePv'] : null;
-        $this->container['regPv'] = isset($data['regPv']) ? $data['regPv'] : null;
     }
 
     /**
@@ -20487,54 +20475,6 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setProjectName($projectName)
     {
         $this->container['projectName'] = $projectName;
-
-        return $this;
-    }
-
-    /**
-     * Gets purchasePv
-     *
-     * @return int|mixed
-     */
-    public function getPurchasePv()
-    {
-        return $this->container['purchasePv'];
-    }
-
-    /**
-     * Sets purchasePv
-     *
-     * @param int|mixed $purchasePv purchasePv
-     *
-     * @return $this
-     */
-    public function setPurchasePv($purchasePv)
-    {
-        $this->container['purchasePv'] = $purchasePv;
-
-        return $this;
-    }
-
-    /**
-     * Gets regPv
-     *
-     * @return int|mixed
-     */
-    public function getRegPv()
-    {
-        return $this->container['regPv'];
-    }
-
-    /**
-     * Sets regPv
-     *
-     * @param int|mixed $regPv regPv
-     *
-     * @return $this
-     */
-    public function setRegPv($regPv)
-    {
-        $this->container['regPv'] = $regPv;
 
         return $this;
     }

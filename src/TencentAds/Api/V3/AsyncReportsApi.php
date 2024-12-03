@@ -382,19 +382,20 @@ class AsyncReportsApi
      *
      * 获取异步报表任务
      *
-     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $accountId accountId (optional)
      * @param  \TencentAds\Model\V3\GetAsyncReportsFilteringStruct[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
+     * @param  int|mixed $organizationId organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\AsyncReportsGetResponse|mixed
      */
-    public function asyncReportsGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function asyncReportsGet($accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
-        list($response) = $this->asyncReportsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields);
+        list($response) = $this->asyncReportsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $organizationId, $fields);
         return $response;
     }
 
@@ -403,20 +404,21 @@ class AsyncReportsApi
      *
      * 获取异步报表任务
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\GetAsyncReportsFilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\AsyncReportsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function asyncReportsGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function asyncReportsGetWithHttpInfo($accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\AsyncReportsGetResponse';
-        $request = $this->asyncReportsGetRequest($accountId, $filtering, $page, $pageSize, $fields);
+        $request = $this->asyncReportsGetRequest($accountId, $filtering, $page, $pageSize, $organizationId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -482,18 +484,19 @@ class AsyncReportsApi
      *
      * 获取异步报表任务
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\GetAsyncReportsFilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function asyncReportsGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function asyncReportsGetAsync($accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
-        return $this->asyncReportsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields)
+        return $this->asyncReportsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $organizationId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -506,19 +509,20 @@ class AsyncReportsApi
      *
      * 获取异步报表任务
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\GetAsyncReportsFilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function asyncReportsGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function asyncReportsGetAsyncWithHttpInfo($accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\AsyncReportsGetResponse';
-        $request = $this->asyncReportsGetRequest($accountId, $filtering, $page, $pageSize, $fields);
+        $request = $this->asyncReportsGetRequest($accountId, $filtering, $page, $pageSize, $organizationId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -560,23 +564,18 @@ class AsyncReportsApi
     /**
      * Create request for operation 'asyncReportsGet'
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\GetAsyncReportsFilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function asyncReportsGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    protected function asyncReportsGetRequest($accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
-        // verify the required parameter 'accountId' is set
-        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling asyncReportsGet'
-            );
-        }
 
         $resourcePath = '/async_reports/get';
         $formParams = [];
@@ -603,6 +602,10 @@ class AsyncReportsApi
         // query params
         if ($pageSize !== null) {
             $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
+        }
+        // query params
+        if ($organizationId !== null) {
+            $queryParams['organization_id'] = ObjectSerializer::toQueryValue($organizationId);
         }
         // query params
         if (is_array($fields)) {

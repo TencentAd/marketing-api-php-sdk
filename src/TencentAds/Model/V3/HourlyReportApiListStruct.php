@@ -805,6 +805,9 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkHotElementUv' => 'int',
         'hotElementCtr' => 'double',
         'securityNegativeDedupPv' => 'int',
+        'clkInterpageBtnPv' => 'int',
+        'adMonetizationPlaRegActive1dMixRoi' => 'double',
+        'adMonetizationPlaRegActive24hMixRoi' => 'double',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -1576,6 +1579,9 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkHotElementUv' => 'int64',
         'hotElementCtr' => 'double',
         'securityNegativeDedupPv' => 'int64',
+        'clkInterpageBtnPv' => 'int64',
+        'adMonetizationPlaRegActive1dMixRoi' => 'double',
+        'adMonetizationPlaRegActive24hMixRoi' => 'double',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -2368,6 +2374,9 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkHotElementUv' => 'clk_hot_element_uv',
         'hotElementCtr' => 'hot_element_ctr',
         'securityNegativeDedupPv' => 'security_negative_dedup_pv',
+        'clkInterpageBtnPv' => 'clk_interpage_btn_pv',
+        'adMonetizationPlaRegActive1dMixRoi' => 'ad_monetization_pla_reg_active_1d_mix_roi',
+        'adMonetizationPlaRegActive24hMixRoi' => 'ad_monetization_pla_reg_active_24h_mix_roi',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -3139,6 +3148,9 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkHotElementUv' => 'setClkHotElementUv',
         'hotElementCtr' => 'setHotElementCtr',
         'securityNegativeDedupPv' => 'setSecurityNegativeDedupPv',
+        'clkInterpageBtnPv' => 'setClkInterpageBtnPv',
+        'adMonetizationPlaRegActive1dMixRoi' => 'setAdMonetizationPlaRegActive1dMixRoi',
+        'adMonetizationPlaRegActive24hMixRoi' => 'setAdMonetizationPlaRegActive24hMixRoi',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -3910,6 +3922,9 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkHotElementUv' => 'getClkHotElementUv',
         'hotElementCtr' => 'getHotElementCtr',
         'securityNegativeDedupPv' => 'getSecurityNegativeDedupPv',
+        'clkInterpageBtnPv' => 'getClkInterpageBtnPv',
+        'adMonetizationPlaRegActive1dMixRoi' => 'getAdMonetizationPlaRegActive1dMixRoi',
+        'adMonetizationPlaRegActive24hMixRoi' => 'getAdMonetizationPlaRegActive24hMixRoi',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -4735,6 +4750,9 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['clkHotElementUv'] = isset($data['clkHotElementUv']) ? $data['clkHotElementUv'] : null;
         $this->container['hotElementCtr'] = isset($data['hotElementCtr']) ? $data['hotElementCtr'] : null;
         $this->container['securityNegativeDedupPv'] = isset($data['securityNegativeDedupPv']) ? $data['securityNegativeDedupPv'] : null;
+        $this->container['clkInterpageBtnPv'] = isset($data['clkInterpageBtnPv']) ? $data['clkInterpageBtnPv'] : null;
+        $this->container['adMonetizationPlaRegActive1dMixRoi'] = isset($data['adMonetizationPlaRegActive1dMixRoi']) ? $data['adMonetizationPlaRegActive1dMixRoi'] : null;
+        $this->container['adMonetizationPlaRegActive24hMixRoi'] = isset($data['adMonetizationPlaRegActive24hMixRoi']) ? $data['adMonetizationPlaRegActive24hMixRoi'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -22701,6 +22719,78 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setSecurityNegativeDedupPv($securityNegativeDedupPv)
     {
         $this->container['securityNegativeDedupPv'] = $securityNegativeDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkInterpageBtnPv
+     *
+     * @return int|mixed
+     */
+    public function getClkInterpageBtnPv()
+    {
+        return $this->container['clkInterpageBtnPv'];
+    }
+
+    /**
+     * Sets clkInterpageBtnPv
+     *
+     * @param int|mixed $clkInterpageBtnPv clkInterpageBtnPv
+     *
+     * @return $this
+     */
+    public function setClkInterpageBtnPv($clkInterpageBtnPv)
+    {
+        $this->container['clkInterpageBtnPv'] = $clkInterpageBtnPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationPlaRegActive1dMixRoi
+     *
+     * @return double|mixed
+     */
+    public function getAdMonetizationPlaRegActive1dMixRoi()
+    {
+        return $this->container['adMonetizationPlaRegActive1dMixRoi'];
+    }
+
+    /**
+     * Sets adMonetizationPlaRegActive1dMixRoi
+     *
+     * @param double|mixed $adMonetizationPlaRegActive1dMixRoi adMonetizationPlaRegActive1dMixRoi
+     *
+     * @return $this
+     */
+    public function setAdMonetizationPlaRegActive1dMixRoi($adMonetizationPlaRegActive1dMixRoi)
+    {
+        $this->container['adMonetizationPlaRegActive1dMixRoi'] = $adMonetizationPlaRegActive1dMixRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationPlaRegActive24hMixRoi
+     *
+     * @return double|mixed
+     */
+    public function getAdMonetizationPlaRegActive24hMixRoi()
+    {
+        return $this->container['adMonetizationPlaRegActive24hMixRoi'];
+    }
+
+    /**
+     * Sets adMonetizationPlaRegActive24hMixRoi
+     *
+     * @param double|mixed $adMonetizationPlaRegActive24hMixRoi adMonetizationPlaRegActive24hMixRoi
+     *
+     * @return $this
+     */
+    public function setAdMonetizationPlaRegActive24hMixRoi($adMonetizationPlaRegActive24hMixRoi)
+    {
+        $this->container['adMonetizationPlaRegActive24hMixRoi'] = $adMonetizationPlaRegActive24hMixRoi;
 
         return $this;
     }

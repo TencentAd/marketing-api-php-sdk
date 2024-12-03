@@ -61,7 +61,8 @@ class Medias implements ModelInterface, ArrayAccess
         'thumbUrl' => 'string',
         'coverUrl' => 'string',
         'url' => 'string',
-        'description' => 'string'
+        'description' => 'string',
+        'videoPlayLen' => 'int'
     ];
 
     /**
@@ -73,7 +74,8 @@ class Medias implements ModelInterface, ArrayAccess
         'thumbUrl' => null,
         'coverUrl' => null,
         'url' => null,
-        'description' => null
+        'description' => null,
+        'videoPlayLen' => 'int64'
     ];
 
     /**
@@ -106,7 +108,8 @@ class Medias implements ModelInterface, ArrayAccess
         'thumbUrl' => 'thumb_url',
         'coverUrl' => 'cover_url',
         'url' => 'url',
-        'description' => 'description'
+        'description' => 'description',
+        'videoPlayLen' => 'video_play_len'
     ];
 
     /**
@@ -118,7 +121,8 @@ class Medias implements ModelInterface, ArrayAccess
         'thumbUrl' => 'setThumbUrl',
         'coverUrl' => 'setCoverUrl',
         'url' => 'setUrl',
-        'description' => 'setDescription'
+        'description' => 'setDescription',
+        'videoPlayLen' => 'setVideoPlayLen'
     ];
 
     /**
@@ -130,7 +134,8 @@ class Medias implements ModelInterface, ArrayAccess
         'thumbUrl' => 'getThumbUrl',
         'coverUrl' => 'getCoverUrl',
         'url' => 'getUrl',
-        'description' => 'getDescription'
+        'description' => 'getDescription',
+        'videoPlayLen' => 'getVideoPlayLen'
     ];
 
     /**
@@ -197,6 +202,7 @@ class Medias implements ModelInterface, ArrayAccess
         $this->container['coverUrl'] = isset($data['coverUrl']) ? $data['coverUrl'] : null;
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['videoPlayLen'] = isset($data['videoPlayLen']) ? $data['videoPlayLen'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class Medias implements ModelInterface, ArrayAccess
     public function setDescription($description)
     {
         $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoPlayLen
+     *
+     * @return int|mixed
+     */
+    public function getVideoPlayLen()
+    {
+        return $this->container['videoPlayLen'];
+    }
+
+    /**
+     * Sets videoPlayLen
+     *
+     * @param int|mixed $videoPlayLen videoPlayLen
+     *
+     * @return $this
+     */
+    public function setVideoPlayLen($videoPlayLen)
+    {
+        $this->container['videoPlayLen'] = $videoPlayLen;
 
         return $this;
     }

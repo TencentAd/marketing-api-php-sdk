@@ -50,6 +50,7 @@ class SceneSpecTagsType
     const PAY_SCENE = 'PAY_SCENE';
     const MOBILE_UNION_CATEGORY = 'MOBILE_UNION_CATEGORY';
     const WECHAT_CHANNELS_SCENE = 'WECHAT_CHANNELS_SCENE';
+    const PC_SCENE = 'PC_SCENE';
     
     /**
      * Gets allowable values of the enum
@@ -64,6 +65,7 @@ class SceneSpecTagsType
             self::PAY_SCENE,
             self::MOBILE_UNION_CATEGORY,
             self::WECHAT_CHANNELS_SCENE,
+            self::PC_SCENE,
         ];
     }
 }

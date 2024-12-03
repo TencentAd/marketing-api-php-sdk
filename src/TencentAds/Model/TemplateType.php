@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * TemplateType Class Doc Comment
  *
  * @category Class
- * @description 模板类型，传入模板ID时，该值必填
+ * @description 竖屏卡片素材类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

@@ -47,6 +47,7 @@ class ComponentMetadataFieldType
     const UNKNOWN = 'UNKNOWN';
     const STRING = 'STRING';
     const INT = 'INT';
+    const BOOL = 'BOOL';
     const STRUCTURE = 'STRUCTURE';
     
     /**
@@ -59,6 +60,7 @@ class ComponentMetadataFieldType
             self::UNKNOWN,
             self::STRING,
             self::INT,
+            self::BOOL,
             self::STRUCTURE,
         ];
     }

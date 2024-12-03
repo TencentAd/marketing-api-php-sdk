@@ -60,7 +60,8 @@ class ProgramCreativeInfo implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'materialDeriveId' => 'int',
         'materialDeriveInfo' => '\TencentAds\Model\V3\MaterialDeriveInfoStruct[]',
-        'bidMode' => '\TencentAds\Model\V3\BidMode'
+        'bidMode' => '\TencentAds\Model\V3\BidMode',
+        'deriveVersion' => '\TencentAds\Model\V3\DeriveVersionType'
     ];
 
     /**
@@ -71,7 +72,8 @@ class ProgramCreativeInfo implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'materialDeriveId' => 'int64',
         'materialDeriveInfo' => null,
-        'bidMode' => null
+        'bidMode' => null,
+        'deriveVersion' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class ProgramCreativeInfo implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'materialDeriveId' => 'material_derive_id',
         'materialDeriveInfo' => 'material_derive_info',
-        'bidMode' => 'bid_mode'
+        'bidMode' => 'bid_mode',
+        'deriveVersion' => 'derive_version'
     ];
 
     /**
@@ -114,7 +117,8 @@ class ProgramCreativeInfo implements ModelInterface, ArrayAccess
     protected static $setters = [
         'materialDeriveId' => 'setMaterialDeriveId',
         'materialDeriveInfo' => 'setMaterialDeriveInfo',
-        'bidMode' => 'setBidMode'
+        'bidMode' => 'setBidMode',
+        'deriveVersion' => 'setDeriveVersion'
     ];
 
     /**
@@ -125,7 +129,8 @@ class ProgramCreativeInfo implements ModelInterface, ArrayAccess
     protected static $getters = [
         'materialDeriveId' => 'getMaterialDeriveId',
         'materialDeriveInfo' => 'getMaterialDeriveInfo',
-        'bidMode' => 'getBidMode'
+        'bidMode' => 'getBidMode',
+        'deriveVersion' => 'getDeriveVersion'
     ];
 
     /**
@@ -191,6 +196,7 @@ class ProgramCreativeInfo implements ModelInterface, ArrayAccess
         $this->container['materialDeriveId'] = isset($data['materialDeriveId']) ? $data['materialDeriveId'] : null;
         $this->container['materialDeriveInfo'] = isset($data['materialDeriveInfo']) ? $data['materialDeriveInfo'] : null;
         $this->container['bidMode'] = isset($data['bidMode']) ? $data['bidMode'] : null;
+        $this->container['deriveVersion'] = isset($data['deriveVersion']) ? $data['deriveVersion'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class ProgramCreativeInfo implements ModelInterface, ArrayAccess
     public function setBidMode($bidMode)
     {
         $this->container['bidMode'] = $bidMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets deriveVersion
+     *
+     * @return \TencentAds\Model\V3\DeriveVersionType|mixed
+     */
+    public function getDeriveVersion()
+    {
+        return $this->container['deriveVersion'];
+    }
+
+    /**
+     * Sets deriveVersion
+     *
+     * @param \TencentAds\Model\V3\DeriveVersionType|mixed $deriveVersion deriveVersion
+     *
+     * @return $this
+     */
+    public function setDeriveVersion($deriveVersion)
+    {
+        $this->container['deriveVersion'] = $deriveVersion;
 
         return $this;
     }

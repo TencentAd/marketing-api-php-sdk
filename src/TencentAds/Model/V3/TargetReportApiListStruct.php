@@ -764,6 +764,8 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseDedupRegActive1dPv' => 'int',
         'purchaseRegActive1dAmount' => 'int',
         'securityNegativeDedupPv' => 'int',
+        'adMonetizationPlaRegActive1dMixRoi' => 'double',
+        'adMonetizationPlaRegActive24hMixRoi' => 'double',
         'ageId' => 'int',
         'cityId' => 'int',
         'regionId' => 'int',
@@ -1485,6 +1487,8 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseDedupRegActive1dPv' => 'int64',
         'purchaseRegActive1dAmount' => 'int64',
         'securityNegativeDedupPv' => 'int64',
+        'adMonetizationPlaRegActive1dMixRoi' => 'double',
+        'adMonetizationPlaRegActive24hMixRoi' => 'double',
         'ageId' => 'int64',
         'cityId' => 'int64',
         'regionId' => 'int64',
@@ -2227,6 +2231,8 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseDedupRegActive1dPv' => 'purchase_dedup_reg_active_1d_pv',
         'purchaseRegActive1dAmount' => 'purchase_reg_active_1d_amount',
         'securityNegativeDedupPv' => 'security_negative_dedup_pv',
+        'adMonetizationPlaRegActive1dMixRoi' => 'ad_monetization_pla_reg_active_1d_mix_roi',
+        'adMonetizationPlaRegActive24hMixRoi' => 'ad_monetization_pla_reg_active_24h_mix_roi',
         'ageId' => 'age_id',
         'cityId' => 'city_id',
         'regionId' => 'region_id',
@@ -2948,6 +2954,8 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseDedupRegActive1dPv' => 'setPurchaseDedupRegActive1dPv',
         'purchaseRegActive1dAmount' => 'setPurchaseRegActive1dAmount',
         'securityNegativeDedupPv' => 'setSecurityNegativeDedupPv',
+        'adMonetizationPlaRegActive1dMixRoi' => 'setAdMonetizationPlaRegActive1dMixRoi',
+        'adMonetizationPlaRegActive24hMixRoi' => 'setAdMonetizationPlaRegActive24hMixRoi',
         'ageId' => 'setAgeId',
         'cityId' => 'setCityId',
         'regionId' => 'setRegionId',
@@ -3669,6 +3677,8 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseDedupRegActive1dPv' => 'getPurchaseDedupRegActive1dPv',
         'purchaseRegActive1dAmount' => 'getPurchaseRegActive1dAmount',
         'securityNegativeDedupPv' => 'getSecurityNegativeDedupPv',
+        'adMonetizationPlaRegActive1dMixRoi' => 'getAdMonetizationPlaRegActive1dMixRoi',
+        'adMonetizationPlaRegActive24hMixRoi' => 'getAdMonetizationPlaRegActive24hMixRoi',
         'ageId' => 'getAgeId',
         'cityId' => 'getCityId',
         'regionId' => 'getRegionId',
@@ -4444,6 +4454,8 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['purchaseDedupRegActive1dPv'] = isset($data['purchaseDedupRegActive1dPv']) ? $data['purchaseDedupRegActive1dPv'] : null;
         $this->container['purchaseRegActive1dAmount'] = isset($data['purchaseRegActive1dAmount']) ? $data['purchaseRegActive1dAmount'] : null;
         $this->container['securityNegativeDedupPv'] = isset($data['securityNegativeDedupPv']) ? $data['securityNegativeDedupPv'] : null;
+        $this->container['adMonetizationPlaRegActive1dMixRoi'] = isset($data['adMonetizationPlaRegActive1dMixRoi']) ? $data['adMonetizationPlaRegActive1dMixRoi'] : null;
+        $this->container['adMonetizationPlaRegActive24hMixRoi'] = isset($data['adMonetizationPlaRegActive24hMixRoi']) ? $data['adMonetizationPlaRegActive24hMixRoi'] : null;
         $this->container['ageId'] = isset($data['ageId']) ? $data['ageId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
@@ -21417,6 +21429,54 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setSecurityNegativeDedupPv($securityNegativeDedupPv)
     {
         $this->container['securityNegativeDedupPv'] = $securityNegativeDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationPlaRegActive1dMixRoi
+     *
+     * @return double|mixed
+     */
+    public function getAdMonetizationPlaRegActive1dMixRoi()
+    {
+        return $this->container['adMonetizationPlaRegActive1dMixRoi'];
+    }
+
+    /**
+     * Sets adMonetizationPlaRegActive1dMixRoi
+     *
+     * @param double|mixed $adMonetizationPlaRegActive1dMixRoi adMonetizationPlaRegActive1dMixRoi
+     *
+     * @return $this
+     */
+    public function setAdMonetizationPlaRegActive1dMixRoi($adMonetizationPlaRegActive1dMixRoi)
+    {
+        $this->container['adMonetizationPlaRegActive1dMixRoi'] = $adMonetizationPlaRegActive1dMixRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationPlaRegActive24hMixRoi
+     *
+     * @return double|mixed
+     */
+    public function getAdMonetizationPlaRegActive24hMixRoi()
+    {
+        return $this->container['adMonetizationPlaRegActive24hMixRoi'];
+    }
+
+    /**
+     * Sets adMonetizationPlaRegActive24hMixRoi
+     *
+     * @param double|mixed $adMonetizationPlaRegActive24hMixRoi adMonetizationPlaRegActive24hMixRoi
+     *
+     * @return $this
+     */
+    public function setAdMonetizationPlaRegActive24hMixRoi($adMonetizationPlaRegActive24hMixRoi)
+    {
+        $this->container['adMonetizationPlaRegActive24hMixRoi'] = $adMonetizationPlaRegActive24hMixRoi;
 
         return $this;
     }

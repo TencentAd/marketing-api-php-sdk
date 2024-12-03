@@ -1,6 +1,6 @@
 <?php
 /**
- * ResponseStruct
+ * WechatShopAuthorizationAddResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ResponseStruct Class Doc Comment
+ * WechatShopAuthorizationAddResponseData Class Doc Comment
  *
  * @category Class
- * @description 返回信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ResponseStruct implements ModelInterface, ArrayAccess
+class WechatShopAuthorizationAddResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class ResponseStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'response_struct';
+    protected static $swaggerModelName = 'WechatShopAuthorizationAddResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,12 @@ class ResponseStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'httpCode' => 'int',
-        'headers' => '\TencentAds\Model\V3\HeaderStruct[]',
-        'body' => 'string'
+        'authorizationId' => 'int',
+        'authorizationQrcodeUrl' => 'string',
+        'authorizationQrcodeExpiredTime' => 'int',
+        'authorizationDescription' => 'string',
+        'authorizationAgreement' => 'string',
+        'wechatChannelsShopName' => 'string'
     ];
 
     /**
@@ -69,9 +71,12 @@ class ResponseStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'httpCode' => 'int64',
-        'headers' => null,
-        'body' => null
+        'authorizationId' => 'int64',
+        'authorizationQrcodeUrl' => null,
+        'authorizationQrcodeExpiredTime' => 'int64',
+        'authorizationDescription' => null,
+        'authorizationAgreement' => null,
+        'wechatChannelsShopName' => null
     ];
 
     /**
@@ -101,9 +106,12 @@ class ResponseStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'httpCode' => 'http_code',
-        'headers' => 'headers',
-        'body' => 'body'
+        'authorizationId' => 'authorization_id',
+        'authorizationQrcodeUrl' => 'authorization_qrcode_url',
+        'authorizationQrcodeExpiredTime' => 'authorization_qrcode_expired_time',
+        'authorizationDescription' => 'authorization_description',
+        'authorizationAgreement' => 'authorization_agreement',
+        'wechatChannelsShopName' => 'wechat_channels_shop_name'
     ];
 
     /**
@@ -112,9 +120,12 @@ class ResponseStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'httpCode' => 'setHttpCode',
-        'headers' => 'setHeaders',
-        'body' => 'setBody'
+        'authorizationId' => 'setAuthorizationId',
+        'authorizationQrcodeUrl' => 'setAuthorizationQrcodeUrl',
+        'authorizationQrcodeExpiredTime' => 'setAuthorizationQrcodeExpiredTime',
+        'authorizationDescription' => 'setAuthorizationDescription',
+        'authorizationAgreement' => 'setAuthorizationAgreement',
+        'wechatChannelsShopName' => 'setWechatChannelsShopName'
     ];
 
     /**
@@ -123,9 +134,12 @@ class ResponseStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'httpCode' => 'getHttpCode',
-        'headers' => 'getHeaders',
-        'body' => 'getBody'
+        'authorizationId' => 'getAuthorizationId',
+        'authorizationQrcodeUrl' => 'getAuthorizationQrcodeUrl',
+        'authorizationQrcodeExpiredTime' => 'getAuthorizationQrcodeExpiredTime',
+        'authorizationDescription' => 'getAuthorizationDescription',
+        'authorizationAgreement' => 'getAuthorizationAgreement',
+        'wechatChannelsShopName' => 'getWechatChannelsShopName'
     ];
 
     /**
@@ -188,9 +202,12 @@ class ResponseStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['httpCode'] = isset($data['httpCode']) ? $data['httpCode'] : null;
-        $this->container['headers'] = isset($data['headers']) ? $data['headers'] : null;
-        $this->container['body'] = isset($data['body']) ? $data['body'] : null;
+        $this->container['authorizationId'] = isset($data['authorizationId']) ? $data['authorizationId'] : null;
+        $this->container['authorizationQrcodeUrl'] = isset($data['authorizationQrcodeUrl']) ? $data['authorizationQrcodeUrl'] : null;
+        $this->container['authorizationQrcodeExpiredTime'] = isset($data['authorizationQrcodeExpiredTime']) ? $data['authorizationQrcodeExpiredTime'] : null;
+        $this->container['authorizationDescription'] = isset($data['authorizationDescription']) ? $data['authorizationDescription'] : null;
+        $this->container['authorizationAgreement'] = isset($data['authorizationAgreement']) ? $data['authorizationAgreement'] : null;
+        $this->container['wechatChannelsShopName'] = isset($data['wechatChannelsShopName']) ? $data['wechatChannelsShopName'] : null;
     }
 
     /**
@@ -218,73 +235,145 @@ class ResponseStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets httpCode
+     * Gets authorizationId
      *
      * @return int|mixed
      */
-    public function getHttpCode()
+    public function getAuthorizationId()
     {
-        return $this->container['httpCode'];
+        return $this->container['authorizationId'];
     }
 
     /**
-     * Sets httpCode
+     * Sets authorizationId
      *
-     * @param int|mixed $httpCode httpCode
+     * @param int|mixed $authorizationId authorizationId
      *
      * @return $this
      */
-    public function setHttpCode($httpCode)
+    public function setAuthorizationId($authorizationId)
     {
-        $this->container['httpCode'] = $httpCode;
+        $this->container['authorizationId'] = $authorizationId;
 
         return $this;
     }
 
     /**
-     * Gets headers
-     *
-     * @return \TencentAds\Model\V3\HeaderStruct[]|mixed
-     */
-    public function getHeaders()
-    {
-        return $this->container['headers'];
-    }
-
-    /**
-     * Sets headers
-     *
-     * @param \TencentAds\Model\V3\HeaderStruct[]|mixed $headers headers
-     *
-     * @return $this
-     */
-    public function setHeaders($headers)
-    {
-        $this->container['headers'] = $headers;
-
-        return $this;
-    }
-
-    /**
-     * Gets body
+     * Gets authorizationQrcodeUrl
      *
      * @return string|mixed
      */
-    public function getBody()
+    public function getAuthorizationQrcodeUrl()
     {
-        return $this->container['body'];
+        return $this->container['authorizationQrcodeUrl'];
     }
 
     /**
-     * Sets body
+     * Sets authorizationQrcodeUrl
      *
-     * @param string|mixed $body body
+     * @param string|mixed $authorizationQrcodeUrl authorizationQrcodeUrl
      *
      * @return $this
      */
-    public function setBody($body)
+    public function setAuthorizationQrcodeUrl($authorizationQrcodeUrl)
     {
-        $this->container['body'] = $body;
+        $this->container['authorizationQrcodeUrl'] = $authorizationQrcodeUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizationQrcodeExpiredTime
+     *
+     * @return int|mixed
+     */
+    public function getAuthorizationQrcodeExpiredTime()
+    {
+        return $this->container['authorizationQrcodeExpiredTime'];
+    }
+
+    /**
+     * Sets authorizationQrcodeExpiredTime
+     *
+     * @param int|mixed $authorizationQrcodeExpiredTime authorizationQrcodeExpiredTime
+     *
+     * @return $this
+     */
+    public function setAuthorizationQrcodeExpiredTime($authorizationQrcodeExpiredTime)
+    {
+        $this->container['authorizationQrcodeExpiredTime'] = $authorizationQrcodeExpiredTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizationDescription
+     *
+     * @return string|mixed
+     */
+    public function getAuthorizationDescription()
+    {
+        return $this->container['authorizationDescription'];
+    }
+
+    /**
+     * Sets authorizationDescription
+     *
+     * @param string|mixed $authorizationDescription authorizationDescription
+     *
+     * @return $this
+     */
+    public function setAuthorizationDescription($authorizationDescription)
+    {
+        $this->container['authorizationDescription'] = $authorizationDescription;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizationAgreement
+     *
+     * @return string|mixed
+     */
+    public function getAuthorizationAgreement()
+    {
+        return $this->container['authorizationAgreement'];
+    }
+
+    /**
+     * Sets authorizationAgreement
+     *
+     * @param string|mixed $authorizationAgreement authorizationAgreement
+     *
+     * @return $this
+     */
+    public function setAuthorizationAgreement($authorizationAgreement)
+    {
+        $this->container['authorizationAgreement'] = $authorizationAgreement;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsShopName
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsShopName()
+    {
+        return $this->container['wechatChannelsShopName'];
+    }
+
+    /**
+     * Sets wechatChannelsShopName
+     *
+     * @param string|mixed $wechatChannelsShopName wechatChannelsShopName
+     *
+     * @return $this
+     */
+    public function setWechatChannelsShopName($wechatChannelsShopName)
+    {
+        $this->container['wechatChannelsShopName'] = $wechatChannelsShopName;
 
         return $this;
     }

@@ -64,7 +64,8 @@ class OplogArrStruct implements ModelInterface, ArrayAccess
         'operationObjectName' => 'string',
         'operatorPlatform' => '\TencentAds\Model\V3\OperatorPlatformType',
         'operationLog' => 'string[]',
-        'createdTime' => 'int'
+        'createdTime' => 'int',
+        'operationInfoList' => '\TencentAds\Model\V3\OperationInfoListStruct[]'
     ];
 
     /**
@@ -79,7 +80,8 @@ class OplogArrStruct implements ModelInterface, ArrayAccess
         'operationObjectName' => null,
         'operatorPlatform' => null,
         'operationLog' => null,
-        'createdTime' => 'int64'
+        'createdTime' => 'int64',
+        'operationInfoList' => null
     ];
 
     /**
@@ -115,7 +117,8 @@ class OplogArrStruct implements ModelInterface, ArrayAccess
         'operationObjectName' => 'operation_object_name',
         'operatorPlatform' => 'operator_platform',
         'operationLog' => 'operation_log',
-        'createdTime' => 'created_time'
+        'createdTime' => 'created_time',
+        'operationInfoList' => 'operation_info_list'
     ];
 
     /**
@@ -130,7 +133,8 @@ class OplogArrStruct implements ModelInterface, ArrayAccess
         'operationObjectName' => 'setOperationObjectName',
         'operatorPlatform' => 'setOperatorPlatform',
         'operationLog' => 'setOperationLog',
-        'createdTime' => 'setCreatedTime'
+        'createdTime' => 'setCreatedTime',
+        'operationInfoList' => 'setOperationInfoList'
     ];
 
     /**
@@ -145,7 +149,8 @@ class OplogArrStruct implements ModelInterface, ArrayAccess
         'operationObjectName' => 'getOperationObjectName',
         'operatorPlatform' => 'getOperatorPlatform',
         'operationLog' => 'getOperationLog',
-        'createdTime' => 'getCreatedTime'
+        'createdTime' => 'getCreatedTime',
+        'operationInfoList' => 'getOperationInfoList'
     ];
 
     /**
@@ -215,6 +220,7 @@ class OplogArrStruct implements ModelInterface, ArrayAccess
         $this->container['operatorPlatform'] = isset($data['operatorPlatform']) ? $data['operatorPlatform'] : null;
         $this->container['operationLog'] = isset($data['operationLog']) ? $data['operationLog'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
+        $this->container['operationInfoList'] = isset($data['operationInfoList']) ? $data['operationInfoList'] : null;
     }
 
     /**
@@ -405,6 +411,30 @@ class OplogArrStruct implements ModelInterface, ArrayAccess
     public function setCreatedTime($createdTime)
     {
         $this->container['createdTime'] = $createdTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets operationInfoList
+     *
+     * @return \TencentAds\Model\V3\OperationInfoListStruct[]|mixed
+     */
+    public function getOperationInfoList()
+    {
+        return $this->container['operationInfoList'];
+    }
+
+    /**
+     * Sets operationInfoList
+     *
+     * @param \TencentAds\Model\V3\OperationInfoListStruct[]|mixed $operationInfoList operationInfoList
+     *
+     * @return $this
+     */
+    public function setOperationInfoList($operationInfoList)
+    {
+        $this->container['operationInfoList'] = $operationInfoList;
 
         return $this;
     }

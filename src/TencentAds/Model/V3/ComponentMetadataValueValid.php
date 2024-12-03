@@ -74,7 +74,9 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'minDuration' => 'int',
         'maxDuration' => 'int',
         'minHeight' => 'int',
-        'minWidth' => 'int'
+        'minWidth' => 'int',
+        'joint' => '\TencentAds\Model\V3\ComponentMetadataValueValidJoint',
+        'defaultBoolValue' => 'bool'
     ];
 
     /**
@@ -99,7 +101,9 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'minDuration' => 'int64',
         'maxDuration' => 'int64',
         'minHeight' => 'int64',
-        'minWidth' => 'int64'
+        'minWidth' => 'int64',
+        'joint' => null,
+        'defaultBoolValue' => null
     ];
 
     /**
@@ -145,7 +149,9 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'minDuration' => 'min_duration',
         'maxDuration' => 'max_duration',
         'minHeight' => 'min_height',
-        'minWidth' => 'min_width'
+        'minWidth' => 'min_width',
+        'joint' => 'joint',
+        'defaultBoolValue' => 'default_bool_value'
     ];
 
     /**
@@ -170,7 +176,9 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'minDuration' => 'setMinDuration',
         'maxDuration' => 'setMaxDuration',
         'minHeight' => 'setMinHeight',
-        'minWidth' => 'setMinWidth'
+        'minWidth' => 'setMinWidth',
+        'joint' => 'setJoint',
+        'defaultBoolValue' => 'setDefaultBoolValue'
     ];
 
     /**
@@ -195,7 +203,9 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'minDuration' => 'getMinDuration',
         'maxDuration' => 'getMaxDuration',
         'minHeight' => 'getMinHeight',
-        'minWidth' => 'getMinWidth'
+        'minWidth' => 'getMinWidth',
+        'joint' => 'getJoint',
+        'defaultBoolValue' => 'getDefaultBoolValue'
     ];
 
     /**
@@ -275,6 +285,8 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         $this->container['maxDuration'] = isset($data['maxDuration']) ? $data['maxDuration'] : null;
         $this->container['minHeight'] = isset($data['minHeight']) ? $data['minHeight'] : null;
         $this->container['minWidth'] = isset($data['minWidth']) ? $data['minWidth'] : null;
+        $this->container['joint'] = isset($data['joint']) ? $data['joint'] : null;
+        $this->container['defaultBoolValue'] = isset($data['defaultBoolValue']) ? $data['defaultBoolValue'] : null;
     }
 
     /**
@@ -705,6 +717,54 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
     public function setMinWidth($minWidth)
     {
         $this->container['minWidth'] = $minWidth;
+
+        return $this;
+    }
+
+    /**
+     * Gets joint
+     *
+     * @return \TencentAds\Model\V3\ComponentMetadataValueValidJoint|mixed
+     */
+    public function getJoint()
+    {
+        return $this->container['joint'];
+    }
+
+    /**
+     * Sets joint
+     *
+     * @param \TencentAds\Model\V3\ComponentMetadataValueValidJoint|mixed $joint joint
+     *
+     * @return $this
+     */
+    public function setJoint($joint)
+    {
+        $this->container['joint'] = $joint;
+
+        return $this;
+    }
+
+    /**
+     * Gets defaultBoolValue
+     *
+     * @return bool|mixed
+     */
+    public function getDefaultBoolValue()
+    {
+        return $this->container['defaultBoolValue'];
+    }
+
+    /**
+     * Sets defaultBoolValue
+     *
+     * @param bool|mixed $defaultBoolValue defaultBoolValue
+     *
+     * @return $this
+     */
+    public function setDefaultBoolValue($defaultBoolValue)
+    {
+        $this->container['defaultBoolValue'] = $defaultBoolValue;
 
         return $this;
     }
