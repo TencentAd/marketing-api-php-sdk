@@ -72,7 +72,8 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'plotSignText' => 'string',
         'plotSignImage' => 'string',
         'plotBrandLogo' => 'string',
-        'plotOriginalMaterial' => '\TencentAds\Model\PlotOriginalMaterial'
+        'plotOriginalMaterial' => '\TencentAds\Model\PlotOriginalMaterial',
+        'redEnvelopeBrandName' => 'string'
     ];
 
     /**
@@ -95,7 +96,8 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'plotSignText' => null,
         'plotSignImage' => null,
         'plotBrandLogo' => null,
-        'plotOriginalMaterial' => null
+        'plotOriginalMaterial' => null,
+        'redEnvelopeBrandName' => null
     ];
 
     /**
@@ -139,7 +141,8 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'plotSignText' => 'plot_sign_text',
         'plotSignImage' => 'plot_sign_image',
         'plotBrandLogo' => 'plot_brand_logo',
-        'plotOriginalMaterial' => 'plot_original_material'
+        'plotOriginalMaterial' => 'plot_original_material',
+        'redEnvelopeBrandName' => 'red_envelope_brand_name'
     ];
 
     /**
@@ -162,7 +165,8 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'plotSignText' => 'setPlotSignText',
         'plotSignImage' => 'setPlotSignImage',
         'plotBrandLogo' => 'setPlotBrandLogo',
-        'plotOriginalMaterial' => 'setPlotOriginalMaterial'
+        'plotOriginalMaterial' => 'setPlotOriginalMaterial',
+        'redEnvelopeBrandName' => 'setRedEnvelopeBrandName'
     ];
 
     /**
@@ -185,7 +189,8 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'plotSignText' => 'getPlotSignText',
         'plotSignImage' => 'getPlotSignImage',
         'plotBrandLogo' => 'getPlotBrandLogo',
-        'plotOriginalMaterial' => 'getPlotOriginalMaterial'
+        'plotOriginalMaterial' => 'getPlotOriginalMaterial',
+        'redEnvelopeBrandName' => 'getRedEnvelopeBrandName'
     ];
 
     /**
@@ -263,6 +268,7 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         $this->container['plotSignImage'] = isset($data['plotSignImage']) ? $data['plotSignImage'] : null;
         $this->container['plotBrandLogo'] = isset($data['plotBrandLogo']) ? $data['plotBrandLogo'] : null;
         $this->container['plotOriginalMaterial'] = isset($data['plotOriginalMaterial']) ? $data['plotOriginalMaterial'] : null;
+        $this->container['redEnvelopeBrandName'] = isset($data['redEnvelopeBrandName']) ? $data['redEnvelopeBrandName'] : null;
     }
 
     /**
@@ -645,6 +651,30 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
     public function setPlotOriginalMaterial($plotOriginalMaterial)
     {
         $this->container['plotOriginalMaterial'] = $plotOriginalMaterial;
+
+        return $this;
+    }
+
+    /**
+     * Gets redEnvelopeBrandName
+     *
+     * @return string|mixed
+     */
+    public function getRedEnvelopeBrandName()
+    {
+        return $this->container['redEnvelopeBrandName'];
+    }
+
+    /**
+     * Sets redEnvelopeBrandName
+     *
+     * @param string|mixed $redEnvelopeBrandName redEnvelopeBrandName
+     *
+     * @return $this
+     */
+    public function setRedEnvelopeBrandName($redEnvelopeBrandName)
+    {
+        $this->container['redEnvelopeBrandName'] = $redEnvelopeBrandName;
 
         return $this;
     }

@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * AdcreativeTemplateListStructAdpermit Class Doc Comment
  *
  * @category Class
- * @description 创意规格和投放权限数据结构
+ * @description 创意形式和投放权限数据结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

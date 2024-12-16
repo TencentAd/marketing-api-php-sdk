@@ -1,6 +1,6 @@
 <?php
 /**
- * CreativeTemplateApi
+ * WechatStoreCatalogsApi
  * PHP version 5
  *
  * @category Class
@@ -40,14 +40,14 @@ use TencentAds\HeaderSelector;
 use TencentAds\ObjectSerializer;
 
 /**
- * CreativeTemplateApi Class Doc Comment
+ * WechatStoreCatalogsApi Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreativeTemplateApi
+class WechatStoreCatalogsApi
 {
     /**
      * @var ClientInterface
@@ -88,57 +88,49 @@ class CreativeTemplateApi
     }
 
     /**
-     * Operation creativeTemplateGet
+     * Operation wechatStoreCatalogsGet
      *
-     * 获取创意形式详情
+     * 获取微信小店商品库
      *
      * @param  int|mixed $accountId accountId (required)
-     * @param  string|mixed $marketingGoal marketingGoal (required)
-     * @param  string|mixed $marketingTargetType marketingTargetType (required)
-     * @param  string|mixed $marketingCarrierType marketingCarrierType (required)
-     * @param  string|mixed $deliveryMode deliveryMode (required)
-     * @param  string|mixed $marketingSubGoal marketingSubGoal (optional)
-     * @param  bool|mixed $automaticSiteEnabled automaticSiteEnabled (optional)
-     * @param  string[]|mixed $siteSet siteSet (optional)
-     * @param  string|mixed $dynamicCreativeType dynamicCreativeType (optional)
-     * @param  int|mixed $creativeTemplateId creativeTemplateId (optional)
+     * @param  string[]|mixed $storeIds storeIds (optional)
+     * @param  int[]|mixed $catalogIds catalogIds (optional)
+     * @param  string|mixed $catalogName catalogName (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TencentAds\Model\V3\CreativeTemplateGetResponse|mixed
+     * @return \TencentAds\Model\V3\WechatStoreCatalogsGetResponse|mixed
      */
-    public function creativeTemplateGet($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $fields = null)
+    public function wechatStoreCatalogsGet($accountId, $storeIds = null, $catalogIds = null, $catalogName = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->creativeTemplateGetWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $fields);
+        list($response) = $this->wechatStoreCatalogsGetWithHttpInfo($accountId, $storeIds, $catalogIds, $catalogName, $page, $pageSize, $fields);
         return $response;
     }
 
     /**
-     * Operation creativeTemplateGetWithHttpInfo
+     * Operation wechatStoreCatalogsGetWithHttpInfo
      *
-     * 获取创意形式详情
+     * 获取微信小店商品库
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $marketingGoal (required)
-     * @param  string|mixed $marketingTargetType (required)
-     * @param  string|mixed $marketingCarrierType (required)
-     * @param  string|mixed $deliveryMode (required)
-     * @param  string|mixed $marketingSubGoal (optional)
-     * @param  bool|mixed $automaticSiteEnabled (optional)
-     * @param  string[]|mixed $siteSet (optional)
-     * @param  string|mixed $dynamicCreativeType (optional)
-     * @param  int|mixed $creativeTemplateId (optional)
+     * @param  string[]|mixed $storeIds (optional)
+     * @param  int[]|mixed $catalogIds (optional)
+     * @param  string|mixed $catalogName (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \TencentAds\Model\V3\CreativeTemplateGetResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TencentAds\Model\V3\WechatStoreCatalogsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function creativeTemplateGetWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $fields = null)
+    public function wechatStoreCatalogsGetWithHttpInfo($accountId, $storeIds = null, $catalogIds = null, $catalogName = null, $page = null, $pageSize = null, $fields = null)
     {
-        $returnType = '\TencentAds\Model\V3\CreativeTemplateGetResponse';
-        $request = $this->creativeTemplateGetRequest($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $fields);
+        $returnType = '\TencentAds\Model\V3\WechatStoreCatalogsGetResponse';
+        $request = $this->wechatStoreCatalogsGetRequest($accountId, $storeIds, $catalogIds, $catalogName, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -189,7 +181,7 @@ class CreativeTemplateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\TencentAds\Model\V3\CreativeTemplateGetResponse',
+                        '\TencentAds\Model\V3\WechatStoreCatalogsGetResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -200,28 +192,24 @@ class CreativeTemplateApi
     }
 
     /**
-     * Operation creativeTemplateGetAsync
+     * Operation wechatStoreCatalogsGetAsync
      *
-     * 获取创意形式详情
+     * 获取微信小店商品库
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $marketingGoal (required)
-     * @param  string|mixed $marketingTargetType (required)
-     * @param  string|mixed $marketingCarrierType (required)
-     * @param  string|mixed $deliveryMode (required)
-     * @param  string|mixed $marketingSubGoal (optional)
-     * @param  bool|mixed $automaticSiteEnabled (optional)
-     * @param  string[]|mixed $siteSet (optional)
-     * @param  string|mixed $dynamicCreativeType (optional)
-     * @param  int|mixed $creativeTemplateId (optional)
+     * @param  string[]|mixed $storeIds (optional)
+     * @param  int[]|mixed $catalogIds (optional)
+     * @param  string|mixed $catalogName (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function creativeTemplateGetAsync($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $fields = null)
+    public function wechatStoreCatalogsGetAsync($accountId, $storeIds = null, $catalogIds = null, $catalogName = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->creativeTemplateGetAsyncWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $fields)
+        return $this->wechatStoreCatalogsGetAsyncWithHttpInfo($accountId, $storeIds, $catalogIds, $catalogName, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -230,29 +218,25 @@ class CreativeTemplateApi
     }
 
     /**
-     * Operation creativeTemplateGetAsyncWithHttpInfo
+     * Operation wechatStoreCatalogsGetAsyncWithHttpInfo
      *
-     * 获取创意形式详情
+     * 获取微信小店商品库
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $marketingGoal (required)
-     * @param  string|mixed $marketingTargetType (required)
-     * @param  string|mixed $marketingCarrierType (required)
-     * @param  string|mixed $deliveryMode (required)
-     * @param  string|mixed $marketingSubGoal (optional)
-     * @param  bool|mixed $automaticSiteEnabled (optional)
-     * @param  string[]|mixed $siteSet (optional)
-     * @param  string|mixed $dynamicCreativeType (optional)
-     * @param  int|mixed $creativeTemplateId (optional)
+     * @param  string[]|mixed $storeIds (optional)
+     * @param  int[]|mixed $catalogIds (optional)
+     * @param  string|mixed $catalogName (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function creativeTemplateGetAsyncWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $fields = null)
+    public function wechatStoreCatalogsGetAsyncWithHttpInfo($accountId, $storeIds = null, $catalogIds = null, $catalogName = null, $page = null, $pageSize = null, $fields = null)
     {
-        $returnType = '\TencentAds\Model\V3\CreativeTemplateGetResponse';
-        $request = $this->creativeTemplateGetRequest($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $fields);
+        $returnType = '\TencentAds\Model\V3\WechatStoreCatalogsGetResponse';
+        $request = $this->wechatStoreCatalogsGetRequest($accountId, $storeIds, $catalogIds, $catalogName, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -292,57 +276,29 @@ class CreativeTemplateApi
     }
 
     /**
-     * Create request for operation 'creativeTemplateGet'
+     * Create request for operation 'wechatStoreCatalogsGet'
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $marketingGoal (required)
-     * @param  string|mixed $marketingTargetType (required)
-     * @param  string|mixed $marketingCarrierType (required)
-     * @param  string|mixed $deliveryMode (required)
-     * @param  string|mixed $marketingSubGoal (optional)
-     * @param  bool|mixed $automaticSiteEnabled (optional)
-     * @param  string[]|mixed $siteSet (optional)
-     * @param  string|mixed $dynamicCreativeType (optional)
-     * @param  int|mixed $creativeTemplateId (optional)
+     * @param  string[]|mixed $storeIds (optional)
+     * @param  int[]|mixed $catalogIds (optional)
+     * @param  string|mixed $catalogName (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function creativeTemplateGetRequest($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal = null, $automaticSiteEnabled = null, $siteSet = null, $dynamicCreativeType = null, $creativeTemplateId = null, $fields = null)
+    protected function wechatStoreCatalogsGetRequest($accountId, $storeIds = null, $catalogIds = null, $catalogName = null, $page = null, $pageSize = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling creativeTemplateGet'
-            );
-        }
-        // verify the required parameter 'marketingGoal' is set
-        if ($marketingGoal === null || (is_array($marketingGoal) && count($marketingGoal) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $marketingGoal when calling creativeTemplateGet'
-            );
-        }
-        // verify the required parameter 'marketingTargetType' is set
-        if ($marketingTargetType === null || (is_array($marketingTargetType) && count($marketingTargetType) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $marketingTargetType when calling creativeTemplateGet'
-            );
-        }
-        // verify the required parameter 'marketingCarrierType' is set
-        if ($marketingCarrierType === null || (is_array($marketingCarrierType) && count($marketingCarrierType) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $marketingCarrierType when calling creativeTemplateGet'
-            );
-        }
-        // verify the required parameter 'deliveryMode' is set
-        if ($deliveryMode === null || (is_array($deliveryMode) && count($deliveryMode) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $deliveryMode when calling creativeTemplateGet'
+                'Missing the required parameter $accountId when calling wechatStoreCatalogsGet'
             );
         }
 
-        $resourcePath = '/creative_template/get';
+        $resourcePath = '/wechat_store_catalogs/get';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -354,43 +310,30 @@ class CreativeTemplateApi
             $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
         }
         // query params
-        if ($marketingGoal !== null) {
-            $queryParams['marketing_goal'] = ObjectSerializer::toQueryValue($marketingGoal);
-        }
-        // query params
-        if ($marketingSubGoal !== null) {
-            $queryParams['marketing_sub_goal'] = ObjectSerializer::toQueryValue($marketingSubGoal);
-        }
-        // query params
-        if ($marketingTargetType !== null) {
-            $queryParams['marketing_target_type'] = ObjectSerializer::toQueryValue($marketingTargetType);
-        }
-        // query params
-        if ($marketingCarrierType !== null) {
-            $queryParams['marketing_carrier_type'] = ObjectSerializer::toQueryValue($marketingCarrierType);
-        }
-        // query params
-        if ($automaticSiteEnabled !== null) {
-            $queryParams['automatic_site_enabled'] = ObjectSerializer::toQueryValue($automaticSiteEnabled);
-        }
-        // query params
-        if (is_array($siteSet)) {
-           $queryParams['site_set'] = json_encode($siteSet);
+        if (is_array($storeIds)) {
+           $queryParams['store_ids'] = json_encode($storeIds);
         } else
-        if ($siteSet !== null) {
-            $queryParams['site_set'] = ObjectSerializer::toQueryValue($siteSet);
+        if ($storeIds !== null) {
+            $queryParams['store_ids'] = ObjectSerializer::toQueryValue($storeIds);
         }
         // query params
-        if ($deliveryMode !== null) {
-            $queryParams['delivery_mode'] = ObjectSerializer::toQueryValue($deliveryMode);
+        if (is_array($catalogIds)) {
+           $queryParams['catalog_ids'] = json_encode($catalogIds);
+        } else
+        if ($catalogIds !== null) {
+            $queryParams['catalog_ids'] = ObjectSerializer::toQueryValue($catalogIds);
         }
         // query params
-        if ($dynamicCreativeType !== null) {
-            $queryParams['dynamic_creative_type'] = ObjectSerializer::toQueryValue($dynamicCreativeType);
+        if ($catalogName !== null) {
+            $queryParams['catalog_name'] = ObjectSerializer::toQueryValue($catalogName);
         }
         // query params
-        if ($creativeTemplateId !== null) {
-            $queryParams['creative_template_id'] = ObjectSerializer::toQueryValue($creativeTemplateId);
+        if ($page !== null) {
+            $queryParams['page'] = ObjectSerializer::toQueryValue($page);
+        }
+        // query params
+        if ($pageSize !== null) {
+            $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
         }
         // query params
         if (is_array($fields)) {

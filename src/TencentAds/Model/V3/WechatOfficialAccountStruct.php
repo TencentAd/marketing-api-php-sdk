@@ -61,7 +61,8 @@ class WechatOfficialAccountStruct implements ModelInterface, ArrayAccess
         'wechatOfficialAccountId' => 'string',
         'wechatOfficialAccountName' => 'string',
         'createdTime' => 'int',
-        'lastModifiedTime' => 'int'
+        'lastModifiedTime' => 'int',
+        'wechatOfficialAccountIcon' => 'string'
     ];
 
     /**
@@ -73,7 +74,8 @@ class WechatOfficialAccountStruct implements ModelInterface, ArrayAccess
         'wechatOfficialAccountId' => null,
         'wechatOfficialAccountName' => null,
         'createdTime' => 'int64',
-        'lastModifiedTime' => 'int64'
+        'lastModifiedTime' => 'int64',
+        'wechatOfficialAccountIcon' => null
     ];
 
     /**
@@ -106,7 +108,8 @@ class WechatOfficialAccountStruct implements ModelInterface, ArrayAccess
         'wechatOfficialAccountId' => 'wechat_official_account_id',
         'wechatOfficialAccountName' => 'wechat_official_account_name',
         'createdTime' => 'created_time',
-        'lastModifiedTime' => 'last_modified_time'
+        'lastModifiedTime' => 'last_modified_time',
+        'wechatOfficialAccountIcon' => 'wechat_official_account_icon'
     ];
 
     /**
@@ -118,7 +121,8 @@ class WechatOfficialAccountStruct implements ModelInterface, ArrayAccess
         'wechatOfficialAccountId' => 'setWechatOfficialAccountId',
         'wechatOfficialAccountName' => 'setWechatOfficialAccountName',
         'createdTime' => 'setCreatedTime',
-        'lastModifiedTime' => 'setLastModifiedTime'
+        'lastModifiedTime' => 'setLastModifiedTime',
+        'wechatOfficialAccountIcon' => 'setWechatOfficialAccountIcon'
     ];
 
     /**
@@ -130,7 +134,8 @@ class WechatOfficialAccountStruct implements ModelInterface, ArrayAccess
         'wechatOfficialAccountId' => 'getWechatOfficialAccountId',
         'wechatOfficialAccountName' => 'getWechatOfficialAccountName',
         'createdTime' => 'getCreatedTime',
-        'lastModifiedTime' => 'getLastModifiedTime'
+        'lastModifiedTime' => 'getLastModifiedTime',
+        'wechatOfficialAccountIcon' => 'getWechatOfficialAccountIcon'
     ];
 
     /**
@@ -197,6 +202,7 @@ class WechatOfficialAccountStruct implements ModelInterface, ArrayAccess
         $this->container['wechatOfficialAccountName'] = isset($data['wechatOfficialAccountName']) ? $data['wechatOfficialAccountName'] : null;
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
+        $this->container['wechatOfficialAccountIcon'] = isset($data['wechatOfficialAccountIcon']) ? $data['wechatOfficialAccountIcon'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class WechatOfficialAccountStruct implements ModelInterface, ArrayAccess
     public function setLastModifiedTime($lastModifiedTime)
     {
         $this->container['lastModifiedTime'] = $lastModifiedTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatOfficialAccountIcon
+     *
+     * @return string|mixed
+     */
+    public function getWechatOfficialAccountIcon()
+    {
+        return $this->container['wechatOfficialAccountIcon'];
+    }
+
+    /**
+     * Sets wechatOfficialAccountIcon
+     *
+     * @param string|mixed $wechatOfficialAccountIcon wechatOfficialAccountIcon
+     *
+     * @return $this
+     */
+    public function setWechatOfficialAccountIcon($wechatOfficialAccountIcon)
+    {
+        $this->container['wechatOfficialAccountIcon'] = $wechatOfficialAccountIcon;
 
         return $this;
     }

@@ -63,6 +63,7 @@ use TencentAds\Container\V3\DynamicAdImageTemplatesApiContainer;
 use TencentAds\Container\V3\DynamicAdImagesApiContainer;
 use TencentAds\Container\V3\DynamicAdVideoApiContainer;
 use TencentAds\Container\V3\DynamicAdVideoTemplatesApiContainer;
+use TencentAds\Container\V3\DynamicCreativePreviewsApiContainer;
 use TencentAds\Container\V3\DynamicCreativeReviewResultsApiContainer;
 use TencentAds\Container\V3\DynamicCreativesApiContainer;
 use TencentAds\Container\V3\EcommerceOrderApiContainer;
@@ -136,6 +137,7 @@ use TencentAds\Container\V3\ProductsSystemStatusApiContainer;
 use TencentAds\Container\V3\ProfilesApiContainer;
 use TencentAds\Container\V3\ProgrammedApiContainer;
 use TencentAds\Container\V3\ProgrammedCommponentPreviewApiContainer;
+use TencentAds\Container\V3\ProgrammedCommponentPreviewTemplateApiContainer;
 use TencentAds\Container\V3\ProgrammedCommponentResultApiContainer;
 use TencentAds\Container\V3\ProgrammedMaterialMappingsApiContainer;
 use TencentAds\Container\V3\ProgrammedTemplateApiContainer;
@@ -183,6 +185,8 @@ use TencentAds\Container\V3\WechatShopApiContainer;
 use TencentAds\Container\V3\WechatShopAuthorizationApiContainer;
 use TencentAds\Container\V3\WechatShopAuthorizationStatusApiContainer;
 use TencentAds\Container\V3\WechatShopAuthorizationValidationApiContainer;
+use TencentAds\Container\V3\WechatStoreCatalogsApiContainer;
+use TencentAds\Container\V3\WechatStoreProductItemsApiContainer;
 use TencentAds\Container\V3\WildcardsApiContainer;
 use TencentAds\Container\V3\WxGamePlayablePageApiContainer;
 use TencentAds\Container\V3\WxPackageAccountApiContainer;
@@ -382,6 +386,9 @@ class App
 
     /** @var DynamicAdVideoTemplatesApiContainer */
     public $dynamicAdVideoTemplatesApiContainer;
+
+    /** @var DynamicCreativePreviewsApiContainer */
+    public $dynamicCreativePreviewsApiContainer;
 
     /** @var DynamicCreativeReviewResultsApiContainer */
     public $dynamicCreativeReviewResultsApiContainer;
@@ -602,6 +609,9 @@ class App
     /** @var ProgrammedCommponentPreviewApiContainer */
     public $programmedCommponentPreviewApiContainer;
 
+    /** @var ProgrammedCommponentPreviewTemplateApiContainer */
+    public $programmedCommponentPreviewTemplateApiContainer;
+
     /** @var ProgrammedCommponentResultApiContainer */
     public $programmedCommponentResultApiContainer;
 
@@ -742,6 +752,12 @@ class App
 
     /** @var WechatShopAuthorizationValidationApiContainer */
     public $wechatShopAuthorizationValidationApiContainer;
+
+    /** @var WechatStoreCatalogsApiContainer */
+    public $wechatStoreCatalogsApiContainer;
+
+    /** @var WechatStoreProductItemsApiContainer */
+    public $wechatStoreProductItemsApiContainer;
 
     /** @var WildcardsApiContainer */
     public $wildcardsApiContainer;
@@ -1640,6 +1656,20 @@ class App
             $this->dynamicAdVideoTemplatesApiContainer = $container;
         }
         return $this->dynamicAdVideoTemplatesApiContainer;
+    }
+
+
+    /**
+     * @return DynamicCreativePreviewsApiContainer
+     */
+    public function dynamicCreativePreviews()
+    {
+        if (empty($this->dynamicCreativePreviewsApiContainer)) {
+            $container = new DynamicCreativePreviewsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->dynamicCreativePreviewsApiContainer = $container;
+        }
+        return $this->dynamicCreativePreviewsApiContainer;
     }
 
 
@@ -2666,6 +2696,20 @@ class App
 
 
     /**
+     * @return ProgrammedCommponentPreviewTemplateApiContainer
+     */
+    public function programmedCommponentPreviewTemplate()
+    {
+        if (empty($this->programmedCommponentPreviewTemplateApiContainer)) {
+            $container = new ProgrammedCommponentPreviewTemplateApiContainer();
+            $container->init($this, $this->getClient());
+            $this->programmedCommponentPreviewTemplateApiContainer = $container;
+        }
+        return $this->programmedCommponentPreviewTemplateApiContainer;
+    }
+
+
+    /**
      * @return ProgrammedCommponentResultApiContainer
      */
     public function programmedCommponentResult()
@@ -3320,6 +3364,34 @@ class App
             $this->wechatShopAuthorizationValidationApiContainer = $container;
         }
         return $this->wechatShopAuthorizationValidationApiContainer;
+    }
+
+
+    /**
+     * @return WechatStoreCatalogsApiContainer
+     */
+    public function wechatStoreCatalogs()
+    {
+        if (empty($this->wechatStoreCatalogsApiContainer)) {
+            $container = new WechatStoreCatalogsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatStoreCatalogsApiContainer = $container;
+        }
+        return $this->wechatStoreCatalogsApiContainer;
+    }
+
+
+    /**
+     * @return WechatStoreProductItemsApiContainer
+     */
+    public function wechatStoreProductItems()
+    {
+        if (empty($this->wechatStoreProductItemsApiContainer)) {
+            $container = new WechatStoreProductItemsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatStoreProductItemsApiContainer = $container;
+        }
+        return $this->wechatStoreProductItemsApiContainer;
     }
 
 

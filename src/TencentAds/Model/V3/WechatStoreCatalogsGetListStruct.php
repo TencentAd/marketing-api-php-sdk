@@ -1,6 +1,6 @@
 <?php
 /**
- * PreviewItemStruct
+ * WechatStoreCatalogsGetListStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PreviewItemStruct Class Doc Comment
+ * WechatStoreCatalogsGetListStruct Class Doc Comment
  *
  * @category Class
- * @description 素材信息
+ * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PreviewItemStruct implements ModelInterface, ArrayAccess
+class WechatStoreCatalogsGetListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'preview_item_struct';
+    protected static $swaggerModelName = 'WechatStoreCatalogsGetListStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +58,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'materialPreviewId' => 'int',
-        'targetCreativeTemplateDimension' => '\TencentAds\Model\V3\TargetCreativeTemplateDimension',
-        'templateId' => 'int',
-        'type' => 'string',
-        'templatePreviewUrl' => 'string',
-        'recommendTemplates' => 'int[]'
+        'catalogId' => 'int',
+        'catalogName' => 'string',
+        'storeId' => 'string',
+        'availableStatus' => 'int',
+        'unavailableCause' => 'string[]'
     ];
 
     /**
@@ -72,12 +71,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'materialPreviewId' => 'int64',
-        'targetCreativeTemplateDimension' => null,
-        'templateId' => 'int64',
-        'type' => null,
-        'templatePreviewUrl' => null,
-        'recommendTemplates' => 'int64'
+        'catalogId' => 'int64',
+        'catalogName' => null,
+        'storeId' => null,
+        'availableStatus' => 'int64',
+        'unavailableCause' => null
     ];
 
     /**
@@ -107,12 +105,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'materialPreviewId' => 'material_preview_id',
-        'targetCreativeTemplateDimension' => 'target_creative_template_dimension',
-        'templateId' => 'template_id',
-        'type' => 'type',
-        'templatePreviewUrl' => 'template_preview_url',
-        'recommendTemplates' => 'recommend_templates'
+        'catalogId' => 'catalog_id',
+        'catalogName' => 'catalog_name',
+        'storeId' => 'store_id',
+        'availableStatus' => 'available_status',
+        'unavailableCause' => 'unavailable_cause'
     ];
 
     /**
@@ -121,12 +118,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'materialPreviewId' => 'setMaterialPreviewId',
-        'targetCreativeTemplateDimension' => 'setTargetCreativeTemplateDimension',
-        'templateId' => 'setTemplateId',
-        'type' => 'setType',
-        'templatePreviewUrl' => 'setTemplatePreviewUrl',
-        'recommendTemplates' => 'setRecommendTemplates'
+        'catalogId' => 'setCatalogId',
+        'catalogName' => 'setCatalogName',
+        'storeId' => 'setStoreId',
+        'availableStatus' => 'setAvailableStatus',
+        'unavailableCause' => 'setUnavailableCause'
     ];
 
     /**
@@ -135,12 +131,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'materialPreviewId' => 'getMaterialPreviewId',
-        'targetCreativeTemplateDimension' => 'getTargetCreativeTemplateDimension',
-        'templateId' => 'getTemplateId',
-        'type' => 'getType',
-        'templatePreviewUrl' => 'getTemplatePreviewUrl',
-        'recommendTemplates' => 'getRecommendTemplates'
+        'catalogId' => 'getCatalogId',
+        'catalogName' => 'getCatalogName',
+        'storeId' => 'getStoreId',
+        'availableStatus' => 'getAvailableStatus',
+        'unavailableCause' => 'getUnavailableCause'
     ];
 
     /**
@@ -203,12 +198,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['materialPreviewId'] = isset($data['materialPreviewId']) ? $data['materialPreviewId'] : null;
-        $this->container['targetCreativeTemplateDimension'] = isset($data['targetCreativeTemplateDimension']) ? $data['targetCreativeTemplateDimension'] : null;
-        $this->container['templateId'] = isset($data['templateId']) ? $data['templateId'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['templatePreviewUrl'] = isset($data['templatePreviewUrl']) ? $data['templatePreviewUrl'] : null;
-        $this->container['recommendTemplates'] = isset($data['recommendTemplates']) ? $data['recommendTemplates'] : null;
+        $this->container['catalogId'] = isset($data['catalogId']) ? $data['catalogId'] : null;
+        $this->container['catalogName'] = isset($data['catalogName']) ? $data['catalogName'] : null;
+        $this->container['storeId'] = isset($data['storeId']) ? $data['storeId'] : null;
+        $this->container['availableStatus'] = isset($data['availableStatus']) ? $data['availableStatus'] : null;
+        $this->container['unavailableCause'] = isset($data['unavailableCause']) ? $data['unavailableCause'] : null;
     }
 
     /**
@@ -236,145 +230,121 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets materialPreviewId
+     * Gets catalogId
      *
      * @return int|mixed
      */
-    public function getMaterialPreviewId()
+    public function getCatalogId()
     {
-        return $this->container['materialPreviewId'];
+        return $this->container['catalogId'];
     }
 
     /**
-     * Sets materialPreviewId
+     * Sets catalogId
      *
-     * @param int|mixed $materialPreviewId materialPreviewId
+     * @param int|mixed $catalogId catalogId
      *
      * @return $this
      */
-    public function setMaterialPreviewId($materialPreviewId)
+    public function setCatalogId($catalogId)
     {
-        $this->container['materialPreviewId'] = $materialPreviewId;
+        $this->container['catalogId'] = $catalogId;
 
         return $this;
     }
 
     /**
-     * Gets targetCreativeTemplateDimension
+     * Gets catalogName
      *
-     * @return \TencentAds\Model\V3\TargetCreativeTemplateDimension|mixed
+     * @return string|mixed
      */
-    public function getTargetCreativeTemplateDimension()
+    public function getCatalogName()
     {
-        return $this->container['targetCreativeTemplateDimension'];
+        return $this->container['catalogName'];
     }
 
     /**
-     * Sets targetCreativeTemplateDimension
+     * Sets catalogName
      *
-     * @param \TencentAds\Model\V3\TargetCreativeTemplateDimension|mixed $targetCreativeTemplateDimension targetCreativeTemplateDimension
+     * @param string|mixed $catalogName catalogName
      *
      * @return $this
      */
-    public function setTargetCreativeTemplateDimension($targetCreativeTemplateDimension)
+    public function setCatalogName($catalogName)
     {
-        $this->container['targetCreativeTemplateDimension'] = $targetCreativeTemplateDimension;
+        $this->container['catalogName'] = $catalogName;
 
         return $this;
     }
 
     /**
-     * Gets templateId
+     * Gets storeId
+     *
+     * @return string|mixed
+     */
+    public function getStoreId()
+    {
+        return $this->container['storeId'];
+    }
+
+    /**
+     * Sets storeId
+     *
+     * @param string|mixed $storeId storeId
+     *
+     * @return $this
+     */
+    public function setStoreId($storeId)
+    {
+        $this->container['storeId'] = $storeId;
+
+        return $this;
+    }
+
+    /**
+     * Gets availableStatus
      *
      * @return int|mixed
      */
-    public function getTemplateId()
+    public function getAvailableStatus()
     {
-        return $this->container['templateId'];
+        return $this->container['availableStatus'];
     }
 
     /**
-     * Sets templateId
+     * Sets availableStatus
      *
-     * @param int|mixed $templateId templateId
+     * @param int|mixed $availableStatus availableStatus
      *
      * @return $this
      */
-    public function setTemplateId($templateId)
+    public function setAvailableStatus($availableStatus)
     {
-        $this->container['templateId'] = $templateId;
+        $this->container['availableStatus'] = $availableStatus;
 
         return $this;
     }
 
     /**
-     * Gets type
+     * Gets unavailableCause
      *
-     * @return string|mixed
+     * @return string[]|mixed
      */
-    public function getType()
+    public function getUnavailableCause()
     {
-        return $this->container['type'];
+        return $this->container['unavailableCause'];
     }
 
     /**
-     * Sets type
+     * Sets unavailableCause
      *
-     * @param string|mixed $type type
+     * @param string[]|mixed $unavailableCause unavailableCause
      *
      * @return $this
      */
-    public function setType($type)
+    public function setUnavailableCause($unavailableCause)
     {
-        $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Gets templatePreviewUrl
-     *
-     * @return string|mixed
-     */
-    public function getTemplatePreviewUrl()
-    {
-        return $this->container['templatePreviewUrl'];
-    }
-
-    /**
-     * Sets templatePreviewUrl
-     *
-     * @param string|mixed $templatePreviewUrl templatePreviewUrl
-     *
-     * @return $this
-     */
-    public function setTemplatePreviewUrl($templatePreviewUrl)
-    {
-        $this->container['templatePreviewUrl'] = $templatePreviewUrl;
-
-        return $this;
-    }
-
-    /**
-     * Gets recommendTemplates
-     *
-     * @return int[]|mixed
-     */
-    public function getRecommendTemplates()
-    {
-        return $this->container['recommendTemplates'];
-    }
-
-    /**
-     * Sets recommendTemplates
-     *
-     * @param int[]|mixed $recommendTemplates recommendTemplates
-     *
-     * @return $this
-     */
-    public function setRecommendTemplates($recommendTemplates)
-    {
-        $this->container['recommendTemplates'] = $recommendTemplates;
+        $this->container['unavailableCause'] = $unavailableCause;
 
         return $this;
     }

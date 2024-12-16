@@ -144,6 +144,8 @@ class OptimizationGoal
     const FIRST_WITHDRAW = 'OPTIMIZATIONGOAL_FIRST_WITHDRAW';
     const R3 = 'OPTIMIZATIONGOAL_R3';
     const BRIDGING_COURSE_COMPLETED = 'OPTIMIZATIONGOAL_BRIDGING_COURSE_COMPLETED';
+    const THIRTY_SECONDS_SCANCODE_WX = 'OPTIMIZATIONGOAL_THIRTY_SECONDS_SCANCODE_WX';
+    const FIRST_TWENTY_FOUR_HOUR_REFUND_RATE = 'OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_REFUND_RATE';
     
     /**
      * Gets allowable values of the enum
@@ -252,6 +254,8 @@ class OptimizationGoal
             self::FIRST_WITHDRAW,
             self::R3,
             self::BRIDGING_COURSE_COMPLETED,
+            self::THIRTY_SECONDS_SCANCODE_WX,
+            self::FIRST_TWENTY_FOUR_HOUR_REFUND_RATE,
         ];
     }
 }

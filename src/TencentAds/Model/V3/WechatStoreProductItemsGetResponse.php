@@ -1,6 +1,6 @@
 <?php
 /**
- * PreviewItemStruct
+ * WechatStoreProductItemsGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PreviewItemStruct Class Doc Comment
+ * WechatStoreProductItemsGetResponse Class Doc Comment
  *
  * @category Class
- * @description 素材信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PreviewItemStruct implements ModelInterface, ArrayAccess
+class WechatStoreProductItemsGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'preview_item_struct';
+    protected static $swaggerModelName = 'WechatStoreProductItemsGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +57,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'materialPreviewId' => 'int',
-        'targetCreativeTemplateDimension' => '\TencentAds\Model\V3\TargetCreativeTemplateDimension',
-        'templateId' => 'int',
-        'type' => 'string',
-        'templatePreviewUrl' => 'string',
-        'recommendTemplates' => 'int[]'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\V3\WechatStoreProductItemsGetResponseData'
     ];
 
     /**
@@ -72,12 +70,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'materialPreviewId' => 'int64',
-        'targetCreativeTemplateDimension' => null,
-        'templateId' => 'int64',
-        'type' => null,
-        'templatePreviewUrl' => null,
-        'recommendTemplates' => 'int64'
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -107,12 +104,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'materialPreviewId' => 'material_preview_id',
-        'targetCreativeTemplateDimension' => 'target_creative_template_dimension',
-        'templateId' => 'template_id',
-        'type' => 'type',
-        'templatePreviewUrl' => 'template_preview_url',
-        'recommendTemplates' => 'recommend_templates'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -121,12 +117,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'materialPreviewId' => 'setMaterialPreviewId',
-        'targetCreativeTemplateDimension' => 'setTargetCreativeTemplateDimension',
-        'templateId' => 'setTemplateId',
-        'type' => 'setType',
-        'templatePreviewUrl' => 'setTemplatePreviewUrl',
-        'recommendTemplates' => 'setRecommendTemplates'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -135,12 +130,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'materialPreviewId' => 'getMaterialPreviewId',
-        'targetCreativeTemplateDimension' => 'getTargetCreativeTemplateDimension',
-        'templateId' => 'getTemplateId',
-        'type' => 'getType',
-        'templatePreviewUrl' => 'getTemplatePreviewUrl',
-        'recommendTemplates' => 'getRecommendTemplates'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -203,12 +197,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['materialPreviewId'] = isset($data['materialPreviewId']) ? $data['materialPreviewId'] : null;
-        $this->container['targetCreativeTemplateDimension'] = isset($data['targetCreativeTemplateDimension']) ? $data['targetCreativeTemplateDimension'] : null;
-        $this->container['templateId'] = isset($data['templateId']) ? $data['templateId'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['templatePreviewUrl'] = isset($data['templatePreviewUrl']) ? $data['templatePreviewUrl'] : null;
-        $this->container['recommendTemplates'] = isset($data['recommendTemplates']) ? $data['recommendTemplates'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -236,145 +229,121 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets materialPreviewId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getMaterialPreviewId()
+    public function getCode()
     {
-        return $this->container['materialPreviewId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets materialPreviewId
+     * Sets code
      *
-     * @param int|mixed $materialPreviewId materialPreviewId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setMaterialPreviewId($materialPreviewId)
+    public function setCode($code)
     {
-        $this->container['materialPreviewId'] = $materialPreviewId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets targetCreativeTemplateDimension
-     *
-     * @return \TencentAds\Model\V3\TargetCreativeTemplateDimension|mixed
-     */
-    public function getTargetCreativeTemplateDimension()
-    {
-        return $this->container['targetCreativeTemplateDimension'];
-    }
-
-    /**
-     * Sets targetCreativeTemplateDimension
-     *
-     * @param \TencentAds\Model\V3\TargetCreativeTemplateDimension|mixed $targetCreativeTemplateDimension targetCreativeTemplateDimension
-     *
-     * @return $this
-     */
-    public function setTargetCreativeTemplateDimension($targetCreativeTemplateDimension)
-    {
-        $this->container['targetCreativeTemplateDimension'] = $targetCreativeTemplateDimension;
-
-        return $this;
-    }
-
-    /**
-     * Gets templateId
-     *
-     * @return int|mixed
-     */
-    public function getTemplateId()
-    {
-        return $this->container['templateId'];
-    }
-
-    /**
-     * Sets templateId
-     *
-     * @param int|mixed $templateId templateId
-     *
-     * @return $this
-     */
-    public function setTemplateId($templateId)
-    {
-        $this->container['templateId'] = $templateId;
-
-        return $this;
-    }
-
-    /**
-     * Gets type
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getType()
+    public function getMessage()
     {
-        return $this->container['type'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets type
+     * Sets message
      *
-     * @param string|mixed $type type
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setType($type)
+    public function setMessage($message)
     {
-        $this->container['type'] = $type;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets templatePreviewUrl
+     * Gets messageCn
      *
      * @return string|mixed
      */
-    public function getTemplatePreviewUrl()
+    public function getMessageCn()
     {
-        return $this->container['templatePreviewUrl'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets templatePreviewUrl
+     * Sets messageCn
      *
-     * @param string|mixed $templatePreviewUrl templatePreviewUrl
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setTemplatePreviewUrl($templatePreviewUrl)
+    public function setMessageCn($messageCn)
     {
-        $this->container['templatePreviewUrl'] = $templatePreviewUrl;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets recommendTemplates
+     * Gets errors
      *
-     * @return int[]|mixed
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
      */
-    public function getRecommendTemplates()
+    public function getErrors()
     {
-        return $this->container['recommendTemplates'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets recommendTemplates
+     * Sets errors
      *
-     * @param int[]|mixed $recommendTemplates recommendTemplates
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setRecommendTemplates($recommendTemplates)
+    public function setErrors($errors)
     {
-        $this->container['recommendTemplates'] = $recommendTemplates;
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\V3\WechatStoreProductItemsGetResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\V3\WechatStoreProductItemsGetResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

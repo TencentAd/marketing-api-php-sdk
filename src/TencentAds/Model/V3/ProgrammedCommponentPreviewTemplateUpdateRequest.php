@@ -1,6 +1,6 @@
 <?php
 /**
- * PreviewItemStruct
+ * ProgrammedCommponentPreviewTemplateUpdateRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PreviewItemStruct Class Doc Comment
+ * ProgrammedCommponentPreviewTemplateUpdateRequest Class Doc Comment
  *
  * @category Class
- * @description 素材信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PreviewItemStruct implements ModelInterface, ArrayAccess
+class ProgrammedCommponentPreviewTemplateUpdateRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'preview_item_struct';
+    protected static $swaggerModelName = 'ProgrammedCommponentPreviewTemplateUpdateRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +57,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'accountId' => 'int',
+        'materialDeriveId' => 'int',
+        'componentId' => 'int',
         'materialPreviewId' => 'int',
-        'targetCreativeTemplateDimension' => '\TencentAds\Model\V3\TargetCreativeTemplateDimension',
-        'templateId' => 'int',
-        'type' => 'string',
-        'templatePreviewUrl' => 'string',
-        'recommendTemplates' => 'int[]'
+        'templateId' => 'int'
     ];
 
     /**
@@ -72,12 +70,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'accountId' => 'int64',
+        'materialDeriveId' => 'int64',
+        'componentId' => 'int64',
         'materialPreviewId' => 'int64',
-        'targetCreativeTemplateDimension' => null,
-        'templateId' => 'int64',
-        'type' => null,
-        'templatePreviewUrl' => null,
-        'recommendTemplates' => 'int64'
+        'templateId' => 'int64'
     ];
 
     /**
@@ -107,12 +104,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'accountId' => 'account_id',
+        'materialDeriveId' => 'material_derive_id',
+        'componentId' => 'component_id',
         'materialPreviewId' => 'material_preview_id',
-        'targetCreativeTemplateDimension' => 'target_creative_template_dimension',
-        'templateId' => 'template_id',
-        'type' => 'type',
-        'templatePreviewUrl' => 'template_preview_url',
-        'recommendTemplates' => 'recommend_templates'
+        'templateId' => 'template_id'
     ];
 
     /**
@@ -121,12 +117,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'accountId' => 'setAccountId',
+        'materialDeriveId' => 'setMaterialDeriveId',
+        'componentId' => 'setComponentId',
         'materialPreviewId' => 'setMaterialPreviewId',
-        'targetCreativeTemplateDimension' => 'setTargetCreativeTemplateDimension',
-        'templateId' => 'setTemplateId',
-        'type' => 'setType',
-        'templatePreviewUrl' => 'setTemplatePreviewUrl',
-        'recommendTemplates' => 'setRecommendTemplates'
+        'templateId' => 'setTemplateId'
     ];
 
     /**
@@ -135,12 +130,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'accountId' => 'getAccountId',
+        'materialDeriveId' => 'getMaterialDeriveId',
+        'componentId' => 'getComponentId',
         'materialPreviewId' => 'getMaterialPreviewId',
-        'targetCreativeTemplateDimension' => 'getTargetCreativeTemplateDimension',
-        'templateId' => 'getTemplateId',
-        'type' => 'getType',
-        'templatePreviewUrl' => 'getTemplatePreviewUrl',
-        'recommendTemplates' => 'getRecommendTemplates'
+        'templateId' => 'getTemplateId'
     ];
 
     /**
@@ -203,12 +197,11 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['materialDeriveId'] = isset($data['materialDeriveId']) ? $data['materialDeriveId'] : null;
+        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
         $this->container['materialPreviewId'] = isset($data['materialPreviewId']) ? $data['materialPreviewId'] : null;
-        $this->container['targetCreativeTemplateDimension'] = isset($data['targetCreativeTemplateDimension']) ? $data['targetCreativeTemplateDimension'] : null;
         $this->container['templateId'] = isset($data['templateId']) ? $data['templateId'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['templatePreviewUrl'] = isset($data['templatePreviewUrl']) ? $data['templatePreviewUrl'] : null;
-        $this->container['recommendTemplates'] = isset($data['recommendTemplates']) ? $data['recommendTemplates'] : null;
     }
 
     /**
@@ -236,6 +229,78 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
 
 
     /**
+     * Gets accountId
+     *
+     * @return int|mixed
+     */
+    public function getAccountId()
+    {
+        return $this->container['accountId'];
+    }
+
+    /**
+     * Sets accountId
+     *
+     * @param int|mixed $accountId accountId
+     *
+     * @return $this
+     */
+    public function setAccountId($accountId)
+    {
+        $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets materialDeriveId
+     *
+     * @return int|mixed
+     */
+    public function getMaterialDeriveId()
+    {
+        return $this->container['materialDeriveId'];
+    }
+
+    /**
+     * Sets materialDeriveId
+     *
+     * @param int|mixed $materialDeriveId materialDeriveId
+     *
+     * @return $this
+     */
+    public function setMaterialDeriveId($materialDeriveId)
+    {
+        $this->container['materialDeriveId'] = $materialDeriveId;
+
+        return $this;
+    }
+
+    /**
+     * Gets componentId
+     *
+     * @return int|mixed
+     */
+    public function getComponentId()
+    {
+        return $this->container['componentId'];
+    }
+
+    /**
+     * Sets componentId
+     *
+     * @param int|mixed $componentId componentId
+     *
+     * @return $this
+     */
+    public function setComponentId($componentId)
+    {
+        $this->container['componentId'] = $componentId;
+
+        return $this;
+    }
+
+    /**
      * Gets materialPreviewId
      *
      * @return int|mixed
@@ -260,30 +325,6 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets targetCreativeTemplateDimension
-     *
-     * @return \TencentAds\Model\V3\TargetCreativeTemplateDimension|mixed
-     */
-    public function getTargetCreativeTemplateDimension()
-    {
-        return $this->container['targetCreativeTemplateDimension'];
-    }
-
-    /**
-     * Sets targetCreativeTemplateDimension
-     *
-     * @param \TencentAds\Model\V3\TargetCreativeTemplateDimension|mixed $targetCreativeTemplateDimension targetCreativeTemplateDimension
-     *
-     * @return $this
-     */
-    public function setTargetCreativeTemplateDimension($targetCreativeTemplateDimension)
-    {
-        $this->container['targetCreativeTemplateDimension'] = $targetCreativeTemplateDimension;
-
-        return $this;
-    }
-
-    /**
      * Gets templateId
      *
      * @return int|mixed
@@ -303,78 +344,6 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
     public function setTemplateId($templateId)
     {
         $this->container['templateId'] = $templateId;
-
-        return $this;
-    }
-
-    /**
-     * Gets type
-     *
-     * @return string|mixed
-     */
-    public function getType()
-    {
-        return $this->container['type'];
-    }
-
-    /**
-     * Sets type
-     *
-     * @param string|mixed $type type
-     *
-     * @return $this
-     */
-    public function setType($type)
-    {
-        $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Gets templatePreviewUrl
-     *
-     * @return string|mixed
-     */
-    public function getTemplatePreviewUrl()
-    {
-        return $this->container['templatePreviewUrl'];
-    }
-
-    /**
-     * Sets templatePreviewUrl
-     *
-     * @param string|mixed $templatePreviewUrl templatePreviewUrl
-     *
-     * @return $this
-     */
-    public function setTemplatePreviewUrl($templatePreviewUrl)
-    {
-        $this->container['templatePreviewUrl'] = $templatePreviewUrl;
-
-        return $this;
-    }
-
-    /**
-     * Gets recommendTemplates
-     *
-     * @return int[]|mixed
-     */
-    public function getRecommendTemplates()
-    {
-        return $this->container['recommendTemplates'];
-    }
-
-    /**
-     * Sets recommendTemplates
-     *
-     * @param int[]|mixed $recommendTemplates recommendTemplates
-     *
-     * @return $this
-     */
-    public function setRecommendTemplates($recommendTemplates)
-    {
-        $this->container['recommendTemplates'] = $recommendTemplates;
 
         return $this;
     }

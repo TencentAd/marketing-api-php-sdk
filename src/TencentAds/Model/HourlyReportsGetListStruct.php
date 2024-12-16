@@ -821,7 +821,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoInnerPlayUserCount' => 'int',
         'poiId' => 'string',
         'projectId' => 'int',
-        'projectName' => 'string'
+        'projectName' => 'string',
+        'purchasePv' => 'int',
+        'regPv' => 'int'
     ];
 
     /**
@@ -1593,7 +1595,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoInnerPlayUserCount' => 'int64',
         'poiId' => null,
         'projectId' => 'int64',
-        'projectName' => null
+        'projectName' => null,
+        'purchasePv' => 'int64',
+        'regPv' => 'int64'
     ];
 
     /**
@@ -2386,7 +2390,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoInnerPlayUserCount' => 'video_inner_play_user_count',
         'poiId' => 'poi_id',
         'projectId' => 'project_id',
-        'projectName' => 'project_name'
+        'projectName' => 'project_name',
+        'purchasePv' => 'purchase_pv',
+        'regPv' => 'reg_pv'
     ];
 
     /**
@@ -3158,7 +3164,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoInnerPlayUserCount' => 'setVideoInnerPlayUserCount',
         'poiId' => 'setPoiId',
         'projectId' => 'setProjectId',
-        'projectName' => 'setProjectName'
+        'projectName' => 'setProjectName',
+        'purchasePv' => 'setPurchasePv',
+        'regPv' => 'setRegPv'
     ];
 
     /**
@@ -3930,7 +3938,9 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'videoInnerPlayUserCount' => 'getVideoInnerPlayUserCount',
         'poiId' => 'getPoiId',
         'projectId' => 'getProjectId',
-        'projectName' => 'getProjectName'
+        'projectName' => 'getProjectName',
+        'purchasePv' => 'getPurchasePv',
+        'regPv' => 'getRegPv'
     ];
 
     /**
@@ -4757,6 +4767,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['poiId'] = isset($data['poiId']) ? $data['poiId'] : null;
         $this->container['projectId'] = isset($data['projectId']) ? $data['projectId'] : null;
         $this->container['projectName'] = isset($data['projectName']) ? $data['projectName'] : null;
+        $this->container['purchasePv'] = isset($data['purchasePv']) ? $data['purchasePv'] : null;
+        $this->container['regPv'] = isset($data['regPv']) ? $data['regPv'] : null;
     }
 
     /**
@@ -23115,6 +23127,54 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setProjectName($projectName)
     {
         $this->container['projectName'] = $projectName;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchasePv
+     *
+     * @return int|mixed
+     */
+    public function getPurchasePv()
+    {
+        return $this->container['purchasePv'];
+    }
+
+    /**
+     * Sets purchasePv
+     *
+     * @param int|mixed $purchasePv purchasePv
+     *
+     * @return $this
+     */
+    public function setPurchasePv($purchasePv)
+    {
+        $this->container['purchasePv'] = $purchasePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets regPv
+     *
+     * @return int|mixed
+     */
+    public function getRegPv()
+    {
+        return $this->container['regPv'];
+    }
+
+    /**
+     * Sets regPv
+     *
+     * @param int|mixed $regPv regPv
+     *
+     * @return $this
+     */
+    public function setRegPv($regPv)
+    {
+        $this->container['regPv'] = $regPv;
 
         return $this;
     }

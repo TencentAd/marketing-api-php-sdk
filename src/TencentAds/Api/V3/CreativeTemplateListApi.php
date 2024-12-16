@@ -90,7 +90,7 @@ class CreativeTemplateListApi
     /**
      * Operation creativeTemplateListGet
      *
-     * 获取创意规格列表
+     * 获取创意形式列表
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $marketingGoal marketingGoal (required)
@@ -118,7 +118,7 @@ class CreativeTemplateListApi
     /**
      * Operation creativeTemplateListGetWithHttpInfo
      *
-     * 获取创意规格列表
+     * 获取创意形式列表
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingGoal (required)
@@ -204,7 +204,7 @@ class CreativeTemplateListApi
     /**
      * Operation creativeTemplateListGetAsync
      *
-     * 获取创意规格列表
+     * 获取创意形式列表
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingGoal (required)
@@ -235,7 +235,7 @@ class CreativeTemplateListApi
     /**
      * Operation creativeTemplateListGetAsyncWithHttpInfo
      *
-     * 获取创意规格列表
+     * 获取创意形式列表
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingGoal (required)

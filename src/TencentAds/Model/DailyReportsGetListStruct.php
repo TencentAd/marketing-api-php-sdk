@@ -850,7 +850,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'channelsMatchSharePv' => 'int',
         'exportId' => 'string',
         'projectId' => 'int',
-        'projectName' => 'string'
+        'projectName' => 'string',
+        'purchasePv' => 'int',
+        'regPv' => 'int'
     ];
 
     /**
@@ -1651,7 +1653,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'channelsMatchSharePv' => 'int64',
         'exportId' => null,
         'projectId' => 'int64',
-        'projectName' => null
+        'projectName' => null,
+        'purchasePv' => 'int64',
+        'regPv' => 'int64'
     ];
 
     /**
@@ -2473,7 +2477,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'channelsMatchSharePv' => 'channels_match_share_pv',
         'exportId' => 'export_id',
         'projectId' => 'project_id',
-        'projectName' => 'project_name'
+        'projectName' => 'project_name',
+        'purchasePv' => 'purchase_pv',
+        'regPv' => 'reg_pv'
     ];
 
     /**
@@ -3274,7 +3280,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'channelsMatchSharePv' => 'setChannelsMatchSharePv',
         'exportId' => 'setExportId',
         'projectId' => 'setProjectId',
-        'projectName' => 'setProjectName'
+        'projectName' => 'setProjectName',
+        'purchasePv' => 'setPurchasePv',
+        'regPv' => 'setRegPv'
     ];
 
     /**
@@ -4075,7 +4083,9 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         'channelsMatchSharePv' => 'getChannelsMatchSharePv',
         'exportId' => 'getExportId',
         'projectId' => 'getProjectId',
-        'projectName' => 'getProjectName'
+        'projectName' => 'getProjectName',
+        'purchasePv' => 'getPurchasePv',
+        'regPv' => 'getRegPv'
     ];
 
     /**
@@ -4931,6 +4941,8 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['exportId'] = isset($data['exportId']) ? $data['exportId'] : null;
         $this->container['projectId'] = isset($data['projectId']) ? $data['projectId'] : null;
         $this->container['projectName'] = isset($data['projectName']) ? $data['projectName'] : null;
+        $this->container['purchasePv'] = isset($data['purchasePv']) ? $data['purchasePv'] : null;
+        $this->container['regPv'] = isset($data['regPv']) ? $data['regPv'] : null;
     }
 
     /**
@@ -23985,6 +23997,54 @@ class DailyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setProjectName($projectName)
     {
         $this->container['projectName'] = $projectName;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchasePv
+     *
+     * @return int|mixed
+     */
+    public function getPurchasePv()
+    {
+        return $this->container['purchasePv'];
+    }
+
+    /**
+     * Sets purchasePv
+     *
+     * @param int|mixed $purchasePv purchasePv
+     *
+     * @return $this
+     */
+    public function setPurchasePv($purchasePv)
+    {
+        $this->container['purchasePv'] = $purchasePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets regPv
+     *
+     * @return int|mixed
+     */
+    public function getRegPv()
+    {
+        return $this->container['regPv'];
+    }
+
+    /**
+     * Sets regPv
+     *
+     * @param int|mixed $regPv regPv
+     *
+     * @return $this
+     */
+    public function setRegPv($regPv)
+    {
+        $this->container['regPv'] = $regPv;
 
         return $this;
     }

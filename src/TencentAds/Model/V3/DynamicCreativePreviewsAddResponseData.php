@@ -1,6 +1,6 @@
 <?php
 /**
- * PreviewItemStruct
+ * DynamicCreativePreviewsAddResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PreviewItemStruct Class Doc Comment
+ * DynamicCreativePreviewsAddResponseData Class Doc Comment
  *
  * @category Class
- * @description 素材信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PreviewItemStruct implements ModelInterface, ArrayAccess
+class DynamicCreativePreviewsAddResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'preview_item_struct';
+    protected static $swaggerModelName = 'DynamicCreativePreviewsAddResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +57,9 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'materialPreviewId' => 'int',
-        'targetCreativeTemplateDimension' => '\TencentAds\Model\V3\TargetCreativeTemplateDimension',
-        'templateId' => 'int',
-        'type' => 'string',
-        'templatePreviewUrl' => 'string',
-        'recommendTemplates' => 'int[]'
+        'accountId' => 'int',
+        'traceId' => 'string',
+        'wxFailUserNameList' => 'string[]'
     ];
 
     /**
@@ -72,12 +68,9 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'materialPreviewId' => 'int64',
-        'targetCreativeTemplateDimension' => null,
-        'templateId' => 'int64',
-        'type' => null,
-        'templatePreviewUrl' => null,
-        'recommendTemplates' => 'int64'
+        'accountId' => 'int64',
+        'traceId' => null,
+        'wxFailUserNameList' => null
     ];
 
     /**
@@ -107,12 +100,9 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'materialPreviewId' => 'material_preview_id',
-        'targetCreativeTemplateDimension' => 'target_creative_template_dimension',
-        'templateId' => 'template_id',
-        'type' => 'type',
-        'templatePreviewUrl' => 'template_preview_url',
-        'recommendTemplates' => 'recommend_templates'
+        'accountId' => 'account_id',
+        'traceId' => 'trace_id',
+        'wxFailUserNameList' => 'wx_fail_user_name_list'
     ];
 
     /**
@@ -121,12 +111,9 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'materialPreviewId' => 'setMaterialPreviewId',
-        'targetCreativeTemplateDimension' => 'setTargetCreativeTemplateDimension',
-        'templateId' => 'setTemplateId',
-        'type' => 'setType',
-        'templatePreviewUrl' => 'setTemplatePreviewUrl',
-        'recommendTemplates' => 'setRecommendTemplates'
+        'accountId' => 'setAccountId',
+        'traceId' => 'setTraceId',
+        'wxFailUserNameList' => 'setWxFailUserNameList'
     ];
 
     /**
@@ -135,12 +122,9 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'materialPreviewId' => 'getMaterialPreviewId',
-        'targetCreativeTemplateDimension' => 'getTargetCreativeTemplateDimension',
-        'templateId' => 'getTemplateId',
-        'type' => 'getType',
-        'templatePreviewUrl' => 'getTemplatePreviewUrl',
-        'recommendTemplates' => 'getRecommendTemplates'
+        'accountId' => 'getAccountId',
+        'traceId' => 'getTraceId',
+        'wxFailUserNameList' => 'getWxFailUserNameList'
     ];
 
     /**
@@ -203,12 +187,9 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['materialPreviewId'] = isset($data['materialPreviewId']) ? $data['materialPreviewId'] : null;
-        $this->container['targetCreativeTemplateDimension'] = isset($data['targetCreativeTemplateDimension']) ? $data['targetCreativeTemplateDimension'] : null;
-        $this->container['templateId'] = isset($data['templateId']) ? $data['templateId'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['templatePreviewUrl'] = isset($data['templatePreviewUrl']) ? $data['templatePreviewUrl'] : null;
-        $this->container['recommendTemplates'] = isset($data['recommendTemplates']) ? $data['recommendTemplates'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['traceId'] = isset($data['traceId']) ? $data['traceId'] : null;
+        $this->container['wxFailUserNameList'] = isset($data['wxFailUserNameList']) ? $data['wxFailUserNameList'] : null;
     }
 
     /**
@@ -236,145 +217,73 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets materialPreviewId
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getMaterialPreviewId()
+    public function getAccountId()
     {
-        return $this->container['materialPreviewId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets materialPreviewId
+     * Sets accountId
      *
-     * @param int|mixed $materialPreviewId materialPreviewId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setMaterialPreviewId($materialPreviewId)
+    public function setAccountId($accountId)
     {
-        $this->container['materialPreviewId'] = $materialPreviewId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets targetCreativeTemplateDimension
-     *
-     * @return \TencentAds\Model\V3\TargetCreativeTemplateDimension|mixed
-     */
-    public function getTargetCreativeTemplateDimension()
-    {
-        return $this->container['targetCreativeTemplateDimension'];
-    }
-
-    /**
-     * Sets targetCreativeTemplateDimension
-     *
-     * @param \TencentAds\Model\V3\TargetCreativeTemplateDimension|mixed $targetCreativeTemplateDimension targetCreativeTemplateDimension
-     *
-     * @return $this
-     */
-    public function setTargetCreativeTemplateDimension($targetCreativeTemplateDimension)
-    {
-        $this->container['targetCreativeTemplateDimension'] = $targetCreativeTemplateDimension;
-
-        return $this;
-    }
-
-    /**
-     * Gets templateId
-     *
-     * @return int|mixed
-     */
-    public function getTemplateId()
-    {
-        return $this->container['templateId'];
-    }
-
-    /**
-     * Sets templateId
-     *
-     * @param int|mixed $templateId templateId
-     *
-     * @return $this
-     */
-    public function setTemplateId($templateId)
-    {
-        $this->container['templateId'] = $templateId;
-
-        return $this;
-    }
-
-    /**
-     * Gets type
+     * Gets traceId
      *
      * @return string|mixed
      */
-    public function getType()
+    public function getTraceId()
     {
-        return $this->container['type'];
+        return $this->container['traceId'];
     }
 
     /**
-     * Sets type
+     * Sets traceId
      *
-     * @param string|mixed $type type
+     * @param string|mixed $traceId traceId
      *
      * @return $this
      */
-    public function setType($type)
+    public function setTraceId($traceId)
     {
-        $this->container['type'] = $type;
+        $this->container['traceId'] = $traceId;
 
         return $this;
     }
 
     /**
-     * Gets templatePreviewUrl
+     * Gets wxFailUserNameList
      *
-     * @return string|mixed
+     * @return string[]|mixed
      */
-    public function getTemplatePreviewUrl()
+    public function getWxFailUserNameList()
     {
-        return $this->container['templatePreviewUrl'];
+        return $this->container['wxFailUserNameList'];
     }
 
     /**
-     * Sets templatePreviewUrl
+     * Sets wxFailUserNameList
      *
-     * @param string|mixed $templatePreviewUrl templatePreviewUrl
+     * @param string[]|mixed $wxFailUserNameList wxFailUserNameList
      *
      * @return $this
      */
-    public function setTemplatePreviewUrl($templatePreviewUrl)
+    public function setWxFailUserNameList($wxFailUserNameList)
     {
-        $this->container['templatePreviewUrl'] = $templatePreviewUrl;
-
-        return $this;
-    }
-
-    /**
-     * Gets recommendTemplates
-     *
-     * @return int[]|mixed
-     */
-    public function getRecommendTemplates()
-    {
-        return $this->container['recommendTemplates'];
-    }
-
-    /**
-     * Sets recommendTemplates
-     *
-     * @param int[]|mixed $recommendTemplates recommendTemplates
-     *
-     * @return $this
-     */
-    public function setRecommendTemplates($recommendTemplates)
-    {
-        $this->container['recommendTemplates'] = $recommendTemplates;
+        $this->container['wxFailUserNameList'] = $wxFailUserNameList;
 
         return $this;
     }

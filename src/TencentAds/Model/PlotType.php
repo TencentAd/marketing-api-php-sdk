@@ -47,6 +47,7 @@ class PlotType
     const RED_ENVELOPE = 'RED_ENVELOPE';
     const HIGH_LIGHT = 'HIGH_LIGHT';
     const HEART_BEAT = 'HEART_BEAT';
+    const MULTI_PACKET = 'MULTI_PACKET';
     
     /**
      * Gets allowable values of the enum
@@ -58,6 +59,7 @@ class PlotType
             self::RED_ENVELOPE,
             self::HIGH_LIGHT,
             self::HEART_BEAT,
+            self::MULTI_PACKET,
         ];
     }
 }

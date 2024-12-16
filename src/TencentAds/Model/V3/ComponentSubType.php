@@ -175,6 +175,7 @@ class ComponentSubType
     const JUMP_INFO_ANDROID_QUICK_APP = 'JUMP_INFO_ANDROID_QUICK_APP';
     const JUMP_INFO_WECHAT_CHANNELS_SHOP_PRODUCT = 'JUMP_INFO_WECHAT_CHANNELS_SHOP_PRODUCT';
     const JUMP_INFO_QQ_MINI_GAME = 'JUMP_INFO_QQ_MINI_GAME';
+    const JUMP_INFO_APP_HARMONY = 'JUMP_INFO_APP_HARMONY';
     
     /**
      * Gets allowable values of the enum
@@ -314,6 +315,7 @@ class ComponentSubType
             self::JUMP_INFO_ANDROID_QUICK_APP,
             self::JUMP_INFO_WECHAT_CHANNELS_SHOP_PRODUCT,
             self::JUMP_INFO_QQ_MINI_GAME,
+            self::JUMP_INFO_APP_HARMONY,
         ];
     }
 }

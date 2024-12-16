@@ -1,6 +1,6 @@
 <?php
 /**
- * PreviewItemStruct
+ * PageInfo1w
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PreviewItemStruct Class Doc Comment
+ * PageInfo1w Class Doc Comment
  *
  * @category Class
- * @description 素材信息
+ * @description 分页配置信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PreviewItemStruct implements ModelInterface, ArrayAccess
+class PageInfo1w implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'preview_item_struct';
+    protected static $swaggerModelName = 'page_info_1w';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +58,10 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'materialPreviewId' => 'int',
-        'targetCreativeTemplateDimension' => '\TencentAds\Model\V3\TargetCreativeTemplateDimension',
-        'templateId' => 'int',
-        'type' => 'string',
-        'templatePreviewUrl' => 'string',
-        'recommendTemplates' => 'int[]'
+        'page' => 'int',
+        'pageSize' => 'int',
+        'totalNumber' => 'int',
+        'totalPage' => 'int'
     ];
 
     /**
@@ -72,12 +70,10 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'materialPreviewId' => 'int64',
-        'targetCreativeTemplateDimension' => null,
-        'templateId' => 'int64',
-        'type' => null,
-        'templatePreviewUrl' => null,
-        'recommendTemplates' => 'int64'
+        'page' => 'int64',
+        'pageSize' => 'int64',
+        'totalNumber' => 'int64',
+        'totalPage' => 'int64'
     ];
 
     /**
@@ -107,12 +103,10 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'materialPreviewId' => 'material_preview_id',
-        'targetCreativeTemplateDimension' => 'target_creative_template_dimension',
-        'templateId' => 'template_id',
-        'type' => 'type',
-        'templatePreviewUrl' => 'template_preview_url',
-        'recommendTemplates' => 'recommend_templates'
+        'page' => 'page',
+        'pageSize' => 'page_size',
+        'totalNumber' => 'total_number',
+        'totalPage' => 'total_page'
     ];
 
     /**
@@ -121,12 +115,10 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'materialPreviewId' => 'setMaterialPreviewId',
-        'targetCreativeTemplateDimension' => 'setTargetCreativeTemplateDimension',
-        'templateId' => 'setTemplateId',
-        'type' => 'setType',
-        'templatePreviewUrl' => 'setTemplatePreviewUrl',
-        'recommendTemplates' => 'setRecommendTemplates'
+        'page' => 'setPage',
+        'pageSize' => 'setPageSize',
+        'totalNumber' => 'setTotalNumber',
+        'totalPage' => 'setTotalPage'
     ];
 
     /**
@@ -135,12 +127,10 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'materialPreviewId' => 'getMaterialPreviewId',
-        'targetCreativeTemplateDimension' => 'getTargetCreativeTemplateDimension',
-        'templateId' => 'getTemplateId',
-        'type' => 'getType',
-        'templatePreviewUrl' => 'getTemplatePreviewUrl',
-        'recommendTemplates' => 'getRecommendTemplates'
+        'page' => 'getPage',
+        'pageSize' => 'getPageSize',
+        'totalNumber' => 'getTotalNumber',
+        'totalPage' => 'getTotalPage'
     ];
 
     /**
@@ -203,12 +193,10 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['materialPreviewId'] = isset($data['materialPreviewId']) ? $data['materialPreviewId'] : null;
-        $this->container['targetCreativeTemplateDimension'] = isset($data['targetCreativeTemplateDimension']) ? $data['targetCreativeTemplateDimension'] : null;
-        $this->container['templateId'] = isset($data['templateId']) ? $data['templateId'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['templatePreviewUrl'] = isset($data['templatePreviewUrl']) ? $data['templatePreviewUrl'] : null;
-        $this->container['recommendTemplates'] = isset($data['recommendTemplates']) ? $data['recommendTemplates'] : null;
+        $this->container['page'] = isset($data['page']) ? $data['page'] : null;
+        $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
+        $this->container['totalNumber'] = isset($data['totalNumber']) ? $data['totalNumber'] : null;
+        $this->container['totalPage'] = isset($data['totalPage']) ? $data['totalPage'] : null;
     }
 
     /**
@@ -236,145 +224,97 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets materialPreviewId
+     * Gets page
      *
      * @return int|mixed
      */
-    public function getMaterialPreviewId()
+    public function getPage()
     {
-        return $this->container['materialPreviewId'];
+        return $this->container['page'];
     }
 
     /**
-     * Sets materialPreviewId
+     * Sets page
      *
-     * @param int|mixed $materialPreviewId materialPreviewId
+     * @param int|mixed $page page
      *
      * @return $this
      */
-    public function setMaterialPreviewId($materialPreviewId)
+    public function setPage($page)
     {
-        $this->container['materialPreviewId'] = $materialPreviewId;
+        $this->container['page'] = $page;
 
         return $this;
     }
 
     /**
-     * Gets targetCreativeTemplateDimension
-     *
-     * @return \TencentAds\Model\V3\TargetCreativeTemplateDimension|mixed
-     */
-    public function getTargetCreativeTemplateDimension()
-    {
-        return $this->container['targetCreativeTemplateDimension'];
-    }
-
-    /**
-     * Sets targetCreativeTemplateDimension
-     *
-     * @param \TencentAds\Model\V3\TargetCreativeTemplateDimension|mixed $targetCreativeTemplateDimension targetCreativeTemplateDimension
-     *
-     * @return $this
-     */
-    public function setTargetCreativeTemplateDimension($targetCreativeTemplateDimension)
-    {
-        $this->container['targetCreativeTemplateDimension'] = $targetCreativeTemplateDimension;
-
-        return $this;
-    }
-
-    /**
-     * Gets templateId
+     * Gets pageSize
      *
      * @return int|mixed
      */
-    public function getTemplateId()
+    public function getPageSize()
     {
-        return $this->container['templateId'];
+        return $this->container['pageSize'];
     }
 
     /**
-     * Sets templateId
+     * Sets pageSize
      *
-     * @param int|mixed $templateId templateId
+     * @param int|mixed $pageSize pageSize
      *
      * @return $this
      */
-    public function setTemplateId($templateId)
+    public function setPageSize($pageSize)
     {
-        $this->container['templateId'] = $templateId;
+        $this->container['pageSize'] = $pageSize;
 
         return $this;
     }
 
     /**
-     * Gets type
+     * Gets totalNumber
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getType()
+    public function getTotalNumber()
     {
-        return $this->container['type'];
+        return $this->container['totalNumber'];
     }
 
     /**
-     * Sets type
+     * Sets totalNumber
      *
-     * @param string|mixed $type type
+     * @param int|mixed $totalNumber totalNumber
      *
      * @return $this
      */
-    public function setType($type)
+    public function setTotalNumber($totalNumber)
     {
-        $this->container['type'] = $type;
+        $this->container['totalNumber'] = $totalNumber;
 
         return $this;
     }
 
     /**
-     * Gets templatePreviewUrl
+     * Gets totalPage
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getTemplatePreviewUrl()
+    public function getTotalPage()
     {
-        return $this->container['templatePreviewUrl'];
+        return $this->container['totalPage'];
     }
 
     /**
-     * Sets templatePreviewUrl
+     * Sets totalPage
      *
-     * @param string|mixed $templatePreviewUrl templatePreviewUrl
+     * @param int|mixed $totalPage totalPage
      *
      * @return $this
      */
-    public function setTemplatePreviewUrl($templatePreviewUrl)
+    public function setTotalPage($totalPage)
     {
-        $this->container['templatePreviewUrl'] = $templatePreviewUrl;
-
-        return $this;
-    }
-
-    /**
-     * Gets recommendTemplates
-     *
-     * @return int[]|mixed
-     */
-    public function getRecommendTemplates()
-    {
-        return $this->container['recommendTemplates'];
-    }
-
-    /**
-     * Sets recommendTemplates
-     *
-     * @param int[]|mixed $recommendTemplates recommendTemplates
-     *
-     * @return $this
-     */
-    public function setRecommendTemplates($recommendTemplates)
-    {
-        $this->container['recommendTemplates'] = $recommendTemplates;
+        $this->container['totalPage'] = $totalPage;
 
         return $this;
     }

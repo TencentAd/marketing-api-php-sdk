@@ -123,7 +123,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'mdpaDescComponentOptions' => '\TencentAds\Model\MdpaDescComponentOption[]',
         'listSublinkComponentOptions' => '\TencentAds\Model\ListSublinkComponentOption[]',
         'wechatChannelsCoverImgShowType' => '\TencentAds\Model\WechatChannelsCoverImgShowType',
-        'miniCardLink' => '\TencentAds\Model\AdCreativeMiniCardLink'
+        'miniCardLink' => '\TencentAds\Model\AdCreativeMiniCardLink',
+        'redEnvelopePacketList' => '\TencentAds\Model\RedEnvelopePacketSpec[]'
     ];
 
     /**
@@ -197,7 +198,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'mdpaDescComponentOptions' => null,
         'listSublinkComponentOptions' => null,
         'wechatChannelsCoverImgShowType' => null,
-        'miniCardLink' => null
+        'miniCardLink' => null,
+        'redEnvelopePacketList' => null
     ];
 
     /**
@@ -292,7 +294,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'mdpaDescComponentOptions' => 'mdpa_desc_component_options',
         'listSublinkComponentOptions' => 'list_sublink_component_options',
         'wechatChannelsCoverImgShowType' => 'wechat_channels_cover_img_show_type',
-        'miniCardLink' => 'mini_card_link'
+        'miniCardLink' => 'mini_card_link',
+        'redEnvelopePacketList' => 'red_envelope_packet_list'
     ];
 
     /**
@@ -366,7 +369,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'mdpaDescComponentOptions' => 'setMdpaDescComponentOptions',
         'listSublinkComponentOptions' => 'setListSublinkComponentOptions',
         'wechatChannelsCoverImgShowType' => 'setWechatChannelsCoverImgShowType',
-        'miniCardLink' => 'setMiniCardLink'
+        'miniCardLink' => 'setMiniCardLink',
+        'redEnvelopePacketList' => 'setRedEnvelopePacketList'
     ];
 
     /**
@@ -440,7 +444,8 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         'mdpaDescComponentOptions' => 'getMdpaDescComponentOptions',
         'listSublinkComponentOptions' => 'getListSublinkComponentOptions',
         'wechatChannelsCoverImgShowType' => 'getWechatChannelsCoverImgShowType',
-        'miniCardLink' => 'getMiniCardLink'
+        'miniCardLink' => 'getMiniCardLink',
+        'redEnvelopePacketList' => 'getRedEnvelopePacketList'
     ];
 
     /**
@@ -569,6 +574,7 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
         $this->container['listSublinkComponentOptions'] = isset($data['listSublinkComponentOptions']) ? $data['listSublinkComponentOptions'] : null;
         $this->container['wechatChannelsCoverImgShowType'] = isset($data['wechatChannelsCoverImgShowType']) ? $data['wechatChannelsCoverImgShowType'] : null;
         $this->container['miniCardLink'] = isset($data['miniCardLink']) ? $data['miniCardLink'] : null;
+        $this->container['redEnvelopePacketList'] = isset($data['redEnvelopePacketList']) ? $data['redEnvelopePacketList'] : null;
     }
 
     /**
@@ -2175,6 +2181,30 @@ class RevisedAdcreativeElements implements ModelInterface, ArrayAccess
     public function setMiniCardLink($miniCardLink)
     {
         $this->container['miniCardLink'] = $miniCardLink;
+
+        return $this;
+    }
+
+    /**
+     * Gets redEnvelopePacketList
+     *
+     * @return \TencentAds\Model\RedEnvelopePacketSpec[]|mixed
+     */
+    public function getRedEnvelopePacketList()
+    {
+        return $this->container['redEnvelopePacketList'];
+    }
+
+    /**
+     * Sets redEnvelopePacketList
+     *
+     * @param \TencentAds\Model\RedEnvelopePacketSpec[]|mixed $redEnvelopePacketList redEnvelopePacketList
+     *
+     * @return $this
+     */
+    public function setRedEnvelopePacketList($redEnvelopePacketList)
+    {
+        $this->container['redEnvelopePacketList'] = $redEnvelopePacketList;
 
         return $this;
     }

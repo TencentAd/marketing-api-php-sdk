@@ -159,7 +159,8 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => '\TencentAds\Model\MdpaTitleComponentOption[]',
         'mdpaDescComponentOptions' => '\TencentAds\Model\MdpaDescComponentOption[]',
         'listSublinkComponentOptions' => '\TencentAds\Model\ListSublinkComponentOption[]',
-        'imageList3ComponentOptions' => '\TencentAds\Model\ImageListComponentOption[]'
+        'imageList3ComponentOptions' => '\TencentAds\Model\ImageListComponentOption[]',
+        'redEnvelopePacketList' => '\TencentAds\Model\RedEnvelopePacketSpec[]'
     ];
 
     /**
@@ -269,7 +270,8 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => null,
         'mdpaDescComponentOptions' => null,
         'listSublinkComponentOptions' => null,
-        'imageList3ComponentOptions' => null
+        'imageList3ComponentOptions' => null,
+        'redEnvelopePacketList' => null
     ];
 
     /**
@@ -400,7 +402,8 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => 'mdpa_title_component_options',
         'mdpaDescComponentOptions' => 'mdpa_desc_component_options',
         'listSublinkComponentOptions' => 'list_sublink_component_options',
-        'imageList3ComponentOptions' => 'image_list3_component_options'
+        'imageList3ComponentOptions' => 'image_list3_component_options',
+        'redEnvelopePacketList' => 'red_envelope_packet_list'
     ];
 
     /**
@@ -510,7 +513,8 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => 'setMdpaTitleComponentOptions',
         'mdpaDescComponentOptions' => 'setMdpaDescComponentOptions',
         'listSublinkComponentOptions' => 'setListSublinkComponentOptions',
-        'imageList3ComponentOptions' => 'setImageList3ComponentOptions'
+        'imageList3ComponentOptions' => 'setImageList3ComponentOptions',
+        'redEnvelopePacketList' => 'setRedEnvelopePacketList'
     ];
 
     /**
@@ -620,7 +624,8 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'mdpaTitleComponentOptions' => 'getMdpaTitleComponentOptions',
         'mdpaDescComponentOptions' => 'getMdpaDescComponentOptions',
         'listSublinkComponentOptions' => 'getListSublinkComponentOptions',
-        'imageList3ComponentOptions' => 'getImageList3ComponentOptions'
+        'imageList3ComponentOptions' => 'getImageList3ComponentOptions',
+        'redEnvelopePacketList' => 'getRedEnvelopePacketList'
     ];
 
     /**
@@ -785,6 +790,7 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         $this->container['mdpaDescComponentOptions'] = isset($data['mdpaDescComponentOptions']) ? $data['mdpaDescComponentOptions'] : null;
         $this->container['listSublinkComponentOptions'] = isset($data['listSublinkComponentOptions']) ? $data['listSublinkComponentOptions'] : null;
         $this->container['imageList3ComponentOptions'] = isset($data['imageList3ComponentOptions']) ? $data['imageList3ComponentOptions'] : null;
+        $this->container['redEnvelopePacketList'] = isset($data['redEnvelopePacketList']) ? $data['redEnvelopePacketList'] : null;
     }
 
     /**
@@ -3255,6 +3261,30 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
     public function setImageList3ComponentOptions($imageList3ComponentOptions)
     {
         $this->container['imageList3ComponentOptions'] = $imageList3ComponentOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets redEnvelopePacketList
+     *
+     * @return \TencentAds\Model\RedEnvelopePacketSpec[]|mixed
+     */
+    public function getRedEnvelopePacketList()
+    {
+        return $this->container['redEnvelopePacketList'];
+    }
+
+    /**
+     * Sets redEnvelopePacketList
+     *
+     * @param \TencentAds\Model\RedEnvelopePacketSpec[]|mixed $redEnvelopePacketList redEnvelopePacketList
+     *
+     * @return $this
+     */
+    public function setRedEnvelopePacketList($redEnvelopePacketList)
+    {
+        $this->container['redEnvelopePacketList'] = $redEnvelopePacketList;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * PreviewItemStruct
+ * WechatStoreProductFilteringStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * PreviewItemStruct Class Doc Comment
+ * WechatStoreProductFilteringStruct Class Doc Comment
  *
  * @category Class
- * @description 素材信息
+ * @description 过滤条件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class PreviewItemStruct implements ModelInterface, ArrayAccess
+class WechatStoreProductFilteringStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'preview_item_struct';
+    protected static $swaggerModelName = 'wechat_store_product_filtering_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +58,9 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'materialPreviewId' => 'int',
-        'targetCreativeTemplateDimension' => '\TencentAds\Model\V3\TargetCreativeTemplateDimension',
-        'templateId' => 'int',
-        'type' => 'string',
-        'templatePreviewUrl' => 'string',
-        'recommendTemplates' => 'int[]'
+        'field' => 'string',
+        'operator' => '\TencentAds\Model\V3\FilterOperator',
+        'values' => 'string[]'
     ];
 
     /**
@@ -72,12 +69,9 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'materialPreviewId' => 'int64',
-        'targetCreativeTemplateDimension' => null,
-        'templateId' => 'int64',
-        'type' => null,
-        'templatePreviewUrl' => null,
-        'recommendTemplates' => 'int64'
+        'field' => null,
+        'operator' => null,
+        'values' => null
     ];
 
     /**
@@ -107,12 +101,9 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'materialPreviewId' => 'material_preview_id',
-        'targetCreativeTemplateDimension' => 'target_creative_template_dimension',
-        'templateId' => 'template_id',
-        'type' => 'type',
-        'templatePreviewUrl' => 'template_preview_url',
-        'recommendTemplates' => 'recommend_templates'
+        'field' => 'field',
+        'operator' => 'operator',
+        'values' => 'values'
     ];
 
     /**
@@ -121,12 +112,9 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'materialPreviewId' => 'setMaterialPreviewId',
-        'targetCreativeTemplateDimension' => 'setTargetCreativeTemplateDimension',
-        'templateId' => 'setTemplateId',
-        'type' => 'setType',
-        'templatePreviewUrl' => 'setTemplatePreviewUrl',
-        'recommendTemplates' => 'setRecommendTemplates'
+        'field' => 'setField',
+        'operator' => 'setOperator',
+        'values' => 'setValues'
     ];
 
     /**
@@ -135,12 +123,9 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'materialPreviewId' => 'getMaterialPreviewId',
-        'targetCreativeTemplateDimension' => 'getTargetCreativeTemplateDimension',
-        'templateId' => 'getTemplateId',
-        'type' => 'getType',
-        'templatePreviewUrl' => 'getTemplatePreviewUrl',
-        'recommendTemplates' => 'getRecommendTemplates'
+        'field' => 'getField',
+        'operator' => 'getOperator',
+        'values' => 'getValues'
     ];
 
     /**
@@ -203,12 +188,9 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['materialPreviewId'] = isset($data['materialPreviewId']) ? $data['materialPreviewId'] : null;
-        $this->container['targetCreativeTemplateDimension'] = isset($data['targetCreativeTemplateDimension']) ? $data['targetCreativeTemplateDimension'] : null;
-        $this->container['templateId'] = isset($data['templateId']) ? $data['templateId'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['templatePreviewUrl'] = isset($data['templatePreviewUrl']) ? $data['templatePreviewUrl'] : null;
-        $this->container['recommendTemplates'] = isset($data['recommendTemplates']) ? $data['recommendTemplates'] : null;
+        $this->container['field'] = isset($data['field']) ? $data['field'] : null;
+        $this->container['operator'] = isset($data['operator']) ? $data['operator'] : null;
+        $this->container['values'] = isset($data['values']) ? $data['values'] : null;
     }
 
     /**
@@ -236,145 +218,73 @@ class PreviewItemStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets materialPreviewId
-     *
-     * @return int|mixed
-     */
-    public function getMaterialPreviewId()
-    {
-        return $this->container['materialPreviewId'];
-    }
-
-    /**
-     * Sets materialPreviewId
-     *
-     * @param int|mixed $materialPreviewId materialPreviewId
-     *
-     * @return $this
-     */
-    public function setMaterialPreviewId($materialPreviewId)
-    {
-        $this->container['materialPreviewId'] = $materialPreviewId;
-
-        return $this;
-    }
-
-    /**
-     * Gets targetCreativeTemplateDimension
-     *
-     * @return \TencentAds\Model\V3\TargetCreativeTemplateDimension|mixed
-     */
-    public function getTargetCreativeTemplateDimension()
-    {
-        return $this->container['targetCreativeTemplateDimension'];
-    }
-
-    /**
-     * Sets targetCreativeTemplateDimension
-     *
-     * @param \TencentAds\Model\V3\TargetCreativeTemplateDimension|mixed $targetCreativeTemplateDimension targetCreativeTemplateDimension
-     *
-     * @return $this
-     */
-    public function setTargetCreativeTemplateDimension($targetCreativeTemplateDimension)
-    {
-        $this->container['targetCreativeTemplateDimension'] = $targetCreativeTemplateDimension;
-
-        return $this;
-    }
-
-    /**
-     * Gets templateId
-     *
-     * @return int|mixed
-     */
-    public function getTemplateId()
-    {
-        return $this->container['templateId'];
-    }
-
-    /**
-     * Sets templateId
-     *
-     * @param int|mixed $templateId templateId
-     *
-     * @return $this
-     */
-    public function setTemplateId($templateId)
-    {
-        $this->container['templateId'] = $templateId;
-
-        return $this;
-    }
-
-    /**
-     * Gets type
+     * Gets field
      *
      * @return string|mixed
      */
-    public function getType()
+    public function getField()
     {
-        return $this->container['type'];
+        return $this->container['field'];
     }
 
     /**
-     * Sets type
+     * Sets field
      *
-     * @param string|mixed $type type
+     * @param string|mixed $field field
      *
      * @return $this
      */
-    public function setType($type)
+    public function setField($field)
     {
-        $this->container['type'] = $type;
+        $this->container['field'] = $field;
 
         return $this;
     }
 
     /**
-     * Gets templatePreviewUrl
+     * Gets operator
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\FilterOperator|mixed
      */
-    public function getTemplatePreviewUrl()
+    public function getOperator()
     {
-        return $this->container['templatePreviewUrl'];
+        return $this->container['operator'];
     }
 
     /**
-     * Sets templatePreviewUrl
+     * Sets operator
      *
-     * @param string|mixed $templatePreviewUrl templatePreviewUrl
+     * @param \TencentAds\Model\V3\FilterOperator|mixed $operator operator
      *
      * @return $this
      */
-    public function setTemplatePreviewUrl($templatePreviewUrl)
+    public function setOperator($operator)
     {
-        $this->container['templatePreviewUrl'] = $templatePreviewUrl;
+        $this->container['operator'] = $operator;
 
         return $this;
     }
 
     /**
-     * Gets recommendTemplates
+     * Gets values
      *
-     * @return int[]|mixed
+     * @return string[]|mixed
      */
-    public function getRecommendTemplates()
+    public function getValues()
     {
-        return $this->container['recommendTemplates'];
+        return $this->container['values'];
     }
 
     /**
-     * Sets recommendTemplates
+     * Sets values
      *
-     * @param int[]|mixed $recommendTemplates recommendTemplates
+     * @param string[]|mixed $values values
      *
      * @return $this
      */
-    public function setRecommendTemplates($recommendTemplates)
+    public function setValues($values)
     {
-        $this->container['recommendTemplates'] = $recommendTemplates;
+        $this->container['values'] = $values;
 
         return $this;
     }
