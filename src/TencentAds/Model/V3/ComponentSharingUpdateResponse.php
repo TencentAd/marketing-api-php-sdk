@@ -1,6 +1,6 @@
 <?php
 /**
- * WxPackagePackageUpdateRequest
+ * ComponentSharingUpdateResponse
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WxPackagePackageUpdateRequest Class Doc Comment
+ * ComponentSharingUpdateResponse Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WxPackagePackageUpdateRequest implements ModelInterface, ArrayAccess
+class ComponentSharingUpdateResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class WxPackagePackageUpdateRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'WxPackagePackageUpdateRequest';
+    protected static $swaggerModelName = 'ComponentSharingUpdateResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,10 +57,11 @@ class WxPackagePackageUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'packageId' => 'int',
-        'packageName' => 'string',
-        'wechatIds' => 'string'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\V3\ComponentSharingUpdateResponseData'
     ];
 
     /**
@@ -69,10 +70,11 @@ class WxPackagePackageUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'packageId' => 'int64',
-        'packageName' => null,
-        'wechatIds' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -102,10 +104,11 @@ class WxPackagePackageUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'packageId' => 'package_id',
-        'packageName' => 'package_name',
-        'wechatIds' => 'wechat_ids'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -114,10 +117,11 @@ class WxPackagePackageUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'packageId' => 'setPackageId',
-        'packageName' => 'setPackageName',
-        'wechatIds' => 'setWechatIds'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -126,10 +130,11 @@ class WxPackagePackageUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'packageId' => 'getPackageId',
-        'packageName' => 'getPackageName',
-        'wechatIds' => 'getWechatIds'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -192,10 +197,11 @@ class WxPackagePackageUpdateRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['packageId'] = isset($data['packageId']) ? $data['packageId'] : null;
-        $this->container['packageName'] = isset($data['packageName']) ? $data['packageName'] : null;
-        $this->container['wechatIds'] = isset($data['wechatIds']) ? $data['wechatIds'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -223,97 +229,121 @@ class WxPackagePackageUpdateRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getAccountId()
+    public function getCode()
     {
-        return $this->container['accountId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets accountId
+     * Sets code
      *
-     * @param int|mixed $accountId accountId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setCode($code)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets packageId
-     *
-     * @return int|mixed
-     */
-    public function getPackageId()
-    {
-        return $this->container['packageId'];
-    }
-
-    /**
-     * Sets packageId
-     *
-     * @param int|mixed $packageId packageId
-     *
-     * @return $this
-     */
-    public function setPackageId($packageId)
-    {
-        $this->container['packageId'] = $packageId;
-
-        return $this;
-    }
-
-    /**
-     * Gets packageName
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getPackageName()
+    public function getMessage()
     {
-        return $this->container['packageName'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets packageName
+     * Sets message
      *
-     * @param string|mixed $packageName packageName
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setPackageName($packageName)
+    public function setMessage($message)
     {
-        $this->container['packageName'] = $packageName;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets wechatIds
+     * Gets messageCn
      *
      * @return string|mixed
      */
-    public function getWechatIds()
+    public function getMessageCn()
     {
-        return $this->container['wechatIds'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets wechatIds
+     * Sets messageCn
      *
-     * @param string|mixed $wechatIds wechatIds
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setWechatIds($wechatIds)
+    public function setMessageCn($messageCn)
     {
-        $this->container['wechatIds'] = $wechatIds;
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\V3\ComponentSharingUpdateResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\V3\ComponentSharingUpdateResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * WechatPackageType
+ * Operator
  *
  * PHP version 5
  *
@@ -31,21 +31,25 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WechatPackageType Class Doc Comment
+ * Operator Class Doc Comment
  *
  * @category Class
- * @description 号码包类型
+ * @description 运算符
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WechatPackageType
+class Operator
 {
     /**
      * Possible values of this enum
      */
-    const ACCOUNT = 'ACCOUNT';
-    const QRCODE = 'QRCODE';
+    const LT = 'LT';
+    const GT = 'GT';
+    const EQ = 'EQ';
+    const NE = 'NE';
+    const CONTAIN = 'CONTAIN';
+    const NOT_CONTAIN = 'NOT_CONTAIN';
     
     /**
      * Gets allowable values of the enum
@@ -54,8 +58,12 @@ class WechatPackageType
     public static function getAllowableEnumValues()
     {
         return [
-            self::ACCOUNT,
-            self::QRCODE,
+            self::LT,
+            self::GT,
+            self::EQ,
+            self::NE,
+            self::CONTAIN,
+            self::NOT_CONTAIN,
         ];
     }
 }

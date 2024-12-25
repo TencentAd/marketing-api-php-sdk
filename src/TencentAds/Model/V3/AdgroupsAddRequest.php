@@ -71,6 +71,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'timeSeries' => 'string',
         'automaticSiteEnabled' => 'bool',
         'siteSet' => 'string[]',
+        'explorationStrategy' => '\TencentAds\Model\V3\SiteSetExplorationStrategy',
+        'prioritySiteSet' => 'string[]',
         'dailyBudget' => 'int',
         'targeting' => '\TencentAds\Model\V3\WriteTargetingSetting',
         'sceneSpec' => '\TencentAds\Model\V3\SceneTargetingForWrite',
@@ -96,8 +98,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'marketingAssetId' => 'int',
         'marketingAssetOuterSpec' => '\TencentAds\Model\V3\MarketingAssetOuterSpec',
         'poiList' => 'string[]',
-        'explorationStrategy' => '\TencentAds\Model\V3\SiteSetExplorationStrategy',
-        'prioritySiteSet' => 'string[]',
         'ecomPkamSwitch' => '\TencentAds\Model\V3\EcomPkamSwitch',
         'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal',
         'rtaId' => 'int',
@@ -137,6 +137,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'timeSeries' => null,
         'automaticSiteEnabled' => null,
         'siteSet' => null,
+        'explorationStrategy' => null,
+        'prioritySiteSet' => null,
         'dailyBudget' => 'int64',
         'targeting' => null,
         'sceneSpec' => null,
@@ -162,8 +164,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'marketingAssetId' => 'int64',
         'marketingAssetOuterSpec' => null,
         'poiList' => null,
-        'explorationStrategy' => null,
-        'prioritySiteSet' => null,
         'ecomPkamSwitch' => null,
         'forwardLinkAssist' => null,
         'rtaId' => 'int64',
@@ -224,6 +224,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'timeSeries' => 'time_series',
         'automaticSiteEnabled' => 'automatic_site_enabled',
         'siteSet' => 'site_set',
+        'explorationStrategy' => 'exploration_strategy',
+        'prioritySiteSet' => 'priority_site_set',
         'dailyBudget' => 'daily_budget',
         'targeting' => 'targeting',
         'sceneSpec' => 'scene_spec',
@@ -249,8 +251,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'marketingAssetId' => 'marketing_asset_id',
         'marketingAssetOuterSpec' => 'marketing_asset_outer_spec',
         'poiList' => 'poi_list',
-        'explorationStrategy' => 'exploration_strategy',
-        'prioritySiteSet' => 'priority_site_set',
         'ecomPkamSwitch' => 'ecom_pkam_switch',
         'forwardLinkAssist' => 'forward_link_assist',
         'rtaId' => 'rta_id',
@@ -290,6 +290,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'timeSeries' => 'setTimeSeries',
         'automaticSiteEnabled' => 'setAutomaticSiteEnabled',
         'siteSet' => 'setSiteSet',
+        'explorationStrategy' => 'setExplorationStrategy',
+        'prioritySiteSet' => 'setPrioritySiteSet',
         'dailyBudget' => 'setDailyBudget',
         'targeting' => 'setTargeting',
         'sceneSpec' => 'setSceneSpec',
@@ -315,8 +317,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'marketingAssetId' => 'setMarketingAssetId',
         'marketingAssetOuterSpec' => 'setMarketingAssetOuterSpec',
         'poiList' => 'setPoiList',
-        'explorationStrategy' => 'setExplorationStrategy',
-        'prioritySiteSet' => 'setPrioritySiteSet',
         'ecomPkamSwitch' => 'setEcomPkamSwitch',
         'forwardLinkAssist' => 'setForwardLinkAssist',
         'rtaId' => 'setRtaId',
@@ -356,6 +356,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'timeSeries' => 'getTimeSeries',
         'automaticSiteEnabled' => 'getAutomaticSiteEnabled',
         'siteSet' => 'getSiteSet',
+        'explorationStrategy' => 'getExplorationStrategy',
+        'prioritySiteSet' => 'getPrioritySiteSet',
         'dailyBudget' => 'getDailyBudget',
         'targeting' => 'getTargeting',
         'sceneSpec' => 'getSceneSpec',
@@ -381,8 +383,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'marketingAssetId' => 'getMarketingAssetId',
         'marketingAssetOuterSpec' => 'getMarketingAssetOuterSpec',
         'poiList' => 'getPoiList',
-        'explorationStrategy' => 'getExplorationStrategy',
-        'prioritySiteSet' => 'getPrioritySiteSet',
         'ecomPkamSwitch' => 'getEcomPkamSwitch',
         'forwardLinkAssist' => 'getForwardLinkAssist',
         'rtaId' => 'getRtaId',
@@ -476,6 +476,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['timeSeries'] = isset($data['timeSeries']) ? $data['timeSeries'] : null;
         $this->container['automaticSiteEnabled'] = isset($data['automaticSiteEnabled']) ? $data['automaticSiteEnabled'] : null;
         $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
+        $this->container['explorationStrategy'] = isset($data['explorationStrategy']) ? $data['explorationStrategy'] : null;
+        $this->container['prioritySiteSet'] = isset($data['prioritySiteSet']) ? $data['prioritySiteSet'] : null;
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
         $this->container['targeting'] = isset($data['targeting']) ? $data['targeting'] : null;
         $this->container['sceneSpec'] = isset($data['sceneSpec']) ? $data['sceneSpec'] : null;
@@ -501,8 +503,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['marketingAssetId'] = isset($data['marketingAssetId']) ? $data['marketingAssetId'] : null;
         $this->container['marketingAssetOuterSpec'] = isset($data['marketingAssetOuterSpec']) ? $data['marketingAssetOuterSpec'] : null;
         $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
-        $this->container['explorationStrategy'] = isset($data['explorationStrategy']) ? $data['explorationStrategy'] : null;
-        $this->container['prioritySiteSet'] = isset($data['prioritySiteSet']) ? $data['prioritySiteSet'] : null;
         $this->container['ecomPkamSwitch'] = isset($data['ecomPkamSwitch']) ? $data['ecomPkamSwitch'] : null;
         $this->container['forwardLinkAssist'] = isset($data['forwardLinkAssist']) ? $data['forwardLinkAssist'] : null;
         $this->container['rtaId'] = isset($data['rtaId']) ? $data['rtaId'] : null;
@@ -878,6 +878,54 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setSiteSet($siteSet)
     {
         $this->container['siteSet'] = $siteSet;
+
+        return $this;
+    }
+
+    /**
+     * Gets explorationStrategy
+     *
+     * @return \TencentAds\Model\V3\SiteSetExplorationStrategy|mixed
+     */
+    public function getExplorationStrategy()
+    {
+        return $this->container['explorationStrategy'];
+    }
+
+    /**
+     * Sets explorationStrategy
+     *
+     * @param \TencentAds\Model\V3\SiteSetExplorationStrategy|mixed $explorationStrategy explorationStrategy
+     *
+     * @return $this
+     */
+    public function setExplorationStrategy($explorationStrategy)
+    {
+        $this->container['explorationStrategy'] = $explorationStrategy;
+
+        return $this;
+    }
+
+    /**
+     * Gets prioritySiteSet
+     *
+     * @return string[]|mixed
+     */
+    public function getPrioritySiteSet()
+    {
+        return $this->container['prioritySiteSet'];
+    }
+
+    /**
+     * Sets prioritySiteSet
+     *
+     * @param string[]|mixed $prioritySiteSet prioritySiteSet
+     *
+     * @return $this
+     */
+    public function setPrioritySiteSet($prioritySiteSet)
+    {
+        $this->container['prioritySiteSet'] = $prioritySiteSet;
 
         return $this;
     }
@@ -1478,54 +1526,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setPoiList($poiList)
     {
         $this->container['poiList'] = $poiList;
-
-        return $this;
-    }
-
-    /**
-     * Gets explorationStrategy
-     *
-     * @return \TencentAds\Model\V3\SiteSetExplorationStrategy|mixed
-     */
-    public function getExplorationStrategy()
-    {
-        return $this->container['explorationStrategy'];
-    }
-
-    /**
-     * Sets explorationStrategy
-     *
-     * @param \TencentAds\Model\V3\SiteSetExplorationStrategy|mixed $explorationStrategy explorationStrategy
-     *
-     * @return $this
-     */
-    public function setExplorationStrategy($explorationStrategy)
-    {
-        $this->container['explorationStrategy'] = $explorationStrategy;
-
-        return $this;
-    }
-
-    /**
-     * Gets prioritySiteSet
-     *
-     * @return string[]|mixed
-     */
-    public function getPrioritySiteSet()
-    {
-        return $this->container['prioritySiteSet'];
-    }
-
-    /**
-     * Sets prioritySiteSet
-     *
-     * @param string[]|mixed $prioritySiteSet prioritySiteSet
-     *
-     * @return $this
-     */
-    public function setPrioritySiteSet($prioritySiteSet)
-    {
-        $this->container['prioritySiteSet'] = $prioritySiteSet;
 
         return $this;
     }

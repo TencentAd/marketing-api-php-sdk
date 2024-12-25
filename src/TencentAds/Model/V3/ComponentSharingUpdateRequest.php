@@ -1,6 +1,6 @@
 <?php
 /**
- * WxPackageAccountUpdateResponse
+ * ComponentSharingUpdateRequest
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WxPackageAccountUpdateResponse Class Doc Comment
+ * ComponentSharingUpdateRequest Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WxPackageAccountUpdateResponse implements ModelInterface, ArrayAccess
+class ComponentSharingUpdateRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class WxPackageAccountUpdateResponse implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'WxPackageAccountUpdateResponse';
+    protected static $swaggerModelName = 'ComponentSharingUpdateRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,10 +57,9 @@ class WxPackageAccountUpdateResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'code' => 'int',
-        'message' => 'string',
-        'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]'
+        'organizationId' => 'int',
+        'sharedAccountList' => '\TencentAds\Model\V3\SharedAccountStruct[]',
+        'componentId' => 'int'
     ];
 
     /**
@@ -69,10 +68,9 @@ class WxPackageAccountUpdateResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'code' => 'int64',
-        'message' => null,
-        'messageCn' => null,
-        'errors' => null
+        'organizationId' => 'int64',
+        'sharedAccountList' => null,
+        'componentId' => 'int64'
     ];
 
     /**
@@ -102,10 +100,9 @@ class WxPackageAccountUpdateResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
-        'messageCn' => 'message_cn',
-        'errors' => 'errors'
+        'organizationId' => 'organization_id',
+        'sharedAccountList' => 'shared_account_list',
+        'componentId' => 'component_id'
     ];
 
     /**
@@ -114,10 +111,9 @@ class WxPackageAccountUpdateResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors'
+        'organizationId' => 'setOrganizationId',
+        'sharedAccountList' => 'setSharedAccountList',
+        'componentId' => 'setComponentId'
     ];
 
     /**
@@ -126,10 +122,9 @@ class WxPackageAccountUpdateResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors'
+        'organizationId' => 'getOrganizationId',
+        'sharedAccountList' => 'getSharedAccountList',
+        'componentId' => 'getComponentId'
     ];
 
     /**
@@ -192,10 +187,9 @@ class WxPackageAccountUpdateResponse implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
-        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
+        $this->container['sharedAccountList'] = isset($data['sharedAccountList']) ? $data['sharedAccountList'] : null;
+        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
     }
 
     /**
@@ -223,97 +217,73 @@ class WxPackageAccountUpdateResponse implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets code
+     * Gets organizationId
      *
      * @return int|mixed
      */
-    public function getCode()
+    public function getOrganizationId()
     {
-        return $this->container['code'];
+        return $this->container['organizationId'];
     }
 
     /**
-     * Sets code
+     * Sets organizationId
      *
-     * @param int|mixed $code code
+     * @param int|mixed $organizationId organizationId
      *
      * @return $this
      */
-    public function setCode($code)
+    public function setOrganizationId($organizationId)
     {
-        $this->container['code'] = $code;
+        $this->container['organizationId'] = $organizationId;
 
         return $this;
     }
 
     /**
-     * Gets message
+     * Gets sharedAccountList
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\SharedAccountStruct[]|mixed
      */
-    public function getMessage()
+    public function getSharedAccountList()
     {
-        return $this->container['message'];
+        return $this->container['sharedAccountList'];
     }
 
     /**
-     * Sets message
+     * Sets sharedAccountList
      *
-     * @param string|mixed $message message
+     * @param \TencentAds\Model\V3\SharedAccountStruct[]|mixed $sharedAccountList sharedAccountList
      *
      * @return $this
      */
-    public function setMessage($message)
+    public function setSharedAccountList($sharedAccountList)
     {
-        $this->container['message'] = $message;
+        $this->container['sharedAccountList'] = $sharedAccountList;
 
         return $this;
     }
 
     /**
-     * Gets messageCn
+     * Gets componentId
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getMessageCn()
+    public function getComponentId()
     {
-        return $this->container['messageCn'];
+        return $this->container['componentId'];
     }
 
     /**
-     * Sets messageCn
+     * Sets componentId
      *
-     * @param string|mixed $messageCn messageCn
+     * @param int|mixed $componentId componentId
      *
      * @return $this
      */
-    public function setMessageCn($messageCn)
+    public function setComponentId($componentId)
     {
-        $this->container['messageCn'] = $messageCn;
-
-        return $this;
-    }
-
-    /**
-     * Gets errors
-     *
-     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
-     */
-    public function getErrors()
-    {
-        return $this->container['errors'];
-    }
-
-    /**
-     * Sets errors
-     *
-     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
-     *
-     * @return $this
-     */
-    public function setErrors($errors)
-    {
-        $this->container['errors'] = $errors;
+        $this->container['componentId'] = $componentId;
 
         return $this;
     }

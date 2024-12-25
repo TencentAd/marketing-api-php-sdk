@@ -1,6 +1,6 @@
 <?php
 /**
- * WxPackagePackageAddResponse
+ * ComponentMetadataValueValidJointUniqueLengthItem
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WxPackagePackageAddResponse Class Doc Comment
+ * ComponentMetadataValueValidJointUniqueLengthItem Class Doc Comment
  *
  * @category Class
+ * @description 组件list内容联合校验唯一值长度
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WxPackagePackageAddResponse implements ModelInterface, ArrayAccess
+class ComponentMetadataValueValidJointUniqueLengthItem implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class WxPackagePackageAddResponse implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'WxPackagePackageAddResponse';
+    protected static $swaggerModelName = 'component_metadata_value_valid_joint_unique_length_item';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,10 +58,8 @@ class WxPackagePackageAddResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'code' => 'int',
-        'message' => 'string',
-        'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]'
+        'names' => 'string[]',
+        'minLength' => 'int'
     ];
 
     /**
@@ -69,10 +68,8 @@ class WxPackagePackageAddResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'code' => 'int64',
-        'message' => null,
-        'messageCn' => null,
-        'errors' => null
+        'names' => null,
+        'minLength' => 'int64'
     ];
 
     /**
@@ -102,10 +99,8 @@ class WxPackagePackageAddResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
-        'messageCn' => 'message_cn',
-        'errors' => 'errors'
+        'names' => 'names',
+        'minLength' => 'min_length'
     ];
 
     /**
@@ -114,10 +109,8 @@ class WxPackagePackageAddResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors'
+        'names' => 'setNames',
+        'minLength' => 'setMinLength'
     ];
 
     /**
@@ -126,10 +119,8 @@ class WxPackagePackageAddResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors'
+        'names' => 'getNames',
+        'minLength' => 'getMinLength'
     ];
 
     /**
@@ -192,10 +183,8 @@ class WxPackagePackageAddResponse implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
-        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['names'] = isset($data['names']) ? $data['names'] : null;
+        $this->container['minLength'] = isset($data['minLength']) ? $data['minLength'] : null;
     }
 
     /**
@@ -223,97 +212,49 @@ class WxPackagePackageAddResponse implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets code
+     * Gets names
+     *
+     * @return string[]|mixed
+     */
+    public function getNames()
+    {
+        return $this->container['names'];
+    }
+
+    /**
+     * Sets names
+     *
+     * @param string[]|mixed $names names
+     *
+     * @return $this
+     */
+    public function setNames($names)
+    {
+        $this->container['names'] = $names;
+
+        return $this;
+    }
+
+    /**
+     * Gets minLength
      *
      * @return int|mixed
      */
-    public function getCode()
+    public function getMinLength()
     {
-        return $this->container['code'];
+        return $this->container['minLength'];
     }
 
     /**
-     * Sets code
+     * Sets minLength
      *
-     * @param int|mixed $code code
+     * @param int|mixed $minLength minLength
      *
      * @return $this
      */
-    public function setCode($code)
+    public function setMinLength($minLength)
     {
-        $this->container['code'] = $code;
-
-        return $this;
-    }
-
-    /**
-     * Gets message
-     *
-     * @return string|mixed
-     */
-    public function getMessage()
-    {
-        return $this->container['message'];
-    }
-
-    /**
-     * Sets message
-     *
-     * @param string|mixed $message message
-     *
-     * @return $this
-     */
-    public function setMessage($message)
-    {
-        $this->container['message'] = $message;
-
-        return $this;
-    }
-
-    /**
-     * Gets messageCn
-     *
-     * @return string|mixed
-     */
-    public function getMessageCn()
-    {
-        return $this->container['messageCn'];
-    }
-
-    /**
-     * Sets messageCn
-     *
-     * @param string|mixed $messageCn messageCn
-     *
-     * @return $this
-     */
-    public function setMessageCn($messageCn)
-    {
-        $this->container['messageCn'] = $messageCn;
-
-        return $this;
-    }
-
-    /**
-     * Gets errors
-     *
-     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
-     */
-    public function getErrors()
-    {
-        return $this->container['errors'];
-    }
-
-    /**
-     * Sets errors
-     *
-     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
-     *
-     * @return $this
-     */
-    public function setErrors($errors)
-    {
-        $this->container['errors'] = $errors;
+        $this->container['minLength'] = $minLength;
 
         return $this;
     }

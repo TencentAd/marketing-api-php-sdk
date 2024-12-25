@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * OsV2 Class Doc Comment
  *
  * @category Class
- * @description 蹊径落地页绑定的app 类型
+ * @description 操作系统
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

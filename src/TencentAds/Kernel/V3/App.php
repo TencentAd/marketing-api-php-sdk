@@ -189,8 +189,6 @@ use TencentAds\Container\V3\WechatStoreCatalogsApiContainer;
 use TencentAds\Container\V3\WechatStoreProductItemsApiContainer;
 use TencentAds\Container\V3\WildcardsApiContainer;
 use TencentAds\Container\V3\WxGamePlayablePageApiContainer;
-use TencentAds\Container\V3\WxPackageAccountApiContainer;
-use TencentAds\Container\V3\WxPackagePackageApiContainer;
 use TencentAds\Container\V3\XijingComplexTemplateApiContainer;
 use TencentAds\Container\V3\XijingPageApiContainer;
 use TencentAds\Container\V3\XijingPageByComponentsApiContainer;
@@ -764,12 +762,6 @@ class App
 
     /** @var WxGamePlayablePageApiContainer */
     public $wxGamePlayablePageApiContainer;
-
-    /** @var WxPackageAccountApiContainer */
-    public $wxPackageAccountApiContainer;
-
-    /** @var WxPackagePackageApiContainer */
-    public $wxPackagePackageApiContainer;
 
     /** @var XijingComplexTemplateApiContainer */
     public $xijingComplexTemplateApiContainer;
@@ -3420,34 +3412,6 @@ class App
             $this->wxGamePlayablePageApiContainer = $container;
         }
         return $this->wxGamePlayablePageApiContainer;
-    }
-
-
-    /**
-     * @return WxPackageAccountApiContainer
-     */
-    public function wxPackageAccount()
-    {
-        if (empty($this->wxPackageAccountApiContainer)) {
-            $container = new WxPackageAccountApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wxPackageAccountApiContainer = $container;
-        }
-        return $this->wxPackageAccountApiContainer;
-    }
-
-
-    /**
-     * @return WxPackagePackageApiContainer
-     */
-    public function wxPackagePackage()
-    {
-        if (empty($this->wxPackagePackageApiContainer)) {
-            $container = new WxPackagePackageApiContainer();
-            $container->init($this, $this->getClient());
-            $this->wxPackagePackageApiContainer = $container;
-        }
-        return $this->wxPackagePackageApiContainer;
     }
 
 

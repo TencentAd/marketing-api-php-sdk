@@ -808,8 +808,21 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkInterpageBtnPv' => 'int',
         'adMonetizationPlaRegActive1dMixRoi' => 'double',
         'adMonetizationPlaRegActive24hMixRoi' => 'double',
+        'realCostAppAutoDownload' => 'int',
+        'wechatAddFansAfterV30sDedupPv' => 'int',
+        'visitStorePv' => 'int',
+        'visitStoreDedupPvCost' => 'int',
+        'visitStorePvCost' => 'int',
+        'channelsLiveEleConvExpPlaPv' => 'int',
+        'channelsLiveEleConvClkPlaPv' => 'int',
+        'authorizePv' => 'int',
+        'retentionPlaPv' => 'int',
+        'purchaseFirstAllDedupTouch24hPv' => 'int',
+        'purchaseFirstAllDedupTouch24hAmount' => 'int',
+        'purchaseFirstAllDedupTouch24hUnitPrice' => 'int',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
+        'retentionD1UvRate' => 'double',
         'dynamicCreativeId' => 'int',
         'dynamicCreativeName' => 'string',
         'siteSet' => 'string',
@@ -1582,8 +1595,21 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkInterpageBtnPv' => 'int64',
         'adMonetizationPlaRegActive1dMixRoi' => 'double',
         'adMonetizationPlaRegActive24hMixRoi' => 'double',
+        'realCostAppAutoDownload' => 'int64',
+        'wechatAddFansAfterV30sDedupPv' => 'int64',
+        'visitStorePv' => 'int64',
+        'visitStoreDedupPvCost' => 'int64',
+        'visitStorePvCost' => 'int64',
+        'channelsLiveEleConvExpPlaPv' => 'int64',
+        'channelsLiveEleConvClkPlaPv' => 'int64',
+        'authorizePv' => 'int64',
+        'retentionPlaPv' => 'int64',
+        'purchaseFirstAllDedupTouch24hPv' => 'int64',
+        'purchaseFirstAllDedupTouch24hAmount' => 'int64',
+        'purchaseFirstAllDedupTouch24hUnitPrice' => 'int64',
         'adgroupId' => 'int64',
         'adgroupName' => null,
+        'retentionD1UvRate' => 'double',
         'dynamicCreativeId' => 'int64',
         'dynamicCreativeName' => null,
         'siteSet' => null,
@@ -2377,8 +2403,21 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkInterpageBtnPv' => 'clk_interpage_btn_pv',
         'adMonetizationPlaRegActive1dMixRoi' => 'ad_monetization_pla_reg_active_1d_mix_roi',
         'adMonetizationPlaRegActive24hMixRoi' => 'ad_monetization_pla_reg_active_24h_mix_roi',
+        'realCostAppAutoDownload' => 'real_cost_app_auto_download',
+        'wechatAddFansAfterV30sDedupPv' => 'wechat_add_fans_after_v30s_dedup_pv',
+        'visitStorePv' => 'visit_store_pv',
+        'visitStoreDedupPvCost' => 'visit_store_dedup_pv_cost',
+        'visitStorePvCost' => 'visit_store_pv_cost',
+        'channelsLiveEleConvExpPlaPv' => 'channels_live_ele_conv_exp_pla_pv',
+        'channelsLiveEleConvClkPlaPv' => 'channels_live_ele_conv_clk_pla_pv',
+        'authorizePv' => 'authorize_pv',
+        'retentionPlaPv' => 'retention_pla_pv',
+        'purchaseFirstAllDedupTouch24hPv' => 'purchase_first_all_dedup_touch_24h_pv',
+        'purchaseFirstAllDedupTouch24hAmount' => 'purchase_first_all_dedup_touch_24h_amount',
+        'purchaseFirstAllDedupTouch24hUnitPrice' => 'purchase_first_all_dedup_touch_24h_unit_price',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
+        'retentionD1UvRate' => 'retention_d1_uv_rate',
         'dynamicCreativeId' => 'dynamic_creative_id',
         'dynamicCreativeName' => 'dynamic_creative_name',
         'siteSet' => 'site_set',
@@ -3151,8 +3190,21 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkInterpageBtnPv' => 'setClkInterpageBtnPv',
         'adMonetizationPlaRegActive1dMixRoi' => 'setAdMonetizationPlaRegActive1dMixRoi',
         'adMonetizationPlaRegActive24hMixRoi' => 'setAdMonetizationPlaRegActive24hMixRoi',
+        'realCostAppAutoDownload' => 'setRealCostAppAutoDownload',
+        'wechatAddFansAfterV30sDedupPv' => 'setWechatAddFansAfterV30sDedupPv',
+        'visitStorePv' => 'setVisitStorePv',
+        'visitStoreDedupPvCost' => 'setVisitStoreDedupPvCost',
+        'visitStorePvCost' => 'setVisitStorePvCost',
+        'channelsLiveEleConvExpPlaPv' => 'setChannelsLiveEleConvExpPlaPv',
+        'channelsLiveEleConvClkPlaPv' => 'setChannelsLiveEleConvClkPlaPv',
+        'authorizePv' => 'setAuthorizePv',
+        'retentionPlaPv' => 'setRetentionPlaPv',
+        'purchaseFirstAllDedupTouch24hPv' => 'setPurchaseFirstAllDedupTouch24hPv',
+        'purchaseFirstAllDedupTouch24hAmount' => 'setPurchaseFirstAllDedupTouch24hAmount',
+        'purchaseFirstAllDedupTouch24hUnitPrice' => 'setPurchaseFirstAllDedupTouch24hUnitPrice',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
+        'retentionD1UvRate' => 'setRetentionD1UvRate',
         'dynamicCreativeId' => 'setDynamicCreativeId',
         'dynamicCreativeName' => 'setDynamicCreativeName',
         'siteSet' => 'setSiteSet',
@@ -3925,8 +3977,21 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkInterpageBtnPv' => 'getClkInterpageBtnPv',
         'adMonetizationPlaRegActive1dMixRoi' => 'getAdMonetizationPlaRegActive1dMixRoi',
         'adMonetizationPlaRegActive24hMixRoi' => 'getAdMonetizationPlaRegActive24hMixRoi',
+        'realCostAppAutoDownload' => 'getRealCostAppAutoDownload',
+        'wechatAddFansAfterV30sDedupPv' => 'getWechatAddFansAfterV30sDedupPv',
+        'visitStorePv' => 'getVisitStorePv',
+        'visitStoreDedupPvCost' => 'getVisitStoreDedupPvCost',
+        'visitStorePvCost' => 'getVisitStorePvCost',
+        'channelsLiveEleConvExpPlaPv' => 'getChannelsLiveEleConvExpPlaPv',
+        'channelsLiveEleConvClkPlaPv' => 'getChannelsLiveEleConvClkPlaPv',
+        'authorizePv' => 'getAuthorizePv',
+        'retentionPlaPv' => 'getRetentionPlaPv',
+        'purchaseFirstAllDedupTouch24hPv' => 'getPurchaseFirstAllDedupTouch24hPv',
+        'purchaseFirstAllDedupTouch24hAmount' => 'getPurchaseFirstAllDedupTouch24hAmount',
+        'purchaseFirstAllDedupTouch24hUnitPrice' => 'getPurchaseFirstAllDedupTouch24hUnitPrice',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
+        'retentionD1UvRate' => 'getRetentionD1UvRate',
         'dynamicCreativeId' => 'getDynamicCreativeId',
         'dynamicCreativeName' => 'getDynamicCreativeName',
         'siteSet' => 'getSiteSet',
@@ -4753,8 +4818,21 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['clkInterpageBtnPv'] = isset($data['clkInterpageBtnPv']) ? $data['clkInterpageBtnPv'] : null;
         $this->container['adMonetizationPlaRegActive1dMixRoi'] = isset($data['adMonetizationPlaRegActive1dMixRoi']) ? $data['adMonetizationPlaRegActive1dMixRoi'] : null;
         $this->container['adMonetizationPlaRegActive24hMixRoi'] = isset($data['adMonetizationPlaRegActive24hMixRoi']) ? $data['adMonetizationPlaRegActive24hMixRoi'] : null;
+        $this->container['realCostAppAutoDownload'] = isset($data['realCostAppAutoDownload']) ? $data['realCostAppAutoDownload'] : null;
+        $this->container['wechatAddFansAfterV30sDedupPv'] = isset($data['wechatAddFansAfterV30sDedupPv']) ? $data['wechatAddFansAfterV30sDedupPv'] : null;
+        $this->container['visitStorePv'] = isset($data['visitStorePv']) ? $data['visitStorePv'] : null;
+        $this->container['visitStoreDedupPvCost'] = isset($data['visitStoreDedupPvCost']) ? $data['visitStoreDedupPvCost'] : null;
+        $this->container['visitStorePvCost'] = isset($data['visitStorePvCost']) ? $data['visitStorePvCost'] : null;
+        $this->container['channelsLiveEleConvExpPlaPv'] = isset($data['channelsLiveEleConvExpPlaPv']) ? $data['channelsLiveEleConvExpPlaPv'] : null;
+        $this->container['channelsLiveEleConvClkPlaPv'] = isset($data['channelsLiveEleConvClkPlaPv']) ? $data['channelsLiveEleConvClkPlaPv'] : null;
+        $this->container['authorizePv'] = isset($data['authorizePv']) ? $data['authorizePv'] : null;
+        $this->container['retentionPlaPv'] = isset($data['retentionPlaPv']) ? $data['retentionPlaPv'] : null;
+        $this->container['purchaseFirstAllDedupTouch24hPv'] = isset($data['purchaseFirstAllDedupTouch24hPv']) ? $data['purchaseFirstAllDedupTouch24hPv'] : null;
+        $this->container['purchaseFirstAllDedupTouch24hAmount'] = isset($data['purchaseFirstAllDedupTouch24hAmount']) ? $data['purchaseFirstAllDedupTouch24hAmount'] : null;
+        $this->container['purchaseFirstAllDedupTouch24hUnitPrice'] = isset($data['purchaseFirstAllDedupTouch24hUnitPrice']) ? $data['purchaseFirstAllDedupTouch24hUnitPrice'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
+        $this->container['retentionD1UvRate'] = isset($data['retentionD1UvRate']) ? $data['retentionD1UvRate'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
         $this->container['dynamicCreativeName'] = isset($data['dynamicCreativeName']) ? $data['dynamicCreativeName'] : null;
         $this->container['siteSet'] = isset($data['siteSet']) ? $data['siteSet'] : null;
@@ -22796,6 +22874,294 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets realCostAppAutoDownload
+     *
+     * @return int|mixed
+     */
+    public function getRealCostAppAutoDownload()
+    {
+        return $this->container['realCostAppAutoDownload'];
+    }
+
+    /**
+     * Sets realCostAppAutoDownload
+     *
+     * @param int|mixed $realCostAppAutoDownload realCostAppAutoDownload
+     *
+     * @return $this
+     */
+    public function setRealCostAppAutoDownload($realCostAppAutoDownload)
+    {
+        $this->container['realCostAppAutoDownload'] = $realCostAppAutoDownload;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatAddFansAfterV30sDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getWechatAddFansAfterV30sDedupPv()
+    {
+        return $this->container['wechatAddFansAfterV30sDedupPv'];
+    }
+
+    /**
+     * Sets wechatAddFansAfterV30sDedupPv
+     *
+     * @param int|mixed $wechatAddFansAfterV30sDedupPv wechatAddFansAfterV30sDedupPv
+     *
+     * @return $this
+     */
+    public function setWechatAddFansAfterV30sDedupPv($wechatAddFansAfterV30sDedupPv)
+    {
+        $this->container['wechatAddFansAfterV30sDedupPv'] = $wechatAddFansAfterV30sDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets visitStorePv
+     *
+     * @return int|mixed
+     */
+    public function getVisitStorePv()
+    {
+        return $this->container['visitStorePv'];
+    }
+
+    /**
+     * Sets visitStorePv
+     *
+     * @param int|mixed $visitStorePv visitStorePv
+     *
+     * @return $this
+     */
+    public function setVisitStorePv($visitStorePv)
+    {
+        $this->container['visitStorePv'] = $visitStorePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets visitStoreDedupPvCost
+     *
+     * @return int|mixed
+     */
+    public function getVisitStoreDedupPvCost()
+    {
+        return $this->container['visitStoreDedupPvCost'];
+    }
+
+    /**
+     * Sets visitStoreDedupPvCost
+     *
+     * @param int|mixed $visitStoreDedupPvCost visitStoreDedupPvCost
+     *
+     * @return $this
+     */
+    public function setVisitStoreDedupPvCost($visitStoreDedupPvCost)
+    {
+        $this->container['visitStoreDedupPvCost'] = $visitStoreDedupPvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets visitStorePvCost
+     *
+     * @return int|mixed
+     */
+    public function getVisitStorePvCost()
+    {
+        return $this->container['visitStorePvCost'];
+    }
+
+    /**
+     * Sets visitStorePvCost
+     *
+     * @param int|mixed $visitStorePvCost visitStorePvCost
+     *
+     * @return $this
+     */
+    public function setVisitStorePvCost($visitStorePvCost)
+    {
+        $this->container['visitStorePvCost'] = $visitStorePvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsLiveEleConvExpPlaPv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsLiveEleConvExpPlaPv()
+    {
+        return $this->container['channelsLiveEleConvExpPlaPv'];
+    }
+
+    /**
+     * Sets channelsLiveEleConvExpPlaPv
+     *
+     * @param int|mixed $channelsLiveEleConvExpPlaPv channelsLiveEleConvExpPlaPv
+     *
+     * @return $this
+     */
+    public function setChannelsLiveEleConvExpPlaPv($channelsLiveEleConvExpPlaPv)
+    {
+        $this->container['channelsLiveEleConvExpPlaPv'] = $channelsLiveEleConvExpPlaPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsLiveEleConvClkPlaPv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsLiveEleConvClkPlaPv()
+    {
+        return $this->container['channelsLiveEleConvClkPlaPv'];
+    }
+
+    /**
+     * Sets channelsLiveEleConvClkPlaPv
+     *
+     * @param int|mixed $channelsLiveEleConvClkPlaPv channelsLiveEleConvClkPlaPv
+     *
+     * @return $this
+     */
+    public function setChannelsLiveEleConvClkPlaPv($channelsLiveEleConvClkPlaPv)
+    {
+        $this->container['channelsLiveEleConvClkPlaPv'] = $channelsLiveEleConvClkPlaPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizePv
+     *
+     * @return int|mixed
+     */
+    public function getAuthorizePv()
+    {
+        return $this->container['authorizePv'];
+    }
+
+    /**
+     * Sets authorizePv
+     *
+     * @param int|mixed $authorizePv authorizePv
+     *
+     * @return $this
+     */
+    public function setAuthorizePv($authorizePv)
+    {
+        $this->container['authorizePv'] = $authorizePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets retentionPlaPv
+     *
+     * @return int|mixed
+     */
+    public function getRetentionPlaPv()
+    {
+        return $this->container['retentionPlaPv'];
+    }
+
+    /**
+     * Sets retentionPlaPv
+     *
+     * @param int|mixed $retentionPlaPv retentionPlaPv
+     *
+     * @return $this
+     */
+    public function setRetentionPlaPv($retentionPlaPv)
+    {
+        $this->container['retentionPlaPv'] = $retentionPlaPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseFirstAllDedupTouch24hPv
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseFirstAllDedupTouch24hPv()
+    {
+        return $this->container['purchaseFirstAllDedupTouch24hPv'];
+    }
+
+    /**
+     * Sets purchaseFirstAllDedupTouch24hPv
+     *
+     * @param int|mixed $purchaseFirstAllDedupTouch24hPv purchaseFirstAllDedupTouch24hPv
+     *
+     * @return $this
+     */
+    public function setPurchaseFirstAllDedupTouch24hPv($purchaseFirstAllDedupTouch24hPv)
+    {
+        $this->container['purchaseFirstAllDedupTouch24hPv'] = $purchaseFirstAllDedupTouch24hPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseFirstAllDedupTouch24hAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseFirstAllDedupTouch24hAmount()
+    {
+        return $this->container['purchaseFirstAllDedupTouch24hAmount'];
+    }
+
+    /**
+     * Sets purchaseFirstAllDedupTouch24hAmount
+     *
+     * @param int|mixed $purchaseFirstAllDedupTouch24hAmount purchaseFirstAllDedupTouch24hAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseFirstAllDedupTouch24hAmount($purchaseFirstAllDedupTouch24hAmount)
+    {
+        $this->container['purchaseFirstAllDedupTouch24hAmount'] = $purchaseFirstAllDedupTouch24hAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseFirstAllDedupTouch24hUnitPrice
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseFirstAllDedupTouch24hUnitPrice()
+    {
+        return $this->container['purchaseFirstAllDedupTouch24hUnitPrice'];
+    }
+
+    /**
+     * Sets purchaseFirstAllDedupTouch24hUnitPrice
+     *
+     * @param int|mixed $purchaseFirstAllDedupTouch24hUnitPrice purchaseFirstAllDedupTouch24hUnitPrice
+     *
+     * @return $this
+     */
+    public function setPurchaseFirstAllDedupTouch24hUnitPrice($purchaseFirstAllDedupTouch24hUnitPrice)
+    {
+        $this->container['purchaseFirstAllDedupTouch24hUnitPrice'] = $purchaseFirstAllDedupTouch24hUnitPrice;
+
+        return $this;
+    }
+
+    /**
      * Gets adgroupId
      *
      * @return int|mixed
@@ -22839,6 +23205,30 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setAdgroupName($adgroupName)
     {
         $this->container['adgroupName'] = $adgroupName;
+
+        return $this;
+    }
+
+    /**
+     * Gets retentionD1UvRate
+     *
+     * @return double|mixed
+     */
+    public function getRetentionD1UvRate()
+    {
+        return $this->container['retentionD1UvRate'];
+    }
+
+    /**
+     * Sets retentionD1UvRate
+     *
+     * @param double|mixed $retentionD1UvRate retentionD1UvRate
+     *
+     * @return $this
+     */
+    public function setRetentionD1UvRate($retentionD1UvRate)
+    {
+        $this->container['retentionD1UvRate'] = $retentionD1UvRate;
 
         return $this;
     }

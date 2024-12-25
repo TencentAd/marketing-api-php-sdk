@@ -58,7 +58,8 @@ class ComponentMetadataValueValidJoint implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'totalLength' => '\TencentAds\Model\V3\ComponentMetadataValueValidJointTotalLengthItem[]'
+        'totalLength' => '\TencentAds\Model\V3\ComponentMetadataValueValidJointTotalLengthItem[]',
+        'uniqueLength' => '\TencentAds\Model\V3\ComponentMetadataValueValidJointUniqueLengthItem[]'
     ];
 
     /**
@@ -67,7 +68,8 @@ class ComponentMetadataValueValidJoint implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'totalLength' => null
+        'totalLength' => null,
+        'uniqueLength' => null
     ];
 
     /**
@@ -97,7 +99,8 @@ class ComponentMetadataValueValidJoint implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'totalLength' => 'total_length'
+        'totalLength' => 'total_length',
+        'uniqueLength' => 'unique_length'
     ];
 
     /**
@@ -106,7 +109,8 @@ class ComponentMetadataValueValidJoint implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'totalLength' => 'setTotalLength'
+        'totalLength' => 'setTotalLength',
+        'uniqueLength' => 'setUniqueLength'
     ];
 
     /**
@@ -115,7 +119,8 @@ class ComponentMetadataValueValidJoint implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'totalLength' => 'getTotalLength'
+        'totalLength' => 'getTotalLength',
+        'uniqueLength' => 'getUniqueLength'
     ];
 
     /**
@@ -179,6 +184,7 @@ class ComponentMetadataValueValidJoint implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['totalLength'] = isset($data['totalLength']) ? $data['totalLength'] : null;
+        $this->container['uniqueLength'] = isset($data['uniqueLength']) ? $data['uniqueLength'] : null;
     }
 
     /**
@@ -225,6 +231,30 @@ class ComponentMetadataValueValidJoint implements ModelInterface, ArrayAccess
     public function setTotalLength($totalLength)
     {
         $this->container['totalLength'] = $totalLength;
+
+        return $this;
+    }
+
+    /**
+     * Gets uniqueLength
+     *
+     * @return \TencentAds\Model\V3\ComponentMetadataValueValidJointUniqueLengthItem[]|mixed
+     */
+    public function getUniqueLength()
+    {
+        return $this->container['uniqueLength'];
+    }
+
+    /**
+     * Sets uniqueLength
+     *
+     * @param \TencentAds\Model\V3\ComponentMetadataValueValidJointUniqueLengthItem[]|mixed $uniqueLength uniqueLength
+     *
+     * @return $this
+     */
+    public function setUniqueLength($uniqueLength)
+    {
+        $this->container['uniqueLength'] = $uniqueLength;
 
         return $this;
     }

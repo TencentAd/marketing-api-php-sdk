@@ -1,6 +1,6 @@
 <?php
 /**
- * WxPackagePackageGetResponse
+ * ComponentSharingUpdateResponseData
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WxPackagePackageGetResponse Class Doc Comment
+ * ComponentSharingUpdateResponseData Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WxPackagePackageGetResponse implements ModelInterface, ArrayAccess
+class ComponentSharingUpdateResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class WxPackagePackageGetResponse implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'WxPackagePackageGetResponse';
+    protected static $swaggerModelName = 'ComponentSharingUpdateResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +57,7 @@ class WxPackagePackageGetResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'code' => 'int',
-        'message' => 'string',
-        'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
-        'data' => '\TencentAds\Model\V3\WxPackagePackageGetResponseData'
+        'componentId' => 'int'
     ];
 
     /**
@@ -70,11 +66,7 @@ class WxPackagePackageGetResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'code' => 'int64',
-        'message' => null,
-        'messageCn' => null,
-        'errors' => null,
-        'data' => null
+        'componentId' => 'int64'
     ];
 
     /**
@@ -104,11 +96,7 @@ class WxPackagePackageGetResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'code',
-        'message' => 'message',
-        'messageCn' => 'message_cn',
-        'errors' => 'errors',
-        'data' => 'data'
+        'componentId' => 'component_id'
     ];
 
     /**
@@ -117,11 +105,7 @@ class WxPackagePackageGetResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors',
-        'data' => 'setData'
+        'componentId' => 'setComponentId'
     ];
 
     /**
@@ -130,11 +114,7 @@ class WxPackagePackageGetResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors',
-        'data' => 'getData'
+        'componentId' => 'getComponentId'
     ];
 
     /**
@@ -197,11 +177,7 @@ class WxPackagePackageGetResponse implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
-        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
-        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
+        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
     }
 
     /**
@@ -229,121 +205,25 @@ class WxPackagePackageGetResponse implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets code
+     * Gets componentId
      *
      * @return int|mixed
      */
-    public function getCode()
+    public function getComponentId()
     {
-        return $this->container['code'];
+        return $this->container['componentId'];
     }
 
     /**
-     * Sets code
+     * Sets componentId
      *
-     * @param int|mixed $code code
+     * @param int|mixed $componentId componentId
      *
      * @return $this
      */
-    public function setCode($code)
+    public function setComponentId($componentId)
     {
-        $this->container['code'] = $code;
-
-        return $this;
-    }
-
-    /**
-     * Gets message
-     *
-     * @return string|mixed
-     */
-    public function getMessage()
-    {
-        return $this->container['message'];
-    }
-
-    /**
-     * Sets message
-     *
-     * @param string|mixed $message message
-     *
-     * @return $this
-     */
-    public function setMessage($message)
-    {
-        $this->container['message'] = $message;
-
-        return $this;
-    }
-
-    /**
-     * Gets messageCn
-     *
-     * @return string|mixed
-     */
-    public function getMessageCn()
-    {
-        return $this->container['messageCn'];
-    }
-
-    /**
-     * Sets messageCn
-     *
-     * @param string|mixed $messageCn messageCn
-     *
-     * @return $this
-     */
-    public function setMessageCn($messageCn)
-    {
-        $this->container['messageCn'] = $messageCn;
-
-        return $this;
-    }
-
-    /**
-     * Gets errors
-     *
-     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
-     */
-    public function getErrors()
-    {
-        return $this->container['errors'];
-    }
-
-    /**
-     * Sets errors
-     *
-     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
-     *
-     * @return $this
-     */
-    public function setErrors($errors)
-    {
-        $this->container['errors'] = $errors;
-
-        return $this;
-    }
-
-    /**
-     * Gets data
-     *
-     * @return \TencentAds\Model\V3\WxPackagePackageGetResponseData|mixed
-     */
-    public function getData()
-    {
-        return $this->container['data'];
-    }
-
-    /**
-     * Sets data
-     *
-     * @param \TencentAds\Model\V3\WxPackagePackageGetResponseData|mixed $data data
-     *
-     * @return $this
-     */
-    public function setData($data)
-    {
-        $this->container['data'] = $data;
+        $this->container['componentId'] = $componentId;
 
         return $this;
     }

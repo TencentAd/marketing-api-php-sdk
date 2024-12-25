@@ -1,6 +1,6 @@
 <?php
 /**
- * WxPackageAccountGetResponseData
+ * HourlyReportDateRange
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WxPackageAccountGetResponseData Class Doc Comment
+ * HourlyReportDateRange Class Doc Comment
  *
  * @category Class
+ * @description 日期范围
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WxPackageAccountGetResponseData implements ModelInterface, ArrayAccess
+class HourlyReportDateRange implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class WxPackageAccountGetResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'WxPackageAccountGetResponseData';
+    protected static $swaggerModelName = 'hourly_report_date_range';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,8 +58,8 @@ class WxPackageAccountGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageInfo' => '\TencentAds\Model\V3\PageInfo',
-        'list' => '\TencentAds\Model\V3\WechatInfoStruct[]'
+        'startDate' => 'string',
+        'endDate' => 'string'
     ];
 
     /**
@@ -67,8 +68,8 @@ class WxPackageAccountGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageInfo' => null,
-        'list' => null
+        'startDate' => null,
+        'endDate' => null
     ];
 
     /**
@@ -98,8 +99,8 @@ class WxPackageAccountGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageInfo' => 'page_info',
-        'list' => 'list'
+        'startDate' => 'start_date',
+        'endDate' => 'end_date'
     ];
 
     /**
@@ -108,8 +109,8 @@ class WxPackageAccountGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageInfo' => 'setPageInfo',
-        'list' => 'setList'
+        'startDate' => 'setStartDate',
+        'endDate' => 'setEndDate'
     ];
 
     /**
@@ -118,8 +119,8 @@ class WxPackageAccountGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageInfo' => 'getPageInfo',
-        'list' => 'getList'
+        'startDate' => 'getStartDate',
+        'endDate' => 'getEndDate'
     ];
 
     /**
@@ -182,8 +183,8 @@ class WxPackageAccountGetResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
-        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['startDate'] = isset($data['startDate']) ? $data['startDate'] : null;
+        $this->container['endDate'] = isset($data['endDate']) ? $data['endDate'] : null;
     }
 
     /**
@@ -211,49 +212,49 @@ class WxPackageAccountGetResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageInfo
+     * Gets startDate
      *
-     * @return \TencentAds\Model\V3\PageInfo|mixed
+     * @return string|mixed
      */
-    public function getPageInfo()
+    public function getStartDate()
     {
-        return $this->container['pageInfo'];
+        return $this->container['startDate'];
     }
 
     /**
-     * Sets pageInfo
+     * Sets startDate
      *
-     * @param \TencentAds\Model\V3\PageInfo|mixed $pageInfo pageInfo
+     * @param string|mixed $startDate startDate
      *
      * @return $this
      */
-    public function setPageInfo($pageInfo)
+    public function setStartDate($startDate)
     {
-        $this->container['pageInfo'] = $pageInfo;
+        $this->container['startDate'] = $startDate;
 
         return $this;
     }
 
     /**
-     * Gets list
+     * Gets endDate
      *
-     * @return \TencentAds\Model\V3\WechatInfoStruct[]|mixed
+     * @return string|mixed
      */
-    public function getList()
+    public function getEndDate()
     {
-        return $this->container['list'];
+        return $this->container['endDate'];
     }
 
     /**
-     * Sets list
+     * Sets endDate
      *
-     * @param \TencentAds\Model\V3\WechatInfoStruct[]|mixed $list list
+     * @param string|mixed $endDate endDate
      *
      * @return $this
      */
-    public function setList($list)
+    public function setEndDate($endDate)
     {
-        $this->container['list'] = $list;
+        $this->container['endDate'] = $endDate;
 
         return $this;
     }

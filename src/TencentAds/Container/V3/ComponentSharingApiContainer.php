@@ -103,4 +103,38 @@ class ComponentSharingApiContainer extends ApiContainer
             return $response;
         });
     }
+
+
+    /**
+     * Handle ComponentSharingApi componentSharingUpdate function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function update(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->componentSharingUpdate($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle ComponentSharingApi componentSharingUpdateAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateAsync(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->componentSharingUpdateAsync($data);
+            return $response;
+        });
+    }
 }

@@ -61,7 +61,11 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSwitch' => 'bool',
         'wxgamePlayablePagePath' => 'string',
         'wxgamePlayablePageEndCoverImg' => 'string',
-        'wxgamePlayablePageEndDesc' => 'string'
+        'wxgamePlayablePageEndDesc' => 'string',
+        'wxgamePlayablePageTriggerTypes' => 'string[]',
+        'wxgamePlayablePageTriggerText' => 'string',
+        'wxgamePlayablePageCardLinkImage' => 'string',
+        'wxgamePlayablePageCardLinkDescription' => 'string'
     ];
 
     /**
@@ -73,7 +77,11 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSwitch' => null,
         'wxgamePlayablePagePath' => null,
         'wxgamePlayablePageEndCoverImg' => null,
-        'wxgamePlayablePageEndDesc' => null
+        'wxgamePlayablePageEndDesc' => null,
+        'wxgamePlayablePageTriggerTypes' => null,
+        'wxgamePlayablePageTriggerText' => null,
+        'wxgamePlayablePageCardLinkImage' => null,
+        'wxgamePlayablePageCardLinkDescription' => null
     ];
 
     /**
@@ -106,7 +114,11 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSwitch' => 'wxgame_playable_page_switch',
         'wxgamePlayablePagePath' => 'wxgame_playable_page_path',
         'wxgamePlayablePageEndCoverImg' => 'wxgame_playable_page_end_cover_img',
-        'wxgamePlayablePageEndDesc' => 'wxgame_playable_page_end_desc'
+        'wxgamePlayablePageEndDesc' => 'wxgame_playable_page_end_desc',
+        'wxgamePlayablePageTriggerTypes' => 'wxgame_playable_page_trigger_types',
+        'wxgamePlayablePageTriggerText' => 'wxgame_playable_page_trigger_text',
+        'wxgamePlayablePageCardLinkImage' => 'wxgame_playable_page_card_link_image',
+        'wxgamePlayablePageCardLinkDescription' => 'wxgame_playable_page_card_link_description'
     ];
 
     /**
@@ -118,7 +130,11 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSwitch' => 'setWxgamePlayablePageSwitch',
         'wxgamePlayablePagePath' => 'setWxgamePlayablePagePath',
         'wxgamePlayablePageEndCoverImg' => 'setWxgamePlayablePageEndCoverImg',
-        'wxgamePlayablePageEndDesc' => 'setWxgamePlayablePageEndDesc'
+        'wxgamePlayablePageEndDesc' => 'setWxgamePlayablePageEndDesc',
+        'wxgamePlayablePageTriggerTypes' => 'setWxgamePlayablePageTriggerTypes',
+        'wxgamePlayablePageTriggerText' => 'setWxgamePlayablePageTriggerText',
+        'wxgamePlayablePageCardLinkImage' => 'setWxgamePlayablePageCardLinkImage',
+        'wxgamePlayablePageCardLinkDescription' => 'setWxgamePlayablePageCardLinkDescription'
     ];
 
     /**
@@ -130,7 +146,11 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageSwitch' => 'getWxgamePlayablePageSwitch',
         'wxgamePlayablePagePath' => 'getWxgamePlayablePagePath',
         'wxgamePlayablePageEndCoverImg' => 'getWxgamePlayablePageEndCoverImg',
-        'wxgamePlayablePageEndDesc' => 'getWxgamePlayablePageEndDesc'
+        'wxgamePlayablePageEndDesc' => 'getWxgamePlayablePageEndDesc',
+        'wxgamePlayablePageTriggerTypes' => 'getWxgamePlayablePageTriggerTypes',
+        'wxgamePlayablePageTriggerText' => 'getWxgamePlayablePageTriggerText',
+        'wxgamePlayablePageCardLinkImage' => 'getWxgamePlayablePageCardLinkImage',
+        'wxgamePlayablePageCardLinkDescription' => 'getWxgamePlayablePageCardLinkDescription'
     ];
 
     /**
@@ -197,6 +217,10 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         $this->container['wxgamePlayablePagePath'] = isset($data['wxgamePlayablePagePath']) ? $data['wxgamePlayablePagePath'] : null;
         $this->container['wxgamePlayablePageEndCoverImg'] = isset($data['wxgamePlayablePageEndCoverImg']) ? $data['wxgamePlayablePageEndCoverImg'] : null;
         $this->container['wxgamePlayablePageEndDesc'] = isset($data['wxgamePlayablePageEndDesc']) ? $data['wxgamePlayablePageEndDesc'] : null;
+        $this->container['wxgamePlayablePageTriggerTypes'] = isset($data['wxgamePlayablePageTriggerTypes']) ? $data['wxgamePlayablePageTriggerTypes'] : null;
+        $this->container['wxgamePlayablePageTriggerText'] = isset($data['wxgamePlayablePageTriggerText']) ? $data['wxgamePlayablePageTriggerText'] : null;
+        $this->container['wxgamePlayablePageCardLinkImage'] = isset($data['wxgamePlayablePageCardLinkImage']) ? $data['wxgamePlayablePageCardLinkImage'] : null;
+        $this->container['wxgamePlayablePageCardLinkDescription'] = isset($data['wxgamePlayablePageCardLinkDescription']) ? $data['wxgamePlayablePageCardLinkDescription'] : null;
     }
 
     /**
@@ -315,6 +339,102 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
     public function setWxgamePlayablePageEndDesc($wxgamePlayablePageEndDesc)
     {
         $this->container['wxgamePlayablePageEndDesc'] = $wxgamePlayablePageEndDesc;
+
+        return $this;
+    }
+
+    /**
+     * Gets wxgamePlayablePageTriggerTypes
+     *
+     * @return string[]|mixed
+     */
+    public function getWxgamePlayablePageTriggerTypes()
+    {
+        return $this->container['wxgamePlayablePageTriggerTypes'];
+    }
+
+    /**
+     * Sets wxgamePlayablePageTriggerTypes
+     *
+     * @param string[]|mixed $wxgamePlayablePageTriggerTypes wxgamePlayablePageTriggerTypes
+     *
+     * @return $this
+     */
+    public function setWxgamePlayablePageTriggerTypes($wxgamePlayablePageTriggerTypes)
+    {
+        $this->container['wxgamePlayablePageTriggerTypes'] = $wxgamePlayablePageTriggerTypes;
+
+        return $this;
+    }
+
+    /**
+     * Gets wxgamePlayablePageTriggerText
+     *
+     * @return string|mixed
+     */
+    public function getWxgamePlayablePageTriggerText()
+    {
+        return $this->container['wxgamePlayablePageTriggerText'];
+    }
+
+    /**
+     * Sets wxgamePlayablePageTriggerText
+     *
+     * @param string|mixed $wxgamePlayablePageTriggerText wxgamePlayablePageTriggerText
+     *
+     * @return $this
+     */
+    public function setWxgamePlayablePageTriggerText($wxgamePlayablePageTriggerText)
+    {
+        $this->container['wxgamePlayablePageTriggerText'] = $wxgamePlayablePageTriggerText;
+
+        return $this;
+    }
+
+    /**
+     * Gets wxgamePlayablePageCardLinkImage
+     *
+     * @return string|mixed
+     */
+    public function getWxgamePlayablePageCardLinkImage()
+    {
+        return $this->container['wxgamePlayablePageCardLinkImage'];
+    }
+
+    /**
+     * Sets wxgamePlayablePageCardLinkImage
+     *
+     * @param string|mixed $wxgamePlayablePageCardLinkImage wxgamePlayablePageCardLinkImage
+     *
+     * @return $this
+     */
+    public function setWxgamePlayablePageCardLinkImage($wxgamePlayablePageCardLinkImage)
+    {
+        $this->container['wxgamePlayablePageCardLinkImage'] = $wxgamePlayablePageCardLinkImage;
+
+        return $this;
+    }
+
+    /**
+     * Gets wxgamePlayablePageCardLinkDescription
+     *
+     * @return string|mixed
+     */
+    public function getWxgamePlayablePageCardLinkDescription()
+    {
+        return $this->container['wxgamePlayablePageCardLinkDescription'];
+    }
+
+    /**
+     * Sets wxgamePlayablePageCardLinkDescription
+     *
+     * @param string|mixed $wxgamePlayablePageCardLinkDescription wxgamePlayablePageCardLinkDescription
+     *
+     * @return $this
+     */
+    public function setWxgamePlayablePageCardLinkDescription($wxgamePlayablePageCardLinkDescription)
+    {
+        $this->container['wxgamePlayablePageCardLinkDescription'] = $wxgamePlayablePageCardLinkDescription;
 
         return $this;
     }

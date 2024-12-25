@@ -94,7 +94,7 @@ class HourlyReportsApi
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $level level (required)
-     * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange dateRange (required)
+     * @param  \TencentAds\Model\V3\HourlyReportDateRange|mixed $dateRange dateRange (required)
      * @param  string[]|mixed $groupBy groupBy (required)
      * @param  string[]|mixed $fields fields (required)
      * @param  \TencentAds\Model\V3\IntegratedListApiFilteringStruct[]|mixed $filtering filtering (optional)
@@ -120,7 +120,7 @@ class HourlyReportsApi
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $level (required)
-     * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\V3\HourlyReportDateRange|mixed $dateRange (required)
      * @param  string[]|mixed $groupBy (required)
      * @param  string[]|mixed $fields (required)
      * @param  \TencentAds\Model\V3\IntegratedListApiFilteringStruct[]|mixed $filtering (optional)
@@ -204,7 +204,7 @@ class HourlyReportsApi
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $level (required)
-     * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\V3\HourlyReportDateRange|mixed $dateRange (required)
      * @param  string[]|mixed $groupBy (required)
      * @param  string[]|mixed $fields (required)
      * @param  \TencentAds\Model\V3\IntegratedListApiFilteringStruct[]|mixed $filtering (optional)
@@ -233,7 +233,7 @@ class HourlyReportsApi
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $level (required)
-     * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\V3\HourlyReportDateRange|mixed $dateRange (required)
      * @param  string[]|mixed $groupBy (required)
      * @param  string[]|mixed $fields (required)
      * @param  \TencentAds\Model\V3\IntegratedListApiFilteringStruct[]|mixed $filtering (optional)
@@ -292,7 +292,7 @@ class HourlyReportsApi
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $level (required)
-     * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange (required)
+     * @param  \TencentAds\Model\V3\HourlyReportDateRange|mixed $dateRange (required)
      * @param  string[]|mixed $groupBy (required)
      * @param  string[]|mixed $fields (required)
      * @param  \TencentAds\Model\V3\IntegratedListApiFilteringStruct[]|mixed $filtering (optional)
