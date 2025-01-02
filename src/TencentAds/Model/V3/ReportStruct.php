@@ -817,6 +817,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'channelsLiveEleConvClkPlaPv' => 'int',
         'authorizePv' => 'int',
         'retentionPlaPv' => 'int',
+        'retentionD1UvRate' => 'double',
         'purchaseFirstAllDedupTouch24hPv' => 'int',
         'purchaseFirstAllDedupTouch24hAmount' => 'int',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'int',
@@ -1648,6 +1649,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'channelsLiveEleConvClkPlaPv' => 'int64',
         'authorizePv' => 'int64',
         'retentionPlaPv' => 'int64',
+        'retentionD1UvRate' => 'double',
         'purchaseFirstAllDedupTouch24hPv' => 'int64',
         'purchaseFirstAllDedupTouch24hAmount' => 'int64',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'int64',
@@ -2500,6 +2502,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'channelsLiveEleConvClkPlaPv' => 'channels_live_ele_conv_clk_pla_pv',
         'authorizePv' => 'authorize_pv',
         'retentionPlaPv' => 'retention_pla_pv',
+        'retentionD1UvRate' => 'retention_d1_uv_rate',
         'purchaseFirstAllDedupTouch24hPv' => 'purchase_first_all_dedup_touch_24h_pv',
         'purchaseFirstAllDedupTouch24hAmount' => 'purchase_first_all_dedup_touch_24h_amount',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'purchase_first_all_dedup_touch_24h_unit_price',
@@ -3331,6 +3334,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'channelsLiveEleConvClkPlaPv' => 'setChannelsLiveEleConvClkPlaPv',
         'authorizePv' => 'setAuthorizePv',
         'retentionPlaPv' => 'setRetentionPlaPv',
+        'retentionD1UvRate' => 'setRetentionD1UvRate',
         'purchaseFirstAllDedupTouch24hPv' => 'setPurchaseFirstAllDedupTouch24hPv',
         'purchaseFirstAllDedupTouch24hAmount' => 'setPurchaseFirstAllDedupTouch24hAmount',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'setPurchaseFirstAllDedupTouch24hUnitPrice',
@@ -4162,6 +4166,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'channelsLiveEleConvClkPlaPv' => 'getChannelsLiveEleConvClkPlaPv',
         'authorizePv' => 'getAuthorizePv',
         'retentionPlaPv' => 'getRetentionPlaPv',
+        'retentionD1UvRate' => 'getRetentionD1UvRate',
         'purchaseFirstAllDedupTouch24hPv' => 'getPurchaseFirstAllDedupTouch24hPv',
         'purchaseFirstAllDedupTouch24hAmount' => 'getPurchaseFirstAllDedupTouch24hAmount',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'getPurchaseFirstAllDedupTouch24hUnitPrice',
@@ -5047,6 +5052,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         $this->container['channelsLiveEleConvClkPlaPv'] = isset($data['channelsLiveEleConvClkPlaPv']) ? $data['channelsLiveEleConvClkPlaPv'] : null;
         $this->container['authorizePv'] = isset($data['authorizePv']) ? $data['authorizePv'] : null;
         $this->container['retentionPlaPv'] = isset($data['retentionPlaPv']) ? $data['retentionPlaPv'] : null;
+        $this->container['retentionD1UvRate'] = isset($data['retentionD1UvRate']) ? $data['retentionD1UvRate'] : null;
         $this->container['purchaseFirstAllDedupTouch24hPv'] = isset($data['purchaseFirstAllDedupTouch24hPv']) ? $data['purchaseFirstAllDedupTouch24hPv'] : null;
         $this->container['purchaseFirstAllDedupTouch24hAmount'] = isset($data['purchaseFirstAllDedupTouch24hAmount']) ? $data['purchaseFirstAllDedupTouch24hAmount'] : null;
         $this->container['purchaseFirstAllDedupTouch24hUnitPrice'] = isset($data['purchaseFirstAllDedupTouch24hUnitPrice']) ? $data['purchaseFirstAllDedupTouch24hUnitPrice'] : null;
@@ -23349,6 +23355,30 @@ class ReportStruct implements ModelInterface, ArrayAccess
     public function setRetentionPlaPv($retentionPlaPv)
     {
         $this->container['retentionPlaPv'] = $retentionPlaPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets retentionD1UvRate
+     *
+     * @return double|mixed
+     */
+    public function getRetentionD1UvRate()
+    {
+        return $this->container['retentionD1UvRate'];
+    }
+
+    /**
+     * Sets retentionD1UvRate
+     *
+     * @param double|mixed $retentionD1UvRate retentionD1UvRate
+     *
+     * @return $this
+     */
+    public function setRetentionD1UvRate($retentionD1UvRate)
+    {
+        $this->container['retentionD1UvRate'] = $retentionD1UvRate;
 
         return $this;
     }

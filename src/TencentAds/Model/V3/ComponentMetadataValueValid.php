@@ -76,7 +76,10 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'minHeight' => 'int',
         'minWidth' => 'int',
         'joint' => '\TencentAds\Model\V3\ComponentMetadataValueValidJoint',
-        'defaultBoolValue' => 'bool'
+        'defaultBoolValue' => 'bool',
+        'enumOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidEnumOption[]',
+        'minOccurs' => 'int',
+        'maxOccurs' => 'int'
     ];
 
     /**
@@ -103,7 +106,10 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'minHeight' => 'int64',
         'minWidth' => 'int64',
         'joint' => null,
-        'defaultBoolValue' => null
+        'defaultBoolValue' => null,
+        'enumOptions' => null,
+        'minOccurs' => 'int64',
+        'maxOccurs' => 'int64'
     ];
 
     /**
@@ -151,7 +157,10 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'minHeight' => 'min_height',
         'minWidth' => 'min_width',
         'joint' => 'joint',
-        'defaultBoolValue' => 'default_bool_value'
+        'defaultBoolValue' => 'default_bool_value',
+        'enumOptions' => 'enum_options',
+        'minOccurs' => 'min_occurs',
+        'maxOccurs' => 'max_occurs'
     ];
 
     /**
@@ -178,7 +187,10 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'minHeight' => 'setMinHeight',
         'minWidth' => 'setMinWidth',
         'joint' => 'setJoint',
-        'defaultBoolValue' => 'setDefaultBoolValue'
+        'defaultBoolValue' => 'setDefaultBoolValue',
+        'enumOptions' => 'setEnumOptions',
+        'minOccurs' => 'setMinOccurs',
+        'maxOccurs' => 'setMaxOccurs'
     ];
 
     /**
@@ -205,7 +217,10 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'minHeight' => 'getMinHeight',
         'minWidth' => 'getMinWidth',
         'joint' => 'getJoint',
-        'defaultBoolValue' => 'getDefaultBoolValue'
+        'defaultBoolValue' => 'getDefaultBoolValue',
+        'enumOptions' => 'getEnumOptions',
+        'minOccurs' => 'getMinOccurs',
+        'maxOccurs' => 'getMaxOccurs'
     ];
 
     /**
@@ -287,6 +302,9 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         $this->container['minWidth'] = isset($data['minWidth']) ? $data['minWidth'] : null;
         $this->container['joint'] = isset($data['joint']) ? $data['joint'] : null;
         $this->container['defaultBoolValue'] = isset($data['defaultBoolValue']) ? $data['defaultBoolValue'] : null;
+        $this->container['enumOptions'] = isset($data['enumOptions']) ? $data['enumOptions'] : null;
+        $this->container['minOccurs'] = isset($data['minOccurs']) ? $data['minOccurs'] : null;
+        $this->container['maxOccurs'] = isset($data['maxOccurs']) ? $data['maxOccurs'] : null;
     }
 
     /**
@@ -765,6 +783,78 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
     public function setDefaultBoolValue($defaultBoolValue)
     {
         $this->container['defaultBoolValue'] = $defaultBoolValue;
+
+        return $this;
+    }
+
+    /**
+     * Gets enumOptions
+     *
+     * @return \TencentAds\Model\V3\ComponentMetadataValueValidEnumOption[]|mixed
+     */
+    public function getEnumOptions()
+    {
+        return $this->container['enumOptions'];
+    }
+
+    /**
+     * Sets enumOptions
+     *
+     * @param \TencentAds\Model\V3\ComponentMetadataValueValidEnumOption[]|mixed $enumOptions enumOptions
+     *
+     * @return $this
+     */
+    public function setEnumOptions($enumOptions)
+    {
+        $this->container['enumOptions'] = $enumOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets minOccurs
+     *
+     * @return int|mixed
+     */
+    public function getMinOccurs()
+    {
+        return $this->container['minOccurs'];
+    }
+
+    /**
+     * Sets minOccurs
+     *
+     * @param int|mixed $minOccurs minOccurs
+     *
+     * @return $this
+     */
+    public function setMinOccurs($minOccurs)
+    {
+        $this->container['minOccurs'] = $minOccurs;
+
+        return $this;
+    }
+
+    /**
+     * Gets maxOccurs
+     *
+     * @return int|mixed
+     */
+    public function getMaxOccurs()
+    {
+        return $this->container['maxOccurs'];
+    }
+
+    /**
+     * Sets maxOccurs
+     *
+     * @param int|mixed $maxOccurs maxOccurs
+     *
+     * @return $this
+     */
+    public function setMaxOccurs($maxOccurs)
+    {
+        $this->container['maxOccurs'] = $maxOccurs;
 
         return $this;
     }

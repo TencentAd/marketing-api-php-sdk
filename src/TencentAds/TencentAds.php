@@ -33,7 +33,7 @@ class TencentAds extends Tools
      * SDK version
      * @var string
      */
-    protected $version = '1.1.78';
+    protected $version = '1.1.79';
 
     /**
      * SDK version

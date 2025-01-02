@@ -48,7 +48,10 @@ class ComponentMetadataFieldType
     const STRING = 'STRING';
     const INT = 'INT';
     const BOOL = 'BOOL';
+    const STRING_ARRAY = 'STRING_ARRAY';
+    const INT_ARRAY = 'INT_ARRAY';
     const STRUCTURE = 'STRUCTURE';
+    const STRUCTURE_ARRAY = 'STRUCTURE_ARRAY';
     
     /**
      * Gets allowable values of the enum
@@ -61,7 +64,10 @@ class ComponentMetadataFieldType
             self::STRING,
             self::INT,
             self::BOOL,
+            self::STRING_ARRAY,
+            self::INT_ARRAY,
             self::STRUCTURE,
+            self::STRUCTURE_ARRAY,
         ];
     }
 }
