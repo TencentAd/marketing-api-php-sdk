@@ -382,18 +382,23 @@ class MaterialDcatagApi
      *
      * 素材DCA标签绑定查询
      *
-     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $accountId accountId (optional)
      * @param  int[]|mixed $imageIdList imageIdList (optional)
      * @param  int[]|mixed $mediaIdList mediaIdList (optional)
+     * @param  int|mixed $marketingAssetId marketingAssetId (optional)
+     * @param  string|mixed $marketingTargetType marketingTargetType (optional)
+     * @param  \TencentAds\Model\V3\MarketingAssetOuterSpecV1|mixed $marketingAssetOuterSpec marketingAssetOuterSpec (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\MaterialDcatagGetResponse|mixed
      */
-    public function materialDcatagGet($accountId, $imageIdList = null, $mediaIdList = null, $fields = null)
+    public function materialDcatagGet($accountId = null, $imageIdList = null, $mediaIdList = null, $marketingAssetId = null, $marketingTargetType = null, $marketingAssetOuterSpec = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->materialDcatagGetWithHttpInfo($accountId, $imageIdList, $mediaIdList, $fields);
+        list($response) = $this->materialDcatagGetWithHttpInfo($accountId, $imageIdList, $mediaIdList, $marketingAssetId, $marketingTargetType, $marketingAssetOuterSpec, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -402,19 +407,24 @@ class MaterialDcatagApi
      *
      * 素材DCA标签绑定查询
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
      * @param  int[]|mixed $imageIdList (optional)
      * @param  int[]|mixed $mediaIdList (optional)
+     * @param  int|mixed $marketingAssetId (optional)
+     * @param  string|mixed $marketingTargetType (optional)
+     * @param  \TencentAds\Model\V3\MarketingAssetOuterSpecV1|mixed $marketingAssetOuterSpec (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\MaterialDcatagGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function materialDcatagGetWithHttpInfo($accountId, $imageIdList = null, $mediaIdList = null, $fields = null)
+    public function materialDcatagGetWithHttpInfo($accountId = null, $imageIdList = null, $mediaIdList = null, $marketingAssetId = null, $marketingTargetType = null, $marketingAssetOuterSpec = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\MaterialDcatagGetResponse';
-        $request = $this->materialDcatagGetRequest($accountId, $imageIdList, $mediaIdList, $fields);
+        $request = $this->materialDcatagGetRequest($accountId, $imageIdList, $mediaIdList, $marketingAssetId, $marketingTargetType, $marketingAssetOuterSpec, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -480,17 +490,22 @@ class MaterialDcatagApi
      *
      * 素材DCA标签绑定查询
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
      * @param  int[]|mixed $imageIdList (optional)
      * @param  int[]|mixed $mediaIdList (optional)
+     * @param  int|mixed $marketingAssetId (optional)
+     * @param  string|mixed $marketingTargetType (optional)
+     * @param  \TencentAds\Model\V3\MarketingAssetOuterSpecV1|mixed $marketingAssetOuterSpec (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function materialDcatagGetAsync($accountId, $imageIdList = null, $mediaIdList = null, $fields = null)
+    public function materialDcatagGetAsync($accountId = null, $imageIdList = null, $mediaIdList = null, $marketingAssetId = null, $marketingTargetType = null, $marketingAssetOuterSpec = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->materialDcatagGetAsyncWithHttpInfo($accountId, $imageIdList, $mediaIdList, $fields)
+        return $this->materialDcatagGetAsyncWithHttpInfo($accountId, $imageIdList, $mediaIdList, $marketingAssetId, $marketingTargetType, $marketingAssetOuterSpec, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -503,18 +518,23 @@ class MaterialDcatagApi
      *
      * 素材DCA标签绑定查询
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
      * @param  int[]|mixed $imageIdList (optional)
      * @param  int[]|mixed $mediaIdList (optional)
+     * @param  int|mixed $marketingAssetId (optional)
+     * @param  string|mixed $marketingTargetType (optional)
+     * @param  \TencentAds\Model\V3\MarketingAssetOuterSpecV1|mixed $marketingAssetOuterSpec (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function materialDcatagGetAsyncWithHttpInfo($accountId, $imageIdList = null, $mediaIdList = null, $fields = null)
+    public function materialDcatagGetAsyncWithHttpInfo($accountId = null, $imageIdList = null, $mediaIdList = null, $marketingAssetId = null, $marketingTargetType = null, $marketingAssetOuterSpec = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\MaterialDcatagGetResponse';
-        $request = $this->materialDcatagGetRequest($accountId, $imageIdList, $mediaIdList, $fields);
+        $request = $this->materialDcatagGetRequest($accountId, $imageIdList, $mediaIdList, $marketingAssetId, $marketingTargetType, $marketingAssetOuterSpec, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -556,22 +576,21 @@ class MaterialDcatagApi
     /**
      * Create request for operation 'materialDcatagGet'
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
      * @param  int[]|mixed $imageIdList (optional)
      * @param  int[]|mixed $mediaIdList (optional)
+     * @param  int|mixed $marketingAssetId (optional)
+     * @param  string|mixed $marketingTargetType (optional)
+     * @param  \TencentAds\Model\V3\MarketingAssetOuterSpecV1|mixed $marketingAssetOuterSpec (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function materialDcatagGetRequest($accountId, $imageIdList = null, $mediaIdList = null, $fields = null)
+    protected function materialDcatagGetRequest($accountId = null, $imageIdList = null, $mediaIdList = null, $marketingAssetId = null, $marketingTargetType = null, $marketingAssetOuterSpec = null, $page = null, $pageSize = null, $fields = null)
     {
-        // verify the required parameter 'accountId' is set
-        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling materialDcatagGet'
-            );
-        }
 
         $resourcePath = '/material_dcatag/get';
         $formParams = [];
@@ -597,6 +616,26 @@ class MaterialDcatagApi
         } else
         if ($mediaIdList !== null) {
             $queryParams['media_id_list'] = ObjectSerializer::toQueryValue($mediaIdList);
+        }
+        // query params
+        if ($marketingAssetId !== null) {
+            $queryParams['marketing_asset_id'] = ObjectSerializer::toQueryValue($marketingAssetId);
+        }
+        // query params
+        if ($marketingTargetType !== null) {
+            $queryParams['marketing_target_type'] = ObjectSerializer::toQueryValue($marketingTargetType);
+        }
+        // query params
+        if ($marketingAssetOuterSpec !== null) {
+            $queryParams['marketing_asset_outer_spec'] = ObjectSerializer::toQueryValue($marketingAssetOuterSpec);
+        }
+        // query params
+        if ($page !== null) {
+            $queryParams['page'] = ObjectSerializer::toQueryValue($page);
+        }
+        // query params
+        if ($pageSize !== null) {
+            $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
         }
         // query params
         if (is_array($fields)) {

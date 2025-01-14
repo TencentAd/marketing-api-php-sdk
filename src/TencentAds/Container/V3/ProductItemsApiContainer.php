@@ -96,6 +96,40 @@ class ProductItemsApiContainer extends ApiContainer
 
 
     /**
+     * Handle ProductItemsApi productItemsDelete function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function delete(array $params = [])
+    {
+        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->productItemsDelete($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle ProductItemsApi productItemsDeleteAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function deleteAsync(array $params = [])
+    {
+        return $this->handleMiddleware('delete', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->productItemsDeleteAsync($data);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle ProductItemsApi productItemsGet function
      * @param array params
      * @return mixed

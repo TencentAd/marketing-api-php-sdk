@@ -1,6 +1,6 @@
 <?php
 /**
- * MergeFundTypeFundsGetListStruct
+ * ProductItemsDeleteResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MergeFundTypeFundsGetListStruct Class Doc Comment
+ * ProductItemsDeleteResponse Class Doc Comment
  *
  * @category Class
- * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MergeFundTypeFundsGetListStruct implements ModelInterface, ArrayAccess
+class ProductItemsDeleteResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class MergeFundTypeFundsGetListStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'MergeFundTypeFundsGetListStruct';
+    protected static $swaggerModelName = 'ProductItemsDeleteResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +57,10 @@ class MergeFundTypeFundsGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'fundType' => '\TencentAds\Model\V3\AccountMergeTypeMap',
-        'balance' => 'int',
-        'billDepositAmount' => 'int',
-        'fundStatus' => '\TencentAds\Model\V3\FundStatus',
-        'realtimeCost' => 'int',
-        'effectFunds' => '\TencentAds\Model\V3\EffectListStruct[]'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]'
     ];
 
     /**
@@ -72,12 +69,10 @@ class MergeFundTypeFundsGetListStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'fundType' => null,
-        'balance' => 'int64',
-        'billDepositAmount' => 'int64',
-        'fundStatus' => null,
-        'realtimeCost' => 'int64',
-        'effectFunds' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null
     ];
 
     /**
@@ -107,12 +102,10 @@ class MergeFundTypeFundsGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'fundType' => 'fund_type',
-        'balance' => 'balance',
-        'billDepositAmount' => 'bill_deposit_amount',
-        'fundStatus' => 'fund_status',
-        'realtimeCost' => 'realtime_cost',
-        'effectFunds' => 'effect_funds'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors'
     ];
 
     /**
@@ -121,12 +114,10 @@ class MergeFundTypeFundsGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'fundType' => 'setFundType',
-        'balance' => 'setBalance',
-        'billDepositAmount' => 'setBillDepositAmount',
-        'fundStatus' => 'setFundStatus',
-        'realtimeCost' => 'setRealtimeCost',
-        'effectFunds' => 'setEffectFunds'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors'
     ];
 
     /**
@@ -135,12 +126,10 @@ class MergeFundTypeFundsGetListStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'fundType' => 'getFundType',
-        'balance' => 'getBalance',
-        'billDepositAmount' => 'getBillDepositAmount',
-        'fundStatus' => 'getFundStatus',
-        'realtimeCost' => 'getRealtimeCost',
-        'effectFunds' => 'getEffectFunds'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors'
     ];
 
     /**
@@ -203,12 +192,10 @@ class MergeFundTypeFundsGetListStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
-        $this->container['balance'] = isset($data['balance']) ? $data['balance'] : null;
-        $this->container['billDepositAmount'] = isset($data['billDepositAmount']) ? $data['billDepositAmount'] : null;
-        $this->container['fundStatus'] = isset($data['fundStatus']) ? $data['fundStatus'] : null;
-        $this->container['realtimeCost'] = isset($data['realtimeCost']) ? $data['realtimeCost'] : null;
-        $this->container['effectFunds'] = isset($data['effectFunds']) ? $data['effectFunds'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
     }
 
     /**
@@ -236,145 +223,97 @@ class MergeFundTypeFundsGetListStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets fundType
-     *
-     * @return \TencentAds\Model\V3\AccountMergeTypeMap|mixed
-     */
-    public function getFundType()
-    {
-        return $this->container['fundType'];
-    }
-
-    /**
-     * Sets fundType
-     *
-     * @param \TencentAds\Model\V3\AccountMergeTypeMap|mixed $fundType fundType
-     *
-     * @return $this
-     */
-    public function setFundType($fundType)
-    {
-        $this->container['fundType'] = $fundType;
-
-        return $this;
-    }
-
-    /**
-     * Gets balance
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getBalance()
+    public function getCode()
     {
-        return $this->container['balance'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets balance
+     * Sets code
      *
-     * @param int|mixed $balance balance
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setBalance($balance)
+    public function setCode($code)
     {
-        $this->container['balance'] = $balance;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets billDepositAmount
+     * Gets message
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getBillDepositAmount()
+    public function getMessage()
     {
-        return $this->container['billDepositAmount'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets billDepositAmount
+     * Sets message
      *
-     * @param int|mixed $billDepositAmount billDepositAmount
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setBillDepositAmount($billDepositAmount)
+    public function setMessage($message)
     {
-        $this->container['billDepositAmount'] = $billDepositAmount;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets fundStatus
+     * Gets messageCn
      *
-     * @return \TencentAds\Model\V3\FundStatus|mixed
+     * @return string|mixed
      */
-    public function getFundStatus()
+    public function getMessageCn()
     {
-        return $this->container['fundStatus'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets fundStatus
+     * Sets messageCn
      *
-     * @param \TencentAds\Model\V3\FundStatus|mixed $fundStatus fundStatus
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setFundStatus($fundStatus)
+    public function setMessageCn($messageCn)
     {
-        $this->container['fundStatus'] = $fundStatus;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets realtimeCost
+     * Gets errors
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
      */
-    public function getRealtimeCost()
+    public function getErrors()
     {
-        return $this->container['realtimeCost'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets realtimeCost
+     * Sets errors
      *
-     * @param int|mixed $realtimeCost realtimeCost
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setRealtimeCost($realtimeCost)
+    public function setErrors($errors)
     {
-        $this->container['realtimeCost'] = $realtimeCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets effectFunds
-     *
-     * @return \TencentAds\Model\V3\EffectListStruct[]|mixed
-     */
-    public function getEffectFunds()
-    {
-        return $this->container['effectFunds'];
-    }
-
-    /**
-     * Sets effectFunds
-     *
-     * @param \TencentAds\Model\V3\EffectListStruct[]|mixed $effectFunds effectFunds
-     *
-     * @return $this
-     */
-    public function setEffectFunds($effectFunds)
-    {
-        $this->container['effectFunds'] = $effectFunds;
+        $this->container['errors'] = $errors;
 
         return $this;
     }

@@ -18,6 +18,7 @@ use TencentAds\Container\V3\AgencyBusinessUnitListAccountApiContainer;
 use TencentAds\Container\V3\AgencyBusinessUnitListApiContainer;
 use TencentAds\Container\V3\AgencyBusinessUnitListByAccountApiContainer;
 use TencentAds\Container\V3\AgencyRealtimeCostApiContainer;
+use TencentAds\Container\V3\AgencyWalletListApiContainer;
 use TencentAds\Container\V3\AndroidChannelApiContainer;
 use TencentAds\Container\V3\AsyncReportFilesApiContainer;
 use TencentAds\Container\V3\AsyncReportsApiContainer;
@@ -168,6 +169,7 @@ use TencentAds\Container\V3\VideoChannelLeadsDataApiContainer;
 use TencentAds\Container\V3\VideoChannelLiveDataApiContainer;
 use TencentAds\Container\V3\VideosApiContainer;
 use TencentAds\Container\V3\WalletApiContainer;
+use TencentAds\Container\V3\WalletTransferApiContainer;
 use TencentAds\Container\V3\WechatChannelsAccountsApiContainer;
 use TencentAds\Container\V3\WechatChannelsAdAccountApiContainer;
 use TencentAds\Container\V3\WechatChannelsAdAccountCertificationFileApiContainer;
@@ -249,6 +251,9 @@ class App
 
     /** @var AgencyRealtimeCostApiContainer */
     public $agencyRealtimeCostApiContainer;
+
+    /** @var AgencyWalletListApiContainer */
+    public $agencyWalletListApiContainer;
 
     /** @var AndroidChannelApiContainer */
     public $androidChannelApiContainer;
@@ -700,6 +705,9 @@ class App
     /** @var WalletApiContainer */
     public $walletApiContainer;
 
+    /** @var WalletTransferApiContainer */
+    public $walletTransferApiContainer;
+
     /** @var WechatChannelsAccountsApiContainer */
     public $wechatChannelsAccountsApiContainer;
 
@@ -1018,6 +1026,20 @@ class App
             $this->agencyRealtimeCostApiContainer = $container;
         }
         return $this->agencyRealtimeCostApiContainer;
+    }
+
+
+    /**
+     * @return AgencyWalletListApiContainer
+     */
+    public function agencyWalletList()
+    {
+        if (empty($this->agencyWalletListApiContainer)) {
+            $container = new AgencyWalletListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->agencyWalletListApiContainer = $container;
+        }
+        return $this->agencyWalletListApiContainer;
     }
 
 
@@ -3118,6 +3140,20 @@ class App
             $this->walletApiContainer = $container;
         }
         return $this->walletApiContainer;
+    }
+
+
+    /**
+     * @return WalletTransferApiContainer
+     */
+    public function walletTransfer()
+    {
+        if (empty($this->walletTransferApiContainer)) {
+            $container = new WalletTransferApiContainer();
+            $container->init($this, $this->getClient());
+            $this->walletTransferApiContainer = $container;
+        }
+        return $this->walletTransferApiContainer;
     }
 
 

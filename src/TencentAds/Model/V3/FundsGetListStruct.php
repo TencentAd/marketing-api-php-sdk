@@ -60,6 +60,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'fundType' => '\TencentAds\Model\V3\AccountTypeMap',
         'balance' => 'int',
+        'billDepositAmount' => 'int',
         'fundStatus' => '\TencentAds\Model\V3\FundStatus',
         'realtimeCost' => 'int',
         'effectFunds' => '\TencentAds\Model\V3\EffectListStruct[]'
@@ -73,6 +74,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'fundType' => null,
         'balance' => 'int64',
+        'billDepositAmount' => 'int64',
         'fundStatus' => null,
         'realtimeCost' => 'int64',
         'effectFunds' => null
@@ -107,6 +109,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'fundType' => 'fund_type',
         'balance' => 'balance',
+        'billDepositAmount' => 'bill_deposit_amount',
         'fundStatus' => 'fund_status',
         'realtimeCost' => 'realtime_cost',
         'effectFunds' => 'effect_funds'
@@ -120,6 +123,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'fundType' => 'setFundType',
         'balance' => 'setBalance',
+        'billDepositAmount' => 'setBillDepositAmount',
         'fundStatus' => 'setFundStatus',
         'realtimeCost' => 'setRealtimeCost',
         'effectFunds' => 'setEffectFunds'
@@ -133,6 +137,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'fundType' => 'getFundType',
         'balance' => 'getBalance',
+        'billDepositAmount' => 'getBillDepositAmount',
         'fundStatus' => 'getFundStatus',
         'realtimeCost' => 'getRealtimeCost',
         'effectFunds' => 'getEffectFunds'
@@ -200,6 +205,7 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     {
         $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
         $this->container['balance'] = isset($data['balance']) ? $data['balance'] : null;
+        $this->container['billDepositAmount'] = isset($data['billDepositAmount']) ? $data['billDepositAmount'] : null;
         $this->container['fundStatus'] = isset($data['fundStatus']) ? $data['fundStatus'] : null;
         $this->container['realtimeCost'] = isset($data['realtimeCost']) ? $data['realtimeCost'] : null;
         $this->container['effectFunds'] = isset($data['effectFunds']) ? $data['effectFunds'] : null;
@@ -273,6 +279,30 @@ class FundsGetListStruct implements ModelInterface, ArrayAccess
     public function setBalance($balance)
     {
         $this->container['balance'] = $balance;
+
+        return $this;
+    }
+
+    /**
+     * Gets billDepositAmount
+     *
+     * @return int|mixed
+     */
+    public function getBillDepositAmount()
+    {
+        return $this->container['billDepositAmount'];
+    }
+
+    /**
+     * Sets billDepositAmount
+     *
+     * @param int|mixed $billDepositAmount billDepositAmount
+     *
+     * @return $this
+     */
+    public function setBillDepositAmount($billDepositAmount)
+    {
+        $this->container['billDepositAmount'] = $billDepositAmount;
 
         return $this;
     }

@@ -93,7 +93,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'aoiOptimizationStrategy' => '\TencentAds\Model\V3\AoiOptimizationStrategy',
         'searchExpandTargetingSwitch' => '\TencentAds\Model\V3\SearchExpandTargetingSwitch',
         'cloudUnionSpec' => '\TencentAds\Model\V3\CloudUnionSpec',
-        'liveRecommendStrategyEnabled' => 'bool'
+        'liveRecommendStrategyEnabled' => 'bool',
+        'customCostRoiCap' => 'double'
     ];
 
     /**
@@ -138,7 +139,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'aoiOptimizationStrategy' => null,
         'searchExpandTargetingSwitch' => null,
         'cloudUnionSpec' => null,
-        'liveRecommendStrategyEnabled' => null
+        'liveRecommendStrategyEnabled' => null,
+        'customCostRoiCap' => 'double'
     ];
 
     /**
@@ -204,7 +206,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'aoiOptimizationStrategy' => 'aoi_optimization_strategy',
         'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
         'cloudUnionSpec' => 'cloud_union_spec',
-        'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled'
+        'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled',
+        'customCostRoiCap' => 'custom_cost_roi_cap'
     ];
 
     /**
@@ -249,7 +252,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'aoiOptimizationStrategy' => 'setAoiOptimizationStrategy',
         'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
         'cloudUnionSpec' => 'setCloudUnionSpec',
-        'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled'
+        'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled',
+        'customCostRoiCap' => 'setCustomCostRoiCap'
     ];
 
     /**
@@ -294,7 +298,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'aoiOptimizationStrategy' => 'getAoiOptimizationStrategy',
         'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
         'cloudUnionSpec' => 'getCloudUnionSpec',
-        'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled'
+        'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled',
+        'customCostRoiCap' => 'getCustomCostRoiCap'
     ];
 
     /**
@@ -394,6 +399,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
         $this->container['cloudUnionSpec'] = isset($data['cloudUnionSpec']) ? $data['cloudUnionSpec'] : null;
         $this->container['liveRecommendStrategyEnabled'] = isset($data['liveRecommendStrategyEnabled']) ? $data['liveRecommendStrategyEnabled'] : null;
+        $this->container['customCostRoiCap'] = isset($data['customCostRoiCap']) ? $data['customCostRoiCap'] : null;
     }
 
     /**
@@ -1304,6 +1310,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setLiveRecommendStrategyEnabled($liveRecommendStrategyEnabled)
     {
         $this->container['liveRecommendStrategyEnabled'] = $liveRecommendStrategyEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets customCostRoiCap
+     *
+     * @return double|mixed
+     */
+    public function getCustomCostRoiCap()
+    {
+        return $this->container['customCostRoiCap'];
+    }
+
+    /**
+     * Sets customCostRoiCap
+     *
+     * @param double|mixed $customCostRoiCap customCostRoiCap
+     *
+     * @return $this
+     */
+    public function setCustomCostRoiCap($customCostRoiCap)
+    {
+        $this->container['customCostRoiCap'] = $customCostRoiCap;
 
         return $this;
     }

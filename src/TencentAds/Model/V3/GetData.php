@@ -67,7 +67,8 @@ class GetData implements ModelInterface, ArrayAccess
         'marketingTargetType' => 'string',
         'auditStatus' => 'int',
         'auditMsg' => 'string',
-        'dcatagList' => '\TencentAds\Model\V3\Dactag[]'
+        'dcatagList' => '\TencentAds\Model\V3\Dactag[]',
+        'pageInfo' => '\TencentAds\Model\V3\PageInfo'
     ];
 
     /**
@@ -85,7 +86,8 @@ class GetData implements ModelInterface, ArrayAccess
         'marketingTargetType' => null,
         'auditStatus' => 'int64',
         'auditMsg' => null,
-        'dcatagList' => null
+        'dcatagList' => null,
+        'pageInfo' => null
     ];
 
     /**
@@ -124,7 +126,8 @@ class GetData implements ModelInterface, ArrayAccess
         'marketingTargetType' => 'marketing_target_type',
         'auditStatus' => 'audit_status',
         'auditMsg' => 'audit_msg',
-        'dcatagList' => 'dcatag_list'
+        'dcatagList' => 'dcatag_list',
+        'pageInfo' => 'page_info'
     ];
 
     /**
@@ -142,7 +145,8 @@ class GetData implements ModelInterface, ArrayAccess
         'marketingTargetType' => 'setMarketingTargetType',
         'auditStatus' => 'setAuditStatus',
         'auditMsg' => 'setAuditMsg',
-        'dcatagList' => 'setDcatagList'
+        'dcatagList' => 'setDcatagList',
+        'pageInfo' => 'setPageInfo'
     ];
 
     /**
@@ -160,7 +164,8 @@ class GetData implements ModelInterface, ArrayAccess
         'marketingTargetType' => 'getMarketingTargetType',
         'auditStatus' => 'getAuditStatus',
         'auditMsg' => 'getAuditMsg',
-        'dcatagList' => 'getDcatagList'
+        'dcatagList' => 'getDcatagList',
+        'pageInfo' => 'getPageInfo'
     ];
 
     /**
@@ -233,6 +238,7 @@ class GetData implements ModelInterface, ArrayAccess
         $this->container['auditStatus'] = isset($data['auditStatus']) ? $data['auditStatus'] : null;
         $this->container['auditMsg'] = isset($data['auditMsg']) ? $data['auditMsg'] : null;
         $this->container['dcatagList'] = isset($data['dcatagList']) ? $data['dcatagList'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
     }
 
     /**
@@ -495,6 +501,30 @@ class GetData implements ModelInterface, ArrayAccess
     public function setDcatagList($dcatagList)
     {
         $this->container['dcatagList'] = $dcatagList;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageInfo
+     *
+     * @return \TencentAds\Model\V3\PageInfo|mixed
+     */
+    public function getPageInfo()
+    {
+        return $this->container['pageInfo'];
+    }
+
+    /**
+     * Sets pageInfo
+     *
+     * @param \TencentAds\Model\V3\PageInfo|mixed $pageInfo pageInfo
+     *
+     * @return $this
+     */
+    public function setPageInfo($pageInfo)
+    {
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }

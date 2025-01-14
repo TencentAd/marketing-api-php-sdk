@@ -114,6 +114,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'additionalProductSpec' => '\TencentAds\Model\V3\AdditionalProductSpec',
         'enableBreakthroughSiteset' => 'bool',
         'liveRecommendStrategyEnabled' => 'bool',
+        'customCostRoiCap' => 'double',
         'searchExpansionSwitch' => '\TencentAds\Model\V3\SearchExpansionSwitch'
     ];
 
@@ -180,6 +181,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'additionalProductSpec' => null,
         'enableBreakthroughSiteset' => null,
         'liveRecommendStrategyEnabled' => null,
+        'customCostRoiCap' => 'double',
         'searchExpansionSwitch' => null
     ];
 
@@ -267,6 +269,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'additionalProductSpec' => 'additional_product_spec',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled',
+        'customCostRoiCap' => 'custom_cost_roi_cap',
         'searchExpansionSwitch' => 'search_expansion_switch'
     ];
 
@@ -333,6 +336,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'additionalProductSpec' => 'setAdditionalProductSpec',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled',
+        'customCostRoiCap' => 'setCustomCostRoiCap',
         'searchExpansionSwitch' => 'setSearchExpansionSwitch'
     ];
 
@@ -399,6 +403,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'additionalProductSpec' => 'getAdditionalProductSpec',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled',
+        'customCostRoiCap' => 'getCustomCostRoiCap',
         'searchExpansionSwitch' => 'getSearchExpansionSwitch'
     ];
 
@@ -519,6 +524,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['additionalProductSpec'] = isset($data['additionalProductSpec']) ? $data['additionalProductSpec'] : null;
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['liveRecommendStrategyEnabled'] = isset($data['liveRecommendStrategyEnabled']) ? $data['liveRecommendStrategyEnabled'] : null;
+        $this->container['customCostRoiCap'] = isset($data['customCostRoiCap']) ? $data['customCostRoiCap'] : null;
         $this->container['searchExpansionSwitch'] = isset($data['searchExpansionSwitch']) ? $data['searchExpansionSwitch'] : null;
     }
 
@@ -1910,6 +1916,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setLiveRecommendStrategyEnabled($liveRecommendStrategyEnabled)
     {
         $this->container['liveRecommendStrategyEnabled'] = $liveRecommendStrategyEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets customCostRoiCap
+     *
+     * @return double|mixed
+     */
+    public function getCustomCostRoiCap()
+    {
+        return $this->container['customCostRoiCap'];
+    }
+
+    /**
+     * Sets customCostRoiCap
+     *
+     * @param double|mixed $customCostRoiCap customCostRoiCap
+     *
+     * @return $this
+     */
+    public function setCustomCostRoiCap($customCostRoiCap)
+    {
+        $this->container['customCostRoiCap'] = $customCostRoiCap;
 
         return $this;
     }

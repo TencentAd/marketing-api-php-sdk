@@ -75,8 +75,13 @@ class MaterialDcatagApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $imageIdList = isset($params['image_id_list']) ? $params['image_id_list'] : null;
             $mediaIdList = isset($params['media_id_list']) ? $params['media_id_list'] : null;
+            $marketingAssetId = isset($params['marketing_asset_id']) ? $params['marketing_asset_id'] : null;
+            $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
+            $marketingAssetOuterSpec = isset($params['marketing_asset_outer_spec']) ? $params['marketing_asset_outer_spec'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->materialDcatagGet($accountId, $imageIdList, $mediaIdList, $fields);
+            $response = $this->apiInstance->materialDcatagGet($accountId, $imageIdList, $mediaIdList, $marketingAssetId, $marketingTargetType, $marketingAssetOuterSpec, $page, $pageSize, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -94,8 +99,13 @@ class MaterialDcatagApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $imageIdList = isset($params['image_id_list']) ? $params['image_id_list'] : null;
             $mediaIdList = isset($params['media_id_list']) ? $params['media_id_list'] : null;
+            $marketingAssetId = isset($params['marketing_asset_id']) ? $params['marketing_asset_id'] : null;
+            $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
+            $marketingAssetOuterSpec = isset($params['marketing_asset_outer_spec']) ? $params['marketing_asset_outer_spec'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->materialDcatagGetAsync($accountId, $imageIdList, $mediaIdList, $fields);
+            $response = $this->apiInstance->materialDcatagGetAsync($accountId, $imageIdList, $mediaIdList, $marketingAssetId, $marketingTargetType, $marketingAssetOuterSpec, $page, $pageSize, $fields);
             return $response;
         });
     }
