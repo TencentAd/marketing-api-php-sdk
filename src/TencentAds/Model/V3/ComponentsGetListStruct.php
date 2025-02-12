@@ -67,7 +67,8 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'componentSubType' => '\TencentAds\Model\V3\ComponentSubType',
         'componentCustomName' => 'string',
         'generationType' => '\TencentAds\Model\V3\ComponentGenerationType',
-        'isDeleted' => 'bool'
+        'isDeleted' => 'bool',
+        'potentialStatus' => '\TencentAds\Model\V3\CommonPotentialStatus'
     ];
 
     /**
@@ -85,7 +86,8 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'componentSubType' => null,
         'componentCustomName' => null,
         'generationType' => null,
-        'isDeleted' => null
+        'isDeleted' => null,
+        'potentialStatus' => null
     ];
 
     /**
@@ -124,7 +126,8 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'componentSubType' => 'component_sub_type',
         'componentCustomName' => 'component_custom_name',
         'generationType' => 'generation_type',
-        'isDeleted' => 'is_deleted'
+        'isDeleted' => 'is_deleted',
+        'potentialStatus' => 'potential_status'
     ];
 
     /**
@@ -142,7 +145,8 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'componentSubType' => 'setComponentSubType',
         'componentCustomName' => 'setComponentCustomName',
         'generationType' => 'setGenerationType',
-        'isDeleted' => 'setIsDeleted'
+        'isDeleted' => 'setIsDeleted',
+        'potentialStatus' => 'setPotentialStatus'
     ];
 
     /**
@@ -160,7 +164,8 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'componentSubType' => 'getComponentSubType',
         'componentCustomName' => 'getComponentCustomName',
         'generationType' => 'getGenerationType',
-        'isDeleted' => 'getIsDeleted'
+        'isDeleted' => 'getIsDeleted',
+        'potentialStatus' => 'getPotentialStatus'
     ];
 
     /**
@@ -233,6 +238,7 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['componentCustomName'] = isset($data['componentCustomName']) ? $data['componentCustomName'] : null;
         $this->container['generationType'] = isset($data['generationType']) ? $data['generationType'] : null;
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
+        $this->container['potentialStatus'] = isset($data['potentialStatus']) ? $data['potentialStatus'] : null;
     }
 
     /**
@@ -495,6 +501,30 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
     public function setIsDeleted($isDeleted)
     {
         $this->container['isDeleted'] = $isDeleted;
+
+        return $this;
+    }
+
+    /**
+     * Gets potentialStatus
+     *
+     * @return \TencentAds\Model\V3\CommonPotentialStatus|mixed
+     */
+    public function getPotentialStatus()
+    {
+        return $this->container['potentialStatus'];
+    }
+
+    /**
+     * Sets potentialStatus
+     *
+     * @param \TencentAds\Model\V3\CommonPotentialStatus|mixed $potentialStatus potentialStatus
+     *
+     * @return $this
+     */
+    public function setPotentialStatus($potentialStatus)
+    {
+        $this->container['potentialStatus'] = $potentialStatus;
 
         return $this;
     }

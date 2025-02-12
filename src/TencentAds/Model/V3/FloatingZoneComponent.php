@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * FloatingZoneComponent Class Doc Comment
  *
  * @category Class
- * @description 轮播组件
+ * @description 浮层卡片组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

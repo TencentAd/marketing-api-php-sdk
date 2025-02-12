@@ -821,6 +821,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'purchaseFirstAllDedupTouch24hPv' => 'int',
         'purchaseFirstAllDedupTouch24hAmount' => 'int',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'int',
+        'payingUsersD1Cost' => 'int',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -1653,6 +1654,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'purchaseFirstAllDedupTouch24hPv' => 'int64',
         'purchaseFirstAllDedupTouch24hAmount' => 'int64',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'int64',
+        'payingUsersD1Cost' => 'int64',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -2506,6 +2508,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'purchaseFirstAllDedupTouch24hPv' => 'purchase_first_all_dedup_touch_24h_pv',
         'purchaseFirstAllDedupTouch24hAmount' => 'purchase_first_all_dedup_touch_24h_amount',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'purchase_first_all_dedup_touch_24h_unit_price',
+        'payingUsersD1Cost' => 'paying_users_d1_cost',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -3338,6 +3341,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'purchaseFirstAllDedupTouch24hPv' => 'setPurchaseFirstAllDedupTouch24hPv',
         'purchaseFirstAllDedupTouch24hAmount' => 'setPurchaseFirstAllDedupTouch24hAmount',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'setPurchaseFirstAllDedupTouch24hUnitPrice',
+        'payingUsersD1Cost' => 'setPayingUsersD1Cost',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -4170,6 +4174,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'purchaseFirstAllDedupTouch24hPv' => 'getPurchaseFirstAllDedupTouch24hPv',
         'purchaseFirstAllDedupTouch24hAmount' => 'getPurchaseFirstAllDedupTouch24hAmount',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'getPurchaseFirstAllDedupTouch24hUnitPrice',
+        'payingUsersD1Cost' => 'getPayingUsersD1Cost',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -5056,6 +5061,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         $this->container['purchaseFirstAllDedupTouch24hPv'] = isset($data['purchaseFirstAllDedupTouch24hPv']) ? $data['purchaseFirstAllDedupTouch24hPv'] : null;
         $this->container['purchaseFirstAllDedupTouch24hAmount'] = isset($data['purchaseFirstAllDedupTouch24hAmount']) ? $data['purchaseFirstAllDedupTouch24hAmount'] : null;
         $this->container['purchaseFirstAllDedupTouch24hUnitPrice'] = isset($data['purchaseFirstAllDedupTouch24hUnitPrice']) ? $data['purchaseFirstAllDedupTouch24hUnitPrice'] : null;
+        $this->container['payingUsersD1Cost'] = isset($data['payingUsersD1Cost']) ? $data['payingUsersD1Cost'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -23451,6 +23457,30 @@ class ReportStruct implements ModelInterface, ArrayAccess
     public function setPurchaseFirstAllDedupTouch24hUnitPrice($purchaseFirstAllDedupTouch24hUnitPrice)
     {
         $this->container['purchaseFirstAllDedupTouch24hUnitPrice'] = $purchaseFirstAllDedupTouch24hUnitPrice;
+
+        return $this;
+    }
+
+    /**
+     * Gets payingUsersD1Cost
+     *
+     * @return int|mixed
+     */
+    public function getPayingUsersD1Cost()
+    {
+        return $this->container['payingUsersD1Cost'];
+    }
+
+    /**
+     * Sets payingUsersD1Cost
+     *
+     * @param int|mixed $payingUsersD1Cost payingUsersD1Cost
+     *
+     * @return $this
+     */
+    public function setPayingUsersD1Cost($payingUsersD1Cost)
+    {
+        $this->container['payingUsersD1Cost'] = $payingUsersD1Cost;
 
         return $this;
     }

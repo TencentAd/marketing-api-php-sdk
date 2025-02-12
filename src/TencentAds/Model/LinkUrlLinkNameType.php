@@ -103,6 +103,10 @@ class LinkUrlLinkNameType
     const CONTACT_BUSINESS = 'CONTACT_BUSINESS';
     const GO_SCAN = 'GO_SCAN';
     const LINK_NAME_TEXT_TEMPLATE = 'LINK_NAME_TEXT_TEMPLATE';
+    const PICK_GIFT = 'PICK_GIFT';
+    const SELECT_GIFT = 'SELECT_GIFT';
+    const GIVING_GIFT = 'GIVING_GIFT';
+    const GIVE_FRIEND = 'GIVE_FRIEND';
     
     /**
      * Gets allowable values of the enum
@@ -170,6 +174,10 @@ class LinkUrlLinkNameType
             self::CONTACT_BUSINESS,
             self::GO_SCAN,
             self::LINK_NAME_TEXT_TEMPLATE,
+            self::PICK_GIFT,
+            self::SELECT_GIFT,
+            self::GIVING_GIFT,
+            self::GIVE_FRIEND,
         ];
     }
 }

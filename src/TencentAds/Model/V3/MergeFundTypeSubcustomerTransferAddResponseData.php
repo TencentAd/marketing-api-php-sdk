@@ -60,7 +60,8 @@ class MergeFundTypeSubcustomerTransferAddResponseData implements ModelInterface,
         'fundType' => '\TencentAds\Model\V3\AccountMergeTypeMap',
         'amount' => 'int',
         'externalBillNo' => 'string',
-        'time' => 'int'
+        'time' => 'int',
+        'recommendAmount' => 'int'
     ];
 
     /**
@@ -72,7 +73,8 @@ class MergeFundTypeSubcustomerTransferAddResponseData implements ModelInterface,
         'fundType' => null,
         'amount' => 'int64',
         'externalBillNo' => null,
-        'time' => 'int64'
+        'time' => 'int64',
+        'recommendAmount' => 'int64'
     ];
 
     /**
@@ -105,7 +107,8 @@ class MergeFundTypeSubcustomerTransferAddResponseData implements ModelInterface,
         'fundType' => 'fund_type',
         'amount' => 'amount',
         'externalBillNo' => 'external_bill_no',
-        'time' => 'time'
+        'time' => 'time',
+        'recommendAmount' => 'recommend_amount'
     ];
 
     /**
@@ -117,7 +120,8 @@ class MergeFundTypeSubcustomerTransferAddResponseData implements ModelInterface,
         'fundType' => 'setFundType',
         'amount' => 'setAmount',
         'externalBillNo' => 'setExternalBillNo',
-        'time' => 'setTime'
+        'time' => 'setTime',
+        'recommendAmount' => 'setRecommendAmount'
     ];
 
     /**
@@ -129,7 +133,8 @@ class MergeFundTypeSubcustomerTransferAddResponseData implements ModelInterface,
         'fundType' => 'getFundType',
         'amount' => 'getAmount',
         'externalBillNo' => 'getExternalBillNo',
-        'time' => 'getTime'
+        'time' => 'getTime',
+        'recommendAmount' => 'getRecommendAmount'
     ];
 
     /**
@@ -196,6 +201,7 @@ class MergeFundTypeSubcustomerTransferAddResponseData implements ModelInterface,
         $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
         $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
         $this->container['time'] = isset($data['time']) ? $data['time'] : null;
+        $this->container['recommendAmount'] = isset($data['recommendAmount']) ? $data['recommendAmount'] : null;
     }
 
     /**
@@ -314,6 +320,30 @@ class MergeFundTypeSubcustomerTransferAddResponseData implements ModelInterface,
     public function setTime($time)
     {
         $this->container['time'] = $time;
+
+        return $this;
+    }
+
+    /**
+     * Gets recommendAmount
+     *
+     * @return int|mixed
+     */
+    public function getRecommendAmount()
+    {
+        return $this->container['recommendAmount'];
+    }
+
+    /**
+     * Sets recommendAmount
+     *
+     * @param int|mixed $recommendAmount recommendAmount
+     *
+     * @return $this
+     */
+    public function setRecommendAmount($recommendAmount)
+    {
+        $this->container['recommendAmount'] = $recommendAmount;
 
         return $this;
     }

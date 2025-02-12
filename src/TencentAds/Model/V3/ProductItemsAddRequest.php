@@ -61,6 +61,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
         'productCatalogId' => 'int',
         'feedId' => 'int',
         'requestSource' => 'string',
+        'usageInfo' => '\TencentAds\Model\V3\UsageInfo',
         'productItemSpecList' => '\TencentAds\Model\V3\ProductItemSpec[]'
     ];
 
@@ -74,6 +75,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
         'productCatalogId' => 'int64',
         'feedId' => 'int64',
         'requestSource' => null,
+        'usageInfo' => null,
         'productItemSpecList' => null
     ];
 
@@ -108,6 +110,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
         'productCatalogId' => 'product_catalog_id',
         'feedId' => 'feed_id',
         'requestSource' => 'request_source',
+        'usageInfo' => 'usage_info',
         'productItemSpecList' => 'product_item_spec_list'
     ];
 
@@ -121,6 +124,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
         'productCatalogId' => 'setProductCatalogId',
         'feedId' => 'setFeedId',
         'requestSource' => 'setRequestSource',
+        'usageInfo' => 'setUsageInfo',
         'productItemSpecList' => 'setProductItemSpecList'
     ];
 
@@ -134,6 +138,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
         'productCatalogId' => 'getProductCatalogId',
         'feedId' => 'getFeedId',
         'requestSource' => 'getRequestSource',
+        'usageInfo' => 'getUsageInfo',
         'productItemSpecList' => 'getProductItemSpecList'
     ];
 
@@ -201,6 +206,7 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
         $this->container['productCatalogId'] = isset($data['productCatalogId']) ? $data['productCatalogId'] : null;
         $this->container['feedId'] = isset($data['feedId']) ? $data['feedId'] : null;
         $this->container['requestSource'] = isset($data['requestSource']) ? $data['requestSource'] : null;
+        $this->container['usageInfo'] = isset($data['usageInfo']) ? $data['usageInfo'] : null;
         $this->container['productItemSpecList'] = isset($data['productItemSpecList']) ? $data['productItemSpecList'] : null;
     }
 
@@ -320,6 +326,30 @@ class ProductItemsAddRequest implements ModelInterface, ArrayAccess
     public function setRequestSource($requestSource)
     {
         $this->container['requestSource'] = $requestSource;
+
+        return $this;
+    }
+
+    /**
+     * Gets usageInfo
+     *
+     * @return \TencentAds\Model\V3\UsageInfo|mixed
+     */
+    public function getUsageInfo()
+    {
+        return $this->container['usageInfo'];
+    }
+
+    /**
+     * Sets usageInfo
+     *
+     * @param \TencentAds\Model\V3\UsageInfo|mixed $usageInfo usageInfo
+     *
+     * @return $this
+     */
+    public function setUsageInfo($usageInfo)
+    {
+        $this->container['usageInfo'] = $usageInfo;
 
         return $this;
     }

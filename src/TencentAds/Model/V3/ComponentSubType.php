@@ -142,6 +142,7 @@ class ComponentSubType
     const MINI_CARD_LINK = 'MINI_CARD_LINK';
     const FLOATING_ZONE_IMAGE_TEXT_LIST = 'FLOATING_ZONE_IMAGE_TEXT_LIST';
     const CONSULT_LINK = 'CONSULT_LINK';
+    const SHOP_PRODUCT_CARD = 'SHOP_PRODUCT_CARD';
     const BRAND = 'BRAND';
     const BRAND_PAGE = 'BRAND_PAGE';
     const BRAND_SEARCH = 'BRAND_SEARCH';
@@ -282,6 +283,7 @@ class ComponentSubType
             self::MINI_CARD_LINK,
             self::FLOATING_ZONE_IMAGE_TEXT_LIST,
             self::CONSULT_LINK,
+            self::SHOP_PRODUCT_CARD,
             self::BRAND,
             self::BRAND_PAGE,
             self::BRAND_SEARCH,

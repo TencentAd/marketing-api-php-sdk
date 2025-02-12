@@ -1,6 +1,6 @@
 <?php
 /**
- * WalletInfo
+ * WalletInvoiceGetListStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * WalletInfo Class Doc Comment
+ * WalletInvoiceGetListStruct Class Doc Comment
  *
  * @category Class
- * @description 钱包信息
+ * @description 返回结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class WalletInfo implements ModelInterface, ArrayAccess
+class WalletInvoiceGetListStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class WalletInfo implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'wallet_info';
+    protected static $swaggerModelName = 'WalletInvoiceGetListStruct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,12 +58,14 @@ class WalletInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'balance' => 'int',
-        'walletId' => 'int',
-        'walletName' => 'string',
-        'agencyId' => 'int',
-        'agencyName' => 'string',
-        'mdmId' => 'int'
+        'accountId' => 'int',
+        'accountName' => 'string',
+        'fundType' => '\TencentAds\Model\V3\AccountTypeMap',
+        'time' => 'int',
+        'externalBillNo' => 'string',
+        'tradeTypeExt' => '\TencentAds\Model\V3\TradeTypeExt',
+        'amount' => 'int',
+        'description' => 'string'
     ];
 
     /**
@@ -72,12 +74,14 @@ class WalletInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'balance' => 'int64',
-        'walletId' => 'int64',
-        'walletName' => null,
-        'agencyId' => 'int64',
-        'agencyName' => null,
-        'mdmId' => 'int64'
+        'accountId' => 'int64',
+        'accountName' => null,
+        'fundType' => null,
+        'time' => 'int64',
+        'externalBillNo' => null,
+        'tradeTypeExt' => null,
+        'amount' => 'int64',
+        'description' => null
     ];
 
     /**
@@ -107,12 +111,14 @@ class WalletInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'balance' => 'balance',
-        'walletId' => 'wallet_id',
-        'walletName' => 'wallet_name',
-        'agencyId' => 'agency_id',
-        'agencyName' => 'agency_name',
-        'mdmId' => 'mdm_id'
+        'accountId' => 'account_id',
+        'accountName' => 'account_name',
+        'fundType' => 'fund_type',
+        'time' => 'time',
+        'externalBillNo' => 'external_bill_no',
+        'tradeTypeExt' => 'trade_type_ext',
+        'amount' => 'amount',
+        'description' => 'description'
     ];
 
     /**
@@ -121,12 +127,14 @@ class WalletInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'balance' => 'setBalance',
-        'walletId' => 'setWalletId',
-        'walletName' => 'setWalletName',
-        'agencyId' => 'setAgencyId',
-        'agencyName' => 'setAgencyName',
-        'mdmId' => 'setMdmId'
+        'accountId' => 'setAccountId',
+        'accountName' => 'setAccountName',
+        'fundType' => 'setFundType',
+        'time' => 'setTime',
+        'externalBillNo' => 'setExternalBillNo',
+        'tradeTypeExt' => 'setTradeTypeExt',
+        'amount' => 'setAmount',
+        'description' => 'setDescription'
     ];
 
     /**
@@ -135,12 +143,14 @@ class WalletInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'balance' => 'getBalance',
-        'walletId' => 'getWalletId',
-        'walletName' => 'getWalletName',
-        'agencyId' => 'getAgencyId',
-        'agencyName' => 'getAgencyName',
-        'mdmId' => 'getMdmId'
+        'accountId' => 'getAccountId',
+        'accountName' => 'getAccountName',
+        'fundType' => 'getFundType',
+        'time' => 'getTime',
+        'externalBillNo' => 'getExternalBillNo',
+        'tradeTypeExt' => 'getTradeTypeExt',
+        'amount' => 'getAmount',
+        'description' => 'getDescription'
     ];
 
     /**
@@ -203,12 +213,14 @@ class WalletInfo implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['balance'] = isset($data['balance']) ? $data['balance'] : null;
-        $this->container['walletId'] = isset($data['walletId']) ? $data['walletId'] : null;
-        $this->container['walletName'] = isset($data['walletName']) ? $data['walletName'] : null;
-        $this->container['agencyId'] = isset($data['agencyId']) ? $data['agencyId'] : null;
-        $this->container['agencyName'] = isset($data['agencyName']) ? $data['agencyName'] : null;
-        $this->container['mdmId'] = isset($data['mdmId']) ? $data['mdmId'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['accountName'] = isset($data['accountName']) ? $data['accountName'] : null;
+        $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
+        $this->container['time'] = isset($data['time']) ? $data['time'] : null;
+        $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
+        $this->container['tradeTypeExt'] = isset($data['tradeTypeExt']) ? $data['tradeTypeExt'] : null;
+        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
     }
 
     /**
@@ -236,145 +248,193 @@ class WalletInfo implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets balance
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getBalance()
+    public function getAccountId()
     {
-        return $this->container['balance'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets balance
+     * Sets accountId
      *
-     * @param int|mixed $balance balance
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setBalance($balance)
+    public function setAccountId($accountId)
     {
-        $this->container['balance'] = $balance;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets walletId
-     *
-     * @return int|mixed
-     */
-    public function getWalletId()
-    {
-        return $this->container['walletId'];
-    }
-
-    /**
-     * Sets walletId
-     *
-     * @param int|mixed $walletId walletId
-     *
-     * @return $this
-     */
-    public function setWalletId($walletId)
-    {
-        $this->container['walletId'] = $walletId;
-
-        return $this;
-    }
-
-    /**
-     * Gets walletName
+     * Gets accountName
      *
      * @return string|mixed
      */
-    public function getWalletName()
+    public function getAccountName()
     {
-        return $this->container['walletName'];
+        return $this->container['accountName'];
     }
 
     /**
-     * Sets walletName
+     * Sets accountName
      *
-     * @param string|mixed $walletName walletName
+     * @param string|mixed $accountName accountName
      *
      * @return $this
      */
-    public function setWalletName($walletName)
+    public function setAccountName($accountName)
     {
-        $this->container['walletName'] = $walletName;
+        $this->container['accountName'] = $accountName;
 
         return $this;
     }
 
     /**
-     * Gets agencyId
+     * Gets fundType
+     *
+     * @return \TencentAds\Model\V3\AccountTypeMap|mixed
+     */
+    public function getFundType()
+    {
+        return $this->container['fundType'];
+    }
+
+    /**
+     * Sets fundType
+     *
+     * @param \TencentAds\Model\V3\AccountTypeMap|mixed $fundType fundType
+     *
+     * @return $this
+     */
+    public function setFundType($fundType)
+    {
+        $this->container['fundType'] = $fundType;
+
+        return $this;
+    }
+
+    /**
+     * Gets time
      *
      * @return int|mixed
      */
-    public function getAgencyId()
+    public function getTime()
     {
-        return $this->container['agencyId'];
+        return $this->container['time'];
     }
 
     /**
-     * Sets agencyId
+     * Sets time
      *
-     * @param int|mixed $agencyId agencyId
+     * @param int|mixed $time time
      *
      * @return $this
      */
-    public function setAgencyId($agencyId)
+    public function setTime($time)
     {
-        $this->container['agencyId'] = $agencyId;
+        $this->container['time'] = $time;
 
         return $this;
     }
 
     /**
-     * Gets agencyName
+     * Gets externalBillNo
      *
      * @return string|mixed
      */
-    public function getAgencyName()
+    public function getExternalBillNo()
     {
-        return $this->container['agencyName'];
+        return $this->container['externalBillNo'];
     }
 
     /**
-     * Sets agencyName
+     * Sets externalBillNo
      *
-     * @param string|mixed $agencyName agencyName
+     * @param string|mixed $externalBillNo externalBillNo
      *
      * @return $this
      */
-    public function setAgencyName($agencyName)
+    public function setExternalBillNo($externalBillNo)
     {
-        $this->container['agencyName'] = $agencyName;
+        $this->container['externalBillNo'] = $externalBillNo;
 
         return $this;
     }
 
     /**
-     * Gets mdmId
+     * Gets tradeTypeExt
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\TradeTypeExt|mixed
      */
-    public function getMdmId()
+    public function getTradeTypeExt()
     {
-        return $this->container['mdmId'];
+        return $this->container['tradeTypeExt'];
     }
 
     /**
-     * Sets mdmId
+     * Sets tradeTypeExt
      *
-     * @param int|mixed $mdmId mdmId
+     * @param \TencentAds\Model\V3\TradeTypeExt|mixed $tradeTypeExt tradeTypeExt
      *
      * @return $this
      */
-    public function setMdmId($mdmId)
+    public function setTradeTypeExt($tradeTypeExt)
     {
-        $this->container['mdmId'] = $mdmId;
+        $this->container['tradeTypeExt'] = $tradeTypeExt;
+
+        return $this;
+    }
+
+    /**
+     * Gets amount
+     *
+     * @return int|mixed
+     */
+    public function getAmount()
+    {
+        return $this->container['amount'];
+    }
+
+    /**
+     * Sets amount
+     *
+     * @param int|mixed $amount amount
+     *
+     * @return $this
+     */
+    public function setAmount($amount)
+    {
+        $this->container['amount'] = $amount;
+
+        return $this;
+    }
+
+    /**
+     * Gets description
+     *
+     * @return string|mixed
+     */
+    public function getDescription()
+    {
+        return $this->container['description'];
+    }
+
+    /**
+     * Sets description
+     *
+     * @param string|mixed $description description
+     *
+     * @return $this
+     */
+    public function setDescription($description)
+    {
+        $this->container['description'] = $description;
 
         return $this;
     }

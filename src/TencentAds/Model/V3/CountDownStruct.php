@@ -58,8 +58,6 @@ class CountDownStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'switch' => 'bool',
-        'beginTimestamp' => 'int',
         'price' => 'string',
         'timeType' => '\TencentAds\Model\V3\AdCreativeCountdownTimeType',
         'expiringTimestamp' => 'int'
@@ -71,8 +69,6 @@ class CountDownStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'switch' => null,
-        'beginTimestamp' => 'int64',
         'price' => null,
         'timeType' => null,
         'expiringTimestamp' => 'int64'
@@ -105,8 +101,6 @@ class CountDownStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'switch' => 'switch',
-        'beginTimestamp' => 'begin_timestamp',
         'price' => 'price',
         'timeType' => 'time_type',
         'expiringTimestamp' => 'expiring_timestamp'
@@ -118,8 +112,6 @@ class CountDownStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'switch' => 'setSwitch',
-        'beginTimestamp' => 'setBeginTimestamp',
         'price' => 'setPrice',
         'timeType' => 'setTimeType',
         'expiringTimestamp' => 'setExpiringTimestamp'
@@ -131,8 +123,6 @@ class CountDownStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'switch' => 'getSwitch',
-        'beginTimestamp' => 'getBeginTimestamp',
         'price' => 'getPrice',
         'timeType' => 'getTimeType',
         'expiringTimestamp' => 'getExpiringTimestamp'
@@ -198,8 +188,6 @@ class CountDownStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['switch'] = isset($data['switch']) ? $data['switch'] : null;
-        $this->container['beginTimestamp'] = isset($data['beginTimestamp']) ? $data['beginTimestamp'] : null;
         $this->container['price'] = isset($data['price']) ? $data['price'] : null;
         $this->container['timeType'] = isset($data['timeType']) ? $data['timeType'] : null;
         $this->container['expiringTimestamp'] = isset($data['expiringTimestamp']) ? $data['expiringTimestamp'] : null;
@@ -228,54 +216,6 @@ class CountDownStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets switch
-     *
-     * @return bool|mixed
-     */
-    public function getSwitch()
-    {
-        return $this->container['switch'];
-    }
-
-    /**
-     * Sets switch
-     *
-     * @param bool|mixed $switch switch
-     *
-     * @return $this
-     */
-    public function setSwitch($switch)
-    {
-        $this->container['switch'] = $switch;
-
-        return $this;
-    }
-
-    /**
-     * Gets beginTimestamp
-     *
-     * @return int|mixed
-     */
-    public function getBeginTimestamp()
-    {
-        return $this->container['beginTimestamp'];
-    }
-
-    /**
-     * Sets beginTimestamp
-     *
-     * @param int|mixed $beginTimestamp beginTimestamp
-     *
-     * @return $this
-     */
-    public function setBeginTimestamp($beginTimestamp)
-    {
-        $this->container['beginTimestamp'] = $beginTimestamp;
-
-        return $this;
-    }
 
     /**
      * Gets price

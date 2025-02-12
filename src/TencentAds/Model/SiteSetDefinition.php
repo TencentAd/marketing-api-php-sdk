@@ -100,6 +100,7 @@ class SiteSetDefinition
     const TENCENT_AD_NETWORK_OVERSEA = 'SITE_SET_TENCENT_AD_NETWORK_OVERSEA';
     const FREETRADE_QQ = 'SITE_SET_FREETRADE_QQ';
     const YUNXUAN = 'SITE_SET_YUNXUAN';
+    const EXPAND = 'SITE_SET_EXPAND';
     
     /**
      * Gets allowable values of the enum
@@ -164,6 +165,7 @@ class SiteSetDefinition
             self::TENCENT_AD_NETWORK_OVERSEA,
             self::FREETRADE_QQ,
             self::YUNXUAN,
+            self::EXPAND,
         ];
     }
 }

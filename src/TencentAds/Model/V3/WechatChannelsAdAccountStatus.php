@@ -53,6 +53,7 @@ class WechatChannelsAdAccountStatus
     const BANNED = 'BANNED';
     const DEACTIVATED = 'DEACTIVATED';
     const CHECK_FAIL = 'CHECK_FAIL';
+    const PROCESSING_LOGOUT = 'PROCESSING_LOGOUT';
     
     /**
      * Gets allowable values of the enum
@@ -70,6 +71,7 @@ class WechatChannelsAdAccountStatus
             self::BANNED,
             self::DEACTIVATED,
             self::CHECK_FAIL,
+            self::PROCESSING_LOGOUT,
         ];
     }
 }

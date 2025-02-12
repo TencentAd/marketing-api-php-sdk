@@ -51,6 +51,7 @@ class ComponentMetadataFieldValidType
     const BARRAGE = 'BARRAGE';
     const ENUM = 'ENUM';
     const URL = 'URL';
+    const LEADS = 'LEADS';
     
     /**
      * Gets allowable values of the enum
@@ -66,6 +67,7 @@ class ComponentMetadataFieldValidType
             self::BARRAGE,
             self::ENUM,
             self::URL,
+            self::LEADS,
         ];
     }
 }

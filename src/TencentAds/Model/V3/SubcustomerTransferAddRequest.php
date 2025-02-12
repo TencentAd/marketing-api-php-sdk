@@ -62,7 +62,8 @@ class SubcustomerTransferAddRequest implements ModelInterface, ArrayAccess
         'toAccountId' => 'int',
         'fundType' => '\TencentAds\Model\V3\AccountTypeMap',
         'externalBillNo' => 'string',
-        'memo' => 'string'
+        'memo' => 'string',
+        'preFetchAmount' => 'int'
     ];
 
     /**
@@ -76,7 +77,8 @@ class SubcustomerTransferAddRequest implements ModelInterface, ArrayAccess
         'toAccountId' => 'int64',
         'fundType' => null,
         'externalBillNo' => null,
-        'memo' => null
+        'memo' => null,
+        'preFetchAmount' => 'int64'
     ];
 
     /**
@@ -111,7 +113,8 @@ class SubcustomerTransferAddRequest implements ModelInterface, ArrayAccess
         'toAccountId' => 'to_account_id',
         'fundType' => 'fund_type',
         'externalBillNo' => 'external_bill_no',
-        'memo' => 'memo'
+        'memo' => 'memo',
+        'preFetchAmount' => 'pre_fetch_amount'
     ];
 
     /**
@@ -125,7 +128,8 @@ class SubcustomerTransferAddRequest implements ModelInterface, ArrayAccess
         'toAccountId' => 'setToAccountId',
         'fundType' => 'setFundType',
         'externalBillNo' => 'setExternalBillNo',
-        'memo' => 'setMemo'
+        'memo' => 'setMemo',
+        'preFetchAmount' => 'setPreFetchAmount'
     ];
 
     /**
@@ -139,7 +143,8 @@ class SubcustomerTransferAddRequest implements ModelInterface, ArrayAccess
         'toAccountId' => 'getToAccountId',
         'fundType' => 'getFundType',
         'externalBillNo' => 'getExternalBillNo',
-        'memo' => 'getMemo'
+        'memo' => 'getMemo',
+        'preFetchAmount' => 'getPreFetchAmount'
     ];
 
     /**
@@ -208,6 +213,7 @@ class SubcustomerTransferAddRequest implements ModelInterface, ArrayAccess
         $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
         $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
         $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
+        $this->container['preFetchAmount'] = isset($data['preFetchAmount']) ? $data['preFetchAmount'] : null;
     }
 
     /**
@@ -374,6 +380,30 @@ class SubcustomerTransferAddRequest implements ModelInterface, ArrayAccess
     public function setMemo($memo)
     {
         $this->container['memo'] = $memo;
+
+        return $this;
+    }
+
+    /**
+     * Gets preFetchAmount
+     *
+     * @return int|mixed
+     */
+    public function getPreFetchAmount()
+    {
+        return $this->container['preFetchAmount'];
+    }
+
+    /**
+     * Sets preFetchAmount
+     *
+     * @param int|mixed $preFetchAmount preFetchAmount
+     *
+     * @return $this
+     */
+    public function setPreFetchAmount($preFetchAmount)
+    {
+        $this->container['preFetchAmount'] = $preFetchAmount;
 
         return $this;
     }

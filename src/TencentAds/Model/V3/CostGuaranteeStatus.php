@@ -50,6 +50,7 @@ class CostGuaranteeStatus
     const FINISHED = 'COST_GUARANTEE_STATUS_FINISHED';
     const CONFIRMING = 'COST_GUARANTEE_STATUS_CONFIRMING';
     const SUCCEEDED = 'COST_GUARANTEE_STATUS_SUCCEEDED';
+    const FROZEN = 'COST_GUARANTEE_STATUS_FROZEN';
     
     /**
      * Gets allowable values of the enum
@@ -64,6 +65,7 @@ class CostGuaranteeStatus
             self::FINISHED,
             self::CONFIRMING,
             self::SUCCEEDED,
+            self::FROZEN,
         ];
     }
 }

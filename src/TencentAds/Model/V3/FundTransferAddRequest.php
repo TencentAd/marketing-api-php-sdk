@@ -64,7 +64,8 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
         'externalBillNo' => 'string',
         'memo' => 'string',
         'transferTryBest' => 'int',
-        'highFrequencyTransfer' => 'int'
+        'highFrequencyTransfer' => 'int',
+        'preFetchAmount' => 'int'
     ];
 
     /**
@@ -80,7 +81,8 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
         'externalBillNo' => null,
         'memo' => null,
         'transferTryBest' => 'int64',
-        'highFrequencyTransfer' => 'int64'
+        'highFrequencyTransfer' => 'int64',
+        'preFetchAmount' => 'int64'
     ];
 
     /**
@@ -117,7 +119,8 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
         'externalBillNo' => 'external_bill_no',
         'memo' => 'memo',
         'transferTryBest' => 'transfer_try_best',
-        'highFrequencyTransfer' => 'high_frequency_transfer'
+        'highFrequencyTransfer' => 'high_frequency_transfer',
+        'preFetchAmount' => 'pre_fetch_amount'
     ];
 
     /**
@@ -133,7 +136,8 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
         'externalBillNo' => 'setExternalBillNo',
         'memo' => 'setMemo',
         'transferTryBest' => 'setTransferTryBest',
-        'highFrequencyTransfer' => 'setHighFrequencyTransfer'
+        'highFrequencyTransfer' => 'setHighFrequencyTransfer',
+        'preFetchAmount' => 'setPreFetchAmount'
     ];
 
     /**
@@ -149,7 +153,8 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
         'externalBillNo' => 'getExternalBillNo',
         'memo' => 'getMemo',
         'transferTryBest' => 'getTransferTryBest',
-        'highFrequencyTransfer' => 'getHighFrequencyTransfer'
+        'highFrequencyTransfer' => 'getHighFrequencyTransfer',
+        'preFetchAmount' => 'getPreFetchAmount'
     ];
 
     /**
@@ -220,6 +225,7 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
         $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
         $this->container['transferTryBest'] = isset($data['transferTryBest']) ? $data['transferTryBest'] : null;
         $this->container['highFrequencyTransfer'] = isset($data['highFrequencyTransfer']) ? $data['highFrequencyTransfer'] : null;
+        $this->container['preFetchAmount'] = isset($data['preFetchAmount']) ? $data['preFetchAmount'] : null;
     }
 
     /**
@@ -434,6 +440,30 @@ class FundTransferAddRequest implements ModelInterface, ArrayAccess
     public function setHighFrequencyTransfer($highFrequencyTransfer)
     {
         $this->container['highFrequencyTransfer'] = $highFrequencyTransfer;
+
+        return $this;
+    }
+
+    /**
+     * Gets preFetchAmount
+     *
+     * @return int|mixed
+     */
+    public function getPreFetchAmount()
+    {
+        return $this->container['preFetchAmount'];
+    }
+
+    /**
+     * Sets preFetchAmount
+     *
+     * @param int|mixed $preFetchAmount preFetchAmount
+     *
+     * @return $this
+     */
+    public function setPreFetchAmount($preFetchAmount)
+    {
+        $this->container['preFetchAmount'] = $preFetchAmount;
 
         return $this;
     }

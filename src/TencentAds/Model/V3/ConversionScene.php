@@ -52,6 +52,7 @@ class ConversionScene
     const QQ_MINI_GAME = 'CONVERSION_SCENE_QQ_MINI_GAME';
     const QUICK_APP = 'CONVERSION_SCENE_QUICK_APP';
     const WE_COM = 'CONVERSION_SCENE_WE_COM';
+    const HARMONY = 'CONVERSION_SCENE_HARMONY';
     
     /**
      * Gets allowable values of the enum
@@ -68,6 +69,7 @@ class ConversionScene
             self::QQ_MINI_GAME,
             self::QUICK_APP,
             self::WE_COM,
+            self::HARMONY,
         ];
     }
 }

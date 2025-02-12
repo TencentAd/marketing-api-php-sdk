@@ -85,6 +85,7 @@ class PreReviewSiteSetDefinitionString
     const QQSHOPPING = 'SITE_SET_QQSHOPPING';
     const PCAD = 'SITE_SET_PCAD';
     const YUNXUAN = 'SITE_SET_YUNXUAN';
+    const EXPAND = 'SITE_SET_EXPAND';
     
     /**
      * Gets allowable values of the enum
@@ -134,6 +135,7 @@ class PreReviewSiteSetDefinitionString
             self::QQSHOPPING,
             self::PCAD,
             self::YUNXUAN,
+            self::EXPAND,
         ];
     }
 }

@@ -75,8 +75,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int',
         'marketingAssetVerification' => '\TencentAds\Model\V3\MarketingAssetVerification',
         'source' => '\TencentAds\Model\V3\AdCreativeSource',
-        'assetInconsistentStatus' => '\TencentAds\Model\V3\AssetInconsistentStatus',
-        'potentialStatus' => '\TencentAds\Model\V3\DynamicCreativePotentialStatus'
+        'assetInconsistentStatus' => '\TencentAds\Model\V3\AssetInconsistentStatus'
     ];
 
     /**
@@ -102,8 +101,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'int64',
         'marketingAssetVerification' => null,
         'source' => null,
-        'assetInconsistentStatus' => null,
-        'potentialStatus' => null
+        'assetInconsistentStatus' => null
     ];
 
     /**
@@ -150,8 +148,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'last_modified_time',
         'marketingAssetVerification' => 'marketing_asset_verification',
         'source' => 'source',
-        'assetInconsistentStatus' => 'asset_inconsistent_status',
-        'potentialStatus' => 'potential_status'
+        'assetInconsistentStatus' => 'asset_inconsistent_status'
     ];
 
     /**
@@ -177,8 +174,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'setLastModifiedTime',
         'marketingAssetVerification' => 'setMarketingAssetVerification',
         'source' => 'setSource',
-        'assetInconsistentStatus' => 'setAssetInconsistentStatus',
-        'potentialStatus' => 'setPotentialStatus'
+        'assetInconsistentStatus' => 'setAssetInconsistentStatus'
     ];
 
     /**
@@ -204,8 +200,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'lastModifiedTime' => 'getLastModifiedTime',
         'marketingAssetVerification' => 'getMarketingAssetVerification',
         'source' => 'getSource',
-        'assetInconsistentStatus' => 'getAssetInconsistentStatus',
-        'potentialStatus' => 'getPotentialStatus'
+        'assetInconsistentStatus' => 'getAssetInconsistentStatus'
     ];
 
     /**
@@ -286,7 +281,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['marketingAssetVerification'] = isset($data['marketingAssetVerification']) ? $data['marketingAssetVerification'] : null;
         $this->container['source'] = isset($data['source']) ? $data['source'] : null;
         $this->container['assetInconsistentStatus'] = isset($data['assetInconsistentStatus']) ? $data['assetInconsistentStatus'] : null;
-        $this->container['potentialStatus'] = isset($data['potentialStatus']) ? $data['potentialStatus'] : null;
     }
 
     /**
@@ -741,30 +735,6 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setAssetInconsistentStatus($assetInconsistentStatus)
     {
         $this->container['assetInconsistentStatus'] = $assetInconsistentStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets potentialStatus
-     *
-     * @return \TencentAds\Model\V3\DynamicCreativePotentialStatus|mixed
-     */
-    public function getPotentialStatus()
-    {
-        return $this->container['potentialStatus'];
-    }
-
-    /**
-     * Sets potentialStatus
-     *
-     * @param \TencentAds\Model\V3\DynamicCreativePotentialStatus|mixed $potentialStatus potentialStatus
-     *
-     * @return $this
-     */
-    public function setPotentialStatus($potentialStatus)
-    {
-        $this->container['potentialStatus'] = $potentialStatus;
 
         return $this;
     }

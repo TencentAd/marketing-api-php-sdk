@@ -1,6 +1,6 @@
 <?php
 /**
- * FloatingZoneListComponent
+ * WalletGetBindingAdvertiserGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * FloatingZoneListComponent Class Doc Comment
+ * WalletGetBindingAdvertiserGetResponse Class Doc Comment
  *
  * @category Class
- * @description 多卡轮播组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class FloatingZoneListComponent implements ModelInterface, ArrayAccess
+class WalletGetBindingAdvertiserGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class FloatingZoneListComponent implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'floating_zone_list_component';
+    protected static $swaggerModelName = 'WalletGetBindingAdvertiserGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,11 @@ class FloatingZoneListComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'componentId' => 'int',
-        'value' => '\TencentAds\Model\V3\FloatingZoneListStruct'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\V3\WalletGetBindingAdvertiserGetResponseData'
     ];
 
     /**
@@ -68,8 +70,11 @@ class FloatingZoneListComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'componentId' => 'int64',
-        'value' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -99,8 +104,11 @@ class FloatingZoneListComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'componentId' => 'component_id',
-        'value' => 'value'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -109,8 +117,11 @@ class FloatingZoneListComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'componentId' => 'setComponentId',
-        'value' => 'setValue'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -119,8 +130,11 @@ class FloatingZoneListComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'componentId' => 'getComponentId',
-        'value' => 'getValue'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -183,8 +197,11 @@ class FloatingZoneListComponent implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
-        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -212,49 +229,121 @@ class FloatingZoneListComponent implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets componentId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getComponentId()
+    public function getCode()
     {
-        return $this->container['componentId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets componentId
+     * Sets code
      *
-     * @param int|mixed $componentId componentId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setComponentId($componentId)
+    public function setCode($code)
     {
-        $this->container['componentId'] = $componentId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets value
+     * Gets message
      *
-     * @return \TencentAds\Model\V3\FloatingZoneListStruct|mixed
+     * @return string|mixed
      */
-    public function getValue()
+    public function getMessage()
     {
-        return $this->container['value'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets value
+     * Sets message
      *
-     * @param \TencentAds\Model\V3\FloatingZoneListStruct|mixed $value value
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setValue($value)
+    public function setMessage($message)
     {
-        $this->container['value'] = $value;
+        $this->container['message'] = $message;
+
+        return $this;
+    }
+
+    /**
+     * Gets messageCn
+     *
+     * @return string|mixed
+     */
+    public function getMessageCn()
+    {
+        return $this->container['messageCn'];
+    }
+
+    /**
+     * Sets messageCn
+     *
+     * @param string|mixed $messageCn messageCn
+     *
+     * @return $this
+     */
+    public function setMessageCn($messageCn)
+    {
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\V3\WalletGetBindingAdvertiserGetResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\V3\WalletGetBindingAdvertiserGetResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

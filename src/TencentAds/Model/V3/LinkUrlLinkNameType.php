@@ -102,6 +102,10 @@ class LinkUrlLinkNameType
     const CONTACT_CUSTOMER_SERVICE = 'CONTACT_CUSTOMER_SERVICE';
     const CONTACT_BUSINESS = 'CONTACT_BUSINESS';
     const GO_SCAN = 'GO_SCAN';
+    const PICK_GIFT = 'PICK_GIFT';
+    const SELECT_GIFT = 'SELECT_GIFT';
+    const GIVING_GIFT = 'GIVING_GIFT';
+    const GIVE_FRIEND = 'GIVE_FRIEND';
     const LINK_NAME_TEXT_TEMPLATE = 'LINK_NAME_TEXT_TEMPLATE';
     
     /**
@@ -169,6 +173,10 @@ class LinkUrlLinkNameType
             self::CONTACT_CUSTOMER_SERVICE,
             self::CONTACT_BUSINESS,
             self::GO_SCAN,
+            self::PICK_GIFT,
+            self::SELECT_GIFT,
+            self::GIVING_GIFT,
+            self::GIVE_FRIEND,
             self::LINK_NAME_TEXT_TEMPLATE,
         ];
     }

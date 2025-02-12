@@ -61,7 +61,7 @@ class ConversionLinkNodeStruct implements ModelInterface, ArrayAccess
         'conversionLinkNodeId' => 'int',
         'conversionLinkNodeName' => 'string',
         'conversionLinkNodeIndex' => 'int',
-        'conversionLinkActionType' => '\TencentAds\Model\V3\ActionType',
+        'conversionLinkActionType' => 'string[]',
         'carrierId' => 'int',
         'carrierName' => 'string',
         'dataSource' => '\TencentAds\Model\V3\ConversionLinkNodeDataSource',
@@ -346,7 +346,7 @@ class ConversionLinkNodeStruct implements ModelInterface, ArrayAccess
     /**
      * Gets conversionLinkActionType
      *
-     * @return \TencentAds\Model\V3\ActionType|mixed
+     * @return string[]|mixed
      */
     public function getConversionLinkActionType()
     {
@@ -356,7 +356,7 @@ class ConversionLinkNodeStruct implements ModelInterface, ArrayAccess
     /**
      * Sets conversionLinkActionType
      *
-     * @param \TencentAds\Model\V3\ActionType|mixed $conversionLinkActionType conversionLinkActionType
+     * @param string[]|mixed $conversionLinkActionType conversionLinkActionType
      *
      * @return $this
      */

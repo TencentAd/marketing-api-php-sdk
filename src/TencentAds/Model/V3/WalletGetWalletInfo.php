@@ -1,6 +1,6 @@
 <?php
 /**
- * ProgrammedTemplateGetRequest
+ * WalletGetWalletInfo
  *
  * PHP version 5
  *
@@ -33,14 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ProgrammedTemplateGetRequest Class Doc Comment
+ * WalletGetWalletInfo Class Doc Comment
  *
  * @category Class
+ * @description 钱包信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProgrammedTemplateGetRequest implements ModelInterface, ArrayAccess
+class WalletGetWalletInfo implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class ProgrammedTemplateGetRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ProgrammedTemplateGetRequest';
+    protected static $swaggerModelName = 'WalletGetWalletInfo';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,13 +58,16 @@ class ProgrammedTemplateGetRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'materialDeriveId' => 'int',
-        'materialPreviewId' => 'int',
-        'templateIdList' => 'int[]',
-        'keyWord' => 'string',
-        'sortBy' => '\TencentAds\Model\V3\SortByStruct[]',
-        'pageInfo' => '\TencentAds\Model\V3\PageInfoStruct'
+        'balance' => 'int',
+        'walletId' => 'int',
+        'walletName' => 'string',
+        'agencyId' => 'int',
+        'agencyName' => 'string',
+        'mdmId' => 'int',
+        'mdmName' => 'string',
+        'tagList' => 'string[]',
+        'bindingAccountList' => 'int[]',
+        'bindAdvertiserCnt' => 'int'
     ];
 
     /**
@@ -72,13 +76,16 @@ class ProgrammedTemplateGetRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'materialDeriveId' => 'int64',
-        'materialPreviewId' => 'int64',
-        'templateIdList' => 'int64',
-        'keyWord' => null,
-        'sortBy' => null,
-        'pageInfo' => null
+        'balance' => 'int64',
+        'walletId' => 'int64',
+        'walletName' => null,
+        'agencyId' => 'int64',
+        'agencyName' => null,
+        'mdmId' => 'int64',
+        'mdmName' => null,
+        'tagList' => null,
+        'bindingAccountList' => 'int64',
+        'bindAdvertiserCnt' => 'int64'
     ];
 
     /**
@@ -108,13 +115,16 @@ class ProgrammedTemplateGetRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'materialDeriveId' => 'material_derive_id',
-        'materialPreviewId' => 'material_preview_id',
-        'templateIdList' => 'template_id_list',
-        'keyWord' => 'key_word',
-        'sortBy' => 'sort_by',
-        'pageInfo' => 'page_info'
+        'balance' => 'balance',
+        'walletId' => 'wallet_id',
+        'walletName' => 'wallet_name',
+        'agencyId' => 'agency_id',
+        'agencyName' => 'agency_name',
+        'mdmId' => 'mdm_id',
+        'mdmName' => 'mdm_name',
+        'tagList' => 'tag_list',
+        'bindingAccountList' => 'binding_account_list',
+        'bindAdvertiserCnt' => 'bind_advertiser_cnt'
     ];
 
     /**
@@ -123,13 +133,16 @@ class ProgrammedTemplateGetRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'materialDeriveId' => 'setMaterialDeriveId',
-        'materialPreviewId' => 'setMaterialPreviewId',
-        'templateIdList' => 'setTemplateIdList',
-        'keyWord' => 'setKeyWord',
-        'sortBy' => 'setSortBy',
-        'pageInfo' => 'setPageInfo'
+        'balance' => 'setBalance',
+        'walletId' => 'setWalletId',
+        'walletName' => 'setWalletName',
+        'agencyId' => 'setAgencyId',
+        'agencyName' => 'setAgencyName',
+        'mdmId' => 'setMdmId',
+        'mdmName' => 'setMdmName',
+        'tagList' => 'setTagList',
+        'bindingAccountList' => 'setBindingAccountList',
+        'bindAdvertiserCnt' => 'setBindAdvertiserCnt'
     ];
 
     /**
@@ -138,13 +151,16 @@ class ProgrammedTemplateGetRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'materialDeriveId' => 'getMaterialDeriveId',
-        'materialPreviewId' => 'getMaterialPreviewId',
-        'templateIdList' => 'getTemplateIdList',
-        'keyWord' => 'getKeyWord',
-        'sortBy' => 'getSortBy',
-        'pageInfo' => 'getPageInfo'
+        'balance' => 'getBalance',
+        'walletId' => 'getWalletId',
+        'walletName' => 'getWalletName',
+        'agencyId' => 'getAgencyId',
+        'agencyName' => 'getAgencyName',
+        'mdmId' => 'getMdmId',
+        'mdmName' => 'getMdmName',
+        'tagList' => 'getTagList',
+        'bindingAccountList' => 'getBindingAccountList',
+        'bindAdvertiserCnt' => 'getBindAdvertiserCnt'
     ];
 
     /**
@@ -207,13 +223,16 @@ class ProgrammedTemplateGetRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['materialDeriveId'] = isset($data['materialDeriveId']) ? $data['materialDeriveId'] : null;
-        $this->container['materialPreviewId'] = isset($data['materialPreviewId']) ? $data['materialPreviewId'] : null;
-        $this->container['templateIdList'] = isset($data['templateIdList']) ? $data['templateIdList'] : null;
-        $this->container['keyWord'] = isset($data['keyWord']) ? $data['keyWord'] : null;
-        $this->container['sortBy'] = isset($data['sortBy']) ? $data['sortBy'] : null;
-        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
+        $this->container['balance'] = isset($data['balance']) ? $data['balance'] : null;
+        $this->container['walletId'] = isset($data['walletId']) ? $data['walletId'] : null;
+        $this->container['walletName'] = isset($data['walletName']) ? $data['walletName'] : null;
+        $this->container['agencyId'] = isset($data['agencyId']) ? $data['agencyId'] : null;
+        $this->container['agencyName'] = isset($data['agencyName']) ? $data['agencyName'] : null;
+        $this->container['mdmId'] = isset($data['mdmId']) ? $data['mdmId'] : null;
+        $this->container['mdmName'] = isset($data['mdmName']) ? $data['mdmName'] : null;
+        $this->container['tagList'] = isset($data['tagList']) ? $data['tagList'] : null;
+        $this->container['bindingAccountList'] = isset($data['bindingAccountList']) ? $data['bindingAccountList'] : null;
+        $this->container['bindAdvertiserCnt'] = isset($data['bindAdvertiserCnt']) ? $data['bindAdvertiserCnt'] : null;
     }
 
     /**
@@ -241,169 +260,241 @@ class ProgrammedTemplateGetRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets balance
      *
      * @return int|mixed
      */
-    public function getAccountId()
+    public function getBalance()
     {
-        return $this->container['accountId'];
+        return $this->container['balance'];
     }
 
     /**
-     * Sets accountId
+     * Sets balance
      *
-     * @param int|mixed $accountId accountId
+     * @param int|mixed $balance balance
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setBalance($balance)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['balance'] = $balance;
 
         return $this;
     }
 
     /**
-     * Gets materialDeriveId
+     * Gets walletId
      *
      * @return int|mixed
      */
-    public function getMaterialDeriveId()
+    public function getWalletId()
     {
-        return $this->container['materialDeriveId'];
+        return $this->container['walletId'];
     }
 
     /**
-     * Sets materialDeriveId
+     * Sets walletId
      *
-     * @param int|mixed $materialDeriveId materialDeriveId
+     * @param int|mixed $walletId walletId
      *
      * @return $this
      */
-    public function setMaterialDeriveId($materialDeriveId)
+    public function setWalletId($walletId)
     {
-        $this->container['materialDeriveId'] = $materialDeriveId;
+        $this->container['walletId'] = $walletId;
 
         return $this;
     }
 
     /**
-     * Gets materialPreviewId
-     *
-     * @return int|mixed
-     */
-    public function getMaterialPreviewId()
-    {
-        return $this->container['materialPreviewId'];
-    }
-
-    /**
-     * Sets materialPreviewId
-     *
-     * @param int|mixed $materialPreviewId materialPreviewId
-     *
-     * @return $this
-     */
-    public function setMaterialPreviewId($materialPreviewId)
-    {
-        $this->container['materialPreviewId'] = $materialPreviewId;
-
-        return $this;
-    }
-
-    /**
-     * Gets templateIdList
-     *
-     * @return int[]|mixed
-     */
-    public function getTemplateIdList()
-    {
-        return $this->container['templateIdList'];
-    }
-
-    /**
-     * Sets templateIdList
-     *
-     * @param int[]|mixed $templateIdList templateIdList
-     *
-     * @return $this
-     */
-    public function setTemplateIdList($templateIdList)
-    {
-        $this->container['templateIdList'] = $templateIdList;
-
-        return $this;
-    }
-
-    /**
-     * Gets keyWord
+     * Gets walletName
      *
      * @return string|mixed
      */
-    public function getKeyWord()
+    public function getWalletName()
     {
-        return $this->container['keyWord'];
+        return $this->container['walletName'];
     }
 
     /**
-     * Sets keyWord
+     * Sets walletName
      *
-     * @param string|mixed $keyWord keyWord
+     * @param string|mixed $walletName walletName
      *
      * @return $this
      */
-    public function setKeyWord($keyWord)
+    public function setWalletName($walletName)
     {
-        $this->container['keyWord'] = $keyWord;
+        $this->container['walletName'] = $walletName;
 
         return $this;
     }
 
     /**
-     * Gets sortBy
+     * Gets agencyId
      *
-     * @return \TencentAds\Model\V3\SortByStruct[]|mixed
+     * @return int|mixed
      */
-    public function getSortBy()
+    public function getAgencyId()
     {
-        return $this->container['sortBy'];
+        return $this->container['agencyId'];
     }
 
     /**
-     * Sets sortBy
+     * Sets agencyId
      *
-     * @param \TencentAds\Model\V3\SortByStruct[]|mixed $sortBy sortBy
+     * @param int|mixed $agencyId agencyId
      *
      * @return $this
      */
-    public function setSortBy($sortBy)
+    public function setAgencyId($agencyId)
     {
-        $this->container['sortBy'] = $sortBy;
+        $this->container['agencyId'] = $agencyId;
 
         return $this;
     }
 
     /**
-     * Gets pageInfo
+     * Gets agencyName
      *
-     * @return \TencentAds\Model\V3\PageInfoStruct|mixed
+     * @return string|mixed
      */
-    public function getPageInfo()
+    public function getAgencyName()
     {
-        return $this->container['pageInfo'];
+        return $this->container['agencyName'];
     }
 
     /**
-     * Sets pageInfo
+     * Sets agencyName
      *
-     * @param \TencentAds\Model\V3\PageInfoStruct|mixed $pageInfo pageInfo
+     * @param string|mixed $agencyName agencyName
      *
      * @return $this
      */
-    public function setPageInfo($pageInfo)
+    public function setAgencyName($agencyName)
     {
-        $this->container['pageInfo'] = $pageInfo;
+        $this->container['agencyName'] = $agencyName;
+
+        return $this;
+    }
+
+    /**
+     * Gets mdmId
+     *
+     * @return int|mixed
+     */
+    public function getMdmId()
+    {
+        return $this->container['mdmId'];
+    }
+
+    /**
+     * Sets mdmId
+     *
+     * @param int|mixed $mdmId mdmId
+     *
+     * @return $this
+     */
+    public function setMdmId($mdmId)
+    {
+        $this->container['mdmId'] = $mdmId;
+
+        return $this;
+    }
+
+    /**
+     * Gets mdmName
+     *
+     * @return string|mixed
+     */
+    public function getMdmName()
+    {
+        return $this->container['mdmName'];
+    }
+
+    /**
+     * Sets mdmName
+     *
+     * @param string|mixed $mdmName mdmName
+     *
+     * @return $this
+     */
+    public function setMdmName($mdmName)
+    {
+        $this->container['mdmName'] = $mdmName;
+
+        return $this;
+    }
+
+    /**
+     * Gets tagList
+     *
+     * @return string[]|mixed
+     */
+    public function getTagList()
+    {
+        return $this->container['tagList'];
+    }
+
+    /**
+     * Sets tagList
+     *
+     * @param string[]|mixed $tagList tagList
+     *
+     * @return $this
+     */
+    public function setTagList($tagList)
+    {
+        $this->container['tagList'] = $tagList;
+
+        return $this;
+    }
+
+    /**
+     * Gets bindingAccountList
+     *
+     * @return int[]|mixed
+     */
+    public function getBindingAccountList()
+    {
+        return $this->container['bindingAccountList'];
+    }
+
+    /**
+     * Sets bindingAccountList
+     *
+     * @param int[]|mixed $bindingAccountList bindingAccountList
+     *
+     * @return $this
+     */
+    public function setBindingAccountList($bindingAccountList)
+    {
+        $this->container['bindingAccountList'] = $bindingAccountList;
+
+        return $this;
+    }
+
+    /**
+     * Gets bindAdvertiserCnt
+     *
+     * @return int|mixed
+     */
+    public function getBindAdvertiserCnt()
+    {
+        return $this->container['bindAdvertiserCnt'];
+    }
+
+    /**
+     * Sets bindAdvertiserCnt
+     *
+     * @param int|mixed $bindAdvertiserCnt bindAdvertiserCnt
+     *
+     * @return $this
+     */
+    public function setBindAdvertiserCnt($bindAdvertiserCnt)
+    {
+        $this->container['bindAdvertiserCnt'] = $bindAdvertiserCnt;
 
         return $this;
     }

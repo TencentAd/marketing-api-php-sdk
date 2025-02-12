@@ -169,6 +169,9 @@ use TencentAds\Container\V3\VideoChannelLeadsDataApiContainer;
 use TencentAds\Container\V3\VideoChannelLiveDataApiContainer;
 use TencentAds\Container\V3\VideosApiContainer;
 use TencentAds\Container\V3\WalletApiContainer;
+use TencentAds\Container\V3\WalletBasicInfoApiContainer;
+use TencentAds\Container\V3\WalletGetBindingAdvertiserApiContainer;
+use TencentAds\Container\V3\WalletInvoiceApiContainer;
 use TencentAds\Container\V3\WalletTransferApiContainer;
 use TencentAds\Container\V3\WechatChannelsAccountsApiContainer;
 use TencentAds\Container\V3\WechatChannelsAdAccountApiContainer;
@@ -704,6 +707,15 @@ class App
 
     /** @var WalletApiContainer */
     public $walletApiContainer;
+
+    /** @var WalletBasicInfoApiContainer */
+    public $walletBasicInfoApiContainer;
+
+    /** @var WalletGetBindingAdvertiserApiContainer */
+    public $walletGetBindingAdvertiserApiContainer;
+
+    /** @var WalletInvoiceApiContainer */
+    public $walletInvoiceApiContainer;
 
     /** @var WalletTransferApiContainer */
     public $walletTransferApiContainer;
@@ -3140,6 +3152,48 @@ class App
             $this->walletApiContainer = $container;
         }
         return $this->walletApiContainer;
+    }
+
+
+    /**
+     * @return WalletBasicInfoApiContainer
+     */
+    public function walletBasicInfo()
+    {
+        if (empty($this->walletBasicInfoApiContainer)) {
+            $container = new WalletBasicInfoApiContainer();
+            $container->init($this, $this->getClient());
+            $this->walletBasicInfoApiContainer = $container;
+        }
+        return $this->walletBasicInfoApiContainer;
+    }
+
+
+    /**
+     * @return WalletGetBindingAdvertiserApiContainer
+     */
+    public function walletGetBindingAdvertiser()
+    {
+        if (empty($this->walletGetBindingAdvertiserApiContainer)) {
+            $container = new WalletGetBindingAdvertiserApiContainer();
+            $container->init($this, $this->getClient());
+            $this->walletGetBindingAdvertiserApiContainer = $container;
+        }
+        return $this->walletGetBindingAdvertiserApiContainer;
+    }
+
+
+    /**
+     * @return WalletInvoiceApiContainer
+     */
+    public function walletInvoice()
+    {
+        if (empty($this->walletInvoiceApiContainer)) {
+            $container = new WalletInvoiceApiContainer();
+            $container->init($this, $this->getClient());
+            $this->walletInvoiceApiContainer = $container;
+        }
+        return $this->walletInvoiceApiContainer;
     }
 
 

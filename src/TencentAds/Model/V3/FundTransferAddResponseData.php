@@ -61,7 +61,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
         'amount' => 'int',
         'externalBillNo' => 'string',
         'time' => 'int',
-        'isRepeated' => 'bool'
+        'isRepeated' => 'bool',
+        'recommendAmount' => 'int'
     ];
 
     /**
@@ -74,7 +75,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
         'amount' => 'int64',
         'externalBillNo' => null,
         'time' => 'int64',
-        'isRepeated' => null
+        'isRepeated' => null,
+        'recommendAmount' => 'int64'
     ];
 
     /**
@@ -108,7 +110,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
         'amount' => 'amount',
         'externalBillNo' => 'external_bill_no',
         'time' => 'time',
-        'isRepeated' => 'is_repeated'
+        'isRepeated' => 'is_repeated',
+        'recommendAmount' => 'recommend_amount'
     ];
 
     /**
@@ -121,7 +124,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
         'amount' => 'setAmount',
         'externalBillNo' => 'setExternalBillNo',
         'time' => 'setTime',
-        'isRepeated' => 'setIsRepeated'
+        'isRepeated' => 'setIsRepeated',
+        'recommendAmount' => 'setRecommendAmount'
     ];
 
     /**
@@ -134,7 +138,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
         'amount' => 'getAmount',
         'externalBillNo' => 'getExternalBillNo',
         'time' => 'getTime',
-        'isRepeated' => 'getIsRepeated'
+        'isRepeated' => 'getIsRepeated',
+        'recommendAmount' => 'getRecommendAmount'
     ];
 
     /**
@@ -202,6 +207,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
         $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
         $this->container['time'] = isset($data['time']) ? $data['time'] : null;
         $this->container['isRepeated'] = isset($data['isRepeated']) ? $data['isRepeated'] : null;
+        $this->container['recommendAmount'] = isset($data['recommendAmount']) ? $data['recommendAmount'] : null;
     }
 
     /**
@@ -344,6 +350,30 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     public function setIsRepeated($isRepeated)
     {
         $this->container['isRepeated'] = $isRepeated;
+
+        return $this;
+    }
+
+    /**
+     * Gets recommendAmount
+     *
+     * @return int|mixed
+     */
+    public function getRecommendAmount()
+    {
+        return $this->container['recommendAmount'];
+    }
+
+    /**
+     * Sets recommendAmount
+     *
+     * @param int|mixed $recommendAmount recommendAmount
+     *
+     * @return $this
+     */
+    public function setRecommendAmount($recommendAmount)
+    {
+        $this->container['recommendAmount'] = $recommendAmount;
 
         return $this;
     }

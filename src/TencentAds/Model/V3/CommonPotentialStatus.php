@@ -1,6 +1,6 @@
 <?php
 /**
- * DynamicCreativePotentialStatus
+ * CommonPotentialStatus
  *
  * PHP version 5
  *
@@ -31,22 +31,22 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DynamicCreativePotentialStatus Class Doc Comment
+ * CommonPotentialStatus Class Doc Comment
  *
  * @category Class
- * @description 创意潜力
+ * @description 组件潜力
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DynamicCreativePotentialStatus
+class CommonPotentialStatus
 {
     /**
      * Possible values of this enum
      */
-    const _DEFAULT = 'DYNAMIC_CREATIVE_POTENTIAL_DEFAULT';
-    const LOW = 'DYNAMIC_CREATIVE_POTENTIAL_LOW';
-    const HIGH = 'DYNAMIC_CREATIVE_POTENTIAL_HIGH';
+    const _DEFAULT = 'COMMON_POTENTIAL_STATUS_DEFAULT';
+    const LOW = 'COMMON_POTENTIAL_STATUS_LOW';
+    const HIGH = 'COMMON_POTENTIAL_STATUS_HIGH';
     
     /**
      * Gets allowable values of the enum

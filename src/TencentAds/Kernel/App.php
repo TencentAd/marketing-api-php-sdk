@@ -174,9 +174,6 @@ use TencentAds\Container\WechatPagesGrantinfoApiContainer;
 use TencentAds\Container\WeixinOfficialAccountsUpgradeStatusApiContainer;
 use TencentAds\Container\WildcardsApiContainer;
 use TencentAds\Container\XijingComplexTemplateApiContainer;
-use TencentAds\Container\XijingDeriveClickEffectApiContainer;
-use TencentAds\Container\XijingDeriveRoleApiContainer;
-use TencentAds\Container\XijingDeriveTempTokenApiContainer;
 use TencentAds\Container\XijingPageApiContainer;
 use TencentAds\Container\XijingPageByComponentsApiContainer;
 use TencentAds\Container\XijingPageInteractiveApiContainer;
@@ -704,15 +701,6 @@ class App
 
     /** @var XijingComplexTemplateApiContainer */
     public $xijingComplexTemplateApiContainer;
-
-    /** @var XijingDeriveClickEffectApiContainer */
-    public $xijingDeriveClickEffectApiContainer;
-
-    /** @var XijingDeriveRoleApiContainer */
-    public $xijingDeriveRoleApiContainer;
-
-    /** @var XijingDeriveTempTokenApiContainer */
-    public $xijingDeriveTempTokenApiContainer;
 
     /** @var XijingPageApiContainer */
     public $xijingPageApiContainer;
@@ -3150,48 +3138,6 @@ class App
             $this->xijingComplexTemplateApiContainer = $container;
         }
         return $this->xijingComplexTemplateApiContainer;
-    }
-
-
-    /**
-     * @return XijingDeriveClickEffectApiContainer
-     */
-    public function xijingDeriveClickEffect()
-    {
-        if (empty($this->xijingDeriveClickEffectApiContainer)) {
-            $container = new XijingDeriveClickEffectApiContainer();
-            $container->init($this, $this->getClient());
-            $this->xijingDeriveClickEffectApiContainer = $container;
-        }
-        return $this->xijingDeriveClickEffectApiContainer;
-    }
-
-
-    /**
-     * @return XijingDeriveRoleApiContainer
-     */
-    public function xijingDeriveRole()
-    {
-        if (empty($this->xijingDeriveRoleApiContainer)) {
-            $container = new XijingDeriveRoleApiContainer();
-            $container->init($this, $this->getClient());
-            $this->xijingDeriveRoleApiContainer = $container;
-        }
-        return $this->xijingDeriveRoleApiContainer;
-    }
-
-
-    /**
-     * @return XijingDeriveTempTokenApiContainer
-     */
-    public function xijingDeriveTempToken()
-    {
-        if (empty($this->xijingDeriveTempTokenApiContainer)) {
-            $container = new XijingDeriveTempTokenApiContainer();
-            $container->init($this, $this->getClient());
-            $this->xijingDeriveTempTokenApiContainer = $container;
-        }
-        return $this->xijingDeriveTempTokenApiContainer;
     }
 
 

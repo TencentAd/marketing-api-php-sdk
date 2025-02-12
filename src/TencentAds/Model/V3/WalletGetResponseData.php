@@ -57,7 +57,7 @@ class WalletGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'walletInfo' => '\TencentAds\Model\V3\WalletInfo'
+        'walletInfo' => '\TencentAds\Model\V3\WalletGetWalletInfo'
     ];
 
     /**
@@ -207,7 +207,7 @@ class WalletGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets walletInfo
      *
-     * @return \TencentAds\Model\V3\WalletInfo|mixed
+     * @return \TencentAds\Model\V3\WalletGetWalletInfo|mixed
      */
     public function getWalletInfo()
     {
@@ -217,7 +217,7 @@ class WalletGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets walletInfo
      *
-     * @param \TencentAds\Model\V3\WalletInfo|mixed $walletInfo walletInfo
+     * @param \TencentAds\Model\V3\WalletGetWalletInfo|mixed $walletInfo walletInfo
      *
      * @return $this
      */
