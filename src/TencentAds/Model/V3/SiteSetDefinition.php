@@ -100,6 +100,7 @@ class SiteSetDefinition
     const FREETRADE_WEAPP = 'SITE_SET_FREETRADE_WEAPP';
     const TENCENT_AD_NETWORK_OVERSEA = 'SITE_SET_TENCENT_AD_NETWORK_OVERSEA';
     const YUNXUAN = 'SITE_SET_YUNXUAN';
+    const SEARCH_MOBILE_UNION = 'SITE_SET_SEARCH_MOBILE_UNION';
     const EXPAND = 'SITE_SET_EXPAND';
     
     /**
@@ -165,6 +166,7 @@ class SiteSetDefinition
             self::FREETRADE_WEAPP,
             self::TENCENT_AD_NETWORK_OVERSEA,
             self::YUNXUAN,
+            self::SEARCH_MOBILE_UNION,
             self::EXPAND,
         ];
     }

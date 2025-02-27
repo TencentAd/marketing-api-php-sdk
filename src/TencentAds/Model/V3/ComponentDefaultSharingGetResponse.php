@@ -1,6 +1,6 @@
 <?php
 /**
- * ProgrammedAddResponse
+ * ComponentDefaultSharingGetResponse
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ProgrammedAddResponse Class Doc Comment
+ * ComponentDefaultSharingGetResponse Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProgrammedAddResponse implements ModelInterface, ArrayAccess
+class ComponentDefaultSharingGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class ProgrammedAddResponse implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ProgrammedAddResponse';
+    protected static $swaggerModelName = 'ComponentDefaultSharingGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -61,7 +61,7 @@ class ProgrammedAddResponse implements ModelInterface, ArrayAccess
         'message' => 'string',
         'messageCn' => 'string',
         'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
-        'data' => '\TencentAds\Model\V3\ProgrammedAddResponseData'
+        'data' => '\TencentAds\Model\V3\ComponentDefaultSharingGetResponseData'
     ];
 
     /**
@@ -327,7 +327,7 @@ class ProgrammedAddResponse implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \TencentAds\Model\V3\ProgrammedAddResponseData|mixed
+     * @return \TencentAds\Model\V3\ComponentDefaultSharingGetResponseData|mixed
      */
     public function getData()
     {
@@ -337,7 +337,7 @@ class ProgrammedAddResponse implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \TencentAds\Model\V3\ProgrammedAddResponseData|mixed $data data
+     * @param \TencentAds\Model\V3\ComponentDefaultSharingGetResponseData|mixed $data data
      *
      * @return $this
      */

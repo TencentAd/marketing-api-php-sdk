@@ -1,6 +1,6 @@
 <?php
 /**
- * ProgrammedAddResponseData
+ * ComponentDefaultSharingUpdateResponseData
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ProgrammedAddResponseData Class Doc Comment
+ * ComponentDefaultSharingUpdateResponseData Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProgrammedAddResponseData implements ModelInterface, ArrayAccess
+class ComponentDefaultSharingUpdateResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class ProgrammedAddResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ProgrammedAddResponseData';
+    protected static $swaggerModelName = 'ComponentDefaultSharingUpdateResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +57,7 @@ class ProgrammedAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'materialDeriveId' => 'int'
+        'defaultSharedType' => '\TencentAds\Model\V3\DefaultSharedType'
     ];
 
     /**
@@ -66,7 +66,7 @@ class ProgrammedAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'materialDeriveId' => 'int64'
+        'defaultSharedType' => null
     ];
 
     /**
@@ -96,7 +96,7 @@ class ProgrammedAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'materialDeriveId' => 'material_derive_id'
+        'defaultSharedType' => 'default_shared_type'
     ];
 
     /**
@@ -105,7 +105,7 @@ class ProgrammedAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'materialDeriveId' => 'setMaterialDeriveId'
+        'defaultSharedType' => 'setDefaultSharedType'
     ];
 
     /**
@@ -114,7 +114,7 @@ class ProgrammedAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'materialDeriveId' => 'getMaterialDeriveId'
+        'defaultSharedType' => 'getDefaultSharedType'
     ];
 
     /**
@@ -177,7 +177,7 @@ class ProgrammedAddResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['materialDeriveId'] = isset($data['materialDeriveId']) ? $data['materialDeriveId'] : null;
+        $this->container['defaultSharedType'] = isset($data['defaultSharedType']) ? $data['defaultSharedType'] : null;
     }
 
     /**
@@ -205,25 +205,25 @@ class ProgrammedAddResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets materialDeriveId
+     * Gets defaultSharedType
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\DefaultSharedType|mixed
      */
-    public function getMaterialDeriveId()
+    public function getDefaultSharedType()
     {
-        return $this->container['materialDeriveId'];
+        return $this->container['defaultSharedType'];
     }
 
     /**
-     * Sets materialDeriveId
+     * Sets defaultSharedType
      *
-     * @param int|mixed $materialDeriveId materialDeriveId
+     * @param \TencentAds\Model\V3\DefaultSharedType|mixed $defaultSharedType defaultSharedType
      *
      * @return $this
      */
-    public function setMaterialDeriveId($materialDeriveId)
+    public function setDefaultSharedType($defaultSharedType)
     {
-        $this->container['materialDeriveId'] = $materialDeriveId;
+        $this->container['defaultSharedType'] = $defaultSharedType;
 
         return $this;
     }

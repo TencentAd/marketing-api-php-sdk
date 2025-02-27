@@ -1,6 +1,6 @@
 <?php
 /**
- * MaterialGroupUpdateStruct
+ * ComponentDefaultSharingUpdateRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * MaterialGroupUpdateStruct Class Doc Comment
+ * ComponentDefaultSharingUpdateRequest Class Doc Comment
  *
  * @category Class
- * @description 素材组信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class MaterialGroupUpdateStruct implements ModelInterface, ArrayAccess
+class ComponentDefaultSharingUpdateRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class MaterialGroupUpdateStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'material_group_update_struct';
+    protected static $swaggerModelName = 'ComponentDefaultSharingUpdateRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,8 @@ class MaterialGroupUpdateStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'materialGroupId' => 'int',
-        'materials' => '\TencentAds\Model\V3\MaterialUpdateStruct[]',
-        'previews' => '\TencentAds\Model\V3\PreviewUpdateStruct[]'
+        'organizationId' => 'int',
+        'defaultSharedType' => '\TencentAds\Model\V3\DefaultSharedType'
     ];
 
     /**
@@ -69,9 +67,8 @@ class MaterialGroupUpdateStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'materialGroupId' => 'int64',
-        'materials' => null,
-        'previews' => null
+        'organizationId' => 'int64',
+        'defaultSharedType' => null
     ];
 
     /**
@@ -101,9 +98,8 @@ class MaterialGroupUpdateStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'materialGroupId' => 'material_group_id',
-        'materials' => 'materials',
-        'previews' => 'previews'
+        'organizationId' => 'organization_id',
+        'defaultSharedType' => 'default_shared_type'
     ];
 
     /**
@@ -112,9 +108,8 @@ class MaterialGroupUpdateStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'materialGroupId' => 'setMaterialGroupId',
-        'materials' => 'setMaterials',
-        'previews' => 'setPreviews'
+        'organizationId' => 'setOrganizationId',
+        'defaultSharedType' => 'setDefaultSharedType'
     ];
 
     /**
@@ -123,9 +118,8 @@ class MaterialGroupUpdateStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'materialGroupId' => 'getMaterialGroupId',
-        'materials' => 'getMaterials',
-        'previews' => 'getPreviews'
+        'organizationId' => 'getOrganizationId',
+        'defaultSharedType' => 'getDefaultSharedType'
     ];
 
     /**
@@ -188,9 +182,8 @@ class MaterialGroupUpdateStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['materialGroupId'] = isset($data['materialGroupId']) ? $data['materialGroupId'] : null;
-        $this->container['materials'] = isset($data['materials']) ? $data['materials'] : null;
-        $this->container['previews'] = isset($data['previews']) ? $data['previews'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
+        $this->container['defaultSharedType'] = isset($data['defaultSharedType']) ? $data['defaultSharedType'] : null;
     }
 
     /**
@@ -218,73 +211,49 @@ class MaterialGroupUpdateStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets materialGroupId
+     * Gets organizationId
      *
      * @return int|mixed
      */
-    public function getMaterialGroupId()
+    public function getOrganizationId()
     {
-        return $this->container['materialGroupId'];
+        return $this->container['organizationId'];
     }
 
     /**
-     * Sets materialGroupId
+     * Sets organizationId
      *
-     * @param int|mixed $materialGroupId materialGroupId
+     * @param int|mixed $organizationId organizationId
      *
      * @return $this
      */
-    public function setMaterialGroupId($materialGroupId)
+    public function setOrganizationId($organizationId)
     {
-        $this->container['materialGroupId'] = $materialGroupId;
+        $this->container['organizationId'] = $organizationId;
 
         return $this;
     }
 
     /**
-     * Gets materials
+     * Gets defaultSharedType
      *
-     * @return \TencentAds\Model\V3\MaterialUpdateStruct[]|mixed
+     * @return \TencentAds\Model\V3\DefaultSharedType|mixed
      */
-    public function getMaterials()
+    public function getDefaultSharedType()
     {
-        return $this->container['materials'];
+        return $this->container['defaultSharedType'];
     }
 
     /**
-     * Sets materials
+     * Sets defaultSharedType
      *
-     * @param \TencentAds\Model\V3\MaterialUpdateStruct[]|mixed $materials materials
+     * @param \TencentAds\Model\V3\DefaultSharedType|mixed $defaultSharedType defaultSharedType
      *
      * @return $this
      */
-    public function setMaterials($materials)
+    public function setDefaultSharedType($defaultSharedType)
     {
-        $this->container['materials'] = $materials;
-
-        return $this;
-    }
-
-    /**
-     * Gets previews
-     *
-     * @return \TencentAds\Model\V3\PreviewUpdateStruct[]|mixed
-     */
-    public function getPreviews()
-    {
-        return $this->container['previews'];
-    }
-
-    /**
-     * Sets previews
-     *
-     * @param \TencentAds\Model\V3\PreviewUpdateStruct[]|mixed $previews previews
-     *
-     * @return $this
-     */
-    public function setPreviews($previews)
-    {
-        $this->container['previews'] = $previews;
+        $this->container['defaultSharedType'] = $defaultSharedType;
 
         return $this;
     }

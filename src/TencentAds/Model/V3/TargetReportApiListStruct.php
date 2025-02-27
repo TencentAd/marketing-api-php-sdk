@@ -780,6 +780,11 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseFirstAllDedupTouch24hAmount' => 'int',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'int',
         'payingUsersD1Cost' => 'int',
+        'channelsLiveEleCommodityClkPlaPv' => 'int',
+        'channelsLiveEleCommodityClkPlaDedupPv' => 'int',
+        'clkWechatShopPv' => 'int',
+        'clkTopicinfoPv' => 'int',
+        'clkLearnMorePv' => 'int',
         'ageId' => 'int',
         'cityId' => 'int',
         'regionId' => 'int',
@@ -1517,6 +1522,11 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseFirstAllDedupTouch24hAmount' => 'int64',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'int64',
         'payingUsersD1Cost' => 'int64',
+        'channelsLiveEleCommodityClkPlaPv' => 'int64',
+        'channelsLiveEleCommodityClkPlaDedupPv' => 'int64',
+        'clkWechatShopPv' => 'int64',
+        'clkTopicinfoPv' => 'int64',
+        'clkLearnMorePv' => 'int64',
         'ageId' => 'int64',
         'cityId' => 'int64',
         'regionId' => 'int64',
@@ -2275,6 +2285,11 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseFirstAllDedupTouch24hAmount' => 'purchase_first_all_dedup_touch_24h_amount',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'purchase_first_all_dedup_touch_24h_unit_price',
         'payingUsersD1Cost' => 'paying_users_d1_cost',
+        'channelsLiveEleCommodityClkPlaPv' => 'channels_live_ele_commodity_clk_pla_pv',
+        'channelsLiveEleCommodityClkPlaDedupPv' => 'channels_live_ele_commodity_clk_pla_dedup_pv',
+        'clkWechatShopPv' => 'clk_wechat_shop_pv',
+        'clkTopicinfoPv' => 'clk_topicinfo_pv',
+        'clkLearnMorePv' => 'clk_learn_more_pv',
         'ageId' => 'age_id',
         'cityId' => 'city_id',
         'regionId' => 'region_id',
@@ -3012,6 +3027,11 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseFirstAllDedupTouch24hAmount' => 'setPurchaseFirstAllDedupTouch24hAmount',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'setPurchaseFirstAllDedupTouch24hUnitPrice',
         'payingUsersD1Cost' => 'setPayingUsersD1Cost',
+        'channelsLiveEleCommodityClkPlaPv' => 'setChannelsLiveEleCommodityClkPlaPv',
+        'channelsLiveEleCommodityClkPlaDedupPv' => 'setChannelsLiveEleCommodityClkPlaDedupPv',
+        'clkWechatShopPv' => 'setClkWechatShopPv',
+        'clkTopicinfoPv' => 'setClkTopicinfoPv',
+        'clkLearnMorePv' => 'setClkLearnMorePv',
         'ageId' => 'setAgeId',
         'cityId' => 'setCityId',
         'regionId' => 'setRegionId',
@@ -3749,6 +3769,11 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseFirstAllDedupTouch24hAmount' => 'getPurchaseFirstAllDedupTouch24hAmount',
         'purchaseFirstAllDedupTouch24hUnitPrice' => 'getPurchaseFirstAllDedupTouch24hUnitPrice',
         'payingUsersD1Cost' => 'getPayingUsersD1Cost',
+        'channelsLiveEleCommodityClkPlaPv' => 'getChannelsLiveEleCommodityClkPlaPv',
+        'channelsLiveEleCommodityClkPlaDedupPv' => 'getChannelsLiveEleCommodityClkPlaDedupPv',
+        'clkWechatShopPv' => 'getClkWechatShopPv',
+        'clkTopicinfoPv' => 'getClkTopicinfoPv',
+        'clkLearnMorePv' => 'getClkLearnMorePv',
         'ageId' => 'getAgeId',
         'cityId' => 'getCityId',
         'regionId' => 'getRegionId',
@@ -4540,6 +4565,11 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['purchaseFirstAllDedupTouch24hAmount'] = isset($data['purchaseFirstAllDedupTouch24hAmount']) ? $data['purchaseFirstAllDedupTouch24hAmount'] : null;
         $this->container['purchaseFirstAllDedupTouch24hUnitPrice'] = isset($data['purchaseFirstAllDedupTouch24hUnitPrice']) ? $data['purchaseFirstAllDedupTouch24hUnitPrice'] : null;
         $this->container['payingUsersD1Cost'] = isset($data['payingUsersD1Cost']) ? $data['payingUsersD1Cost'] : null;
+        $this->container['channelsLiveEleCommodityClkPlaPv'] = isset($data['channelsLiveEleCommodityClkPlaPv']) ? $data['channelsLiveEleCommodityClkPlaPv'] : null;
+        $this->container['channelsLiveEleCommodityClkPlaDedupPv'] = isset($data['channelsLiveEleCommodityClkPlaDedupPv']) ? $data['channelsLiveEleCommodityClkPlaDedupPv'] : null;
+        $this->container['clkWechatShopPv'] = isset($data['clkWechatShopPv']) ? $data['clkWechatShopPv'] : null;
+        $this->container['clkTopicinfoPv'] = isset($data['clkTopicinfoPv']) ? $data['clkTopicinfoPv'] : null;
+        $this->container['clkLearnMorePv'] = isset($data['clkLearnMorePv']) ? $data['clkLearnMorePv'] : null;
         $this->container['ageId'] = isset($data['ageId']) ? $data['ageId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
@@ -21897,6 +21927,126 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setPayingUsersD1Cost($payingUsersD1Cost)
     {
         $this->container['payingUsersD1Cost'] = $payingUsersD1Cost;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsLiveEleCommodityClkPlaPv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsLiveEleCommodityClkPlaPv()
+    {
+        return $this->container['channelsLiveEleCommodityClkPlaPv'];
+    }
+
+    /**
+     * Sets channelsLiveEleCommodityClkPlaPv
+     *
+     * @param int|mixed $channelsLiveEleCommodityClkPlaPv channelsLiveEleCommodityClkPlaPv
+     *
+     * @return $this
+     */
+    public function setChannelsLiveEleCommodityClkPlaPv($channelsLiveEleCommodityClkPlaPv)
+    {
+        $this->container['channelsLiveEleCommodityClkPlaPv'] = $channelsLiveEleCommodityClkPlaPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsLiveEleCommodityClkPlaDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsLiveEleCommodityClkPlaDedupPv()
+    {
+        return $this->container['channelsLiveEleCommodityClkPlaDedupPv'];
+    }
+
+    /**
+     * Sets channelsLiveEleCommodityClkPlaDedupPv
+     *
+     * @param int|mixed $channelsLiveEleCommodityClkPlaDedupPv channelsLiveEleCommodityClkPlaDedupPv
+     *
+     * @return $this
+     */
+    public function setChannelsLiveEleCommodityClkPlaDedupPv($channelsLiveEleCommodityClkPlaDedupPv)
+    {
+        $this->container['channelsLiveEleCommodityClkPlaDedupPv'] = $channelsLiveEleCommodityClkPlaDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkWechatShopPv
+     *
+     * @return int|mixed
+     */
+    public function getClkWechatShopPv()
+    {
+        return $this->container['clkWechatShopPv'];
+    }
+
+    /**
+     * Sets clkWechatShopPv
+     *
+     * @param int|mixed $clkWechatShopPv clkWechatShopPv
+     *
+     * @return $this
+     */
+    public function setClkWechatShopPv($clkWechatShopPv)
+    {
+        $this->container['clkWechatShopPv'] = $clkWechatShopPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkTopicinfoPv
+     *
+     * @return int|mixed
+     */
+    public function getClkTopicinfoPv()
+    {
+        return $this->container['clkTopicinfoPv'];
+    }
+
+    /**
+     * Sets clkTopicinfoPv
+     *
+     * @param int|mixed $clkTopicinfoPv clkTopicinfoPv
+     *
+     * @return $this
+     */
+    public function setClkTopicinfoPv($clkTopicinfoPv)
+    {
+        $this->container['clkTopicinfoPv'] = $clkTopicinfoPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkLearnMorePv
+     *
+     * @return int|mixed
+     */
+    public function getClkLearnMorePv()
+    {
+        return $this->container['clkLearnMorePv'];
+    }
+
+    /**
+     * Sets clkLearnMorePv
+     *
+     * @param int|mixed $clkLearnMorePv clkLearnMorePv
+     *
+     * @return $this
+     */
+    public function setClkLearnMorePv($clkLearnMorePv)
+    {
+        $this->container['clkLearnMorePv'] = $clkLearnMorePv;
 
         return $this;
     }

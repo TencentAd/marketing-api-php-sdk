@@ -1,6 +1,6 @@
 <?php
 /**
- * ProgrammedUpdateResponseData
+ * ComponentDefaultSharingUpdateResponse
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ProgrammedUpdateResponseData Class Doc Comment
+ * ComponentDefaultSharingUpdateResponse Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProgrammedUpdateResponseData implements ModelInterface, ArrayAccess
+class ComponentDefaultSharingUpdateResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class ProgrammedUpdateResponseData implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ProgrammedUpdateResponseData';
+    protected static $swaggerModelName = 'ComponentDefaultSharingUpdateResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +57,11 @@ class ProgrammedUpdateResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'materialDeriveId' => 'int'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\V3\ComponentDefaultSharingUpdateResponseData'
     ];
 
     /**
@@ -66,7 +70,11 @@ class ProgrammedUpdateResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'materialDeriveId' => 'int64'
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -96,7 +104,11 @@ class ProgrammedUpdateResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'materialDeriveId' => 'material_derive_id'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -105,7 +117,11 @@ class ProgrammedUpdateResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'materialDeriveId' => 'setMaterialDeriveId'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -114,7 +130,11 @@ class ProgrammedUpdateResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'materialDeriveId' => 'getMaterialDeriveId'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -177,7 +197,11 @@ class ProgrammedUpdateResponseData implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['materialDeriveId'] = isset($data['materialDeriveId']) ? $data['materialDeriveId'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -205,25 +229,121 @@ class ProgrammedUpdateResponseData implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets materialDeriveId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getMaterialDeriveId()
+    public function getCode()
     {
-        return $this->container['materialDeriveId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets materialDeriveId
+     * Sets code
      *
-     * @param int|mixed $materialDeriveId materialDeriveId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setMaterialDeriveId($materialDeriveId)
+    public function setCode($code)
     {
-        $this->container['materialDeriveId'] = $materialDeriveId;
+        $this->container['code'] = $code;
+
+        return $this;
+    }
+
+    /**
+     * Gets message
+     *
+     * @return string|mixed
+     */
+    public function getMessage()
+    {
+        return $this->container['message'];
+    }
+
+    /**
+     * Sets message
+     *
+     * @param string|mixed $message message
+     *
+     * @return $this
+     */
+    public function setMessage($message)
+    {
+        $this->container['message'] = $message;
+
+        return $this;
+    }
+
+    /**
+     * Gets messageCn
+     *
+     * @return string|mixed
+     */
+    public function getMessageCn()
+    {
+        return $this->container['messageCn'];
+    }
+
+    /**
+     * Sets messageCn
+     *
+     * @param string|mixed $messageCn messageCn
+     *
+     * @return $this
+     */
+    public function setMessageCn($messageCn)
+    {
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\V3\ComponentDefaultSharingUpdateResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\V3\ComponentDefaultSharingUpdateResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

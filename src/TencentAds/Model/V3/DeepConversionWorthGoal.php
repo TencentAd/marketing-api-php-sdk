@@ -58,6 +58,7 @@ class DeepConversionWorthGoal
     const QYT_7_DAY_LIVE_STREAM_DEAL_ROAS = 'GOAL_QYT_7DAY_LIVE_STREAM_DEAL_ROAS';
     const WITHDRAW_DEPOSITS_ROAS = 'GOAL_WITHDRAW_DEPOSITS_ROAS';
     const FULL_PRICE_COURSE_CONVERSION_ROAS = 'GOAL_FULL_PRICE_COURSE_CONVERSION_ROAS';
+    const _1_DAY_PURCHASE_MONETIZATION_ROAS = 'GOAL_1DAY_PURCHASE_MONETIZATION_ROAS';
     
     /**
      * Gets allowable values of the enum
@@ -80,6 +81,7 @@ class DeepConversionWorthGoal
             self::QYT_7_DAY_LIVE_STREAM_DEAL_ROAS,
             self::WITHDRAW_DEPOSITS_ROAS,
             self::FULL_PRICE_COURSE_CONVERSION_ROAS,
+            self::_1_DAY_PURCHASE_MONETIZATION_ROAS,
         ];
     }
 }

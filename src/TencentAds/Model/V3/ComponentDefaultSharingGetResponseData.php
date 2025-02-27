@@ -1,6 +1,6 @@
 <?php
 /**
- * ProgrammedUpdateRequest
+ * ComponentDefaultSharingGetResponseData
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * ProgrammedUpdateRequest Class Doc Comment
+ * ComponentDefaultSharingGetResponseData Class Doc Comment
  *
  * @category Class
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
+class ComponentDefaultSharingGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'ProgrammedUpdateRequest';
+    protected static $swaggerModelName = 'ComponentDefaultSharingGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,11 +57,7 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
-        'materialDeriveId' => 'int',
-        'autoDerivedProgramCreativeSwitch' => 'bool',
-        'standardSwitch' => 'bool',
-        'updateMaterialGroups' => '\TencentAds\Model\V3\MaterialGroupUpdateStruct[]'
+        'defaultSharedType' => '\TencentAds\Model\V3\DefaultSharedType'
     ];
 
     /**
@@ -70,11 +66,7 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
-        'materialDeriveId' => 'int64',
-        'autoDerivedProgramCreativeSwitch' => null,
-        'standardSwitch' => null,
-        'updateMaterialGroups' => null
+        'defaultSharedType' => null
     ];
 
     /**
@@ -104,11 +96,7 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
-        'materialDeriveId' => 'material_derive_id',
-        'autoDerivedProgramCreativeSwitch' => 'auto_derived_program_creative_switch',
-        'standardSwitch' => 'standard_switch',
-        'updateMaterialGroups' => 'update_material_groups'
+        'defaultSharedType' => 'default_shared_type'
     ];
 
     /**
@@ -117,11 +105,7 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
-        'materialDeriveId' => 'setMaterialDeriveId',
-        'autoDerivedProgramCreativeSwitch' => 'setAutoDerivedProgramCreativeSwitch',
-        'standardSwitch' => 'setStandardSwitch',
-        'updateMaterialGroups' => 'setUpdateMaterialGroups'
+        'defaultSharedType' => 'setDefaultSharedType'
     ];
 
     /**
@@ -130,11 +114,7 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
-        'materialDeriveId' => 'getMaterialDeriveId',
-        'autoDerivedProgramCreativeSwitch' => 'getAutoDerivedProgramCreativeSwitch',
-        'standardSwitch' => 'getStandardSwitch',
-        'updateMaterialGroups' => 'getUpdateMaterialGroups'
+        'defaultSharedType' => 'getDefaultSharedType'
     ];
 
     /**
@@ -197,11 +177,7 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['materialDeriveId'] = isset($data['materialDeriveId']) ? $data['materialDeriveId'] : null;
-        $this->container['autoDerivedProgramCreativeSwitch'] = isset($data['autoDerivedProgramCreativeSwitch']) ? $data['autoDerivedProgramCreativeSwitch'] : null;
-        $this->container['standardSwitch'] = isset($data['standardSwitch']) ? $data['standardSwitch'] : null;
-        $this->container['updateMaterialGroups'] = isset($data['updateMaterialGroups']) ? $data['updateMaterialGroups'] : null;
+        $this->container['defaultSharedType'] = isset($data['defaultSharedType']) ? $data['defaultSharedType'] : null;
     }
 
     /**
@@ -229,121 +205,25 @@ class ProgrammedUpdateRequest implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets accountId
+     * Gets defaultSharedType
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\DefaultSharedType|mixed
      */
-    public function getAccountId()
+    public function getDefaultSharedType()
     {
-        return $this->container['accountId'];
+        return $this->container['defaultSharedType'];
     }
 
     /**
-     * Sets accountId
+     * Sets defaultSharedType
      *
-     * @param int|mixed $accountId accountId
+     * @param \TencentAds\Model\V3\DefaultSharedType|mixed $defaultSharedType defaultSharedType
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setDefaultSharedType($defaultSharedType)
     {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets materialDeriveId
-     *
-     * @return int|mixed
-     */
-    public function getMaterialDeriveId()
-    {
-        return $this->container['materialDeriveId'];
-    }
-
-    /**
-     * Sets materialDeriveId
-     *
-     * @param int|mixed $materialDeriveId materialDeriveId
-     *
-     * @return $this
-     */
-    public function setMaterialDeriveId($materialDeriveId)
-    {
-        $this->container['materialDeriveId'] = $materialDeriveId;
-
-        return $this;
-    }
-
-    /**
-     * Gets autoDerivedProgramCreativeSwitch
-     *
-     * @return bool|mixed
-     */
-    public function getAutoDerivedProgramCreativeSwitch()
-    {
-        return $this->container['autoDerivedProgramCreativeSwitch'];
-    }
-
-    /**
-     * Sets autoDerivedProgramCreativeSwitch
-     *
-     * @param bool|mixed $autoDerivedProgramCreativeSwitch autoDerivedProgramCreativeSwitch
-     *
-     * @return $this
-     */
-    public function setAutoDerivedProgramCreativeSwitch($autoDerivedProgramCreativeSwitch)
-    {
-        $this->container['autoDerivedProgramCreativeSwitch'] = $autoDerivedProgramCreativeSwitch;
-
-        return $this;
-    }
-
-    /**
-     * Gets standardSwitch
-     *
-     * @return bool|mixed
-     */
-    public function getStandardSwitch()
-    {
-        return $this->container['standardSwitch'];
-    }
-
-    /**
-     * Sets standardSwitch
-     *
-     * @param bool|mixed $standardSwitch standardSwitch
-     *
-     * @return $this
-     */
-    public function setStandardSwitch($standardSwitch)
-    {
-        $this->container['standardSwitch'] = $standardSwitch;
-
-        return $this;
-    }
-
-    /**
-     * Gets updateMaterialGroups
-     *
-     * @return \TencentAds\Model\V3\MaterialGroupUpdateStruct[]|mixed
-     */
-    public function getUpdateMaterialGroups()
-    {
-        return $this->container['updateMaterialGroups'];
-    }
-
-    /**
-     * Sets updateMaterialGroups
-     *
-     * @param \TencentAds\Model\V3\MaterialGroupUpdateStruct[]|mixed $updateMaterialGroups updateMaterialGroups
-     *
-     * @return $this
-     */
-    public function setUpdateMaterialGroups($updateMaterialGroups)
-    {
-        $this->container['updateMaterialGroups'] = $updateMaterialGroups;
+        $this->container['defaultSharedType'] = $defaultSharedType;
 
         return $this;
     }

@@ -41,6 +41,7 @@ use TencentAds\Container\V3\ChannelsFinderobjectApiContainer;
 use TencentAds\Container\V3\ChannelsLivenoticeinfoApiContainer;
 use TencentAds\Container\V3\ChannelsUserpageobjectsApiContainer;
 use TencentAds\Container\V3\CommentListApiContainer;
+use TencentAds\Container\V3\ComponentDefaultSharingApiContainer;
 use TencentAds\Container\V3\ComponentElementUrgeReviewApiContainer;
 use TencentAds\Container\V3\ComponentReviewResultsApiContainer;
 use TencentAds\Container\V3\ComponentSharingApiContainer;
@@ -323,6 +324,9 @@ class App
 
     /** @var CommentListApiContainer */
     public $commentListApiContainer;
+
+    /** @var ComponentDefaultSharingApiContainer */
+    public $componentDefaultSharingApiContainer;
 
     /** @var ComponentElementUrgeReviewApiContainer */
     public $componentElementUrgeReviewApiContainer;
@@ -1360,6 +1364,20 @@ class App
             $this->commentListApiContainer = $container;
         }
         return $this->commentListApiContainer;
+    }
+
+
+    /**
+     * @return ComponentDefaultSharingApiContainer
+     */
+    public function componentDefaultSharing()
+    {
+        if (empty($this->componentDefaultSharingApiContainer)) {
+            $container = new ComponentDefaultSharingApiContainer();
+            $container->init($this, $this->getClient());
+            $this->componentDefaultSharingApiContainer = $container;
+        }
+        return $this->componentDefaultSharingApiContainer;
     }
 
 
