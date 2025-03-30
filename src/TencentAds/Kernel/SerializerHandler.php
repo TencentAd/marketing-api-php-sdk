@@ -7,6 +7,7 @@
 
 namespace TencentAds\Kernel;
 
+use GuzzleHttp\Promise\Promise;
 use TencentAds\ObjectSerializer;
 
 class SerializerHandler extends ObjectSerializer
@@ -34,7 +35,7 @@ class SerializerHandler extends ObjectSerializer
      */
     public static function sanitizeForSerializationToArray($data, $type = null, $format = null)
     {
-        if (is_scalar($data) || null === $data) {
+        if (is_scalar($data) || null === $data || $data instanceof Promise) {
             return $data;
         } elseif ($data instanceof \DateTime) {
             return ($format === 'date') ? $data->format('Y-m-d') : $data->format(\DateTime::ATOM);
