@@ -59,7 +59,8 @@ class CollectionStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'userId' => 'string',
-        'userIdType' => '\TencentAds\Model\V3\ViewerIdType'
+        'userIdType' => '\TencentAds\Model\V3\ViewerIdType',
+        'isPreviewed' => 'bool'
     ];
 
     /**
@@ -69,7 +70,8 @@ class CollectionStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'userId' => null,
-        'userIdType' => null
+        'userIdType' => null,
+        'isPreviewed' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class CollectionStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'userId' => 'user_id',
-        'userIdType' => 'user_id_type'
+        'userIdType' => 'user_id_type',
+        'isPreviewed' => 'is_previewed'
     ];
 
     /**
@@ -110,7 +113,8 @@ class CollectionStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'userId' => 'setUserId',
-        'userIdType' => 'setUserIdType'
+        'userIdType' => 'setUserIdType',
+        'isPreviewed' => 'setIsPreviewed'
     ];
 
     /**
@@ -120,7 +124,8 @@ class CollectionStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'userId' => 'getUserId',
-        'userIdType' => 'getUserIdType'
+        'userIdType' => 'getUserIdType',
+        'isPreviewed' => 'getIsPreviewed'
     ];
 
     /**
@@ -185,6 +190,7 @@ class CollectionStruct implements ModelInterface, ArrayAccess
     {
         $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
         $this->container['userIdType'] = isset($data['userIdType']) ? $data['userIdType'] : null;
+        $this->container['isPreviewed'] = isset($data['isPreviewed']) ? $data['isPreviewed'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class CollectionStruct implements ModelInterface, ArrayAccess
     public function setUserIdType($userIdType)
     {
         $this->container['userIdType'] = $userIdType;
+
+        return $this;
+    }
+
+    /**
+     * Gets isPreviewed
+     *
+     * @return bool|mixed
+     */
+    public function getIsPreviewed()
+    {
+        return $this->container['isPreviewed'];
+    }
+
+    /**
+     * Sets isPreviewed
+     *
+     * @param bool|mixed $isPreviewed isPreviewed
+     *
+     * @return $this
+     */
+    public function setIsPreviewed($isPreviewed)
+    {
+        $this->container['isPreviewed'] = $isPreviewed;
 
         return $this;
     }

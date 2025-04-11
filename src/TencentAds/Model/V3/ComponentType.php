@@ -80,6 +80,7 @@ class ComponentType
     const SUBLINK = 'SUBLINK';
     const CONSULT_LINK = 'CONSULT_LINK';
     const SHOP_PRODUCT_CARD = 'SHOP_PRODUCT_CARD';
+    const DYNAMIC_SHOWCASE = 'DYNAMIC_SHOWCASE';
     const V2_TITLE = 'V2_TITLE';
     const V2_DESCRIPTION = 'V2_DESCRIPTION';
     const V2_LONG_SUBLINK = 'V2_LONG_SUBLINK';
@@ -157,6 +158,7 @@ class ComponentType
             self::SUBLINK,
             self::CONSULT_LINK,
             self::SHOP_PRODUCT_CARD,
+            self::DYNAMIC_SHOWCASE,
             self::V2_TITLE,
             self::V2_DESCRIPTION,
             self::V2_LONG_SUBLINK,

@@ -59,16 +59,17 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'accountId' => 'int',
         'dailyBudget' => 'int',
-        'systemIndustryId' => 'int',
         'corporationName' => 'string',
         'corporationLicence' => 'string',
         'certificationImageId' => 'string',
         'individualQualification' => '\TencentAds\Model\V3\IndividualQualification',
         'areaCode' => 'int',
+        'systemIndustryId' => 'int',
         'introductionUrl' => 'string',
         'corporateBrandName' => 'string',
         'contactPersonTelephone' => 'string',
         'contactPersonMobile' => 'string',
+        'businessAlias' => 'string',
         'websites' => '\TencentAds\Model\V3\WebsiteUpdateStruct[]'
     ];
 
@@ -80,16 +81,17 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'accountId' => 'int64',
         'dailyBudget' => 'int64',
-        'systemIndustryId' => 'int64',
         'corporationName' => null,
         'corporationLicence' => null,
         'certificationImageId' => null,
         'individualQualification' => null,
         'areaCode' => 'int64',
+        'systemIndustryId' => 'int64',
         'introductionUrl' => null,
         'corporateBrandName' => null,
         'contactPersonTelephone' => null,
         'contactPersonMobile' => null,
+        'businessAlias' => null,
         'websites' => null
     ];
 
@@ -122,16 +124,17 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'accountId' => 'account_id',
         'dailyBudget' => 'daily_budget',
-        'systemIndustryId' => 'system_industry_id',
         'corporationName' => 'corporation_name',
         'corporationLicence' => 'corporation_licence',
         'certificationImageId' => 'certification_image_id',
         'individualQualification' => 'individual_qualification',
         'areaCode' => 'area_code',
+        'systemIndustryId' => 'system_industry_id',
         'introductionUrl' => 'introduction_url',
         'corporateBrandName' => 'corporate_brand_name',
         'contactPersonTelephone' => 'contact_person_telephone',
         'contactPersonMobile' => 'contact_person_mobile',
+        'businessAlias' => 'business_alias',
         'websites' => 'websites'
     ];
 
@@ -143,16 +146,17 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     protected static $setters = [
         'accountId' => 'setAccountId',
         'dailyBudget' => 'setDailyBudget',
-        'systemIndustryId' => 'setSystemIndustryId',
         'corporationName' => 'setCorporationName',
         'corporationLicence' => 'setCorporationLicence',
         'certificationImageId' => 'setCertificationImageId',
         'individualQualification' => 'setIndividualQualification',
         'areaCode' => 'setAreaCode',
+        'systemIndustryId' => 'setSystemIndustryId',
         'introductionUrl' => 'setIntroductionUrl',
         'corporateBrandName' => 'setCorporateBrandName',
         'contactPersonTelephone' => 'setContactPersonTelephone',
         'contactPersonMobile' => 'setContactPersonMobile',
+        'businessAlias' => 'setBusinessAlias',
         'websites' => 'setWebsites'
     ];
 
@@ -164,16 +168,17 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     protected static $getters = [
         'accountId' => 'getAccountId',
         'dailyBudget' => 'getDailyBudget',
-        'systemIndustryId' => 'getSystemIndustryId',
         'corporationName' => 'getCorporationName',
         'corporationLicence' => 'getCorporationLicence',
         'certificationImageId' => 'getCertificationImageId',
         'individualQualification' => 'getIndividualQualification',
         'areaCode' => 'getAreaCode',
+        'systemIndustryId' => 'getSystemIndustryId',
         'introductionUrl' => 'getIntroductionUrl',
         'corporateBrandName' => 'getCorporateBrandName',
         'contactPersonTelephone' => 'getContactPersonTelephone',
         'contactPersonMobile' => 'getContactPersonMobile',
+        'businessAlias' => 'getBusinessAlias',
         'websites' => 'getWebsites'
     ];
 
@@ -239,16 +244,17 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
-        $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
         $this->container['corporationName'] = isset($data['corporationName']) ? $data['corporationName'] : null;
         $this->container['corporationLicence'] = isset($data['corporationLicence']) ? $data['corporationLicence'] : null;
         $this->container['certificationImageId'] = isset($data['certificationImageId']) ? $data['certificationImageId'] : null;
         $this->container['individualQualification'] = isset($data['individualQualification']) ? $data['individualQualification'] : null;
         $this->container['areaCode'] = isset($data['areaCode']) ? $data['areaCode'] : null;
+        $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
         $this->container['introductionUrl'] = isset($data['introductionUrl']) ? $data['introductionUrl'] : null;
         $this->container['corporateBrandName'] = isset($data['corporateBrandName']) ? $data['corporateBrandName'] : null;
         $this->container['contactPersonTelephone'] = isset($data['contactPersonTelephone']) ? $data['contactPersonTelephone'] : null;
         $this->container['contactPersonMobile'] = isset($data['contactPersonMobile']) ? $data['contactPersonMobile'] : null;
+        $this->container['businessAlias'] = isset($data['businessAlias']) ? $data['businessAlias'] : null;
         $this->container['websites'] = isset($data['websites']) ? $data['websites'] : null;
     }
 
@@ -320,30 +326,6 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     public function setDailyBudget($dailyBudget)
     {
         $this->container['dailyBudget'] = $dailyBudget;
-
-        return $this;
-    }
-
-    /**
-     * Gets systemIndustryId
-     *
-     * @return int|mixed
-     */
-    public function getSystemIndustryId()
-    {
-        return $this->container['systemIndustryId'];
-    }
-
-    /**
-     * Sets systemIndustryId
-     *
-     * @param int|mixed $systemIndustryId systemIndustryId
-     *
-     * @return $this
-     */
-    public function setSystemIndustryId($systemIndustryId)
-    {
-        $this->container['systemIndustryId'] = $systemIndustryId;
 
         return $this;
     }
@@ -469,6 +451,30 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets systemIndustryId
+     *
+     * @return int|mixed
+     */
+    public function getSystemIndustryId()
+    {
+        return $this->container['systemIndustryId'];
+    }
+
+    /**
+     * Sets systemIndustryId
+     *
+     * @param int|mixed $systemIndustryId systemIndustryId
+     *
+     * @return $this
+     */
+    public function setSystemIndustryId($systemIndustryId)
+    {
+        $this->container['systemIndustryId'] = $systemIndustryId;
+
+        return $this;
+    }
+
+    /**
      * Gets introductionUrl
      *
      * @return string|mixed
@@ -560,6 +566,30 @@ class AdvertiserUpdateRequest implements ModelInterface, ArrayAccess
     public function setContactPersonMobile($contactPersonMobile)
     {
         $this->container['contactPersonMobile'] = $contactPersonMobile;
+
+        return $this;
+    }
+
+    /**
+     * Gets businessAlias
+     *
+     * @return string|mixed
+     */
+    public function getBusinessAlias()
+    {
+        return $this->container['businessAlias'];
+    }
+
+    /**
+     * Sets businessAlias
+     *
+     * @param string|mixed $businessAlias businessAlias
+     *
+     * @return $this
+     */
+    public function setBusinessAlias($businessAlias)
+    {
+        $this->container['businessAlias'] = $businessAlias;
 
         return $this;
     }

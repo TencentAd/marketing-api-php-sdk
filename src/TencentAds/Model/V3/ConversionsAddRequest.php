@@ -81,7 +81,9 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal',
         'incubationOptimizationGoal' => '\TencentAds\Model\V3\OptimizationGoal',
         'conversionTemplateId' => 'int',
-        'customReportIndex' => 'int[]'
+        'customReportIndex' => 'int[]',
+        'createdByActionSet' => 'bool',
+        'feedbackId' => 'int'
     ];
 
     /**
@@ -114,7 +116,9 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => null,
         'incubationOptimizationGoal' => null,
         'conversionTemplateId' => 'int64',
-        'customReportIndex' => 'int64'
+        'customReportIndex' => 'int64',
+        'createdByActionSet' => null,
+        'feedbackId' => 'int64'
     ];
 
     /**
@@ -168,7 +172,9 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => 'forward_link_assist',
         'incubationOptimizationGoal' => 'incubation_optimization_goal',
         'conversionTemplateId' => 'conversion_template_id',
-        'customReportIndex' => 'custom_report_index'
+        'customReportIndex' => 'custom_report_index',
+        'createdByActionSet' => 'created_by_action_set',
+        'feedbackId' => 'feedback_id'
     ];
 
     /**
@@ -201,7 +207,9 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => 'setForwardLinkAssist',
         'incubationOptimizationGoal' => 'setIncubationOptimizationGoal',
         'conversionTemplateId' => 'setConversionTemplateId',
-        'customReportIndex' => 'setCustomReportIndex'
+        'customReportIndex' => 'setCustomReportIndex',
+        'createdByActionSet' => 'setCreatedByActionSet',
+        'feedbackId' => 'setFeedbackId'
     ];
 
     /**
@@ -234,7 +242,9 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => 'getForwardLinkAssist',
         'incubationOptimizationGoal' => 'getIncubationOptimizationGoal',
         'conversionTemplateId' => 'getConversionTemplateId',
-        'customReportIndex' => 'getCustomReportIndex'
+        'customReportIndex' => 'getCustomReportIndex',
+        'createdByActionSet' => 'getCreatedByActionSet',
+        'feedbackId' => 'getFeedbackId'
     ];
 
     /**
@@ -322,6 +332,8 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         $this->container['incubationOptimizationGoal'] = isset($data['incubationOptimizationGoal']) ? $data['incubationOptimizationGoal'] : null;
         $this->container['conversionTemplateId'] = isset($data['conversionTemplateId']) ? $data['conversionTemplateId'] : null;
         $this->container['customReportIndex'] = isset($data['customReportIndex']) ? $data['customReportIndex'] : null;
+        $this->container['createdByActionSet'] = isset($data['createdByActionSet']) ? $data['createdByActionSet'] : null;
+        $this->container['feedbackId'] = isset($data['feedbackId']) ? $data['feedbackId'] : null;
     }
 
     /**
@@ -944,6 +956,54 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     public function setCustomReportIndex($customReportIndex)
     {
         $this->container['customReportIndex'] = $customReportIndex;
+
+        return $this;
+    }
+
+    /**
+     * Gets createdByActionSet
+     *
+     * @return bool|mixed
+     */
+    public function getCreatedByActionSet()
+    {
+        return $this->container['createdByActionSet'];
+    }
+
+    /**
+     * Sets createdByActionSet
+     *
+     * @param bool|mixed $createdByActionSet createdByActionSet
+     *
+     * @return $this
+     */
+    public function setCreatedByActionSet($createdByActionSet)
+    {
+        $this->container['createdByActionSet'] = $createdByActionSet;
+
+        return $this;
+    }
+
+    /**
+     * Gets feedbackId
+     *
+     * @return int|mixed
+     */
+    public function getFeedbackId()
+    {
+        return $this->container['feedbackId'];
+    }
+
+    /**
+     * Sets feedbackId
+     *
+     * @param int|mixed $feedbackId feedbackId
+     *
+     * @return $this
+     */
+    public function setFeedbackId($feedbackId)
+    {
+        $this->container['feedbackId'] = $feedbackId;
 
         return $this;
     }

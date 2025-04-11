@@ -113,7 +113,8 @@ class ComponentsApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $isDeleted = isset($params['is_deleted']) ? $params['is_deleted'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->componentsGet($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields);
+            $componentIdFilteringMode = isset($params['component_id_filtering_mode']) ? $params['component_id_filtering_mode'] : null;
+            $response = $this->apiInstance->componentsGet($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields, $componentIdFilteringMode);
             return $this->handleResponse($response);
         });
     }
@@ -135,7 +136,8 @@ class ComponentsApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $isDeleted = isset($params['is_deleted']) ? $params['is_deleted'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->componentsGetAsync($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields);
+            $componentIdFilteringMode = isset($params['component_id_filtering_mode']) ? $params['component_id_filtering_mode'] : null;
+            $response = $this->apiInstance->componentsGetAsync($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields, $componentIdFilteringMode);
             return $response;
         });
     }

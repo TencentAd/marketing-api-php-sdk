@@ -58,6 +58,7 @@ class MarketingSubGoal
     const UNLOADED_USER = 'MARKETING_SUB_GOAL_UNLOADED_USER';
     const SHORT_INACTIVE_USER = 'MARKETING_SUB_GOAL_SHORT_INACTIVE_USER';
     const LONG_INACTIVE_USER = 'MARKETING_SUB_GOAL_LONG_INACTIVE_USER';
+    const GAME_VERSION_UPGRADE = 'MARKETING_SUB_GOAL_GAME_VERSION_UPGRADE';
     
     /**
      * Gets allowable values of the enum
@@ -80,6 +81,7 @@ class MarketingSubGoal
             self::UNLOADED_USER,
             self::SHORT_INACTIVE_USER,
             self::LONG_INACTIVE_USER,
+            self::GAME_VERSION_UPGRADE,
         ];
     }
 }

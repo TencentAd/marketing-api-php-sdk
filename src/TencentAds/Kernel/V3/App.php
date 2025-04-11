@@ -171,6 +171,9 @@ use TencentAds\Container\V3\VideoChannelLiveDataApiContainer;
 use TencentAds\Container\V3\VideosApiContainer;
 use TencentAds\Container\V3\WalletApiContainer;
 use TencentAds\Container\V3\WalletBasicInfoApiContainer;
+use TencentAds\Container\V3\WalletBindAdvertiserApiContainer;
+use TencentAds\Container\V3\WalletCreateApiContainer;
+use TencentAds\Container\V3\WalletEditApiContainer;
 use TencentAds\Container\V3\WalletGetBindingAdvertiserApiContainer;
 use TencentAds\Container\V3\WalletInvoiceApiContainer;
 use TencentAds\Container\V3\WalletTransferApiContainer;
@@ -714,6 +717,15 @@ class App
 
     /** @var WalletBasicInfoApiContainer */
     public $walletBasicInfoApiContainer;
+
+    /** @var WalletBindAdvertiserApiContainer */
+    public $walletBindAdvertiserApiContainer;
+
+    /** @var WalletCreateApiContainer */
+    public $walletCreateApiContainer;
+
+    /** @var WalletEditApiContainer */
+    public $walletEditApiContainer;
 
     /** @var WalletGetBindingAdvertiserApiContainer */
     public $walletGetBindingAdvertiserApiContainer;
@@ -3184,6 +3196,48 @@ class App
             $this->walletBasicInfoApiContainer = $container;
         }
         return $this->walletBasicInfoApiContainer;
+    }
+
+
+    /**
+     * @return WalletBindAdvertiserApiContainer
+     */
+    public function walletBindAdvertiser()
+    {
+        if (empty($this->walletBindAdvertiserApiContainer)) {
+            $container = new WalletBindAdvertiserApiContainer();
+            $container->init($this, $this->getClient());
+            $this->walletBindAdvertiserApiContainer = $container;
+        }
+        return $this->walletBindAdvertiserApiContainer;
+    }
+
+
+    /**
+     * @return WalletCreateApiContainer
+     */
+    public function walletCreate()
+    {
+        if (empty($this->walletCreateApiContainer)) {
+            $container = new WalletCreateApiContainer();
+            $container->init($this, $this->getClient());
+            $this->walletCreateApiContainer = $container;
+        }
+        return $this->walletCreateApiContainer;
+    }
+
+
+    /**
+     * @return WalletEditApiContainer
+     */
+    public function walletEdit()
+    {
+        if (empty($this->walletEditApiContainer)) {
+            $container = new WalletEditApiContainer();
+            $container->init($this, $this->getClient());
+            $this->walletEditApiContainer = $container;
+        }
+        return $this->walletEditApiContainer;
     }
 
 

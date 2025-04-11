@@ -94,15 +94,17 @@ class WalletGetBindingAdvertiserApi
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  int|mixed $walletId walletId (required)
+     * @param  int|mixed $page page (required)
+     * @param  int|mixed $pageSize pageSize (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\WalletGetBindingAdvertiserGetResponse|mixed
      */
-    public function walletGetBindingAdvertiserGet($accountId, $walletId, $fields = null)
+    public function walletGetBindingAdvertiserGet($accountId, $walletId, $page, $pageSize, $fields = null)
     {
-        list($response) = $this->walletGetBindingAdvertiserGetWithHttpInfo($accountId, $walletId, $fields);
+        list($response) = $this->walletGetBindingAdvertiserGetWithHttpInfo($accountId, $walletId, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -113,16 +115,18 @@ class WalletGetBindingAdvertiserApi
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $walletId (required)
+     * @param  int|mixed $page (required)
+     * @param  int|mixed $pageSize (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\WalletGetBindingAdvertiserGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function walletGetBindingAdvertiserGetWithHttpInfo($accountId, $walletId, $fields = null)
+    public function walletGetBindingAdvertiserGetWithHttpInfo($accountId, $walletId, $page, $pageSize, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WalletGetBindingAdvertiserGetResponse';
-        $request = $this->walletGetBindingAdvertiserGetRequest($accountId, $walletId, $fields);
+        $request = $this->walletGetBindingAdvertiserGetRequest($accountId, $walletId, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -190,14 +194,16 @@ class WalletGetBindingAdvertiserApi
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $walletId (required)
+     * @param  int|mixed $page (required)
+     * @param  int|mixed $pageSize (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function walletGetBindingAdvertiserGetAsync($accountId, $walletId, $fields = null)
+    public function walletGetBindingAdvertiserGetAsync($accountId, $walletId, $page, $pageSize, $fields = null)
     {
-        return $this->walletGetBindingAdvertiserGetAsyncWithHttpInfo($accountId, $walletId, $fields)
+        return $this->walletGetBindingAdvertiserGetAsyncWithHttpInfo($accountId, $walletId, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -212,15 +218,17 @@ class WalletGetBindingAdvertiserApi
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $walletId (required)
+     * @param  int|mixed $page (required)
+     * @param  int|mixed $pageSize (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function walletGetBindingAdvertiserGetAsyncWithHttpInfo($accountId, $walletId, $fields = null)
+    public function walletGetBindingAdvertiserGetAsyncWithHttpInfo($accountId, $walletId, $page, $pageSize, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WalletGetBindingAdvertiserGetResponse';
-        $request = $this->walletGetBindingAdvertiserGetRequest($accountId, $walletId, $fields);
+        $request = $this->walletGetBindingAdvertiserGetRequest($accountId, $walletId, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -264,12 +272,14 @@ class WalletGetBindingAdvertiserApi
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $walletId (required)
+     * @param  int|mixed $page (required)
+     * @param  int|mixed $pageSize (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function walletGetBindingAdvertiserGetRequest($accountId, $walletId, $fields = null)
+    protected function walletGetBindingAdvertiserGetRequest($accountId, $walletId, $page, $pageSize, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -281,6 +291,18 @@ class WalletGetBindingAdvertiserApi
         if ($walletId === null || (is_array($walletId) && count($walletId) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $walletId when calling walletGetBindingAdvertiserGet'
+            );
+        }
+        // verify the required parameter 'page' is set
+        if ($page === null || (is_array($page) && count($page) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $page when calling walletGetBindingAdvertiserGet'
+            );
+        }
+        // verify the required parameter 'pageSize' is set
+        if ($pageSize === null || (is_array($pageSize) && count($pageSize) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $pageSize when calling walletGetBindingAdvertiserGet'
             );
         }
 
@@ -298,6 +320,14 @@ class WalletGetBindingAdvertiserApi
         // query params
         if ($walletId !== null) {
             $queryParams['wallet_id'] = ObjectSerializer::toQueryValue($walletId);
+        }
+        // query params
+        if ($page !== null) {
+            $queryParams['page'] = ObjectSerializer::toQueryValue($page);
+        }
+        // query params
+        if ($pageSize !== null) {
+            $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
         }
         // query params
         if (is_array($fields)) {

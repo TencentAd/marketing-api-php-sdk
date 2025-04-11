@@ -68,7 +68,10 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'componentCustomName' => 'string',
         'generationType' => '\TencentAds\Model\V3\ComponentGenerationType',
         'isDeleted' => 'bool',
-        'potentialStatus' => '\TencentAds\Model\V3\CommonPotentialStatus'
+        'similarityStatus' => '\TencentAds\Model\V3\SimilarityStatus',
+        'potentialStatus' => '\TencentAds\Model\V3\CommonPotentialStatus',
+        'disableMessage' => 'string',
+        'firstPublicationStatus' => '\TencentAds\Model\V3\FirstPublicationStatus'
     ];
 
     /**
@@ -87,7 +90,10 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'componentCustomName' => null,
         'generationType' => null,
         'isDeleted' => null,
-        'potentialStatus' => null
+        'similarityStatus' => null,
+        'potentialStatus' => null,
+        'disableMessage' => null,
+        'firstPublicationStatus' => null
     ];
 
     /**
@@ -127,7 +133,10 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'componentCustomName' => 'component_custom_name',
         'generationType' => 'generation_type',
         'isDeleted' => 'is_deleted',
-        'potentialStatus' => 'potential_status'
+        'similarityStatus' => 'similarity_status',
+        'potentialStatus' => 'potential_status',
+        'disableMessage' => 'disable_message',
+        'firstPublicationStatus' => 'first_publication_status'
     ];
 
     /**
@@ -146,7 +155,10 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'componentCustomName' => 'setComponentCustomName',
         'generationType' => 'setGenerationType',
         'isDeleted' => 'setIsDeleted',
-        'potentialStatus' => 'setPotentialStatus'
+        'similarityStatus' => 'setSimilarityStatus',
+        'potentialStatus' => 'setPotentialStatus',
+        'disableMessage' => 'setDisableMessage',
+        'firstPublicationStatus' => 'setFirstPublicationStatus'
     ];
 
     /**
@@ -165,7 +177,10 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'componentCustomName' => 'getComponentCustomName',
         'generationType' => 'getGenerationType',
         'isDeleted' => 'getIsDeleted',
-        'potentialStatus' => 'getPotentialStatus'
+        'similarityStatus' => 'getSimilarityStatus',
+        'potentialStatus' => 'getPotentialStatus',
+        'disableMessage' => 'getDisableMessage',
+        'firstPublicationStatus' => 'getFirstPublicationStatus'
     ];
 
     /**
@@ -238,7 +253,10 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['componentCustomName'] = isset($data['componentCustomName']) ? $data['componentCustomName'] : null;
         $this->container['generationType'] = isset($data['generationType']) ? $data['generationType'] : null;
         $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
+        $this->container['similarityStatus'] = isset($data['similarityStatus']) ? $data['similarityStatus'] : null;
         $this->container['potentialStatus'] = isset($data['potentialStatus']) ? $data['potentialStatus'] : null;
+        $this->container['disableMessage'] = isset($data['disableMessage']) ? $data['disableMessage'] : null;
+        $this->container['firstPublicationStatus'] = isset($data['firstPublicationStatus']) ? $data['firstPublicationStatus'] : null;
     }
 
     /**
@@ -506,6 +524,30 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets similarityStatus
+     *
+     * @return \TencentAds\Model\V3\SimilarityStatus|mixed
+     */
+    public function getSimilarityStatus()
+    {
+        return $this->container['similarityStatus'];
+    }
+
+    /**
+     * Sets similarityStatus
+     *
+     * @param \TencentAds\Model\V3\SimilarityStatus|mixed $similarityStatus similarityStatus
+     *
+     * @return $this
+     */
+    public function setSimilarityStatus($similarityStatus)
+    {
+        $this->container['similarityStatus'] = $similarityStatus;
+
+        return $this;
+    }
+
+    /**
      * Gets potentialStatus
      *
      * @return \TencentAds\Model\V3\CommonPotentialStatus|mixed
@@ -525,6 +567,54 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
     public function setPotentialStatus($potentialStatus)
     {
         $this->container['potentialStatus'] = $potentialStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets disableMessage
+     *
+     * @return string|mixed
+     */
+    public function getDisableMessage()
+    {
+        return $this->container['disableMessage'];
+    }
+
+    /**
+     * Sets disableMessage
+     *
+     * @param string|mixed $disableMessage disableMessage
+     *
+     * @return $this
+     */
+    public function setDisableMessage($disableMessage)
+    {
+        $this->container['disableMessage'] = $disableMessage;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstPublicationStatus
+     *
+     * @return \TencentAds\Model\V3\FirstPublicationStatus|mixed
+     */
+    public function getFirstPublicationStatus()
+    {
+        return $this->container['firstPublicationStatus'];
+    }
+
+    /**
+     * Sets firstPublicationStatus
+     *
+     * @param \TencentAds\Model\V3\FirstPublicationStatus|mixed $firstPublicationStatus firstPublicationStatus
+     *
+     * @return $this
+     */
+    public function setFirstPublicationStatus($firstPublicationStatus)
+    {
+        $this->container['firstPublicationStatus'] = $firstPublicationStatus;
 
         return $this;
     }

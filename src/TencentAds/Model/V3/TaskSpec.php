@@ -84,7 +84,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'deleteScheduledTaskSpec' => '\TencentAds\Model\V3\DeleteScheduledTaskItem[]',
         'updateAdgroupTargetingTaskSpec' => '\TencentAds\Model\V3\UpdateAdgroupTargetingTaskItem[]',
         'updateAdgroupEcomPkamSpec' => '\TencentAds\Model\V3\UpdateAdgroupEcomPkamItem[]',
-        'updateAdgroupDeriveConfSpec' => '\TencentAds\Model\V3\UpdateAdgroupDeriveConfItem[]'
+        'updateAdgroupDeriveConfSpec' => '\TencentAds\Model\V3\UpdateAdgroupDeriveConfItem[]',
+        'updateComponentSharingSpec' => '\TencentAds\Model\V3\UpdateComponentSharingItem[]'
     ];
 
     /**
@@ -119,7 +120,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'deleteScheduledTaskSpec' => null,
         'updateAdgroupTargetingTaskSpec' => null,
         'updateAdgroupEcomPkamSpec' => null,
-        'updateAdgroupDeriveConfSpec' => null
+        'updateAdgroupDeriveConfSpec' => null,
+        'updateComponentSharingSpec' => null
     ];
 
     /**
@@ -175,7 +177,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'deleteScheduledTaskSpec' => 'delete_scheduled_task_spec',
         'updateAdgroupTargetingTaskSpec' => 'update_adgroup_targeting_task_spec',
         'updateAdgroupEcomPkamSpec' => 'update_adgroup_ecom_pkam_spec',
-        'updateAdgroupDeriveConfSpec' => 'update_adgroup_derive_conf_spec'
+        'updateAdgroupDeriveConfSpec' => 'update_adgroup_derive_conf_spec',
+        'updateComponentSharingSpec' => 'update_component_sharing_spec'
     ];
 
     /**
@@ -210,7 +213,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'deleteScheduledTaskSpec' => 'setDeleteScheduledTaskSpec',
         'updateAdgroupTargetingTaskSpec' => 'setUpdateAdgroupTargetingTaskSpec',
         'updateAdgroupEcomPkamSpec' => 'setUpdateAdgroupEcomPkamSpec',
-        'updateAdgroupDeriveConfSpec' => 'setUpdateAdgroupDeriveConfSpec'
+        'updateAdgroupDeriveConfSpec' => 'setUpdateAdgroupDeriveConfSpec',
+        'updateComponentSharingSpec' => 'setUpdateComponentSharingSpec'
     ];
 
     /**
@@ -245,7 +249,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'deleteScheduledTaskSpec' => 'getDeleteScheduledTaskSpec',
         'updateAdgroupTargetingTaskSpec' => 'getUpdateAdgroupTargetingTaskSpec',
         'updateAdgroupEcomPkamSpec' => 'getUpdateAdgroupEcomPkamSpec',
-        'updateAdgroupDeriveConfSpec' => 'getUpdateAdgroupDeriveConfSpec'
+        'updateAdgroupDeriveConfSpec' => 'getUpdateAdgroupDeriveConfSpec',
+        'updateComponentSharingSpec' => 'getUpdateComponentSharingSpec'
     ];
 
     /**
@@ -335,6 +340,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateAdgroupTargetingTaskSpec'] = isset($data['updateAdgroupTargetingTaskSpec']) ? $data['updateAdgroupTargetingTaskSpec'] : null;
         $this->container['updateAdgroupEcomPkamSpec'] = isset($data['updateAdgroupEcomPkamSpec']) ? $data['updateAdgroupEcomPkamSpec'] : null;
         $this->container['updateAdgroupDeriveConfSpec'] = isset($data['updateAdgroupDeriveConfSpec']) ? $data['updateAdgroupDeriveConfSpec'] : null;
+        $this->container['updateComponentSharingSpec'] = isset($data['updateComponentSharingSpec']) ? $data['updateComponentSharingSpec'] : null;
     }
 
     /**
@@ -1005,6 +1011,30 @@ class TaskSpec implements ModelInterface, ArrayAccess
     public function setUpdateAdgroupDeriveConfSpec($updateAdgroupDeriveConfSpec)
     {
         $this->container['updateAdgroupDeriveConfSpec'] = $updateAdgroupDeriveConfSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateComponentSharingSpec
+     *
+     * @return \TencentAds\Model\V3\UpdateComponentSharingItem[]|mixed
+     */
+    public function getUpdateComponentSharingSpec()
+    {
+        return $this->container['updateComponentSharingSpec'];
+    }
+
+    /**
+     * Sets updateComponentSharingSpec
+     *
+     * @param \TencentAds\Model\V3\UpdateComponentSharingItem[]|mixed $updateComponentSharingSpec updateComponentSharingSpec
+     *
+     * @return $this
+     */
+    public function setUpdateComponentSharingSpec($updateComponentSharingSpec)
+    {
+        $this->container['updateComponentSharingSpec'] = $updateComponentSharingSpec;
 
         return $this;
     }

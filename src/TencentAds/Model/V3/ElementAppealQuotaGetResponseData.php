@@ -60,7 +60,8 @@ class ElementAppealQuotaGetResponseData implements ModelInterface, ArrayAccess
         'accountId' => 'int',
         'hasPrivilege' => 'int',
         'dailyQuota' => 'int',
-        'leaveQuota' => 'int'
+        'leaveQuota' => 'int',
+        'quotaCalculateRule' => 'string'
     ];
 
     /**
@@ -72,7 +73,8 @@ class ElementAppealQuotaGetResponseData implements ModelInterface, ArrayAccess
         'accountId' => 'int64',
         'hasPrivilege' => 'int64',
         'dailyQuota' => 'int64',
-        'leaveQuota' => 'int64'
+        'leaveQuota' => 'int64',
+        'quotaCalculateRule' => null
     ];
 
     /**
@@ -105,7 +107,8 @@ class ElementAppealQuotaGetResponseData implements ModelInterface, ArrayAccess
         'accountId' => 'account_id',
         'hasPrivilege' => 'has_privilege',
         'dailyQuota' => 'daily_quota',
-        'leaveQuota' => 'leave_quota'
+        'leaveQuota' => 'leave_quota',
+        'quotaCalculateRule' => 'quota_calculate_rule'
     ];
 
     /**
@@ -117,7 +120,8 @@ class ElementAppealQuotaGetResponseData implements ModelInterface, ArrayAccess
         'accountId' => 'setAccountId',
         'hasPrivilege' => 'setHasPrivilege',
         'dailyQuota' => 'setDailyQuota',
-        'leaveQuota' => 'setLeaveQuota'
+        'leaveQuota' => 'setLeaveQuota',
+        'quotaCalculateRule' => 'setQuotaCalculateRule'
     ];
 
     /**
@@ -129,7 +133,8 @@ class ElementAppealQuotaGetResponseData implements ModelInterface, ArrayAccess
         'accountId' => 'getAccountId',
         'hasPrivilege' => 'getHasPrivilege',
         'dailyQuota' => 'getDailyQuota',
-        'leaveQuota' => 'getLeaveQuota'
+        'leaveQuota' => 'getLeaveQuota',
+        'quotaCalculateRule' => 'getQuotaCalculateRule'
     ];
 
     /**
@@ -196,6 +201,7 @@ class ElementAppealQuotaGetResponseData implements ModelInterface, ArrayAccess
         $this->container['hasPrivilege'] = isset($data['hasPrivilege']) ? $data['hasPrivilege'] : null;
         $this->container['dailyQuota'] = isset($data['dailyQuota']) ? $data['dailyQuota'] : null;
         $this->container['leaveQuota'] = isset($data['leaveQuota']) ? $data['leaveQuota'] : null;
+        $this->container['quotaCalculateRule'] = isset($data['quotaCalculateRule']) ? $data['quotaCalculateRule'] : null;
     }
 
     /**
@@ -314,6 +320,30 @@ class ElementAppealQuotaGetResponseData implements ModelInterface, ArrayAccess
     public function setLeaveQuota($leaveQuota)
     {
         $this->container['leaveQuota'] = $leaveQuota;
+
+        return $this;
+    }
+
+    /**
+     * Gets quotaCalculateRule
+     *
+     * @return string|mixed
+     */
+    public function getQuotaCalculateRule()
+    {
+        return $this->container['quotaCalculateRule'];
+    }
+
+    /**
+     * Sets quotaCalculateRule
+     *
+     * @param string|mixed $quotaCalculateRule quotaCalculateRule
+     *
+     * @return $this
+     */
+    public function setQuotaCalculateRule($quotaCalculateRule)
+    {
+        $this->container['quotaCalculateRule'] = $quotaCalculateRule;
 
         return $this;
     }

@@ -94,7 +94,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'customReportNodeList' => 'int[]',
         'mustReportNodeList' => 'int[]',
         'recommendReportNodeList' => 'int[]',
-        'conversionLinkNodes' => '\TencentAds\Model\V3\LinkNodeStruct[]'
+        'conversionLinkNodes' => '\TencentAds\Model\V3\LinkNodeStruct[]',
+        'createdByActionSet' => 'bool'
     ];
 
     /**
@@ -139,7 +140,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'customReportNodeList' => 'int64',
         'mustReportNodeList' => 'int64',
         'recommendReportNodeList' => 'int64',
-        'conversionLinkNodes' => null
+        'conversionLinkNodes' => null,
+        'createdByActionSet' => null
     ];
 
     /**
@@ -205,7 +207,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'customReportNodeList' => 'custom_report_node_list',
         'mustReportNodeList' => 'must_report_node_list',
         'recommendReportNodeList' => 'recommend_report_node_list',
-        'conversionLinkNodes' => 'conversion_link_nodes'
+        'conversionLinkNodes' => 'conversion_link_nodes',
+        'createdByActionSet' => 'created_by_action_set'
     ];
 
     /**
@@ -250,7 +253,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'customReportNodeList' => 'setCustomReportNodeList',
         'mustReportNodeList' => 'setMustReportNodeList',
         'recommendReportNodeList' => 'setRecommendReportNodeList',
-        'conversionLinkNodes' => 'setConversionLinkNodes'
+        'conversionLinkNodes' => 'setConversionLinkNodes',
+        'createdByActionSet' => 'setCreatedByActionSet'
     ];
 
     /**
@@ -295,7 +299,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'customReportNodeList' => 'getCustomReportNodeList',
         'mustReportNodeList' => 'getMustReportNodeList',
         'recommendReportNodeList' => 'getRecommendReportNodeList',
-        'conversionLinkNodes' => 'getConversionLinkNodes'
+        'conversionLinkNodes' => 'getConversionLinkNodes',
+        'createdByActionSet' => 'getCreatedByActionSet'
     ];
 
     /**
@@ -395,6 +400,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['mustReportNodeList'] = isset($data['mustReportNodeList']) ? $data['mustReportNodeList'] : null;
         $this->container['recommendReportNodeList'] = isset($data['recommendReportNodeList']) ? $data['recommendReportNodeList'] : null;
         $this->container['conversionLinkNodes'] = isset($data['conversionLinkNodes']) ? $data['conversionLinkNodes'] : null;
+        $this->container['createdByActionSet'] = isset($data['createdByActionSet']) ? $data['createdByActionSet'] : null;
     }
 
     /**
@@ -1305,6 +1311,30 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     public function setConversionLinkNodes($conversionLinkNodes)
     {
         $this->container['conversionLinkNodes'] = $conversionLinkNodes;
+
+        return $this;
+    }
+
+    /**
+     * Gets createdByActionSet
+     *
+     * @return bool|mixed
+     */
+    public function getCreatedByActionSet()
+    {
+        return $this->container['createdByActionSet'];
+    }
+
+    /**
+     * Sets createdByActionSet
+     *
+     * @param bool|mixed $createdByActionSet createdByActionSet
+     *
+     * @return $this
+     */
+    public function setCreatedByActionSet($createdByActionSet)
+    {
+        $this->container['createdByActionSet'] = $createdByActionSet;
 
         return $this;
     }

@@ -68,7 +68,8 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'supportDynamicAbilitySpecList' => '\TencentAds\Model\V3\SupportDynamicAbilitySpecList',
         'supportMpa' => 'bool',
         'supportMpaImageTemplate' => 'bool',
-        'supportMpaVideoTemplate' => 'bool'
+        'supportMpaVideoTemplate' => 'bool',
+        'creativePermissions' => '\TencentAds\Model\V3\CreativePermissions'
     ];
 
     /**
@@ -87,7 +88,8 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'supportDynamicAbilitySpecList' => null,
         'supportMpa' => null,
         'supportMpaImageTemplate' => null,
-        'supportMpaVideoTemplate' => null
+        'supportMpaVideoTemplate' => null,
+        'creativePermissions' => null
     ];
 
     /**
@@ -127,7 +129,8 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'supportDynamicAbilitySpecList' => 'support_dynamic_ability_spec_list',
         'supportMpa' => 'support_mpa',
         'supportMpaImageTemplate' => 'support_mpa_image_template',
-        'supportMpaVideoTemplate' => 'support_mpa_video_template'
+        'supportMpaVideoTemplate' => 'support_mpa_video_template',
+        'creativePermissions' => 'creative_permissions'
     ];
 
     /**
@@ -146,7 +149,8 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'supportDynamicAbilitySpecList' => 'setSupportDynamicAbilitySpecList',
         'supportMpa' => 'setSupportMpa',
         'supportMpaImageTemplate' => 'setSupportMpaImageTemplate',
-        'supportMpaVideoTemplate' => 'setSupportMpaVideoTemplate'
+        'supportMpaVideoTemplate' => 'setSupportMpaVideoTemplate',
+        'creativePermissions' => 'setCreativePermissions'
     ];
 
     /**
@@ -165,7 +169,8 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'supportDynamicAbilitySpecList' => 'getSupportDynamicAbilitySpecList',
         'supportMpa' => 'getSupportMpa',
         'supportMpaImageTemplate' => 'getSupportMpaImageTemplate',
-        'supportMpaVideoTemplate' => 'getSupportMpaVideoTemplate'
+        'supportMpaVideoTemplate' => 'getSupportMpaVideoTemplate',
+        'creativePermissions' => 'getCreativePermissions'
     ];
 
     /**
@@ -239,6 +244,7 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         $this->container['supportMpa'] = isset($data['supportMpa']) ? $data['supportMpa'] : null;
         $this->container['supportMpaImageTemplate'] = isset($data['supportMpaImageTemplate']) ? $data['supportMpaImageTemplate'] : null;
         $this->container['supportMpaVideoTemplate'] = isset($data['supportMpaVideoTemplate']) ? $data['supportMpaVideoTemplate'] : null;
+        $this->container['creativePermissions'] = isset($data['creativePermissions']) ? $data['creativePermissions'] : null;
     }
 
     /**
@@ -525,6 +531,30 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
     public function setSupportMpaVideoTemplate($supportMpaVideoTemplate)
     {
         $this->container['supportMpaVideoTemplate'] = $supportMpaVideoTemplate;
+
+        return $this;
+    }
+
+    /**
+     * Gets creativePermissions
+     *
+     * @return \TencentAds\Model\V3\CreativePermissions|mixed
+     */
+    public function getCreativePermissions()
+    {
+        return $this->container['creativePermissions'];
+    }
+
+    /**
+     * Sets creativePermissions
+     *
+     * @param \TencentAds\Model\V3\CreativePermissions|mixed $creativePermissions creativePermissions
+     *
+     * @return $this
+     */
+    public function setCreativePermissions($creativePermissions)
+    {
+        $this->container['creativePermissions'] = $creativePermissions;
 
         return $this;
     }

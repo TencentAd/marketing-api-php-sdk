@@ -62,10 +62,12 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         'corporationLicence' => 'string',
         'certificationImageId' => 'string',
         'individualQualification' => '\TencentAds\Model\V3\IndividualQualification',
-        'systemIndustryId' => 'int',
         'areaCode' => 'int',
+        'systemIndustryId' => 'int',
         'introductionUrl' => 'string',
+        'dailyBudget' => 'int',
         'corporateBrandName' => 'string',
+        'isAdx' => 'bool',
         'contactPersonTelephone' => 'string',
         'contactPersonMobile' => 'string'
     ];
@@ -81,10 +83,12 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         'corporationLicence' => null,
         'certificationImageId' => null,
         'individualQualification' => null,
-        'systemIndustryId' => 'int64',
         'areaCode' => 'int64',
+        'systemIndustryId' => 'int64',
         'introductionUrl' => null,
+        'dailyBudget' => 'int64',
         'corporateBrandName' => null,
+        'isAdx' => null,
         'contactPersonTelephone' => null,
         'contactPersonMobile' => null
     ];
@@ -121,10 +125,12 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         'corporationLicence' => 'corporation_licence',
         'certificationImageId' => 'certification_image_id',
         'individualQualification' => 'individual_qualification',
-        'systemIndustryId' => 'system_industry_id',
         'areaCode' => 'area_code',
+        'systemIndustryId' => 'system_industry_id',
         'introductionUrl' => 'introduction_url',
+        'dailyBudget' => 'daily_budget',
         'corporateBrandName' => 'corporate_brand_name',
+        'isAdx' => 'is_adx',
         'contactPersonTelephone' => 'contact_person_telephone',
         'contactPersonMobile' => 'contact_person_mobile'
     ];
@@ -140,10 +146,12 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         'corporationLicence' => 'setCorporationLicence',
         'certificationImageId' => 'setCertificationImageId',
         'individualQualification' => 'setIndividualQualification',
-        'systemIndustryId' => 'setSystemIndustryId',
         'areaCode' => 'setAreaCode',
+        'systemIndustryId' => 'setSystemIndustryId',
         'introductionUrl' => 'setIntroductionUrl',
+        'dailyBudget' => 'setDailyBudget',
         'corporateBrandName' => 'setCorporateBrandName',
+        'isAdx' => 'setIsAdx',
         'contactPersonTelephone' => 'setContactPersonTelephone',
         'contactPersonMobile' => 'setContactPersonMobile'
     ];
@@ -159,10 +167,12 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         'corporationLicence' => 'getCorporationLicence',
         'certificationImageId' => 'getCertificationImageId',
         'individualQualification' => 'getIndividualQualification',
-        'systemIndustryId' => 'getSystemIndustryId',
         'areaCode' => 'getAreaCode',
+        'systemIndustryId' => 'getSystemIndustryId',
         'introductionUrl' => 'getIntroductionUrl',
+        'dailyBudget' => 'getDailyBudget',
         'corporateBrandName' => 'getCorporateBrandName',
+        'isAdx' => 'getIsAdx',
         'contactPersonTelephone' => 'getContactPersonTelephone',
         'contactPersonMobile' => 'getContactPersonMobile'
     ];
@@ -232,10 +242,12 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         $this->container['corporationLicence'] = isset($data['corporationLicence']) ? $data['corporationLicence'] : null;
         $this->container['certificationImageId'] = isset($data['certificationImageId']) ? $data['certificationImageId'] : null;
         $this->container['individualQualification'] = isset($data['individualQualification']) ? $data['individualQualification'] : null;
-        $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
         $this->container['areaCode'] = isset($data['areaCode']) ? $data['areaCode'] : null;
+        $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
         $this->container['introductionUrl'] = isset($data['introductionUrl']) ? $data['introductionUrl'] : null;
+        $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
         $this->container['corporateBrandName'] = isset($data['corporateBrandName']) ? $data['corporateBrandName'] : null;
+        $this->container['isAdx'] = isset($data['isAdx']) ? $data['isAdx'] : null;
         $this->container['contactPersonTelephone'] = isset($data['contactPersonTelephone']) ? $data['contactPersonTelephone'] : null;
         $this->container['contactPersonMobile'] = isset($data['contactPersonMobile']) ? $data['contactPersonMobile'] : null;
     }
@@ -385,30 +397,6 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets systemIndustryId
-     *
-     * @return int|mixed
-     */
-    public function getSystemIndustryId()
-    {
-        return $this->container['systemIndustryId'];
-    }
-
-    /**
-     * Sets systemIndustryId
-     *
-     * @param int|mixed $systemIndustryId systemIndustryId
-     *
-     * @return $this
-     */
-    public function setSystemIndustryId($systemIndustryId)
-    {
-        $this->container['systemIndustryId'] = $systemIndustryId;
-
-        return $this;
-    }
-
-    /**
      * Gets areaCode
      *
      * @return int|mixed
@@ -428,6 +416,30 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     public function setAreaCode($areaCode)
     {
         $this->container['areaCode'] = $areaCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets systemIndustryId
+     *
+     * @return int|mixed
+     */
+    public function getSystemIndustryId()
+    {
+        return $this->container['systemIndustryId'];
+    }
+
+    /**
+     * Sets systemIndustryId
+     *
+     * @param int|mixed $systemIndustryId systemIndustryId
+     *
+     * @return $this
+     */
+    public function setSystemIndustryId($systemIndustryId)
+    {
+        $this->container['systemIndustryId'] = $systemIndustryId;
 
         return $this;
     }
@@ -457,6 +469,30 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets dailyBudget
+     *
+     * @return int|mixed
+     */
+    public function getDailyBudget()
+    {
+        return $this->container['dailyBudget'];
+    }
+
+    /**
+     * Sets dailyBudget
+     *
+     * @param int|mixed $dailyBudget dailyBudget
+     *
+     * @return $this
+     */
+    public function setDailyBudget($dailyBudget)
+    {
+        $this->container['dailyBudget'] = $dailyBudget;
+
+        return $this;
+    }
+
+    /**
      * Gets corporateBrandName
      *
      * @return string|mixed
@@ -476,6 +512,30 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
     public function setCorporateBrandName($corporateBrandName)
     {
         $this->container['corporateBrandName'] = $corporateBrandName;
+
+        return $this;
+    }
+
+    /**
+     * Gets isAdx
+     *
+     * @return bool|mixed
+     */
+    public function getIsAdx()
+    {
+        return $this->container['isAdx'];
+    }
+
+    /**
+     * Sets isAdx
+     *
+     * @param bool|mixed $isAdx isAdx
+     *
+     * @return $this
+     */
+    public function setIsAdx($isAdx)
+    {
+        $this->container['isAdx'] = $isAdx;
 
         return $this;
     }

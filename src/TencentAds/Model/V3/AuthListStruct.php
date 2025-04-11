@@ -71,7 +71,8 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountIcon' => 'string',
         'wechatChannelsAccountId' => 'string',
         'isBlocked' => 'bool',
-        'isPrivate' => 'bool'
+        'isPrivate' => 'bool',
+        'logoutTimeSecond' => 'int'
     ];
 
     /**
@@ -93,7 +94,8 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountIcon' => null,
         'wechatChannelsAccountId' => null,
         'isBlocked' => null,
-        'isPrivate' => null
+        'isPrivate' => null,
+        'logoutTimeSecond' => 'int64'
     ];
 
     /**
@@ -136,7 +138,8 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountIcon' => 'wechat_channels_account_icon',
         'wechatChannelsAccountId' => 'wechat_channels_account_id',
         'isBlocked' => 'is_blocked',
-        'isPrivate' => 'is_private'
+        'isPrivate' => 'is_private',
+        'logoutTimeSecond' => 'logout_time_second'
     ];
 
     /**
@@ -158,7 +161,8 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountIcon' => 'setWechatChannelsAccountIcon',
         'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
         'isBlocked' => 'setIsBlocked',
-        'isPrivate' => 'setIsPrivate'
+        'isPrivate' => 'setIsPrivate',
+        'logoutTimeSecond' => 'setLogoutTimeSecond'
     ];
 
     /**
@@ -180,7 +184,8 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountIcon' => 'getWechatChannelsAccountIcon',
         'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
         'isBlocked' => 'getIsBlocked',
-        'isPrivate' => 'getIsPrivate'
+        'isPrivate' => 'getIsPrivate',
+        'logoutTimeSecond' => 'getLogoutTimeSecond'
     ];
 
     /**
@@ -257,6 +262,7 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
         $this->container['isBlocked'] = isset($data['isBlocked']) ? $data['isBlocked'] : null;
         $this->container['isPrivate'] = isset($data['isPrivate']) ? $data['isPrivate'] : null;
+        $this->container['logoutTimeSecond'] = isset($data['logoutTimeSecond']) ? $data['logoutTimeSecond'] : null;
     }
 
     /**
@@ -615,6 +621,30 @@ class AuthListStruct implements ModelInterface, ArrayAccess
     public function setIsPrivate($isPrivate)
     {
         $this->container['isPrivate'] = $isPrivate;
+
+        return $this;
+    }
+
+    /**
+     * Gets logoutTimeSecond
+     *
+     * @return int|mixed
+     */
+    public function getLogoutTimeSecond()
+    {
+        return $this->container['logoutTimeSecond'];
+    }
+
+    /**
+     * Sets logoutTimeSecond
+     *
+     * @param int|mixed $logoutTimeSecond logoutTimeSecond
+     *
+     * @return $this
+     */
+    public function setLogoutTimeSecond($logoutTimeSecond)
+    {
+        $this->container['logoutTimeSecond'] = $logoutTimeSecond;
 
         return $this;
     }

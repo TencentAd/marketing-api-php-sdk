@@ -80,7 +80,8 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'linkSpuName' => 'string',
         'wechatStoreProductStatus' => 'int',
         'wechatStoreProductAdStatus' => 'int',
-        'wechatStoreProductAdUnavailableCause' => 'string[]'
+        'wechatStoreProductAdUnavailableCause' => 'string[]',
+        'storePriceItemList' => '\TencentAds\Model\V3\StorePriceItem[]'
     ];
 
     /**
@@ -111,7 +112,8 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'linkSpuName' => null,
         'wechatStoreProductStatus' => 'int64',
         'wechatStoreProductAdStatus' => 'int64',
-        'wechatStoreProductAdUnavailableCause' => null
+        'wechatStoreProductAdUnavailableCause' => null,
+        'storePriceItemList' => null
     ];
 
     /**
@@ -163,7 +165,8 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'linkSpuName' => 'link_spu_name',
         'wechatStoreProductStatus' => 'wechat_store_product_status',
         'wechatStoreProductAdStatus' => 'wechat_store_product_ad_status',
-        'wechatStoreProductAdUnavailableCause' => 'wechat_store_product_ad_unavailable_cause'
+        'wechatStoreProductAdUnavailableCause' => 'wechat_store_product_ad_unavailable_cause',
+        'storePriceItemList' => 'store_price_item_list'
     ];
 
     /**
@@ -194,7 +197,8 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'linkSpuName' => 'setLinkSpuName',
         'wechatStoreProductStatus' => 'setWechatStoreProductStatus',
         'wechatStoreProductAdStatus' => 'setWechatStoreProductAdStatus',
-        'wechatStoreProductAdUnavailableCause' => 'setWechatStoreProductAdUnavailableCause'
+        'wechatStoreProductAdUnavailableCause' => 'setWechatStoreProductAdUnavailableCause',
+        'storePriceItemList' => 'setStorePriceItemList'
     ];
 
     /**
@@ -225,7 +229,8 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'linkSpuName' => 'getLinkSpuName',
         'wechatStoreProductStatus' => 'getWechatStoreProductStatus',
         'wechatStoreProductAdStatus' => 'getWechatStoreProductAdStatus',
-        'wechatStoreProductAdUnavailableCause' => 'getWechatStoreProductAdUnavailableCause'
+        'wechatStoreProductAdUnavailableCause' => 'getWechatStoreProductAdUnavailableCause',
+        'storePriceItemList' => 'getStorePriceItemList'
     ];
 
     /**
@@ -311,6 +316,7 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         $this->container['wechatStoreProductStatus'] = isset($data['wechatStoreProductStatus']) ? $data['wechatStoreProductStatus'] : null;
         $this->container['wechatStoreProductAdStatus'] = isset($data['wechatStoreProductAdStatus']) ? $data['wechatStoreProductAdStatus'] : null;
         $this->container['wechatStoreProductAdUnavailableCause'] = isset($data['wechatStoreProductAdUnavailableCause']) ? $data['wechatStoreProductAdUnavailableCause'] : null;
+        $this->container['storePriceItemList'] = isset($data['storePriceItemList']) ? $data['storePriceItemList'] : null;
     }
 
     /**
@@ -885,6 +891,30 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
     public function setWechatStoreProductAdUnavailableCause($wechatStoreProductAdUnavailableCause)
     {
         $this->container['wechatStoreProductAdUnavailableCause'] = $wechatStoreProductAdUnavailableCause;
+
+        return $this;
+    }
+
+    /**
+     * Gets storePriceItemList
+     *
+     * @return \TencentAds\Model\V3\StorePriceItem[]|mixed
+     */
+    public function getStorePriceItemList()
+    {
+        return $this->container['storePriceItemList'];
+    }
+
+    /**
+     * Sets storePriceItemList
+     *
+     * @param \TencentAds\Model\V3\StorePriceItem[]|mixed $storePriceItemList storePriceItemList
+     *
+     * @return $this
+     */
+    public function setStorePriceItemList($storePriceItemList)
+    {
+        $this->container['storePriceItemList'] = $storePriceItemList;
 
         return $this;
     }

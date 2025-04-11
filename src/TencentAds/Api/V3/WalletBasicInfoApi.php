@@ -93,14 +93,14 @@ class WalletBasicInfoApi
      * 通过钱包id去查询共享钱包基础信息
      *
      * @param  int|mixed $accountId accountId (required)
-     * @param  int|mixed $walletId walletId (optional)
+     * @param  int|mixed $walletId walletId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\WalletBasicInfoGetResponse|mixed
      */
-    public function walletBasicInfoGet($accountId, $walletId = null, $fields = null)
+    public function walletBasicInfoGet($accountId, $walletId, $fields = null)
     {
         list($response) = $this->walletBasicInfoGetWithHttpInfo($accountId, $walletId, $fields);
         return $response;
@@ -112,14 +112,14 @@ class WalletBasicInfoApi
      * 通过钱包id去查询共享钱包基础信息
      *
      * @param  int|mixed $accountId (required)
-     * @param  int|mixed $walletId (optional)
+     * @param  int|mixed $walletId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\WalletBasicInfoGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function walletBasicInfoGetWithHttpInfo($accountId, $walletId = null, $fields = null)
+    public function walletBasicInfoGetWithHttpInfo($accountId, $walletId, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WalletBasicInfoGetResponse';
         $request = $this->walletBasicInfoGetRequest($accountId, $walletId, $fields);
@@ -189,13 +189,13 @@ class WalletBasicInfoApi
      * 通过钱包id去查询共享钱包基础信息
      *
      * @param  int|mixed $accountId (required)
-     * @param  int|mixed $walletId (optional)
+     * @param  int|mixed $walletId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function walletBasicInfoGetAsync($accountId, $walletId = null, $fields = null)
+    public function walletBasicInfoGetAsync($accountId, $walletId, $fields = null)
     {
         return $this->walletBasicInfoGetAsyncWithHttpInfo($accountId, $walletId, $fields)
             ->then(
@@ -211,13 +211,13 @@ class WalletBasicInfoApi
      * 通过钱包id去查询共享钱包基础信息
      *
      * @param  int|mixed $accountId (required)
-     * @param  int|mixed $walletId (optional)
+     * @param  int|mixed $walletId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function walletBasicInfoGetAsyncWithHttpInfo($accountId, $walletId = null, $fields = null)
+    public function walletBasicInfoGetAsyncWithHttpInfo($accountId, $walletId, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WalletBasicInfoGetResponse';
         $request = $this->walletBasicInfoGetRequest($accountId, $walletId, $fields);
@@ -263,18 +263,24 @@ class WalletBasicInfoApi
      * Create request for operation 'walletBasicInfoGet'
      *
      * @param  int|mixed $accountId (required)
-     * @param  int|mixed $walletId (optional)
+     * @param  int|mixed $walletId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function walletBasicInfoGetRequest($accountId, $walletId = null, $fields = null)
+    protected function walletBasicInfoGetRequest($accountId, $walletId, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $accountId when calling walletBasicInfoGet'
+            );
+        }
+        // verify the required parameter 'walletId' is set
+        if ($walletId === null || (is_array($walletId) && count($walletId) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $walletId when calling walletBasicInfoGet'
             );
         }
 

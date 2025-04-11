@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * CloudUnionSpec Class Doc Comment
  *
  * @category Class
- * @description 
+ * @description 云选相关参数
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

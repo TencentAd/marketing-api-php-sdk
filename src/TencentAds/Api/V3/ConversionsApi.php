@@ -386,7 +386,7 @@ class ConversionsApi
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
-     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     * @param  string[]|mixed $fields fields (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -407,7 +407,7 @@ class ConversionsApi
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
-     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     * @param  string[]|mixed $fields (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -486,7 +486,7 @@ class ConversionsApi
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
-     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     * @param  string[]|mixed $fields (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -510,7 +510,7 @@ class ConversionsApi
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
-     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     * @param  string[]|mixed $fields (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -564,7 +564,7 @@ class ConversionsApi
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
-     * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
+     * @param  string[]|mixed $fields (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

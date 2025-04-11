@@ -39,10 +39,12 @@ class AgencyWalletListApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $mdmId = isset($params['mdm_id']) ? $params['mdm_id'] : null;
             $walletId = isset($params['wallet_id']) ? $params['wallet_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->agencyWalletListGet($accountId, $mdmId, $walletId, $fields);
+            $response = $this->apiInstance->agencyWalletListGet($accountId, $page, $pageSize, $mdmId, $walletId, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -58,10 +60,12 @@ class AgencyWalletListApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $mdmId = isset($params['mdm_id']) ? $params['mdm_id'] : null;
             $walletId = isset($params['wallet_id']) ? $params['wallet_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->agencyWalletListGetAsync($accountId, $mdmId, $walletId, $fields);
+            $response = $this->apiInstance->agencyWalletListGetAsync($accountId, $page, $pageSize, $mdmId, $walletId, $fields);
             return $response;
         });
     }

@@ -60,6 +60,7 @@ class CalcAdGroupStatus
     const PRE_LOCK = 'ADGROUP_STATUS_PRE_LOCK';
     const UNLOCKING = 'ADGROUP_STATUS_UNLOCKING';
     const STOP = 'ADGROUP_STATUS_STOP';
+    const LIVE_NOT_ACTIVE = 'ADGROUP_STATUS_LIVE_NOT_ACTIVE';
     
     /**
      * Gets allowable values of the enum
@@ -84,6 +85,7 @@ class CalcAdGroupStatus
             self::PRE_LOCK,
             self::UNLOCKING,
             self::STOP,
+            self::LIVE_NOT_ACTIVE,
         ];
     }
 }

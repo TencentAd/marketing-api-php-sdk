@@ -131,7 +131,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'additionalProductSpec' => '\TencentAds\Model\V3\AdditionalProductSpec',
         'enableBreakthroughSiteset' => 'bool',
         'liveRecommendStrategyEnabled' => 'bool',
-        'customCostRoiCap' => 'double'
+        'customCostRoiCap' => 'double',
+        'enableSteadyExploration' => 'bool',
+        'adxRealtimeType' => '\TencentAds\Model\V3\AdxRealtimeType'
     ];
 
     /**
@@ -213,7 +215,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'additionalProductSpec' => null,
         'enableBreakthroughSiteset' => null,
         'liveRecommendStrategyEnabled' => null,
-        'customCostRoiCap' => 'double'
+        'customCostRoiCap' => 'double',
+        'enableSteadyExploration' => null,
+        'adxRealtimeType' => null
     ];
 
     /**
@@ -316,7 +320,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'additionalProductSpec' => 'additional_product_spec',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled',
-        'customCostRoiCap' => 'custom_cost_roi_cap'
+        'customCostRoiCap' => 'custom_cost_roi_cap',
+        'enableSteadyExploration' => 'enable_steady_exploration',
+        'adxRealtimeType' => 'adx_realtime_type'
     ];
 
     /**
@@ -398,7 +404,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'additionalProductSpec' => 'setAdditionalProductSpec',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled',
-        'customCostRoiCap' => 'setCustomCostRoiCap'
+        'customCostRoiCap' => 'setCustomCostRoiCap',
+        'enableSteadyExploration' => 'setEnableSteadyExploration',
+        'adxRealtimeType' => 'setAdxRealtimeType'
     ];
 
     /**
@@ -480,7 +488,9 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'additionalProductSpec' => 'getAdditionalProductSpec',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled',
-        'customCostRoiCap' => 'getCustomCostRoiCap'
+        'customCostRoiCap' => 'getCustomCostRoiCap',
+        'enableSteadyExploration' => 'getEnableSteadyExploration',
+        'adxRealtimeType' => 'getAdxRealtimeType'
     ];
 
     /**
@@ -617,6 +627,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['liveRecommendStrategyEnabled'] = isset($data['liveRecommendStrategyEnabled']) ? $data['liveRecommendStrategyEnabled'] : null;
         $this->container['customCostRoiCap'] = isset($data['customCostRoiCap']) ? $data['customCostRoiCap'] : null;
+        $this->container['enableSteadyExploration'] = isset($data['enableSteadyExploration']) ? $data['enableSteadyExploration'] : null;
+        $this->container['adxRealtimeType'] = isset($data['adxRealtimeType']) ? $data['adxRealtimeType'] : null;
     }
 
     /**
@@ -2415,6 +2427,54 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setCustomCostRoiCap($customCostRoiCap)
     {
         $this->container['customCostRoiCap'] = $customCostRoiCap;
+
+        return $this;
+    }
+
+    /**
+     * Gets enableSteadyExploration
+     *
+     * @return bool|mixed
+     */
+    public function getEnableSteadyExploration()
+    {
+        return $this->container['enableSteadyExploration'];
+    }
+
+    /**
+     * Sets enableSteadyExploration
+     *
+     * @param bool|mixed $enableSteadyExploration enableSteadyExploration
+     *
+     * @return $this
+     */
+    public function setEnableSteadyExploration($enableSteadyExploration)
+    {
+        $this->container['enableSteadyExploration'] = $enableSteadyExploration;
+
+        return $this;
+    }
+
+    /**
+     * Gets adxRealtimeType
+     *
+     * @return \TencentAds\Model\V3\AdxRealtimeType|mixed
+     */
+    public function getAdxRealtimeType()
+    {
+        return $this->container['adxRealtimeType'];
+    }
+
+    /**
+     * Sets adxRealtimeType
+     *
+     * @param \TencentAds\Model\V3\AdxRealtimeType|mixed $adxRealtimeType adxRealtimeType
+     *
+     * @return $this
+     */
+    public function setAdxRealtimeType($adxRealtimeType)
+    {
+        $this->container['adxRealtimeType'] = $adxRealtimeType;
 
         return $this;
     }

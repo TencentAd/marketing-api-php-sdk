@@ -97,15 +97,16 @@ class FundStatementsDetailedApi
      * @param  \TencentAds\Model\V3\DateRangeTransaction|mixed $dateRange dateRange (required)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string|mixed $primaryKey primaryKey (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\FundStatementsDetailedGetResponse|mixed
      */
-    public function fundStatementsDetailedGet($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
+    public function fundStatementsDetailedGet($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $primaryKey = null, $fields = null)
     {
-        list($response) = $this->fundStatementsDetailedGetWithHttpInfo($accountId, $fundType, $dateRange, $page, $pageSize, $fields);
+        list($response) = $this->fundStatementsDetailedGetWithHttpInfo($accountId, $fundType, $dateRange, $page, $pageSize, $primaryKey, $fields);
         return $response;
     }
 
@@ -119,16 +120,17 @@ class FundStatementsDetailedApi
      * @param  \TencentAds\Model\V3\DateRangeTransaction|mixed $dateRange (required)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $primaryKey (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\FundStatementsDetailedGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function fundStatementsDetailedGetWithHttpInfo($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
+    public function fundStatementsDetailedGetWithHttpInfo($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $primaryKey = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\FundStatementsDetailedGetResponse';
-        $request = $this->fundStatementsDetailedGetRequest($accountId, $fundType, $dateRange, $page, $pageSize, $fields);
+        $request = $this->fundStatementsDetailedGetRequest($accountId, $fundType, $dateRange, $page, $pageSize, $primaryKey, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -199,14 +201,15 @@ class FundStatementsDetailedApi
      * @param  \TencentAds\Model\V3\DateRangeTransaction|mixed $dateRange (required)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $primaryKey (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function fundStatementsDetailedGetAsync($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
+    public function fundStatementsDetailedGetAsync($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $primaryKey = null, $fields = null)
     {
-        return $this->fundStatementsDetailedGetAsyncWithHttpInfo($accountId, $fundType, $dateRange, $page, $pageSize, $fields)
+        return $this->fundStatementsDetailedGetAsyncWithHttpInfo($accountId, $fundType, $dateRange, $page, $pageSize, $primaryKey, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -224,15 +227,16 @@ class FundStatementsDetailedApi
      * @param  \TencentAds\Model\V3\DateRangeTransaction|mixed $dateRange (required)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $primaryKey (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function fundStatementsDetailedGetAsyncWithHttpInfo($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
+    public function fundStatementsDetailedGetAsyncWithHttpInfo($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $primaryKey = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\FundStatementsDetailedGetResponse';
-        $request = $this->fundStatementsDetailedGetRequest($accountId, $fundType, $dateRange, $page, $pageSize, $fields);
+        $request = $this->fundStatementsDetailedGetRequest($accountId, $fundType, $dateRange, $page, $pageSize, $primaryKey, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -279,12 +283,13 @@ class FundStatementsDetailedApi
      * @param  \TencentAds\Model\V3\DateRangeTransaction|mixed $dateRange (required)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $primaryKey (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function fundStatementsDetailedGetRequest($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $fields = null)
+    protected function fundStatementsDetailedGetRequest($accountId, $fundType, $dateRange, $page = null, $pageSize = null, $primaryKey = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -331,6 +336,10 @@ class FundStatementsDetailedApi
         // query params
         if ($pageSize !== null) {
             $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
+        }
+        // query params
+        if ($primaryKey !== null) {
+            $queryParams['primary_key'] = ObjectSerializer::toQueryValue($primaryKey);
         }
         // query params
         if (is_array($fields)) {

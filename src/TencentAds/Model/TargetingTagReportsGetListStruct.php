@@ -735,7 +735,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'projectId' => 'int',
         'projectName' => 'string',
         'purchasePv' => 'int',
-        'regPv' => 'int'
+        'regPv' => 'int',
+        'orderPv' => 'int',
+        'orderUv' => 'int'
     ];
 
     /**
@@ -1421,7 +1423,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'projectId' => 'int64',
         'projectName' => null,
         'purchasePv' => 'int64',
-        'regPv' => 'int64'
+        'regPv' => 'int64',
+        'orderPv' => 'int64',
+        'orderUv' => 'int64'
     ];
 
     /**
@@ -2128,7 +2132,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'projectId' => 'project_id',
         'projectName' => 'project_name',
         'purchasePv' => 'purchase_pv',
-        'regPv' => 'reg_pv'
+        'regPv' => 'reg_pv',
+        'orderPv' => 'order_pv',
+        'orderUv' => 'order_uv'
     ];
 
     /**
@@ -2814,7 +2820,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'projectId' => 'setProjectId',
         'projectName' => 'setProjectName',
         'purchasePv' => 'setPurchasePv',
-        'regPv' => 'setRegPv'
+        'regPv' => 'setRegPv',
+        'orderPv' => 'setOrderPv',
+        'orderUv' => 'setOrderUv'
     ];
 
     /**
@@ -3500,7 +3508,9 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'projectId' => 'getProjectId',
         'projectName' => 'getProjectName',
         'purchasePv' => 'getPurchasePv',
-        'regPv' => 'getRegPv'
+        'regPv' => 'getRegPv',
+        'orderPv' => 'getOrderPv',
+        'orderUv' => 'getOrderUv'
     ];
 
     /**
@@ -4241,6 +4251,8 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['projectName'] = isset($data['projectName']) ? $data['projectName'] : null;
         $this->container['purchasePv'] = isset($data['purchasePv']) ? $data['purchasePv'] : null;
         $this->container['regPv'] = isset($data['regPv']) ? $data['regPv'] : null;
+        $this->container['orderPv'] = isset($data['orderPv']) ? $data['orderPv'] : null;
+        $this->container['orderUv'] = isset($data['orderUv']) ? $data['orderUv'] : null;
     }
 
     /**
@@ -20535,6 +20547,54 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setRegPv($regPv)
     {
         $this->container['regPv'] = $regPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderPv
+     *
+     * @return int|mixed
+     */
+    public function getOrderPv()
+    {
+        return $this->container['orderPv'];
+    }
+
+    /**
+     * Sets orderPv
+     *
+     * @param int|mixed $orderPv orderPv
+     *
+     * @return $this
+     */
+    public function setOrderPv($orderPv)
+    {
+        $this->container['orderPv'] = $orderPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderUv
+     *
+     * @return int|mixed
+     */
+    public function getOrderUv()
+    {
+        return $this->container['orderUv'];
+    }
+
+    /**
+     * Sets orderUv
+     *
+     * @param int|mixed $orderUv orderUv
+     *
+     * @return $this
+     */
+    public function setOrderUv($orderUv)
+    {
+        $this->container['orderUv'] = $orderUv;
 
         return $this;
     }

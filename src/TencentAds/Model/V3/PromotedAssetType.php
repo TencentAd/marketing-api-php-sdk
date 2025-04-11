@@ -105,6 +105,7 @@ class PromotedAssetType
     const CAR_ECOLOGY = 'PROMOTED_ASSET_TYPE_CAR_ECOLOGY';
     const WECHAT_STORE_PRODUCT = 'PROMOTED_ASSET_TYPE_WECHAT_STORE_PRODUCT';
     const APP_HARMONY = 'PROMOTED_ASSET_TYPE_APP_HARMONY';
+    const WECHAT_STORE_PRODUCT_SET = 'PROMOTED_ASSET_TYPE_WECHAT_STORE_PRODUCT_SET';
     
     /**
      * Gets allowable values of the enum
@@ -174,6 +175,7 @@ class PromotedAssetType
             self::CAR_ECOLOGY,
             self::WECHAT_STORE_PRODUCT,
             self::APP_HARMONY,
+            self::WECHAT_STORE_PRODUCT_SET,
         ];
     }
 }

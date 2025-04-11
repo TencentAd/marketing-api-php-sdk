@@ -40,8 +40,10 @@ class WalletGetBindingAdvertiserApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $walletId = isset($params['wallet_id']) ? $params['wallet_id'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->walletGetBindingAdvertiserGet($accountId, $walletId, $fields);
+            $response = $this->apiInstance->walletGetBindingAdvertiserGet($accountId, $walletId, $page, $pageSize, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -58,8 +60,10 @@ class WalletGetBindingAdvertiserApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $walletId = isset($params['wallet_id']) ? $params['wallet_id'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->walletGetBindingAdvertiserGetAsync($accountId, $walletId, $fields);
+            $response = $this->apiInstance->walletGetBindingAdvertiserGetAsync($accountId, $walletId, $page, $pageSize, $fields);
             return $response;
         });
     }

@@ -59,7 +59,7 @@ class WalletListBalanceStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'fundType' => '\TencentAds\Model\V3\AccountTypeMap',
-        'amount' => 'int'
+        'balance' => 'int'
     ];
 
     /**
@@ -69,7 +69,7 @@ class WalletListBalanceStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'fundType' => null,
-        'amount' => 'int64'
+        'balance' => 'int64'
     ];
 
     /**
@@ -100,7 +100,7 @@ class WalletListBalanceStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'fundType' => 'fund_type',
-        'amount' => 'amount'
+        'balance' => 'balance'
     ];
 
     /**
@@ -110,7 +110,7 @@ class WalletListBalanceStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'fundType' => 'setFundType',
-        'amount' => 'setAmount'
+        'balance' => 'setBalance'
     ];
 
     /**
@@ -120,7 +120,7 @@ class WalletListBalanceStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'fundType' => 'getFundType',
-        'amount' => 'getAmount'
+        'balance' => 'getBalance'
     ];
 
     /**
@@ -184,7 +184,7 @@ class WalletListBalanceStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['fundType'] = isset($data['fundType']) ? $data['fundType'] : null;
-        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
+        $this->container['balance'] = isset($data['balance']) ? $data['balance'] : null;
     }
 
     /**
@@ -236,25 +236,25 @@ class WalletListBalanceStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets amount
+     * Gets balance
      *
      * @return int|mixed
      */
-    public function getAmount()
+    public function getBalance()
     {
-        return $this->container['amount'];
+        return $this->container['balance'];
     }
 
     /**
-     * Sets amount
+     * Sets balance
      *
-     * @param int|mixed $amount amount
+     * @param int|mixed $balance balance
      *
      * @return $this
      */
-    public function setAmount($amount)
+    public function setBalance($balance)
     {
-        $this->container['amount'] = $amount;
+        $this->container['balance'] = $balance;
 
         return $this;
     }

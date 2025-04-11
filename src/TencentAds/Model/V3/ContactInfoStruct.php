@@ -59,7 +59,8 @@ class ContactInfoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'avatarName' => 'string',
-        'contact' => 'string'
+        'contact' => 'string',
+        'status' => 'int'
     ];
 
     /**
@@ -69,7 +70,8 @@ class ContactInfoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'avatarName' => null,
-        'contact' => null
+        'contact' => null,
+        'status' => 'int64'
     ];
 
     /**
@@ -100,7 +102,8 @@ class ContactInfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'avatarName' => 'avatar_name',
-        'contact' => 'contact'
+        'contact' => 'contact',
+        'status' => 'status'
     ];
 
     /**
@@ -110,7 +113,8 @@ class ContactInfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'avatarName' => 'setAvatarName',
-        'contact' => 'setContact'
+        'contact' => 'setContact',
+        'status' => 'setStatus'
     ];
 
     /**
@@ -120,7 +124,8 @@ class ContactInfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'avatarName' => 'getAvatarName',
-        'contact' => 'getContact'
+        'contact' => 'getContact',
+        'status' => 'getStatus'
     ];
 
     /**
@@ -185,6 +190,7 @@ class ContactInfoStruct implements ModelInterface, ArrayAccess
     {
         $this->container['avatarName'] = isset($data['avatarName']) ? $data['avatarName'] : null;
         $this->container['contact'] = isset($data['contact']) ? $data['contact'] : null;
+        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class ContactInfoStruct implements ModelInterface, ArrayAccess
     public function setContact($contact)
     {
         $this->container['contact'] = $contact;
+
+        return $this;
+    }
+
+    /**
+     * Gets status
+     *
+     * @return int|mixed
+     */
+    public function getStatus()
+    {
+        return $this->container['status'];
+    }
+
+    /**
+     * Sets status
+     *
+     * @param int|mixed $status status
+     *
+     * @return $this
+     */
+    public function setStatus($status)
+    {
+        $this->container['status'] = $status;
 
         return $this;
     }

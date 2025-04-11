@@ -143,6 +143,9 @@ class ComponentSubType
     const FLOATING_ZONE_IMAGE_TEXT_LIST = 'FLOATING_ZONE_IMAGE_TEXT_LIST';
     const CONSULT_LINK = 'CONSULT_LINK';
     const SHOP_PRODUCT_CARD = 'SHOP_PRODUCT_CARD';
+    const DYNAMIC_SHOWCASE_1 = 'DYNAMIC_SHOWCASE_1';
+    const DYNAMIC_SHOWCASE_2 = 'DYNAMIC_SHOWCASE_2';
+    const DYNAMIC_SHOWCASE_3 = 'DYNAMIC_SHOWCASE_3';
     const BRAND = 'BRAND';
     const BRAND_PAGE = 'BRAND_PAGE';
     const BRAND_SEARCH = 'BRAND_SEARCH';
@@ -284,6 +287,9 @@ class ComponentSubType
             self::FLOATING_ZONE_IMAGE_TEXT_LIST,
             self::CONSULT_LINK,
             self::SHOP_PRODUCT_CARD,
+            self::DYNAMIC_SHOWCASE_1,
+            self::DYNAMIC_SHOWCASE_2,
+            self::DYNAMIC_SHOWCASE_3,
             self::BRAND,
             self::BRAND_PAGE,
             self::BRAND_SEARCH,

@@ -679,14 +679,15 @@ class ComponentsApi
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  bool|mixed $isDeleted isDeleted (optional)
      * @param  string[]|mixed $fields fields (optional)
+     * @param  string|mixed $componentIdFilteringMode componentIdFilteringMode (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\ComponentsGetResponse|mixed
      */
-    public function componentsGet($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function componentsGet($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null, $componentIdFilteringMode = null)
     {
-        list($response) = $this->componentsGetWithHttpInfo($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        list($response) = $this->componentsGetWithHttpInfo($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields, $componentIdFilteringMode);
         return $response;
     }
 
@@ -702,15 +703,16 @@ class ComponentsApi
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
      * @param  string[]|mixed $fields (optional)
+     * @param  string|mixed $componentIdFilteringMode (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\ComponentsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function componentsGetWithHttpInfo($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function componentsGetWithHttpInfo($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null, $componentIdFilteringMode = null)
     {
         $returnType = '\TencentAds\Model\V3\ComponentsGetResponse';
-        $request = $this->componentsGetRequest($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->componentsGetRequest($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields, $componentIdFilteringMode);
 
         try {
             $options = $this->createHttpClientOption();
@@ -783,13 +785,14 @@ class ComponentsApi
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
      * @param  string[]|mixed $fields (optional)
+     * @param  string|mixed $componentIdFilteringMode (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function componentsGetAsync($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function componentsGetAsync($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null, $componentIdFilteringMode = null)
     {
-        return $this->componentsGetAsyncWithHttpInfo($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields)
+        return $this->componentsGetAsyncWithHttpInfo($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields, $componentIdFilteringMode)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -809,14 +812,15 @@ class ComponentsApi
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
      * @param  string[]|mixed $fields (optional)
+     * @param  string|mixed $componentIdFilteringMode (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function componentsGetAsyncWithHttpInfo($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    public function componentsGetAsyncWithHttpInfo($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null, $componentIdFilteringMode = null)
     {
         $returnType = '\TencentAds\Model\V3\ComponentsGetResponse';
-        $request = $this->componentsGetRequest($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields);
+        $request = $this->componentsGetRequest($accountId, $organizationId, $filtering, $page, $pageSize, $isDeleted, $fields, $componentIdFilteringMode);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -865,11 +869,12 @@ class ComponentsApi
      * @param  int|mixed $pageSize (optional)
      * @param  bool|mixed $isDeleted (optional)
      * @param  string[]|mixed $fields (optional)
+     * @param  string|mixed $componentIdFilteringMode (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function componentsGetRequest($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null)
+    protected function componentsGetRequest($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $isDeleted = null, $fields = null, $componentIdFilteringMode = null)
     {
 
         $resourcePath = '/components/get';
@@ -912,6 +917,10 @@ class ComponentsApi
         } else
         if ($fields !== null) {
             $queryParams['fields'] = ObjectSerializer::toQueryValue($fields);
+        }
+        // query params
+        if ($componentIdFilteringMode !== null) {
+            $queryParams['component_id_filtering_mode'] = ObjectSerializer::toQueryValue($componentIdFilteringMode);
         }
 
 

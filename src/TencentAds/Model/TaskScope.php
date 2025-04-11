@@ -56,6 +56,7 @@ class TaskScope
     const COMMENT = 'TASK_SCOPE_COMMENT';
     const DYNAMIC_CREATIVE = 'TASK_SCOPE_DYNAMIC_CREATIVE';
     const ADEXPORT = 'TASK_SCOPE_ADEXPORT';
+    const COMPONENT = 'TASK_SCOPE_COMPONENT';
     
     /**
      * Gets allowable values of the enum
@@ -76,6 +77,7 @@ class TaskScope
             self::COMMENT,
             self::DYNAMIC_CREATIVE,
             self::ADEXPORT,
+            self::COMPONENT,
         ];
     }
 }

@@ -72,7 +72,8 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
         'lastModifiedTime' => 'int',
         'finderFailMsg' => 'string',
         'finderFailRet' => 'int',
-        'wechatChannelsAccountId' => 'string'
+        'wechatChannelsAccountId' => 'string',
+        'logoutTimeSecond' => 'int'
     ];
 
     /**
@@ -95,7 +96,8 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
         'lastModifiedTime' => 'int64',
         'finderFailMsg' => null,
         'finderFailRet' => 'int64',
-        'wechatChannelsAccountId' => null
+        'wechatChannelsAccountId' => null,
+        'logoutTimeSecond' => 'int64'
     ];
 
     /**
@@ -139,7 +141,8 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
         'lastModifiedTime' => 'last_modified_time',
         'finderFailMsg' => 'finder_fail_msg',
         'finderFailRet' => 'finder_fail_ret',
-        'wechatChannelsAccountId' => 'wechat_channels_account_id'
+        'wechatChannelsAccountId' => 'wechat_channels_account_id',
+        'logoutTimeSecond' => 'logout_time_second'
     ];
 
     /**
@@ -162,7 +165,8 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
         'lastModifiedTime' => 'setLastModifiedTime',
         'finderFailMsg' => 'setFinderFailMsg',
         'finderFailRet' => 'setFinderFailRet',
-        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
+        'logoutTimeSecond' => 'setLogoutTimeSecond'
     ];
 
     /**
@@ -185,7 +189,8 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
         'lastModifiedTime' => 'getLastModifiedTime',
         'finderFailMsg' => 'getFinderFailMsg',
         'finderFailRet' => 'getFinderFailRet',
-        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
+        'logoutTimeSecond' => 'getLogoutTimeSecond'
     ];
 
     /**
@@ -263,6 +268,7 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
         $this->container['finderFailMsg'] = isset($data['finderFailMsg']) ? $data['finderFailMsg'] : null;
         $this->container['finderFailRet'] = isset($data['finderFailRet']) ? $data['finderFailRet'] : null;
         $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
+        $this->container['logoutTimeSecond'] = isset($data['logoutTimeSecond']) ? $data['logoutTimeSecond'] : null;
     }
 
     /**
@@ -645,6 +651,30 @@ class WechatChannelsAdAccountGetListStruct implements ModelInterface, ArrayAcces
     public function setWechatChannelsAccountId($wechatChannelsAccountId)
     {
         $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets logoutTimeSecond
+     *
+     * @return int|mixed
+     */
+    public function getLogoutTimeSecond()
+    {
+        return $this->container['logoutTimeSecond'];
+    }
+
+    /**
+     * Sets logoutTimeSecond
+     *
+     * @param int|mixed $logoutTimeSecond logoutTimeSecond
+     *
+     * @return $this
+     */
+    public function setLogoutTimeSecond($logoutTimeSecond)
+    {
+        $this->container['logoutTimeSecond'] = $logoutTimeSecond;
 
         return $this;
     }

@@ -93,6 +93,8 @@ class AgencyWalletListApi
      * 获取代理商创建的共享钱包信息列表
      *
      * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $page page (required)
+     * @param  int|mixed $pageSize pageSize (required)
      * @param  int|mixed $mdmId mdmId (optional)
      * @param  int|mixed $walletId walletId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -101,9 +103,9 @@ class AgencyWalletListApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\AgencyWalletListGetResponse|mixed
      */
-    public function agencyWalletListGet($accountId, $mdmId = null, $walletId = null, $fields = null)
+    public function agencyWalletListGet($accountId, $page, $pageSize, $mdmId = null, $walletId = null, $fields = null)
     {
-        list($response) = $this->agencyWalletListGetWithHttpInfo($accountId, $mdmId, $walletId, $fields);
+        list($response) = $this->agencyWalletListGetWithHttpInfo($accountId, $page, $pageSize, $mdmId, $walletId, $fields);
         return $response;
     }
 
@@ -113,6 +115,8 @@ class AgencyWalletListApi
      * 获取代理商创建的共享钱包信息列表
      *
      * @param  int|mixed $accountId (required)
+     * @param  int|mixed $page (required)
+     * @param  int|mixed $pageSize (required)
      * @param  int|mixed $mdmId (optional)
      * @param  int|mixed $walletId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -121,10 +125,10 @@ class AgencyWalletListApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\AgencyWalletListGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function agencyWalletListGetWithHttpInfo($accountId, $mdmId = null, $walletId = null, $fields = null)
+    public function agencyWalletListGetWithHttpInfo($accountId, $page, $pageSize, $mdmId = null, $walletId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\AgencyWalletListGetResponse';
-        $request = $this->agencyWalletListGetRequest($accountId, $mdmId, $walletId, $fields);
+        $request = $this->agencyWalletListGetRequest($accountId, $page, $pageSize, $mdmId, $walletId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -191,6 +195,8 @@ class AgencyWalletListApi
      * 获取代理商创建的共享钱包信息列表
      *
      * @param  int|mixed $accountId (required)
+     * @param  int|mixed $page (required)
+     * @param  int|mixed $pageSize (required)
      * @param  int|mixed $mdmId (optional)
      * @param  int|mixed $walletId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -198,9 +204,9 @@ class AgencyWalletListApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function agencyWalletListGetAsync($accountId, $mdmId = null, $walletId = null, $fields = null)
+    public function agencyWalletListGetAsync($accountId, $page, $pageSize, $mdmId = null, $walletId = null, $fields = null)
     {
-        return $this->agencyWalletListGetAsyncWithHttpInfo($accountId, $mdmId, $walletId, $fields)
+        return $this->agencyWalletListGetAsyncWithHttpInfo($accountId, $page, $pageSize, $mdmId, $walletId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -214,6 +220,8 @@ class AgencyWalletListApi
      * 获取代理商创建的共享钱包信息列表
      *
      * @param  int|mixed $accountId (required)
+     * @param  int|mixed $page (required)
+     * @param  int|mixed $pageSize (required)
      * @param  int|mixed $mdmId (optional)
      * @param  int|mixed $walletId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -221,10 +229,10 @@ class AgencyWalletListApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function agencyWalletListGetAsyncWithHttpInfo($accountId, $mdmId = null, $walletId = null, $fields = null)
+    public function agencyWalletListGetAsyncWithHttpInfo($accountId, $page, $pageSize, $mdmId = null, $walletId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\AgencyWalletListGetResponse';
-        $request = $this->agencyWalletListGetRequest($accountId, $mdmId, $walletId, $fields);
+        $request = $this->agencyWalletListGetRequest($accountId, $page, $pageSize, $mdmId, $walletId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -267,6 +275,8 @@ class AgencyWalletListApi
      * Create request for operation 'agencyWalletListGet'
      *
      * @param  int|mixed $accountId (required)
+     * @param  int|mixed $page (required)
+     * @param  int|mixed $pageSize (required)
      * @param  int|mixed $mdmId (optional)
      * @param  int|mixed $walletId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -274,12 +284,24 @@ class AgencyWalletListApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function agencyWalletListGetRequest($accountId, $mdmId = null, $walletId = null, $fields = null)
+    protected function agencyWalletListGetRequest($accountId, $page, $pageSize, $mdmId = null, $walletId = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $accountId when calling agencyWalletListGet'
+            );
+        }
+        // verify the required parameter 'page' is set
+        if ($page === null || (is_array($page) && count($page) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $page when calling agencyWalletListGet'
+            );
+        }
+        // verify the required parameter 'pageSize' is set
+        if ($pageSize === null || (is_array($pageSize) && count($pageSize) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $pageSize when calling agencyWalletListGet'
             );
         }
 
@@ -301,6 +323,14 @@ class AgencyWalletListApi
         // query params
         if ($walletId !== null) {
             $queryParams['wallet_id'] = ObjectSerializer::toQueryValue($walletId);
+        }
+        // query params
+        if ($page !== null) {
+            $queryParams['page'] = ObjectSerializer::toQueryValue($page);
+        }
+        // query params
+        if ($pageSize !== null) {
+            $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
         }
         // query params
         if (is_array($fields)) {

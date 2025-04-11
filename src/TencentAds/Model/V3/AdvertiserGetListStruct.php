@@ -59,30 +59,32 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'registrationType' => '\TencentAds\Model\V3\CustomerRegistrationType',
         'dailyBudget' => 'int',
-        'systemStatus' => '\TencentAds\Model\V3\CustomerSystemStatus',
-        'rejectMessage' => 'string',
+        'registrationType' => '\TencentAds\Model\V3\CustomerRegistrationType',
         'corporationName' => 'string',
         'corporationLicence' => 'string',
         'certificationImageId' => 'string',
         'certificationImage' => 'string',
         'individualQualification' => '\TencentAds\Model\V3\IndividualQualificationRsp',
+        'areaCode' => 'int',
+        'mdmId' => 'int',
+        'mdmName' => 'string',
         'systemIndustryId' => 'int',
         'customizedIndustry' => 'string',
         'introductionUrl' => 'string',
         'corporateBrandName' => 'string',
+        'memo' => 'string',
+        'systemStatus' => '\TencentAds\Model\V3\CustomerSystemStatus',
+        'rejectMessage' => 'string',
+        'isAdx' => 'bool',
+        'businessAlias' => 'string',
         'contactPerson' => 'string',
         'contactPersonEmail' => 'string',
         'contactPersonTelephone' => 'string',
         'contactPersonMobile' => 'string',
         'websites' => '\TencentAds\Model\V3\WebsiteReadStruct[]',
-        'mdmId' => 'int',
-        'mdmName' => 'string',
         'agencyAccountId' => 'int',
-        'operators' => '\TencentAds\Model\V3\AdvertiserOperatorStruct[]',
-        'memo' => 'string',
-        'areaCode' => 'int'
+        'operators' => '\TencentAds\Model\V3\AdvertiserOperatorStruct[]'
     ];
 
     /**
@@ -92,30 +94,32 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
-        'registrationType' => null,
         'dailyBudget' => 'int64',
-        'systemStatus' => null,
-        'rejectMessage' => null,
+        'registrationType' => null,
         'corporationName' => null,
         'corporationLicence' => null,
         'certificationImageId' => null,
         'certificationImage' => null,
         'individualQualification' => null,
+        'areaCode' => 'int64',
+        'mdmId' => 'int64',
+        'mdmName' => null,
         'systemIndustryId' => 'int64',
         'customizedIndustry' => null,
         'introductionUrl' => null,
         'corporateBrandName' => null,
+        'memo' => null,
+        'systemStatus' => null,
+        'rejectMessage' => null,
+        'isAdx' => null,
+        'businessAlias' => null,
         'contactPerson' => null,
         'contactPersonEmail' => null,
         'contactPersonTelephone' => null,
         'contactPersonMobile' => null,
         'websites' => null,
-        'mdmId' => 'int64',
-        'mdmName' => null,
         'agencyAccountId' => 'int64',
-        'operators' => null,
-        'memo' => null,
-        'areaCode' => 'int64'
+        'operators' => null
     ];
 
     /**
@@ -146,30 +150,32 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
-        'registrationType' => 'registration_type',
         'dailyBudget' => 'daily_budget',
-        'systemStatus' => 'system_status',
-        'rejectMessage' => 'reject_message',
+        'registrationType' => 'registration_type',
         'corporationName' => 'corporation_name',
         'corporationLicence' => 'corporation_licence',
         'certificationImageId' => 'certification_image_id',
         'certificationImage' => 'certification_image',
         'individualQualification' => 'individual_qualification',
+        'areaCode' => 'area_code',
+        'mdmId' => 'mdm_id',
+        'mdmName' => 'mdm_name',
         'systemIndustryId' => 'system_industry_id',
         'customizedIndustry' => 'customized_industry',
         'introductionUrl' => 'introduction_url',
         'corporateBrandName' => 'corporate_brand_name',
+        'memo' => 'memo',
+        'systemStatus' => 'system_status',
+        'rejectMessage' => 'reject_message',
+        'isAdx' => 'is_adx',
+        'businessAlias' => 'business_alias',
         'contactPerson' => 'contact_person',
         'contactPersonEmail' => 'contact_person_email',
         'contactPersonTelephone' => 'contact_person_telephone',
         'contactPersonMobile' => 'contact_person_mobile',
         'websites' => 'websites',
-        'mdmId' => 'mdm_id',
-        'mdmName' => 'mdm_name',
         'agencyAccountId' => 'agency_account_id',
-        'operators' => 'operators',
-        'memo' => 'memo',
-        'areaCode' => 'area_code'
+        'operators' => 'operators'
     ];
 
     /**
@@ -179,30 +185,32 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
-        'registrationType' => 'setRegistrationType',
         'dailyBudget' => 'setDailyBudget',
-        'systemStatus' => 'setSystemStatus',
-        'rejectMessage' => 'setRejectMessage',
+        'registrationType' => 'setRegistrationType',
         'corporationName' => 'setCorporationName',
         'corporationLicence' => 'setCorporationLicence',
         'certificationImageId' => 'setCertificationImageId',
         'certificationImage' => 'setCertificationImage',
         'individualQualification' => 'setIndividualQualification',
+        'areaCode' => 'setAreaCode',
+        'mdmId' => 'setMdmId',
+        'mdmName' => 'setMdmName',
         'systemIndustryId' => 'setSystemIndustryId',
         'customizedIndustry' => 'setCustomizedIndustry',
         'introductionUrl' => 'setIntroductionUrl',
         'corporateBrandName' => 'setCorporateBrandName',
+        'memo' => 'setMemo',
+        'systemStatus' => 'setSystemStatus',
+        'rejectMessage' => 'setRejectMessage',
+        'isAdx' => 'setIsAdx',
+        'businessAlias' => 'setBusinessAlias',
         'contactPerson' => 'setContactPerson',
         'contactPersonEmail' => 'setContactPersonEmail',
         'contactPersonTelephone' => 'setContactPersonTelephone',
         'contactPersonMobile' => 'setContactPersonMobile',
         'websites' => 'setWebsites',
-        'mdmId' => 'setMdmId',
-        'mdmName' => 'setMdmName',
         'agencyAccountId' => 'setAgencyAccountId',
-        'operators' => 'setOperators',
-        'memo' => 'setMemo',
-        'areaCode' => 'setAreaCode'
+        'operators' => 'setOperators'
     ];
 
     /**
@@ -212,30 +220,32 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
-        'registrationType' => 'getRegistrationType',
         'dailyBudget' => 'getDailyBudget',
-        'systemStatus' => 'getSystemStatus',
-        'rejectMessage' => 'getRejectMessage',
+        'registrationType' => 'getRegistrationType',
         'corporationName' => 'getCorporationName',
         'corporationLicence' => 'getCorporationLicence',
         'certificationImageId' => 'getCertificationImageId',
         'certificationImage' => 'getCertificationImage',
         'individualQualification' => 'getIndividualQualification',
+        'areaCode' => 'getAreaCode',
+        'mdmId' => 'getMdmId',
+        'mdmName' => 'getMdmName',
         'systemIndustryId' => 'getSystemIndustryId',
         'customizedIndustry' => 'getCustomizedIndustry',
         'introductionUrl' => 'getIntroductionUrl',
         'corporateBrandName' => 'getCorporateBrandName',
+        'memo' => 'getMemo',
+        'systemStatus' => 'getSystemStatus',
+        'rejectMessage' => 'getRejectMessage',
+        'isAdx' => 'getIsAdx',
+        'businessAlias' => 'getBusinessAlias',
         'contactPerson' => 'getContactPerson',
         'contactPersonEmail' => 'getContactPersonEmail',
         'contactPersonTelephone' => 'getContactPersonTelephone',
         'contactPersonMobile' => 'getContactPersonMobile',
         'websites' => 'getWebsites',
-        'mdmId' => 'getMdmId',
-        'mdmName' => 'getMdmName',
         'agencyAccountId' => 'getAgencyAccountId',
-        'operators' => 'getOperators',
-        'memo' => 'getMemo',
-        'areaCode' => 'getAreaCode'
+        'operators' => 'getOperators'
     ];
 
     /**
@@ -299,30 +309,32 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['registrationType'] = isset($data['registrationType']) ? $data['registrationType'] : null;
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
-        $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
-        $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
+        $this->container['registrationType'] = isset($data['registrationType']) ? $data['registrationType'] : null;
         $this->container['corporationName'] = isset($data['corporationName']) ? $data['corporationName'] : null;
         $this->container['corporationLicence'] = isset($data['corporationLicence']) ? $data['corporationLicence'] : null;
         $this->container['certificationImageId'] = isset($data['certificationImageId']) ? $data['certificationImageId'] : null;
         $this->container['certificationImage'] = isset($data['certificationImage']) ? $data['certificationImage'] : null;
         $this->container['individualQualification'] = isset($data['individualQualification']) ? $data['individualQualification'] : null;
+        $this->container['areaCode'] = isset($data['areaCode']) ? $data['areaCode'] : null;
+        $this->container['mdmId'] = isset($data['mdmId']) ? $data['mdmId'] : null;
+        $this->container['mdmName'] = isset($data['mdmName']) ? $data['mdmName'] : null;
         $this->container['systemIndustryId'] = isset($data['systemIndustryId']) ? $data['systemIndustryId'] : null;
         $this->container['customizedIndustry'] = isset($data['customizedIndustry']) ? $data['customizedIndustry'] : null;
         $this->container['introductionUrl'] = isset($data['introductionUrl']) ? $data['introductionUrl'] : null;
         $this->container['corporateBrandName'] = isset($data['corporateBrandName']) ? $data['corporateBrandName'] : null;
+        $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
+        $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
+        $this->container['rejectMessage'] = isset($data['rejectMessage']) ? $data['rejectMessage'] : null;
+        $this->container['isAdx'] = isset($data['isAdx']) ? $data['isAdx'] : null;
+        $this->container['businessAlias'] = isset($data['businessAlias']) ? $data['businessAlias'] : null;
         $this->container['contactPerson'] = isset($data['contactPerson']) ? $data['contactPerson'] : null;
         $this->container['contactPersonEmail'] = isset($data['contactPersonEmail']) ? $data['contactPersonEmail'] : null;
         $this->container['contactPersonTelephone'] = isset($data['contactPersonTelephone']) ? $data['contactPersonTelephone'] : null;
         $this->container['contactPersonMobile'] = isset($data['contactPersonMobile']) ? $data['contactPersonMobile'] : null;
         $this->container['websites'] = isset($data['websites']) ? $data['websites'] : null;
-        $this->container['mdmId'] = isset($data['mdmId']) ? $data['mdmId'] : null;
-        $this->container['mdmName'] = isset($data['mdmName']) ? $data['mdmName'] : null;
         $this->container['agencyAccountId'] = isset($data['agencyAccountId']) ? $data['agencyAccountId'] : null;
         $this->container['operators'] = isset($data['operators']) ? $data['operators'] : null;
-        $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
-        $this->container['areaCode'] = isset($data['areaCode']) ? $data['areaCode'] : null;
     }
 
     /**
@@ -374,30 +386,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets registrationType
-     *
-     * @return \TencentAds\Model\V3\CustomerRegistrationType|mixed
-     */
-    public function getRegistrationType()
-    {
-        return $this->container['registrationType'];
-    }
-
-    /**
-     * Sets registrationType
-     *
-     * @param \TencentAds\Model\V3\CustomerRegistrationType|mixed $registrationType registrationType
-     *
-     * @return $this
-     */
-    public function setRegistrationType($registrationType)
-    {
-        $this->container['registrationType'] = $registrationType;
-
-        return $this;
-    }
-
-    /**
      * Gets dailyBudget
      *
      * @return int|mixed
@@ -422,49 +410,25 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets systemStatus
+     * Gets registrationType
      *
-     * @return \TencentAds\Model\V3\CustomerSystemStatus|mixed
+     * @return \TencentAds\Model\V3\CustomerRegistrationType|mixed
      */
-    public function getSystemStatus()
+    public function getRegistrationType()
     {
-        return $this->container['systemStatus'];
+        return $this->container['registrationType'];
     }
 
     /**
-     * Sets systemStatus
+     * Sets registrationType
      *
-     * @param \TencentAds\Model\V3\CustomerSystemStatus|mixed $systemStatus systemStatus
+     * @param \TencentAds\Model\V3\CustomerRegistrationType|mixed $registrationType registrationType
      *
      * @return $this
      */
-    public function setSystemStatus($systemStatus)
+    public function setRegistrationType($registrationType)
     {
-        $this->container['systemStatus'] = $systemStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets rejectMessage
-     *
-     * @return string|mixed
-     */
-    public function getRejectMessage()
-    {
-        return $this->container['rejectMessage'];
-    }
-
-    /**
-     * Sets rejectMessage
-     *
-     * @param string|mixed $rejectMessage rejectMessage
-     *
-     * @return $this
-     */
-    public function setRejectMessage($rejectMessage)
-    {
-        $this->container['rejectMessage'] = $rejectMessage;
+        $this->container['registrationType'] = $registrationType;
 
         return $this;
     }
@@ -590,6 +554,78 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets areaCode
+     *
+     * @return int|mixed
+     */
+    public function getAreaCode()
+    {
+        return $this->container['areaCode'];
+    }
+
+    /**
+     * Sets areaCode
+     *
+     * @param int|mixed $areaCode areaCode
+     *
+     * @return $this
+     */
+    public function setAreaCode($areaCode)
+    {
+        $this->container['areaCode'] = $areaCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets mdmId
+     *
+     * @return int|mixed
+     */
+    public function getMdmId()
+    {
+        return $this->container['mdmId'];
+    }
+
+    /**
+     * Sets mdmId
+     *
+     * @param int|mixed $mdmId mdmId
+     *
+     * @return $this
+     */
+    public function setMdmId($mdmId)
+    {
+        $this->container['mdmId'] = $mdmId;
+
+        return $this;
+    }
+
+    /**
+     * Gets mdmName
+     *
+     * @return string|mixed
+     */
+    public function getMdmName()
+    {
+        return $this->container['mdmName'];
+    }
+
+    /**
+     * Sets mdmName
+     *
+     * @param string|mixed $mdmName mdmName
+     *
+     * @return $this
+     */
+    public function setMdmName($mdmName)
+    {
+        $this->container['mdmName'] = $mdmName;
+
+        return $this;
+    }
+
+    /**
      * Gets systemIndustryId
      *
      * @return int|mixed
@@ -681,6 +717,126 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function setCorporateBrandName($corporateBrandName)
     {
         $this->container['corporateBrandName'] = $corporateBrandName;
+
+        return $this;
+    }
+
+    /**
+     * Gets memo
+     *
+     * @return string|mixed
+     */
+    public function getMemo()
+    {
+        return $this->container['memo'];
+    }
+
+    /**
+     * Sets memo
+     *
+     * @param string|mixed $memo memo
+     *
+     * @return $this
+     */
+    public function setMemo($memo)
+    {
+        $this->container['memo'] = $memo;
+
+        return $this;
+    }
+
+    /**
+     * Gets systemStatus
+     *
+     * @return \TencentAds\Model\V3\CustomerSystemStatus|mixed
+     */
+    public function getSystemStatus()
+    {
+        return $this->container['systemStatus'];
+    }
+
+    /**
+     * Sets systemStatus
+     *
+     * @param \TencentAds\Model\V3\CustomerSystemStatus|mixed $systemStatus systemStatus
+     *
+     * @return $this
+     */
+    public function setSystemStatus($systemStatus)
+    {
+        $this->container['systemStatus'] = $systemStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets rejectMessage
+     *
+     * @return string|mixed
+     */
+    public function getRejectMessage()
+    {
+        return $this->container['rejectMessage'];
+    }
+
+    /**
+     * Sets rejectMessage
+     *
+     * @param string|mixed $rejectMessage rejectMessage
+     *
+     * @return $this
+     */
+    public function setRejectMessage($rejectMessage)
+    {
+        $this->container['rejectMessage'] = $rejectMessage;
+
+        return $this;
+    }
+
+    /**
+     * Gets isAdx
+     *
+     * @return bool|mixed
+     */
+    public function getIsAdx()
+    {
+        return $this->container['isAdx'];
+    }
+
+    /**
+     * Sets isAdx
+     *
+     * @param bool|mixed $isAdx isAdx
+     *
+     * @return $this
+     */
+    public function setIsAdx($isAdx)
+    {
+        $this->container['isAdx'] = $isAdx;
+
+        return $this;
+    }
+
+    /**
+     * Gets businessAlias
+     *
+     * @return string|mixed
+     */
+    public function getBusinessAlias()
+    {
+        return $this->container['businessAlias'];
+    }
+
+    /**
+     * Sets businessAlias
+     *
+     * @param string|mixed $businessAlias businessAlias
+     *
+     * @return $this
+     */
+    public function setBusinessAlias($businessAlias)
+    {
+        $this->container['businessAlias'] = $businessAlias;
 
         return $this;
     }
@@ -806,54 +962,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets mdmId
-     *
-     * @return int|mixed
-     */
-    public function getMdmId()
-    {
-        return $this->container['mdmId'];
-    }
-
-    /**
-     * Sets mdmId
-     *
-     * @param int|mixed $mdmId mdmId
-     *
-     * @return $this
-     */
-    public function setMdmId($mdmId)
-    {
-        $this->container['mdmId'] = $mdmId;
-
-        return $this;
-    }
-
-    /**
-     * Gets mdmName
-     *
-     * @return string|mixed
-     */
-    public function getMdmName()
-    {
-        return $this->container['mdmName'];
-    }
-
-    /**
-     * Sets mdmName
-     *
-     * @param string|mixed $mdmName mdmName
-     *
-     * @return $this
-     */
-    public function setMdmName($mdmName)
-    {
-        $this->container['mdmName'] = $mdmName;
-
-        return $this;
-    }
-
-    /**
      * Gets agencyAccountId
      *
      * @return int|mixed
@@ -897,54 +1005,6 @@ class AdvertiserGetListStruct implements ModelInterface, ArrayAccess
     public function setOperators($operators)
     {
         $this->container['operators'] = $operators;
-
-        return $this;
-    }
-
-    /**
-     * Gets memo
-     *
-     * @return string|mixed
-     */
-    public function getMemo()
-    {
-        return $this->container['memo'];
-    }
-
-    /**
-     * Sets memo
-     *
-     * @param string|mixed $memo memo
-     *
-     * @return $this
-     */
-    public function setMemo($memo)
-    {
-        $this->container['memo'] = $memo;
-
-        return $this;
-    }
-
-    /**
-     * Gets areaCode
-     *
-     * @return int|mixed
-     */
-    public function getAreaCode()
-    {
-        return $this->container['areaCode'];
-    }
-
-    /**
-     * Sets areaCode
-     *
-     * @param int|mixed $areaCode areaCode
-     *
-     * @return $this
-     */
-    public function setAreaCode($areaCode)
-    {
-        $this->container['areaCode'] = $areaCode;
 
         return $this;
     }

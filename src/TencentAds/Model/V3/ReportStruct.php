@@ -827,6 +827,9 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'clkWechatShopPv' => 'int',
         'clkTopicinfoPv' => 'int',
         'clkLearnMorePv' => 'int',
+        'openAccountPv' => 'int',
+        'openAccountPvCost' => 'int',
+        'videoOuterPlay5sRate' => 'double',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -1665,6 +1668,9 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'clkWechatShopPv' => 'int64',
         'clkTopicinfoPv' => 'int64',
         'clkLearnMorePv' => 'int64',
+        'openAccountPv' => 'int64',
+        'openAccountPvCost' => 'int64',
+        'videoOuterPlay5sRate' => 'double',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -2524,6 +2530,9 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'clkWechatShopPv' => 'clk_wechat_shop_pv',
         'clkTopicinfoPv' => 'clk_topicinfo_pv',
         'clkLearnMorePv' => 'clk_learn_more_pv',
+        'openAccountPv' => 'open_account_pv',
+        'openAccountPvCost' => 'open_account_pv_cost',
+        'videoOuterPlay5sRate' => 'video_outer_play5s_rate',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -3362,6 +3371,9 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'clkWechatShopPv' => 'setClkWechatShopPv',
         'clkTopicinfoPv' => 'setClkTopicinfoPv',
         'clkLearnMorePv' => 'setClkLearnMorePv',
+        'openAccountPv' => 'setOpenAccountPv',
+        'openAccountPvCost' => 'setOpenAccountPvCost',
+        'videoOuterPlay5sRate' => 'setVideoOuterPlay5sRate',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -4200,6 +4212,9 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'clkWechatShopPv' => 'getClkWechatShopPv',
         'clkTopicinfoPv' => 'getClkTopicinfoPv',
         'clkLearnMorePv' => 'getClkLearnMorePv',
+        'openAccountPv' => 'getOpenAccountPv',
+        'openAccountPvCost' => 'getOpenAccountPvCost',
+        'videoOuterPlay5sRate' => 'getVideoOuterPlay5sRate',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -5092,6 +5107,9 @@ class ReportStruct implements ModelInterface, ArrayAccess
         $this->container['clkWechatShopPv'] = isset($data['clkWechatShopPv']) ? $data['clkWechatShopPv'] : null;
         $this->container['clkTopicinfoPv'] = isset($data['clkTopicinfoPv']) ? $data['clkTopicinfoPv'] : null;
         $this->container['clkLearnMorePv'] = isset($data['clkLearnMorePv']) ? $data['clkLearnMorePv'] : null;
+        $this->container['openAccountPv'] = isset($data['openAccountPv']) ? $data['openAccountPv'] : null;
+        $this->container['openAccountPvCost'] = isset($data['openAccountPvCost']) ? $data['openAccountPvCost'] : null;
+        $this->container['videoOuterPlay5sRate'] = isset($data['videoOuterPlay5sRate']) ? $data['videoOuterPlay5sRate'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -23631,6 +23649,78 @@ class ReportStruct implements ModelInterface, ArrayAccess
     public function setClkLearnMorePv($clkLearnMorePv)
     {
         $this->container['clkLearnMorePv'] = $clkLearnMorePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets openAccountPv
+     *
+     * @return int|mixed
+     */
+    public function getOpenAccountPv()
+    {
+        return $this->container['openAccountPv'];
+    }
+
+    /**
+     * Sets openAccountPv
+     *
+     * @param int|mixed $openAccountPv openAccountPv
+     *
+     * @return $this
+     */
+    public function setOpenAccountPv($openAccountPv)
+    {
+        $this->container['openAccountPv'] = $openAccountPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets openAccountPvCost
+     *
+     * @return int|mixed
+     */
+    public function getOpenAccountPvCost()
+    {
+        return $this->container['openAccountPvCost'];
+    }
+
+    /**
+     * Sets openAccountPvCost
+     *
+     * @param int|mixed $openAccountPvCost openAccountPvCost
+     *
+     * @return $this
+     */
+    public function setOpenAccountPvCost($openAccountPvCost)
+    {
+        $this->container['openAccountPvCost'] = $openAccountPvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOuterPlay5sRate
+     *
+     * @return double|mixed
+     */
+    public function getVideoOuterPlay5sRate()
+    {
+        return $this->container['videoOuterPlay5sRate'];
+    }
+
+    /**
+     * Sets videoOuterPlay5sRate
+     *
+     * @param double|mixed $videoOuterPlay5sRate videoOuterPlay5sRate
+     *
+     * @return $this
+     */
+    public function setVideoOuterPlay5sRate($videoOuterPlay5sRate)
+    {
+        $this->container['videoOuterPlay5sRate'] = $videoOuterPlay5sRate;
 
         return $this;
     }

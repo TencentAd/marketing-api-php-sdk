@@ -58,7 +58,8 @@ class H5ProfilePageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageId' => 'int'
+        'pageId' => 'int',
+        'hideCompanyInfo' => 'bool'
     ];
 
     /**
@@ -67,7 +68,8 @@ class H5ProfilePageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageId' => 'int64'
+        'pageId' => 'int64',
+        'hideCompanyInfo' => null
     ];
 
     /**
@@ -97,7 +99,8 @@ class H5ProfilePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageId' => 'page_id'
+        'pageId' => 'page_id',
+        'hideCompanyInfo' => 'hide_company_info'
     ];
 
     /**
@@ -106,7 +109,8 @@ class H5ProfilePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageId' => 'setPageId'
+        'pageId' => 'setPageId',
+        'hideCompanyInfo' => 'setHideCompanyInfo'
     ];
 
     /**
@@ -115,7 +119,8 @@ class H5ProfilePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageId' => 'getPageId'
+        'pageId' => 'getPageId',
+        'hideCompanyInfo' => 'getHideCompanyInfo'
     ];
 
     /**
@@ -179,6 +184,7 @@ class H5ProfilePageSpec implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
+        $this->container['hideCompanyInfo'] = isset($data['hideCompanyInfo']) ? $data['hideCompanyInfo'] : null;
     }
 
     /**
@@ -225,6 +231,30 @@ class H5ProfilePageSpec implements ModelInterface, ArrayAccess
     public function setPageId($pageId)
     {
         $this->container['pageId'] = $pageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets hideCompanyInfo
+     *
+     * @return bool|mixed
+     */
+    public function getHideCompanyInfo()
+    {
+        return $this->container['hideCompanyInfo'];
+    }
+
+    /**
+     * Sets hideCompanyInfo
+     *
+     * @param bool|mixed $hideCompanyInfo hideCompanyInfo
+     *
+     * @return $this
+     */
+    public function setHideCompanyInfo($hideCompanyInfo)
+    {
+        $this->container['hideCompanyInfo'] = $hideCompanyInfo;
 
         return $this;
     }

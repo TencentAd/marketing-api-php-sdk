@@ -43,8 +43,9 @@ class FundStatementsDetailedApiContainer extends ApiContainer
             $dateRange = isset($params['date_range']) ? $params['date_range'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $primaryKey = isset($params['primary_key']) ? $params['primary_key'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->fundStatementsDetailedGet($accountId, $fundType, $dateRange, $page, $pageSize, $fields);
+            $response = $this->apiInstance->fundStatementsDetailedGet($accountId, $fundType, $dateRange, $page, $pageSize, $primaryKey, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -64,8 +65,9 @@ class FundStatementsDetailedApiContainer extends ApiContainer
             $dateRange = isset($params['date_range']) ? $params['date_range'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $primaryKey = isset($params['primary_key']) ? $params['primary_key'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->fundStatementsDetailedGetAsync($accountId, $fundType, $dateRange, $page, $pageSize, $fields);
+            $response = $this->apiInstance->fundStatementsDetailedGetAsync($accountId, $fundType, $dateRange, $page, $pageSize, $primaryKey, $fields);
             return $response;
         });
     }

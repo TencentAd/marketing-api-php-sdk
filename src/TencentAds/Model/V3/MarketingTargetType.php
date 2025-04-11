@@ -105,6 +105,7 @@ class MarketingTargetType
     const CAR_ECOLOGY = 'MARKETING_TARGET_TYPE_CAR_ECOLOGY';
     const WECHAT_STORE_PRODUCT = 'MARKETING_TARGET_TYPE_WECHAT_STORE_PRODUCT';
     const APP_HARMONY = 'MARKETING_TARGET_TYPE_APP_HARMONY';
+    const WECHAT_STORE_PRODUCT_SET = 'MARKETING_TARGET_TYPE_WECHAT_STORE_PRODUCT_SET';
     
     /**
      * Gets allowable values of the enum
@@ -174,6 +175,7 @@ class MarketingTargetType
             self::CAR_ECOLOGY,
             self::WECHAT_STORE_PRODUCT,
             self::APP_HARMONY,
+            self::WECHAT_STORE_PRODUCT_SET,
         ];
     }
 }

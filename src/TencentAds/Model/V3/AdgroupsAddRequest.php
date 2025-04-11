@@ -109,13 +109,16 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => '\TencentAds\Model\V3\ShortPlayPayType',
         'sellStrategyId' => 'int',
         'dynamicAdType' => '\TencentAds\Model\V3\DynamicAdType',
+        'dspId' => 'int',
         'aoiOptimizationStrategy' => '\TencentAds\Model\V3\AoiOptimizationStrategy',
         'cloudUnionSpec' => '\TencentAds\Model\V3\CloudUnionSpec',
         'additionalProductSpec' => '\TencentAds\Model\V3\AdditionalProductSpec',
         'enableBreakthroughSiteset' => 'bool',
         'liveRecommendStrategyEnabled' => 'bool',
         'customCostRoiCap' => 'double',
-        'searchExpansionSwitch' => '\TencentAds\Model\V3\SearchExpansionSwitch'
+        'searchExpansionSwitch' => '\TencentAds\Model\V3\SearchExpansionSwitch',
+        'adxRealtimeType' => '\TencentAds\Model\V3\AdxRealtimeType',
+        'enableSteadyExploration' => 'bool'
     ];
 
     /**
@@ -176,13 +179,16 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => null,
         'sellStrategyId' => 'int64',
         'dynamicAdType' => null,
+        'dspId' => 'int64',
         'aoiOptimizationStrategy' => null,
         'cloudUnionSpec' => null,
         'additionalProductSpec' => null,
         'enableBreakthroughSiteset' => null,
         'liveRecommendStrategyEnabled' => null,
         'customCostRoiCap' => 'double',
-        'searchExpansionSwitch' => null
+        'searchExpansionSwitch' => null,
+        'adxRealtimeType' => null,
+        'enableSteadyExploration' => null
     ];
 
     /**
@@ -264,13 +270,16 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'short_play_pay_type',
         'sellStrategyId' => 'sell_strategy_id',
         'dynamicAdType' => 'dynamic_ad_type',
+        'dspId' => 'dsp_id',
         'aoiOptimizationStrategy' => 'aoi_optimization_strategy',
         'cloudUnionSpec' => 'cloud_union_spec',
         'additionalProductSpec' => 'additional_product_spec',
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled',
         'customCostRoiCap' => 'custom_cost_roi_cap',
-        'searchExpansionSwitch' => 'search_expansion_switch'
+        'searchExpansionSwitch' => 'search_expansion_switch',
+        'adxRealtimeType' => 'adx_realtime_type',
+        'enableSteadyExploration' => 'enable_steady_exploration'
     ];
 
     /**
@@ -331,13 +340,16 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'setShortPlayPayType',
         'sellStrategyId' => 'setSellStrategyId',
         'dynamicAdType' => 'setDynamicAdType',
+        'dspId' => 'setDspId',
         'aoiOptimizationStrategy' => 'setAoiOptimizationStrategy',
         'cloudUnionSpec' => 'setCloudUnionSpec',
         'additionalProductSpec' => 'setAdditionalProductSpec',
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled',
         'customCostRoiCap' => 'setCustomCostRoiCap',
-        'searchExpansionSwitch' => 'setSearchExpansionSwitch'
+        'searchExpansionSwitch' => 'setSearchExpansionSwitch',
+        'adxRealtimeType' => 'setAdxRealtimeType',
+        'enableSteadyExploration' => 'setEnableSteadyExploration'
     ];
 
     /**
@@ -398,13 +410,16 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'getShortPlayPayType',
         'sellStrategyId' => 'getSellStrategyId',
         'dynamicAdType' => 'getDynamicAdType',
+        'dspId' => 'getDspId',
         'aoiOptimizationStrategy' => 'getAoiOptimizationStrategy',
         'cloudUnionSpec' => 'getCloudUnionSpec',
         'additionalProductSpec' => 'getAdditionalProductSpec',
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled',
         'customCostRoiCap' => 'getCustomCostRoiCap',
-        'searchExpansionSwitch' => 'getSearchExpansionSwitch'
+        'searchExpansionSwitch' => 'getSearchExpansionSwitch',
+        'adxRealtimeType' => 'getAdxRealtimeType',
+        'enableSteadyExploration' => 'getEnableSteadyExploration'
     ];
 
     /**
@@ -519,6 +534,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
         $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
         $this->container['dynamicAdType'] = isset($data['dynamicAdType']) ? $data['dynamicAdType'] : null;
+        $this->container['dspId'] = isset($data['dspId']) ? $data['dspId'] : null;
         $this->container['aoiOptimizationStrategy'] = isset($data['aoiOptimizationStrategy']) ? $data['aoiOptimizationStrategy'] : null;
         $this->container['cloudUnionSpec'] = isset($data['cloudUnionSpec']) ? $data['cloudUnionSpec'] : null;
         $this->container['additionalProductSpec'] = isset($data['additionalProductSpec']) ? $data['additionalProductSpec'] : null;
@@ -526,6 +542,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['liveRecommendStrategyEnabled'] = isset($data['liveRecommendStrategyEnabled']) ? $data['liveRecommendStrategyEnabled'] : null;
         $this->container['customCostRoiCap'] = isset($data['customCostRoiCap']) ? $data['customCostRoiCap'] : null;
         $this->container['searchExpansionSwitch'] = isset($data['searchExpansionSwitch']) ? $data['searchExpansionSwitch'] : null;
+        $this->container['adxRealtimeType'] = isset($data['adxRealtimeType']) ? $data['adxRealtimeType'] : null;
+        $this->container['enableSteadyExploration'] = isset($data['enableSteadyExploration']) ? $data['enableSteadyExploration'] : null;
     }
 
     /**
@@ -1801,6 +1819,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets dspId
+     *
+     * @return int|mixed
+     */
+    public function getDspId()
+    {
+        return $this->container['dspId'];
+    }
+
+    /**
+     * Sets dspId
+     *
+     * @param int|mixed $dspId dspId
+     *
+     * @return $this
+     */
+    public function setDspId($dspId)
+    {
+        $this->container['dspId'] = $dspId;
+
+        return $this;
+    }
+
+    /**
      * Gets aoiOptimizationStrategy
      *
      * @return \TencentAds\Model\V3\AoiOptimizationStrategy|mixed
@@ -1964,6 +2006,54 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setSearchExpansionSwitch($searchExpansionSwitch)
     {
         $this->container['searchExpansionSwitch'] = $searchExpansionSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets adxRealtimeType
+     *
+     * @return \TencentAds\Model\V3\AdxRealtimeType|mixed
+     */
+    public function getAdxRealtimeType()
+    {
+        return $this->container['adxRealtimeType'];
+    }
+
+    /**
+     * Sets adxRealtimeType
+     *
+     * @param \TencentAds\Model\V3\AdxRealtimeType|mixed $adxRealtimeType adxRealtimeType
+     *
+     * @return $this
+     */
+    public function setAdxRealtimeType($adxRealtimeType)
+    {
+        $this->container['adxRealtimeType'] = $adxRealtimeType;
+
+        return $this;
+    }
+
+    /**
+     * Gets enableSteadyExploration
+     *
+     * @return bool|mixed
+     */
+    public function getEnableSteadyExploration()
+    {
+        return $this->container['enableSteadyExploration'];
+    }
+
+    /**
+     * Sets enableSteadyExploration
+     *
+     * @param bool|mixed $enableSteadyExploration enableSteadyExploration
+     *
+     * @return $this
+     */
+    public function setEnableSteadyExploration($enableSteadyExploration)
+    {
+        $this->container['enableSteadyExploration'] = $enableSteadyExploration;
 
         return $this;
     }
