@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * UpdateExcludeUnionPositionPackageItem Class Doc Comment
  *
  * @category Class
- * @description 修改广告组屏蔽优量汇流量包信息
+ * @description 修改广告屏蔽优量汇流量包信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

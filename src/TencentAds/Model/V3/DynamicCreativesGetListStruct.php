@@ -74,6 +74,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'marketingAssetVerification' => '\TencentAds\Model\V3\MarketingAssetVerification',
+        'creativeSetApprovalStatus' => '\TencentAds\Model\V3\CreativeSetApprovalStatus',
         'source' => '\TencentAds\Model\V3\AdCreativeSource',
         'assetInconsistentStatus' => '\TencentAds\Model\V3\AssetInconsistentStatus'
     ];
@@ -100,6 +101,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'marketingAssetVerification' => null,
+        'creativeSetApprovalStatus' => null,
         'source' => null,
         'assetInconsistentStatus' => null
     ];
@@ -147,6 +149,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'marketingAssetVerification' => 'marketing_asset_verification',
+        'creativeSetApprovalStatus' => 'creative_set_approval_status',
         'source' => 'source',
         'assetInconsistentStatus' => 'asset_inconsistent_status'
     ];
@@ -173,6 +176,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'marketingAssetVerification' => 'setMarketingAssetVerification',
+        'creativeSetApprovalStatus' => 'setCreativeSetApprovalStatus',
         'source' => 'setSource',
         'assetInconsistentStatus' => 'setAssetInconsistentStatus'
     ];
@@ -199,6 +203,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'marketingAssetVerification' => 'getMarketingAssetVerification',
+        'creativeSetApprovalStatus' => 'getCreativeSetApprovalStatus',
         'source' => 'getSource',
         'assetInconsistentStatus' => 'getAssetInconsistentStatus'
     ];
@@ -279,6 +284,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['createdTime'] = isset($data['createdTime']) ? $data['createdTime'] : null;
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['marketingAssetVerification'] = isset($data['marketingAssetVerification']) ? $data['marketingAssetVerification'] : null;
+        $this->container['creativeSetApprovalStatus'] = isset($data['creativeSetApprovalStatus']) ? $data['creativeSetApprovalStatus'] : null;
         $this->container['source'] = isset($data['source']) ? $data['source'] : null;
         $this->container['assetInconsistentStatus'] = isset($data['assetInconsistentStatus']) ? $data['assetInconsistentStatus'] : null;
     }
@@ -687,6 +693,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setMarketingAssetVerification($marketingAssetVerification)
     {
         $this->container['marketingAssetVerification'] = $marketingAssetVerification;
+
+        return $this;
+    }
+
+    /**
+     * Gets creativeSetApprovalStatus
+     *
+     * @return \TencentAds\Model\V3\CreativeSetApprovalStatus|mixed
+     */
+    public function getCreativeSetApprovalStatus()
+    {
+        return $this->container['creativeSetApprovalStatus'];
+    }
+
+    /**
+     * Sets creativeSetApprovalStatus
+     *
+     * @param \TencentAds\Model\V3\CreativeSetApprovalStatus|mixed $creativeSetApprovalStatus creativeSetApprovalStatus
+     *
+     * @return $this
+     */
+    public function setCreativeSetApprovalStatus($creativeSetApprovalStatus)
+    {
+        $this->container['creativeSetApprovalStatus'] = $creativeSetApprovalStatus;
 
         return $this;
     }

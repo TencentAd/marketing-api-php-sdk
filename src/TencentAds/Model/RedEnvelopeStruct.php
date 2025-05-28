@@ -73,7 +73,11 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'plotSignImage' => 'string',
         'plotBrandLogo' => 'string',
         'plotOriginalMaterial' => '\TencentAds\Model\PlotOriginalMaterial',
-        'redEnvelopeBrandName' => 'string'
+        'redEnvelopeBrandName' => 'string',
+        'giftStoryProductDesc' => 'string',
+        'giftStoryProductName' => 'string',
+        'giftStoryButtonText' => 'string',
+        'plotButtonJumpInfo' => '\TencentAds\Model\LandingPageStructure'
     ];
 
     /**
@@ -97,7 +101,11 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'plotSignImage' => null,
         'plotBrandLogo' => null,
         'plotOriginalMaterial' => null,
-        'redEnvelopeBrandName' => null
+        'redEnvelopeBrandName' => null,
+        'giftStoryProductDesc' => null,
+        'giftStoryProductName' => null,
+        'giftStoryButtonText' => null,
+        'plotButtonJumpInfo' => null
     ];
 
     /**
@@ -142,7 +150,11 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'plotSignImage' => 'plot_sign_image',
         'plotBrandLogo' => 'plot_brand_logo',
         'plotOriginalMaterial' => 'plot_original_material',
-        'redEnvelopeBrandName' => 'red_envelope_brand_name'
+        'redEnvelopeBrandName' => 'red_envelope_brand_name',
+        'giftStoryProductDesc' => 'gift_story_product_desc',
+        'giftStoryProductName' => 'gift_story_product_name',
+        'giftStoryButtonText' => 'gift_story_button_text',
+        'plotButtonJumpInfo' => 'plot_button_jump_info'
     ];
 
     /**
@@ -166,7 +178,11 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'plotSignImage' => 'setPlotSignImage',
         'plotBrandLogo' => 'setPlotBrandLogo',
         'plotOriginalMaterial' => 'setPlotOriginalMaterial',
-        'redEnvelopeBrandName' => 'setRedEnvelopeBrandName'
+        'redEnvelopeBrandName' => 'setRedEnvelopeBrandName',
+        'giftStoryProductDesc' => 'setGiftStoryProductDesc',
+        'giftStoryProductName' => 'setGiftStoryProductName',
+        'giftStoryButtonText' => 'setGiftStoryButtonText',
+        'plotButtonJumpInfo' => 'setPlotButtonJumpInfo'
     ];
 
     /**
@@ -190,7 +206,11 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         'plotSignImage' => 'getPlotSignImage',
         'plotBrandLogo' => 'getPlotBrandLogo',
         'plotOriginalMaterial' => 'getPlotOriginalMaterial',
-        'redEnvelopeBrandName' => 'getRedEnvelopeBrandName'
+        'redEnvelopeBrandName' => 'getRedEnvelopeBrandName',
+        'giftStoryProductDesc' => 'getGiftStoryProductDesc',
+        'giftStoryProductName' => 'getGiftStoryProductName',
+        'giftStoryButtonText' => 'getGiftStoryButtonText',
+        'plotButtonJumpInfo' => 'getPlotButtonJumpInfo'
     ];
 
     /**
@@ -269,6 +289,10 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
         $this->container['plotBrandLogo'] = isset($data['plotBrandLogo']) ? $data['plotBrandLogo'] : null;
         $this->container['plotOriginalMaterial'] = isset($data['plotOriginalMaterial']) ? $data['plotOriginalMaterial'] : null;
         $this->container['redEnvelopeBrandName'] = isset($data['redEnvelopeBrandName']) ? $data['redEnvelopeBrandName'] : null;
+        $this->container['giftStoryProductDesc'] = isset($data['giftStoryProductDesc']) ? $data['giftStoryProductDesc'] : null;
+        $this->container['giftStoryProductName'] = isset($data['giftStoryProductName']) ? $data['giftStoryProductName'] : null;
+        $this->container['giftStoryButtonText'] = isset($data['giftStoryButtonText']) ? $data['giftStoryButtonText'] : null;
+        $this->container['plotButtonJumpInfo'] = isset($data['plotButtonJumpInfo']) ? $data['plotButtonJumpInfo'] : null;
     }
 
     /**
@@ -675,6 +699,102 @@ class RedEnvelopeStruct implements ModelInterface, ArrayAccess
     public function setRedEnvelopeBrandName($redEnvelopeBrandName)
     {
         $this->container['redEnvelopeBrandName'] = $redEnvelopeBrandName;
+
+        return $this;
+    }
+
+    /**
+     * Gets giftStoryProductDesc
+     *
+     * @return string|mixed
+     */
+    public function getGiftStoryProductDesc()
+    {
+        return $this->container['giftStoryProductDesc'];
+    }
+
+    /**
+     * Sets giftStoryProductDesc
+     *
+     * @param string|mixed $giftStoryProductDesc giftStoryProductDesc
+     *
+     * @return $this
+     */
+    public function setGiftStoryProductDesc($giftStoryProductDesc)
+    {
+        $this->container['giftStoryProductDesc'] = $giftStoryProductDesc;
+
+        return $this;
+    }
+
+    /**
+     * Gets giftStoryProductName
+     *
+     * @return string|mixed
+     */
+    public function getGiftStoryProductName()
+    {
+        return $this->container['giftStoryProductName'];
+    }
+
+    /**
+     * Sets giftStoryProductName
+     *
+     * @param string|mixed $giftStoryProductName giftStoryProductName
+     *
+     * @return $this
+     */
+    public function setGiftStoryProductName($giftStoryProductName)
+    {
+        $this->container['giftStoryProductName'] = $giftStoryProductName;
+
+        return $this;
+    }
+
+    /**
+     * Gets giftStoryButtonText
+     *
+     * @return string|mixed
+     */
+    public function getGiftStoryButtonText()
+    {
+        return $this->container['giftStoryButtonText'];
+    }
+
+    /**
+     * Sets giftStoryButtonText
+     *
+     * @param string|mixed $giftStoryButtonText giftStoryButtonText
+     *
+     * @return $this
+     */
+    public function setGiftStoryButtonText($giftStoryButtonText)
+    {
+        $this->container['giftStoryButtonText'] = $giftStoryButtonText;
+
+        return $this;
+    }
+
+    /**
+     * Gets plotButtonJumpInfo
+     *
+     * @return \TencentAds\Model\LandingPageStructure|mixed
+     */
+    public function getPlotButtonJumpInfo()
+    {
+        return $this->container['plotButtonJumpInfo'];
+    }
+
+    /**
+     * Sets plotButtonJumpInfo
+     *
+     * @param \TencentAds\Model\LandingPageStructure|mixed $plotButtonJumpInfo plotButtonJumpInfo
+     *
+     * @return $this
+     */
+    public function setPlotButtonJumpInfo($plotButtonJumpInfo)
+    {
+        $this->container['plotButtonJumpInfo'] = $plotButtonJumpInfo;
 
         return $this;
     }

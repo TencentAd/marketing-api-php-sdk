@@ -61,7 +61,8 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
         'name' => 'string',
         'desc' => 'string',
         'type' => '\TencentAds\Model\V3\ComponentMetadataFieldType',
-        'valid' => '\TencentAds\Model\V3\CreativeComponentValueValid'
+        'valid' => '\TencentAds\Model\V3\CreativeComponentValueValid',
+        'structure' => '\TencentAds\Model\V3\CreativeComponentValueValidStructureFieldSub3[]'
     ];
 
     /**
@@ -73,7 +74,8 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
         'name' => null,
         'desc' => null,
         'type' => null,
-        'valid' => null
+        'valid' => null,
+        'structure' => null
     ];
 
     /**
@@ -106,7 +108,8 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
         'name' => 'name',
         'desc' => 'desc',
         'type' => 'type',
-        'valid' => 'valid'
+        'valid' => 'valid',
+        'structure' => 'structure'
     ];
 
     /**
@@ -118,7 +121,8 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
         'name' => 'setName',
         'desc' => 'setDesc',
         'type' => 'setType',
-        'valid' => 'setValid'
+        'valid' => 'setValid',
+        'structure' => 'setStructure'
     ];
 
     /**
@@ -130,7 +134,8 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
         'name' => 'getName',
         'desc' => 'getDesc',
         'type' => 'getType',
-        'valid' => 'getValid'
+        'valid' => 'getValid',
+        'structure' => 'getStructure'
     ];
 
     /**
@@ -197,6 +202,7 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
         $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
         $this->container['valid'] = isset($data['valid']) ? $data['valid'] : null;
+        $this->container['structure'] = isset($data['structure']) ? $data['structure'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
     public function setValid($valid)
     {
         $this->container['valid'] = $valid;
+
+        return $this;
+    }
+
+    /**
+     * Gets structure
+     *
+     * @return \TencentAds\Model\V3\CreativeComponentValueValidStructureFieldSub3[]|mixed
+     */
+    public function getStructure()
+    {
+        return $this->container['structure'];
+    }
+
+    /**
+     * Sets structure
+     *
+     * @param \TencentAds\Model\V3\CreativeComponentValueValidStructureFieldSub3[]|mixed $structure structure
+     *
+     * @return $this
+     */
+    public function setStructure($structure)
+    {
+        $this->container['structure'] = $structure;
 
         return $this;
     }

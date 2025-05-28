@@ -672,19 +672,20 @@ class ProfilesApi
      *
      * 获取朋友圈头像昵称跳转页
      *
-     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $accountId accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
+     * @param  int|mixed $organizationId organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\ProfilesGetResponse|mixed
      */
-    public function profilesGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function profilesGet($accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
-        list($response) = $this->profilesGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields);
+        list($response) = $this->profilesGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $organizationId, $fields);
         return $response;
     }
 
@@ -693,20 +694,21 @@ class ProfilesApi
      *
      * 获取朋友圈头像昵称跳转页
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\ProfilesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function profilesGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function profilesGetWithHttpInfo($accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\ProfilesGetResponse';
-        $request = $this->profilesGetRequest($accountId, $filtering, $page, $pageSize, $fields);
+        $request = $this->profilesGetRequest($accountId, $filtering, $page, $pageSize, $organizationId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -772,18 +774,19 @@ class ProfilesApi
      *
      * 获取朋友圈头像昵称跳转页
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function profilesGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function profilesGetAsync($accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
-        return $this->profilesGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields)
+        return $this->profilesGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $organizationId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -796,19 +799,20 @@ class ProfilesApi
      *
      * 获取朋友圈头像昵称跳转页
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function profilesGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    public function profilesGetAsyncWithHttpInfo($accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\ProfilesGetResponse';
-        $request = $this->profilesGetRequest($accountId, $filtering, $page, $pageSize, $fields);
+        $request = $this->profilesGetRequest($accountId, $filtering, $page, $pageSize, $organizationId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -850,23 +854,18 @@ class ProfilesApi
     /**
      * Create request for operation 'profilesGet'
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  int|mixed $organizationId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function profilesGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
+    protected function profilesGetRequest($accountId = null, $filtering = null, $page = null, $pageSize = null, $organizationId = null, $fields = null)
     {
-        // verify the required parameter 'accountId' is set
-        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling profilesGet'
-            );
-        }
 
         $resourcePath = '/profiles/get';
         $formParams = [];
@@ -893,6 +892,10 @@ class ProfilesApi
         // query params
         if ($pageSize !== null) {
             $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
+        }
+        // query params
+        if ($organizationId !== null) {
+            $queryParams['organization_id'] = ObjectSerializer::toQueryValue($organizationId);
         }
         // query params
         if (is_array($fields)) {

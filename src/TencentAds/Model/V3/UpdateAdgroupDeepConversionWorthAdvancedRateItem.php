@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * UpdateAdgroupDeepConversionWorthAdvancedRateItem Class Doc Comment
  *
  * @category Class
- * @description 修改广告组深度优化价值的强化 ROI
+ * @description 修改广告深度优化价值的强化 ROI
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

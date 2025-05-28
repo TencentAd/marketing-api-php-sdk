@@ -58,7 +58,8 @@ class ProfilesDeleteRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'profileId' => 'int'
+        'profileId' => 'int',
+        'organizationId' => 'int'
     ];
 
     /**
@@ -68,7 +69,8 @@ class ProfilesDeleteRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
-        'profileId' => 'int64'
+        'profileId' => 'int64',
+        'organizationId' => 'int64'
     ];
 
     /**
@@ -99,7 +101,8 @@ class ProfilesDeleteRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
-        'profileId' => 'profile_id'
+        'profileId' => 'profile_id',
+        'organizationId' => 'organization_id'
     ];
 
     /**
@@ -109,7 +112,8 @@ class ProfilesDeleteRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
-        'profileId' => 'setProfileId'
+        'profileId' => 'setProfileId',
+        'organizationId' => 'setOrganizationId'
     ];
 
     /**
@@ -119,7 +123,8 @@ class ProfilesDeleteRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
-        'profileId' => 'getProfileId'
+        'profileId' => 'getProfileId',
+        'organizationId' => 'getOrganizationId'
     ];
 
     /**
@@ -184,6 +189,7 @@ class ProfilesDeleteRequest implements ModelInterface, ArrayAccess
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['profileId'] = isset($data['profileId']) ? $data['profileId'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
     }
 
     /**
@@ -254,6 +260,30 @@ class ProfilesDeleteRequest implements ModelInterface, ArrayAccess
     public function setProfileId($profileId)
     {
         $this->container['profileId'] = $profileId;
+
+        return $this;
+    }
+
+    /**
+     * Gets organizationId
+     *
+     * @return int|mixed
+     */
+    public function getOrganizationId()
+    {
+        return $this->container['organizationId'];
+    }
+
+    /**
+     * Sets organizationId
+     *
+     * @param int|mixed $organizationId organizationId
+     *
+     * @return $this
+     */
+    public function setOrganizationId($organizationId)
+    {
+        $this->container['organizationId'] = $organizationId;
 
         return $this;
     }

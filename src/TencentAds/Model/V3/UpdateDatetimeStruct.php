@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * UpdateDatetimeStruct Class Doc Comment
  *
  * @category Class
- * @description 更新单个广告组投放时间条件
+ * @description 更新单个广告投放时间条件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

@@ -90,7 +90,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsAdd
      *
-     * 创建广告组
+     * 创建广告
      *
      * @param  \TencentAds\Model\V3\AdgroupsAddRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsAddWithHttpInfo
      *
-     * 创建广告组
+     * 创建广告
      *
      * @param  \TencentAds\Model\V3\AdgroupsAddRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsAddAsync
      *
-     * 创建广告组
+     * 创建广告
      *
      * @param  \TencentAds\Model\V3\AdgroupsAddRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsAddAsyncWithHttpInfo
      *
-     * 创建广告组
+     * 创建广告
      *
      * @param  \TencentAds\Model\V3\AdgroupsAddRequest|mixed $data (required)
      *
@@ -380,7 +380,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsDelete
      *
-     * 删除广告组
+     * 删除广告
      *
      * @param  \TencentAds\Model\V3\AdgroupsDeleteRequest|mixed $data data (required)
      *
@@ -397,7 +397,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsDeleteWithHttpInfo
      *
-     * 删除广告组
+     * 删除广告
      *
      * @param  \TencentAds\Model\V3\AdgroupsDeleteRequest|mixed $data (required)
      *
@@ -472,7 +472,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsDeleteAsync
      *
-     * 删除广告组
+     * 删除广告
      *
      * @param  \TencentAds\Model\V3\AdgroupsDeleteRequest|mixed $data (required)
      *
@@ -492,7 +492,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsDeleteAsyncWithHttpInfo
      *
-     * 删除广告组
+     * 删除广告
      *
      * @param  \TencentAds\Model\V3\AdgroupsDeleteRequest|mixed $data (required)
      *
@@ -670,7 +670,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsGet
      *
-     * 获取广告组
+     * 获取广告
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
@@ -694,7 +694,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsGetWithHttpInfo
      *
-     * 获取广告组
+     * 获取广告
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
@@ -776,7 +776,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsGetAsync
      *
-     * 获取广告组
+     * 获取广告
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
@@ -803,7 +803,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsGetAsyncWithHttpInfo
      *
-     * 获取广告组
+     * 获取广告
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
@@ -1030,7 +1030,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdate
      *
-     * 更新广告组
+     * 更新广告
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateRequest|mixed $data data (required)
      *
@@ -1047,7 +1047,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateWithHttpInfo
      *
-     * 更新广告组
+     * 更新广告
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateRequest|mixed $data (required)
      *
@@ -1122,7 +1122,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateAsync
      *
-     * 更新广告组
+     * 更新广告
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateRequest|mixed $data (required)
      *
@@ -1142,7 +1142,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateAsyncWithHttpInfo
      *
-     * 更新广告组
+     * 更新广告
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateRequest|mixed $data (required)
      *
@@ -1320,7 +1320,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateBidAmount
      *
-     * 批量修改广告组出价
+     * 批量修改广告出价
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateBidAmountRequest|mixed $data data (required)
      *
@@ -1337,7 +1337,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateBidAmountWithHttpInfo
      *
-     * 批量修改广告组出价
+     * 批量修改广告出价
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateBidAmountRequest|mixed $data (required)
      *
@@ -1412,7 +1412,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateBidAmountAsync
      *
-     * 批量修改广告组出价
+     * 批量修改广告出价
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateBidAmountRequest|mixed $data (required)
      *
@@ -1432,7 +1432,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateBidAmountAsyncWithHttpInfo
      *
-     * 批量修改广告组出价
+     * 批量修改广告出价
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateBidAmountRequest|mixed $data (required)
      *
@@ -1610,7 +1610,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateConfiguredStatus
      *
-     * 批量修改广告组开启/暂停状态
+     * 批量修改广告开启/暂停状态
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateConfiguredStatusRequest|mixed $data data (required)
      *
@@ -1627,7 +1627,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateConfiguredStatusWithHttpInfo
      *
-     * 批量修改广告组开启/暂停状态
+     * 批量修改广告开启/暂停状态
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateConfiguredStatusRequest|mixed $data (required)
      *
@@ -1702,7 +1702,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateConfiguredStatusAsync
      *
-     * 批量修改广告组开启/暂停状态
+     * 批量修改广告开启/暂停状态
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateConfiguredStatusRequest|mixed $data (required)
      *
@@ -1722,7 +1722,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateConfiguredStatusAsyncWithHttpInfo
      *
-     * 批量修改广告组开启/暂停状态
+     * 批量修改广告开启/暂停状态
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateConfiguredStatusRequest|mixed $data (required)
      *
@@ -1900,7 +1900,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDailyBudget
      *
-     * 批量修改广告组日限额
+     * 批量修改广告日限额
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDailyBudgetRequest|mixed $data data (required)
      *
@@ -1917,7 +1917,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDailyBudgetWithHttpInfo
      *
-     * 批量修改广告组日限额
+     * 批量修改广告日限额
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDailyBudgetRequest|mixed $data (required)
      *
@@ -1992,7 +1992,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDailyBudgetAsync
      *
-     * 批量修改广告组日限额
+     * 批量修改广告日限额
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDailyBudgetRequest|mixed $data (required)
      *
@@ -2012,7 +2012,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDailyBudgetAsyncWithHttpInfo
      *
-     * 批量修改广告组日限额
+     * 批量修改广告日限额
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDailyBudgetRequest|mixed $data (required)
      *
@@ -2190,7 +2190,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDatetime
      *
-     * 批量修改广告组投放起止时间
+     * 批量修改广告投放起止时间
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDatetimeRequest|mixed $data data (required)
      *
@@ -2207,7 +2207,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDatetimeWithHttpInfo
      *
-     * 批量修改广告组投放起止时间
+     * 批量修改广告投放起止时间
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDatetimeRequest|mixed $data (required)
      *
@@ -2282,7 +2282,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDatetimeAsync
      *
-     * 批量修改广告组投放起止时间
+     * 批量修改广告投放起止时间
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDatetimeRequest|mixed $data (required)
      *
@@ -2302,7 +2302,7 @@ class AdgroupsApi
     /**
      * Operation adgroupsUpdateDatetimeAsyncWithHttpInfo
      *
-     * 批量修改广告组投放起止时间
+     * 批量修改广告投放起止时间
      *
      * @param  \TencentAds\Model\V3\AdgroupsUpdateDatetimeRequest|mixed $data (required)
      *

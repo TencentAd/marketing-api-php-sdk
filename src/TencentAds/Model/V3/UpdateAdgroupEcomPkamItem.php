@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * UpdateAdgroupEcomPkamItem Class Doc Comment
  *
  * @category Class
- * @description 修改广告组一方跑量
+ * @description 修改广告一方跑量
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

@@ -70,7 +70,8 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'profileUrl' => 'string',
-        'systemStatus' => '\TencentAds\Model\AdStatus'
+        'systemStatus' => '\TencentAds\Model\AdStatus',
+        'mdmId' => 'int'
     ];
 
     /**
@@ -91,7 +92,8 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'profileUrl' => null,
-        'systemStatus' => null
+        'systemStatus' => null,
+        'mdmId' => 'int64'
     ];
 
     /**
@@ -133,7 +135,8 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'profileUrl' => 'profile_url',
-        'systemStatus' => 'system_status'
+        'systemStatus' => 'system_status',
+        'mdmId' => 'mdm_id'
     ];
 
     /**
@@ -154,7 +157,8 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'profileUrl' => 'setProfileUrl',
-        'systemStatus' => 'setSystemStatus'
+        'systemStatus' => 'setSystemStatus',
+        'mdmId' => 'setMdmId'
     ];
 
     /**
@@ -175,7 +179,8 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'profileUrl' => 'getProfileUrl',
-        'systemStatus' => 'getSystemStatus'
+        'systemStatus' => 'getSystemStatus',
+        'mdmId' => 'getMdmId'
     ];
 
     /**
@@ -251,6 +256,7 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['profileUrl'] = isset($data['profileUrl']) ? $data['profileUrl'] : null;
         $this->container['systemStatus'] = isset($data['systemStatus']) ? $data['systemStatus'] : null;
+        $this->container['mdmId'] = isset($data['mdmId']) ? $data['mdmId'] : null;
     }
 
     /**
@@ -585,6 +591,30 @@ class ProfilesGetListStruct implements ModelInterface, ArrayAccess
     public function setSystemStatus($systemStatus)
     {
         $this->container['systemStatus'] = $systemStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets mdmId
+     *
+     * @return int|mixed
+     */
+    public function getMdmId()
+    {
+        return $this->container['mdmId'];
+    }
+
+    /**
+     * Sets mdmId
+     *
+     * @param int|mixed $mdmId mdmId
+     *
+     * @return $this
+     */
+    public function setMdmId($mdmId)
+    {
+        $this->container['mdmId'] = $mdmId;
 
         return $this;
     }

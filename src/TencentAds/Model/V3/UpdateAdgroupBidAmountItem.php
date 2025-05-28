@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * UpdateAdgroupBidAmountItem Class Doc Comment
  *
  * @category Class
- * @description 修改广告组出价
+ * @description 修改广告出价
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

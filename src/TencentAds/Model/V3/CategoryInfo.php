@@ -66,7 +66,8 @@ class CategoryInfo implements ModelInterface, ArrayAccess
         'cate3Name' => 'string',
         'cate4Id' => 'string',
         'cate4Name' => 'string',
-        'cate3Disabled' => 'bool'
+        'cate3Disabled' => 'bool',
+        'lastCateTips' => 'string'
     ];
 
     /**
@@ -83,7 +84,8 @@ class CategoryInfo implements ModelInterface, ArrayAccess
         'cate3Name' => null,
         'cate4Id' => null,
         'cate4Name' => null,
-        'cate3Disabled' => null
+        'cate3Disabled' => null,
+        'lastCateTips' => null
     ];
 
     /**
@@ -121,7 +123,8 @@ class CategoryInfo implements ModelInterface, ArrayAccess
         'cate3Name' => 'cate3_name',
         'cate4Id' => 'cate4_id',
         'cate4Name' => 'cate4_name',
-        'cate3Disabled' => 'cate3_disabled'
+        'cate3Disabled' => 'cate3_disabled',
+        'lastCateTips' => 'last_cate_tips'
     ];
 
     /**
@@ -138,7 +141,8 @@ class CategoryInfo implements ModelInterface, ArrayAccess
         'cate3Name' => 'setCate3Name',
         'cate4Id' => 'setCate4Id',
         'cate4Name' => 'setCate4Name',
-        'cate3Disabled' => 'setCate3Disabled'
+        'cate3Disabled' => 'setCate3Disabled',
+        'lastCateTips' => 'setLastCateTips'
     ];
 
     /**
@@ -155,7 +159,8 @@ class CategoryInfo implements ModelInterface, ArrayAccess
         'cate3Name' => 'getCate3Name',
         'cate4Id' => 'getCate4Id',
         'cate4Name' => 'getCate4Name',
-        'cate3Disabled' => 'getCate3Disabled'
+        'cate3Disabled' => 'getCate3Disabled',
+        'lastCateTips' => 'getLastCateTips'
     ];
 
     /**
@@ -227,6 +232,7 @@ class CategoryInfo implements ModelInterface, ArrayAccess
         $this->container['cate4Id'] = isset($data['cate4Id']) ? $data['cate4Id'] : null;
         $this->container['cate4Name'] = isset($data['cate4Name']) ? $data['cate4Name'] : null;
         $this->container['cate3Disabled'] = isset($data['cate3Disabled']) ? $data['cate3Disabled'] : null;
+        $this->container['lastCateTips'] = isset($data['lastCateTips']) ? $data['lastCateTips'] : null;
     }
 
     /**
@@ -465,6 +471,30 @@ class CategoryInfo implements ModelInterface, ArrayAccess
     public function setCate3Disabled($cate3Disabled)
     {
         $this->container['cate3Disabled'] = $cate3Disabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets lastCateTips
+     *
+     * @return string|mixed
+     */
+    public function getLastCateTips()
+    {
+        return $this->container['lastCateTips'];
+    }
+
+    /**
+     * Sets lastCateTips
+     *
+     * @param string|mixed $lastCateTips lastCateTips
+     *
+     * @return $this
+     */
+    public function setLastCateTips($lastCateTips)
+    {
+        $this->container['lastCateTips'] = $lastCateTips;
 
         return $this;
     }

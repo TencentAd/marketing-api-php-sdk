@@ -57,7 +57,8 @@ class VideosAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'videoId' => 'int'
+        'videoId' => 'int',
+        'coverImageId' => 'int'
     ];
 
     /**
@@ -66,7 +67,8 @@ class VideosAddResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'videoId' => 'int64'
+        'videoId' => 'int64',
+        'coverImageId' => 'int64'
     ];
 
     /**
@@ -96,7 +98,8 @@ class VideosAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'videoId' => 'video_id'
+        'videoId' => 'video_id',
+        'coverImageId' => 'cover_image_id'
     ];
 
     /**
@@ -105,7 +108,8 @@ class VideosAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'videoId' => 'setVideoId'
+        'videoId' => 'setVideoId',
+        'coverImageId' => 'setCoverImageId'
     ];
 
     /**
@@ -114,7 +118,8 @@ class VideosAddResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'videoId' => 'getVideoId'
+        'videoId' => 'getVideoId',
+        'coverImageId' => 'getCoverImageId'
     ];
 
     /**
@@ -178,6 +183,7 @@ class VideosAddResponseData implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['videoId'] = isset($data['videoId']) ? $data['videoId'] : null;
+        $this->container['coverImageId'] = isset($data['coverImageId']) ? $data['coverImageId'] : null;
     }
 
     /**
@@ -224,6 +230,30 @@ class VideosAddResponseData implements ModelInterface, ArrayAccess
     public function setVideoId($videoId)
     {
         $this->container['videoId'] = $videoId;
+
+        return $this;
+    }
+
+    /**
+     * Gets coverImageId
+     *
+     * @return int|mixed
+     */
+    public function getCoverImageId()
+    {
+        return $this->container['coverImageId'];
+    }
+
+    /**
+     * Sets coverImageId
+     *
+     * @param int|mixed $coverImageId coverImageId
+     *
+     * @return $this
+     */
+    public function setCoverImageId($coverImageId)
+    {
+        $this->container['coverImageId'] = $coverImageId;
 
         return $this;
     }

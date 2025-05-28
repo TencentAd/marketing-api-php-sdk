@@ -89,6 +89,7 @@ class ComponentSubType
     const VIDEO_960_X540 = 'VIDEO_960X540';
     const VIDEO_978_X886 = 'VIDEO_978X886';
     const APP_PROMOTION_VIDEO_16_X9 = 'APP_PROMOTION_VIDEO_16X9';
+    const VIDEO_CHANNELS_CONTENT = 'VIDEO_CHANNELS_CONTENT';
     const IMAGE_16_X9 = 'IMAGE_16X9';
     const IMAGE_9_X16 = 'IMAGE_9X16';
     const IMAGE_1_X1 = 'IMAGE_1X1';
@@ -146,12 +147,16 @@ class ComponentSubType
     const DYNAMIC_SHOWCASE_1 = 'DYNAMIC_SHOWCASE_1';
     const DYNAMIC_SHOWCASE_2 = 'DYNAMIC_SHOWCASE_2';
     const DYNAMIC_SHOWCASE_3 = 'DYNAMIC_SHOWCASE_3';
+    const UNVEIL_CARD = 'UNVEIL_CARD';
+    const HOT_TOPIC = 'HOT_TOPIC';
     const BRAND = 'BRAND';
     const BRAND_PAGE = 'BRAND_PAGE';
     const BRAND_SEARCH = 'BRAND_SEARCH';
     const BRAND_WECHAT_CHANNEL = 'BRAND_WECHAT_CHANNEL';
     const BRAND_WECHAT = 'BRAND_WECHAT';
     const BRAND_WECOM = 'BRAND_WECOM';
+    const BRAND_WECHAT_SHOP = 'BRAND_WECHAT_SHOP';
+    const BRAND_CUSTOM_LINK = 'BRAND_CUSTOM_LINK';
     const JUMP_INFO_OFFICIAL = 'JUMP_INFO_OFFICIAL';
     const JUMP_INFO_XJ_ANDROID_APP_H5 = 'JUMP_INFO_XJ_ANDROID_APP_H5';
     const JUMP_INFO_XJ_IOS_APP_H5 = 'JUMP_INFO_XJ_IOS_APP_H5';
@@ -180,6 +185,7 @@ class ComponentSubType
     const JUMP_INFO_WECHAT_CHANNELS_SHOP_PRODUCT = 'JUMP_INFO_WECHAT_CHANNELS_SHOP_PRODUCT';
     const JUMP_INFO_QQ_MINI_GAME = 'JUMP_INFO_QQ_MINI_GAME';
     const JUMP_INFO_APP_HARMONY = 'JUMP_INFO_APP_HARMONY';
+    const JUMP_INFO_WECHAT_SHOP = 'JUMP_INFO_WECHAT_SHOP';
     
     /**
      * Gets allowable values of the enum
@@ -233,6 +239,7 @@ class ComponentSubType
             self::VIDEO_960_X540,
             self::VIDEO_978_X886,
             self::APP_PROMOTION_VIDEO_16_X9,
+            self::VIDEO_CHANNELS_CONTENT,
             self::IMAGE_16_X9,
             self::IMAGE_9_X16,
             self::IMAGE_1_X1,
@@ -290,12 +297,16 @@ class ComponentSubType
             self::DYNAMIC_SHOWCASE_1,
             self::DYNAMIC_SHOWCASE_2,
             self::DYNAMIC_SHOWCASE_3,
+            self::UNVEIL_CARD,
+            self::HOT_TOPIC,
             self::BRAND,
             self::BRAND_PAGE,
             self::BRAND_SEARCH,
             self::BRAND_WECHAT_CHANNEL,
             self::BRAND_WECHAT,
             self::BRAND_WECOM,
+            self::BRAND_WECHAT_SHOP,
+            self::BRAND_CUSTOM_LINK,
             self::JUMP_INFO_OFFICIAL,
             self::JUMP_INFO_XJ_ANDROID_APP_H5,
             self::JUMP_INFO_XJ_IOS_APP_H5,
@@ -324,6 +335,7 @@ class ComponentSubType
             self::JUMP_INFO_WECHAT_CHANNELS_SHOP_PRODUCT,
             self::JUMP_INFO_QQ_MINI_GAME,
             self::JUMP_INFO_APP_HARMONY,
+            self::JUMP_INFO_WECHAT_SHOP,
         ];
     }
 }

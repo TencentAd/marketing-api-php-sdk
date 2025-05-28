@@ -59,7 +59,8 @@ class AndroidAppPageSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'androidAppId' => 'string',
-        'wechatCanvasPageId' => 'int'
+        'wechatCanvasPageId' => 'int',
+        'androidChannelId' => 'string'
     ];
 
     /**
@@ -69,7 +70,8 @@ class AndroidAppPageSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'androidAppId' => null,
-        'wechatCanvasPageId' => 'int64'
+        'wechatCanvasPageId' => 'int64',
+        'androidChannelId' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class AndroidAppPageSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'androidAppId' => 'android_app_id',
-        'wechatCanvasPageId' => 'wechat_canvas_page_id'
+        'wechatCanvasPageId' => 'wechat_canvas_page_id',
+        'androidChannelId' => 'android_channel_id'
     ];
 
     /**
@@ -110,7 +113,8 @@ class AndroidAppPageSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'androidAppId' => 'setAndroidAppId',
-        'wechatCanvasPageId' => 'setWechatCanvasPageId'
+        'wechatCanvasPageId' => 'setWechatCanvasPageId',
+        'androidChannelId' => 'setAndroidChannelId'
     ];
 
     /**
@@ -120,7 +124,8 @@ class AndroidAppPageSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'androidAppId' => 'getAndroidAppId',
-        'wechatCanvasPageId' => 'getWechatCanvasPageId'
+        'wechatCanvasPageId' => 'getWechatCanvasPageId',
+        'androidChannelId' => 'getAndroidChannelId'
     ];
 
     /**
@@ -185,6 +190,7 @@ class AndroidAppPageSpec implements ModelInterface, ArrayAccess
     {
         $this->container['androidAppId'] = isset($data['androidAppId']) ? $data['androidAppId'] : null;
         $this->container['wechatCanvasPageId'] = isset($data['wechatCanvasPageId']) ? $data['wechatCanvasPageId'] : null;
+        $this->container['androidChannelId'] = isset($data['androidChannelId']) ? $data['androidChannelId'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class AndroidAppPageSpec implements ModelInterface, ArrayAccess
     public function setWechatCanvasPageId($wechatCanvasPageId)
     {
         $this->container['wechatCanvasPageId'] = $wechatCanvasPageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets androidChannelId
+     *
+     * @return string|mixed
+     */
+    public function getAndroidChannelId()
+    {
+        return $this->container['androidChannelId'];
+    }
+
+    /**
+     * Sets androidChannelId
+     *
+     * @param string|mixed $androidChannelId androidChannelId
+     *
+     * @return $this
+     */
+    public function setAndroidChannelId($androidChannelId)
+    {
+        $this->container['androidChannelId'] = $androidChannelId;
 
         return $this;
     }

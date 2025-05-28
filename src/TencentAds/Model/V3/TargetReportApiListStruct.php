@@ -72,8 +72,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'valuableClickCost' => 'int',
         'valuableClickRate' => 'double',
         'cost' => 'int',
-        'wechatCostStage1' => 'int',
-        'wechatCostStage2' => 'int',
         'acquisitionCost' => 'int',
         'thousandDisplayPrice' => 'int',
         'realCostTop' => 'int',
@@ -85,10 +83,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'deepConversionsCount' => 'int',
         'deepConversionsRate' => 'double',
         'deepConversionsCost' => 'int',
-        'wechatShallowConversionsCountStage1' => 'int',
-        'wechatShallowConversionsCountStage2' => 'int',
-        'wechatDeepConversionsCountStage1' => 'int',
-        'wechatDeepConversionsCountStage2' => 'int',
         'conversionsByDisplayCount' => 'int',
         'conversionsByDisplayRate' => 'double',
         'conversionsByDisplayCost' => 'int',
@@ -527,12 +521,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Roi' => 'double',
         'miniGameBfPurchaseD1Arpu' => 'int',
         'miniGameBfIncomeAmount' => 'int',
-        'miniGameBfIncomeUv' => 'int',
-        'miniGameBfIncomeCost' => 'int',
-        'miniGameBfIncomeArpu' => 'int',
-        'miniGameBfIncomeRoi' => 'double',
         'miniGameBfIncomeD1Amount' => 'int',
-        'miniGameBfIncomeD1Uv' => 'int',
         'miniGameBfIncomeD1Cost' => 'int',
         'miniGameBfIncomeD1Roi' => 'double',
         'miniGameBfIncomeD1Arpu' => 'int',
@@ -610,22 +599,18 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'incomeRoi7' => 'double',
         'incomeVal14' => 'int',
         'incomeRoi14' => 'double',
-        'miniGameAdMonetizationUsers' => 'int',
         'miniGameAdMonetizationAmount' => 'int',
         'miniGameAdMonetizationCost' => 'int',
         'miniGameAdMonetizationRoi' => 'double',
         'miniGameAdMonetizationArpu' => 'int',
-        'miniGameFirstDayAdMonetizationUsers' => 'int',
         'miniGameFirstDayAdMonetizationAmount' => 'int',
         'miniGameFirstDayAdPayingCost' => 'int',
         'miniGameIncomeRoi1' => 'double',
         'miniGameFirstDayAdPayingArpu' => 'int',
         'minigame3dIncomeCount' => 'int',
-        'minigame3dIncomeUv' => 'int',
         'miniGameAdMonetizationAmountD3' => 'int',
         'minigame3dIncomeRoi' => 'double',
         'minigame7dIncomeCount' => 'int',
-        'minigame7dIncomeUv' => 'int',
         'miniGameAdMonetizationAmountD7' => 'int',
         'minigame7dIncomeRoi' => 'double',
         'miniGameAdMonetizationAmountD14' => 'int',
@@ -788,6 +773,28 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'openAccountPv' => 'int',
         'openAccountPvCost' => 'int',
         'videoOuterPlay5sRate' => 'double',
+        'incomeVal24hPlaRoi' => 'double',
+        'viewDramaDedupPv' => 'int',
+        'viewDramaDedupPvRate' => 'double',
+        'viewDramaDedupPvCost' => 'int',
+        'visitStoreFirstDedupPv' => 'int',
+        'orderFirstDedupPv' => 'int',
+        'orderFirstDedupPvCost' => 'int',
+        'orderFirstDedupPvRate' => 'double',
+        'storePayAmountOff' => 'int',
+        'storePayUvOff' => 'int',
+        'storePayPvOff' => 'int',
+        'orderRefundActive24hPv' => 'int',
+        'orderRefundActive24hRate' => 'double',
+        'orderSettle24hPv' => 'int',
+        'orderSettle24hRate' => 'double',
+        'orderSettle24hCost' => 'int',
+        'lanJumpButtonRate' => 'double',
+        'regDedup1dPv' => 'int',
+        'bfDedupPv' => 'int',
+        'followBizAllDedupPv' => 'int',
+        'firOgConvAutoAcquisitionPv' => 'int',
+        'secOgConvAutoAcquisitionPv' => 'int',
         'ageId' => 'int',
         'cityId' => 'int',
         'regionId' => 'int',
@@ -817,8 +824,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'valuableClickCost' => 'int64',
         'valuableClickRate' => 'double',
         'cost' => 'int64',
-        'wechatCostStage1' => 'int64',
-        'wechatCostStage2' => 'int64',
         'acquisitionCost' => 'int64',
         'thousandDisplayPrice' => 'int64',
         'realCostTop' => 'int64',
@@ -830,10 +835,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'deepConversionsCount' => 'int64',
         'deepConversionsRate' => 'double',
         'deepConversionsCost' => 'int64',
-        'wechatShallowConversionsCountStage1' => 'int64',
-        'wechatShallowConversionsCountStage2' => 'int64',
-        'wechatDeepConversionsCountStage1' => 'int64',
-        'wechatDeepConversionsCountStage2' => 'int64',
         'conversionsByDisplayCount' => 'int64',
         'conversionsByDisplayRate' => 'double',
         'conversionsByDisplayCost' => 'int64',
@@ -1272,12 +1273,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Roi' => 'double',
         'miniGameBfPurchaseD1Arpu' => 'int64',
         'miniGameBfIncomeAmount' => 'int64',
-        'miniGameBfIncomeUv' => 'int64',
-        'miniGameBfIncomeCost' => 'int64',
-        'miniGameBfIncomeArpu' => 'int64',
-        'miniGameBfIncomeRoi' => 'double',
         'miniGameBfIncomeD1Amount' => 'int64',
-        'miniGameBfIncomeD1Uv' => 'int64',
         'miniGameBfIncomeD1Cost' => 'int64',
         'miniGameBfIncomeD1Roi' => 'double',
         'miniGameBfIncomeD1Arpu' => 'int64',
@@ -1355,22 +1351,18 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'incomeRoi7' => 'double',
         'incomeVal14' => 'int64',
         'incomeRoi14' => 'double',
-        'miniGameAdMonetizationUsers' => 'int64',
         'miniGameAdMonetizationAmount' => 'int64',
         'miniGameAdMonetizationCost' => 'int64',
         'miniGameAdMonetizationRoi' => 'double',
         'miniGameAdMonetizationArpu' => 'int64',
-        'miniGameFirstDayAdMonetizationUsers' => 'int64',
         'miniGameFirstDayAdMonetizationAmount' => 'int64',
         'miniGameFirstDayAdPayingCost' => 'int64',
         'miniGameIncomeRoi1' => 'double',
         'miniGameFirstDayAdPayingArpu' => 'int64',
         'minigame3dIncomeCount' => 'int64',
-        'minigame3dIncomeUv' => 'int64',
         'miniGameAdMonetizationAmountD3' => 'int64',
         'minigame3dIncomeRoi' => 'double',
         'minigame7dIncomeCount' => 'int64',
-        'minigame7dIncomeUv' => 'int64',
         'miniGameAdMonetizationAmountD7' => 'int64',
         'minigame7dIncomeRoi' => 'double',
         'miniGameAdMonetizationAmountD14' => 'int64',
@@ -1533,6 +1525,28 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'openAccountPv' => 'int64',
         'openAccountPvCost' => 'int64',
         'videoOuterPlay5sRate' => 'double',
+        'incomeVal24hPlaRoi' => 'double',
+        'viewDramaDedupPv' => 'int64',
+        'viewDramaDedupPvRate' => 'double',
+        'viewDramaDedupPvCost' => 'int64',
+        'visitStoreFirstDedupPv' => 'int64',
+        'orderFirstDedupPv' => 'int64',
+        'orderFirstDedupPvCost' => 'int64',
+        'orderFirstDedupPvRate' => 'double',
+        'storePayAmountOff' => 'int64',
+        'storePayUvOff' => 'int64',
+        'storePayPvOff' => 'int64',
+        'orderRefundActive24hPv' => 'int64',
+        'orderRefundActive24hRate' => 'double',
+        'orderSettle24hPv' => 'int64',
+        'orderSettle24hRate' => 'double',
+        'orderSettle24hCost' => 'int64',
+        'lanJumpButtonRate' => 'double',
+        'regDedup1dPv' => 'int64',
+        'bfDedupPv' => 'int64',
+        'followBizAllDedupPv' => 'int64',
+        'firOgConvAutoAcquisitionPv' => 'int64',
+        'secOgConvAutoAcquisitionPv' => 'int64',
         'ageId' => 'int64',
         'cityId' => 'int64',
         'regionId' => 'int64',
@@ -1583,8 +1597,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'valuableClickCost' => 'valuable_click_cost',
         'valuableClickRate' => 'valuable_click_rate',
         'cost' => 'cost',
-        'wechatCostStage1' => 'wechat_cost_stage1',
-        'wechatCostStage2' => 'wechat_cost_stage2',
         'acquisitionCost' => 'acquisition_cost',
         'thousandDisplayPrice' => 'thousand_display_price',
         'realCostTop' => 'real_cost_top',
@@ -1596,10 +1608,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'deepConversionsCount' => 'deep_conversions_count',
         'deepConversionsRate' => 'deep_conversions_rate',
         'deepConversionsCost' => 'deep_conversions_cost',
-        'wechatShallowConversionsCountStage1' => 'wechat_shallow_conversions_count_stage1',
-        'wechatShallowConversionsCountStage2' => 'wechat_shallow_conversions_count_stage2',
-        'wechatDeepConversionsCountStage1' => 'wechat_deep_conversions_count_stage1',
-        'wechatDeepConversionsCountStage2' => 'wechat_deep_conversions_count_stage2',
         'conversionsByDisplayCount' => 'conversions_by_display_count',
         'conversionsByDisplayRate' => 'conversions_by_display_rate',
         'conversionsByDisplayCost' => 'conversions_by_display_cost',
@@ -2038,12 +2046,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Roi' => 'mini_game_bf_purchase_d1_roi',
         'miniGameBfPurchaseD1Arpu' => 'mini_game_bf_purchase_d1_arpu',
         'miniGameBfIncomeAmount' => 'mini_game_bf_income_amount',
-        'miniGameBfIncomeUv' => 'mini_game_bf_income_uv',
-        'miniGameBfIncomeCost' => 'mini_game_bf_income_cost',
-        'miniGameBfIncomeArpu' => 'mini_game_bf_income_arpu',
-        'miniGameBfIncomeRoi' => 'mini_game_bf_income_roi',
         'miniGameBfIncomeD1Amount' => 'mini_game_bf_income_d1_amount',
-        'miniGameBfIncomeD1Uv' => 'mini_game_bf_income_d1_uv',
         'miniGameBfIncomeD1Cost' => 'mini_game_bf_income_d1_cost',
         'miniGameBfIncomeD1Roi' => 'mini_game_bf_income_d1_roi',
         'miniGameBfIncomeD1Arpu' => 'mini_game_bf_income_d1_arpu',
@@ -2121,22 +2124,18 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'incomeRoi7' => 'income_roi_7',
         'incomeVal14' => 'income_val_14',
         'incomeRoi14' => 'income_roi_14',
-        'miniGameAdMonetizationUsers' => 'mini_game_ad_monetization_users',
         'miniGameAdMonetizationAmount' => 'mini_game_ad_monetization_amount',
         'miniGameAdMonetizationCost' => 'mini_game_ad_monetization_cost',
         'miniGameAdMonetizationRoi' => 'mini_game_ad_monetization_roi',
         'miniGameAdMonetizationArpu' => 'mini_game_ad_monetization_arpu',
-        'miniGameFirstDayAdMonetizationUsers' => 'mini_game_first_day_ad_monetization_users',
         'miniGameFirstDayAdMonetizationAmount' => 'mini_game_first_day_ad_monetization_amount',
         'miniGameFirstDayAdPayingCost' => 'mini_game_first_day_ad_paying_cost',
         'miniGameIncomeRoi1' => 'mini_game_income_roi_1',
         'miniGameFirstDayAdPayingArpu' => 'mini_game_first_day_ad_paying_arpu',
         'minigame3dIncomeCount' => 'minigame_3d_income_count',
-        'minigame3dIncomeUv' => 'minigame_3d_income_uv',
         'miniGameAdMonetizationAmountD3' => 'mini_game_ad_monetization_amount_d3',
         'minigame3dIncomeRoi' => 'minigame_3d_income_roi',
         'minigame7dIncomeCount' => 'minigame_7d_income_count',
-        'minigame7dIncomeUv' => 'minigame_7d_income_uv',
         'miniGameAdMonetizationAmountD7' => 'mini_game_ad_monetization_amount_d7',
         'minigame7dIncomeRoi' => 'minigame_7d_income_roi',
         'miniGameAdMonetizationAmountD14' => 'mini_game_ad_monetization_amount_d14',
@@ -2299,6 +2298,28 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'openAccountPv' => 'open_account_pv',
         'openAccountPvCost' => 'open_account_pv_cost',
         'videoOuterPlay5sRate' => 'video_outer_play5s_rate',
+        'incomeVal24hPlaRoi' => 'income_val_24h_pla_roi',
+        'viewDramaDedupPv' => 'view_drama_dedup_pv',
+        'viewDramaDedupPvRate' => 'view_drama_dedup_pv_rate',
+        'viewDramaDedupPvCost' => 'view_drama_dedup_pv_cost',
+        'visitStoreFirstDedupPv' => 'visit_store_first_dedup_pv',
+        'orderFirstDedupPv' => 'order_first_dedup_pv',
+        'orderFirstDedupPvCost' => 'order_first_dedup_pv_cost',
+        'orderFirstDedupPvRate' => 'order_first_dedup_pv_rate',
+        'storePayAmountOff' => 'store_pay_amount_off',
+        'storePayUvOff' => 'store_pay_uv_off',
+        'storePayPvOff' => 'store_pay_pv_off',
+        'orderRefundActive24hPv' => 'order_refund_active_24h_pv',
+        'orderRefundActive24hRate' => 'order_refund_active_24h_rate',
+        'orderSettle24hPv' => 'order_settle_24h_pv',
+        'orderSettle24hRate' => 'order_settle_24h_rate',
+        'orderSettle24hCost' => 'order_settle_24h_cost',
+        'lanJumpButtonRate' => 'lan_jump_button_rate',
+        'regDedup1dPv' => 'reg_dedup1d_pv',
+        'bfDedupPv' => 'bf_dedup_pv',
+        'followBizAllDedupPv' => 'follow_biz_all_dedup_pv',
+        'firOgConvAutoAcquisitionPv' => 'fir_og_conv_auto_acquisition_pv',
+        'secOgConvAutoAcquisitionPv' => 'sec_og_conv_auto_acquisition_pv',
         'ageId' => 'age_id',
         'cityId' => 'city_id',
         'regionId' => 'region_id',
@@ -2328,8 +2349,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'valuableClickCost' => 'setValuableClickCost',
         'valuableClickRate' => 'setValuableClickRate',
         'cost' => 'setCost',
-        'wechatCostStage1' => 'setWechatCostStage1',
-        'wechatCostStage2' => 'setWechatCostStage2',
         'acquisitionCost' => 'setAcquisitionCost',
         'thousandDisplayPrice' => 'setThousandDisplayPrice',
         'realCostTop' => 'setRealCostTop',
@@ -2341,10 +2360,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'deepConversionsCount' => 'setDeepConversionsCount',
         'deepConversionsRate' => 'setDeepConversionsRate',
         'deepConversionsCost' => 'setDeepConversionsCost',
-        'wechatShallowConversionsCountStage1' => 'setWechatShallowConversionsCountStage1',
-        'wechatShallowConversionsCountStage2' => 'setWechatShallowConversionsCountStage2',
-        'wechatDeepConversionsCountStage1' => 'setWechatDeepConversionsCountStage1',
-        'wechatDeepConversionsCountStage2' => 'setWechatDeepConversionsCountStage2',
         'conversionsByDisplayCount' => 'setConversionsByDisplayCount',
         'conversionsByDisplayRate' => 'setConversionsByDisplayRate',
         'conversionsByDisplayCost' => 'setConversionsByDisplayCost',
@@ -2783,12 +2798,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Roi' => 'setMiniGameBfPurchaseD1Roi',
         'miniGameBfPurchaseD1Arpu' => 'setMiniGameBfPurchaseD1Arpu',
         'miniGameBfIncomeAmount' => 'setMiniGameBfIncomeAmount',
-        'miniGameBfIncomeUv' => 'setMiniGameBfIncomeUv',
-        'miniGameBfIncomeCost' => 'setMiniGameBfIncomeCost',
-        'miniGameBfIncomeArpu' => 'setMiniGameBfIncomeArpu',
-        'miniGameBfIncomeRoi' => 'setMiniGameBfIncomeRoi',
         'miniGameBfIncomeD1Amount' => 'setMiniGameBfIncomeD1Amount',
-        'miniGameBfIncomeD1Uv' => 'setMiniGameBfIncomeD1Uv',
         'miniGameBfIncomeD1Cost' => 'setMiniGameBfIncomeD1Cost',
         'miniGameBfIncomeD1Roi' => 'setMiniGameBfIncomeD1Roi',
         'miniGameBfIncomeD1Arpu' => 'setMiniGameBfIncomeD1Arpu',
@@ -2866,22 +2876,18 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'incomeRoi7' => 'setIncomeRoi7',
         'incomeVal14' => 'setIncomeVal14',
         'incomeRoi14' => 'setIncomeRoi14',
-        'miniGameAdMonetizationUsers' => 'setMiniGameAdMonetizationUsers',
         'miniGameAdMonetizationAmount' => 'setMiniGameAdMonetizationAmount',
         'miniGameAdMonetizationCost' => 'setMiniGameAdMonetizationCost',
         'miniGameAdMonetizationRoi' => 'setMiniGameAdMonetizationRoi',
         'miniGameAdMonetizationArpu' => 'setMiniGameAdMonetizationArpu',
-        'miniGameFirstDayAdMonetizationUsers' => 'setMiniGameFirstDayAdMonetizationUsers',
         'miniGameFirstDayAdMonetizationAmount' => 'setMiniGameFirstDayAdMonetizationAmount',
         'miniGameFirstDayAdPayingCost' => 'setMiniGameFirstDayAdPayingCost',
         'miniGameIncomeRoi1' => 'setMiniGameIncomeRoi1',
         'miniGameFirstDayAdPayingArpu' => 'setMiniGameFirstDayAdPayingArpu',
         'minigame3dIncomeCount' => 'setMinigame3dIncomeCount',
-        'minigame3dIncomeUv' => 'setMinigame3dIncomeUv',
         'miniGameAdMonetizationAmountD3' => 'setMiniGameAdMonetizationAmountD3',
         'minigame3dIncomeRoi' => 'setMinigame3dIncomeRoi',
         'minigame7dIncomeCount' => 'setMinigame7dIncomeCount',
-        'minigame7dIncomeUv' => 'setMinigame7dIncomeUv',
         'miniGameAdMonetizationAmountD7' => 'setMiniGameAdMonetizationAmountD7',
         'minigame7dIncomeRoi' => 'setMinigame7dIncomeRoi',
         'miniGameAdMonetizationAmountD14' => 'setMiniGameAdMonetizationAmountD14',
@@ -3044,6 +3050,28 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'openAccountPv' => 'setOpenAccountPv',
         'openAccountPvCost' => 'setOpenAccountPvCost',
         'videoOuterPlay5sRate' => 'setVideoOuterPlay5sRate',
+        'incomeVal24hPlaRoi' => 'setIncomeVal24hPlaRoi',
+        'viewDramaDedupPv' => 'setViewDramaDedupPv',
+        'viewDramaDedupPvRate' => 'setViewDramaDedupPvRate',
+        'viewDramaDedupPvCost' => 'setViewDramaDedupPvCost',
+        'visitStoreFirstDedupPv' => 'setVisitStoreFirstDedupPv',
+        'orderFirstDedupPv' => 'setOrderFirstDedupPv',
+        'orderFirstDedupPvCost' => 'setOrderFirstDedupPvCost',
+        'orderFirstDedupPvRate' => 'setOrderFirstDedupPvRate',
+        'storePayAmountOff' => 'setStorePayAmountOff',
+        'storePayUvOff' => 'setStorePayUvOff',
+        'storePayPvOff' => 'setStorePayPvOff',
+        'orderRefundActive24hPv' => 'setOrderRefundActive24hPv',
+        'orderRefundActive24hRate' => 'setOrderRefundActive24hRate',
+        'orderSettle24hPv' => 'setOrderSettle24hPv',
+        'orderSettle24hRate' => 'setOrderSettle24hRate',
+        'orderSettle24hCost' => 'setOrderSettle24hCost',
+        'lanJumpButtonRate' => 'setLanJumpButtonRate',
+        'regDedup1dPv' => 'setRegDedup1dPv',
+        'bfDedupPv' => 'setBfDedupPv',
+        'followBizAllDedupPv' => 'setFollowBizAllDedupPv',
+        'firOgConvAutoAcquisitionPv' => 'setFirOgConvAutoAcquisitionPv',
+        'secOgConvAutoAcquisitionPv' => 'setSecOgConvAutoAcquisitionPv',
         'ageId' => 'setAgeId',
         'cityId' => 'setCityId',
         'regionId' => 'setRegionId',
@@ -3073,8 +3101,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'valuableClickCost' => 'getValuableClickCost',
         'valuableClickRate' => 'getValuableClickRate',
         'cost' => 'getCost',
-        'wechatCostStage1' => 'getWechatCostStage1',
-        'wechatCostStage2' => 'getWechatCostStage2',
         'acquisitionCost' => 'getAcquisitionCost',
         'thousandDisplayPrice' => 'getThousandDisplayPrice',
         'realCostTop' => 'getRealCostTop',
@@ -3086,10 +3112,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'deepConversionsCount' => 'getDeepConversionsCount',
         'deepConversionsRate' => 'getDeepConversionsRate',
         'deepConversionsCost' => 'getDeepConversionsCost',
-        'wechatShallowConversionsCountStage1' => 'getWechatShallowConversionsCountStage1',
-        'wechatShallowConversionsCountStage2' => 'getWechatShallowConversionsCountStage2',
-        'wechatDeepConversionsCountStage1' => 'getWechatDeepConversionsCountStage1',
-        'wechatDeepConversionsCountStage2' => 'getWechatDeepConversionsCountStage2',
         'conversionsByDisplayCount' => 'getConversionsByDisplayCount',
         'conversionsByDisplayRate' => 'getConversionsByDisplayRate',
         'conversionsByDisplayCost' => 'getConversionsByDisplayCost',
@@ -3528,12 +3550,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'miniGameBfPurchaseD1Roi' => 'getMiniGameBfPurchaseD1Roi',
         'miniGameBfPurchaseD1Arpu' => 'getMiniGameBfPurchaseD1Arpu',
         'miniGameBfIncomeAmount' => 'getMiniGameBfIncomeAmount',
-        'miniGameBfIncomeUv' => 'getMiniGameBfIncomeUv',
-        'miniGameBfIncomeCost' => 'getMiniGameBfIncomeCost',
-        'miniGameBfIncomeArpu' => 'getMiniGameBfIncomeArpu',
-        'miniGameBfIncomeRoi' => 'getMiniGameBfIncomeRoi',
         'miniGameBfIncomeD1Amount' => 'getMiniGameBfIncomeD1Amount',
-        'miniGameBfIncomeD1Uv' => 'getMiniGameBfIncomeD1Uv',
         'miniGameBfIncomeD1Cost' => 'getMiniGameBfIncomeD1Cost',
         'miniGameBfIncomeD1Roi' => 'getMiniGameBfIncomeD1Roi',
         'miniGameBfIncomeD1Arpu' => 'getMiniGameBfIncomeD1Arpu',
@@ -3611,22 +3628,18 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'incomeRoi7' => 'getIncomeRoi7',
         'incomeVal14' => 'getIncomeVal14',
         'incomeRoi14' => 'getIncomeRoi14',
-        'miniGameAdMonetizationUsers' => 'getMiniGameAdMonetizationUsers',
         'miniGameAdMonetizationAmount' => 'getMiniGameAdMonetizationAmount',
         'miniGameAdMonetizationCost' => 'getMiniGameAdMonetizationCost',
         'miniGameAdMonetizationRoi' => 'getMiniGameAdMonetizationRoi',
         'miniGameAdMonetizationArpu' => 'getMiniGameAdMonetizationArpu',
-        'miniGameFirstDayAdMonetizationUsers' => 'getMiniGameFirstDayAdMonetizationUsers',
         'miniGameFirstDayAdMonetizationAmount' => 'getMiniGameFirstDayAdMonetizationAmount',
         'miniGameFirstDayAdPayingCost' => 'getMiniGameFirstDayAdPayingCost',
         'miniGameIncomeRoi1' => 'getMiniGameIncomeRoi1',
         'miniGameFirstDayAdPayingArpu' => 'getMiniGameFirstDayAdPayingArpu',
         'minigame3dIncomeCount' => 'getMinigame3dIncomeCount',
-        'minigame3dIncomeUv' => 'getMinigame3dIncomeUv',
         'miniGameAdMonetizationAmountD3' => 'getMiniGameAdMonetizationAmountD3',
         'minigame3dIncomeRoi' => 'getMinigame3dIncomeRoi',
         'minigame7dIncomeCount' => 'getMinigame7dIncomeCount',
-        'minigame7dIncomeUv' => 'getMinigame7dIncomeUv',
         'miniGameAdMonetizationAmountD7' => 'getMiniGameAdMonetizationAmountD7',
         'minigame7dIncomeRoi' => 'getMinigame7dIncomeRoi',
         'miniGameAdMonetizationAmountD14' => 'getMiniGameAdMonetizationAmountD14',
@@ -3789,6 +3802,28 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'openAccountPv' => 'getOpenAccountPv',
         'openAccountPvCost' => 'getOpenAccountPvCost',
         'videoOuterPlay5sRate' => 'getVideoOuterPlay5sRate',
+        'incomeVal24hPlaRoi' => 'getIncomeVal24hPlaRoi',
+        'viewDramaDedupPv' => 'getViewDramaDedupPv',
+        'viewDramaDedupPvRate' => 'getViewDramaDedupPvRate',
+        'viewDramaDedupPvCost' => 'getViewDramaDedupPvCost',
+        'visitStoreFirstDedupPv' => 'getVisitStoreFirstDedupPv',
+        'orderFirstDedupPv' => 'getOrderFirstDedupPv',
+        'orderFirstDedupPvCost' => 'getOrderFirstDedupPvCost',
+        'orderFirstDedupPvRate' => 'getOrderFirstDedupPvRate',
+        'storePayAmountOff' => 'getStorePayAmountOff',
+        'storePayUvOff' => 'getStorePayUvOff',
+        'storePayPvOff' => 'getStorePayPvOff',
+        'orderRefundActive24hPv' => 'getOrderRefundActive24hPv',
+        'orderRefundActive24hRate' => 'getOrderRefundActive24hRate',
+        'orderSettle24hPv' => 'getOrderSettle24hPv',
+        'orderSettle24hRate' => 'getOrderSettle24hRate',
+        'orderSettle24hCost' => 'getOrderSettle24hCost',
+        'lanJumpButtonRate' => 'getLanJumpButtonRate',
+        'regDedup1dPv' => 'getRegDedup1dPv',
+        'bfDedupPv' => 'getBfDedupPv',
+        'followBizAllDedupPv' => 'getFollowBizAllDedupPv',
+        'firOgConvAutoAcquisitionPv' => 'getFirOgConvAutoAcquisitionPv',
+        'secOgConvAutoAcquisitionPv' => 'getSecOgConvAutoAcquisitionPv',
         'ageId' => 'getAgeId',
         'cityId' => 'getCityId',
         'regionId' => 'getRegionId',
@@ -3872,8 +3907,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['valuableClickCost'] = isset($data['valuableClickCost']) ? $data['valuableClickCost'] : null;
         $this->container['valuableClickRate'] = isset($data['valuableClickRate']) ? $data['valuableClickRate'] : null;
         $this->container['cost'] = isset($data['cost']) ? $data['cost'] : null;
-        $this->container['wechatCostStage1'] = isset($data['wechatCostStage1']) ? $data['wechatCostStage1'] : null;
-        $this->container['wechatCostStage2'] = isset($data['wechatCostStage2']) ? $data['wechatCostStage2'] : null;
         $this->container['acquisitionCost'] = isset($data['acquisitionCost']) ? $data['acquisitionCost'] : null;
         $this->container['thousandDisplayPrice'] = isset($data['thousandDisplayPrice']) ? $data['thousandDisplayPrice'] : null;
         $this->container['realCostTop'] = isset($data['realCostTop']) ? $data['realCostTop'] : null;
@@ -3885,10 +3918,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['deepConversionsCount'] = isset($data['deepConversionsCount']) ? $data['deepConversionsCount'] : null;
         $this->container['deepConversionsRate'] = isset($data['deepConversionsRate']) ? $data['deepConversionsRate'] : null;
         $this->container['deepConversionsCost'] = isset($data['deepConversionsCost']) ? $data['deepConversionsCost'] : null;
-        $this->container['wechatShallowConversionsCountStage1'] = isset($data['wechatShallowConversionsCountStage1']) ? $data['wechatShallowConversionsCountStage1'] : null;
-        $this->container['wechatShallowConversionsCountStage2'] = isset($data['wechatShallowConversionsCountStage2']) ? $data['wechatShallowConversionsCountStage2'] : null;
-        $this->container['wechatDeepConversionsCountStage1'] = isset($data['wechatDeepConversionsCountStage1']) ? $data['wechatDeepConversionsCountStage1'] : null;
-        $this->container['wechatDeepConversionsCountStage2'] = isset($data['wechatDeepConversionsCountStage2']) ? $data['wechatDeepConversionsCountStage2'] : null;
         $this->container['conversionsByDisplayCount'] = isset($data['conversionsByDisplayCount']) ? $data['conversionsByDisplayCount'] : null;
         $this->container['conversionsByDisplayRate'] = isset($data['conversionsByDisplayRate']) ? $data['conversionsByDisplayRate'] : null;
         $this->container['conversionsByDisplayCost'] = isset($data['conversionsByDisplayCost']) ? $data['conversionsByDisplayCost'] : null;
@@ -4327,12 +4356,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGameBfPurchaseD1Roi'] = isset($data['miniGameBfPurchaseD1Roi']) ? $data['miniGameBfPurchaseD1Roi'] : null;
         $this->container['miniGameBfPurchaseD1Arpu'] = isset($data['miniGameBfPurchaseD1Arpu']) ? $data['miniGameBfPurchaseD1Arpu'] : null;
         $this->container['miniGameBfIncomeAmount'] = isset($data['miniGameBfIncomeAmount']) ? $data['miniGameBfIncomeAmount'] : null;
-        $this->container['miniGameBfIncomeUv'] = isset($data['miniGameBfIncomeUv']) ? $data['miniGameBfIncomeUv'] : null;
-        $this->container['miniGameBfIncomeCost'] = isset($data['miniGameBfIncomeCost']) ? $data['miniGameBfIncomeCost'] : null;
-        $this->container['miniGameBfIncomeArpu'] = isset($data['miniGameBfIncomeArpu']) ? $data['miniGameBfIncomeArpu'] : null;
-        $this->container['miniGameBfIncomeRoi'] = isset($data['miniGameBfIncomeRoi']) ? $data['miniGameBfIncomeRoi'] : null;
         $this->container['miniGameBfIncomeD1Amount'] = isset($data['miniGameBfIncomeD1Amount']) ? $data['miniGameBfIncomeD1Amount'] : null;
-        $this->container['miniGameBfIncomeD1Uv'] = isset($data['miniGameBfIncomeD1Uv']) ? $data['miniGameBfIncomeD1Uv'] : null;
         $this->container['miniGameBfIncomeD1Cost'] = isset($data['miniGameBfIncomeD1Cost']) ? $data['miniGameBfIncomeD1Cost'] : null;
         $this->container['miniGameBfIncomeD1Roi'] = isset($data['miniGameBfIncomeD1Roi']) ? $data['miniGameBfIncomeD1Roi'] : null;
         $this->container['miniGameBfIncomeD1Arpu'] = isset($data['miniGameBfIncomeD1Arpu']) ? $data['miniGameBfIncomeD1Arpu'] : null;
@@ -4410,22 +4434,18 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['incomeRoi7'] = isset($data['incomeRoi7']) ? $data['incomeRoi7'] : null;
         $this->container['incomeVal14'] = isset($data['incomeVal14']) ? $data['incomeVal14'] : null;
         $this->container['incomeRoi14'] = isset($data['incomeRoi14']) ? $data['incomeRoi14'] : null;
-        $this->container['miniGameAdMonetizationUsers'] = isset($data['miniGameAdMonetizationUsers']) ? $data['miniGameAdMonetizationUsers'] : null;
         $this->container['miniGameAdMonetizationAmount'] = isset($data['miniGameAdMonetizationAmount']) ? $data['miniGameAdMonetizationAmount'] : null;
         $this->container['miniGameAdMonetizationCost'] = isset($data['miniGameAdMonetizationCost']) ? $data['miniGameAdMonetizationCost'] : null;
         $this->container['miniGameAdMonetizationRoi'] = isset($data['miniGameAdMonetizationRoi']) ? $data['miniGameAdMonetizationRoi'] : null;
         $this->container['miniGameAdMonetizationArpu'] = isset($data['miniGameAdMonetizationArpu']) ? $data['miniGameAdMonetizationArpu'] : null;
-        $this->container['miniGameFirstDayAdMonetizationUsers'] = isset($data['miniGameFirstDayAdMonetizationUsers']) ? $data['miniGameFirstDayAdMonetizationUsers'] : null;
         $this->container['miniGameFirstDayAdMonetizationAmount'] = isset($data['miniGameFirstDayAdMonetizationAmount']) ? $data['miniGameFirstDayAdMonetizationAmount'] : null;
         $this->container['miniGameFirstDayAdPayingCost'] = isset($data['miniGameFirstDayAdPayingCost']) ? $data['miniGameFirstDayAdPayingCost'] : null;
         $this->container['miniGameIncomeRoi1'] = isset($data['miniGameIncomeRoi1']) ? $data['miniGameIncomeRoi1'] : null;
         $this->container['miniGameFirstDayAdPayingArpu'] = isset($data['miniGameFirstDayAdPayingArpu']) ? $data['miniGameFirstDayAdPayingArpu'] : null;
         $this->container['minigame3dIncomeCount'] = isset($data['minigame3dIncomeCount']) ? $data['minigame3dIncomeCount'] : null;
-        $this->container['minigame3dIncomeUv'] = isset($data['minigame3dIncomeUv']) ? $data['minigame3dIncomeUv'] : null;
         $this->container['miniGameAdMonetizationAmountD3'] = isset($data['miniGameAdMonetizationAmountD3']) ? $data['miniGameAdMonetizationAmountD3'] : null;
         $this->container['minigame3dIncomeRoi'] = isset($data['minigame3dIncomeRoi']) ? $data['minigame3dIncomeRoi'] : null;
         $this->container['minigame7dIncomeCount'] = isset($data['minigame7dIncomeCount']) ? $data['minigame7dIncomeCount'] : null;
-        $this->container['minigame7dIncomeUv'] = isset($data['minigame7dIncomeUv']) ? $data['minigame7dIncomeUv'] : null;
         $this->container['miniGameAdMonetizationAmountD7'] = isset($data['miniGameAdMonetizationAmountD7']) ? $data['miniGameAdMonetizationAmountD7'] : null;
         $this->container['minigame7dIncomeRoi'] = isset($data['minigame7dIncomeRoi']) ? $data['minigame7dIncomeRoi'] : null;
         $this->container['miniGameAdMonetizationAmountD14'] = isset($data['miniGameAdMonetizationAmountD14']) ? $data['miniGameAdMonetizationAmountD14'] : null;
@@ -4588,6 +4608,28 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['openAccountPv'] = isset($data['openAccountPv']) ? $data['openAccountPv'] : null;
         $this->container['openAccountPvCost'] = isset($data['openAccountPvCost']) ? $data['openAccountPvCost'] : null;
         $this->container['videoOuterPlay5sRate'] = isset($data['videoOuterPlay5sRate']) ? $data['videoOuterPlay5sRate'] : null;
+        $this->container['incomeVal24hPlaRoi'] = isset($data['incomeVal24hPlaRoi']) ? $data['incomeVal24hPlaRoi'] : null;
+        $this->container['viewDramaDedupPv'] = isset($data['viewDramaDedupPv']) ? $data['viewDramaDedupPv'] : null;
+        $this->container['viewDramaDedupPvRate'] = isset($data['viewDramaDedupPvRate']) ? $data['viewDramaDedupPvRate'] : null;
+        $this->container['viewDramaDedupPvCost'] = isset($data['viewDramaDedupPvCost']) ? $data['viewDramaDedupPvCost'] : null;
+        $this->container['visitStoreFirstDedupPv'] = isset($data['visitStoreFirstDedupPv']) ? $data['visitStoreFirstDedupPv'] : null;
+        $this->container['orderFirstDedupPv'] = isset($data['orderFirstDedupPv']) ? $data['orderFirstDedupPv'] : null;
+        $this->container['orderFirstDedupPvCost'] = isset($data['orderFirstDedupPvCost']) ? $data['orderFirstDedupPvCost'] : null;
+        $this->container['orderFirstDedupPvRate'] = isset($data['orderFirstDedupPvRate']) ? $data['orderFirstDedupPvRate'] : null;
+        $this->container['storePayAmountOff'] = isset($data['storePayAmountOff']) ? $data['storePayAmountOff'] : null;
+        $this->container['storePayUvOff'] = isset($data['storePayUvOff']) ? $data['storePayUvOff'] : null;
+        $this->container['storePayPvOff'] = isset($data['storePayPvOff']) ? $data['storePayPvOff'] : null;
+        $this->container['orderRefundActive24hPv'] = isset($data['orderRefundActive24hPv']) ? $data['orderRefundActive24hPv'] : null;
+        $this->container['orderRefundActive24hRate'] = isset($data['orderRefundActive24hRate']) ? $data['orderRefundActive24hRate'] : null;
+        $this->container['orderSettle24hPv'] = isset($data['orderSettle24hPv']) ? $data['orderSettle24hPv'] : null;
+        $this->container['orderSettle24hRate'] = isset($data['orderSettle24hRate']) ? $data['orderSettle24hRate'] : null;
+        $this->container['orderSettle24hCost'] = isset($data['orderSettle24hCost']) ? $data['orderSettle24hCost'] : null;
+        $this->container['lanJumpButtonRate'] = isset($data['lanJumpButtonRate']) ? $data['lanJumpButtonRate'] : null;
+        $this->container['regDedup1dPv'] = isset($data['regDedup1dPv']) ? $data['regDedup1dPv'] : null;
+        $this->container['bfDedupPv'] = isset($data['bfDedupPv']) ? $data['bfDedupPv'] : null;
+        $this->container['followBizAllDedupPv'] = isset($data['followBizAllDedupPv']) ? $data['followBizAllDedupPv'] : null;
+        $this->container['firOgConvAutoAcquisitionPv'] = isset($data['firOgConvAutoAcquisitionPv']) ? $data['firOgConvAutoAcquisitionPv'] : null;
+        $this->container['secOgConvAutoAcquisitionPv'] = isset($data['secOgConvAutoAcquisitionPv']) ? $data['secOgConvAutoAcquisitionPv'] : null;
         $this->container['ageId'] = isset($data['ageId']) ? $data['ageId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
@@ -4958,54 +5000,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets wechatCostStage1
-     *
-     * @return int|mixed
-     */
-    public function getWechatCostStage1()
-    {
-        return $this->container['wechatCostStage1'];
-    }
-
-    /**
-     * Sets wechatCostStage1
-     *
-     * @param int|mixed $wechatCostStage1 wechatCostStage1
-     *
-     * @return $this
-     */
-    public function setWechatCostStage1($wechatCostStage1)
-    {
-        $this->container['wechatCostStage1'] = $wechatCostStage1;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatCostStage2
-     *
-     * @return int|mixed
-     */
-    public function getWechatCostStage2()
-    {
-        return $this->container['wechatCostStage2'];
-    }
-
-    /**
-     * Sets wechatCostStage2
-     *
-     * @param int|mixed $wechatCostStage2 wechatCostStage2
-     *
-     * @return $this
-     */
-    public function setWechatCostStage2($wechatCostStage2)
-    {
-        $this->container['wechatCostStage2'] = $wechatCostStage2;
-
-        return $this;
-    }
-
-    /**
      * Gets acquisitionCost
      *
      * @return int|mixed
@@ -5265,102 +5259,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setDeepConversionsCost($deepConversionsCost)
     {
         $this->container['deepConversionsCost'] = $deepConversionsCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatShallowConversionsCountStage1
-     *
-     * @return int|mixed
-     */
-    public function getWechatShallowConversionsCountStage1()
-    {
-        return $this->container['wechatShallowConversionsCountStage1'];
-    }
-
-    /**
-     * Sets wechatShallowConversionsCountStage1
-     *
-     * @param int|mixed $wechatShallowConversionsCountStage1 wechatShallowConversionsCountStage1
-     *
-     * @return $this
-     */
-    public function setWechatShallowConversionsCountStage1($wechatShallowConversionsCountStage1)
-    {
-        $this->container['wechatShallowConversionsCountStage1'] = $wechatShallowConversionsCountStage1;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatShallowConversionsCountStage2
-     *
-     * @return int|mixed
-     */
-    public function getWechatShallowConversionsCountStage2()
-    {
-        return $this->container['wechatShallowConversionsCountStage2'];
-    }
-
-    /**
-     * Sets wechatShallowConversionsCountStage2
-     *
-     * @param int|mixed $wechatShallowConversionsCountStage2 wechatShallowConversionsCountStage2
-     *
-     * @return $this
-     */
-    public function setWechatShallowConversionsCountStage2($wechatShallowConversionsCountStage2)
-    {
-        $this->container['wechatShallowConversionsCountStage2'] = $wechatShallowConversionsCountStage2;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatDeepConversionsCountStage1
-     *
-     * @return int|mixed
-     */
-    public function getWechatDeepConversionsCountStage1()
-    {
-        return $this->container['wechatDeepConversionsCountStage1'];
-    }
-
-    /**
-     * Sets wechatDeepConversionsCountStage1
-     *
-     * @param int|mixed $wechatDeepConversionsCountStage1 wechatDeepConversionsCountStage1
-     *
-     * @return $this
-     */
-    public function setWechatDeepConversionsCountStage1($wechatDeepConversionsCountStage1)
-    {
-        $this->container['wechatDeepConversionsCountStage1'] = $wechatDeepConversionsCountStage1;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatDeepConversionsCountStage2
-     *
-     * @return int|mixed
-     */
-    public function getWechatDeepConversionsCountStage2()
-    {
-        return $this->container['wechatDeepConversionsCountStage2'];
-    }
-
-    /**
-     * Sets wechatDeepConversionsCountStage2
-     *
-     * @param int|mixed $wechatDeepConversionsCountStage2 wechatDeepConversionsCountStage2
-     *
-     * @return $this
-     */
-    public function setWechatDeepConversionsCountStage2($wechatDeepConversionsCountStage2)
-    {
-        $this->container['wechatDeepConversionsCountStage2'] = $wechatDeepConversionsCountStage2;
 
         return $this;
     }
@@ -15878,102 +15776,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets miniGameBfIncomeUv
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameBfIncomeUv()
-    {
-        return $this->container['miniGameBfIncomeUv'];
-    }
-
-    /**
-     * Sets miniGameBfIncomeUv
-     *
-     * @param int|mixed $miniGameBfIncomeUv miniGameBfIncomeUv
-     *
-     * @return $this
-     */
-    public function setMiniGameBfIncomeUv($miniGameBfIncomeUv)
-    {
-        $this->container['miniGameBfIncomeUv'] = $miniGameBfIncomeUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameBfIncomeCost
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameBfIncomeCost()
-    {
-        return $this->container['miniGameBfIncomeCost'];
-    }
-
-    /**
-     * Sets miniGameBfIncomeCost
-     *
-     * @param int|mixed $miniGameBfIncomeCost miniGameBfIncomeCost
-     *
-     * @return $this
-     */
-    public function setMiniGameBfIncomeCost($miniGameBfIncomeCost)
-    {
-        $this->container['miniGameBfIncomeCost'] = $miniGameBfIncomeCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameBfIncomeArpu
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameBfIncomeArpu()
-    {
-        return $this->container['miniGameBfIncomeArpu'];
-    }
-
-    /**
-     * Sets miniGameBfIncomeArpu
-     *
-     * @param int|mixed $miniGameBfIncomeArpu miniGameBfIncomeArpu
-     *
-     * @return $this
-     */
-    public function setMiniGameBfIncomeArpu($miniGameBfIncomeArpu)
-    {
-        $this->container['miniGameBfIncomeArpu'] = $miniGameBfIncomeArpu;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameBfIncomeRoi
-     *
-     * @return double|mixed
-     */
-    public function getMiniGameBfIncomeRoi()
-    {
-        return $this->container['miniGameBfIncomeRoi'];
-    }
-
-    /**
-     * Sets miniGameBfIncomeRoi
-     *
-     * @param double|mixed $miniGameBfIncomeRoi miniGameBfIncomeRoi
-     *
-     * @return $this
-     */
-    public function setMiniGameBfIncomeRoi($miniGameBfIncomeRoi)
-    {
-        $this->container['miniGameBfIncomeRoi'] = $miniGameBfIncomeRoi;
-
-        return $this;
-    }
-
-    /**
      * Gets miniGameBfIncomeD1Amount
      *
      * @return int|mixed
@@ -15993,30 +15795,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setMiniGameBfIncomeD1Amount($miniGameBfIncomeD1Amount)
     {
         $this->container['miniGameBfIncomeD1Amount'] = $miniGameBfIncomeD1Amount;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameBfIncomeD1Uv
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameBfIncomeD1Uv()
-    {
-        return $this->container['miniGameBfIncomeD1Uv'];
-    }
-
-    /**
-     * Sets miniGameBfIncomeD1Uv
-     *
-     * @param int|mixed $miniGameBfIncomeD1Uv miniGameBfIncomeD1Uv
-     *
-     * @return $this
-     */
-    public function setMiniGameBfIncomeD1Uv($miniGameBfIncomeD1Uv)
-    {
-        $this->container['miniGameBfIncomeD1Uv'] = $miniGameBfIncomeD1Uv;
 
         return $this;
     }
@@ -17870,30 +17648,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets miniGameAdMonetizationUsers
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameAdMonetizationUsers()
-    {
-        return $this->container['miniGameAdMonetizationUsers'];
-    }
-
-    /**
-     * Sets miniGameAdMonetizationUsers
-     *
-     * @param int|mixed $miniGameAdMonetizationUsers miniGameAdMonetizationUsers
-     *
-     * @return $this
-     */
-    public function setMiniGameAdMonetizationUsers($miniGameAdMonetizationUsers)
-    {
-        $this->container['miniGameAdMonetizationUsers'] = $miniGameAdMonetizationUsers;
-
-        return $this;
-    }
-
-    /**
      * Gets miniGameAdMonetizationAmount
      *
      * @return int|mixed
@@ -17985,30 +17739,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setMiniGameAdMonetizationArpu($miniGameAdMonetizationArpu)
     {
         $this->container['miniGameAdMonetizationArpu'] = $miniGameAdMonetizationArpu;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameFirstDayAdMonetizationUsers
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameFirstDayAdMonetizationUsers()
-    {
-        return $this->container['miniGameFirstDayAdMonetizationUsers'];
-    }
-
-    /**
-     * Sets miniGameFirstDayAdMonetizationUsers
-     *
-     * @param int|mixed $miniGameFirstDayAdMonetizationUsers miniGameFirstDayAdMonetizationUsers
-     *
-     * @return $this
-     */
-    public function setMiniGameFirstDayAdMonetizationUsers($miniGameFirstDayAdMonetizationUsers)
-    {
-        $this->container['miniGameFirstDayAdMonetizationUsers'] = $miniGameFirstDayAdMonetizationUsers;
 
         return $this;
     }
@@ -18134,30 +17864,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets minigame3dIncomeUv
-     *
-     * @return int|mixed
-     */
-    public function getMinigame3dIncomeUv()
-    {
-        return $this->container['minigame3dIncomeUv'];
-    }
-
-    /**
-     * Sets minigame3dIncomeUv
-     *
-     * @param int|mixed $minigame3dIncomeUv minigame3dIncomeUv
-     *
-     * @return $this
-     */
-    public function setMinigame3dIncomeUv($minigame3dIncomeUv)
-    {
-        $this->container['minigame3dIncomeUv'] = $minigame3dIncomeUv;
-
-        return $this;
-    }
-
-    /**
      * Gets miniGameAdMonetizationAmountD3
      *
      * @return int|mixed
@@ -18225,30 +17931,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setMinigame7dIncomeCount($minigame7dIncomeCount)
     {
         $this->container['minigame7dIncomeCount'] = $minigame7dIncomeCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigame7dIncomeUv
-     *
-     * @return int|mixed
-     */
-    public function getMinigame7dIncomeUv()
-    {
-        return $this->container['minigame7dIncomeUv'];
-    }
-
-    /**
-     * Sets minigame7dIncomeUv
-     *
-     * @param int|mixed $minigame7dIncomeUv minigame7dIncomeUv
-     *
-     * @return $this
-     */
-    public function setMinigame7dIncomeUv($minigame7dIncomeUv)
-    {
-        $this->container['minigame7dIncomeUv'] = $minigame7dIncomeUv;
 
         return $this;
     }
@@ -22137,6 +21819,534 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setVideoOuterPlay5sRate($videoOuterPlay5sRate)
     {
         $this->container['videoOuterPlay5sRate'] = $videoOuterPlay5sRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeVal24hPlaRoi
+     *
+     * @return double|mixed
+     */
+    public function getIncomeVal24hPlaRoi()
+    {
+        return $this->container['incomeVal24hPlaRoi'];
+    }
+
+    /**
+     * Sets incomeVal24hPlaRoi
+     *
+     * @param double|mixed $incomeVal24hPlaRoi incomeVal24hPlaRoi
+     *
+     * @return $this
+     */
+    public function setIncomeVal24hPlaRoi($incomeVal24hPlaRoi)
+    {
+        $this->container['incomeVal24hPlaRoi'] = $incomeVal24hPlaRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets viewDramaDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getViewDramaDedupPv()
+    {
+        return $this->container['viewDramaDedupPv'];
+    }
+
+    /**
+     * Sets viewDramaDedupPv
+     *
+     * @param int|mixed $viewDramaDedupPv viewDramaDedupPv
+     *
+     * @return $this
+     */
+    public function setViewDramaDedupPv($viewDramaDedupPv)
+    {
+        $this->container['viewDramaDedupPv'] = $viewDramaDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets viewDramaDedupPvRate
+     *
+     * @return double|mixed
+     */
+    public function getViewDramaDedupPvRate()
+    {
+        return $this->container['viewDramaDedupPvRate'];
+    }
+
+    /**
+     * Sets viewDramaDedupPvRate
+     *
+     * @param double|mixed $viewDramaDedupPvRate viewDramaDedupPvRate
+     *
+     * @return $this
+     */
+    public function setViewDramaDedupPvRate($viewDramaDedupPvRate)
+    {
+        $this->container['viewDramaDedupPvRate'] = $viewDramaDedupPvRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets viewDramaDedupPvCost
+     *
+     * @return int|mixed
+     */
+    public function getViewDramaDedupPvCost()
+    {
+        return $this->container['viewDramaDedupPvCost'];
+    }
+
+    /**
+     * Sets viewDramaDedupPvCost
+     *
+     * @param int|mixed $viewDramaDedupPvCost viewDramaDedupPvCost
+     *
+     * @return $this
+     */
+    public function setViewDramaDedupPvCost($viewDramaDedupPvCost)
+    {
+        $this->container['viewDramaDedupPvCost'] = $viewDramaDedupPvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets visitStoreFirstDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getVisitStoreFirstDedupPv()
+    {
+        return $this->container['visitStoreFirstDedupPv'];
+    }
+
+    /**
+     * Sets visitStoreFirstDedupPv
+     *
+     * @param int|mixed $visitStoreFirstDedupPv visitStoreFirstDedupPv
+     *
+     * @return $this
+     */
+    public function setVisitStoreFirstDedupPv($visitStoreFirstDedupPv)
+    {
+        $this->container['visitStoreFirstDedupPv'] = $visitStoreFirstDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderFirstDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getOrderFirstDedupPv()
+    {
+        return $this->container['orderFirstDedupPv'];
+    }
+
+    /**
+     * Sets orderFirstDedupPv
+     *
+     * @param int|mixed $orderFirstDedupPv orderFirstDedupPv
+     *
+     * @return $this
+     */
+    public function setOrderFirstDedupPv($orderFirstDedupPv)
+    {
+        $this->container['orderFirstDedupPv'] = $orderFirstDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderFirstDedupPvCost
+     *
+     * @return int|mixed
+     */
+    public function getOrderFirstDedupPvCost()
+    {
+        return $this->container['orderFirstDedupPvCost'];
+    }
+
+    /**
+     * Sets orderFirstDedupPvCost
+     *
+     * @param int|mixed $orderFirstDedupPvCost orderFirstDedupPvCost
+     *
+     * @return $this
+     */
+    public function setOrderFirstDedupPvCost($orderFirstDedupPvCost)
+    {
+        $this->container['orderFirstDedupPvCost'] = $orderFirstDedupPvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderFirstDedupPvRate
+     *
+     * @return double|mixed
+     */
+    public function getOrderFirstDedupPvRate()
+    {
+        return $this->container['orderFirstDedupPvRate'];
+    }
+
+    /**
+     * Sets orderFirstDedupPvRate
+     *
+     * @param double|mixed $orderFirstDedupPvRate orderFirstDedupPvRate
+     *
+     * @return $this
+     */
+    public function setOrderFirstDedupPvRate($orderFirstDedupPvRate)
+    {
+        $this->container['orderFirstDedupPvRate'] = $orderFirstDedupPvRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets storePayAmountOff
+     *
+     * @return int|mixed
+     */
+    public function getStorePayAmountOff()
+    {
+        return $this->container['storePayAmountOff'];
+    }
+
+    /**
+     * Sets storePayAmountOff
+     *
+     * @param int|mixed $storePayAmountOff storePayAmountOff
+     *
+     * @return $this
+     */
+    public function setStorePayAmountOff($storePayAmountOff)
+    {
+        $this->container['storePayAmountOff'] = $storePayAmountOff;
+
+        return $this;
+    }
+
+    /**
+     * Gets storePayUvOff
+     *
+     * @return int|mixed
+     */
+    public function getStorePayUvOff()
+    {
+        return $this->container['storePayUvOff'];
+    }
+
+    /**
+     * Sets storePayUvOff
+     *
+     * @param int|mixed $storePayUvOff storePayUvOff
+     *
+     * @return $this
+     */
+    public function setStorePayUvOff($storePayUvOff)
+    {
+        $this->container['storePayUvOff'] = $storePayUvOff;
+
+        return $this;
+    }
+
+    /**
+     * Gets storePayPvOff
+     *
+     * @return int|mixed
+     */
+    public function getStorePayPvOff()
+    {
+        return $this->container['storePayPvOff'];
+    }
+
+    /**
+     * Sets storePayPvOff
+     *
+     * @param int|mixed $storePayPvOff storePayPvOff
+     *
+     * @return $this
+     */
+    public function setStorePayPvOff($storePayPvOff)
+    {
+        $this->container['storePayPvOff'] = $storePayPvOff;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderRefundActive24hPv
+     *
+     * @return int|mixed
+     */
+    public function getOrderRefundActive24hPv()
+    {
+        return $this->container['orderRefundActive24hPv'];
+    }
+
+    /**
+     * Sets orderRefundActive24hPv
+     *
+     * @param int|mixed $orderRefundActive24hPv orderRefundActive24hPv
+     *
+     * @return $this
+     */
+    public function setOrderRefundActive24hPv($orderRefundActive24hPv)
+    {
+        $this->container['orderRefundActive24hPv'] = $orderRefundActive24hPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderRefundActive24hRate
+     *
+     * @return double|mixed
+     */
+    public function getOrderRefundActive24hRate()
+    {
+        return $this->container['orderRefundActive24hRate'];
+    }
+
+    /**
+     * Sets orderRefundActive24hRate
+     *
+     * @param double|mixed $orderRefundActive24hRate orderRefundActive24hRate
+     *
+     * @return $this
+     */
+    public function setOrderRefundActive24hRate($orderRefundActive24hRate)
+    {
+        $this->container['orderRefundActive24hRate'] = $orderRefundActive24hRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderSettle24hPv
+     *
+     * @return int|mixed
+     */
+    public function getOrderSettle24hPv()
+    {
+        return $this->container['orderSettle24hPv'];
+    }
+
+    /**
+     * Sets orderSettle24hPv
+     *
+     * @param int|mixed $orderSettle24hPv orderSettle24hPv
+     *
+     * @return $this
+     */
+    public function setOrderSettle24hPv($orderSettle24hPv)
+    {
+        $this->container['orderSettle24hPv'] = $orderSettle24hPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderSettle24hRate
+     *
+     * @return double|mixed
+     */
+    public function getOrderSettle24hRate()
+    {
+        return $this->container['orderSettle24hRate'];
+    }
+
+    /**
+     * Sets orderSettle24hRate
+     *
+     * @param double|mixed $orderSettle24hRate orderSettle24hRate
+     *
+     * @return $this
+     */
+    public function setOrderSettle24hRate($orderSettle24hRate)
+    {
+        $this->container['orderSettle24hRate'] = $orderSettle24hRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderSettle24hCost
+     *
+     * @return int|mixed
+     */
+    public function getOrderSettle24hCost()
+    {
+        return $this->container['orderSettle24hCost'];
+    }
+
+    /**
+     * Sets orderSettle24hCost
+     *
+     * @param int|mixed $orderSettle24hCost orderSettle24hCost
+     *
+     * @return $this
+     */
+    public function setOrderSettle24hCost($orderSettle24hCost)
+    {
+        $this->container['orderSettle24hCost'] = $orderSettle24hCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets lanJumpButtonRate
+     *
+     * @return double|mixed
+     */
+    public function getLanJumpButtonRate()
+    {
+        return $this->container['lanJumpButtonRate'];
+    }
+
+    /**
+     * Sets lanJumpButtonRate
+     *
+     * @param double|mixed $lanJumpButtonRate lanJumpButtonRate
+     *
+     * @return $this
+     */
+    public function setLanJumpButtonRate($lanJumpButtonRate)
+    {
+        $this->container['lanJumpButtonRate'] = $lanJumpButtonRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets regDedup1dPv
+     *
+     * @return int|mixed
+     */
+    public function getRegDedup1dPv()
+    {
+        return $this->container['regDedup1dPv'];
+    }
+
+    /**
+     * Sets regDedup1dPv
+     *
+     * @param int|mixed $regDedup1dPv regDedup1dPv
+     *
+     * @return $this
+     */
+    public function setRegDedup1dPv($regDedup1dPv)
+    {
+        $this->container['regDedup1dPv'] = $regDedup1dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets bfDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getBfDedupPv()
+    {
+        return $this->container['bfDedupPv'];
+    }
+
+    /**
+     * Sets bfDedupPv
+     *
+     * @param int|mixed $bfDedupPv bfDedupPv
+     *
+     * @return $this
+     */
+    public function setBfDedupPv($bfDedupPv)
+    {
+        $this->container['bfDedupPv'] = $bfDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets followBizAllDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getFollowBizAllDedupPv()
+    {
+        return $this->container['followBizAllDedupPv'];
+    }
+
+    /**
+     * Sets followBizAllDedupPv
+     *
+     * @param int|mixed $followBizAllDedupPv followBizAllDedupPv
+     *
+     * @return $this
+     */
+    public function setFollowBizAllDedupPv($followBizAllDedupPv)
+    {
+        $this->container['followBizAllDedupPv'] = $followBizAllDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets firOgConvAutoAcquisitionPv
+     *
+     * @return int|mixed
+     */
+    public function getFirOgConvAutoAcquisitionPv()
+    {
+        return $this->container['firOgConvAutoAcquisitionPv'];
+    }
+
+    /**
+     * Sets firOgConvAutoAcquisitionPv
+     *
+     * @param int|mixed $firOgConvAutoAcquisitionPv firOgConvAutoAcquisitionPv
+     *
+     * @return $this
+     */
+    public function setFirOgConvAutoAcquisitionPv($firOgConvAutoAcquisitionPv)
+    {
+        $this->container['firOgConvAutoAcquisitionPv'] = $firOgConvAutoAcquisitionPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets secOgConvAutoAcquisitionPv
+     *
+     * @return int|mixed
+     */
+    public function getSecOgConvAutoAcquisitionPv()
+    {
+        return $this->container['secOgConvAutoAcquisitionPv'];
+    }
+
+    /**
+     * Sets secOgConvAutoAcquisitionPv
+     *
+     * @param int|mixed $secOgConvAutoAcquisitionPv secOgConvAutoAcquisitionPv
+     *
+     * @return $this
+     */
+    public function setSecOgConvAutoAcquisitionPv($secOgConvAutoAcquisitionPv)
+    {
+        $this->container['secOgConvAutoAcquisitionPv'] = $secOgConvAutoAcquisitionPv;
 
         return $this;
     }

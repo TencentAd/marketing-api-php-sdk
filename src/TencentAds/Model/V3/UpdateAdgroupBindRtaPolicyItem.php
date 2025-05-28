@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * UpdateAdgroupBindRtaPolicyItem Class Doc Comment
  *
  * @category Class
- * @description 修改广告组绑定的rta策略
+ * @description 修改广告绑定的rta策略
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

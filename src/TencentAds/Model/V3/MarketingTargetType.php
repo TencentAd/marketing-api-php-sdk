@@ -106,6 +106,7 @@ class MarketingTargetType
     const WECHAT_STORE_PRODUCT = 'MARKETING_TARGET_TYPE_WECHAT_STORE_PRODUCT';
     const APP_HARMONY = 'MARKETING_TARGET_TYPE_APP_HARMONY';
     const WECHAT_STORE_PRODUCT_SET = 'MARKETING_TARGET_TYPE_WECHAT_STORE_PRODUCT_SET';
+    const PRODUCT_AGGREGATION_PAGE = 'MARKETING_TARGET_TYPE_PRODUCT_AGGREGATION_PAGE';
     
     /**
      * Gets allowable values of the enum
@@ -176,6 +177,7 @@ class MarketingTargetType
             self::WECHAT_STORE_PRODUCT,
             self::APP_HARMONY,
             self::WECHAT_STORE_PRODUCT_SET,
+            self::PRODUCT_AGGREGATION_PAGE,
         ];
     }
 }

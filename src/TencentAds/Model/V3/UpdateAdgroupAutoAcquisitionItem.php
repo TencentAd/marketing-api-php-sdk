@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * UpdateAdgroupAutoAcquisitionItem Class Doc Comment
  *
  * @category Class
- * @description 修改广告组一键起量
+ * @description 修改广告一键起量
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

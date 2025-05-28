@@ -65,7 +65,8 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'string',
         'autoDerivedProgramCreativeSwitch' => 'bool',
         'configuredStatus' => '\TencentAds\Model\V3\ConfiguredStatus',
-        'isRetryBatchUpdate' => 'bool'
+        'isRetryBatchUpdate' => 'bool',
+        'siteSetValidateModel' => '\TencentAds\Model\V3\SiteSetValidateModel'
     ];
 
     /**
@@ -82,7 +83,8 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => null,
         'autoDerivedProgramCreativeSwitch' => null,
         'configuredStatus' => null,
-        'isRetryBatchUpdate' => null
+        'isRetryBatchUpdate' => null,
+        'siteSetValidateModel' => null
     ];
 
     /**
@@ -120,7 +122,8 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'click_tracking_url',
         'autoDerivedProgramCreativeSwitch' => 'auto_derived_program_creative_switch',
         'configuredStatus' => 'configured_status',
-        'isRetryBatchUpdate' => 'is_retry_batch_update'
+        'isRetryBatchUpdate' => 'is_retry_batch_update',
+        'siteSetValidateModel' => 'site_set_validate_model'
     ];
 
     /**
@@ -137,7 +140,8 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'setClickTrackingUrl',
         'autoDerivedProgramCreativeSwitch' => 'setAutoDerivedProgramCreativeSwitch',
         'configuredStatus' => 'setConfiguredStatus',
-        'isRetryBatchUpdate' => 'setIsRetryBatchUpdate'
+        'isRetryBatchUpdate' => 'setIsRetryBatchUpdate',
+        'siteSetValidateModel' => 'setSiteSetValidateModel'
     ];
 
     /**
@@ -154,7 +158,8 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         'clickTrackingUrl' => 'getClickTrackingUrl',
         'autoDerivedProgramCreativeSwitch' => 'getAutoDerivedProgramCreativeSwitch',
         'configuredStatus' => 'getConfiguredStatus',
-        'isRetryBatchUpdate' => 'getIsRetryBatchUpdate'
+        'isRetryBatchUpdate' => 'getIsRetryBatchUpdate',
+        'siteSetValidateModel' => 'getSiteSetValidateModel'
     ];
 
     /**
@@ -226,6 +231,7 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['autoDerivedProgramCreativeSwitch'] = isset($data['autoDerivedProgramCreativeSwitch']) ? $data['autoDerivedProgramCreativeSwitch'] : null;
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['isRetryBatchUpdate'] = isset($data['isRetryBatchUpdate']) ? $data['isRetryBatchUpdate'] : null;
+        $this->container['siteSetValidateModel'] = isset($data['siteSetValidateModel']) ? $data['siteSetValidateModel'] : null;
     }
 
     /**
@@ -464,6 +470,30 @@ class DynamicCreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setIsRetryBatchUpdate($isRetryBatchUpdate)
     {
         $this->container['isRetryBatchUpdate'] = $isRetryBatchUpdate;
+
+        return $this;
+    }
+
+    /**
+     * Gets siteSetValidateModel
+     *
+     * @return \TencentAds\Model\V3\SiteSetValidateModel|mixed
+     */
+    public function getSiteSetValidateModel()
+    {
+        return $this->container['siteSetValidateModel'];
+    }
+
+    /**
+     * Sets siteSetValidateModel
+     *
+     * @param \TencentAds\Model\V3\SiteSetValidateModel|mixed $siteSetValidateModel siteSetValidateModel
+     *
+     * @return $this
+     */
+    public function setSiteSetValidateModel($siteSetValidateModel)
+    {
+        $this->container['siteSetValidateModel'] = $siteSetValidateModel;
 
         return $this;
     }

@@ -58,7 +58,8 @@ class QqMiniGamePageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'miniGameTrackingParameter' => 'string'
+        'miniGameTrackingParameter' => 'string',
+        'miniGameId' => 'string'
     ];
 
     /**
@@ -67,7 +68,8 @@ class QqMiniGamePageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'miniGameTrackingParameter' => null
+        'miniGameTrackingParameter' => null,
+        'miniGameId' => null
     ];
 
     /**
@@ -97,7 +99,8 @@ class QqMiniGamePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter'
+        'miniGameTrackingParameter' => 'mini_game_tracking_parameter',
+        'miniGameId' => 'mini_game_id'
     ];
 
     /**
@@ -106,7 +109,8 @@ class QqMiniGamePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter'
+        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter',
+        'miniGameId' => 'setMiniGameId'
     ];
 
     /**
@@ -115,7 +119,8 @@ class QqMiniGamePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter'
+        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter',
+        'miniGameId' => 'getMiniGameId'
     ];
 
     /**
@@ -179,6 +184,7 @@ class QqMiniGamePageSpec implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
+        $this->container['miniGameId'] = isset($data['miniGameId']) ? $data['miniGameId'] : null;
     }
 
     /**
@@ -225,6 +231,30 @@ class QqMiniGamePageSpec implements ModelInterface, ArrayAccess
     public function setMiniGameTrackingParameter($miniGameTrackingParameter)
     {
         $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniGameId
+     *
+     * @return string|mixed
+     */
+    public function getMiniGameId()
+    {
+        return $this->container['miniGameId'];
+    }
+
+    /**
+     * Sets miniGameId
+     *
+     * @param string|mixed $miniGameId miniGameId
+     *
+     * @return $this
+     */
+    public function setMiniGameId($miniGameId)
+    {
+        $this->container['miniGameId'] = $miniGameId;
 
         return $this;
     }

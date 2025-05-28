@@ -42,6 +42,7 @@ use TencentAds\Container\V3\ChannelsLivenoticeinfoApiContainer;
 use TencentAds\Container\V3\ChannelsUserpageobjectsApiContainer;
 use TencentAds\Container\V3\CommentListApiContainer;
 use TencentAds\Container\V3\ComponentDefaultSharingApiContainer;
+use TencentAds\Container\V3\ComponentDetailApiContainer;
 use TencentAds\Container\V3\ComponentElementUrgeReviewApiContainer;
 use TencentAds\Container\V3\ComponentReviewResultsApiContainer;
 use TencentAds\Container\V3\ComponentSharingApiContainer;
@@ -51,6 +52,7 @@ use TencentAds\Container\V3\ConversionLinkAssetAvailableApiContainer;
 use TencentAds\Container\V3\ConversionLinkAssetsApiContainer;
 use TencentAds\Container\V3\ConversionLinksApiContainer;
 use TencentAds\Container\V3\ConversionsApiContainer;
+use TencentAds\Container\V3\CreativeRecommendApiContainer;
 use TencentAds\Container\V3\CreativeTemplateApiContainer;
 use TencentAds\Container\V3\CreativeTemplateListApiContainer;
 use TencentAds\Container\V3\CreativeTemplatePreviewsApiContainer;
@@ -331,6 +333,9 @@ class App
     /** @var ComponentDefaultSharingApiContainer */
     public $componentDefaultSharingApiContainer;
 
+    /** @var ComponentDetailApiContainer */
+    public $componentDetailApiContainer;
+
     /** @var ComponentElementUrgeReviewApiContainer */
     public $componentElementUrgeReviewApiContainer;
 
@@ -357,6 +362,9 @@ class App
 
     /** @var ConversionsApiContainer */
     public $conversionsApiContainer;
+
+    /** @var CreativeRecommendApiContainer */
+    public $creativeRecommendApiContainer;
 
     /** @var CreativeTemplateApiContainer */
     public $creativeTemplateApiContainer;
@@ -1394,6 +1402,20 @@ class App
 
 
     /**
+     * @return ComponentDetailApiContainer
+     */
+    public function componentDetail()
+    {
+        if (empty($this->componentDetailApiContainer)) {
+            $container = new ComponentDetailApiContainer();
+            $container->init($this, $this->getClient());
+            $this->componentDetailApiContainer = $container;
+        }
+        return $this->componentDetailApiContainer;
+    }
+
+
+    /**
      * @return ComponentElementUrgeReviewApiContainer
      */
     public function componentElementUrgeReview()
@@ -1516,6 +1538,20 @@ class App
             $this->conversionsApiContainer = $container;
         }
         return $this->conversionsApiContainer;
+    }
+
+
+    /**
+     * @return CreativeRecommendApiContainer
+     */
+    public function creativeRecommend()
+    {
+        if (empty($this->creativeRecommendApiContainer)) {
+            $container = new CreativeRecommendApiContainer();
+            $container->init($this, $this->getClient());
+            $this->creativeRecommendApiContainer = $container;
+        }
+        return $this->creativeRecommendApiContainer;
     }
 
 

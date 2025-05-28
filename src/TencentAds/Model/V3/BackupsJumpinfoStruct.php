@@ -59,7 +59,8 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'pageType' => '\TencentAds\Model\V3\PageType',
-        'pageSpec' => '\TencentAds\Model\V3\PageSpec'
+        'pageSpec' => '\TencentAds\Model\V3\PageSpec',
+        'jumpinfoAccountId' => 'int'
     ];
 
     /**
@@ -69,7 +70,8 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'pageType' => null,
-        'pageSpec' => null
+        'pageSpec' => null,
+        'jumpinfoAccountId' => 'int64'
     ];
 
     /**
@@ -100,7 +102,8 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'pageType' => 'page_type',
-        'pageSpec' => 'page_spec'
+        'pageSpec' => 'page_spec',
+        'jumpinfoAccountId' => 'jumpinfo_account_id'
     ];
 
     /**
@@ -110,7 +113,8 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'pageType' => 'setPageType',
-        'pageSpec' => 'setPageSpec'
+        'pageSpec' => 'setPageSpec',
+        'jumpinfoAccountId' => 'setJumpinfoAccountId'
     ];
 
     /**
@@ -120,7 +124,8 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'pageType' => 'getPageType',
-        'pageSpec' => 'getPageSpec'
+        'pageSpec' => 'getPageSpec',
+        'jumpinfoAccountId' => 'getJumpinfoAccountId'
     ];
 
     /**
@@ -185,6 +190,7 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
     {
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
+        $this->container['jumpinfoAccountId'] = isset($data['jumpinfoAccountId']) ? $data['jumpinfoAccountId'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
     public function setPageSpec($pageSpec)
     {
         $this->container['pageSpec'] = $pageSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets jumpinfoAccountId
+     *
+     * @return int|mixed
+     */
+    public function getJumpinfoAccountId()
+    {
+        return $this->container['jumpinfoAccountId'];
+    }
+
+    /**
+     * Sets jumpinfoAccountId
+     *
+     * @param int|mixed $jumpinfoAccountId jumpinfoAccountId
+     *
+     * @return $this
+     */
+    public function setJumpinfoAccountId($jumpinfoAccountId)
+    {
+        $this->container['jumpinfoAccountId'] = $jumpinfoAccountId;
 
         return $this;
     }

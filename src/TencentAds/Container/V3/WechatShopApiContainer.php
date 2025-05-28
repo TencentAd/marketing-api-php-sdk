@@ -40,8 +40,9 @@ class WechatShopApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $wechatChannelsShopName = isset($params['wechat_channels_shop_name']) ? $params['wechat_channels_shop_name'] : null;
+            $wechatChannelsShopId = isset($params['wechat_channels_shop_id']) ? $params['wechat_channels_shop_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->wechatShopGet($accountId, $wechatChannelsShopName, $fields);
+            $response = $this->apiInstance->wechatShopGet($accountId, $wechatChannelsShopName, $wechatChannelsShopId, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -58,8 +59,9 @@ class WechatShopApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $wechatChannelsShopName = isset($params['wechat_channels_shop_name']) ? $params['wechat_channels_shop_name'] : null;
+            $wechatChannelsShopId = isset($params['wechat_channels_shop_id']) ? $params['wechat_channels_shop_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->wechatShopGetAsync($accountId, $wechatChannelsShopName, $fields);
+            $response = $this->apiInstance->wechatShopGetAsync($accountId, $wechatChannelsShopName, $wechatChannelsShopId, $fields);
             return $response;
         });
     }

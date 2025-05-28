@@ -58,7 +58,8 @@ class AndroidDirectDownloadPageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        
+        'androidAppId' => 'string',
+        'androidChannelId' => 'string'
     ];
 
     /**
@@ -67,7 +68,8 @@ class AndroidDirectDownloadPageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        
+        'androidAppId' => null,
+        'androidChannelId' => null
     ];
 
     /**
@@ -97,7 +99,8 @@ class AndroidDirectDownloadPageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        
+        'androidAppId' => 'android_app_id',
+        'androidChannelId' => 'android_channel_id'
     ];
 
     /**
@@ -106,7 +109,8 @@ class AndroidDirectDownloadPageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        
+        'androidAppId' => 'setAndroidAppId',
+        'androidChannelId' => 'setAndroidChannelId'
     ];
 
     /**
@@ -115,7 +119,8 @@ class AndroidDirectDownloadPageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        
+        'androidAppId' => 'getAndroidAppId',
+        'androidChannelId' => 'getAndroidChannelId'
     ];
 
     /**
@@ -178,6 +183,8 @@ class AndroidDirectDownloadPageSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['androidAppId'] = isset($data['androidAppId']) ? $data['androidAppId'] : null;
+        $this->container['androidChannelId'] = isset($data['androidChannelId']) ? $data['androidChannelId'] : null;
     }
 
     /**
@@ -203,6 +210,54 @@ class AndroidDirectDownloadPageSpec implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets androidAppId
+     *
+     * @return string|mixed
+     */
+    public function getAndroidAppId()
+    {
+        return $this->container['androidAppId'];
+    }
+
+    /**
+     * Sets androidAppId
+     *
+     * @param string|mixed $androidAppId androidAppId
+     *
+     * @return $this
+     */
+    public function setAndroidAppId($androidAppId)
+    {
+        $this->container['androidAppId'] = $androidAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets androidChannelId
+     *
+     * @return string|mixed
+     */
+    public function getAndroidChannelId()
+    {
+        return $this->container['androidChannelId'];
+    }
+
+    /**
+     * Sets androidChannelId
+     *
+     * @param string|mixed $androidChannelId androidChannelId
+     *
+     * @return $this
+     */
+    public function setAndroidChannelId($androidChannelId)
+    {
+        $this->container['androidChannelId'] = $androidChannelId;
+
+        return $this;
+    }
     /**
      * Returns true if offset exists. False otherwise.
      *

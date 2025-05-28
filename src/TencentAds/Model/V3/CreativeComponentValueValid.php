@@ -79,7 +79,9 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'minOccurs' => 'int',
         'maxOccurs' => 'int',
         'maxTotalContent' => 'int',
-        'enumOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidEnumOption[]'
+        'enumOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidEnumOption[]',
+        'minDurationMillisecond' => 'int',
+        'maxDurationMillisecond' => 'int'
     ];
 
     /**
@@ -109,7 +111,9 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'minOccurs' => 'int64',
         'maxOccurs' => 'int64',
         'maxTotalContent' => 'int64',
-        'enumOptions' => null
+        'enumOptions' => null,
+        'minDurationMillisecond' => 'int64',
+        'maxDurationMillisecond' => 'int64'
     ];
 
     /**
@@ -160,7 +164,9 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'minOccurs' => 'min_occurs',
         'maxOccurs' => 'max_occurs',
         'maxTotalContent' => 'max_total_content',
-        'enumOptions' => 'enum_options'
+        'enumOptions' => 'enum_options',
+        'minDurationMillisecond' => 'min_duration_millisecond',
+        'maxDurationMillisecond' => 'max_duration_millisecond'
     ];
 
     /**
@@ -190,7 +196,9 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'minOccurs' => 'setMinOccurs',
         'maxOccurs' => 'setMaxOccurs',
         'maxTotalContent' => 'setMaxTotalContent',
-        'enumOptions' => 'setEnumOptions'
+        'enumOptions' => 'setEnumOptions',
+        'minDurationMillisecond' => 'setMinDurationMillisecond',
+        'maxDurationMillisecond' => 'setMaxDurationMillisecond'
     ];
 
     /**
@@ -220,7 +228,9 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'minOccurs' => 'getMinOccurs',
         'maxOccurs' => 'getMaxOccurs',
         'maxTotalContent' => 'getMaxTotalContent',
-        'enumOptions' => 'getEnumOptions'
+        'enumOptions' => 'getEnumOptions',
+        'minDurationMillisecond' => 'getMinDurationMillisecond',
+        'maxDurationMillisecond' => 'getMaxDurationMillisecond'
     ];
 
     /**
@@ -305,6 +315,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         $this->container['maxOccurs'] = isset($data['maxOccurs']) ? $data['maxOccurs'] : null;
         $this->container['maxTotalContent'] = isset($data['maxTotalContent']) ? $data['maxTotalContent'] : null;
         $this->container['enumOptions'] = isset($data['enumOptions']) ? $data['enumOptions'] : null;
+        $this->container['minDurationMillisecond'] = isset($data['minDurationMillisecond']) ? $data['minDurationMillisecond'] : null;
+        $this->container['maxDurationMillisecond'] = isset($data['maxDurationMillisecond']) ? $data['maxDurationMillisecond'] : null;
     }
 
     /**
@@ -855,6 +867,54 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
     public function setEnumOptions($enumOptions)
     {
         $this->container['enumOptions'] = $enumOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets minDurationMillisecond
+     *
+     * @return int|mixed
+     */
+    public function getMinDurationMillisecond()
+    {
+        return $this->container['minDurationMillisecond'];
+    }
+
+    /**
+     * Sets minDurationMillisecond
+     *
+     * @param int|mixed $minDurationMillisecond minDurationMillisecond
+     *
+     * @return $this
+     */
+    public function setMinDurationMillisecond($minDurationMillisecond)
+    {
+        $this->container['minDurationMillisecond'] = $minDurationMillisecond;
+
+        return $this;
+    }
+
+    /**
+     * Gets maxDurationMillisecond
+     *
+     * @return int|mixed
+     */
+    public function getMaxDurationMillisecond()
+    {
+        return $this->container['maxDurationMillisecond'];
+    }
+
+    /**
+     * Sets maxDurationMillisecond
+     *
+     * @param int|mixed $maxDurationMillisecond maxDurationMillisecond
+     *
+     * @return $this
+     */
+    public function setMaxDurationMillisecond($maxDurationMillisecond)
+    {
+        $this->container['maxDurationMillisecond'] = $maxDurationMillisecond;
 
         return $this;
     }

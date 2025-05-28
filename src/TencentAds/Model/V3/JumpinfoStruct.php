@@ -60,7 +60,8 @@ class JumpinfoStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'pageType' => '\TencentAds\Model\V3\PageType',
         'pageSpec' => '\TencentAds\Model\V3\PageSpec',
-        'backups' => '\TencentAds\Model\V3\BackupsJumpinfoStruct[]'
+        'backups' => '\TencentAds\Model\V3\BackupsJumpinfoStruct[]',
+        'jumpinfoAccountId' => 'int'
     ];
 
     /**
@@ -71,7 +72,8 @@ class JumpinfoStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'pageType' => null,
         'pageSpec' => null,
-        'backups' => null
+        'backups' => null,
+        'jumpinfoAccountId' => 'int64'
     ];
 
     /**
@@ -103,7 +105,8 @@ class JumpinfoStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'pageType' => 'page_type',
         'pageSpec' => 'page_spec',
-        'backups' => 'backups'
+        'backups' => 'backups',
+        'jumpinfoAccountId' => 'jumpinfo_account_id'
     ];
 
     /**
@@ -114,7 +117,8 @@ class JumpinfoStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'pageType' => 'setPageType',
         'pageSpec' => 'setPageSpec',
-        'backups' => 'setBackups'
+        'backups' => 'setBackups',
+        'jumpinfoAccountId' => 'setJumpinfoAccountId'
     ];
 
     /**
@@ -125,7 +129,8 @@ class JumpinfoStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'pageType' => 'getPageType',
         'pageSpec' => 'getPageSpec',
-        'backups' => 'getBackups'
+        'backups' => 'getBackups',
+        'jumpinfoAccountId' => 'getJumpinfoAccountId'
     ];
 
     /**
@@ -191,6 +196,7 @@ class JumpinfoStruct implements ModelInterface, ArrayAccess
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
         $this->container['backups'] = isset($data['backups']) ? $data['backups'] : null;
+        $this->container['jumpinfoAccountId'] = isset($data['jumpinfoAccountId']) ? $data['jumpinfoAccountId'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class JumpinfoStruct implements ModelInterface, ArrayAccess
     public function setBackups($backups)
     {
         $this->container['backups'] = $backups;
+
+        return $this;
+    }
+
+    /**
+     * Gets jumpinfoAccountId
+     *
+     * @return int|mixed
+     */
+    public function getJumpinfoAccountId()
+    {
+        return $this->container['jumpinfoAccountId'];
+    }
+
+    /**
+     * Sets jumpinfoAccountId
+     *
+     * @param int|mixed $jumpinfoAccountId jumpinfoAccountId
+     *
+     * @return $this
+     */
+    public function setJumpinfoAccountId($jumpinfoAccountId)
+    {
+        $this->container['jumpinfoAccountId'] = $jumpinfoAccountId;
 
         return $this;
     }

@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * UpdateAdgroupDailyBudgetItem Class Doc Comment
  *
  * @category Class
- * @description 修改广告组日预算
+ * @description 修改广告日预算
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

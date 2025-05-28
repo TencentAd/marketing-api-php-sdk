@@ -62,7 +62,8 @@ class LiveImageComponentSpecStruct implements ModelInterface, ArrayAccess
         'bgImgId' => 'string',
         'cheerIcon' => '\TencentAds\Model\LiveCheerIconStruct[]',
         'isUseCheerIcon' => 'int',
-        'isUseBgImg' => 'int'
+        'isUseBgImg' => 'int',
+        'liveBeginTime' => 'int'
     ];
 
     /**
@@ -75,7 +76,8 @@ class LiveImageComponentSpecStruct implements ModelInterface, ArrayAccess
         'bgImgId' => null,
         'cheerIcon' => null,
         'isUseCheerIcon' => 'int64',
-        'isUseBgImg' => 'int64'
+        'isUseBgImg' => 'int64',
+        'liveBeginTime' => 'int64'
     ];
 
     /**
@@ -109,7 +111,8 @@ class LiveImageComponentSpecStruct implements ModelInterface, ArrayAccess
         'bgImgId' => 'bg_img_id',
         'cheerIcon' => 'cheer_icon',
         'isUseCheerIcon' => 'is_use_cheer_icon',
-        'isUseBgImg' => 'is_use_bg_img'
+        'isUseBgImg' => 'is_use_bg_img',
+        'liveBeginTime' => 'live_begin_time'
     ];
 
     /**
@@ -122,7 +125,8 @@ class LiveImageComponentSpecStruct implements ModelInterface, ArrayAccess
         'bgImgId' => 'setBgImgId',
         'cheerIcon' => 'setCheerIcon',
         'isUseCheerIcon' => 'setIsUseCheerIcon',
-        'isUseBgImg' => 'setIsUseBgImg'
+        'isUseBgImg' => 'setIsUseBgImg',
+        'liveBeginTime' => 'setLiveBeginTime'
     ];
 
     /**
@@ -135,7 +139,8 @@ class LiveImageComponentSpecStruct implements ModelInterface, ArrayAccess
         'bgImgId' => 'getBgImgId',
         'cheerIcon' => 'getCheerIcon',
         'isUseCheerIcon' => 'getIsUseCheerIcon',
-        'isUseBgImg' => 'getIsUseBgImg'
+        'isUseBgImg' => 'getIsUseBgImg',
+        'liveBeginTime' => 'getLiveBeginTime'
     ];
 
     /**
@@ -203,6 +208,7 @@ class LiveImageComponentSpecStruct implements ModelInterface, ArrayAccess
         $this->container['cheerIcon'] = isset($data['cheerIcon']) ? $data['cheerIcon'] : null;
         $this->container['isUseCheerIcon'] = isset($data['isUseCheerIcon']) ? $data['isUseCheerIcon'] : null;
         $this->container['isUseBgImg'] = isset($data['isUseBgImg']) ? $data['isUseBgImg'] : null;
+        $this->container['liveBeginTime'] = isset($data['liveBeginTime']) ? $data['liveBeginTime'] : null;
     }
 
     /**
@@ -345,6 +351,30 @@ class LiveImageComponentSpecStruct implements ModelInterface, ArrayAccess
     public function setIsUseBgImg($isUseBgImg)
     {
         $this->container['isUseBgImg'] = $isUseBgImg;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveBeginTime
+     *
+     * @return int|mixed
+     */
+    public function getLiveBeginTime()
+    {
+        return $this->container['liveBeginTime'];
+    }
+
+    /**
+     * Sets liveBeginTime
+     *
+     * @param int|mixed $liveBeginTime liveBeginTime
+     *
+     * @return $this
+     */
+    public function setLiveBeginTime($liveBeginTime)
+    {
+        $this->container['liveBeginTime'] = $liveBeginTime;
 
         return $this;
     }

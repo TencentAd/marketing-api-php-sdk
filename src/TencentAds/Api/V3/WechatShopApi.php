@@ -93,16 +93,17 @@ class WechatShopApi
      * 查询微信小店信息
      *
      * @param  int|mixed $accountId accountId (required)
-     * @param  string|mixed $wechatChannelsShopName wechatChannelsShopName (required)
+     * @param  string|mixed $wechatChannelsShopName wechatChannelsShopName (optional)
+     * @param  string|mixed $wechatChannelsShopId wechatChannelsShopId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\WechatShopGetResponse|mixed
      */
-    public function wechatShopGet($accountId, $wechatChannelsShopName, $fields = null)
+    public function wechatShopGet($accountId, $wechatChannelsShopName = null, $wechatChannelsShopId = null, $fields = null)
     {
-        list($response) = $this->wechatShopGetWithHttpInfo($accountId, $wechatChannelsShopName, $fields);
+        list($response) = $this->wechatShopGetWithHttpInfo($accountId, $wechatChannelsShopName, $wechatChannelsShopId, $fields);
         return $response;
     }
 
@@ -112,17 +113,18 @@ class WechatShopApi
      * 查询微信小店信息
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $wechatChannelsShopName (required)
+     * @param  string|mixed $wechatChannelsShopName (optional)
+     * @param  string|mixed $wechatChannelsShopId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\WechatShopGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function wechatShopGetWithHttpInfo($accountId, $wechatChannelsShopName, $fields = null)
+    public function wechatShopGetWithHttpInfo($accountId, $wechatChannelsShopName = null, $wechatChannelsShopId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WechatShopGetResponse';
-        $request = $this->wechatShopGetRequest($accountId, $wechatChannelsShopName, $fields);
+        $request = $this->wechatShopGetRequest($accountId, $wechatChannelsShopName, $wechatChannelsShopId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -189,15 +191,16 @@ class WechatShopApi
      * 查询微信小店信息
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $wechatChannelsShopName (required)
+     * @param  string|mixed $wechatChannelsShopName (optional)
+     * @param  string|mixed $wechatChannelsShopId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatShopGetAsync($accountId, $wechatChannelsShopName, $fields = null)
+    public function wechatShopGetAsync($accountId, $wechatChannelsShopName = null, $wechatChannelsShopId = null, $fields = null)
     {
-        return $this->wechatShopGetAsyncWithHttpInfo($accountId, $wechatChannelsShopName, $fields)
+        return $this->wechatShopGetAsyncWithHttpInfo($accountId, $wechatChannelsShopName, $wechatChannelsShopId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -211,16 +214,17 @@ class WechatShopApi
      * 查询微信小店信息
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $wechatChannelsShopName (required)
+     * @param  string|mixed $wechatChannelsShopName (optional)
+     * @param  string|mixed $wechatChannelsShopId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatShopGetAsyncWithHttpInfo($accountId, $wechatChannelsShopName, $fields = null)
+    public function wechatShopGetAsyncWithHttpInfo($accountId, $wechatChannelsShopName = null, $wechatChannelsShopId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WechatShopGetResponse';
-        $request = $this->wechatShopGetRequest($accountId, $wechatChannelsShopName, $fields);
+        $request = $this->wechatShopGetRequest($accountId, $wechatChannelsShopName, $wechatChannelsShopId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -263,24 +267,19 @@ class WechatShopApi
      * Create request for operation 'wechatShopGet'
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $wechatChannelsShopName (required)
+     * @param  string|mixed $wechatChannelsShopName (optional)
+     * @param  string|mixed $wechatChannelsShopId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function wechatShopGetRequest($accountId, $wechatChannelsShopName, $fields = null)
+    protected function wechatShopGetRequest($accountId, $wechatChannelsShopName = null, $wechatChannelsShopId = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $accountId when calling wechatShopGet'
-            );
-        }
-        // verify the required parameter 'wechatChannelsShopName' is set
-        if ($wechatChannelsShopName === null || (is_array($wechatChannelsShopName) && count($wechatChannelsShopName) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $wechatChannelsShopName when calling wechatShopGet'
             );
         }
 
@@ -298,6 +297,10 @@ class WechatShopApi
         // query params
         if ($wechatChannelsShopName !== null) {
             $queryParams['wechat_channels_shop_name'] = ObjectSerializer::toQueryValue($wechatChannelsShopName);
+        }
+        // query params
+        if ($wechatChannelsShopId !== null) {
+            $queryParams['wechat_channels_shop_id'] = ObjectSerializer::toQueryValue($wechatChannelsShopId);
         }
         // query params
         if (is_array($fields)) {

@@ -77,7 +77,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
         'impressionFeedbackUrl' => 'string',
         'attributionWindow' => 'int',
         'deepBehaviorAdvancedGoal' => '\TencentAds\Model\V3\OptimizationGoal',
-        'deepOptimizationGoalType' => '\TencentAds\Model\V3\DeepOptimizationGoalType',
+        'deepOptimizationGoalType' => '\TencentAds\Model\V3\OptimizationGoal',
         'forwardLinkAssist' => '\TencentAds\Model\V3\OptimizationGoal',
         'incubationOptimizationGoal' => '\TencentAds\Model\V3\OptimizationGoal',
         'conversionTemplateId' => 'int',
@@ -843,7 +843,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Gets deepOptimizationGoalType
      *
-     * @return \TencentAds\Model\V3\DeepOptimizationGoalType|mixed
+     * @return \TencentAds\Model\V3\OptimizationGoal|mixed
      */
     public function getDeepOptimizationGoalType()
     {
@@ -853,7 +853,7 @@ class ConversionsAddRequest implements ModelInterface, ArrayAccess
     /**
      * Sets deepOptimizationGoalType
      *
-     * @param \TencentAds\Model\V3\DeepOptimizationGoalType|mixed $deepOptimizationGoalType deepOptimizationGoalType
+     * @param \TencentAds\Model\V3\OptimizationGoal|mixed $deepOptimizationGoalType deepOptimizationGoalType
      *
      * @return $this
      */

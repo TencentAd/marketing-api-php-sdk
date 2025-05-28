@@ -48,6 +48,9 @@ class ComponentGenerationType
     const SYSTEM_DERIVE = 'COMPONENT_GENERATION_TYPE_SYSTEM_DERIVE';
     const SYSTEM_GENERATE = 'COMPONENT_GENERATION_TYPE_SYSTEM_GENERATE';
     const BXJG = 'COMPONENT_GENERATION_TYPE_BXJG';
+    const SMART_DELIVERY = 'COMPONENT_GENERATION_TYPE_SMART_DELIVERY';
+    const MUSE_AIGC = 'COMPONENT_GENERATION_TYPE_MUSE_AIGC';
+    const HUXUAN = 'COMPONENT_GENERATION_TYPE_HUXUAN';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +63,9 @@ class ComponentGenerationType
             self::SYSTEM_DERIVE,
             self::SYSTEM_GENERATE,
             self::BXJG,
+            self::SMART_DELIVERY,
+            self::MUSE_AIGC,
+            self::HUXUAN,
         ];
     }
 }

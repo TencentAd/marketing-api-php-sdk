@@ -214,7 +214,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productBarcode' => 'string',
         'businessPrice' => '\TencentAds\Model\V3\BusinessPrice',
         'initialTotalInvestment' => '\TencentAds\Model\V3\InitialTotalInvestment',
-        'businessAudience' => '\TencentAds\Model\V3\BusinessAudience'
+        'businessAudience' => '\TencentAds\Model\V3\BusinessAudience',
+        'serviceTag' => 'string[]'
     ];
 
     /**
@@ -379,7 +380,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productBarcode' => null,
         'businessPrice' => null,
         'initialTotalInvestment' => null,
-        'businessAudience' => null
+        'businessAudience' => null,
+        'serviceTag' => null
     ];
 
     /**
@@ -565,7 +567,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productBarcode' => 'product_barcode',
         'businessPrice' => 'business_price',
         'initialTotalInvestment' => 'initial_total_investment',
-        'businessAudience' => 'business_audience'
+        'businessAudience' => 'business_audience',
+        'serviceTag' => 'service_tag'
     ];
 
     /**
@@ -730,7 +733,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productBarcode' => 'setProductBarcode',
         'businessPrice' => 'setBusinessPrice',
         'initialTotalInvestment' => 'setInitialTotalInvestment',
-        'businessAudience' => 'setBusinessAudience'
+        'businessAudience' => 'setBusinessAudience',
+        'serviceTag' => 'setServiceTag'
     ];
 
     /**
@@ -895,7 +899,8 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'productBarcode' => 'getProductBarcode',
         'businessPrice' => 'getBusinessPrice',
         'initialTotalInvestment' => 'getInitialTotalInvestment',
-        'businessAudience' => 'getBusinessAudience'
+        'businessAudience' => 'getBusinessAudience',
+        'serviceTag' => 'getServiceTag'
     ];
 
     /**
@@ -1115,6 +1120,7 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['businessPrice'] = isset($data['businessPrice']) ? $data['businessPrice'] : null;
         $this->container['initialTotalInvestment'] = isset($data['initialTotalInvestment']) ? $data['initialTotalInvestment'] : null;
         $this->container['businessAudience'] = isset($data['businessAudience']) ? $data['businessAudience'] : null;
+        $this->container['serviceTag'] = isset($data['serviceTag']) ? $data['serviceTag'] : null;
     }
 
     /**
@@ -4905,6 +4911,30 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setBusinessAudience($businessAudience)
     {
         $this->container['businessAudience'] = $businessAudience;
+
+        return $this;
+    }
+
+    /**
+     * Gets serviceTag
+     *
+     * @return string[]|mixed
+     */
+    public function getServiceTag()
+    {
+        return $this->container['serviceTag'];
+    }
+
+    /**
+     * Sets serviceTag
+     *
+     * @param string[]|mixed $serviceTag serviceTag
+     *
+     * @return $this
+     */
+    public function setServiceTag($serviceTag)
+    {
+        $this->container['serviceTag'] = $serviceTag;
 
         return $this;
     }

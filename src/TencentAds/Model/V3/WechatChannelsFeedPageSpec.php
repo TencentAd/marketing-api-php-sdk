@@ -59,7 +59,8 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'feedId' => 'string',
-        'actionButton' => '\TencentAds\Model\V3\ActionButtonStructForWechatChannelsFeedPageSpec'
+        'actionButton' => '\TencentAds\Model\V3\ActionButtonStructForWechatChannelsFeedPageSpec',
+        'wechatChannelsAccountId' => 'string'
     ];
 
     /**
@@ -69,7 +70,8 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'feedId' => null,
-        'actionButton' => null
+        'actionButton' => null,
+        'wechatChannelsAccountId' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'feedId' => 'feed_id',
-        'actionButton' => 'action_button'
+        'actionButton' => 'action_button',
+        'wechatChannelsAccountId' => 'wechat_channels_account_id'
     ];
 
     /**
@@ -110,7 +113,8 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'feedId' => 'setFeedId',
-        'actionButton' => 'setActionButton'
+        'actionButton' => 'setActionButton',
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
     ];
 
     /**
@@ -120,7 +124,8 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'feedId' => 'getFeedId',
-        'actionButton' => 'getActionButton'
+        'actionButton' => 'getActionButton',
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
     ];
 
     /**
@@ -185,6 +190,7 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
     {
         $this->container['feedId'] = isset($data['feedId']) ? $data['feedId'] : null;
         $this->container['actionButton'] = isset($data['actionButton']) ? $data['actionButton'] : null;
+        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
     public function setActionButton($actionButton)
     {
         $this->container['actionButton'] = $actionButton;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountId
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountId()
+    {
+        return $this->container['wechatChannelsAccountId'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountId
+     *
+     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountId($wechatChannelsAccountId)
+    {
+        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
 
         return $this;
     }

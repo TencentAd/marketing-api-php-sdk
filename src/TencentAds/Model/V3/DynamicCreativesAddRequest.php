@@ -69,7 +69,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'programCreativeInfo' => '\TencentAds\Model\V3\ProgramCreativeInfo',
         'pageTrackUrl' => 'string',
         'autoDerivedProgramCreativeSwitch' => 'bool',
-        'configuredStatus' => '\TencentAds\Model\V3\ConfiguredStatus'
+        'configuredStatus' => '\TencentAds\Model\V3\ConfiguredStatus',
+        'siteSetValidateModel' => '\TencentAds\Model\V3\SiteSetValidateModel'
     ];
 
     /**
@@ -90,7 +91,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'programCreativeInfo' => null,
         'pageTrackUrl' => null,
         'autoDerivedProgramCreativeSwitch' => null,
-        'configuredStatus' => null
+        'configuredStatus' => null,
+        'siteSetValidateModel' => null
     ];
 
     /**
@@ -132,7 +134,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'programCreativeInfo' => 'program_creative_info',
         'pageTrackUrl' => 'page_track_url',
         'autoDerivedProgramCreativeSwitch' => 'auto_derived_program_creative_switch',
-        'configuredStatus' => 'configured_status'
+        'configuredStatus' => 'configured_status',
+        'siteSetValidateModel' => 'site_set_validate_model'
     ];
 
     /**
@@ -153,7 +156,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'programCreativeInfo' => 'setProgramCreativeInfo',
         'pageTrackUrl' => 'setPageTrackUrl',
         'autoDerivedProgramCreativeSwitch' => 'setAutoDerivedProgramCreativeSwitch',
-        'configuredStatus' => 'setConfiguredStatus'
+        'configuredStatus' => 'setConfiguredStatus',
+        'siteSetValidateModel' => 'setSiteSetValidateModel'
     ];
 
     /**
@@ -174,7 +178,8 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         'programCreativeInfo' => 'getProgramCreativeInfo',
         'pageTrackUrl' => 'getPageTrackUrl',
         'autoDerivedProgramCreativeSwitch' => 'getAutoDerivedProgramCreativeSwitch',
-        'configuredStatus' => 'getConfiguredStatus'
+        'configuredStatus' => 'getConfiguredStatus',
+        'siteSetValidateModel' => 'getSiteSetValidateModel'
     ];
 
     /**
@@ -250,6 +255,7 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['pageTrackUrl'] = isset($data['pageTrackUrl']) ? $data['pageTrackUrl'] : null;
         $this->container['autoDerivedProgramCreativeSwitch'] = isset($data['autoDerivedProgramCreativeSwitch']) ? $data['autoDerivedProgramCreativeSwitch'] : null;
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
+        $this->container['siteSetValidateModel'] = isset($data['siteSetValidateModel']) ? $data['siteSetValidateModel'] : null;
     }
 
     /**
@@ -584,6 +590,30 @@ class DynamicCreativesAddRequest implements ModelInterface, ArrayAccess
     public function setConfiguredStatus($configuredStatus)
     {
         $this->container['configuredStatus'] = $configuredStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets siteSetValidateModel
+     *
+     * @return \TencentAds\Model\V3\SiteSetValidateModel|mixed
+     */
+    public function getSiteSetValidateModel()
+    {
+        return $this->container['siteSetValidateModel'];
+    }
+
+    /**
+     * Sets siteSetValidateModel
+     *
+     * @param \TencentAds\Model\V3\SiteSetValidateModel|mixed $siteSetValidateModel siteSetValidateModel
+     *
+     * @return $this
+     */
+    public function setSiteSetValidateModel($siteSetValidateModel)
+    {
+        $this->container['siteSetValidateModel'] = $siteSetValidateModel;
 
         return $this;
     }

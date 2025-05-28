@@ -60,7 +60,8 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
         'accountId' => 'int',
         'componentId' => 'int',
         'componentType' => '\TencentAds\Model\V3\CreativeComponentType',
-        'status' => '\TencentAds\Model\V3\SysStatus'
+        'status' => '\TencentAds\Model\V3\SysStatus',
+        'liveBeginTime' => 'int'
     ];
 
     /**
@@ -72,7 +73,8 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
         'accountId' => 'int64',
         'componentId' => 'int64',
         'componentType' => null,
-        'status' => null
+        'status' => null,
+        'liveBeginTime' => 'int64'
     ];
 
     /**
@@ -105,7 +107,8 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
         'accountId' => 'account_id',
         'componentId' => 'component_id',
         'componentType' => 'component_type',
-        'status' => 'status'
+        'status' => 'status',
+        'liveBeginTime' => 'live_begin_time'
     ];
 
     /**
@@ -117,7 +120,8 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
         'accountId' => 'setAccountId',
         'componentId' => 'setComponentId',
         'componentType' => 'setComponentType',
-        'status' => 'setStatus'
+        'status' => 'setStatus',
+        'liveBeginTime' => 'setLiveBeginTime'
     ];
 
     /**
@@ -129,7 +133,8 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
         'accountId' => 'getAccountId',
         'componentId' => 'getComponentId',
         'componentType' => 'getComponentType',
-        'status' => 'getStatus'
+        'status' => 'getStatus',
+        'liveBeginTime' => 'getLiveBeginTime'
     ];
 
     /**
@@ -196,6 +201,7 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
         $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
         $this->container['componentType'] = isset($data['componentType']) ? $data['componentType'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
+        $this->container['liveBeginTime'] = isset($data['liveBeginTime']) ? $data['liveBeginTime'] : null;
     }
 
     /**
@@ -314,6 +320,30 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
     public function setStatus($status)
     {
         $this->container['status'] = $status;
+
+        return $this;
+    }
+
+    /**
+     * Gets liveBeginTime
+     *
+     * @return int|mixed
+     */
+    public function getLiveBeginTime()
+    {
+        return $this->container['liveBeginTime'];
+    }
+
+    /**
+     * Sets liveBeginTime
+     *
+     * @param int|mixed $liveBeginTime liveBeginTime
+     *
+     * @return $this
+     */
+    public function setLiveBeginTime($liveBeginTime)
+    {
+        $this->container['liveBeginTime'] = $liveBeginTime;
 
         return $this;
     }

@@ -81,7 +81,9 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'wechatStoreProductStatus' => 'int',
         'wechatStoreProductAdStatus' => 'int',
         'wechatStoreProductAdUnavailableCause' => 'string[]',
-        'storePriceItemList' => '\TencentAds\Model\V3\StorePriceItem[]'
+        'storePriceItemList' => '\TencentAds\Model\V3\StorePriceItem[]',
+        'storeId' => 'string',
+        'wxStoreProductOperateType' => 'int'
     ];
 
     /**
@@ -113,7 +115,9 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'wechatStoreProductStatus' => 'int64',
         'wechatStoreProductAdStatus' => 'int64',
         'wechatStoreProductAdUnavailableCause' => null,
-        'storePriceItemList' => null
+        'storePriceItemList' => null,
+        'storeId' => null,
+        'wxStoreProductOperateType' => 'int64'
     ];
 
     /**
@@ -166,7 +170,9 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'wechatStoreProductStatus' => 'wechat_store_product_status',
         'wechatStoreProductAdStatus' => 'wechat_store_product_ad_status',
         'wechatStoreProductAdUnavailableCause' => 'wechat_store_product_ad_unavailable_cause',
-        'storePriceItemList' => 'store_price_item_list'
+        'storePriceItemList' => 'store_price_item_list',
+        'storeId' => 'store_id',
+        'wxStoreProductOperateType' => 'wx_store_product_operate_type'
     ];
 
     /**
@@ -198,7 +204,9 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'wechatStoreProductStatus' => 'setWechatStoreProductStatus',
         'wechatStoreProductAdStatus' => 'setWechatStoreProductAdStatus',
         'wechatStoreProductAdUnavailableCause' => 'setWechatStoreProductAdUnavailableCause',
-        'storePriceItemList' => 'setStorePriceItemList'
+        'storePriceItemList' => 'setStorePriceItemList',
+        'storeId' => 'setStoreId',
+        'wxStoreProductOperateType' => 'setWxStoreProductOperateType'
     ];
 
     /**
@@ -230,7 +238,9 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'wechatStoreProductStatus' => 'getWechatStoreProductStatus',
         'wechatStoreProductAdStatus' => 'getWechatStoreProductAdStatus',
         'wechatStoreProductAdUnavailableCause' => 'getWechatStoreProductAdUnavailableCause',
-        'storePriceItemList' => 'getStorePriceItemList'
+        'storePriceItemList' => 'getStorePriceItemList',
+        'storeId' => 'getStoreId',
+        'wxStoreProductOperateType' => 'getWxStoreProductOperateType'
     ];
 
     /**
@@ -317,6 +327,8 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         $this->container['wechatStoreProductAdStatus'] = isset($data['wechatStoreProductAdStatus']) ? $data['wechatStoreProductAdStatus'] : null;
         $this->container['wechatStoreProductAdUnavailableCause'] = isset($data['wechatStoreProductAdUnavailableCause']) ? $data['wechatStoreProductAdUnavailableCause'] : null;
         $this->container['storePriceItemList'] = isset($data['storePriceItemList']) ? $data['storePriceItemList'] : null;
+        $this->container['storeId'] = isset($data['storeId']) ? $data['storeId'] : null;
+        $this->container['wxStoreProductOperateType'] = isset($data['wxStoreProductOperateType']) ? $data['wxStoreProductOperateType'] : null;
     }
 
     /**
@@ -915,6 +927,54 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
     public function setStorePriceItemList($storePriceItemList)
     {
         $this->container['storePriceItemList'] = $storePriceItemList;
+
+        return $this;
+    }
+
+    /**
+     * Gets storeId
+     *
+     * @return string|mixed
+     */
+    public function getStoreId()
+    {
+        return $this->container['storeId'];
+    }
+
+    /**
+     * Sets storeId
+     *
+     * @param string|mixed $storeId storeId
+     *
+     * @return $this
+     */
+    public function setStoreId($storeId)
+    {
+        $this->container['storeId'] = $storeId;
+
+        return $this;
+    }
+
+    /**
+     * Gets wxStoreProductOperateType
+     *
+     * @return int|mixed
+     */
+    public function getWxStoreProductOperateType()
+    {
+        return $this->container['wxStoreProductOperateType'];
+    }
+
+    /**
+     * Sets wxStoreProductOperateType
+     *
+     * @param int|mixed $wxStoreProductOperateType wxStoreProductOperateType
+     *
+     * @return $this
+     */
+    public function setWxStoreProductOperateType($wxStoreProductOperateType)
+    {
+        $this->container['wxStoreProductOperateType'] = $wxStoreProductOperateType;
 
         return $this;
     }

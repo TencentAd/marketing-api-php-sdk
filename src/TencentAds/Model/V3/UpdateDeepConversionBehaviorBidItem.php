@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * UpdateDeepConversionBehaviorBidItem Class Doc Comment
  *
  * @category Class
- * @description 修改广告组深度优化行为目标出价
+ * @description 修改广告深度优化行为目标出价
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

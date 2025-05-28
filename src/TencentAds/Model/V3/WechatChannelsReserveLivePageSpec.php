@@ -58,7 +58,8 @@ class WechatChannelsReserveLivePageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'reserveId' => 'string'
+        'reserveId' => 'string',
+        'wechatChannelsAccountId' => 'string'
     ];
 
     /**
@@ -67,7 +68,8 @@ class WechatChannelsReserveLivePageSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'reserveId' => null
+        'reserveId' => null,
+        'wechatChannelsAccountId' => null
     ];
 
     /**
@@ -97,7 +99,8 @@ class WechatChannelsReserveLivePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'reserveId' => 'reserve_id'
+        'reserveId' => 'reserve_id',
+        'wechatChannelsAccountId' => 'wechat_channels_account_id'
     ];
 
     /**
@@ -106,7 +109,8 @@ class WechatChannelsReserveLivePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'reserveId' => 'setReserveId'
+        'reserveId' => 'setReserveId',
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
     ];
 
     /**
@@ -115,7 +119,8 @@ class WechatChannelsReserveLivePageSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'reserveId' => 'getReserveId'
+        'reserveId' => 'getReserveId',
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
     ];
 
     /**
@@ -179,6 +184,7 @@ class WechatChannelsReserveLivePageSpec implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['reserveId'] = isset($data['reserveId']) ? $data['reserveId'] : null;
+        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
     }
 
     /**
@@ -225,6 +231,30 @@ class WechatChannelsReserveLivePageSpec implements ModelInterface, ArrayAccess
     public function setReserveId($reserveId)
     {
         $this->container['reserveId'] = $reserveId;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountId
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountId()
+    {
+        return $this->container['wechatChannelsAccountId'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountId
+     *
+     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountId($wechatChannelsAccountId)
+    {
+        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
 
         return $this;
     }

@@ -81,6 +81,9 @@ class ComponentType
     const CONSULT_LINK = 'CONSULT_LINK';
     const SHOP_PRODUCT_CARD = 'SHOP_PRODUCT_CARD';
     const DYNAMIC_SHOWCASE = 'DYNAMIC_SHOWCASE';
+    const UNVEIL_CARD = 'UNVEIL_CARD';
+    const HOT_TOPIC = 'HOT_TOPIC';
+    const VIDEO_CHANNELS_CONTENT = 'VIDEO_CHANNELS_CONTENT';
     const V2_TITLE = 'V2_TITLE';
     const V2_DESCRIPTION = 'V2_DESCRIPTION';
     const V2_LONG_SUBLINK = 'V2_LONG_SUBLINK';
@@ -114,6 +117,7 @@ class ComponentType
     const V2_MDPA_DESCRIPTION = 'V2_MDPA_DESCRIPTION';
     const SEARCH_ALGORITHM_GEN = 'SEARCH_ALGORITHM_GEN';
     const SEARCH_DERIVATIVE_TITLE = 'SEARCH_DERIVATIVE_TITLE';
+    const SMART_DELIVERY_AIGC = 'SMART_DELIVERY_AIGC';
     
     /**
      * Gets allowable values of the enum
@@ -159,6 +163,9 @@ class ComponentType
             self::CONSULT_LINK,
             self::SHOP_PRODUCT_CARD,
             self::DYNAMIC_SHOWCASE,
+            self::UNVEIL_CARD,
+            self::HOT_TOPIC,
+            self::VIDEO_CHANNELS_CONTENT,
             self::V2_TITLE,
             self::V2_DESCRIPTION,
             self::V2_LONG_SUBLINK,
@@ -192,6 +199,7 @@ class ComponentType
             self::V2_MDPA_DESCRIPTION,
             self::SEARCH_ALGORITHM_GEN,
             self::SEARCH_DERIVATIVE_TITLE,
+            self::SMART_DELIVERY_AIGC,
         ];
     }
 }

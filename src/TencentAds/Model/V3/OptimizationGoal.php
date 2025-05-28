@@ -148,6 +148,7 @@ class OptimizationGoal
     const FIRST_TWENTY_FOUR_HOUR_REFUND_RATE = 'OPTIMIZATIONGOAL_FIRST_TWENTY_FOUR_HOUR_REFUND_RATE';
     const VIEW_DRAMA_DURATION_1_MIN = 'OPTIMIZATIONGOAL_VIEW_DRAMA_DURATION_1MIN';
     const FIRST_PROMPT_INPUT = 'OPTIMIZATIONGOAL_FIRST_PROMPT_INPUT';
+    const ECOMMERCE_GIFTING = 'OPTIMIZATIONGOAL_ECOMMERCE_GIFTING';
     
     /**
      * Gets allowable values of the enum
@@ -260,6 +261,7 @@ class OptimizationGoal
             self::FIRST_TWENTY_FOUR_HOUR_REFUND_RATE,
             self::VIEW_DRAMA_DURATION_1_MIN,
             self::FIRST_PROMPT_INPUT,
+            self::ECOMMERCE_GIFTING,
         ];
     }
 }

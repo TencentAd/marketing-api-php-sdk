@@ -1,6 +1,6 @@
 <?php
 /**
- * DeepOptimizationGoalType
+ * CreativeSetApprovalStatus
  *
  * PHP version 5
  *
@@ -31,21 +31,24 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DeepOptimizationGoalType Class Doc Comment
+ * CreativeSetApprovalStatus Class Doc Comment
  *
  * @category Class
- * @description 深度优化目标类型
+ * @description 动态创意审核状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DeepOptimizationGoalType
+class CreativeSetApprovalStatus
 {
     /**
      * Possible values of this enum
      */
-    const SELF_OG = 'SELF_OG';
-    const AUTO_OG = 'AUTO_OG';
+    const UNKNOWN = 'CREATIVE_SET_APPROVAL_STATUS_UNKNOWN';
+    const PENDING = 'CREATIVE_SET_APPROVAL_STATUS_PENDING';
+    const NORMAL = 'CREATIVE_SET_APPROVAL_STATUS_NORMAL';
+    const DENIED = 'CREATIVE_SET_APPROVAL_STATUS_DENIED';
+    const PARTIAL_NORMAL = 'CREATIVE_SET_APPROVAL_STATUS_PARTIAL_NORMAL';
     
     /**
      * Gets allowable values of the enum
@@ -54,8 +57,11 @@ class DeepOptimizationGoalType
     public static function getAllowableEnumValues()
     {
         return [
-            self::SELF_OG,
-            self::AUTO_OG,
+            self::UNKNOWN,
+            self::PENDING,
+            self::NORMAL,
+            self::DENIED,
+            self::PARTIAL_NORMAL,
         ];
     }
 }

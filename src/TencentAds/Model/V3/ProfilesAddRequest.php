@@ -66,7 +66,9 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
         'profileType' => '\TencentAds\Model\V3\ProfileType',
         'headImageId' => 'string',
         'profileName' => 'string',
-        'description' => 'string'
+        'description' => 'string',
+        'organizationId' => 'int',
+        'mdmId' => 'int'
     ];
 
     /**
@@ -84,7 +86,9 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
         'profileType' => null,
         'headImageId' => null,
         'profileName' => null,
-        'description' => null
+        'description' => null,
+        'organizationId' => 'int64',
+        'mdmId' => 'int64'
     ];
 
     /**
@@ -123,7 +127,9 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
         'profileType' => 'profile_type',
         'headImageId' => 'head_image_id',
         'profileName' => 'profile_name',
-        'description' => 'description'
+        'description' => 'description',
+        'organizationId' => 'organization_id',
+        'mdmId' => 'mdm_id'
     ];
 
     /**
@@ -141,7 +147,9 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
         'profileType' => 'setProfileType',
         'headImageId' => 'setHeadImageId',
         'profileName' => 'setProfileName',
-        'description' => 'setDescription'
+        'description' => 'setDescription',
+        'organizationId' => 'setOrganizationId',
+        'mdmId' => 'setMdmId'
     ];
 
     /**
@@ -159,7 +167,9 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
         'profileType' => 'getProfileType',
         'headImageId' => 'getHeadImageId',
         'profileName' => 'getProfileName',
-        'description' => 'getDescription'
+        'description' => 'getDescription',
+        'organizationId' => 'getOrganizationId',
+        'mdmId' => 'getMdmId'
     ];
 
     /**
@@ -232,6 +242,8 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
         $this->container['headImageId'] = isset($data['headImageId']) ? $data['headImageId'] : null;
         $this->container['profileName'] = isset($data['profileName']) ? $data['profileName'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
+        $this->container['mdmId'] = isset($data['mdmId']) ? $data['mdmId'] : null;
     }
 
     /**
@@ -494,6 +506,54 @@ class ProfilesAddRequest implements ModelInterface, ArrayAccess
     public function setDescription($description)
     {
         $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets organizationId
+     *
+     * @return int|mixed
+     */
+    public function getOrganizationId()
+    {
+        return $this->container['organizationId'];
+    }
+
+    /**
+     * Sets organizationId
+     *
+     * @param int|mixed $organizationId organizationId
+     *
+     * @return $this
+     */
+    public function setOrganizationId($organizationId)
+    {
+        $this->container['organizationId'] = $organizationId;
+
+        return $this;
+    }
+
+    /**
+     * Gets mdmId
+     *
+     * @return int|mixed
+     */
+    public function getMdmId()
+    {
+        return $this->container['mdmId'];
+    }
+
+    /**
+     * Sets mdmId
+     *
+     * @param int|mixed $mdmId mdmId
+     *
+     * @return $this
+     */
+    public function setMdmId($mdmId)
+    {
+        $this->container['mdmId'] = $mdmId;
 
         return $this;
     }
