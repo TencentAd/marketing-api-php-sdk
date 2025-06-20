@@ -67,7 +67,9 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreBusinessArea' => 'string',
         'localStoreStreet' => 'string',
         'localStoreDistrict' => 'string',
-        'telephone' => 'string'
+        'telephone' => 'string',
+        'latitude' => 'double',
+        'longitude' => 'double'
     ];
 
     /**
@@ -85,7 +87,9 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreBusinessArea' => null,
         'localStoreStreet' => null,
         'localStoreDistrict' => null,
-        'telephone' => null
+        'telephone' => null,
+        'latitude' => 'double',
+        'longitude' => 'double'
     ];
 
     /**
@@ -124,7 +128,9 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreBusinessArea' => 'local_store_business_area',
         'localStoreStreet' => 'local_store_street',
         'localStoreDistrict' => 'local_store_district',
-        'telephone' => 'telephone'
+        'telephone' => 'telephone',
+        'latitude' => 'latitude',
+        'longitude' => 'longitude'
     ];
 
     /**
@@ -142,7 +148,9 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreBusinessArea' => 'setLocalStoreBusinessArea',
         'localStoreStreet' => 'setLocalStoreStreet',
         'localStoreDistrict' => 'setLocalStoreDistrict',
-        'telephone' => 'setTelephone'
+        'telephone' => 'setTelephone',
+        'latitude' => 'setLatitude',
+        'longitude' => 'setLongitude'
     ];
 
     /**
@@ -160,7 +168,9 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         'localStoreBusinessArea' => 'getLocalStoreBusinessArea',
         'localStoreStreet' => 'getLocalStoreStreet',
         'localStoreDistrict' => 'getLocalStoreDistrict',
-        'telephone' => 'getTelephone'
+        'telephone' => 'getTelephone',
+        'latitude' => 'getLatitude',
+        'longitude' => 'getLongitude'
     ];
 
     /**
@@ -233,6 +243,8 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
         $this->container['localStoreStreet'] = isset($data['localStoreStreet']) ? $data['localStoreStreet'] : null;
         $this->container['localStoreDistrict'] = isset($data['localStoreDistrict']) ? $data['localStoreDistrict'] : null;
         $this->container['telephone'] = isset($data['telephone']) ? $data['telephone'] : null;
+        $this->container['latitude'] = isset($data['latitude']) ? $data['latitude'] : null;
+        $this->container['longitude'] = isset($data['longitude']) ? $data['longitude'] : null;
     }
 
     /**
@@ -495,6 +507,54 @@ class SuccessPoiInfoStruct implements ModelInterface, ArrayAccess
     public function setTelephone($telephone)
     {
         $this->container['telephone'] = $telephone;
+
+        return $this;
+    }
+
+    /**
+     * Gets latitude
+     *
+     * @return double|mixed
+     */
+    public function getLatitude()
+    {
+        return $this->container['latitude'];
+    }
+
+    /**
+     * Sets latitude
+     *
+     * @param double|mixed $latitude latitude
+     *
+     * @return $this
+     */
+    public function setLatitude($latitude)
+    {
+        $this->container['latitude'] = $latitude;
+
+        return $this;
+    }
+
+    /**
+     * Gets longitude
+     *
+     * @return double|mixed
+     */
+    public function getLongitude()
+    {
+        return $this->container['longitude'];
+    }
+
+    /**
+     * Sets longitude
+     *
+     * @param double|mixed $longitude longitude
+     *
+     * @return $this
+     */
+    public function setLongitude($longitude)
+    {
+        $this->container['longitude'] = $longitude;
 
         return $this;
     }

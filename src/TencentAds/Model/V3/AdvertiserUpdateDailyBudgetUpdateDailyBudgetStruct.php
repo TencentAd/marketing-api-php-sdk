@@ -59,7 +59,8 @@ class AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfa
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
-        'dailyBudget' => 'int'
+        'dailyBudget' => 'int',
+        'useMinDailyBudget' => 'bool'
     ];
 
     /**
@@ -69,7 +70,8 @@ class AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfa
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
-        'dailyBudget' => 'int64'
+        'dailyBudget' => 'int64',
+        'useMinDailyBudget' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfa
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
-        'dailyBudget' => 'daily_budget'
+        'dailyBudget' => 'daily_budget',
+        'useMinDailyBudget' => 'use_min_daily_budget'
     ];
 
     /**
@@ -110,7 +113,8 @@ class AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfa
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
-        'dailyBudget' => 'setDailyBudget'
+        'dailyBudget' => 'setDailyBudget',
+        'useMinDailyBudget' => 'setUseMinDailyBudget'
     ];
 
     /**
@@ -120,7 +124,8 @@ class AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfa
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
-        'dailyBudget' => 'getDailyBudget'
+        'dailyBudget' => 'getDailyBudget',
+        'useMinDailyBudget' => 'getUseMinDailyBudget'
     ];
 
     /**
@@ -185,6 +190,7 @@ class AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfa
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
+        $this->container['useMinDailyBudget'] = isset($data['useMinDailyBudget']) ? $data['useMinDailyBudget'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class AdvertiserUpdateDailyBudgetUpdateDailyBudgetStruct implements ModelInterfa
     public function setDailyBudget($dailyBudget)
     {
         $this->container['dailyBudget'] = $dailyBudget;
+
+        return $this;
+    }
+
+    /**
+     * Gets useMinDailyBudget
+     *
+     * @return bool|mixed
+     */
+    public function getUseMinDailyBudget()
+    {
+        return $this->container['useMinDailyBudget'];
+    }
+
+    /**
+     * Sets useMinDailyBudget
+     *
+     * @param bool|mixed $useMinDailyBudget useMinDailyBudget
+     *
+     * @return $this
+     */
+    public function setUseMinDailyBudget($useMinDailyBudget)
+    {
+        $this->container['useMinDailyBudget'] = $useMinDailyBudget;
 
         return $this;
     }

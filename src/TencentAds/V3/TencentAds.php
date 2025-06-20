@@ -56,7 +56,7 @@ class TencentAds extends App
      * SDK version
      * @var string
      */
-    protected $version = '1.1.84';
+    protected $version = '1.1.85';
 
     /**
      * SDK version

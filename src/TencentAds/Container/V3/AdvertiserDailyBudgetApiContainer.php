@@ -61,4 +61,38 @@ class AdvertiserDailyBudgetApiContainer extends ApiContainer
             return $response;
         });
     }
+
+
+    /**
+     * Handle AdvertiserDailyBudgetApi advertiserDailyBudgetUpdate function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function update(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->advertiserDailyBudgetUpdate($data);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle AdvertiserDailyBudgetApi advertiserDailyBudgetUpdateAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function updateAsync(array $params = [])
+    {
+        return $this->handleMiddleware('update', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $data = $params;
+            $response = $this->apiInstance->advertiserDailyBudgetUpdateAsync($data);
+            return $response;
+        });
+    }
 }

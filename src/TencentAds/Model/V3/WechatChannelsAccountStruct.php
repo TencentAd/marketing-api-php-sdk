@@ -73,7 +73,8 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'authorizationBeginTime' => 'int',
         'authorizationTtl' => 'int',
         'isDisable' => 'bool',
-        'disableMessage' => 'string'
+        'disableMessage' => 'string',
+        'authorizationStatus' => '\TencentAds\Model\V3\WechatChannelsAuthStatus'
     ];
 
     /**
@@ -97,7 +98,8 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'authorizationBeginTime' => 'int64',
         'authorizationTtl' => 'int64',
         'isDisable' => null,
-        'disableMessage' => null
+        'disableMessage' => null,
+        'authorizationStatus' => null
     ];
 
     /**
@@ -142,7 +144,8 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'authorizationBeginTime' => 'authorization_begin_time',
         'authorizationTtl' => 'authorization_ttl',
         'isDisable' => 'is_disable',
-        'disableMessage' => 'disable_message'
+        'disableMessage' => 'disable_message',
+        'authorizationStatus' => 'authorization_status'
     ];
 
     /**
@@ -166,7 +169,8 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'authorizationBeginTime' => 'setAuthorizationBeginTime',
         'authorizationTtl' => 'setAuthorizationTtl',
         'isDisable' => 'setIsDisable',
-        'disableMessage' => 'setDisableMessage'
+        'disableMessage' => 'setDisableMessage',
+        'authorizationStatus' => 'setAuthorizationStatus'
     ];
 
     /**
@@ -190,7 +194,8 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         'authorizationBeginTime' => 'getAuthorizationBeginTime',
         'authorizationTtl' => 'getAuthorizationTtl',
         'isDisable' => 'getIsDisable',
-        'disableMessage' => 'getDisableMessage'
+        'disableMessage' => 'getDisableMessage',
+        'authorizationStatus' => 'getAuthorizationStatus'
     ];
 
     /**
@@ -269,6 +274,7 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
         $this->container['authorizationTtl'] = isset($data['authorizationTtl']) ? $data['authorizationTtl'] : null;
         $this->container['isDisable'] = isset($data['isDisable']) ? $data['isDisable'] : null;
         $this->container['disableMessage'] = isset($data['disableMessage']) ? $data['disableMessage'] : null;
+        $this->container['authorizationStatus'] = isset($data['authorizationStatus']) ? $data['authorizationStatus'] : null;
     }
 
     /**
@@ -675,6 +681,30 @@ class WechatChannelsAccountStruct implements ModelInterface, ArrayAccess
     public function setDisableMessage($disableMessage)
     {
         $this->container['disableMessage'] = $disableMessage;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizationStatus
+     *
+     * @return \TencentAds\Model\V3\WechatChannelsAuthStatus|mixed
+     */
+    public function getAuthorizationStatus()
+    {
+        return $this->container['authorizationStatus'];
+    }
+
+    /**
+     * Sets authorizationStatus
+     *
+     * @param \TencentAds\Model\V3\WechatChannelsAuthStatus|mixed $authorizationStatus authorizationStatus
+     *
+     * @return $this
+     */
+    public function setAuthorizationStatus($authorizationStatus)
+    {
+        $this->container['authorizationStatus'] = $authorizationStatus;
 
         return $this;
     }

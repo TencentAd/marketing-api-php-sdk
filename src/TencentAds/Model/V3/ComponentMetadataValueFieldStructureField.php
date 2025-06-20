@@ -60,6 +60,7 @@ class ComponentMetadataValueFieldStructureField implements ModelInterface, Array
     protected static $swaggerTypes = [
         'name' => 'string',
         'type' => '\TencentAds\Model\V3\ComponentMetadataFieldType',
+        'structure' => '\TencentAds\Model\V3\ComponentMetadataValueFieldStructureFieldSub[]',
         'isArray' => 'bool',
         'valid' => '\TencentAds\Model\V3\ComponentMetadataValueValid'
     ];
@@ -72,6 +73,7 @@ class ComponentMetadataValueFieldStructureField implements ModelInterface, Array
     protected static $swaggerFormats = [
         'name' => null,
         'type' => null,
+        'structure' => null,
         'isArray' => null,
         'valid' => null
     ];
@@ -105,6 +107,7 @@ class ComponentMetadataValueFieldStructureField implements ModelInterface, Array
     protected static $attributeMap = [
         'name' => 'name',
         'type' => 'type',
+        'structure' => 'structure',
         'isArray' => 'is_array',
         'valid' => 'valid'
     ];
@@ -117,6 +120,7 @@ class ComponentMetadataValueFieldStructureField implements ModelInterface, Array
     protected static $setters = [
         'name' => 'setName',
         'type' => 'setType',
+        'structure' => 'setStructure',
         'isArray' => 'setIsArray',
         'valid' => 'setValid'
     ];
@@ -129,6 +133,7 @@ class ComponentMetadataValueFieldStructureField implements ModelInterface, Array
     protected static $getters = [
         'name' => 'getName',
         'type' => 'getType',
+        'structure' => 'getStructure',
         'isArray' => 'getIsArray',
         'valid' => 'getValid'
     ];
@@ -195,6 +200,7 @@ class ComponentMetadataValueFieldStructureField implements ModelInterface, Array
     {
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
+        $this->container['structure'] = isset($data['structure']) ? $data['structure'] : null;
         $this->container['isArray'] = isset($data['isArray']) ? $data['isArray'] : null;
         $this->container['valid'] = isset($data['valid']) ? $data['valid'] : null;
     }
@@ -267,6 +273,30 @@ class ComponentMetadataValueFieldStructureField implements ModelInterface, Array
     public function setType($type)
     {
         $this->container['type'] = $type;
+
+        return $this;
+    }
+
+    /**
+     * Gets structure
+     *
+     * @return \TencentAds\Model\V3\ComponentMetadataValueFieldStructureFieldSub[]|mixed
+     */
+    public function getStructure()
+    {
+        return $this->container['structure'];
+    }
+
+    /**
+     * Sets structure
+     *
+     * @param \TencentAds\Model\V3\ComponentMetadataValueFieldStructureFieldSub[]|mixed $structure structure
+     *
+     * @return $this
+     */
+    public function setStructure($structure)
+    {
+        $this->container['structure'] = $structure;
 
         return $this;
     }

@@ -71,7 +71,8 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
         'maxExposureDaily' => 'int',
         'targetingStatus' => '\TencentAds\Model\V3\TargetingStatus',
         'suggestTargeting' => 'string[]',
-        'isRealExposureSupported' => 'bool'
+        'isRealExposureSupported' => 'bool',
+        'stageBidInfo' => '\TencentAds\Model\V3\StageBidInfoItem[]'
     ];
 
     /**
@@ -94,7 +95,8 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
         'maxExposureDaily' => 'int64',
         'targetingStatus' => null,
         'suggestTargeting' => null,
-        'isRealExposureSupported' => null
+        'isRealExposureSupported' => null,
+        'stageBidInfo' => null
     ];
 
     /**
@@ -138,7 +140,8 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
         'maxExposureDaily' => 'max_exposure_daily',
         'targetingStatus' => 'targeting_status',
         'suggestTargeting' => 'suggest_targeting',
-        'isRealExposureSupported' => 'is_real_exposure_supported'
+        'isRealExposureSupported' => 'is_real_exposure_supported',
+        'stageBidInfo' => 'stage_bid_info'
     ];
 
     /**
@@ -161,7 +164,8 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
         'maxExposureDaily' => 'setMaxExposureDaily',
         'targetingStatus' => 'setTargetingStatus',
         'suggestTargeting' => 'setSuggestTargeting',
-        'isRealExposureSupported' => 'setIsRealExposureSupported'
+        'isRealExposureSupported' => 'setIsRealExposureSupported',
+        'stageBidInfo' => 'setStageBidInfo'
     ];
 
     /**
@@ -184,7 +188,8 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
         'maxExposureDaily' => 'getMaxExposureDaily',
         'targetingStatus' => 'getTargetingStatus',
         'suggestTargeting' => 'getSuggestTargeting',
-        'isRealExposureSupported' => 'getIsRealExposureSupported'
+        'isRealExposureSupported' => 'getIsRealExposureSupported',
+        'stageBidInfo' => 'getStageBidInfo'
     ];
 
     /**
@@ -262,6 +267,7 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
         $this->container['targetingStatus'] = isset($data['targetingStatus']) ? $data['targetingStatus'] : null;
         $this->container['suggestTargeting'] = isset($data['suggestTargeting']) ? $data['suggestTargeting'] : null;
         $this->container['isRealExposureSupported'] = isset($data['isRealExposureSupported']) ? $data['isRealExposureSupported'] : null;
+        $this->container['stageBidInfo'] = isset($data['stageBidInfo']) ? $data['stageBidInfo'] : null;
     }
 
     /**
@@ -644,6 +650,30 @@ class EstimationGetResponseData implements ModelInterface, ArrayAccess
     public function setIsRealExposureSupported($isRealExposureSupported)
     {
         $this->container['isRealExposureSupported'] = $isRealExposureSupported;
+
+        return $this;
+    }
+
+    /**
+     * Gets stageBidInfo
+     *
+     * @return \TencentAds\Model\V3\StageBidInfoItem[]|mixed
+     */
+    public function getStageBidInfo()
+    {
+        return $this->container['stageBidInfo'];
+    }
+
+    /**
+     * Sets stageBidInfo
+     *
+     * @param \TencentAds\Model\V3\StageBidInfoItem[]|mixed $stageBidInfo stageBidInfo
+     *
+     * @return $this
+     */
+    public function setStageBidInfo($stageBidInfo)
+    {
+        $this->container['stageBidInfo'] = $stageBidInfo;
 
         return $this;
     }

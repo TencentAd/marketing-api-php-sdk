@@ -93,25 +93,33 @@ class CreativeTemplateListApi
      * 获取创意形式列表
      *
      * @param  int|mixed $accountId accountId (required)
-     * @param  string|mixed $marketingGoal marketingGoal (required)
-     * @param  string|mixed $marketingTargetType marketingTargetType (required)
-     * @param  string|mixed $marketingCarrierType marketingCarrierType (required)
+     * @param  string|mixed $marketingGoal marketingGoal (optional)
      * @param  string|mixed $marketingSubGoal marketingSubGoal (optional)
+     * @param  string|mixed $marketingTargetType marketingTargetType (optional)
+     * @param  string|mixed $marketingCarrierType marketingCarrierType (optional)
      * @param  string|mixed $siteSet siteSet (optional)
      * @param  string|mixed $dynamicAbilityType dynamicAbilityType (optional)
      * @param  int[]|mixed $wechatSceneSpecPosition wechatSceneSpecPosition (optional)
      * @param  int|mixed $creativeTemplateId creativeTemplateId (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string|mixed $dynamicAdType dynamicAdType (optional)
+     * @param  string|mixed $dynamicCreativeType dynamicCreativeType (optional)
+     * @param  string[]|mixed $supportSiteSet supportSiteSet (optional)
+     * @param  string|mixed $bidMode bidMode (optional)
+     * @param  int[]|mixed $wechatChannelsScene wechatChannelsScene (optional)
+     * @param  string[]|mixed $displayScene displayScene (optional)
+     * @param  string[]|mixed $pcScene pcScene (optional)
+     * @param  int|mixed $adgroupId adgroupId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\CreativeTemplateListGetResponse|mixed
      */
-    public function creativeTemplateListGet($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $marketingSubGoal = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $fields = null)
+    public function creativeTemplateListGet($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $fields = null)
     {
-        list($response) = $this->creativeTemplateListGetWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $marketingSubGoal, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $fields);
+        list($response) = $this->creativeTemplateListGetWithHttpInfo($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $fields);
         return $response;
     }
 
@@ -121,26 +129,34 @@ class CreativeTemplateListApi
      * 获取创意形式列表
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $marketingGoal (required)
-     * @param  string|mixed $marketingTargetType (required)
-     * @param  string|mixed $marketingCarrierType (required)
+     * @param  string|mixed $marketingGoal (optional)
      * @param  string|mixed $marketingSubGoal (optional)
+     * @param  string|mixed $marketingTargetType (optional)
+     * @param  string|mixed $marketingCarrierType (optional)
      * @param  string|mixed $siteSet (optional)
      * @param  string|mixed $dynamicAbilityType (optional)
      * @param  int[]|mixed $wechatSceneSpecPosition (optional)
      * @param  int|mixed $creativeTemplateId (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $dynamicAdType (optional)
+     * @param  string|mixed $dynamicCreativeType (optional)
+     * @param  string[]|mixed $supportSiteSet (optional)
+     * @param  string|mixed $bidMode (optional)
+     * @param  int[]|mixed $wechatChannelsScene (optional)
+     * @param  string[]|mixed $displayScene (optional)
+     * @param  string[]|mixed $pcScene (optional)
+     * @param  int|mixed $adgroupId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\CreativeTemplateListGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function creativeTemplateListGetWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $marketingSubGoal = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $fields = null)
+    public function creativeTemplateListGetWithHttpInfo($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\CreativeTemplateListGetResponse';
-        $request = $this->creativeTemplateListGetRequest($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $marketingSubGoal, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $fields);
+        $request = $this->creativeTemplateListGetRequest($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -207,24 +223,32 @@ class CreativeTemplateListApi
      * 获取创意形式列表
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $marketingGoal (required)
-     * @param  string|mixed $marketingTargetType (required)
-     * @param  string|mixed $marketingCarrierType (required)
+     * @param  string|mixed $marketingGoal (optional)
      * @param  string|mixed $marketingSubGoal (optional)
+     * @param  string|mixed $marketingTargetType (optional)
+     * @param  string|mixed $marketingCarrierType (optional)
      * @param  string|mixed $siteSet (optional)
      * @param  string|mixed $dynamicAbilityType (optional)
      * @param  int[]|mixed $wechatSceneSpecPosition (optional)
      * @param  int|mixed $creativeTemplateId (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $dynamicAdType (optional)
+     * @param  string|mixed $dynamicCreativeType (optional)
+     * @param  string[]|mixed $supportSiteSet (optional)
+     * @param  string|mixed $bidMode (optional)
+     * @param  int[]|mixed $wechatChannelsScene (optional)
+     * @param  string[]|mixed $displayScene (optional)
+     * @param  string[]|mixed $pcScene (optional)
+     * @param  int|mixed $adgroupId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function creativeTemplateListGetAsync($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $marketingSubGoal = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $fields = null)
+    public function creativeTemplateListGetAsync($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $fields = null)
     {
-        return $this->creativeTemplateListGetAsyncWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $marketingSubGoal, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $fields)
+        return $this->creativeTemplateListGetAsyncWithHttpInfo($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -238,25 +262,33 @@ class CreativeTemplateListApi
      * 获取创意形式列表
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $marketingGoal (required)
-     * @param  string|mixed $marketingTargetType (required)
-     * @param  string|mixed $marketingCarrierType (required)
+     * @param  string|mixed $marketingGoal (optional)
      * @param  string|mixed $marketingSubGoal (optional)
+     * @param  string|mixed $marketingTargetType (optional)
+     * @param  string|mixed $marketingCarrierType (optional)
      * @param  string|mixed $siteSet (optional)
      * @param  string|mixed $dynamicAbilityType (optional)
      * @param  int[]|mixed $wechatSceneSpecPosition (optional)
      * @param  int|mixed $creativeTemplateId (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $dynamicAdType (optional)
+     * @param  string|mixed $dynamicCreativeType (optional)
+     * @param  string[]|mixed $supportSiteSet (optional)
+     * @param  string|mixed $bidMode (optional)
+     * @param  int[]|mixed $wechatChannelsScene (optional)
+     * @param  string[]|mixed $displayScene (optional)
+     * @param  string[]|mixed $pcScene (optional)
+     * @param  int|mixed $adgroupId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function creativeTemplateListGetAsyncWithHttpInfo($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $marketingSubGoal = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $fields = null)
+    public function creativeTemplateListGetAsyncWithHttpInfo($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\CreativeTemplateListGetResponse';
-        $request = $this->creativeTemplateListGetRequest($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $marketingSubGoal, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $fields);
+        $request = $this->creativeTemplateListGetRequest($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -299,45 +331,35 @@ class CreativeTemplateListApi
      * Create request for operation 'creativeTemplateListGet'
      *
      * @param  int|mixed $accountId (required)
-     * @param  string|mixed $marketingGoal (required)
-     * @param  string|mixed $marketingTargetType (required)
-     * @param  string|mixed $marketingCarrierType (required)
+     * @param  string|mixed $marketingGoal (optional)
      * @param  string|mixed $marketingSubGoal (optional)
+     * @param  string|mixed $marketingTargetType (optional)
+     * @param  string|mixed $marketingCarrierType (optional)
      * @param  string|mixed $siteSet (optional)
      * @param  string|mixed $dynamicAbilityType (optional)
      * @param  int[]|mixed $wechatSceneSpecPosition (optional)
      * @param  int|mixed $creativeTemplateId (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $dynamicAdType (optional)
+     * @param  string|mixed $dynamicCreativeType (optional)
+     * @param  string[]|mixed $supportSiteSet (optional)
+     * @param  string|mixed $bidMode (optional)
+     * @param  int[]|mixed $wechatChannelsScene (optional)
+     * @param  string[]|mixed $displayScene (optional)
+     * @param  string[]|mixed $pcScene (optional)
+     * @param  int|mixed $adgroupId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function creativeTemplateListGetRequest($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $marketingSubGoal = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $fields = null)
+    protected function creativeTemplateListGetRequest($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $accountId when calling creativeTemplateListGet'
-            );
-        }
-        // verify the required parameter 'marketingGoal' is set
-        if ($marketingGoal === null || (is_array($marketingGoal) && count($marketingGoal) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $marketingGoal when calling creativeTemplateListGet'
-            );
-        }
-        // verify the required parameter 'marketingTargetType' is set
-        if ($marketingTargetType === null || (is_array($marketingTargetType) && count($marketingTargetType) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $marketingTargetType when calling creativeTemplateListGet'
-            );
-        }
-        // verify the required parameter 'marketingCarrierType' is set
-        if ($marketingCarrierType === null || (is_array($marketingCarrierType) && count($marketingCarrierType) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $marketingCarrierType when calling creativeTemplateListGet'
             );
         }
 
@@ -394,6 +416,50 @@ class CreativeTemplateListApi
         // query params
         if ($pageSize !== null) {
             $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
+        }
+        // query params
+        if ($dynamicAdType !== null) {
+            $queryParams['dynamic_ad_type'] = ObjectSerializer::toQueryValue($dynamicAdType);
+        }
+        // query params
+        if ($dynamicCreativeType !== null) {
+            $queryParams['dynamic_creative_type'] = ObjectSerializer::toQueryValue($dynamicCreativeType);
+        }
+        // query params
+        if (is_array($supportSiteSet)) {
+           $queryParams['support_site_set'] = json_encode($supportSiteSet);
+        } else
+        if ($supportSiteSet !== null) {
+            $queryParams['support_site_set'] = ObjectSerializer::toQueryValue($supportSiteSet);
+        }
+        // query params
+        if ($bidMode !== null) {
+            $queryParams['bid_mode'] = ObjectSerializer::toQueryValue($bidMode);
+        }
+        // query params
+        if (is_array($wechatChannelsScene)) {
+           $queryParams['wechat_channels_scene'] = json_encode($wechatChannelsScene);
+        } else
+        if ($wechatChannelsScene !== null) {
+            $queryParams['wechat_channels_scene'] = ObjectSerializer::toQueryValue($wechatChannelsScene);
+        }
+        // query params
+        if (is_array($displayScene)) {
+           $queryParams['display_scene'] = json_encode($displayScene);
+        } else
+        if ($displayScene !== null) {
+            $queryParams['display_scene'] = ObjectSerializer::toQueryValue($displayScene);
+        }
+        // query params
+        if (is_array($pcScene)) {
+           $queryParams['pc_scene'] = json_encode($pcScene);
+        } else
+        if ($pcScene !== null) {
+            $queryParams['pc_scene'] = ObjectSerializer::toQueryValue($pcScene);
+        }
+        // query params
+        if ($adgroupId !== null) {
+            $queryParams['adgroup_id'] = ObjectSerializer::toQueryValue($adgroupId);
         }
         // query params
         if (is_array($fields)) {

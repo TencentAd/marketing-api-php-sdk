@@ -62,7 +62,7 @@ class FinderObject implements ModelInterface, ArrayAccess
         'createTime' => 'int',
         'deleteFlag' => 'int',
         'description' => 'string',
-        'medias' => '\TencentAds\Model\V3\MediaNew[]',
+        'medias' => '\TencentAds\Model\V3\WechatChannelsMedia[]',
         'finderUsername' => 'string',
         'wechatChannelsAccountId' => 'string'
     ];
@@ -340,7 +340,7 @@ class FinderObject implements ModelInterface, ArrayAccess
     /**
      * Gets medias
      *
-     * @return \TencentAds\Model\V3\MediaNew[]|mixed
+     * @return \TencentAds\Model\V3\WechatChannelsMedia[]|mixed
      */
     public function getMedias()
     {
@@ -350,7 +350,7 @@ class FinderObject implements ModelInterface, ArrayAccess
     /**
      * Sets medias
      *
-     * @param \TencentAds\Model\V3\MediaNew[]|mixed $medias medias
+     * @param \TencentAds\Model\V3\WechatChannelsMedia[]|mixed $medias medias
      *
      * @return $this
      */

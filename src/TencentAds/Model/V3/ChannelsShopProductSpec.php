@@ -59,7 +59,9 @@ class ChannelsShopProductSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'productId' => 'int',
-        'shopId' => 'string'
+        'shopId' => 'string',
+        'catalogId' => 'string',
+        'setId' => 'string'
     ];
 
     /**
@@ -69,7 +71,9 @@ class ChannelsShopProductSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'productId' => 'int64',
-        'shopId' => null
+        'shopId' => null,
+        'catalogId' => null,
+        'setId' => null
     ];
 
     /**
@@ -100,7 +104,9 @@ class ChannelsShopProductSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'productId' => 'product_id',
-        'shopId' => 'shop_id'
+        'shopId' => 'shop_id',
+        'catalogId' => 'catalog_id',
+        'setId' => 'set_id'
     ];
 
     /**
@@ -110,7 +116,9 @@ class ChannelsShopProductSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'productId' => 'setProductId',
-        'shopId' => 'setShopId'
+        'shopId' => 'setShopId',
+        'catalogId' => 'setCatalogId',
+        'setId' => 'setSetId'
     ];
 
     /**
@@ -120,7 +128,9 @@ class ChannelsShopProductSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'productId' => 'getProductId',
-        'shopId' => 'getShopId'
+        'shopId' => 'getShopId',
+        'catalogId' => 'getCatalogId',
+        'setId' => 'getSetId'
     ];
 
     /**
@@ -185,6 +195,8 @@ class ChannelsShopProductSpec implements ModelInterface, ArrayAccess
     {
         $this->container['productId'] = isset($data['productId']) ? $data['productId'] : null;
         $this->container['shopId'] = isset($data['shopId']) ? $data['shopId'] : null;
+        $this->container['catalogId'] = isset($data['catalogId']) ? $data['catalogId'] : null;
+        $this->container['setId'] = isset($data['setId']) ? $data['setId'] : null;
     }
 
     /**
@@ -255,6 +267,54 @@ class ChannelsShopProductSpec implements ModelInterface, ArrayAccess
     public function setShopId($shopId)
     {
         $this->container['shopId'] = $shopId;
+
+        return $this;
+    }
+
+    /**
+     * Gets catalogId
+     *
+     * @return string|mixed
+     */
+    public function getCatalogId()
+    {
+        return $this->container['catalogId'];
+    }
+
+    /**
+     * Sets catalogId
+     *
+     * @param string|mixed $catalogId catalogId
+     *
+     * @return $this
+     */
+    public function setCatalogId($catalogId)
+    {
+        $this->container['catalogId'] = $catalogId;
+
+        return $this;
+    }
+
+    /**
+     * Gets setId
+     *
+     * @return string|mixed
+     */
+    public function getSetId()
+    {
+        return $this->container['setId'];
+    }
+
+    /**
+     * Sets setId
+     *
+     * @param string|mixed $setId setId
+     *
+     * @return $this
+     */
+    public function setSetId($setId)
+    {
+        $this->container['setId'] = $setId;
 
         return $this;
     }

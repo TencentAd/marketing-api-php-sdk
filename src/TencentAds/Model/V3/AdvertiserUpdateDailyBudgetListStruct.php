@@ -61,7 +61,9 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
         'code' => 'int',
         'message' => 'string',
         'messageCn' => 'string',
-        'accountId' => 'int'
+        'accountId' => 'int',
+        'dailyBudget' => 'int',
+        'useMinDailyBudget' => 'bool'
     ];
 
     /**
@@ -73,7 +75,9 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
         'code' => 'int64',
         'message' => null,
         'messageCn' => null,
-        'accountId' => 'int64'
+        'accountId' => 'int64',
+        'dailyBudget' => 'int64',
+        'useMinDailyBudget' => null
     ];
 
     /**
@@ -106,7 +110,9 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
         'code' => 'code',
         'message' => 'message',
         'messageCn' => 'message_cn',
-        'accountId' => 'account_id'
+        'accountId' => 'account_id',
+        'dailyBudget' => 'daily_budget',
+        'useMinDailyBudget' => 'use_min_daily_budget'
     ];
 
     /**
@@ -118,7 +124,9 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
         'code' => 'setCode',
         'message' => 'setMessage',
         'messageCn' => 'setMessageCn',
-        'accountId' => 'setAccountId'
+        'accountId' => 'setAccountId',
+        'dailyBudget' => 'setDailyBudget',
+        'useMinDailyBudget' => 'setUseMinDailyBudget'
     ];
 
     /**
@@ -130,7 +138,9 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
         'code' => 'getCode',
         'message' => 'getMessage',
         'messageCn' => 'getMessageCn',
-        'accountId' => 'getAccountId'
+        'accountId' => 'getAccountId',
+        'dailyBudget' => 'getDailyBudget',
+        'useMinDailyBudget' => 'getUseMinDailyBudget'
     ];
 
     /**
@@ -197,6 +207,8 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
         $this->container['message'] = isset($data['message']) ? $data['message'] : null;
         $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['dailyBudget'] = isset($data['dailyBudget']) ? $data['dailyBudget'] : null;
+        $this->container['useMinDailyBudget'] = isset($data['useMinDailyBudget']) ? $data['useMinDailyBudget'] : null;
     }
 
     /**
@@ -315,6 +327,54 @@ class AdvertiserUpdateDailyBudgetListStruct implements ModelInterface, ArrayAcce
     public function setAccountId($accountId)
     {
         $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets dailyBudget
+     *
+     * @return int|mixed
+     */
+    public function getDailyBudget()
+    {
+        return $this->container['dailyBudget'];
+    }
+
+    /**
+     * Sets dailyBudget
+     *
+     * @param int|mixed $dailyBudget dailyBudget
+     *
+     * @return $this
+     */
+    public function setDailyBudget($dailyBudget)
+    {
+        $this->container['dailyBudget'] = $dailyBudget;
+
+        return $this;
+    }
+
+    /**
+     * Gets useMinDailyBudget
+     *
+     * @return bool|mixed
+     */
+    public function getUseMinDailyBudget()
+    {
+        return $this->container['useMinDailyBudget'];
+    }
+
+    /**
+     * Sets useMinDailyBudget
+     *
+     * @param bool|mixed $useMinDailyBudget useMinDailyBudget
+     *
+     * @return $this
+     */
+    public function setUseMinDailyBudget($useMinDailyBudget)
+    {
+        $this->container['useMinDailyBudget'] = $useMinDailyBudget;
 
         return $this;
     }

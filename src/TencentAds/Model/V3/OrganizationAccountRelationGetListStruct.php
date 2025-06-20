@@ -61,7 +61,8 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
         'accountId' => 'int',
         'corporationName' => 'string',
         'isAdx' => 'bool',
-        'isMp' => 'bool'
+        'isMp' => 'bool',
+        'commentList' => '\TencentAds\Model\V3\CommentDataStruct[]'
     ];
 
     /**
@@ -73,7 +74,8 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
         'accountId' => 'int64',
         'corporationName' => null,
         'isAdx' => null,
-        'isMp' => null
+        'isMp' => null,
+        'commentList' => null
     ];
 
     /**
@@ -106,7 +108,8 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
         'accountId' => 'account_id',
         'corporationName' => 'corporation_name',
         'isAdx' => 'is_adx',
-        'isMp' => 'is_mp'
+        'isMp' => 'is_mp',
+        'commentList' => 'comment_list'
     ];
 
     /**
@@ -118,7 +121,8 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
         'accountId' => 'setAccountId',
         'corporationName' => 'setCorporationName',
         'isAdx' => 'setIsAdx',
-        'isMp' => 'setIsMp'
+        'isMp' => 'setIsMp',
+        'commentList' => 'setCommentList'
     ];
 
     /**
@@ -130,7 +134,8 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
         'accountId' => 'getAccountId',
         'corporationName' => 'getCorporationName',
         'isAdx' => 'getIsAdx',
-        'isMp' => 'getIsMp'
+        'isMp' => 'getIsMp',
+        'commentList' => 'getCommentList'
     ];
 
     /**
@@ -197,6 +202,7 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
         $this->container['corporationName'] = isset($data['corporationName']) ? $data['corporationName'] : null;
         $this->container['isAdx'] = isset($data['isAdx']) ? $data['isAdx'] : null;
         $this->container['isMp'] = isset($data['isMp']) ? $data['isMp'] : null;
+        $this->container['commentList'] = isset($data['commentList']) ? $data['commentList'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
     public function setIsMp($isMp)
     {
         $this->container['isMp'] = $isMp;
+
+        return $this;
+    }
+
+    /**
+     * Gets commentList
+     *
+     * @return \TencentAds\Model\V3\CommentDataStruct[]|mixed
+     */
+    public function getCommentList()
+    {
+        return $this->container['commentList'];
+    }
+
+    /**
+     * Sets commentList
+     *
+     * @param \TencentAds\Model\V3\CommentDataStruct[]|mixed $commentList commentList
+     *
+     * @return $this
+     */
+    public function setCommentList($commentList)
+    {
+        $this->container['commentList'] = $commentList;
 
         return $this;
     }

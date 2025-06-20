@@ -107,6 +107,7 @@ class PromotedAssetType
     const APP_HARMONY = 'PROMOTED_ASSET_TYPE_APP_HARMONY';
     const WECHAT_STORE_PRODUCT_SET = 'PROMOTED_ASSET_TYPE_WECHAT_STORE_PRODUCT_SET';
     const PRODUCT_AGGREGATION_PAGE = 'PROMOTED_ASSET_TYPE_PRODUCT_AGGREGATION_PAGE';
+    const WECHAT_STORE = 'PROMOTED_ASSET_TYPE_WECHAT_STORE';
     
     /**
      * Gets allowable values of the enum
@@ -178,6 +179,7 @@ class PromotedAssetType
             self::APP_HARMONY,
             self::WECHAT_STORE_PRODUCT_SET,
             self::PRODUCT_AGGREGATION_PAGE,
+            self::WECHAT_STORE,
         ];
     }
 }

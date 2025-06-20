@@ -34,6 +34,9 @@ use TencentAds\Container\V3\BidwordApiContainer;
 use TencentAds\Container\V3\BidwordFlowApiContainer;
 use TencentAds\Container\V3\BrandApiContainer;
 use TencentAds\Container\V3\BusinessPointApiContainer;
+use TencentAds\Container\V3\BusinessUnitAccountApiContainer;
+use TencentAds\Container\V3\BusinessUnitApiContainer;
+use TencentAds\Container\V3\BusinessUnitListApiContainer;
 use TencentAds\Container\V3\CategoriesApiContainer;
 use TencentAds\Container\V3\CategoriesAttributeApiContainer;
 use TencentAds\Container\V3\ChannelsCommentApiContainer;
@@ -41,7 +44,6 @@ use TencentAds\Container\V3\ChannelsFinderobjectApiContainer;
 use TencentAds\Container\V3\ChannelsLivenoticeinfoApiContainer;
 use TencentAds\Container\V3\ChannelsUserpageobjectsApiContainer;
 use TencentAds\Container\V3\CommentListApiContainer;
-use TencentAds\Container\V3\ComponentDefaultSharingApiContainer;
 use TencentAds\Container\V3\ComponentDetailApiContainer;
 use TencentAds\Container\V3\ComponentElementUrgeReviewApiContainer;
 use TencentAds\Container\V3\ComponentReviewResultsApiContainer;
@@ -127,6 +129,11 @@ use TencentAds\Container\V3\MuseAiTaskApiContainer;
 use TencentAds\Container\V3\MuseAiUgcApiContainer;
 use TencentAds\Container\V3\OauthApiContainer;
 use TencentAds\Container\V3\ObjectCommentFlagApiContainer;
+use TencentAds\Container\V3\OfficialLandingPageApiContainer;
+use TencentAds\Container\V3\OfficialLandingPageComponentApiContainer;
+use TencentAds\Container\V3\OfficialLandingPageDetailApiContainer;
+use TencentAds\Container\V3\OfficialLandingPageListApiContainer;
+use TencentAds\Container\V3\OfficialLandingPageSubmitApiContainer;
 use TencentAds\Container\V3\OperationLogListApiContainer;
 use TencentAds\Container\V3\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\V3\OrganizationAccountRelationApiContainer;
@@ -309,6 +316,15 @@ class App
     /** @var BusinessPointApiContainer */
     public $businessPointApiContainer;
 
+    /** @var BusinessUnitAccountApiContainer */
+    public $businessUnitAccountApiContainer;
+
+    /** @var BusinessUnitApiContainer */
+    public $businessUnitApiContainer;
+
+    /** @var BusinessUnitListApiContainer */
+    public $businessUnitListApiContainer;
+
     /** @var CategoriesApiContainer */
     public $categoriesApiContainer;
 
@@ -329,9 +345,6 @@ class App
 
     /** @var CommentListApiContainer */
     public $commentListApiContainer;
-
-    /** @var ComponentDefaultSharingApiContainer */
-    public $componentDefaultSharingApiContainer;
 
     /** @var ComponentDetailApiContainer */
     public $componentDetailApiContainer;
@@ -587,6 +600,21 @@ class App
 
     /** @var ObjectCommentFlagApiContainer */
     public $objectCommentFlagApiContainer;
+
+    /** @var OfficialLandingPageApiContainer */
+    public $officialLandingPageApiContainer;
+
+    /** @var OfficialLandingPageComponentApiContainer */
+    public $officialLandingPageComponentApiContainer;
+
+    /** @var OfficialLandingPageDetailApiContainer */
+    public $officialLandingPageDetailApiContainer;
+
+    /** @var OfficialLandingPageListApiContainer */
+    public $officialLandingPageListApiContainer;
+
+    /** @var OfficialLandingPageSubmitApiContainer */
+    public $officialLandingPageSubmitApiContainer;
 
     /** @var OperationLogListApiContainer */
     public $operationLogListApiContainer;
@@ -1290,6 +1318,48 @@ class App
 
 
     /**
+     * @return BusinessUnitAccountApiContainer
+     */
+    public function businessUnitAccount()
+    {
+        if (empty($this->businessUnitAccountApiContainer)) {
+            $container = new BusinessUnitAccountApiContainer();
+            $container->init($this, $this->getClient());
+            $this->businessUnitAccountApiContainer = $container;
+        }
+        return $this->businessUnitAccountApiContainer;
+    }
+
+
+    /**
+     * @return BusinessUnitApiContainer
+     */
+    public function businessUnit()
+    {
+        if (empty($this->businessUnitApiContainer)) {
+            $container = new BusinessUnitApiContainer();
+            $container->init($this, $this->getClient());
+            $this->businessUnitApiContainer = $container;
+        }
+        return $this->businessUnitApiContainer;
+    }
+
+
+    /**
+     * @return BusinessUnitListApiContainer
+     */
+    public function businessUnitList()
+    {
+        if (empty($this->businessUnitListApiContainer)) {
+            $container = new BusinessUnitListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->businessUnitListApiContainer = $container;
+        }
+        return $this->businessUnitListApiContainer;
+    }
+
+
+    /**
      * @return CategoriesApiContainer
      */
     public function categories()
@@ -1384,20 +1454,6 @@ class App
             $this->commentListApiContainer = $container;
         }
         return $this->commentListApiContainer;
-    }
-
-
-    /**
-     * @return ComponentDefaultSharingApiContainer
-     */
-    public function componentDefaultSharing()
-    {
-        if (empty($this->componentDefaultSharingApiContainer)) {
-            $container = new ComponentDefaultSharingApiContainer();
-            $container->init($this, $this->getClient());
-            $this->componentDefaultSharingApiContainer = $container;
-        }
-        return $this->componentDefaultSharingApiContainer;
     }
 
 
@@ -2588,6 +2644,76 @@ class App
             $this->objectCommentFlagApiContainer = $container;
         }
         return $this->objectCommentFlagApiContainer;
+    }
+
+
+    /**
+     * @return OfficialLandingPageApiContainer
+     */
+    public function officialLandingPage()
+    {
+        if (empty($this->officialLandingPageApiContainer)) {
+            $container = new OfficialLandingPageApiContainer();
+            $container->init($this, $this->getClient());
+            $this->officialLandingPageApiContainer = $container;
+        }
+        return $this->officialLandingPageApiContainer;
+    }
+
+
+    /**
+     * @return OfficialLandingPageComponentApiContainer
+     */
+    public function officialLandingPageComponent()
+    {
+        if (empty($this->officialLandingPageComponentApiContainer)) {
+            $container = new OfficialLandingPageComponentApiContainer();
+            $container->init($this, $this->getClient());
+            $this->officialLandingPageComponentApiContainer = $container;
+        }
+        return $this->officialLandingPageComponentApiContainer;
+    }
+
+
+    /**
+     * @return OfficialLandingPageDetailApiContainer
+     */
+    public function officialLandingPageDetail()
+    {
+        if (empty($this->officialLandingPageDetailApiContainer)) {
+            $container = new OfficialLandingPageDetailApiContainer();
+            $container->init($this, $this->getClient());
+            $this->officialLandingPageDetailApiContainer = $container;
+        }
+        return $this->officialLandingPageDetailApiContainer;
+    }
+
+
+    /**
+     * @return OfficialLandingPageListApiContainer
+     */
+    public function officialLandingPageList()
+    {
+        if (empty($this->officialLandingPageListApiContainer)) {
+            $container = new OfficialLandingPageListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->officialLandingPageListApiContainer = $container;
+        }
+        return $this->officialLandingPageListApiContainer;
+    }
+
+
+    /**
+     * @return OfficialLandingPageSubmitApiContainer
+     */
+    public function officialLandingPageSubmit()
+    {
+        if (empty($this->officialLandingPageSubmitApiContainer)) {
+            $container = new OfficialLandingPageSubmitApiContainer();
+            $container->init($this, $this->getClient());
+            $this->officialLandingPageSubmitApiContainer = $container;
+        }
+        return $this->officialLandingPageSubmitApiContainer;
     }
 
 

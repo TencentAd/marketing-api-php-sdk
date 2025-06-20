@@ -841,6 +841,11 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'followBizAllDedupPv' => 'int',
         'firOgConvAutoAcquisitionPv' => 'int',
         'secOgConvAutoAcquisitionPv' => 'int',
+        'scanCodePlaPv' => 'int',
+        'purchasePlaBkActive1dAmount' => 'int',
+        'bfAllDedupPv' => 'int',
+        'retentionDedupPv' => 'int',
+        'retentionAllDedupPv' => 'int',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -1693,6 +1698,11 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'followBizAllDedupPv' => 'int64',
         'firOgConvAutoAcquisitionPv' => 'int64',
         'secOgConvAutoAcquisitionPv' => 'int64',
+        'scanCodePlaPv' => 'int64',
+        'purchasePlaBkActive1dAmount' => 'int64',
+        'bfAllDedupPv' => 'int64',
+        'retentionDedupPv' => 'int64',
+        'retentionAllDedupPv' => 'int64',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -2566,6 +2576,11 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'followBizAllDedupPv' => 'follow_biz_all_dedup_pv',
         'firOgConvAutoAcquisitionPv' => 'fir_og_conv_auto_acquisition_pv',
         'secOgConvAutoAcquisitionPv' => 'sec_og_conv_auto_acquisition_pv',
+        'scanCodePlaPv' => 'scan_code_pla_pv',
+        'purchasePlaBkActive1dAmount' => 'purchase_pla_bk_active_1d_amount',
+        'bfAllDedupPv' => 'bf_all_dedup_pv',
+        'retentionDedupPv' => 'retention_dedup_pv',
+        'retentionAllDedupPv' => 'retention_all_dedup_pv',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -3418,6 +3433,11 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'followBizAllDedupPv' => 'setFollowBizAllDedupPv',
         'firOgConvAutoAcquisitionPv' => 'setFirOgConvAutoAcquisitionPv',
         'secOgConvAutoAcquisitionPv' => 'setSecOgConvAutoAcquisitionPv',
+        'scanCodePlaPv' => 'setScanCodePlaPv',
+        'purchasePlaBkActive1dAmount' => 'setPurchasePlaBkActive1dAmount',
+        'bfAllDedupPv' => 'setBfAllDedupPv',
+        'retentionDedupPv' => 'setRetentionDedupPv',
+        'retentionAllDedupPv' => 'setRetentionAllDedupPv',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -4270,6 +4290,11 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'followBizAllDedupPv' => 'getFollowBizAllDedupPv',
         'firOgConvAutoAcquisitionPv' => 'getFirOgConvAutoAcquisitionPv',
         'secOgConvAutoAcquisitionPv' => 'getSecOgConvAutoAcquisitionPv',
+        'scanCodePlaPv' => 'getScanCodePlaPv',
+        'purchasePlaBkActive1dAmount' => 'getPurchasePlaBkActive1dAmount',
+        'bfAllDedupPv' => 'getBfAllDedupPv',
+        'retentionDedupPv' => 'getRetentionDedupPv',
+        'retentionAllDedupPv' => 'getRetentionAllDedupPv',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -5176,6 +5201,11 @@ class ReportStruct implements ModelInterface, ArrayAccess
         $this->container['followBizAllDedupPv'] = isset($data['followBizAllDedupPv']) ? $data['followBizAllDedupPv'] : null;
         $this->container['firOgConvAutoAcquisitionPv'] = isset($data['firOgConvAutoAcquisitionPv']) ? $data['firOgConvAutoAcquisitionPv'] : null;
         $this->container['secOgConvAutoAcquisitionPv'] = isset($data['secOgConvAutoAcquisitionPv']) ? $data['secOgConvAutoAcquisitionPv'] : null;
+        $this->container['scanCodePlaPv'] = isset($data['scanCodePlaPv']) ? $data['scanCodePlaPv'] : null;
+        $this->container['purchasePlaBkActive1dAmount'] = isset($data['purchasePlaBkActive1dAmount']) ? $data['purchasePlaBkActive1dAmount'] : null;
+        $this->container['bfAllDedupPv'] = isset($data['bfAllDedupPv']) ? $data['bfAllDedupPv'] : null;
+        $this->container['retentionDedupPv'] = isset($data['retentionDedupPv']) ? $data['retentionDedupPv'] : null;
+        $this->container['retentionAllDedupPv'] = isset($data['retentionAllDedupPv']) ? $data['retentionAllDedupPv'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -24051,6 +24081,126 @@ class ReportStruct implements ModelInterface, ArrayAccess
     public function setSecOgConvAutoAcquisitionPv($secOgConvAutoAcquisitionPv)
     {
         $this->container['secOgConvAutoAcquisitionPv'] = $secOgConvAutoAcquisitionPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets scanCodePlaPv
+     *
+     * @return int|mixed
+     */
+    public function getScanCodePlaPv()
+    {
+        return $this->container['scanCodePlaPv'];
+    }
+
+    /**
+     * Sets scanCodePlaPv
+     *
+     * @param int|mixed $scanCodePlaPv scanCodePlaPv
+     *
+     * @return $this
+     */
+    public function setScanCodePlaPv($scanCodePlaPv)
+    {
+        $this->container['scanCodePlaPv'] = $scanCodePlaPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchasePlaBkActive1dAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchasePlaBkActive1dAmount()
+    {
+        return $this->container['purchasePlaBkActive1dAmount'];
+    }
+
+    /**
+     * Sets purchasePlaBkActive1dAmount
+     *
+     * @param int|mixed $purchasePlaBkActive1dAmount purchasePlaBkActive1dAmount
+     *
+     * @return $this
+     */
+    public function setPurchasePlaBkActive1dAmount($purchasePlaBkActive1dAmount)
+    {
+        $this->container['purchasePlaBkActive1dAmount'] = $purchasePlaBkActive1dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets bfAllDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getBfAllDedupPv()
+    {
+        return $this->container['bfAllDedupPv'];
+    }
+
+    /**
+     * Sets bfAllDedupPv
+     *
+     * @param int|mixed $bfAllDedupPv bfAllDedupPv
+     *
+     * @return $this
+     */
+    public function setBfAllDedupPv($bfAllDedupPv)
+    {
+        $this->container['bfAllDedupPv'] = $bfAllDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets retentionDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getRetentionDedupPv()
+    {
+        return $this->container['retentionDedupPv'];
+    }
+
+    /**
+     * Sets retentionDedupPv
+     *
+     * @param int|mixed $retentionDedupPv retentionDedupPv
+     *
+     * @return $this
+     */
+    public function setRetentionDedupPv($retentionDedupPv)
+    {
+        $this->container['retentionDedupPv'] = $retentionDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets retentionAllDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getRetentionAllDedupPv()
+    {
+        return $this->container['retentionAllDedupPv'];
+    }
+
+    /**
+     * Sets retentionAllDedupPv
+     *
+     * @param int|mixed $retentionAllDedupPv retentionAllDedupPv
+     *
+     * @return $this
+     */
+    public function setRetentionAllDedupPv($retentionAllDedupPv)
+    {
+        $this->container['retentionAllDedupPv'] = $retentionAllDedupPv;
 
         return $this;
     }
