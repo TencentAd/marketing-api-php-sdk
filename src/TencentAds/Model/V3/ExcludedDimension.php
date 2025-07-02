@@ -51,6 +51,7 @@ class ExcludedDimension
     const EXCLUDED_DIMENSION_APP = 'EXCLUDED_DIMENSION_APP';
     const EXCLUDED_DIMENSION_PRODUCT = 'EXCLUDED_DIMENSION_PRODUCT';
     const EXCLUDE_DIMENSION_WORKTABLE = 'EXCLUDE_DIMENSION_WORKTABLE';
+    const EXCLUDED_DIMENSION_GROUP = 'EXCLUDED_DIMENSION_GROUP';
     
     /**
      * Gets allowable values of the enum
@@ -66,6 +67,7 @@ class ExcludedDimension
             self::EXCLUDED_DIMENSION_APP,
             self::EXCLUDED_DIMENSION_PRODUCT,
             self::EXCLUDE_DIMENSION_WORKTABLE,
+            self::EXCLUDED_DIMENSION_GROUP,
         ];
     }
 }

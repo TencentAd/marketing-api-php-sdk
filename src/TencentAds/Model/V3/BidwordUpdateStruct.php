@@ -65,7 +65,8 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
         'priceUpdateType' => '\TencentAds\Model\V3\BidwordPriceUpdateType',
         'raisePrice' => 'int',
         'matchType' => '\TencentAds\Model\V3\BidwordMatchType',
-        'configuredStatus' => '\TencentAds\Model\V3\BidwordPauseType'
+        'configuredStatus' => '\TencentAds\Model\V3\BidwordPauseType',
+        'dynamicCreativeId' => 'int'
     ];
 
     /**
@@ -81,7 +82,8 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
         'priceUpdateType' => null,
         'raisePrice' => 'int64',
         'matchType' => null,
-        'configuredStatus' => null
+        'configuredStatus' => null,
+        'dynamicCreativeId' => 'int64'
     ];
 
     /**
@@ -118,7 +120,8 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
         'priceUpdateType' => 'price_update_type',
         'raisePrice' => 'raise_price',
         'matchType' => 'match_type',
-        'configuredStatus' => 'configured_status'
+        'configuredStatus' => 'configured_status',
+        'dynamicCreativeId' => 'dynamic_creative_id'
     ];
 
     /**
@@ -134,7 +137,8 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
         'priceUpdateType' => 'setPriceUpdateType',
         'raisePrice' => 'setRaisePrice',
         'matchType' => 'setMatchType',
-        'configuredStatus' => 'setConfiguredStatus'
+        'configuredStatus' => 'setConfiguredStatus',
+        'dynamicCreativeId' => 'setDynamicCreativeId'
     ];
 
     /**
@@ -150,7 +154,8 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
         'priceUpdateType' => 'getPriceUpdateType',
         'raisePrice' => 'getRaisePrice',
         'matchType' => 'getMatchType',
-        'configuredStatus' => 'getConfiguredStatus'
+        'configuredStatus' => 'getConfiguredStatus',
+        'dynamicCreativeId' => 'getDynamicCreativeId'
     ];
 
     /**
@@ -221,6 +226,7 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
         $this->container['raisePrice'] = isset($data['raisePrice']) ? $data['raisePrice'] : null;
         $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
+        $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
     }
 
     /**
@@ -435,6 +441,30 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
     public function setConfiguredStatus($configuredStatus)
     {
         $this->container['configuredStatus'] = $configuredStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicCreativeId
+     *
+     * @return int|mixed
+     */
+    public function getDynamicCreativeId()
+    {
+        return $this->container['dynamicCreativeId'];
+    }
+
+    /**
+     * Sets dynamicCreativeId
+     *
+     * @param int|mixed $dynamicCreativeId dynamicCreativeId
+     *
+     * @return $this
+     */
+    public function setDynamicCreativeId($dynamicCreativeId)
+    {
+        $this->container['dynamicCreativeId'] = $dynamicCreativeId;
 
         return $this;
     }

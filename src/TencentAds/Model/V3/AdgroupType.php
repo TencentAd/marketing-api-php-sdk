@@ -1,6 +1,6 @@
 <?php
 /**
- * FilterOperator
+ * AdgroupType
  *
  * PHP version 5
  *
@@ -31,28 +31,21 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * FilterOperator Class Doc Comment
+ * AdgroupType Class Doc Comment
  *
  * @category Class
- * @description 操作符
+ * @description 广告类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class FilterOperator
+class AdgroupType
 {
     /**
      * Possible values of this enum
      */
-    const EQUALS = 'EQUALS';
-    const CONTAINS = 'CONTAINS';
-    const LESS_EQUALS = 'LESS_EQUALS';
-    const LESS = 'LESS';
-    const GREATER_EQUALS = 'GREATER_EQUALS';
-    const GREATER = 'GREATER';
-    const IN = 'IN';
-    const NOT_EQUALS = 'NOT_EQUALS';
-    const NOT_IN = 'NOT_IN';
+    const SEARCH = 'ADGROUP_TYPE_SEARCH';
+    const NORMAL = 'ADGROUP_TYPE_NORMAL';
     
     /**
      * Gets allowable values of the enum
@@ -61,15 +54,8 @@ class FilterOperator
     public static function getAllowableEnumValues()
     {
         return [
-            self::EQUALS,
-            self::CONTAINS,
-            self::LESS_EQUALS,
-            self::LESS,
-            self::GREATER_EQUALS,
-            self::GREATER,
-            self::IN,
-            self::NOT_EQUALS,
-            self::NOT_IN,
+            self::SEARCH,
+            self::NORMAL,
         ];
     }
 }

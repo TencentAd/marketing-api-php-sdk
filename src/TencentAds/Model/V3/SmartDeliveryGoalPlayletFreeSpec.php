@@ -1,6 +1,6 @@
 <?php
 /**
- * SearchBidwordStruct
+ * SmartDeliveryGoalPlayletFreeSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SearchBidwordStruct Class Doc Comment
+ * SmartDeliveryGoalPlayletFreeSpec Class Doc Comment
  *
  * @category Class
- * @description 关键词信息
+ * @description 短剧首日变现目标信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SearchBidwordStruct implements ModelInterface, ArrayAccess
+class SmartDeliveryGoalPlayletFreeSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'search_bidword_struct';
+    protected static $swaggerModelName = 'smart_delivery_goal_playlet_free_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +58,8 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'bidword' => 'string',
-        'bidPrice' => 'int',
-        'useGroupPrice' => '\TencentAds\Model\V3\UseGroupPriceType',
-        'matchType' => '\TencentAds\Model\V3\BidwordMatchType',
-        'configuredStatus' => '\TencentAds\Model\V3\BidwordPauseType',
-        'dynamicCreativeId' => 'int'
+        'playletFreeCost' => 'int',
+        'playletFreeRoi' => 'double'
     ];
 
     /**
@@ -73,13 +68,8 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'bidword' => null,
-        'bidPrice' => 'int64',
-        'useGroupPrice' => null,
-        'matchType' => null,
-        'configuredStatus' => null,
-        'dynamicCreativeId' => 'int64'
+        'playletFreeCost' => 'int64',
+        'playletFreeRoi' => 'double'
     ];
 
     /**
@@ -109,13 +99,8 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'bidword' => 'bidword',
-        'bidPrice' => 'bid_price',
-        'useGroupPrice' => 'use_group_price',
-        'matchType' => 'match_type',
-        'configuredStatus' => 'configured_status',
-        'dynamicCreativeId' => 'dynamic_creative_id'
+        'playletFreeCost' => 'playlet_free_cost',
+        'playletFreeRoi' => 'playlet_free_roi'
     ];
 
     /**
@@ -124,13 +109,8 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'bidword' => 'setBidword',
-        'bidPrice' => 'setBidPrice',
-        'useGroupPrice' => 'setUseGroupPrice',
-        'matchType' => 'setMatchType',
-        'configuredStatus' => 'setConfiguredStatus',
-        'dynamicCreativeId' => 'setDynamicCreativeId'
+        'playletFreeCost' => 'setPlayletFreeCost',
+        'playletFreeRoi' => 'setPlayletFreeRoi'
     ];
 
     /**
@@ -139,13 +119,8 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'bidword' => 'getBidword',
-        'bidPrice' => 'getBidPrice',
-        'useGroupPrice' => 'getUseGroupPrice',
-        'matchType' => 'getMatchType',
-        'configuredStatus' => 'getConfiguredStatus',
-        'dynamicCreativeId' => 'getDynamicCreativeId'
+        'playletFreeCost' => 'getPlayletFreeCost',
+        'playletFreeRoi' => 'getPlayletFreeRoi'
     ];
 
     /**
@@ -208,13 +183,8 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
-        $this->container['bidPrice'] = isset($data['bidPrice']) ? $data['bidPrice'] : null;
-        $this->container['useGroupPrice'] = isset($data['useGroupPrice']) ? $data['useGroupPrice'] : null;
-        $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
-        $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
-        $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
+        $this->container['playletFreeCost'] = isset($data['playletFreeCost']) ? $data['playletFreeCost'] : null;
+        $this->container['playletFreeRoi'] = isset($data['playletFreeRoi']) ? $data['playletFreeRoi'] : null;
     }
 
     /**
@@ -242,169 +212,49 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adgroupId
+     * Gets playletFreeCost
      *
      * @return int|mixed
      */
-    public function getAdgroupId()
+    public function getPlayletFreeCost()
     {
-        return $this->container['adgroupId'];
+        return $this->container['playletFreeCost'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets playletFreeCost
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param int|mixed $playletFreeCost playletFreeCost
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setPlayletFreeCost($playletFreeCost)
     {
-        $this->container['adgroupId'] = $adgroupId;
+        $this->container['playletFreeCost'] = $playletFreeCost;
 
         return $this;
     }
 
     /**
-     * Gets bidword
+     * Gets playletFreeRoi
      *
-     * @return string|mixed
+     * @return double|mixed
      */
-    public function getBidword()
+    public function getPlayletFreeRoi()
     {
-        return $this->container['bidword'];
+        return $this->container['playletFreeRoi'];
     }
 
     /**
-     * Sets bidword
+     * Sets playletFreeRoi
      *
-     * @param string|mixed $bidword bidword
+     * @param double|mixed $playletFreeRoi playletFreeRoi
      *
      * @return $this
      */
-    public function setBidword($bidword)
+    public function setPlayletFreeRoi($playletFreeRoi)
     {
-        $this->container['bidword'] = $bidword;
-
-        return $this;
-    }
-
-    /**
-     * Gets bidPrice
-     *
-     * @return int|mixed
-     */
-    public function getBidPrice()
-    {
-        return $this->container['bidPrice'];
-    }
-
-    /**
-     * Sets bidPrice
-     *
-     * @param int|mixed $bidPrice bidPrice
-     *
-     * @return $this
-     */
-    public function setBidPrice($bidPrice)
-    {
-        $this->container['bidPrice'] = $bidPrice;
-
-        return $this;
-    }
-
-    /**
-     * Gets useGroupPrice
-     *
-     * @return \TencentAds\Model\V3\UseGroupPriceType|mixed
-     */
-    public function getUseGroupPrice()
-    {
-        return $this->container['useGroupPrice'];
-    }
-
-    /**
-     * Sets useGroupPrice
-     *
-     * @param \TencentAds\Model\V3\UseGroupPriceType|mixed $useGroupPrice useGroupPrice
-     *
-     * @return $this
-     */
-    public function setUseGroupPrice($useGroupPrice)
-    {
-        $this->container['useGroupPrice'] = $useGroupPrice;
-
-        return $this;
-    }
-
-    /**
-     * Gets matchType
-     *
-     * @return \TencentAds\Model\V3\BidwordMatchType|mixed
-     */
-    public function getMatchType()
-    {
-        return $this->container['matchType'];
-    }
-
-    /**
-     * Sets matchType
-     *
-     * @param \TencentAds\Model\V3\BidwordMatchType|mixed $matchType matchType
-     *
-     * @return $this
-     */
-    public function setMatchType($matchType)
-    {
-        $this->container['matchType'] = $matchType;
-
-        return $this;
-    }
-
-    /**
-     * Gets configuredStatus
-     *
-     * @return \TencentAds\Model\V3\BidwordPauseType|mixed
-     */
-    public function getConfiguredStatus()
-    {
-        return $this->container['configuredStatus'];
-    }
-
-    /**
-     * Sets configuredStatus
-     *
-     * @param \TencentAds\Model\V3\BidwordPauseType|mixed $configuredStatus configuredStatus
-     *
-     * @return $this
-     */
-    public function setConfiguredStatus($configuredStatus)
-    {
-        $this->container['configuredStatus'] = $configuredStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets dynamicCreativeId
-     *
-     * @return int|mixed
-     */
-    public function getDynamicCreativeId()
-    {
-        return $this->container['dynamicCreativeId'];
-    }
-
-    /**
-     * Sets dynamicCreativeId
-     *
-     * @param int|mixed $dynamicCreativeId dynamicCreativeId
-     *
-     * @return $this
-     */
-    public function setDynamicCreativeId($dynamicCreativeId)
-    {
-        $this->container['dynamicCreativeId'] = $dynamicCreativeId;
+        $this->container['playletFreeRoi'] = $playletFreeRoi;
 
         return $this;
     }

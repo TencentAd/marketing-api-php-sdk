@@ -66,7 +66,8 @@ class BidwordStruct implements ModelInterface, ArrayAccess
         'matchType' => '\TencentAds\Model\BidwordMatchType',
         'configuredStatus' => '\TencentAds\Model\BidwordPauseType',
         'pcLandingPageInfo' => '\TencentAds\Model\KeywordLandingPageInfo[]',
-        'mobileLandingPageInfo' => '\TencentAds\Model\KeywordLandingPageInfo[]'
+        'mobileLandingPageInfo' => '\TencentAds\Model\KeywordLandingPageInfo[]',
+        'dynamicCreativeId' => 'int'
     ];
 
     /**
@@ -83,7 +84,8 @@ class BidwordStruct implements ModelInterface, ArrayAccess
         'matchType' => null,
         'configuredStatus' => null,
         'pcLandingPageInfo' => null,
-        'mobileLandingPageInfo' => null
+        'mobileLandingPageInfo' => null,
+        'dynamicCreativeId' => 'int64'
     ];
 
     /**
@@ -121,7 +123,8 @@ class BidwordStruct implements ModelInterface, ArrayAccess
         'matchType' => 'match_type',
         'configuredStatus' => 'configured_status',
         'pcLandingPageInfo' => 'pc_landing_page_info',
-        'mobileLandingPageInfo' => 'mobile_landing_page_info'
+        'mobileLandingPageInfo' => 'mobile_landing_page_info',
+        'dynamicCreativeId' => 'dynamic_creative_id'
     ];
 
     /**
@@ -138,7 +141,8 @@ class BidwordStruct implements ModelInterface, ArrayAccess
         'matchType' => 'setMatchType',
         'configuredStatus' => 'setConfiguredStatus',
         'pcLandingPageInfo' => 'setPcLandingPageInfo',
-        'mobileLandingPageInfo' => 'setMobileLandingPageInfo'
+        'mobileLandingPageInfo' => 'setMobileLandingPageInfo',
+        'dynamicCreativeId' => 'setDynamicCreativeId'
     ];
 
     /**
@@ -155,7 +159,8 @@ class BidwordStruct implements ModelInterface, ArrayAccess
         'matchType' => 'getMatchType',
         'configuredStatus' => 'getConfiguredStatus',
         'pcLandingPageInfo' => 'getPcLandingPageInfo',
-        'mobileLandingPageInfo' => 'getMobileLandingPageInfo'
+        'mobileLandingPageInfo' => 'getMobileLandingPageInfo',
+        'dynamicCreativeId' => 'getDynamicCreativeId'
     ];
 
     /**
@@ -227,6 +232,7 @@ class BidwordStruct implements ModelInterface, ArrayAccess
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['pcLandingPageInfo'] = isset($data['pcLandingPageInfo']) ? $data['pcLandingPageInfo'] : null;
         $this->container['mobileLandingPageInfo'] = isset($data['mobileLandingPageInfo']) ? $data['mobileLandingPageInfo'] : null;
+        $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
     }
 
     /**
@@ -465,6 +471,30 @@ class BidwordStruct implements ModelInterface, ArrayAccess
     public function setMobileLandingPageInfo($mobileLandingPageInfo)
     {
         $this->container['mobileLandingPageInfo'] = $mobileLandingPageInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicCreativeId
+     *
+     * @return int|mixed
+     */
+    public function getDynamicCreativeId()
+    {
+        return $this->container['dynamicCreativeId'];
+    }
+
+    /**
+     * Sets dynamicCreativeId
+     *
+     * @param int|mixed $dynamicCreativeId dynamicCreativeId
+     *
+     * @return $this
+     */
+    public function setDynamicCreativeId($dynamicCreativeId)
+    {
+        $this->container['dynamicCreativeId'] = $dynamicCreativeId;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * BidwordRespStruct
+ * SmartDeliveryGoalMiniGamePromotionSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * BidwordRespStruct Class Doc Comment
+ * SmartDeliveryGoalMiniGamePromotionSpec Class Doc Comment
  *
  * @category Class
- * @description 返回的关键词信息
+ * @description 小游戏跑量目标信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class BidwordRespStruct implements ModelInterface, ArrayAccess
+class SmartDeliveryGoalMiniGamePromotionSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'bidword_resp_struct';
+    protected static $swaggerModelName = 'smart_delivery_goal_mini_game_promotion_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,15 +58,12 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'index' => 'int',
-        'bidwordId' => 'int',
-        'bidword' => 'string',
-        'bidPrice' => 'int',
-        'matchType' => '\TencentAds\Model\V3\BidwordMatchType',
-        'configuredStatus' => '\TencentAds\Model\V3\BidwordPauseType',
-        'errorMsg' => 'string',
-        'approvalStatus' => 'int',
-        'dynamicCreativeId' => 'int'
+        'registerCost' => 'int',
+        'firstDayPurchaseRoi' => 'double',
+        'firstDayMonetizationRoi' => 'double',
+        'sevenDayMonetizationRoi' => 'double',
+        'sevenDayPurchaseRoi' => 'double',
+        'day30PurchaseRoi' => 'double'
     ];
 
     /**
@@ -75,15 +72,12 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'index' => 'int64',
-        'bidwordId' => 'int64',
-        'bidword' => null,
-        'bidPrice' => 'int64',
-        'matchType' => null,
-        'configuredStatus' => null,
-        'errorMsg' => null,
-        'approvalStatus' => 'int64',
-        'dynamicCreativeId' => 'int64'
+        'registerCost' => 'int64',
+        'firstDayPurchaseRoi' => 'double',
+        'firstDayMonetizationRoi' => 'double',
+        'sevenDayMonetizationRoi' => 'double',
+        'sevenDayPurchaseRoi' => 'double',
+        'day30PurchaseRoi' => 'double'
     ];
 
     /**
@@ -113,15 +107,12 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'index' => 'index',
-        'bidwordId' => 'bidword_id',
-        'bidword' => 'bidword',
-        'bidPrice' => 'bid_price',
-        'matchType' => 'match_type',
-        'configuredStatus' => 'configured_status',
-        'errorMsg' => 'error_msg',
-        'approvalStatus' => 'approval_status',
-        'dynamicCreativeId' => 'dynamic_creative_id'
+        'registerCost' => 'register_cost',
+        'firstDayPurchaseRoi' => 'first_day_purchase_roi',
+        'firstDayMonetizationRoi' => 'first_day_monetization_roi',
+        'sevenDayMonetizationRoi' => 'seven_day_monetization_roi',
+        'sevenDayPurchaseRoi' => 'seven_day_purchase_roi',
+        'day30PurchaseRoi' => 'day30_purchase_roi'
     ];
 
     /**
@@ -130,15 +121,12 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'index' => 'setIndex',
-        'bidwordId' => 'setBidwordId',
-        'bidword' => 'setBidword',
-        'bidPrice' => 'setBidPrice',
-        'matchType' => 'setMatchType',
-        'configuredStatus' => 'setConfiguredStatus',
-        'errorMsg' => 'setErrorMsg',
-        'approvalStatus' => 'setApprovalStatus',
-        'dynamicCreativeId' => 'setDynamicCreativeId'
+        'registerCost' => 'setRegisterCost',
+        'firstDayPurchaseRoi' => 'setFirstDayPurchaseRoi',
+        'firstDayMonetizationRoi' => 'setFirstDayMonetizationRoi',
+        'sevenDayMonetizationRoi' => 'setSevenDayMonetizationRoi',
+        'sevenDayPurchaseRoi' => 'setSevenDayPurchaseRoi',
+        'day30PurchaseRoi' => 'setDay30PurchaseRoi'
     ];
 
     /**
@@ -147,15 +135,12 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'index' => 'getIndex',
-        'bidwordId' => 'getBidwordId',
-        'bidword' => 'getBidword',
-        'bidPrice' => 'getBidPrice',
-        'matchType' => 'getMatchType',
-        'configuredStatus' => 'getConfiguredStatus',
-        'errorMsg' => 'getErrorMsg',
-        'approvalStatus' => 'getApprovalStatus',
-        'dynamicCreativeId' => 'getDynamicCreativeId'
+        'registerCost' => 'getRegisterCost',
+        'firstDayPurchaseRoi' => 'getFirstDayPurchaseRoi',
+        'firstDayMonetizationRoi' => 'getFirstDayMonetizationRoi',
+        'sevenDayMonetizationRoi' => 'getSevenDayMonetizationRoi',
+        'sevenDayPurchaseRoi' => 'getSevenDayPurchaseRoi',
+        'day30PurchaseRoi' => 'getDay30PurchaseRoi'
     ];
 
     /**
@@ -218,15 +203,12 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['index'] = isset($data['index']) ? $data['index'] : null;
-        $this->container['bidwordId'] = isset($data['bidwordId']) ? $data['bidwordId'] : null;
-        $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
-        $this->container['bidPrice'] = isset($data['bidPrice']) ? $data['bidPrice'] : null;
-        $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
-        $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
-        $this->container['errorMsg'] = isset($data['errorMsg']) ? $data['errorMsg'] : null;
-        $this->container['approvalStatus'] = isset($data['approvalStatus']) ? $data['approvalStatus'] : null;
-        $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
+        $this->container['registerCost'] = isset($data['registerCost']) ? $data['registerCost'] : null;
+        $this->container['firstDayPurchaseRoi'] = isset($data['firstDayPurchaseRoi']) ? $data['firstDayPurchaseRoi'] : null;
+        $this->container['firstDayMonetizationRoi'] = isset($data['firstDayMonetizationRoi']) ? $data['firstDayMonetizationRoi'] : null;
+        $this->container['sevenDayMonetizationRoi'] = isset($data['sevenDayMonetizationRoi']) ? $data['sevenDayMonetizationRoi'] : null;
+        $this->container['sevenDayPurchaseRoi'] = isset($data['sevenDayPurchaseRoi']) ? $data['sevenDayPurchaseRoi'] : null;
+        $this->container['day30PurchaseRoi'] = isset($data['day30PurchaseRoi']) ? $data['day30PurchaseRoi'] : null;
     }
 
     /**
@@ -254,217 +236,145 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets index
+     * Gets registerCost
      *
      * @return int|mixed
      */
-    public function getIndex()
+    public function getRegisterCost()
     {
-        return $this->container['index'];
+        return $this->container['registerCost'];
     }
 
     /**
-     * Sets index
+     * Sets registerCost
      *
-     * @param int|mixed $index index
+     * @param int|mixed $registerCost registerCost
      *
      * @return $this
      */
-    public function setIndex($index)
+    public function setRegisterCost($registerCost)
     {
-        $this->container['index'] = $index;
+        $this->container['registerCost'] = $registerCost;
 
         return $this;
     }
 
     /**
-     * Gets bidwordId
+     * Gets firstDayPurchaseRoi
      *
-     * @return int|mixed
+     * @return double|mixed
      */
-    public function getBidwordId()
+    public function getFirstDayPurchaseRoi()
     {
-        return $this->container['bidwordId'];
+        return $this->container['firstDayPurchaseRoi'];
     }
 
     /**
-     * Sets bidwordId
+     * Sets firstDayPurchaseRoi
      *
-     * @param int|mixed $bidwordId bidwordId
+     * @param double|mixed $firstDayPurchaseRoi firstDayPurchaseRoi
      *
      * @return $this
      */
-    public function setBidwordId($bidwordId)
+    public function setFirstDayPurchaseRoi($firstDayPurchaseRoi)
     {
-        $this->container['bidwordId'] = $bidwordId;
+        $this->container['firstDayPurchaseRoi'] = $firstDayPurchaseRoi;
 
         return $this;
     }
 
     /**
-     * Gets bidword
+     * Gets firstDayMonetizationRoi
      *
-     * @return string|mixed
+     * @return double|mixed
      */
-    public function getBidword()
+    public function getFirstDayMonetizationRoi()
     {
-        return $this->container['bidword'];
+        return $this->container['firstDayMonetizationRoi'];
     }
 
     /**
-     * Sets bidword
+     * Sets firstDayMonetizationRoi
      *
-     * @param string|mixed $bidword bidword
+     * @param double|mixed $firstDayMonetizationRoi firstDayMonetizationRoi
      *
      * @return $this
      */
-    public function setBidword($bidword)
+    public function setFirstDayMonetizationRoi($firstDayMonetizationRoi)
     {
-        $this->container['bidword'] = $bidword;
+        $this->container['firstDayMonetizationRoi'] = $firstDayMonetizationRoi;
 
         return $this;
     }
 
     /**
-     * Gets bidPrice
+     * Gets sevenDayMonetizationRoi
      *
-     * @return int|mixed
+     * @return double|mixed
      */
-    public function getBidPrice()
+    public function getSevenDayMonetizationRoi()
     {
-        return $this->container['bidPrice'];
+        return $this->container['sevenDayMonetizationRoi'];
     }
 
     /**
-     * Sets bidPrice
+     * Sets sevenDayMonetizationRoi
      *
-     * @param int|mixed $bidPrice bidPrice
+     * @param double|mixed $sevenDayMonetizationRoi sevenDayMonetizationRoi
      *
      * @return $this
      */
-    public function setBidPrice($bidPrice)
+    public function setSevenDayMonetizationRoi($sevenDayMonetizationRoi)
     {
-        $this->container['bidPrice'] = $bidPrice;
+        $this->container['sevenDayMonetizationRoi'] = $sevenDayMonetizationRoi;
 
         return $this;
     }
 
     /**
-     * Gets matchType
+     * Gets sevenDayPurchaseRoi
      *
-     * @return \TencentAds\Model\V3\BidwordMatchType|mixed
+     * @return double|mixed
      */
-    public function getMatchType()
+    public function getSevenDayPurchaseRoi()
     {
-        return $this->container['matchType'];
+        return $this->container['sevenDayPurchaseRoi'];
     }
 
     /**
-     * Sets matchType
+     * Sets sevenDayPurchaseRoi
      *
-     * @param \TencentAds\Model\V3\BidwordMatchType|mixed $matchType matchType
+     * @param double|mixed $sevenDayPurchaseRoi sevenDayPurchaseRoi
      *
      * @return $this
      */
-    public function setMatchType($matchType)
+    public function setSevenDayPurchaseRoi($sevenDayPurchaseRoi)
     {
-        $this->container['matchType'] = $matchType;
+        $this->container['sevenDayPurchaseRoi'] = $sevenDayPurchaseRoi;
 
         return $this;
     }
 
     /**
-     * Gets configuredStatus
+     * Gets day30PurchaseRoi
      *
-     * @return \TencentAds\Model\V3\BidwordPauseType|mixed
+     * @return double|mixed
      */
-    public function getConfiguredStatus()
+    public function getDay30PurchaseRoi()
     {
-        return $this->container['configuredStatus'];
+        return $this->container['day30PurchaseRoi'];
     }
 
     /**
-     * Sets configuredStatus
+     * Sets day30PurchaseRoi
      *
-     * @param \TencentAds\Model\V3\BidwordPauseType|mixed $configuredStatus configuredStatus
+     * @param double|mixed $day30PurchaseRoi day30PurchaseRoi
      *
      * @return $this
      */
-    public function setConfiguredStatus($configuredStatus)
+    public function setDay30PurchaseRoi($day30PurchaseRoi)
     {
-        $this->container['configuredStatus'] = $configuredStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets errorMsg
-     *
-     * @return string|mixed
-     */
-    public function getErrorMsg()
-    {
-        return $this->container['errorMsg'];
-    }
-
-    /**
-     * Sets errorMsg
-     *
-     * @param string|mixed $errorMsg errorMsg
-     *
-     * @return $this
-     */
-    public function setErrorMsg($errorMsg)
-    {
-        $this->container['errorMsg'] = $errorMsg;
-
-        return $this;
-    }
-
-    /**
-     * Gets approvalStatus
-     *
-     * @return int|mixed
-     */
-    public function getApprovalStatus()
-    {
-        return $this->container['approvalStatus'];
-    }
-
-    /**
-     * Sets approvalStatus
-     *
-     * @param int|mixed $approvalStatus approvalStatus
-     *
-     * @return $this
-     */
-    public function setApprovalStatus($approvalStatus)
-    {
-        $this->container['approvalStatus'] = $approvalStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets dynamicCreativeId
-     *
-     * @return int|mixed
-     */
-    public function getDynamicCreativeId()
-    {
-        return $this->container['dynamicCreativeId'];
-    }
-
-    /**
-     * Sets dynamicCreativeId
-     *
-     * @param int|mixed $dynamicCreativeId dynamicCreativeId
-     *
-     * @return $this
-     */
-    public function setDynamicCreativeId($dynamicCreativeId)
-    {
-        $this->container['dynamicCreativeId'] = $dynamicCreativeId;
+        $this->container['day30PurchaseRoi'] = $day30PurchaseRoi;
 
         return $this;
     }

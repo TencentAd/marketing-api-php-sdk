@@ -1,6 +1,6 @@
 <?php
 /**
- * TargetingsShareItem
+ * SmartDeliveryGoalPlayletPurchaseSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * TargetingsShareItem Class Doc Comment
+ * SmartDeliveryGoalPlayletPurchaseSpec Class Doc Comment
  *
  * @category Class
- * @description 定向包分享结构
+ * @description 短剧首日首次付费目标信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class TargetingsShareItem implements ModelInterface, ArrayAccess
+class SmartDeliveryGoalPlayletPurchaseSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'targetings_share_item';
+    protected static $swaggerModelName = 'smart_delivery_goal_playlet_purchase_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'targetingId' => 'int',
-        'shareToAccountId' => 'int',
-        'shareType' => '\TencentAds\Model\V3\TargetingShareType'
+        'playletPurchaseCost' => 'int'
     ];
 
     /**
@@ -69,9 +67,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'targetingId' => 'int64',
-        'shareToAccountId' => 'int64',
-        'shareType' => null
+        'playletPurchaseCost' => 'int64'
     ];
 
     /**
@@ -101,9 +97,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'targetingId' => 'targeting_id',
-        'shareToAccountId' => 'share_to_account_id',
-        'shareType' => 'share_type'
+        'playletPurchaseCost' => 'playlet_purchase_cost'
     ];
 
     /**
@@ -112,9 +106,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'targetingId' => 'setTargetingId',
-        'shareToAccountId' => 'setShareToAccountId',
-        'shareType' => 'setShareType'
+        'playletPurchaseCost' => 'setPlayletPurchaseCost'
     ];
 
     /**
@@ -123,9 +115,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'targetingId' => 'getTargetingId',
-        'shareToAccountId' => 'getShareToAccountId',
-        'shareType' => 'getShareType'
+        'playletPurchaseCost' => 'getPlayletPurchaseCost'
     ];
 
     /**
@@ -188,9 +178,7 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['targetingId'] = isset($data['targetingId']) ? $data['targetingId'] : null;
-        $this->container['shareToAccountId'] = isset($data['shareToAccountId']) ? $data['shareToAccountId'] : null;
-        $this->container['shareType'] = isset($data['shareType']) ? $data['shareType'] : null;
+        $this->container['playletPurchaseCost'] = isset($data['playletPurchaseCost']) ? $data['playletPurchaseCost'] : null;
     }
 
     /**
@@ -218,73 +206,25 @@ class TargetingsShareItem implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets targetingId
+     * Gets playletPurchaseCost
      *
      * @return int|mixed
      */
-    public function getTargetingId()
+    public function getPlayletPurchaseCost()
     {
-        return $this->container['targetingId'];
+        return $this->container['playletPurchaseCost'];
     }
 
     /**
-     * Sets targetingId
+     * Sets playletPurchaseCost
      *
-     * @param int|mixed $targetingId targetingId
+     * @param int|mixed $playletPurchaseCost playletPurchaseCost
      *
      * @return $this
      */
-    public function setTargetingId($targetingId)
+    public function setPlayletPurchaseCost($playletPurchaseCost)
     {
-        $this->container['targetingId'] = $targetingId;
-
-        return $this;
-    }
-
-    /**
-     * Gets shareToAccountId
-     *
-     * @return int|mixed
-     */
-    public function getShareToAccountId()
-    {
-        return $this->container['shareToAccountId'];
-    }
-
-    /**
-     * Sets shareToAccountId
-     *
-     * @param int|mixed $shareToAccountId shareToAccountId
-     *
-     * @return $this
-     */
-    public function setShareToAccountId($shareToAccountId)
-    {
-        $this->container['shareToAccountId'] = $shareToAccountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets shareType
-     *
-     * @return \TencentAds\Model\V3\TargetingShareType|mixed
-     */
-    public function getShareType()
-    {
-        return $this->container['shareType'];
-    }
-
-    /**
-     * Sets shareType
-     *
-     * @param \TencentAds\Model\V3\TargetingShareType|mixed $shareType shareType
-     *
-     * @return $this
-     */
-    public function setShareType($shareType)
-    {
-        $this->container['shareType'] = $shareType;
+        $this->container['playletPurchaseCost'] = $playletPurchaseCost;
 
         return $this;
     }

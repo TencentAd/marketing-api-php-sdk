@@ -65,7 +65,8 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
         'matchType' => '\TencentAds\Model\BidwordMatchType',
         'configuredStatus' => '\TencentAds\Model\BidwordPauseType',
         'errorMsg' => 'string',
-        'approvalStatus' => 'int'
+        'approvalStatus' => 'int',
+        'dynamicCreativeId' => 'int'
     ];
 
     /**
@@ -81,7 +82,8 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
         'matchType' => null,
         'configuredStatus' => null,
         'errorMsg' => null,
-        'approvalStatus' => 'int64'
+        'approvalStatus' => 'int64',
+        'dynamicCreativeId' => 'int64'
     ];
 
     /**
@@ -118,7 +120,8 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
         'matchType' => 'match_type',
         'configuredStatus' => 'configured_status',
         'errorMsg' => 'error_msg',
-        'approvalStatus' => 'approval_status'
+        'approvalStatus' => 'approval_status',
+        'dynamicCreativeId' => 'dynamic_creative_id'
     ];
 
     /**
@@ -134,7 +137,8 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
         'matchType' => 'setMatchType',
         'configuredStatus' => 'setConfiguredStatus',
         'errorMsg' => 'setErrorMsg',
-        'approvalStatus' => 'setApprovalStatus'
+        'approvalStatus' => 'setApprovalStatus',
+        'dynamicCreativeId' => 'setDynamicCreativeId'
     ];
 
     /**
@@ -150,7 +154,8 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
         'matchType' => 'getMatchType',
         'configuredStatus' => 'getConfiguredStatus',
         'errorMsg' => 'getErrorMsg',
-        'approvalStatus' => 'getApprovalStatus'
+        'approvalStatus' => 'getApprovalStatus',
+        'dynamicCreativeId' => 'getDynamicCreativeId'
     ];
 
     /**
@@ -221,6 +226,7 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['errorMsg'] = isset($data['errorMsg']) ? $data['errorMsg'] : null;
         $this->container['approvalStatus'] = isset($data['approvalStatus']) ? $data['approvalStatus'] : null;
+        $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
     }
 
     /**
@@ -435,6 +441,30 @@ class BidwordRespStruct implements ModelInterface, ArrayAccess
     public function setApprovalStatus($approvalStatus)
     {
         $this->container['approvalStatus'] = $approvalStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicCreativeId
+     *
+     * @return int|mixed
+     */
+    public function getDynamicCreativeId()
+    {
+        return $this->container['dynamicCreativeId'];
+    }
+
+    /**
+     * Sets dynamicCreativeId
+     *
+     * @param int|mixed $dynamicCreativeId dynamicCreativeId
+     *
+     * @return $this
+     */
+    public function setDynamicCreativeId($dynamicCreativeId)
+    {
+        $this->container['dynamicCreativeId'] = $dynamicCreativeId;
 
         return $this;
     }

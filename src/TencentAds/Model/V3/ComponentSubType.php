@@ -186,6 +186,7 @@ class ComponentSubType
     const JUMP_INFO_QQ_MINI_GAME = 'JUMP_INFO_QQ_MINI_GAME';
     const JUMP_INFO_APP_HARMONY = 'JUMP_INFO_APP_HARMONY';
     const JUMP_INFO_WECHAT_SHOP = 'JUMP_INFO_WECHAT_SHOP';
+    const MARKETING_ASSET_PLAYLET = 'MARKETING_ASSET_PLAYLET';
     
     /**
      * Gets allowable values of the enum
@@ -336,6 +337,7 @@ class ComponentSubType
             self::JUMP_INFO_QQ_MINI_GAME,
             self::JUMP_INFO_APP_HARMONY,
             self::JUMP_INFO_WECHAT_SHOP,
+            self::MARKETING_ASSET_PLAYLET,
         ];
     }
 }

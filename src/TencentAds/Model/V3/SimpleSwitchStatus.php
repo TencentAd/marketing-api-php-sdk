@@ -1,6 +1,6 @@
 <?php
 /**
- * TargetingShareType
+ * SimpleSwitchStatus
  *
  * PHP version 5
  *
@@ -31,21 +31,22 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * TargetingShareType Class Doc Comment
+ * SimpleSwitchStatus Class Doc Comment
  *
  * @category Class
- * @description 分享类型
+ * @description 自动投放自动续投状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class TargetingShareType
+class SimpleSwitchStatus
 {
     /**
      * Possible values of this enum
      */
-    const BUSINESS = 'SHARE_TYPE_SAME_BUSINESS';
-    const MDM = 'SHARE_TYPE_SAME_MDM';
+    const UNKNOWN = 'STATUS_UNKNOWN';
+    const ON = 'STATUS_ON';
+    const OFF = 'STATUS_OFF';
     
     /**
      * Gets allowable values of the enum
@@ -54,8 +55,9 @@ class TargetingShareType
     public static function getAllowableEnumValues()
     {
         return [
-            self::BUSINESS,
-            self::MDM,
+            self::UNKNOWN,
+            self::ON,
+            self::OFF,
         ];
     }
 }

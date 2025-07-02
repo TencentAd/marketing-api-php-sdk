@@ -118,6 +118,7 @@ class ComponentType
     const SEARCH_ALGORITHM_GEN = 'SEARCH_ALGORITHM_GEN';
     const SEARCH_DERIVATIVE_TITLE = 'SEARCH_DERIVATIVE_TITLE';
     const SMART_DELIVERY_AIGC = 'SMART_DELIVERY_AIGC';
+    const MARKETING_ASSET_PLAYLET = 'MARKETING_ASSET_PLAYLET';
     
     /**
      * Gets allowable values of the enum
@@ -200,6 +201,7 @@ class ComponentType
             self::SEARCH_ALGORITHM_GEN,
             self::SEARCH_DERIVATIVE_TITLE,
             self::SMART_DELIVERY_AIGC,
+            self::MARKETING_ASSET_PLAYLET,
         ];
     }
 }

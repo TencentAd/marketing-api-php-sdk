@@ -51,6 +51,7 @@ class ComponentGenerationType
     const SMART_DELIVERY = 'COMPONENT_GENERATION_TYPE_SMART_DELIVERY';
     const MUSE_AIGC = 'COMPONENT_GENERATION_TYPE_MUSE_AIGC';
     const HUXUAN = 'COMPONENT_GENERATION_TYPE_HUXUAN';
+    const MARKETING_ASSET = 'COMPONENT_GENERATION_TYPE_MARKETING_ASSET';
     
     /**
      * Gets allowable values of the enum
@@ -66,6 +67,7 @@ class ComponentGenerationType
             self::SMART_DELIVERY,
             self::MUSE_AIGC,
             self::HUXUAN,
+            self::MARKETING_ASSET,
         ];
     }
 }

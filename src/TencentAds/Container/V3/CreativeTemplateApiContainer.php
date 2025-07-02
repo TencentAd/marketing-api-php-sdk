@@ -49,8 +49,9 @@ class CreativeTemplateApiContainer extends ApiContainer
             $dynamicCreativeType = isset($params['dynamic_creative_type']) ? $params['dynamic_creative_type'] : null;
             $creativeTemplateId = isset($params['creative_template_id']) ? $params['creative_template_id'] : null;
             $useNewVersion = isset($params['use_new_version']) ? $params['use_new_version'] : null;
+            $adgroupType = isset($params['adgroup_type']) ? $params['adgroup_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->creativeTemplateGet($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $useNewVersion, $fields);
+            $response = $this->apiInstance->creativeTemplateGet($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $useNewVersion, $adgroupType, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -76,8 +77,9 @@ class CreativeTemplateApiContainer extends ApiContainer
             $dynamicCreativeType = isset($params['dynamic_creative_type']) ? $params['dynamic_creative_type'] : null;
             $creativeTemplateId = isset($params['creative_template_id']) ? $params['creative_template_id'] : null;
             $useNewVersion = isset($params['use_new_version']) ? $params['use_new_version'] : null;
+            $adgroupType = isset($params['adgroup_type']) ? $params['adgroup_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->creativeTemplateGetAsync($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $useNewVersion, $fields);
+            $response = $this->apiInstance->creativeTemplateGetAsync($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $useNewVersion, $adgroupType, $fields);
             return $response;
         });
     }

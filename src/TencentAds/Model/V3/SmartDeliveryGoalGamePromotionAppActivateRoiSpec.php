@@ -1,6 +1,6 @@
 <?php
 /**
- * SearchBidwordStruct
+ * SmartDeliveryGoalGamePromotionAppActivateRoiSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SearchBidwordStruct Class Doc Comment
+ * SmartDeliveryGoalGamePromotionAppActivateRoiSpec Class Doc Comment
  *
  * @category Class
- * @description 关键词信息
+ * @description 智投投放目标激活和ROI
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SearchBidwordStruct implements ModelInterface, ArrayAccess
+class SmartDeliveryGoalGamePromotionAppActivateRoiSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'search_bidword_struct';
+    protected static $swaggerModelName = 'smart_delivery_goal_game_promotion_app_activate_roi_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +58,8 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'bidword' => 'string',
-        'bidPrice' => 'int',
-        'useGroupPrice' => '\TencentAds\Model\V3\UseGroupPriceType',
-        'matchType' => '\TencentAds\Model\V3\BidwordMatchType',
-        'configuredStatus' => '\TencentAds\Model\V3\BidwordPauseType',
-        'dynamicCreativeId' => 'int'
+        'appActivateCost' => 'int',
+        'deepPurchaseRoi' => 'double'
     ];
 
     /**
@@ -73,13 +68,8 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'bidword' => null,
-        'bidPrice' => 'int64',
-        'useGroupPrice' => null,
-        'matchType' => null,
-        'configuredStatus' => null,
-        'dynamicCreativeId' => 'int64'
+        'appActivateCost' => 'int64',
+        'deepPurchaseRoi' => 'double'
     ];
 
     /**
@@ -109,13 +99,8 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'bidword' => 'bidword',
-        'bidPrice' => 'bid_price',
-        'useGroupPrice' => 'use_group_price',
-        'matchType' => 'match_type',
-        'configuredStatus' => 'configured_status',
-        'dynamicCreativeId' => 'dynamic_creative_id'
+        'appActivateCost' => 'app_activate_cost',
+        'deepPurchaseRoi' => 'deep_purchase_roi'
     ];
 
     /**
@@ -124,13 +109,8 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'bidword' => 'setBidword',
-        'bidPrice' => 'setBidPrice',
-        'useGroupPrice' => 'setUseGroupPrice',
-        'matchType' => 'setMatchType',
-        'configuredStatus' => 'setConfiguredStatus',
-        'dynamicCreativeId' => 'setDynamicCreativeId'
+        'appActivateCost' => 'setAppActivateCost',
+        'deepPurchaseRoi' => 'setDeepPurchaseRoi'
     ];
 
     /**
@@ -139,13 +119,8 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'bidword' => 'getBidword',
-        'bidPrice' => 'getBidPrice',
-        'useGroupPrice' => 'getUseGroupPrice',
-        'matchType' => 'getMatchType',
-        'configuredStatus' => 'getConfiguredStatus',
-        'dynamicCreativeId' => 'getDynamicCreativeId'
+        'appActivateCost' => 'getAppActivateCost',
+        'deepPurchaseRoi' => 'getDeepPurchaseRoi'
     ];
 
     /**
@@ -208,13 +183,8 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
-        $this->container['bidPrice'] = isset($data['bidPrice']) ? $data['bidPrice'] : null;
-        $this->container['useGroupPrice'] = isset($data['useGroupPrice']) ? $data['useGroupPrice'] : null;
-        $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
-        $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
-        $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
+        $this->container['appActivateCost'] = isset($data['appActivateCost']) ? $data['appActivateCost'] : null;
+        $this->container['deepPurchaseRoi'] = isset($data['deepPurchaseRoi']) ? $data['deepPurchaseRoi'] : null;
     }
 
     /**
@@ -242,169 +212,49 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adgroupId
+     * Gets appActivateCost
      *
      * @return int|mixed
      */
-    public function getAdgroupId()
+    public function getAppActivateCost()
     {
-        return $this->container['adgroupId'];
+        return $this->container['appActivateCost'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets appActivateCost
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param int|mixed $appActivateCost appActivateCost
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setAppActivateCost($appActivateCost)
     {
-        $this->container['adgroupId'] = $adgroupId;
+        $this->container['appActivateCost'] = $appActivateCost;
 
         return $this;
     }
 
     /**
-     * Gets bidword
+     * Gets deepPurchaseRoi
      *
-     * @return string|mixed
+     * @return double|mixed
      */
-    public function getBidword()
+    public function getDeepPurchaseRoi()
     {
-        return $this->container['bidword'];
+        return $this->container['deepPurchaseRoi'];
     }
 
     /**
-     * Sets bidword
+     * Sets deepPurchaseRoi
      *
-     * @param string|mixed $bidword bidword
+     * @param double|mixed $deepPurchaseRoi deepPurchaseRoi
      *
      * @return $this
      */
-    public function setBidword($bidword)
+    public function setDeepPurchaseRoi($deepPurchaseRoi)
     {
-        $this->container['bidword'] = $bidword;
-
-        return $this;
-    }
-
-    /**
-     * Gets bidPrice
-     *
-     * @return int|mixed
-     */
-    public function getBidPrice()
-    {
-        return $this->container['bidPrice'];
-    }
-
-    /**
-     * Sets bidPrice
-     *
-     * @param int|mixed $bidPrice bidPrice
-     *
-     * @return $this
-     */
-    public function setBidPrice($bidPrice)
-    {
-        $this->container['bidPrice'] = $bidPrice;
-
-        return $this;
-    }
-
-    /**
-     * Gets useGroupPrice
-     *
-     * @return \TencentAds\Model\V3\UseGroupPriceType|mixed
-     */
-    public function getUseGroupPrice()
-    {
-        return $this->container['useGroupPrice'];
-    }
-
-    /**
-     * Sets useGroupPrice
-     *
-     * @param \TencentAds\Model\V3\UseGroupPriceType|mixed $useGroupPrice useGroupPrice
-     *
-     * @return $this
-     */
-    public function setUseGroupPrice($useGroupPrice)
-    {
-        $this->container['useGroupPrice'] = $useGroupPrice;
-
-        return $this;
-    }
-
-    /**
-     * Gets matchType
-     *
-     * @return \TencentAds\Model\V3\BidwordMatchType|mixed
-     */
-    public function getMatchType()
-    {
-        return $this->container['matchType'];
-    }
-
-    /**
-     * Sets matchType
-     *
-     * @param \TencentAds\Model\V3\BidwordMatchType|mixed $matchType matchType
-     *
-     * @return $this
-     */
-    public function setMatchType($matchType)
-    {
-        $this->container['matchType'] = $matchType;
-
-        return $this;
-    }
-
-    /**
-     * Gets configuredStatus
-     *
-     * @return \TencentAds\Model\V3\BidwordPauseType|mixed
-     */
-    public function getConfiguredStatus()
-    {
-        return $this->container['configuredStatus'];
-    }
-
-    /**
-     * Sets configuredStatus
-     *
-     * @param \TencentAds\Model\V3\BidwordPauseType|mixed $configuredStatus configuredStatus
-     *
-     * @return $this
-     */
-    public function setConfiguredStatus($configuredStatus)
-    {
-        $this->container['configuredStatus'] = $configuredStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets dynamicCreativeId
-     *
-     * @return int|mixed
-     */
-    public function getDynamicCreativeId()
-    {
-        return $this->container['dynamicCreativeId'];
-    }
-
-    /**
-     * Sets dynamicCreativeId
-     *
-     * @param int|mixed $dynamicCreativeId dynamicCreativeId
-     *
-     * @return $this
-     */
-    public function setDynamicCreativeId($dynamicCreativeId)
-    {
-        $this->container['dynamicCreativeId'] = $dynamicCreativeId;
+        $this->container['deepPurchaseRoi'] = $deepPurchaseRoi;
 
         return $this;
     }

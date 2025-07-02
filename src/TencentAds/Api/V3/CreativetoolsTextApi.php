@@ -94,6 +94,7 @@ class CreativetoolsTextApi
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  int|mixed $maxTextLength maxTextLength (required)
+     * @param  int|mixed $adgroupId adgroupId (optional)
      * @param  string|mixed $keyword keyword (optional)
      * @param  int[]|mixed $filtering filtering (optional)
      * @param  int|mixed $number number (optional)
@@ -107,9 +108,9 @@ class CreativetoolsTextApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\CreativetoolsTextGetResponse|mixed
      */
-    public function creativetoolsTextGet($accountId, $maxTextLength, $keyword = null, $filtering = null, $number = null, $categoryFirstLevel = null, $categorySecondLevel = null, $productCatalogId = null, $productOuterIds = null, $fields = null)
+    public function creativetoolsTextGet($accountId, $maxTextLength, $adgroupId = null, $keyword = null, $filtering = null, $number = null, $categoryFirstLevel = null, $categorySecondLevel = null, $productCatalogId = null, $productOuterIds = null, $fields = null)
     {
-        list($response) = $this->creativetoolsTextGetWithHttpInfo($accountId, $maxTextLength, $keyword, $filtering, $number, $categoryFirstLevel, $categorySecondLevel, $productCatalogId, $productOuterIds, $fields);
+        list($response) = $this->creativetoolsTextGetWithHttpInfo($accountId, $maxTextLength, $adgroupId, $keyword, $filtering, $number, $categoryFirstLevel, $categorySecondLevel, $productCatalogId, $productOuterIds, $fields);
         return $response;
     }
 
@@ -120,6 +121,7 @@ class CreativetoolsTextApi
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $maxTextLength (required)
+     * @param  int|mixed $adgroupId (optional)
      * @param  string|mixed $keyword (optional)
      * @param  int[]|mixed $filtering (optional)
      * @param  int|mixed $number (optional)
@@ -133,10 +135,10 @@ class CreativetoolsTextApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\CreativetoolsTextGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function creativetoolsTextGetWithHttpInfo($accountId, $maxTextLength, $keyword = null, $filtering = null, $number = null, $categoryFirstLevel = null, $categorySecondLevel = null, $productCatalogId = null, $productOuterIds = null, $fields = null)
+    public function creativetoolsTextGetWithHttpInfo($accountId, $maxTextLength, $adgroupId = null, $keyword = null, $filtering = null, $number = null, $categoryFirstLevel = null, $categorySecondLevel = null, $productCatalogId = null, $productOuterIds = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\CreativetoolsTextGetResponse';
-        $request = $this->creativetoolsTextGetRequest($accountId, $maxTextLength, $keyword, $filtering, $number, $categoryFirstLevel, $categorySecondLevel, $productCatalogId, $productOuterIds, $fields);
+        $request = $this->creativetoolsTextGetRequest($accountId, $maxTextLength, $adgroupId, $keyword, $filtering, $number, $categoryFirstLevel, $categorySecondLevel, $productCatalogId, $productOuterIds, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -204,6 +206,7 @@ class CreativetoolsTextApi
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $maxTextLength (required)
+     * @param  int|mixed $adgroupId (optional)
      * @param  string|mixed $keyword (optional)
      * @param  int[]|mixed $filtering (optional)
      * @param  int|mixed $number (optional)
@@ -216,9 +219,9 @@ class CreativetoolsTextApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function creativetoolsTextGetAsync($accountId, $maxTextLength, $keyword = null, $filtering = null, $number = null, $categoryFirstLevel = null, $categorySecondLevel = null, $productCatalogId = null, $productOuterIds = null, $fields = null)
+    public function creativetoolsTextGetAsync($accountId, $maxTextLength, $adgroupId = null, $keyword = null, $filtering = null, $number = null, $categoryFirstLevel = null, $categorySecondLevel = null, $productCatalogId = null, $productOuterIds = null, $fields = null)
     {
-        return $this->creativetoolsTextGetAsyncWithHttpInfo($accountId, $maxTextLength, $keyword, $filtering, $number, $categoryFirstLevel, $categorySecondLevel, $productCatalogId, $productOuterIds, $fields)
+        return $this->creativetoolsTextGetAsyncWithHttpInfo($accountId, $maxTextLength, $adgroupId, $keyword, $filtering, $number, $categoryFirstLevel, $categorySecondLevel, $productCatalogId, $productOuterIds, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -233,6 +236,7 @@ class CreativetoolsTextApi
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $maxTextLength (required)
+     * @param  int|mixed $adgroupId (optional)
      * @param  string|mixed $keyword (optional)
      * @param  int[]|mixed $filtering (optional)
      * @param  int|mixed $number (optional)
@@ -245,10 +249,10 @@ class CreativetoolsTextApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function creativetoolsTextGetAsyncWithHttpInfo($accountId, $maxTextLength, $keyword = null, $filtering = null, $number = null, $categoryFirstLevel = null, $categorySecondLevel = null, $productCatalogId = null, $productOuterIds = null, $fields = null)
+    public function creativetoolsTextGetAsyncWithHttpInfo($accountId, $maxTextLength, $adgroupId = null, $keyword = null, $filtering = null, $number = null, $categoryFirstLevel = null, $categorySecondLevel = null, $productCatalogId = null, $productOuterIds = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\CreativetoolsTextGetResponse';
-        $request = $this->creativetoolsTextGetRequest($accountId, $maxTextLength, $keyword, $filtering, $number, $categoryFirstLevel, $categorySecondLevel, $productCatalogId, $productOuterIds, $fields);
+        $request = $this->creativetoolsTextGetRequest($accountId, $maxTextLength, $adgroupId, $keyword, $filtering, $number, $categoryFirstLevel, $categorySecondLevel, $productCatalogId, $productOuterIds, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -292,6 +296,7 @@ class CreativetoolsTextApi
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $maxTextLength (required)
+     * @param  int|mixed $adgroupId (optional)
      * @param  string|mixed $keyword (optional)
      * @param  int[]|mixed $filtering (optional)
      * @param  int|mixed $number (optional)
@@ -304,7 +309,7 @@ class CreativetoolsTextApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function creativetoolsTextGetRequest($accountId, $maxTextLength, $keyword = null, $filtering = null, $number = null, $categoryFirstLevel = null, $categorySecondLevel = null, $productCatalogId = null, $productOuterIds = null, $fields = null)
+    protected function creativetoolsTextGetRequest($accountId, $maxTextLength, $adgroupId = null, $keyword = null, $filtering = null, $number = null, $categoryFirstLevel = null, $categorySecondLevel = null, $productCatalogId = null, $productOuterIds = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -333,6 +338,10 @@ class CreativetoolsTextApi
         // query params
         if ($maxTextLength !== null) {
             $queryParams['max_text_length'] = ObjectSerializer::toQueryValue($maxTextLength);
+        }
+        // query params
+        if ($adgroupId !== null) {
+            $queryParams['adgroup_id'] = ObjectSerializer::toQueryValue($adgroupId);
         }
         // query params
         if ($keyword !== null) {

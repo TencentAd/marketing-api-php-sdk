@@ -40,6 +40,7 @@ class CreativetoolsTextApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $maxTextLength = isset($params['max_text_length']) ? $params['max_text_length'] : null;
+            $adgroupId = isset($params['adgroup_id']) ? $params['adgroup_id'] : null;
             $keyword = isset($params['keyword']) ? $params['keyword'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $number = isset($params['number']) ? $params['number'] : null;
@@ -48,7 +49,7 @@ class CreativetoolsTextApiContainer extends ApiContainer
             $productCatalogId = isset($params['product_catalog_id']) ? $params['product_catalog_id'] : null;
             $productOuterIds = isset($params['product_outer_ids']) ? $params['product_outer_ids'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->creativetoolsTextGet($accountId, $maxTextLength, $keyword, $filtering, $number, $categoryFirstLevel, $categorySecondLevel, $productCatalogId, $productOuterIds, $fields);
+            $response = $this->apiInstance->creativetoolsTextGet($accountId, $maxTextLength, $adgroupId, $keyword, $filtering, $number, $categoryFirstLevel, $categorySecondLevel, $productCatalogId, $productOuterIds, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -65,6 +66,7 @@ class CreativetoolsTextApiContainer extends ApiContainer
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $maxTextLength = isset($params['max_text_length']) ? $params['max_text_length'] : null;
+            $adgroupId = isset($params['adgroup_id']) ? $params['adgroup_id'] : null;
             $keyword = isset($params['keyword']) ? $params['keyword'] : null;
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $number = isset($params['number']) ? $params['number'] : null;
@@ -73,7 +75,7 @@ class CreativetoolsTextApiContainer extends ApiContainer
             $productCatalogId = isset($params['product_catalog_id']) ? $params['product_catalog_id'] : null;
             $productOuterIds = isset($params['product_outer_ids']) ? $params['product_outer_ids'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->creativetoolsTextGetAsync($accountId, $maxTextLength, $keyword, $filtering, $number, $categoryFirstLevel, $categorySecondLevel, $productCatalogId, $productOuterIds, $fields);
+            $response = $this->apiInstance->creativetoolsTextGetAsync($accountId, $maxTextLength, $adgroupId, $keyword, $filtering, $number, $categoryFirstLevel, $categorySecondLevel, $productCatalogId, $productOuterIds, $fields);
             return $response;
         });
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * SearchBidwordStruct
+ * SmartDeliverySceneSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SearchBidwordStruct Class Doc Comment
+ * SmartDeliverySceneSpec Class Doc Comment
  *
  * @category Class
- * @description 关键词信息
+ * @description 场景化投放信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SearchBidwordStruct implements ModelInterface, ArrayAccess
+class SmartDeliverySceneSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'search_bidword_struct';
+    protected static $swaggerModelName = 'smart_delivery_scene_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +58,12 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'bidword' => 'string',
-        'bidPrice' => 'int',
-        'useGroupPrice' => '\TencentAds\Model\V3\UseGroupPriceType',
-        'matchType' => '\TencentAds\Model\V3\BidwordMatchType',
-        'configuredStatus' => '\TencentAds\Model\V3\BidwordPauseType',
-        'dynamicCreativeId' => 'int'
+        'smartDeliveryGoal' => '\TencentAds\Model\V3\SmartDeliveryGoal',
+        'smartDeliveryGoalSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalSpec',
+        'conversionIdList' => 'int[]',
+        'marketingAssetOuterSpec' => '\TencentAds\Model\V3\MarketingAssetOuterSpec',
+        'marketingCarrierType' => '\TencentAds\Model\V3\MarketingCarrierType',
+        'marketingCarrierDetail' => '\TencentAds\Model\V3\MarketingCarrierDetail'
     ];
 
     /**
@@ -73,13 +72,12 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'bidword' => null,
-        'bidPrice' => 'int64',
-        'useGroupPrice' => null,
-        'matchType' => null,
-        'configuredStatus' => null,
-        'dynamicCreativeId' => 'int64'
+        'smartDeliveryGoal' => null,
+        'smartDeliveryGoalSpec' => null,
+        'conversionIdList' => 'int64',
+        'marketingAssetOuterSpec' => null,
+        'marketingCarrierType' => null,
+        'marketingCarrierDetail' => null
     ];
 
     /**
@@ -109,13 +107,12 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'bidword' => 'bidword',
-        'bidPrice' => 'bid_price',
-        'useGroupPrice' => 'use_group_price',
-        'matchType' => 'match_type',
-        'configuredStatus' => 'configured_status',
-        'dynamicCreativeId' => 'dynamic_creative_id'
+        'smartDeliveryGoal' => 'smart_delivery_goal',
+        'smartDeliveryGoalSpec' => 'smart_delivery_goal_spec',
+        'conversionIdList' => 'conversion_id_list',
+        'marketingAssetOuterSpec' => 'marketing_asset_outer_spec',
+        'marketingCarrierType' => 'marketing_carrier_type',
+        'marketingCarrierDetail' => 'marketing_carrier_detail'
     ];
 
     /**
@@ -124,13 +121,12 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'bidword' => 'setBidword',
-        'bidPrice' => 'setBidPrice',
-        'useGroupPrice' => 'setUseGroupPrice',
-        'matchType' => 'setMatchType',
-        'configuredStatus' => 'setConfiguredStatus',
-        'dynamicCreativeId' => 'setDynamicCreativeId'
+        'smartDeliveryGoal' => 'setSmartDeliveryGoal',
+        'smartDeliveryGoalSpec' => 'setSmartDeliveryGoalSpec',
+        'conversionIdList' => 'setConversionIdList',
+        'marketingAssetOuterSpec' => 'setMarketingAssetOuterSpec',
+        'marketingCarrierType' => 'setMarketingCarrierType',
+        'marketingCarrierDetail' => 'setMarketingCarrierDetail'
     ];
 
     /**
@@ -139,13 +135,12 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'bidword' => 'getBidword',
-        'bidPrice' => 'getBidPrice',
-        'useGroupPrice' => 'getUseGroupPrice',
-        'matchType' => 'getMatchType',
-        'configuredStatus' => 'getConfiguredStatus',
-        'dynamicCreativeId' => 'getDynamicCreativeId'
+        'smartDeliveryGoal' => 'getSmartDeliveryGoal',
+        'smartDeliveryGoalSpec' => 'getSmartDeliveryGoalSpec',
+        'conversionIdList' => 'getConversionIdList',
+        'marketingAssetOuterSpec' => 'getMarketingAssetOuterSpec',
+        'marketingCarrierType' => 'getMarketingCarrierType',
+        'marketingCarrierDetail' => 'getMarketingCarrierDetail'
     ];
 
     /**
@@ -208,13 +203,12 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
-        $this->container['bidPrice'] = isset($data['bidPrice']) ? $data['bidPrice'] : null;
-        $this->container['useGroupPrice'] = isset($data['useGroupPrice']) ? $data['useGroupPrice'] : null;
-        $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
-        $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
-        $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
+        $this->container['smartDeliveryGoal'] = isset($data['smartDeliveryGoal']) ? $data['smartDeliveryGoal'] : null;
+        $this->container['smartDeliveryGoalSpec'] = isset($data['smartDeliveryGoalSpec']) ? $data['smartDeliveryGoalSpec'] : null;
+        $this->container['conversionIdList'] = isset($data['conversionIdList']) ? $data['conversionIdList'] : null;
+        $this->container['marketingAssetOuterSpec'] = isset($data['marketingAssetOuterSpec']) ? $data['marketingAssetOuterSpec'] : null;
+        $this->container['marketingCarrierType'] = isset($data['marketingCarrierType']) ? $data['marketingCarrierType'] : null;
+        $this->container['marketingCarrierDetail'] = isset($data['marketingCarrierDetail']) ? $data['marketingCarrierDetail'] : null;
     }
 
     /**
@@ -242,169 +236,145 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adgroupId
+     * Gets smartDeliveryGoal
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\SmartDeliveryGoal|mixed
      */
-    public function getAdgroupId()
+    public function getSmartDeliveryGoal()
     {
-        return $this->container['adgroupId'];
+        return $this->container['smartDeliveryGoal'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets smartDeliveryGoal
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param \TencentAds\Model\V3\SmartDeliveryGoal|mixed $smartDeliveryGoal smartDeliveryGoal
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setSmartDeliveryGoal($smartDeliveryGoal)
     {
-        $this->container['adgroupId'] = $adgroupId;
+        $this->container['smartDeliveryGoal'] = $smartDeliveryGoal;
 
         return $this;
     }
 
     /**
-     * Gets bidword
+     * Gets smartDeliveryGoalSpec
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalSpec|mixed
      */
-    public function getBidword()
+    public function getSmartDeliveryGoalSpec()
     {
-        return $this->container['bidword'];
+        return $this->container['smartDeliveryGoalSpec'];
     }
 
     /**
-     * Sets bidword
+     * Sets smartDeliveryGoalSpec
      *
-     * @param string|mixed $bidword bidword
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalSpec|mixed $smartDeliveryGoalSpec smartDeliveryGoalSpec
      *
      * @return $this
      */
-    public function setBidword($bidword)
+    public function setSmartDeliveryGoalSpec($smartDeliveryGoalSpec)
     {
-        $this->container['bidword'] = $bidword;
+        $this->container['smartDeliveryGoalSpec'] = $smartDeliveryGoalSpec;
 
         return $this;
     }
 
     /**
-     * Gets bidPrice
+     * Gets conversionIdList
      *
-     * @return int|mixed
+     * @return int[]|mixed
      */
-    public function getBidPrice()
+    public function getConversionIdList()
     {
-        return $this->container['bidPrice'];
+        return $this->container['conversionIdList'];
     }
 
     /**
-     * Sets bidPrice
+     * Sets conversionIdList
      *
-     * @param int|mixed $bidPrice bidPrice
+     * @param int[]|mixed $conversionIdList conversionIdList
      *
      * @return $this
      */
-    public function setBidPrice($bidPrice)
+    public function setConversionIdList($conversionIdList)
     {
-        $this->container['bidPrice'] = $bidPrice;
+        $this->container['conversionIdList'] = $conversionIdList;
 
         return $this;
     }
 
     /**
-     * Gets useGroupPrice
+     * Gets marketingAssetOuterSpec
      *
-     * @return \TencentAds\Model\V3\UseGroupPriceType|mixed
+     * @return \TencentAds\Model\V3\MarketingAssetOuterSpec|mixed
      */
-    public function getUseGroupPrice()
+    public function getMarketingAssetOuterSpec()
     {
-        return $this->container['useGroupPrice'];
+        return $this->container['marketingAssetOuterSpec'];
     }
 
     /**
-     * Sets useGroupPrice
+     * Sets marketingAssetOuterSpec
      *
-     * @param \TencentAds\Model\V3\UseGroupPriceType|mixed $useGroupPrice useGroupPrice
+     * @param \TencentAds\Model\V3\MarketingAssetOuterSpec|mixed $marketingAssetOuterSpec marketingAssetOuterSpec
      *
      * @return $this
      */
-    public function setUseGroupPrice($useGroupPrice)
+    public function setMarketingAssetOuterSpec($marketingAssetOuterSpec)
     {
-        $this->container['useGroupPrice'] = $useGroupPrice;
+        $this->container['marketingAssetOuterSpec'] = $marketingAssetOuterSpec;
 
         return $this;
     }
 
     /**
-     * Gets matchType
+     * Gets marketingCarrierType
      *
-     * @return \TencentAds\Model\V3\BidwordMatchType|mixed
+     * @return \TencentAds\Model\V3\MarketingCarrierType|mixed
      */
-    public function getMatchType()
+    public function getMarketingCarrierType()
     {
-        return $this->container['matchType'];
+        return $this->container['marketingCarrierType'];
     }
 
     /**
-     * Sets matchType
+     * Sets marketingCarrierType
      *
-     * @param \TencentAds\Model\V3\BidwordMatchType|mixed $matchType matchType
+     * @param \TencentAds\Model\V3\MarketingCarrierType|mixed $marketingCarrierType marketingCarrierType
      *
      * @return $this
      */
-    public function setMatchType($matchType)
+    public function setMarketingCarrierType($marketingCarrierType)
     {
-        $this->container['matchType'] = $matchType;
+        $this->container['marketingCarrierType'] = $marketingCarrierType;
 
         return $this;
     }
 
     /**
-     * Gets configuredStatus
+     * Gets marketingCarrierDetail
      *
-     * @return \TencentAds\Model\V3\BidwordPauseType|mixed
+     * @return \TencentAds\Model\V3\MarketingCarrierDetail|mixed
      */
-    public function getConfiguredStatus()
+    public function getMarketingCarrierDetail()
     {
-        return $this->container['configuredStatus'];
+        return $this->container['marketingCarrierDetail'];
     }
 
     /**
-     * Sets configuredStatus
+     * Sets marketingCarrierDetail
      *
-     * @param \TencentAds\Model\V3\BidwordPauseType|mixed $configuredStatus configuredStatus
+     * @param \TencentAds\Model\V3\MarketingCarrierDetail|mixed $marketingCarrierDetail marketingCarrierDetail
      *
      * @return $this
      */
-    public function setConfiguredStatus($configuredStatus)
+    public function setMarketingCarrierDetail($marketingCarrierDetail)
     {
-        $this->container['configuredStatus'] = $configuredStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets dynamicCreativeId
-     *
-     * @return int|mixed
-     */
-    public function getDynamicCreativeId()
-    {
-        return $this->container['dynamicCreativeId'];
-    }
-
-    /**
-     * Sets dynamicCreativeId
-     *
-     * @param int|mixed $dynamicCreativeId dynamicCreativeId
-     *
-     * @return $this
-     */
-    public function setDynamicCreativeId($dynamicCreativeId)
-    {
-        $this->container['dynamicCreativeId'] = $dynamicCreativeId;
+        $this->container['marketingCarrierDetail'] = $marketingCarrierDetail;
 
         return $this;
     }

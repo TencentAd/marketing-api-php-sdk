@@ -63,7 +63,6 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateDeepConversionBehaviorBidSpec' => '\TencentAds\Model\V3\UpdateDeepConversionBehaviorBidItem[]',
         'deleteAdgroupSpec' => '\TencentAds\Model\V3\DeleteAdgroupItem[]',
         'updateAdgroupDeepConversionWorthRateSpec' => '\TencentAds\Model\V3\UpdateAdgroupDeepConversionWorthRateItem[]',
-        'targetingsShareSpec' => '\TencentAds\Model\V3\TargetingsShareItem[]',
         'updateAdgroupConfiguredStatusSpec' => '\TencentAds\Model\V3\UpdateAdgroupConfiguredStatusItem[]',
         'updateAdgroupDailyBudgetSpec' => '\TencentAds\Model\V3\UpdateAdgroupDailyBudgetItem[]',
         'updateAdgroupAutoAcquisitionSpec' => '\TencentAds\Model\V3\UpdateAdgroupAutoAcquisitionItem[]',
@@ -85,7 +84,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupTargetingTaskSpec' => '\TencentAds\Model\V3\UpdateAdgroupTargetingTaskItem[]',
         'updateAdgroupEcomPkamSpec' => '\TencentAds\Model\V3\UpdateAdgroupEcomPkamItem[]',
         'updateAdgroupDeriveConfSpec' => '\TencentAds\Model\V3\UpdateAdgroupDeriveConfItem[]',
-        'updateComponentSharingSpec' => '\TencentAds\Model\V3\UpdateComponentSharingItem[]'
+        'updateComponentSharingSpec' => '\TencentAds\Model\V3\UpdateComponentSharingItem[]',
+        'updateAdgroupSmartDeliveryGoalSpec' => '\TencentAds\Model\V3\UpdateAdgroupSmartDeliveryGoalItem[]'
     ];
 
     /**
@@ -99,7 +99,6 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateDeepConversionBehaviorBidSpec' => null,
         'deleteAdgroupSpec' => null,
         'updateAdgroupDeepConversionWorthRateSpec' => null,
-        'targetingsShareSpec' => null,
         'updateAdgroupConfiguredStatusSpec' => null,
         'updateAdgroupDailyBudgetSpec' => null,
         'updateAdgroupAutoAcquisitionSpec' => null,
@@ -121,7 +120,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupTargetingTaskSpec' => null,
         'updateAdgroupEcomPkamSpec' => null,
         'updateAdgroupDeriveConfSpec' => null,
-        'updateComponentSharingSpec' => null
+        'updateComponentSharingSpec' => null,
+        'updateAdgroupSmartDeliveryGoalSpec' => null
     ];
 
     /**
@@ -156,7 +156,6 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateDeepConversionBehaviorBidSpec' => 'update_deep_conversion_behavior_bid_spec',
         'deleteAdgroupSpec' => 'delete_adgroup_spec',
         'updateAdgroupDeepConversionWorthRateSpec' => 'update_adgroup_deep_conversion_worth_rate_spec',
-        'targetingsShareSpec' => 'targetings_share_spec',
         'updateAdgroupConfiguredStatusSpec' => 'update_adgroup_configured_status_spec',
         'updateAdgroupDailyBudgetSpec' => 'update_adgroup_daily_budget_spec',
         'updateAdgroupAutoAcquisitionSpec' => 'update_adgroup_auto_acquisition_spec',
@@ -178,7 +177,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupTargetingTaskSpec' => 'update_adgroup_targeting_task_spec',
         'updateAdgroupEcomPkamSpec' => 'update_adgroup_ecom_pkam_spec',
         'updateAdgroupDeriveConfSpec' => 'update_adgroup_derive_conf_spec',
-        'updateComponentSharingSpec' => 'update_component_sharing_spec'
+        'updateComponentSharingSpec' => 'update_component_sharing_spec',
+        'updateAdgroupSmartDeliveryGoalSpec' => 'update_adgroup_smart_delivery_goal_spec'
     ];
 
     /**
@@ -192,7 +192,6 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateDeepConversionBehaviorBidSpec' => 'setUpdateDeepConversionBehaviorBidSpec',
         'deleteAdgroupSpec' => 'setDeleteAdgroupSpec',
         'updateAdgroupDeepConversionWorthRateSpec' => 'setUpdateAdgroupDeepConversionWorthRateSpec',
-        'targetingsShareSpec' => 'setTargetingsShareSpec',
         'updateAdgroupConfiguredStatusSpec' => 'setUpdateAdgroupConfiguredStatusSpec',
         'updateAdgroupDailyBudgetSpec' => 'setUpdateAdgroupDailyBudgetSpec',
         'updateAdgroupAutoAcquisitionSpec' => 'setUpdateAdgroupAutoAcquisitionSpec',
@@ -214,7 +213,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupTargetingTaskSpec' => 'setUpdateAdgroupTargetingTaskSpec',
         'updateAdgroupEcomPkamSpec' => 'setUpdateAdgroupEcomPkamSpec',
         'updateAdgroupDeriveConfSpec' => 'setUpdateAdgroupDeriveConfSpec',
-        'updateComponentSharingSpec' => 'setUpdateComponentSharingSpec'
+        'updateComponentSharingSpec' => 'setUpdateComponentSharingSpec',
+        'updateAdgroupSmartDeliveryGoalSpec' => 'setUpdateAdgroupSmartDeliveryGoalSpec'
     ];
 
     /**
@@ -228,7 +228,6 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateDeepConversionBehaviorBidSpec' => 'getUpdateDeepConversionBehaviorBidSpec',
         'deleteAdgroupSpec' => 'getDeleteAdgroupSpec',
         'updateAdgroupDeepConversionWorthRateSpec' => 'getUpdateAdgroupDeepConversionWorthRateSpec',
-        'targetingsShareSpec' => 'getTargetingsShareSpec',
         'updateAdgroupConfiguredStatusSpec' => 'getUpdateAdgroupConfiguredStatusSpec',
         'updateAdgroupDailyBudgetSpec' => 'getUpdateAdgroupDailyBudgetSpec',
         'updateAdgroupAutoAcquisitionSpec' => 'getUpdateAdgroupAutoAcquisitionSpec',
@@ -250,7 +249,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupTargetingTaskSpec' => 'getUpdateAdgroupTargetingTaskSpec',
         'updateAdgroupEcomPkamSpec' => 'getUpdateAdgroupEcomPkamSpec',
         'updateAdgroupDeriveConfSpec' => 'getUpdateAdgroupDeriveConfSpec',
-        'updateComponentSharingSpec' => 'getUpdateComponentSharingSpec'
+        'updateComponentSharingSpec' => 'getUpdateComponentSharingSpec',
+        'updateAdgroupSmartDeliveryGoalSpec' => 'getUpdateAdgroupSmartDeliveryGoalSpec'
     ];
 
     /**
@@ -318,7 +318,6 @@ class TaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateDeepConversionBehaviorBidSpec'] = isset($data['updateDeepConversionBehaviorBidSpec']) ? $data['updateDeepConversionBehaviorBidSpec'] : null;
         $this->container['deleteAdgroupSpec'] = isset($data['deleteAdgroupSpec']) ? $data['deleteAdgroupSpec'] : null;
         $this->container['updateAdgroupDeepConversionWorthRateSpec'] = isset($data['updateAdgroupDeepConversionWorthRateSpec']) ? $data['updateAdgroupDeepConversionWorthRateSpec'] : null;
-        $this->container['targetingsShareSpec'] = isset($data['targetingsShareSpec']) ? $data['targetingsShareSpec'] : null;
         $this->container['updateAdgroupConfiguredStatusSpec'] = isset($data['updateAdgroupConfiguredStatusSpec']) ? $data['updateAdgroupConfiguredStatusSpec'] : null;
         $this->container['updateAdgroupDailyBudgetSpec'] = isset($data['updateAdgroupDailyBudgetSpec']) ? $data['updateAdgroupDailyBudgetSpec'] : null;
         $this->container['updateAdgroupAutoAcquisitionSpec'] = isset($data['updateAdgroupAutoAcquisitionSpec']) ? $data['updateAdgroupAutoAcquisitionSpec'] : null;
@@ -341,6 +340,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateAdgroupEcomPkamSpec'] = isset($data['updateAdgroupEcomPkamSpec']) ? $data['updateAdgroupEcomPkamSpec'] : null;
         $this->container['updateAdgroupDeriveConfSpec'] = isset($data['updateAdgroupDeriveConfSpec']) ? $data['updateAdgroupDeriveConfSpec'] : null;
         $this->container['updateComponentSharingSpec'] = isset($data['updateComponentSharingSpec']) ? $data['updateComponentSharingSpec'] : null;
+        $this->container['updateAdgroupSmartDeliveryGoalSpec'] = isset($data['updateAdgroupSmartDeliveryGoalSpec']) ? $data['updateAdgroupSmartDeliveryGoalSpec'] : null;
     }
 
     /**
@@ -483,30 +483,6 @@ class TaskSpec implements ModelInterface, ArrayAccess
     public function setUpdateAdgroupDeepConversionWorthRateSpec($updateAdgroupDeepConversionWorthRateSpec)
     {
         $this->container['updateAdgroupDeepConversionWorthRateSpec'] = $updateAdgroupDeepConversionWorthRateSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets targetingsShareSpec
-     *
-     * @return \TencentAds\Model\V3\TargetingsShareItem[]|mixed
-     */
-    public function getTargetingsShareSpec()
-    {
-        return $this->container['targetingsShareSpec'];
-    }
-
-    /**
-     * Sets targetingsShareSpec
-     *
-     * @param \TencentAds\Model\V3\TargetingsShareItem[]|mixed $targetingsShareSpec targetingsShareSpec
-     *
-     * @return $this
-     */
-    public function setTargetingsShareSpec($targetingsShareSpec)
-    {
-        $this->container['targetingsShareSpec'] = $targetingsShareSpec;
 
         return $this;
     }
@@ -1035,6 +1011,30 @@ class TaskSpec implements ModelInterface, ArrayAccess
     public function setUpdateComponentSharingSpec($updateComponentSharingSpec)
     {
         $this->container['updateComponentSharingSpec'] = $updateComponentSharingSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateAdgroupSmartDeliveryGoalSpec
+     *
+     * @return \TencentAds\Model\V3\UpdateAdgroupSmartDeliveryGoalItem[]|mixed
+     */
+    public function getUpdateAdgroupSmartDeliveryGoalSpec()
+    {
+        return $this->container['updateAdgroupSmartDeliveryGoalSpec'];
+    }
+
+    /**
+     * Sets updateAdgroupSmartDeliveryGoalSpec
+     *
+     * @param \TencentAds\Model\V3\UpdateAdgroupSmartDeliveryGoalItem[]|mixed $updateAdgroupSmartDeliveryGoalSpec updateAdgroupSmartDeliveryGoalSpec
+     *
+     * @return $this
+     */
+    public function setUpdateAdgroupSmartDeliveryGoalSpec($updateAdgroupSmartDeliveryGoalSpec)
+    {
+        $this->container['updateAdgroupSmartDeliveryGoalSpec'] = $updateAdgroupSmartDeliveryGoalSpec;
 
         return $this;
     }

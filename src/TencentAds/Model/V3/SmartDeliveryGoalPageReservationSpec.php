@@ -1,6 +1,6 @@
 <?php
 /**
- * SearchBidwordStruct
+ * SmartDeliveryGoalPageReservationSpec
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * SearchBidwordStruct Class Doc Comment
+ * SmartDeliveryGoalPageReservationSpec Class Doc Comment
  *
  * @category Class
- * @description 关键词信息
+ * @description 智投投放目标表单预约成本信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class SearchBidwordStruct implements ModelInterface, ArrayAccess
+class SmartDeliveryGoalPageReservationSpec implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'search_bidword_struct';
+    protected static $swaggerModelName = 'smart_delivery_goal_page_reservation_spec';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,13 +58,9 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'bidword' => 'string',
-        'bidPrice' => 'int',
-        'useGroupPrice' => '\TencentAds\Model\V3\UseGroupPriceType',
-        'matchType' => '\TencentAds\Model\V3\BidwordMatchType',
-        'configuredStatus' => '\TencentAds\Model\V3\BidwordPauseType',
-        'dynamicCreativeId' => 'int'
+        'pageReservationCost' => 'int',
+        'periodicLength' => 'int',
+        'autoRenew' => '\TencentAds\Model\V3\SimpleSwitchStatus'
     ];
 
     /**
@@ -73,13 +69,9 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'bidword' => null,
-        'bidPrice' => 'int64',
-        'useGroupPrice' => null,
-        'matchType' => null,
-        'configuredStatus' => null,
-        'dynamicCreativeId' => 'int64'
+        'pageReservationCost' => 'int64',
+        'periodicLength' => 'int64',
+        'autoRenew' => null
     ];
 
     /**
@@ -109,13 +101,9 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'bidword' => 'bidword',
-        'bidPrice' => 'bid_price',
-        'useGroupPrice' => 'use_group_price',
-        'matchType' => 'match_type',
-        'configuredStatus' => 'configured_status',
-        'dynamicCreativeId' => 'dynamic_creative_id'
+        'pageReservationCost' => 'page_reservation_cost',
+        'periodicLength' => 'periodic_length',
+        'autoRenew' => 'auto_renew'
     ];
 
     /**
@@ -124,13 +112,9 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'bidword' => 'setBidword',
-        'bidPrice' => 'setBidPrice',
-        'useGroupPrice' => 'setUseGroupPrice',
-        'matchType' => 'setMatchType',
-        'configuredStatus' => 'setConfiguredStatus',
-        'dynamicCreativeId' => 'setDynamicCreativeId'
+        'pageReservationCost' => 'setPageReservationCost',
+        'periodicLength' => 'setPeriodicLength',
+        'autoRenew' => 'setAutoRenew'
     ];
 
     /**
@@ -139,13 +123,9 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'bidword' => 'getBidword',
-        'bidPrice' => 'getBidPrice',
-        'useGroupPrice' => 'getUseGroupPrice',
-        'matchType' => 'getMatchType',
-        'configuredStatus' => 'getConfiguredStatus',
-        'dynamicCreativeId' => 'getDynamicCreativeId'
+        'pageReservationCost' => 'getPageReservationCost',
+        'periodicLength' => 'getPeriodicLength',
+        'autoRenew' => 'getAutoRenew'
     ];
 
     /**
@@ -208,13 +188,9 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
-        $this->container['bidPrice'] = isset($data['bidPrice']) ? $data['bidPrice'] : null;
-        $this->container['useGroupPrice'] = isset($data['useGroupPrice']) ? $data['useGroupPrice'] : null;
-        $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
-        $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
-        $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
+        $this->container['pageReservationCost'] = isset($data['pageReservationCost']) ? $data['pageReservationCost'] : null;
+        $this->container['periodicLength'] = isset($data['periodicLength']) ? $data['periodicLength'] : null;
+        $this->container['autoRenew'] = isset($data['autoRenew']) ? $data['autoRenew'] : null;
     }
 
     /**
@@ -242,169 +218,73 @@ class SearchBidwordStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adgroupId
+     * Gets pageReservationCost
      *
      * @return int|mixed
      */
-    public function getAdgroupId()
+    public function getPageReservationCost()
     {
-        return $this->container['adgroupId'];
+        return $this->container['pageReservationCost'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets pageReservationCost
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param int|mixed $pageReservationCost pageReservationCost
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setPageReservationCost($pageReservationCost)
     {
-        $this->container['adgroupId'] = $adgroupId;
+        $this->container['pageReservationCost'] = $pageReservationCost;
 
         return $this;
     }
 
     /**
-     * Gets bidword
-     *
-     * @return string|mixed
-     */
-    public function getBidword()
-    {
-        return $this->container['bidword'];
-    }
-
-    /**
-     * Sets bidword
-     *
-     * @param string|mixed $bidword bidword
-     *
-     * @return $this
-     */
-    public function setBidword($bidword)
-    {
-        $this->container['bidword'] = $bidword;
-
-        return $this;
-    }
-
-    /**
-     * Gets bidPrice
+     * Gets periodicLength
      *
      * @return int|mixed
      */
-    public function getBidPrice()
+    public function getPeriodicLength()
     {
-        return $this->container['bidPrice'];
+        return $this->container['periodicLength'];
     }
 
     /**
-     * Sets bidPrice
+     * Sets periodicLength
      *
-     * @param int|mixed $bidPrice bidPrice
+     * @param int|mixed $periodicLength periodicLength
      *
      * @return $this
      */
-    public function setBidPrice($bidPrice)
+    public function setPeriodicLength($periodicLength)
     {
-        $this->container['bidPrice'] = $bidPrice;
+        $this->container['periodicLength'] = $periodicLength;
 
         return $this;
     }
 
     /**
-     * Gets useGroupPrice
+     * Gets autoRenew
      *
-     * @return \TencentAds\Model\V3\UseGroupPriceType|mixed
+     * @return \TencentAds\Model\V3\SimpleSwitchStatus|mixed
      */
-    public function getUseGroupPrice()
+    public function getAutoRenew()
     {
-        return $this->container['useGroupPrice'];
+        return $this->container['autoRenew'];
     }
 
     /**
-     * Sets useGroupPrice
+     * Sets autoRenew
      *
-     * @param \TencentAds\Model\V3\UseGroupPriceType|mixed $useGroupPrice useGroupPrice
+     * @param \TencentAds\Model\V3\SimpleSwitchStatus|mixed $autoRenew autoRenew
      *
      * @return $this
      */
-    public function setUseGroupPrice($useGroupPrice)
+    public function setAutoRenew($autoRenew)
     {
-        $this->container['useGroupPrice'] = $useGroupPrice;
-
-        return $this;
-    }
-
-    /**
-     * Gets matchType
-     *
-     * @return \TencentAds\Model\V3\BidwordMatchType|mixed
-     */
-    public function getMatchType()
-    {
-        return $this->container['matchType'];
-    }
-
-    /**
-     * Sets matchType
-     *
-     * @param \TencentAds\Model\V3\BidwordMatchType|mixed $matchType matchType
-     *
-     * @return $this
-     */
-    public function setMatchType($matchType)
-    {
-        $this->container['matchType'] = $matchType;
-
-        return $this;
-    }
-
-    /**
-     * Gets configuredStatus
-     *
-     * @return \TencentAds\Model\V3\BidwordPauseType|mixed
-     */
-    public function getConfiguredStatus()
-    {
-        return $this->container['configuredStatus'];
-    }
-
-    /**
-     * Sets configuredStatus
-     *
-     * @param \TencentAds\Model\V3\BidwordPauseType|mixed $configuredStatus configuredStatus
-     *
-     * @return $this
-     */
-    public function setConfiguredStatus($configuredStatus)
-    {
-        $this->container['configuredStatus'] = $configuredStatus;
-
-        return $this;
-    }
-
-    /**
-     * Gets dynamicCreativeId
-     *
-     * @return int|mixed
-     */
-    public function getDynamicCreativeId()
-    {
-        return $this->container['dynamicCreativeId'];
-    }
-
-    /**
-     * Sets dynamicCreativeId
-     *
-     * @param int|mixed $dynamicCreativeId dynamicCreativeId
-     *
-     * @return $this
-     */
-    public function setDynamicCreativeId($dynamicCreativeId)
-    {
-        $this->container['dynamicCreativeId'] = $dynamicCreativeId;
+        $this->container['autoRenew'] = $autoRenew;
 
         return $this;
     }
