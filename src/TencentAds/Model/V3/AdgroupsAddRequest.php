@@ -109,11 +109,11 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => '\TencentAds\Model\V3\ShortPlayPayType',
         'sellStrategyId' => 'int',
         'dynamicAdType' => '\TencentAds\Model\V3\DynamicAdType',
+        'dcaSpec' => '\TencentAds\Model\V3\DcaSpec',
         'dspId' => 'int',
         'aoiOptimizationStrategy' => '\TencentAds\Model\V3\AoiOptimizationStrategy',
         'cloudUnionSpec' => '\TencentAds\Model\V3\CloudUnionSpec',
         'additionalProductSpec' => '\TencentAds\Model\V3\AdditionalProductSpec',
-        'enableBreakthroughSiteset' => 'bool',
         'liveRecommendStrategyEnabled' => 'bool',
         'customCostRoiCap' => 'double',
         'searchExpansionSwitch' => '\TencentAds\Model\V3\SearchExpansionSwitch',
@@ -179,11 +179,11 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => null,
         'sellStrategyId' => 'int64',
         'dynamicAdType' => null,
+        'dcaSpec' => null,
         'dspId' => 'int64',
         'aoiOptimizationStrategy' => null,
         'cloudUnionSpec' => null,
         'additionalProductSpec' => null,
-        'enableBreakthroughSiteset' => null,
         'liveRecommendStrategyEnabled' => null,
         'customCostRoiCap' => 'double',
         'searchExpansionSwitch' => null,
@@ -270,11 +270,11 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'short_play_pay_type',
         'sellStrategyId' => 'sell_strategy_id',
         'dynamicAdType' => 'dynamic_ad_type',
+        'dcaSpec' => 'dca_spec',
         'dspId' => 'dsp_id',
         'aoiOptimizationStrategy' => 'aoi_optimization_strategy',
         'cloudUnionSpec' => 'cloud_union_spec',
         'additionalProductSpec' => 'additional_product_spec',
-        'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled',
         'customCostRoiCap' => 'custom_cost_roi_cap',
         'searchExpansionSwitch' => 'search_expansion_switch',
@@ -340,11 +340,11 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'setShortPlayPayType',
         'sellStrategyId' => 'setSellStrategyId',
         'dynamicAdType' => 'setDynamicAdType',
+        'dcaSpec' => 'setDcaSpec',
         'dspId' => 'setDspId',
         'aoiOptimizationStrategy' => 'setAoiOptimizationStrategy',
         'cloudUnionSpec' => 'setCloudUnionSpec',
         'additionalProductSpec' => 'setAdditionalProductSpec',
-        'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled',
         'customCostRoiCap' => 'setCustomCostRoiCap',
         'searchExpansionSwitch' => 'setSearchExpansionSwitch',
@@ -410,11 +410,11 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'getShortPlayPayType',
         'sellStrategyId' => 'getSellStrategyId',
         'dynamicAdType' => 'getDynamicAdType',
+        'dcaSpec' => 'getDcaSpec',
         'dspId' => 'getDspId',
         'aoiOptimizationStrategy' => 'getAoiOptimizationStrategy',
         'cloudUnionSpec' => 'getCloudUnionSpec',
         'additionalProductSpec' => 'getAdditionalProductSpec',
-        'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled',
         'customCostRoiCap' => 'getCustomCostRoiCap',
         'searchExpansionSwitch' => 'getSearchExpansionSwitch',
@@ -534,11 +534,11 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
         $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
         $this->container['dynamicAdType'] = isset($data['dynamicAdType']) ? $data['dynamicAdType'] : null;
+        $this->container['dcaSpec'] = isset($data['dcaSpec']) ? $data['dcaSpec'] : null;
         $this->container['dspId'] = isset($data['dspId']) ? $data['dspId'] : null;
         $this->container['aoiOptimizationStrategy'] = isset($data['aoiOptimizationStrategy']) ? $data['aoiOptimizationStrategy'] : null;
         $this->container['cloudUnionSpec'] = isset($data['cloudUnionSpec']) ? $data['cloudUnionSpec'] : null;
         $this->container['additionalProductSpec'] = isset($data['additionalProductSpec']) ? $data['additionalProductSpec'] : null;
-        $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['liveRecommendStrategyEnabled'] = isset($data['liveRecommendStrategyEnabled']) ? $data['liveRecommendStrategyEnabled'] : null;
         $this->container['customCostRoiCap'] = isset($data['customCostRoiCap']) ? $data['customCostRoiCap'] : null;
         $this->container['searchExpansionSwitch'] = isset($data['searchExpansionSwitch']) ? $data['searchExpansionSwitch'] : null;
@@ -1819,6 +1819,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets dcaSpec
+     *
+     * @return \TencentAds\Model\V3\DcaSpec|mixed
+     */
+    public function getDcaSpec()
+    {
+        return $this->container['dcaSpec'];
+    }
+
+    /**
+     * Sets dcaSpec
+     *
+     * @param \TencentAds\Model\V3\DcaSpec|mixed $dcaSpec dcaSpec
+     *
+     * @return $this
+     */
+    public function setDcaSpec($dcaSpec)
+    {
+        $this->container['dcaSpec'] = $dcaSpec;
+
+        return $this;
+    }
+
+    /**
      * Gets dspId
      *
      * @return int|mixed
@@ -1910,30 +1934,6 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setAdditionalProductSpec($additionalProductSpec)
     {
         $this->container['additionalProductSpec'] = $additionalProductSpec;
-
-        return $this;
-    }
-
-    /**
-     * Gets enableBreakthroughSiteset
-     *
-     * @return bool|mixed
-     */
-    public function getEnableBreakthroughSiteset()
-    {
-        return $this->container['enableBreakthroughSiteset'];
-    }
-
-    /**
-     * Sets enableBreakthroughSiteset
-     *
-     * @param bool|mixed $enableBreakthroughSiteset enableBreakthroughSiteset
-     *
-     * @return $this
-     */
-    public function setEnableBreakthroughSiteset($enableBreakthroughSiteset)
-    {
-        $this->container['enableBreakthroughSiteset'] = $enableBreakthroughSiteset;
 
         return $this;
     }

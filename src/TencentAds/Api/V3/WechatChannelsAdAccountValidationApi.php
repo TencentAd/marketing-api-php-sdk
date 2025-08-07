@@ -95,15 +95,16 @@ class WechatChannelsAdAccountValidationApi
      * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $nickname nickname (optional)
      * @param  string|mixed $headImageId headImageId (optional)
+     * @param  string|mixed $wechatChannelsAccountId wechatChannelsAccountId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\WechatChannelsAdAccountValidationGetResponse|mixed
      */
-    public function wechatChannelsAdAccountValidationGet($accountId, $nickname = null, $headImageId = null, $fields = null)
+    public function wechatChannelsAdAccountValidationGet($accountId, $nickname = null, $headImageId = null, $wechatChannelsAccountId = null, $fields = null)
     {
-        list($response) = $this->wechatChannelsAdAccountValidationGetWithHttpInfo($accountId, $nickname, $headImageId, $fields);
+        list($response) = $this->wechatChannelsAdAccountValidationGetWithHttpInfo($accountId, $nickname, $headImageId, $wechatChannelsAccountId, $fields);
         return $response;
     }
 
@@ -115,16 +116,17 @@ class WechatChannelsAdAccountValidationApi
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $nickname (optional)
      * @param  string|mixed $headImageId (optional)
+     * @param  string|mixed $wechatChannelsAccountId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\WechatChannelsAdAccountValidationGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function wechatChannelsAdAccountValidationGetWithHttpInfo($accountId, $nickname = null, $headImageId = null, $fields = null)
+    public function wechatChannelsAdAccountValidationGetWithHttpInfo($accountId, $nickname = null, $headImageId = null, $wechatChannelsAccountId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WechatChannelsAdAccountValidationGetResponse';
-        $request = $this->wechatChannelsAdAccountValidationGetRequest($accountId, $nickname, $headImageId, $fields);
+        $request = $this->wechatChannelsAdAccountValidationGetRequest($accountId, $nickname, $headImageId, $wechatChannelsAccountId, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -193,14 +195,15 @@ class WechatChannelsAdAccountValidationApi
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $nickname (optional)
      * @param  string|mixed $headImageId (optional)
+     * @param  string|mixed $wechatChannelsAccountId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatChannelsAdAccountValidationGetAsync($accountId, $nickname = null, $headImageId = null, $fields = null)
+    public function wechatChannelsAdAccountValidationGetAsync($accountId, $nickname = null, $headImageId = null, $wechatChannelsAccountId = null, $fields = null)
     {
-        return $this->wechatChannelsAdAccountValidationGetAsyncWithHttpInfo($accountId, $nickname, $headImageId, $fields)
+        return $this->wechatChannelsAdAccountValidationGetAsyncWithHttpInfo($accountId, $nickname, $headImageId, $wechatChannelsAccountId, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -216,15 +219,16 @@ class WechatChannelsAdAccountValidationApi
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $nickname (optional)
      * @param  string|mixed $headImageId (optional)
+     * @param  string|mixed $wechatChannelsAccountId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatChannelsAdAccountValidationGetAsyncWithHttpInfo($accountId, $nickname = null, $headImageId = null, $fields = null)
+    public function wechatChannelsAdAccountValidationGetAsyncWithHttpInfo($accountId, $nickname = null, $headImageId = null, $wechatChannelsAccountId = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WechatChannelsAdAccountValidationGetResponse';
-        $request = $this->wechatChannelsAdAccountValidationGetRequest($accountId, $nickname, $headImageId, $fields);
+        $request = $this->wechatChannelsAdAccountValidationGetRequest($accountId, $nickname, $headImageId, $wechatChannelsAccountId, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -269,12 +273,13 @@ class WechatChannelsAdAccountValidationApi
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $nickname (optional)
      * @param  string|mixed $headImageId (optional)
+     * @param  string|mixed $wechatChannelsAccountId (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function wechatChannelsAdAccountValidationGetRequest($accountId, $nickname = null, $headImageId = null, $fields = null)
+    protected function wechatChannelsAdAccountValidationGetRequest($accountId, $nickname = null, $headImageId = null, $wechatChannelsAccountId = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -301,6 +306,10 @@ class WechatChannelsAdAccountValidationApi
         // query params
         if ($headImageId !== null) {
             $queryParams['head_image_id'] = ObjectSerializer::toQueryValue($headImageId);
+        }
+        // query params
+        if ($wechatChannelsAccountId !== null) {
+            $queryParams['wechat_channels_account_id'] = ObjectSerializer::toQueryValue($wechatChannelsAccountId);
         }
         // query params
         if (is_array($fields)) {
@@ -383,7 +392,11 @@ class WechatChannelsAdAccountValidationApi
         if ($apiKey !== null) {
             $queryParams['timestamp'] = $apiKey;
         }
-
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('user_token');
+        if ($apiKey !== null && $resourcePath !== '/user_organization_authentication/get') {
+            $queryParams['user_token'] = $apiKey;
+        }
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();

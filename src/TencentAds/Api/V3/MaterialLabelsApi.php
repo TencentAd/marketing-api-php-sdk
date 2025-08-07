@@ -352,7 +352,11 @@ class MaterialLabelsApi
         if ($apiKey !== null) {
             $queryParams['timestamp'] = $apiKey;
         }
-
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('user_token');
+        if ($apiKey !== null && $resourcePath !== '/user_organization_authentication/get') {
+            $queryParams['user_token'] = $apiKey;
+        }
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
@@ -642,7 +646,11 @@ class MaterialLabelsApi
         if ($apiKey !== null) {
             $queryParams['timestamp'] = $apiKey;
         }
-
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('user_token');
+        if ($apiKey !== null && $resourcePath !== '/user_organization_authentication/get') {
+            $queryParams['user_token'] = $apiKey;
+        }
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
@@ -932,7 +940,11 @@ class MaterialLabelsApi
         if ($apiKey !== null) {
             $queryParams['timestamp'] = $apiKey;
         }
-
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('user_token');
+        if ($apiKey !== null && $resourcePath !== '/user_organization_authentication/get') {
+            $queryParams['user_token'] = $apiKey;
+        }
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
@@ -962,7 +974,8 @@ class MaterialLabelsApi
      *
      * 获取素材标签列表
      *
-     * @param  int|mixed $accountId accountId (required)
+     * @param  int|mixed $accountId accountId (optional)
+     * @param  int|mixed $organizationId account_id或organization_id传其中一个即可 (optional)
      * @param  int|mixed $labelId labelId (optional)
      * @param  string|mixed $labelName labelName (optional)
      * @param  int[]|mixed $firstLabelLevelIdList 一级标签类目ID列表 (optional)
@@ -978,9 +991,9 @@ class MaterialLabelsApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\MaterialLabelsGetResponse|mixed
      */
-    public function materialLabelsGet($accountId, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
+    public function materialLabelsGet($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->materialLabelsGetWithHttpInfo($accountId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields);
+        list($response) = $this->materialLabelsGetWithHttpInfo($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -989,7 +1002,8 @@ class MaterialLabelsApi
      *
      * 获取素材标签列表
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId account_id或organization_id传其中一个即可 (optional)
      * @param  int|mixed $labelId (optional)
      * @param  string|mixed $labelName (optional)
      * @param  int[]|mixed $firstLabelLevelIdList 一级标签类目ID列表 (optional)
@@ -1005,10 +1019,10 @@ class MaterialLabelsApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\MaterialLabelsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function materialLabelsGetWithHttpInfo($accountId, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
+    public function materialLabelsGetWithHttpInfo($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\MaterialLabelsGetResponse';
-        $request = $this->materialLabelsGetRequest($accountId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields);
+        $request = $this->materialLabelsGetRequest($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1074,7 +1088,8 @@ class MaterialLabelsApi
      *
      * 获取素材标签列表
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId account_id或organization_id传其中一个即可 (optional)
      * @param  int|mixed $labelId (optional)
      * @param  string|mixed $labelName (optional)
      * @param  int[]|mixed $firstLabelLevelIdList 一级标签类目ID列表 (optional)
@@ -1089,9 +1104,9 @@ class MaterialLabelsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function materialLabelsGetAsync($accountId, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
+    public function materialLabelsGetAsync($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->materialLabelsGetAsyncWithHttpInfo($accountId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields)
+        return $this->materialLabelsGetAsyncWithHttpInfo($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1104,7 +1119,8 @@ class MaterialLabelsApi
      *
      * 获取素材标签列表
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId account_id或organization_id传其中一个即可 (optional)
      * @param  int|mixed $labelId (optional)
      * @param  string|mixed $labelName (optional)
      * @param  int[]|mixed $firstLabelLevelIdList 一级标签类目ID列表 (optional)
@@ -1119,10 +1135,10 @@ class MaterialLabelsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function materialLabelsGetAsyncWithHttpInfo($accountId, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
+    public function materialLabelsGetAsyncWithHttpInfo($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\MaterialLabelsGetResponse';
-        $request = $this->materialLabelsGetRequest($accountId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields);
+        $request = $this->materialLabelsGetRequest($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1164,7 +1180,8 @@ class MaterialLabelsApi
     /**
      * Create request for operation 'materialLabelsGet'
      *
-     * @param  int|mixed $accountId (required)
+     * @param  int|mixed $accountId (optional)
+     * @param  int|mixed $organizationId account_id或organization_id传其中一个即可 (optional)
      * @param  int|mixed $labelId (optional)
      * @param  string|mixed $labelName (optional)
      * @param  int[]|mixed $firstLabelLevelIdList 一级标签类目ID列表 (optional)
@@ -1179,14 +1196,8 @@ class MaterialLabelsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function materialLabelsGetRequest($accountId, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
+    protected function materialLabelsGetRequest($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
     {
-        // verify the required parameter 'accountId' is set
-        if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $accountId when calling materialLabelsGet'
-            );
-        }
 
         $resourcePath = '/material_labels/get';
         $formParams = [];
@@ -1198,6 +1209,10 @@ class MaterialLabelsApi
         // query params
         if ($accountId !== null) {
             $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
+        }
+        // query params
+        if ($organizationId !== null) {
+            $queryParams['organization_id'] = ObjectSerializer::toQueryValue($organizationId);
         }
         // query params
         if ($labelId !== null) {
@@ -1325,7 +1340,11 @@ class MaterialLabelsApi
         if ($apiKey !== null) {
             $queryParams['timestamp'] = $apiKey;
         }
-
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('user_token');
+        if ($apiKey !== null && $resourcePath !== '/user_organization_authentication/get') {
+            $queryParams['user_token'] = $apiKey;
+        }
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
@@ -1615,7 +1634,11 @@ class MaterialLabelsApi
         if ($apiKey !== null) {
             $queryParams['timestamp'] = $apiKey;
         }
-
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('user_token');
+        if ($apiKey !== null && $resourcePath !== '/user_organization_authentication/get') {
+            $queryParams['user_token'] = $apiKey;
+        }
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();

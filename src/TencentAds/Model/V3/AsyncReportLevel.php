@@ -61,6 +61,9 @@ class AsyncReportLevel
     const MARKETING_ASSET = 'REPORT_LEVEL_MARKETING_ASSET';
     const AD_UNION = 'REPORT_LEVEL_AD_UNION';
     const PRODUCT_CATALOG = 'REPORT_LEVEL_PRODUCT_CATALOG';
+    const PROJECT = 'REPORT_LEVEL_PROJECT';
+    const PROJECT_CREATIVE = 'REPORT_LEVEL_PROJECT_CREATIVE';
+    const OS = 'REPORT_LEVEL_OS';
     
     /**
      * Gets allowable values of the enum
@@ -86,6 +89,9 @@ class AsyncReportLevel
             self::MARKETING_ASSET,
             self::AD_UNION,
             self::PRODUCT_CATALOG,
+            self::PROJECT,
+            self::PROJECT_CREATIVE,
+            self::OS,
         ];
     }
 }

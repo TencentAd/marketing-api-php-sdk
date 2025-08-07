@@ -58,8 +58,9 @@ class CreativeTemplateListApiContainer extends ApiContainer
             $pcScene = isset($params['pc_scene']) ? $params['pc_scene'] : null;
             $adgroupId = isset($params['adgroup_id']) ? $params['adgroup_id'] : null;
             $adgroupType = isset($params['adgroup_type']) ? $params['adgroup_type'] : null;
+            $mpaSpec = isset($params['mpa_spec']) ? $params['mpa_spec'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->creativeTemplateListGet($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $adgroupType, $fields);
+            $response = $this->apiInstance->creativeTemplateListGet($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $adgroupType, $mpaSpec, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -94,8 +95,9 @@ class CreativeTemplateListApiContainer extends ApiContainer
             $pcScene = isset($params['pc_scene']) ? $params['pc_scene'] : null;
             $adgroupId = isset($params['adgroup_id']) ? $params['adgroup_id'] : null;
             $adgroupType = isset($params['adgroup_type']) ? $params['adgroup_type'] : null;
+            $mpaSpec = isset($params['mpa_spec']) ? $params['mpa_spec'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->creativeTemplateListGetAsync($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $adgroupType, $fields);
+            $response = $this->apiInstance->creativeTemplateListGetAsync($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $adgroupType, $mpaSpec, $fields);
             return $response;
         });
     }

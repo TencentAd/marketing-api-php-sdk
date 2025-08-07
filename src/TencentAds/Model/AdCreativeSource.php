@@ -52,6 +52,7 @@ class AdCreativeSource
     const INTEREST_GENERATE = 'AD_CREATIVE_INTEREST_GENERATE';
     const SPECIFIC_COMBINATION = 'AD_CREATIVE_SPECIFIC_COMBINATION';
     const SMART_DELIVERY_MARKETING_TARGET_AIGC = 'AD_CREATIVE_SMART_DELIVERY_MARKETING_TARGET_AIGC';
+    const HISTORY_COMP_REUSE = 'AD_CREATIVE_HISTORY_COMP_REUSE';
     
     /**
      * Gets allowable values of the enum
@@ -68,6 +69,7 @@ class AdCreativeSource
             self::INTEREST_GENERATE,
             self::SPECIFIC_COMBINATION,
             self::SMART_DELIVERY_MARKETING_TARGET_AIGC,
+            self::HISTORY_COMP_REUSE,
         ];
     }
 }

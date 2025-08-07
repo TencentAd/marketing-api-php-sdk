@@ -58,7 +58,8 @@ class AdParamGetResponseData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'systemAdParamList' => '\TencentAds\Model\V3\AdParamListStruct[]',
-        'productAdParamList' => '\TencentAds\Model\V3\AdParamListStruct[]'
+        'productAdParamList' => '\TencentAds\Model\V3\AdParamListStruct[]',
+        'dynamicContentAdParamList' => '\TencentAds\Model\V3\AdParamListStruct[]'
     ];
 
     /**
@@ -68,7 +69,8 @@ class AdParamGetResponseData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'systemAdParamList' => null,
-        'productAdParamList' => null
+        'productAdParamList' => null,
+        'dynamicContentAdParamList' => null
     ];
 
     /**
@@ -99,7 +101,8 @@ class AdParamGetResponseData implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'systemAdParamList' => 'system_ad_param_list',
-        'productAdParamList' => 'product_ad_param_list'
+        'productAdParamList' => 'product_ad_param_list',
+        'dynamicContentAdParamList' => 'dynamic_content_ad_param_list'
     ];
 
     /**
@@ -109,7 +112,8 @@ class AdParamGetResponseData implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'systemAdParamList' => 'setSystemAdParamList',
-        'productAdParamList' => 'setProductAdParamList'
+        'productAdParamList' => 'setProductAdParamList',
+        'dynamicContentAdParamList' => 'setDynamicContentAdParamList'
     ];
 
     /**
@@ -119,7 +123,8 @@ class AdParamGetResponseData implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'systemAdParamList' => 'getSystemAdParamList',
-        'productAdParamList' => 'getProductAdParamList'
+        'productAdParamList' => 'getProductAdParamList',
+        'dynamicContentAdParamList' => 'getDynamicContentAdParamList'
     ];
 
     /**
@@ -184,6 +189,7 @@ class AdParamGetResponseData implements ModelInterface, ArrayAccess
     {
         $this->container['systemAdParamList'] = isset($data['systemAdParamList']) ? $data['systemAdParamList'] : null;
         $this->container['productAdParamList'] = isset($data['productAdParamList']) ? $data['productAdParamList'] : null;
+        $this->container['dynamicContentAdParamList'] = isset($data['dynamicContentAdParamList']) ? $data['dynamicContentAdParamList'] : null;
     }
 
     /**
@@ -254,6 +260,30 @@ class AdParamGetResponseData implements ModelInterface, ArrayAccess
     public function setProductAdParamList($productAdParamList)
     {
         $this->container['productAdParamList'] = $productAdParamList;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicContentAdParamList
+     *
+     * @return \TencentAds\Model\V3\AdParamListStruct[]|mixed
+     */
+    public function getDynamicContentAdParamList()
+    {
+        return $this->container['dynamicContentAdParamList'];
+    }
+
+    /**
+     * Sets dynamicContentAdParamList
+     *
+     * @param \TencentAds\Model\V3\AdParamListStruct[]|mixed $dynamicContentAdParamList dynamicContentAdParamList
+     *
+     * @return $this
+     */
+    public function setDynamicContentAdParamList($dynamicContentAdParamList)
+    {
+        $this->container['dynamicContentAdParamList'] = $dynamicContentAdParamList;
 
         return $this;
     }

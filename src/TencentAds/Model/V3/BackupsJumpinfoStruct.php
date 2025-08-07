@@ -60,7 +60,8 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'pageType' => '\TencentAds\Model\V3\PageType',
         'pageSpec' => '\TencentAds\Model\V3\PageSpec',
-        'jumpinfoAccountId' => 'int'
+        'jumpinfoAccountId' => 'int',
+        'platformType' => '\TencentAds\Model\V3\LandingPagePlatformType'
     ];
 
     /**
@@ -71,7 +72,8 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'pageType' => null,
         'pageSpec' => null,
-        'jumpinfoAccountId' => 'int64'
+        'jumpinfoAccountId' => 'int64',
+        'platformType' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'pageType' => 'page_type',
         'pageSpec' => 'page_spec',
-        'jumpinfoAccountId' => 'jumpinfo_account_id'
+        'jumpinfoAccountId' => 'jumpinfo_account_id',
+        'platformType' => 'platform_type'
     ];
 
     /**
@@ -114,7 +117,8 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'pageType' => 'setPageType',
         'pageSpec' => 'setPageSpec',
-        'jumpinfoAccountId' => 'setJumpinfoAccountId'
+        'jumpinfoAccountId' => 'setJumpinfoAccountId',
+        'platformType' => 'setPlatformType'
     ];
 
     /**
@@ -125,7 +129,8 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'pageType' => 'getPageType',
         'pageSpec' => 'getPageSpec',
-        'jumpinfoAccountId' => 'getJumpinfoAccountId'
+        'jumpinfoAccountId' => 'getJumpinfoAccountId',
+        'platformType' => 'getPlatformType'
     ];
 
     /**
@@ -191,6 +196,7 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageSpec'] = isset($data['pageSpec']) ? $data['pageSpec'] : null;
         $this->container['jumpinfoAccountId'] = isset($data['jumpinfoAccountId']) ? $data['jumpinfoAccountId'] : null;
+        $this->container['platformType'] = isset($data['platformType']) ? $data['platformType'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class BackupsJumpinfoStruct implements ModelInterface, ArrayAccess
     public function setJumpinfoAccountId($jumpinfoAccountId)
     {
         $this->container['jumpinfoAccountId'] = $jumpinfoAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets platformType
+     *
+     * @return \TencentAds\Model\V3\LandingPagePlatformType|mixed
+     */
+    public function getPlatformType()
+    {
+        return $this->container['platformType'];
+    }
+
+    /**
+     * Sets platformType
+     *
+     * @param \TencentAds\Model\V3\LandingPagePlatformType|mixed $platformType platformType
+     *
+     * @return $this
+     */
+    public function setPlatformType($platformType)
+    {
+        $this->container['platformType'] = $platformType;
 
         return $this;
     }

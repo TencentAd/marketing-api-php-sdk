@@ -211,17 +211,10 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'pagePhoneCallDirectCount' => 'int',
         'pagePhoneCallDirectRate' => 'double',
         'pagePhoneCallDirectCost' => 'int',
-        'pagePhoneCallBackCount' => 'int',
-        'pagePhoneCallBackRate' => 'double',
-        'pagePhoneCallBackCost' => 'int',
-        'phoneCallCount' => 'int',
-        'intePhoneCount' => 'int',
-        'phoneCallUv' => 'int',
         'potentialPhoneCount' => 'int',
         'potentialCustomerPhoneUv' => 'int',
         'effectivePhoneCount' => 'int',
         'validPhoneUv' => 'int',
-        'phoneConsultCount' => 'int',
         'couponUsageNumber' => 'int',
         'couponUsageRate' => 'double',
         'couponUsageCost' => 'int',
@@ -310,8 +303,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'order24hByClickCount' => 'int',
         'order24hByClickAmount' => 'int',
         'order24hByClickRoi' => 'double',
-        'liveStreamOrderPv' => 'int',
-        'liveStreamOrderAmount' => 'int',
         'deliverCount' => 'int',
         'deliverRate' => 'double',
         'deliverCost' => 'int',
@@ -343,7 +334,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'regClkRate' => 'double',
         'activateRegisterRate' => 'double',
         'regPlaPv' => 'int',
-        'webRegisterUv' => 'int',
         'regAllDedupPv' => 'int',
         'regCostPla' => 'int',
         'regClickRatePla' => 'double',
@@ -529,29 +519,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'keyBehaviorConversionsRate' => 'double',
         'applyPv' => 'int',
         'applyCost' => 'int',
-        'appApplyUv' => 'int',
-        'webApplyUv' => 'int',
         'bizPageApplyUv' => 'int',
         'bizPageApplyRate' => 'double',
         'bizPageApplyCost' => 'int',
         'preCreditPv' => 'int',
         'preCreditAmount' => 'int',
         'preCreditCost' => 'int',
-        'appPreCreditUv' => 'int',
         'bizPreCreditUv' => 'int',
         'bizPreCreditUvCost' => 'int',
         'creditPv' => 'int',
         'creditAmount' => 'int',
         'creditCost' => 'int',
-        'appCreditUv' => 'int',
-        'webCreditUv' => 'int',
         'bizCreditUv' => 'int',
         'bizCreditCost' => 'int',
         'bizCreditRate' => 'double',
         'creApplicationRate' => 'double',
         'withdrawDepositPv' => 'int',
         'withdrawDepositAmount' => 'int',
-        'appWithdrawUv' => 'int',
         'bizWithdrawDepositsUv' => 'int',
         'bizWithdrawDepositsUvCost' => 'int',
         'couponClickCount' => 'int',
@@ -846,6 +830,34 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'bfAllDedupPv' => 'int',
         'retentionDedupPv' => 'int',
         'retentionAllDedupPv' => 'int',
+        'creditDedupPv' => 'int',
+        'preCreditDedupPv' => 'int',
+        'withdrawDedupPv' => 'int',
+        'applyDedupPv' => 'int',
+        'purchaseDedupImpPv' => 'int',
+        'purchaseDedupClkPv' => 'int',
+        'purchaseImpAmount' => 'int',
+        'purchaseClkAmount' => 'int',
+        'purchaseImpRate' => 'double',
+        'purchaseClk2Rate' => 'double',
+        'purchaseImpCost' => 'int',
+        'purchaseClkCost' => 'int',
+        'purchaseImpRoi' => 'double',
+        'purchaseClkRoi' => 'double',
+        'orderDedupImpPv' => 'int',
+        'orderDedupClkPv' => 'int',
+        'orderClk3dPv' => 'int',
+        'orderImp3dPv' => 'int',
+        'orderClk23dPv' => 'int',
+        'orderClk3dAmount' => 'int',
+        'orderImp3dAmount' => 'int',
+        'orderClk23dAmount' => 'int',
+        'orderClk3dCost' => 'int',
+        'orderImp3dCost' => 'int',
+        'orderClk23dCost' => 'int',
+        'orderClk3dRoi' => 'double',
+        'orderImp3dRoi' => 'double',
+        'orderClk23dRoi' => 'double',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -1023,17 +1035,10 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'pagePhoneCallDirectCount' => 'int64',
         'pagePhoneCallDirectRate' => 'double',
         'pagePhoneCallDirectCost' => 'int64',
-        'pagePhoneCallBackCount' => 'int64',
-        'pagePhoneCallBackRate' => 'double',
-        'pagePhoneCallBackCost' => 'int64',
-        'phoneCallCount' => 'int64',
-        'intePhoneCount' => 'int64',
-        'phoneCallUv' => 'int64',
         'potentialPhoneCount' => 'int64',
         'potentialCustomerPhoneUv' => 'int64',
         'effectivePhoneCount' => 'int64',
         'validPhoneUv' => 'int64',
-        'phoneConsultCount' => 'int64',
         'couponUsageNumber' => 'int64',
         'couponUsageRate' => 'double',
         'couponUsageCost' => 'int64',
@@ -1122,8 +1127,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'order24hByClickCount' => 'int64',
         'order24hByClickAmount' => 'int64',
         'order24hByClickRoi' => 'double',
-        'liveStreamOrderPv' => 'int64',
-        'liveStreamOrderAmount' => 'int64',
         'deliverCount' => 'int64',
         'deliverRate' => 'double',
         'deliverCost' => 'int64',
@@ -1155,7 +1158,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'regClkRate' => 'double',
         'activateRegisterRate' => 'double',
         'regPlaPv' => 'int64',
-        'webRegisterUv' => 'int64',
         'regAllDedupPv' => 'int64',
         'regCostPla' => 'int64',
         'regClickRatePla' => 'double',
@@ -1341,29 +1343,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'keyBehaviorConversionsRate' => 'double',
         'applyPv' => 'int64',
         'applyCost' => 'int64',
-        'appApplyUv' => 'int64',
-        'webApplyUv' => 'int64',
         'bizPageApplyUv' => 'int64',
         'bizPageApplyRate' => 'double',
         'bizPageApplyCost' => 'int64',
         'preCreditPv' => 'int64',
         'preCreditAmount' => 'int64',
         'preCreditCost' => 'int64',
-        'appPreCreditUv' => 'int64',
         'bizPreCreditUv' => 'int64',
         'bizPreCreditUvCost' => 'int64',
         'creditPv' => 'int64',
         'creditAmount' => 'int64',
         'creditCost' => 'int64',
-        'appCreditUv' => 'int64',
-        'webCreditUv' => 'int64',
         'bizCreditUv' => 'int64',
         'bizCreditCost' => 'int64',
         'bizCreditRate' => 'double',
         'creApplicationRate' => 'double',
         'withdrawDepositPv' => 'int64',
         'withdrawDepositAmount' => 'int64',
-        'appWithdrawUv' => 'int64',
         'bizWithdrawDepositsUv' => 'int64',
         'bizWithdrawDepositsUvCost' => 'int64',
         'couponClickCount' => 'int64',
@@ -1658,6 +1654,34 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'bfAllDedupPv' => 'int64',
         'retentionDedupPv' => 'int64',
         'retentionAllDedupPv' => 'int64',
+        'creditDedupPv' => 'int64',
+        'preCreditDedupPv' => 'int64',
+        'withdrawDedupPv' => 'int64',
+        'applyDedupPv' => 'int64',
+        'purchaseDedupImpPv' => 'int64',
+        'purchaseDedupClkPv' => 'int64',
+        'purchaseImpAmount' => 'int64',
+        'purchaseClkAmount' => 'int64',
+        'purchaseImpRate' => 'double',
+        'purchaseClk2Rate' => 'double',
+        'purchaseImpCost' => 'int64',
+        'purchaseClkCost' => 'int64',
+        'purchaseImpRoi' => 'double',
+        'purchaseClkRoi' => 'double',
+        'orderDedupImpPv' => 'int64',
+        'orderDedupClkPv' => 'int64',
+        'orderClk3dPv' => 'int64',
+        'orderImp3dPv' => 'int64',
+        'orderClk23dPv' => 'int64',
+        'orderClk3dAmount' => 'int64',
+        'orderImp3dAmount' => 'int64',
+        'orderClk23dAmount' => 'int64',
+        'orderClk3dCost' => 'int64',
+        'orderImp3dCost' => 'int64',
+        'orderClk23dCost' => 'int64',
+        'orderClk3dRoi' => 'double',
+        'orderImp3dRoi' => 'double',
+        'orderClk23dRoi' => 'double',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -1856,17 +1880,10 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'pagePhoneCallDirectCount' => 'page_phone_call_direct_count',
         'pagePhoneCallDirectRate' => 'page_phone_call_direct_rate',
         'pagePhoneCallDirectCost' => 'page_phone_call_direct_cost',
-        'pagePhoneCallBackCount' => 'page_phone_call_back_count',
-        'pagePhoneCallBackRate' => 'page_phone_call_back_rate',
-        'pagePhoneCallBackCost' => 'page_phone_call_back_cost',
-        'phoneCallCount' => 'phone_call_count',
-        'intePhoneCount' => 'inte_phone_count',
-        'phoneCallUv' => 'phone_call_uv',
         'potentialPhoneCount' => 'potential_phone_count',
         'potentialCustomerPhoneUv' => 'potential_customer_phone_uv',
         'effectivePhoneCount' => 'effective_phone_count',
         'validPhoneUv' => 'valid_phone_uv',
-        'phoneConsultCount' => 'phone_consult_count',
         'couponUsageNumber' => 'coupon_usage_number',
         'couponUsageRate' => 'coupon_usage_rate',
         'couponUsageCost' => 'coupon_usage_cost',
@@ -1955,8 +1972,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'order24hByClickCount' => 'order_24h_by_click_count',
         'order24hByClickAmount' => 'order_24h_by_click_amount',
         'order24hByClickRoi' => 'order_24h_by_click_roi',
-        'liveStreamOrderPv' => 'live_stream_order_pv',
-        'liveStreamOrderAmount' => 'live_stream_order_amount',
         'deliverCount' => 'deliver_count',
         'deliverRate' => 'deliver_rate',
         'deliverCost' => 'deliver_cost',
@@ -1988,7 +2003,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'regClkRate' => 'reg_clk_rate',
         'activateRegisterRate' => 'activate_register_rate',
         'regPlaPv' => 'reg_pla_pv',
-        'webRegisterUv' => 'web_register_uv',
         'regAllDedupPv' => 'reg_all_dedup_pv',
         'regCostPla' => 'reg_cost_pla',
         'regClickRatePla' => 'reg_click_rate_pla',
@@ -2174,29 +2188,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'keyBehaviorConversionsRate' => 'key_behavior_conversions_rate',
         'applyPv' => 'apply_pv',
         'applyCost' => 'apply_cost',
-        'appApplyUv' => 'app_apply_uv',
-        'webApplyUv' => 'web_apply_uv',
         'bizPageApplyUv' => 'biz_page_apply_uv',
         'bizPageApplyRate' => 'biz_page_apply_rate',
         'bizPageApplyCost' => 'biz_page_apply_cost',
         'preCreditPv' => 'pre_credit_pv',
         'preCreditAmount' => 'pre_credit_amount',
         'preCreditCost' => 'pre_credit_cost',
-        'appPreCreditUv' => 'app_pre_credit_uv',
         'bizPreCreditUv' => 'biz_pre_credit_uv',
         'bizPreCreditUvCost' => 'biz_pre_credit_uv_cost',
         'creditPv' => 'credit_pv',
         'creditAmount' => 'credit_amount',
         'creditCost' => 'credit_cost',
-        'appCreditUv' => 'app_credit_uv',
-        'webCreditUv' => 'web_credit_uv',
         'bizCreditUv' => 'biz_credit_uv',
         'bizCreditCost' => 'biz_credit_cost',
         'bizCreditRate' => 'biz_credit_rate',
         'creApplicationRate' => 'cre_application_rate',
         'withdrawDepositPv' => 'withdraw_deposit_pv',
         'withdrawDepositAmount' => 'withdraw_deposit_amount',
-        'appWithdrawUv' => 'app_withdraw_uv',
         'bizWithdrawDepositsUv' => 'biz_withdraw_deposits_uv',
         'bizWithdrawDepositsUvCost' => 'biz_withdraw_deposits_uv_cost',
         'couponClickCount' => 'coupon_click_count',
@@ -2491,6 +2499,34 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'bfAllDedupPv' => 'bf_all_dedup_pv',
         'retentionDedupPv' => 'retention_dedup_pv',
         'retentionAllDedupPv' => 'retention_all_dedup_pv',
+        'creditDedupPv' => 'credit_dedup_pv',
+        'preCreditDedupPv' => 'pre_credit_dedup_pv',
+        'withdrawDedupPv' => 'withdraw_dedup_pv',
+        'applyDedupPv' => 'apply_dedup_pv',
+        'purchaseDedupImpPv' => 'purchase_dedup_imp_pv',
+        'purchaseDedupClkPv' => 'purchase_dedup_clk_pv',
+        'purchaseImpAmount' => 'purchase_imp_amount',
+        'purchaseClkAmount' => 'purchase_clk_amount',
+        'purchaseImpRate' => 'purchase_imp_rate',
+        'purchaseClk2Rate' => 'purchase_clk2_rate',
+        'purchaseImpCost' => 'purchase_imp_cost',
+        'purchaseClkCost' => 'purchase_clk_cost',
+        'purchaseImpRoi' => 'purchase_imp_roi',
+        'purchaseClkRoi' => 'purchase_clk_roi',
+        'orderDedupImpPv' => 'order_dedup_imp_pv',
+        'orderDedupClkPv' => 'order_dedup_clk_pv',
+        'orderClk3dPv' => 'order_clk_3d_pv',
+        'orderImp3dPv' => 'order_imp_3d_pv',
+        'orderClk23dPv' => 'order_clk2_3d_pv',
+        'orderClk3dAmount' => 'order_clk_3d_amount',
+        'orderImp3dAmount' => 'order_imp_3d_amount',
+        'orderClk23dAmount' => 'order_clk2_3d_amount',
+        'orderClk3dCost' => 'order_clk_3d_cost',
+        'orderImp3dCost' => 'order_imp_3d_cost',
+        'orderClk23dCost' => 'order_clk2_3d_cost',
+        'orderClk3dRoi' => 'order_clk_3d_roi',
+        'orderImp3dRoi' => 'order_imp_3d_roi',
+        'orderClk23dRoi' => 'order_clk2_3d_roi',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -2668,17 +2704,10 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'pagePhoneCallDirectCount' => 'setPagePhoneCallDirectCount',
         'pagePhoneCallDirectRate' => 'setPagePhoneCallDirectRate',
         'pagePhoneCallDirectCost' => 'setPagePhoneCallDirectCost',
-        'pagePhoneCallBackCount' => 'setPagePhoneCallBackCount',
-        'pagePhoneCallBackRate' => 'setPagePhoneCallBackRate',
-        'pagePhoneCallBackCost' => 'setPagePhoneCallBackCost',
-        'phoneCallCount' => 'setPhoneCallCount',
-        'intePhoneCount' => 'setIntePhoneCount',
-        'phoneCallUv' => 'setPhoneCallUv',
         'potentialPhoneCount' => 'setPotentialPhoneCount',
         'potentialCustomerPhoneUv' => 'setPotentialCustomerPhoneUv',
         'effectivePhoneCount' => 'setEffectivePhoneCount',
         'validPhoneUv' => 'setValidPhoneUv',
-        'phoneConsultCount' => 'setPhoneConsultCount',
         'couponUsageNumber' => 'setCouponUsageNumber',
         'couponUsageRate' => 'setCouponUsageRate',
         'couponUsageCost' => 'setCouponUsageCost',
@@ -2767,8 +2796,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'order24hByClickCount' => 'setOrder24hByClickCount',
         'order24hByClickAmount' => 'setOrder24hByClickAmount',
         'order24hByClickRoi' => 'setOrder24hByClickRoi',
-        'liveStreamOrderPv' => 'setLiveStreamOrderPv',
-        'liveStreamOrderAmount' => 'setLiveStreamOrderAmount',
         'deliverCount' => 'setDeliverCount',
         'deliverRate' => 'setDeliverRate',
         'deliverCost' => 'setDeliverCost',
@@ -2800,7 +2827,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'regClkRate' => 'setRegClkRate',
         'activateRegisterRate' => 'setActivateRegisterRate',
         'regPlaPv' => 'setRegPlaPv',
-        'webRegisterUv' => 'setWebRegisterUv',
         'regAllDedupPv' => 'setRegAllDedupPv',
         'regCostPla' => 'setRegCostPla',
         'regClickRatePla' => 'setRegClickRatePla',
@@ -2986,29 +3012,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'keyBehaviorConversionsRate' => 'setKeyBehaviorConversionsRate',
         'applyPv' => 'setApplyPv',
         'applyCost' => 'setApplyCost',
-        'appApplyUv' => 'setAppApplyUv',
-        'webApplyUv' => 'setWebApplyUv',
         'bizPageApplyUv' => 'setBizPageApplyUv',
         'bizPageApplyRate' => 'setBizPageApplyRate',
         'bizPageApplyCost' => 'setBizPageApplyCost',
         'preCreditPv' => 'setPreCreditPv',
         'preCreditAmount' => 'setPreCreditAmount',
         'preCreditCost' => 'setPreCreditCost',
-        'appPreCreditUv' => 'setAppPreCreditUv',
         'bizPreCreditUv' => 'setBizPreCreditUv',
         'bizPreCreditUvCost' => 'setBizPreCreditUvCost',
         'creditPv' => 'setCreditPv',
         'creditAmount' => 'setCreditAmount',
         'creditCost' => 'setCreditCost',
-        'appCreditUv' => 'setAppCreditUv',
-        'webCreditUv' => 'setWebCreditUv',
         'bizCreditUv' => 'setBizCreditUv',
         'bizCreditCost' => 'setBizCreditCost',
         'bizCreditRate' => 'setBizCreditRate',
         'creApplicationRate' => 'setCreApplicationRate',
         'withdrawDepositPv' => 'setWithdrawDepositPv',
         'withdrawDepositAmount' => 'setWithdrawDepositAmount',
-        'appWithdrawUv' => 'setAppWithdrawUv',
         'bizWithdrawDepositsUv' => 'setBizWithdrawDepositsUv',
         'bizWithdrawDepositsUvCost' => 'setBizWithdrawDepositsUvCost',
         'couponClickCount' => 'setCouponClickCount',
@@ -3303,6 +3323,34 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'bfAllDedupPv' => 'setBfAllDedupPv',
         'retentionDedupPv' => 'setRetentionDedupPv',
         'retentionAllDedupPv' => 'setRetentionAllDedupPv',
+        'creditDedupPv' => 'setCreditDedupPv',
+        'preCreditDedupPv' => 'setPreCreditDedupPv',
+        'withdrawDedupPv' => 'setWithdrawDedupPv',
+        'applyDedupPv' => 'setApplyDedupPv',
+        'purchaseDedupImpPv' => 'setPurchaseDedupImpPv',
+        'purchaseDedupClkPv' => 'setPurchaseDedupClkPv',
+        'purchaseImpAmount' => 'setPurchaseImpAmount',
+        'purchaseClkAmount' => 'setPurchaseClkAmount',
+        'purchaseImpRate' => 'setPurchaseImpRate',
+        'purchaseClk2Rate' => 'setPurchaseClk2Rate',
+        'purchaseImpCost' => 'setPurchaseImpCost',
+        'purchaseClkCost' => 'setPurchaseClkCost',
+        'purchaseImpRoi' => 'setPurchaseImpRoi',
+        'purchaseClkRoi' => 'setPurchaseClkRoi',
+        'orderDedupImpPv' => 'setOrderDedupImpPv',
+        'orderDedupClkPv' => 'setOrderDedupClkPv',
+        'orderClk3dPv' => 'setOrderClk3dPv',
+        'orderImp3dPv' => 'setOrderImp3dPv',
+        'orderClk23dPv' => 'setOrderClk23dPv',
+        'orderClk3dAmount' => 'setOrderClk3dAmount',
+        'orderImp3dAmount' => 'setOrderImp3dAmount',
+        'orderClk23dAmount' => 'setOrderClk23dAmount',
+        'orderClk3dCost' => 'setOrderClk3dCost',
+        'orderImp3dCost' => 'setOrderImp3dCost',
+        'orderClk23dCost' => 'setOrderClk23dCost',
+        'orderClk3dRoi' => 'setOrderClk3dRoi',
+        'orderImp3dRoi' => 'setOrderImp3dRoi',
+        'orderClk23dRoi' => 'setOrderClk23dRoi',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -3480,17 +3528,10 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'pagePhoneCallDirectCount' => 'getPagePhoneCallDirectCount',
         'pagePhoneCallDirectRate' => 'getPagePhoneCallDirectRate',
         'pagePhoneCallDirectCost' => 'getPagePhoneCallDirectCost',
-        'pagePhoneCallBackCount' => 'getPagePhoneCallBackCount',
-        'pagePhoneCallBackRate' => 'getPagePhoneCallBackRate',
-        'pagePhoneCallBackCost' => 'getPagePhoneCallBackCost',
-        'phoneCallCount' => 'getPhoneCallCount',
-        'intePhoneCount' => 'getIntePhoneCount',
-        'phoneCallUv' => 'getPhoneCallUv',
         'potentialPhoneCount' => 'getPotentialPhoneCount',
         'potentialCustomerPhoneUv' => 'getPotentialCustomerPhoneUv',
         'effectivePhoneCount' => 'getEffectivePhoneCount',
         'validPhoneUv' => 'getValidPhoneUv',
-        'phoneConsultCount' => 'getPhoneConsultCount',
         'couponUsageNumber' => 'getCouponUsageNumber',
         'couponUsageRate' => 'getCouponUsageRate',
         'couponUsageCost' => 'getCouponUsageCost',
@@ -3579,8 +3620,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'order24hByClickCount' => 'getOrder24hByClickCount',
         'order24hByClickAmount' => 'getOrder24hByClickAmount',
         'order24hByClickRoi' => 'getOrder24hByClickRoi',
-        'liveStreamOrderPv' => 'getLiveStreamOrderPv',
-        'liveStreamOrderAmount' => 'getLiveStreamOrderAmount',
         'deliverCount' => 'getDeliverCount',
         'deliverRate' => 'getDeliverRate',
         'deliverCost' => 'getDeliverCost',
@@ -3612,7 +3651,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'regClkRate' => 'getRegClkRate',
         'activateRegisterRate' => 'getActivateRegisterRate',
         'regPlaPv' => 'getRegPlaPv',
-        'webRegisterUv' => 'getWebRegisterUv',
         'regAllDedupPv' => 'getRegAllDedupPv',
         'regCostPla' => 'getRegCostPla',
         'regClickRatePla' => 'getRegClickRatePla',
@@ -3798,29 +3836,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'keyBehaviorConversionsRate' => 'getKeyBehaviorConversionsRate',
         'applyPv' => 'getApplyPv',
         'applyCost' => 'getApplyCost',
-        'appApplyUv' => 'getAppApplyUv',
-        'webApplyUv' => 'getWebApplyUv',
         'bizPageApplyUv' => 'getBizPageApplyUv',
         'bizPageApplyRate' => 'getBizPageApplyRate',
         'bizPageApplyCost' => 'getBizPageApplyCost',
         'preCreditPv' => 'getPreCreditPv',
         'preCreditAmount' => 'getPreCreditAmount',
         'preCreditCost' => 'getPreCreditCost',
-        'appPreCreditUv' => 'getAppPreCreditUv',
         'bizPreCreditUv' => 'getBizPreCreditUv',
         'bizPreCreditUvCost' => 'getBizPreCreditUvCost',
         'creditPv' => 'getCreditPv',
         'creditAmount' => 'getCreditAmount',
         'creditCost' => 'getCreditCost',
-        'appCreditUv' => 'getAppCreditUv',
-        'webCreditUv' => 'getWebCreditUv',
         'bizCreditUv' => 'getBizCreditUv',
         'bizCreditCost' => 'getBizCreditCost',
         'bizCreditRate' => 'getBizCreditRate',
         'creApplicationRate' => 'getCreApplicationRate',
         'withdrawDepositPv' => 'getWithdrawDepositPv',
         'withdrawDepositAmount' => 'getWithdrawDepositAmount',
-        'appWithdrawUv' => 'getAppWithdrawUv',
         'bizWithdrawDepositsUv' => 'getBizWithdrawDepositsUv',
         'bizWithdrawDepositsUvCost' => 'getBizWithdrawDepositsUvCost',
         'couponClickCount' => 'getCouponClickCount',
@@ -4115,6 +4147,34 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'bfAllDedupPv' => 'getBfAllDedupPv',
         'retentionDedupPv' => 'getRetentionDedupPv',
         'retentionAllDedupPv' => 'getRetentionAllDedupPv',
+        'creditDedupPv' => 'getCreditDedupPv',
+        'preCreditDedupPv' => 'getPreCreditDedupPv',
+        'withdrawDedupPv' => 'getWithdrawDedupPv',
+        'applyDedupPv' => 'getApplyDedupPv',
+        'purchaseDedupImpPv' => 'getPurchaseDedupImpPv',
+        'purchaseDedupClkPv' => 'getPurchaseDedupClkPv',
+        'purchaseImpAmount' => 'getPurchaseImpAmount',
+        'purchaseClkAmount' => 'getPurchaseClkAmount',
+        'purchaseImpRate' => 'getPurchaseImpRate',
+        'purchaseClk2Rate' => 'getPurchaseClk2Rate',
+        'purchaseImpCost' => 'getPurchaseImpCost',
+        'purchaseClkCost' => 'getPurchaseClkCost',
+        'purchaseImpRoi' => 'getPurchaseImpRoi',
+        'purchaseClkRoi' => 'getPurchaseClkRoi',
+        'orderDedupImpPv' => 'getOrderDedupImpPv',
+        'orderDedupClkPv' => 'getOrderDedupClkPv',
+        'orderClk3dPv' => 'getOrderClk3dPv',
+        'orderImp3dPv' => 'getOrderImp3dPv',
+        'orderClk23dPv' => 'getOrderClk23dPv',
+        'orderClk3dAmount' => 'getOrderClk3dAmount',
+        'orderImp3dAmount' => 'getOrderImp3dAmount',
+        'orderClk23dAmount' => 'getOrderClk23dAmount',
+        'orderClk3dCost' => 'getOrderClk3dCost',
+        'orderImp3dCost' => 'getOrderImp3dCost',
+        'orderClk23dCost' => 'getOrderClk23dCost',
+        'orderClk3dRoi' => 'getOrderClk3dRoi',
+        'orderImp3dRoi' => 'getOrderImp3dRoi',
+        'orderClk23dRoi' => 'getOrderClk23dRoi',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -4346,17 +4406,10 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['pagePhoneCallDirectCount'] = isset($data['pagePhoneCallDirectCount']) ? $data['pagePhoneCallDirectCount'] : null;
         $this->container['pagePhoneCallDirectRate'] = isset($data['pagePhoneCallDirectRate']) ? $data['pagePhoneCallDirectRate'] : null;
         $this->container['pagePhoneCallDirectCost'] = isset($data['pagePhoneCallDirectCost']) ? $data['pagePhoneCallDirectCost'] : null;
-        $this->container['pagePhoneCallBackCount'] = isset($data['pagePhoneCallBackCount']) ? $data['pagePhoneCallBackCount'] : null;
-        $this->container['pagePhoneCallBackRate'] = isset($data['pagePhoneCallBackRate']) ? $data['pagePhoneCallBackRate'] : null;
-        $this->container['pagePhoneCallBackCost'] = isset($data['pagePhoneCallBackCost']) ? $data['pagePhoneCallBackCost'] : null;
-        $this->container['phoneCallCount'] = isset($data['phoneCallCount']) ? $data['phoneCallCount'] : null;
-        $this->container['intePhoneCount'] = isset($data['intePhoneCount']) ? $data['intePhoneCount'] : null;
-        $this->container['phoneCallUv'] = isset($data['phoneCallUv']) ? $data['phoneCallUv'] : null;
         $this->container['potentialPhoneCount'] = isset($data['potentialPhoneCount']) ? $data['potentialPhoneCount'] : null;
         $this->container['potentialCustomerPhoneUv'] = isset($data['potentialCustomerPhoneUv']) ? $data['potentialCustomerPhoneUv'] : null;
         $this->container['effectivePhoneCount'] = isset($data['effectivePhoneCount']) ? $data['effectivePhoneCount'] : null;
         $this->container['validPhoneUv'] = isset($data['validPhoneUv']) ? $data['validPhoneUv'] : null;
-        $this->container['phoneConsultCount'] = isset($data['phoneConsultCount']) ? $data['phoneConsultCount'] : null;
         $this->container['couponUsageNumber'] = isset($data['couponUsageNumber']) ? $data['couponUsageNumber'] : null;
         $this->container['couponUsageRate'] = isset($data['couponUsageRate']) ? $data['couponUsageRate'] : null;
         $this->container['couponUsageCost'] = isset($data['couponUsageCost']) ? $data['couponUsageCost'] : null;
@@ -4445,8 +4498,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['order24hByClickCount'] = isset($data['order24hByClickCount']) ? $data['order24hByClickCount'] : null;
         $this->container['order24hByClickAmount'] = isset($data['order24hByClickAmount']) ? $data['order24hByClickAmount'] : null;
         $this->container['order24hByClickRoi'] = isset($data['order24hByClickRoi']) ? $data['order24hByClickRoi'] : null;
-        $this->container['liveStreamOrderPv'] = isset($data['liveStreamOrderPv']) ? $data['liveStreamOrderPv'] : null;
-        $this->container['liveStreamOrderAmount'] = isset($data['liveStreamOrderAmount']) ? $data['liveStreamOrderAmount'] : null;
         $this->container['deliverCount'] = isset($data['deliverCount']) ? $data['deliverCount'] : null;
         $this->container['deliverRate'] = isset($data['deliverRate']) ? $data['deliverRate'] : null;
         $this->container['deliverCost'] = isset($data['deliverCost']) ? $data['deliverCost'] : null;
@@ -4478,7 +4529,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['regClkRate'] = isset($data['regClkRate']) ? $data['regClkRate'] : null;
         $this->container['activateRegisterRate'] = isset($data['activateRegisterRate']) ? $data['activateRegisterRate'] : null;
         $this->container['regPlaPv'] = isset($data['regPlaPv']) ? $data['regPlaPv'] : null;
-        $this->container['webRegisterUv'] = isset($data['webRegisterUv']) ? $data['webRegisterUv'] : null;
         $this->container['regAllDedupPv'] = isset($data['regAllDedupPv']) ? $data['regAllDedupPv'] : null;
         $this->container['regCostPla'] = isset($data['regCostPla']) ? $data['regCostPla'] : null;
         $this->container['regClickRatePla'] = isset($data['regClickRatePla']) ? $data['regClickRatePla'] : null;
@@ -4664,29 +4714,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['keyBehaviorConversionsRate'] = isset($data['keyBehaviorConversionsRate']) ? $data['keyBehaviorConversionsRate'] : null;
         $this->container['applyPv'] = isset($data['applyPv']) ? $data['applyPv'] : null;
         $this->container['applyCost'] = isset($data['applyCost']) ? $data['applyCost'] : null;
-        $this->container['appApplyUv'] = isset($data['appApplyUv']) ? $data['appApplyUv'] : null;
-        $this->container['webApplyUv'] = isset($data['webApplyUv']) ? $data['webApplyUv'] : null;
         $this->container['bizPageApplyUv'] = isset($data['bizPageApplyUv']) ? $data['bizPageApplyUv'] : null;
         $this->container['bizPageApplyRate'] = isset($data['bizPageApplyRate']) ? $data['bizPageApplyRate'] : null;
         $this->container['bizPageApplyCost'] = isset($data['bizPageApplyCost']) ? $data['bizPageApplyCost'] : null;
         $this->container['preCreditPv'] = isset($data['preCreditPv']) ? $data['preCreditPv'] : null;
         $this->container['preCreditAmount'] = isset($data['preCreditAmount']) ? $data['preCreditAmount'] : null;
         $this->container['preCreditCost'] = isset($data['preCreditCost']) ? $data['preCreditCost'] : null;
-        $this->container['appPreCreditUv'] = isset($data['appPreCreditUv']) ? $data['appPreCreditUv'] : null;
         $this->container['bizPreCreditUv'] = isset($data['bizPreCreditUv']) ? $data['bizPreCreditUv'] : null;
         $this->container['bizPreCreditUvCost'] = isset($data['bizPreCreditUvCost']) ? $data['bizPreCreditUvCost'] : null;
         $this->container['creditPv'] = isset($data['creditPv']) ? $data['creditPv'] : null;
         $this->container['creditAmount'] = isset($data['creditAmount']) ? $data['creditAmount'] : null;
         $this->container['creditCost'] = isset($data['creditCost']) ? $data['creditCost'] : null;
-        $this->container['appCreditUv'] = isset($data['appCreditUv']) ? $data['appCreditUv'] : null;
-        $this->container['webCreditUv'] = isset($data['webCreditUv']) ? $data['webCreditUv'] : null;
         $this->container['bizCreditUv'] = isset($data['bizCreditUv']) ? $data['bizCreditUv'] : null;
         $this->container['bizCreditCost'] = isset($data['bizCreditCost']) ? $data['bizCreditCost'] : null;
         $this->container['bizCreditRate'] = isset($data['bizCreditRate']) ? $data['bizCreditRate'] : null;
         $this->container['creApplicationRate'] = isset($data['creApplicationRate']) ? $data['creApplicationRate'] : null;
         $this->container['withdrawDepositPv'] = isset($data['withdrawDepositPv']) ? $data['withdrawDepositPv'] : null;
         $this->container['withdrawDepositAmount'] = isset($data['withdrawDepositAmount']) ? $data['withdrawDepositAmount'] : null;
-        $this->container['appWithdrawUv'] = isset($data['appWithdrawUv']) ? $data['appWithdrawUv'] : null;
         $this->container['bizWithdrawDepositsUv'] = isset($data['bizWithdrawDepositsUv']) ? $data['bizWithdrawDepositsUv'] : null;
         $this->container['bizWithdrawDepositsUvCost'] = isset($data['bizWithdrawDepositsUvCost']) ? $data['bizWithdrawDepositsUvCost'] : null;
         $this->container['couponClickCount'] = isset($data['couponClickCount']) ? $data['couponClickCount'] : null;
@@ -4981,6 +5025,34 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['bfAllDedupPv'] = isset($data['bfAllDedupPv']) ? $data['bfAllDedupPv'] : null;
         $this->container['retentionDedupPv'] = isset($data['retentionDedupPv']) ? $data['retentionDedupPv'] : null;
         $this->container['retentionAllDedupPv'] = isset($data['retentionAllDedupPv']) ? $data['retentionAllDedupPv'] : null;
+        $this->container['creditDedupPv'] = isset($data['creditDedupPv']) ? $data['creditDedupPv'] : null;
+        $this->container['preCreditDedupPv'] = isset($data['preCreditDedupPv']) ? $data['preCreditDedupPv'] : null;
+        $this->container['withdrawDedupPv'] = isset($data['withdrawDedupPv']) ? $data['withdrawDedupPv'] : null;
+        $this->container['applyDedupPv'] = isset($data['applyDedupPv']) ? $data['applyDedupPv'] : null;
+        $this->container['purchaseDedupImpPv'] = isset($data['purchaseDedupImpPv']) ? $data['purchaseDedupImpPv'] : null;
+        $this->container['purchaseDedupClkPv'] = isset($data['purchaseDedupClkPv']) ? $data['purchaseDedupClkPv'] : null;
+        $this->container['purchaseImpAmount'] = isset($data['purchaseImpAmount']) ? $data['purchaseImpAmount'] : null;
+        $this->container['purchaseClkAmount'] = isset($data['purchaseClkAmount']) ? $data['purchaseClkAmount'] : null;
+        $this->container['purchaseImpRate'] = isset($data['purchaseImpRate']) ? $data['purchaseImpRate'] : null;
+        $this->container['purchaseClk2Rate'] = isset($data['purchaseClk2Rate']) ? $data['purchaseClk2Rate'] : null;
+        $this->container['purchaseImpCost'] = isset($data['purchaseImpCost']) ? $data['purchaseImpCost'] : null;
+        $this->container['purchaseClkCost'] = isset($data['purchaseClkCost']) ? $data['purchaseClkCost'] : null;
+        $this->container['purchaseImpRoi'] = isset($data['purchaseImpRoi']) ? $data['purchaseImpRoi'] : null;
+        $this->container['purchaseClkRoi'] = isset($data['purchaseClkRoi']) ? $data['purchaseClkRoi'] : null;
+        $this->container['orderDedupImpPv'] = isset($data['orderDedupImpPv']) ? $data['orderDedupImpPv'] : null;
+        $this->container['orderDedupClkPv'] = isset($data['orderDedupClkPv']) ? $data['orderDedupClkPv'] : null;
+        $this->container['orderClk3dPv'] = isset($data['orderClk3dPv']) ? $data['orderClk3dPv'] : null;
+        $this->container['orderImp3dPv'] = isset($data['orderImp3dPv']) ? $data['orderImp3dPv'] : null;
+        $this->container['orderClk23dPv'] = isset($data['orderClk23dPv']) ? $data['orderClk23dPv'] : null;
+        $this->container['orderClk3dAmount'] = isset($data['orderClk3dAmount']) ? $data['orderClk3dAmount'] : null;
+        $this->container['orderImp3dAmount'] = isset($data['orderImp3dAmount']) ? $data['orderImp3dAmount'] : null;
+        $this->container['orderClk23dAmount'] = isset($data['orderClk23dAmount']) ? $data['orderClk23dAmount'] : null;
+        $this->container['orderClk3dCost'] = isset($data['orderClk3dCost']) ? $data['orderClk3dCost'] : null;
+        $this->container['orderImp3dCost'] = isset($data['orderImp3dCost']) ? $data['orderImp3dCost'] : null;
+        $this->container['orderClk23dCost'] = isset($data['orderClk23dCost']) ? $data['orderClk23dCost'] : null;
+        $this->container['orderClk3dRoi'] = isset($data['orderClk3dRoi']) ? $data['orderClk3dRoi'] : null;
+        $this->container['orderImp3dRoi'] = isset($data['orderImp3dRoi']) ? $data['orderImp3dRoi'] : null;
+        $this->container['orderClk23dRoi'] = isset($data['orderClk23dRoi']) ? $data['orderClk23dRoi'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -8696,150 +8768,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets pagePhoneCallBackCount
-     *
-     * @return int|mixed
-     */
-    public function getPagePhoneCallBackCount()
-    {
-        return $this->container['pagePhoneCallBackCount'];
-    }
-
-    /**
-     * Sets pagePhoneCallBackCount
-     *
-     * @param int|mixed $pagePhoneCallBackCount pagePhoneCallBackCount
-     *
-     * @return $this
-     */
-    public function setPagePhoneCallBackCount($pagePhoneCallBackCount)
-    {
-        $this->container['pagePhoneCallBackCount'] = $pagePhoneCallBackCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets pagePhoneCallBackRate
-     *
-     * @return double|mixed
-     */
-    public function getPagePhoneCallBackRate()
-    {
-        return $this->container['pagePhoneCallBackRate'];
-    }
-
-    /**
-     * Sets pagePhoneCallBackRate
-     *
-     * @param double|mixed $pagePhoneCallBackRate pagePhoneCallBackRate
-     *
-     * @return $this
-     */
-    public function setPagePhoneCallBackRate($pagePhoneCallBackRate)
-    {
-        $this->container['pagePhoneCallBackRate'] = $pagePhoneCallBackRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets pagePhoneCallBackCost
-     *
-     * @return int|mixed
-     */
-    public function getPagePhoneCallBackCost()
-    {
-        return $this->container['pagePhoneCallBackCost'];
-    }
-
-    /**
-     * Sets pagePhoneCallBackCost
-     *
-     * @param int|mixed $pagePhoneCallBackCost pagePhoneCallBackCost
-     *
-     * @return $this
-     */
-    public function setPagePhoneCallBackCost($pagePhoneCallBackCost)
-    {
-        $this->container['pagePhoneCallBackCost'] = $pagePhoneCallBackCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets phoneCallCount
-     *
-     * @return int|mixed
-     */
-    public function getPhoneCallCount()
-    {
-        return $this->container['phoneCallCount'];
-    }
-
-    /**
-     * Sets phoneCallCount
-     *
-     * @param int|mixed $phoneCallCount phoneCallCount
-     *
-     * @return $this
-     */
-    public function setPhoneCallCount($phoneCallCount)
-    {
-        $this->container['phoneCallCount'] = $phoneCallCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets intePhoneCount
-     *
-     * @return int|mixed
-     */
-    public function getIntePhoneCount()
-    {
-        return $this->container['intePhoneCount'];
-    }
-
-    /**
-     * Sets intePhoneCount
-     *
-     * @param int|mixed $intePhoneCount intePhoneCount
-     *
-     * @return $this
-     */
-    public function setIntePhoneCount($intePhoneCount)
-    {
-        $this->container['intePhoneCount'] = $intePhoneCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets phoneCallUv
-     *
-     * @return int|mixed
-     */
-    public function getPhoneCallUv()
-    {
-        return $this->container['phoneCallUv'];
-    }
-
-    /**
-     * Sets phoneCallUv
-     *
-     * @param int|mixed $phoneCallUv phoneCallUv
-     *
-     * @return $this
-     */
-    public function setPhoneCallUv($phoneCallUv)
-    {
-        $this->container['phoneCallUv'] = $phoneCallUv;
-
-        return $this;
-    }
-
-    /**
      * Gets potentialPhoneCount
      *
      * @return int|mixed
@@ -8931,30 +8859,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setValidPhoneUv($validPhoneUv)
     {
         $this->container['validPhoneUv'] = $validPhoneUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets phoneConsultCount
-     *
-     * @return int|mixed
-     */
-    public function getPhoneConsultCount()
-    {
-        return $this->container['phoneConsultCount'];
-    }
-
-    /**
-     * Sets phoneConsultCount
-     *
-     * @param int|mixed $phoneConsultCount phoneConsultCount
-     *
-     * @return $this
-     */
-    public function setPhoneConsultCount($phoneConsultCount)
-    {
-        $this->container['phoneConsultCount'] = $phoneConsultCount;
 
         return $this;
     }
@@ -11072,54 +10976,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets liveStreamOrderPv
-     *
-     * @return int|mixed
-     */
-    public function getLiveStreamOrderPv()
-    {
-        return $this->container['liveStreamOrderPv'];
-    }
-
-    /**
-     * Sets liveStreamOrderPv
-     *
-     * @param int|mixed $liveStreamOrderPv liveStreamOrderPv
-     *
-     * @return $this
-     */
-    public function setLiveStreamOrderPv($liveStreamOrderPv)
-    {
-        $this->container['liveStreamOrderPv'] = $liveStreamOrderPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets liveStreamOrderAmount
-     *
-     * @return int|mixed
-     */
-    public function getLiveStreamOrderAmount()
-    {
-        return $this->container['liveStreamOrderAmount'];
-    }
-
-    /**
-     * Sets liveStreamOrderAmount
-     *
-     * @param int|mixed $liveStreamOrderAmount liveStreamOrderAmount
-     *
-     * @return $this
-     */
-    public function setLiveStreamOrderAmount($liveStreamOrderAmount)
-    {
-        $this->container['liveStreamOrderAmount'] = $liveStreamOrderAmount;
-
-        return $this;
-    }
-
-    /**
      * Gets deliverCount
      *
      * @return int|mixed
@@ -11859,30 +11715,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setRegPlaPv($regPlaPv)
     {
         $this->container['regPlaPv'] = $regPlaPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets webRegisterUv
-     *
-     * @return int|mixed
-     */
-    public function getWebRegisterUv()
-    {
-        return $this->container['webRegisterUv'];
-    }
-
-    /**
-     * Sets webRegisterUv
-     *
-     * @param int|mixed $webRegisterUv webRegisterUv
-     *
-     * @return $this
-     */
-    public function setWebRegisterUv($webRegisterUv)
-    {
-        $this->container['webRegisterUv'] = $webRegisterUv;
 
         return $this;
     }
@@ -16328,54 +16160,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets appApplyUv
-     *
-     * @return int|mixed
-     */
-    public function getAppApplyUv()
-    {
-        return $this->container['appApplyUv'];
-    }
-
-    /**
-     * Sets appApplyUv
-     *
-     * @param int|mixed $appApplyUv appApplyUv
-     *
-     * @return $this
-     */
-    public function setAppApplyUv($appApplyUv)
-    {
-        $this->container['appApplyUv'] = $appApplyUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets webApplyUv
-     *
-     * @return int|mixed
-     */
-    public function getWebApplyUv()
-    {
-        return $this->container['webApplyUv'];
-    }
-
-    /**
-     * Sets webApplyUv
-     *
-     * @param int|mixed $webApplyUv webApplyUv
-     *
-     * @return $this
-     */
-    public function setWebApplyUv($webApplyUv)
-    {
-        $this->container['webApplyUv'] = $webApplyUv;
-
-        return $this;
-    }
-
-    /**
      * Gets bizPageApplyUv
      *
      * @return int|mixed
@@ -16520,30 +16304,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets appPreCreditUv
-     *
-     * @return int|mixed
-     */
-    public function getAppPreCreditUv()
-    {
-        return $this->container['appPreCreditUv'];
-    }
-
-    /**
-     * Sets appPreCreditUv
-     *
-     * @param int|mixed $appPreCreditUv appPreCreditUv
-     *
-     * @return $this
-     */
-    public function setAppPreCreditUv($appPreCreditUv)
-    {
-        $this->container['appPreCreditUv'] = $appPreCreditUv;
-
-        return $this;
-    }
-
-    /**
      * Gets bizPreCreditUv
      *
      * @return int|mixed
@@ -16659,54 +16419,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setCreditCost($creditCost)
     {
         $this->container['creditCost'] = $creditCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets appCreditUv
-     *
-     * @return int|mixed
-     */
-    public function getAppCreditUv()
-    {
-        return $this->container['appCreditUv'];
-    }
-
-    /**
-     * Sets appCreditUv
-     *
-     * @param int|mixed $appCreditUv appCreditUv
-     *
-     * @return $this
-     */
-    public function setAppCreditUv($appCreditUv)
-    {
-        $this->container['appCreditUv'] = $appCreditUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets webCreditUv
-     *
-     * @return int|mixed
-     */
-    public function getWebCreditUv()
-    {
-        return $this->container['webCreditUv'];
-    }
-
-    /**
-     * Sets webCreditUv
-     *
-     * @param int|mixed $webCreditUv webCreditUv
-     *
-     * @return $this
-     */
-    public function setWebCreditUv($webCreditUv)
-    {
-        $this->container['webCreditUv'] = $webCreditUv;
 
         return $this;
     }
@@ -16851,30 +16563,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setWithdrawDepositAmount($withdrawDepositAmount)
     {
         $this->container['withdrawDepositAmount'] = $withdrawDepositAmount;
-
-        return $this;
-    }
-
-    /**
-     * Gets appWithdrawUv
-     *
-     * @return int|mixed
-     */
-    public function getAppWithdrawUv()
-    {
-        return $this->container['appWithdrawUv'];
-    }
-
-    /**
-     * Sets appWithdrawUv
-     *
-     * @param int|mixed $appWithdrawUv appWithdrawUv
-     *
-     * @return $this
-     */
-    public function setAppWithdrawUv($appWithdrawUv)
-    {
-        $this->container['appWithdrawUv'] = $appWithdrawUv;
 
         return $this;
     }
@@ -23931,6 +23619,678 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setRetentionAllDedupPv($retentionAllDedupPv)
     {
         $this->container['retentionAllDedupPv'] = $retentionAllDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets creditDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getCreditDedupPv()
+    {
+        return $this->container['creditDedupPv'];
+    }
+
+    /**
+     * Sets creditDedupPv
+     *
+     * @param int|mixed $creditDedupPv creditDedupPv
+     *
+     * @return $this
+     */
+    public function setCreditDedupPv($creditDedupPv)
+    {
+        $this->container['creditDedupPv'] = $creditDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets preCreditDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getPreCreditDedupPv()
+    {
+        return $this->container['preCreditDedupPv'];
+    }
+
+    /**
+     * Sets preCreditDedupPv
+     *
+     * @param int|mixed $preCreditDedupPv preCreditDedupPv
+     *
+     * @return $this
+     */
+    public function setPreCreditDedupPv($preCreditDedupPv)
+    {
+        $this->container['preCreditDedupPv'] = $preCreditDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets withdrawDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getWithdrawDedupPv()
+    {
+        return $this->container['withdrawDedupPv'];
+    }
+
+    /**
+     * Sets withdrawDedupPv
+     *
+     * @param int|mixed $withdrawDedupPv withdrawDedupPv
+     *
+     * @return $this
+     */
+    public function setWithdrawDedupPv($withdrawDedupPv)
+    {
+        $this->container['withdrawDedupPv'] = $withdrawDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets applyDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getApplyDedupPv()
+    {
+        return $this->container['applyDedupPv'];
+    }
+
+    /**
+     * Sets applyDedupPv
+     *
+     * @param int|mixed $applyDedupPv applyDedupPv
+     *
+     * @return $this
+     */
+    public function setApplyDedupPv($applyDedupPv)
+    {
+        $this->container['applyDedupPv'] = $applyDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseDedupImpPv
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseDedupImpPv()
+    {
+        return $this->container['purchaseDedupImpPv'];
+    }
+
+    /**
+     * Sets purchaseDedupImpPv
+     *
+     * @param int|mixed $purchaseDedupImpPv purchaseDedupImpPv
+     *
+     * @return $this
+     */
+    public function setPurchaseDedupImpPv($purchaseDedupImpPv)
+    {
+        $this->container['purchaseDedupImpPv'] = $purchaseDedupImpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseDedupClkPv
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseDedupClkPv()
+    {
+        return $this->container['purchaseDedupClkPv'];
+    }
+
+    /**
+     * Sets purchaseDedupClkPv
+     *
+     * @param int|mixed $purchaseDedupClkPv purchaseDedupClkPv
+     *
+     * @return $this
+     */
+    public function setPurchaseDedupClkPv($purchaseDedupClkPv)
+    {
+        $this->container['purchaseDedupClkPv'] = $purchaseDedupClkPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseImpAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseImpAmount()
+    {
+        return $this->container['purchaseImpAmount'];
+    }
+
+    /**
+     * Sets purchaseImpAmount
+     *
+     * @param int|mixed $purchaseImpAmount purchaseImpAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseImpAmount($purchaseImpAmount)
+    {
+        $this->container['purchaseImpAmount'] = $purchaseImpAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseClkAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseClkAmount()
+    {
+        return $this->container['purchaseClkAmount'];
+    }
+
+    /**
+     * Sets purchaseClkAmount
+     *
+     * @param int|mixed $purchaseClkAmount purchaseClkAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseClkAmount($purchaseClkAmount)
+    {
+        $this->container['purchaseClkAmount'] = $purchaseClkAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseImpRate
+     *
+     * @return double|mixed
+     */
+    public function getPurchaseImpRate()
+    {
+        return $this->container['purchaseImpRate'];
+    }
+
+    /**
+     * Sets purchaseImpRate
+     *
+     * @param double|mixed $purchaseImpRate purchaseImpRate
+     *
+     * @return $this
+     */
+    public function setPurchaseImpRate($purchaseImpRate)
+    {
+        $this->container['purchaseImpRate'] = $purchaseImpRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseClk2Rate
+     *
+     * @return double|mixed
+     */
+    public function getPurchaseClk2Rate()
+    {
+        return $this->container['purchaseClk2Rate'];
+    }
+
+    /**
+     * Sets purchaseClk2Rate
+     *
+     * @param double|mixed $purchaseClk2Rate purchaseClk2Rate
+     *
+     * @return $this
+     */
+    public function setPurchaseClk2Rate($purchaseClk2Rate)
+    {
+        $this->container['purchaseClk2Rate'] = $purchaseClk2Rate;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseImpCost
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseImpCost()
+    {
+        return $this->container['purchaseImpCost'];
+    }
+
+    /**
+     * Sets purchaseImpCost
+     *
+     * @param int|mixed $purchaseImpCost purchaseImpCost
+     *
+     * @return $this
+     */
+    public function setPurchaseImpCost($purchaseImpCost)
+    {
+        $this->container['purchaseImpCost'] = $purchaseImpCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseClkCost
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseClkCost()
+    {
+        return $this->container['purchaseClkCost'];
+    }
+
+    /**
+     * Sets purchaseClkCost
+     *
+     * @param int|mixed $purchaseClkCost purchaseClkCost
+     *
+     * @return $this
+     */
+    public function setPurchaseClkCost($purchaseClkCost)
+    {
+        $this->container['purchaseClkCost'] = $purchaseClkCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseImpRoi
+     *
+     * @return double|mixed
+     */
+    public function getPurchaseImpRoi()
+    {
+        return $this->container['purchaseImpRoi'];
+    }
+
+    /**
+     * Sets purchaseImpRoi
+     *
+     * @param double|mixed $purchaseImpRoi purchaseImpRoi
+     *
+     * @return $this
+     */
+    public function setPurchaseImpRoi($purchaseImpRoi)
+    {
+        $this->container['purchaseImpRoi'] = $purchaseImpRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseClkRoi
+     *
+     * @return double|mixed
+     */
+    public function getPurchaseClkRoi()
+    {
+        return $this->container['purchaseClkRoi'];
+    }
+
+    /**
+     * Sets purchaseClkRoi
+     *
+     * @param double|mixed $purchaseClkRoi purchaseClkRoi
+     *
+     * @return $this
+     */
+    public function setPurchaseClkRoi($purchaseClkRoi)
+    {
+        $this->container['purchaseClkRoi'] = $purchaseClkRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderDedupImpPv
+     *
+     * @return int|mixed
+     */
+    public function getOrderDedupImpPv()
+    {
+        return $this->container['orderDedupImpPv'];
+    }
+
+    /**
+     * Sets orderDedupImpPv
+     *
+     * @param int|mixed $orderDedupImpPv orderDedupImpPv
+     *
+     * @return $this
+     */
+    public function setOrderDedupImpPv($orderDedupImpPv)
+    {
+        $this->container['orderDedupImpPv'] = $orderDedupImpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderDedupClkPv
+     *
+     * @return int|mixed
+     */
+    public function getOrderDedupClkPv()
+    {
+        return $this->container['orderDedupClkPv'];
+    }
+
+    /**
+     * Sets orderDedupClkPv
+     *
+     * @param int|mixed $orderDedupClkPv orderDedupClkPv
+     *
+     * @return $this
+     */
+    public function setOrderDedupClkPv($orderDedupClkPv)
+    {
+        $this->container['orderDedupClkPv'] = $orderDedupClkPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderClk3dPv
+     *
+     * @return int|mixed
+     */
+    public function getOrderClk3dPv()
+    {
+        return $this->container['orderClk3dPv'];
+    }
+
+    /**
+     * Sets orderClk3dPv
+     *
+     * @param int|mixed $orderClk3dPv orderClk3dPv
+     *
+     * @return $this
+     */
+    public function setOrderClk3dPv($orderClk3dPv)
+    {
+        $this->container['orderClk3dPv'] = $orderClk3dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderImp3dPv
+     *
+     * @return int|mixed
+     */
+    public function getOrderImp3dPv()
+    {
+        return $this->container['orderImp3dPv'];
+    }
+
+    /**
+     * Sets orderImp3dPv
+     *
+     * @param int|mixed $orderImp3dPv orderImp3dPv
+     *
+     * @return $this
+     */
+    public function setOrderImp3dPv($orderImp3dPv)
+    {
+        $this->container['orderImp3dPv'] = $orderImp3dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderClk23dPv
+     *
+     * @return int|mixed
+     */
+    public function getOrderClk23dPv()
+    {
+        return $this->container['orderClk23dPv'];
+    }
+
+    /**
+     * Sets orderClk23dPv
+     *
+     * @param int|mixed $orderClk23dPv orderClk23dPv
+     *
+     * @return $this
+     */
+    public function setOrderClk23dPv($orderClk23dPv)
+    {
+        $this->container['orderClk23dPv'] = $orderClk23dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderClk3dAmount
+     *
+     * @return int|mixed
+     */
+    public function getOrderClk3dAmount()
+    {
+        return $this->container['orderClk3dAmount'];
+    }
+
+    /**
+     * Sets orderClk3dAmount
+     *
+     * @param int|mixed $orderClk3dAmount orderClk3dAmount
+     *
+     * @return $this
+     */
+    public function setOrderClk3dAmount($orderClk3dAmount)
+    {
+        $this->container['orderClk3dAmount'] = $orderClk3dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderImp3dAmount
+     *
+     * @return int|mixed
+     */
+    public function getOrderImp3dAmount()
+    {
+        return $this->container['orderImp3dAmount'];
+    }
+
+    /**
+     * Sets orderImp3dAmount
+     *
+     * @param int|mixed $orderImp3dAmount orderImp3dAmount
+     *
+     * @return $this
+     */
+    public function setOrderImp3dAmount($orderImp3dAmount)
+    {
+        $this->container['orderImp3dAmount'] = $orderImp3dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderClk23dAmount
+     *
+     * @return int|mixed
+     */
+    public function getOrderClk23dAmount()
+    {
+        return $this->container['orderClk23dAmount'];
+    }
+
+    /**
+     * Sets orderClk23dAmount
+     *
+     * @param int|mixed $orderClk23dAmount orderClk23dAmount
+     *
+     * @return $this
+     */
+    public function setOrderClk23dAmount($orderClk23dAmount)
+    {
+        $this->container['orderClk23dAmount'] = $orderClk23dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderClk3dCost
+     *
+     * @return int|mixed
+     */
+    public function getOrderClk3dCost()
+    {
+        return $this->container['orderClk3dCost'];
+    }
+
+    /**
+     * Sets orderClk3dCost
+     *
+     * @param int|mixed $orderClk3dCost orderClk3dCost
+     *
+     * @return $this
+     */
+    public function setOrderClk3dCost($orderClk3dCost)
+    {
+        $this->container['orderClk3dCost'] = $orderClk3dCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderImp3dCost
+     *
+     * @return int|mixed
+     */
+    public function getOrderImp3dCost()
+    {
+        return $this->container['orderImp3dCost'];
+    }
+
+    /**
+     * Sets orderImp3dCost
+     *
+     * @param int|mixed $orderImp3dCost orderImp3dCost
+     *
+     * @return $this
+     */
+    public function setOrderImp3dCost($orderImp3dCost)
+    {
+        $this->container['orderImp3dCost'] = $orderImp3dCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderClk23dCost
+     *
+     * @return int|mixed
+     */
+    public function getOrderClk23dCost()
+    {
+        return $this->container['orderClk23dCost'];
+    }
+
+    /**
+     * Sets orderClk23dCost
+     *
+     * @param int|mixed $orderClk23dCost orderClk23dCost
+     *
+     * @return $this
+     */
+    public function setOrderClk23dCost($orderClk23dCost)
+    {
+        $this->container['orderClk23dCost'] = $orderClk23dCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderClk3dRoi
+     *
+     * @return double|mixed
+     */
+    public function getOrderClk3dRoi()
+    {
+        return $this->container['orderClk3dRoi'];
+    }
+
+    /**
+     * Sets orderClk3dRoi
+     *
+     * @param double|mixed $orderClk3dRoi orderClk3dRoi
+     *
+     * @return $this
+     */
+    public function setOrderClk3dRoi($orderClk3dRoi)
+    {
+        $this->container['orderClk3dRoi'] = $orderClk3dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderImp3dRoi
+     *
+     * @return double|mixed
+     */
+    public function getOrderImp3dRoi()
+    {
+        return $this->container['orderImp3dRoi'];
+    }
+
+    /**
+     * Sets orderImp3dRoi
+     *
+     * @param double|mixed $orderImp3dRoi orderImp3dRoi
+     *
+     * @return $this
+     */
+    public function setOrderImp3dRoi($orderImp3dRoi)
+    {
+        $this->container['orderImp3dRoi'] = $orderImp3dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderClk23dRoi
+     *
+     * @return double|mixed
+     */
+    public function getOrderClk23dRoi()
+    {
+        return $this->container['orderClk23dRoi'];
+    }
+
+    /**
+     * Sets orderClk23dRoi
+     *
+     * @param double|mixed $orderClk23dRoi orderClk23dRoi
+     *
+     * @return $this
+     */
+    public function setOrderClk23dRoi($orderClk23dRoi)
+    {
+        $this->container['orderClk23dRoi'] = $orderClk23dRoi;
 
         return $this;
     }

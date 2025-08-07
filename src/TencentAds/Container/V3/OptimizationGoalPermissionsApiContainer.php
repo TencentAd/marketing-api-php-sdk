@@ -46,8 +46,9 @@ class OptimizationGoalPermissionsApiContainer extends ApiContainer
             $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
             $bidMode = isset($params['bid_mode']) ? $params['bid_mode'] : null;
             $marketingCarrierDetail = isset($params['marketing_carrier_detail']) ? $params['marketing_carrier_detail'] : null;
+            $deliveryScene = isset($params['delivery_scene']) ? $params['delivery_scene'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->optimizationGoalPermissionsGet($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $fields);
+            $response = $this->apiInstance->optimizationGoalPermissionsGet($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $deliveryScene, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -70,8 +71,9 @@ class OptimizationGoalPermissionsApiContainer extends ApiContainer
             $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
             $bidMode = isset($params['bid_mode']) ? $params['bid_mode'] : null;
             $marketingCarrierDetail = isset($params['marketing_carrier_detail']) ? $params['marketing_carrier_detail'] : null;
+            $deliveryScene = isset($params['delivery_scene']) ? $params['delivery_scene'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->optimizationGoalPermissionsGetAsync($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $fields);
+            $response = $this->apiInstance->optimizationGoalPermissionsGetAsync($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $deliveryScene, $fields);
             return $response;
         });
     }

@@ -59,7 +59,8 @@ class ImageListItem implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'imageId' => 'string',
-        'imageUrl' => 'string'
+        'imageUrl' => 'string',
+        'originalImageId' => 'string'
     ];
 
     /**
@@ -69,7 +70,8 @@ class ImageListItem implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'imageId' => null,
-        'imageUrl' => null
+        'imageUrl' => null,
+        'originalImageId' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class ImageListItem implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'imageId' => 'image_id',
-        'imageUrl' => 'image_url'
+        'imageUrl' => 'image_url',
+        'originalImageId' => 'original_image_id'
     ];
 
     /**
@@ -110,7 +113,8 @@ class ImageListItem implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'imageId' => 'setImageId',
-        'imageUrl' => 'setImageUrl'
+        'imageUrl' => 'setImageUrl',
+        'originalImageId' => 'setOriginalImageId'
     ];
 
     /**
@@ -120,7 +124,8 @@ class ImageListItem implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'imageId' => 'getImageId',
-        'imageUrl' => 'getImageUrl'
+        'imageUrl' => 'getImageUrl',
+        'originalImageId' => 'getOriginalImageId'
     ];
 
     /**
@@ -185,6 +190,7 @@ class ImageListItem implements ModelInterface, ArrayAccess
     {
         $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
         $this->container['imageUrl'] = isset($data['imageUrl']) ? $data['imageUrl'] : null;
+        $this->container['originalImageId'] = isset($data['originalImageId']) ? $data['originalImageId'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class ImageListItem implements ModelInterface, ArrayAccess
     public function setImageUrl($imageUrl)
     {
         $this->container['imageUrl'] = $imageUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets originalImageId
+     *
+     * @return string|mixed
+     */
+    public function getOriginalImageId()
+    {
+        return $this->container['originalImageId'];
+    }
+
+    /**
+     * Sets originalImageId
+     *
+     * @param string|mixed $originalImageId originalImageId
+     *
+     * @return $this
+     */
+    public function setOriginalImageId($originalImageId)
+    {
+        $this->container['originalImageId'] = $originalImageId;
 
         return $this;
     }

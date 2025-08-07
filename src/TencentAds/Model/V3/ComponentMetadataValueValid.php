@@ -79,7 +79,8 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'defaultBoolValue' => 'bool',
         'enumOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidEnumOption[]',
         'minOccurs' => 'int',
-        'maxOccurs' => 'int'
+        'maxOccurs' => 'int',
+        'imageFormatOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidImageFormatOption[]'
     ];
 
     /**
@@ -109,7 +110,8 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'defaultBoolValue' => null,
         'enumOptions' => null,
         'minOccurs' => 'int64',
-        'maxOccurs' => 'int64'
+        'maxOccurs' => 'int64',
+        'imageFormatOptions' => null
     ];
 
     /**
@@ -160,7 +162,8 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'defaultBoolValue' => 'default_bool_value',
         'enumOptions' => 'enum_options',
         'minOccurs' => 'min_occurs',
-        'maxOccurs' => 'max_occurs'
+        'maxOccurs' => 'max_occurs',
+        'imageFormatOptions' => 'image_format_options'
     ];
 
     /**
@@ -190,7 +193,8 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'defaultBoolValue' => 'setDefaultBoolValue',
         'enumOptions' => 'setEnumOptions',
         'minOccurs' => 'setMinOccurs',
-        'maxOccurs' => 'setMaxOccurs'
+        'maxOccurs' => 'setMaxOccurs',
+        'imageFormatOptions' => 'setImageFormatOptions'
     ];
 
     /**
@@ -220,7 +224,8 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'defaultBoolValue' => 'getDefaultBoolValue',
         'enumOptions' => 'getEnumOptions',
         'minOccurs' => 'getMinOccurs',
-        'maxOccurs' => 'getMaxOccurs'
+        'maxOccurs' => 'getMaxOccurs',
+        'imageFormatOptions' => 'getImageFormatOptions'
     ];
 
     /**
@@ -305,6 +310,7 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         $this->container['enumOptions'] = isset($data['enumOptions']) ? $data['enumOptions'] : null;
         $this->container['minOccurs'] = isset($data['minOccurs']) ? $data['minOccurs'] : null;
         $this->container['maxOccurs'] = isset($data['maxOccurs']) ? $data['maxOccurs'] : null;
+        $this->container['imageFormatOptions'] = isset($data['imageFormatOptions']) ? $data['imageFormatOptions'] : null;
     }
 
     /**
@@ -855,6 +861,30 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
     public function setMaxOccurs($maxOccurs)
     {
         $this->container['maxOccurs'] = $maxOccurs;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageFormatOptions
+     *
+     * @return \TencentAds\Model\V3\ComponentMetadataValueValidImageFormatOption[]|mixed
+     */
+    public function getImageFormatOptions()
+    {
+        return $this->container['imageFormatOptions'];
+    }
+
+    /**
+     * Sets imageFormatOptions
+     *
+     * @param \TencentAds\Model\V3\ComponentMetadataValueValidImageFormatOption[]|mixed $imageFormatOptions imageFormatOptions
+     *
+     * @return $this
+     */
+    public function setImageFormatOptions($imageFormatOptions)
+    {
+        $this->container['imageFormatOptions'] = $imageFormatOptions;
 
         return $this;
     }

@@ -65,7 +65,9 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
         'siteSet' => '\TencentAds\Model\V3\SiteSetDefinition',
         'creativeTemplateSize' => 'string',
         'supportBidModeList' => 'string[]',
-        'supportSiteSetInfo' => '\TencentAds\Model\V3\SupportSiteSetStruct[]'
+        'supportSiteSetInfo' => '\TencentAds\Model\V3\SupportSiteSetStruct[]',
+        'isOffline' => 'bool',
+        'offlineTips' => 'string'
     ];
 
     /**
@@ -81,7 +83,9 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
         'siteSet' => null,
         'creativeTemplateSize' => null,
         'supportBidModeList' => null,
-        'supportSiteSetInfo' => null
+        'supportSiteSetInfo' => null,
+        'isOffline' => null,
+        'offlineTips' => null
     ];
 
     /**
@@ -118,7 +122,9 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
         'siteSet' => 'site_set',
         'creativeTemplateSize' => 'creative_template_size',
         'supportBidModeList' => 'support_bid_mode_list',
-        'supportSiteSetInfo' => 'support_site_set_info'
+        'supportSiteSetInfo' => 'support_site_set_info',
+        'isOffline' => 'is_offline',
+        'offlineTips' => 'offline_tips'
     ];
 
     /**
@@ -134,7 +140,9 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
         'siteSet' => 'setSiteSet',
         'creativeTemplateSize' => 'setCreativeTemplateSize',
         'supportBidModeList' => 'setSupportBidModeList',
-        'supportSiteSetInfo' => 'setSupportSiteSetInfo'
+        'supportSiteSetInfo' => 'setSupportSiteSetInfo',
+        'isOffline' => 'setIsOffline',
+        'offlineTips' => 'setOfflineTips'
     ];
 
     /**
@@ -150,7 +158,9 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
         'siteSet' => 'getSiteSet',
         'creativeTemplateSize' => 'getCreativeTemplateSize',
         'supportBidModeList' => 'getSupportBidModeList',
-        'supportSiteSetInfo' => 'getSupportSiteSetInfo'
+        'supportSiteSetInfo' => 'getSupportSiteSetInfo',
+        'isOffline' => 'getIsOffline',
+        'offlineTips' => 'getOfflineTips'
     ];
 
     /**
@@ -221,6 +231,8 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
         $this->container['creativeTemplateSize'] = isset($data['creativeTemplateSize']) ? $data['creativeTemplateSize'] : null;
         $this->container['supportBidModeList'] = isset($data['supportBidModeList']) ? $data['supportBidModeList'] : null;
         $this->container['supportSiteSetInfo'] = isset($data['supportSiteSetInfo']) ? $data['supportSiteSetInfo'] : null;
+        $this->container['isOffline'] = isset($data['isOffline']) ? $data['isOffline'] : null;
+        $this->container['offlineTips'] = isset($data['offlineTips']) ? $data['offlineTips'] : null;
     }
 
     /**
@@ -435,6 +447,54 @@ class AdcreativeTemplateListStructAdpermit implements ModelInterface, ArrayAcces
     public function setSupportSiteSetInfo($supportSiteSetInfo)
     {
         $this->container['supportSiteSetInfo'] = $supportSiteSetInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets isOffline
+     *
+     * @return bool|mixed
+     */
+    public function getIsOffline()
+    {
+        return $this->container['isOffline'];
+    }
+
+    /**
+     * Sets isOffline
+     *
+     * @param bool|mixed $isOffline isOffline
+     *
+     * @return $this
+     */
+    public function setIsOffline($isOffline)
+    {
+        $this->container['isOffline'] = $isOffline;
+
+        return $this;
+    }
+
+    /**
+     * Gets offlineTips
+     *
+     * @return string|mixed
+     */
+    public function getOfflineTips()
+    {
+        return $this->container['offlineTips'];
+    }
+
+    /**
+     * Sets offlineTips
+     *
+     * @param string|mixed $offlineTips offlineTips
+     *
+     * @return $this
+     */
+    public function setOfflineTips($offlineTips)
+    {
+        $this->container['offlineTips'] = $offlineTips;
 
         return $this;
     }

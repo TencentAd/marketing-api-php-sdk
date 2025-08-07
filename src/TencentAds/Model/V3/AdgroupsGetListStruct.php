@@ -125,6 +125,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'shortPlayPayType' => '\TencentAds\Model\V3\ShortPlayPayType',
         'sellStrategyId' => 'int',
         'ogCompletionType' => '\TencentAds\Model\V3\OgCompletionType',
+        'dcaSpec' => '\TencentAds\Model\V3\DcaSpec',
         'aoiOptimizationStrategy' => '\TencentAds\Model\V3\AoiOptimizationStrategy',
         'costGuaranteeStatus' => '\TencentAds\Model\V3\CostGuaranteeStatus',
         'costGuaranteeMoney' => 'int',
@@ -209,6 +210,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'shortPlayPayType' => null,
         'sellStrategyId' => 'int64',
         'ogCompletionType' => null,
+        'dcaSpec' => null,
         'aoiOptimizationStrategy' => null,
         'costGuaranteeStatus' => null,
         'costGuaranteeMoney' => 'int64',
@@ -314,6 +316,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'short_play_pay_type',
         'sellStrategyId' => 'sell_strategy_id',
         'ogCompletionType' => 'og_completion_type',
+        'dcaSpec' => 'dca_spec',
         'aoiOptimizationStrategy' => 'aoi_optimization_strategy',
         'costGuaranteeStatus' => 'cost_guarantee_status',
         'costGuaranteeMoney' => 'cost_guarantee_money',
@@ -398,6 +401,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'setShortPlayPayType',
         'sellStrategyId' => 'setSellStrategyId',
         'ogCompletionType' => 'setOgCompletionType',
+        'dcaSpec' => 'setDcaSpec',
         'aoiOptimizationStrategy' => 'setAoiOptimizationStrategy',
         'costGuaranteeStatus' => 'setCostGuaranteeStatus',
         'costGuaranteeMoney' => 'setCostGuaranteeMoney',
@@ -482,6 +486,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'shortPlayPayType' => 'getShortPlayPayType',
         'sellStrategyId' => 'getSellStrategyId',
         'ogCompletionType' => 'getOgCompletionType',
+        'dcaSpec' => 'getDcaSpec',
         'aoiOptimizationStrategy' => 'getAoiOptimizationStrategy',
         'costGuaranteeStatus' => 'getCostGuaranteeStatus',
         'costGuaranteeMoney' => 'getCostGuaranteeMoney',
@@ -620,6 +625,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['shortPlayPayType'] = isset($data['shortPlayPayType']) ? $data['shortPlayPayType'] : null;
         $this->container['sellStrategyId'] = isset($data['sellStrategyId']) ? $data['sellStrategyId'] : null;
         $this->container['ogCompletionType'] = isset($data['ogCompletionType']) ? $data['ogCompletionType'] : null;
+        $this->container['dcaSpec'] = isset($data['dcaSpec']) ? $data['dcaSpec'] : null;
         $this->container['aoiOptimizationStrategy'] = isset($data['aoiOptimizationStrategy']) ? $data['aoiOptimizationStrategy'] : null;
         $this->container['costGuaranteeStatus'] = isset($data['costGuaranteeStatus']) ? $data['costGuaranteeStatus'] : null;
         $this->container['costGuaranteeMoney'] = isset($data['costGuaranteeMoney']) ? $data['costGuaranteeMoney'] : null;
@@ -2259,6 +2265,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setOgCompletionType($ogCompletionType)
     {
         $this->container['ogCompletionType'] = $ogCompletionType;
+
+        return $this;
+    }
+
+    /**
+     * Gets dcaSpec
+     *
+     * @return \TencentAds\Model\V3\DcaSpec|mixed
+     */
+    public function getDcaSpec()
+    {
+        return $this->container['dcaSpec'];
+    }
+
+    /**
+     * Sets dcaSpec
+     *
+     * @param \TencentAds\Model\V3\DcaSpec|mixed $dcaSpec dcaSpec
+     *
+     * @return $this
+     */
+    public function setDcaSpec($dcaSpec)
+    {
+        $this->container['dcaSpec'] = $dcaSpec;
 
         return $this;
     }

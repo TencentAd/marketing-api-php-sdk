@@ -67,7 +67,9 @@ class AdContext implements ModelInterface, ArrayAccess
         'siteSet' => 'string[]',
         'creativeTemplateId' => 'int',
         'promotedAssetType' => '\TencentAds\Model\V3\PromotedAssetType',
-        'componentType' => '\TencentAds\Model\V3\ComponentType'
+        'componentType' => '\TencentAds\Model\V3\ComponentType',
+        'mpaSpec' => '\TencentAds\Model\V3\MpaSpec',
+        'marketingAssetOuterSpec' => '\TencentAds\Model\V3\MarketingAssetOuterSpec'
     ];
 
     /**
@@ -85,7 +87,9 @@ class AdContext implements ModelInterface, ArrayAccess
         'siteSet' => null,
         'creativeTemplateId' => 'int64',
         'promotedAssetType' => null,
-        'componentType' => null
+        'componentType' => null,
+        'mpaSpec' => null,
+        'marketingAssetOuterSpec' => null
     ];
 
     /**
@@ -124,7 +128,9 @@ class AdContext implements ModelInterface, ArrayAccess
         'siteSet' => 'site_set',
         'creativeTemplateId' => 'creative_template_id',
         'promotedAssetType' => 'promoted_asset_type',
-        'componentType' => 'component_type'
+        'componentType' => 'component_type',
+        'mpaSpec' => 'mpa_spec',
+        'marketingAssetOuterSpec' => 'marketing_asset_outer_spec'
     ];
 
     /**
@@ -142,7 +148,9 @@ class AdContext implements ModelInterface, ArrayAccess
         'siteSet' => 'setSiteSet',
         'creativeTemplateId' => 'setCreativeTemplateId',
         'promotedAssetType' => 'setPromotedAssetType',
-        'componentType' => 'setComponentType'
+        'componentType' => 'setComponentType',
+        'mpaSpec' => 'setMpaSpec',
+        'marketingAssetOuterSpec' => 'setMarketingAssetOuterSpec'
     ];
 
     /**
@@ -160,7 +168,9 @@ class AdContext implements ModelInterface, ArrayAccess
         'siteSet' => 'getSiteSet',
         'creativeTemplateId' => 'getCreativeTemplateId',
         'promotedAssetType' => 'getPromotedAssetType',
-        'componentType' => 'getComponentType'
+        'componentType' => 'getComponentType',
+        'mpaSpec' => 'getMpaSpec',
+        'marketingAssetOuterSpec' => 'getMarketingAssetOuterSpec'
     ];
 
     /**
@@ -233,6 +243,8 @@ class AdContext implements ModelInterface, ArrayAccess
         $this->container['creativeTemplateId'] = isset($data['creativeTemplateId']) ? $data['creativeTemplateId'] : null;
         $this->container['promotedAssetType'] = isset($data['promotedAssetType']) ? $data['promotedAssetType'] : null;
         $this->container['componentType'] = isset($data['componentType']) ? $data['componentType'] : null;
+        $this->container['mpaSpec'] = isset($data['mpaSpec']) ? $data['mpaSpec'] : null;
+        $this->container['marketingAssetOuterSpec'] = isset($data['marketingAssetOuterSpec']) ? $data['marketingAssetOuterSpec'] : null;
     }
 
     /**
@@ -495,6 +507,54 @@ class AdContext implements ModelInterface, ArrayAccess
     public function setComponentType($componentType)
     {
         $this->container['componentType'] = $componentType;
+
+        return $this;
+    }
+
+    /**
+     * Gets mpaSpec
+     *
+     * @return \TencentAds\Model\V3\MpaSpec|mixed
+     */
+    public function getMpaSpec()
+    {
+        return $this->container['mpaSpec'];
+    }
+
+    /**
+     * Sets mpaSpec
+     *
+     * @param \TencentAds\Model\V3\MpaSpec|mixed $mpaSpec mpaSpec
+     *
+     * @return $this
+     */
+    public function setMpaSpec($mpaSpec)
+    {
+        $this->container['mpaSpec'] = $mpaSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingAssetOuterSpec
+     *
+     * @return \TencentAds\Model\V3\MarketingAssetOuterSpec|mixed
+     */
+    public function getMarketingAssetOuterSpec()
+    {
+        return $this->container['marketingAssetOuterSpec'];
+    }
+
+    /**
+     * Sets marketingAssetOuterSpec
+     *
+     * @param \TencentAds\Model\V3\MarketingAssetOuterSpec|mixed $marketingAssetOuterSpec marketingAssetOuterSpec
+     *
+     * @return $this
+     */
+    public function setMarketingAssetOuterSpec($marketingAssetOuterSpec)
+    {
+        $this->container['marketingAssetOuterSpec'] = $marketingAssetOuterSpec;
 
         return $this;
     }

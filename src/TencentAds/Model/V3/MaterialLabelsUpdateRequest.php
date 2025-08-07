@@ -58,6 +58,7 @@ class MaterialLabelsUpdateRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
+        'organizationId' => 'int',
         'labelId' => 'int',
         'labelName' => 'string',
         'firstLabelLevelName' => 'string',
@@ -71,6 +72,7 @@ class MaterialLabelsUpdateRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
+        'organizationId' => 'int64',
         'labelId' => 'int64',
         'labelName' => null,
         'firstLabelLevelName' => null,
@@ -105,6 +107,7 @@ class MaterialLabelsUpdateRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
+        'organizationId' => 'organization_id',
         'labelId' => 'label_id',
         'labelName' => 'label_name',
         'firstLabelLevelName' => 'first_label_level_name',
@@ -118,6 +121,7 @@ class MaterialLabelsUpdateRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
+        'organizationId' => 'setOrganizationId',
         'labelId' => 'setLabelId',
         'labelName' => 'setLabelName',
         'firstLabelLevelName' => 'setFirstLabelLevelName',
@@ -131,6 +135,7 @@ class MaterialLabelsUpdateRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
+        'organizationId' => 'getOrganizationId',
         'labelId' => 'getLabelId',
         'labelName' => 'getLabelName',
         'firstLabelLevelName' => 'getFirstLabelLevelName',
@@ -198,6 +203,7 @@ class MaterialLabelsUpdateRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
         $this->container['labelId'] = isset($data['labelId']) ? $data['labelId'] : null;
         $this->container['labelName'] = isset($data['labelName']) ? $data['labelName'] : null;
         $this->container['firstLabelLevelName'] = isset($data['firstLabelLevelName']) ? $data['firstLabelLevelName'] : null;
@@ -248,6 +254,30 @@ class MaterialLabelsUpdateRequest implements ModelInterface, ArrayAccess
     public function setAccountId($accountId)
     {
         $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets organizationId
+     *
+     * @return int|mixed
+     */
+    public function getOrganizationId()
+    {
+        return $this->container['organizationId'];
+    }
+
+    /**
+     * Sets organizationId
+     *
+     * @param int|mixed $organizationId organizationId
+     *
+     * @return $this
+     */
+    public function setOrganizationId($organizationId)
+    {
+        $this->container['organizationId'] = $organizationId;
 
         return $this;
     }

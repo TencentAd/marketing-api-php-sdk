@@ -94,6 +94,7 @@ class SmartDeliveryGoal
     const PAGE_SCAN_CODE_OPERATOR = 'SMART_DELIVERY_GOAL_PAGE_SCAN_CODE_OPERATOR';
     const PAGE_SCAN_CODE_HOME = 'SMART_DELIVERY_GOAL_PAGE_SCAN_CODE_HOME';
     const PAGE_SCAN_CODE = 'SMART_DELIVERY_GOAL_PAGE_SCAN_CODE';
+    const PAGE_CONFIRM_EFFECTIVE_LEADS = 'SMART_DELIVERY_GOAL_PAGE_CONFIRM_EFFECTIVE_LEADS';
     
     /**
      * Gets allowable values of the enum
@@ -152,6 +153,7 @@ class SmartDeliveryGoal
             self::PAGE_SCAN_CODE_OPERATOR,
             self::PAGE_SCAN_CODE_HOME,
             self::PAGE_SCAN_CODE,
+            self::PAGE_CONFIRM_EFFECTIVE_LEADS,
         ];
     }
 }

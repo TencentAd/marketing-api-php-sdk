@@ -157,6 +157,8 @@ class OptimizationGoal
     const VIEW_DRAMA_DURATION_1_MIN = 'OPTIMIZATIONGOAL_VIEW_DRAMA_DURATION_1MIN';
     const FIRST_PROMPT_INPUT = 'OPTIMIZATIONGOAL_FIRST_PROMPT_INPUT';
     const ECOMMERCE_GIFTING = 'OPTIMIZATIONGOAL_ECOMMERCE_GIFTING';
+    const CLUE_PAY_SUCCEED = 'OPTIMIZATIONGOAL_CLUE_PAY_SUCCEED';
+    const _30_DAY_UNSUBSCRIBE_RATE = 'OPTIMIZATIONGOAL_30DAY_UNSUBSCRIBE_RATE';
     
     /**
      * Gets allowable values of the enum
@@ -278,6 +280,8 @@ class OptimizationGoal
             self::VIEW_DRAMA_DURATION_1_MIN,
             self::FIRST_PROMPT_INPUT,
             self::ECOMMERCE_GIFTING,
+            self::CLUE_PAY_SUCCEED,
+            self::_30_DAY_UNSUBSCRIBE_RATE,
         ];
     }
 }

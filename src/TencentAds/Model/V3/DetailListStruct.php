@@ -64,7 +64,9 @@ class DetailListStruct implements ModelInterface, ArrayAccess
         'message' => 'string',
         'accountId' => 'int',
         'extData' => 'string',
-        'scopeObjectIdStr' => 'string'
+        'scopeObjectIdStr' => 'string',
+        'code' => 'int',
+        'organizationId' => 'int'
     ];
 
     /**
@@ -79,7 +81,9 @@ class DetailListStruct implements ModelInterface, ArrayAccess
         'message' => null,
         'accountId' => 'int64',
         'extData' => null,
-        'scopeObjectIdStr' => null
+        'scopeObjectIdStr' => null,
+        'code' => 'int64',
+        'organizationId' => 'int64'
     ];
 
     /**
@@ -115,7 +119,9 @@ class DetailListStruct implements ModelInterface, ArrayAccess
         'message' => 'message',
         'accountId' => 'account_id',
         'extData' => 'ext_data',
-        'scopeObjectIdStr' => 'scope_object_id_str'
+        'scopeObjectIdStr' => 'scope_object_id_str',
+        'code' => 'code',
+        'organizationId' => 'organization_id'
     ];
 
     /**
@@ -130,7 +136,9 @@ class DetailListStruct implements ModelInterface, ArrayAccess
         'message' => 'setMessage',
         'accountId' => 'setAccountId',
         'extData' => 'setExtData',
-        'scopeObjectIdStr' => 'setScopeObjectIdStr'
+        'scopeObjectIdStr' => 'setScopeObjectIdStr',
+        'code' => 'setCode',
+        'organizationId' => 'setOrganizationId'
     ];
 
     /**
@@ -145,7 +153,9 @@ class DetailListStruct implements ModelInterface, ArrayAccess
         'message' => 'getMessage',
         'accountId' => 'getAccountId',
         'extData' => 'getExtData',
-        'scopeObjectIdStr' => 'getScopeObjectIdStr'
+        'scopeObjectIdStr' => 'getScopeObjectIdStr',
+        'code' => 'getCode',
+        'organizationId' => 'getOrganizationId'
     ];
 
     /**
@@ -215,6 +225,8 @@ class DetailListStruct implements ModelInterface, ArrayAccess
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['extData'] = isset($data['extData']) ? $data['extData'] : null;
         $this->container['scopeObjectIdStr'] = isset($data['scopeObjectIdStr']) ? $data['scopeObjectIdStr'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
     }
 
     /**
@@ -405,6 +417,54 @@ class DetailListStruct implements ModelInterface, ArrayAccess
     public function setScopeObjectIdStr($scopeObjectIdStr)
     {
         $this->container['scopeObjectIdStr'] = $scopeObjectIdStr;
+
+        return $this;
+    }
+
+    /**
+     * Gets code
+     *
+     * @return int|mixed
+     */
+    public function getCode()
+    {
+        return $this->container['code'];
+    }
+
+    /**
+     * Sets code
+     *
+     * @param int|mixed $code code
+     *
+     * @return $this
+     */
+    public function setCode($code)
+    {
+        $this->container['code'] = $code;
+
+        return $this;
+    }
+
+    /**
+     * Gets organizationId
+     *
+     * @return int|mixed
+     */
+    public function getOrganizationId()
+    {
+        return $this->container['organizationId'];
+    }
+
+    /**
+     * Sets organizationId
+     *
+     * @param int|mixed $organizationId organizationId
+     *
+     * @return $this
+     */
+    public function setOrganizationId($organizationId)
+    {
+        $this->container['organizationId'] = $organizationId;
 
         return $this;
     }

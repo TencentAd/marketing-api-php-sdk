@@ -108,6 +108,7 @@ class PromotedAssetType
     const WECHAT_STORE_PRODUCT_SET = 'PROMOTED_ASSET_TYPE_WECHAT_STORE_PRODUCT_SET';
     const PRODUCT_AGGREGATION_PAGE = 'PROMOTED_ASSET_TYPE_PRODUCT_AGGREGATION_PAGE';
     const WECHAT_STORE = 'PROMOTED_ASSET_TYPE_WECHAT_STORE';
+    const RESALE_AND_COMMERCIAL_LAND = 'PROMOTED_ASSET_TYPE_RESALE_AND_COMMERCIAL_LAND';
     
     /**
      * Gets allowable values of the enum
@@ -180,6 +181,7 @@ class PromotedAssetType
             self::WECHAT_STORE_PRODUCT_SET,
             self::PRODUCT_AGGREGATION_PAGE,
             self::WECHAT_STORE,
+            self::RESALE_AND_COMMERCIAL_LAND,
         ];
     }
 }

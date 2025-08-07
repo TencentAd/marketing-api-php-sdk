@@ -141,6 +141,7 @@ class MaterialLabelsApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $labelId = isset($params['label_id']) ? $params['label_id'] : null;
             $labelName = isset($params['label_name']) ? $params['label_name'] : null;
             $firstLabelLevelIdList = isset($params['first_label_level_id_list']) ? $params['first_label_level_id_list'] : null;
@@ -151,7 +152,7 @@ class MaterialLabelsApiContainer extends ApiContainer
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->materialLabelsGet($accountId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields);
+            $response = $this->apiInstance->materialLabelsGet($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -167,6 +168,7 @@ class MaterialLabelsApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $labelId = isset($params['label_id']) ? $params['label_id'] : null;
             $labelName = isset($params['label_name']) ? $params['label_name'] : null;
             $firstLabelLevelIdList = isset($params['first_label_level_id_list']) ? $params['first_label_level_id_list'] : null;
@@ -177,7 +179,7 @@ class MaterialLabelsApiContainer extends ApiContainer
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->materialLabelsGetAsync($accountId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields);
+            $response = $this->apiInstance->materialLabelsGetAsync($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields);
             return $response;
         });
     }

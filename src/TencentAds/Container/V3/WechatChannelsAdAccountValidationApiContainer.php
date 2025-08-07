@@ -41,8 +41,9 @@ class WechatChannelsAdAccountValidationApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $nickname = isset($params['nickname']) ? $params['nickname'] : null;
             $headImageId = isset($params['head_image_id']) ? $params['head_image_id'] : null;
+            $wechatChannelsAccountId = isset($params['wechat_channels_account_id']) ? $params['wechat_channels_account_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->wechatChannelsAdAccountValidationGet($accountId, $nickname, $headImageId, $fields);
+            $response = $this->apiInstance->wechatChannelsAdAccountValidationGet($accountId, $nickname, $headImageId, $wechatChannelsAccountId, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -60,8 +61,9 @@ class WechatChannelsAdAccountValidationApiContainer extends ApiContainer
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $nickname = isset($params['nickname']) ? $params['nickname'] : null;
             $headImageId = isset($params['head_image_id']) ? $params['head_image_id'] : null;
+            $wechatChannelsAccountId = isset($params['wechat_channels_account_id']) ? $params['wechat_channels_account_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->wechatChannelsAdAccountValidationGetAsync($accountId, $nickname, $headImageId, $fields);
+            $response = $this->apiInstance->wechatChannelsAdAccountValidationGetAsync($accountId, $nickname, $headImageId, $wechatChannelsAccountId, $fields);
             return $response;
         });
     }

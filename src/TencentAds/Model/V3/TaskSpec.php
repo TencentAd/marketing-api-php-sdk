@@ -85,7 +85,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupEcomPkamSpec' => '\TencentAds\Model\V3\UpdateAdgroupEcomPkamItem[]',
         'updateAdgroupDeriveConfSpec' => '\TencentAds\Model\V3\UpdateAdgroupDeriveConfItem[]',
         'updateComponentSharingSpec' => '\TencentAds\Model\V3\UpdateComponentSharingItem[]',
-        'updateAdgroupSmartDeliveryGoalSpec' => '\TencentAds\Model\V3\UpdateAdgroupSmartDeliveryGoalItem[]'
+        'updateAdgroupSmartDeliveryGoalSpec' => '\TencentAds\Model\V3\UpdateAdgroupSmartDeliveryGoalItem[]',
+        'deleteAccountComponentSpec' => '\TencentAds\Model\V3\DeleteAccountComponentItem[]'
     ];
 
     /**
@@ -121,7 +122,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupEcomPkamSpec' => null,
         'updateAdgroupDeriveConfSpec' => null,
         'updateComponentSharingSpec' => null,
-        'updateAdgroupSmartDeliveryGoalSpec' => null
+        'updateAdgroupSmartDeliveryGoalSpec' => null,
+        'deleteAccountComponentSpec' => null
     ];
 
     /**
@@ -178,7 +180,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupEcomPkamSpec' => 'update_adgroup_ecom_pkam_spec',
         'updateAdgroupDeriveConfSpec' => 'update_adgroup_derive_conf_spec',
         'updateComponentSharingSpec' => 'update_component_sharing_spec',
-        'updateAdgroupSmartDeliveryGoalSpec' => 'update_adgroup_smart_delivery_goal_spec'
+        'updateAdgroupSmartDeliveryGoalSpec' => 'update_adgroup_smart_delivery_goal_spec',
+        'deleteAccountComponentSpec' => 'delete_account_component_spec'
     ];
 
     /**
@@ -214,7 +217,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupEcomPkamSpec' => 'setUpdateAdgroupEcomPkamSpec',
         'updateAdgroupDeriveConfSpec' => 'setUpdateAdgroupDeriveConfSpec',
         'updateComponentSharingSpec' => 'setUpdateComponentSharingSpec',
-        'updateAdgroupSmartDeliveryGoalSpec' => 'setUpdateAdgroupSmartDeliveryGoalSpec'
+        'updateAdgroupSmartDeliveryGoalSpec' => 'setUpdateAdgroupSmartDeliveryGoalSpec',
+        'deleteAccountComponentSpec' => 'setDeleteAccountComponentSpec'
     ];
 
     /**
@@ -250,7 +254,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupEcomPkamSpec' => 'getUpdateAdgroupEcomPkamSpec',
         'updateAdgroupDeriveConfSpec' => 'getUpdateAdgroupDeriveConfSpec',
         'updateComponentSharingSpec' => 'getUpdateComponentSharingSpec',
-        'updateAdgroupSmartDeliveryGoalSpec' => 'getUpdateAdgroupSmartDeliveryGoalSpec'
+        'updateAdgroupSmartDeliveryGoalSpec' => 'getUpdateAdgroupSmartDeliveryGoalSpec',
+        'deleteAccountComponentSpec' => 'getDeleteAccountComponentSpec'
     ];
 
     /**
@@ -341,6 +346,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateAdgroupDeriveConfSpec'] = isset($data['updateAdgroupDeriveConfSpec']) ? $data['updateAdgroupDeriveConfSpec'] : null;
         $this->container['updateComponentSharingSpec'] = isset($data['updateComponentSharingSpec']) ? $data['updateComponentSharingSpec'] : null;
         $this->container['updateAdgroupSmartDeliveryGoalSpec'] = isset($data['updateAdgroupSmartDeliveryGoalSpec']) ? $data['updateAdgroupSmartDeliveryGoalSpec'] : null;
+        $this->container['deleteAccountComponentSpec'] = isset($data['deleteAccountComponentSpec']) ? $data['deleteAccountComponentSpec'] : null;
     }
 
     /**
@@ -1035,6 +1041,30 @@ class TaskSpec implements ModelInterface, ArrayAccess
     public function setUpdateAdgroupSmartDeliveryGoalSpec($updateAdgroupSmartDeliveryGoalSpec)
     {
         $this->container['updateAdgroupSmartDeliveryGoalSpec'] = $updateAdgroupSmartDeliveryGoalSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets deleteAccountComponentSpec
+     *
+     * @return \TencentAds\Model\V3\DeleteAccountComponentItem[]|mixed
+     */
+    public function getDeleteAccountComponentSpec()
+    {
+        return $this->container['deleteAccountComponentSpec'];
+    }
+
+    /**
+     * Sets deleteAccountComponentSpec
+     *
+     * @param \TencentAds\Model\V3\DeleteAccountComponentItem[]|mixed $deleteAccountComponentSpec deleteAccountComponentSpec
+     *
+     * @return $this
+     */
+    public function setDeleteAccountComponentSpec($deleteAccountComponentSpec)
+    {
+        $this->container['deleteAccountComponentSpec'] = $deleteAccountComponentSpec;
 
         return $this;
     }

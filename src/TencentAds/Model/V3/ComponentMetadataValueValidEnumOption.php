@@ -60,7 +60,7 @@ class ComponentMetadataValueValidEnumOption implements ModelInterface, ArrayAcce
     protected static $swaggerTypes = [
         'value' => 'string',
         'desc' => 'string',
-        'support3link' => 'bool',
+        'supportTrdLink' => 'bool',
         'required' => 'bool'
     ];
 
@@ -72,7 +72,7 @@ class ComponentMetadataValueValidEnumOption implements ModelInterface, ArrayAcce
     protected static $swaggerFormats = [
         'value' => null,
         'desc' => null,
-        'support3link' => null,
+        'supportTrdLink' => null,
         'required' => null
     ];
 
@@ -105,7 +105,7 @@ class ComponentMetadataValueValidEnumOption implements ModelInterface, ArrayAcce
     protected static $attributeMap = [
         'value' => 'value',
         'desc' => 'desc',
-        'support3link' => 'support_3link',
+        'supportTrdLink' => 'support_trd_link',
         'required' => 'required'
     ];
 
@@ -117,7 +117,7 @@ class ComponentMetadataValueValidEnumOption implements ModelInterface, ArrayAcce
     protected static $setters = [
         'value' => 'setValue',
         'desc' => 'setDesc',
-        'support3link' => 'setSupport3link',
+        'supportTrdLink' => 'setSupportTrdLink',
         'required' => 'setRequired'
     ];
 
@@ -129,7 +129,7 @@ class ComponentMetadataValueValidEnumOption implements ModelInterface, ArrayAcce
     protected static $getters = [
         'value' => 'getValue',
         'desc' => 'getDesc',
-        'support3link' => 'getSupport3link',
+        'supportTrdLink' => 'getSupportTrdLink',
         'required' => 'getRequired'
     ];
 
@@ -195,7 +195,7 @@ class ComponentMetadataValueValidEnumOption implements ModelInterface, ArrayAcce
     {
         $this->container['value'] = isset($data['value']) ? $data['value'] : null;
         $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
-        $this->container['support3link'] = isset($data['support3link']) ? $data['support3link'] : null;
+        $this->container['supportTrdLink'] = isset($data['supportTrdLink']) ? $data['supportTrdLink'] : null;
         $this->container['required'] = isset($data['required']) ? $data['required'] : null;
     }
 
@@ -272,25 +272,25 @@ class ComponentMetadataValueValidEnumOption implements ModelInterface, ArrayAcce
     }
 
     /**
-     * Gets support3link
+     * Gets supportTrdLink
      *
      * @return bool|mixed
      */
-    public function getSupport3link()
+    public function getSupportTrdLink()
     {
-        return $this->container['support3link'];
+        return $this->container['supportTrdLink'];
     }
 
     /**
-     * Sets support3link
+     * Sets supportTrdLink
      *
-     * @param bool|mixed $support3link support3link
+     * @param bool|mixed $supportTrdLink supportTrdLink
      *
      * @return $this
      */
-    public function setSupport3link($support3link)
+    public function setSupportTrdLink($supportTrdLink)
     {
-        $this->container['support3link'] = $support3link;
+        $this->container['supportTrdLink'] = $supportTrdLink;
 
         return $this;
     }

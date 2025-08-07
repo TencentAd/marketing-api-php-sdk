@@ -401,7 +401,11 @@ class OauthApi
             }
         }
 
-
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('user_token');
+        if ($apiKey !== null && $resourcePath !== '/user_organization_authentication/get') {
+            $queryParams['user_token'] = $apiKey;
+        }
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
@@ -734,7 +738,11 @@ class OauthApi
             }
         }
 
-
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('user_token');
+        if ($apiKey !== null && $resourcePath !== '/user_organization_authentication/get') {
+            $queryParams['user_token'] = $apiKey;
+        }
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();

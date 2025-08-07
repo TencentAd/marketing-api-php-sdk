@@ -59,7 +59,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'styleType' => 'int',
-        'imageIdList' => 'string',
+        'imageId' => 'string',
         'title' => 'string',
         'titleColor' => 'string',
         'desc' => 'string',
@@ -81,7 +81,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'styleType' => 'int64',
-        'imageIdList' => null,
+        'imageId' => null,
         'title' => null,
         'titleColor' => null,
         'desc' => null,
@@ -124,7 +124,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'styleType' => 'style_type',
-        'imageIdList' => 'image_id_list',
+        'imageId' => 'image_id',
         'title' => 'title',
         'titleColor' => 'title_color',
         'desc' => 'desc',
@@ -146,7 +146,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'styleType' => 'setStyleType',
-        'imageIdList' => 'setImageIdList',
+        'imageId' => 'setImageId',
         'title' => 'setTitle',
         'titleColor' => 'setTitleColor',
         'desc' => 'setDesc',
@@ -168,7 +168,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'styleType' => 'getStyleType',
-        'imageIdList' => 'getImageIdList',
+        'imageId' => 'getImageId',
         'title' => 'getTitle',
         'titleColor' => 'getTitleColor',
         'desc' => 'getDesc',
@@ -244,7 +244,7 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['styleType'] = isset($data['styleType']) ? $data['styleType'] : null;
-        $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
+        $this->container['imageId'] = isset($data['imageId']) ? $data['imageId'] : null;
         $this->container['title'] = isset($data['title']) ? $data['title'] : null;
         $this->container['titleColor'] = isset($data['titleColor']) ? $data['titleColor'] : null;
         $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
@@ -308,25 +308,25 @@ class CanvasFloatButtonSpecType implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets imageIdList
+     * Gets imageId
      *
      * @return string|mixed
      */
-    public function getImageIdList()
+    public function getImageId()
     {
-        return $this->container['imageIdList'];
+        return $this->container['imageId'];
     }
 
     /**
-     * Sets imageIdList
+     * Sets imageId
      *
-     * @param string|mixed $imageIdList imageIdList
+     * @param string|mixed $imageId imageId
      *
      * @return $this
      */
-    public function setImageIdList($imageIdList)
+    public function setImageId($imageId)
     {
-        $this->container['imageIdList'] = $imageIdList;
+        $this->container['imageId'] = $imageId;
 
         return $this;
     }

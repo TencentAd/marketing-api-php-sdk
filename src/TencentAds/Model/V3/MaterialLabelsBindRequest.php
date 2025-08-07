@@ -58,6 +58,7 @@ class MaterialLabelsBindRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
+        'organizationId' => 'int',
         'imageIdList' => 'string[]',
         'mediaIdList' => 'string[]',
         'labelIdList' => 'int[]',
@@ -72,6 +73,7 @@ class MaterialLabelsBindRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
+        'organizationId' => 'int64',
         'imageIdList' => null,
         'mediaIdList' => null,
         'labelIdList' => 'int64',
@@ -107,6 +109,7 @@ class MaterialLabelsBindRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
+        'organizationId' => 'organization_id',
         'imageIdList' => 'image_id_list',
         'mediaIdList' => 'media_id_list',
         'labelIdList' => 'label_id_list',
@@ -121,6 +124,7 @@ class MaterialLabelsBindRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
+        'organizationId' => 'setOrganizationId',
         'imageIdList' => 'setImageIdList',
         'mediaIdList' => 'setMediaIdList',
         'labelIdList' => 'setLabelIdList',
@@ -135,6 +139,7 @@ class MaterialLabelsBindRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
+        'organizationId' => 'getOrganizationId',
         'imageIdList' => 'getImageIdList',
         'mediaIdList' => 'getMediaIdList',
         'labelIdList' => 'getLabelIdList',
@@ -203,6 +208,7 @@ class MaterialLabelsBindRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
         $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
         $this->container['mediaIdList'] = isset($data['mediaIdList']) ? $data['mediaIdList'] : null;
         $this->container['labelIdList'] = isset($data['labelIdList']) ? $data['labelIdList'] : null;
@@ -254,6 +260,30 @@ class MaterialLabelsBindRequest implements ModelInterface, ArrayAccess
     public function setAccountId($accountId)
     {
         $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets organizationId
+     *
+     * @return int|mixed
+     */
+    public function getOrganizationId()
+    {
+        return $this->container['organizationId'];
+    }
+
+    /**
+     * Sets organizationId
+     *
+     * @param int|mixed $organizationId organizationId
+     *
+     * @return $this
+     */
+    public function setOrganizationId($organizationId)
+    {
+        $this->container['organizationId'] = $organizationId;
 
         return $this;
     }

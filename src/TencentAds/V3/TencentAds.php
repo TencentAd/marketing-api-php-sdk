@@ -56,7 +56,7 @@ class TencentAds extends App
      * SDK version
      * @var string
      */
-    protected $version = '1.1.86';
+    protected $version = '1.1.87';
 
     /**
      * SDK version
@@ -108,6 +108,7 @@ class TencentAds extends App
         $isDebug = isset($config['is_debug']) ? $config['is_debug'] : false;
         $debugFile = isset($config['debug_file']) ? $config['debug_file'] : $instance->config->getDebugFile();
         $isMonitor = isset($config['is_monitor']) ? $config['is_monitor'] : true;
+        $userToken = isset($config['user_token']) ? $config['user_token'] : '';
         $instance->accessToken = $accessToken;
         $instance->config->setApiKey('access_token', $accessToken)
             ->setDebug($isDebug)
@@ -116,6 +117,9 @@ class TencentAds extends App
             Log::init(Logger::DEBUG, $debugFile);
         } else {
             Log::init();
+        }
+        if ($userToken !== '') {
+            $instance->config->setApiKey('user_token', $userToken);
         }
         $instance->setHost('api.e.qq.com');
         $instance->generateMiddlewareInstance();

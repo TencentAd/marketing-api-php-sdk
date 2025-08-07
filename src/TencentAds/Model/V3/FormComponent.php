@@ -59,7 +59,8 @@ class FormComponent implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'componentId' => 'int',
-        'value' => '\TencentAds\Model\V3\FormStruct'
+        'value' => '\TencentAds\Model\V3\FormStruct',
+        'isDeleted' => 'bool'
     ];
 
     /**
@@ -69,7 +70,8 @@ class FormComponent implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'componentId' => 'int64',
-        'value' => null
+        'value' => null,
+        'isDeleted' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class FormComponent implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'componentId' => 'component_id',
-        'value' => 'value'
+        'value' => 'value',
+        'isDeleted' => 'is_deleted'
     ];
 
     /**
@@ -110,7 +113,8 @@ class FormComponent implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'componentId' => 'setComponentId',
-        'value' => 'setValue'
+        'value' => 'setValue',
+        'isDeleted' => 'setIsDeleted'
     ];
 
     /**
@@ -120,7 +124,8 @@ class FormComponent implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'componentId' => 'getComponentId',
-        'value' => 'getValue'
+        'value' => 'getValue',
+        'isDeleted' => 'getIsDeleted'
     ];
 
     /**
@@ -185,6 +190,7 @@ class FormComponent implements ModelInterface, ArrayAccess
     {
         $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
         $this->container['value'] = isset($data['value']) ? $data['value'] : null;
+        $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class FormComponent implements ModelInterface, ArrayAccess
     public function setValue($value)
     {
         $this->container['value'] = $value;
+
+        return $this;
+    }
+
+    /**
+     * Gets isDeleted
+     *
+     * @return bool|mixed
+     */
+    public function getIsDeleted()
+    {
+        return $this->container['isDeleted'];
+    }
+
+    /**
+     * Sets isDeleted
+     *
+     * @param bool|mixed $isDeleted isDeleted
+     *
+     * @return $this
+     */
+    public function setIsDeleted($isDeleted)
+    {
+        $this->container['isDeleted'] = $isDeleted;
 
         return $this;
     }

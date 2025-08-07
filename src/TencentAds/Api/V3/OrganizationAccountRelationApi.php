@@ -95,6 +95,7 @@ class OrganizationAccountRelationApi
      * @param  string|mixed $paginationMode paginationMode (required)
      * @param  int|mixed $accountId accountId (optional)
      * @param  string|mixed $advertiserType advertiserType (optional)
+     * @param  int|mixed $businessUnitId businessUnitId (optional)
      * @param  int|mixed $cursor cursor (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
@@ -104,9 +105,9 @@ class OrganizationAccountRelationApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\OrganizationAccountRelationGetResponse|mixed
      */
-    public function organizationAccountRelationGet($paginationMode, $accountId = null, $advertiserType = null, $cursor = null, $page = null, $pageSize = null, $fields = null)
+    public function organizationAccountRelationGet($paginationMode, $accountId = null, $advertiserType = null, $businessUnitId = null, $cursor = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->organizationAccountRelationGetWithHttpInfo($paginationMode, $accountId, $advertiserType, $cursor, $page, $pageSize, $fields);
+        list($response) = $this->organizationAccountRelationGetWithHttpInfo($paginationMode, $accountId, $advertiserType, $businessUnitId, $cursor, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -118,6 +119,7 @@ class OrganizationAccountRelationApi
      * @param  string|mixed $paginationMode (required)
      * @param  int|mixed $accountId (optional)
      * @param  string|mixed $advertiserType (optional)
+     * @param  int|mixed $businessUnitId (optional)
      * @param  int|mixed $cursor (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -127,10 +129,10 @@ class OrganizationAccountRelationApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\OrganizationAccountRelationGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function organizationAccountRelationGetWithHttpInfo($paginationMode, $accountId = null, $advertiserType = null, $cursor = null, $page = null, $pageSize = null, $fields = null)
+    public function organizationAccountRelationGetWithHttpInfo($paginationMode, $accountId = null, $advertiserType = null, $businessUnitId = null, $cursor = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\OrganizationAccountRelationGetResponse';
-        $request = $this->organizationAccountRelationGetRequest($paginationMode, $accountId, $advertiserType, $cursor, $page, $pageSize, $fields);
+        $request = $this->organizationAccountRelationGetRequest($paginationMode, $accountId, $advertiserType, $businessUnitId, $cursor, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -199,6 +201,7 @@ class OrganizationAccountRelationApi
      * @param  string|mixed $paginationMode (required)
      * @param  int|mixed $accountId (optional)
      * @param  string|mixed $advertiserType (optional)
+     * @param  int|mixed $businessUnitId (optional)
      * @param  int|mixed $cursor (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -207,9 +210,9 @@ class OrganizationAccountRelationApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function organizationAccountRelationGetAsync($paginationMode, $accountId = null, $advertiserType = null, $cursor = null, $page = null, $pageSize = null, $fields = null)
+    public function organizationAccountRelationGetAsync($paginationMode, $accountId = null, $advertiserType = null, $businessUnitId = null, $cursor = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->organizationAccountRelationGetAsyncWithHttpInfo($paginationMode, $accountId, $advertiserType, $cursor, $page, $pageSize, $fields)
+        return $this->organizationAccountRelationGetAsyncWithHttpInfo($paginationMode, $accountId, $advertiserType, $businessUnitId, $cursor, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -225,6 +228,7 @@ class OrganizationAccountRelationApi
      * @param  string|mixed $paginationMode (required)
      * @param  int|mixed $accountId (optional)
      * @param  string|mixed $advertiserType (optional)
+     * @param  int|mixed $businessUnitId (optional)
      * @param  int|mixed $cursor (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -233,10 +237,10 @@ class OrganizationAccountRelationApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function organizationAccountRelationGetAsyncWithHttpInfo($paginationMode, $accountId = null, $advertiserType = null, $cursor = null, $page = null, $pageSize = null, $fields = null)
+    public function organizationAccountRelationGetAsyncWithHttpInfo($paginationMode, $accountId = null, $advertiserType = null, $businessUnitId = null, $cursor = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\OrganizationAccountRelationGetResponse';
-        $request = $this->organizationAccountRelationGetRequest($paginationMode, $accountId, $advertiserType, $cursor, $page, $pageSize, $fields);
+        $request = $this->organizationAccountRelationGetRequest($paginationMode, $accountId, $advertiserType, $businessUnitId, $cursor, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -281,6 +285,7 @@ class OrganizationAccountRelationApi
      * @param  string|mixed $paginationMode (required)
      * @param  int|mixed $accountId (optional)
      * @param  string|mixed $advertiserType (optional)
+     * @param  int|mixed $businessUnitId (optional)
      * @param  int|mixed $cursor (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -289,7 +294,7 @@ class OrganizationAccountRelationApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function organizationAccountRelationGetRequest($paginationMode, $accountId = null, $advertiserType = null, $cursor = null, $page = null, $pageSize = null, $fields = null)
+    protected function organizationAccountRelationGetRequest($paginationMode, $accountId = null, $advertiserType = null, $businessUnitId = null, $cursor = null, $page = null, $pageSize = null, $fields = null)
     {
         // verify the required parameter 'paginationMode' is set
         if ($paginationMode === null || (is_array($paginationMode) && count($paginationMode) === 0)) {
@@ -312,6 +317,10 @@ class OrganizationAccountRelationApi
         // query params
         if ($advertiserType !== null) {
             $queryParams['advertiser_type'] = ObjectSerializer::toQueryValue($advertiserType);
+        }
+        // query params
+        if ($businessUnitId !== null) {
+            $queryParams['business_unit_id'] = ObjectSerializer::toQueryValue($businessUnitId);
         }
         // query params
         if ($paginationMode !== null) {
@@ -410,7 +419,11 @@ class OrganizationAccountRelationApi
         if ($apiKey !== null) {
             $queryParams['timestamp'] = $apiKey;
         }
-
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('user_token');
+        if ($apiKey !== null && $resourcePath !== '/user_organization_authentication/get') {
+            $queryParams['user_token'] = $apiKey;
+        }
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();

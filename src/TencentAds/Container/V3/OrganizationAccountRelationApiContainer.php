@@ -41,11 +41,12 @@ class OrganizationAccountRelationApiContainer extends ApiContainer
             $paginationMode = isset($params['pagination_mode']) ? $params['pagination_mode'] : null;
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $advertiserType = isset($params['advertiser_type']) ? $params['advertiser_type'] : null;
+            $businessUnitId = isset($params['business_unit_id']) ? $params['business_unit_id'] : null;
             $cursor = isset($params['cursor']) ? $params['cursor'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->organizationAccountRelationGet($paginationMode, $accountId, $advertiserType, $cursor, $page, $pageSize, $fields);
+            $response = $this->apiInstance->organizationAccountRelationGet($paginationMode, $accountId, $advertiserType, $businessUnitId, $cursor, $page, $pageSize, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -63,11 +64,12 @@ class OrganizationAccountRelationApiContainer extends ApiContainer
             $paginationMode = isset($params['pagination_mode']) ? $params['pagination_mode'] : null;
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
             $advertiserType = isset($params['advertiser_type']) ? $params['advertiser_type'] : null;
+            $businessUnitId = isset($params['business_unit_id']) ? $params['business_unit_id'] : null;
             $cursor = isset($params['cursor']) ? $params['cursor'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->organizationAccountRelationGetAsync($paginationMode, $accountId, $advertiserType, $cursor, $page, $pageSize, $fields);
+            $response = $this->apiInstance->organizationAccountRelationGetAsync($paginationMode, $accountId, $advertiserType, $businessUnitId, $cursor, $page, $pageSize, $fields);
             return $response;
         });
     }

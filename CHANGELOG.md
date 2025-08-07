@@ -1,6 +1,11 @@
 # 更新日志
 本文记录了PHP SDK的更新日志。
 
+## 2025-08-06
+1. 发布Go SDK [1.1.87] 版
+- 新增 MarketingApi 接口，更新模型
+- 支持user_token参数
+
 ## 2025-07-02
 1. 发布Go SDK [1.1.86] 版
 - 新增 MarketingApi 接口，更新模型

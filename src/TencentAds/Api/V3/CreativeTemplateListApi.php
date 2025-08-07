@@ -112,15 +112,16 @@ class CreativeTemplateListApi
      * @param  string[]|mixed $pcScene pcScene (optional)
      * @param  int|mixed $adgroupId adgroupId (optional)
      * @param  string|mixed $adgroupType adgroupType (optional)
+     * @param  \TencentAds\Model\V3\MpaSpec|mixed $mpaSpec mpaSpec (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\CreativeTemplateListGetResponse|mixed
      */
-    public function creativeTemplateListGet($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $adgroupType = null, $fields = null)
+    public function creativeTemplateListGet($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $adgroupType = null, $mpaSpec = null, $fields = null)
     {
-        list($response) = $this->creativeTemplateListGetWithHttpInfo($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $adgroupType, $fields);
+        list($response) = $this->creativeTemplateListGetWithHttpInfo($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $adgroupType, $mpaSpec, $fields);
         return $response;
     }
 
@@ -149,16 +150,17 @@ class CreativeTemplateListApi
      * @param  string[]|mixed $pcScene (optional)
      * @param  int|mixed $adgroupId (optional)
      * @param  string|mixed $adgroupType (optional)
+     * @param  \TencentAds\Model\V3\MpaSpec|mixed $mpaSpec (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\CreativeTemplateListGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function creativeTemplateListGetWithHttpInfo($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $adgroupType = null, $fields = null)
+    public function creativeTemplateListGetWithHttpInfo($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $adgroupType = null, $mpaSpec = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\CreativeTemplateListGetResponse';
-        $request = $this->creativeTemplateListGetRequest($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $adgroupType, $fields);
+        $request = $this->creativeTemplateListGetRequest($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $adgroupType, $mpaSpec, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -244,14 +246,15 @@ class CreativeTemplateListApi
      * @param  string[]|mixed $pcScene (optional)
      * @param  int|mixed $adgroupId (optional)
      * @param  string|mixed $adgroupType (optional)
+     * @param  \TencentAds\Model\V3\MpaSpec|mixed $mpaSpec (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function creativeTemplateListGetAsync($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $adgroupType = null, $fields = null)
+    public function creativeTemplateListGetAsync($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $adgroupType = null, $mpaSpec = null, $fields = null)
     {
-        return $this->creativeTemplateListGetAsyncWithHttpInfo($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $adgroupType, $fields)
+        return $this->creativeTemplateListGetAsyncWithHttpInfo($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $adgroupType, $mpaSpec, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -284,15 +287,16 @@ class CreativeTemplateListApi
      * @param  string[]|mixed $pcScene (optional)
      * @param  int|mixed $adgroupId (optional)
      * @param  string|mixed $adgroupType (optional)
+     * @param  \TencentAds\Model\V3\MpaSpec|mixed $mpaSpec (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function creativeTemplateListGetAsyncWithHttpInfo($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $adgroupType = null, $fields = null)
+    public function creativeTemplateListGetAsyncWithHttpInfo($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $adgroupType = null, $mpaSpec = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\CreativeTemplateListGetResponse';
-        $request = $this->creativeTemplateListGetRequest($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $adgroupType, $fields);
+        $request = $this->creativeTemplateListGetRequest($accountId, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $siteSet, $dynamicAbilityType, $wechatSceneSpecPosition, $creativeTemplateId, $page, $pageSize, $dynamicAdType, $dynamicCreativeType, $supportSiteSet, $bidMode, $wechatChannelsScene, $displayScene, $pcScene, $adgroupId, $adgroupType, $mpaSpec, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -354,12 +358,13 @@ class CreativeTemplateListApi
      * @param  string[]|mixed $pcScene (optional)
      * @param  int|mixed $adgroupId (optional)
      * @param  string|mixed $adgroupType (optional)
+     * @param  \TencentAds\Model\V3\MpaSpec|mixed $mpaSpec (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function creativeTemplateListGetRequest($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $adgroupType = null, $fields = null)
+    protected function creativeTemplateListGetRequest($accountId, $marketingGoal = null, $marketingSubGoal = null, $marketingTargetType = null, $marketingCarrierType = null, $siteSet = null, $dynamicAbilityType = null, $wechatSceneSpecPosition = null, $creativeTemplateId = null, $page = null, $pageSize = null, $dynamicAdType = null, $dynamicCreativeType = null, $supportSiteSet = null, $bidMode = null, $wechatChannelsScene = null, $displayScene = null, $pcScene = null, $adgroupId = null, $adgroupType = null, $mpaSpec = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -471,6 +476,10 @@ class CreativeTemplateListApi
             $queryParams['adgroup_type'] = ObjectSerializer::toQueryValue($adgroupType);
         }
         // query params
+        if ($mpaSpec !== null) {
+            $queryParams['mpa_spec'] = ObjectSerializer::toQueryValue($mpaSpec);
+        }
+        // query params
         if (is_array($fields)) {
            $queryParams['fields'] = json_encode($fields);
         } else
@@ -551,7 +560,11 @@ class CreativeTemplateListApi
         if ($apiKey !== null) {
             $queryParams['timestamp'] = $apiKey;
         }
-
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('user_token');
+        if ($apiKey !== null && $resourcePath !== '/user_organization_authentication/get') {
+            $queryParams['user_token'] = $apiKey;
+        }
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();

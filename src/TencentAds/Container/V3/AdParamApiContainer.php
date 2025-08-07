@@ -46,8 +46,11 @@ class AdParamApiContainer extends ApiContainer
             $marketingCarrierType = isset($params['marketing_carrier_type']) ? $params['marketing_carrier_type'] : null;
             $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
             $productCatalogId = isset($params['product_catalog_id']) ? $params['product_catalog_id'] : null;
+            $marketingAssetOuterSpec = isset($params['marketing_asset_outer_spec']) ? $params['marketing_asset_outer_spec'] : null;
+            $mpaSpec = isset($params['mpa_spec']) ? $params['mpa_spec'] : null;
+            $dynamicAdType = isset($params['dynamic_ad_type']) ? $params['dynamic_ad_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->adParamGet($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $fields);
+            $response = $this->apiInstance->adParamGet($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -70,8 +73,11 @@ class AdParamApiContainer extends ApiContainer
             $marketingCarrierType = isset($params['marketing_carrier_type']) ? $params['marketing_carrier_type'] : null;
             $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
             $productCatalogId = isset($params['product_catalog_id']) ? $params['product_catalog_id'] : null;
+            $marketingAssetOuterSpec = isset($params['marketing_asset_outer_spec']) ? $params['marketing_asset_outer_spec'] : null;
+            $mpaSpec = isset($params['mpa_spec']) ? $params['mpa_spec'] : null;
+            $dynamicAdType = isset($params['dynamic_ad_type']) ? $params['dynamic_ad_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->adParamGetAsync($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $fields);
+            $response = $this->apiInstance->adParamGetAsync($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $fields);
             return $response;
         });
     }

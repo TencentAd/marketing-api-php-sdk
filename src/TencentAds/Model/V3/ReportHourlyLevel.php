@@ -50,6 +50,8 @@ class ReportHourlyLevel
     const CHANNEL = 'REPORT_LEVEL_CHANNEL';
     const BIDWORD = 'REPORT_LEVEL_BIDWORD';
     const ADVERTISER_TOTAL = 'REPORT_LEVEL_ADVERTISER_TOTAL';
+    const PROJECT = 'REPORT_LEVEL_PROJECT';
+    const PROJECT_CREATIVE = 'REPORT_LEVEL_PROJECT_CREATIVE';
     
     /**
      * Gets allowable values of the enum
@@ -64,6 +66,8 @@ class ReportHourlyLevel
             self::CHANNEL,
             self::BIDWORD,
             self::ADVERTISER_TOTAL,
+            self::PROJECT,
+            self::PROJECT_CREATIVE,
         ];
     }
 }

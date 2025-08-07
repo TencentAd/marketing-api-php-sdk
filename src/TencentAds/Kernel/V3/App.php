@@ -173,6 +173,7 @@ use TencentAds\Container\V3\UnionPositionPackagesApiContainer;
 use TencentAds\Container\V3\UserActionSetReportsApiContainer;
 use TencentAds\Container\V3\UserActionSetsApiContainer;
 use TencentAds\Container\V3\UserActionsApiContainer;
+use TencentAds\Container\V3\UserOrganizationAuthenticationApiContainer;
 use TencentAds\Container\V3\VideoChannelDealerDataApiContainer;
 use TencentAds\Container\V3\VideoChannelFansDataApiContainer;
 use TencentAds\Container\V3\VideoChannelLeadsDataApiContainer;
@@ -732,6 +733,9 @@ class App
 
     /** @var UserActionsApiContainer */
     public $userActionsApiContainer;
+
+    /** @var UserOrganizationAuthenticationApiContainer */
+    public $userOrganizationAuthenticationApiContainer;
 
     /** @var VideoChannelDealerDataApiContainer */
     public $videoChannelDealerDataApiContainer;
@@ -3260,6 +3264,20 @@ class App
             $this->userActionsApiContainer = $container;
         }
         return $this->userActionsApiContainer;
+    }
+
+
+    /**
+     * @return UserOrganizationAuthenticationApiContainer
+     */
+    public function userOrganizationAuthentication()
+    {
+        if (empty($this->userOrganizationAuthenticationApiContainer)) {
+            $container = new UserOrganizationAuthenticationApiContainer();
+            $container->init($this, $this->getClient());
+            $this->userOrganizationAuthenticationApiContainer = $container;
+        }
+        return $this->userOrganizationAuthenticationApiContainer;
     }
 
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * CollectionStruct
+ * ComponentMetadataValueValidImageFormatOption
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CollectionStruct Class Doc Comment
+ * ComponentMetadataValueValidImageFormatOption Class Doc Comment
  *
  * @category Class
- * @description 返回
+ * @description 图片尺寸大小校验
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CollectionStruct implements ModelInterface, ArrayAccess
+class ComponentMetadataValueValidImageFormatOption implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CollectionStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'collection_struct';
+    protected static $swaggerModelName = 'component_metadata_value_valid_image_format_option';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,10 @@ class CollectionStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userId' => 'string',
-        'userIdType' => '\TencentAds\Model\V3\ViewerIdType',
-        'isPreviewed' => 'bool'
+        'fileFormat' => 'string',
+        'fileSizeKbLimit' => 'int',
+        'height' => 'int',
+        'width' => 'int'
     ];
 
     /**
@@ -69,9 +70,10 @@ class CollectionStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userId' => null,
-        'userIdType' => null,
-        'isPreviewed' => null
+        'fileFormat' => null,
+        'fileSizeKbLimit' => 'int64',
+        'height' => 'int64',
+        'width' => 'int64'
     ];
 
     /**
@@ -101,9 +103,10 @@ class CollectionStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userId' => 'user_id',
-        'userIdType' => 'user_id_type',
-        'isPreviewed' => 'is_previewed'
+        'fileFormat' => 'file_format',
+        'fileSizeKbLimit' => 'file_size_kb_limit',
+        'height' => 'height',
+        'width' => 'width'
     ];
 
     /**
@@ -112,9 +115,10 @@ class CollectionStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userId' => 'setUserId',
-        'userIdType' => 'setUserIdType',
-        'isPreviewed' => 'setIsPreviewed'
+        'fileFormat' => 'setFileFormat',
+        'fileSizeKbLimit' => 'setFileSizeKbLimit',
+        'height' => 'setHeight',
+        'width' => 'setWidth'
     ];
 
     /**
@@ -123,9 +127,10 @@ class CollectionStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userId' => 'getUserId',
-        'userIdType' => 'getUserIdType',
-        'isPreviewed' => 'getIsPreviewed'
+        'fileFormat' => 'getFileFormat',
+        'fileSizeKbLimit' => 'getFileSizeKbLimit',
+        'height' => 'getHeight',
+        'width' => 'getWidth'
     ];
 
     /**
@@ -188,9 +193,10 @@ class CollectionStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
-        $this->container['userIdType'] = isset($data['userIdType']) ? $data['userIdType'] : null;
-        $this->container['isPreviewed'] = isset($data['isPreviewed']) ? $data['isPreviewed'] : null;
+        $this->container['fileFormat'] = isset($data['fileFormat']) ? $data['fileFormat'] : null;
+        $this->container['fileSizeKbLimit'] = isset($data['fileSizeKbLimit']) ? $data['fileSizeKbLimit'] : null;
+        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
+        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
     }
 
     /**
@@ -218,73 +224,97 @@ class CollectionStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets userId
+     * Gets fileFormat
      *
      * @return string|mixed
      */
-    public function getUserId()
+    public function getFileFormat()
     {
-        return $this->container['userId'];
+        return $this->container['fileFormat'];
     }
 
     /**
-     * Sets userId
+     * Sets fileFormat
      *
-     * @param string|mixed $userId userId
+     * @param string|mixed $fileFormat fileFormat
      *
      * @return $this
      */
-    public function setUserId($userId)
+    public function setFileFormat($fileFormat)
     {
-        $this->container['userId'] = $userId;
+        $this->container['fileFormat'] = $fileFormat;
 
         return $this;
     }
 
     /**
-     * Gets userIdType
+     * Gets fileSizeKbLimit
      *
-     * @return \TencentAds\Model\V3\ViewerIdType|mixed
+     * @return int|mixed
      */
-    public function getUserIdType()
+    public function getFileSizeKbLimit()
     {
-        return $this->container['userIdType'];
+        return $this->container['fileSizeKbLimit'];
     }
 
     /**
-     * Sets userIdType
+     * Sets fileSizeKbLimit
      *
-     * @param \TencentAds\Model\V3\ViewerIdType|mixed $userIdType userIdType
+     * @param int|mixed $fileSizeKbLimit fileSizeKbLimit
      *
      * @return $this
      */
-    public function setUserIdType($userIdType)
+    public function setFileSizeKbLimit($fileSizeKbLimit)
     {
-        $this->container['userIdType'] = $userIdType;
+        $this->container['fileSizeKbLimit'] = $fileSizeKbLimit;
 
         return $this;
     }
 
     /**
-     * Gets isPreviewed
+     * Gets height
      *
-     * @return bool|mixed
+     * @return int|mixed
      */
-    public function getIsPreviewed()
+    public function getHeight()
     {
-        return $this->container['isPreviewed'];
+        return $this->container['height'];
     }
 
     /**
-     * Sets isPreviewed
+     * Sets height
      *
-     * @param bool|mixed $isPreviewed isPreviewed
+     * @param int|mixed $height height
      *
      * @return $this
      */
-    public function setIsPreviewed($isPreviewed)
+    public function setHeight($height)
     {
-        $this->container['isPreviewed'] = $isPreviewed;
+        $this->container['height'] = $height;
+
+        return $this;
+    }
+
+    /**
+     * Gets width
+     *
+     * @return int|mixed
+     */
+    public function getWidth()
+    {
+        return $this->container['width'];
+    }
+
+    /**
+     * Sets width
+     *
+     * @param int|mixed $width width
+     *
+     * @return $this
+     */
+    public function setWidth($width)
+    {
+        $this->container['width'] = $width;
 
         return $this;
     }

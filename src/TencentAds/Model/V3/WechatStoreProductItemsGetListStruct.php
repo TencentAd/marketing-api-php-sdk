@@ -83,7 +83,8 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'wechatStoreProductAdUnavailableCause' => 'string[]',
         'storePriceItemList' => '\TencentAds\Model\V3\StorePriceItem[]',
         'storeId' => 'string',
-        'wxStoreProductOperateType' => 'int'
+        'wxStoreProductOperateType' => 'int',
+        'skuStockStatus' => 'int'
     ];
 
     /**
@@ -117,7 +118,8 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'wechatStoreProductAdUnavailableCause' => null,
         'storePriceItemList' => null,
         'storeId' => null,
-        'wxStoreProductOperateType' => 'int64'
+        'wxStoreProductOperateType' => 'int64',
+        'skuStockStatus' => 'int64'
     ];
 
     /**
@@ -172,7 +174,8 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'wechatStoreProductAdUnavailableCause' => 'wechat_store_product_ad_unavailable_cause',
         'storePriceItemList' => 'store_price_item_list',
         'storeId' => 'store_id',
-        'wxStoreProductOperateType' => 'wx_store_product_operate_type'
+        'wxStoreProductOperateType' => 'wx_store_product_operate_type',
+        'skuStockStatus' => 'sku_stock_status'
     ];
 
     /**
@@ -206,7 +209,8 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'wechatStoreProductAdUnavailableCause' => 'setWechatStoreProductAdUnavailableCause',
         'storePriceItemList' => 'setStorePriceItemList',
         'storeId' => 'setStoreId',
-        'wxStoreProductOperateType' => 'setWxStoreProductOperateType'
+        'wxStoreProductOperateType' => 'setWxStoreProductOperateType',
+        'skuStockStatus' => 'setSkuStockStatus'
     ];
 
     /**
@@ -240,7 +244,8 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         'wechatStoreProductAdUnavailableCause' => 'getWechatStoreProductAdUnavailableCause',
         'storePriceItemList' => 'getStorePriceItemList',
         'storeId' => 'getStoreId',
-        'wxStoreProductOperateType' => 'getWxStoreProductOperateType'
+        'wxStoreProductOperateType' => 'getWxStoreProductOperateType',
+        'skuStockStatus' => 'getSkuStockStatus'
     ];
 
     /**
@@ -329,6 +334,7 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
         $this->container['storePriceItemList'] = isset($data['storePriceItemList']) ? $data['storePriceItemList'] : null;
         $this->container['storeId'] = isset($data['storeId']) ? $data['storeId'] : null;
         $this->container['wxStoreProductOperateType'] = isset($data['wxStoreProductOperateType']) ? $data['wxStoreProductOperateType'] : null;
+        $this->container['skuStockStatus'] = isset($data['skuStockStatus']) ? $data['skuStockStatus'] : null;
     }
 
     /**
@@ -975,6 +981,30 @@ class WechatStoreProductItemsGetListStruct implements ModelInterface, ArrayAcces
     public function setWxStoreProductOperateType($wxStoreProductOperateType)
     {
         $this->container['wxStoreProductOperateType'] = $wxStoreProductOperateType;
+
+        return $this;
+    }
+
+    /**
+     * Gets skuStockStatus
+     *
+     * @return int|mixed
+     */
+    public function getSkuStockStatus()
+    {
+        return $this->container['skuStockStatus'];
+    }
+
+    /**
+     * Sets skuStockStatus
+     *
+     * @param int|mixed $skuStockStatus skuStockStatus
+     *
+     * @return $this
+     */
+    public function setSkuStockStatus($skuStockStatus)
+    {
+        $this->container['skuStockStatus'] = $skuStockStatus;
 
         return $this;
     }

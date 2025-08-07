@@ -108,6 +108,7 @@ class MarketingTargetType
     const WECHAT_STORE_PRODUCT_SET = 'MARKETING_TARGET_TYPE_WECHAT_STORE_PRODUCT_SET';
     const PRODUCT_AGGREGATION_PAGE = 'MARKETING_TARGET_TYPE_PRODUCT_AGGREGATION_PAGE';
     const WECHAT_STORE = 'MARKETING_TARGET_TYPE_WECHAT_STORE';
+    const RESALE_AND_COMMERCIAL_LAND = 'MARKETING_TARGET_TYPE_RESALE_AND_COMMERCIAL_LAND';
     
     /**
      * Gets allowable values of the enum
@@ -180,6 +181,7 @@ class MarketingTargetType
             self::WECHAT_STORE_PRODUCT_SET,
             self::PRODUCT_AGGREGATION_PAGE,
             self::WECHAT_STORE,
+            self::RESALE_AND_COMMERCIAL_LAND,
         ];
     }
 }

@@ -100,15 +100,16 @@ class OptimizationGoalPermissionsApi
      * @param  string|mixed $marketingTargetType marketingTargetType (required)
      * @param  string|mixed $bidMode bidMode (optional)
      * @param  \TencentAds\Model\V3\MarketingCarrierDetail|mixed $marketingCarrierDetail marketingCarrierDetail (optional)
+     * @param  string|mixed $deliveryScene deliveryScene (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\OptimizationGoalPermissionsGetResponse|mixed
      */
-    public function optimizationGoalPermissionsGet($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode = null, $marketingCarrierDetail = null, $fields = null)
+    public function optimizationGoalPermissionsGet($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode = null, $marketingCarrierDetail = null, $deliveryScene = null, $fields = null)
     {
-        list($response) = $this->optimizationGoalPermissionsGetWithHttpInfo($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $fields);
+        list($response) = $this->optimizationGoalPermissionsGetWithHttpInfo($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $deliveryScene, $fields);
         return $response;
     }
 
@@ -125,16 +126,17 @@ class OptimizationGoalPermissionsApi
      * @param  string|mixed $marketingTargetType (required)
      * @param  string|mixed $bidMode (optional)
      * @param  \TencentAds\Model\V3\MarketingCarrierDetail|mixed $marketingCarrierDetail (optional)
+     * @param  string|mixed $deliveryScene (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\OptimizationGoalPermissionsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function optimizationGoalPermissionsGetWithHttpInfo($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode = null, $marketingCarrierDetail = null, $fields = null)
+    public function optimizationGoalPermissionsGetWithHttpInfo($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode = null, $marketingCarrierDetail = null, $deliveryScene = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\OptimizationGoalPermissionsGetResponse';
-        $request = $this->optimizationGoalPermissionsGetRequest($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $fields);
+        $request = $this->optimizationGoalPermissionsGetRequest($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $deliveryScene, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -208,14 +210,15 @@ class OptimizationGoalPermissionsApi
      * @param  string|mixed $marketingTargetType (required)
      * @param  string|mixed $bidMode (optional)
      * @param  \TencentAds\Model\V3\MarketingCarrierDetail|mixed $marketingCarrierDetail (optional)
+     * @param  string|mixed $deliveryScene (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function optimizationGoalPermissionsGetAsync($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode = null, $marketingCarrierDetail = null, $fields = null)
+    public function optimizationGoalPermissionsGetAsync($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode = null, $marketingCarrierDetail = null, $deliveryScene = null, $fields = null)
     {
-        return $this->optimizationGoalPermissionsGetAsyncWithHttpInfo($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $fields)
+        return $this->optimizationGoalPermissionsGetAsyncWithHttpInfo($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $deliveryScene, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -236,15 +239,16 @@ class OptimizationGoalPermissionsApi
      * @param  string|mixed $marketingTargetType (required)
      * @param  string|mixed $bidMode (optional)
      * @param  \TencentAds\Model\V3\MarketingCarrierDetail|mixed $marketingCarrierDetail (optional)
+     * @param  string|mixed $deliveryScene (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function optimizationGoalPermissionsGetAsyncWithHttpInfo($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode = null, $marketingCarrierDetail = null, $fields = null)
+    public function optimizationGoalPermissionsGetAsyncWithHttpInfo($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode = null, $marketingCarrierDetail = null, $deliveryScene = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\OptimizationGoalPermissionsGetResponse';
-        $request = $this->optimizationGoalPermissionsGetRequest($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $fields);
+        $request = $this->optimizationGoalPermissionsGetRequest($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode, $marketingCarrierDetail, $deliveryScene, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -294,12 +298,13 @@ class OptimizationGoalPermissionsApi
      * @param  string|mixed $marketingTargetType (required)
      * @param  string|mixed $bidMode (optional)
      * @param  \TencentAds\Model\V3\MarketingCarrierDetail|mixed $marketingCarrierDetail (optional)
+     * @param  string|mixed $deliveryScene (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function optimizationGoalPermissionsGetRequest($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode = null, $marketingCarrierDetail = null, $fields = null)
+    protected function optimizationGoalPermissionsGetRequest($accountId, $siteSet, $marketingGoal, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $bidMode = null, $marketingCarrierDetail = null, $deliveryScene = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -379,6 +384,10 @@ class OptimizationGoalPermissionsApi
         // query params
         if ($marketingCarrierDetail !== null) {
             $queryParams['marketing_carrier_detail'] = ObjectSerializer::toQueryValue($marketingCarrierDetail);
+        }
+        // query params
+        if ($deliveryScene !== null) {
+            $queryParams['delivery_scene'] = ObjectSerializer::toQueryValue($deliveryScene);
         }
         // query params
         if (is_array($fields)) {
@@ -461,7 +470,11 @@ class OptimizationGoalPermissionsApi
         if ($apiKey !== null) {
             $queryParams['timestamp'] = $apiKey;
         }
-
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('user_token');
+        if ($apiKey !== null && $resourcePath !== '/user_organization_authentication/get') {
+            $queryParams['user_token'] = $apiKey;
+        }
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
             $defaultHeaders['User-Agent'] = $this->config->getUserAgent();

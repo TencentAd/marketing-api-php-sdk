@@ -59,7 +59,8 @@ class ComponentsDeleteRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'accountId' => 'int',
         'componentId' => 'int',
-        'organizationId' => 'int'
+        'organizationId' => 'int',
+        'deleteStrategy' => '\TencentAds\Model\V3\DeleteStrategy'
     ];
 
     /**
@@ -70,7 +71,8 @@ class ComponentsDeleteRequest implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'accountId' => 'int64',
         'componentId' => 'int64',
-        'organizationId' => 'int64'
+        'organizationId' => 'int64',
+        'deleteStrategy' => null
     ];
 
     /**
@@ -102,7 +104,8 @@ class ComponentsDeleteRequest implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'accountId' => 'account_id',
         'componentId' => 'component_id',
-        'organizationId' => 'organization_id'
+        'organizationId' => 'organization_id',
+        'deleteStrategy' => 'delete_strategy'
     ];
 
     /**
@@ -113,7 +116,8 @@ class ComponentsDeleteRequest implements ModelInterface, ArrayAccess
     protected static $setters = [
         'accountId' => 'setAccountId',
         'componentId' => 'setComponentId',
-        'organizationId' => 'setOrganizationId'
+        'organizationId' => 'setOrganizationId',
+        'deleteStrategy' => 'setDeleteStrategy'
     ];
 
     /**
@@ -124,7 +128,8 @@ class ComponentsDeleteRequest implements ModelInterface, ArrayAccess
     protected static $getters = [
         'accountId' => 'getAccountId',
         'componentId' => 'getComponentId',
-        'organizationId' => 'getOrganizationId'
+        'organizationId' => 'getOrganizationId',
+        'deleteStrategy' => 'getDeleteStrategy'
     ];
 
     /**
@@ -190,6 +195,7 @@ class ComponentsDeleteRequest implements ModelInterface, ArrayAccess
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
         $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
+        $this->container['deleteStrategy'] = isset($data['deleteStrategy']) ? $data['deleteStrategy'] : null;
     }
 
     /**
@@ -284,6 +290,30 @@ class ComponentsDeleteRequest implements ModelInterface, ArrayAccess
     public function setOrganizationId($organizationId)
     {
         $this->container['organizationId'] = $organizationId;
+
+        return $this;
+    }
+
+    /**
+     * Gets deleteStrategy
+     *
+     * @return \TencentAds\Model\V3\DeleteStrategy|mixed
+     */
+    public function getDeleteStrategy()
+    {
+        return $this->container['deleteStrategy'];
+    }
+
+    /**
+     * Sets deleteStrategy
+     *
+     * @param \TencentAds\Model\V3\DeleteStrategy|mixed $deleteStrategy deleteStrategy
+     *
+     * @return $this
+     */
+    public function setDeleteStrategy($deleteStrategy)
+    {
+        $this->container['deleteStrategy'] = $deleteStrategy;
 
         return $this;
     }

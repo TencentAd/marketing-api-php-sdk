@@ -58,7 +58,8 @@ class ChannelsUserpageobjectsGetResponseData implements ModelInterface, ArrayAcc
       */
     protected static $swaggerTypes = [
         'objects' => '\TencentAds\Model\V3\FinderObject[]',
-        'lastBuffer' => 'string'
+        'lastBuffer' => 'string',
+        'continueFlag' => 'int'
     ];
 
     /**
@@ -68,7 +69,8 @@ class ChannelsUserpageobjectsGetResponseData implements ModelInterface, ArrayAcc
       */
     protected static $swaggerFormats = [
         'objects' => null,
-        'lastBuffer' => null
+        'lastBuffer' => null,
+        'continueFlag' => 'int64'
     ];
 
     /**
@@ -99,7 +101,8 @@ class ChannelsUserpageobjectsGetResponseData implements ModelInterface, ArrayAcc
      */
     protected static $attributeMap = [
         'objects' => 'objects',
-        'lastBuffer' => 'last_buffer'
+        'lastBuffer' => 'last_buffer',
+        'continueFlag' => 'continue_flag'
     ];
 
     /**
@@ -109,7 +112,8 @@ class ChannelsUserpageobjectsGetResponseData implements ModelInterface, ArrayAcc
      */
     protected static $setters = [
         'objects' => 'setObjects',
-        'lastBuffer' => 'setLastBuffer'
+        'lastBuffer' => 'setLastBuffer',
+        'continueFlag' => 'setContinueFlag'
     ];
 
     /**
@@ -119,7 +123,8 @@ class ChannelsUserpageobjectsGetResponseData implements ModelInterface, ArrayAcc
      */
     protected static $getters = [
         'objects' => 'getObjects',
-        'lastBuffer' => 'getLastBuffer'
+        'lastBuffer' => 'getLastBuffer',
+        'continueFlag' => 'getContinueFlag'
     ];
 
     /**
@@ -184,6 +189,7 @@ class ChannelsUserpageobjectsGetResponseData implements ModelInterface, ArrayAcc
     {
         $this->container['objects'] = isset($data['objects']) ? $data['objects'] : null;
         $this->container['lastBuffer'] = isset($data['lastBuffer']) ? $data['lastBuffer'] : null;
+        $this->container['continueFlag'] = isset($data['continueFlag']) ? $data['continueFlag'] : null;
     }
 
     /**
@@ -254,6 +260,30 @@ class ChannelsUserpageobjectsGetResponseData implements ModelInterface, ArrayAcc
     public function setLastBuffer($lastBuffer)
     {
         $this->container['lastBuffer'] = $lastBuffer;
+
+        return $this;
+    }
+
+    /**
+     * Gets continueFlag
+     *
+     * @return int|mixed
+     */
+    public function getContinueFlag()
+    {
+        return $this->container['continueFlag'];
+    }
+
+    /**
+     * Sets continueFlag
+     *
+     * @param int|mixed $continueFlag continueFlag
+     *
+     * @return $this
+     */
+    public function setContinueFlag($continueFlag)
+    {
+        $this->container['continueFlag'] = $continueFlag;
 
         return $this;
     }

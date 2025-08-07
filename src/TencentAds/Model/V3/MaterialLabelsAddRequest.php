@@ -58,6 +58,7 @@ class MaterialLabelsAddRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'accountId' => 'int',
+        'organizationId' => 'int',
         'labels' => '\TencentAds\Model\V3\CreateLabel[]'
     ];
 
@@ -68,6 +69,7 @@ class MaterialLabelsAddRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'accountId' => 'int64',
+        'organizationId' => 'int64',
         'labels' => null
     ];
 
@@ -99,6 +101,7 @@ class MaterialLabelsAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'accountId' => 'account_id',
+        'organizationId' => 'organization_id',
         'labels' => 'labels'
     ];
 
@@ -109,6 +112,7 @@ class MaterialLabelsAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'accountId' => 'setAccountId',
+        'organizationId' => 'setOrganizationId',
         'labels' => 'setLabels'
     ];
 
@@ -119,6 +123,7 @@ class MaterialLabelsAddRequest implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'accountId' => 'getAccountId',
+        'organizationId' => 'getOrganizationId',
         'labels' => 'getLabels'
     ];
 
@@ -183,6 +188,7 @@ class MaterialLabelsAddRequest implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
         $this->container['labels'] = isset($data['labels']) ? $data['labels'] : null;
     }
 
@@ -230,6 +236,30 @@ class MaterialLabelsAddRequest implements ModelInterface, ArrayAccess
     public function setAccountId($accountId)
     {
         $this->container['accountId'] = $accountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets organizationId
+     *
+     * @return int|mixed
+     */
+    public function getOrganizationId()
+    {
+        return $this->container['organizationId'];
+    }
+
+    /**
+     * Sets organizationId
+     *
+     * @param int|mixed $organizationId organizationId
+     *
+     * @return $this
+     */
+    public function setOrganizationId($organizationId)
+    {
+        $this->container['organizationId'] = $organizationId;
 
         return $this;
     }

@@ -48,6 +48,10 @@ class WildcardType
     const LANDING_PAGE = 'LANDING_PAGE';
     const PRODUCT_INDEX = 'PRODUCT_INDEX';
     const PRODUCT_RECOMMEND = 'PRODUCT_RECOMMEND';
+    const USER_IDENTIFIER = 'USER_IDENTIFIER';
+    const DEEP_LINK = 'DEEP_LINK';
+    const UNIVERSAL_LINK = 'UNIVERSAL_LINK';
+    const QUERY_WORD = 'QUERY_WORD';
     
     /**
      * Gets allowable values of the enum
@@ -60,6 +64,10 @@ class WildcardType
             self::LANDING_PAGE,
             self::PRODUCT_INDEX,
             self::PRODUCT_RECOMMEND,
+            self::USER_IDENTIFIER,
+            self::DEEP_LINK,
+            self::UNIVERSAL_LINK,
+            self::QUERY_WORD,
         ];
     }
 }

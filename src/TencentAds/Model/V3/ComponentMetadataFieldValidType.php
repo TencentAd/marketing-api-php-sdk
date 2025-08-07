@@ -52,6 +52,7 @@ class ComponentMetadataFieldValidType
     const ENUM = 'ENUM';
     const URL = 'URL';
     const LEADS = 'LEADS';
+    const IMAGE_MULTI_FORMAT = 'IMAGE_MULTI_FORMAT';
     
     /**
      * Gets allowable values of the enum
@@ -68,6 +69,7 @@ class ComponentMetadataFieldValidType
             self::ENUM,
             self::URL,
             self::LEADS,
+            self::IMAGE_MULTI_FORMAT,
         ];
     }
 }

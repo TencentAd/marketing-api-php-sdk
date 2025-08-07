@@ -57,7 +57,7 @@ class AdcreativePreviewsGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'list' => '\TencentAds\Model\V3\CollectionStruct[]',
+        'list' => '\TencentAds\Model\V3\AdcreativePreviewsGetCollectionStruct[]',
         'range' => '\TencentAds\Model\V3\Range'
     ];
 
@@ -213,7 +213,7 @@ class AdcreativePreviewsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets list
      *
-     * @return \TencentAds\Model\V3\CollectionStruct[]|mixed
+     * @return \TencentAds\Model\V3\AdcreativePreviewsGetCollectionStruct[]|mixed
      */
     public function getList()
     {
@@ -223,7 +223,7 @@ class AdcreativePreviewsGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets list
      *
-     * @param \TencentAds\Model\V3\CollectionStruct[]|mixed $list list
+     * @param \TencentAds\Model\V3\AdcreativePreviewsGetCollectionStruct[]|mixed $list list
      *
      * @return $this
      */
