@@ -1,6 +1,6 @@
 <?php
 /**
- * CreativeComponentValueValidStructureField
+ * PunishEnumApiConfigLevelFour
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreativeComponentValueValidStructureField Class Doc Comment
+ * PunishEnumApiConfigLevelFour Class Doc Comment
  *
  * @category Class
- * @description 创意组件字段结构
+ * @description 处罚枚举配置第四层
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreativeComponentValueValidStructureField implements ModelInterface, ArrayAccess
+class PunishEnumApiConfigLevelFour implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       *
       * @var string
       */
-    protected static $swaggerModelName = 'creative_component_value_valid_structure_field';
+    protected static $swaggerModelName = 'punish_enum_api_config_level_four';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,11 +58,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'name' => 'string',
+        'value' => 'string',
         'desc' => 'string',
-        'type' => '\TencentAds\Model\V3\ComponentMetadataFieldType',
-        'structure' => '\TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure',
-        'valid' => '\TencentAds\Model\V3\CreativeComponentValueValid'
+        'level' => 'int',
+        'parentId' => 'string'
     ];
 
     /**
@@ -71,11 +70,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'name' => null,
+        'value' => null,
         'desc' => null,
-        'type' => null,
-        'structure' => null,
-        'valid' => null
+        'level' => 'int64',
+        'parentId' => null
     ];
 
     /**
@@ -105,11 +103,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $attributeMap = [
-        'name' => 'name',
+        'value' => 'value',
         'desc' => 'desc',
-        'type' => 'type',
-        'structure' => 'structure',
-        'valid' => 'valid'
+        'level' => 'level',
+        'parentId' => 'parent_id'
     ];
 
     /**
@@ -118,11 +115,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
+        'value' => 'setValue',
         'desc' => 'setDesc',
-        'type' => 'setType',
-        'structure' => 'setStructure',
-        'valid' => 'setValid'
+        'level' => 'setLevel',
+        'parentId' => 'setParentId'
     ];
 
     /**
@@ -131,11 +127,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
+        'value' => 'getValue',
         'desc' => 'getDesc',
-        'type' => 'getType',
-        'structure' => 'getStructure',
-        'valid' => 'getValid'
+        'level' => 'getLevel',
+        'parentId' => 'getParentId'
     ];
 
     /**
@@ -198,11 +193,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      */
     public function __construct(array $data = null)
     {
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
         $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['structure'] = isset($data['structure']) ? $data['structure'] : null;
-        $this->container['valid'] = isset($data['valid']) ? $data['valid'] : null;
+        $this->container['level'] = isset($data['level']) ? $data['level'] : null;
+        $this->container['parentId'] = isset($data['parentId']) ? $data['parentId'] : null;
     }
 
     /**
@@ -230,25 +224,25 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
 
 
     /**
-     * Gets name
+     * Gets value
      *
      * @return string|mixed
      */
-    public function getName()
+    public function getValue()
     {
-        return $this->container['name'];
+        return $this->container['value'];
     }
 
     /**
-     * Sets name
+     * Sets value
      *
-     * @param string|mixed $name name
+     * @param string|mixed $value value
      *
      * @return $this
      */
-    public function setName($name)
+    public function setValue($value)
     {
-        $this->container['name'] = $name;
+        $this->container['value'] = $value;
 
         return $this;
     }
@@ -278,73 +272,49 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
     }
 
     /**
-     * Gets type
+     * Gets level
      *
-     * @return \TencentAds\Model\V3\ComponentMetadataFieldType|mixed
+     * @return int|mixed
      */
-    public function getType()
+    public function getLevel()
     {
-        return $this->container['type'];
+        return $this->container['level'];
     }
 
     /**
-     * Sets type
+     * Sets level
      *
-     * @param \TencentAds\Model\V3\ComponentMetadataFieldType|mixed $type type
+     * @param int|mixed $level level
      *
      * @return $this
      */
-    public function setType($type)
+    public function setLevel($level)
     {
-        $this->container['type'] = $type;
+        $this->container['level'] = $level;
 
         return $this;
     }
 
     /**
-     * Gets structure
+     * Gets parentId
      *
-     * @return \TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure|mixed
+     * @return string|mixed
      */
-    public function getStructure()
+    public function getParentId()
     {
-        return $this->container['structure'];
+        return $this->container['parentId'];
     }
 
     /**
-     * Sets structure
+     * Sets parentId
      *
-     * @param \TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure|mixed $structure structure
+     * @param string|mixed $parentId parentId
      *
      * @return $this
      */
-    public function setStructure($structure)
+    public function setParentId($parentId)
     {
-        $this->container['structure'] = $structure;
-
-        return $this;
-    }
-
-    /**
-     * Gets valid
-     *
-     * @return \TencentAds\Model\V3\CreativeComponentValueValid|mixed
-     */
-    public function getValid()
-    {
-        return $this->container['valid'];
-    }
-
-    /**
-     * Sets valid
-     *
-     * @param \TencentAds\Model\V3\CreativeComponentValueValid|mixed $valid valid
-     *
-     * @return $this
-     */
-    public function setValid($valid)
-    {
-        $this->container['valid'] = $valid;
+        $this->container['parentId'] = $parentId;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * CreativeComponentValueValidStructureFieldSub3
+ * PunishmentConfigGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreativeComponentValueValidStructureFieldSub3 Class Doc Comment
+ * PunishmentConfigGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 创意组件字段结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreativeComponentValueValidStructureFieldSub3 implements ModelInterface, ArrayAccess
+class PunishmentConfigGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class CreativeComponentValueValidStructureFieldSub3 implements ModelInterface, A
       *
       * @var string
       */
-    protected static $swaggerModelName = 'creative_component_value_valid_structure_field_sub3';
+    protected static $swaggerModelName = 'PunishmentConfigGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,11 +57,12 @@ class CreativeComponentValueValidStructureFieldSub3 implements ModelInterface, A
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'name' => 'string',
-        'desc' => 'string',
-        'type' => '\TencentAds\Model\V3\ComponentMetadataFieldType',
-        'valid' => '\TencentAds\Model\V3\CreativeComponentValueValid',
-        'structure' => '\TencentAds\Model\V3\CreativeComponentValueValidStructureFieldSub4[]'
+        'illegalSceneList' => '\TencentAds\Model\V3\PunishEnumApiConfigLevelOne[]',
+        'illegalNodeList' => '\TencentAds\Model\V3\PunishEnumApiConfigLevelOne[]',
+        'channelList' => '\TencentAds\Model\V3\PunishEnumApiConfigLevelOne[]',
+        'actionType' => '\TencentAds\Model\V3\PunishEnumApiConfigItem[]',
+        'punishLevel' => '\TencentAds\Model\V3\PunishEnumApiConfigItem[]',
+        'sceneList' => '\TencentAds\Model\V3\PunishEnumApiConfigItem[]'
     ];
 
     /**
@@ -71,11 +71,12 @@ class CreativeComponentValueValidStructureFieldSub3 implements ModelInterface, A
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'name' => null,
-        'desc' => null,
-        'type' => null,
-        'valid' => null,
-        'structure' => null
+        'illegalSceneList' => null,
+        'illegalNodeList' => null,
+        'channelList' => null,
+        'actionType' => null,
+        'punishLevel' => null,
+        'sceneList' => null
     ];
 
     /**
@@ -105,11 +106,12 @@ class CreativeComponentValueValidStructureFieldSub3 implements ModelInterface, A
      * @var string[]
      */
     protected static $attributeMap = [
-        'name' => 'name',
-        'desc' => 'desc',
-        'type' => 'type',
-        'valid' => 'valid',
-        'structure' => 'structure'
+        'illegalSceneList' => 'illegal_scene_list',
+        'illegalNodeList' => 'illegal_node_list',
+        'channelList' => 'channel_list',
+        'actionType' => 'action_type',
+        'punishLevel' => 'punish_level',
+        'sceneList' => 'scene_list'
     ];
 
     /**
@@ -118,11 +120,12 @@ class CreativeComponentValueValidStructureFieldSub3 implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'desc' => 'setDesc',
-        'type' => 'setType',
-        'valid' => 'setValid',
-        'structure' => 'setStructure'
+        'illegalSceneList' => 'setIllegalSceneList',
+        'illegalNodeList' => 'setIllegalNodeList',
+        'channelList' => 'setChannelList',
+        'actionType' => 'setActionType',
+        'punishLevel' => 'setPunishLevel',
+        'sceneList' => 'setSceneList'
     ];
 
     /**
@@ -131,11 +134,12 @@ class CreativeComponentValueValidStructureFieldSub3 implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'desc' => 'getDesc',
-        'type' => 'getType',
-        'valid' => 'getValid',
-        'structure' => 'getStructure'
+        'illegalSceneList' => 'getIllegalSceneList',
+        'illegalNodeList' => 'getIllegalNodeList',
+        'channelList' => 'getChannelList',
+        'actionType' => 'getActionType',
+        'punishLevel' => 'getPunishLevel',
+        'sceneList' => 'getSceneList'
     ];
 
     /**
@@ -198,11 +202,12 @@ class CreativeComponentValueValidStructureFieldSub3 implements ModelInterface, A
      */
     public function __construct(array $data = null)
     {
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['valid'] = isset($data['valid']) ? $data['valid'] : null;
-        $this->container['structure'] = isset($data['structure']) ? $data['structure'] : null;
+        $this->container['illegalSceneList'] = isset($data['illegalSceneList']) ? $data['illegalSceneList'] : null;
+        $this->container['illegalNodeList'] = isset($data['illegalNodeList']) ? $data['illegalNodeList'] : null;
+        $this->container['channelList'] = isset($data['channelList']) ? $data['channelList'] : null;
+        $this->container['actionType'] = isset($data['actionType']) ? $data['actionType'] : null;
+        $this->container['punishLevel'] = isset($data['punishLevel']) ? $data['punishLevel'] : null;
+        $this->container['sceneList'] = isset($data['sceneList']) ? $data['sceneList'] : null;
     }
 
     /**
@@ -230,121 +235,145 @@ class CreativeComponentValueValidStructureFieldSub3 implements ModelInterface, A
 
 
     /**
-     * Gets name
+     * Gets illegalSceneList
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\PunishEnumApiConfigLevelOne[]|mixed
      */
-    public function getName()
+    public function getIllegalSceneList()
     {
-        return $this->container['name'];
+        return $this->container['illegalSceneList'];
     }
 
     /**
-     * Sets name
+     * Sets illegalSceneList
      *
-     * @param string|mixed $name name
+     * @param \TencentAds\Model\V3\PunishEnumApiConfigLevelOne[]|mixed $illegalSceneList illegalSceneList
      *
      * @return $this
      */
-    public function setName($name)
+    public function setIllegalSceneList($illegalSceneList)
     {
-        $this->container['name'] = $name;
+        $this->container['illegalSceneList'] = $illegalSceneList;
 
         return $this;
     }
 
     /**
-     * Gets desc
+     * Gets illegalNodeList
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\PunishEnumApiConfigLevelOne[]|mixed
      */
-    public function getDesc()
+    public function getIllegalNodeList()
     {
-        return $this->container['desc'];
+        return $this->container['illegalNodeList'];
     }
 
     /**
-     * Sets desc
+     * Sets illegalNodeList
      *
-     * @param string|mixed $desc desc
+     * @param \TencentAds\Model\V3\PunishEnumApiConfigLevelOne[]|mixed $illegalNodeList illegalNodeList
      *
      * @return $this
      */
-    public function setDesc($desc)
+    public function setIllegalNodeList($illegalNodeList)
     {
-        $this->container['desc'] = $desc;
+        $this->container['illegalNodeList'] = $illegalNodeList;
 
         return $this;
     }
 
     /**
-     * Gets type
+     * Gets channelList
      *
-     * @return \TencentAds\Model\V3\ComponentMetadataFieldType|mixed
+     * @return \TencentAds\Model\V3\PunishEnumApiConfigLevelOne[]|mixed
      */
-    public function getType()
+    public function getChannelList()
     {
-        return $this->container['type'];
+        return $this->container['channelList'];
     }
 
     /**
-     * Sets type
+     * Sets channelList
      *
-     * @param \TencentAds\Model\V3\ComponentMetadataFieldType|mixed $type type
+     * @param \TencentAds\Model\V3\PunishEnumApiConfigLevelOne[]|mixed $channelList channelList
      *
      * @return $this
      */
-    public function setType($type)
+    public function setChannelList($channelList)
     {
-        $this->container['type'] = $type;
+        $this->container['channelList'] = $channelList;
 
         return $this;
     }
 
     /**
-     * Gets valid
+     * Gets actionType
      *
-     * @return \TencentAds\Model\V3\CreativeComponentValueValid|mixed
+     * @return \TencentAds\Model\V3\PunishEnumApiConfigItem[]|mixed
      */
-    public function getValid()
+    public function getActionType()
     {
-        return $this->container['valid'];
+        return $this->container['actionType'];
     }
 
     /**
-     * Sets valid
+     * Sets actionType
      *
-     * @param \TencentAds\Model\V3\CreativeComponentValueValid|mixed $valid valid
+     * @param \TencentAds\Model\V3\PunishEnumApiConfigItem[]|mixed $actionType actionType
      *
      * @return $this
      */
-    public function setValid($valid)
+    public function setActionType($actionType)
     {
-        $this->container['valid'] = $valid;
+        $this->container['actionType'] = $actionType;
 
         return $this;
     }
 
     /**
-     * Gets structure
+     * Gets punishLevel
      *
-     * @return \TencentAds\Model\V3\CreativeComponentValueValidStructureFieldSub4[]|mixed
+     * @return \TencentAds\Model\V3\PunishEnumApiConfigItem[]|mixed
      */
-    public function getStructure()
+    public function getPunishLevel()
     {
-        return $this->container['structure'];
+        return $this->container['punishLevel'];
     }
 
     /**
-     * Sets structure
+     * Sets punishLevel
      *
-     * @param \TencentAds\Model\V3\CreativeComponentValueValidStructureFieldSub4[]|mixed $structure structure
+     * @param \TencentAds\Model\V3\PunishEnumApiConfigItem[]|mixed $punishLevel punishLevel
      *
      * @return $this
      */
-    public function setStructure($structure)
+    public function setPunishLevel($punishLevel)
     {
-        $this->container['structure'] = $structure;
+        $this->container['punishLevel'] = $punishLevel;
+
+        return $this;
+    }
+
+    /**
+     * Gets sceneList
+     *
+     * @return \TencentAds\Model\V3\PunishEnumApiConfigItem[]|mixed
+     */
+    public function getSceneList()
+    {
+        return $this->container['sceneList'];
+    }
+
+    /**
+     * Sets sceneList
+     *
+     * @param \TencentAds\Model\V3\PunishEnumApiConfigItem[]|mixed $sceneList sceneList
+     *
+     * @return $this
+     */
+    public function setSceneList($sceneList)
+    {
+        $this->container['sceneList'] = $sceneList;
 
         return $this;
     }

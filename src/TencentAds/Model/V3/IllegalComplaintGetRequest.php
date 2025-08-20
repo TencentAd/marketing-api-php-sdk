@@ -1,6 +1,6 @@
 <?php
 /**
- * CreativeComponentValueValidStructureField
+ * IllegalComplaintGetRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreativeComponentValueValidStructureField Class Doc Comment
+ * IllegalComplaintGetRequest Class Doc Comment
  *
  * @category Class
- * @description 创意组件字段结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreativeComponentValueValidStructureField implements ModelInterface, ArrayAccess
+class IllegalComplaintGetRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       *
       * @var string
       */
-    protected static $swaggerModelName = 'creative_component_value_valid_structure_field';
+    protected static $swaggerModelName = 'IllegalComplaintGetRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,11 +57,13 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'name' => 'string',
-        'desc' => 'string',
-        'type' => '\TencentAds\Model\V3\ComponentMetadataFieldType',
-        'structure' => '\TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure',
-        'valid' => '\TencentAds\Model\V3\CreativeComponentValueValid'
+        'accountIdList' => 'int[]',
+        'illegalLevelList' => 'int[]',
+        'actionTypeList' => 'int[]',
+        'illegalReason' => 'string',
+        'illegalDateRange' => '\TencentAds\Model\V3\IllegalDateRange',
+        'page' => 'int',
+        'pageSize' => 'int'
     ];
 
     /**
@@ -71,11 +72,13 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'name' => null,
-        'desc' => null,
-        'type' => null,
-        'structure' => null,
-        'valid' => null
+        'accountIdList' => 'int64',
+        'illegalLevelList' => 'int64',
+        'actionTypeList' => 'int64',
+        'illegalReason' => null,
+        'illegalDateRange' => null,
+        'page' => 'int64',
+        'pageSize' => 'int64'
     ];
 
     /**
@@ -105,11 +108,13 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $attributeMap = [
-        'name' => 'name',
-        'desc' => 'desc',
-        'type' => 'type',
-        'structure' => 'structure',
-        'valid' => 'valid'
+        'accountIdList' => 'account_id_list',
+        'illegalLevelList' => 'illegal_level_list',
+        'actionTypeList' => 'action_type_list',
+        'illegalReason' => 'illegal_reason',
+        'illegalDateRange' => 'illegal_date_range',
+        'page' => 'page',
+        'pageSize' => 'page_size'
     ];
 
     /**
@@ -118,11 +123,13 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'desc' => 'setDesc',
-        'type' => 'setType',
-        'structure' => 'setStructure',
-        'valid' => 'setValid'
+        'accountIdList' => 'setAccountIdList',
+        'illegalLevelList' => 'setIllegalLevelList',
+        'actionTypeList' => 'setActionTypeList',
+        'illegalReason' => 'setIllegalReason',
+        'illegalDateRange' => 'setIllegalDateRange',
+        'page' => 'setPage',
+        'pageSize' => 'setPageSize'
     ];
 
     /**
@@ -131,11 +138,13 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'desc' => 'getDesc',
-        'type' => 'getType',
-        'structure' => 'getStructure',
-        'valid' => 'getValid'
+        'accountIdList' => 'getAccountIdList',
+        'illegalLevelList' => 'getIllegalLevelList',
+        'actionTypeList' => 'getActionTypeList',
+        'illegalReason' => 'getIllegalReason',
+        'illegalDateRange' => 'getIllegalDateRange',
+        'page' => 'getPage',
+        'pageSize' => 'getPageSize'
     ];
 
     /**
@@ -198,11 +207,13 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      */
     public function __construct(array $data = null)
     {
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['structure'] = isset($data['structure']) ? $data['structure'] : null;
-        $this->container['valid'] = isset($data['valid']) ? $data['valid'] : null;
+        $this->container['accountIdList'] = isset($data['accountIdList']) ? $data['accountIdList'] : null;
+        $this->container['illegalLevelList'] = isset($data['illegalLevelList']) ? $data['illegalLevelList'] : null;
+        $this->container['actionTypeList'] = isset($data['actionTypeList']) ? $data['actionTypeList'] : null;
+        $this->container['illegalReason'] = isset($data['illegalReason']) ? $data['illegalReason'] : null;
+        $this->container['illegalDateRange'] = isset($data['illegalDateRange']) ? $data['illegalDateRange'] : null;
+        $this->container['page'] = isset($data['page']) ? $data['page'] : null;
+        $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
     }
 
     /**
@@ -230,121 +241,169 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
 
 
     /**
-     * Gets name
+     * Gets accountIdList
+     *
+     * @return int[]|mixed
+     */
+    public function getAccountIdList()
+    {
+        return $this->container['accountIdList'];
+    }
+
+    /**
+     * Sets accountIdList
+     *
+     * @param int[]|mixed $accountIdList accountIdList
+     *
+     * @return $this
+     */
+    public function setAccountIdList($accountIdList)
+    {
+        $this->container['accountIdList'] = $accountIdList;
+
+        return $this;
+    }
+
+    /**
+     * Gets illegalLevelList
+     *
+     * @return int[]|mixed
+     */
+    public function getIllegalLevelList()
+    {
+        return $this->container['illegalLevelList'];
+    }
+
+    /**
+     * Sets illegalLevelList
+     *
+     * @param int[]|mixed $illegalLevelList illegalLevelList
+     *
+     * @return $this
+     */
+    public function setIllegalLevelList($illegalLevelList)
+    {
+        $this->container['illegalLevelList'] = $illegalLevelList;
+
+        return $this;
+    }
+
+    /**
+     * Gets actionTypeList
+     *
+     * @return int[]|mixed
+     */
+    public function getActionTypeList()
+    {
+        return $this->container['actionTypeList'];
+    }
+
+    /**
+     * Sets actionTypeList
+     *
+     * @param int[]|mixed $actionTypeList actionTypeList
+     *
+     * @return $this
+     */
+    public function setActionTypeList($actionTypeList)
+    {
+        $this->container['actionTypeList'] = $actionTypeList;
+
+        return $this;
+    }
+
+    /**
+     * Gets illegalReason
      *
      * @return string|mixed
      */
-    public function getName()
+    public function getIllegalReason()
     {
-        return $this->container['name'];
+        return $this->container['illegalReason'];
     }
 
     /**
-     * Sets name
+     * Sets illegalReason
      *
-     * @param string|mixed $name name
+     * @param string|mixed $illegalReason illegalReason
      *
      * @return $this
      */
-    public function setName($name)
+    public function setIllegalReason($illegalReason)
     {
-        $this->container['name'] = $name;
+        $this->container['illegalReason'] = $illegalReason;
 
         return $this;
     }
 
     /**
-     * Gets desc
+     * Gets illegalDateRange
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\IllegalDateRange|mixed
      */
-    public function getDesc()
+    public function getIllegalDateRange()
     {
-        return $this->container['desc'];
+        return $this->container['illegalDateRange'];
     }
 
     /**
-     * Sets desc
+     * Sets illegalDateRange
      *
-     * @param string|mixed $desc desc
+     * @param \TencentAds\Model\V3\IllegalDateRange|mixed $illegalDateRange illegalDateRange
      *
      * @return $this
      */
-    public function setDesc($desc)
+    public function setIllegalDateRange($illegalDateRange)
     {
-        $this->container['desc'] = $desc;
+        $this->container['illegalDateRange'] = $illegalDateRange;
 
         return $this;
     }
 
     /**
-     * Gets type
+     * Gets page
      *
-     * @return \TencentAds\Model\V3\ComponentMetadataFieldType|mixed
+     * @return int|mixed
      */
-    public function getType()
+    public function getPage()
     {
-        return $this->container['type'];
+        return $this->container['page'];
     }
 
     /**
-     * Sets type
+     * Sets page
      *
-     * @param \TencentAds\Model\V3\ComponentMetadataFieldType|mixed $type type
+     * @param int|mixed $page page
      *
      * @return $this
      */
-    public function setType($type)
+    public function setPage($page)
     {
-        $this->container['type'] = $type;
+        $this->container['page'] = $page;
 
         return $this;
     }
 
     /**
-     * Gets structure
+     * Gets pageSize
      *
-     * @return \TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure|mixed
+     * @return int|mixed
      */
-    public function getStructure()
+    public function getPageSize()
     {
-        return $this->container['structure'];
+        return $this->container['pageSize'];
     }
 
     /**
-     * Sets structure
+     * Sets pageSize
      *
-     * @param \TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure|mixed $structure structure
+     * @param int|mixed $pageSize pageSize
      *
      * @return $this
      */
-    public function setStructure($structure)
+    public function setPageSize($pageSize)
     {
-        $this->container['structure'] = $structure;
-
-        return $this;
-    }
-
-    /**
-     * Gets valid
-     *
-     * @return \TencentAds\Model\V3\CreativeComponentValueValid|mixed
-     */
-    public function getValid()
-    {
-        return $this->container['valid'];
-    }
-
-    /**
-     * Sets valid
-     *
-     * @param \TencentAds\Model\V3\CreativeComponentValueValid|mixed $valid valid
-     *
-     * @return $this
-     */
-    public function setValid($valid)
-    {
-        $this->container['valid'] = $valid;
+        $this->container['pageSize'] = $pageSize;
 
         return $this;
     }

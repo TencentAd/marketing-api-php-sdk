@@ -65,7 +65,9 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'smartBidType' => '\TencentAds\Model\V3\SmartBidType',
         'customCostCap' => 'int',
         'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
-        'liveStreamAudienceCost' => 'int'
+        'liveStreamAudienceCost' => 'int',
+        'clickCost' => 'int',
+        'firstTwentyFourHourEcommerceOrderCost' => 'int'
     ];
 
     /**
@@ -81,7 +83,9 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'smartBidType' => null,
         'customCostCap' => 'int64',
         'costConstraintScene' => null,
-        'liveStreamAudienceCost' => 'int64'
+        'liveStreamAudienceCost' => 'int64',
+        'clickCost' => 'int64',
+        'firstTwentyFourHourEcommerceOrderCost' => 'int64'
     ];
 
     /**
@@ -118,7 +122,9 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'smartBidType' => 'smart_bid_type',
         'customCostCap' => 'custom_cost_cap',
         'costConstraintScene' => 'cost_constraint_scene',
-        'liveStreamAudienceCost' => 'live_stream_audience_cost'
+        'liveStreamAudienceCost' => 'live_stream_audience_cost',
+        'clickCost' => 'click_cost',
+        'firstTwentyFourHourEcommerceOrderCost' => 'first_twenty_four_hour_ecommerce_order_cost'
     ];
 
     /**
@@ -134,7 +140,9 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'smartBidType' => 'setSmartBidType',
         'customCostCap' => 'setCustomCostCap',
         'costConstraintScene' => 'setCostConstraintScene',
-        'liveStreamAudienceCost' => 'setLiveStreamAudienceCost'
+        'liveStreamAudienceCost' => 'setLiveStreamAudienceCost',
+        'clickCost' => 'setClickCost',
+        'firstTwentyFourHourEcommerceOrderCost' => 'setFirstTwentyFourHourEcommerceOrderCost'
     ];
 
     /**
@@ -150,7 +158,9 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'smartBidType' => 'getSmartBidType',
         'customCostCap' => 'getCustomCostCap',
         'costConstraintScene' => 'getCostConstraintScene',
-        'liveStreamAudienceCost' => 'getLiveStreamAudienceCost'
+        'liveStreamAudienceCost' => 'getLiveStreamAudienceCost',
+        'clickCost' => 'getClickCost',
+        'firstTwentyFourHourEcommerceOrderCost' => 'getFirstTwentyFourHourEcommerceOrderCost'
     ];
 
     /**
@@ -221,6 +231,8 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         $this->container['customCostCap'] = isset($data['customCostCap']) ? $data['customCostCap'] : null;
         $this->container['costConstraintScene'] = isset($data['costConstraintScene']) ? $data['costConstraintScene'] : null;
         $this->container['liveStreamAudienceCost'] = isset($data['liveStreamAudienceCost']) ? $data['liveStreamAudienceCost'] : null;
+        $this->container['clickCost'] = isset($data['clickCost']) ? $data['clickCost'] : null;
+        $this->container['firstTwentyFourHourEcommerceOrderCost'] = isset($data['firstTwentyFourHourEcommerceOrderCost']) ? $data['firstTwentyFourHourEcommerceOrderCost'] : null;
     }
 
     /**
@@ -435,6 +447,54 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
     public function setLiveStreamAudienceCost($liveStreamAudienceCost)
     {
         $this->container['liveStreamAudienceCost'] = $liveStreamAudienceCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets clickCost
+     *
+     * @return int|mixed
+     */
+    public function getClickCost()
+    {
+        return $this->container['clickCost'];
+    }
+
+    /**
+     * Sets clickCost
+     *
+     * @param int|mixed $clickCost clickCost
+     *
+     * @return $this
+     */
+    public function setClickCost($clickCost)
+    {
+        $this->container['clickCost'] = $clickCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets firstTwentyFourHourEcommerceOrderCost
+     *
+     * @return int|mixed
+     */
+    public function getFirstTwentyFourHourEcommerceOrderCost()
+    {
+        return $this->container['firstTwentyFourHourEcommerceOrderCost'];
+    }
+
+    /**
+     * Sets firstTwentyFourHourEcommerceOrderCost
+     *
+     * @param int|mixed $firstTwentyFourHourEcommerceOrderCost firstTwentyFourHourEcommerceOrderCost
+     *
+     * @return $this
+     */
+    public function setFirstTwentyFourHourEcommerceOrderCost($firstTwentyFourHourEcommerceOrderCost)
+    {
+        $this->container['firstTwentyFourHourEcommerceOrderCost'] = $firstTwentyFourHourEcommerceOrderCost;
 
         return $this;
     }

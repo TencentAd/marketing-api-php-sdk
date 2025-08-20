@@ -1,6 +1,6 @@
 <?php
 /**
- * CreativeComponentValueValidStructureField
+ * MdmPunishData
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreativeComponentValueValidStructureField Class Doc Comment
+ * MdmPunishData Class Doc Comment
  *
  * @category Class
- * @description 创意组件字段结构
+ * @description 主体处罚内容
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreativeComponentValueValidStructureField implements ModelInterface, ArrayAccess
+class MdmPunishData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       *
       * @var string
       */
-    protected static $swaggerModelName = 'creative_component_value_valid_structure_field';
+    protected static $swaggerModelName = 'mdm_punish_data';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,11 +58,8 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'name' => 'string',
-        'desc' => 'string',
-        'type' => '\TencentAds\Model\V3\ComponentMetadataFieldType',
-        'structure' => '\TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure',
-        'valid' => '\TencentAds\Model\V3\CreativeComponentValueValid'
+        'punishLevel' => 'int',
+        'punishCnt' => 'int'
     ];
 
     /**
@@ -71,11 +68,8 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'name' => null,
-        'desc' => null,
-        'type' => null,
-        'structure' => null,
-        'valid' => null
+        'punishLevel' => 'int64',
+        'punishCnt' => 'int64'
     ];
 
     /**
@@ -105,11 +99,8 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $attributeMap = [
-        'name' => 'name',
-        'desc' => 'desc',
-        'type' => 'type',
-        'structure' => 'structure',
-        'valid' => 'valid'
+        'punishLevel' => 'punish_level',
+        'punishCnt' => 'punish_cnt'
     ];
 
     /**
@@ -118,11 +109,8 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'desc' => 'setDesc',
-        'type' => 'setType',
-        'structure' => 'setStructure',
-        'valid' => 'setValid'
+        'punishLevel' => 'setPunishLevel',
+        'punishCnt' => 'setPunishCnt'
     ];
 
     /**
@@ -131,11 +119,8 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'desc' => 'getDesc',
-        'type' => 'getType',
-        'structure' => 'getStructure',
-        'valid' => 'getValid'
+        'punishLevel' => 'getPunishLevel',
+        'punishCnt' => 'getPunishCnt'
     ];
 
     /**
@@ -198,11 +183,8 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      */
     public function __construct(array $data = null)
     {
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['structure'] = isset($data['structure']) ? $data['structure'] : null;
-        $this->container['valid'] = isset($data['valid']) ? $data['valid'] : null;
+        $this->container['punishLevel'] = isset($data['punishLevel']) ? $data['punishLevel'] : null;
+        $this->container['punishCnt'] = isset($data['punishCnt']) ? $data['punishCnt'] : null;
     }
 
     /**
@@ -230,121 +212,49 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
 
 
     /**
-     * Gets name
+     * Gets punishLevel
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getName()
+    public function getPunishLevel()
     {
-        return $this->container['name'];
+        return $this->container['punishLevel'];
     }
 
     /**
-     * Sets name
+     * Sets punishLevel
      *
-     * @param string|mixed $name name
+     * @param int|mixed $punishLevel punishLevel
      *
      * @return $this
      */
-    public function setName($name)
+    public function setPunishLevel($punishLevel)
     {
-        $this->container['name'] = $name;
+        $this->container['punishLevel'] = $punishLevel;
 
         return $this;
     }
 
     /**
-     * Gets desc
+     * Gets punishCnt
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getDesc()
+    public function getPunishCnt()
     {
-        return $this->container['desc'];
+        return $this->container['punishCnt'];
     }
 
     /**
-     * Sets desc
+     * Sets punishCnt
      *
-     * @param string|mixed $desc desc
+     * @param int|mixed $punishCnt punishCnt
      *
      * @return $this
      */
-    public function setDesc($desc)
+    public function setPunishCnt($punishCnt)
     {
-        $this->container['desc'] = $desc;
-
-        return $this;
-    }
-
-    /**
-     * Gets type
-     *
-     * @return \TencentAds\Model\V3\ComponentMetadataFieldType|mixed
-     */
-    public function getType()
-    {
-        return $this->container['type'];
-    }
-
-    /**
-     * Sets type
-     *
-     * @param \TencentAds\Model\V3\ComponentMetadataFieldType|mixed $type type
-     *
-     * @return $this
-     */
-    public function setType($type)
-    {
-        $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Gets structure
-     *
-     * @return \TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure|mixed
-     */
-    public function getStructure()
-    {
-        return $this->container['structure'];
-    }
-
-    /**
-     * Sets structure
-     *
-     * @param \TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure|mixed $structure structure
-     *
-     * @return $this
-     */
-    public function setStructure($structure)
-    {
-        $this->container['structure'] = $structure;
-
-        return $this;
-    }
-
-    /**
-     * Gets valid
-     *
-     * @return \TencentAds\Model\V3\CreativeComponentValueValid|mixed
-     */
-    public function getValid()
-    {
-        return $this->container['valid'];
-    }
-
-    /**
-     * Sets valid
-     *
-     * @param \TencentAds\Model\V3\CreativeComponentValueValid|mixed $valid valid
-     *
-     * @return $this
-     */
-    public function setValid($valid)
-    {
-        $this->container['valid'] = $valid;
+        $this->container['punishCnt'] = $punishCnt;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * CreativeComponentValueValidStructureField
+ * PunishPageConf
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreativeComponentValueValidStructureField Class Doc Comment
+ * PunishPageConf Class Doc Comment
  *
  * @category Class
- * @description 创意组件字段结构
+ * @description 分页内容
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreativeComponentValueValidStructureField implements ModelInterface, ArrayAccess
+class PunishPageConf implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       *
       * @var string
       */
-    protected static $swaggerModelName = 'creative_component_value_valid_structure_field';
+    protected static $swaggerModelName = 'punish_page_conf';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,11 +58,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'name' => 'string',
-        'desc' => 'string',
-        'type' => '\TencentAds\Model\V3\ComponentMetadataFieldType',
-        'structure' => '\TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure',
-        'valid' => '\TencentAds\Model\V3\CreativeComponentValueValid'
+        'page' => 'int',
+        'pageSize' => 'int',
+        'totalPage' => 'int',
+        'totalNum' => 'int'
     ];
 
     /**
@@ -71,11 +70,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'name' => null,
-        'desc' => null,
-        'type' => null,
-        'structure' => null,
-        'valid' => null
+        'page' => 'int64',
+        'pageSize' => 'int64',
+        'totalPage' => 'int64',
+        'totalNum' => 'int64'
     ];
 
     /**
@@ -105,11 +103,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $attributeMap = [
-        'name' => 'name',
-        'desc' => 'desc',
-        'type' => 'type',
-        'structure' => 'structure',
-        'valid' => 'valid'
+        'page' => 'page',
+        'pageSize' => 'page_size',
+        'totalPage' => 'total_page',
+        'totalNum' => 'total_num'
     ];
 
     /**
@@ -118,11 +115,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'desc' => 'setDesc',
-        'type' => 'setType',
-        'structure' => 'setStructure',
-        'valid' => 'setValid'
+        'page' => 'setPage',
+        'pageSize' => 'setPageSize',
+        'totalPage' => 'setTotalPage',
+        'totalNum' => 'setTotalNum'
     ];
 
     /**
@@ -131,11 +127,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'desc' => 'getDesc',
-        'type' => 'getType',
-        'structure' => 'getStructure',
-        'valid' => 'getValid'
+        'page' => 'getPage',
+        'pageSize' => 'getPageSize',
+        'totalPage' => 'getTotalPage',
+        'totalNum' => 'getTotalNum'
     ];
 
     /**
@@ -198,11 +193,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      */
     public function __construct(array $data = null)
     {
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['structure'] = isset($data['structure']) ? $data['structure'] : null;
-        $this->container['valid'] = isset($data['valid']) ? $data['valid'] : null;
+        $this->container['page'] = isset($data['page']) ? $data['page'] : null;
+        $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
+        $this->container['totalPage'] = isset($data['totalPage']) ? $data['totalPage'] : null;
+        $this->container['totalNum'] = isset($data['totalNum']) ? $data['totalNum'] : null;
     }
 
     /**
@@ -230,121 +224,97 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
 
 
     /**
-     * Gets name
+     * Gets page
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getName()
+    public function getPage()
     {
-        return $this->container['name'];
+        return $this->container['page'];
     }
 
     /**
-     * Sets name
+     * Sets page
      *
-     * @param string|mixed $name name
+     * @param int|mixed $page page
      *
      * @return $this
      */
-    public function setName($name)
+    public function setPage($page)
     {
-        $this->container['name'] = $name;
+        $this->container['page'] = $page;
 
         return $this;
     }
 
     /**
-     * Gets desc
+     * Gets pageSize
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getDesc()
+    public function getPageSize()
     {
-        return $this->container['desc'];
+        return $this->container['pageSize'];
     }
 
     /**
-     * Sets desc
+     * Sets pageSize
      *
-     * @param string|mixed $desc desc
+     * @param int|mixed $pageSize pageSize
      *
      * @return $this
      */
-    public function setDesc($desc)
+    public function setPageSize($pageSize)
     {
-        $this->container['desc'] = $desc;
+        $this->container['pageSize'] = $pageSize;
 
         return $this;
     }
 
     /**
-     * Gets type
+     * Gets totalPage
      *
-     * @return \TencentAds\Model\V3\ComponentMetadataFieldType|mixed
+     * @return int|mixed
      */
-    public function getType()
+    public function getTotalPage()
     {
-        return $this->container['type'];
+        return $this->container['totalPage'];
     }
 
     /**
-     * Sets type
+     * Sets totalPage
      *
-     * @param \TencentAds\Model\V3\ComponentMetadataFieldType|mixed $type type
+     * @param int|mixed $totalPage totalPage
      *
      * @return $this
      */
-    public function setType($type)
+    public function setTotalPage($totalPage)
     {
-        $this->container['type'] = $type;
+        $this->container['totalPage'] = $totalPage;
 
         return $this;
     }
 
     /**
-     * Gets structure
+     * Gets totalNum
      *
-     * @return \TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure|mixed
+     * @return int|mixed
      */
-    public function getStructure()
+    public function getTotalNum()
     {
-        return $this->container['structure'];
+        return $this->container['totalNum'];
     }
 
     /**
-     * Sets structure
+     * Sets totalNum
      *
-     * @param \TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure|mixed $structure structure
+     * @param int|mixed $totalNum totalNum
      *
      * @return $this
      */
-    public function setStructure($structure)
+    public function setTotalNum($totalNum)
     {
-        $this->container['structure'] = $structure;
-
-        return $this;
-    }
-
-    /**
-     * Gets valid
-     *
-     * @return \TencentAds\Model\V3\CreativeComponentValueValid|mixed
-     */
-    public function getValid()
-    {
-        return $this->container['valid'];
-    }
-
-    /**
-     * Sets valid
-     *
-     * @param \TencentAds\Model\V3\CreativeComponentValueValid|mixed $valid valid
-     *
-     * @return $this
-     */
-    public function setValid($valid)
-    {
-        $this->container['valid'] = $valid;
+        $this->container['totalNum'] = $totalNum;
 
         return $this;
     }

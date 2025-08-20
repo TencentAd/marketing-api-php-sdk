@@ -1,6 +1,6 @@
 <?php
 /**
- * CreativeComponentValueValidStructureField
+ * PunishDepositData
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreativeComponentValueValidStructureField Class Doc Comment
+ * PunishDepositData Class Doc Comment
  *
  * @category Class
- * @description 创意组件字段结构
+ * @description 保证金处罚内容
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreativeComponentValueValidStructureField implements ModelInterface, ArrayAccess
+class PunishDepositData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       *
       * @var string
       */
-    protected static $swaggerModelName = 'creative_component_value_valid_structure_field';
+    protected static $swaggerModelName = 'punish_deposit_data';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,11 +58,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'name' => 'string',
-        'desc' => 'string',
-        'type' => '\TencentAds\Model\V3\ComponentMetadataFieldType',
-        'structure' => '\TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure',
-        'valid' => '\TencentAds\Model\V3\CreativeComponentValueValid'
+        'punishRatio' => 'int',
+        'punishMoney' => 'int',
+        'deductId' => 'int',
+        'deductMoney' => 'int'
     ];
 
     /**
@@ -71,11 +70,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'name' => null,
-        'desc' => null,
-        'type' => null,
-        'structure' => null,
-        'valid' => null
+        'punishRatio' => 'int64',
+        'punishMoney' => 'int64',
+        'deductId' => 'int64',
+        'deductMoney' => 'int64'
     ];
 
     /**
@@ -105,11 +103,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $attributeMap = [
-        'name' => 'name',
-        'desc' => 'desc',
-        'type' => 'type',
-        'structure' => 'structure',
-        'valid' => 'valid'
+        'punishRatio' => 'punish_ratio',
+        'punishMoney' => 'punish_money',
+        'deductId' => 'deduct_id',
+        'deductMoney' => 'deduct_money'
     ];
 
     /**
@@ -118,11 +115,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'desc' => 'setDesc',
-        'type' => 'setType',
-        'structure' => 'setStructure',
-        'valid' => 'setValid'
+        'punishRatio' => 'setPunishRatio',
+        'punishMoney' => 'setPunishMoney',
+        'deductId' => 'setDeductId',
+        'deductMoney' => 'setDeductMoney'
     ];
 
     /**
@@ -131,11 +127,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'desc' => 'getDesc',
-        'type' => 'getType',
-        'structure' => 'getStructure',
-        'valid' => 'getValid'
+        'punishRatio' => 'getPunishRatio',
+        'punishMoney' => 'getPunishMoney',
+        'deductId' => 'getDeductId',
+        'deductMoney' => 'getDeductMoney'
     ];
 
     /**
@@ -198,11 +193,10 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      */
     public function __construct(array $data = null)
     {
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['structure'] = isset($data['structure']) ? $data['structure'] : null;
-        $this->container['valid'] = isset($data['valid']) ? $data['valid'] : null;
+        $this->container['punishRatio'] = isset($data['punishRatio']) ? $data['punishRatio'] : null;
+        $this->container['punishMoney'] = isset($data['punishMoney']) ? $data['punishMoney'] : null;
+        $this->container['deductId'] = isset($data['deductId']) ? $data['deductId'] : null;
+        $this->container['deductMoney'] = isset($data['deductMoney']) ? $data['deductMoney'] : null;
     }
 
     /**
@@ -230,121 +224,97 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
 
 
     /**
-     * Gets name
+     * Gets punishRatio
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getName()
+    public function getPunishRatio()
     {
-        return $this->container['name'];
+        return $this->container['punishRatio'];
     }
 
     /**
-     * Sets name
+     * Sets punishRatio
      *
-     * @param string|mixed $name name
+     * @param int|mixed $punishRatio punishRatio
      *
      * @return $this
      */
-    public function setName($name)
+    public function setPunishRatio($punishRatio)
     {
-        $this->container['name'] = $name;
+        $this->container['punishRatio'] = $punishRatio;
 
         return $this;
     }
 
     /**
-     * Gets desc
+     * Gets punishMoney
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getDesc()
+    public function getPunishMoney()
     {
-        return $this->container['desc'];
+        return $this->container['punishMoney'];
     }
 
     /**
-     * Sets desc
+     * Sets punishMoney
      *
-     * @param string|mixed $desc desc
+     * @param int|mixed $punishMoney punishMoney
      *
      * @return $this
      */
-    public function setDesc($desc)
+    public function setPunishMoney($punishMoney)
     {
-        $this->container['desc'] = $desc;
+        $this->container['punishMoney'] = $punishMoney;
 
         return $this;
     }
 
     /**
-     * Gets type
+     * Gets deductId
      *
-     * @return \TencentAds\Model\V3\ComponentMetadataFieldType|mixed
+     * @return int|mixed
      */
-    public function getType()
+    public function getDeductId()
     {
-        return $this->container['type'];
+        return $this->container['deductId'];
     }
 
     /**
-     * Sets type
+     * Sets deductId
      *
-     * @param \TencentAds\Model\V3\ComponentMetadataFieldType|mixed $type type
+     * @param int|mixed $deductId deductId
      *
      * @return $this
      */
-    public function setType($type)
+    public function setDeductId($deductId)
     {
-        $this->container['type'] = $type;
+        $this->container['deductId'] = $deductId;
 
         return $this;
     }
 
     /**
-     * Gets structure
+     * Gets deductMoney
      *
-     * @return \TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure|mixed
+     * @return int|mixed
      */
-    public function getStructure()
+    public function getDeductMoney()
     {
-        return $this->container['structure'];
+        return $this->container['deductMoney'];
     }
 
     /**
-     * Sets structure
+     * Sets deductMoney
      *
-     * @param \TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure|mixed $structure structure
+     * @param int|mixed $deductMoney deductMoney
      *
      * @return $this
      */
-    public function setStructure($structure)
+    public function setDeductMoney($deductMoney)
     {
-        $this->container['structure'] = $structure;
-
-        return $this;
-    }
-
-    /**
-     * Gets valid
-     *
-     * @return \TencentAds\Model\V3\CreativeComponentValueValid|mixed
-     */
-    public function getValid()
-    {
-        return $this->container['valid'];
-    }
-
-    /**
-     * Sets valid
-     *
-     * @param \TencentAds\Model\V3\CreativeComponentValueValid|mixed $valid valid
-     *
-     * @return $this
-     */
-    public function setValid($valid)
-    {
-        $this->container['valid'] = $valid;
+        $this->container['deductMoney'] = $deductMoney;
 
         return $this;
     }

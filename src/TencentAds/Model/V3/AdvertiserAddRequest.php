@@ -57,6 +57,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'agencyId' => 'int',
         'registrationType' => '\TencentAds\Model\V3\CustomerRegistrationType',
         'corporationName' => 'string',
         'corporationLicence' => 'string',
@@ -78,6 +79,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'agencyId' => 'int64',
         'registrationType' => null,
         'corporationName' => null,
         'corporationLicence' => null,
@@ -120,6 +122,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'agencyId' => 'agency_id',
         'registrationType' => 'registration_type',
         'corporationName' => 'corporation_name',
         'corporationLicence' => 'corporation_licence',
@@ -141,6 +144,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'agencyId' => 'setAgencyId',
         'registrationType' => 'setRegistrationType',
         'corporationName' => 'setCorporationName',
         'corporationLicence' => 'setCorporationLicence',
@@ -162,6 +166,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'agencyId' => 'getAgencyId',
         'registrationType' => 'getRegistrationType',
         'corporationName' => 'getCorporationName',
         'corporationLicence' => 'getCorporationLicence',
@@ -237,6 +242,7 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['agencyId'] = isset($data['agencyId']) ? $data['agencyId'] : null;
         $this->container['registrationType'] = isset($data['registrationType']) ? $data['registrationType'] : null;
         $this->container['corporationName'] = isset($data['corporationName']) ? $data['corporationName'] : null;
         $this->container['corporationLicence'] = isset($data['corporationLicence']) ? $data['corporationLicence'] : null;
@@ -275,6 +281,30 @@ class AdvertiserAddRequest implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets agencyId
+     *
+     * @return int|mixed
+     */
+    public function getAgencyId()
+    {
+        return $this->container['agencyId'];
+    }
+
+    /**
+     * Sets agencyId
+     *
+     * @param int|mixed $agencyId agencyId
+     *
+     * @return $this
+     */
+    public function setAgencyId($agencyId)
+    {
+        $this->container['agencyId'] = $agencyId;
+
+        return $this;
+    }
 
     /**
      * Gets registrationType

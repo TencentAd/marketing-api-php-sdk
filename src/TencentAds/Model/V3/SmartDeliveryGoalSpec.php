@@ -85,7 +85,10 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'drugProductOrderRoiSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalDrugProductSpec',
         'wechatStoreSingleProductOrderFirstTwentyFourHourRefundRateSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalOrderFirstTwentyFourHourRefundRateSpec',
         'qytLiveStreamAudienceSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalQytSpec',
-        'productOrderSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalProductSpec'
+        'productOrderSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalProductSpec',
+        'cpsSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalCpsSpec',
+        'qytClickSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalQytSpec',
+        'qytFirstTwentyFourHourEcommerceOrderSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalQytSpec'
     ];
 
     /**
@@ -121,7 +124,10 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'drugProductOrderRoiSpec' => null,
         'wechatStoreSingleProductOrderFirstTwentyFourHourRefundRateSpec' => null,
         'qytLiveStreamAudienceSpec' => null,
-        'productOrderSpec' => null
+        'productOrderSpec' => null,
+        'cpsSpec' => null,
+        'qytClickSpec' => null,
+        'qytFirstTwentyFourHourEcommerceOrderSpec' => null
     ];
 
     /**
@@ -178,7 +184,10 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'drugProductOrderRoiSpec' => 'drug_product_order_roi_spec',
         'wechatStoreSingleProductOrderFirstTwentyFourHourRefundRateSpec' => 'wechat_store_single_product_order_first_twenty_four_hour_refund_rate_spec',
         'qytLiveStreamAudienceSpec' => 'qyt_live_stream_audience_spec',
-        'productOrderSpec' => 'product_order_spec'
+        'productOrderSpec' => 'product_order_spec',
+        'cpsSpec' => 'cps_spec',
+        'qytClickSpec' => 'qyt_click_spec',
+        'qytFirstTwentyFourHourEcommerceOrderSpec' => 'qyt_first_twenty_four_hour_ecommerce_order_spec'
     ];
 
     /**
@@ -214,7 +223,10 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'drugProductOrderRoiSpec' => 'setDrugProductOrderRoiSpec',
         'wechatStoreSingleProductOrderFirstTwentyFourHourRefundRateSpec' => 'setWechatStoreSingleProductOrderFirstTwentyFourHourRefundRateSpec',
         'qytLiveStreamAudienceSpec' => 'setQytLiveStreamAudienceSpec',
-        'productOrderSpec' => 'setProductOrderSpec'
+        'productOrderSpec' => 'setProductOrderSpec',
+        'cpsSpec' => 'setCpsSpec',
+        'qytClickSpec' => 'setQytClickSpec',
+        'qytFirstTwentyFourHourEcommerceOrderSpec' => 'setQytFirstTwentyFourHourEcommerceOrderSpec'
     ];
 
     /**
@@ -250,7 +262,10 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'drugProductOrderRoiSpec' => 'getDrugProductOrderRoiSpec',
         'wechatStoreSingleProductOrderFirstTwentyFourHourRefundRateSpec' => 'getWechatStoreSingleProductOrderFirstTwentyFourHourRefundRateSpec',
         'qytLiveStreamAudienceSpec' => 'getQytLiveStreamAudienceSpec',
-        'productOrderSpec' => 'getProductOrderSpec'
+        'productOrderSpec' => 'getProductOrderSpec',
+        'cpsSpec' => 'getCpsSpec',
+        'qytClickSpec' => 'getQytClickSpec',
+        'qytFirstTwentyFourHourEcommerceOrderSpec' => 'getQytFirstTwentyFourHourEcommerceOrderSpec'
     ];
 
     /**
@@ -341,6 +356,9 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         $this->container['wechatStoreSingleProductOrderFirstTwentyFourHourRefundRateSpec'] = isset($data['wechatStoreSingleProductOrderFirstTwentyFourHourRefundRateSpec']) ? $data['wechatStoreSingleProductOrderFirstTwentyFourHourRefundRateSpec'] : null;
         $this->container['qytLiveStreamAudienceSpec'] = isset($data['qytLiveStreamAudienceSpec']) ? $data['qytLiveStreamAudienceSpec'] : null;
         $this->container['productOrderSpec'] = isset($data['productOrderSpec']) ? $data['productOrderSpec'] : null;
+        $this->container['cpsSpec'] = isset($data['cpsSpec']) ? $data['cpsSpec'] : null;
+        $this->container['qytClickSpec'] = isset($data['qytClickSpec']) ? $data['qytClickSpec'] : null;
+        $this->container['qytFirstTwentyFourHourEcommerceOrderSpec'] = isset($data['qytFirstTwentyFourHourEcommerceOrderSpec']) ? $data['qytFirstTwentyFourHourEcommerceOrderSpec'] : null;
     }
 
     /**
@@ -1035,6 +1053,78 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
     public function setProductOrderSpec($productOrderSpec)
     {
         $this->container['productOrderSpec'] = $productOrderSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets cpsSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalCpsSpec|mixed
+     */
+    public function getCpsSpec()
+    {
+        return $this->container['cpsSpec'];
+    }
+
+    /**
+     * Sets cpsSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalCpsSpec|mixed $cpsSpec cpsSpec
+     *
+     * @return $this
+     */
+    public function setCpsSpec($cpsSpec)
+    {
+        $this->container['cpsSpec'] = $cpsSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets qytClickSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalQytSpec|mixed
+     */
+    public function getQytClickSpec()
+    {
+        return $this->container['qytClickSpec'];
+    }
+
+    /**
+     * Sets qytClickSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalQytSpec|mixed $qytClickSpec qytClickSpec
+     *
+     * @return $this
+     */
+    public function setQytClickSpec($qytClickSpec)
+    {
+        $this->container['qytClickSpec'] = $qytClickSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets qytFirstTwentyFourHourEcommerceOrderSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalQytSpec|mixed
+     */
+    public function getQytFirstTwentyFourHourEcommerceOrderSpec()
+    {
+        return $this->container['qytFirstTwentyFourHourEcommerceOrderSpec'];
+    }
+
+    /**
+     * Sets qytFirstTwentyFourHourEcommerceOrderSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalQytSpec|mixed $qytFirstTwentyFourHourEcommerceOrderSpec qytFirstTwentyFourHourEcommerceOrderSpec
+     *
+     * @return $this
+     */
+    public function setQytFirstTwentyFourHourEcommerceOrderSpec($qytFirstTwentyFourHourEcommerceOrderSpec)
+    {
+        $this->container['qytFirstTwentyFourHourEcommerceOrderSpec'] = $qytFirstTwentyFourHourEcommerceOrderSpec;
 
         return $this;
     }

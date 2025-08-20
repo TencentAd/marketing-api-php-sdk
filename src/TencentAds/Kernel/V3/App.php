@@ -44,6 +44,7 @@ use TencentAds\Container\V3\ChannelsFinderobjectApiContainer;
 use TencentAds\Container\V3\ChannelsLivenoticeinfoApiContainer;
 use TencentAds\Container\V3\ChannelsUserpageobjectsApiContainer;
 use TencentAds\Container\V3\CommentListApiContainer;
+use TencentAds\Container\V3\ComponentDependsApiContainer;
 use TencentAds\Container\V3\ComponentDetailApiContainer;
 use TencentAds\Container\V3\ComponentElementUrgeReviewApiContainer;
 use TencentAds\Container\V3\ComponentReviewResultsApiContainer;
@@ -85,6 +86,7 @@ use TencentAds\Container\V3\GameFeatureApiContainer;
 use TencentAds\Container\V3\GameFeatureTagsApiContainer;
 use TencentAds\Container\V3\GetWxGameAppGiftPackApiContainer;
 use TencentAds\Container\V3\HourlyReportsApiContainer;
+use TencentAds\Container\V3\IllegalComplaintApiContainer;
 use TencentAds\Container\V3\ImageProcessingApiContainer;
 use TencentAds\Container\V3\ImagesApiContainer;
 use TencentAds\Container\V3\JointBudgetRulesApiContainer;
@@ -152,6 +154,8 @@ use TencentAds\Container\V3\ProgrammedCommponentPreviewTemplateApiContainer;
 use TencentAds\Container\V3\ProgrammedCommponentResultApiContainer;
 use TencentAds\Container\V3\ProgrammedMaterialMappingsApiContainer;
 use TencentAds\Container\V3\ProgrammedTemplateApiContainer;
+use TencentAds\Container\V3\PunishmentConfigApiContainer;
+use TencentAds\Container\V3\PunishmentQueryApiContainer;
 use TencentAds\Container\V3\QualificationImagesApiContainer;
 use TencentAds\Container\V3\QualificationStructureApiContainer;
 use TencentAds\Container\V3\QualificationsApiContainer;
@@ -347,6 +351,9 @@ class App
     /** @var CommentListApiContainer */
     public $commentListApiContainer;
 
+    /** @var ComponentDependsApiContainer */
+    public $componentDependsApiContainer;
+
     /** @var ComponentDetailApiContainer */
     public $componentDetailApiContainer;
 
@@ -469,6 +476,9 @@ class App
 
     /** @var HourlyReportsApiContainer */
     public $hourlyReportsApiContainer;
+
+    /** @var IllegalComplaintApiContainer */
+    public $illegalComplaintApiContainer;
 
     /** @var ImageProcessingApiContainer */
     public $imageProcessingApiContainer;
@@ -670,6 +680,12 @@ class App
 
     /** @var ProgrammedTemplateApiContainer */
     public $programmedTemplateApiContainer;
+
+    /** @var PunishmentConfigApiContainer */
+    public $punishmentConfigApiContainer;
+
+    /** @var PunishmentQueryApiContainer */
+    public $punishmentQueryApiContainer;
 
     /** @var QualificationImagesApiContainer */
     public $qualificationImagesApiContainer;
@@ -1462,6 +1478,20 @@ class App
 
 
     /**
+     * @return ComponentDependsApiContainer
+     */
+    public function componentDepends()
+    {
+        if (empty($this->componentDependsApiContainer)) {
+            $container = new ComponentDependsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->componentDependsApiContainer = $container;
+        }
+        return $this->componentDependsApiContainer;
+    }
+
+
+    /**
      * @return ComponentDetailApiContainer
      */
     public function componentDetail()
@@ -2032,6 +2062,20 @@ class App
             $this->hourlyReportsApiContainer = $container;
         }
         return $this->hourlyReportsApiContainer;
+    }
+
+
+    /**
+     * @return IllegalComplaintApiContainer
+     */
+    public function illegalComplaint()
+    {
+        if (empty($this->illegalComplaintApiContainer)) {
+            $container = new IllegalComplaintApiContainer();
+            $container->init($this, $this->getClient());
+            $this->illegalComplaintApiContainer = $container;
+        }
+        return $this->illegalComplaintApiContainer;
     }
 
 
@@ -2970,6 +3014,34 @@ class App
             $this->programmedTemplateApiContainer = $container;
         }
         return $this->programmedTemplateApiContainer;
+    }
+
+
+    /**
+     * @return PunishmentConfigApiContainer
+     */
+    public function punishmentConfig()
+    {
+        if (empty($this->punishmentConfigApiContainer)) {
+            $container = new PunishmentConfigApiContainer();
+            $container->init($this, $this->getClient());
+            $this->punishmentConfigApiContainer = $container;
+        }
+        return $this->punishmentConfigApiContainer;
+    }
+
+
+    /**
+     * @return PunishmentQueryApiContainer
+     */
+    public function punishmentQuery()
+    {
+        if (empty($this->punishmentQueryApiContainer)) {
+            $container = new PunishmentQueryApiContainer();
+            $container->init($this, $this->getClient());
+            $this->punishmentQueryApiContainer = $container;
+        }
+        return $this->punishmentQueryApiContainer;
     }
 
 

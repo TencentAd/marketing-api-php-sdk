@@ -1,6 +1,6 @@
 <?php
 /**
- * CreativeComponentValueValidStructureField
+ * CreativeComponentValueFieldStructureWithoutValueValidStructure
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreativeComponentValueValidStructureField Class Doc Comment
+ * CreativeComponentValueFieldStructureWithoutValueValidStructure Class Doc Comment
  *
  * @category Class
- * @description 创意组件字段结构
+ * @description 创意组件数据字段列表
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreativeComponentValueValidStructureField implements ModelInterface, ArrayAccess
+class CreativeComponentValueFieldStructureWithoutValueValidStructure implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       *
       * @var string
       */
-    protected static $swaggerModelName = 'creative_component_value_valid_structure_field';
+    protected static $swaggerModelName = 'creative_component_value_field_structure_without_value_valid_structure';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,11 +58,7 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'name' => 'string',
-        'desc' => 'string',
-        'type' => '\TencentAds\Model\V3\ComponentMetadataFieldType',
-        'structure' => '\TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure',
-        'valid' => '\TencentAds\Model\V3\CreativeComponentValueValid'
+        'componentName' => 'string'
     ];
 
     /**
@@ -71,11 +67,7 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'name' => null,
-        'desc' => null,
-        'type' => null,
-        'structure' => null,
-        'valid' => null
+        'componentName' => null
     ];
 
     /**
@@ -105,11 +97,7 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $attributeMap = [
-        'name' => 'name',
-        'desc' => 'desc',
-        'type' => 'type',
-        'structure' => 'structure',
-        'valid' => 'valid'
+        'componentName' => 'component_name'
     ];
 
     /**
@@ -118,11 +106,7 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'desc' => 'setDesc',
-        'type' => 'setType',
-        'structure' => 'setStructure',
-        'valid' => 'setValid'
+        'componentName' => 'setComponentName'
     ];
 
     /**
@@ -131,11 +115,7 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'desc' => 'getDesc',
-        'type' => 'getType',
-        'structure' => 'getStructure',
-        'valid' => 'getValid'
+        'componentName' => 'getComponentName'
     ];
 
     /**
@@ -198,11 +178,7 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
      */
     public function __construct(array $data = null)
     {
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['structure'] = isset($data['structure']) ? $data['structure'] : null;
-        $this->container['valid'] = isset($data['valid']) ? $data['valid'] : null;
+        $this->container['componentName'] = isset($data['componentName']) ? $data['componentName'] : null;
     }
 
     /**
@@ -230,121 +206,25 @@ class CreativeComponentValueValidStructureField implements ModelInterface, Array
 
 
     /**
-     * Gets name
+     * Gets componentName
      *
      * @return string|mixed
      */
-    public function getName()
+    public function getComponentName()
     {
-        return $this->container['name'];
+        return $this->container['componentName'];
     }
 
     /**
-     * Sets name
+     * Sets componentName
      *
-     * @param string|mixed $name name
+     * @param string|mixed $componentName componentName
      *
      * @return $this
      */
-    public function setName($name)
+    public function setComponentName($componentName)
     {
-        $this->container['name'] = $name;
-
-        return $this;
-    }
-
-    /**
-     * Gets desc
-     *
-     * @return string|mixed
-     */
-    public function getDesc()
-    {
-        return $this->container['desc'];
-    }
-
-    /**
-     * Sets desc
-     *
-     * @param string|mixed $desc desc
-     *
-     * @return $this
-     */
-    public function setDesc($desc)
-    {
-        $this->container['desc'] = $desc;
-
-        return $this;
-    }
-
-    /**
-     * Gets type
-     *
-     * @return \TencentAds\Model\V3\ComponentMetadataFieldType|mixed
-     */
-    public function getType()
-    {
-        return $this->container['type'];
-    }
-
-    /**
-     * Sets type
-     *
-     * @param \TencentAds\Model\V3\ComponentMetadataFieldType|mixed $type type
-     *
-     * @return $this
-     */
-    public function setType($type)
-    {
-        $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Gets structure
-     *
-     * @return \TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure|mixed
-     */
-    public function getStructure()
-    {
-        return $this->container['structure'];
-    }
-
-    /**
-     * Sets structure
-     *
-     * @param \TencentAds\Model\V3\CreativeComponentValueFieldStructureWithoutValueValidStructure|mixed $structure structure
-     *
-     * @return $this
-     */
-    public function setStructure($structure)
-    {
-        $this->container['structure'] = $structure;
-
-        return $this;
-    }
-
-    /**
-     * Gets valid
-     *
-     * @return \TencentAds\Model\V3\CreativeComponentValueValid|mixed
-     */
-    public function getValid()
-    {
-        return $this->container['valid'];
-    }
-
-    /**
-     * Sets valid
-     *
-     * @param \TencentAds\Model\V3\CreativeComponentValueValid|mixed $valid valid
-     *
-     * @return $this
-     */
-    public function setValid($valid)
-    {
-        $this->container['valid'] = $valid;
+        $this->container['componentName'] = $componentName;
 
         return $this;
     }

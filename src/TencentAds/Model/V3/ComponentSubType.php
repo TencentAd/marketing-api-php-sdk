@@ -149,6 +149,7 @@ class ComponentSubType
     const DYNAMIC_SHOWCASE_3 = 'DYNAMIC_SHOWCASE_3';
     const UNVEIL_CARD = 'UNVEIL_CARD';
     const HOT_TOPIC = 'HOT_TOPIC';
+    const AUDIO = 'AUDIO';
     const BRAND = 'BRAND';
     const BRAND_PAGE = 'BRAND_PAGE';
     const BRAND_SEARCH = 'BRAND_SEARCH';
@@ -301,6 +302,7 @@ class ComponentSubType
             self::DYNAMIC_SHOWCASE_3,
             self::UNVEIL_CARD,
             self::HOT_TOPIC,
+            self::AUDIO,
             self::BRAND,
             self::BRAND_PAGE,
             self::BRAND_SEARCH,

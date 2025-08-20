@@ -81,7 +81,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'maxTotalContent' => 'int',
         'enumOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidEnumOption[]',
         'minDurationMillisecond' => 'int',
-        'maxDurationMillisecond' => 'int'
+        'maxDurationMillisecond' => 'int',
+        'imageFormatOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidImageFormatOption[]'
     ];
 
     /**
@@ -113,7 +114,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'maxTotalContent' => 'int64',
         'enumOptions' => null,
         'minDurationMillisecond' => 'int64',
-        'maxDurationMillisecond' => 'int64'
+        'maxDurationMillisecond' => 'int64',
+        'imageFormatOptions' => null
     ];
 
     /**
@@ -166,7 +168,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'maxTotalContent' => 'max_total_content',
         'enumOptions' => 'enum_options',
         'minDurationMillisecond' => 'min_duration_millisecond',
-        'maxDurationMillisecond' => 'max_duration_millisecond'
+        'maxDurationMillisecond' => 'max_duration_millisecond',
+        'imageFormatOptions' => 'image_format_options'
     ];
 
     /**
@@ -198,7 +201,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'maxTotalContent' => 'setMaxTotalContent',
         'enumOptions' => 'setEnumOptions',
         'minDurationMillisecond' => 'setMinDurationMillisecond',
-        'maxDurationMillisecond' => 'setMaxDurationMillisecond'
+        'maxDurationMillisecond' => 'setMaxDurationMillisecond',
+        'imageFormatOptions' => 'setImageFormatOptions'
     ];
 
     /**
@@ -230,7 +234,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'maxTotalContent' => 'getMaxTotalContent',
         'enumOptions' => 'getEnumOptions',
         'minDurationMillisecond' => 'getMinDurationMillisecond',
-        'maxDurationMillisecond' => 'getMaxDurationMillisecond'
+        'maxDurationMillisecond' => 'getMaxDurationMillisecond',
+        'imageFormatOptions' => 'getImageFormatOptions'
     ];
 
     /**
@@ -317,6 +322,7 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         $this->container['enumOptions'] = isset($data['enumOptions']) ? $data['enumOptions'] : null;
         $this->container['minDurationMillisecond'] = isset($data['minDurationMillisecond']) ? $data['minDurationMillisecond'] : null;
         $this->container['maxDurationMillisecond'] = isset($data['maxDurationMillisecond']) ? $data['maxDurationMillisecond'] : null;
+        $this->container['imageFormatOptions'] = isset($data['imageFormatOptions']) ? $data['imageFormatOptions'] : null;
     }
 
     /**
@@ -915,6 +921,30 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
     public function setMaxDurationMillisecond($maxDurationMillisecond)
     {
         $this->container['maxDurationMillisecond'] = $maxDurationMillisecond;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageFormatOptions
+     *
+     * @return \TencentAds\Model\V3\ComponentMetadataValueValidImageFormatOption[]|mixed
+     */
+    public function getImageFormatOptions()
+    {
+        return $this->container['imageFormatOptions'];
+    }
+
+    /**
+     * Sets imageFormatOptions
+     *
+     * @param \TencentAds\Model\V3\ComponentMetadataValueValidImageFormatOption[]|mixed $imageFormatOptions imageFormatOptions
+     *
+     * @return $this
+     */
+    public function setImageFormatOptions($imageFormatOptions)
+    {
+        $this->container['imageFormatOptions'] = $imageFormatOptions;
 
         return $this;
     }

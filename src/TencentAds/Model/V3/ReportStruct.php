@@ -858,6 +858,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'orderClk3dRoi' => 'double',
         'orderImp3dRoi' => 'double',
         'orderClk23dRoi' => 'double',
+        'intentionAfterPaymentDedupPv' => 'int',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -1727,6 +1728,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'orderClk3dRoi' => 'double',
         'orderImp3dRoi' => 'double',
         'orderClk23dRoi' => 'double',
+        'intentionAfterPaymentDedupPv' => 'int64',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -2617,6 +2619,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'orderClk3dRoi' => 'order_clk_3d_roi',
         'orderImp3dRoi' => 'order_imp_3d_roi',
         'orderClk23dRoi' => 'order_clk2_3d_roi',
+        'intentionAfterPaymentDedupPv' => 'intention_after_payment_dedup_pv',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -3486,6 +3489,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'orderClk3dRoi' => 'setOrderClk3dRoi',
         'orderImp3dRoi' => 'setOrderImp3dRoi',
         'orderClk23dRoi' => 'setOrderClk23dRoi',
+        'intentionAfterPaymentDedupPv' => 'setIntentionAfterPaymentDedupPv',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -4355,6 +4359,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'orderClk3dRoi' => 'getOrderClk3dRoi',
         'orderImp3dRoi' => 'getOrderImp3dRoi',
         'orderClk23dRoi' => 'getOrderClk23dRoi',
+        'intentionAfterPaymentDedupPv' => 'getIntentionAfterPaymentDedupPv',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -5278,6 +5283,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         $this->container['orderClk3dRoi'] = isset($data['orderClk3dRoi']) ? $data['orderClk3dRoi'] : null;
         $this->container['orderImp3dRoi'] = isset($data['orderImp3dRoi']) ? $data['orderImp3dRoi'] : null;
         $this->container['orderClk23dRoi'] = isset($data['orderClk23dRoi']) ? $data['orderClk23dRoi'] : null;
+        $this->container['intentionAfterPaymentDedupPv'] = isset($data['intentionAfterPaymentDedupPv']) ? $data['intentionAfterPaymentDedupPv'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -24561,6 +24567,30 @@ class ReportStruct implements ModelInterface, ArrayAccess
     public function setOrderClk23dRoi($orderClk23dRoi)
     {
         $this->container['orderClk23dRoi'] = $orderClk23dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets intentionAfterPaymentDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getIntentionAfterPaymentDedupPv()
+    {
+        return $this->container['intentionAfterPaymentDedupPv'];
+    }
+
+    /**
+     * Sets intentionAfterPaymentDedupPv
+     *
+     * @param int|mixed $intentionAfterPaymentDedupPv intentionAfterPaymentDedupPv
+     *
+     * @return $this
+     */
+    public function setIntentionAfterPaymentDedupPv($intentionAfterPaymentDedupPv)
+    {
+        $this->container['intentionAfterPaymentDedupPv'] = $intentionAfterPaymentDedupPv;
 
         return $this;
     }

@@ -86,6 +86,7 @@ class PreReviewSiteSetDefinitionString
     const PCAD = 'SITE_SET_PCAD';
     const YUNXUAN = 'SITE_SET_YUNXUAN';
     const EXPAND = 'SITE_SET_EXPAND';
+    const SMART = 'SITE_SET_SMART';
     
     /**
      * Gets allowable values of the enum
@@ -136,6 +137,7 @@ class PreReviewSiteSetDefinitionString
             self::PCAD,
             self::YUNXUAN,
             self::EXPAND,
+            self::SMART,
         ];
     }
 }

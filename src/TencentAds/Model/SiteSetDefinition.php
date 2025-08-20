@@ -102,6 +102,7 @@ class SiteSetDefinition
     const YUNXUAN = 'SITE_SET_YUNXUAN';
     const SEARCH_MOBILE_UNION = 'SITE_SET_SEARCH_MOBILE_UNION';
     const EXPAND = 'SITE_SET_EXPAND';
+    const SMART = 'SITE_SET_SMART';
     
     /**
      * Gets allowable values of the enum
@@ -168,6 +169,7 @@ class SiteSetDefinition
             self::YUNXUAN,
             self::SEARCH_MOBILE_UNION,
             self::EXPAND,
+            self::SMART,
         ];
     }
 }

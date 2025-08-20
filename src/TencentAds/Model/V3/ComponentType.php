@@ -84,6 +84,7 @@ class ComponentType
     const UNVEIL_CARD = 'UNVEIL_CARD';
     const HOT_TOPIC = 'HOT_TOPIC';
     const VIDEO_CHANNELS_CONTENT = 'VIDEO_CHANNELS_CONTENT';
+    const AUDIO = 'AUDIO';
     const V2_TITLE = 'V2_TITLE';
     const V2_DESCRIPTION = 'V2_DESCRIPTION';
     const V2_LONG_SUBLINK = 'V2_LONG_SUBLINK';
@@ -167,6 +168,7 @@ class ComponentType
             self::UNVEIL_CARD,
             self::HOT_TOPIC,
             self::VIDEO_CHANNELS_CONTENT,
+            self::AUDIO,
             self::V2_TITLE,
             self::V2_DESCRIPTION,
             self::V2_LONG_SUBLINK,

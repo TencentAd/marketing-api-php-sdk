@@ -1,6 +1,6 @@
 <?php
 /**
- * CreativeComponentValueValidStructureFieldSub
+ * PunishmentQueryGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * CreativeComponentValueValidStructureFieldSub Class Doc Comment
+ * PunishmentQueryGetResponse Class Doc Comment
  *
  * @category Class
- * @description 创意组件字段结构
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class CreativeComponentValueValidStructureFieldSub implements ModelInterface, ArrayAccess
+class PunishmentQueryGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
       *
       * @var string
       */
-    protected static $swaggerModelName = 'creative_component_value_valid_structure_field_sub';
+    protected static $swaggerModelName = 'PunishmentQueryGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,11 +57,11 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'name' => 'string',
-        'desc' => 'string',
-        'type' => '\TencentAds\Model\V3\ComponentMetadataFieldType',
-        'valid' => '\TencentAds\Model\V3\CreativeComponentValueValid',
-        'structure' => '\TencentAds\Model\V3\CreativeComponentValueValidStructureFieldSub3[]'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\V3\PunishmentQueryGetResponseData'
     ];
 
     /**
@@ -71,11 +70,11 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'name' => null,
-        'desc' => null,
-        'type' => null,
-        'valid' => null,
-        'structure' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -105,11 +104,11 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
      * @var string[]
      */
     protected static $attributeMap = [
-        'name' => 'name',
-        'desc' => 'desc',
-        'type' => 'type',
-        'valid' => 'valid',
-        'structure' => 'structure'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -118,11 +117,11 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'desc' => 'setDesc',
-        'type' => 'setType',
-        'valid' => 'setValid',
-        'structure' => 'setStructure'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -131,11 +130,11 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'desc' => 'getDesc',
-        'type' => 'getType',
-        'valid' => 'getValid',
-        'structure' => 'getStructure'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -198,11 +197,11 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
      */
     public function __construct(array $data = null)
     {
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['desc'] = isset($data['desc']) ? $data['desc'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['valid'] = isset($data['valid']) ? $data['valid'] : null;
-        $this->container['structure'] = isset($data['structure']) ? $data['structure'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -230,121 +229,121 @@ class CreativeComponentValueValidStructureFieldSub implements ModelInterface, Ar
 
 
     /**
-     * Gets name
+     * Gets code
+     *
+     * @return int|mixed
+     */
+    public function getCode()
+    {
+        return $this->container['code'];
+    }
+
+    /**
+     * Sets code
+     *
+     * @param int|mixed $code code
+     *
+     * @return $this
+     */
+    public function setCode($code)
+    {
+        $this->container['code'] = $code;
+
+        return $this;
+    }
+
+    /**
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getName()
+    public function getMessage()
     {
-        return $this->container['name'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets name
+     * Sets message
      *
-     * @param string|mixed $name name
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setName($name)
+    public function setMessage($message)
     {
-        $this->container['name'] = $name;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets desc
+     * Gets messageCn
      *
      * @return string|mixed
      */
-    public function getDesc()
+    public function getMessageCn()
     {
-        return $this->container['desc'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets desc
+     * Sets messageCn
      *
-     * @param string|mixed $desc desc
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setDesc($desc)
+    public function setMessageCn($messageCn)
     {
-        $this->container['desc'] = $desc;
+        $this->container['messageCn'] = $messageCn;
 
         return $this;
     }
 
     /**
-     * Gets type
+     * Gets errors
      *
-     * @return \TencentAds\Model\V3\ComponentMetadataFieldType|mixed
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
      */
-    public function getType()
+    public function getErrors()
     {
-        return $this->container['type'];
+        return $this->container['errors'];
     }
 
     /**
-     * Sets type
+     * Sets errors
      *
-     * @param \TencentAds\Model\V3\ComponentMetadataFieldType|mixed $type type
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
      *
      * @return $this
      */
-    public function setType($type)
+    public function setErrors($errors)
     {
-        $this->container['type'] = $type;
+        $this->container['errors'] = $errors;
 
         return $this;
     }
 
     /**
-     * Gets valid
+     * Gets data
      *
-     * @return \TencentAds\Model\V3\CreativeComponentValueValid|mixed
+     * @return \TencentAds\Model\V3\PunishmentQueryGetResponseData|mixed
      */
-    public function getValid()
+    public function getData()
     {
-        return $this->container['valid'];
+        return $this->container['data'];
     }
 
     /**
-     * Sets valid
+     * Sets data
      *
-     * @param \TencentAds\Model\V3\CreativeComponentValueValid|mixed $valid valid
+     * @param \TencentAds\Model\V3\PunishmentQueryGetResponseData|mixed $data data
      *
      * @return $this
      */
-    public function setValid($valid)
+    public function setData($data)
     {
-        $this->container['valid'] = $valid;
-
-        return $this;
-    }
-
-    /**
-     * Gets structure
-     *
-     * @return \TencentAds\Model\V3\CreativeComponentValueValidStructureFieldSub3[]|mixed
-     */
-    public function getStructure()
-    {
-        return $this->container['structure'];
-    }
-
-    /**
-     * Sets structure
-     *
-     * @param \TencentAds\Model\V3\CreativeComponentValueValidStructureFieldSub3[]|mixed $structure structure
-     *
-     * @return $this
-     */
-    public function setStructure($structure)
-    {
-        $this->container['structure'] = $structure;
+        $this->container['data'] = $data;
 
         return $this;
     }

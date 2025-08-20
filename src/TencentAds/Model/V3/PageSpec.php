@@ -89,7 +89,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => '\TencentAds\Model\V3\AndroidQuickAppPageSpec',
         'wechatChannelsShopProductSpec' => '\TencentAds\Model\V3\ChannelsShopProductSpec',
         'wechatShopSpec' => '\TencentAds\Model\V3\WechatShopSpec',
-        'wechatChannelsWatchLiveSpec' => '\TencentAds\Model\V3\WechatChannelsWatchLivePageSpec'
+        'wechatChannelsWatchLiveSpec' => '\TencentAds\Model\V3\WechatChannelsWatchLivePageSpec',
+        'harmonyAppSpec' => '\TencentAds\Model\V3\HarmonyAppPageSpec'
     ];
 
     /**
@@ -129,7 +130,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => null,
         'wechatChannelsShopProductSpec' => null,
         'wechatShopSpec' => null,
-        'wechatChannelsWatchLiveSpec' => null
+        'wechatChannelsWatchLiveSpec' => null,
+        'harmonyAppSpec' => null
     ];
 
     /**
@@ -190,7 +192,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => 'android_quick_app_spec',
         'wechatChannelsShopProductSpec' => 'wechat_channels_shop_product_spec',
         'wechatShopSpec' => 'wechat_shop_spec',
-        'wechatChannelsWatchLiveSpec' => 'wechat_channels_watch_live_spec'
+        'wechatChannelsWatchLiveSpec' => 'wechat_channels_watch_live_spec',
+        'harmonyAppSpec' => 'harmony_app_spec'
     ];
 
     /**
@@ -230,7 +233,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => 'setAndroidQuickAppSpec',
         'wechatChannelsShopProductSpec' => 'setWechatChannelsShopProductSpec',
         'wechatShopSpec' => 'setWechatShopSpec',
-        'wechatChannelsWatchLiveSpec' => 'setWechatChannelsWatchLiveSpec'
+        'wechatChannelsWatchLiveSpec' => 'setWechatChannelsWatchLiveSpec',
+        'harmonyAppSpec' => 'setHarmonyAppSpec'
     ];
 
     /**
@@ -270,7 +274,8 @@ class PageSpec implements ModelInterface, ArrayAccess
         'androidQuickAppSpec' => 'getAndroidQuickAppSpec',
         'wechatChannelsShopProductSpec' => 'getWechatChannelsShopProductSpec',
         'wechatShopSpec' => 'getWechatShopSpec',
-        'wechatChannelsWatchLiveSpec' => 'getWechatChannelsWatchLiveSpec'
+        'wechatChannelsWatchLiveSpec' => 'getWechatChannelsWatchLiveSpec',
+        'harmonyAppSpec' => 'getHarmonyAppSpec'
     ];
 
     /**
@@ -365,6 +370,7 @@ class PageSpec implements ModelInterface, ArrayAccess
         $this->container['wechatChannelsShopProductSpec'] = isset($data['wechatChannelsShopProductSpec']) ? $data['wechatChannelsShopProductSpec'] : null;
         $this->container['wechatShopSpec'] = isset($data['wechatShopSpec']) ? $data['wechatShopSpec'] : null;
         $this->container['wechatChannelsWatchLiveSpec'] = isset($data['wechatChannelsWatchLiveSpec']) ? $data['wechatChannelsWatchLiveSpec'] : null;
+        $this->container['harmonyAppSpec'] = isset($data['harmonyAppSpec']) ? $data['harmonyAppSpec'] : null;
     }
 
     /**
@@ -1155,6 +1161,30 @@ class PageSpec implements ModelInterface, ArrayAccess
     public function setWechatChannelsWatchLiveSpec($wechatChannelsWatchLiveSpec)
     {
         $this->container['wechatChannelsWatchLiveSpec'] = $wechatChannelsWatchLiveSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets harmonyAppSpec
+     *
+     * @return \TencentAds\Model\V3\HarmonyAppPageSpec|mixed
+     */
+    public function getHarmonyAppSpec()
+    {
+        return $this->container['harmonyAppSpec'];
+    }
+
+    /**
+     * Sets harmonyAppSpec
+     *
+     * @param \TencentAds\Model\V3\HarmonyAppPageSpec|mixed $harmonyAppSpec harmonyAppSpec
+     *
+     * @return $this
+     */
+    public function setHarmonyAppSpec($harmonyAppSpec)
+    {
+        $this->container['harmonyAppSpec'] = $harmonyAppSpec;
 
         return $this;
     }
