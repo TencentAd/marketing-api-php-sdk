@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * OptimizationGoal Class Doc Comment
  *
  * @category Class
- * @description 广告优化目标类型
+ * @description 深度优化目标类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

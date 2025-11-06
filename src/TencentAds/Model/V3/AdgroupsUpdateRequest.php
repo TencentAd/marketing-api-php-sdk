@@ -94,7 +94,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'searchExpandTargetingSwitch' => '\TencentAds\Model\V3\SearchExpandTargetingSwitch',
         'cloudUnionSpec' => '\TencentAds\Model\V3\CloudUnionSpec',
         'liveRecommendStrategyEnabled' => 'bool',
-        'customCostRoiCap' => 'double'
+        'customCostRoiCap' => 'double',
+        'smartTargetingMode' => '\TencentAds\Model\V3\SmartTargetingMode'
     ];
 
     /**
@@ -140,7 +141,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'searchExpandTargetingSwitch' => null,
         'cloudUnionSpec' => null,
         'liveRecommendStrategyEnabled' => null,
-        'customCostRoiCap' => 'double'
+        'customCostRoiCap' => 'double',
+        'smartTargetingMode' => null
     ];
 
     /**
@@ -207,7 +209,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
         'cloudUnionSpec' => 'cloud_union_spec',
         'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled',
-        'customCostRoiCap' => 'custom_cost_roi_cap'
+        'customCostRoiCap' => 'custom_cost_roi_cap',
+        'smartTargetingMode' => 'smart_targeting_mode'
     ];
 
     /**
@@ -253,7 +256,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
         'cloudUnionSpec' => 'setCloudUnionSpec',
         'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled',
-        'customCostRoiCap' => 'setCustomCostRoiCap'
+        'customCostRoiCap' => 'setCustomCostRoiCap',
+        'smartTargetingMode' => 'setSmartTargetingMode'
     ];
 
     /**
@@ -299,7 +303,8 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
         'cloudUnionSpec' => 'getCloudUnionSpec',
         'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled',
-        'customCostRoiCap' => 'getCustomCostRoiCap'
+        'customCostRoiCap' => 'getCustomCostRoiCap',
+        'smartTargetingMode' => 'getSmartTargetingMode'
     ];
 
     /**
@@ -400,6 +405,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['cloudUnionSpec'] = isset($data['cloudUnionSpec']) ? $data['cloudUnionSpec'] : null;
         $this->container['liveRecommendStrategyEnabled'] = isset($data['liveRecommendStrategyEnabled']) ? $data['liveRecommendStrategyEnabled'] : null;
         $this->container['customCostRoiCap'] = isset($data['customCostRoiCap']) ? $data['customCostRoiCap'] : null;
+        $this->container['smartTargetingMode'] = isset($data['smartTargetingMode']) ? $data['smartTargetingMode'] : null;
     }
 
     /**
@@ -1334,6 +1340,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setCustomCostRoiCap($customCostRoiCap)
     {
         $this->container['customCostRoiCap'] = $customCostRoiCap;
+
+        return $this;
+    }
+
+    /**
+     * Gets smartTargetingMode
+     *
+     * @return \TencentAds\Model\V3\SmartTargetingMode|mixed
+     */
+    public function getSmartTargetingMode()
+    {
+        return $this->container['smartTargetingMode'];
+    }
+
+    /**
+     * Sets smartTargetingMode
+     *
+     * @param \TencentAds\Model\V3\SmartTargetingMode|mixed $smartTargetingMode smartTargetingMode
+     *
+     * @return $this
+     */
+    public function setSmartTargetingMode($smartTargetingMode)
+    {
+        $this->container['smartTargetingMode'] = $smartTargetingMode;
 
         return $this;
     }

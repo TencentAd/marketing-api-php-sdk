@@ -85,6 +85,8 @@ class ComponentType
     const HOT_TOPIC = 'HOT_TOPIC';
     const VIDEO_CHANNELS_CONTENT = 'VIDEO_CHANNELS_CONTENT';
     const AUDIO = 'AUDIO';
+    const WECHAT_SHOP_ACTIVITY = 'WECHAT_SHOP_ACTIVITY';
+    const WXGAME_DIRECT_PAGE = 'WXGAME_DIRECT_PAGE';
     const V2_TITLE = 'V2_TITLE';
     const V2_DESCRIPTION = 'V2_DESCRIPTION';
     const V2_LONG_SUBLINK = 'V2_LONG_SUBLINK';
@@ -169,6 +171,8 @@ class ComponentType
             self::HOT_TOPIC,
             self::VIDEO_CHANNELS_CONTENT,
             self::AUDIO,
+            self::WECHAT_SHOP_ACTIVITY,
+            self::WXGAME_DIRECT_PAGE,
             self::V2_TITLE,
             self::V2_DESCRIPTION,
             self::V2_LONG_SUBLINK,

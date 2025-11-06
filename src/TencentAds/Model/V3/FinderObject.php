@@ -64,7 +64,10 @@ class FinderObject implements ModelInterface, ArrayAccess
         'description' => 'string',
         'medias' => '\TencentAds\Model\V3\WechatChannelsMedia[]',
         'finderUsername' => 'string',
-        'wechatChannelsAccountId' => 'string'
+        'wechatChannelsAccountId' => 'string',
+        'isDisable' => 'bool',
+        'disableMessage' => 'string',
+        'auditStatus' => '\TencentAds\Model\V3\AdStatus'
     ];
 
     /**
@@ -79,7 +82,10 @@ class FinderObject implements ModelInterface, ArrayAccess
         'description' => null,
         'medias' => null,
         'finderUsername' => null,
-        'wechatChannelsAccountId' => null
+        'wechatChannelsAccountId' => null,
+        'isDisable' => null,
+        'disableMessage' => null,
+        'auditStatus' => null
     ];
 
     /**
@@ -115,7 +121,10 @@ class FinderObject implements ModelInterface, ArrayAccess
         'description' => 'description',
         'medias' => 'medias',
         'finderUsername' => 'finder_username',
-        'wechatChannelsAccountId' => 'wechat_channels_account_id'
+        'wechatChannelsAccountId' => 'wechat_channels_account_id',
+        'isDisable' => 'is_disable',
+        'disableMessage' => 'disable_message',
+        'auditStatus' => 'audit_status'
     ];
 
     /**
@@ -130,7 +139,10 @@ class FinderObject implements ModelInterface, ArrayAccess
         'description' => 'setDescription',
         'medias' => 'setMedias',
         'finderUsername' => 'setFinderUsername',
-        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
+        'isDisable' => 'setIsDisable',
+        'disableMessage' => 'setDisableMessage',
+        'auditStatus' => 'setAuditStatus'
     ];
 
     /**
@@ -145,7 +157,10 @@ class FinderObject implements ModelInterface, ArrayAccess
         'description' => 'getDescription',
         'medias' => 'getMedias',
         'finderUsername' => 'getFinderUsername',
-        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
+        'isDisable' => 'getIsDisable',
+        'disableMessage' => 'getDisableMessage',
+        'auditStatus' => 'getAuditStatus'
     ];
 
     /**
@@ -215,6 +230,9 @@ class FinderObject implements ModelInterface, ArrayAccess
         $this->container['medias'] = isset($data['medias']) ? $data['medias'] : null;
         $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
         $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
+        $this->container['isDisable'] = isset($data['isDisable']) ? $data['isDisable'] : null;
+        $this->container['disableMessage'] = isset($data['disableMessage']) ? $data['disableMessage'] : null;
+        $this->container['auditStatus'] = isset($data['auditStatus']) ? $data['auditStatus'] : null;
     }
 
     /**
@@ -405,6 +423,78 @@ class FinderObject implements ModelInterface, ArrayAccess
     public function setWechatChannelsAccountId($wechatChannelsAccountId)
     {
         $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets isDisable
+     *
+     * @return bool|mixed
+     */
+    public function getIsDisable()
+    {
+        return $this->container['isDisable'];
+    }
+
+    /**
+     * Sets isDisable
+     *
+     * @param bool|mixed $isDisable isDisable
+     *
+     * @return $this
+     */
+    public function setIsDisable($isDisable)
+    {
+        $this->container['isDisable'] = $isDisable;
+
+        return $this;
+    }
+
+    /**
+     * Gets disableMessage
+     *
+     * @return string|mixed
+     */
+    public function getDisableMessage()
+    {
+        return $this->container['disableMessage'];
+    }
+
+    /**
+     * Sets disableMessage
+     *
+     * @param string|mixed $disableMessage disableMessage
+     *
+     * @return $this
+     */
+    public function setDisableMessage($disableMessage)
+    {
+        $this->container['disableMessage'] = $disableMessage;
+
+        return $this;
+    }
+
+    /**
+     * Gets auditStatus
+     *
+     * @return \TencentAds\Model\V3\AdStatus|mixed
+     */
+    public function getAuditStatus()
+    {
+        return $this->container['auditStatus'];
+    }
+
+    /**
+     * Sets auditStatus
+     *
+     * @param \TencentAds\Model\V3\AdStatus|mixed $auditStatus auditStatus
+     *
+     * @return $this
+     */
+    public function setAuditStatus($auditStatus)
+    {
+        $this->container['auditStatus'] = $auditStatus;
 
         return $this;
     }

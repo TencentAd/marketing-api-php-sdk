@@ -59,6 +59,7 @@ class ProductSeriesSpecFilteringValueStruct implements ModelInterface, ArrayAcce
       */
     protected static $swaggerTypes = [
         'fieldValue' => 'string',
+        'fieldValueRange' => '\TencentAds\Model\V3\ProductSeriesSpecFilteringFieldValueRange',
         'currencyType' => '\TencentAds\Model\V3\CurrencyType'
     ];
 
@@ -69,6 +70,7 @@ class ProductSeriesSpecFilteringValueStruct implements ModelInterface, ArrayAcce
       */
     protected static $swaggerFormats = [
         'fieldValue' => null,
+        'fieldValueRange' => null,
         'currencyType' => null
     ];
 
@@ -100,6 +102,7 @@ class ProductSeriesSpecFilteringValueStruct implements ModelInterface, ArrayAcce
      */
     protected static $attributeMap = [
         'fieldValue' => 'field_value',
+        'fieldValueRange' => 'field_value_range',
         'currencyType' => 'currency_type'
     ];
 
@@ -110,6 +113,7 @@ class ProductSeriesSpecFilteringValueStruct implements ModelInterface, ArrayAcce
      */
     protected static $setters = [
         'fieldValue' => 'setFieldValue',
+        'fieldValueRange' => 'setFieldValueRange',
         'currencyType' => 'setCurrencyType'
     ];
 
@@ -120,6 +124,7 @@ class ProductSeriesSpecFilteringValueStruct implements ModelInterface, ArrayAcce
      */
     protected static $getters = [
         'fieldValue' => 'getFieldValue',
+        'fieldValueRange' => 'getFieldValueRange',
         'currencyType' => 'getCurrencyType'
     ];
 
@@ -184,6 +189,7 @@ class ProductSeriesSpecFilteringValueStruct implements ModelInterface, ArrayAcce
     public function __construct(array $data = null)
     {
         $this->container['fieldValue'] = isset($data['fieldValue']) ? $data['fieldValue'] : null;
+        $this->container['fieldValueRange'] = isset($data['fieldValueRange']) ? $data['fieldValueRange'] : null;
         $this->container['currencyType'] = isset($data['currencyType']) ? $data['currencyType'] : null;
     }
 
@@ -231,6 +237,30 @@ class ProductSeriesSpecFilteringValueStruct implements ModelInterface, ArrayAcce
     public function setFieldValue($fieldValue)
     {
         $this->container['fieldValue'] = $fieldValue;
+
+        return $this;
+    }
+
+    /**
+     * Gets fieldValueRange
+     *
+     * @return \TencentAds\Model\V3\ProductSeriesSpecFilteringFieldValueRange|mixed
+     */
+    public function getFieldValueRange()
+    {
+        return $this->container['fieldValueRange'];
+    }
+
+    /**
+     * Sets fieldValueRange
+     *
+     * @param \TencentAds\Model\V3\ProductSeriesSpecFilteringFieldValueRange|mixed $fieldValueRange fieldValueRange
+     *
+     * @return $this
+     */
+    public function setFieldValueRange($fieldValueRange)
+    {
+        $this->container['fieldValueRange'] = $fieldValueRange;
 
         return $this;
     }

@@ -684,15 +684,16 @@ class WechatChannelsAuthorizationApi
      * @param  string|mixed $wechatChannelsAccountName wechatChannelsAccountName (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\WechatChannelsAuthorizationGetResponse|mixed
      */
-    public function wechatChannelsAuthorizationGet($accountId, $wechatChannelsAccountName = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatChannelsAuthorizationGet($accountId, $wechatChannelsAccountName = null, $page = null, $pageSize = null, $filtering = null, $fields = null)
     {
-        list($response) = $this->wechatChannelsAuthorizationGetWithHttpInfo($accountId, $wechatChannelsAccountName, $page, $pageSize, $fields);
+        list($response) = $this->wechatChannelsAuthorizationGetWithHttpInfo($accountId, $wechatChannelsAccountName, $page, $pageSize, $filtering, $fields);
         return $response;
     }
 
@@ -705,16 +706,17 @@ class WechatChannelsAuthorizationApi
      * @param  string|mixed $wechatChannelsAccountName (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\WechatChannelsAuthorizationGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function wechatChannelsAuthorizationGetWithHttpInfo($accountId, $wechatChannelsAccountName = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatChannelsAuthorizationGetWithHttpInfo($accountId, $wechatChannelsAccountName = null, $page = null, $pageSize = null, $filtering = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WechatChannelsAuthorizationGetResponse';
-        $request = $this->wechatChannelsAuthorizationGetRequest($accountId, $wechatChannelsAccountName, $page, $pageSize, $fields);
+        $request = $this->wechatChannelsAuthorizationGetRequest($accountId, $wechatChannelsAccountName, $page, $pageSize, $filtering, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -784,14 +786,15 @@ class WechatChannelsAuthorizationApi
      * @param  string|mixed $wechatChannelsAccountName (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatChannelsAuthorizationGetAsync($accountId, $wechatChannelsAccountName = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatChannelsAuthorizationGetAsync($accountId, $wechatChannelsAccountName = null, $page = null, $pageSize = null, $filtering = null, $fields = null)
     {
-        return $this->wechatChannelsAuthorizationGetAsyncWithHttpInfo($accountId, $wechatChannelsAccountName, $page, $pageSize, $fields)
+        return $this->wechatChannelsAuthorizationGetAsyncWithHttpInfo($accountId, $wechatChannelsAccountName, $page, $pageSize, $filtering, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -808,15 +811,16 @@ class WechatChannelsAuthorizationApi
      * @param  string|mixed $wechatChannelsAccountName (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatChannelsAuthorizationGetAsyncWithHttpInfo($accountId, $wechatChannelsAccountName = null, $page = null, $pageSize = null, $fields = null)
+    public function wechatChannelsAuthorizationGetAsyncWithHttpInfo($accountId, $wechatChannelsAccountName = null, $page = null, $pageSize = null, $filtering = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WechatChannelsAuthorizationGetResponse';
-        $request = $this->wechatChannelsAuthorizationGetRequest($accountId, $wechatChannelsAccountName, $page, $pageSize, $fields);
+        $request = $this->wechatChannelsAuthorizationGetRequest($accountId, $wechatChannelsAccountName, $page, $pageSize, $filtering, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -862,12 +866,13 @@ class WechatChannelsAuthorizationApi
      * @param  string|mixed $wechatChannelsAccountName (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function wechatChannelsAuthorizationGetRequest($accountId, $wechatChannelsAccountName = null, $page = null, $pageSize = null, $fields = null)
+    protected function wechatChannelsAuthorizationGetRequest($accountId, $wechatChannelsAccountName = null, $page = null, $pageSize = null, $filtering = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -898,6 +903,13 @@ class WechatChannelsAuthorizationApi
         // query params
         if ($pageSize !== null) {
             $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
+        }
+        // query params
+        if (is_array($filtering)) {
+           $queryParams['filtering'] = json_encode($filtering);
+        } else
+        if ($filtering !== null) {
+            $queryParams['filtering'] = ObjectSerializer::toQueryValue($filtering);
         }
         // query params
         if (is_array($fields)) {

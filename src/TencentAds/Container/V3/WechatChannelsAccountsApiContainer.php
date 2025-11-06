@@ -42,8 +42,9 @@ class WechatChannelsAccountsApiContainer extends ApiContainer
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $scene = isset($params['scene']) ? $params['scene'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->wechatChannelsAccountsGet($accountId, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->wechatChannelsAccountsGet($accountId, $filtering, $page, $pageSize, $scene, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -62,8 +63,9 @@ class WechatChannelsAccountsApiContainer extends ApiContainer
             $filtering = isset($params['filtering']) ? $params['filtering'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $scene = isset($params['scene']) ? $params['scene'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->wechatChannelsAccountsGetAsync($accountId, $filtering, $page, $pageSize, $fields);
+            $response = $this->apiInstance->wechatChannelsAccountsGetAsync($accountId, $filtering, $page, $pageSize, $scene, $fields);
             return $response;
         });
     }

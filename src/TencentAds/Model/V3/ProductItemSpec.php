@@ -192,6 +192,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'downloadCount' => 'int',
         'payingReaderCount' => 'int',
         'storySchool' => 'string',
+        'actorList' => 'string',
+        'characterList' => 'string',
+        'episodeCount' => 'int',
+        'storyTheme' => 'string',
         'storyRoleIdentity' => 'string',
         'storyRoleImage' => 'string',
         'storyEra' => 'string',
@@ -358,6 +362,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'downloadCount' => 'int64',
         'payingReaderCount' => 'int64',
         'storySchool' => null,
+        'actorList' => null,
+        'characterList' => null,
+        'episodeCount' => 'int64',
+        'storyTheme' => null,
         'storyRoleIdentity' => null,
         'storyRoleImage' => null,
         'storyEra' => null,
@@ -545,6 +553,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'downloadCount' => 'download_count',
         'payingReaderCount' => 'paying_reader_count',
         'storySchool' => 'story_school',
+        'actorList' => 'actor_list',
+        'characterList' => 'character_list',
+        'episodeCount' => 'episode_count',
+        'storyTheme' => 'story_theme',
         'storyRoleIdentity' => 'story_role_identity',
         'storyRoleImage' => 'story_role_image',
         'storyEra' => 'story_era',
@@ -711,6 +723,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'downloadCount' => 'setDownloadCount',
         'payingReaderCount' => 'setPayingReaderCount',
         'storySchool' => 'setStorySchool',
+        'actorList' => 'setActorList',
+        'characterList' => 'setCharacterList',
+        'episodeCount' => 'setEpisodeCount',
+        'storyTheme' => 'setStoryTheme',
         'storyRoleIdentity' => 'setStoryRoleIdentity',
         'storyRoleImage' => 'setStoryRoleImage',
         'storyEra' => 'setStoryEra',
@@ -877,6 +893,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'downloadCount' => 'getDownloadCount',
         'payingReaderCount' => 'getPayingReaderCount',
         'storySchool' => 'getStorySchool',
+        'actorList' => 'getActorList',
+        'characterList' => 'getCharacterList',
+        'episodeCount' => 'getEpisodeCount',
+        'storyTheme' => 'getStoryTheme',
         'storyRoleIdentity' => 'getStoryRoleIdentity',
         'storyRoleImage' => 'getStoryRoleImage',
         'storyEra' => 'getStoryEra',
@@ -1097,6 +1117,10 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['downloadCount'] = isset($data['downloadCount']) ? $data['downloadCount'] : null;
         $this->container['payingReaderCount'] = isset($data['payingReaderCount']) ? $data['payingReaderCount'] : null;
         $this->container['storySchool'] = isset($data['storySchool']) ? $data['storySchool'] : null;
+        $this->container['actorList'] = isset($data['actorList']) ? $data['actorList'] : null;
+        $this->container['characterList'] = isset($data['characterList']) ? $data['characterList'] : null;
+        $this->container['episodeCount'] = isset($data['episodeCount']) ? $data['episodeCount'] : null;
+        $this->container['storyTheme'] = isset($data['storyTheme']) ? $data['storyTheme'] : null;
         $this->container['storyRoleIdentity'] = isset($data['storyRoleIdentity']) ? $data['storyRoleIdentity'] : null;
         $this->container['storyRoleImage'] = isset($data['storyRoleImage']) ? $data['storyRoleImage'] : null;
         $this->container['storyEra'] = isset($data['storyEra']) ? $data['storyEra'] : null;
@@ -4359,6 +4383,102 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setStorySchool($storySchool)
     {
         $this->container['storySchool'] = $storySchool;
+
+        return $this;
+    }
+
+    /**
+     * Gets actorList
+     *
+     * @return string|mixed
+     */
+    public function getActorList()
+    {
+        return $this->container['actorList'];
+    }
+
+    /**
+     * Sets actorList
+     *
+     * @param string|mixed $actorList actorList
+     *
+     * @return $this
+     */
+    public function setActorList($actorList)
+    {
+        $this->container['actorList'] = $actorList;
+
+        return $this;
+    }
+
+    /**
+     * Gets characterList
+     *
+     * @return string|mixed
+     */
+    public function getCharacterList()
+    {
+        return $this->container['characterList'];
+    }
+
+    /**
+     * Sets characterList
+     *
+     * @param string|mixed $characterList characterList
+     *
+     * @return $this
+     */
+    public function setCharacterList($characterList)
+    {
+        $this->container['characterList'] = $characterList;
+
+        return $this;
+    }
+
+    /**
+     * Gets episodeCount
+     *
+     * @return int|mixed
+     */
+    public function getEpisodeCount()
+    {
+        return $this->container['episodeCount'];
+    }
+
+    /**
+     * Sets episodeCount
+     *
+     * @param int|mixed $episodeCount episodeCount
+     *
+     * @return $this
+     */
+    public function setEpisodeCount($episodeCount)
+    {
+        $this->container['episodeCount'] = $episodeCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets storyTheme
+     *
+     * @return string|mixed
+     */
+    public function getStoryTheme()
+    {
+        return $this->container['storyTheme'];
+    }
+
+    /**
+     * Sets storyTheme
+     *
+     * @param string|mixed $storyTheme storyTheme
+     *
+     * @return $this
+     */
+    public function setStoryTheme($storyTheme)
+    {
+        $this->container['storyTheme'] = $storyTheme;
 
         return $this;
     }

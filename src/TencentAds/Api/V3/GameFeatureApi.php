@@ -90,7 +90,7 @@ class GameFeatureApi
     /**
      * Operation gameFeatureAdd
      *
-     * 新增游戏App特征
+     * 新增游戏App特征V5
      *
      * @param  \TencentAds\Model\V3\GameFeatureAddRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class GameFeatureApi
     /**
      * Operation gameFeatureAddWithHttpInfo
      *
-     * 新增游戏App特征
+     * 新增游戏App特征V5
      *
      * @param  \TencentAds\Model\V3\GameFeatureAddRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class GameFeatureApi
     /**
      * Operation gameFeatureAddAsync
      *
-     * 新增游戏App特征
+     * 新增游戏App特征V5
      *
      * @param  \TencentAds\Model\V3\GameFeatureAddRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class GameFeatureApi
     /**
      * Operation gameFeatureAddAsyncWithHttpInfo
      *
-     * 新增游戏App特征
+     * 新增游戏App特征V5
      *
      * @param  \TencentAds\Model\V3\GameFeatureAddRequest|mixed $data (required)
      *
@@ -384,7 +384,7 @@ class GameFeatureApi
     /**
      * Operation gameFeatureGet
      *
-     * 获取游戏App特征
+     * 获取游戏App特征V5
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $marketingTargetType marketingTargetType (required)
@@ -404,7 +404,7 @@ class GameFeatureApi
     /**
      * Operation gameFeatureGetWithHttpInfo
      *
-     * 获取游戏App特征
+     * 获取游戏App特征V5
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)
@@ -482,7 +482,7 @@ class GameFeatureApi
     /**
      * Operation gameFeatureGetAsync
      *
-     * 获取游戏App特征
+     * 获取游戏App特征V5
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)
@@ -505,7 +505,7 @@ class GameFeatureApi
     /**
      * Operation gameFeatureGetAsyncWithHttpInfo
      *
-     * 获取游戏App特征
+     * 获取游戏App特征V5
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)

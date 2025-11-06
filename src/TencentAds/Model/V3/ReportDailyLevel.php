@@ -58,6 +58,7 @@ class ReportDailyLevel
     const PRODUCT_CATALOG = 'REPORT_LEVEL_PRODUCT_CATALOG';
     const PROJECT = 'REPORT_LEVEL_PROJECT';
     const PROJECT_CREATIVE = 'REPORT_LEVEL_PROJECT_CREATIVE';
+    const CREATIVE_ASSET = 'REPORT_LEVEL_CREATIVE_ASSET';
     
     /**
      * Gets allowable values of the enum
@@ -80,6 +81,7 @@ class ReportDailyLevel
             self::PRODUCT_CATALOG,
             self::PROJECT,
             self::PROJECT_CREATIVE,
+            self::CREATIVE_ASSET,
         ];
     }
 }

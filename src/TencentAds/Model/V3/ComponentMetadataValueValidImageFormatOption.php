@@ -61,7 +61,11 @@ class ComponentMetadataValueValidImageFormatOption implements ModelInterface, Ar
         'fileFormat' => 'string',
         'fileSizeKbLimit' => 'int',
         'height' => 'int',
-        'width' => 'int'
+        'width' => 'int',
+        'ratioHeight' => 'int',
+        'ratioWidth' => 'int',
+        'minHeight' => 'int',
+        'minWidth' => 'int'
     ];
 
     /**
@@ -73,7 +77,11 @@ class ComponentMetadataValueValidImageFormatOption implements ModelInterface, Ar
         'fileFormat' => null,
         'fileSizeKbLimit' => 'int64',
         'height' => 'int64',
-        'width' => 'int64'
+        'width' => 'int64',
+        'ratioHeight' => 'int64',
+        'ratioWidth' => 'int64',
+        'minHeight' => 'int64',
+        'minWidth' => 'int64'
     ];
 
     /**
@@ -106,7 +114,11 @@ class ComponentMetadataValueValidImageFormatOption implements ModelInterface, Ar
         'fileFormat' => 'file_format',
         'fileSizeKbLimit' => 'file_size_kb_limit',
         'height' => 'height',
-        'width' => 'width'
+        'width' => 'width',
+        'ratioHeight' => 'ratio_height',
+        'ratioWidth' => 'ratio_width',
+        'minHeight' => 'min_height',
+        'minWidth' => 'min_width'
     ];
 
     /**
@@ -118,7 +130,11 @@ class ComponentMetadataValueValidImageFormatOption implements ModelInterface, Ar
         'fileFormat' => 'setFileFormat',
         'fileSizeKbLimit' => 'setFileSizeKbLimit',
         'height' => 'setHeight',
-        'width' => 'setWidth'
+        'width' => 'setWidth',
+        'ratioHeight' => 'setRatioHeight',
+        'ratioWidth' => 'setRatioWidth',
+        'minHeight' => 'setMinHeight',
+        'minWidth' => 'setMinWidth'
     ];
 
     /**
@@ -130,7 +146,11 @@ class ComponentMetadataValueValidImageFormatOption implements ModelInterface, Ar
         'fileFormat' => 'getFileFormat',
         'fileSizeKbLimit' => 'getFileSizeKbLimit',
         'height' => 'getHeight',
-        'width' => 'getWidth'
+        'width' => 'getWidth',
+        'ratioHeight' => 'getRatioHeight',
+        'ratioWidth' => 'getRatioWidth',
+        'minHeight' => 'getMinHeight',
+        'minWidth' => 'getMinWidth'
     ];
 
     /**
@@ -197,6 +217,10 @@ class ComponentMetadataValueValidImageFormatOption implements ModelInterface, Ar
         $this->container['fileSizeKbLimit'] = isset($data['fileSizeKbLimit']) ? $data['fileSizeKbLimit'] : null;
         $this->container['height'] = isset($data['height']) ? $data['height'] : null;
         $this->container['width'] = isset($data['width']) ? $data['width'] : null;
+        $this->container['ratioHeight'] = isset($data['ratioHeight']) ? $data['ratioHeight'] : null;
+        $this->container['ratioWidth'] = isset($data['ratioWidth']) ? $data['ratioWidth'] : null;
+        $this->container['minHeight'] = isset($data['minHeight']) ? $data['minHeight'] : null;
+        $this->container['minWidth'] = isset($data['minWidth']) ? $data['minWidth'] : null;
     }
 
     /**
@@ -315,6 +339,102 @@ class ComponentMetadataValueValidImageFormatOption implements ModelInterface, Ar
     public function setWidth($width)
     {
         $this->container['width'] = $width;
+
+        return $this;
+    }
+
+    /**
+     * Gets ratioHeight
+     *
+     * @return int|mixed
+     */
+    public function getRatioHeight()
+    {
+        return $this->container['ratioHeight'];
+    }
+
+    /**
+     * Sets ratioHeight
+     *
+     * @param int|mixed $ratioHeight ratioHeight
+     *
+     * @return $this
+     */
+    public function setRatioHeight($ratioHeight)
+    {
+        $this->container['ratioHeight'] = $ratioHeight;
+
+        return $this;
+    }
+
+    /**
+     * Gets ratioWidth
+     *
+     * @return int|mixed
+     */
+    public function getRatioWidth()
+    {
+        return $this->container['ratioWidth'];
+    }
+
+    /**
+     * Sets ratioWidth
+     *
+     * @param int|mixed $ratioWidth ratioWidth
+     *
+     * @return $this
+     */
+    public function setRatioWidth($ratioWidth)
+    {
+        $this->container['ratioWidth'] = $ratioWidth;
+
+        return $this;
+    }
+
+    /**
+     * Gets minHeight
+     *
+     * @return int|mixed
+     */
+    public function getMinHeight()
+    {
+        return $this->container['minHeight'];
+    }
+
+    /**
+     * Sets minHeight
+     *
+     * @param int|mixed $minHeight minHeight
+     *
+     * @return $this
+     */
+    public function setMinHeight($minHeight)
+    {
+        $this->container['minHeight'] = $minHeight;
+
+        return $this;
+    }
+
+    /**
+     * Gets minWidth
+     *
+     * @return int|mixed
+     */
+    public function getMinWidth()
+    {
+        return $this->container['minWidth'];
+    }
+
+    /**
+     * Sets minWidth
+     *
+     * @param int|mixed $minWidth minWidth
+     *
+     * @return $this
+     */
+    public function setMinWidth($minWidth)
+    {
+        $this->container['minWidth'] = $minWidth;
 
         return $this;
     }

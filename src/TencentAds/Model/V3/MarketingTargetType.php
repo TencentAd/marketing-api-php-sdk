@@ -109,6 +109,7 @@ class MarketingTargetType
     const PRODUCT_AGGREGATION_PAGE = 'MARKETING_TARGET_TYPE_PRODUCT_AGGREGATION_PAGE';
     const WECHAT_STORE = 'MARKETING_TARGET_TYPE_WECHAT_STORE';
     const RESALE_AND_COMMERCIAL_LAND = 'MARKETING_TARGET_TYPE_RESALE_AND_COMMERCIAL_LAND';
+    const VIDEO_PROGRAM = 'MARKETING_TARGET_TYPE_VIDEO_PROGRAM';
     
     /**
      * Gets allowable values of the enum
@@ -182,6 +183,7 @@ class MarketingTargetType
             self::PRODUCT_AGGREGATION_PAGE,
             self::WECHAT_STORE,
             self::RESALE_AND_COMMERCIAL_LAND,
+            self::VIDEO_PROGRAM,
         ];
     }
 }

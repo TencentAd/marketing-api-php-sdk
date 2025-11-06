@@ -90,7 +90,9 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'imageShowcase' => '\TencentAds\Model\V3\ImageShowcaseComponent',
         'socialSkill' => '\TencentAds\Model\V3\SocialSkillComponent',
         'miniCardLink' => '\TencentAds\Model\V3\MiniCardLinkComponent',
-        'floatingZoneList' => '\TencentAds\Model\V3\FloatingZoneListComponent'
+        'floatingZoneList' => '\TencentAds\Model\V3\FloatingZoneListComponent',
+        'videoChannelsContent' => '\TencentAds\Model\V3\VideoChannelsContentComponent',
+        'wxgameDirectPage' => '\TencentAds\Model\V3\WxgameDirectPageComponent'
     ];
 
     /**
@@ -131,7 +133,9 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'imageShowcase' => null,
         'socialSkill' => null,
         'miniCardLink' => null,
-        'floatingZoneList' => null
+        'floatingZoneList' => null,
+        'videoChannelsContent' => null,
+        'wxgameDirectPage' => null
     ];
 
     /**
@@ -193,7 +197,9 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'imageShowcase' => 'image_showcase',
         'socialSkill' => 'social_skill',
         'miniCardLink' => 'mini_card_link',
-        'floatingZoneList' => 'floating_zone_list'
+        'floatingZoneList' => 'floating_zone_list',
+        'videoChannelsContent' => 'video_channels_content',
+        'wxgameDirectPage' => 'wxgame_direct_page'
     ];
 
     /**
@@ -234,7 +240,9 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'imageShowcase' => 'setImageShowcase',
         'socialSkill' => 'setSocialSkill',
         'miniCardLink' => 'setMiniCardLink',
-        'floatingZoneList' => 'setFloatingZoneList'
+        'floatingZoneList' => 'setFloatingZoneList',
+        'videoChannelsContent' => 'setVideoChannelsContent',
+        'wxgameDirectPage' => 'setWxgameDirectPage'
     ];
 
     /**
@@ -275,7 +283,9 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'imageShowcase' => 'getImageShowcase',
         'socialSkill' => 'getSocialSkill',
         'miniCardLink' => 'getMiniCardLink',
-        'floatingZoneList' => 'getFloatingZoneList'
+        'floatingZoneList' => 'getFloatingZoneList',
+        'videoChannelsContent' => 'getVideoChannelsContent',
+        'wxgameDirectPage' => 'getWxgameDirectPage'
     ];
 
     /**
@@ -371,6 +381,8 @@ class ComponentValue implements ModelInterface, ArrayAccess
         $this->container['socialSkill'] = isset($data['socialSkill']) ? $data['socialSkill'] : null;
         $this->container['miniCardLink'] = isset($data['miniCardLink']) ? $data['miniCardLink'] : null;
         $this->container['floatingZoneList'] = isset($data['floatingZoneList']) ? $data['floatingZoneList'] : null;
+        $this->container['videoChannelsContent'] = isset($data['videoChannelsContent']) ? $data['videoChannelsContent'] : null;
+        $this->container['wxgameDirectPage'] = isset($data['wxgameDirectPage']) ? $data['wxgameDirectPage'] : null;
     }
 
     /**
@@ -1185,6 +1197,54 @@ class ComponentValue implements ModelInterface, ArrayAccess
     public function setFloatingZoneList($floatingZoneList)
     {
         $this->container['floatingZoneList'] = $floatingZoneList;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoChannelsContent
+     *
+     * @return \TencentAds\Model\V3\VideoChannelsContentComponent|mixed
+     */
+    public function getVideoChannelsContent()
+    {
+        return $this->container['videoChannelsContent'];
+    }
+
+    /**
+     * Sets videoChannelsContent
+     *
+     * @param \TencentAds\Model\V3\VideoChannelsContentComponent|mixed $videoChannelsContent videoChannelsContent
+     *
+     * @return $this
+     */
+    public function setVideoChannelsContent($videoChannelsContent)
+    {
+        $this->container['videoChannelsContent'] = $videoChannelsContent;
+
+        return $this;
+    }
+
+    /**
+     * Gets wxgameDirectPage
+     *
+     * @return \TencentAds\Model\V3\WxgameDirectPageComponent|mixed
+     */
+    public function getWxgameDirectPage()
+    {
+        return $this->container['wxgameDirectPage'];
+    }
+
+    /**
+     * Sets wxgameDirectPage
+     *
+     * @param \TencentAds\Model\V3\WxgameDirectPageComponent|mixed $wxgameDirectPage wxgameDirectPage
+     *
+     * @return $this
+     */
+    public function setWxgameDirectPage($wxgameDirectPage)
+    {
+        $this->container['wxgameDirectPage'] = $wxgameDirectPage;
 
         return $this;
     }

@@ -51,6 +51,7 @@ class AmUserActionSetType
     const WECHAT = 'WECHAT';
     const WECHAT_MINI_PROGRAM = 'WECHAT_MINI_PROGRAM';
     const WECHAT_MINI_GAME = 'WECHAT_MINI_GAME';
+    const HARMONY = 'HARMONY';
     
     /**
      * Gets allowable values of the enum
@@ -66,6 +67,7 @@ class AmUserActionSetType
             self::WECHAT,
             self::WECHAT_MINI_PROGRAM,
             self::WECHAT_MINI_GAME,
+            self::HARMONY,
         ];
     }
 }

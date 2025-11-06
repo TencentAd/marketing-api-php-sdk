@@ -66,7 +66,9 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
         'raisePrice' => 'int',
         'matchType' => '\TencentAds\Model\V3\BidwordMatchType',
         'configuredStatus' => '\TencentAds\Model\V3\BidwordPauseType',
-        'dynamicCreativeId' => 'int'
+        'dynamicCreativeId' => 'int',
+        'pcLandingPageInfo' => '\TencentAds\Model\V3\BidwordLandingPage',
+        'mobileLandingPageInfo' => '\TencentAds\Model\V3\BidwordLandingPage'
     ];
 
     /**
@@ -83,7 +85,9 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
         'raisePrice' => 'int64',
         'matchType' => null,
         'configuredStatus' => null,
-        'dynamicCreativeId' => 'int64'
+        'dynamicCreativeId' => 'int64',
+        'pcLandingPageInfo' => null,
+        'mobileLandingPageInfo' => null
     ];
 
     /**
@@ -121,7 +125,9 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
         'raisePrice' => 'raise_price',
         'matchType' => 'match_type',
         'configuredStatus' => 'configured_status',
-        'dynamicCreativeId' => 'dynamic_creative_id'
+        'dynamicCreativeId' => 'dynamic_creative_id',
+        'pcLandingPageInfo' => 'pc_landing_page_info',
+        'mobileLandingPageInfo' => 'mobile_landing_page_info'
     ];
 
     /**
@@ -138,7 +144,9 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
         'raisePrice' => 'setRaisePrice',
         'matchType' => 'setMatchType',
         'configuredStatus' => 'setConfiguredStatus',
-        'dynamicCreativeId' => 'setDynamicCreativeId'
+        'dynamicCreativeId' => 'setDynamicCreativeId',
+        'pcLandingPageInfo' => 'setPcLandingPageInfo',
+        'mobileLandingPageInfo' => 'setMobileLandingPageInfo'
     ];
 
     /**
@@ -155,7 +163,9 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
         'raisePrice' => 'getRaisePrice',
         'matchType' => 'getMatchType',
         'configuredStatus' => 'getConfiguredStatus',
-        'dynamicCreativeId' => 'getDynamicCreativeId'
+        'dynamicCreativeId' => 'getDynamicCreativeId',
+        'pcLandingPageInfo' => 'getPcLandingPageInfo',
+        'mobileLandingPageInfo' => 'getMobileLandingPageInfo'
     ];
 
     /**
@@ -227,6 +237,8 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
         $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
+        $this->container['pcLandingPageInfo'] = isset($data['pcLandingPageInfo']) ? $data['pcLandingPageInfo'] : null;
+        $this->container['mobileLandingPageInfo'] = isset($data['mobileLandingPageInfo']) ? $data['mobileLandingPageInfo'] : null;
     }
 
     /**
@@ -465,6 +477,54 @@ class BidwordUpdateStruct implements ModelInterface, ArrayAccess
     public function setDynamicCreativeId($dynamicCreativeId)
     {
         $this->container['dynamicCreativeId'] = $dynamicCreativeId;
+
+        return $this;
+    }
+
+    /**
+     * Gets pcLandingPageInfo
+     *
+     * @return \TencentAds\Model\V3\BidwordLandingPage|mixed
+     */
+    public function getPcLandingPageInfo()
+    {
+        return $this->container['pcLandingPageInfo'];
+    }
+
+    /**
+     * Sets pcLandingPageInfo
+     *
+     * @param \TencentAds\Model\V3\BidwordLandingPage|mixed $pcLandingPageInfo pcLandingPageInfo
+     *
+     * @return $this
+     */
+    public function setPcLandingPageInfo($pcLandingPageInfo)
+    {
+        $this->container['pcLandingPageInfo'] = $pcLandingPageInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets mobileLandingPageInfo
+     *
+     * @return \TencentAds\Model\V3\BidwordLandingPage|mixed
+     */
+    public function getMobileLandingPageInfo()
+    {
+        return $this->container['mobileLandingPageInfo'];
+    }
+
+    /**
+     * Sets mobileLandingPageInfo
+     *
+     * @param \TencentAds\Model\V3\BidwordLandingPage|mixed $mobileLandingPageInfo mobileLandingPageInfo
+     *
+     * @return $this
+     */
+    public function setMobileLandingPageInfo($mobileLandingPageInfo)
+    {
+        $this->container['mobileLandingPageInfo'] = $mobileLandingPageInfo;
 
         return $this;
     }

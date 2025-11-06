@@ -72,7 +72,11 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => 'string',
         'isBlocked' => 'bool',
         'isPrivate' => 'bool',
-        'logoutTimeSecond' => 'int'
+        'logoutTimeSecond' => 'int',
+        'createdSourceList' => 'string[]',
+        'authorizationQrCodeUrl' => 'string',
+        'authorizationExpiredTime' => 'int',
+        'authorizationAgreement' => 'string'
     ];
 
     /**
@@ -95,7 +99,11 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => null,
         'isBlocked' => null,
         'isPrivate' => null,
-        'logoutTimeSecond' => 'int64'
+        'logoutTimeSecond' => 'int64',
+        'createdSourceList' => null,
+        'authorizationQrCodeUrl' => null,
+        'authorizationExpiredTime' => 'int64',
+        'authorizationAgreement' => null
     ];
 
     /**
@@ -139,7 +147,11 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => 'wechat_channels_account_id',
         'isBlocked' => 'is_blocked',
         'isPrivate' => 'is_private',
-        'logoutTimeSecond' => 'logout_time_second'
+        'logoutTimeSecond' => 'logout_time_second',
+        'createdSourceList' => 'created_source_list',
+        'authorizationQrCodeUrl' => 'authorization_qr_code_url',
+        'authorizationExpiredTime' => 'authorization_expired_time',
+        'authorizationAgreement' => 'authorization_agreement'
     ];
 
     /**
@@ -162,7 +174,11 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
         'isBlocked' => 'setIsBlocked',
         'isPrivate' => 'setIsPrivate',
-        'logoutTimeSecond' => 'setLogoutTimeSecond'
+        'logoutTimeSecond' => 'setLogoutTimeSecond',
+        'createdSourceList' => 'setCreatedSourceList',
+        'authorizationQrCodeUrl' => 'setAuthorizationQrCodeUrl',
+        'authorizationExpiredTime' => 'setAuthorizationExpiredTime',
+        'authorizationAgreement' => 'setAuthorizationAgreement'
     ];
 
     /**
@@ -185,7 +201,11 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
         'isBlocked' => 'getIsBlocked',
         'isPrivate' => 'getIsPrivate',
-        'logoutTimeSecond' => 'getLogoutTimeSecond'
+        'logoutTimeSecond' => 'getLogoutTimeSecond',
+        'createdSourceList' => 'getCreatedSourceList',
+        'authorizationQrCodeUrl' => 'getAuthorizationQrCodeUrl',
+        'authorizationExpiredTime' => 'getAuthorizationExpiredTime',
+        'authorizationAgreement' => 'getAuthorizationAgreement'
     ];
 
     /**
@@ -263,6 +283,10 @@ class AuthListStruct implements ModelInterface, ArrayAccess
         $this->container['isBlocked'] = isset($data['isBlocked']) ? $data['isBlocked'] : null;
         $this->container['isPrivate'] = isset($data['isPrivate']) ? $data['isPrivate'] : null;
         $this->container['logoutTimeSecond'] = isset($data['logoutTimeSecond']) ? $data['logoutTimeSecond'] : null;
+        $this->container['createdSourceList'] = isset($data['createdSourceList']) ? $data['createdSourceList'] : null;
+        $this->container['authorizationQrCodeUrl'] = isset($data['authorizationQrCodeUrl']) ? $data['authorizationQrCodeUrl'] : null;
+        $this->container['authorizationExpiredTime'] = isset($data['authorizationExpiredTime']) ? $data['authorizationExpiredTime'] : null;
+        $this->container['authorizationAgreement'] = isset($data['authorizationAgreement']) ? $data['authorizationAgreement'] : null;
     }
 
     /**
@@ -645,6 +669,102 @@ class AuthListStruct implements ModelInterface, ArrayAccess
     public function setLogoutTimeSecond($logoutTimeSecond)
     {
         $this->container['logoutTimeSecond'] = $logoutTimeSecond;
+
+        return $this;
+    }
+
+    /**
+     * Gets createdSourceList
+     *
+     * @return string[]|mixed
+     */
+    public function getCreatedSourceList()
+    {
+        return $this->container['createdSourceList'];
+    }
+
+    /**
+     * Sets createdSourceList
+     *
+     * @param string[]|mixed $createdSourceList createdSourceList
+     *
+     * @return $this
+     */
+    public function setCreatedSourceList($createdSourceList)
+    {
+        $this->container['createdSourceList'] = $createdSourceList;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizationQrCodeUrl
+     *
+     * @return string|mixed
+     */
+    public function getAuthorizationQrCodeUrl()
+    {
+        return $this->container['authorizationQrCodeUrl'];
+    }
+
+    /**
+     * Sets authorizationQrCodeUrl
+     *
+     * @param string|mixed $authorizationQrCodeUrl authorizationQrCodeUrl
+     *
+     * @return $this
+     */
+    public function setAuthorizationQrCodeUrl($authorizationQrCodeUrl)
+    {
+        $this->container['authorizationQrCodeUrl'] = $authorizationQrCodeUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizationExpiredTime
+     *
+     * @return int|mixed
+     */
+    public function getAuthorizationExpiredTime()
+    {
+        return $this->container['authorizationExpiredTime'];
+    }
+
+    /**
+     * Sets authorizationExpiredTime
+     *
+     * @param int|mixed $authorizationExpiredTime authorizationExpiredTime
+     *
+     * @return $this
+     */
+    public function setAuthorizationExpiredTime($authorizationExpiredTime)
+    {
+        $this->container['authorizationExpiredTime'] = $authorizationExpiredTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizationAgreement
+     *
+     * @return string|mixed
+     */
+    public function getAuthorizationAgreement()
+    {
+        return $this->container['authorizationAgreement'];
+    }
+
+    /**
+     * Sets authorizationAgreement
+     *
+     * @param string|mixed $authorizationAgreement authorizationAgreement
+     *
+     * @return $this
+     */
+    public function setAuthorizationAgreement($authorizationAgreement)
+    {
+        $this->container['authorizationAgreement'] = $authorizationAgreement;
 
         return $this;
     }

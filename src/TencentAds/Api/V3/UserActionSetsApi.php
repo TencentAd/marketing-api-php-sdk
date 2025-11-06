@@ -391,6 +391,7 @@ class UserActionSetsApi
      * @param  string[]|mixed $type type (optional)
      * @param  int|mixed $mobileAppId mobileAppId (optional)
      * @param  string|mixed $wechatAppId wechatAppId (optional)
+     * @param  string|mixed $appIdStr appIdStr (optional)
      * @param  string|mixed $name name (optional)
      * @param  bool|mixed $includePermission includePermission (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -399,9 +400,9 @@ class UserActionSetsApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\UserActionSetsGetResponse|mixed
      */
-    public function userActionSetsGet($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $name = null, $includePermission = null, $fields = null)
+    public function userActionSetsGet($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $appIdStr = null, $name = null, $includePermission = null, $fields = null)
     {
-        list($response) = $this->userActionSetsGetWithHttpInfo($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $name, $includePermission, $fields);
+        list($response) = $this->userActionSetsGetWithHttpInfo($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $appIdStr, $name, $includePermission, $fields);
         return $response;
     }
 
@@ -415,6 +416,7 @@ class UserActionSetsApi
      * @param  string[]|mixed $type (optional)
      * @param  int|mixed $mobileAppId (optional)
      * @param  string|mixed $wechatAppId (optional)
+     * @param  string|mixed $appIdStr (optional)
      * @param  string|mixed $name (optional)
      * @param  bool|mixed $includePermission (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -423,10 +425,10 @@ class UserActionSetsApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\UserActionSetsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function userActionSetsGetWithHttpInfo($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $name = null, $includePermission = null, $fields = null)
+    public function userActionSetsGetWithHttpInfo($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $appIdStr = null, $name = null, $includePermission = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\UserActionSetsGetResponse';
-        $request = $this->userActionSetsGetRequest($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $name, $includePermission, $fields);
+        $request = $this->userActionSetsGetRequest($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $appIdStr, $name, $includePermission, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -497,6 +499,7 @@ class UserActionSetsApi
      * @param  string[]|mixed $type (optional)
      * @param  int|mixed $mobileAppId (optional)
      * @param  string|mixed $wechatAppId (optional)
+     * @param  string|mixed $appIdStr (optional)
      * @param  string|mixed $name (optional)
      * @param  bool|mixed $includePermission (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -504,9 +507,9 @@ class UserActionSetsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function userActionSetsGetAsync($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $name = null, $includePermission = null, $fields = null)
+    public function userActionSetsGetAsync($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $appIdStr = null, $name = null, $includePermission = null, $fields = null)
     {
-        return $this->userActionSetsGetAsyncWithHttpInfo($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $name, $includePermission, $fields)
+        return $this->userActionSetsGetAsyncWithHttpInfo($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $appIdStr, $name, $includePermission, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -524,6 +527,7 @@ class UserActionSetsApi
      * @param  string[]|mixed $type (optional)
      * @param  int|mixed $mobileAppId (optional)
      * @param  string|mixed $wechatAppId (optional)
+     * @param  string|mixed $appIdStr (optional)
      * @param  string|mixed $name (optional)
      * @param  bool|mixed $includePermission (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -531,10 +535,10 @@ class UserActionSetsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function userActionSetsGetAsyncWithHttpInfo($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $name = null, $includePermission = null, $fields = null)
+    public function userActionSetsGetAsyncWithHttpInfo($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $appIdStr = null, $name = null, $includePermission = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\UserActionSetsGetResponse';
-        $request = $this->userActionSetsGetRequest($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $name, $includePermission, $fields);
+        $request = $this->userActionSetsGetRequest($accountId, $userActionSetId, $type, $mobileAppId, $wechatAppId, $appIdStr, $name, $includePermission, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -581,6 +585,7 @@ class UserActionSetsApi
      * @param  string[]|mixed $type (optional)
      * @param  int|mixed $mobileAppId (optional)
      * @param  string|mixed $wechatAppId (optional)
+     * @param  string|mixed $appIdStr (optional)
      * @param  string|mixed $name (optional)
      * @param  bool|mixed $includePermission (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -588,7 +593,7 @@ class UserActionSetsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function userActionSetsGetRequest($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $name = null, $includePermission = null, $fields = null)
+    protected function userActionSetsGetRequest($accountId, $userActionSetId = null, $type = null, $mobileAppId = null, $wechatAppId = null, $appIdStr = null, $name = null, $includePermission = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -626,6 +631,10 @@ class UserActionSetsApi
         // query params
         if ($wechatAppId !== null) {
             $queryParams['wechat_app_id'] = ObjectSerializer::toQueryValue($wechatAppId);
+        }
+        // query params
+        if ($appIdStr !== null) {
+            $queryParams['app_id_str'] = ObjectSerializer::toQueryValue($appIdStr);
         }
         // query params
         if ($name !== null) {

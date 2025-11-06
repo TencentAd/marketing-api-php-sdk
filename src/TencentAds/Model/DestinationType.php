@@ -99,8 +99,8 @@ class DestinationType
     const WECHAT_CHANNELS_PROFILE = 'PAGE_TYPE_WECHAT_CHANNELS_PROFILE';
     const WECHAT_CHANNELS_SHOP_PRODUCT = 'PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT';
     const WECHAT_QUERY_PAGE = 'PAGE_TYPE_WECHAT_QUERY_PAGE';
-    const APP_HARMONY = 'PAGE_TYPE_APP_HARMONY';
     const WECHAT_SHOP = 'PAGE_TYPE_WECHAT_SHOP';
+    const APP_HARMONY = 'PAGE_TYPE_APP_HARMONY';
     
     /**
      * Gets allowable values of the enum
@@ -164,8 +164,8 @@ class DestinationType
             self::WECHAT_CHANNELS_PROFILE,
             self::WECHAT_CHANNELS_SHOP_PRODUCT,
             self::WECHAT_QUERY_PAGE,
-            self::APP_HARMONY,
             self::WECHAT_SHOP,
+            self::APP_HARMONY,
         ];
     }
 }

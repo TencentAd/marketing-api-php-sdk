@@ -60,8 +60,9 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
     protected static $swaggerTypes = [
         'accountId' => 'int',
         'corporationName' => 'string',
-        'isAdx' => 'bool',
+        'isBid' => 'bool',
         'isMp' => 'bool',
+        'isAdx' => 'bool',
         'commentList' => '\TencentAds\Model\V3\CommentDataStruct[]'
     ];
 
@@ -73,8 +74,9 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
     protected static $swaggerFormats = [
         'accountId' => 'int64',
         'corporationName' => null,
-        'isAdx' => null,
+        'isBid' => null,
         'isMp' => null,
+        'isAdx' => null,
         'commentList' => null
     ];
 
@@ -107,8 +109,9 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
     protected static $attributeMap = [
         'accountId' => 'account_id',
         'corporationName' => 'corporation_name',
-        'isAdx' => 'is_adx',
+        'isBid' => 'is_bid',
         'isMp' => 'is_mp',
+        'isAdx' => 'is_adx',
         'commentList' => 'comment_list'
     ];
 
@@ -120,8 +123,9 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
     protected static $setters = [
         'accountId' => 'setAccountId',
         'corporationName' => 'setCorporationName',
-        'isAdx' => 'setIsAdx',
+        'isBid' => 'setIsBid',
         'isMp' => 'setIsMp',
+        'isAdx' => 'setIsAdx',
         'commentList' => 'setCommentList'
     ];
 
@@ -133,8 +137,9 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
     protected static $getters = [
         'accountId' => 'getAccountId',
         'corporationName' => 'getCorporationName',
-        'isAdx' => 'getIsAdx',
+        'isBid' => 'getIsBid',
         'isMp' => 'getIsMp',
+        'isAdx' => 'getIsAdx',
         'commentList' => 'getCommentList'
     ];
 
@@ -200,8 +205,9 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['corporationName'] = isset($data['corporationName']) ? $data['corporationName'] : null;
-        $this->container['isAdx'] = isset($data['isAdx']) ? $data['isAdx'] : null;
+        $this->container['isBid'] = isset($data['isBid']) ? $data['isBid'] : null;
         $this->container['isMp'] = isset($data['isMp']) ? $data['isMp'] : null;
+        $this->container['isAdx'] = isset($data['isAdx']) ? $data['isAdx'] : null;
         $this->container['commentList'] = isset($data['commentList']) ? $data['commentList'] : null;
     }
 
@@ -278,25 +284,25 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
     }
 
     /**
-     * Gets isAdx
+     * Gets isBid
      *
      * @return bool|mixed
      */
-    public function getIsAdx()
+    public function getIsBid()
     {
-        return $this->container['isAdx'];
+        return $this->container['isBid'];
     }
 
     /**
-     * Sets isAdx
+     * Sets isBid
      *
-     * @param bool|mixed $isAdx isAdx
+     * @param bool|mixed $isBid isBid
      *
      * @return $this
      */
-    public function setIsAdx($isAdx)
+    public function setIsBid($isBid)
     {
-        $this->container['isAdx'] = $isAdx;
+        $this->container['isBid'] = $isBid;
 
         return $this;
     }
@@ -321,6 +327,30 @@ class OrganizationAccountRelationGetListStruct implements ModelInterface, ArrayA
     public function setIsMp($isMp)
     {
         $this->container['isMp'] = $isMp;
+
+        return $this;
+    }
+
+    /**
+     * Gets isAdx
+     *
+     * @return bool|mixed
+     */
+    public function getIsAdx()
+    {
+        return $this->container['isAdx'];
+    }
+
+    /**
+     * Sets isAdx
+     *
+     * @param bool|mixed $isAdx isAdx
+     *
+     * @return $this
+     */
+    public function setIsAdx($isAdx)
+    {
+        $this->container['isAdx'] = $isAdx;
 
         return $this;
     }

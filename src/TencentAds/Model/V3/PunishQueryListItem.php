@@ -84,7 +84,7 @@ class PunishQueryListItem implements ModelInterface, ArrayAccess
         'reason' => 'string',
         'certificateList' => 'string[]',
         'illegalScene' => 'string',
-        'mdmPunishData' => '\TencentAds\Model\V3\MdmPunishData',
+        'mdmPunishData' => '\TencentAds\Model\V3\MdmPunishData[]',
         'appealStatus' => 'bool'
     ];
 
@@ -994,7 +994,7 @@ class PunishQueryListItem implements ModelInterface, ArrayAccess
     /**
      * Gets mdmPunishData
      *
-     * @return \TencentAds\Model\V3\MdmPunishData|mixed
+     * @return \TencentAds\Model\V3\MdmPunishData[]|mixed
      */
     public function getMdmPunishData()
     {
@@ -1004,7 +1004,7 @@ class PunishQueryListItem implements ModelInterface, ArrayAccess
     /**
      * Sets mdmPunishData
      *
-     * @param \TencentAds\Model\V3\MdmPunishData|mixed $mdmPunishData mdmPunishData
+     * @param \TencentAds\Model\V3\MdmPunishData[]|mixed $mdmPunishData mdmPunishData
      *
      * @return $this
      */

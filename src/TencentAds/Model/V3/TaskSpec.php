@@ -86,7 +86,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDeriveConfSpec' => '\TencentAds\Model\V3\UpdateAdgroupDeriveConfItem[]',
         'updateComponentSharingSpec' => '\TencentAds\Model\V3\UpdateComponentSharingItem[]',
         'updateAdgroupSmartDeliveryGoalSpec' => '\TencentAds\Model\V3\UpdateAdgroupSmartDeliveryGoalItem[]',
-        'deleteAccountComponentSpec' => '\TencentAds\Model\V3\DeleteAccountComponentItem[]'
+        'deleteAccountComponentSpec' => '\TencentAds\Model\V3\DeleteAccountComponentItem[]',
+        'updateDynamicCreativeSearchIntelligentExtensionSpec' => '\TencentAds\Model\V3\UpdateDynamicCreativeSearchIntelligentExtensionItem[]'
     ];
 
     /**
@@ -123,7 +124,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDeriveConfSpec' => null,
         'updateComponentSharingSpec' => null,
         'updateAdgroupSmartDeliveryGoalSpec' => null,
-        'deleteAccountComponentSpec' => null
+        'deleteAccountComponentSpec' => null,
+        'updateDynamicCreativeSearchIntelligentExtensionSpec' => null
     ];
 
     /**
@@ -181,7 +183,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDeriveConfSpec' => 'update_adgroup_derive_conf_spec',
         'updateComponentSharingSpec' => 'update_component_sharing_spec',
         'updateAdgroupSmartDeliveryGoalSpec' => 'update_adgroup_smart_delivery_goal_spec',
-        'deleteAccountComponentSpec' => 'delete_account_component_spec'
+        'deleteAccountComponentSpec' => 'delete_account_component_spec',
+        'updateDynamicCreativeSearchIntelligentExtensionSpec' => 'update_dynamic_creative_search_intelligent_extension_spec'
     ];
 
     /**
@@ -218,7 +221,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDeriveConfSpec' => 'setUpdateAdgroupDeriveConfSpec',
         'updateComponentSharingSpec' => 'setUpdateComponentSharingSpec',
         'updateAdgroupSmartDeliveryGoalSpec' => 'setUpdateAdgroupSmartDeliveryGoalSpec',
-        'deleteAccountComponentSpec' => 'setDeleteAccountComponentSpec'
+        'deleteAccountComponentSpec' => 'setDeleteAccountComponentSpec',
+        'updateDynamicCreativeSearchIntelligentExtensionSpec' => 'setUpdateDynamicCreativeSearchIntelligentExtensionSpec'
     ];
 
     /**
@@ -255,7 +259,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateAdgroupDeriveConfSpec' => 'getUpdateAdgroupDeriveConfSpec',
         'updateComponentSharingSpec' => 'getUpdateComponentSharingSpec',
         'updateAdgroupSmartDeliveryGoalSpec' => 'getUpdateAdgroupSmartDeliveryGoalSpec',
-        'deleteAccountComponentSpec' => 'getDeleteAccountComponentSpec'
+        'deleteAccountComponentSpec' => 'getDeleteAccountComponentSpec',
+        'updateDynamicCreativeSearchIntelligentExtensionSpec' => 'getUpdateDynamicCreativeSearchIntelligentExtensionSpec'
     ];
 
     /**
@@ -347,6 +352,7 @@ class TaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateComponentSharingSpec'] = isset($data['updateComponentSharingSpec']) ? $data['updateComponentSharingSpec'] : null;
         $this->container['updateAdgroupSmartDeliveryGoalSpec'] = isset($data['updateAdgroupSmartDeliveryGoalSpec']) ? $data['updateAdgroupSmartDeliveryGoalSpec'] : null;
         $this->container['deleteAccountComponentSpec'] = isset($data['deleteAccountComponentSpec']) ? $data['deleteAccountComponentSpec'] : null;
+        $this->container['updateDynamicCreativeSearchIntelligentExtensionSpec'] = isset($data['updateDynamicCreativeSearchIntelligentExtensionSpec']) ? $data['updateDynamicCreativeSearchIntelligentExtensionSpec'] : null;
     }
 
     /**
@@ -1065,6 +1071,30 @@ class TaskSpec implements ModelInterface, ArrayAccess
     public function setDeleteAccountComponentSpec($deleteAccountComponentSpec)
     {
         $this->container['deleteAccountComponentSpec'] = $deleteAccountComponentSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets updateDynamicCreativeSearchIntelligentExtensionSpec
+     *
+     * @return \TencentAds\Model\V3\UpdateDynamicCreativeSearchIntelligentExtensionItem[]|mixed
+     */
+    public function getUpdateDynamicCreativeSearchIntelligentExtensionSpec()
+    {
+        return $this->container['updateDynamicCreativeSearchIntelligentExtensionSpec'];
+    }
+
+    /**
+     * Sets updateDynamicCreativeSearchIntelligentExtensionSpec
+     *
+     * @param \TencentAds\Model\V3\UpdateDynamicCreativeSearchIntelligentExtensionItem[]|mixed $updateDynamicCreativeSearchIntelligentExtensionSpec updateDynamicCreativeSearchIntelligentExtensionSpec
+     *
+     * @return $this
+     */
+    public function setUpdateDynamicCreativeSearchIntelligentExtensionSpec($updateDynamicCreativeSearchIntelligentExtensionSpec)
+    {
+        $this->container['updateDynamicCreativeSearchIntelligentExtensionSpec'] = $updateDynamicCreativeSearchIntelligentExtensionSpec;
 
         return $this;
     }

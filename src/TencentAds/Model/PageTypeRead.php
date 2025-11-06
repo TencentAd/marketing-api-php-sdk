@@ -99,6 +99,7 @@ class PageTypeRead
     const WECHAT_CHANNELS_PROFILE = 'PAGE_TYPE_WECHAT_CHANNELS_PROFILE';
     const WECHAT_CHANNELS_SHOP_PRODUCT = 'PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT';
     const WECHAT_QUERY_PAGE = 'PAGE_TYPE_WECHAT_QUERY_PAGE';
+    const WECHAT_SHOP = 'PAGE_TYPE_WECHAT_SHOP';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
     const APP_HARMONY = 'PAGE_TYPE_APP_HARMONY';
     
@@ -164,6 +165,7 @@ class PageTypeRead
             self::WECHAT_CHANNELS_PROFILE,
             self::WECHAT_CHANNELS_SHOP_PRODUCT,
             self::WECHAT_QUERY_PAGE,
+            self::WECHAT_SHOP,
             self::TSA_OTT,
             self::APP_HARMONY,
         ];

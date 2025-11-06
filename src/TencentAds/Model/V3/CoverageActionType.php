@@ -66,6 +66,7 @@ class CoverageActionType
     const ADD_IMAGE_SIZE_9_16 = 'ADD_IMAGE_SIZE_9_16';
     const ADD_IMAGE_SIZE_20_7 = 'ADD_IMAGE_SIZE_20_7';
     const LANDING_PAGE_USE_MULTI_SLOT = 'LANDING_PAGE_USE_MULTI_SLOT';
+    const ADD_AUDIO = 'ADD_AUDIO';
     
     /**
      * Gets allowable values of the enum
@@ -96,6 +97,7 @@ class CoverageActionType
             self::ADD_IMAGE_SIZE_9_16,
             self::ADD_IMAGE_SIZE_20_7,
             self::LANDING_PAGE_USE_MULTI_SLOT,
+            self::ADD_AUDIO,
         ];
     }
 }

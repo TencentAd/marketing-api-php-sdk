@@ -80,7 +80,9 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'enumOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidEnumOption[]',
         'minOccurs' => 'int',
         'maxOccurs' => 'int',
-        'imageFormatOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidImageFormatOption[]'
+        'imageFormatOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidImageFormatOption[]',
+        'minDurationMillisecond' => 'int',
+        'maxDurationMillisecond' => 'int'
     ];
 
     /**
@@ -111,7 +113,9 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'enumOptions' => null,
         'minOccurs' => 'int64',
         'maxOccurs' => 'int64',
-        'imageFormatOptions' => null
+        'imageFormatOptions' => null,
+        'minDurationMillisecond' => 'int64',
+        'maxDurationMillisecond' => 'int64'
     ];
 
     /**
@@ -163,7 +167,9 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'enumOptions' => 'enum_options',
         'minOccurs' => 'min_occurs',
         'maxOccurs' => 'max_occurs',
-        'imageFormatOptions' => 'image_format_options'
+        'imageFormatOptions' => 'image_format_options',
+        'minDurationMillisecond' => 'min_duration_millisecond',
+        'maxDurationMillisecond' => 'max_duration_millisecond'
     ];
 
     /**
@@ -194,7 +200,9 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'enumOptions' => 'setEnumOptions',
         'minOccurs' => 'setMinOccurs',
         'maxOccurs' => 'setMaxOccurs',
-        'imageFormatOptions' => 'setImageFormatOptions'
+        'imageFormatOptions' => 'setImageFormatOptions',
+        'minDurationMillisecond' => 'setMinDurationMillisecond',
+        'maxDurationMillisecond' => 'setMaxDurationMillisecond'
     ];
 
     /**
@@ -225,7 +233,9 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         'enumOptions' => 'getEnumOptions',
         'minOccurs' => 'getMinOccurs',
         'maxOccurs' => 'getMaxOccurs',
-        'imageFormatOptions' => 'getImageFormatOptions'
+        'imageFormatOptions' => 'getImageFormatOptions',
+        'minDurationMillisecond' => 'getMinDurationMillisecond',
+        'maxDurationMillisecond' => 'getMaxDurationMillisecond'
     ];
 
     /**
@@ -311,6 +321,8 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
         $this->container['minOccurs'] = isset($data['minOccurs']) ? $data['minOccurs'] : null;
         $this->container['maxOccurs'] = isset($data['maxOccurs']) ? $data['maxOccurs'] : null;
         $this->container['imageFormatOptions'] = isset($data['imageFormatOptions']) ? $data['imageFormatOptions'] : null;
+        $this->container['minDurationMillisecond'] = isset($data['minDurationMillisecond']) ? $data['minDurationMillisecond'] : null;
+        $this->container['maxDurationMillisecond'] = isset($data['maxDurationMillisecond']) ? $data['maxDurationMillisecond'] : null;
     }
 
     /**
@@ -885,6 +897,54 @@ class ComponentMetadataValueValid implements ModelInterface, ArrayAccess
     public function setImageFormatOptions($imageFormatOptions)
     {
         $this->container['imageFormatOptions'] = $imageFormatOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets minDurationMillisecond
+     *
+     * @return int|mixed
+     */
+    public function getMinDurationMillisecond()
+    {
+        return $this->container['minDurationMillisecond'];
+    }
+
+    /**
+     * Sets minDurationMillisecond
+     *
+     * @param int|mixed $minDurationMillisecond minDurationMillisecond
+     *
+     * @return $this
+     */
+    public function setMinDurationMillisecond($minDurationMillisecond)
+    {
+        $this->container['minDurationMillisecond'] = $minDurationMillisecond;
+
+        return $this;
+    }
+
+    /**
+     * Gets maxDurationMillisecond
+     *
+     * @return int|mixed
+     */
+    public function getMaxDurationMillisecond()
+    {
+        return $this->container['maxDurationMillisecond'];
+    }
+
+    /**
+     * Sets maxDurationMillisecond
+     *
+     * @param int|mixed $maxDurationMillisecond maxDurationMillisecond
+     *
+     * @return $this
+     */
+    public function setMaxDurationMillisecond($maxDurationMillisecond)
+    {
+        $this->container['maxDurationMillisecond'] = $maxDurationMillisecond;
 
         return $this;
     }

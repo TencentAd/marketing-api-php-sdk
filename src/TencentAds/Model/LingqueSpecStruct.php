@@ -58,7 +58,8 @@ class LingqueSpecStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageId' => 'int'
+        'pageId' => 'int',
+        'customizedParam' => 'string'
     ];
 
     /**
@@ -67,7 +68,8 @@ class LingqueSpecStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageId' => 'int64'
+        'pageId' => 'int64',
+        'customizedParam' => null
     ];
 
     /**
@@ -97,7 +99,8 @@ class LingqueSpecStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageId' => 'page_id'
+        'pageId' => 'page_id',
+        'customizedParam' => 'customized_param'
     ];
 
     /**
@@ -106,7 +109,8 @@ class LingqueSpecStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageId' => 'setPageId'
+        'pageId' => 'setPageId',
+        'customizedParam' => 'setCustomizedParam'
     ];
 
     /**
@@ -115,7 +119,8 @@ class LingqueSpecStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageId' => 'getPageId'
+        'pageId' => 'getPageId',
+        'customizedParam' => 'getCustomizedParam'
     ];
 
     /**
@@ -179,6 +184,7 @@ class LingqueSpecStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
+        $this->container['customizedParam'] = isset($data['customizedParam']) ? $data['customizedParam'] : null;
     }
 
     /**
@@ -225,6 +231,30 @@ class LingqueSpecStruct implements ModelInterface, ArrayAccess
     public function setPageId($pageId)
     {
         $this->container['pageId'] = $pageId;
+
+        return $this;
+    }
+
+    /**
+     * Gets customizedParam
+     *
+     * @return string|mixed
+     */
+    public function getCustomizedParam()
+    {
+        return $this->container['customizedParam'];
+    }
+
+    /**
+     * Sets customizedParam
+     *
+     * @param string|mixed $customizedParam customizedParam
+     *
+     * @return $this
+     */
+    public function setCustomizedParam($customizedParam)
+    {
+        $this->container['customizedParam'] = $customizedParam;
 
         return $this;
     }

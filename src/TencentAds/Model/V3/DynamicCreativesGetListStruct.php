@@ -76,7 +76,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'marketingAssetVerification' => '\TencentAds\Model\V3\MarketingAssetVerification',
         'creativeSetApprovalStatus' => '\TencentAds\Model\V3\CreativeSetApprovalStatus',
         'source' => '\TencentAds\Model\V3\AdCreativeSource',
-        'assetInconsistentStatus' => '\TencentAds\Model\V3\AssetInconsistentStatus'
+        'assetInconsistentStatus' => '\TencentAds\Model\V3\AssetInconsistentStatus',
+        'sourceDynamicCreativeId' => 'int'
     ];
 
     /**
@@ -103,7 +104,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'marketingAssetVerification' => null,
         'creativeSetApprovalStatus' => null,
         'source' => null,
-        'assetInconsistentStatus' => null
+        'assetInconsistentStatus' => null,
+        'sourceDynamicCreativeId' => 'int64'
     ];
 
     /**
@@ -151,7 +153,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'marketingAssetVerification' => 'marketing_asset_verification',
         'creativeSetApprovalStatus' => 'creative_set_approval_status',
         'source' => 'source',
-        'assetInconsistentStatus' => 'asset_inconsistent_status'
+        'assetInconsistentStatus' => 'asset_inconsistent_status',
+        'sourceDynamicCreativeId' => 'source_dynamic_creative_id'
     ];
 
     /**
@@ -178,7 +181,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'marketingAssetVerification' => 'setMarketingAssetVerification',
         'creativeSetApprovalStatus' => 'setCreativeSetApprovalStatus',
         'source' => 'setSource',
-        'assetInconsistentStatus' => 'setAssetInconsistentStatus'
+        'assetInconsistentStatus' => 'setAssetInconsistentStatus',
+        'sourceDynamicCreativeId' => 'setSourceDynamicCreativeId'
     ];
 
     /**
@@ -205,7 +209,8 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         'marketingAssetVerification' => 'getMarketingAssetVerification',
         'creativeSetApprovalStatus' => 'getCreativeSetApprovalStatus',
         'source' => 'getSource',
-        'assetInconsistentStatus' => 'getAssetInconsistentStatus'
+        'assetInconsistentStatus' => 'getAssetInconsistentStatus',
+        'sourceDynamicCreativeId' => 'getSourceDynamicCreativeId'
     ];
 
     /**
@@ -287,6 +292,7 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['creativeSetApprovalStatus'] = isset($data['creativeSetApprovalStatus']) ? $data['creativeSetApprovalStatus'] : null;
         $this->container['source'] = isset($data['source']) ? $data['source'] : null;
         $this->container['assetInconsistentStatus'] = isset($data['assetInconsistentStatus']) ? $data['assetInconsistentStatus'] : null;
+        $this->container['sourceDynamicCreativeId'] = isset($data['sourceDynamicCreativeId']) ? $data['sourceDynamicCreativeId'] : null;
     }
 
     /**
@@ -765,6 +771,30 @@ class DynamicCreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setAssetInconsistentStatus($assetInconsistentStatus)
     {
         $this->container['assetInconsistentStatus'] = $assetInconsistentStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets sourceDynamicCreativeId
+     *
+     * @return int|mixed
+     */
+    public function getSourceDynamicCreativeId()
+    {
+        return $this->container['sourceDynamicCreativeId'];
+    }
+
+    /**
+     * Sets sourceDynamicCreativeId
+     *
+     * @param int|mixed $sourceDynamicCreativeId sourceDynamicCreativeId
+     *
+     * @return $this
+     */
+    public function setSourceDynamicCreativeId($sourceDynamicCreativeId)
+    {
+        $this->container['sourceDynamicCreativeId'] = $sourceDynamicCreativeId;
 
         return $this;
     }

@@ -61,6 +61,7 @@ class MarketingSubGoal
     const GAME_VERSION_UPGRADE = 'MARKETING_SUB_GOAL_GAME_VERSION_UPGRADE';
     const NEW_STORE_OPENING = 'MARKETING_SUB_GOAL_NEW_STORE_OPENING';
     const EVENING_PROMOTION = 'MARKETING_SUB_GOAL_EVENING_PROMOTION';
+    const SPECIAL_RELEASE = 'MARKETING_SUB_GOAL_SPECIAL_RELEASE';
     
     /**
      * Gets allowable values of the enum
@@ -86,6 +87,7 @@ class MarketingSubGoal
             self::GAME_VERSION_UPGRADE,
             self::NEW_STORE_OPENING,
             self::EVENING_PROMOTION,
+            self::SPECIAL_RELEASE,
         ];
     }
 }

@@ -90,7 +90,7 @@ class OrganizationAccountRelationApi
     /**
      * Operation organizationAccountRelationGet
      *
-     * 查询组织下广告账号信息
+     * 查询组织下广告账户信息
      *
      * @param  string|mixed $paginationMode paginationMode (required)
      * @param  int|mixed $accountId accountId (optional)
@@ -114,7 +114,7 @@ class OrganizationAccountRelationApi
     /**
      * Operation organizationAccountRelationGetWithHttpInfo
      *
-     * 查询组织下广告账号信息
+     * 查询组织下广告账户信息
      *
      * @param  string|mixed $paginationMode (required)
      * @param  int|mixed $accountId (optional)
@@ -196,7 +196,7 @@ class OrganizationAccountRelationApi
     /**
      * Operation organizationAccountRelationGetAsync
      *
-     * 查询组织下广告账号信息
+     * 查询组织下广告账户信息
      *
      * @param  string|mixed $paginationMode (required)
      * @param  int|mixed $accountId (optional)
@@ -223,7 +223,7 @@ class OrganizationAccountRelationApi
     /**
      * Operation organizationAccountRelationGetAsyncWithHttpInfo
      *
-     * 查询组织下广告账号信息
+     * 查询组织下广告账户信息
      *
      * @param  string|mixed $paginationMode (required)
      * @param  int|mixed $accountId (optional)

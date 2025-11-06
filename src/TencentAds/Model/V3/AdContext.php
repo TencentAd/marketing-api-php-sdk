@@ -68,8 +68,10 @@ class AdContext implements ModelInterface, ArrayAccess
         'creativeTemplateId' => 'int',
         'promotedAssetType' => '\TencentAds\Model\V3\PromotedAssetType',
         'componentType' => '\TencentAds\Model\V3\ComponentType',
+        'optimizationGoalStruct' => '\TencentAds\Model\V3\AdContextOptimizationGoalStruct',
         'mpaSpec' => '\TencentAds\Model\V3\MpaSpec',
-        'marketingAssetOuterSpec' => '\TencentAds\Model\V3\MarketingAssetOuterSpec'
+        'marketingAssetOuterSpec' => '\TencentAds\Model\V3\MarketingAssetOuterSpec',
+        'dynamicAdType' => '\TencentAds\Model\V3\DynamicAdType'
     ];
 
     /**
@@ -88,8 +90,10 @@ class AdContext implements ModelInterface, ArrayAccess
         'creativeTemplateId' => 'int64',
         'promotedAssetType' => null,
         'componentType' => null,
+        'optimizationGoalStruct' => null,
         'mpaSpec' => null,
-        'marketingAssetOuterSpec' => null
+        'marketingAssetOuterSpec' => null,
+        'dynamicAdType' => null
     ];
 
     /**
@@ -129,8 +133,10 @@ class AdContext implements ModelInterface, ArrayAccess
         'creativeTemplateId' => 'creative_template_id',
         'promotedAssetType' => 'promoted_asset_type',
         'componentType' => 'component_type',
+        'optimizationGoalStruct' => 'optimization_goal_struct',
         'mpaSpec' => 'mpa_spec',
-        'marketingAssetOuterSpec' => 'marketing_asset_outer_spec'
+        'marketingAssetOuterSpec' => 'marketing_asset_outer_spec',
+        'dynamicAdType' => 'dynamic_ad_type'
     ];
 
     /**
@@ -149,8 +155,10 @@ class AdContext implements ModelInterface, ArrayAccess
         'creativeTemplateId' => 'setCreativeTemplateId',
         'promotedAssetType' => 'setPromotedAssetType',
         'componentType' => 'setComponentType',
+        'optimizationGoalStruct' => 'setOptimizationGoalStruct',
         'mpaSpec' => 'setMpaSpec',
-        'marketingAssetOuterSpec' => 'setMarketingAssetOuterSpec'
+        'marketingAssetOuterSpec' => 'setMarketingAssetOuterSpec',
+        'dynamicAdType' => 'setDynamicAdType'
     ];
 
     /**
@@ -169,8 +177,10 @@ class AdContext implements ModelInterface, ArrayAccess
         'creativeTemplateId' => 'getCreativeTemplateId',
         'promotedAssetType' => 'getPromotedAssetType',
         'componentType' => 'getComponentType',
+        'optimizationGoalStruct' => 'getOptimizationGoalStruct',
         'mpaSpec' => 'getMpaSpec',
-        'marketingAssetOuterSpec' => 'getMarketingAssetOuterSpec'
+        'marketingAssetOuterSpec' => 'getMarketingAssetOuterSpec',
+        'dynamicAdType' => 'getDynamicAdType'
     ];
 
     /**
@@ -243,8 +253,10 @@ class AdContext implements ModelInterface, ArrayAccess
         $this->container['creativeTemplateId'] = isset($data['creativeTemplateId']) ? $data['creativeTemplateId'] : null;
         $this->container['promotedAssetType'] = isset($data['promotedAssetType']) ? $data['promotedAssetType'] : null;
         $this->container['componentType'] = isset($data['componentType']) ? $data['componentType'] : null;
+        $this->container['optimizationGoalStruct'] = isset($data['optimizationGoalStruct']) ? $data['optimizationGoalStruct'] : null;
         $this->container['mpaSpec'] = isset($data['mpaSpec']) ? $data['mpaSpec'] : null;
         $this->container['marketingAssetOuterSpec'] = isset($data['marketingAssetOuterSpec']) ? $data['marketingAssetOuterSpec'] : null;
+        $this->container['dynamicAdType'] = isset($data['dynamicAdType']) ? $data['dynamicAdType'] : null;
     }
 
     /**
@@ -512,6 +524,30 @@ class AdContext implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets optimizationGoalStruct
+     *
+     * @return \TencentAds\Model\V3\AdContextOptimizationGoalStruct|mixed
+     */
+    public function getOptimizationGoalStruct()
+    {
+        return $this->container['optimizationGoalStruct'];
+    }
+
+    /**
+     * Sets optimizationGoalStruct
+     *
+     * @param \TencentAds\Model\V3\AdContextOptimizationGoalStruct|mixed $optimizationGoalStruct optimizationGoalStruct
+     *
+     * @return $this
+     */
+    public function setOptimizationGoalStruct($optimizationGoalStruct)
+    {
+        $this->container['optimizationGoalStruct'] = $optimizationGoalStruct;
+
+        return $this;
+    }
+
+    /**
      * Gets mpaSpec
      *
      * @return \TencentAds\Model\V3\MpaSpec|mixed
@@ -555,6 +591,30 @@ class AdContext implements ModelInterface, ArrayAccess
     public function setMarketingAssetOuterSpec($marketingAssetOuterSpec)
     {
         $this->container['marketingAssetOuterSpec'] = $marketingAssetOuterSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicAdType
+     *
+     * @return \TencentAds\Model\V3\DynamicAdType|mixed
+     */
+    public function getDynamicAdType()
+    {
+        return $this->container['dynamicAdType'];
+    }
+
+    /**
+     * Sets dynamicAdType
+     *
+     * @param \TencentAds\Model\V3\DynamicAdType|mixed $dynamicAdType dynamicAdType
+     *
+     * @return $this
+     */
+    public function setDynamicAdType($dynamicAdType)
+    {
+        $this->container['dynamicAdType'] = $dynamicAdType;
 
         return $this;
     }

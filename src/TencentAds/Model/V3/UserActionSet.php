@@ -61,6 +61,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
         'userActionSetId' => 'int',
         'type' => '\TencentAds\Model\V3\AmUserActionSetType',
         'mobileAppId' => 'int',
+        'appIdStr' => 'string',
         'name' => 'string',
         'description' => 'string',
         'activateStatus' => 'bool',
@@ -80,6 +81,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
         'userActionSetId' => 'int64',
         'type' => null,
         'mobileAppId' => 'int64',
+        'appIdStr' => null,
         'name' => null,
         'description' => null,
         'activateStatus' => null,
@@ -120,6 +122,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
         'userActionSetId' => 'user_action_set_id',
         'type' => 'type',
         'mobileAppId' => 'mobile_app_id',
+        'appIdStr' => 'app_id_str',
         'name' => 'name',
         'description' => 'description',
         'activateStatus' => 'activate_status',
@@ -139,6 +142,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
         'userActionSetId' => 'setUserActionSetId',
         'type' => 'setType',
         'mobileAppId' => 'setMobileAppId',
+        'appIdStr' => 'setAppIdStr',
         'name' => 'setName',
         'description' => 'setDescription',
         'activateStatus' => 'setActivateStatus',
@@ -158,6 +162,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
         'userActionSetId' => 'getUserActionSetId',
         'type' => 'getType',
         'mobileAppId' => 'getMobileAppId',
+        'appIdStr' => 'getAppIdStr',
         'name' => 'getName',
         'description' => 'getDescription',
         'activateStatus' => 'getActivateStatus',
@@ -231,6 +236,7 @@ class UserActionSet implements ModelInterface, ArrayAccess
         $this->container['userActionSetId'] = isset($data['userActionSetId']) ? $data['userActionSetId'] : null;
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
         $this->container['mobileAppId'] = isset($data['mobileAppId']) ? $data['mobileAppId'] : null;
+        $this->container['appIdStr'] = isset($data['appIdStr']) ? $data['appIdStr'] : null;
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
         $this->container['activateStatus'] = isset($data['activateStatus']) ? $data['activateStatus'] : null;
@@ -333,6 +339,30 @@ class UserActionSet implements ModelInterface, ArrayAccess
     public function setMobileAppId($mobileAppId)
     {
         $this->container['mobileAppId'] = $mobileAppId;
+
+        return $this;
+    }
+
+    /**
+     * Gets appIdStr
+     *
+     * @return string|mixed
+     */
+    public function getAppIdStr()
+    {
+        return $this->container['appIdStr'];
+    }
+
+    /**
+     * Sets appIdStr
+     *
+     * @param string|mixed $appIdStr appIdStr
+     *
+     * @return $this
+     */
+    public function setAppIdStr($appIdStr)
+    {
+        $this->container['appIdStr'] = $appIdStr;
 
         return $this;
     }

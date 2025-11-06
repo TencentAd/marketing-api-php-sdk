@@ -59,7 +59,7 @@ class ProductSeriesSpecFilteringStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'field' => 'string',
-        'operator' => 'string',
+        'operator' => '\TencentAds\Model\V3\ProductSetSpecFieldValueOperator',
         'values' => '\TencentAds\Model\V3\ProductSeriesSpecFilteringValueStruct[]'
     ];
 
@@ -244,7 +244,7 @@ class ProductSeriesSpecFilteringStruct implements ModelInterface, ArrayAccess
     /**
      * Gets operator
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\ProductSetSpecFieldValueOperator|mixed
      */
     public function getOperator()
     {
@@ -254,7 +254,7 @@ class ProductSeriesSpecFilteringStruct implements ModelInterface, ArrayAccess
     /**
      * Sets operator
      *
-     * @param string|mixed $operator operator
+     * @param \TencentAds\Model\V3\ProductSetSpecFieldValueOperator|mixed $operator operator
      *
      * @return $this
      */

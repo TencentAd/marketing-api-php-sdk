@@ -64,7 +64,10 @@ class GameFeatureGetResponseData implements ModelInterface, ArrayAccess
         'gameplayIdList' => 'int[]',
         'gameThemeId' => 'int',
         'gameSubThemeId' => 'int',
-        'gameMarketingLifecycleList' => '\TencentAds\Model\GameMarketingLifecycleStruct[]'
+        'gameMarketingLifecycleList' => '\TencentAds\Model\GameMarketingLifecycleStruct[]',
+        'gameTypeIdV6' => 'int',
+        'gamePlayIdV6' => 'int',
+        'gameSubPlayIdListV6' => 'int[]'
     ];
 
     /**
@@ -80,7 +83,10 @@ class GameFeatureGetResponseData implements ModelInterface, ArrayAccess
         'gameplayIdList' => 'int64',
         'gameThemeId' => 'int64',
         'gameSubThemeId' => 'int64',
-        'gameMarketingLifecycleList' => null
+        'gameMarketingLifecycleList' => null,
+        'gameTypeIdV6' => 'int64',
+        'gamePlayIdV6' => 'int64',
+        'gameSubPlayIdListV6' => 'int64'
     ];
 
     /**
@@ -117,7 +123,10 @@ class GameFeatureGetResponseData implements ModelInterface, ArrayAccess
         'gameplayIdList' => 'gameplay_id_list',
         'gameThemeId' => 'game_theme_id',
         'gameSubThemeId' => 'game_sub_theme_id',
-        'gameMarketingLifecycleList' => 'game_marketing_lifecycle_list'
+        'gameMarketingLifecycleList' => 'game_marketing_lifecycle_list',
+        'gameTypeIdV6' => 'game_type_id_v6',
+        'gamePlayIdV6' => 'game_play_id_v6',
+        'gameSubPlayIdListV6' => 'game_sub_play_id_list_v6'
     ];
 
     /**
@@ -133,7 +142,10 @@ class GameFeatureGetResponseData implements ModelInterface, ArrayAccess
         'gameplayIdList' => 'setGameplayIdList',
         'gameThemeId' => 'setGameThemeId',
         'gameSubThemeId' => 'setGameSubThemeId',
-        'gameMarketingLifecycleList' => 'setGameMarketingLifecycleList'
+        'gameMarketingLifecycleList' => 'setGameMarketingLifecycleList',
+        'gameTypeIdV6' => 'setGameTypeIdV6',
+        'gamePlayIdV6' => 'setGamePlayIdV6',
+        'gameSubPlayIdListV6' => 'setGameSubPlayIdListV6'
     ];
 
     /**
@@ -149,7 +161,10 @@ class GameFeatureGetResponseData implements ModelInterface, ArrayAccess
         'gameplayIdList' => 'getGameplayIdList',
         'gameThemeId' => 'getGameThemeId',
         'gameSubThemeId' => 'getGameSubThemeId',
-        'gameMarketingLifecycleList' => 'getGameMarketingLifecycleList'
+        'gameMarketingLifecycleList' => 'getGameMarketingLifecycleList',
+        'gameTypeIdV6' => 'getGameTypeIdV6',
+        'gamePlayIdV6' => 'getGamePlayIdV6',
+        'gameSubPlayIdListV6' => 'getGameSubPlayIdListV6'
     ];
 
     /**
@@ -220,6 +235,9 @@ class GameFeatureGetResponseData implements ModelInterface, ArrayAccess
         $this->container['gameThemeId'] = isset($data['gameThemeId']) ? $data['gameThemeId'] : null;
         $this->container['gameSubThemeId'] = isset($data['gameSubThemeId']) ? $data['gameSubThemeId'] : null;
         $this->container['gameMarketingLifecycleList'] = isset($data['gameMarketingLifecycleList']) ? $data['gameMarketingLifecycleList'] : null;
+        $this->container['gameTypeIdV6'] = isset($data['gameTypeIdV6']) ? $data['gameTypeIdV6'] : null;
+        $this->container['gamePlayIdV6'] = isset($data['gamePlayIdV6']) ? $data['gamePlayIdV6'] : null;
+        $this->container['gameSubPlayIdListV6'] = isset($data['gameSubPlayIdListV6']) ? $data['gameSubPlayIdListV6'] : null;
     }
 
     /**
@@ -434,6 +452,78 @@ class GameFeatureGetResponseData implements ModelInterface, ArrayAccess
     public function setGameMarketingLifecycleList($gameMarketingLifecycleList)
     {
         $this->container['gameMarketingLifecycleList'] = $gameMarketingLifecycleList;
+
+        return $this;
+    }
+
+    /**
+     * Gets gameTypeIdV6
+     *
+     * @return int|mixed
+     */
+    public function getGameTypeIdV6()
+    {
+        return $this->container['gameTypeIdV6'];
+    }
+
+    /**
+     * Sets gameTypeIdV6
+     *
+     * @param int|mixed $gameTypeIdV6 gameTypeIdV6
+     *
+     * @return $this
+     */
+    public function setGameTypeIdV6($gameTypeIdV6)
+    {
+        $this->container['gameTypeIdV6'] = $gameTypeIdV6;
+
+        return $this;
+    }
+
+    /**
+     * Gets gamePlayIdV6
+     *
+     * @return int|mixed
+     */
+    public function getGamePlayIdV6()
+    {
+        return $this->container['gamePlayIdV6'];
+    }
+
+    /**
+     * Sets gamePlayIdV6
+     *
+     * @param int|mixed $gamePlayIdV6 gamePlayIdV6
+     *
+     * @return $this
+     */
+    public function setGamePlayIdV6($gamePlayIdV6)
+    {
+        $this->container['gamePlayIdV6'] = $gamePlayIdV6;
+
+        return $this;
+    }
+
+    /**
+     * Gets gameSubPlayIdListV6
+     *
+     * @return int[]|mixed
+     */
+    public function getGameSubPlayIdListV6()
+    {
+        return $this->container['gameSubPlayIdListV6'];
+    }
+
+    /**
+     * Sets gameSubPlayIdListV6
+     *
+     * @param int[]|mixed $gameSubPlayIdListV6 gameSubPlayIdListV6
+     *
+     * @return $this
+     */
+    public function setGameSubPlayIdListV6($gameSubPlayIdListV6)
+    {
+        $this->container['gameSubPlayIdListV6'] = $gameSubPlayIdListV6;
 
         return $this;
     }

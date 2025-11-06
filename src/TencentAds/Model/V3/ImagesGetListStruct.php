@@ -75,7 +75,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'productOuterId' => 'string',
         'sourceReferenceId' => 'string',
         'ownerAccountId' => 'string',
-        'status' => '\TencentAds\Model\V3\MediaStatusType',
+        'status' => '\TencentAds\Model\V3\AdStatus',
         'sampleAspectRatio' => 'string'
     ];
 
@@ -724,7 +724,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \TencentAds\Model\V3\MediaStatusType|mixed
+     * @return \TencentAds\Model\V3\AdStatus|mixed
      */
     public function getStatus()
     {
@@ -734,7 +734,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \TencentAds\Model\V3\MediaStatusType|mixed $status status
+     * @param \TencentAds\Model\V3\AdStatus|mixed $status status
      *
      * @return $this
      */

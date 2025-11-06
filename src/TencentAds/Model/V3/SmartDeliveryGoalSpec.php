@@ -88,7 +88,14 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'productOrderSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalProductSpec',
         'cpsSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalCpsSpec',
         'qytClickSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalQytSpec',
-        'qytFirstTwentyFourHourEcommerceOrderSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalQytSpec'
+        'qytFirstTwentyFourHourEcommerceOrderSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalQytSpec',
+        'wechatStoreFirstTwentyFourHourEcommerceOrderSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalFirstTwentyFourHourEcommerceOrderSpec',
+        'fictionFollowPurchaseRoiSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalFictionFollowPurchaseRoiSpec',
+        'fictionRegisterPurchaseRoiSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalFictionRegisterPurchaseRoiSpec',
+        'fictionRegisterMonetizationRoiSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalFictionRegisterMonetizationRoiSpec',
+        'gameAppActivateRoiSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalGameAppActivateRoiSpec',
+        'readingAppActivateFirstDayRetentionSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalReadingAppActivateFirstDayRetentionSpec',
+        'readingAppActivateSevenDayRetentionSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalReadingAppActivateSevenDayRetentionSpec'
     ];
 
     /**
@@ -127,7 +134,14 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'productOrderSpec' => null,
         'cpsSpec' => null,
         'qytClickSpec' => null,
-        'qytFirstTwentyFourHourEcommerceOrderSpec' => null
+        'qytFirstTwentyFourHourEcommerceOrderSpec' => null,
+        'wechatStoreFirstTwentyFourHourEcommerceOrderSpec' => null,
+        'fictionFollowPurchaseRoiSpec' => null,
+        'fictionRegisterPurchaseRoiSpec' => null,
+        'fictionRegisterMonetizationRoiSpec' => null,
+        'gameAppActivateRoiSpec' => null,
+        'readingAppActivateFirstDayRetentionSpec' => null,
+        'readingAppActivateSevenDayRetentionSpec' => null
     ];
 
     /**
@@ -187,7 +201,14 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'productOrderSpec' => 'product_order_spec',
         'cpsSpec' => 'cps_spec',
         'qytClickSpec' => 'qyt_click_spec',
-        'qytFirstTwentyFourHourEcommerceOrderSpec' => 'qyt_first_twenty_four_hour_ecommerce_order_spec'
+        'qytFirstTwentyFourHourEcommerceOrderSpec' => 'qyt_first_twenty_four_hour_ecommerce_order_spec',
+        'wechatStoreFirstTwentyFourHourEcommerceOrderSpec' => 'wechat_store_first_twenty_four_hour_ecommerce_order_spec',
+        'fictionFollowPurchaseRoiSpec' => 'fiction_follow_purchase_roi_spec',
+        'fictionRegisterPurchaseRoiSpec' => 'fiction_register_purchase_roi_spec',
+        'fictionRegisterMonetizationRoiSpec' => 'fiction_register_monetization_roi_spec',
+        'gameAppActivateRoiSpec' => 'game_app_activate_roi_spec',
+        'readingAppActivateFirstDayRetentionSpec' => 'reading_app_activate_first_day_retention_spec',
+        'readingAppActivateSevenDayRetentionSpec' => 'reading_app_activate_seven_day_retention_spec'
     ];
 
     /**
@@ -226,7 +247,14 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'productOrderSpec' => 'setProductOrderSpec',
         'cpsSpec' => 'setCpsSpec',
         'qytClickSpec' => 'setQytClickSpec',
-        'qytFirstTwentyFourHourEcommerceOrderSpec' => 'setQytFirstTwentyFourHourEcommerceOrderSpec'
+        'qytFirstTwentyFourHourEcommerceOrderSpec' => 'setQytFirstTwentyFourHourEcommerceOrderSpec',
+        'wechatStoreFirstTwentyFourHourEcommerceOrderSpec' => 'setWechatStoreFirstTwentyFourHourEcommerceOrderSpec',
+        'fictionFollowPurchaseRoiSpec' => 'setFictionFollowPurchaseRoiSpec',
+        'fictionRegisterPurchaseRoiSpec' => 'setFictionRegisterPurchaseRoiSpec',
+        'fictionRegisterMonetizationRoiSpec' => 'setFictionRegisterMonetizationRoiSpec',
+        'gameAppActivateRoiSpec' => 'setGameAppActivateRoiSpec',
+        'readingAppActivateFirstDayRetentionSpec' => 'setReadingAppActivateFirstDayRetentionSpec',
+        'readingAppActivateSevenDayRetentionSpec' => 'setReadingAppActivateSevenDayRetentionSpec'
     ];
 
     /**
@@ -265,7 +293,14 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'productOrderSpec' => 'getProductOrderSpec',
         'cpsSpec' => 'getCpsSpec',
         'qytClickSpec' => 'getQytClickSpec',
-        'qytFirstTwentyFourHourEcommerceOrderSpec' => 'getQytFirstTwentyFourHourEcommerceOrderSpec'
+        'qytFirstTwentyFourHourEcommerceOrderSpec' => 'getQytFirstTwentyFourHourEcommerceOrderSpec',
+        'wechatStoreFirstTwentyFourHourEcommerceOrderSpec' => 'getWechatStoreFirstTwentyFourHourEcommerceOrderSpec',
+        'fictionFollowPurchaseRoiSpec' => 'getFictionFollowPurchaseRoiSpec',
+        'fictionRegisterPurchaseRoiSpec' => 'getFictionRegisterPurchaseRoiSpec',
+        'fictionRegisterMonetizationRoiSpec' => 'getFictionRegisterMonetizationRoiSpec',
+        'gameAppActivateRoiSpec' => 'getGameAppActivateRoiSpec',
+        'readingAppActivateFirstDayRetentionSpec' => 'getReadingAppActivateFirstDayRetentionSpec',
+        'readingAppActivateSevenDayRetentionSpec' => 'getReadingAppActivateSevenDayRetentionSpec'
     ];
 
     /**
@@ -359,6 +394,13 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         $this->container['cpsSpec'] = isset($data['cpsSpec']) ? $data['cpsSpec'] : null;
         $this->container['qytClickSpec'] = isset($data['qytClickSpec']) ? $data['qytClickSpec'] : null;
         $this->container['qytFirstTwentyFourHourEcommerceOrderSpec'] = isset($data['qytFirstTwentyFourHourEcommerceOrderSpec']) ? $data['qytFirstTwentyFourHourEcommerceOrderSpec'] : null;
+        $this->container['wechatStoreFirstTwentyFourHourEcommerceOrderSpec'] = isset($data['wechatStoreFirstTwentyFourHourEcommerceOrderSpec']) ? $data['wechatStoreFirstTwentyFourHourEcommerceOrderSpec'] : null;
+        $this->container['fictionFollowPurchaseRoiSpec'] = isset($data['fictionFollowPurchaseRoiSpec']) ? $data['fictionFollowPurchaseRoiSpec'] : null;
+        $this->container['fictionRegisterPurchaseRoiSpec'] = isset($data['fictionRegisterPurchaseRoiSpec']) ? $data['fictionRegisterPurchaseRoiSpec'] : null;
+        $this->container['fictionRegisterMonetizationRoiSpec'] = isset($data['fictionRegisterMonetizationRoiSpec']) ? $data['fictionRegisterMonetizationRoiSpec'] : null;
+        $this->container['gameAppActivateRoiSpec'] = isset($data['gameAppActivateRoiSpec']) ? $data['gameAppActivateRoiSpec'] : null;
+        $this->container['readingAppActivateFirstDayRetentionSpec'] = isset($data['readingAppActivateFirstDayRetentionSpec']) ? $data['readingAppActivateFirstDayRetentionSpec'] : null;
+        $this->container['readingAppActivateSevenDayRetentionSpec'] = isset($data['readingAppActivateSevenDayRetentionSpec']) ? $data['readingAppActivateSevenDayRetentionSpec'] : null;
     }
 
     /**
@@ -1125,6 +1167,174 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
     public function setQytFirstTwentyFourHourEcommerceOrderSpec($qytFirstTwentyFourHourEcommerceOrderSpec)
     {
         $this->container['qytFirstTwentyFourHourEcommerceOrderSpec'] = $qytFirstTwentyFourHourEcommerceOrderSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatStoreFirstTwentyFourHourEcommerceOrderSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalFirstTwentyFourHourEcommerceOrderSpec|mixed
+     */
+    public function getWechatStoreFirstTwentyFourHourEcommerceOrderSpec()
+    {
+        return $this->container['wechatStoreFirstTwentyFourHourEcommerceOrderSpec'];
+    }
+
+    /**
+     * Sets wechatStoreFirstTwentyFourHourEcommerceOrderSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalFirstTwentyFourHourEcommerceOrderSpec|mixed $wechatStoreFirstTwentyFourHourEcommerceOrderSpec wechatStoreFirstTwentyFourHourEcommerceOrderSpec
+     *
+     * @return $this
+     */
+    public function setWechatStoreFirstTwentyFourHourEcommerceOrderSpec($wechatStoreFirstTwentyFourHourEcommerceOrderSpec)
+    {
+        $this->container['wechatStoreFirstTwentyFourHourEcommerceOrderSpec'] = $wechatStoreFirstTwentyFourHourEcommerceOrderSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets fictionFollowPurchaseRoiSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalFictionFollowPurchaseRoiSpec|mixed
+     */
+    public function getFictionFollowPurchaseRoiSpec()
+    {
+        return $this->container['fictionFollowPurchaseRoiSpec'];
+    }
+
+    /**
+     * Sets fictionFollowPurchaseRoiSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalFictionFollowPurchaseRoiSpec|mixed $fictionFollowPurchaseRoiSpec fictionFollowPurchaseRoiSpec
+     *
+     * @return $this
+     */
+    public function setFictionFollowPurchaseRoiSpec($fictionFollowPurchaseRoiSpec)
+    {
+        $this->container['fictionFollowPurchaseRoiSpec'] = $fictionFollowPurchaseRoiSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets fictionRegisterPurchaseRoiSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalFictionRegisterPurchaseRoiSpec|mixed
+     */
+    public function getFictionRegisterPurchaseRoiSpec()
+    {
+        return $this->container['fictionRegisterPurchaseRoiSpec'];
+    }
+
+    /**
+     * Sets fictionRegisterPurchaseRoiSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalFictionRegisterPurchaseRoiSpec|mixed $fictionRegisterPurchaseRoiSpec fictionRegisterPurchaseRoiSpec
+     *
+     * @return $this
+     */
+    public function setFictionRegisterPurchaseRoiSpec($fictionRegisterPurchaseRoiSpec)
+    {
+        $this->container['fictionRegisterPurchaseRoiSpec'] = $fictionRegisterPurchaseRoiSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets fictionRegisterMonetizationRoiSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalFictionRegisterMonetizationRoiSpec|mixed
+     */
+    public function getFictionRegisterMonetizationRoiSpec()
+    {
+        return $this->container['fictionRegisterMonetizationRoiSpec'];
+    }
+
+    /**
+     * Sets fictionRegisterMonetizationRoiSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalFictionRegisterMonetizationRoiSpec|mixed $fictionRegisterMonetizationRoiSpec fictionRegisterMonetizationRoiSpec
+     *
+     * @return $this
+     */
+    public function setFictionRegisterMonetizationRoiSpec($fictionRegisterMonetizationRoiSpec)
+    {
+        $this->container['fictionRegisterMonetizationRoiSpec'] = $fictionRegisterMonetizationRoiSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets gameAppActivateRoiSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalGameAppActivateRoiSpec|mixed
+     */
+    public function getGameAppActivateRoiSpec()
+    {
+        return $this->container['gameAppActivateRoiSpec'];
+    }
+
+    /**
+     * Sets gameAppActivateRoiSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalGameAppActivateRoiSpec|mixed $gameAppActivateRoiSpec gameAppActivateRoiSpec
+     *
+     * @return $this
+     */
+    public function setGameAppActivateRoiSpec($gameAppActivateRoiSpec)
+    {
+        $this->container['gameAppActivateRoiSpec'] = $gameAppActivateRoiSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets readingAppActivateFirstDayRetentionSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalReadingAppActivateFirstDayRetentionSpec|mixed
+     */
+    public function getReadingAppActivateFirstDayRetentionSpec()
+    {
+        return $this->container['readingAppActivateFirstDayRetentionSpec'];
+    }
+
+    /**
+     * Sets readingAppActivateFirstDayRetentionSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalReadingAppActivateFirstDayRetentionSpec|mixed $readingAppActivateFirstDayRetentionSpec readingAppActivateFirstDayRetentionSpec
+     *
+     * @return $this
+     */
+    public function setReadingAppActivateFirstDayRetentionSpec($readingAppActivateFirstDayRetentionSpec)
+    {
+        $this->container['readingAppActivateFirstDayRetentionSpec'] = $readingAppActivateFirstDayRetentionSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets readingAppActivateSevenDayRetentionSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalReadingAppActivateSevenDayRetentionSpec|mixed
+     */
+    public function getReadingAppActivateSevenDayRetentionSpec()
+    {
+        return $this->container['readingAppActivateSevenDayRetentionSpec'];
+    }
+
+    /**
+     * Sets readingAppActivateSevenDayRetentionSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalReadingAppActivateSevenDayRetentionSpec|mixed $readingAppActivateSevenDayRetentionSpec readingAppActivateSevenDayRetentionSpec
+     *
+     * @return $this
+     */
+    public function setReadingAppActivateSevenDayRetentionSpec($readingAppActivateSevenDayRetentionSpec)
+    {
+        $this->container['readingAppActivateSevenDayRetentionSpec'] = $readingAppActivateSevenDayRetentionSpec;
 
         return $this;
     }

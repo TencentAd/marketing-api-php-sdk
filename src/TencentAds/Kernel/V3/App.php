@@ -2,6 +2,7 @@
 namespace TencentAds\Kernel\V3;
 
 use GuzzleHttp\Client;
+use TencentAds\Container\V3\AccountSubsidyApiContainer;
 use TencentAds\Container\V3\AccountVersionApiContainer;
 use TencentAds\Container\V3\AdLabelApiContainer;
 use TencentAds\Container\V3\AdParamApiContainer;
@@ -129,6 +130,7 @@ use TencentAds\Container\V3\MergeFundTypeSubcustomerTransferApiContainer;
 use TencentAds\Container\V3\MuseAiMaterialApiContainer;
 use TencentAds\Container\V3\MuseAiTaskApiContainer;
 use TencentAds\Container\V3\MuseAiUgcApiContainer;
+use TencentAds\Container\V3\NegativewordsApiContainer;
 use TencentAds\Container\V3\OauthApiContainer;
 use TencentAds\Container\V3\ObjectCommentFlagApiContainer;
 use TencentAds\Container\V3\OfficialLandingPageApiContainer;
@@ -168,7 +170,11 @@ use TencentAds\Container\V3\RtaexpDspTagDataApiContainer;
 use TencentAds\Container\V3\RtatargetApiContainer;
 use TencentAds\Container\V3\RtatargetBindApiContainer;
 use TencentAds\Container\V3\SceneSpecTagsApiContainer;
+use TencentAds\Container\V3\SearchAdgroupsApiContainer;
+use TencentAds\Container\V3\SearchDynamicCreativesApiContainer;
 use TencentAds\Container\V3\SubcustomerTransferApiContainer;
+use TencentAds\Container\V3\SubsidyAccountBindApiContainer;
+use TencentAds\Container\V3\SubsidyBoundAccountListApiContainer;
 use TencentAds\Container\V3\TargetingTagReportsApiContainer;
 use TencentAds\Container\V3\TargetingTagsApiContainer;
 use TencentAds\Container\V3\TargetingTagsUvApiContainer;
@@ -224,6 +230,9 @@ class App
 {
     /** @var Client */
     public $client;
+
+    /** @var AccountSubsidyApiContainer */
+    public $accountSubsidyApiContainer;
 
     /** @var AccountVersionApiContainer */
     public $accountVersionApiContainer;
@@ -606,6 +615,9 @@ class App
     /** @var MuseAiUgcApiContainer */
     public $museAiUgcApiContainer;
 
+    /** @var NegativewordsApiContainer */
+    public $negativewordsApiContainer;
+
     /** @var OauthApiContainer */
     public $oauthApiContainer;
 
@@ -723,8 +735,20 @@ class App
     /** @var SceneSpecTagsApiContainer */
     public $sceneSpecTagsApiContainer;
 
+    /** @var SearchAdgroupsApiContainer */
+    public $searchAdgroupsApiContainer;
+
+    /** @var SearchDynamicCreativesApiContainer */
+    public $searchDynamicCreativesApiContainer;
+
     /** @var SubcustomerTransferApiContainer */
     public $subcustomerTransferApiContainer;
+
+    /** @var SubsidyAccountBindApiContainer */
+    public $subsidyAccountBindApiContainer;
+
+    /** @var SubsidyBoundAccountListApiContainer */
+    public $subsidyBoundAccountListApiContainer;
 
     /** @var TargetingTagReportsApiContainer */
     public $targetingTagReportsApiContainer;
@@ -886,6 +910,20 @@ class App
             $this->client = new Client();
         }
         return $this->client;
+    }
+
+
+    /**
+     * @return AccountSubsidyApiContainer
+     */
+    public function accountSubsidy()
+    {
+        if (empty($this->accountSubsidyApiContainer)) {
+            $container = new AccountSubsidyApiContainer();
+            $container->init($this, $this->getClient());
+            $this->accountSubsidyApiContainer = $container;
+        }
+        return $this->accountSubsidyApiContainer;
     }
 
 
@@ -2668,6 +2706,20 @@ class App
 
 
     /**
+     * @return NegativewordsApiContainer
+     */
+    public function negativewords()
+    {
+        if (empty($this->negativewordsApiContainer)) {
+            $container = new NegativewordsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->negativewordsApiContainer = $container;
+        }
+        return $this->negativewordsApiContainer;
+    }
+
+
+    /**
      * @return OauthApiContainer
      */
     public function oauth()
@@ -3214,6 +3266,34 @@ class App
 
 
     /**
+     * @return SearchAdgroupsApiContainer
+     */
+    public function searchAdgroups()
+    {
+        if (empty($this->searchAdgroupsApiContainer)) {
+            $container = new SearchAdgroupsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->searchAdgroupsApiContainer = $container;
+        }
+        return $this->searchAdgroupsApiContainer;
+    }
+
+
+    /**
+     * @return SearchDynamicCreativesApiContainer
+     */
+    public function searchDynamicCreatives()
+    {
+        if (empty($this->searchDynamicCreativesApiContainer)) {
+            $container = new SearchDynamicCreativesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->searchDynamicCreativesApiContainer = $container;
+        }
+        return $this->searchDynamicCreativesApiContainer;
+    }
+
+
+    /**
      * @return SubcustomerTransferApiContainer
      */
     public function subcustomerTransfer()
@@ -3224,6 +3304,34 @@ class App
             $this->subcustomerTransferApiContainer = $container;
         }
         return $this->subcustomerTransferApiContainer;
+    }
+
+
+    /**
+     * @return SubsidyAccountBindApiContainer
+     */
+    public function subsidyAccountBind()
+    {
+        if (empty($this->subsidyAccountBindApiContainer)) {
+            $container = new SubsidyAccountBindApiContainer();
+            $container->init($this, $this->getClient());
+            $this->subsidyAccountBindApiContainer = $container;
+        }
+        return $this->subsidyAccountBindApiContainer;
+    }
+
+
+    /**
+     * @return SubsidyBoundAccountListApiContainer
+     */
+    public function subsidyBoundAccountList()
+    {
+        if (empty($this->subsidyBoundAccountListApiContainer)) {
+            $container = new SubsidyBoundAccountListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->subsidyBoundAccountListApiContainer = $container;
+        }
+        return $this->subsidyBoundAccountListApiContainer;
     }
 
 

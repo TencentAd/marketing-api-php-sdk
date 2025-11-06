@@ -59,7 +59,8 @@ class XjPageSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'pageId' => 'int',
-        'wechatChannelsLiveReserveId' => 'string'
+        'wechatChannelsLiveReserveId' => 'string',
+        'customParam' => 'string'
     ];
 
     /**
@@ -69,7 +70,8 @@ class XjPageSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'pageId' => 'int64',
-        'wechatChannelsLiveReserveId' => null
+        'wechatChannelsLiveReserveId' => null,
+        'customParam' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class XjPageSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'pageId' => 'page_id',
-        'wechatChannelsLiveReserveId' => 'wechat_channels_live_reserve_id'
+        'wechatChannelsLiveReserveId' => 'wechat_channels_live_reserve_id',
+        'customParam' => 'custom_param'
     ];
 
     /**
@@ -110,7 +113,8 @@ class XjPageSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'pageId' => 'setPageId',
-        'wechatChannelsLiveReserveId' => 'setWechatChannelsLiveReserveId'
+        'wechatChannelsLiveReserveId' => 'setWechatChannelsLiveReserveId',
+        'customParam' => 'setCustomParam'
     ];
 
     /**
@@ -120,7 +124,8 @@ class XjPageSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'pageId' => 'getPageId',
-        'wechatChannelsLiveReserveId' => 'getWechatChannelsLiveReserveId'
+        'wechatChannelsLiveReserveId' => 'getWechatChannelsLiveReserveId',
+        'customParam' => 'getCustomParam'
     ];
 
     /**
@@ -185,6 +190,7 @@ class XjPageSpec implements ModelInterface, ArrayAccess
     {
         $this->container['pageId'] = isset($data['pageId']) ? $data['pageId'] : null;
         $this->container['wechatChannelsLiveReserveId'] = isset($data['wechatChannelsLiveReserveId']) ? $data['wechatChannelsLiveReserveId'] : null;
+        $this->container['customParam'] = isset($data['customParam']) ? $data['customParam'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class XjPageSpec implements ModelInterface, ArrayAccess
     public function setWechatChannelsLiveReserveId($wechatChannelsLiveReserveId)
     {
         $this->container['wechatChannelsLiveReserveId'] = $wechatChannelsLiveReserveId;
+
+        return $this;
+    }
+
+    /**
+     * Gets customParam
+     *
+     * @return string|mixed
+     */
+    public function getCustomParam()
+    {
+        return $this->container['customParam'];
+    }
+
+    /**
+     * Sets customParam
+     *
+     * @param string|mixed $customParam customParam
+     *
+     * @return $this
+     */
+    public function setCustomParam($customParam)
+    {
+        $this->container['customParam'] = $customParam;
 
         return $this;
     }

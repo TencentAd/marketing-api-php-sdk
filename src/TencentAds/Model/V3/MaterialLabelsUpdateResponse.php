@@ -60,7 +60,8 @@ class MaterialLabelsUpdateResponse implements ModelInterface, ArrayAccess
         'code' => 'int',
         'message' => 'string',
         'messageCn' => 'string',
-        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]'
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\V3\MaterialLabelsUpdateResponseData'
     ];
 
     /**
@@ -72,7 +73,8 @@ class MaterialLabelsUpdateResponse implements ModelInterface, ArrayAccess
         'code' => 'int64',
         'message' => null,
         'messageCn' => null,
-        'errors' => null
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -105,7 +107,8 @@ class MaterialLabelsUpdateResponse implements ModelInterface, ArrayAccess
         'code' => 'code',
         'message' => 'message',
         'messageCn' => 'message_cn',
-        'errors' => 'errors'
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -117,7 +120,8 @@ class MaterialLabelsUpdateResponse implements ModelInterface, ArrayAccess
         'code' => 'setCode',
         'message' => 'setMessage',
         'messageCn' => 'setMessageCn',
-        'errors' => 'setErrors'
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -129,7 +133,8 @@ class MaterialLabelsUpdateResponse implements ModelInterface, ArrayAccess
         'code' => 'getCode',
         'message' => 'getMessage',
         'messageCn' => 'getMessageCn',
-        'errors' => 'getErrors'
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -196,6 +201,7 @@ class MaterialLabelsUpdateResponse implements ModelInterface, ArrayAccess
         $this->container['message'] = isset($data['message']) ? $data['message'] : null;
         $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
         $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -314,6 +320,30 @@ class MaterialLabelsUpdateResponse implements ModelInterface, ArrayAccess
     public function setErrors($errors)
     {
         $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\V3\MaterialLabelsUpdateResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\V3\MaterialLabelsUpdateResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

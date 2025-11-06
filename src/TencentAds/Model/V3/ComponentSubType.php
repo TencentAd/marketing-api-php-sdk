@@ -150,6 +150,8 @@ class ComponentSubType
     const UNVEIL_CARD = 'UNVEIL_CARD';
     const HOT_TOPIC = 'HOT_TOPIC';
     const AUDIO = 'AUDIO';
+    const WECHAT_SHOP_ACTIVITY_BULK_BUY = 'WECHAT_SHOP_ACTIVITY_BULK_BUY';
+    const WXGAME_DIRECT_PAGE = 'WXGAME_DIRECT_PAGE';
     const BRAND = 'BRAND';
     const BRAND_PAGE = 'BRAND_PAGE';
     const BRAND_SEARCH = 'BRAND_SEARCH';
@@ -188,6 +190,7 @@ class ComponentSubType
     const JUMP_INFO_APP_HARMONY = 'JUMP_INFO_APP_HARMONY';
     const JUMP_INFO_WECHAT_SHOP = 'JUMP_INFO_WECHAT_SHOP';
     const JUMP_INFO_SEARCH_BRAND_AREA = 'JUMP_INFO_SEARCH_BRAND_AREA';
+    const JUMP_INFO_SEARCH_PC = 'JUMP_INFO_SEARCH_PC';
     const MARKETING_ASSET_PLAYLET = 'MARKETING_ASSET_PLAYLET';
     
     /**
@@ -303,6 +306,8 @@ class ComponentSubType
             self::UNVEIL_CARD,
             self::HOT_TOPIC,
             self::AUDIO,
+            self::WECHAT_SHOP_ACTIVITY_BULK_BUY,
+            self::WXGAME_DIRECT_PAGE,
             self::BRAND,
             self::BRAND_PAGE,
             self::BRAND_SEARCH,
@@ -341,6 +346,7 @@ class ComponentSubType
             self::JUMP_INFO_APP_HARMONY,
             self::JUMP_INFO_WECHAT_SHOP,
             self::JUMP_INFO_SEARCH_BRAND_AREA,
+            self::JUMP_INFO_SEARCH_PC,
             self::MARKETING_ASSET_PLAYLET,
         ];
     }

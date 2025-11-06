@@ -64,6 +64,7 @@ class AsyncReportLevel
     const PROJECT = 'REPORT_LEVEL_PROJECT';
     const PROJECT_CREATIVE = 'REPORT_LEVEL_PROJECT_CREATIVE';
     const OS = 'REPORT_LEVEL_OS';
+    const CREATIVE_ASSET = 'REPORT_LEVEL_CREATIVE_ASSET';
     
     /**
      * Gets allowable values of the enum
@@ -92,6 +93,7 @@ class AsyncReportLevel
             self::PROJECT,
             self::PROJECT_CREATIVE,
             self::OS,
+            self::CREATIVE_ASSET,
         ];
     }
 }

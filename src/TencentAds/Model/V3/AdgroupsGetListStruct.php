@@ -134,7 +134,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'liveRecommendStrategyEnabled' => 'bool',
         'customCostRoiCap' => 'double',
         'enableSteadyExploration' => 'bool',
-        'adxRealtimeType' => '\TencentAds\Model\V3\AdxRealtimeType'
+        'adxRealtimeType' => '\TencentAds\Model\V3\AdxRealtimeType',
+        'smartTargetingStatus' => '\TencentAds\Model\V3\SmartTargetingStatus'
     ];
 
     /**
@@ -219,7 +220,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'liveRecommendStrategyEnabled' => null,
         'customCostRoiCap' => 'double',
         'enableSteadyExploration' => null,
-        'adxRealtimeType' => null
+        'adxRealtimeType' => null,
+        'smartTargetingStatus' => null
     ];
 
     /**
@@ -325,7 +327,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled',
         'customCostRoiCap' => 'custom_cost_roi_cap',
         'enableSteadyExploration' => 'enable_steady_exploration',
-        'adxRealtimeType' => 'adx_realtime_type'
+        'adxRealtimeType' => 'adx_realtime_type',
+        'smartTargetingStatus' => 'smart_targeting_status'
     ];
 
     /**
@@ -410,7 +413,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled',
         'customCostRoiCap' => 'setCustomCostRoiCap',
         'enableSteadyExploration' => 'setEnableSteadyExploration',
-        'adxRealtimeType' => 'setAdxRealtimeType'
+        'adxRealtimeType' => 'setAdxRealtimeType',
+        'smartTargetingStatus' => 'setSmartTargetingStatus'
     ];
 
     /**
@@ -495,7 +499,8 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled',
         'customCostRoiCap' => 'getCustomCostRoiCap',
         'enableSteadyExploration' => 'getEnableSteadyExploration',
-        'adxRealtimeType' => 'getAdxRealtimeType'
+        'adxRealtimeType' => 'getAdxRealtimeType',
+        'smartTargetingStatus' => 'getSmartTargetingStatus'
     ];
 
     /**
@@ -635,6 +640,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['customCostRoiCap'] = isset($data['customCostRoiCap']) ? $data['customCostRoiCap'] : null;
         $this->container['enableSteadyExploration'] = isset($data['enableSteadyExploration']) ? $data['enableSteadyExploration'] : null;
         $this->container['adxRealtimeType'] = isset($data['adxRealtimeType']) ? $data['adxRealtimeType'] : null;
+        $this->container['smartTargetingStatus'] = isset($data['smartTargetingStatus']) ? $data['smartTargetingStatus'] : null;
     }
 
     /**
@@ -2505,6 +2511,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setAdxRealtimeType($adxRealtimeType)
     {
         $this->container['adxRealtimeType'] = $adxRealtimeType;
+
+        return $this;
+    }
+
+    /**
+     * Gets smartTargetingStatus
+     *
+     * @return \TencentAds\Model\V3\SmartTargetingStatus|mixed
+     */
+    public function getSmartTargetingStatus()
+    {
+        return $this->container['smartTargetingStatus'];
+    }
+
+    /**
+     * Sets smartTargetingStatus
+     *
+     * @param \TencentAds\Model\V3\SmartTargetingStatus|mixed $smartTargetingStatus smartTargetingStatus
+     *
+     * @return $this
+     */
+    public function setSmartTargetingStatus($smartTargetingStatus)
+    {
+        $this->container['smartTargetingStatus'] = $smartTargetingStatus;
 
         return $this;
     }

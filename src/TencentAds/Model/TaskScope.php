@@ -57,6 +57,8 @@ class TaskScope
     const DYNAMIC_CREATIVE = 'TASK_SCOPE_DYNAMIC_CREATIVE';
     const ADEXPORT = 'TASK_SCOPE_ADEXPORT';
     const COMPONENT = 'TASK_SCOPE_COMPONENT';
+    const IMAGE = 'TASK_SCOPE_IMAGE';
+    const VIDEO = 'TASK_SCOPE_VIDEO';
     
     /**
      * Gets allowable values of the enum
@@ -78,6 +80,8 @@ class TaskScope
             self::DYNAMIC_CREATIVE,
             self::ADEXPORT,
             self::COMPONENT,
+            self::IMAGE,
+            self::VIDEO,
         ];
     }
 }

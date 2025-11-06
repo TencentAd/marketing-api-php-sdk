@@ -118,7 +118,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'customCostRoiCap' => 'double',
         'searchExpansionSwitch' => '\TencentAds\Model\V3\SearchExpansionSwitch',
         'adxRealtimeType' => '\TencentAds\Model\V3\AdxRealtimeType',
-        'enableSteadyExploration' => 'bool'
+        'enableSteadyExploration' => 'bool',
+        'smartTargetingMode' => '\TencentAds\Model\V3\SmartTargetingMode'
     ];
 
     /**
@@ -188,7 +189,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'customCostRoiCap' => 'double',
         'searchExpansionSwitch' => null,
         'adxRealtimeType' => null,
-        'enableSteadyExploration' => null
+        'enableSteadyExploration' => null,
+        'smartTargetingMode' => null
     ];
 
     /**
@@ -279,7 +281,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'customCostRoiCap' => 'custom_cost_roi_cap',
         'searchExpansionSwitch' => 'search_expansion_switch',
         'adxRealtimeType' => 'adx_realtime_type',
-        'enableSteadyExploration' => 'enable_steady_exploration'
+        'enableSteadyExploration' => 'enable_steady_exploration',
+        'smartTargetingMode' => 'smart_targeting_mode'
     ];
 
     /**
@@ -349,7 +352,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'customCostRoiCap' => 'setCustomCostRoiCap',
         'searchExpansionSwitch' => 'setSearchExpansionSwitch',
         'adxRealtimeType' => 'setAdxRealtimeType',
-        'enableSteadyExploration' => 'setEnableSteadyExploration'
+        'enableSteadyExploration' => 'setEnableSteadyExploration',
+        'smartTargetingMode' => 'setSmartTargetingMode'
     ];
 
     /**
@@ -419,7 +423,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'customCostRoiCap' => 'getCustomCostRoiCap',
         'searchExpansionSwitch' => 'getSearchExpansionSwitch',
         'adxRealtimeType' => 'getAdxRealtimeType',
-        'enableSteadyExploration' => 'getEnableSteadyExploration'
+        'enableSteadyExploration' => 'getEnableSteadyExploration',
+        'smartTargetingMode' => 'getSmartTargetingMode'
     ];
 
     /**
@@ -544,6 +549,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['searchExpansionSwitch'] = isset($data['searchExpansionSwitch']) ? $data['searchExpansionSwitch'] : null;
         $this->container['adxRealtimeType'] = isset($data['adxRealtimeType']) ? $data['adxRealtimeType'] : null;
         $this->container['enableSteadyExploration'] = isset($data['enableSteadyExploration']) ? $data['enableSteadyExploration'] : null;
+        $this->container['smartTargetingMode'] = isset($data['smartTargetingMode']) ? $data['smartTargetingMode'] : null;
     }
 
     /**
@@ -2054,6 +2060,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setEnableSteadyExploration($enableSteadyExploration)
     {
         $this->container['enableSteadyExploration'] = $enableSteadyExploration;
+
+        return $this;
+    }
+
+    /**
+     * Gets smartTargetingMode
+     *
+     * @return \TencentAds\Model\V3\SmartTargetingMode|mixed
+     */
+    public function getSmartTargetingMode()
+    {
+        return $this->container['smartTargetingMode'];
+    }
+
+    /**
+     * Sets smartTargetingMode
+     *
+     * @param \TencentAds\Model\V3\SmartTargetingMode|mixed $smartTargetingMode smartTargetingMode
+     *
+     * @return $this
+     */
+    public function setSmartTargetingMode($smartTargetingMode)
+    {
+        $this->container['smartTargetingMode'] = $smartTargetingMode;
 
         return $this;
     }

@@ -53,6 +53,8 @@ class AdCreativeSource
     const SPECIFIC_COMBINATION = 'AD_CREATIVE_SPECIFIC_COMBINATION';
     const SMART_DELIVERY_MARKETING_TARGET_AIGC = 'AD_CREATIVE_SMART_DELIVERY_MARKETING_TARGET_AIGC';
     const HISTORY_COMP_REUSE = 'AD_CREATIVE_HISTORY_COMP_REUSE';
+    const NEW_RECOMMEND = 'AD_CREATIVE_NEW_RECOMMEND';
+    const TRANSFORMER_RESIZE = 'AD_CREATIVE_TRANSFORMER_RESIZE';
     
     /**
      * Gets allowable values of the enum
@@ -70,6 +72,8 @@ class AdCreativeSource
             self::SPECIFIC_COMBINATION,
             self::SMART_DELIVERY_MARKETING_TARGET_AIGC,
             self::HISTORY_COMP_REUSE,
+            self::NEW_RECOMMEND,
+            self::TRANSFORMER_RESIZE,
         ];
     }
 }

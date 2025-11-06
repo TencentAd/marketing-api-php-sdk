@@ -108,7 +108,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay3sRate' => 'double',
         'videoOuterPlay5sCount' => 'int',
         'videoOuterPlay7sCount' => 'int',
-        'videoInnerPlayCount' => 'int',
         'readCount' => 'int',
         'readCost' => 'int',
         'commentCount' => 'int',
@@ -424,26 +423,19 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'paymentAmountActivatedD30' => 'int',
         'roiActivatedD30' => 'double',
         'miniGamePayingArpu' => 'int',
-        'minigame24hPayAmount' => 'int',
         'minigame24hPayUv' => 'int',
         'minigame24hPayRoi' => 'double',
         'minigame24hPayArpu' => 'int',
-        'minigame1dPayCount' => 'int',
-        'miniGamePayingUsersD1' => 'int',
-        'miniGamePayingAmountD1' => 'int',
         'miniGameFirstDayPayingRoi' => 'double',
         'miniGamePayingArpuD1' => 'int',
         'miniGameD3PayCount' => 'int',
         'miniGamePayD3Uv' => 'int',
-        'miniGamePayingAmountD3' => 'int',
         'miniGamePayD3Roi' => 'double',
         'miniGameD7PayCount' => 'int',
         'miniGamePayD7Uv' => 'int',
-        'miniGamePayingAmountD7' => 'int',
         'miniGamePayD7Roi' => 'double',
         'miniGameD14PayCount' => 'int',
         'miniGamePayD14Uv' => 'int',
-        'miniGamePayingAmountD14' => 'int',
         'miniGamePayD14Roi' => 'double',
         'miniGameD30PayCount' => 'int',
         'miniGamePayD30Uv' => 'int',
@@ -476,20 +468,15 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'firstPayRate' => 'double',
         'leadsPurchaseUv' => 'int',
         'miniGameFirstPayAmount' => 'int',
-        'activatedTotalPaymentCost' => 'int',
         'firstDayFirstPayCount' => 'int',
         'paymentCostActivatedD1' => 'int',
         'firstDayFirstPayRate' => 'double',
-        'firstDayFirstPayCost' => 'int',
         'activeD5FirstPayUv' => 'int',
         'activeD5ClickFirstPayRate' => 'double',
         'activeD5FirstPayCost' => 'int',
         'miniGameFirstPayingUsers' => 'int',
-        'miniGamePayD1PlaUv' => 'int',
         'miniGamePayD1PlaRate' => 'double',
-        'miniGameFirstPayPlaAmount' => 'int',
         'miniGameFirstPayPlaCost' => 'int',
-        'minigamePurchasePlaClk1dAmount' => 'int',
         'minigamePurchasePlaClk3dAmount' => 'int',
         'minigamePurchasePlaClk7dAmount' => 'int',
         'minigamePurchasePlaClk14dAmount' => 'int',
@@ -499,13 +486,9 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'stayPay30dPv' => 'int',
         'miniGameBfUv' => 'int',
         'miniGameBfCost' => 'int',
-        'miniGameBfPurchaseUv' => 'int',
-        'miniGameBfPurchaseAmount' => 'int',
         'miniGameBfPurchaseCost' => 'int',
         'miniGameBfPurchaseRoi' => 'double',
         'miniGameBfPurchaseArpu' => 'int',
-        'miniGameBfPurchaseD1Uv' => 'int',
-        'miniGameBfPurchaseD1Amount' => 'int',
         'miniGameBfPurchaseD1Cost' => 'int',
         'miniGameBfPurchaseD1Roi' => 'double',
         'miniGameBfPurchaseD1Arpu' => 'int',
@@ -559,8 +542,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'adPayingUsers24h' => 'int',
         'incomeRoi124h' => 'double',
         'adPurArpuCostD124h' => 'int',
-        'adPurArpuCostD124hReg' => 'int',
-        'adPurArpuCostD124hRegPla' => 'int',
         'firstDayAdPurArppuCost24h' => 'int',
         'incomePv24hPla' => 'int',
         'incomeVal24hPla' => 'int',
@@ -761,6 +742,18 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'mixPurchaseActive14dAmount' => 'int',
         'mixPayActive14dRoi' => 'double',
         'mixPurchaseDedupPv' => 'int',
+        'purchaseDedupBkPv' => 'int',
+        'purchaseBkAmount' => 'int',
+        'purchaseBkActive24hAmount' => 'int',
+        'purchaseBkActive24hPv' => 'int',
+        'payBkActive24hRoi' => 'double',
+        'payBkActive1dRoi' => 'double',
+        'purchaseBkActive3dAmount' => 'int',
+        'payBkActive3dRoi' => 'double',
+        'purchaseBkActive7dAmount' => 'int',
+        'payBkActive7dRoi' => 'double',
+        'purchaseBkActive14dAmount' => 'int',
+        'payBkActive14dRoi' => 'double',
         'purchaseRegAmount' => 'int',
         'purchaseDedupRegPv' => 'int',
         'purchaseRegActive24hAmount' => 'int',
@@ -859,6 +852,31 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'orderImp3dRoi' => 'double',
         'orderClk23dRoi' => 'double',
         'intentionAfterPaymentDedupPv' => 'int',
+        'regDedupCost' => 'int',
+        'clkBheaderPv' => 'int',
+        'clkBhNamePv' => 'int',
+        'clkBhStorePv' => 'int',
+        'clkBhServicePv' => 'int',
+        'clkBhPhonePv' => 'int',
+        'clkBaccountPv' => 'int',
+        'clkBaLivetagPv' => 'int',
+        'clkBaBizPv' => 'int',
+        'clkBaFinderPv' => 'int',
+        'clkBaWeappPv' => 'int',
+        'clkBmarketingPv' => 'int',
+        'clkBmTabPv' => 'int',
+        'clkBmProductPv' => 'int',
+        'clkBaWegamePv' => 'int',
+        'withdrawDepositClk7dAmount' => 'int',
+        'withdrawDepositClk7dRoi' => 'double',
+        'loanQuotaOpenDedupPv' => 'int',
+        'loanQuotaOpenDedupCost' => 'int',
+        'loanDedupPv' => 'int',
+        'loanDedupCost' => 'int',
+        'landingCpnExpPv' => 'int',
+        'lanButtonClickRate' => 'double',
+        'clkTopicElementPv' => 'int',
+        'adMonetizationEcpm' => 'int',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -933,7 +951,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay3sRate' => 'double',
         'videoOuterPlay5sCount' => 'int64',
         'videoOuterPlay7sCount' => 'int64',
-        'videoInnerPlayCount' => 'int64',
         'readCount' => 'int64',
         'readCost' => 'int64',
         'commentCount' => 'int64',
@@ -1249,26 +1266,19 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'paymentAmountActivatedD30' => 'int64',
         'roiActivatedD30' => 'double',
         'miniGamePayingArpu' => 'int64',
-        'minigame24hPayAmount' => 'int64',
         'minigame24hPayUv' => 'int64',
         'minigame24hPayRoi' => 'double',
         'minigame24hPayArpu' => 'int64',
-        'minigame1dPayCount' => 'int64',
-        'miniGamePayingUsersD1' => 'int64',
-        'miniGamePayingAmountD1' => 'int64',
         'miniGameFirstDayPayingRoi' => 'double',
         'miniGamePayingArpuD1' => 'int64',
         'miniGameD3PayCount' => 'int64',
         'miniGamePayD3Uv' => 'int64',
-        'miniGamePayingAmountD3' => 'int64',
         'miniGamePayD3Roi' => 'double',
         'miniGameD7PayCount' => 'int64',
         'miniGamePayD7Uv' => 'int64',
-        'miniGamePayingAmountD7' => 'int64',
         'miniGamePayD7Roi' => 'double',
         'miniGameD14PayCount' => 'int64',
         'miniGamePayD14Uv' => 'int64',
-        'miniGamePayingAmountD14' => 'int64',
         'miniGamePayD14Roi' => 'double',
         'miniGameD30PayCount' => 'int64',
         'miniGamePayD30Uv' => 'int64',
@@ -1301,20 +1311,15 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'firstPayRate' => 'double',
         'leadsPurchaseUv' => 'int64',
         'miniGameFirstPayAmount' => 'int64',
-        'activatedTotalPaymentCost' => 'int64',
         'firstDayFirstPayCount' => 'int64',
         'paymentCostActivatedD1' => 'int64',
         'firstDayFirstPayRate' => 'double',
-        'firstDayFirstPayCost' => 'int64',
         'activeD5FirstPayUv' => 'int64',
         'activeD5ClickFirstPayRate' => 'double',
         'activeD5FirstPayCost' => 'int64',
         'miniGameFirstPayingUsers' => 'int64',
-        'miniGamePayD1PlaUv' => 'int64',
         'miniGamePayD1PlaRate' => 'double',
-        'miniGameFirstPayPlaAmount' => 'int64',
         'miniGameFirstPayPlaCost' => 'int64',
-        'minigamePurchasePlaClk1dAmount' => 'int64',
         'minigamePurchasePlaClk3dAmount' => 'int64',
         'minigamePurchasePlaClk7dAmount' => 'int64',
         'minigamePurchasePlaClk14dAmount' => 'int64',
@@ -1324,13 +1329,9 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'stayPay30dPv' => 'int64',
         'miniGameBfUv' => 'int64',
         'miniGameBfCost' => 'int64',
-        'miniGameBfPurchaseUv' => 'int64',
-        'miniGameBfPurchaseAmount' => 'int64',
         'miniGameBfPurchaseCost' => 'int64',
         'miniGameBfPurchaseRoi' => 'double',
         'miniGameBfPurchaseArpu' => 'int64',
-        'miniGameBfPurchaseD1Uv' => 'int64',
-        'miniGameBfPurchaseD1Amount' => 'int64',
         'miniGameBfPurchaseD1Cost' => 'int64',
         'miniGameBfPurchaseD1Roi' => 'double',
         'miniGameBfPurchaseD1Arpu' => 'int64',
@@ -1384,8 +1385,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'adPayingUsers24h' => 'int64',
         'incomeRoi124h' => 'double',
         'adPurArpuCostD124h' => 'int64',
-        'adPurArpuCostD124hReg' => 'int64',
-        'adPurArpuCostD124hRegPla' => 'int64',
         'firstDayAdPurArppuCost24h' => 'int64',
         'incomePv24hPla' => 'int64',
         'incomeVal24hPla' => 'int64',
@@ -1586,6 +1585,18 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'mixPurchaseActive14dAmount' => 'int64',
         'mixPayActive14dRoi' => 'double',
         'mixPurchaseDedupPv' => 'int64',
+        'purchaseDedupBkPv' => 'int64',
+        'purchaseBkAmount' => 'int64',
+        'purchaseBkActive24hAmount' => 'int64',
+        'purchaseBkActive24hPv' => 'int64',
+        'payBkActive24hRoi' => 'double',
+        'payBkActive1dRoi' => 'double',
+        'purchaseBkActive3dAmount' => 'int64',
+        'payBkActive3dRoi' => 'double',
+        'purchaseBkActive7dAmount' => 'int64',
+        'payBkActive7dRoi' => 'double',
+        'purchaseBkActive14dAmount' => 'int64',
+        'payBkActive14dRoi' => 'double',
         'purchaseRegAmount' => 'int64',
         'purchaseDedupRegPv' => 'int64',
         'purchaseRegActive24hAmount' => 'int64',
@@ -1684,6 +1695,31 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'orderImp3dRoi' => 'double',
         'orderClk23dRoi' => 'double',
         'intentionAfterPaymentDedupPv' => 'int64',
+        'regDedupCost' => 'int64',
+        'clkBheaderPv' => 'int64',
+        'clkBhNamePv' => 'int64',
+        'clkBhStorePv' => 'int64',
+        'clkBhServicePv' => 'int64',
+        'clkBhPhonePv' => 'int64',
+        'clkBaccountPv' => 'int64',
+        'clkBaLivetagPv' => 'int64',
+        'clkBaBizPv' => 'int64',
+        'clkBaFinderPv' => 'int64',
+        'clkBaWeappPv' => 'int64',
+        'clkBmarketingPv' => 'int64',
+        'clkBmTabPv' => 'int64',
+        'clkBmProductPv' => 'int64',
+        'clkBaWegamePv' => 'int64',
+        'withdrawDepositClk7dAmount' => 'int64',
+        'withdrawDepositClk7dRoi' => 'double',
+        'loanQuotaOpenDedupPv' => 'int64',
+        'loanQuotaOpenDedupCost' => 'int64',
+        'loanDedupPv' => 'int64',
+        'loanDedupCost' => 'int64',
+        'landingCpnExpPv' => 'int64',
+        'lanButtonClickRate' => 'double',
+        'clkTopicElementPv' => 'int64',
+        'adMonetizationEcpm' => 'int64',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -1779,7 +1815,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay3sRate' => 'video_outer_play3s_rate',
         'videoOuterPlay5sCount' => 'video_outer_play5s_count',
         'videoOuterPlay7sCount' => 'video_outer_play7s_count',
-        'videoInnerPlayCount' => 'video_inner_play_count',
         'readCount' => 'read_count',
         'readCost' => 'read_cost',
         'commentCount' => 'comment_count',
@@ -2095,26 +2130,19 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'paymentAmountActivatedD30' => 'payment_amount_activated_d30',
         'roiActivatedD30' => 'roi_activated_d30',
         'miniGamePayingArpu' => 'mini_game_paying_arpu',
-        'minigame24hPayAmount' => 'minigame_24h_pay_amount',
         'minigame24hPayUv' => 'minigame_24h_pay_uv',
         'minigame24hPayRoi' => 'minigame_24h_pay_roi',
         'minigame24hPayArpu' => 'minigame_24h_pay_arpu',
-        'minigame1dPayCount' => 'minigame_1d_pay_count',
-        'miniGamePayingUsersD1' => 'mini_game_paying_users_d1',
-        'miniGamePayingAmountD1' => 'mini_game_paying_amount_d1',
         'miniGameFirstDayPayingRoi' => 'mini_game_first_day_paying_roi',
         'miniGamePayingArpuD1' => 'mini_game_paying_arpu_d1',
         'miniGameD3PayCount' => 'mini_game_d3_pay_count',
         'miniGamePayD3Uv' => 'mini_game_pay_d3_uv',
-        'miniGamePayingAmountD3' => 'mini_game_paying_amount_d3',
         'miniGamePayD3Roi' => 'mini_game_pay_d3_roi',
         'miniGameD7PayCount' => 'mini_game_d7_pay_count',
         'miniGamePayD7Uv' => 'mini_game_pay_d7_uv',
-        'miniGamePayingAmountD7' => 'mini_game_paying_amount_d7',
         'miniGamePayD7Roi' => 'mini_game_pay_d7_roi',
         'miniGameD14PayCount' => 'mini_game_d14_pay_count',
         'miniGamePayD14Uv' => 'mini_game_pay_d14_uv',
-        'miniGamePayingAmountD14' => 'mini_game_paying_amount_d14',
         'miniGamePayD14Roi' => 'mini_game_pay_d14_roi',
         'miniGameD30PayCount' => 'mini_game_d30_pay_count',
         'miniGamePayD30Uv' => 'mini_game_pay_d30_uv',
@@ -2147,20 +2175,15 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'firstPayRate' => 'first_pay_rate',
         'leadsPurchaseUv' => 'leads_purchase_uv',
         'miniGameFirstPayAmount' => 'mini_game_first_pay_amount',
-        'activatedTotalPaymentCost' => 'activated_total_payment_cost',
         'firstDayFirstPayCount' => 'first_day_first_pay_count',
         'paymentCostActivatedD1' => 'payment_cost_activated_d1',
         'firstDayFirstPayRate' => 'first_day_first_pay_rate',
-        'firstDayFirstPayCost' => 'first_day_first_pay_cost',
         'activeD5FirstPayUv' => 'active_d5_first_pay_uv',
         'activeD5ClickFirstPayRate' => 'active_d5_click_first_pay_rate',
         'activeD5FirstPayCost' => 'active_d5_first_pay_cost',
         'miniGameFirstPayingUsers' => 'mini_game_first_paying_users',
-        'miniGamePayD1PlaUv' => 'mini_game_pay_d1_pla_uv',
         'miniGamePayD1PlaRate' => 'mini_game_pay_d1_pla_rate',
-        'miniGameFirstPayPlaAmount' => 'mini_game_first_pay_pla_amount',
         'miniGameFirstPayPlaCost' => 'mini_game_first_pay_pla_cost',
-        'minigamePurchasePlaClk1dAmount' => 'minigame_purchase_pla_clk_1d_amount',
         'minigamePurchasePlaClk3dAmount' => 'minigame_purchase_pla_clk_3d_amount',
         'minigamePurchasePlaClk7dAmount' => 'minigame_purchase_pla_clk_7d_amount',
         'minigamePurchasePlaClk14dAmount' => 'minigame_purchase_pla_clk_14d_amount',
@@ -2170,13 +2193,9 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'stayPay30dPv' => 'stay_pay_30d_pv',
         'miniGameBfUv' => 'mini_game_bf_uv',
         'miniGameBfCost' => 'mini_game_bf_cost',
-        'miniGameBfPurchaseUv' => 'mini_game_bf_purchase_uv',
-        'miniGameBfPurchaseAmount' => 'mini_game_bf_purchase_amount',
         'miniGameBfPurchaseCost' => 'mini_game_bf_purchase_cost',
         'miniGameBfPurchaseRoi' => 'mini_game_bf_purchase_roi',
         'miniGameBfPurchaseArpu' => 'mini_game_bf_purchase_arpu',
-        'miniGameBfPurchaseD1Uv' => 'mini_game_bf_purchase_d1_uv',
-        'miniGameBfPurchaseD1Amount' => 'mini_game_bf_purchase_d1_amount',
         'miniGameBfPurchaseD1Cost' => 'mini_game_bf_purchase_d1_cost',
         'miniGameBfPurchaseD1Roi' => 'mini_game_bf_purchase_d1_roi',
         'miniGameBfPurchaseD1Arpu' => 'mini_game_bf_purchase_d1_arpu',
@@ -2230,8 +2249,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'adPayingUsers24h' => 'ad_paying_users_24h',
         'incomeRoi124h' => 'income_roi_1_24h',
         'adPurArpuCostD124h' => 'ad_pur_arpu_cost_d1_24h',
-        'adPurArpuCostD124hReg' => 'ad_pur_arpu_cost_d1_24h_reg',
-        'adPurArpuCostD124hRegPla' => 'ad_pur_arpu_cost_d1_24h_reg_pla',
         'firstDayAdPurArppuCost24h' => 'first_day_ad_pur_arppu_cost_24h',
         'incomePv24hPla' => 'income_pv_24h_pla',
         'incomeVal24hPla' => 'income_val_24h_pla',
@@ -2432,6 +2449,18 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'mixPurchaseActive14dAmount' => 'mix_purchase_active_14d_amount',
         'mixPayActive14dRoi' => 'mix_pay_active_14d_roi',
         'mixPurchaseDedupPv' => 'mix_purchase_dedup_pv',
+        'purchaseDedupBkPv' => 'purchase_dedup_bk_pv',
+        'purchaseBkAmount' => 'purchase_bk_amount',
+        'purchaseBkActive24hAmount' => 'purchase_bk_active_24h_amount',
+        'purchaseBkActive24hPv' => 'purchase_bk_active_24h_pv',
+        'payBkActive24hRoi' => 'pay_bk_active_24h_roi',
+        'payBkActive1dRoi' => 'pay_bk_active_1d_roi',
+        'purchaseBkActive3dAmount' => 'purchase_bk_active_3d_amount',
+        'payBkActive3dRoi' => 'pay_bk_active_3d_roi',
+        'purchaseBkActive7dAmount' => 'purchase_bk_active_7d_amount',
+        'payBkActive7dRoi' => 'pay_bk_active_7d_roi',
+        'purchaseBkActive14dAmount' => 'purchase_bk_active_14d_amount',
+        'payBkActive14dRoi' => 'pay_bk_active_14d_roi',
         'purchaseRegAmount' => 'purchase_reg_amount',
         'purchaseDedupRegPv' => 'purchase_dedup_reg_pv',
         'purchaseRegActive24hAmount' => 'purchase_reg_active_24h_amount',
@@ -2530,6 +2559,31 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'orderImp3dRoi' => 'order_imp_3d_roi',
         'orderClk23dRoi' => 'order_clk2_3d_roi',
         'intentionAfterPaymentDedupPv' => 'intention_after_payment_dedup_pv',
+        'regDedupCost' => 'reg_dedup_cost',
+        'clkBheaderPv' => 'clk_bheader_pv',
+        'clkBhNamePv' => 'clk_bh_name_pv',
+        'clkBhStorePv' => 'clk_bh_store_pv',
+        'clkBhServicePv' => 'clk_bh_service_pv',
+        'clkBhPhonePv' => 'clk_bh_phone_pv',
+        'clkBaccountPv' => 'clk_baccount_pv',
+        'clkBaLivetagPv' => 'clk_ba_livetag_pv',
+        'clkBaBizPv' => 'clk_ba_biz_pv',
+        'clkBaFinderPv' => 'clk_ba_finder_pv',
+        'clkBaWeappPv' => 'clk_ba_weapp_pv',
+        'clkBmarketingPv' => 'clk_bmarketing_pv',
+        'clkBmTabPv' => 'clk_bm_tab_pv',
+        'clkBmProductPv' => 'clk_bm_product_pv',
+        'clkBaWegamePv' => 'clk_ba_wegame_pv',
+        'withdrawDepositClk7dAmount' => 'withdraw_deposit_clk_7d_amount',
+        'withdrawDepositClk7dRoi' => 'withdraw_deposit_clk_7d_roi',
+        'loanQuotaOpenDedupPv' => 'loan_quota_open_dedup_pv',
+        'loanQuotaOpenDedupCost' => 'loan_quota_open_dedup_cost',
+        'loanDedupPv' => 'loan_dedup_pv',
+        'loanDedupCost' => 'loan_dedup_cost',
+        'landingCpnExpPv' => 'landing_cpn_exp_pv',
+        'lanButtonClickRate' => 'lan_button_click_rate',
+        'clkTopicElementPv' => 'clk_topic_element_pv',
+        'adMonetizationEcpm' => 'ad_monetization_ecpm',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -2604,7 +2658,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay3sRate' => 'setVideoOuterPlay3sRate',
         'videoOuterPlay5sCount' => 'setVideoOuterPlay5sCount',
         'videoOuterPlay7sCount' => 'setVideoOuterPlay7sCount',
-        'videoInnerPlayCount' => 'setVideoInnerPlayCount',
         'readCount' => 'setReadCount',
         'readCost' => 'setReadCost',
         'commentCount' => 'setCommentCount',
@@ -2920,26 +2973,19 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'paymentAmountActivatedD30' => 'setPaymentAmountActivatedD30',
         'roiActivatedD30' => 'setRoiActivatedD30',
         'miniGamePayingArpu' => 'setMiniGamePayingArpu',
-        'minigame24hPayAmount' => 'setMinigame24hPayAmount',
         'minigame24hPayUv' => 'setMinigame24hPayUv',
         'minigame24hPayRoi' => 'setMinigame24hPayRoi',
         'minigame24hPayArpu' => 'setMinigame24hPayArpu',
-        'minigame1dPayCount' => 'setMinigame1dPayCount',
-        'miniGamePayingUsersD1' => 'setMiniGamePayingUsersD1',
-        'miniGamePayingAmountD1' => 'setMiniGamePayingAmountD1',
         'miniGameFirstDayPayingRoi' => 'setMiniGameFirstDayPayingRoi',
         'miniGamePayingArpuD1' => 'setMiniGamePayingArpuD1',
         'miniGameD3PayCount' => 'setMiniGameD3PayCount',
         'miniGamePayD3Uv' => 'setMiniGamePayD3Uv',
-        'miniGamePayingAmountD3' => 'setMiniGamePayingAmountD3',
         'miniGamePayD3Roi' => 'setMiniGamePayD3Roi',
         'miniGameD7PayCount' => 'setMiniGameD7PayCount',
         'miniGamePayD7Uv' => 'setMiniGamePayD7Uv',
-        'miniGamePayingAmountD7' => 'setMiniGamePayingAmountD7',
         'miniGamePayD7Roi' => 'setMiniGamePayD7Roi',
         'miniGameD14PayCount' => 'setMiniGameD14PayCount',
         'miniGamePayD14Uv' => 'setMiniGamePayD14Uv',
-        'miniGamePayingAmountD14' => 'setMiniGamePayingAmountD14',
         'miniGamePayD14Roi' => 'setMiniGamePayD14Roi',
         'miniGameD30PayCount' => 'setMiniGameD30PayCount',
         'miniGamePayD30Uv' => 'setMiniGamePayD30Uv',
@@ -2972,20 +3018,15 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'firstPayRate' => 'setFirstPayRate',
         'leadsPurchaseUv' => 'setLeadsPurchaseUv',
         'miniGameFirstPayAmount' => 'setMiniGameFirstPayAmount',
-        'activatedTotalPaymentCost' => 'setActivatedTotalPaymentCost',
         'firstDayFirstPayCount' => 'setFirstDayFirstPayCount',
         'paymentCostActivatedD1' => 'setPaymentCostActivatedD1',
         'firstDayFirstPayRate' => 'setFirstDayFirstPayRate',
-        'firstDayFirstPayCost' => 'setFirstDayFirstPayCost',
         'activeD5FirstPayUv' => 'setActiveD5FirstPayUv',
         'activeD5ClickFirstPayRate' => 'setActiveD5ClickFirstPayRate',
         'activeD5FirstPayCost' => 'setActiveD5FirstPayCost',
         'miniGameFirstPayingUsers' => 'setMiniGameFirstPayingUsers',
-        'miniGamePayD1PlaUv' => 'setMiniGamePayD1PlaUv',
         'miniGamePayD1PlaRate' => 'setMiniGamePayD1PlaRate',
-        'miniGameFirstPayPlaAmount' => 'setMiniGameFirstPayPlaAmount',
         'miniGameFirstPayPlaCost' => 'setMiniGameFirstPayPlaCost',
-        'minigamePurchasePlaClk1dAmount' => 'setMinigamePurchasePlaClk1dAmount',
         'minigamePurchasePlaClk3dAmount' => 'setMinigamePurchasePlaClk3dAmount',
         'minigamePurchasePlaClk7dAmount' => 'setMinigamePurchasePlaClk7dAmount',
         'minigamePurchasePlaClk14dAmount' => 'setMinigamePurchasePlaClk14dAmount',
@@ -2995,13 +3036,9 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'stayPay30dPv' => 'setStayPay30dPv',
         'miniGameBfUv' => 'setMiniGameBfUv',
         'miniGameBfCost' => 'setMiniGameBfCost',
-        'miniGameBfPurchaseUv' => 'setMiniGameBfPurchaseUv',
-        'miniGameBfPurchaseAmount' => 'setMiniGameBfPurchaseAmount',
         'miniGameBfPurchaseCost' => 'setMiniGameBfPurchaseCost',
         'miniGameBfPurchaseRoi' => 'setMiniGameBfPurchaseRoi',
         'miniGameBfPurchaseArpu' => 'setMiniGameBfPurchaseArpu',
-        'miniGameBfPurchaseD1Uv' => 'setMiniGameBfPurchaseD1Uv',
-        'miniGameBfPurchaseD1Amount' => 'setMiniGameBfPurchaseD1Amount',
         'miniGameBfPurchaseD1Cost' => 'setMiniGameBfPurchaseD1Cost',
         'miniGameBfPurchaseD1Roi' => 'setMiniGameBfPurchaseD1Roi',
         'miniGameBfPurchaseD1Arpu' => 'setMiniGameBfPurchaseD1Arpu',
@@ -3055,8 +3092,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'adPayingUsers24h' => 'setAdPayingUsers24h',
         'incomeRoi124h' => 'setIncomeRoi124h',
         'adPurArpuCostD124h' => 'setAdPurArpuCostD124h',
-        'adPurArpuCostD124hReg' => 'setAdPurArpuCostD124hReg',
-        'adPurArpuCostD124hRegPla' => 'setAdPurArpuCostD124hRegPla',
         'firstDayAdPurArppuCost24h' => 'setFirstDayAdPurArppuCost24h',
         'incomePv24hPla' => 'setIncomePv24hPla',
         'incomeVal24hPla' => 'setIncomeVal24hPla',
@@ -3257,6 +3292,18 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'mixPurchaseActive14dAmount' => 'setMixPurchaseActive14dAmount',
         'mixPayActive14dRoi' => 'setMixPayActive14dRoi',
         'mixPurchaseDedupPv' => 'setMixPurchaseDedupPv',
+        'purchaseDedupBkPv' => 'setPurchaseDedupBkPv',
+        'purchaseBkAmount' => 'setPurchaseBkAmount',
+        'purchaseBkActive24hAmount' => 'setPurchaseBkActive24hAmount',
+        'purchaseBkActive24hPv' => 'setPurchaseBkActive24hPv',
+        'payBkActive24hRoi' => 'setPayBkActive24hRoi',
+        'payBkActive1dRoi' => 'setPayBkActive1dRoi',
+        'purchaseBkActive3dAmount' => 'setPurchaseBkActive3dAmount',
+        'payBkActive3dRoi' => 'setPayBkActive3dRoi',
+        'purchaseBkActive7dAmount' => 'setPurchaseBkActive7dAmount',
+        'payBkActive7dRoi' => 'setPayBkActive7dRoi',
+        'purchaseBkActive14dAmount' => 'setPurchaseBkActive14dAmount',
+        'payBkActive14dRoi' => 'setPayBkActive14dRoi',
         'purchaseRegAmount' => 'setPurchaseRegAmount',
         'purchaseDedupRegPv' => 'setPurchaseDedupRegPv',
         'purchaseRegActive24hAmount' => 'setPurchaseRegActive24hAmount',
@@ -3355,6 +3402,31 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'orderImp3dRoi' => 'setOrderImp3dRoi',
         'orderClk23dRoi' => 'setOrderClk23dRoi',
         'intentionAfterPaymentDedupPv' => 'setIntentionAfterPaymentDedupPv',
+        'regDedupCost' => 'setRegDedupCost',
+        'clkBheaderPv' => 'setClkBheaderPv',
+        'clkBhNamePv' => 'setClkBhNamePv',
+        'clkBhStorePv' => 'setClkBhStorePv',
+        'clkBhServicePv' => 'setClkBhServicePv',
+        'clkBhPhonePv' => 'setClkBhPhonePv',
+        'clkBaccountPv' => 'setClkBaccountPv',
+        'clkBaLivetagPv' => 'setClkBaLivetagPv',
+        'clkBaBizPv' => 'setClkBaBizPv',
+        'clkBaFinderPv' => 'setClkBaFinderPv',
+        'clkBaWeappPv' => 'setClkBaWeappPv',
+        'clkBmarketingPv' => 'setClkBmarketingPv',
+        'clkBmTabPv' => 'setClkBmTabPv',
+        'clkBmProductPv' => 'setClkBmProductPv',
+        'clkBaWegamePv' => 'setClkBaWegamePv',
+        'withdrawDepositClk7dAmount' => 'setWithdrawDepositClk7dAmount',
+        'withdrawDepositClk7dRoi' => 'setWithdrawDepositClk7dRoi',
+        'loanQuotaOpenDedupPv' => 'setLoanQuotaOpenDedupPv',
+        'loanQuotaOpenDedupCost' => 'setLoanQuotaOpenDedupCost',
+        'loanDedupPv' => 'setLoanDedupPv',
+        'loanDedupCost' => 'setLoanDedupCost',
+        'landingCpnExpPv' => 'setLandingCpnExpPv',
+        'lanButtonClickRate' => 'setLanButtonClickRate',
+        'clkTopicElementPv' => 'setClkTopicElementPv',
+        'adMonetizationEcpm' => 'setAdMonetizationEcpm',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -3429,7 +3501,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'videoOuterPlay3sRate' => 'getVideoOuterPlay3sRate',
         'videoOuterPlay5sCount' => 'getVideoOuterPlay5sCount',
         'videoOuterPlay7sCount' => 'getVideoOuterPlay7sCount',
-        'videoInnerPlayCount' => 'getVideoInnerPlayCount',
         'readCount' => 'getReadCount',
         'readCost' => 'getReadCost',
         'commentCount' => 'getCommentCount',
@@ -3745,26 +3816,19 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'paymentAmountActivatedD30' => 'getPaymentAmountActivatedD30',
         'roiActivatedD30' => 'getRoiActivatedD30',
         'miniGamePayingArpu' => 'getMiniGamePayingArpu',
-        'minigame24hPayAmount' => 'getMinigame24hPayAmount',
         'minigame24hPayUv' => 'getMinigame24hPayUv',
         'minigame24hPayRoi' => 'getMinigame24hPayRoi',
         'minigame24hPayArpu' => 'getMinigame24hPayArpu',
-        'minigame1dPayCount' => 'getMinigame1dPayCount',
-        'miniGamePayingUsersD1' => 'getMiniGamePayingUsersD1',
-        'miniGamePayingAmountD1' => 'getMiniGamePayingAmountD1',
         'miniGameFirstDayPayingRoi' => 'getMiniGameFirstDayPayingRoi',
         'miniGamePayingArpuD1' => 'getMiniGamePayingArpuD1',
         'miniGameD3PayCount' => 'getMiniGameD3PayCount',
         'miniGamePayD3Uv' => 'getMiniGamePayD3Uv',
-        'miniGamePayingAmountD3' => 'getMiniGamePayingAmountD3',
         'miniGamePayD3Roi' => 'getMiniGamePayD3Roi',
         'miniGameD7PayCount' => 'getMiniGameD7PayCount',
         'miniGamePayD7Uv' => 'getMiniGamePayD7Uv',
-        'miniGamePayingAmountD7' => 'getMiniGamePayingAmountD7',
         'miniGamePayD7Roi' => 'getMiniGamePayD7Roi',
         'miniGameD14PayCount' => 'getMiniGameD14PayCount',
         'miniGamePayD14Uv' => 'getMiniGamePayD14Uv',
-        'miniGamePayingAmountD14' => 'getMiniGamePayingAmountD14',
         'miniGamePayD14Roi' => 'getMiniGamePayD14Roi',
         'miniGameD30PayCount' => 'getMiniGameD30PayCount',
         'miniGamePayD30Uv' => 'getMiniGamePayD30Uv',
@@ -3797,20 +3861,15 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'firstPayRate' => 'getFirstPayRate',
         'leadsPurchaseUv' => 'getLeadsPurchaseUv',
         'miniGameFirstPayAmount' => 'getMiniGameFirstPayAmount',
-        'activatedTotalPaymentCost' => 'getActivatedTotalPaymentCost',
         'firstDayFirstPayCount' => 'getFirstDayFirstPayCount',
         'paymentCostActivatedD1' => 'getPaymentCostActivatedD1',
         'firstDayFirstPayRate' => 'getFirstDayFirstPayRate',
-        'firstDayFirstPayCost' => 'getFirstDayFirstPayCost',
         'activeD5FirstPayUv' => 'getActiveD5FirstPayUv',
         'activeD5ClickFirstPayRate' => 'getActiveD5ClickFirstPayRate',
         'activeD5FirstPayCost' => 'getActiveD5FirstPayCost',
         'miniGameFirstPayingUsers' => 'getMiniGameFirstPayingUsers',
-        'miniGamePayD1PlaUv' => 'getMiniGamePayD1PlaUv',
         'miniGamePayD1PlaRate' => 'getMiniGamePayD1PlaRate',
-        'miniGameFirstPayPlaAmount' => 'getMiniGameFirstPayPlaAmount',
         'miniGameFirstPayPlaCost' => 'getMiniGameFirstPayPlaCost',
-        'minigamePurchasePlaClk1dAmount' => 'getMinigamePurchasePlaClk1dAmount',
         'minigamePurchasePlaClk3dAmount' => 'getMinigamePurchasePlaClk3dAmount',
         'minigamePurchasePlaClk7dAmount' => 'getMinigamePurchasePlaClk7dAmount',
         'minigamePurchasePlaClk14dAmount' => 'getMinigamePurchasePlaClk14dAmount',
@@ -3820,13 +3879,9 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'stayPay30dPv' => 'getStayPay30dPv',
         'miniGameBfUv' => 'getMiniGameBfUv',
         'miniGameBfCost' => 'getMiniGameBfCost',
-        'miniGameBfPurchaseUv' => 'getMiniGameBfPurchaseUv',
-        'miniGameBfPurchaseAmount' => 'getMiniGameBfPurchaseAmount',
         'miniGameBfPurchaseCost' => 'getMiniGameBfPurchaseCost',
         'miniGameBfPurchaseRoi' => 'getMiniGameBfPurchaseRoi',
         'miniGameBfPurchaseArpu' => 'getMiniGameBfPurchaseArpu',
-        'miniGameBfPurchaseD1Uv' => 'getMiniGameBfPurchaseD1Uv',
-        'miniGameBfPurchaseD1Amount' => 'getMiniGameBfPurchaseD1Amount',
         'miniGameBfPurchaseD1Cost' => 'getMiniGameBfPurchaseD1Cost',
         'miniGameBfPurchaseD1Roi' => 'getMiniGameBfPurchaseD1Roi',
         'miniGameBfPurchaseD1Arpu' => 'getMiniGameBfPurchaseD1Arpu',
@@ -3880,8 +3935,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'adPayingUsers24h' => 'getAdPayingUsers24h',
         'incomeRoi124h' => 'getIncomeRoi124h',
         'adPurArpuCostD124h' => 'getAdPurArpuCostD124h',
-        'adPurArpuCostD124hReg' => 'getAdPurArpuCostD124hReg',
-        'adPurArpuCostD124hRegPla' => 'getAdPurArpuCostD124hRegPla',
         'firstDayAdPurArppuCost24h' => 'getFirstDayAdPurArppuCost24h',
         'incomePv24hPla' => 'getIncomePv24hPla',
         'incomeVal24hPla' => 'getIncomeVal24hPla',
@@ -4082,6 +4135,18 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'mixPurchaseActive14dAmount' => 'getMixPurchaseActive14dAmount',
         'mixPayActive14dRoi' => 'getMixPayActive14dRoi',
         'mixPurchaseDedupPv' => 'getMixPurchaseDedupPv',
+        'purchaseDedupBkPv' => 'getPurchaseDedupBkPv',
+        'purchaseBkAmount' => 'getPurchaseBkAmount',
+        'purchaseBkActive24hAmount' => 'getPurchaseBkActive24hAmount',
+        'purchaseBkActive24hPv' => 'getPurchaseBkActive24hPv',
+        'payBkActive24hRoi' => 'getPayBkActive24hRoi',
+        'payBkActive1dRoi' => 'getPayBkActive1dRoi',
+        'purchaseBkActive3dAmount' => 'getPurchaseBkActive3dAmount',
+        'payBkActive3dRoi' => 'getPayBkActive3dRoi',
+        'purchaseBkActive7dAmount' => 'getPurchaseBkActive7dAmount',
+        'payBkActive7dRoi' => 'getPayBkActive7dRoi',
+        'purchaseBkActive14dAmount' => 'getPurchaseBkActive14dAmount',
+        'payBkActive14dRoi' => 'getPayBkActive14dRoi',
         'purchaseRegAmount' => 'getPurchaseRegAmount',
         'purchaseDedupRegPv' => 'getPurchaseDedupRegPv',
         'purchaseRegActive24hAmount' => 'getPurchaseRegActive24hAmount',
@@ -4180,6 +4245,31 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'orderImp3dRoi' => 'getOrderImp3dRoi',
         'orderClk23dRoi' => 'getOrderClk23dRoi',
         'intentionAfterPaymentDedupPv' => 'getIntentionAfterPaymentDedupPv',
+        'regDedupCost' => 'getRegDedupCost',
+        'clkBheaderPv' => 'getClkBheaderPv',
+        'clkBhNamePv' => 'getClkBhNamePv',
+        'clkBhStorePv' => 'getClkBhStorePv',
+        'clkBhServicePv' => 'getClkBhServicePv',
+        'clkBhPhonePv' => 'getClkBhPhonePv',
+        'clkBaccountPv' => 'getClkBaccountPv',
+        'clkBaLivetagPv' => 'getClkBaLivetagPv',
+        'clkBaBizPv' => 'getClkBaBizPv',
+        'clkBaFinderPv' => 'getClkBaFinderPv',
+        'clkBaWeappPv' => 'getClkBaWeappPv',
+        'clkBmarketingPv' => 'getClkBmarketingPv',
+        'clkBmTabPv' => 'getClkBmTabPv',
+        'clkBmProductPv' => 'getClkBmProductPv',
+        'clkBaWegamePv' => 'getClkBaWegamePv',
+        'withdrawDepositClk7dAmount' => 'getWithdrawDepositClk7dAmount',
+        'withdrawDepositClk7dRoi' => 'getWithdrawDepositClk7dRoi',
+        'loanQuotaOpenDedupPv' => 'getLoanQuotaOpenDedupPv',
+        'loanQuotaOpenDedupCost' => 'getLoanQuotaOpenDedupCost',
+        'loanDedupPv' => 'getLoanDedupPv',
+        'loanDedupCost' => 'getLoanDedupCost',
+        'landingCpnExpPv' => 'getLandingCpnExpPv',
+        'lanButtonClickRate' => 'getLanButtonClickRate',
+        'clkTopicElementPv' => 'getClkTopicElementPv',
+        'adMonetizationEcpm' => 'getAdMonetizationEcpm',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -4308,7 +4398,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['videoOuterPlay3sRate'] = isset($data['videoOuterPlay3sRate']) ? $data['videoOuterPlay3sRate'] : null;
         $this->container['videoOuterPlay5sCount'] = isset($data['videoOuterPlay5sCount']) ? $data['videoOuterPlay5sCount'] : null;
         $this->container['videoOuterPlay7sCount'] = isset($data['videoOuterPlay7sCount']) ? $data['videoOuterPlay7sCount'] : null;
-        $this->container['videoInnerPlayCount'] = isset($data['videoInnerPlayCount']) ? $data['videoInnerPlayCount'] : null;
         $this->container['readCount'] = isset($data['readCount']) ? $data['readCount'] : null;
         $this->container['readCost'] = isset($data['readCost']) ? $data['readCost'] : null;
         $this->container['commentCount'] = isset($data['commentCount']) ? $data['commentCount'] : null;
@@ -4624,26 +4713,19 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['paymentAmountActivatedD30'] = isset($data['paymentAmountActivatedD30']) ? $data['paymentAmountActivatedD30'] : null;
         $this->container['roiActivatedD30'] = isset($data['roiActivatedD30']) ? $data['roiActivatedD30'] : null;
         $this->container['miniGamePayingArpu'] = isset($data['miniGamePayingArpu']) ? $data['miniGamePayingArpu'] : null;
-        $this->container['minigame24hPayAmount'] = isset($data['minigame24hPayAmount']) ? $data['minigame24hPayAmount'] : null;
         $this->container['minigame24hPayUv'] = isset($data['minigame24hPayUv']) ? $data['minigame24hPayUv'] : null;
         $this->container['minigame24hPayRoi'] = isset($data['minigame24hPayRoi']) ? $data['minigame24hPayRoi'] : null;
         $this->container['minigame24hPayArpu'] = isset($data['minigame24hPayArpu']) ? $data['minigame24hPayArpu'] : null;
-        $this->container['minigame1dPayCount'] = isset($data['minigame1dPayCount']) ? $data['minigame1dPayCount'] : null;
-        $this->container['miniGamePayingUsersD1'] = isset($data['miniGamePayingUsersD1']) ? $data['miniGamePayingUsersD1'] : null;
-        $this->container['miniGamePayingAmountD1'] = isset($data['miniGamePayingAmountD1']) ? $data['miniGamePayingAmountD1'] : null;
         $this->container['miniGameFirstDayPayingRoi'] = isset($data['miniGameFirstDayPayingRoi']) ? $data['miniGameFirstDayPayingRoi'] : null;
         $this->container['miniGamePayingArpuD1'] = isset($data['miniGamePayingArpuD1']) ? $data['miniGamePayingArpuD1'] : null;
         $this->container['miniGameD3PayCount'] = isset($data['miniGameD3PayCount']) ? $data['miniGameD3PayCount'] : null;
         $this->container['miniGamePayD3Uv'] = isset($data['miniGamePayD3Uv']) ? $data['miniGamePayD3Uv'] : null;
-        $this->container['miniGamePayingAmountD3'] = isset($data['miniGamePayingAmountD3']) ? $data['miniGamePayingAmountD3'] : null;
         $this->container['miniGamePayD3Roi'] = isset($data['miniGamePayD3Roi']) ? $data['miniGamePayD3Roi'] : null;
         $this->container['miniGameD7PayCount'] = isset($data['miniGameD7PayCount']) ? $data['miniGameD7PayCount'] : null;
         $this->container['miniGamePayD7Uv'] = isset($data['miniGamePayD7Uv']) ? $data['miniGamePayD7Uv'] : null;
-        $this->container['miniGamePayingAmountD7'] = isset($data['miniGamePayingAmountD7']) ? $data['miniGamePayingAmountD7'] : null;
         $this->container['miniGamePayD7Roi'] = isset($data['miniGamePayD7Roi']) ? $data['miniGamePayD7Roi'] : null;
         $this->container['miniGameD14PayCount'] = isset($data['miniGameD14PayCount']) ? $data['miniGameD14PayCount'] : null;
         $this->container['miniGamePayD14Uv'] = isset($data['miniGamePayD14Uv']) ? $data['miniGamePayD14Uv'] : null;
-        $this->container['miniGamePayingAmountD14'] = isset($data['miniGamePayingAmountD14']) ? $data['miniGamePayingAmountD14'] : null;
         $this->container['miniGamePayD14Roi'] = isset($data['miniGamePayD14Roi']) ? $data['miniGamePayD14Roi'] : null;
         $this->container['miniGameD30PayCount'] = isset($data['miniGameD30PayCount']) ? $data['miniGameD30PayCount'] : null;
         $this->container['miniGamePayD30Uv'] = isset($data['miniGamePayD30Uv']) ? $data['miniGamePayD30Uv'] : null;
@@ -4676,20 +4758,15 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['firstPayRate'] = isset($data['firstPayRate']) ? $data['firstPayRate'] : null;
         $this->container['leadsPurchaseUv'] = isset($data['leadsPurchaseUv']) ? $data['leadsPurchaseUv'] : null;
         $this->container['miniGameFirstPayAmount'] = isset($data['miniGameFirstPayAmount']) ? $data['miniGameFirstPayAmount'] : null;
-        $this->container['activatedTotalPaymentCost'] = isset($data['activatedTotalPaymentCost']) ? $data['activatedTotalPaymentCost'] : null;
         $this->container['firstDayFirstPayCount'] = isset($data['firstDayFirstPayCount']) ? $data['firstDayFirstPayCount'] : null;
         $this->container['paymentCostActivatedD1'] = isset($data['paymentCostActivatedD1']) ? $data['paymentCostActivatedD1'] : null;
         $this->container['firstDayFirstPayRate'] = isset($data['firstDayFirstPayRate']) ? $data['firstDayFirstPayRate'] : null;
-        $this->container['firstDayFirstPayCost'] = isset($data['firstDayFirstPayCost']) ? $data['firstDayFirstPayCost'] : null;
         $this->container['activeD5FirstPayUv'] = isset($data['activeD5FirstPayUv']) ? $data['activeD5FirstPayUv'] : null;
         $this->container['activeD5ClickFirstPayRate'] = isset($data['activeD5ClickFirstPayRate']) ? $data['activeD5ClickFirstPayRate'] : null;
         $this->container['activeD5FirstPayCost'] = isset($data['activeD5FirstPayCost']) ? $data['activeD5FirstPayCost'] : null;
         $this->container['miniGameFirstPayingUsers'] = isset($data['miniGameFirstPayingUsers']) ? $data['miniGameFirstPayingUsers'] : null;
-        $this->container['miniGamePayD1PlaUv'] = isset($data['miniGamePayD1PlaUv']) ? $data['miniGamePayD1PlaUv'] : null;
         $this->container['miniGamePayD1PlaRate'] = isset($data['miniGamePayD1PlaRate']) ? $data['miniGamePayD1PlaRate'] : null;
-        $this->container['miniGameFirstPayPlaAmount'] = isset($data['miniGameFirstPayPlaAmount']) ? $data['miniGameFirstPayPlaAmount'] : null;
         $this->container['miniGameFirstPayPlaCost'] = isset($data['miniGameFirstPayPlaCost']) ? $data['miniGameFirstPayPlaCost'] : null;
-        $this->container['minigamePurchasePlaClk1dAmount'] = isset($data['minigamePurchasePlaClk1dAmount']) ? $data['minigamePurchasePlaClk1dAmount'] : null;
         $this->container['minigamePurchasePlaClk3dAmount'] = isset($data['minigamePurchasePlaClk3dAmount']) ? $data['minigamePurchasePlaClk3dAmount'] : null;
         $this->container['minigamePurchasePlaClk7dAmount'] = isset($data['minigamePurchasePlaClk7dAmount']) ? $data['minigamePurchasePlaClk7dAmount'] : null;
         $this->container['minigamePurchasePlaClk14dAmount'] = isset($data['minigamePurchasePlaClk14dAmount']) ? $data['minigamePurchasePlaClk14dAmount'] : null;
@@ -4699,13 +4776,9 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['stayPay30dPv'] = isset($data['stayPay30dPv']) ? $data['stayPay30dPv'] : null;
         $this->container['miniGameBfUv'] = isset($data['miniGameBfUv']) ? $data['miniGameBfUv'] : null;
         $this->container['miniGameBfCost'] = isset($data['miniGameBfCost']) ? $data['miniGameBfCost'] : null;
-        $this->container['miniGameBfPurchaseUv'] = isset($data['miniGameBfPurchaseUv']) ? $data['miniGameBfPurchaseUv'] : null;
-        $this->container['miniGameBfPurchaseAmount'] = isset($data['miniGameBfPurchaseAmount']) ? $data['miniGameBfPurchaseAmount'] : null;
         $this->container['miniGameBfPurchaseCost'] = isset($data['miniGameBfPurchaseCost']) ? $data['miniGameBfPurchaseCost'] : null;
         $this->container['miniGameBfPurchaseRoi'] = isset($data['miniGameBfPurchaseRoi']) ? $data['miniGameBfPurchaseRoi'] : null;
         $this->container['miniGameBfPurchaseArpu'] = isset($data['miniGameBfPurchaseArpu']) ? $data['miniGameBfPurchaseArpu'] : null;
-        $this->container['miniGameBfPurchaseD1Uv'] = isset($data['miniGameBfPurchaseD1Uv']) ? $data['miniGameBfPurchaseD1Uv'] : null;
-        $this->container['miniGameBfPurchaseD1Amount'] = isset($data['miniGameBfPurchaseD1Amount']) ? $data['miniGameBfPurchaseD1Amount'] : null;
         $this->container['miniGameBfPurchaseD1Cost'] = isset($data['miniGameBfPurchaseD1Cost']) ? $data['miniGameBfPurchaseD1Cost'] : null;
         $this->container['miniGameBfPurchaseD1Roi'] = isset($data['miniGameBfPurchaseD1Roi']) ? $data['miniGameBfPurchaseD1Roi'] : null;
         $this->container['miniGameBfPurchaseD1Arpu'] = isset($data['miniGameBfPurchaseD1Arpu']) ? $data['miniGameBfPurchaseD1Arpu'] : null;
@@ -4759,8 +4832,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['adPayingUsers24h'] = isset($data['adPayingUsers24h']) ? $data['adPayingUsers24h'] : null;
         $this->container['incomeRoi124h'] = isset($data['incomeRoi124h']) ? $data['incomeRoi124h'] : null;
         $this->container['adPurArpuCostD124h'] = isset($data['adPurArpuCostD124h']) ? $data['adPurArpuCostD124h'] : null;
-        $this->container['adPurArpuCostD124hReg'] = isset($data['adPurArpuCostD124hReg']) ? $data['adPurArpuCostD124hReg'] : null;
-        $this->container['adPurArpuCostD124hRegPla'] = isset($data['adPurArpuCostD124hRegPla']) ? $data['adPurArpuCostD124hRegPla'] : null;
         $this->container['firstDayAdPurArppuCost24h'] = isset($data['firstDayAdPurArppuCost24h']) ? $data['firstDayAdPurArppuCost24h'] : null;
         $this->container['incomePv24hPla'] = isset($data['incomePv24hPla']) ? $data['incomePv24hPla'] : null;
         $this->container['incomeVal24hPla'] = isset($data['incomeVal24hPla']) ? $data['incomeVal24hPla'] : null;
@@ -4961,6 +5032,18 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['mixPurchaseActive14dAmount'] = isset($data['mixPurchaseActive14dAmount']) ? $data['mixPurchaseActive14dAmount'] : null;
         $this->container['mixPayActive14dRoi'] = isset($data['mixPayActive14dRoi']) ? $data['mixPayActive14dRoi'] : null;
         $this->container['mixPurchaseDedupPv'] = isset($data['mixPurchaseDedupPv']) ? $data['mixPurchaseDedupPv'] : null;
+        $this->container['purchaseDedupBkPv'] = isset($data['purchaseDedupBkPv']) ? $data['purchaseDedupBkPv'] : null;
+        $this->container['purchaseBkAmount'] = isset($data['purchaseBkAmount']) ? $data['purchaseBkAmount'] : null;
+        $this->container['purchaseBkActive24hAmount'] = isset($data['purchaseBkActive24hAmount']) ? $data['purchaseBkActive24hAmount'] : null;
+        $this->container['purchaseBkActive24hPv'] = isset($data['purchaseBkActive24hPv']) ? $data['purchaseBkActive24hPv'] : null;
+        $this->container['payBkActive24hRoi'] = isset($data['payBkActive24hRoi']) ? $data['payBkActive24hRoi'] : null;
+        $this->container['payBkActive1dRoi'] = isset($data['payBkActive1dRoi']) ? $data['payBkActive1dRoi'] : null;
+        $this->container['purchaseBkActive3dAmount'] = isset($data['purchaseBkActive3dAmount']) ? $data['purchaseBkActive3dAmount'] : null;
+        $this->container['payBkActive3dRoi'] = isset($data['payBkActive3dRoi']) ? $data['payBkActive3dRoi'] : null;
+        $this->container['purchaseBkActive7dAmount'] = isset($data['purchaseBkActive7dAmount']) ? $data['purchaseBkActive7dAmount'] : null;
+        $this->container['payBkActive7dRoi'] = isset($data['payBkActive7dRoi']) ? $data['payBkActive7dRoi'] : null;
+        $this->container['purchaseBkActive14dAmount'] = isset($data['purchaseBkActive14dAmount']) ? $data['purchaseBkActive14dAmount'] : null;
+        $this->container['payBkActive14dRoi'] = isset($data['payBkActive14dRoi']) ? $data['payBkActive14dRoi'] : null;
         $this->container['purchaseRegAmount'] = isset($data['purchaseRegAmount']) ? $data['purchaseRegAmount'] : null;
         $this->container['purchaseDedupRegPv'] = isset($data['purchaseDedupRegPv']) ? $data['purchaseDedupRegPv'] : null;
         $this->container['purchaseRegActive24hAmount'] = isset($data['purchaseRegActive24hAmount']) ? $data['purchaseRegActive24hAmount'] : null;
@@ -5059,6 +5142,31 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['orderImp3dRoi'] = isset($data['orderImp3dRoi']) ? $data['orderImp3dRoi'] : null;
         $this->container['orderClk23dRoi'] = isset($data['orderClk23dRoi']) ? $data['orderClk23dRoi'] : null;
         $this->container['intentionAfterPaymentDedupPv'] = isset($data['intentionAfterPaymentDedupPv']) ? $data['intentionAfterPaymentDedupPv'] : null;
+        $this->container['regDedupCost'] = isset($data['regDedupCost']) ? $data['regDedupCost'] : null;
+        $this->container['clkBheaderPv'] = isset($data['clkBheaderPv']) ? $data['clkBheaderPv'] : null;
+        $this->container['clkBhNamePv'] = isset($data['clkBhNamePv']) ? $data['clkBhNamePv'] : null;
+        $this->container['clkBhStorePv'] = isset($data['clkBhStorePv']) ? $data['clkBhStorePv'] : null;
+        $this->container['clkBhServicePv'] = isset($data['clkBhServicePv']) ? $data['clkBhServicePv'] : null;
+        $this->container['clkBhPhonePv'] = isset($data['clkBhPhonePv']) ? $data['clkBhPhonePv'] : null;
+        $this->container['clkBaccountPv'] = isset($data['clkBaccountPv']) ? $data['clkBaccountPv'] : null;
+        $this->container['clkBaLivetagPv'] = isset($data['clkBaLivetagPv']) ? $data['clkBaLivetagPv'] : null;
+        $this->container['clkBaBizPv'] = isset($data['clkBaBizPv']) ? $data['clkBaBizPv'] : null;
+        $this->container['clkBaFinderPv'] = isset($data['clkBaFinderPv']) ? $data['clkBaFinderPv'] : null;
+        $this->container['clkBaWeappPv'] = isset($data['clkBaWeappPv']) ? $data['clkBaWeappPv'] : null;
+        $this->container['clkBmarketingPv'] = isset($data['clkBmarketingPv']) ? $data['clkBmarketingPv'] : null;
+        $this->container['clkBmTabPv'] = isset($data['clkBmTabPv']) ? $data['clkBmTabPv'] : null;
+        $this->container['clkBmProductPv'] = isset($data['clkBmProductPv']) ? $data['clkBmProductPv'] : null;
+        $this->container['clkBaWegamePv'] = isset($data['clkBaWegamePv']) ? $data['clkBaWegamePv'] : null;
+        $this->container['withdrawDepositClk7dAmount'] = isset($data['withdrawDepositClk7dAmount']) ? $data['withdrawDepositClk7dAmount'] : null;
+        $this->container['withdrawDepositClk7dRoi'] = isset($data['withdrawDepositClk7dRoi']) ? $data['withdrawDepositClk7dRoi'] : null;
+        $this->container['loanQuotaOpenDedupPv'] = isset($data['loanQuotaOpenDedupPv']) ? $data['loanQuotaOpenDedupPv'] : null;
+        $this->container['loanQuotaOpenDedupCost'] = isset($data['loanQuotaOpenDedupCost']) ? $data['loanQuotaOpenDedupCost'] : null;
+        $this->container['loanDedupPv'] = isset($data['loanDedupPv']) ? $data['loanDedupPv'] : null;
+        $this->container['loanDedupCost'] = isset($data['loanDedupCost']) ? $data['loanDedupCost'] : null;
+        $this->container['landingCpnExpPv'] = isset($data['landingCpnExpPv']) ? $data['landingCpnExpPv'] : null;
+        $this->container['lanButtonClickRate'] = isset($data['lanButtonClickRate']) ? $data['lanButtonClickRate'] : null;
+        $this->container['clkTopicElementPv'] = isset($data['clkTopicElementPv']) ? $data['clkTopicElementPv'] : null;
+        $this->container['adMonetizationEcpm'] = isset($data['adMonetizationEcpm']) ? $data['adMonetizationEcpm'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -6297,30 +6405,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setVideoOuterPlay7sCount($videoOuterPlay7sCount)
     {
         $this->container['videoOuterPlay7sCount'] = $videoOuterPlay7sCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoInnerPlayCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoInnerPlayCount()
-    {
-        return $this->container['videoInnerPlayCount'];
-    }
-
-    /**
-     * Sets videoInnerPlayCount
-     *
-     * @param int|mixed $videoInnerPlayCount videoInnerPlayCount
-     *
-     * @return $this
-     */
-    public function setVideoInnerPlayCount($videoInnerPlayCount)
-    {
-        $this->container['videoInnerPlayCount'] = $videoInnerPlayCount;
 
         return $this;
     }
@@ -13886,30 +13970,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets minigame24hPayAmount
-     *
-     * @return int|mixed
-     */
-    public function getMinigame24hPayAmount()
-    {
-        return $this->container['minigame24hPayAmount'];
-    }
-
-    /**
-     * Sets minigame24hPayAmount
-     *
-     * @param int|mixed $minigame24hPayAmount minigame24hPayAmount
-     *
-     * @return $this
-     */
-    public function setMinigame24hPayAmount($minigame24hPayAmount)
-    {
-        $this->container['minigame24hPayAmount'] = $minigame24hPayAmount;
-
-        return $this;
-    }
-
-    /**
      * Gets minigame24hPayUv
      *
      * @return int|mixed
@@ -13977,78 +14037,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setMinigame24hPayArpu($minigame24hPayArpu)
     {
         $this->container['minigame24hPayArpu'] = $minigame24hPayArpu;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigame1dPayCount
-     *
-     * @return int|mixed
-     */
-    public function getMinigame1dPayCount()
-    {
-        return $this->container['minigame1dPayCount'];
-    }
-
-    /**
-     * Sets minigame1dPayCount
-     *
-     * @param int|mixed $minigame1dPayCount minigame1dPayCount
-     *
-     * @return $this
-     */
-    public function setMinigame1dPayCount($minigame1dPayCount)
-    {
-        $this->container['minigame1dPayCount'] = $minigame1dPayCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayingUsersD1
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayingUsersD1()
-    {
-        return $this->container['miniGamePayingUsersD1'];
-    }
-
-    /**
-     * Sets miniGamePayingUsersD1
-     *
-     * @param int|mixed $miniGamePayingUsersD1 miniGamePayingUsersD1
-     *
-     * @return $this
-     */
-    public function setMiniGamePayingUsersD1($miniGamePayingUsersD1)
-    {
-        $this->container['miniGamePayingUsersD1'] = $miniGamePayingUsersD1;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayingAmountD1
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayingAmountD1()
-    {
-        return $this->container['miniGamePayingAmountD1'];
-    }
-
-    /**
-     * Sets miniGamePayingAmountD1
-     *
-     * @param int|mixed $miniGamePayingAmountD1 miniGamePayingAmountD1
-     *
-     * @return $this
-     */
-    public function setMiniGamePayingAmountD1($miniGamePayingAmountD1)
-    {
-        $this->container['miniGamePayingAmountD1'] = $miniGamePayingAmountD1;
 
         return $this;
     }
@@ -14150,30 +14138,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets miniGamePayingAmountD3
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayingAmountD3()
-    {
-        return $this->container['miniGamePayingAmountD3'];
-    }
-
-    /**
-     * Sets miniGamePayingAmountD3
-     *
-     * @param int|mixed $miniGamePayingAmountD3 miniGamePayingAmountD3
-     *
-     * @return $this
-     */
-    public function setMiniGamePayingAmountD3($miniGamePayingAmountD3)
-    {
-        $this->container['miniGamePayingAmountD3'] = $miniGamePayingAmountD3;
-
-        return $this;
-    }
-
-    /**
      * Gets miniGamePayD3Roi
      *
      * @return double|mixed
@@ -14246,30 +14210,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets miniGamePayingAmountD7
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayingAmountD7()
-    {
-        return $this->container['miniGamePayingAmountD7'];
-    }
-
-    /**
-     * Sets miniGamePayingAmountD7
-     *
-     * @param int|mixed $miniGamePayingAmountD7 miniGamePayingAmountD7
-     *
-     * @return $this
-     */
-    public function setMiniGamePayingAmountD7($miniGamePayingAmountD7)
-    {
-        $this->container['miniGamePayingAmountD7'] = $miniGamePayingAmountD7;
-
-        return $this;
-    }
-
-    /**
      * Gets miniGamePayD7Roi
      *
      * @return double|mixed
@@ -14337,30 +14277,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayD14Uv($miniGamePayD14Uv)
     {
         $this->container['miniGamePayD14Uv'] = $miniGamePayD14Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGamePayingAmountD14
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayingAmountD14()
-    {
-        return $this->container['miniGamePayingAmountD14'];
-    }
-
-    /**
-     * Sets miniGamePayingAmountD14
-     *
-     * @param int|mixed $miniGamePayingAmountD14 miniGamePayingAmountD14
-     *
-     * @return $this
-     */
-    public function setMiniGamePayingAmountD14($miniGamePayingAmountD14)
-    {
-        $this->container['miniGamePayingAmountD14'] = $miniGamePayingAmountD14;
 
         return $this;
     }
@@ -15134,30 +15050,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets activatedTotalPaymentCost
-     *
-     * @return int|mixed
-     */
-    public function getActivatedTotalPaymentCost()
-    {
-        return $this->container['activatedTotalPaymentCost'];
-    }
-
-    /**
-     * Sets activatedTotalPaymentCost
-     *
-     * @param int|mixed $activatedTotalPaymentCost activatedTotalPaymentCost
-     *
-     * @return $this
-     */
-    public function setActivatedTotalPaymentCost($activatedTotalPaymentCost)
-    {
-        $this->container['activatedTotalPaymentCost'] = $activatedTotalPaymentCost;
-
-        return $this;
-    }
-
-    /**
      * Gets firstDayFirstPayCount
      *
      * @return int|mixed
@@ -15225,30 +15117,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setFirstDayFirstPayRate($firstDayFirstPayRate)
     {
         $this->container['firstDayFirstPayRate'] = $firstDayFirstPayRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets firstDayFirstPayCost
-     *
-     * @return int|mixed
-     */
-    public function getFirstDayFirstPayCost()
-    {
-        return $this->container['firstDayFirstPayCost'];
-    }
-
-    /**
-     * Sets firstDayFirstPayCost
-     *
-     * @param int|mixed $firstDayFirstPayCost firstDayFirstPayCost
-     *
-     * @return $this
-     */
-    public function setFirstDayFirstPayCost($firstDayFirstPayCost)
-    {
-        $this->container['firstDayFirstPayCost'] = $firstDayFirstPayCost;
 
         return $this;
     }
@@ -15350,30 +15218,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets miniGamePayD1PlaUv
-     *
-     * @return int|mixed
-     */
-    public function getMiniGamePayD1PlaUv()
-    {
-        return $this->container['miniGamePayD1PlaUv'];
-    }
-
-    /**
-     * Sets miniGamePayD1PlaUv
-     *
-     * @param int|mixed $miniGamePayD1PlaUv miniGamePayD1PlaUv
-     *
-     * @return $this
-     */
-    public function setMiniGamePayD1PlaUv($miniGamePayD1PlaUv)
-    {
-        $this->container['miniGamePayD1PlaUv'] = $miniGamePayD1PlaUv;
-
-        return $this;
-    }
-
-    /**
      * Gets miniGamePayD1PlaRate
      *
      * @return double|mixed
@@ -15398,30 +15242,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets miniGameFirstPayPlaAmount
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameFirstPayPlaAmount()
-    {
-        return $this->container['miniGameFirstPayPlaAmount'];
-    }
-
-    /**
-     * Sets miniGameFirstPayPlaAmount
-     *
-     * @param int|mixed $miniGameFirstPayPlaAmount miniGameFirstPayPlaAmount
-     *
-     * @return $this
-     */
-    public function setMiniGameFirstPayPlaAmount($miniGameFirstPayPlaAmount)
-    {
-        $this->container['miniGameFirstPayPlaAmount'] = $miniGameFirstPayPlaAmount;
-
-        return $this;
-    }
-
-    /**
      * Gets miniGameFirstPayPlaCost
      *
      * @return int|mixed
@@ -15441,30 +15261,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setMiniGameFirstPayPlaCost($miniGameFirstPayPlaCost)
     {
         $this->container['miniGameFirstPayPlaCost'] = $miniGameFirstPayPlaCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets minigamePurchasePlaClk1dAmount
-     *
-     * @return int|mixed
-     */
-    public function getMinigamePurchasePlaClk1dAmount()
-    {
-        return $this->container['minigamePurchasePlaClk1dAmount'];
-    }
-
-    /**
-     * Sets minigamePurchasePlaClk1dAmount
-     *
-     * @param int|mixed $minigamePurchasePlaClk1dAmount minigamePurchasePlaClk1dAmount
-     *
-     * @return $this
-     */
-    public function setMinigamePurchasePlaClk1dAmount($minigamePurchasePlaClk1dAmount)
-    {
-        $this->container['minigamePurchasePlaClk1dAmount'] = $minigamePurchasePlaClk1dAmount;
 
         return $this;
     }
@@ -15686,54 +15482,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets miniGameBfPurchaseUv
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameBfPurchaseUv()
-    {
-        return $this->container['miniGameBfPurchaseUv'];
-    }
-
-    /**
-     * Sets miniGameBfPurchaseUv
-     *
-     * @param int|mixed $miniGameBfPurchaseUv miniGameBfPurchaseUv
-     *
-     * @return $this
-     */
-    public function setMiniGameBfPurchaseUv($miniGameBfPurchaseUv)
-    {
-        $this->container['miniGameBfPurchaseUv'] = $miniGameBfPurchaseUv;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameBfPurchaseAmount
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameBfPurchaseAmount()
-    {
-        return $this->container['miniGameBfPurchaseAmount'];
-    }
-
-    /**
-     * Sets miniGameBfPurchaseAmount
-     *
-     * @param int|mixed $miniGameBfPurchaseAmount miniGameBfPurchaseAmount
-     *
-     * @return $this
-     */
-    public function setMiniGameBfPurchaseAmount($miniGameBfPurchaseAmount)
-    {
-        $this->container['miniGameBfPurchaseAmount'] = $miniGameBfPurchaseAmount;
-
-        return $this;
-    }
-
-    /**
      * Gets miniGameBfPurchaseCost
      *
      * @return int|mixed
@@ -15801,54 +15549,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setMiniGameBfPurchaseArpu($miniGameBfPurchaseArpu)
     {
         $this->container['miniGameBfPurchaseArpu'] = $miniGameBfPurchaseArpu;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameBfPurchaseD1Uv
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameBfPurchaseD1Uv()
-    {
-        return $this->container['miniGameBfPurchaseD1Uv'];
-    }
-
-    /**
-     * Sets miniGameBfPurchaseD1Uv
-     *
-     * @param int|mixed $miniGameBfPurchaseD1Uv miniGameBfPurchaseD1Uv
-     *
-     * @return $this
-     */
-    public function setMiniGameBfPurchaseD1Uv($miniGameBfPurchaseD1Uv)
-    {
-        $this->container['miniGameBfPurchaseD1Uv'] = $miniGameBfPurchaseD1Uv;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameBfPurchaseD1Amount
-     *
-     * @return int|mixed
-     */
-    public function getMiniGameBfPurchaseD1Amount()
-    {
-        return $this->container['miniGameBfPurchaseD1Amount'];
-    }
-
-    /**
-     * Sets miniGameBfPurchaseD1Amount
-     *
-     * @param int|mixed $miniGameBfPurchaseD1Amount miniGameBfPurchaseD1Amount
-     *
-     * @return $this
-     */
-    public function setMiniGameBfPurchaseD1Amount($miniGameBfPurchaseD1Amount)
-    {
-        $this->container['miniGameBfPurchaseD1Amount'] = $miniGameBfPurchaseD1Amount;
 
         return $this;
     }
@@ -17121,54 +16821,6 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setAdPurArpuCostD124h($adPurArpuCostD124h)
     {
         $this->container['adPurArpuCostD124h'] = $adPurArpuCostD124h;
-
-        return $this;
-    }
-
-    /**
-     * Gets adPurArpuCostD124hReg
-     *
-     * @return int|mixed
-     */
-    public function getAdPurArpuCostD124hReg()
-    {
-        return $this->container['adPurArpuCostD124hReg'];
-    }
-
-    /**
-     * Sets adPurArpuCostD124hReg
-     *
-     * @param int|mixed $adPurArpuCostD124hReg adPurArpuCostD124hReg
-     *
-     * @return $this
-     */
-    public function setAdPurArpuCostD124hReg($adPurArpuCostD124hReg)
-    {
-        $this->container['adPurArpuCostD124hReg'] = $adPurArpuCostD124hReg;
-
-        return $this;
-    }
-
-    /**
-     * Gets adPurArpuCostD124hRegPla
-     *
-     * @return int|mixed
-     */
-    public function getAdPurArpuCostD124hRegPla()
-    {
-        return $this->container['adPurArpuCostD124hRegPla'];
-    }
-
-    /**
-     * Sets adPurArpuCostD124hRegPla
-     *
-     * @param int|mixed $adPurArpuCostD124hRegPla adPurArpuCostD124hRegPla
-     *
-     * @return $this
-     */
-    public function setAdPurArpuCostD124hRegPla($adPurArpuCostD124hRegPla)
-    {
-        $this->container['adPurArpuCostD124hRegPla'] = $adPurArpuCostD124hRegPla;
 
         return $this;
     }
@@ -21974,6 +21626,294 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets purchaseDedupBkPv
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseDedupBkPv()
+    {
+        return $this->container['purchaseDedupBkPv'];
+    }
+
+    /**
+     * Sets purchaseDedupBkPv
+     *
+     * @param int|mixed $purchaseDedupBkPv purchaseDedupBkPv
+     *
+     * @return $this
+     */
+    public function setPurchaseDedupBkPv($purchaseDedupBkPv)
+    {
+        $this->container['purchaseDedupBkPv'] = $purchaseDedupBkPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseBkAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseBkAmount()
+    {
+        return $this->container['purchaseBkAmount'];
+    }
+
+    /**
+     * Sets purchaseBkAmount
+     *
+     * @param int|mixed $purchaseBkAmount purchaseBkAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseBkAmount($purchaseBkAmount)
+    {
+        $this->container['purchaseBkAmount'] = $purchaseBkAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseBkActive24hAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseBkActive24hAmount()
+    {
+        return $this->container['purchaseBkActive24hAmount'];
+    }
+
+    /**
+     * Sets purchaseBkActive24hAmount
+     *
+     * @param int|mixed $purchaseBkActive24hAmount purchaseBkActive24hAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseBkActive24hAmount($purchaseBkActive24hAmount)
+    {
+        $this->container['purchaseBkActive24hAmount'] = $purchaseBkActive24hAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseBkActive24hPv
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseBkActive24hPv()
+    {
+        return $this->container['purchaseBkActive24hPv'];
+    }
+
+    /**
+     * Sets purchaseBkActive24hPv
+     *
+     * @param int|mixed $purchaseBkActive24hPv purchaseBkActive24hPv
+     *
+     * @return $this
+     */
+    public function setPurchaseBkActive24hPv($purchaseBkActive24hPv)
+    {
+        $this->container['purchaseBkActive24hPv'] = $purchaseBkActive24hPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets payBkActive24hRoi
+     *
+     * @return double|mixed
+     */
+    public function getPayBkActive24hRoi()
+    {
+        return $this->container['payBkActive24hRoi'];
+    }
+
+    /**
+     * Sets payBkActive24hRoi
+     *
+     * @param double|mixed $payBkActive24hRoi payBkActive24hRoi
+     *
+     * @return $this
+     */
+    public function setPayBkActive24hRoi($payBkActive24hRoi)
+    {
+        $this->container['payBkActive24hRoi'] = $payBkActive24hRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets payBkActive1dRoi
+     *
+     * @return double|mixed
+     */
+    public function getPayBkActive1dRoi()
+    {
+        return $this->container['payBkActive1dRoi'];
+    }
+
+    /**
+     * Sets payBkActive1dRoi
+     *
+     * @param double|mixed $payBkActive1dRoi payBkActive1dRoi
+     *
+     * @return $this
+     */
+    public function setPayBkActive1dRoi($payBkActive1dRoi)
+    {
+        $this->container['payBkActive1dRoi'] = $payBkActive1dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseBkActive3dAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseBkActive3dAmount()
+    {
+        return $this->container['purchaseBkActive3dAmount'];
+    }
+
+    /**
+     * Sets purchaseBkActive3dAmount
+     *
+     * @param int|mixed $purchaseBkActive3dAmount purchaseBkActive3dAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseBkActive3dAmount($purchaseBkActive3dAmount)
+    {
+        $this->container['purchaseBkActive3dAmount'] = $purchaseBkActive3dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets payBkActive3dRoi
+     *
+     * @return double|mixed
+     */
+    public function getPayBkActive3dRoi()
+    {
+        return $this->container['payBkActive3dRoi'];
+    }
+
+    /**
+     * Sets payBkActive3dRoi
+     *
+     * @param double|mixed $payBkActive3dRoi payBkActive3dRoi
+     *
+     * @return $this
+     */
+    public function setPayBkActive3dRoi($payBkActive3dRoi)
+    {
+        $this->container['payBkActive3dRoi'] = $payBkActive3dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseBkActive7dAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseBkActive7dAmount()
+    {
+        return $this->container['purchaseBkActive7dAmount'];
+    }
+
+    /**
+     * Sets purchaseBkActive7dAmount
+     *
+     * @param int|mixed $purchaseBkActive7dAmount purchaseBkActive7dAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseBkActive7dAmount($purchaseBkActive7dAmount)
+    {
+        $this->container['purchaseBkActive7dAmount'] = $purchaseBkActive7dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets payBkActive7dRoi
+     *
+     * @return double|mixed
+     */
+    public function getPayBkActive7dRoi()
+    {
+        return $this->container['payBkActive7dRoi'];
+    }
+
+    /**
+     * Sets payBkActive7dRoi
+     *
+     * @param double|mixed $payBkActive7dRoi payBkActive7dRoi
+     *
+     * @return $this
+     */
+    public function setPayBkActive7dRoi($payBkActive7dRoi)
+    {
+        $this->container['payBkActive7dRoi'] = $payBkActive7dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets purchaseBkActive14dAmount
+     *
+     * @return int|mixed
+     */
+    public function getPurchaseBkActive14dAmount()
+    {
+        return $this->container['purchaseBkActive14dAmount'];
+    }
+
+    /**
+     * Sets purchaseBkActive14dAmount
+     *
+     * @param int|mixed $purchaseBkActive14dAmount purchaseBkActive14dAmount
+     *
+     * @return $this
+     */
+    public function setPurchaseBkActive14dAmount($purchaseBkActive14dAmount)
+    {
+        $this->container['purchaseBkActive14dAmount'] = $purchaseBkActive14dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets payBkActive14dRoi
+     *
+     * @return double|mixed
+     */
+    public function getPayBkActive14dRoi()
+    {
+        return $this->container['payBkActive14dRoi'];
+    }
+
+    /**
+     * Sets payBkActive14dRoi
+     *
+     * @param double|mixed $payBkActive14dRoi payBkActive14dRoi
+     *
+     * @return $this
+     */
+    public function setPayBkActive14dRoi($payBkActive14dRoi)
+    {
+        $this->container['payBkActive14dRoi'] = $payBkActive14dRoi;
+
+        return $this;
+    }
+
+    /**
      * Gets purchaseRegAmount
      *
      * @return int|mixed
@@ -24321,6 +24261,606 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setIntentionAfterPaymentDedupPv($intentionAfterPaymentDedupPv)
     {
         $this->container['intentionAfterPaymentDedupPv'] = $intentionAfterPaymentDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets regDedupCost
+     *
+     * @return int|mixed
+     */
+    public function getRegDedupCost()
+    {
+        return $this->container['regDedupCost'];
+    }
+
+    /**
+     * Sets regDedupCost
+     *
+     * @param int|mixed $regDedupCost regDedupCost
+     *
+     * @return $this
+     */
+    public function setRegDedupCost($regDedupCost)
+    {
+        $this->container['regDedupCost'] = $regDedupCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBheaderPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBheaderPv()
+    {
+        return $this->container['clkBheaderPv'];
+    }
+
+    /**
+     * Sets clkBheaderPv
+     *
+     * @param int|mixed $clkBheaderPv clkBheaderPv
+     *
+     * @return $this
+     */
+    public function setClkBheaderPv($clkBheaderPv)
+    {
+        $this->container['clkBheaderPv'] = $clkBheaderPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBhNamePv
+     *
+     * @return int|mixed
+     */
+    public function getClkBhNamePv()
+    {
+        return $this->container['clkBhNamePv'];
+    }
+
+    /**
+     * Sets clkBhNamePv
+     *
+     * @param int|mixed $clkBhNamePv clkBhNamePv
+     *
+     * @return $this
+     */
+    public function setClkBhNamePv($clkBhNamePv)
+    {
+        $this->container['clkBhNamePv'] = $clkBhNamePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBhStorePv
+     *
+     * @return int|mixed
+     */
+    public function getClkBhStorePv()
+    {
+        return $this->container['clkBhStorePv'];
+    }
+
+    /**
+     * Sets clkBhStorePv
+     *
+     * @param int|mixed $clkBhStorePv clkBhStorePv
+     *
+     * @return $this
+     */
+    public function setClkBhStorePv($clkBhStorePv)
+    {
+        $this->container['clkBhStorePv'] = $clkBhStorePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBhServicePv
+     *
+     * @return int|mixed
+     */
+    public function getClkBhServicePv()
+    {
+        return $this->container['clkBhServicePv'];
+    }
+
+    /**
+     * Sets clkBhServicePv
+     *
+     * @param int|mixed $clkBhServicePv clkBhServicePv
+     *
+     * @return $this
+     */
+    public function setClkBhServicePv($clkBhServicePv)
+    {
+        $this->container['clkBhServicePv'] = $clkBhServicePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBhPhonePv
+     *
+     * @return int|mixed
+     */
+    public function getClkBhPhonePv()
+    {
+        return $this->container['clkBhPhonePv'];
+    }
+
+    /**
+     * Sets clkBhPhonePv
+     *
+     * @param int|mixed $clkBhPhonePv clkBhPhonePv
+     *
+     * @return $this
+     */
+    public function setClkBhPhonePv($clkBhPhonePv)
+    {
+        $this->container['clkBhPhonePv'] = $clkBhPhonePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBaccountPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBaccountPv()
+    {
+        return $this->container['clkBaccountPv'];
+    }
+
+    /**
+     * Sets clkBaccountPv
+     *
+     * @param int|mixed $clkBaccountPv clkBaccountPv
+     *
+     * @return $this
+     */
+    public function setClkBaccountPv($clkBaccountPv)
+    {
+        $this->container['clkBaccountPv'] = $clkBaccountPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBaLivetagPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBaLivetagPv()
+    {
+        return $this->container['clkBaLivetagPv'];
+    }
+
+    /**
+     * Sets clkBaLivetagPv
+     *
+     * @param int|mixed $clkBaLivetagPv clkBaLivetagPv
+     *
+     * @return $this
+     */
+    public function setClkBaLivetagPv($clkBaLivetagPv)
+    {
+        $this->container['clkBaLivetagPv'] = $clkBaLivetagPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBaBizPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBaBizPv()
+    {
+        return $this->container['clkBaBizPv'];
+    }
+
+    /**
+     * Sets clkBaBizPv
+     *
+     * @param int|mixed $clkBaBizPv clkBaBizPv
+     *
+     * @return $this
+     */
+    public function setClkBaBizPv($clkBaBizPv)
+    {
+        $this->container['clkBaBizPv'] = $clkBaBizPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBaFinderPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBaFinderPv()
+    {
+        return $this->container['clkBaFinderPv'];
+    }
+
+    /**
+     * Sets clkBaFinderPv
+     *
+     * @param int|mixed $clkBaFinderPv clkBaFinderPv
+     *
+     * @return $this
+     */
+    public function setClkBaFinderPv($clkBaFinderPv)
+    {
+        $this->container['clkBaFinderPv'] = $clkBaFinderPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBaWeappPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBaWeappPv()
+    {
+        return $this->container['clkBaWeappPv'];
+    }
+
+    /**
+     * Sets clkBaWeappPv
+     *
+     * @param int|mixed $clkBaWeappPv clkBaWeappPv
+     *
+     * @return $this
+     */
+    public function setClkBaWeappPv($clkBaWeappPv)
+    {
+        $this->container['clkBaWeappPv'] = $clkBaWeappPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBmarketingPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBmarketingPv()
+    {
+        return $this->container['clkBmarketingPv'];
+    }
+
+    /**
+     * Sets clkBmarketingPv
+     *
+     * @param int|mixed $clkBmarketingPv clkBmarketingPv
+     *
+     * @return $this
+     */
+    public function setClkBmarketingPv($clkBmarketingPv)
+    {
+        $this->container['clkBmarketingPv'] = $clkBmarketingPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBmTabPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBmTabPv()
+    {
+        return $this->container['clkBmTabPv'];
+    }
+
+    /**
+     * Sets clkBmTabPv
+     *
+     * @param int|mixed $clkBmTabPv clkBmTabPv
+     *
+     * @return $this
+     */
+    public function setClkBmTabPv($clkBmTabPv)
+    {
+        $this->container['clkBmTabPv'] = $clkBmTabPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBmProductPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBmProductPv()
+    {
+        return $this->container['clkBmProductPv'];
+    }
+
+    /**
+     * Sets clkBmProductPv
+     *
+     * @param int|mixed $clkBmProductPv clkBmProductPv
+     *
+     * @return $this
+     */
+    public function setClkBmProductPv($clkBmProductPv)
+    {
+        $this->container['clkBmProductPv'] = $clkBmProductPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBaWegamePv
+     *
+     * @return int|mixed
+     */
+    public function getClkBaWegamePv()
+    {
+        return $this->container['clkBaWegamePv'];
+    }
+
+    /**
+     * Sets clkBaWegamePv
+     *
+     * @param int|mixed $clkBaWegamePv clkBaWegamePv
+     *
+     * @return $this
+     */
+    public function setClkBaWegamePv($clkBaWegamePv)
+    {
+        $this->container['clkBaWegamePv'] = $clkBaWegamePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets withdrawDepositClk7dAmount
+     *
+     * @return int|mixed
+     */
+    public function getWithdrawDepositClk7dAmount()
+    {
+        return $this->container['withdrawDepositClk7dAmount'];
+    }
+
+    /**
+     * Sets withdrawDepositClk7dAmount
+     *
+     * @param int|mixed $withdrawDepositClk7dAmount withdrawDepositClk7dAmount
+     *
+     * @return $this
+     */
+    public function setWithdrawDepositClk7dAmount($withdrawDepositClk7dAmount)
+    {
+        $this->container['withdrawDepositClk7dAmount'] = $withdrawDepositClk7dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets withdrawDepositClk7dRoi
+     *
+     * @return double|mixed
+     */
+    public function getWithdrawDepositClk7dRoi()
+    {
+        return $this->container['withdrawDepositClk7dRoi'];
+    }
+
+    /**
+     * Sets withdrawDepositClk7dRoi
+     *
+     * @param double|mixed $withdrawDepositClk7dRoi withdrawDepositClk7dRoi
+     *
+     * @return $this
+     */
+    public function setWithdrawDepositClk7dRoi($withdrawDepositClk7dRoi)
+    {
+        $this->container['withdrawDepositClk7dRoi'] = $withdrawDepositClk7dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets loanQuotaOpenDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getLoanQuotaOpenDedupPv()
+    {
+        return $this->container['loanQuotaOpenDedupPv'];
+    }
+
+    /**
+     * Sets loanQuotaOpenDedupPv
+     *
+     * @param int|mixed $loanQuotaOpenDedupPv loanQuotaOpenDedupPv
+     *
+     * @return $this
+     */
+    public function setLoanQuotaOpenDedupPv($loanQuotaOpenDedupPv)
+    {
+        $this->container['loanQuotaOpenDedupPv'] = $loanQuotaOpenDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets loanQuotaOpenDedupCost
+     *
+     * @return int|mixed
+     */
+    public function getLoanQuotaOpenDedupCost()
+    {
+        return $this->container['loanQuotaOpenDedupCost'];
+    }
+
+    /**
+     * Sets loanQuotaOpenDedupCost
+     *
+     * @param int|mixed $loanQuotaOpenDedupCost loanQuotaOpenDedupCost
+     *
+     * @return $this
+     */
+    public function setLoanQuotaOpenDedupCost($loanQuotaOpenDedupCost)
+    {
+        $this->container['loanQuotaOpenDedupCost'] = $loanQuotaOpenDedupCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets loanDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getLoanDedupPv()
+    {
+        return $this->container['loanDedupPv'];
+    }
+
+    /**
+     * Sets loanDedupPv
+     *
+     * @param int|mixed $loanDedupPv loanDedupPv
+     *
+     * @return $this
+     */
+    public function setLoanDedupPv($loanDedupPv)
+    {
+        $this->container['loanDedupPv'] = $loanDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets loanDedupCost
+     *
+     * @return int|mixed
+     */
+    public function getLoanDedupCost()
+    {
+        return $this->container['loanDedupCost'];
+    }
+
+    /**
+     * Sets loanDedupCost
+     *
+     * @param int|mixed $loanDedupCost loanDedupCost
+     *
+     * @return $this
+     */
+    public function setLoanDedupCost($loanDedupCost)
+    {
+        $this->container['loanDedupCost'] = $loanDedupCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets landingCpnExpPv
+     *
+     * @return int|mixed
+     */
+    public function getLandingCpnExpPv()
+    {
+        return $this->container['landingCpnExpPv'];
+    }
+
+    /**
+     * Sets landingCpnExpPv
+     *
+     * @param int|mixed $landingCpnExpPv landingCpnExpPv
+     *
+     * @return $this
+     */
+    public function setLandingCpnExpPv($landingCpnExpPv)
+    {
+        $this->container['landingCpnExpPv'] = $landingCpnExpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets lanButtonClickRate
+     *
+     * @return double|mixed
+     */
+    public function getLanButtonClickRate()
+    {
+        return $this->container['lanButtonClickRate'];
+    }
+
+    /**
+     * Sets lanButtonClickRate
+     *
+     * @param double|mixed $lanButtonClickRate lanButtonClickRate
+     *
+     * @return $this
+     */
+    public function setLanButtonClickRate($lanButtonClickRate)
+    {
+        $this->container['lanButtonClickRate'] = $lanButtonClickRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkTopicElementPv
+     *
+     * @return int|mixed
+     */
+    public function getClkTopicElementPv()
+    {
+        return $this->container['clkTopicElementPv'];
+    }
+
+    /**
+     * Sets clkTopicElementPv
+     *
+     * @param int|mixed $clkTopicElementPv clkTopicElementPv
+     *
+     * @return $this
+     */
+    public function setClkTopicElementPv($clkTopicElementPv)
+    {
+        $this->container['clkTopicElementPv'] = $clkTopicElementPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationEcpm
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationEcpm()
+    {
+        return $this->container['adMonetizationEcpm'];
+    }
+
+    /**
+     * Sets adMonetizationEcpm
+     *
+     * @param int|mixed $adMonetizationEcpm adMonetizationEcpm
+     *
+     * @return $this
+     */
+    public function setAdMonetizationEcpm($adMonetizationEcpm)
+    {
+        $this->container['adMonetizationEcpm'] = $adMonetizationEcpm;
 
         return $this;
     }

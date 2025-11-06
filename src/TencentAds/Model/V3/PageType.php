@@ -81,6 +81,7 @@ class PageType
     const WECHAT_SHOP = 'PAGE_TYPE_WECHAT_SHOP';
     const OFFICIAL = 'PAGE_TYPE_OFFICIAL';
     const NOT_USED = 'PAGE_TYPE_NOT_USED';
+    const UNIVERSAL_LINK = 'PAGE_TYPE_UNIVERSAL_LINK';
     
     /**
      * Gets allowable values of the enum
@@ -126,6 +127,7 @@ class PageType
             self::WECHAT_SHOP,
             self::OFFICIAL,
             self::NOT_USED,
+            self::UNIVERSAL_LINK,
         ];
     }
 }

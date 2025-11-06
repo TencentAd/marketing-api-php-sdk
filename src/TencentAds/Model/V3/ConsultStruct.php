@@ -58,7 +58,8 @@ class ConsultStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'id' => 'int'
+        'id' => 'int',
+        'jumpInfoList' => '\TencentAds\Model\V3\BackupsJumpinfoStruct[]'
     ];
 
     /**
@@ -67,7 +68,8 @@ class ConsultStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'id' => 'int64'
+        'id' => 'int64',
+        'jumpInfoList' => null
     ];
 
     /**
@@ -97,7 +99,8 @@ class ConsultStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id'
+        'id' => 'id',
+        'jumpInfoList' => 'jump_info_list'
     ];
 
     /**
@@ -106,7 +109,8 @@ class ConsultStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId'
+        'id' => 'setId',
+        'jumpInfoList' => 'setJumpInfoList'
     ];
 
     /**
@@ -115,7 +119,8 @@ class ConsultStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId'
+        'id' => 'getId',
+        'jumpInfoList' => 'getJumpInfoList'
     ];
 
     /**
@@ -179,6 +184,7 @@ class ConsultStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['id'] = isset($data['id']) ? $data['id'] : null;
+        $this->container['jumpInfoList'] = isset($data['jumpInfoList']) ? $data['jumpInfoList'] : null;
     }
 
     /**
@@ -225,6 +231,30 @@ class ConsultStruct implements ModelInterface, ArrayAccess
     public function setId($id)
     {
         $this->container['id'] = $id;
+
+        return $this;
+    }
+
+    /**
+     * Gets jumpInfoList
+     *
+     * @return \TencentAds\Model\V3\BackupsJumpinfoStruct[]|mixed
+     */
+    public function getJumpInfoList()
+    {
+        return $this->container['jumpInfoList'];
+    }
+
+    /**
+     * Sets jumpInfoList
+     *
+     * @param \TencentAds\Model\V3\BackupsJumpinfoStruct[]|mixed $jumpInfoList jumpInfoList
+     *
+     * @return $this
+     */
+    public function setJumpInfoList($jumpInfoList)
+    {
+        $this->container['jumpInfoList'] = $jumpInfoList;
 
         return $this;
     }
