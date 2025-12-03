@@ -95,7 +95,16 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'fictionRegisterMonetizationRoiSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalFictionRegisterMonetizationRoiSpec',
         'gameAppActivateRoiSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalGameAppActivateRoiSpec',
         'readingAppActivateFirstDayRetentionSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalReadingAppActivateFirstDayRetentionSpec',
-        'readingAppActivateSevenDayRetentionSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalReadingAppActivateSevenDayRetentionSpec'
+        'readingAppActivateSevenDayRetentionSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalReadingAppActivateSevenDayRetentionSpec',
+        'aiAppActivateFirstDayRetentionSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalAiAppActivateFirstDayRetentionSpec',
+        'aiAppRegisterFirstDayRetentionSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalAiAppRegisterFirstDayRetentionSpec',
+        'bidAmountSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalBidAmountSpec',
+        'bidAmountDeepConversionWorthRateSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalBidAmountDeepConversionWorthRateSpec',
+        'bidAmountDeepConversionBehaviorBidSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalBidAmountDeepConversionBehaviorBidSpec',
+        'qytNetProfitSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalQytSpec',
+        'qytNetProfitRoiSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalQytSpec',
+        'wechatStoreNetProfitRoiSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalWechatStoreNetProfitRoiSpec',
+        'wechatStoreNetProfitSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalWechatStoreNetProfitSpec'
     ];
 
     /**
@@ -141,7 +150,16 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'fictionRegisterMonetizationRoiSpec' => null,
         'gameAppActivateRoiSpec' => null,
         'readingAppActivateFirstDayRetentionSpec' => null,
-        'readingAppActivateSevenDayRetentionSpec' => null
+        'readingAppActivateSevenDayRetentionSpec' => null,
+        'aiAppActivateFirstDayRetentionSpec' => null,
+        'aiAppRegisterFirstDayRetentionSpec' => null,
+        'bidAmountSpec' => null,
+        'bidAmountDeepConversionWorthRateSpec' => null,
+        'bidAmountDeepConversionBehaviorBidSpec' => null,
+        'qytNetProfitSpec' => null,
+        'qytNetProfitRoiSpec' => null,
+        'wechatStoreNetProfitRoiSpec' => null,
+        'wechatStoreNetProfitSpec' => null
     ];
 
     /**
@@ -208,7 +226,16 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'fictionRegisterMonetizationRoiSpec' => 'fiction_register_monetization_roi_spec',
         'gameAppActivateRoiSpec' => 'game_app_activate_roi_spec',
         'readingAppActivateFirstDayRetentionSpec' => 'reading_app_activate_first_day_retention_spec',
-        'readingAppActivateSevenDayRetentionSpec' => 'reading_app_activate_seven_day_retention_spec'
+        'readingAppActivateSevenDayRetentionSpec' => 'reading_app_activate_seven_day_retention_spec',
+        'aiAppActivateFirstDayRetentionSpec' => 'ai_app_activate_first_day_retention_spec',
+        'aiAppRegisterFirstDayRetentionSpec' => 'ai_app_register_first_day_retention_spec',
+        'bidAmountSpec' => 'bid_amount_spec',
+        'bidAmountDeepConversionWorthRateSpec' => 'bid_amount_deep_conversion_worth_rate_spec',
+        'bidAmountDeepConversionBehaviorBidSpec' => 'bid_amount_deep_conversion_behavior_bid_spec',
+        'qytNetProfitSpec' => 'qyt_net_profit_spec',
+        'qytNetProfitRoiSpec' => 'qyt_net_profit_roi_spec',
+        'wechatStoreNetProfitRoiSpec' => 'wechat_store_net_profit_roi_spec',
+        'wechatStoreNetProfitSpec' => 'wechat_store_net_profit_spec'
     ];
 
     /**
@@ -254,7 +281,16 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'fictionRegisterMonetizationRoiSpec' => 'setFictionRegisterMonetizationRoiSpec',
         'gameAppActivateRoiSpec' => 'setGameAppActivateRoiSpec',
         'readingAppActivateFirstDayRetentionSpec' => 'setReadingAppActivateFirstDayRetentionSpec',
-        'readingAppActivateSevenDayRetentionSpec' => 'setReadingAppActivateSevenDayRetentionSpec'
+        'readingAppActivateSevenDayRetentionSpec' => 'setReadingAppActivateSevenDayRetentionSpec',
+        'aiAppActivateFirstDayRetentionSpec' => 'setAiAppActivateFirstDayRetentionSpec',
+        'aiAppRegisterFirstDayRetentionSpec' => 'setAiAppRegisterFirstDayRetentionSpec',
+        'bidAmountSpec' => 'setBidAmountSpec',
+        'bidAmountDeepConversionWorthRateSpec' => 'setBidAmountDeepConversionWorthRateSpec',
+        'bidAmountDeepConversionBehaviorBidSpec' => 'setBidAmountDeepConversionBehaviorBidSpec',
+        'qytNetProfitSpec' => 'setQytNetProfitSpec',
+        'qytNetProfitRoiSpec' => 'setQytNetProfitRoiSpec',
+        'wechatStoreNetProfitRoiSpec' => 'setWechatStoreNetProfitRoiSpec',
+        'wechatStoreNetProfitSpec' => 'setWechatStoreNetProfitSpec'
     ];
 
     /**
@@ -300,7 +336,16 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'fictionRegisterMonetizationRoiSpec' => 'getFictionRegisterMonetizationRoiSpec',
         'gameAppActivateRoiSpec' => 'getGameAppActivateRoiSpec',
         'readingAppActivateFirstDayRetentionSpec' => 'getReadingAppActivateFirstDayRetentionSpec',
-        'readingAppActivateSevenDayRetentionSpec' => 'getReadingAppActivateSevenDayRetentionSpec'
+        'readingAppActivateSevenDayRetentionSpec' => 'getReadingAppActivateSevenDayRetentionSpec',
+        'aiAppActivateFirstDayRetentionSpec' => 'getAiAppActivateFirstDayRetentionSpec',
+        'aiAppRegisterFirstDayRetentionSpec' => 'getAiAppRegisterFirstDayRetentionSpec',
+        'bidAmountSpec' => 'getBidAmountSpec',
+        'bidAmountDeepConversionWorthRateSpec' => 'getBidAmountDeepConversionWorthRateSpec',
+        'bidAmountDeepConversionBehaviorBidSpec' => 'getBidAmountDeepConversionBehaviorBidSpec',
+        'qytNetProfitSpec' => 'getQytNetProfitSpec',
+        'qytNetProfitRoiSpec' => 'getQytNetProfitRoiSpec',
+        'wechatStoreNetProfitRoiSpec' => 'getWechatStoreNetProfitRoiSpec',
+        'wechatStoreNetProfitSpec' => 'getWechatStoreNetProfitSpec'
     ];
 
     /**
@@ -401,6 +446,15 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         $this->container['gameAppActivateRoiSpec'] = isset($data['gameAppActivateRoiSpec']) ? $data['gameAppActivateRoiSpec'] : null;
         $this->container['readingAppActivateFirstDayRetentionSpec'] = isset($data['readingAppActivateFirstDayRetentionSpec']) ? $data['readingAppActivateFirstDayRetentionSpec'] : null;
         $this->container['readingAppActivateSevenDayRetentionSpec'] = isset($data['readingAppActivateSevenDayRetentionSpec']) ? $data['readingAppActivateSevenDayRetentionSpec'] : null;
+        $this->container['aiAppActivateFirstDayRetentionSpec'] = isset($data['aiAppActivateFirstDayRetentionSpec']) ? $data['aiAppActivateFirstDayRetentionSpec'] : null;
+        $this->container['aiAppRegisterFirstDayRetentionSpec'] = isset($data['aiAppRegisterFirstDayRetentionSpec']) ? $data['aiAppRegisterFirstDayRetentionSpec'] : null;
+        $this->container['bidAmountSpec'] = isset($data['bidAmountSpec']) ? $data['bidAmountSpec'] : null;
+        $this->container['bidAmountDeepConversionWorthRateSpec'] = isset($data['bidAmountDeepConversionWorthRateSpec']) ? $data['bidAmountDeepConversionWorthRateSpec'] : null;
+        $this->container['bidAmountDeepConversionBehaviorBidSpec'] = isset($data['bidAmountDeepConversionBehaviorBidSpec']) ? $data['bidAmountDeepConversionBehaviorBidSpec'] : null;
+        $this->container['qytNetProfitSpec'] = isset($data['qytNetProfitSpec']) ? $data['qytNetProfitSpec'] : null;
+        $this->container['qytNetProfitRoiSpec'] = isset($data['qytNetProfitRoiSpec']) ? $data['qytNetProfitRoiSpec'] : null;
+        $this->container['wechatStoreNetProfitRoiSpec'] = isset($data['wechatStoreNetProfitRoiSpec']) ? $data['wechatStoreNetProfitRoiSpec'] : null;
+        $this->container['wechatStoreNetProfitSpec'] = isset($data['wechatStoreNetProfitSpec']) ? $data['wechatStoreNetProfitSpec'] : null;
     }
 
     /**
@@ -1335,6 +1389,222 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
     public function setReadingAppActivateSevenDayRetentionSpec($readingAppActivateSevenDayRetentionSpec)
     {
         $this->container['readingAppActivateSevenDayRetentionSpec'] = $readingAppActivateSevenDayRetentionSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets aiAppActivateFirstDayRetentionSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalAiAppActivateFirstDayRetentionSpec|mixed
+     */
+    public function getAiAppActivateFirstDayRetentionSpec()
+    {
+        return $this->container['aiAppActivateFirstDayRetentionSpec'];
+    }
+
+    /**
+     * Sets aiAppActivateFirstDayRetentionSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalAiAppActivateFirstDayRetentionSpec|mixed $aiAppActivateFirstDayRetentionSpec aiAppActivateFirstDayRetentionSpec
+     *
+     * @return $this
+     */
+    public function setAiAppActivateFirstDayRetentionSpec($aiAppActivateFirstDayRetentionSpec)
+    {
+        $this->container['aiAppActivateFirstDayRetentionSpec'] = $aiAppActivateFirstDayRetentionSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets aiAppRegisterFirstDayRetentionSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalAiAppRegisterFirstDayRetentionSpec|mixed
+     */
+    public function getAiAppRegisterFirstDayRetentionSpec()
+    {
+        return $this->container['aiAppRegisterFirstDayRetentionSpec'];
+    }
+
+    /**
+     * Sets aiAppRegisterFirstDayRetentionSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalAiAppRegisterFirstDayRetentionSpec|mixed $aiAppRegisterFirstDayRetentionSpec aiAppRegisterFirstDayRetentionSpec
+     *
+     * @return $this
+     */
+    public function setAiAppRegisterFirstDayRetentionSpec($aiAppRegisterFirstDayRetentionSpec)
+    {
+        $this->container['aiAppRegisterFirstDayRetentionSpec'] = $aiAppRegisterFirstDayRetentionSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidAmountSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalBidAmountSpec|mixed
+     */
+    public function getBidAmountSpec()
+    {
+        return $this->container['bidAmountSpec'];
+    }
+
+    /**
+     * Sets bidAmountSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalBidAmountSpec|mixed $bidAmountSpec bidAmountSpec
+     *
+     * @return $this
+     */
+    public function setBidAmountSpec($bidAmountSpec)
+    {
+        $this->container['bidAmountSpec'] = $bidAmountSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidAmountDeepConversionWorthRateSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalBidAmountDeepConversionWorthRateSpec|mixed
+     */
+    public function getBidAmountDeepConversionWorthRateSpec()
+    {
+        return $this->container['bidAmountDeepConversionWorthRateSpec'];
+    }
+
+    /**
+     * Sets bidAmountDeepConversionWorthRateSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalBidAmountDeepConversionWorthRateSpec|mixed $bidAmountDeepConversionWorthRateSpec bidAmountDeepConversionWorthRateSpec
+     *
+     * @return $this
+     */
+    public function setBidAmountDeepConversionWorthRateSpec($bidAmountDeepConversionWorthRateSpec)
+    {
+        $this->container['bidAmountDeepConversionWorthRateSpec'] = $bidAmountDeepConversionWorthRateSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets bidAmountDeepConversionBehaviorBidSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalBidAmountDeepConversionBehaviorBidSpec|mixed
+     */
+    public function getBidAmountDeepConversionBehaviorBidSpec()
+    {
+        return $this->container['bidAmountDeepConversionBehaviorBidSpec'];
+    }
+
+    /**
+     * Sets bidAmountDeepConversionBehaviorBidSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalBidAmountDeepConversionBehaviorBidSpec|mixed $bidAmountDeepConversionBehaviorBidSpec bidAmountDeepConversionBehaviorBidSpec
+     *
+     * @return $this
+     */
+    public function setBidAmountDeepConversionBehaviorBidSpec($bidAmountDeepConversionBehaviorBidSpec)
+    {
+        $this->container['bidAmountDeepConversionBehaviorBidSpec'] = $bidAmountDeepConversionBehaviorBidSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets qytNetProfitSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalQytSpec|mixed
+     */
+    public function getQytNetProfitSpec()
+    {
+        return $this->container['qytNetProfitSpec'];
+    }
+
+    /**
+     * Sets qytNetProfitSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalQytSpec|mixed $qytNetProfitSpec qytNetProfitSpec
+     *
+     * @return $this
+     */
+    public function setQytNetProfitSpec($qytNetProfitSpec)
+    {
+        $this->container['qytNetProfitSpec'] = $qytNetProfitSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets qytNetProfitRoiSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalQytSpec|mixed
+     */
+    public function getQytNetProfitRoiSpec()
+    {
+        return $this->container['qytNetProfitRoiSpec'];
+    }
+
+    /**
+     * Sets qytNetProfitRoiSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalQytSpec|mixed $qytNetProfitRoiSpec qytNetProfitRoiSpec
+     *
+     * @return $this
+     */
+    public function setQytNetProfitRoiSpec($qytNetProfitRoiSpec)
+    {
+        $this->container['qytNetProfitRoiSpec'] = $qytNetProfitRoiSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatStoreNetProfitRoiSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalWechatStoreNetProfitRoiSpec|mixed
+     */
+    public function getWechatStoreNetProfitRoiSpec()
+    {
+        return $this->container['wechatStoreNetProfitRoiSpec'];
+    }
+
+    /**
+     * Sets wechatStoreNetProfitRoiSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalWechatStoreNetProfitRoiSpec|mixed $wechatStoreNetProfitRoiSpec wechatStoreNetProfitRoiSpec
+     *
+     * @return $this
+     */
+    public function setWechatStoreNetProfitRoiSpec($wechatStoreNetProfitRoiSpec)
+    {
+        $this->container['wechatStoreNetProfitRoiSpec'] = $wechatStoreNetProfitRoiSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatStoreNetProfitSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalWechatStoreNetProfitSpec|mixed
+     */
+    public function getWechatStoreNetProfitSpec()
+    {
+        return $this->container['wechatStoreNetProfitSpec'];
+    }
+
+    /**
+     * Sets wechatStoreNetProfitSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalWechatStoreNetProfitSpec|mixed $wechatStoreNetProfitSpec wechatStoreNetProfitSpec
+     *
+     * @return $this
+     */
+    public function setWechatStoreNetProfitSpec($wechatStoreNetProfitSpec)
+    {
+        $this->container['wechatStoreNetProfitSpec'] = $wechatStoreNetProfitSpec;
 
         return $this;
     }

@@ -151,6 +151,8 @@ class OptimizationGoal
     const ECOMMERCE_GIFTING = 'OPTIMIZATIONGOAL_ECOMMERCE_GIFTING';
     const CLUE_PAY_SUCCEED = 'OPTIMIZATIONGOAL_CLUE_PAY_SUCCEED';
     const _30_DAY_UNSUBSCRIBE_RATE = 'OPTIMIZATIONGOAL_30DAY_UNSUBSCRIBE_RATE';
+    const NET_PROFIT_24_H = 'OPTIMIZATIONGOAL_NET_PROFIT_24H';
+    const EFFECTIVE_INSURE = 'OPTIMIZATIONGOAL_EFFECTIVE_INSURE';
     
     /**
      * Gets allowable values of the enum
@@ -266,6 +268,8 @@ class OptimizationGoal
             self::ECOMMERCE_GIFTING,
             self::CLUE_PAY_SUCCEED,
             self::_30_DAY_UNSUBSCRIBE_RATE,
+            self::NET_PROFIT_24_H,
+            self::EFFECTIVE_INSURE,
         ];
     }
 }

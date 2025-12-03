@@ -130,6 +130,7 @@ use TencentAds\Container\V3\MergeFundTypeSubcustomerTransferApiContainer;
 use TencentAds\Container\V3\MuseAiMaterialApiContainer;
 use TencentAds\Container\V3\MuseAiTaskApiContainer;
 use TencentAds\Container\V3\MuseAiUgcApiContainer;
+use TencentAds\Container\V3\MuseAudiosApiContainer;
 use TencentAds\Container\V3\NegativewordsApiContainer;
 use TencentAds\Container\V3\OauthApiContainer;
 use TencentAds\Container\V3\ObjectCommentFlagApiContainer;
@@ -138,6 +139,7 @@ use TencentAds\Container\V3\OfficialLandingPageComponentApiContainer;
 use TencentAds\Container\V3\OfficialLandingPageDetailApiContainer;
 use TencentAds\Container\V3\OfficialLandingPageListApiContainer;
 use TencentAds\Container\V3\OfficialLandingPageSubmitApiContainer;
+use TencentAds\Container\V3\OnlinePreviewQrcodeApiContainer;
 use TencentAds\Container\V3\OperationLogListApiContainer;
 use TencentAds\Container\V3\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\V3\OrganizationAccountRelationApiContainer;
@@ -197,6 +199,7 @@ use TencentAds\Container\V3\WalletEditApiContainer;
 use TencentAds\Container\V3\WalletGetBindingAdvertiserApiContainer;
 use TencentAds\Container\V3\WalletInvoiceApiContainer;
 use TencentAds\Container\V3\WalletTransferApiContainer;
+use TencentAds\Container\V3\WatermarksApiContainer;
 use TencentAds\Container\V3\WechatChannelsAccountsApiContainer;
 use TencentAds\Container\V3\WechatChannelsAdAccountApiContainer;
 use TencentAds\Container\V3\WechatChannelsAdAccountCertificationFileApiContainer;
@@ -615,6 +618,9 @@ class App
     /** @var MuseAiUgcApiContainer */
     public $museAiUgcApiContainer;
 
+    /** @var MuseAudiosApiContainer */
+    public $museAudiosApiContainer;
+
     /** @var NegativewordsApiContainer */
     public $negativewordsApiContainer;
 
@@ -638,6 +644,9 @@ class App
 
     /** @var OfficialLandingPageSubmitApiContainer */
     public $officialLandingPageSubmitApiContainer;
+
+    /** @var OnlinePreviewQrcodeApiContainer */
+    public $onlinePreviewQrcodeApiContainer;
 
     /** @var OperationLogListApiContainer */
     public $operationLogListApiContainer;
@@ -815,6 +824,9 @@ class App
 
     /** @var WalletTransferApiContainer */
     public $walletTransferApiContainer;
+
+    /** @var WatermarksApiContainer */
+    public $watermarksApiContainer;
 
     /** @var WechatChannelsAccountsApiContainer */
     public $wechatChannelsAccountsApiContainer;
@@ -2706,6 +2718,20 @@ class App
 
 
     /**
+     * @return MuseAudiosApiContainer
+     */
+    public function museAudios()
+    {
+        if (empty($this->museAudiosApiContainer)) {
+            $container = new MuseAudiosApiContainer();
+            $container->init($this, $this->getClient());
+            $this->museAudiosApiContainer = $container;
+        }
+        return $this->museAudiosApiContainer;
+    }
+
+
+    /**
      * @return NegativewordsApiContainer
      */
     public function negativewords()
@@ -2814,6 +2840,20 @@ class App
             $this->officialLandingPageSubmitApiContainer = $container;
         }
         return $this->officialLandingPageSubmitApiContainer;
+    }
+
+
+    /**
+     * @return OnlinePreviewQrcodeApiContainer
+     */
+    public function onlinePreviewQrcode()
+    {
+        if (empty($this->onlinePreviewQrcodeApiContainer)) {
+            $container = new OnlinePreviewQrcodeApiContainer();
+            $container->init($this, $this->getClient());
+            $this->onlinePreviewQrcodeApiContainer = $container;
+        }
+        return $this->onlinePreviewQrcodeApiContainer;
     }
 
 
@@ -3640,6 +3680,20 @@ class App
             $this->walletTransferApiContainer = $container;
         }
         return $this->walletTransferApiContainer;
+    }
+
+
+    /**
+     * @return WatermarksApiContainer
+     */
+    public function watermarks()
+    {
+        if (empty($this->watermarksApiContainer)) {
+            $container = new WatermarksApiContainer();
+            $container->init($this, $this->getClient());
+            $this->watermarksApiContainer = $container;
+        }
+        return $this->watermarksApiContainer;
     }
 
 

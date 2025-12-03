@@ -60,7 +60,8 @@ class TargetOption implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'depends' => '\TencentAds\Model\V3\DependItem[]',
         'supportOptions' => '\TencentAds\Model\V3\SupportOption[]',
-        'use' => '\TencentAds\Model\V3\ComponentDependUseType'
+        'use' => '\TencentAds\Model\V3\ComponentDependUseType',
+        'tip' => 'string'
     ];
 
     /**
@@ -71,7 +72,8 @@ class TargetOption implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'depends' => null,
         'supportOptions' => null,
-        'use' => null
+        'use' => null,
+        'tip' => null
     ];
 
     /**
@@ -103,7 +105,8 @@ class TargetOption implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'depends' => 'depends',
         'supportOptions' => 'support_options',
-        'use' => 'use'
+        'use' => 'use',
+        'tip' => 'tip'
     ];
 
     /**
@@ -114,7 +117,8 @@ class TargetOption implements ModelInterface, ArrayAccess
     protected static $setters = [
         'depends' => 'setDepends',
         'supportOptions' => 'setSupportOptions',
-        'use' => 'setUse'
+        'use' => 'setUse',
+        'tip' => 'setTip'
     ];
 
     /**
@@ -125,7 +129,8 @@ class TargetOption implements ModelInterface, ArrayAccess
     protected static $getters = [
         'depends' => 'getDepends',
         'supportOptions' => 'getSupportOptions',
-        'use' => 'getUse'
+        'use' => 'getUse',
+        'tip' => 'getTip'
     ];
 
     /**
@@ -191,6 +196,7 @@ class TargetOption implements ModelInterface, ArrayAccess
         $this->container['depends'] = isset($data['depends']) ? $data['depends'] : null;
         $this->container['supportOptions'] = isset($data['supportOptions']) ? $data['supportOptions'] : null;
         $this->container['use'] = isset($data['use']) ? $data['use'] : null;
+        $this->container['tip'] = isset($data['tip']) ? $data['tip'] : null;
     }
 
     /**
@@ -285,6 +291,30 @@ class TargetOption implements ModelInterface, ArrayAccess
     public function setUse($use)
     {
         $this->container['use'] = $use;
+
+        return $this;
+    }
+
+    /**
+     * Gets tip
+     *
+     * @return string|mixed
+     */
+    public function getTip()
+    {
+        return $this->container['tip'];
+    }
+
+    /**
+     * Sets tip
+     *
+     * @param string|mixed $tip tip
+     *
+     * @return $this
+     */
+    public function setTip($tip)
+    {
+        $this->container['tip'] = $tip;
 
         return $this;
     }

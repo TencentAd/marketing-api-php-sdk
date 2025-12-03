@@ -60,7 +60,7 @@ class ParamMatcher implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'paramName' => 'string',
         'paramValue' => 'string',
-        'operator' => '\TencentAds\Model\V3\Operator'
+        'operator' => '\TencentAds\Model\V3\FilterOperator'
     ];
 
     /**
@@ -268,7 +268,7 @@ class ParamMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets operator
      *
-     * @return \TencentAds\Model\V3\Operator|mixed
+     * @return \TencentAds\Model\V3\FilterOperator|mixed
      */
     public function getOperator()
     {
@@ -278,7 +278,7 @@ class ParamMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets operator
      *
-     * @param \TencentAds\Model\V3\Operator|mixed $operator operator
+     * @param \TencentAds\Model\V3\FilterOperator|mixed $operator operator
      *
      * @return $this
      */

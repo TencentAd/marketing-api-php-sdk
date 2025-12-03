@@ -59,7 +59,8 @@ class WechatAdBehavior implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'actions' => 'string[]',
-        'excludedActions' => 'string[]'
+        'excludedActions' => 'string[]',
+        'corpId' => 'string[]'
     ];
 
     /**
@@ -69,7 +70,8 @@ class WechatAdBehavior implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'actions' => null,
-        'excludedActions' => null
+        'excludedActions' => null,
+        'corpId' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class WechatAdBehavior implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'actions' => 'actions',
-        'excludedActions' => 'excluded_actions'
+        'excludedActions' => 'excluded_actions',
+        'corpId' => 'corp_id'
     ];
 
     /**
@@ -110,7 +113,8 @@ class WechatAdBehavior implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'actions' => 'setActions',
-        'excludedActions' => 'setExcludedActions'
+        'excludedActions' => 'setExcludedActions',
+        'corpId' => 'setCorpId'
     ];
 
     /**
@@ -120,7 +124,8 @@ class WechatAdBehavior implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'actions' => 'getActions',
-        'excludedActions' => 'getExcludedActions'
+        'excludedActions' => 'getExcludedActions',
+        'corpId' => 'getCorpId'
     ];
 
     /**
@@ -185,6 +190,7 @@ class WechatAdBehavior implements ModelInterface, ArrayAccess
     {
         $this->container['actions'] = isset($data['actions']) ? $data['actions'] : null;
         $this->container['excludedActions'] = isset($data['excludedActions']) ? $data['excludedActions'] : null;
+        $this->container['corpId'] = isset($data['corpId']) ? $data['corpId'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class WechatAdBehavior implements ModelInterface, ArrayAccess
     public function setExcludedActions($excludedActions)
     {
         $this->container['excludedActions'] = $excludedActions;
+
+        return $this;
+    }
+
+    /**
+     * Gets corpId
+     *
+     * @return string[]|mixed
+     */
+    public function getCorpId()
+    {
+        return $this->container['corpId'];
+    }
+
+    /**
+     * Sets corpId
+     *
+     * @param string[]|mixed $corpId corpId
+     *
+     * @return $this
+     */
+    public function setCorpId($corpId)
+    {
+        $this->container['corpId'] = $corpId;
 
         return $this;
     }

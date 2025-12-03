@@ -52,6 +52,7 @@ class ReportHourlyLevel
     const ADVERTISER_TOTAL = 'REPORT_LEVEL_ADVERTISER_TOTAL';
     const PROJECT = 'REPORT_LEVEL_PROJECT';
     const PROJECT_CREATIVE = 'REPORT_LEVEL_PROJECT_CREATIVE';
+    const VIDEO_HIGHLIGHT = 'REPORT_LEVEL_VIDEO_HIGHLIGHT';
     
     /**
      * Gets allowable values of the enum
@@ -68,6 +69,7 @@ class ReportHourlyLevel
             self::ADVERTISER_TOTAL,
             self::PROJECT,
             self::PROJECT_CREATIVE,
+            self::VIDEO_HIGHLIGHT,
         ];
     }
 }

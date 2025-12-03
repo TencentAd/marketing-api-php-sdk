@@ -44,8 +44,9 @@ class WalletInvoiceApiContainer extends ApiContainer
             $fundType = isset($params['fund_type']) ? $params['fund_type'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $primaryKey = isset($params['primary_key']) ? $params['primary_key'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->walletInvoiceGet($accountId, $walletIdList, $dateRange, $fundType, $page, $pageSize, $fields);
+            $response = $this->apiInstance->walletInvoiceGet($accountId, $walletIdList, $dateRange, $fundType, $page, $pageSize, $primaryKey, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -66,8 +67,9 @@ class WalletInvoiceApiContainer extends ApiContainer
             $fundType = isset($params['fund_type']) ? $params['fund_type'] : null;
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
+            $primaryKey = isset($params['primary_key']) ? $params['primary_key'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->walletInvoiceGetAsync($accountId, $walletIdList, $dateRange, $fundType, $page, $pageSize, $fields);
+            $response = $this->apiInstance->walletInvoiceGetAsync($accountId, $walletIdList, $dateRange, $fundType, $page, $pageSize, $primaryKey, $fields);
             return $response;
         });
     }

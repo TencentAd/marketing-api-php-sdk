@@ -74,7 +74,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'cost' => 'int',
         'acquisitionCost' => 'int',
         'thousandDisplayPrice' => 'int',
-        'realCostTop' => 'int',
         'conversionsCount' => 'int',
         'requestConversionsCount' => 'int',
         'conversionsRate' => 'double',
@@ -91,24 +90,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'conversionsByClickCost' => 'int',
         'previewConversionsCount' => 'int',
         'previewDeepConversionsCount' => 'int',
-        'videoOuterPlayCount' => 'int',
-        'videoOuterPlayUserCount' => 'int',
-        'avgUserPlayCount' => 'double',
-        'videoOuterPlayTimeCount' => 'double',
-        'videoOuterPlayTimeAvgRate' => 'double',
-        'videoOuterPlayRate' => 'double',
-        'videoOuterPlayCost' => 'int',
-        'videoOuterPlay10Count' => 'int',
-        'videoOuterPlay25Count' => 'int',
-        'videoOuterPlay50Count' => 'int',
-        'videoOuterPlay75Count' => 'int',
-        'videoOuterPlay90Count' => 'int',
-        'videoOuterPlay95Count' => 'int',
-        'videoOuterPlay100Count' => 'int',
-        'videoOuterPlay3sCount' => 'int',
-        'videoOuterPlay3sRate' => 'double',
-        'videoOuterPlay5sCount' => 'int',
-        'videoOuterPlay7sCount' => 'int',
         'readCount' => 'int',
         'readCost' => 'int',
         'commentCount' => 'int',
@@ -598,7 +579,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'channelsSharePlaPv' => 'int',
         'videoLiveSubscribeCount' => 'int',
         'videoLiveExpCount' => 'int',
-        'liveStreamExpUv' => 'int',
         'channelsLiveExitPlaDuration' => 'double',
         'videoLiveHeartCount' => 'int',
         'videoLiveHeartUserCount' => 'int',
@@ -612,7 +592,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'liveStreamCommodityBubbleClkPv' => 'int',
         'liveStreamCommodityShopBagClkPv' => 'int',
         'liveStreamCommodityShopListExpPv' => 'int',
-        'liveStreamAvgTime' => 'double',
         'fromFollowUv' => 'int',
         'fromFollowCost' => 'int',
         'fromFollowByDisplayUv' => 'int',
@@ -626,7 +605,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'bizReadingCount' => 'int',
         'breakFramePlayPv' => 'int',
         'breakFrameIpClkPv' => 'int',
-        'breakFrameIpClkUv' => 'int',
         'clkMaterialUv' => 'int',
         'clkMaterialRate' => 'double',
         'clkNickPv' => 'int',
@@ -640,7 +618,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'cvsBubbleShareClkPv' => 'int',
         'lpStarPageExpPv' => 'int',
         'finderTopicSliderPv' => 'int',
-        'finderTopicSliderPerUser' => 'double',
         'finderTopicSliderManualPv' => 'int',
         'shareFriendPv' => 'int',
         'shareFeedPv' => 'int',
@@ -749,7 +726,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkLearnMorePv' => 'int',
         'openAccountPv' => 'int',
         'openAccountPvCost' => 'int',
-        'videoOuterPlay5sRate' => 'double',
         'incomeVal24hPlaRoi' => 'double',
         'viewDramaDedupPv' => 'int',
         'viewDramaDedupPvRate' => 'double',
@@ -827,10 +803,38 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'loanQuotaOpenDedupCost' => 'int',
         'loanDedupPv' => 'int',
         'loanDedupCost' => 'int',
-        'landingCpnExpPv' => 'int',
-        'lanButtonClickRate' => 'double',
         'clkTopicElementPv' => 'int',
         'adMonetizationEcpm' => 'int',
+        'adMonetizationRegActive14dAmount' => 'int',
+        'adMonetizationRegActive30dAmount' => 'int',
+        'adMonetizationRegActive60dAmount' => 'int',
+        'incomeVal30' => 'int',
+        'incomeVal60' => 'int',
+        'adMonetizationRegActive14dRoi' => 'double',
+        'adMonetizationRegActive30dRoi' => 'double',
+        'adMonetizationRegActive60dRoi' => 'double',
+        'incomeRoi30' => 'double',
+        'incomeRoi60' => 'double',
+        'adMonetizationDedupRegActive14dPv' => 'int',
+        'adMonetizationDedupRegActive30dPv' => 'int',
+        'adMonetizationDedupRegActive60dPv' => 'int',
+        'adMonetizationDedupActive14dPv' => 'int',
+        'adMonetizationDedupActive30dPv' => 'int',
+        'adMonetizationDedupActive60dPv' => 'int',
+        'adMonetizationRegActive14dPv' => 'int',
+        'adMonetizationRegActive30dPv' => 'int',
+        'adMonetizationRegActive60dPv' => 'int',
+        'adMonetizationActive14dPv' => 'int',
+        'adMonetizationActive30dPv' => 'int',
+        'adMonetizationActive60dPv' => 'int',
+        'clkAdFlipCardPv' => 'int',
+        'commissionAmount' => 'int',
+        'commissionRoi' => 'double',
+        'orderNetPv' => 'int',
+        'orderNetAmount' => 'int',
+        'orderNetRoi' => 'double',
+        'orderNetPvCost' => 'int',
+        'clkBhAnimPv' => 'int',
         'ageId' => 'int',
         'cityId' => 'int',
         'regionId' => 'int',
@@ -862,7 +866,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'cost' => 'int64',
         'acquisitionCost' => 'int64',
         'thousandDisplayPrice' => 'int64',
-        'realCostTop' => 'int64',
         'conversionsCount' => 'int64',
         'requestConversionsCount' => 'int64',
         'conversionsRate' => 'double',
@@ -879,24 +882,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'conversionsByClickCost' => 'int64',
         'previewConversionsCount' => 'int64',
         'previewDeepConversionsCount' => 'int64',
-        'videoOuterPlayCount' => 'int64',
-        'videoOuterPlayUserCount' => 'int64',
-        'avgUserPlayCount' => 'double',
-        'videoOuterPlayTimeCount' => 'double',
-        'videoOuterPlayTimeAvgRate' => 'double',
-        'videoOuterPlayRate' => 'double',
-        'videoOuterPlayCost' => 'int64',
-        'videoOuterPlay10Count' => 'int64',
-        'videoOuterPlay25Count' => 'int64',
-        'videoOuterPlay50Count' => 'int64',
-        'videoOuterPlay75Count' => 'int64',
-        'videoOuterPlay90Count' => 'int64',
-        'videoOuterPlay95Count' => 'int64',
-        'videoOuterPlay100Count' => 'int64',
-        'videoOuterPlay3sCount' => 'int64',
-        'videoOuterPlay3sRate' => 'double',
-        'videoOuterPlay5sCount' => 'int64',
-        'videoOuterPlay7sCount' => 'int64',
         'readCount' => 'int64',
         'readCost' => 'int64',
         'commentCount' => 'int64',
@@ -1386,7 +1371,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'channelsSharePlaPv' => 'int64',
         'videoLiveSubscribeCount' => 'int64',
         'videoLiveExpCount' => 'int64',
-        'liveStreamExpUv' => 'int64',
         'channelsLiveExitPlaDuration' => 'double',
         'videoLiveHeartCount' => 'int64',
         'videoLiveHeartUserCount' => 'int64',
@@ -1400,7 +1384,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'liveStreamCommodityBubbleClkPv' => 'int64',
         'liveStreamCommodityShopBagClkPv' => 'int64',
         'liveStreamCommodityShopListExpPv' => 'int64',
-        'liveStreamAvgTime' => 'double',
         'fromFollowUv' => 'int64',
         'fromFollowCost' => 'int64',
         'fromFollowByDisplayUv' => 'int64',
@@ -1414,7 +1397,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'bizReadingCount' => 'int64',
         'breakFramePlayPv' => 'int64',
         'breakFrameIpClkPv' => 'int64',
-        'breakFrameIpClkUv' => 'int64',
         'clkMaterialUv' => 'int64',
         'clkMaterialRate' => 'double',
         'clkNickPv' => 'int64',
@@ -1428,7 +1410,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'cvsBubbleShareClkPv' => 'int64',
         'lpStarPageExpPv' => 'int64',
         'finderTopicSliderPv' => 'int64',
-        'finderTopicSliderPerUser' => 'double',
         'finderTopicSliderManualPv' => 'int64',
         'shareFriendPv' => 'int64',
         'shareFeedPv' => 'int64',
@@ -1537,7 +1518,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkLearnMorePv' => 'int64',
         'openAccountPv' => 'int64',
         'openAccountPvCost' => 'int64',
-        'videoOuterPlay5sRate' => 'double',
         'incomeVal24hPlaRoi' => 'double',
         'viewDramaDedupPv' => 'int64',
         'viewDramaDedupPvRate' => 'double',
@@ -1615,10 +1595,38 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'loanQuotaOpenDedupCost' => 'int64',
         'loanDedupPv' => 'int64',
         'loanDedupCost' => 'int64',
-        'landingCpnExpPv' => 'int64',
-        'lanButtonClickRate' => 'double',
         'clkTopicElementPv' => 'int64',
         'adMonetizationEcpm' => 'int64',
+        'adMonetizationRegActive14dAmount' => 'int64',
+        'adMonetizationRegActive30dAmount' => 'int64',
+        'adMonetizationRegActive60dAmount' => 'int64',
+        'incomeVal30' => 'int64',
+        'incomeVal60' => 'int64',
+        'adMonetizationRegActive14dRoi' => 'double',
+        'adMonetizationRegActive30dRoi' => 'double',
+        'adMonetizationRegActive60dRoi' => 'double',
+        'incomeRoi30' => 'double',
+        'incomeRoi60' => 'double',
+        'adMonetizationDedupRegActive14dPv' => 'int64',
+        'adMonetizationDedupRegActive30dPv' => 'int64',
+        'adMonetizationDedupRegActive60dPv' => 'int64',
+        'adMonetizationDedupActive14dPv' => 'int64',
+        'adMonetizationDedupActive30dPv' => 'int64',
+        'adMonetizationDedupActive60dPv' => 'int64',
+        'adMonetizationRegActive14dPv' => 'int64',
+        'adMonetizationRegActive30dPv' => 'int64',
+        'adMonetizationRegActive60dPv' => 'int64',
+        'adMonetizationActive14dPv' => 'int64',
+        'adMonetizationActive30dPv' => 'int64',
+        'adMonetizationActive60dPv' => 'int64',
+        'clkAdFlipCardPv' => 'int64',
+        'commissionAmount' => 'int64',
+        'commissionRoi' => 'double',
+        'orderNetPv' => 'int64',
+        'orderNetAmount' => 'int64',
+        'orderNetRoi' => 'double',
+        'orderNetPvCost' => 'int64',
+        'clkBhAnimPv' => 'int64',
         'ageId' => 'int64',
         'cityId' => 'int64',
         'regionId' => 'int64',
@@ -1671,7 +1679,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'cost' => 'cost',
         'acquisitionCost' => 'acquisition_cost',
         'thousandDisplayPrice' => 'thousand_display_price',
-        'realCostTop' => 'real_cost_top',
         'conversionsCount' => 'conversions_count',
         'requestConversionsCount' => 'request_conversions_count',
         'conversionsRate' => 'conversions_rate',
@@ -1688,24 +1695,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'conversionsByClickCost' => 'conversions_by_click_cost',
         'previewConversionsCount' => 'preview_conversions_count',
         'previewDeepConversionsCount' => 'preview_deep_conversions_count',
-        'videoOuterPlayCount' => 'video_outer_play_count',
-        'videoOuterPlayUserCount' => 'video_outer_play_user_count',
-        'avgUserPlayCount' => 'avg_user_play_count',
-        'videoOuterPlayTimeCount' => 'video_outer_play_time_count',
-        'videoOuterPlayTimeAvgRate' => 'video_outer_play_time_avg_rate',
-        'videoOuterPlayRate' => 'video_outer_play_rate',
-        'videoOuterPlayCost' => 'video_outer_play_cost',
-        'videoOuterPlay10Count' => 'video_outer_play10_count',
-        'videoOuterPlay25Count' => 'video_outer_play25_count',
-        'videoOuterPlay50Count' => 'video_outer_play50_count',
-        'videoOuterPlay75Count' => 'video_outer_play75_count',
-        'videoOuterPlay90Count' => 'video_outer_play90_count',
-        'videoOuterPlay95Count' => 'video_outer_play95_count',
-        'videoOuterPlay100Count' => 'video_outer_play100_count',
-        'videoOuterPlay3sCount' => 'video_outer_play3s_count',
-        'videoOuterPlay3sRate' => 'video_outer_play3s_rate',
-        'videoOuterPlay5sCount' => 'video_outer_play5s_count',
-        'videoOuterPlay7sCount' => 'video_outer_play7s_count',
         'readCount' => 'read_count',
         'readCost' => 'read_cost',
         'commentCount' => 'comment_count',
@@ -2195,7 +2184,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'channelsSharePlaPv' => 'channels_share_pla_pv',
         'videoLiveSubscribeCount' => 'video_live_subscribe_count',
         'videoLiveExpCount' => 'video_live_exp_count',
-        'liveStreamExpUv' => 'live_stream_exp_uv',
         'channelsLiveExitPlaDuration' => 'channels_live_exit_pla_duration',
         'videoLiveHeartCount' => 'video_live_heart_count',
         'videoLiveHeartUserCount' => 'video_live_heart_user_count',
@@ -2209,7 +2197,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'liveStreamCommodityBubbleClkPv' => 'live_stream_commodity_bubble_clk_pv',
         'liveStreamCommodityShopBagClkPv' => 'live_stream_commodity_shop_bag_clk_pv',
         'liveStreamCommodityShopListExpPv' => 'live_stream_commodity_shop_list_exp_pv',
-        'liveStreamAvgTime' => 'live_stream_avg_time',
         'fromFollowUv' => 'from_follow_uv',
         'fromFollowCost' => 'from_follow_cost',
         'fromFollowByDisplayUv' => 'from_follow_by_display_uv',
@@ -2223,7 +2210,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'bizReadingCount' => 'biz_reading_count',
         'breakFramePlayPv' => 'break_frame_play_pv',
         'breakFrameIpClkPv' => 'break_frame_ip_clk_pv',
-        'breakFrameIpClkUv' => 'break_frame_ip_clk_uv',
         'clkMaterialUv' => 'clk_material_uv',
         'clkMaterialRate' => 'clk_material_rate',
         'clkNickPv' => 'clk_nick_pv',
@@ -2237,7 +2223,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'cvsBubbleShareClkPv' => 'cvs_bubble_share_clk_pv',
         'lpStarPageExpPv' => 'lp_star_page_exp_pv',
         'finderTopicSliderPv' => 'finder_topic_slider_pv',
-        'finderTopicSliderPerUser' => 'finder_topic_slider_per_user',
         'finderTopicSliderManualPv' => 'finder_topic_slider_manual_pv',
         'shareFriendPv' => 'share_friend_pv',
         'shareFeedPv' => 'share_feed_pv',
@@ -2346,7 +2331,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkLearnMorePv' => 'clk_learn_more_pv',
         'openAccountPv' => 'open_account_pv',
         'openAccountPvCost' => 'open_account_pv_cost',
-        'videoOuterPlay5sRate' => 'video_outer_play5s_rate',
         'incomeVal24hPlaRoi' => 'income_val_24h_pla_roi',
         'viewDramaDedupPv' => 'view_drama_dedup_pv',
         'viewDramaDedupPvRate' => 'view_drama_dedup_pv_rate',
@@ -2424,10 +2408,38 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'loanQuotaOpenDedupCost' => 'loan_quota_open_dedup_cost',
         'loanDedupPv' => 'loan_dedup_pv',
         'loanDedupCost' => 'loan_dedup_cost',
-        'landingCpnExpPv' => 'landing_cpn_exp_pv',
-        'lanButtonClickRate' => 'lan_button_click_rate',
         'clkTopicElementPv' => 'clk_topic_element_pv',
         'adMonetizationEcpm' => 'ad_monetization_ecpm',
+        'adMonetizationRegActive14dAmount' => 'ad_monetization_reg_active_14d_amount',
+        'adMonetizationRegActive30dAmount' => 'ad_monetization_reg_active_30d_amount',
+        'adMonetizationRegActive60dAmount' => 'ad_monetization_reg_active_60d_amount',
+        'incomeVal30' => 'income_val_30',
+        'incomeVal60' => 'income_val_60',
+        'adMonetizationRegActive14dRoi' => 'ad_monetization_reg_active_14d_roi',
+        'adMonetizationRegActive30dRoi' => 'ad_monetization_reg_active_30d_roi',
+        'adMonetizationRegActive60dRoi' => 'ad_monetization_reg_active_60d_roi',
+        'incomeRoi30' => 'income_roi_30',
+        'incomeRoi60' => 'income_roi_60',
+        'adMonetizationDedupRegActive14dPv' => 'ad_monetization_dedup_reg_active_14d_pv',
+        'adMonetizationDedupRegActive30dPv' => 'ad_monetization_dedup_reg_active_30d_pv',
+        'adMonetizationDedupRegActive60dPv' => 'ad_monetization_dedup_reg_active_60d_pv',
+        'adMonetizationDedupActive14dPv' => 'ad_monetization_dedup_active_14d_pv',
+        'adMonetizationDedupActive30dPv' => 'ad_monetization_dedup_active_30d_pv',
+        'adMonetizationDedupActive60dPv' => 'ad_monetization_dedup_active_60d_pv',
+        'adMonetizationRegActive14dPv' => 'ad_monetization_reg_active_14d_pv',
+        'adMonetizationRegActive30dPv' => 'ad_monetization_reg_active_30d_pv',
+        'adMonetizationRegActive60dPv' => 'ad_monetization_reg_active_60d_pv',
+        'adMonetizationActive14dPv' => 'ad_monetization_active_14d_pv',
+        'adMonetizationActive30dPv' => 'ad_monetization_active_30d_pv',
+        'adMonetizationActive60dPv' => 'ad_monetization_active_60d_pv',
+        'clkAdFlipCardPv' => 'clk_ad_flip_card_pv',
+        'commissionAmount' => 'commission_amount',
+        'commissionRoi' => 'commission_roi',
+        'orderNetPv' => 'order_net_pv',
+        'orderNetAmount' => 'order_net_amount',
+        'orderNetRoi' => 'order_net_roi',
+        'orderNetPvCost' => 'order_net_pv_cost',
+        'clkBhAnimPv' => 'clk_bh_anim_pv',
         'ageId' => 'age_id',
         'cityId' => 'city_id',
         'regionId' => 'region_id',
@@ -2459,7 +2471,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'cost' => 'setCost',
         'acquisitionCost' => 'setAcquisitionCost',
         'thousandDisplayPrice' => 'setThousandDisplayPrice',
-        'realCostTop' => 'setRealCostTop',
         'conversionsCount' => 'setConversionsCount',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'conversionsRate' => 'setConversionsRate',
@@ -2476,24 +2487,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'conversionsByClickCost' => 'setConversionsByClickCost',
         'previewConversionsCount' => 'setPreviewConversionsCount',
         'previewDeepConversionsCount' => 'setPreviewDeepConversionsCount',
-        'videoOuterPlayCount' => 'setVideoOuterPlayCount',
-        'videoOuterPlayUserCount' => 'setVideoOuterPlayUserCount',
-        'avgUserPlayCount' => 'setAvgUserPlayCount',
-        'videoOuterPlayTimeCount' => 'setVideoOuterPlayTimeCount',
-        'videoOuterPlayTimeAvgRate' => 'setVideoOuterPlayTimeAvgRate',
-        'videoOuterPlayRate' => 'setVideoOuterPlayRate',
-        'videoOuterPlayCost' => 'setVideoOuterPlayCost',
-        'videoOuterPlay10Count' => 'setVideoOuterPlay10Count',
-        'videoOuterPlay25Count' => 'setVideoOuterPlay25Count',
-        'videoOuterPlay50Count' => 'setVideoOuterPlay50Count',
-        'videoOuterPlay75Count' => 'setVideoOuterPlay75Count',
-        'videoOuterPlay90Count' => 'setVideoOuterPlay90Count',
-        'videoOuterPlay95Count' => 'setVideoOuterPlay95Count',
-        'videoOuterPlay100Count' => 'setVideoOuterPlay100Count',
-        'videoOuterPlay3sCount' => 'setVideoOuterPlay3sCount',
-        'videoOuterPlay3sRate' => 'setVideoOuterPlay3sRate',
-        'videoOuterPlay5sCount' => 'setVideoOuterPlay5sCount',
-        'videoOuterPlay7sCount' => 'setVideoOuterPlay7sCount',
         'readCount' => 'setReadCount',
         'readCost' => 'setReadCost',
         'commentCount' => 'setCommentCount',
@@ -2983,7 +2976,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'channelsSharePlaPv' => 'setChannelsSharePlaPv',
         'videoLiveSubscribeCount' => 'setVideoLiveSubscribeCount',
         'videoLiveExpCount' => 'setVideoLiveExpCount',
-        'liveStreamExpUv' => 'setLiveStreamExpUv',
         'channelsLiveExitPlaDuration' => 'setChannelsLiveExitPlaDuration',
         'videoLiveHeartCount' => 'setVideoLiveHeartCount',
         'videoLiveHeartUserCount' => 'setVideoLiveHeartUserCount',
@@ -2997,7 +2989,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'liveStreamCommodityBubbleClkPv' => 'setLiveStreamCommodityBubbleClkPv',
         'liveStreamCommodityShopBagClkPv' => 'setLiveStreamCommodityShopBagClkPv',
         'liveStreamCommodityShopListExpPv' => 'setLiveStreamCommodityShopListExpPv',
-        'liveStreamAvgTime' => 'setLiveStreamAvgTime',
         'fromFollowUv' => 'setFromFollowUv',
         'fromFollowCost' => 'setFromFollowCost',
         'fromFollowByDisplayUv' => 'setFromFollowByDisplayUv',
@@ -3011,7 +3002,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'bizReadingCount' => 'setBizReadingCount',
         'breakFramePlayPv' => 'setBreakFramePlayPv',
         'breakFrameIpClkPv' => 'setBreakFrameIpClkPv',
-        'breakFrameIpClkUv' => 'setBreakFrameIpClkUv',
         'clkMaterialUv' => 'setClkMaterialUv',
         'clkMaterialRate' => 'setClkMaterialRate',
         'clkNickPv' => 'setClkNickPv',
@@ -3025,7 +3015,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'cvsBubbleShareClkPv' => 'setCvsBubbleShareClkPv',
         'lpStarPageExpPv' => 'setLpStarPageExpPv',
         'finderTopicSliderPv' => 'setFinderTopicSliderPv',
-        'finderTopicSliderPerUser' => 'setFinderTopicSliderPerUser',
         'finderTopicSliderManualPv' => 'setFinderTopicSliderManualPv',
         'shareFriendPv' => 'setShareFriendPv',
         'shareFeedPv' => 'setShareFeedPv',
@@ -3134,7 +3123,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkLearnMorePv' => 'setClkLearnMorePv',
         'openAccountPv' => 'setOpenAccountPv',
         'openAccountPvCost' => 'setOpenAccountPvCost',
-        'videoOuterPlay5sRate' => 'setVideoOuterPlay5sRate',
         'incomeVal24hPlaRoi' => 'setIncomeVal24hPlaRoi',
         'viewDramaDedupPv' => 'setViewDramaDedupPv',
         'viewDramaDedupPvRate' => 'setViewDramaDedupPvRate',
@@ -3212,10 +3200,38 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'loanQuotaOpenDedupCost' => 'setLoanQuotaOpenDedupCost',
         'loanDedupPv' => 'setLoanDedupPv',
         'loanDedupCost' => 'setLoanDedupCost',
-        'landingCpnExpPv' => 'setLandingCpnExpPv',
-        'lanButtonClickRate' => 'setLanButtonClickRate',
         'clkTopicElementPv' => 'setClkTopicElementPv',
         'adMonetizationEcpm' => 'setAdMonetizationEcpm',
+        'adMonetizationRegActive14dAmount' => 'setAdMonetizationRegActive14dAmount',
+        'adMonetizationRegActive30dAmount' => 'setAdMonetizationRegActive30dAmount',
+        'adMonetizationRegActive60dAmount' => 'setAdMonetizationRegActive60dAmount',
+        'incomeVal30' => 'setIncomeVal30',
+        'incomeVal60' => 'setIncomeVal60',
+        'adMonetizationRegActive14dRoi' => 'setAdMonetizationRegActive14dRoi',
+        'adMonetizationRegActive30dRoi' => 'setAdMonetizationRegActive30dRoi',
+        'adMonetizationRegActive60dRoi' => 'setAdMonetizationRegActive60dRoi',
+        'incomeRoi30' => 'setIncomeRoi30',
+        'incomeRoi60' => 'setIncomeRoi60',
+        'adMonetizationDedupRegActive14dPv' => 'setAdMonetizationDedupRegActive14dPv',
+        'adMonetizationDedupRegActive30dPv' => 'setAdMonetizationDedupRegActive30dPv',
+        'adMonetizationDedupRegActive60dPv' => 'setAdMonetizationDedupRegActive60dPv',
+        'adMonetizationDedupActive14dPv' => 'setAdMonetizationDedupActive14dPv',
+        'adMonetizationDedupActive30dPv' => 'setAdMonetizationDedupActive30dPv',
+        'adMonetizationDedupActive60dPv' => 'setAdMonetizationDedupActive60dPv',
+        'adMonetizationRegActive14dPv' => 'setAdMonetizationRegActive14dPv',
+        'adMonetizationRegActive30dPv' => 'setAdMonetizationRegActive30dPv',
+        'adMonetizationRegActive60dPv' => 'setAdMonetizationRegActive60dPv',
+        'adMonetizationActive14dPv' => 'setAdMonetizationActive14dPv',
+        'adMonetizationActive30dPv' => 'setAdMonetizationActive30dPv',
+        'adMonetizationActive60dPv' => 'setAdMonetizationActive60dPv',
+        'clkAdFlipCardPv' => 'setClkAdFlipCardPv',
+        'commissionAmount' => 'setCommissionAmount',
+        'commissionRoi' => 'setCommissionRoi',
+        'orderNetPv' => 'setOrderNetPv',
+        'orderNetAmount' => 'setOrderNetAmount',
+        'orderNetRoi' => 'setOrderNetRoi',
+        'orderNetPvCost' => 'setOrderNetPvCost',
+        'clkBhAnimPv' => 'setClkBhAnimPv',
         'ageId' => 'setAgeId',
         'cityId' => 'setCityId',
         'regionId' => 'setRegionId',
@@ -3247,7 +3263,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'cost' => 'getCost',
         'acquisitionCost' => 'getAcquisitionCost',
         'thousandDisplayPrice' => 'getThousandDisplayPrice',
-        'realCostTop' => 'getRealCostTop',
         'conversionsCount' => 'getConversionsCount',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'conversionsRate' => 'getConversionsRate',
@@ -3264,24 +3279,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'conversionsByClickCost' => 'getConversionsByClickCost',
         'previewConversionsCount' => 'getPreviewConversionsCount',
         'previewDeepConversionsCount' => 'getPreviewDeepConversionsCount',
-        'videoOuterPlayCount' => 'getVideoOuterPlayCount',
-        'videoOuterPlayUserCount' => 'getVideoOuterPlayUserCount',
-        'avgUserPlayCount' => 'getAvgUserPlayCount',
-        'videoOuterPlayTimeCount' => 'getVideoOuterPlayTimeCount',
-        'videoOuterPlayTimeAvgRate' => 'getVideoOuterPlayTimeAvgRate',
-        'videoOuterPlayRate' => 'getVideoOuterPlayRate',
-        'videoOuterPlayCost' => 'getVideoOuterPlayCost',
-        'videoOuterPlay10Count' => 'getVideoOuterPlay10Count',
-        'videoOuterPlay25Count' => 'getVideoOuterPlay25Count',
-        'videoOuterPlay50Count' => 'getVideoOuterPlay50Count',
-        'videoOuterPlay75Count' => 'getVideoOuterPlay75Count',
-        'videoOuterPlay90Count' => 'getVideoOuterPlay90Count',
-        'videoOuterPlay95Count' => 'getVideoOuterPlay95Count',
-        'videoOuterPlay100Count' => 'getVideoOuterPlay100Count',
-        'videoOuterPlay3sCount' => 'getVideoOuterPlay3sCount',
-        'videoOuterPlay3sRate' => 'getVideoOuterPlay3sRate',
-        'videoOuterPlay5sCount' => 'getVideoOuterPlay5sCount',
-        'videoOuterPlay7sCount' => 'getVideoOuterPlay7sCount',
         'readCount' => 'getReadCount',
         'readCost' => 'getReadCost',
         'commentCount' => 'getCommentCount',
@@ -3771,7 +3768,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'channelsSharePlaPv' => 'getChannelsSharePlaPv',
         'videoLiveSubscribeCount' => 'getVideoLiveSubscribeCount',
         'videoLiveExpCount' => 'getVideoLiveExpCount',
-        'liveStreamExpUv' => 'getLiveStreamExpUv',
         'channelsLiveExitPlaDuration' => 'getChannelsLiveExitPlaDuration',
         'videoLiveHeartCount' => 'getVideoLiveHeartCount',
         'videoLiveHeartUserCount' => 'getVideoLiveHeartUserCount',
@@ -3785,7 +3781,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'liveStreamCommodityBubbleClkPv' => 'getLiveStreamCommodityBubbleClkPv',
         'liveStreamCommodityShopBagClkPv' => 'getLiveStreamCommodityShopBagClkPv',
         'liveStreamCommodityShopListExpPv' => 'getLiveStreamCommodityShopListExpPv',
-        'liveStreamAvgTime' => 'getLiveStreamAvgTime',
         'fromFollowUv' => 'getFromFollowUv',
         'fromFollowCost' => 'getFromFollowCost',
         'fromFollowByDisplayUv' => 'getFromFollowByDisplayUv',
@@ -3799,7 +3794,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'bizReadingCount' => 'getBizReadingCount',
         'breakFramePlayPv' => 'getBreakFramePlayPv',
         'breakFrameIpClkPv' => 'getBreakFrameIpClkPv',
-        'breakFrameIpClkUv' => 'getBreakFrameIpClkUv',
         'clkMaterialUv' => 'getClkMaterialUv',
         'clkMaterialRate' => 'getClkMaterialRate',
         'clkNickPv' => 'getClkNickPv',
@@ -3813,7 +3807,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'cvsBubbleShareClkPv' => 'getCvsBubbleShareClkPv',
         'lpStarPageExpPv' => 'getLpStarPageExpPv',
         'finderTopicSliderPv' => 'getFinderTopicSliderPv',
-        'finderTopicSliderPerUser' => 'getFinderTopicSliderPerUser',
         'finderTopicSliderManualPv' => 'getFinderTopicSliderManualPv',
         'shareFriendPv' => 'getShareFriendPv',
         'shareFeedPv' => 'getShareFeedPv',
@@ -3922,7 +3915,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkLearnMorePv' => 'getClkLearnMorePv',
         'openAccountPv' => 'getOpenAccountPv',
         'openAccountPvCost' => 'getOpenAccountPvCost',
-        'videoOuterPlay5sRate' => 'getVideoOuterPlay5sRate',
         'incomeVal24hPlaRoi' => 'getIncomeVal24hPlaRoi',
         'viewDramaDedupPv' => 'getViewDramaDedupPv',
         'viewDramaDedupPvRate' => 'getViewDramaDedupPvRate',
@@ -4000,10 +3992,38 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'loanQuotaOpenDedupCost' => 'getLoanQuotaOpenDedupCost',
         'loanDedupPv' => 'getLoanDedupPv',
         'loanDedupCost' => 'getLoanDedupCost',
-        'landingCpnExpPv' => 'getLandingCpnExpPv',
-        'lanButtonClickRate' => 'getLanButtonClickRate',
         'clkTopicElementPv' => 'getClkTopicElementPv',
         'adMonetizationEcpm' => 'getAdMonetizationEcpm',
+        'adMonetizationRegActive14dAmount' => 'getAdMonetizationRegActive14dAmount',
+        'adMonetizationRegActive30dAmount' => 'getAdMonetizationRegActive30dAmount',
+        'adMonetizationRegActive60dAmount' => 'getAdMonetizationRegActive60dAmount',
+        'incomeVal30' => 'getIncomeVal30',
+        'incomeVal60' => 'getIncomeVal60',
+        'adMonetizationRegActive14dRoi' => 'getAdMonetizationRegActive14dRoi',
+        'adMonetizationRegActive30dRoi' => 'getAdMonetizationRegActive30dRoi',
+        'adMonetizationRegActive60dRoi' => 'getAdMonetizationRegActive60dRoi',
+        'incomeRoi30' => 'getIncomeRoi30',
+        'incomeRoi60' => 'getIncomeRoi60',
+        'adMonetizationDedupRegActive14dPv' => 'getAdMonetizationDedupRegActive14dPv',
+        'adMonetizationDedupRegActive30dPv' => 'getAdMonetizationDedupRegActive30dPv',
+        'adMonetizationDedupRegActive60dPv' => 'getAdMonetizationDedupRegActive60dPv',
+        'adMonetizationDedupActive14dPv' => 'getAdMonetizationDedupActive14dPv',
+        'adMonetizationDedupActive30dPv' => 'getAdMonetizationDedupActive30dPv',
+        'adMonetizationDedupActive60dPv' => 'getAdMonetizationDedupActive60dPv',
+        'adMonetizationRegActive14dPv' => 'getAdMonetizationRegActive14dPv',
+        'adMonetizationRegActive30dPv' => 'getAdMonetizationRegActive30dPv',
+        'adMonetizationRegActive60dPv' => 'getAdMonetizationRegActive60dPv',
+        'adMonetizationActive14dPv' => 'getAdMonetizationActive14dPv',
+        'adMonetizationActive30dPv' => 'getAdMonetizationActive30dPv',
+        'adMonetizationActive60dPv' => 'getAdMonetizationActive60dPv',
+        'clkAdFlipCardPv' => 'getClkAdFlipCardPv',
+        'commissionAmount' => 'getCommissionAmount',
+        'commissionRoi' => 'getCommissionRoi',
+        'orderNetPv' => 'getOrderNetPv',
+        'orderNetAmount' => 'getOrderNetAmount',
+        'orderNetRoi' => 'getOrderNetRoi',
+        'orderNetPvCost' => 'getOrderNetPvCost',
+        'clkBhAnimPv' => 'getClkBhAnimPv',
         'ageId' => 'getAgeId',
         'cityId' => 'getCityId',
         'regionId' => 'getRegionId',
@@ -4089,7 +4109,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['cost'] = isset($data['cost']) ? $data['cost'] : null;
         $this->container['acquisitionCost'] = isset($data['acquisitionCost']) ? $data['acquisitionCost'] : null;
         $this->container['thousandDisplayPrice'] = isset($data['thousandDisplayPrice']) ? $data['thousandDisplayPrice'] : null;
-        $this->container['realCostTop'] = isset($data['realCostTop']) ? $data['realCostTop'] : null;
         $this->container['conversionsCount'] = isset($data['conversionsCount']) ? $data['conversionsCount'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['conversionsRate'] = isset($data['conversionsRate']) ? $data['conversionsRate'] : null;
@@ -4106,24 +4125,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['conversionsByClickCost'] = isset($data['conversionsByClickCost']) ? $data['conversionsByClickCost'] : null;
         $this->container['previewConversionsCount'] = isset($data['previewConversionsCount']) ? $data['previewConversionsCount'] : null;
         $this->container['previewDeepConversionsCount'] = isset($data['previewDeepConversionsCount']) ? $data['previewDeepConversionsCount'] : null;
-        $this->container['videoOuterPlayCount'] = isset($data['videoOuterPlayCount']) ? $data['videoOuterPlayCount'] : null;
-        $this->container['videoOuterPlayUserCount'] = isset($data['videoOuterPlayUserCount']) ? $data['videoOuterPlayUserCount'] : null;
-        $this->container['avgUserPlayCount'] = isset($data['avgUserPlayCount']) ? $data['avgUserPlayCount'] : null;
-        $this->container['videoOuterPlayTimeCount'] = isset($data['videoOuterPlayTimeCount']) ? $data['videoOuterPlayTimeCount'] : null;
-        $this->container['videoOuterPlayTimeAvgRate'] = isset($data['videoOuterPlayTimeAvgRate']) ? $data['videoOuterPlayTimeAvgRate'] : null;
-        $this->container['videoOuterPlayRate'] = isset($data['videoOuterPlayRate']) ? $data['videoOuterPlayRate'] : null;
-        $this->container['videoOuterPlayCost'] = isset($data['videoOuterPlayCost']) ? $data['videoOuterPlayCost'] : null;
-        $this->container['videoOuterPlay10Count'] = isset($data['videoOuterPlay10Count']) ? $data['videoOuterPlay10Count'] : null;
-        $this->container['videoOuterPlay25Count'] = isset($data['videoOuterPlay25Count']) ? $data['videoOuterPlay25Count'] : null;
-        $this->container['videoOuterPlay50Count'] = isset($data['videoOuterPlay50Count']) ? $data['videoOuterPlay50Count'] : null;
-        $this->container['videoOuterPlay75Count'] = isset($data['videoOuterPlay75Count']) ? $data['videoOuterPlay75Count'] : null;
-        $this->container['videoOuterPlay90Count'] = isset($data['videoOuterPlay90Count']) ? $data['videoOuterPlay90Count'] : null;
-        $this->container['videoOuterPlay95Count'] = isset($data['videoOuterPlay95Count']) ? $data['videoOuterPlay95Count'] : null;
-        $this->container['videoOuterPlay100Count'] = isset($data['videoOuterPlay100Count']) ? $data['videoOuterPlay100Count'] : null;
-        $this->container['videoOuterPlay3sCount'] = isset($data['videoOuterPlay3sCount']) ? $data['videoOuterPlay3sCount'] : null;
-        $this->container['videoOuterPlay3sRate'] = isset($data['videoOuterPlay3sRate']) ? $data['videoOuterPlay3sRate'] : null;
-        $this->container['videoOuterPlay5sCount'] = isset($data['videoOuterPlay5sCount']) ? $data['videoOuterPlay5sCount'] : null;
-        $this->container['videoOuterPlay7sCount'] = isset($data['videoOuterPlay7sCount']) ? $data['videoOuterPlay7sCount'] : null;
         $this->container['readCount'] = isset($data['readCount']) ? $data['readCount'] : null;
         $this->container['readCost'] = isset($data['readCost']) ? $data['readCost'] : null;
         $this->container['commentCount'] = isset($data['commentCount']) ? $data['commentCount'] : null;
@@ -4613,7 +4614,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['channelsSharePlaPv'] = isset($data['channelsSharePlaPv']) ? $data['channelsSharePlaPv'] : null;
         $this->container['videoLiveSubscribeCount'] = isset($data['videoLiveSubscribeCount']) ? $data['videoLiveSubscribeCount'] : null;
         $this->container['videoLiveExpCount'] = isset($data['videoLiveExpCount']) ? $data['videoLiveExpCount'] : null;
-        $this->container['liveStreamExpUv'] = isset($data['liveStreamExpUv']) ? $data['liveStreamExpUv'] : null;
         $this->container['channelsLiveExitPlaDuration'] = isset($data['channelsLiveExitPlaDuration']) ? $data['channelsLiveExitPlaDuration'] : null;
         $this->container['videoLiveHeartCount'] = isset($data['videoLiveHeartCount']) ? $data['videoLiveHeartCount'] : null;
         $this->container['videoLiveHeartUserCount'] = isset($data['videoLiveHeartUserCount']) ? $data['videoLiveHeartUserCount'] : null;
@@ -4627,7 +4627,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['liveStreamCommodityBubbleClkPv'] = isset($data['liveStreamCommodityBubbleClkPv']) ? $data['liveStreamCommodityBubbleClkPv'] : null;
         $this->container['liveStreamCommodityShopBagClkPv'] = isset($data['liveStreamCommodityShopBagClkPv']) ? $data['liveStreamCommodityShopBagClkPv'] : null;
         $this->container['liveStreamCommodityShopListExpPv'] = isset($data['liveStreamCommodityShopListExpPv']) ? $data['liveStreamCommodityShopListExpPv'] : null;
-        $this->container['liveStreamAvgTime'] = isset($data['liveStreamAvgTime']) ? $data['liveStreamAvgTime'] : null;
         $this->container['fromFollowUv'] = isset($data['fromFollowUv']) ? $data['fromFollowUv'] : null;
         $this->container['fromFollowCost'] = isset($data['fromFollowCost']) ? $data['fromFollowCost'] : null;
         $this->container['fromFollowByDisplayUv'] = isset($data['fromFollowByDisplayUv']) ? $data['fromFollowByDisplayUv'] : null;
@@ -4641,7 +4640,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['bizReadingCount'] = isset($data['bizReadingCount']) ? $data['bizReadingCount'] : null;
         $this->container['breakFramePlayPv'] = isset($data['breakFramePlayPv']) ? $data['breakFramePlayPv'] : null;
         $this->container['breakFrameIpClkPv'] = isset($data['breakFrameIpClkPv']) ? $data['breakFrameIpClkPv'] : null;
-        $this->container['breakFrameIpClkUv'] = isset($data['breakFrameIpClkUv']) ? $data['breakFrameIpClkUv'] : null;
         $this->container['clkMaterialUv'] = isset($data['clkMaterialUv']) ? $data['clkMaterialUv'] : null;
         $this->container['clkMaterialRate'] = isset($data['clkMaterialRate']) ? $data['clkMaterialRate'] : null;
         $this->container['clkNickPv'] = isset($data['clkNickPv']) ? $data['clkNickPv'] : null;
@@ -4655,7 +4653,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['cvsBubbleShareClkPv'] = isset($data['cvsBubbleShareClkPv']) ? $data['cvsBubbleShareClkPv'] : null;
         $this->container['lpStarPageExpPv'] = isset($data['lpStarPageExpPv']) ? $data['lpStarPageExpPv'] : null;
         $this->container['finderTopicSliderPv'] = isset($data['finderTopicSliderPv']) ? $data['finderTopicSliderPv'] : null;
-        $this->container['finderTopicSliderPerUser'] = isset($data['finderTopicSliderPerUser']) ? $data['finderTopicSliderPerUser'] : null;
         $this->container['finderTopicSliderManualPv'] = isset($data['finderTopicSliderManualPv']) ? $data['finderTopicSliderManualPv'] : null;
         $this->container['shareFriendPv'] = isset($data['shareFriendPv']) ? $data['shareFriendPv'] : null;
         $this->container['shareFeedPv'] = isset($data['shareFeedPv']) ? $data['shareFeedPv'] : null;
@@ -4764,7 +4761,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['clkLearnMorePv'] = isset($data['clkLearnMorePv']) ? $data['clkLearnMorePv'] : null;
         $this->container['openAccountPv'] = isset($data['openAccountPv']) ? $data['openAccountPv'] : null;
         $this->container['openAccountPvCost'] = isset($data['openAccountPvCost']) ? $data['openAccountPvCost'] : null;
-        $this->container['videoOuterPlay5sRate'] = isset($data['videoOuterPlay5sRate']) ? $data['videoOuterPlay5sRate'] : null;
         $this->container['incomeVal24hPlaRoi'] = isset($data['incomeVal24hPlaRoi']) ? $data['incomeVal24hPlaRoi'] : null;
         $this->container['viewDramaDedupPv'] = isset($data['viewDramaDedupPv']) ? $data['viewDramaDedupPv'] : null;
         $this->container['viewDramaDedupPvRate'] = isset($data['viewDramaDedupPvRate']) ? $data['viewDramaDedupPvRate'] : null;
@@ -4842,10 +4838,38 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['loanQuotaOpenDedupCost'] = isset($data['loanQuotaOpenDedupCost']) ? $data['loanQuotaOpenDedupCost'] : null;
         $this->container['loanDedupPv'] = isset($data['loanDedupPv']) ? $data['loanDedupPv'] : null;
         $this->container['loanDedupCost'] = isset($data['loanDedupCost']) ? $data['loanDedupCost'] : null;
-        $this->container['landingCpnExpPv'] = isset($data['landingCpnExpPv']) ? $data['landingCpnExpPv'] : null;
-        $this->container['lanButtonClickRate'] = isset($data['lanButtonClickRate']) ? $data['lanButtonClickRate'] : null;
         $this->container['clkTopicElementPv'] = isset($data['clkTopicElementPv']) ? $data['clkTopicElementPv'] : null;
         $this->container['adMonetizationEcpm'] = isset($data['adMonetizationEcpm']) ? $data['adMonetizationEcpm'] : null;
+        $this->container['adMonetizationRegActive14dAmount'] = isset($data['adMonetizationRegActive14dAmount']) ? $data['adMonetizationRegActive14dAmount'] : null;
+        $this->container['adMonetizationRegActive30dAmount'] = isset($data['adMonetizationRegActive30dAmount']) ? $data['adMonetizationRegActive30dAmount'] : null;
+        $this->container['adMonetizationRegActive60dAmount'] = isset($data['adMonetizationRegActive60dAmount']) ? $data['adMonetizationRegActive60dAmount'] : null;
+        $this->container['incomeVal30'] = isset($data['incomeVal30']) ? $data['incomeVal30'] : null;
+        $this->container['incomeVal60'] = isset($data['incomeVal60']) ? $data['incomeVal60'] : null;
+        $this->container['adMonetizationRegActive14dRoi'] = isset($data['adMonetizationRegActive14dRoi']) ? $data['adMonetizationRegActive14dRoi'] : null;
+        $this->container['adMonetizationRegActive30dRoi'] = isset($data['adMonetizationRegActive30dRoi']) ? $data['adMonetizationRegActive30dRoi'] : null;
+        $this->container['adMonetizationRegActive60dRoi'] = isset($data['adMonetizationRegActive60dRoi']) ? $data['adMonetizationRegActive60dRoi'] : null;
+        $this->container['incomeRoi30'] = isset($data['incomeRoi30']) ? $data['incomeRoi30'] : null;
+        $this->container['incomeRoi60'] = isset($data['incomeRoi60']) ? $data['incomeRoi60'] : null;
+        $this->container['adMonetizationDedupRegActive14dPv'] = isset($data['adMonetizationDedupRegActive14dPv']) ? $data['adMonetizationDedupRegActive14dPv'] : null;
+        $this->container['adMonetizationDedupRegActive30dPv'] = isset($data['adMonetizationDedupRegActive30dPv']) ? $data['adMonetizationDedupRegActive30dPv'] : null;
+        $this->container['adMonetizationDedupRegActive60dPv'] = isset($data['adMonetizationDedupRegActive60dPv']) ? $data['adMonetizationDedupRegActive60dPv'] : null;
+        $this->container['adMonetizationDedupActive14dPv'] = isset($data['adMonetizationDedupActive14dPv']) ? $data['adMonetizationDedupActive14dPv'] : null;
+        $this->container['adMonetizationDedupActive30dPv'] = isset($data['adMonetizationDedupActive30dPv']) ? $data['adMonetizationDedupActive30dPv'] : null;
+        $this->container['adMonetizationDedupActive60dPv'] = isset($data['adMonetizationDedupActive60dPv']) ? $data['adMonetizationDedupActive60dPv'] : null;
+        $this->container['adMonetizationRegActive14dPv'] = isset($data['adMonetizationRegActive14dPv']) ? $data['adMonetizationRegActive14dPv'] : null;
+        $this->container['adMonetizationRegActive30dPv'] = isset($data['adMonetizationRegActive30dPv']) ? $data['adMonetizationRegActive30dPv'] : null;
+        $this->container['adMonetizationRegActive60dPv'] = isset($data['adMonetizationRegActive60dPv']) ? $data['adMonetizationRegActive60dPv'] : null;
+        $this->container['adMonetizationActive14dPv'] = isset($data['adMonetizationActive14dPv']) ? $data['adMonetizationActive14dPv'] : null;
+        $this->container['adMonetizationActive30dPv'] = isset($data['adMonetizationActive30dPv']) ? $data['adMonetizationActive30dPv'] : null;
+        $this->container['adMonetizationActive60dPv'] = isset($data['adMonetizationActive60dPv']) ? $data['adMonetizationActive60dPv'] : null;
+        $this->container['clkAdFlipCardPv'] = isset($data['clkAdFlipCardPv']) ? $data['clkAdFlipCardPv'] : null;
+        $this->container['commissionAmount'] = isset($data['commissionAmount']) ? $data['commissionAmount'] : null;
+        $this->container['commissionRoi'] = isset($data['commissionRoi']) ? $data['commissionRoi'] : null;
+        $this->container['orderNetPv'] = isset($data['orderNetPv']) ? $data['orderNetPv'] : null;
+        $this->container['orderNetAmount'] = isset($data['orderNetAmount']) ? $data['orderNetAmount'] : null;
+        $this->container['orderNetRoi'] = isset($data['orderNetRoi']) ? $data['orderNetRoi'] : null;
+        $this->container['orderNetPvCost'] = isset($data['orderNetPvCost']) ? $data['orderNetPvCost'] : null;
+        $this->container['clkBhAnimPv'] = isset($data['clkBhAnimPv']) ? $data['clkBhAnimPv'] : null;
         $this->container['ageId'] = isset($data['ageId']) ? $data['ageId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
@@ -5264,30 +5288,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets realCostTop
-     *
-     * @return int|mixed
-     */
-    public function getRealCostTop()
-    {
-        return $this->container['realCostTop'];
-    }
-
-    /**
-     * Sets realCostTop
-     *
-     * @param int|mixed $realCostTop realCostTop
-     *
-     * @return $this
-     */
-    public function setRealCostTop($realCostTop)
-    {
-        $this->container['realCostTop'] = $realCostTop;
-
-        return $this;
-    }
-
-    /**
      * Gets conversionsCount
      *
      * @return int|mixed
@@ -5667,438 +5667,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setPreviewDeepConversionsCount($previewDeepConversionsCount)
     {
         $this->container['previewDeepConversionsCount'] = $previewDeepConversionsCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlayCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlayCount()
-    {
-        return $this->container['videoOuterPlayCount'];
-    }
-
-    /**
-     * Sets videoOuterPlayCount
-     *
-     * @param int|mixed $videoOuterPlayCount videoOuterPlayCount
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlayCount($videoOuterPlayCount)
-    {
-        $this->container['videoOuterPlayCount'] = $videoOuterPlayCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlayUserCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlayUserCount()
-    {
-        return $this->container['videoOuterPlayUserCount'];
-    }
-
-    /**
-     * Sets videoOuterPlayUserCount
-     *
-     * @param int|mixed $videoOuterPlayUserCount videoOuterPlayUserCount
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlayUserCount($videoOuterPlayUserCount)
-    {
-        $this->container['videoOuterPlayUserCount'] = $videoOuterPlayUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets avgUserPlayCount
-     *
-     * @return double|mixed
-     */
-    public function getAvgUserPlayCount()
-    {
-        return $this->container['avgUserPlayCount'];
-    }
-
-    /**
-     * Sets avgUserPlayCount
-     *
-     * @param double|mixed $avgUserPlayCount avgUserPlayCount
-     *
-     * @return $this
-     */
-    public function setAvgUserPlayCount($avgUserPlayCount)
-    {
-        $this->container['avgUserPlayCount'] = $avgUserPlayCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlayTimeCount
-     *
-     * @return double|mixed
-     */
-    public function getVideoOuterPlayTimeCount()
-    {
-        return $this->container['videoOuterPlayTimeCount'];
-    }
-
-    /**
-     * Sets videoOuterPlayTimeCount
-     *
-     * @param double|mixed $videoOuterPlayTimeCount videoOuterPlayTimeCount
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlayTimeCount($videoOuterPlayTimeCount)
-    {
-        $this->container['videoOuterPlayTimeCount'] = $videoOuterPlayTimeCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlayTimeAvgRate
-     *
-     * @return double|mixed
-     */
-    public function getVideoOuterPlayTimeAvgRate()
-    {
-        return $this->container['videoOuterPlayTimeAvgRate'];
-    }
-
-    /**
-     * Sets videoOuterPlayTimeAvgRate
-     *
-     * @param double|mixed $videoOuterPlayTimeAvgRate videoOuterPlayTimeAvgRate
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlayTimeAvgRate($videoOuterPlayTimeAvgRate)
-    {
-        $this->container['videoOuterPlayTimeAvgRate'] = $videoOuterPlayTimeAvgRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlayRate
-     *
-     * @return double|mixed
-     */
-    public function getVideoOuterPlayRate()
-    {
-        return $this->container['videoOuterPlayRate'];
-    }
-
-    /**
-     * Sets videoOuterPlayRate
-     *
-     * @param double|mixed $videoOuterPlayRate videoOuterPlayRate
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlayRate($videoOuterPlayRate)
-    {
-        $this->container['videoOuterPlayRate'] = $videoOuterPlayRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlayCost
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlayCost()
-    {
-        return $this->container['videoOuterPlayCost'];
-    }
-
-    /**
-     * Sets videoOuterPlayCost
-     *
-     * @param int|mixed $videoOuterPlayCost videoOuterPlayCost
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlayCost($videoOuterPlayCost)
-    {
-        $this->container['videoOuterPlayCost'] = $videoOuterPlayCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay10Count
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlay10Count()
-    {
-        return $this->container['videoOuterPlay10Count'];
-    }
-
-    /**
-     * Sets videoOuterPlay10Count
-     *
-     * @param int|mixed $videoOuterPlay10Count videoOuterPlay10Count
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay10Count($videoOuterPlay10Count)
-    {
-        $this->container['videoOuterPlay10Count'] = $videoOuterPlay10Count;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay25Count
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlay25Count()
-    {
-        return $this->container['videoOuterPlay25Count'];
-    }
-
-    /**
-     * Sets videoOuterPlay25Count
-     *
-     * @param int|mixed $videoOuterPlay25Count videoOuterPlay25Count
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay25Count($videoOuterPlay25Count)
-    {
-        $this->container['videoOuterPlay25Count'] = $videoOuterPlay25Count;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay50Count
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlay50Count()
-    {
-        return $this->container['videoOuterPlay50Count'];
-    }
-
-    /**
-     * Sets videoOuterPlay50Count
-     *
-     * @param int|mixed $videoOuterPlay50Count videoOuterPlay50Count
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay50Count($videoOuterPlay50Count)
-    {
-        $this->container['videoOuterPlay50Count'] = $videoOuterPlay50Count;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay75Count
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlay75Count()
-    {
-        return $this->container['videoOuterPlay75Count'];
-    }
-
-    /**
-     * Sets videoOuterPlay75Count
-     *
-     * @param int|mixed $videoOuterPlay75Count videoOuterPlay75Count
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay75Count($videoOuterPlay75Count)
-    {
-        $this->container['videoOuterPlay75Count'] = $videoOuterPlay75Count;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay90Count
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlay90Count()
-    {
-        return $this->container['videoOuterPlay90Count'];
-    }
-
-    /**
-     * Sets videoOuterPlay90Count
-     *
-     * @param int|mixed $videoOuterPlay90Count videoOuterPlay90Count
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay90Count($videoOuterPlay90Count)
-    {
-        $this->container['videoOuterPlay90Count'] = $videoOuterPlay90Count;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay95Count
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlay95Count()
-    {
-        return $this->container['videoOuterPlay95Count'];
-    }
-
-    /**
-     * Sets videoOuterPlay95Count
-     *
-     * @param int|mixed $videoOuterPlay95Count videoOuterPlay95Count
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay95Count($videoOuterPlay95Count)
-    {
-        $this->container['videoOuterPlay95Count'] = $videoOuterPlay95Count;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay100Count
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlay100Count()
-    {
-        return $this->container['videoOuterPlay100Count'];
-    }
-
-    /**
-     * Sets videoOuterPlay100Count
-     *
-     * @param int|mixed $videoOuterPlay100Count videoOuterPlay100Count
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay100Count($videoOuterPlay100Count)
-    {
-        $this->container['videoOuterPlay100Count'] = $videoOuterPlay100Count;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay3sCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlay3sCount()
-    {
-        return $this->container['videoOuterPlay3sCount'];
-    }
-
-    /**
-     * Sets videoOuterPlay3sCount
-     *
-     * @param int|mixed $videoOuterPlay3sCount videoOuterPlay3sCount
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay3sCount($videoOuterPlay3sCount)
-    {
-        $this->container['videoOuterPlay3sCount'] = $videoOuterPlay3sCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay3sRate
-     *
-     * @return double|mixed
-     */
-    public function getVideoOuterPlay3sRate()
-    {
-        return $this->container['videoOuterPlay3sRate'];
-    }
-
-    /**
-     * Sets videoOuterPlay3sRate
-     *
-     * @param double|mixed $videoOuterPlay3sRate videoOuterPlay3sRate
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay3sRate($videoOuterPlay3sRate)
-    {
-        $this->container['videoOuterPlay3sRate'] = $videoOuterPlay3sRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay5sCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlay5sCount()
-    {
-        return $this->container['videoOuterPlay5sCount'];
-    }
-
-    /**
-     * Sets videoOuterPlay5sCount
-     *
-     * @param int|mixed $videoOuterPlay5sCount videoOuterPlay5sCount
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay5sCount($videoOuterPlay5sCount)
-    {
-        $this->container['videoOuterPlay5sCount'] = $videoOuterPlay5sCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlay7sCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlay7sCount()
-    {
-        return $this->container['videoOuterPlay7sCount'];
-    }
-
-    /**
-     * Sets videoOuterPlay7sCount
-     *
-     * @param int|mixed $videoOuterPlay7sCount videoOuterPlay7sCount
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay7sCount($videoOuterPlay7sCount)
-    {
-        $this->container['videoOuterPlay7sCount'] = $videoOuterPlay7sCount;
 
         return $this;
     }
@@ -17840,30 +17408,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets liveStreamExpUv
-     *
-     * @return int|mixed
-     */
-    public function getLiveStreamExpUv()
-    {
-        return $this->container['liveStreamExpUv'];
-    }
-
-    /**
-     * Sets liveStreamExpUv
-     *
-     * @param int|mixed $liveStreamExpUv liveStreamExpUv
-     *
-     * @return $this
-     */
-    public function setLiveStreamExpUv($liveStreamExpUv)
-    {
-        $this->container['liveStreamExpUv'] = $liveStreamExpUv;
-
-        return $this;
-    }
-
-    /**
      * Gets channelsLiveExitPlaDuration
      *
      * @return double|mixed
@@ -18171,30 +17715,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setLiveStreamCommodityShopListExpPv($liveStreamCommodityShopListExpPv)
     {
         $this->container['liveStreamCommodityShopListExpPv'] = $liveStreamCommodityShopListExpPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets liveStreamAvgTime
-     *
-     * @return double|mixed
-     */
-    public function getLiveStreamAvgTime()
-    {
-        return $this->container['liveStreamAvgTime'];
-    }
-
-    /**
-     * Sets liveStreamAvgTime
-     *
-     * @param double|mixed $liveStreamAvgTime liveStreamAvgTime
-     *
-     * @return $this
-     */
-    public function setLiveStreamAvgTime($liveStreamAvgTime)
-    {
-        $this->container['liveStreamAvgTime'] = $liveStreamAvgTime;
 
         return $this;
     }
@@ -18512,30 +18032,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets breakFrameIpClkUv
-     *
-     * @return int|mixed
-     */
-    public function getBreakFrameIpClkUv()
-    {
-        return $this->container['breakFrameIpClkUv'];
-    }
-
-    /**
-     * Sets breakFrameIpClkUv
-     *
-     * @param int|mixed $breakFrameIpClkUv breakFrameIpClkUv
-     *
-     * @return $this
-     */
-    public function setBreakFrameIpClkUv($breakFrameIpClkUv)
-    {
-        $this->container['breakFrameIpClkUv'] = $breakFrameIpClkUv;
-
-        return $this;
-    }
-
-    /**
      * Gets clkMaterialUv
      *
      * @return int|mixed
@@ -18843,30 +18339,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setFinderTopicSliderPv($finderTopicSliderPv)
     {
         $this->container['finderTopicSliderPv'] = $finderTopicSliderPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets finderTopicSliderPerUser
-     *
-     * @return double|mixed
-     */
-    public function getFinderTopicSliderPerUser()
-    {
-        return $this->container['finderTopicSliderPerUser'];
-    }
-
-    /**
-     * Sets finderTopicSliderPerUser
-     *
-     * @param double|mixed $finderTopicSliderPerUser finderTopicSliderPerUser
-     *
-     * @return $this
-     */
-    public function setFinderTopicSliderPerUser($finderTopicSliderPerUser)
-    {
-        $this->container['finderTopicSliderPerUser'] = $finderTopicSliderPerUser;
 
         return $this;
     }
@@ -21464,30 +20936,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets videoOuterPlay5sRate
-     *
-     * @return double|mixed
-     */
-    public function getVideoOuterPlay5sRate()
-    {
-        return $this->container['videoOuterPlay5sRate'];
-    }
-
-    /**
-     * Sets videoOuterPlay5sRate
-     *
-     * @param double|mixed $videoOuterPlay5sRate videoOuterPlay5sRate
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlay5sRate($videoOuterPlay5sRate)
-    {
-        $this->container['videoOuterPlay5sRate'] = $videoOuterPlay5sRate;
-
-        return $this;
-    }
-
-    /**
      * Gets incomeVal24hPlaRoi
      *
      * @return double|mixed
@@ -23336,54 +22784,6 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets landingCpnExpPv
-     *
-     * @return int|mixed
-     */
-    public function getLandingCpnExpPv()
-    {
-        return $this->container['landingCpnExpPv'];
-    }
-
-    /**
-     * Sets landingCpnExpPv
-     *
-     * @param int|mixed $landingCpnExpPv landingCpnExpPv
-     *
-     * @return $this
-     */
-    public function setLandingCpnExpPv($landingCpnExpPv)
-    {
-        $this->container['landingCpnExpPv'] = $landingCpnExpPv;
-
-        return $this;
-    }
-
-    /**
-     * Gets lanButtonClickRate
-     *
-     * @return double|mixed
-     */
-    public function getLanButtonClickRate()
-    {
-        return $this->container['lanButtonClickRate'];
-    }
-
-    /**
-     * Sets lanButtonClickRate
-     *
-     * @param double|mixed $lanButtonClickRate lanButtonClickRate
-     *
-     * @return $this
-     */
-    public function setLanButtonClickRate($lanButtonClickRate)
-    {
-        $this->container['lanButtonClickRate'] = $lanButtonClickRate;
-
-        return $this;
-    }
-
-    /**
      * Gets clkTopicElementPv
      *
      * @return int|mixed
@@ -23427,6 +22827,726 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setAdMonetizationEcpm($adMonetizationEcpm)
     {
         $this->container['adMonetizationEcpm'] = $adMonetizationEcpm;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationRegActive14dAmount
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationRegActive14dAmount()
+    {
+        return $this->container['adMonetizationRegActive14dAmount'];
+    }
+
+    /**
+     * Sets adMonetizationRegActive14dAmount
+     *
+     * @param int|mixed $adMonetizationRegActive14dAmount adMonetizationRegActive14dAmount
+     *
+     * @return $this
+     */
+    public function setAdMonetizationRegActive14dAmount($adMonetizationRegActive14dAmount)
+    {
+        $this->container['adMonetizationRegActive14dAmount'] = $adMonetizationRegActive14dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationRegActive30dAmount
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationRegActive30dAmount()
+    {
+        return $this->container['adMonetizationRegActive30dAmount'];
+    }
+
+    /**
+     * Sets adMonetizationRegActive30dAmount
+     *
+     * @param int|mixed $adMonetizationRegActive30dAmount adMonetizationRegActive30dAmount
+     *
+     * @return $this
+     */
+    public function setAdMonetizationRegActive30dAmount($adMonetizationRegActive30dAmount)
+    {
+        $this->container['adMonetizationRegActive30dAmount'] = $adMonetizationRegActive30dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationRegActive60dAmount
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationRegActive60dAmount()
+    {
+        return $this->container['adMonetizationRegActive60dAmount'];
+    }
+
+    /**
+     * Sets adMonetizationRegActive60dAmount
+     *
+     * @param int|mixed $adMonetizationRegActive60dAmount adMonetizationRegActive60dAmount
+     *
+     * @return $this
+     */
+    public function setAdMonetizationRegActive60dAmount($adMonetizationRegActive60dAmount)
+    {
+        $this->container['adMonetizationRegActive60dAmount'] = $adMonetizationRegActive60dAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeVal30
+     *
+     * @return int|mixed
+     */
+    public function getIncomeVal30()
+    {
+        return $this->container['incomeVal30'];
+    }
+
+    /**
+     * Sets incomeVal30
+     *
+     * @param int|mixed $incomeVal30 incomeVal30
+     *
+     * @return $this
+     */
+    public function setIncomeVal30($incomeVal30)
+    {
+        $this->container['incomeVal30'] = $incomeVal30;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeVal60
+     *
+     * @return int|mixed
+     */
+    public function getIncomeVal60()
+    {
+        return $this->container['incomeVal60'];
+    }
+
+    /**
+     * Sets incomeVal60
+     *
+     * @param int|mixed $incomeVal60 incomeVal60
+     *
+     * @return $this
+     */
+    public function setIncomeVal60($incomeVal60)
+    {
+        $this->container['incomeVal60'] = $incomeVal60;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationRegActive14dRoi
+     *
+     * @return double|mixed
+     */
+    public function getAdMonetizationRegActive14dRoi()
+    {
+        return $this->container['adMonetizationRegActive14dRoi'];
+    }
+
+    /**
+     * Sets adMonetizationRegActive14dRoi
+     *
+     * @param double|mixed $adMonetizationRegActive14dRoi adMonetizationRegActive14dRoi
+     *
+     * @return $this
+     */
+    public function setAdMonetizationRegActive14dRoi($adMonetizationRegActive14dRoi)
+    {
+        $this->container['adMonetizationRegActive14dRoi'] = $adMonetizationRegActive14dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationRegActive30dRoi
+     *
+     * @return double|mixed
+     */
+    public function getAdMonetizationRegActive30dRoi()
+    {
+        return $this->container['adMonetizationRegActive30dRoi'];
+    }
+
+    /**
+     * Sets adMonetizationRegActive30dRoi
+     *
+     * @param double|mixed $adMonetizationRegActive30dRoi adMonetizationRegActive30dRoi
+     *
+     * @return $this
+     */
+    public function setAdMonetizationRegActive30dRoi($adMonetizationRegActive30dRoi)
+    {
+        $this->container['adMonetizationRegActive30dRoi'] = $adMonetizationRegActive30dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationRegActive60dRoi
+     *
+     * @return double|mixed
+     */
+    public function getAdMonetizationRegActive60dRoi()
+    {
+        return $this->container['adMonetizationRegActive60dRoi'];
+    }
+
+    /**
+     * Sets adMonetizationRegActive60dRoi
+     *
+     * @param double|mixed $adMonetizationRegActive60dRoi adMonetizationRegActive60dRoi
+     *
+     * @return $this
+     */
+    public function setAdMonetizationRegActive60dRoi($adMonetizationRegActive60dRoi)
+    {
+        $this->container['adMonetizationRegActive60dRoi'] = $adMonetizationRegActive60dRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeRoi30
+     *
+     * @return double|mixed
+     */
+    public function getIncomeRoi30()
+    {
+        return $this->container['incomeRoi30'];
+    }
+
+    /**
+     * Sets incomeRoi30
+     *
+     * @param double|mixed $incomeRoi30 incomeRoi30
+     *
+     * @return $this
+     */
+    public function setIncomeRoi30($incomeRoi30)
+    {
+        $this->container['incomeRoi30'] = $incomeRoi30;
+
+        return $this;
+    }
+
+    /**
+     * Gets incomeRoi60
+     *
+     * @return double|mixed
+     */
+    public function getIncomeRoi60()
+    {
+        return $this->container['incomeRoi60'];
+    }
+
+    /**
+     * Sets incomeRoi60
+     *
+     * @param double|mixed $incomeRoi60 incomeRoi60
+     *
+     * @return $this
+     */
+    public function setIncomeRoi60($incomeRoi60)
+    {
+        $this->container['incomeRoi60'] = $incomeRoi60;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationDedupRegActive14dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationDedupRegActive14dPv()
+    {
+        return $this->container['adMonetizationDedupRegActive14dPv'];
+    }
+
+    /**
+     * Sets adMonetizationDedupRegActive14dPv
+     *
+     * @param int|mixed $adMonetizationDedupRegActive14dPv adMonetizationDedupRegActive14dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationDedupRegActive14dPv($adMonetizationDedupRegActive14dPv)
+    {
+        $this->container['adMonetizationDedupRegActive14dPv'] = $adMonetizationDedupRegActive14dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationDedupRegActive30dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationDedupRegActive30dPv()
+    {
+        return $this->container['adMonetizationDedupRegActive30dPv'];
+    }
+
+    /**
+     * Sets adMonetizationDedupRegActive30dPv
+     *
+     * @param int|mixed $adMonetizationDedupRegActive30dPv adMonetizationDedupRegActive30dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationDedupRegActive30dPv($adMonetizationDedupRegActive30dPv)
+    {
+        $this->container['adMonetizationDedupRegActive30dPv'] = $adMonetizationDedupRegActive30dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationDedupRegActive60dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationDedupRegActive60dPv()
+    {
+        return $this->container['adMonetizationDedupRegActive60dPv'];
+    }
+
+    /**
+     * Sets adMonetizationDedupRegActive60dPv
+     *
+     * @param int|mixed $adMonetizationDedupRegActive60dPv adMonetizationDedupRegActive60dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationDedupRegActive60dPv($adMonetizationDedupRegActive60dPv)
+    {
+        $this->container['adMonetizationDedupRegActive60dPv'] = $adMonetizationDedupRegActive60dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationDedupActive14dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationDedupActive14dPv()
+    {
+        return $this->container['adMonetizationDedupActive14dPv'];
+    }
+
+    /**
+     * Sets adMonetizationDedupActive14dPv
+     *
+     * @param int|mixed $adMonetizationDedupActive14dPv adMonetizationDedupActive14dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationDedupActive14dPv($adMonetizationDedupActive14dPv)
+    {
+        $this->container['adMonetizationDedupActive14dPv'] = $adMonetizationDedupActive14dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationDedupActive30dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationDedupActive30dPv()
+    {
+        return $this->container['adMonetizationDedupActive30dPv'];
+    }
+
+    /**
+     * Sets adMonetizationDedupActive30dPv
+     *
+     * @param int|mixed $adMonetizationDedupActive30dPv adMonetizationDedupActive30dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationDedupActive30dPv($adMonetizationDedupActive30dPv)
+    {
+        $this->container['adMonetizationDedupActive30dPv'] = $adMonetizationDedupActive30dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationDedupActive60dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationDedupActive60dPv()
+    {
+        return $this->container['adMonetizationDedupActive60dPv'];
+    }
+
+    /**
+     * Sets adMonetizationDedupActive60dPv
+     *
+     * @param int|mixed $adMonetizationDedupActive60dPv adMonetizationDedupActive60dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationDedupActive60dPv($adMonetizationDedupActive60dPv)
+    {
+        $this->container['adMonetizationDedupActive60dPv'] = $adMonetizationDedupActive60dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationRegActive14dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationRegActive14dPv()
+    {
+        return $this->container['adMonetizationRegActive14dPv'];
+    }
+
+    /**
+     * Sets adMonetizationRegActive14dPv
+     *
+     * @param int|mixed $adMonetizationRegActive14dPv adMonetizationRegActive14dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationRegActive14dPv($adMonetizationRegActive14dPv)
+    {
+        $this->container['adMonetizationRegActive14dPv'] = $adMonetizationRegActive14dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationRegActive30dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationRegActive30dPv()
+    {
+        return $this->container['adMonetizationRegActive30dPv'];
+    }
+
+    /**
+     * Sets adMonetizationRegActive30dPv
+     *
+     * @param int|mixed $adMonetizationRegActive30dPv adMonetizationRegActive30dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationRegActive30dPv($adMonetizationRegActive30dPv)
+    {
+        $this->container['adMonetizationRegActive30dPv'] = $adMonetizationRegActive30dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationRegActive60dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationRegActive60dPv()
+    {
+        return $this->container['adMonetizationRegActive60dPv'];
+    }
+
+    /**
+     * Sets adMonetizationRegActive60dPv
+     *
+     * @param int|mixed $adMonetizationRegActive60dPv adMonetizationRegActive60dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationRegActive60dPv($adMonetizationRegActive60dPv)
+    {
+        $this->container['adMonetizationRegActive60dPv'] = $adMonetizationRegActive60dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationActive14dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationActive14dPv()
+    {
+        return $this->container['adMonetizationActive14dPv'];
+    }
+
+    /**
+     * Sets adMonetizationActive14dPv
+     *
+     * @param int|mixed $adMonetizationActive14dPv adMonetizationActive14dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationActive14dPv($adMonetizationActive14dPv)
+    {
+        $this->container['adMonetizationActive14dPv'] = $adMonetizationActive14dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationActive30dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationActive30dPv()
+    {
+        return $this->container['adMonetizationActive30dPv'];
+    }
+
+    /**
+     * Sets adMonetizationActive30dPv
+     *
+     * @param int|mixed $adMonetizationActive30dPv adMonetizationActive30dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationActive30dPv($adMonetizationActive30dPv)
+    {
+        $this->container['adMonetizationActive30dPv'] = $adMonetizationActive30dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationActive60dPv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationActive60dPv()
+    {
+        return $this->container['adMonetizationActive60dPv'];
+    }
+
+    /**
+     * Sets adMonetizationActive60dPv
+     *
+     * @param int|mixed $adMonetizationActive60dPv adMonetizationActive60dPv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationActive60dPv($adMonetizationActive60dPv)
+    {
+        $this->container['adMonetizationActive60dPv'] = $adMonetizationActive60dPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkAdFlipCardPv
+     *
+     * @return int|mixed
+     */
+    public function getClkAdFlipCardPv()
+    {
+        return $this->container['clkAdFlipCardPv'];
+    }
+
+    /**
+     * Sets clkAdFlipCardPv
+     *
+     * @param int|mixed $clkAdFlipCardPv clkAdFlipCardPv
+     *
+     * @return $this
+     */
+    public function setClkAdFlipCardPv($clkAdFlipCardPv)
+    {
+        $this->container['clkAdFlipCardPv'] = $clkAdFlipCardPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets commissionAmount
+     *
+     * @return int|mixed
+     */
+    public function getCommissionAmount()
+    {
+        return $this->container['commissionAmount'];
+    }
+
+    /**
+     * Sets commissionAmount
+     *
+     * @param int|mixed $commissionAmount commissionAmount
+     *
+     * @return $this
+     */
+    public function setCommissionAmount($commissionAmount)
+    {
+        $this->container['commissionAmount'] = $commissionAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets commissionRoi
+     *
+     * @return double|mixed
+     */
+    public function getCommissionRoi()
+    {
+        return $this->container['commissionRoi'];
+    }
+
+    /**
+     * Sets commissionRoi
+     *
+     * @param double|mixed $commissionRoi commissionRoi
+     *
+     * @return $this
+     */
+    public function setCommissionRoi($commissionRoi)
+    {
+        $this->container['commissionRoi'] = $commissionRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderNetPv
+     *
+     * @return int|mixed
+     */
+    public function getOrderNetPv()
+    {
+        return $this->container['orderNetPv'];
+    }
+
+    /**
+     * Sets orderNetPv
+     *
+     * @param int|mixed $orderNetPv orderNetPv
+     *
+     * @return $this
+     */
+    public function setOrderNetPv($orderNetPv)
+    {
+        $this->container['orderNetPv'] = $orderNetPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderNetAmount
+     *
+     * @return int|mixed
+     */
+    public function getOrderNetAmount()
+    {
+        return $this->container['orderNetAmount'];
+    }
+
+    /**
+     * Sets orderNetAmount
+     *
+     * @param int|mixed $orderNetAmount orderNetAmount
+     *
+     * @return $this
+     */
+    public function setOrderNetAmount($orderNetAmount)
+    {
+        $this->container['orderNetAmount'] = $orderNetAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderNetRoi
+     *
+     * @return double|mixed
+     */
+    public function getOrderNetRoi()
+    {
+        return $this->container['orderNetRoi'];
+    }
+
+    /**
+     * Sets orderNetRoi
+     *
+     * @param double|mixed $orderNetRoi orderNetRoi
+     *
+     * @return $this
+     */
+    public function setOrderNetRoi($orderNetRoi)
+    {
+        $this->container['orderNetRoi'] = $orderNetRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderNetPvCost
+     *
+     * @return int|mixed
+     */
+    public function getOrderNetPvCost()
+    {
+        return $this->container['orderNetPvCost'];
+    }
+
+    /**
+     * Sets orderNetPvCost
+     *
+     * @param int|mixed $orderNetPvCost orderNetPvCost
+     *
+     * @return $this
+     */
+    public function setOrderNetPvCost($orderNetPvCost)
+    {
+        $this->container['orderNetPvCost'] = $orderNetPvCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBhAnimPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBhAnimPv()
+    {
+        return $this->container['clkBhAnimPv'];
+    }
+
+    /**
+     * Sets clkBhAnimPv
+     *
+     * @param int|mixed $clkBhAnimPv clkBhAnimPv
+     *
+     * @return $this
+     */
+    public function setClkBhAnimPv($clkBhAnimPv)
+    {
+        $this->container['clkBhAnimPv'] = $clkBhAnimPv;
 
         return $this;
     }

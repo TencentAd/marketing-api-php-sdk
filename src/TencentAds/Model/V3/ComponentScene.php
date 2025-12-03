@@ -1,6 +1,6 @@
 <?php
 /**
- * Operator
+ * ComponentScene
  *
  * PHP version 5
  *
@@ -31,25 +31,23 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * Operator Class Doc Comment
+ * ComponentScene Class Doc Comment
  *
  * @category Class
- * @description 运算符
+ * @description 创意组件适用场景
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class Operator
+class ComponentScene
 {
     /**
      * Possible values of this enum
      */
-    const LT = 'LT';
-    const GT = 'GT';
-    const EQ = 'EQ';
-    const NE = 'NE';
-    const CONTAIN = 'CONTAIN';
-    const NOT_CONTAIN = 'NOT_CONTAIN';
+    const _DEFAULT = 'DEFAULT';
+    const MPA = 'MPA';
+    const DCA = 'DCA';
+    const MPA_DCA = 'MPA_DCA';
     
     /**
      * Gets allowable values of the enum
@@ -58,12 +56,10 @@ class Operator
     public static function getAllowableEnumValues()
     {
         return [
-            self::LT,
-            self::GT,
-            self::EQ,
-            self::NE,
-            self::CONTAIN,
-            self::NOT_CONTAIN,
+            self::_DEFAULT,
+            self::MPA,
+            self::DCA,
+            self::MPA_DCA,
         ];
     }
 }

@@ -58,6 +58,7 @@ class ReportDailyLevel
     const PRODUCT_CATALOG = 'REPORT_LEVEL_PRODUCT_CATALOG';
     const PROJECT = 'REPORT_LEVEL_PROJECT';
     const PROJECT_CREATIVE = 'REPORT_LEVEL_PROJECT_CREATIVE';
+    const VIDEO_HIGHLIGHT = 'REPORT_LEVEL_VIDEO_HIGHLIGHT';
     const CREATIVE_ASSET = 'REPORT_LEVEL_CREATIVE_ASSET';
     
     /**
@@ -81,6 +82,7 @@ class ReportDailyLevel
             self::PRODUCT_CATALOG,
             self::PROJECT,
             self::PROJECT_CREATIVE,
+            self::VIDEO_HIGHLIGHT,
             self::CREATIVE_ASSET,
         ];
     }

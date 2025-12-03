@@ -98,15 +98,16 @@ class WalletInvoiceApi
      * @param  string|mixed $fundType fundType (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
+     * @param  string|mixed $primaryKey primaryKey (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\WalletInvoiceGetResponse|mixed
      */
-    public function walletInvoiceGet($accountId, $walletIdList, $dateRange, $fundType = null, $page = null, $pageSize = null, $fields = null)
+    public function walletInvoiceGet($accountId, $walletIdList, $dateRange, $fundType = null, $page = null, $pageSize = null, $primaryKey = null, $fields = null)
     {
-        list($response) = $this->walletInvoiceGetWithHttpInfo($accountId, $walletIdList, $dateRange, $fundType, $page, $pageSize, $fields);
+        list($response) = $this->walletInvoiceGetWithHttpInfo($accountId, $walletIdList, $dateRange, $fundType, $page, $pageSize, $primaryKey, $fields);
         return $response;
     }
 
@@ -121,16 +122,17 @@ class WalletInvoiceApi
      * @param  string|mixed $fundType (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $primaryKey (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\WalletInvoiceGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function walletInvoiceGetWithHttpInfo($accountId, $walletIdList, $dateRange, $fundType = null, $page = null, $pageSize = null, $fields = null)
+    public function walletInvoiceGetWithHttpInfo($accountId, $walletIdList, $dateRange, $fundType = null, $page = null, $pageSize = null, $primaryKey = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WalletInvoiceGetResponse';
-        $request = $this->walletInvoiceGetRequest($accountId, $walletIdList, $dateRange, $fundType, $page, $pageSize, $fields);
+        $request = $this->walletInvoiceGetRequest($accountId, $walletIdList, $dateRange, $fundType, $page, $pageSize, $primaryKey, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -202,14 +204,15 @@ class WalletInvoiceApi
      * @param  string|mixed $fundType (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $primaryKey (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function walletInvoiceGetAsync($accountId, $walletIdList, $dateRange, $fundType = null, $page = null, $pageSize = null, $fields = null)
+    public function walletInvoiceGetAsync($accountId, $walletIdList, $dateRange, $fundType = null, $page = null, $pageSize = null, $primaryKey = null, $fields = null)
     {
-        return $this->walletInvoiceGetAsyncWithHttpInfo($accountId, $walletIdList, $dateRange, $fundType, $page, $pageSize, $fields)
+        return $this->walletInvoiceGetAsyncWithHttpInfo($accountId, $walletIdList, $dateRange, $fundType, $page, $pageSize, $primaryKey, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -228,15 +231,16 @@ class WalletInvoiceApi
      * @param  string|mixed $fundType (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $primaryKey (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function walletInvoiceGetAsyncWithHttpInfo($accountId, $walletIdList, $dateRange, $fundType = null, $page = null, $pageSize = null, $fields = null)
+    public function walletInvoiceGetAsyncWithHttpInfo($accountId, $walletIdList, $dateRange, $fundType = null, $page = null, $pageSize = null, $primaryKey = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WalletInvoiceGetResponse';
-        $request = $this->walletInvoiceGetRequest($accountId, $walletIdList, $dateRange, $fundType, $page, $pageSize, $fields);
+        $request = $this->walletInvoiceGetRequest($accountId, $walletIdList, $dateRange, $fundType, $page, $pageSize, $primaryKey, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -284,12 +288,13 @@ class WalletInvoiceApi
      * @param  string|mixed $fundType (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
+     * @param  string|mixed $primaryKey (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function walletInvoiceGetRequest($accountId, $walletIdList, $dateRange, $fundType = null, $page = null, $pageSize = null, $fields = null)
+    protected function walletInvoiceGetRequest($accountId, $walletIdList, $dateRange, $fundType = null, $page = null, $pageSize = null, $primaryKey = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -340,6 +345,10 @@ class WalletInvoiceApi
         // query params
         if ($pageSize !== null) {
             $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
+        }
+        // query params
+        if ($primaryKey !== null) {
+            $queryParams['primary_key'] = ObjectSerializer::toQueryValue($primaryKey);
         }
         // query params
         if (is_array($fields)) {

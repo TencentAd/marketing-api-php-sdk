@@ -71,7 +71,8 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'similarityStatus' => '\TencentAds\Model\V3\SimilarityStatus',
         'potentialStatus' => '\TencentAds\Model\V3\CommonPotentialStatus',
         'disableMessage' => 'string',
-        'firstPublicationStatus' => '\TencentAds\Model\V3\FirstPublicationStatus'
+        'firstPublicationStatus' => '\TencentAds\Model\V3\FirstPublicationStatus',
+        'scene' => '\TencentAds\Model\V3\ComponentScene'
     ];
 
     /**
@@ -93,7 +94,8 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'similarityStatus' => null,
         'potentialStatus' => null,
         'disableMessage' => null,
-        'firstPublicationStatus' => null
+        'firstPublicationStatus' => null,
+        'scene' => null
     ];
 
     /**
@@ -136,7 +138,8 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'similarityStatus' => 'similarity_status',
         'potentialStatus' => 'potential_status',
         'disableMessage' => 'disable_message',
-        'firstPublicationStatus' => 'first_publication_status'
+        'firstPublicationStatus' => 'first_publication_status',
+        'scene' => 'scene'
     ];
 
     /**
@@ -158,7 +161,8 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'similarityStatus' => 'setSimilarityStatus',
         'potentialStatus' => 'setPotentialStatus',
         'disableMessage' => 'setDisableMessage',
-        'firstPublicationStatus' => 'setFirstPublicationStatus'
+        'firstPublicationStatus' => 'setFirstPublicationStatus',
+        'scene' => 'setScene'
     ];
 
     /**
@@ -180,7 +184,8 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         'similarityStatus' => 'getSimilarityStatus',
         'potentialStatus' => 'getPotentialStatus',
         'disableMessage' => 'getDisableMessage',
-        'firstPublicationStatus' => 'getFirstPublicationStatus'
+        'firstPublicationStatus' => 'getFirstPublicationStatus',
+        'scene' => 'getScene'
     ];
 
     /**
@@ -257,6 +262,7 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['potentialStatus'] = isset($data['potentialStatus']) ? $data['potentialStatus'] : null;
         $this->container['disableMessage'] = isset($data['disableMessage']) ? $data['disableMessage'] : null;
         $this->container['firstPublicationStatus'] = isset($data['firstPublicationStatus']) ? $data['firstPublicationStatus'] : null;
+        $this->container['scene'] = isset($data['scene']) ? $data['scene'] : null;
     }
 
     /**
@@ -615,6 +621,30 @@ class ComponentsGetListStruct implements ModelInterface, ArrayAccess
     public function setFirstPublicationStatus($firstPublicationStatus)
     {
         $this->container['firstPublicationStatus'] = $firstPublicationStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets scene
+     *
+     * @return \TencentAds\Model\V3\ComponentScene|mixed
+     */
+    public function getScene()
+    {
+        return $this->container['scene'];
+    }
+
+    /**
+     * Sets scene
+     *
+     * @param \TencentAds\Model\V3\ComponentScene|mixed $scene scene
+     *
+     * @return $this
+     */
+    public function setScene($scene)
+    {
+        $this->container['scene'] = $scene;
 
         return $this;
     }

@@ -65,7 +65,8 @@ class WalletInvoiceGetListStruct implements ModelInterface, ArrayAccess
         'externalBillNo' => 'string',
         'tradeTypeExt' => '\TencentAds\Model\V3\TradeTypeExt',
         'amount' => 'int',
-        'description' => 'string'
+        'description' => 'string',
+        'primaryKey' => 'string'
     ];
 
     /**
@@ -81,7 +82,8 @@ class WalletInvoiceGetListStruct implements ModelInterface, ArrayAccess
         'externalBillNo' => null,
         'tradeTypeExt' => null,
         'amount' => 'int64',
-        'description' => null
+        'description' => null,
+        'primaryKey' => null
     ];
 
     /**
@@ -118,7 +120,8 @@ class WalletInvoiceGetListStruct implements ModelInterface, ArrayAccess
         'externalBillNo' => 'external_bill_no',
         'tradeTypeExt' => 'trade_type_ext',
         'amount' => 'amount',
-        'description' => 'description'
+        'description' => 'description',
+        'primaryKey' => 'primary_key'
     ];
 
     /**
@@ -134,7 +137,8 @@ class WalletInvoiceGetListStruct implements ModelInterface, ArrayAccess
         'externalBillNo' => 'setExternalBillNo',
         'tradeTypeExt' => 'setTradeTypeExt',
         'amount' => 'setAmount',
-        'description' => 'setDescription'
+        'description' => 'setDescription',
+        'primaryKey' => 'setPrimaryKey'
     ];
 
     /**
@@ -150,7 +154,8 @@ class WalletInvoiceGetListStruct implements ModelInterface, ArrayAccess
         'externalBillNo' => 'getExternalBillNo',
         'tradeTypeExt' => 'getTradeTypeExt',
         'amount' => 'getAmount',
-        'description' => 'getDescription'
+        'description' => 'getDescription',
+        'primaryKey' => 'getPrimaryKey'
     ];
 
     /**
@@ -221,6 +226,7 @@ class WalletInvoiceGetListStruct implements ModelInterface, ArrayAccess
         $this->container['tradeTypeExt'] = isset($data['tradeTypeExt']) ? $data['tradeTypeExt'] : null;
         $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
         $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['primaryKey'] = isset($data['primaryKey']) ? $data['primaryKey'] : null;
     }
 
     /**
@@ -435,6 +441,30 @@ class WalletInvoiceGetListStruct implements ModelInterface, ArrayAccess
     public function setDescription($description)
     {
         $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets primaryKey
+     *
+     * @return string|mixed
+     */
+    public function getPrimaryKey()
+    {
+        return $this->container['primaryKey'];
+    }
+
+    /**
+     * Sets primaryKey
+     *
+     * @param string|mixed $primaryKey primaryKey
+     *
+     * @return $this
+     */
+    public function setPrimaryKey($primaryKey)
+    {
+        $this->container['primaryKey'] = $primaryKey;
 
         return $this;
     }

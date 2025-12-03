@@ -148,6 +148,45 @@ class ActionType
     const TERMINATION = 'TERMINATION';
     const RENEWAL = 'RENEWAL';
     const CONSULT_INTENTION = 'CONSULT_INTENTION';
+    const CANCEL_DELIVER = 'CANCEL_DELIVER';
+    const ADD_WECHAT_NEGATIVE = 'ADD_WECHAT_NEGATIVE';
+    const LEADS_OUTBOUND = 'LEADS_OUTBOUND';
+    const LEADS_DISTRIBUTED = 'LEADS_DISTRIBUTED';
+    const CANCEL_ORDER = 'CANCEL_ORDER';
+    const INTEREST_RATE = 'INTEREST_RATE';
+    const LONGLOAN = 'LONGLOAN';
+    const OVERDUE = 'OVERDUE';
+    const CREDIT_LEAKAGE = 'CREDIT_LEAKAGE';
+    const COUPON_REDEMPTION = 'COUPON_REDEMPTION';
+    const VIEW_DRAMA = 'VIEW_DRAMA';
+    const UNLOCK_PAID_EPISODES = 'UNLOCK_PAID_EPISODES';
+    const CREATE_GAME_CLUB = 'CREATE_GAME_CLUB';
+    const TAP_GAME_CLUB = 'TAP_GAME_CLUB';
+    const CREATE_GAME_ROOM = 'CREATE_GAME_ROOM';
+    const JOIN_GAME_ROOM = 'JOIN_GAME_ROOM';
+    const BINGE_VIEWING = 'BINGE_VIEWING';
+    const CHECK_IN = 'CHECK_IN';
+    const LIKE = 'LIKE';
+    const UNDERWRITING = 'UNDERWRITING';
+    const FIRST_WITHDRAW = 'FIRST_WITHDRAW';
+    const LOW_PRICE_INSURANCE_PAYMENT = 'LOW_PRICE_INSURANCE_PAYMENT';
+    const STANDARD_PRICE_INSURANCE_PAYMENT = 'STANDARD_PRICE_INSURANCE_PAYMENT';
+    const BRIDGING_COURSE_COMPLETED = 'BRIDGING_COURSE_COMPLETED';
+    const SELECT_RECHARGE_LEVEL = 'SELECT_RECHARGE_LEVEL';
+    const COLLECTION_PAGE_VIEW = 'COLLECTION_PAGE_VIEW';
+    const POST_BULLET_SCREEN = 'POST_BULLET_SCREEN';
+    const PROMPT_INPUT = 'PROMPT_INPUT';
+    const VIEW_NOVEL = 'VIEW_NOVEL';
+    const EXIT_NOVEL = 'EXIT_NOVEL';
+    const UNSUBSCRIBE_SERVICE = 'UNSUBSCRIBE_SERVICE';
+    const CLUE_PAY_SUCCEED = 'CLUE_PAY_SUCCEED';
+    const COMPLAINTS = 'COMPLAINTS';
+    const NEGATIVE_FEEDBACK = 'NEGATIVE_FEEDBACK';
+    const COURSE_VIDEO_COMPLETE = 'COURSE_VIDEO_COMPLETE';
+    const SUBSCRIBE = 'SUBSCRIBE';
+    const PRODUCT_VIEW_LEAVE = 'PRODUCT_VIEW_LEAVE';
+    const ORDER_BUTTON_CLICK = 'ORDER_BUTTON_CLICK';
+    const EFFECTIVE_INSURE = 'EFFECTIVE_INSURE';
     
     /**
      * Gets allowable values of the enum
@@ -260,6 +299,45 @@ class ActionType
             self::TERMINATION,
             self::RENEWAL,
             self::CONSULT_INTENTION,
+            self::CANCEL_DELIVER,
+            self::ADD_WECHAT_NEGATIVE,
+            self::LEADS_OUTBOUND,
+            self::LEADS_DISTRIBUTED,
+            self::CANCEL_ORDER,
+            self::INTEREST_RATE,
+            self::LONGLOAN,
+            self::OVERDUE,
+            self::CREDIT_LEAKAGE,
+            self::COUPON_REDEMPTION,
+            self::VIEW_DRAMA,
+            self::UNLOCK_PAID_EPISODES,
+            self::CREATE_GAME_CLUB,
+            self::TAP_GAME_CLUB,
+            self::CREATE_GAME_ROOM,
+            self::JOIN_GAME_ROOM,
+            self::BINGE_VIEWING,
+            self::CHECK_IN,
+            self::LIKE,
+            self::UNDERWRITING,
+            self::FIRST_WITHDRAW,
+            self::LOW_PRICE_INSURANCE_PAYMENT,
+            self::STANDARD_PRICE_INSURANCE_PAYMENT,
+            self::BRIDGING_COURSE_COMPLETED,
+            self::SELECT_RECHARGE_LEVEL,
+            self::COLLECTION_PAGE_VIEW,
+            self::POST_BULLET_SCREEN,
+            self::PROMPT_INPUT,
+            self::VIEW_NOVEL,
+            self::EXIT_NOVEL,
+            self::UNSUBSCRIBE_SERVICE,
+            self::CLUE_PAY_SUCCEED,
+            self::COMPLAINTS,
+            self::NEGATIVE_FEEDBACK,
+            self::COURSE_VIDEO_COMPLETE,
+            self::SUBSCRIBE,
+            self::PRODUCT_VIEW_LEAVE,
+            self::ORDER_BUTTON_CLICK,
+            self::EFFECTIVE_INSURE,
         ];
     }
 }

@@ -58,9 +58,10 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ecommerceOrderCost' => 'double',
-        'promotionViewKeyPageCost' => 'double',
-        'viewCommodityPageCost' => 'double'
+        'ecommerceOrderCost' => 'int',
+        'promotionViewKeyPageCost' => 'int',
+        'viewCommodityPageCost' => 'int',
+        'commissionRoi' => 'double'
     ];
 
     /**
@@ -69,9 +70,10 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'ecommerceOrderCost' => 'double',
-        'promotionViewKeyPageCost' => 'double',
-        'viewCommodityPageCost' => 'double'
+        'ecommerceOrderCost' => 'int64',
+        'promotionViewKeyPageCost' => 'int64',
+        'viewCommodityPageCost' => 'int64',
+        'commissionRoi' => 'double'
     ];
 
     /**
@@ -103,7 +105,8 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'ecommerceOrderCost' => 'ecommerce_order_cost',
         'promotionViewKeyPageCost' => 'promotion_view_key_page_cost',
-        'viewCommodityPageCost' => 'view_commodity_page_cost'
+        'viewCommodityPageCost' => 'view_commodity_page_cost',
+        'commissionRoi' => 'commission_roi'
     ];
 
     /**
@@ -114,7 +117,8 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
     protected static $setters = [
         'ecommerceOrderCost' => 'setEcommerceOrderCost',
         'promotionViewKeyPageCost' => 'setPromotionViewKeyPageCost',
-        'viewCommodityPageCost' => 'setViewCommodityPageCost'
+        'viewCommodityPageCost' => 'setViewCommodityPageCost',
+        'commissionRoi' => 'setCommissionRoi'
     ];
 
     /**
@@ -125,7 +129,8 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
     protected static $getters = [
         'ecommerceOrderCost' => 'getEcommerceOrderCost',
         'promotionViewKeyPageCost' => 'getPromotionViewKeyPageCost',
-        'viewCommodityPageCost' => 'getViewCommodityPageCost'
+        'viewCommodityPageCost' => 'getViewCommodityPageCost',
+        'commissionRoi' => 'getCommissionRoi'
     ];
 
     /**
@@ -191,6 +196,7 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
         $this->container['ecommerceOrderCost'] = isset($data['ecommerceOrderCost']) ? $data['ecommerceOrderCost'] : null;
         $this->container['promotionViewKeyPageCost'] = isset($data['promotionViewKeyPageCost']) ? $data['promotionViewKeyPageCost'] : null;
         $this->container['viewCommodityPageCost'] = isset($data['viewCommodityPageCost']) ? $data['viewCommodityPageCost'] : null;
+        $this->container['commissionRoi'] = isset($data['commissionRoi']) ? $data['commissionRoi'] : null;
     }
 
     /**
@@ -220,7 +226,7 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
     /**
      * Gets ecommerceOrderCost
      *
-     * @return double|mixed
+     * @return int|mixed
      */
     public function getEcommerceOrderCost()
     {
@@ -230,7 +236,7 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
     /**
      * Sets ecommerceOrderCost
      *
-     * @param double|mixed $ecommerceOrderCost ecommerceOrderCost
+     * @param int|mixed $ecommerceOrderCost ecommerceOrderCost
      *
      * @return $this
      */
@@ -244,7 +250,7 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
     /**
      * Gets promotionViewKeyPageCost
      *
-     * @return double|mixed
+     * @return int|mixed
      */
     public function getPromotionViewKeyPageCost()
     {
@@ -254,7 +260,7 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
     /**
      * Sets promotionViewKeyPageCost
      *
-     * @param double|mixed $promotionViewKeyPageCost promotionViewKeyPageCost
+     * @param int|mixed $promotionViewKeyPageCost promotionViewKeyPageCost
      *
      * @return $this
      */
@@ -268,7 +274,7 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
     /**
      * Gets viewCommodityPageCost
      *
-     * @return double|mixed
+     * @return int|mixed
      */
     public function getViewCommodityPageCost()
     {
@@ -278,13 +284,37 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
     /**
      * Sets viewCommodityPageCost
      *
-     * @param double|mixed $viewCommodityPageCost viewCommodityPageCost
+     * @param int|mixed $viewCommodityPageCost viewCommodityPageCost
      *
      * @return $this
      */
     public function setViewCommodityPageCost($viewCommodityPageCost)
     {
         $this->container['viewCommodityPageCost'] = $viewCommodityPageCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets commissionRoi
+     *
+     * @return double|mixed
+     */
+    public function getCommissionRoi()
+    {
+        return $this->container['commissionRoi'];
+    }
+
+    /**
+     * Sets commissionRoi
+     *
+     * @param double|mixed $commissionRoi commissionRoi
+     *
+     * @return $this
+     */
+    public function setCommissionRoi($commissionRoi)
+    {
+        $this->container['commissionRoi'] = $commissionRoi;
 
         return $this;
     }

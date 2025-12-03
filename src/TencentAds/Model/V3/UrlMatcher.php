@@ -59,7 +59,7 @@ class UrlMatcher implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'paramValue' => 'string',
-        'operator' => '\TencentAds\Model\V3\Operator'
+        'operator' => '\TencentAds\Model\V3\FilterOperator'
     ];
 
     /**
@@ -238,7 +238,7 @@ class UrlMatcher implements ModelInterface, ArrayAccess
     /**
      * Gets operator
      *
-     * @return \TencentAds\Model\V3\Operator|mixed
+     * @return \TencentAds\Model\V3\FilterOperator|mixed
      */
     public function getOperator()
     {
@@ -248,7 +248,7 @@ class UrlMatcher implements ModelInterface, ArrayAccess
     /**
      * Sets operator
      *
-     * @param \TencentAds\Model\V3\Operator|mixed $operator operator
+     * @param \TencentAds\Model\V3\FilterOperator|mixed $operator operator
      *
      * @return $this
      */

@@ -64,6 +64,8 @@ class ConversionOptimizationGoal
     const QYT_7_DAY_LIVE_STREAM_DEAL_ROAS = 'GOAL_QYT_7DAY_LIVE_STREAM_DEAL_ROAS';
     const WITHDRAW_DEPOSITS_ROAS = 'GOAL_WITHDRAW_DEPOSITS_ROAS';
     const _1_DAY_PURCHASE_MONETIZATION_ROAS = 'GOAL_1DAY_PURCHASE_MONETIZATION_ROAS';
+    const NET_PROFIT_24_H_ROAS = 'GOAL_NET_PROFIT_24H_ROAS';
+    const CPS_ESTIMATED_DISTRIBUTE_ROAS = 'GOAL_CPS_ESTIMATED_DISTRIBUTE_ROAS';
     
     /**
      * Gets allowable values of the enum
@@ -92,6 +94,8 @@ class ConversionOptimizationGoal
             self::QYT_7_DAY_LIVE_STREAM_DEAL_ROAS,
             self::WITHDRAW_DEPOSITS_ROAS,
             self::_1_DAY_PURCHASE_MONETIZATION_ROAS,
+            self::NET_PROFIT_24_H_ROAS,
+            self::CPS_ESTIMATED_DISTRIBUTE_ROAS,
         ];
     }
 }

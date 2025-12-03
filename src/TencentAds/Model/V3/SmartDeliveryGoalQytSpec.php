@@ -67,7 +67,9 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'costConstraintScene' => '\TencentAds\Model\V3\CostConstraintScene',
         'liveStreamAudienceCost' => 'int',
         'clickCost' => 'int',
-        'firstTwentyFourHourEcommerceOrderCost' => 'int'
+        'firstTwentyFourHourEcommerceOrderCost' => 'int',
+        'netProfitCost' => 'int',
+        'netProfitRoi' => 'double'
     ];
 
     /**
@@ -85,7 +87,9 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'costConstraintScene' => null,
         'liveStreamAudienceCost' => 'int64',
         'clickCost' => 'int64',
-        'firstTwentyFourHourEcommerceOrderCost' => 'int64'
+        'firstTwentyFourHourEcommerceOrderCost' => 'int64',
+        'netProfitCost' => 'int64',
+        'netProfitRoi' => 'double'
     ];
 
     /**
@@ -124,7 +128,9 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'costConstraintScene' => 'cost_constraint_scene',
         'liveStreamAudienceCost' => 'live_stream_audience_cost',
         'clickCost' => 'click_cost',
-        'firstTwentyFourHourEcommerceOrderCost' => 'first_twenty_four_hour_ecommerce_order_cost'
+        'firstTwentyFourHourEcommerceOrderCost' => 'first_twenty_four_hour_ecommerce_order_cost',
+        'netProfitCost' => 'net_profit_cost',
+        'netProfitRoi' => 'net_profit_roi'
     ];
 
     /**
@@ -142,7 +148,9 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'costConstraintScene' => 'setCostConstraintScene',
         'liveStreamAudienceCost' => 'setLiveStreamAudienceCost',
         'clickCost' => 'setClickCost',
-        'firstTwentyFourHourEcommerceOrderCost' => 'setFirstTwentyFourHourEcommerceOrderCost'
+        'firstTwentyFourHourEcommerceOrderCost' => 'setFirstTwentyFourHourEcommerceOrderCost',
+        'netProfitCost' => 'setNetProfitCost',
+        'netProfitRoi' => 'setNetProfitRoi'
     ];
 
     /**
@@ -160,7 +168,9 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'costConstraintScene' => 'getCostConstraintScene',
         'liveStreamAudienceCost' => 'getLiveStreamAudienceCost',
         'clickCost' => 'getClickCost',
-        'firstTwentyFourHourEcommerceOrderCost' => 'getFirstTwentyFourHourEcommerceOrderCost'
+        'firstTwentyFourHourEcommerceOrderCost' => 'getFirstTwentyFourHourEcommerceOrderCost',
+        'netProfitCost' => 'getNetProfitCost',
+        'netProfitRoi' => 'getNetProfitRoi'
     ];
 
     /**
@@ -233,6 +243,8 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         $this->container['liveStreamAudienceCost'] = isset($data['liveStreamAudienceCost']) ? $data['liveStreamAudienceCost'] : null;
         $this->container['clickCost'] = isset($data['clickCost']) ? $data['clickCost'] : null;
         $this->container['firstTwentyFourHourEcommerceOrderCost'] = isset($data['firstTwentyFourHourEcommerceOrderCost']) ? $data['firstTwentyFourHourEcommerceOrderCost'] : null;
+        $this->container['netProfitCost'] = isset($data['netProfitCost']) ? $data['netProfitCost'] : null;
+        $this->container['netProfitRoi'] = isset($data['netProfitRoi']) ? $data['netProfitRoi'] : null;
     }
 
     /**
@@ -495,6 +507,54 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
     public function setFirstTwentyFourHourEcommerceOrderCost($firstTwentyFourHourEcommerceOrderCost)
     {
         $this->container['firstTwentyFourHourEcommerceOrderCost'] = $firstTwentyFourHourEcommerceOrderCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets netProfitCost
+     *
+     * @return int|mixed
+     */
+    public function getNetProfitCost()
+    {
+        return $this->container['netProfitCost'];
+    }
+
+    /**
+     * Sets netProfitCost
+     *
+     * @param int|mixed $netProfitCost netProfitCost
+     *
+     * @return $this
+     */
+    public function setNetProfitCost($netProfitCost)
+    {
+        $this->container['netProfitCost'] = $netProfitCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets netProfitRoi
+     *
+     * @return double|mixed
+     */
+    public function getNetProfitRoi()
+    {
+        return $this->container['netProfitRoi'];
+    }
+
+    /**
+     * Sets netProfitRoi
+     *
+     * @param double|mixed $netProfitRoi netProfitRoi
+     *
+     * @return $this
+     */
+    public function setNetProfitRoi($netProfitRoi)
+    {
+        $this->container['netProfitRoi'] = $netProfitRoi;
 
         return $this;
     }
