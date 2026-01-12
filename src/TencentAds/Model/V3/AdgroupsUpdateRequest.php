@@ -81,6 +81,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionBudget' => 'int',
         'autoDerivedLandingPageSwitch' => 'bool',
         'autoDerivedCreativeEnabled' => 'bool',
+        'autoDerivedCreativePreference' => '\TencentAds\Model\V3\AutoDerivedCreativePreference',
         'configuredStatus' => '\TencentAds\Model\V3\ConfiguredStatus',
         'flowOptimizationEnabled' => 'bool',
         'poiList' => 'string[]',
@@ -128,6 +129,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionBudget' => 'int64',
         'autoDerivedLandingPageSwitch' => null,
         'autoDerivedCreativeEnabled' => null,
+        'autoDerivedCreativePreference' => null,
         'configuredStatus' => null,
         'flowOptimizationEnabled' => null,
         'poiList' => null,
@@ -196,6 +198,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionBudget' => 'auto_acquisition_budget',
         'autoDerivedLandingPageSwitch' => 'auto_derived_landing_page_switch',
         'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
+        'autoDerivedCreativePreference' => 'auto_derived_creative_preference',
         'configuredStatus' => 'configured_status',
         'flowOptimizationEnabled' => 'flow_optimization_enabled',
         'poiList' => 'poi_list',
@@ -243,6 +246,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionBudget' => 'setAutoAcquisitionBudget',
         'autoDerivedLandingPageSwitch' => 'setAutoDerivedLandingPageSwitch',
         'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
+        'autoDerivedCreativePreference' => 'setAutoDerivedCreativePreference',
         'configuredStatus' => 'setConfiguredStatus',
         'flowOptimizationEnabled' => 'setFlowOptimizationEnabled',
         'poiList' => 'setPoiList',
@@ -290,6 +294,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'autoAcquisitionBudget' => 'getAutoAcquisitionBudget',
         'autoDerivedLandingPageSwitch' => 'getAutoDerivedLandingPageSwitch',
         'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
+        'autoDerivedCreativePreference' => 'getAutoDerivedCreativePreference',
         'configuredStatus' => 'getConfiguredStatus',
         'flowOptimizationEnabled' => 'getFlowOptimizationEnabled',
         'poiList' => 'getPoiList',
@@ -391,6 +396,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['autoAcquisitionBudget'] = isset($data['autoAcquisitionBudget']) ? $data['autoAcquisitionBudget'] : null;
         $this->container['autoDerivedLandingPageSwitch'] = isset($data['autoDerivedLandingPageSwitch']) ? $data['autoDerivedLandingPageSwitch'] : null;
         $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
+        $this->container['autoDerivedCreativePreference'] = isset($data['autoDerivedCreativePreference']) ? $data['autoDerivedCreativePreference'] : null;
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['flowOptimizationEnabled'] = isset($data['flowOptimizationEnabled']) ? $data['flowOptimizationEnabled'] : null;
         $this->container['poiList'] = isset($data['poiList']) ? $data['poiList'] : null;
@@ -1004,6 +1010,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setAutoDerivedCreativeEnabled($autoDerivedCreativeEnabled)
     {
         $this->container['autoDerivedCreativeEnabled'] = $autoDerivedCreativeEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoDerivedCreativePreference
+     *
+     * @return \TencentAds\Model\V3\AutoDerivedCreativePreference|mixed
+     */
+    public function getAutoDerivedCreativePreference()
+    {
+        return $this->container['autoDerivedCreativePreference'];
+    }
+
+    /**
+     * Sets autoDerivedCreativePreference
+     *
+     * @param \TencentAds\Model\V3\AutoDerivedCreativePreference|mixed $autoDerivedCreativePreference autoDerivedCreativePreference
+     *
+     * @return $this
+     */
+    public function setAutoDerivedCreativePreference($autoDerivedCreativePreference)
+    {
+        $this->container['autoDerivedCreativePreference'] = $autoDerivedCreativePreference;
 
         return $this;
     }

@@ -49,8 +49,9 @@ class AdParamApiContainer extends ApiContainer
             $marketingAssetOuterSpec = isset($params['marketing_asset_outer_spec']) ? $params['marketing_asset_outer_spec'] : null;
             $mpaSpec = isset($params['mpa_spec']) ? $params['mpa_spec'] : null;
             $dynamicAdType = isset($params['dynamic_ad_type']) ? $params['dynamic_ad_type'] : null;
+            $adgroupType = isset($params['adgroup_type']) ? $params['adgroup_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->adParamGet($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $fields);
+            $response = $this->apiInstance->adParamGet($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $adgroupType, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -76,8 +77,9 @@ class AdParamApiContainer extends ApiContainer
             $marketingAssetOuterSpec = isset($params['marketing_asset_outer_spec']) ? $params['marketing_asset_outer_spec'] : null;
             $mpaSpec = isset($params['mpa_spec']) ? $params['mpa_spec'] : null;
             $dynamicAdType = isset($params['dynamic_ad_type']) ? $params['dynamic_ad_type'] : null;
+            $adgroupType = isset($params['adgroup_type']) ? $params['adgroup_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->adParamGetAsync($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $fields);
+            $response = $this->apiInstance->adParamGetAsync($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $adgroupType, $fields);
             return $response;
         });
     }

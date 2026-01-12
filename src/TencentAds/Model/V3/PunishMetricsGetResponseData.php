@@ -1,6 +1,6 @@
 <?php
 /**
- * VideoChannelsContentStruct
+ * PunishMetricsGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * VideoChannelsContentStruct Class Doc Comment
+ * PunishMetricsGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 视频号内容组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
+class PunishMetricsGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'video_channels_content_struct';
+    protected static $swaggerModelName = 'PunishMetricsGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,8 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adExportId' => 'string',
-        'wechatChannelsAccountId' => 'string',
-        'miniGameTrackingParameter' => 'string'
+        'dataList' => '\TencentAds\Model\V3\PunishMetricsDataItem[]',
+        'pageConf' => '\TencentAds\Model\V3\PunishMetricsPageConf'
     ];
 
     /**
@@ -69,9 +67,8 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adExportId' => null,
-        'wechatChannelsAccountId' => null,
-        'miniGameTrackingParameter' => null
+        'dataList' => null,
+        'pageConf' => null
     ];
 
     /**
@@ -101,9 +98,8 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adExportId' => 'ad_export_id',
-        'wechatChannelsAccountId' => 'wechat_channels_account_id',
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter'
+        'dataList' => 'data_list',
+        'pageConf' => 'page_conf'
     ];
 
     /**
@@ -112,9 +108,8 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adExportId' => 'setAdExportId',
-        'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter'
+        'dataList' => 'setDataList',
+        'pageConf' => 'setPageConf'
     ];
 
     /**
@@ -123,9 +118,8 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adExportId' => 'getAdExportId',
-        'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter'
+        'dataList' => 'getDataList',
+        'pageConf' => 'getPageConf'
     ];
 
     /**
@@ -188,9 +182,8 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adExportId'] = isset($data['adExportId']) ? $data['adExportId'] : null;
-        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
+        $this->container['dataList'] = isset($data['dataList']) ? $data['dataList'] : null;
+        $this->container['pageConf'] = isset($data['pageConf']) ? $data['pageConf'] : null;
     }
 
     /**
@@ -218,73 +211,49 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adExportId
+     * Gets dataList
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\PunishMetricsDataItem[]|mixed
      */
-    public function getAdExportId()
+    public function getDataList()
     {
-        return $this->container['adExportId'];
+        return $this->container['dataList'];
     }
 
     /**
-     * Sets adExportId
+     * Sets dataList
      *
-     * @param string|mixed $adExportId adExportId
+     * @param \TencentAds\Model\V3\PunishMetricsDataItem[]|mixed $dataList dataList
      *
      * @return $this
      */
-    public function setAdExportId($adExportId)
+    public function setDataList($dataList)
     {
-        $this->container['adExportId'] = $adExportId;
+        $this->container['dataList'] = $dataList;
 
         return $this;
     }
 
     /**
-     * Gets wechatChannelsAccountId
+     * Gets pageConf
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\PunishMetricsPageConf|mixed
      */
-    public function getWechatChannelsAccountId()
+    public function getPageConf()
     {
-        return $this->container['wechatChannelsAccountId'];
+        return $this->container['pageConf'];
     }
 
     /**
-     * Sets wechatChannelsAccountId
+     * Sets pageConf
      *
-     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
+     * @param \TencentAds\Model\V3\PunishMetricsPageConf|mixed $pageConf pageConf
      *
      * @return $this
      */
-    public function setWechatChannelsAccountId($wechatChannelsAccountId)
+    public function setPageConf($pageConf)
     {
-        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameTrackingParameter
-     *
-     * @return string|mixed
-     */
-    public function getMiniGameTrackingParameter()
-    {
-        return $this->container['miniGameTrackingParameter'];
-    }
-
-    /**
-     * Sets miniGameTrackingParameter
-     *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
-     *
-     * @return $this
-     */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
-    {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['pageConf'] = $pageConf;
 
         return $this;
     }

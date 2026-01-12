@@ -61,7 +61,8 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
         'ecommerceOrderCost' => 'int',
         'promotionViewKeyPageCost' => 'int',
         'viewCommodityPageCost' => 'int',
-        'commissionRoi' => 'double'
+        'commissionRoi' => 'double',
+        'viewKeyPageUv' => 'int'
     ];
 
     /**
@@ -73,7 +74,8 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
         'ecommerceOrderCost' => 'int64',
         'promotionViewKeyPageCost' => 'int64',
         'viewCommodityPageCost' => 'int64',
-        'commissionRoi' => 'double'
+        'commissionRoi' => 'double',
+        'viewKeyPageUv' => 'int64'
     ];
 
     /**
@@ -106,7 +108,8 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
         'ecommerceOrderCost' => 'ecommerce_order_cost',
         'promotionViewKeyPageCost' => 'promotion_view_key_page_cost',
         'viewCommodityPageCost' => 'view_commodity_page_cost',
-        'commissionRoi' => 'commission_roi'
+        'commissionRoi' => 'commission_roi',
+        'viewKeyPageUv' => 'view_key_page_uv'
     ];
 
     /**
@@ -118,7 +121,8 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
         'ecommerceOrderCost' => 'setEcommerceOrderCost',
         'promotionViewKeyPageCost' => 'setPromotionViewKeyPageCost',
         'viewCommodityPageCost' => 'setViewCommodityPageCost',
-        'commissionRoi' => 'setCommissionRoi'
+        'commissionRoi' => 'setCommissionRoi',
+        'viewKeyPageUv' => 'setViewKeyPageUv'
     ];
 
     /**
@@ -130,7 +134,8 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
         'ecommerceOrderCost' => 'getEcommerceOrderCost',
         'promotionViewKeyPageCost' => 'getPromotionViewKeyPageCost',
         'viewCommodityPageCost' => 'getViewCommodityPageCost',
-        'commissionRoi' => 'getCommissionRoi'
+        'commissionRoi' => 'getCommissionRoi',
+        'viewKeyPageUv' => 'getViewKeyPageUv'
     ];
 
     /**
@@ -197,6 +202,7 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
         $this->container['promotionViewKeyPageCost'] = isset($data['promotionViewKeyPageCost']) ? $data['promotionViewKeyPageCost'] : null;
         $this->container['viewCommodityPageCost'] = isset($data['viewCommodityPageCost']) ? $data['viewCommodityPageCost'] : null;
         $this->container['commissionRoi'] = isset($data['commissionRoi']) ? $data['commissionRoi'] : null;
+        $this->container['viewKeyPageUv'] = isset($data['viewKeyPageUv']) ? $data['viewKeyPageUv'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class SmartDeliveryGoalCpsSpec implements ModelInterface, ArrayAccess
     public function setCommissionRoi($commissionRoi)
     {
         $this->container['commissionRoi'] = $commissionRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets viewKeyPageUv
+     *
+     * @return int|mixed
+     */
+    public function getViewKeyPageUv()
+    {
+        return $this->container['viewKeyPageUv'];
+    }
+
+    /**
+     * Sets viewKeyPageUv
+     *
+     * @param int|mixed $viewKeyPageUv viewKeyPageUv
+     *
+     * @return $this
+     */
+    public function setViewKeyPageUv($viewKeyPageUv)
+    {
+        $this->container['viewKeyPageUv'] = $viewKeyPageUv;
 
         return $this;
     }

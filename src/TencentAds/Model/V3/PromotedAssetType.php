@@ -110,6 +110,9 @@ class PromotedAssetType
     const WECHAT_STORE = 'PROMOTED_ASSET_TYPE_WECHAT_STORE';
     const RESALE_AND_COMMERCIAL_LAND = 'PROMOTED_ASSET_TYPE_RESALE_AND_COMMERCIAL_LAND';
     const VIDEO_PROGRAM = 'PROMOTED_ASSET_TYPE_VIDEO_PROGRAM';
+    const FUN_TEST = 'PROMOTED_ASSET_TYPE_FUN_TEST';
+    const MATERNITY_PARENTING = 'PROMOTED_ASSET_TYPE_MATERNITY_PARENTING';
+    const LEISURE_ENTERTAINMENT = 'PROMOTED_ASSET_TYPE_LEISURE_ENTERTAINMENT';
     
     /**
      * Gets allowable values of the enum
@@ -184,6 +187,9 @@ class PromotedAssetType
             self::WECHAT_STORE,
             self::RESALE_AND_COMMERCIAL_LAND,
             self::VIDEO_PROGRAM,
+            self::FUN_TEST,
+            self::MATERNITY_PARENTING,
+            self::LEISURE_ENTERTAINMENT,
         ];
     }
 }

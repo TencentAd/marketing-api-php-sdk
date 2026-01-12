@@ -89,7 +89,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'productOuterId' => 'string',
         'sourceReferenceId' => 'string',
         'ownerAccountId' => 'string',
-        'status' => '\TencentAds\Model\V3\MediaStatusType'
+        'status' => '\TencentAds\Model\V3\MediaStatusType',
+        'similarityStatus' => '\TencentAds\Model\V3\SimilarityStatus'
     ];
 
     /**
@@ -129,7 +130,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'productOuterId' => null,
         'sourceReferenceId' => null,
         'ownerAccountId' => null,
-        'status' => null
+        'status' => null,
+        'similarityStatus' => null
     ];
 
     /**
@@ -190,7 +192,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'productOuterId' => 'product_outer_id',
         'sourceReferenceId' => 'source_reference_id',
         'ownerAccountId' => 'owner_account_id',
-        'status' => 'status'
+        'status' => 'status',
+        'similarityStatus' => 'similarity_status'
     ];
 
     /**
@@ -230,7 +233,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'productOuterId' => 'setProductOuterId',
         'sourceReferenceId' => 'setSourceReferenceId',
         'ownerAccountId' => 'setOwnerAccountId',
-        'status' => 'setStatus'
+        'status' => 'setStatus',
+        'similarityStatus' => 'setSimilarityStatus'
     ];
 
     /**
@@ -270,7 +274,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'productOuterId' => 'getProductOuterId',
         'sourceReferenceId' => 'getSourceReferenceId',
         'ownerAccountId' => 'getOwnerAccountId',
-        'status' => 'getStatus'
+        'status' => 'getStatus',
+        'similarityStatus' => 'getSimilarityStatus'
     ];
 
     /**
@@ -365,6 +370,7 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         $this->container['sourceReferenceId'] = isset($data['sourceReferenceId']) ? $data['sourceReferenceId'] : null;
         $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
+        $this->container['similarityStatus'] = isset($data['similarityStatus']) ? $data['similarityStatus'] : null;
     }
 
     /**
@@ -1155,6 +1161,30 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     public function setStatus($status)
     {
         $this->container['status'] = $status;
+
+        return $this;
+    }
+
+    /**
+     * Gets similarityStatus
+     *
+     * @return \TencentAds\Model\V3\SimilarityStatus|mixed
+     */
+    public function getSimilarityStatus()
+    {
+        return $this->container['similarityStatus'];
+    }
+
+    /**
+     * Sets similarityStatus
+     *
+     * @param \TencentAds\Model\V3\SimilarityStatus|mixed $similarityStatus similarityStatus
+     *
+     * @return $this
+     */
+    public function setSimilarityStatus($similarityStatus)
+    {
+        $this->container['similarityStatus'] = $similarityStatus;
 
         return $this;
     }

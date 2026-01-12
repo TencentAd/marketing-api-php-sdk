@@ -1,6 +1,6 @@
 <?php
 /**
- * VideoChannelsContentStruct
+ * GameFeatureV6GetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * VideoChannelsContentStruct Class Doc Comment
+ * GameFeatureV6GetResponse Class Doc Comment
  *
  * @category Class
- * @description 视频号内容组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
+class GameFeatureV6GetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'video_channels_content_struct';
+    protected static $swaggerModelName = 'GameFeatureV6GetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,11 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adExportId' => 'string',
-        'wechatChannelsAccountId' => 'string',
-        'miniGameTrackingParameter' => 'string'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\V3\GameFeatureV6GetResponseData'
     ];
 
     /**
@@ -69,9 +70,11 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adExportId' => null,
-        'wechatChannelsAccountId' => null,
-        'miniGameTrackingParameter' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -101,9 +104,11 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adExportId' => 'ad_export_id',
-        'wechatChannelsAccountId' => 'wechat_channels_account_id',
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -112,9 +117,11 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adExportId' => 'setAdExportId',
-        'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -123,9 +130,11 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adExportId' => 'getAdExportId',
-        'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -188,9 +197,11 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adExportId'] = isset($data['adExportId']) ? $data['adExportId'] : null;
-        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -218,73 +229,121 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adExportId
+     * Gets code
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getAdExportId()
+    public function getCode()
     {
-        return $this->container['adExportId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets adExportId
+     * Sets code
      *
-     * @param string|mixed $adExportId adExportId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setAdExportId($adExportId)
+    public function setCode($code)
     {
-        $this->container['adExportId'] = $adExportId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets wechatChannelsAccountId
+     * Gets message
      *
      * @return string|mixed
      */
-    public function getWechatChannelsAccountId()
+    public function getMessage()
     {
-        return $this->container['wechatChannelsAccountId'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets wechatChannelsAccountId
+     * Sets message
      *
-     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setWechatChannelsAccountId($wechatChannelsAccountId)
+    public function setMessage($message)
     {
-        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets miniGameTrackingParameter
+     * Gets messageCn
      *
      * @return string|mixed
      */
-    public function getMiniGameTrackingParameter()
+    public function getMessageCn()
     {
-        return $this->container['miniGameTrackingParameter'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets miniGameTrackingParameter
+     * Sets messageCn
      *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
+    public function setMessageCn($messageCn)
     {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\V3\GameFeatureV6GetResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\V3\GameFeatureV6GetResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

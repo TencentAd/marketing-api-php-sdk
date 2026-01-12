@@ -97,6 +97,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => '\TencentAds\Model\V3\SmartBidType',
         'smartCostCap' => 'int',
         'autoDerivedCreativeEnabled' => 'bool',
+        'autoDerivedCreativePreference' => '\TencentAds\Model\V3\AutoDerivedCreativePreference',
         'searchExpandTargetingSwitch' => '\TencentAds\Model\V3\SearchExpandTargetingSwitch',
         'autoDerivedLandingPageSwitch' => 'bool',
         'dataModelVersion' => 'int',
@@ -183,6 +184,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => null,
         'smartCostCap' => 'int64',
         'autoDerivedCreativeEnabled' => null,
+        'autoDerivedCreativePreference' => null,
         'searchExpandTargetingSwitch' => null,
         'autoDerivedLandingPageSwitch' => null,
         'dataModelVersion' => 'int64',
@@ -290,6 +292,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => 'smart_bid_type',
         'smartCostCap' => 'smart_cost_cap',
         'autoDerivedCreativeEnabled' => 'auto_derived_creative_enabled',
+        'autoDerivedCreativePreference' => 'auto_derived_creative_preference',
         'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
         'autoDerivedLandingPageSwitch' => 'auto_derived_landing_page_switch',
         'dataModelVersion' => 'data_model_version',
@@ -376,6 +379,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => 'setSmartBidType',
         'smartCostCap' => 'setSmartCostCap',
         'autoDerivedCreativeEnabled' => 'setAutoDerivedCreativeEnabled',
+        'autoDerivedCreativePreference' => 'setAutoDerivedCreativePreference',
         'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
         'autoDerivedLandingPageSwitch' => 'setAutoDerivedLandingPageSwitch',
         'dataModelVersion' => 'setDataModelVersion',
@@ -462,6 +466,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'smartBidType' => 'getSmartBidType',
         'smartCostCap' => 'getSmartCostCap',
         'autoDerivedCreativeEnabled' => 'getAutoDerivedCreativeEnabled',
+        'autoDerivedCreativePreference' => 'getAutoDerivedCreativePreference',
         'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
         'autoDerivedLandingPageSwitch' => 'getAutoDerivedLandingPageSwitch',
         'dataModelVersion' => 'getDataModelVersion',
@@ -602,6 +607,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['smartBidType'] = isset($data['smartBidType']) ? $data['smartBidType'] : null;
         $this->container['smartCostCap'] = isset($data['smartCostCap']) ? $data['smartCostCap'] : null;
         $this->container['autoDerivedCreativeEnabled'] = isset($data['autoDerivedCreativeEnabled']) ? $data['autoDerivedCreativeEnabled'] : null;
+        $this->container['autoDerivedCreativePreference'] = isset($data['autoDerivedCreativePreference']) ? $data['autoDerivedCreativePreference'] : null;
         $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
         $this->container['autoDerivedLandingPageSwitch'] = isset($data['autoDerivedLandingPageSwitch']) ? $data['autoDerivedLandingPageSwitch'] : null;
         $this->container['dataModelVersion'] = isset($data['dataModelVersion']) ? $data['dataModelVersion'] : null;
@@ -1599,6 +1605,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setAutoDerivedCreativeEnabled($autoDerivedCreativeEnabled)
     {
         $this->container['autoDerivedCreativeEnabled'] = $autoDerivedCreativeEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoDerivedCreativePreference
+     *
+     * @return \TencentAds\Model\V3\AutoDerivedCreativePreference|mixed
+     */
+    public function getAutoDerivedCreativePreference()
+    {
+        return $this->container['autoDerivedCreativePreference'];
+    }
+
+    /**
+     * Sets autoDerivedCreativePreference
+     *
+     * @param \TencentAds\Model\V3\AutoDerivedCreativePreference|mixed $autoDerivedCreativePreference autoDerivedCreativePreference
+     *
+     * @return $this
+     */
+    public function setAutoDerivedCreativePreference($autoDerivedCreativePreference)
+    {
+        $this->container['autoDerivedCreativePreference'] = $autoDerivedCreativePreference;
 
         return $this;
     }

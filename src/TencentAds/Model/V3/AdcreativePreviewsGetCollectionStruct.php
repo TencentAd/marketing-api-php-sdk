@@ -60,7 +60,9 @@ class AdcreativePreviewsGetCollectionStruct implements ModelInterface, ArrayAcce
     protected static $swaggerTypes = [
         'userId' => 'string',
         'userIdType' => '\TencentAds\Model\V3\ViewerIdType',
-        'isPreviewed' => 'bool'
+        'isPreviewed' => 'bool',
+        'adgroupId' => 'int',
+        'dynamicCreativeId' => 'int'
     ];
 
     /**
@@ -71,7 +73,9 @@ class AdcreativePreviewsGetCollectionStruct implements ModelInterface, ArrayAcce
     protected static $swaggerFormats = [
         'userId' => null,
         'userIdType' => null,
-        'isPreviewed' => null
+        'isPreviewed' => null,
+        'adgroupId' => 'int64',
+        'dynamicCreativeId' => 'int64'
     ];
 
     /**
@@ -103,7 +107,9 @@ class AdcreativePreviewsGetCollectionStruct implements ModelInterface, ArrayAcce
     protected static $attributeMap = [
         'userId' => 'user_id',
         'userIdType' => 'user_id_type',
-        'isPreviewed' => 'is_previewed'
+        'isPreviewed' => 'is_previewed',
+        'adgroupId' => 'adgroup_id',
+        'dynamicCreativeId' => 'dynamic_creative_id'
     ];
 
     /**
@@ -114,7 +120,9 @@ class AdcreativePreviewsGetCollectionStruct implements ModelInterface, ArrayAcce
     protected static $setters = [
         'userId' => 'setUserId',
         'userIdType' => 'setUserIdType',
-        'isPreviewed' => 'setIsPreviewed'
+        'isPreviewed' => 'setIsPreviewed',
+        'adgroupId' => 'setAdgroupId',
+        'dynamicCreativeId' => 'setDynamicCreativeId'
     ];
 
     /**
@@ -125,7 +133,9 @@ class AdcreativePreviewsGetCollectionStruct implements ModelInterface, ArrayAcce
     protected static $getters = [
         'userId' => 'getUserId',
         'userIdType' => 'getUserIdType',
-        'isPreviewed' => 'getIsPreviewed'
+        'isPreviewed' => 'getIsPreviewed',
+        'adgroupId' => 'getAdgroupId',
+        'dynamicCreativeId' => 'getDynamicCreativeId'
     ];
 
     /**
@@ -191,6 +201,8 @@ class AdcreativePreviewsGetCollectionStruct implements ModelInterface, ArrayAcce
         $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
         $this->container['userIdType'] = isset($data['userIdType']) ? $data['userIdType'] : null;
         $this->container['isPreviewed'] = isset($data['isPreviewed']) ? $data['isPreviewed'] : null;
+        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
+        $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
     }
 
     /**
@@ -285,6 +297,54 @@ class AdcreativePreviewsGetCollectionStruct implements ModelInterface, ArrayAcce
     public function setIsPreviewed($isPreviewed)
     {
         $this->container['isPreviewed'] = $isPreviewed;
+
+        return $this;
+    }
+
+    /**
+     * Gets adgroupId
+     *
+     * @return int|mixed
+     */
+    public function getAdgroupId()
+    {
+        return $this->container['adgroupId'];
+    }
+
+    /**
+     * Sets adgroupId
+     *
+     * @param int|mixed $adgroupId adgroupId
+     *
+     * @return $this
+     */
+    public function setAdgroupId($adgroupId)
+    {
+        $this->container['adgroupId'] = $adgroupId;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicCreativeId
+     *
+     * @return int|mixed
+     */
+    public function getDynamicCreativeId()
+    {
+        return $this->container['dynamicCreativeId'];
+    }
+
+    /**
+     * Sets dynamicCreativeId
+     *
+     * @param int|mixed $dynamicCreativeId dynamicCreativeId
+     *
+     * @return $this
+     */
+    public function setDynamicCreativeId($dynamicCreativeId)
+    {
+        $this->container['dynamicCreativeId'] = $dynamicCreativeId;
 
         return $this;
     }

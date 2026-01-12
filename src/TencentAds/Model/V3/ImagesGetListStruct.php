@@ -76,7 +76,8 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => 'string',
         'ownerAccountId' => 'string',
         'status' => '\TencentAds\Model\V3\AdStatus',
-        'sampleAspectRatio' => 'string'
+        'sampleAspectRatio' => 'string',
+        'similarityStatus' => '\TencentAds\Model\V3\SimilarityStatus'
     ];
 
     /**
@@ -103,7 +104,8 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => null,
         'ownerAccountId' => null,
         'status' => null,
-        'sampleAspectRatio' => null
+        'sampleAspectRatio' => null,
+        'similarityStatus' => null
     ];
 
     /**
@@ -151,7 +153,8 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => 'source_reference_id',
         'ownerAccountId' => 'owner_account_id',
         'status' => 'status',
-        'sampleAspectRatio' => 'sample_aspect_ratio'
+        'sampleAspectRatio' => 'sample_aspect_ratio',
+        'similarityStatus' => 'similarity_status'
     ];
 
     /**
@@ -178,7 +181,8 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => 'setSourceReferenceId',
         'ownerAccountId' => 'setOwnerAccountId',
         'status' => 'setStatus',
-        'sampleAspectRatio' => 'setSampleAspectRatio'
+        'sampleAspectRatio' => 'setSampleAspectRatio',
+        'similarityStatus' => 'setSimilarityStatus'
     ];
 
     /**
@@ -205,7 +209,8 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => 'getSourceReferenceId',
         'ownerAccountId' => 'getOwnerAccountId',
         'status' => 'getStatus',
-        'sampleAspectRatio' => 'getSampleAspectRatio'
+        'sampleAspectRatio' => 'getSampleAspectRatio',
+        'similarityStatus' => 'getSimilarityStatus'
     ];
 
     /**
@@ -287,6 +292,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
         $this->container['sampleAspectRatio'] = isset($data['sampleAspectRatio']) ? $data['sampleAspectRatio'] : null;
+        $this->container['similarityStatus'] = isset($data['similarityStatus']) ? $data['similarityStatus'] : null;
     }
 
     /**
@@ -765,6 +771,30 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     public function setSampleAspectRatio($sampleAspectRatio)
     {
         $this->container['sampleAspectRatio'] = $sampleAspectRatio;
+
+        return $this;
+    }
+
+    /**
+     * Gets similarityStatus
+     *
+     * @return \TencentAds\Model\V3\SimilarityStatus|mixed
+     */
+    public function getSimilarityStatus()
+    {
+        return $this->container['similarityStatus'];
+    }
+
+    /**
+     * Sets similarityStatus
+     *
+     * @param \TencentAds\Model\V3\SimilarityStatus|mixed $similarityStatus similarityStatus
+     *
+     * @return $this
+     */
+    public function setSimilarityStatus($similarityStatus)
+    {
+        $this->container['similarityStatus'] = $similarityStatus;
 
         return $this;
     }

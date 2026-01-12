@@ -1,6 +1,6 @@
 <?php
 /**
- * VideoChannelsContentStruct
+ * GameFeatureV6AddResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * VideoChannelsContentStruct Class Doc Comment
+ * GameFeatureV6AddResponseData Class Doc Comment
  *
  * @category Class
- * @description 视频号内容组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
+class GameFeatureV6AddResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'video_channels_content_struct';
+    protected static $swaggerModelName = 'GameFeatureV6AddResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adExportId' => 'string',
-        'wechatChannelsAccountId' => 'string',
-        'miniGameTrackingParameter' => 'string'
+        'marketingTargetDetailId' => 'string'
     ];
 
     /**
@@ -69,9 +66,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adExportId' => null,
-        'wechatChannelsAccountId' => null,
-        'miniGameTrackingParameter' => null
+        'marketingTargetDetailId' => null
     ];
 
     /**
@@ -101,9 +96,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adExportId' => 'ad_export_id',
-        'wechatChannelsAccountId' => 'wechat_channels_account_id',
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter'
+        'marketingTargetDetailId' => 'marketing_target_detail_id'
     ];
 
     /**
@@ -112,9 +105,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adExportId' => 'setAdExportId',
-        'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter'
+        'marketingTargetDetailId' => 'setMarketingTargetDetailId'
     ];
 
     /**
@@ -123,9 +114,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adExportId' => 'getAdExportId',
-        'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter'
+        'marketingTargetDetailId' => 'getMarketingTargetDetailId'
     ];
 
     /**
@@ -188,9 +177,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adExportId'] = isset($data['adExportId']) ? $data['adExportId'] : null;
-        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
+        $this->container['marketingTargetDetailId'] = isset($data['marketingTargetDetailId']) ? $data['marketingTargetDetailId'] : null;
     }
 
     /**
@@ -218,73 +205,25 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adExportId
+     * Gets marketingTargetDetailId
      *
      * @return string|mixed
      */
-    public function getAdExportId()
+    public function getMarketingTargetDetailId()
     {
-        return $this->container['adExportId'];
+        return $this->container['marketingTargetDetailId'];
     }
 
     /**
-     * Sets adExportId
+     * Sets marketingTargetDetailId
      *
-     * @param string|mixed $adExportId adExportId
+     * @param string|mixed $marketingTargetDetailId marketingTargetDetailId
      *
      * @return $this
      */
-    public function setAdExportId($adExportId)
+    public function setMarketingTargetDetailId($marketingTargetDetailId)
     {
-        $this->container['adExportId'] = $adExportId;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatChannelsAccountId
-     *
-     * @return string|mixed
-     */
-    public function getWechatChannelsAccountId()
-    {
-        return $this->container['wechatChannelsAccountId'];
-    }
-
-    /**
-     * Sets wechatChannelsAccountId
-     *
-     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
-     *
-     * @return $this
-     */
-    public function setWechatChannelsAccountId($wechatChannelsAccountId)
-    {
-        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameTrackingParameter
-     *
-     * @return string|mixed
-     */
-    public function getMiniGameTrackingParameter()
-    {
-        return $this->container['miniGameTrackingParameter'];
-    }
-
-    /**
-     * Sets miniGameTrackingParameter
-     *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
-     *
-     * @return $this
-     */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
-    {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['marketingTargetDetailId'] = $marketingTargetDetailId;
 
         return $this;
     }

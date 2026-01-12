@@ -110,6 +110,9 @@ class MarketingTargetType
     const WECHAT_STORE = 'MARKETING_TARGET_TYPE_WECHAT_STORE';
     const RESALE_AND_COMMERCIAL_LAND = 'MARKETING_TARGET_TYPE_RESALE_AND_COMMERCIAL_LAND';
     const VIDEO_PROGRAM = 'MARKETING_TARGET_TYPE_VIDEO_PROGRAM';
+    const FUN_TEST = 'MARKETING_TARGET_TYPE_FUN_TEST';
+    const MATERNITY_PARENTING = 'MARKETING_TARGET_TYPE_MATERNITY_PARENTING';
+    const LEISURE_ENTERTAINMENT = 'MARKETING_TARGET_TYPE_LEISURE_ENTERTAINMENT';
     
     /**
      * Gets allowable values of the enum
@@ -184,6 +187,9 @@ class MarketingTargetType
             self::WECHAT_STORE,
             self::RESALE_AND_COMMERCIAL_LAND,
             self::VIDEO_PROGRAM,
+            self::FUN_TEST,
+            self::MATERNITY_PARENTING,
+            self::LEISURE_ENTERTAINMENT,
         ];
     }
 }

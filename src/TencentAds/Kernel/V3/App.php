@@ -85,6 +85,7 @@ use TencentAds\Container\V3\FundTransferApiContainer;
 use TencentAds\Container\V3\FundsApiContainer;
 use TencentAds\Container\V3\GameFeatureApiContainer;
 use TencentAds\Container\V3\GameFeatureTagsApiContainer;
+use TencentAds\Container\V3\GameFeatureV6ApiContainer;
 use TencentAds\Container\V3\GetWxGameAppGiftPackApiContainer;
 use TencentAds\Container\V3\HourlyReportsApiContainer;
 use TencentAds\Container\V3\IllegalComplaintApiContainer;
@@ -158,6 +159,8 @@ use TencentAds\Container\V3\ProgrammedCommponentPreviewTemplateApiContainer;
 use TencentAds\Container\V3\ProgrammedCommponentResultApiContainer;
 use TencentAds\Container\V3\ProgrammedMaterialMappingsApiContainer;
 use TencentAds\Container\V3\ProgrammedTemplateApiContainer;
+use TencentAds\Container\V3\PunishDetailApiContainer;
+use TencentAds\Container\V3\PunishMetricsApiContainer;
 use TencentAds\Container\V3\PunishmentConfigApiContainer;
 use TencentAds\Container\V3\PunishmentQueryApiContainer;
 use TencentAds\Container\V3\QualificationImagesApiContainer;
@@ -483,6 +486,9 @@ class App
     /** @var GameFeatureTagsApiContainer */
     public $gameFeatureTagsApiContainer;
 
+    /** @var GameFeatureV6ApiContainer */
+    public $gameFeatureV6ApiContainer;
+
     /** @var GetWxGameAppGiftPackApiContainer */
     public $getWxGameAppGiftPackApiContainer;
 
@@ -701,6 +707,12 @@ class App
 
     /** @var ProgrammedTemplateApiContainer */
     public $programmedTemplateApiContainer;
+
+    /** @var PunishDetailApiContainer */
+    public $punishDetailApiContainer;
+
+    /** @var PunishMetricsApiContainer */
+    public $punishMetricsApiContainer;
 
     /** @var PunishmentConfigApiContainer */
     public $punishmentConfigApiContainer;
@@ -2088,6 +2100,20 @@ class App
 
 
     /**
+     * @return GameFeatureV6ApiContainer
+     */
+    public function gameFeatureV6()
+    {
+        if (empty($this->gameFeatureV6ApiContainer)) {
+            $container = new GameFeatureV6ApiContainer();
+            $container->init($this, $this->getClient());
+            $this->gameFeatureV6ApiContainer = $container;
+        }
+        return $this->gameFeatureV6ApiContainer;
+    }
+
+
+    /**
      * @return GetWxGameAppGiftPackApiContainer
      */
     public function getWxGameAppGiftPack()
@@ -3106,6 +3132,34 @@ class App
             $this->programmedTemplateApiContainer = $container;
         }
         return $this->programmedTemplateApiContainer;
+    }
+
+
+    /**
+     * @return PunishDetailApiContainer
+     */
+    public function punishDetail()
+    {
+        if (empty($this->punishDetailApiContainer)) {
+            $container = new PunishDetailApiContainer();
+            $container->init($this, $this->getClient());
+            $this->punishDetailApiContainer = $container;
+        }
+        return $this->punishDetailApiContainer;
+    }
+
+
+    /**
+     * @return PunishMetricsApiContainer
+     */
+    public function punishMetrics()
+    {
+        if (empty($this->punishMetricsApiContainer)) {
+            $container = new PunishMetricsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->punishMetricsApiContainer = $container;
+        }
+        return $this->punishMetricsApiContainer;
     }
 
 

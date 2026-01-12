@@ -577,6 +577,11 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'videoHeartCount' => 'int',
         'videoCommentCount' => 'int',
         'channelsSharePlaPv' => 'int',
+        'channelsReadOfflinePv' => 'int',
+        'channelsHeartOfflinePv' => 'int',
+        'channelsCommentOfflinePv' => 'int',
+        'channelsShareOfflinePv' => 'int',
+        'channelsFavOfflinePv' => 'int',
         'videoLiveSubscribeCount' => 'int',
         'videoLiveExpCount' => 'int',
         'channelsLiveExitPlaDuration' => 'double',
@@ -628,6 +633,30 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'durationPerUser' => 'double',
         'durationOuterPerUser' => 'double',
         'durationKeyPagePerUser' => 'double',
+        'clkAdElementPv' => 'int',
+        'channelsPraisePlaPv' => 'int',
+        'clkRedpocketBtnGetPv' => 'int',
+        'clkRedpocketBtnSharePv' => 'int',
+        'clkRedpocketBtnJumpPv' => 'int',
+        'clkGoodsHeaderPv' => 'int',
+        'clkGoodsInfoPv' => 'int',
+        'clkGoodsRecommendPv' => 'int',
+        'clkMiddleShowwindowPv' => 'int',
+        'clkFooterPv' => 'int',
+        'clkMiddleGoodsPv' => 'int',
+        'clkMiddleBtnPv' => 'int',
+        'clkMiddleSectionPv' => 'int',
+        'clkMiddleGridviewPv' => 'int',
+        'clkBreakPv' => 'int',
+        'clkRedpocketShakePv' => 'int',
+        'clkRelatedVideoPv' => 'int',
+        'clkBrandPediaPv' => 'int',
+        'clkActivityNewsPv' => 'int',
+        'clkLeftGridInfoPv' => 'int',
+        'clkLeftGridMiddlePv' => 'int',
+        'clkRightGridPv' => 'int',
+        'cvsCpnVideoPlayPv' => 'int',
+        'cvsCpnVideoPlayDuration' => 'double',
         'adMonetizationCost' => 'double',
         'adMonetizationRoi' => 'double',
         'adMonetizationActive3dPv' => 'int',
@@ -635,7 +664,10 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'adMonetizationActive7dPv' => 'int',
         'adMonetizationDedupActive7dPv' => 'int',
         'clkRedpocketBtnSubscribePv' => 'int',
+        'clkShortcutMenusPv' => 'int',
         'channelsDetailBtnPv' => 'int',
+        'zoneHeaderLiveClickCnt' => 'int',
+        'clkSliderCardProductPv' => 'int',
         'afterAddWecomNegativePv' => 'int',
         'securityLowPriceOrderPv' => 'int',
         'securityHighPriceOrderPv' => 'int',
@@ -702,7 +734,10 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseRegActive1dPv' => 'int',
         'purchaseDedupRegActive1dPv' => 'int',
         'purchaseRegActive1dAmount' => 'int',
+        'clkHotElementPv' => 'int',
+        'hotElementCtr' => 'double',
         'securityNegativeDedupPv' => 'int',
+        'clkInterpageBtnPv' => 'int',
         'adMonetizationPlaRegActive1dMixRoi' => 'double',
         'adMonetizationPlaRegActive24hMixRoi' => 'double',
         'realCostAppAutoDownload' => 'int',
@@ -730,13 +765,17 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'viewDramaDedupPv' => 'int',
         'viewDramaDedupPvRate' => 'double',
         'viewDramaDedupPvCost' => 'int',
+        'clkSellingPointsElementPv' => 'int',
         'visitStoreFirstDedupPv' => 'int',
+        'clkFullwidthBackgroundPv' => 'int',
+        'clkHeaderAreaPv' => 'int',
         'orderFirstDedupPv' => 'int',
         'orderFirstDedupPvCost' => 'int',
         'orderFirstDedupPvRate' => 'double',
         'storePayAmountOff' => 'int',
         'storePayUvOff' => 'int',
         'storePayPvOff' => 'int',
+        'clkSellingPointsElementUv' => 'int',
         'orderRefundActive24hPv' => 'int',
         'orderRefundActive24hRate' => 'double',
         'orderSettle24hPv' => 'int',
@@ -835,6 +874,22 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'orderNetRoi' => 'double',
         'orderNetPvCost' => 'int',
         'clkBhAnimPv' => 'int',
+        'clkBredpocketPv' => 'int',
+        'clkBrSubPv' => 'int',
+        'clkBrSharePv' => 'int',
+        'clkBrBtnPv' => 'int',
+        'clkBrDrivePv' => 'int',
+        'clkBquickPv' => 'int',
+        'clkBappPv' => 'int',
+        'clkBacountPv' => 'int',
+        'clkBaMorePv' => 'int',
+        'clkBmActivityPv' => 'int',
+        'clkBmVerticalPv' => 'int',
+        'clkBmPrivilegePv' => 'int',
+        'clkBmSeriesPv' => 'int',
+        'clkBmDetailPv' => 'int',
+        'clkRpsPv' => 'int',
+        'sliderPv' => 'int',
         'ageId' => 'int',
         'cityId' => 'int',
         'regionId' => 'int',
@@ -1369,6 +1424,11 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'videoHeartCount' => 'int64',
         'videoCommentCount' => 'int64',
         'channelsSharePlaPv' => 'int64',
+        'channelsReadOfflinePv' => 'int64',
+        'channelsHeartOfflinePv' => 'int64',
+        'channelsCommentOfflinePv' => 'int64',
+        'channelsShareOfflinePv' => 'int64',
+        'channelsFavOfflinePv' => 'int64',
         'videoLiveSubscribeCount' => 'int64',
         'videoLiveExpCount' => 'int64',
         'channelsLiveExitPlaDuration' => 'double',
@@ -1420,6 +1480,30 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'durationPerUser' => 'double',
         'durationOuterPerUser' => 'double',
         'durationKeyPagePerUser' => 'double',
+        'clkAdElementPv' => 'int64',
+        'channelsPraisePlaPv' => 'int64',
+        'clkRedpocketBtnGetPv' => 'int64',
+        'clkRedpocketBtnSharePv' => 'int64',
+        'clkRedpocketBtnJumpPv' => 'int64',
+        'clkGoodsHeaderPv' => 'int64',
+        'clkGoodsInfoPv' => 'int64',
+        'clkGoodsRecommendPv' => 'int64',
+        'clkMiddleShowwindowPv' => 'int64',
+        'clkFooterPv' => 'int64',
+        'clkMiddleGoodsPv' => 'int64',
+        'clkMiddleBtnPv' => 'int64',
+        'clkMiddleSectionPv' => 'int64',
+        'clkMiddleGridviewPv' => 'int64',
+        'clkBreakPv' => 'int64',
+        'clkRedpocketShakePv' => 'int64',
+        'clkRelatedVideoPv' => 'int64',
+        'clkBrandPediaPv' => 'int64',
+        'clkActivityNewsPv' => 'int64',
+        'clkLeftGridInfoPv' => 'int64',
+        'clkLeftGridMiddlePv' => 'int64',
+        'clkRightGridPv' => 'int64',
+        'cvsCpnVideoPlayPv' => 'int64',
+        'cvsCpnVideoPlayDuration' => 'double',
         'adMonetizationCost' => 'double',
         'adMonetizationRoi' => 'double',
         'adMonetizationActive3dPv' => 'int64',
@@ -1427,7 +1511,10 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'adMonetizationActive7dPv' => 'int64',
         'adMonetizationDedupActive7dPv' => 'int64',
         'clkRedpocketBtnSubscribePv' => 'int64',
+        'clkShortcutMenusPv' => 'int64',
         'channelsDetailBtnPv' => 'int64',
+        'zoneHeaderLiveClickCnt' => 'int64',
+        'clkSliderCardProductPv' => 'int64',
         'afterAddWecomNegativePv' => 'int64',
         'securityLowPriceOrderPv' => 'int64',
         'securityHighPriceOrderPv' => 'int64',
@@ -1494,7 +1581,10 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseRegActive1dPv' => 'int64',
         'purchaseDedupRegActive1dPv' => 'int64',
         'purchaseRegActive1dAmount' => 'int64',
+        'clkHotElementPv' => 'int64',
+        'hotElementCtr' => 'double',
         'securityNegativeDedupPv' => 'int64',
+        'clkInterpageBtnPv' => 'int64',
         'adMonetizationPlaRegActive1dMixRoi' => 'double',
         'adMonetizationPlaRegActive24hMixRoi' => 'double',
         'realCostAppAutoDownload' => 'int64',
@@ -1522,13 +1612,17 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'viewDramaDedupPv' => 'int64',
         'viewDramaDedupPvRate' => 'double',
         'viewDramaDedupPvCost' => 'int64',
+        'clkSellingPointsElementPv' => 'int64',
         'visitStoreFirstDedupPv' => 'int64',
+        'clkFullwidthBackgroundPv' => 'int64',
+        'clkHeaderAreaPv' => 'int64',
         'orderFirstDedupPv' => 'int64',
         'orderFirstDedupPvCost' => 'int64',
         'orderFirstDedupPvRate' => 'double',
         'storePayAmountOff' => 'int64',
         'storePayUvOff' => 'int64',
         'storePayPvOff' => 'int64',
+        'clkSellingPointsElementUv' => 'int64',
         'orderRefundActive24hPv' => 'int64',
         'orderRefundActive24hRate' => 'double',
         'orderSettle24hPv' => 'int64',
@@ -1627,6 +1721,22 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'orderNetRoi' => 'double',
         'orderNetPvCost' => 'int64',
         'clkBhAnimPv' => 'int64',
+        'clkBredpocketPv' => 'int64',
+        'clkBrSubPv' => 'int64',
+        'clkBrSharePv' => 'int64',
+        'clkBrBtnPv' => 'int64',
+        'clkBrDrivePv' => 'int64',
+        'clkBquickPv' => 'int64',
+        'clkBappPv' => 'int64',
+        'clkBacountPv' => 'int64',
+        'clkBaMorePv' => 'int64',
+        'clkBmActivityPv' => 'int64',
+        'clkBmVerticalPv' => 'int64',
+        'clkBmPrivilegePv' => 'int64',
+        'clkBmSeriesPv' => 'int64',
+        'clkBmDetailPv' => 'int64',
+        'clkRpsPv' => 'int64',
+        'sliderPv' => 'int64',
         'ageId' => 'int64',
         'cityId' => 'int64',
         'regionId' => 'int64',
@@ -2182,6 +2292,11 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'videoHeartCount' => 'video_heart_count',
         'videoCommentCount' => 'video_comment_count',
         'channelsSharePlaPv' => 'channels_share_pla_pv',
+        'channelsReadOfflinePv' => 'channels_read_offline_pv',
+        'channelsHeartOfflinePv' => 'channels_heart_offline_pv',
+        'channelsCommentOfflinePv' => 'channels_comment_offline_pv',
+        'channelsShareOfflinePv' => 'channels_share_offline_pv',
+        'channelsFavOfflinePv' => 'channels_fav_offline_pv',
         'videoLiveSubscribeCount' => 'video_live_subscribe_count',
         'videoLiveExpCount' => 'video_live_exp_count',
         'channelsLiveExitPlaDuration' => 'channels_live_exit_pla_duration',
@@ -2233,6 +2348,30 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'durationPerUser' => 'duration_per_user',
         'durationOuterPerUser' => 'duration_outer_per_user',
         'durationKeyPagePerUser' => 'duration_key_page_per_user',
+        'clkAdElementPv' => 'clk_ad_element_pv',
+        'channelsPraisePlaPv' => 'channels_praise_pla_pv',
+        'clkRedpocketBtnGetPv' => 'clk_redpocket_btn_get_pv',
+        'clkRedpocketBtnSharePv' => 'clk_redpocket_btn_share_pv',
+        'clkRedpocketBtnJumpPv' => 'clk_redpocket_btn_jump_pv',
+        'clkGoodsHeaderPv' => 'clk_goods_header_pv',
+        'clkGoodsInfoPv' => 'clk_goods_info_pv',
+        'clkGoodsRecommendPv' => 'clk_goods_recommend_pv',
+        'clkMiddleShowwindowPv' => 'clk_middle_showwindow_pv',
+        'clkFooterPv' => 'clk_footer_pv',
+        'clkMiddleGoodsPv' => 'clk_middle_goods_pv',
+        'clkMiddleBtnPv' => 'clk_middle_btn_pv',
+        'clkMiddleSectionPv' => 'clk_middle_section_pv',
+        'clkMiddleGridviewPv' => 'clk_middle_gridview_pv',
+        'clkBreakPv' => 'clk_break_pv',
+        'clkRedpocketShakePv' => 'clk_redpocket_shake_pv',
+        'clkRelatedVideoPv' => 'clk_related_video_pv',
+        'clkBrandPediaPv' => 'clk_brand_pedia_pv',
+        'clkActivityNewsPv' => 'clk_activity_news_pv',
+        'clkLeftGridInfoPv' => 'clk_left_grid_info_pv',
+        'clkLeftGridMiddlePv' => 'clk_left_grid_middle_pv',
+        'clkRightGridPv' => 'clk_right_grid_pv',
+        'cvsCpnVideoPlayPv' => 'cvs_cpn_video_play_pv',
+        'cvsCpnVideoPlayDuration' => 'cvs_cpn_video_play_duration',
         'adMonetizationCost' => 'ad_monetization_cost',
         'adMonetizationRoi' => 'ad_monetization_roi',
         'adMonetizationActive3dPv' => 'ad_monetization_active_3d_pv',
@@ -2240,7 +2379,10 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'adMonetizationActive7dPv' => 'ad_monetization_active_7d_pv',
         'adMonetizationDedupActive7dPv' => 'ad_monetization_dedup_active_7d_pv',
         'clkRedpocketBtnSubscribePv' => 'clk_redpocket_btn_subscribe_pv',
+        'clkShortcutMenusPv' => 'clk_shortcut_menus_pv',
         'channelsDetailBtnPv' => 'channels_detail_btn_pv',
+        'zoneHeaderLiveClickCnt' => 'zone_header_live_click_cnt',
+        'clkSliderCardProductPv' => 'clk_slider_card_product_pv',
         'afterAddWecomNegativePv' => 'after_add_wecom_negative_pv',
         'securityLowPriceOrderPv' => 'security_low_price_order_pv',
         'securityHighPriceOrderPv' => 'security_high_price_order_pv',
@@ -2307,7 +2449,10 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseRegActive1dPv' => 'purchase_reg_active_1d_pv',
         'purchaseDedupRegActive1dPv' => 'purchase_dedup_reg_active_1d_pv',
         'purchaseRegActive1dAmount' => 'purchase_reg_active_1d_amount',
+        'clkHotElementPv' => 'clk_hot_element_pv',
+        'hotElementCtr' => 'hot_element_ctr',
         'securityNegativeDedupPv' => 'security_negative_dedup_pv',
+        'clkInterpageBtnPv' => 'clk_interpage_btn_pv',
         'adMonetizationPlaRegActive1dMixRoi' => 'ad_monetization_pla_reg_active_1d_mix_roi',
         'adMonetizationPlaRegActive24hMixRoi' => 'ad_monetization_pla_reg_active_24h_mix_roi',
         'realCostAppAutoDownload' => 'real_cost_app_auto_download',
@@ -2335,13 +2480,17 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'viewDramaDedupPv' => 'view_drama_dedup_pv',
         'viewDramaDedupPvRate' => 'view_drama_dedup_pv_rate',
         'viewDramaDedupPvCost' => 'view_drama_dedup_pv_cost',
+        'clkSellingPointsElementPv' => 'clk_selling_points_element_pv',
         'visitStoreFirstDedupPv' => 'visit_store_first_dedup_pv',
+        'clkFullwidthBackgroundPv' => 'clk_fullwidth_background_pv',
+        'clkHeaderAreaPv' => 'clk_header_area_pv',
         'orderFirstDedupPv' => 'order_first_dedup_pv',
         'orderFirstDedupPvCost' => 'order_first_dedup_pv_cost',
         'orderFirstDedupPvRate' => 'order_first_dedup_pv_rate',
         'storePayAmountOff' => 'store_pay_amount_off',
         'storePayUvOff' => 'store_pay_uv_off',
         'storePayPvOff' => 'store_pay_pv_off',
+        'clkSellingPointsElementUv' => 'clk_selling_points_element_uv',
         'orderRefundActive24hPv' => 'order_refund_active_24h_pv',
         'orderRefundActive24hRate' => 'order_refund_active_24h_rate',
         'orderSettle24hPv' => 'order_settle_24h_pv',
@@ -2440,6 +2589,22 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'orderNetRoi' => 'order_net_roi',
         'orderNetPvCost' => 'order_net_pv_cost',
         'clkBhAnimPv' => 'clk_bh_anim_pv',
+        'clkBredpocketPv' => 'clk_bredpocket_pv',
+        'clkBrSubPv' => 'clk_br_sub_pv',
+        'clkBrSharePv' => 'clk_br_share_pv',
+        'clkBrBtnPv' => 'clk_br_btn_pv',
+        'clkBrDrivePv' => 'clk_br_drive_pv',
+        'clkBquickPv' => 'clk_bquick_pv',
+        'clkBappPv' => 'clk_bapp_pv',
+        'clkBacountPv' => 'clk_bacount_pv',
+        'clkBaMorePv' => 'clk_ba_more_pv',
+        'clkBmActivityPv' => 'clk_bm_activity_pv',
+        'clkBmVerticalPv' => 'clk_bm_vertical_pv',
+        'clkBmPrivilegePv' => 'clk_bm_privilege_pv',
+        'clkBmSeriesPv' => 'clk_bm_series_pv',
+        'clkBmDetailPv' => 'clk_bm_detail_pv',
+        'clkRpsPv' => 'clk_rps_pv',
+        'sliderPv' => 'slider_pv',
         'ageId' => 'age_id',
         'cityId' => 'city_id',
         'regionId' => 'region_id',
@@ -2974,6 +3139,11 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'videoHeartCount' => 'setVideoHeartCount',
         'videoCommentCount' => 'setVideoCommentCount',
         'channelsSharePlaPv' => 'setChannelsSharePlaPv',
+        'channelsReadOfflinePv' => 'setChannelsReadOfflinePv',
+        'channelsHeartOfflinePv' => 'setChannelsHeartOfflinePv',
+        'channelsCommentOfflinePv' => 'setChannelsCommentOfflinePv',
+        'channelsShareOfflinePv' => 'setChannelsShareOfflinePv',
+        'channelsFavOfflinePv' => 'setChannelsFavOfflinePv',
         'videoLiveSubscribeCount' => 'setVideoLiveSubscribeCount',
         'videoLiveExpCount' => 'setVideoLiveExpCount',
         'channelsLiveExitPlaDuration' => 'setChannelsLiveExitPlaDuration',
@@ -3025,6 +3195,30 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'durationPerUser' => 'setDurationPerUser',
         'durationOuterPerUser' => 'setDurationOuterPerUser',
         'durationKeyPagePerUser' => 'setDurationKeyPagePerUser',
+        'clkAdElementPv' => 'setClkAdElementPv',
+        'channelsPraisePlaPv' => 'setChannelsPraisePlaPv',
+        'clkRedpocketBtnGetPv' => 'setClkRedpocketBtnGetPv',
+        'clkRedpocketBtnSharePv' => 'setClkRedpocketBtnSharePv',
+        'clkRedpocketBtnJumpPv' => 'setClkRedpocketBtnJumpPv',
+        'clkGoodsHeaderPv' => 'setClkGoodsHeaderPv',
+        'clkGoodsInfoPv' => 'setClkGoodsInfoPv',
+        'clkGoodsRecommendPv' => 'setClkGoodsRecommendPv',
+        'clkMiddleShowwindowPv' => 'setClkMiddleShowwindowPv',
+        'clkFooterPv' => 'setClkFooterPv',
+        'clkMiddleGoodsPv' => 'setClkMiddleGoodsPv',
+        'clkMiddleBtnPv' => 'setClkMiddleBtnPv',
+        'clkMiddleSectionPv' => 'setClkMiddleSectionPv',
+        'clkMiddleGridviewPv' => 'setClkMiddleGridviewPv',
+        'clkBreakPv' => 'setClkBreakPv',
+        'clkRedpocketShakePv' => 'setClkRedpocketShakePv',
+        'clkRelatedVideoPv' => 'setClkRelatedVideoPv',
+        'clkBrandPediaPv' => 'setClkBrandPediaPv',
+        'clkActivityNewsPv' => 'setClkActivityNewsPv',
+        'clkLeftGridInfoPv' => 'setClkLeftGridInfoPv',
+        'clkLeftGridMiddlePv' => 'setClkLeftGridMiddlePv',
+        'clkRightGridPv' => 'setClkRightGridPv',
+        'cvsCpnVideoPlayPv' => 'setCvsCpnVideoPlayPv',
+        'cvsCpnVideoPlayDuration' => 'setCvsCpnVideoPlayDuration',
         'adMonetizationCost' => 'setAdMonetizationCost',
         'adMonetizationRoi' => 'setAdMonetizationRoi',
         'adMonetizationActive3dPv' => 'setAdMonetizationActive3dPv',
@@ -3032,7 +3226,10 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'adMonetizationActive7dPv' => 'setAdMonetizationActive7dPv',
         'adMonetizationDedupActive7dPv' => 'setAdMonetizationDedupActive7dPv',
         'clkRedpocketBtnSubscribePv' => 'setClkRedpocketBtnSubscribePv',
+        'clkShortcutMenusPv' => 'setClkShortcutMenusPv',
         'channelsDetailBtnPv' => 'setChannelsDetailBtnPv',
+        'zoneHeaderLiveClickCnt' => 'setZoneHeaderLiveClickCnt',
+        'clkSliderCardProductPv' => 'setClkSliderCardProductPv',
         'afterAddWecomNegativePv' => 'setAfterAddWecomNegativePv',
         'securityLowPriceOrderPv' => 'setSecurityLowPriceOrderPv',
         'securityHighPriceOrderPv' => 'setSecurityHighPriceOrderPv',
@@ -3099,7 +3296,10 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseRegActive1dPv' => 'setPurchaseRegActive1dPv',
         'purchaseDedupRegActive1dPv' => 'setPurchaseDedupRegActive1dPv',
         'purchaseRegActive1dAmount' => 'setPurchaseRegActive1dAmount',
+        'clkHotElementPv' => 'setClkHotElementPv',
+        'hotElementCtr' => 'setHotElementCtr',
         'securityNegativeDedupPv' => 'setSecurityNegativeDedupPv',
+        'clkInterpageBtnPv' => 'setClkInterpageBtnPv',
         'adMonetizationPlaRegActive1dMixRoi' => 'setAdMonetizationPlaRegActive1dMixRoi',
         'adMonetizationPlaRegActive24hMixRoi' => 'setAdMonetizationPlaRegActive24hMixRoi',
         'realCostAppAutoDownload' => 'setRealCostAppAutoDownload',
@@ -3127,13 +3327,17 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'viewDramaDedupPv' => 'setViewDramaDedupPv',
         'viewDramaDedupPvRate' => 'setViewDramaDedupPvRate',
         'viewDramaDedupPvCost' => 'setViewDramaDedupPvCost',
+        'clkSellingPointsElementPv' => 'setClkSellingPointsElementPv',
         'visitStoreFirstDedupPv' => 'setVisitStoreFirstDedupPv',
+        'clkFullwidthBackgroundPv' => 'setClkFullwidthBackgroundPv',
+        'clkHeaderAreaPv' => 'setClkHeaderAreaPv',
         'orderFirstDedupPv' => 'setOrderFirstDedupPv',
         'orderFirstDedupPvCost' => 'setOrderFirstDedupPvCost',
         'orderFirstDedupPvRate' => 'setOrderFirstDedupPvRate',
         'storePayAmountOff' => 'setStorePayAmountOff',
         'storePayUvOff' => 'setStorePayUvOff',
         'storePayPvOff' => 'setStorePayPvOff',
+        'clkSellingPointsElementUv' => 'setClkSellingPointsElementUv',
         'orderRefundActive24hPv' => 'setOrderRefundActive24hPv',
         'orderRefundActive24hRate' => 'setOrderRefundActive24hRate',
         'orderSettle24hPv' => 'setOrderSettle24hPv',
@@ -3232,6 +3436,22 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'orderNetRoi' => 'setOrderNetRoi',
         'orderNetPvCost' => 'setOrderNetPvCost',
         'clkBhAnimPv' => 'setClkBhAnimPv',
+        'clkBredpocketPv' => 'setClkBredpocketPv',
+        'clkBrSubPv' => 'setClkBrSubPv',
+        'clkBrSharePv' => 'setClkBrSharePv',
+        'clkBrBtnPv' => 'setClkBrBtnPv',
+        'clkBrDrivePv' => 'setClkBrDrivePv',
+        'clkBquickPv' => 'setClkBquickPv',
+        'clkBappPv' => 'setClkBappPv',
+        'clkBacountPv' => 'setClkBacountPv',
+        'clkBaMorePv' => 'setClkBaMorePv',
+        'clkBmActivityPv' => 'setClkBmActivityPv',
+        'clkBmVerticalPv' => 'setClkBmVerticalPv',
+        'clkBmPrivilegePv' => 'setClkBmPrivilegePv',
+        'clkBmSeriesPv' => 'setClkBmSeriesPv',
+        'clkBmDetailPv' => 'setClkBmDetailPv',
+        'clkRpsPv' => 'setClkRpsPv',
+        'sliderPv' => 'setSliderPv',
         'ageId' => 'setAgeId',
         'cityId' => 'setCityId',
         'regionId' => 'setRegionId',
@@ -3766,6 +3986,11 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'videoHeartCount' => 'getVideoHeartCount',
         'videoCommentCount' => 'getVideoCommentCount',
         'channelsSharePlaPv' => 'getChannelsSharePlaPv',
+        'channelsReadOfflinePv' => 'getChannelsReadOfflinePv',
+        'channelsHeartOfflinePv' => 'getChannelsHeartOfflinePv',
+        'channelsCommentOfflinePv' => 'getChannelsCommentOfflinePv',
+        'channelsShareOfflinePv' => 'getChannelsShareOfflinePv',
+        'channelsFavOfflinePv' => 'getChannelsFavOfflinePv',
         'videoLiveSubscribeCount' => 'getVideoLiveSubscribeCount',
         'videoLiveExpCount' => 'getVideoLiveExpCount',
         'channelsLiveExitPlaDuration' => 'getChannelsLiveExitPlaDuration',
@@ -3817,6 +4042,30 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'durationPerUser' => 'getDurationPerUser',
         'durationOuterPerUser' => 'getDurationOuterPerUser',
         'durationKeyPagePerUser' => 'getDurationKeyPagePerUser',
+        'clkAdElementPv' => 'getClkAdElementPv',
+        'channelsPraisePlaPv' => 'getChannelsPraisePlaPv',
+        'clkRedpocketBtnGetPv' => 'getClkRedpocketBtnGetPv',
+        'clkRedpocketBtnSharePv' => 'getClkRedpocketBtnSharePv',
+        'clkRedpocketBtnJumpPv' => 'getClkRedpocketBtnJumpPv',
+        'clkGoodsHeaderPv' => 'getClkGoodsHeaderPv',
+        'clkGoodsInfoPv' => 'getClkGoodsInfoPv',
+        'clkGoodsRecommendPv' => 'getClkGoodsRecommendPv',
+        'clkMiddleShowwindowPv' => 'getClkMiddleShowwindowPv',
+        'clkFooterPv' => 'getClkFooterPv',
+        'clkMiddleGoodsPv' => 'getClkMiddleGoodsPv',
+        'clkMiddleBtnPv' => 'getClkMiddleBtnPv',
+        'clkMiddleSectionPv' => 'getClkMiddleSectionPv',
+        'clkMiddleGridviewPv' => 'getClkMiddleGridviewPv',
+        'clkBreakPv' => 'getClkBreakPv',
+        'clkRedpocketShakePv' => 'getClkRedpocketShakePv',
+        'clkRelatedVideoPv' => 'getClkRelatedVideoPv',
+        'clkBrandPediaPv' => 'getClkBrandPediaPv',
+        'clkActivityNewsPv' => 'getClkActivityNewsPv',
+        'clkLeftGridInfoPv' => 'getClkLeftGridInfoPv',
+        'clkLeftGridMiddlePv' => 'getClkLeftGridMiddlePv',
+        'clkRightGridPv' => 'getClkRightGridPv',
+        'cvsCpnVideoPlayPv' => 'getCvsCpnVideoPlayPv',
+        'cvsCpnVideoPlayDuration' => 'getCvsCpnVideoPlayDuration',
         'adMonetizationCost' => 'getAdMonetizationCost',
         'adMonetizationRoi' => 'getAdMonetizationRoi',
         'adMonetizationActive3dPv' => 'getAdMonetizationActive3dPv',
@@ -3824,7 +4073,10 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'adMonetizationActive7dPv' => 'getAdMonetizationActive7dPv',
         'adMonetizationDedupActive7dPv' => 'getAdMonetizationDedupActive7dPv',
         'clkRedpocketBtnSubscribePv' => 'getClkRedpocketBtnSubscribePv',
+        'clkShortcutMenusPv' => 'getClkShortcutMenusPv',
         'channelsDetailBtnPv' => 'getChannelsDetailBtnPv',
+        'zoneHeaderLiveClickCnt' => 'getZoneHeaderLiveClickCnt',
+        'clkSliderCardProductPv' => 'getClkSliderCardProductPv',
         'afterAddWecomNegativePv' => 'getAfterAddWecomNegativePv',
         'securityLowPriceOrderPv' => 'getSecurityLowPriceOrderPv',
         'securityHighPriceOrderPv' => 'getSecurityHighPriceOrderPv',
@@ -3891,7 +4143,10 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'purchaseRegActive1dPv' => 'getPurchaseRegActive1dPv',
         'purchaseDedupRegActive1dPv' => 'getPurchaseDedupRegActive1dPv',
         'purchaseRegActive1dAmount' => 'getPurchaseRegActive1dAmount',
+        'clkHotElementPv' => 'getClkHotElementPv',
+        'hotElementCtr' => 'getHotElementCtr',
         'securityNegativeDedupPv' => 'getSecurityNegativeDedupPv',
+        'clkInterpageBtnPv' => 'getClkInterpageBtnPv',
         'adMonetizationPlaRegActive1dMixRoi' => 'getAdMonetizationPlaRegActive1dMixRoi',
         'adMonetizationPlaRegActive24hMixRoi' => 'getAdMonetizationPlaRegActive24hMixRoi',
         'realCostAppAutoDownload' => 'getRealCostAppAutoDownload',
@@ -3919,13 +4174,17 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'viewDramaDedupPv' => 'getViewDramaDedupPv',
         'viewDramaDedupPvRate' => 'getViewDramaDedupPvRate',
         'viewDramaDedupPvCost' => 'getViewDramaDedupPvCost',
+        'clkSellingPointsElementPv' => 'getClkSellingPointsElementPv',
         'visitStoreFirstDedupPv' => 'getVisitStoreFirstDedupPv',
+        'clkFullwidthBackgroundPv' => 'getClkFullwidthBackgroundPv',
+        'clkHeaderAreaPv' => 'getClkHeaderAreaPv',
         'orderFirstDedupPv' => 'getOrderFirstDedupPv',
         'orderFirstDedupPvCost' => 'getOrderFirstDedupPvCost',
         'orderFirstDedupPvRate' => 'getOrderFirstDedupPvRate',
         'storePayAmountOff' => 'getStorePayAmountOff',
         'storePayUvOff' => 'getStorePayUvOff',
         'storePayPvOff' => 'getStorePayPvOff',
+        'clkSellingPointsElementUv' => 'getClkSellingPointsElementUv',
         'orderRefundActive24hPv' => 'getOrderRefundActive24hPv',
         'orderRefundActive24hRate' => 'getOrderRefundActive24hRate',
         'orderSettle24hPv' => 'getOrderSettle24hPv',
@@ -4024,6 +4283,22 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'orderNetRoi' => 'getOrderNetRoi',
         'orderNetPvCost' => 'getOrderNetPvCost',
         'clkBhAnimPv' => 'getClkBhAnimPv',
+        'clkBredpocketPv' => 'getClkBredpocketPv',
+        'clkBrSubPv' => 'getClkBrSubPv',
+        'clkBrSharePv' => 'getClkBrSharePv',
+        'clkBrBtnPv' => 'getClkBrBtnPv',
+        'clkBrDrivePv' => 'getClkBrDrivePv',
+        'clkBquickPv' => 'getClkBquickPv',
+        'clkBappPv' => 'getClkBappPv',
+        'clkBacountPv' => 'getClkBacountPv',
+        'clkBaMorePv' => 'getClkBaMorePv',
+        'clkBmActivityPv' => 'getClkBmActivityPv',
+        'clkBmVerticalPv' => 'getClkBmVerticalPv',
+        'clkBmPrivilegePv' => 'getClkBmPrivilegePv',
+        'clkBmSeriesPv' => 'getClkBmSeriesPv',
+        'clkBmDetailPv' => 'getClkBmDetailPv',
+        'clkRpsPv' => 'getClkRpsPv',
+        'sliderPv' => 'getSliderPv',
         'ageId' => 'getAgeId',
         'cityId' => 'getCityId',
         'regionId' => 'getRegionId',
@@ -4612,6 +4887,11 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['videoHeartCount'] = isset($data['videoHeartCount']) ? $data['videoHeartCount'] : null;
         $this->container['videoCommentCount'] = isset($data['videoCommentCount']) ? $data['videoCommentCount'] : null;
         $this->container['channelsSharePlaPv'] = isset($data['channelsSharePlaPv']) ? $data['channelsSharePlaPv'] : null;
+        $this->container['channelsReadOfflinePv'] = isset($data['channelsReadOfflinePv']) ? $data['channelsReadOfflinePv'] : null;
+        $this->container['channelsHeartOfflinePv'] = isset($data['channelsHeartOfflinePv']) ? $data['channelsHeartOfflinePv'] : null;
+        $this->container['channelsCommentOfflinePv'] = isset($data['channelsCommentOfflinePv']) ? $data['channelsCommentOfflinePv'] : null;
+        $this->container['channelsShareOfflinePv'] = isset($data['channelsShareOfflinePv']) ? $data['channelsShareOfflinePv'] : null;
+        $this->container['channelsFavOfflinePv'] = isset($data['channelsFavOfflinePv']) ? $data['channelsFavOfflinePv'] : null;
         $this->container['videoLiveSubscribeCount'] = isset($data['videoLiveSubscribeCount']) ? $data['videoLiveSubscribeCount'] : null;
         $this->container['videoLiveExpCount'] = isset($data['videoLiveExpCount']) ? $data['videoLiveExpCount'] : null;
         $this->container['channelsLiveExitPlaDuration'] = isset($data['channelsLiveExitPlaDuration']) ? $data['channelsLiveExitPlaDuration'] : null;
@@ -4663,6 +4943,30 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['durationPerUser'] = isset($data['durationPerUser']) ? $data['durationPerUser'] : null;
         $this->container['durationOuterPerUser'] = isset($data['durationOuterPerUser']) ? $data['durationOuterPerUser'] : null;
         $this->container['durationKeyPagePerUser'] = isset($data['durationKeyPagePerUser']) ? $data['durationKeyPagePerUser'] : null;
+        $this->container['clkAdElementPv'] = isset($data['clkAdElementPv']) ? $data['clkAdElementPv'] : null;
+        $this->container['channelsPraisePlaPv'] = isset($data['channelsPraisePlaPv']) ? $data['channelsPraisePlaPv'] : null;
+        $this->container['clkRedpocketBtnGetPv'] = isset($data['clkRedpocketBtnGetPv']) ? $data['clkRedpocketBtnGetPv'] : null;
+        $this->container['clkRedpocketBtnSharePv'] = isset($data['clkRedpocketBtnSharePv']) ? $data['clkRedpocketBtnSharePv'] : null;
+        $this->container['clkRedpocketBtnJumpPv'] = isset($data['clkRedpocketBtnJumpPv']) ? $data['clkRedpocketBtnJumpPv'] : null;
+        $this->container['clkGoodsHeaderPv'] = isset($data['clkGoodsHeaderPv']) ? $data['clkGoodsHeaderPv'] : null;
+        $this->container['clkGoodsInfoPv'] = isset($data['clkGoodsInfoPv']) ? $data['clkGoodsInfoPv'] : null;
+        $this->container['clkGoodsRecommendPv'] = isset($data['clkGoodsRecommendPv']) ? $data['clkGoodsRecommendPv'] : null;
+        $this->container['clkMiddleShowwindowPv'] = isset($data['clkMiddleShowwindowPv']) ? $data['clkMiddleShowwindowPv'] : null;
+        $this->container['clkFooterPv'] = isset($data['clkFooterPv']) ? $data['clkFooterPv'] : null;
+        $this->container['clkMiddleGoodsPv'] = isset($data['clkMiddleGoodsPv']) ? $data['clkMiddleGoodsPv'] : null;
+        $this->container['clkMiddleBtnPv'] = isset($data['clkMiddleBtnPv']) ? $data['clkMiddleBtnPv'] : null;
+        $this->container['clkMiddleSectionPv'] = isset($data['clkMiddleSectionPv']) ? $data['clkMiddleSectionPv'] : null;
+        $this->container['clkMiddleGridviewPv'] = isset($data['clkMiddleGridviewPv']) ? $data['clkMiddleGridviewPv'] : null;
+        $this->container['clkBreakPv'] = isset($data['clkBreakPv']) ? $data['clkBreakPv'] : null;
+        $this->container['clkRedpocketShakePv'] = isset($data['clkRedpocketShakePv']) ? $data['clkRedpocketShakePv'] : null;
+        $this->container['clkRelatedVideoPv'] = isset($data['clkRelatedVideoPv']) ? $data['clkRelatedVideoPv'] : null;
+        $this->container['clkBrandPediaPv'] = isset($data['clkBrandPediaPv']) ? $data['clkBrandPediaPv'] : null;
+        $this->container['clkActivityNewsPv'] = isset($data['clkActivityNewsPv']) ? $data['clkActivityNewsPv'] : null;
+        $this->container['clkLeftGridInfoPv'] = isset($data['clkLeftGridInfoPv']) ? $data['clkLeftGridInfoPv'] : null;
+        $this->container['clkLeftGridMiddlePv'] = isset($data['clkLeftGridMiddlePv']) ? $data['clkLeftGridMiddlePv'] : null;
+        $this->container['clkRightGridPv'] = isset($data['clkRightGridPv']) ? $data['clkRightGridPv'] : null;
+        $this->container['cvsCpnVideoPlayPv'] = isset($data['cvsCpnVideoPlayPv']) ? $data['cvsCpnVideoPlayPv'] : null;
+        $this->container['cvsCpnVideoPlayDuration'] = isset($data['cvsCpnVideoPlayDuration']) ? $data['cvsCpnVideoPlayDuration'] : null;
         $this->container['adMonetizationCost'] = isset($data['adMonetizationCost']) ? $data['adMonetizationCost'] : null;
         $this->container['adMonetizationRoi'] = isset($data['adMonetizationRoi']) ? $data['adMonetizationRoi'] : null;
         $this->container['adMonetizationActive3dPv'] = isset($data['adMonetizationActive3dPv']) ? $data['adMonetizationActive3dPv'] : null;
@@ -4670,7 +4974,10 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['adMonetizationActive7dPv'] = isset($data['adMonetizationActive7dPv']) ? $data['adMonetizationActive7dPv'] : null;
         $this->container['adMonetizationDedupActive7dPv'] = isset($data['adMonetizationDedupActive7dPv']) ? $data['adMonetizationDedupActive7dPv'] : null;
         $this->container['clkRedpocketBtnSubscribePv'] = isset($data['clkRedpocketBtnSubscribePv']) ? $data['clkRedpocketBtnSubscribePv'] : null;
+        $this->container['clkShortcutMenusPv'] = isset($data['clkShortcutMenusPv']) ? $data['clkShortcutMenusPv'] : null;
         $this->container['channelsDetailBtnPv'] = isset($data['channelsDetailBtnPv']) ? $data['channelsDetailBtnPv'] : null;
+        $this->container['zoneHeaderLiveClickCnt'] = isset($data['zoneHeaderLiveClickCnt']) ? $data['zoneHeaderLiveClickCnt'] : null;
+        $this->container['clkSliderCardProductPv'] = isset($data['clkSliderCardProductPv']) ? $data['clkSliderCardProductPv'] : null;
         $this->container['afterAddWecomNegativePv'] = isset($data['afterAddWecomNegativePv']) ? $data['afterAddWecomNegativePv'] : null;
         $this->container['securityLowPriceOrderPv'] = isset($data['securityLowPriceOrderPv']) ? $data['securityLowPriceOrderPv'] : null;
         $this->container['securityHighPriceOrderPv'] = isset($data['securityHighPriceOrderPv']) ? $data['securityHighPriceOrderPv'] : null;
@@ -4737,7 +5044,10 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['purchaseRegActive1dPv'] = isset($data['purchaseRegActive1dPv']) ? $data['purchaseRegActive1dPv'] : null;
         $this->container['purchaseDedupRegActive1dPv'] = isset($data['purchaseDedupRegActive1dPv']) ? $data['purchaseDedupRegActive1dPv'] : null;
         $this->container['purchaseRegActive1dAmount'] = isset($data['purchaseRegActive1dAmount']) ? $data['purchaseRegActive1dAmount'] : null;
+        $this->container['clkHotElementPv'] = isset($data['clkHotElementPv']) ? $data['clkHotElementPv'] : null;
+        $this->container['hotElementCtr'] = isset($data['hotElementCtr']) ? $data['hotElementCtr'] : null;
         $this->container['securityNegativeDedupPv'] = isset($data['securityNegativeDedupPv']) ? $data['securityNegativeDedupPv'] : null;
+        $this->container['clkInterpageBtnPv'] = isset($data['clkInterpageBtnPv']) ? $data['clkInterpageBtnPv'] : null;
         $this->container['adMonetizationPlaRegActive1dMixRoi'] = isset($data['adMonetizationPlaRegActive1dMixRoi']) ? $data['adMonetizationPlaRegActive1dMixRoi'] : null;
         $this->container['adMonetizationPlaRegActive24hMixRoi'] = isset($data['adMonetizationPlaRegActive24hMixRoi']) ? $data['adMonetizationPlaRegActive24hMixRoi'] : null;
         $this->container['realCostAppAutoDownload'] = isset($data['realCostAppAutoDownload']) ? $data['realCostAppAutoDownload'] : null;
@@ -4765,13 +5075,17 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['viewDramaDedupPv'] = isset($data['viewDramaDedupPv']) ? $data['viewDramaDedupPv'] : null;
         $this->container['viewDramaDedupPvRate'] = isset($data['viewDramaDedupPvRate']) ? $data['viewDramaDedupPvRate'] : null;
         $this->container['viewDramaDedupPvCost'] = isset($data['viewDramaDedupPvCost']) ? $data['viewDramaDedupPvCost'] : null;
+        $this->container['clkSellingPointsElementPv'] = isset($data['clkSellingPointsElementPv']) ? $data['clkSellingPointsElementPv'] : null;
         $this->container['visitStoreFirstDedupPv'] = isset($data['visitStoreFirstDedupPv']) ? $data['visitStoreFirstDedupPv'] : null;
+        $this->container['clkFullwidthBackgroundPv'] = isset($data['clkFullwidthBackgroundPv']) ? $data['clkFullwidthBackgroundPv'] : null;
+        $this->container['clkHeaderAreaPv'] = isset($data['clkHeaderAreaPv']) ? $data['clkHeaderAreaPv'] : null;
         $this->container['orderFirstDedupPv'] = isset($data['orderFirstDedupPv']) ? $data['orderFirstDedupPv'] : null;
         $this->container['orderFirstDedupPvCost'] = isset($data['orderFirstDedupPvCost']) ? $data['orderFirstDedupPvCost'] : null;
         $this->container['orderFirstDedupPvRate'] = isset($data['orderFirstDedupPvRate']) ? $data['orderFirstDedupPvRate'] : null;
         $this->container['storePayAmountOff'] = isset($data['storePayAmountOff']) ? $data['storePayAmountOff'] : null;
         $this->container['storePayUvOff'] = isset($data['storePayUvOff']) ? $data['storePayUvOff'] : null;
         $this->container['storePayPvOff'] = isset($data['storePayPvOff']) ? $data['storePayPvOff'] : null;
+        $this->container['clkSellingPointsElementUv'] = isset($data['clkSellingPointsElementUv']) ? $data['clkSellingPointsElementUv'] : null;
         $this->container['orderRefundActive24hPv'] = isset($data['orderRefundActive24hPv']) ? $data['orderRefundActive24hPv'] : null;
         $this->container['orderRefundActive24hRate'] = isset($data['orderRefundActive24hRate']) ? $data['orderRefundActive24hRate'] : null;
         $this->container['orderSettle24hPv'] = isset($data['orderSettle24hPv']) ? $data['orderSettle24hPv'] : null;
@@ -4870,6 +5184,22 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['orderNetRoi'] = isset($data['orderNetRoi']) ? $data['orderNetRoi'] : null;
         $this->container['orderNetPvCost'] = isset($data['orderNetPvCost']) ? $data['orderNetPvCost'] : null;
         $this->container['clkBhAnimPv'] = isset($data['clkBhAnimPv']) ? $data['clkBhAnimPv'] : null;
+        $this->container['clkBredpocketPv'] = isset($data['clkBredpocketPv']) ? $data['clkBredpocketPv'] : null;
+        $this->container['clkBrSubPv'] = isset($data['clkBrSubPv']) ? $data['clkBrSubPv'] : null;
+        $this->container['clkBrSharePv'] = isset($data['clkBrSharePv']) ? $data['clkBrSharePv'] : null;
+        $this->container['clkBrBtnPv'] = isset($data['clkBrBtnPv']) ? $data['clkBrBtnPv'] : null;
+        $this->container['clkBrDrivePv'] = isset($data['clkBrDrivePv']) ? $data['clkBrDrivePv'] : null;
+        $this->container['clkBquickPv'] = isset($data['clkBquickPv']) ? $data['clkBquickPv'] : null;
+        $this->container['clkBappPv'] = isset($data['clkBappPv']) ? $data['clkBappPv'] : null;
+        $this->container['clkBacountPv'] = isset($data['clkBacountPv']) ? $data['clkBacountPv'] : null;
+        $this->container['clkBaMorePv'] = isset($data['clkBaMorePv']) ? $data['clkBaMorePv'] : null;
+        $this->container['clkBmActivityPv'] = isset($data['clkBmActivityPv']) ? $data['clkBmActivityPv'] : null;
+        $this->container['clkBmVerticalPv'] = isset($data['clkBmVerticalPv']) ? $data['clkBmVerticalPv'] : null;
+        $this->container['clkBmPrivilegePv'] = isset($data['clkBmPrivilegePv']) ? $data['clkBmPrivilegePv'] : null;
+        $this->container['clkBmSeriesPv'] = isset($data['clkBmSeriesPv']) ? $data['clkBmSeriesPv'] : null;
+        $this->container['clkBmDetailPv'] = isset($data['clkBmDetailPv']) ? $data['clkBmDetailPv'] : null;
+        $this->container['clkRpsPv'] = isset($data['clkRpsPv']) ? $data['clkRpsPv'] : null;
+        $this->container['sliderPv'] = isset($data['sliderPv']) ? $data['sliderPv'] : null;
         $this->container['ageId'] = isset($data['ageId']) ? $data['ageId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
@@ -17360,6 +17690,126 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets channelsReadOfflinePv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsReadOfflinePv()
+    {
+        return $this->container['channelsReadOfflinePv'];
+    }
+
+    /**
+     * Sets channelsReadOfflinePv
+     *
+     * @param int|mixed $channelsReadOfflinePv channelsReadOfflinePv
+     *
+     * @return $this
+     */
+    public function setChannelsReadOfflinePv($channelsReadOfflinePv)
+    {
+        $this->container['channelsReadOfflinePv'] = $channelsReadOfflinePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsHeartOfflinePv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsHeartOfflinePv()
+    {
+        return $this->container['channelsHeartOfflinePv'];
+    }
+
+    /**
+     * Sets channelsHeartOfflinePv
+     *
+     * @param int|mixed $channelsHeartOfflinePv channelsHeartOfflinePv
+     *
+     * @return $this
+     */
+    public function setChannelsHeartOfflinePv($channelsHeartOfflinePv)
+    {
+        $this->container['channelsHeartOfflinePv'] = $channelsHeartOfflinePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsCommentOfflinePv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsCommentOfflinePv()
+    {
+        return $this->container['channelsCommentOfflinePv'];
+    }
+
+    /**
+     * Sets channelsCommentOfflinePv
+     *
+     * @param int|mixed $channelsCommentOfflinePv channelsCommentOfflinePv
+     *
+     * @return $this
+     */
+    public function setChannelsCommentOfflinePv($channelsCommentOfflinePv)
+    {
+        $this->container['channelsCommentOfflinePv'] = $channelsCommentOfflinePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsShareOfflinePv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsShareOfflinePv()
+    {
+        return $this->container['channelsShareOfflinePv'];
+    }
+
+    /**
+     * Sets channelsShareOfflinePv
+     *
+     * @param int|mixed $channelsShareOfflinePv channelsShareOfflinePv
+     *
+     * @return $this
+     */
+    public function setChannelsShareOfflinePv($channelsShareOfflinePv)
+    {
+        $this->container['channelsShareOfflinePv'] = $channelsShareOfflinePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsFavOfflinePv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsFavOfflinePv()
+    {
+        return $this->container['channelsFavOfflinePv'];
+    }
+
+    /**
+     * Sets channelsFavOfflinePv
+     *
+     * @param int|mixed $channelsFavOfflinePv channelsFavOfflinePv
+     *
+     * @return $this
+     */
+    public function setChannelsFavOfflinePv($channelsFavOfflinePv)
+    {
+        $this->container['channelsFavOfflinePv'] = $channelsFavOfflinePv;
+
+        return $this;
+    }
+
+    /**
      * Gets videoLiveSubscribeCount
      *
      * @return int|mixed
@@ -18584,6 +19034,582 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets clkAdElementPv
+     *
+     * @return int|mixed
+     */
+    public function getClkAdElementPv()
+    {
+        return $this->container['clkAdElementPv'];
+    }
+
+    /**
+     * Sets clkAdElementPv
+     *
+     * @param int|mixed $clkAdElementPv clkAdElementPv
+     *
+     * @return $this
+     */
+    public function setClkAdElementPv($clkAdElementPv)
+    {
+        $this->container['clkAdElementPv'] = $clkAdElementPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsPraisePlaPv
+     *
+     * @return int|mixed
+     */
+    public function getChannelsPraisePlaPv()
+    {
+        return $this->container['channelsPraisePlaPv'];
+    }
+
+    /**
+     * Sets channelsPraisePlaPv
+     *
+     * @param int|mixed $channelsPraisePlaPv channelsPraisePlaPv
+     *
+     * @return $this
+     */
+    public function setChannelsPraisePlaPv($channelsPraisePlaPv)
+    {
+        $this->container['channelsPraisePlaPv'] = $channelsPraisePlaPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRedpocketBtnGetPv
+     *
+     * @return int|mixed
+     */
+    public function getClkRedpocketBtnGetPv()
+    {
+        return $this->container['clkRedpocketBtnGetPv'];
+    }
+
+    /**
+     * Sets clkRedpocketBtnGetPv
+     *
+     * @param int|mixed $clkRedpocketBtnGetPv clkRedpocketBtnGetPv
+     *
+     * @return $this
+     */
+    public function setClkRedpocketBtnGetPv($clkRedpocketBtnGetPv)
+    {
+        $this->container['clkRedpocketBtnGetPv'] = $clkRedpocketBtnGetPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRedpocketBtnSharePv
+     *
+     * @return int|mixed
+     */
+    public function getClkRedpocketBtnSharePv()
+    {
+        return $this->container['clkRedpocketBtnSharePv'];
+    }
+
+    /**
+     * Sets clkRedpocketBtnSharePv
+     *
+     * @param int|mixed $clkRedpocketBtnSharePv clkRedpocketBtnSharePv
+     *
+     * @return $this
+     */
+    public function setClkRedpocketBtnSharePv($clkRedpocketBtnSharePv)
+    {
+        $this->container['clkRedpocketBtnSharePv'] = $clkRedpocketBtnSharePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRedpocketBtnJumpPv
+     *
+     * @return int|mixed
+     */
+    public function getClkRedpocketBtnJumpPv()
+    {
+        return $this->container['clkRedpocketBtnJumpPv'];
+    }
+
+    /**
+     * Sets clkRedpocketBtnJumpPv
+     *
+     * @param int|mixed $clkRedpocketBtnJumpPv clkRedpocketBtnJumpPv
+     *
+     * @return $this
+     */
+    public function setClkRedpocketBtnJumpPv($clkRedpocketBtnJumpPv)
+    {
+        $this->container['clkRedpocketBtnJumpPv'] = $clkRedpocketBtnJumpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkGoodsHeaderPv
+     *
+     * @return int|mixed
+     */
+    public function getClkGoodsHeaderPv()
+    {
+        return $this->container['clkGoodsHeaderPv'];
+    }
+
+    /**
+     * Sets clkGoodsHeaderPv
+     *
+     * @param int|mixed $clkGoodsHeaderPv clkGoodsHeaderPv
+     *
+     * @return $this
+     */
+    public function setClkGoodsHeaderPv($clkGoodsHeaderPv)
+    {
+        $this->container['clkGoodsHeaderPv'] = $clkGoodsHeaderPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkGoodsInfoPv
+     *
+     * @return int|mixed
+     */
+    public function getClkGoodsInfoPv()
+    {
+        return $this->container['clkGoodsInfoPv'];
+    }
+
+    /**
+     * Sets clkGoodsInfoPv
+     *
+     * @param int|mixed $clkGoodsInfoPv clkGoodsInfoPv
+     *
+     * @return $this
+     */
+    public function setClkGoodsInfoPv($clkGoodsInfoPv)
+    {
+        $this->container['clkGoodsInfoPv'] = $clkGoodsInfoPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkGoodsRecommendPv
+     *
+     * @return int|mixed
+     */
+    public function getClkGoodsRecommendPv()
+    {
+        return $this->container['clkGoodsRecommendPv'];
+    }
+
+    /**
+     * Sets clkGoodsRecommendPv
+     *
+     * @param int|mixed $clkGoodsRecommendPv clkGoodsRecommendPv
+     *
+     * @return $this
+     */
+    public function setClkGoodsRecommendPv($clkGoodsRecommendPv)
+    {
+        $this->container['clkGoodsRecommendPv'] = $clkGoodsRecommendPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleShowwindowPv
+     *
+     * @return int|mixed
+     */
+    public function getClkMiddleShowwindowPv()
+    {
+        return $this->container['clkMiddleShowwindowPv'];
+    }
+
+    /**
+     * Sets clkMiddleShowwindowPv
+     *
+     * @param int|mixed $clkMiddleShowwindowPv clkMiddleShowwindowPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleShowwindowPv($clkMiddleShowwindowPv)
+    {
+        $this->container['clkMiddleShowwindowPv'] = $clkMiddleShowwindowPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkFooterPv
+     *
+     * @return int|mixed
+     */
+    public function getClkFooterPv()
+    {
+        return $this->container['clkFooterPv'];
+    }
+
+    /**
+     * Sets clkFooterPv
+     *
+     * @param int|mixed $clkFooterPv clkFooterPv
+     *
+     * @return $this
+     */
+    public function setClkFooterPv($clkFooterPv)
+    {
+        $this->container['clkFooterPv'] = $clkFooterPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleGoodsPv
+     *
+     * @return int|mixed
+     */
+    public function getClkMiddleGoodsPv()
+    {
+        return $this->container['clkMiddleGoodsPv'];
+    }
+
+    /**
+     * Sets clkMiddleGoodsPv
+     *
+     * @param int|mixed $clkMiddleGoodsPv clkMiddleGoodsPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleGoodsPv($clkMiddleGoodsPv)
+    {
+        $this->container['clkMiddleGoodsPv'] = $clkMiddleGoodsPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleBtnPv
+     *
+     * @return int|mixed
+     */
+    public function getClkMiddleBtnPv()
+    {
+        return $this->container['clkMiddleBtnPv'];
+    }
+
+    /**
+     * Sets clkMiddleBtnPv
+     *
+     * @param int|mixed $clkMiddleBtnPv clkMiddleBtnPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleBtnPv($clkMiddleBtnPv)
+    {
+        $this->container['clkMiddleBtnPv'] = $clkMiddleBtnPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleSectionPv
+     *
+     * @return int|mixed
+     */
+    public function getClkMiddleSectionPv()
+    {
+        return $this->container['clkMiddleSectionPv'];
+    }
+
+    /**
+     * Sets clkMiddleSectionPv
+     *
+     * @param int|mixed $clkMiddleSectionPv clkMiddleSectionPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleSectionPv($clkMiddleSectionPv)
+    {
+        $this->container['clkMiddleSectionPv'] = $clkMiddleSectionPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkMiddleGridviewPv
+     *
+     * @return int|mixed
+     */
+    public function getClkMiddleGridviewPv()
+    {
+        return $this->container['clkMiddleGridviewPv'];
+    }
+
+    /**
+     * Sets clkMiddleGridviewPv
+     *
+     * @param int|mixed $clkMiddleGridviewPv clkMiddleGridviewPv
+     *
+     * @return $this
+     */
+    public function setClkMiddleGridviewPv($clkMiddleGridviewPv)
+    {
+        $this->container['clkMiddleGridviewPv'] = $clkMiddleGridviewPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBreakPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBreakPv()
+    {
+        return $this->container['clkBreakPv'];
+    }
+
+    /**
+     * Sets clkBreakPv
+     *
+     * @param int|mixed $clkBreakPv clkBreakPv
+     *
+     * @return $this
+     */
+    public function setClkBreakPv($clkBreakPv)
+    {
+        $this->container['clkBreakPv'] = $clkBreakPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRedpocketShakePv
+     *
+     * @return int|mixed
+     */
+    public function getClkRedpocketShakePv()
+    {
+        return $this->container['clkRedpocketShakePv'];
+    }
+
+    /**
+     * Sets clkRedpocketShakePv
+     *
+     * @param int|mixed $clkRedpocketShakePv clkRedpocketShakePv
+     *
+     * @return $this
+     */
+    public function setClkRedpocketShakePv($clkRedpocketShakePv)
+    {
+        $this->container['clkRedpocketShakePv'] = $clkRedpocketShakePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRelatedVideoPv
+     *
+     * @return int|mixed
+     */
+    public function getClkRelatedVideoPv()
+    {
+        return $this->container['clkRelatedVideoPv'];
+    }
+
+    /**
+     * Sets clkRelatedVideoPv
+     *
+     * @param int|mixed $clkRelatedVideoPv clkRelatedVideoPv
+     *
+     * @return $this
+     */
+    public function setClkRelatedVideoPv($clkRelatedVideoPv)
+    {
+        $this->container['clkRelatedVideoPv'] = $clkRelatedVideoPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBrandPediaPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBrandPediaPv()
+    {
+        return $this->container['clkBrandPediaPv'];
+    }
+
+    /**
+     * Sets clkBrandPediaPv
+     *
+     * @param int|mixed $clkBrandPediaPv clkBrandPediaPv
+     *
+     * @return $this
+     */
+    public function setClkBrandPediaPv($clkBrandPediaPv)
+    {
+        $this->container['clkBrandPediaPv'] = $clkBrandPediaPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkActivityNewsPv
+     *
+     * @return int|mixed
+     */
+    public function getClkActivityNewsPv()
+    {
+        return $this->container['clkActivityNewsPv'];
+    }
+
+    /**
+     * Sets clkActivityNewsPv
+     *
+     * @param int|mixed $clkActivityNewsPv clkActivityNewsPv
+     *
+     * @return $this
+     */
+    public function setClkActivityNewsPv($clkActivityNewsPv)
+    {
+        $this->container['clkActivityNewsPv'] = $clkActivityNewsPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkLeftGridInfoPv
+     *
+     * @return int|mixed
+     */
+    public function getClkLeftGridInfoPv()
+    {
+        return $this->container['clkLeftGridInfoPv'];
+    }
+
+    /**
+     * Sets clkLeftGridInfoPv
+     *
+     * @param int|mixed $clkLeftGridInfoPv clkLeftGridInfoPv
+     *
+     * @return $this
+     */
+    public function setClkLeftGridInfoPv($clkLeftGridInfoPv)
+    {
+        $this->container['clkLeftGridInfoPv'] = $clkLeftGridInfoPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkLeftGridMiddlePv
+     *
+     * @return int|mixed
+     */
+    public function getClkLeftGridMiddlePv()
+    {
+        return $this->container['clkLeftGridMiddlePv'];
+    }
+
+    /**
+     * Sets clkLeftGridMiddlePv
+     *
+     * @param int|mixed $clkLeftGridMiddlePv clkLeftGridMiddlePv
+     *
+     * @return $this
+     */
+    public function setClkLeftGridMiddlePv($clkLeftGridMiddlePv)
+    {
+        $this->container['clkLeftGridMiddlePv'] = $clkLeftGridMiddlePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRightGridPv
+     *
+     * @return int|mixed
+     */
+    public function getClkRightGridPv()
+    {
+        return $this->container['clkRightGridPv'];
+    }
+
+    /**
+     * Sets clkRightGridPv
+     *
+     * @param int|mixed $clkRightGridPv clkRightGridPv
+     *
+     * @return $this
+     */
+    public function setClkRightGridPv($clkRightGridPv)
+    {
+        $this->container['clkRightGridPv'] = $clkRightGridPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnVideoPlayPv
+     *
+     * @return int|mixed
+     */
+    public function getCvsCpnVideoPlayPv()
+    {
+        return $this->container['cvsCpnVideoPlayPv'];
+    }
+
+    /**
+     * Sets cvsCpnVideoPlayPv
+     *
+     * @param int|mixed $cvsCpnVideoPlayPv cvsCpnVideoPlayPv
+     *
+     * @return $this
+     */
+    public function setCvsCpnVideoPlayPv($cvsCpnVideoPlayPv)
+    {
+        $this->container['cvsCpnVideoPlayPv'] = $cvsCpnVideoPlayPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets cvsCpnVideoPlayDuration
+     *
+     * @return double|mixed
+     */
+    public function getCvsCpnVideoPlayDuration()
+    {
+        return $this->container['cvsCpnVideoPlayDuration'];
+    }
+
+    /**
+     * Sets cvsCpnVideoPlayDuration
+     *
+     * @param double|mixed $cvsCpnVideoPlayDuration cvsCpnVideoPlayDuration
+     *
+     * @return $this
+     */
+    public function setCvsCpnVideoPlayDuration($cvsCpnVideoPlayDuration)
+    {
+        $this->container['cvsCpnVideoPlayDuration'] = $cvsCpnVideoPlayDuration;
+
+        return $this;
+    }
+
+    /**
      * Gets adMonetizationCost
      *
      * @return double|mixed
@@ -18752,6 +19778,30 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets clkShortcutMenusPv
+     *
+     * @return int|mixed
+     */
+    public function getClkShortcutMenusPv()
+    {
+        return $this->container['clkShortcutMenusPv'];
+    }
+
+    /**
+     * Sets clkShortcutMenusPv
+     *
+     * @param int|mixed $clkShortcutMenusPv clkShortcutMenusPv
+     *
+     * @return $this
+     */
+    public function setClkShortcutMenusPv($clkShortcutMenusPv)
+    {
+        $this->container['clkShortcutMenusPv'] = $clkShortcutMenusPv;
+
+        return $this;
+    }
+
+    /**
      * Gets channelsDetailBtnPv
      *
      * @return int|mixed
@@ -18771,6 +19821,54 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setChannelsDetailBtnPv($channelsDetailBtnPv)
     {
         $this->container['channelsDetailBtnPv'] = $channelsDetailBtnPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets zoneHeaderLiveClickCnt
+     *
+     * @return int|mixed
+     */
+    public function getZoneHeaderLiveClickCnt()
+    {
+        return $this->container['zoneHeaderLiveClickCnt'];
+    }
+
+    /**
+     * Sets zoneHeaderLiveClickCnt
+     *
+     * @param int|mixed $zoneHeaderLiveClickCnt zoneHeaderLiveClickCnt
+     *
+     * @return $this
+     */
+    public function setZoneHeaderLiveClickCnt($zoneHeaderLiveClickCnt)
+    {
+        $this->container['zoneHeaderLiveClickCnt'] = $zoneHeaderLiveClickCnt;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkSliderCardProductPv
+     *
+     * @return int|mixed
+     */
+    public function getClkSliderCardProductPv()
+    {
+        return $this->container['clkSliderCardProductPv'];
+    }
+
+    /**
+     * Sets clkSliderCardProductPv
+     *
+     * @param int|mixed $clkSliderCardProductPv clkSliderCardProductPv
+     *
+     * @return $this
+     */
+    public function setClkSliderCardProductPv($clkSliderCardProductPv)
+    {
+        $this->container['clkSliderCardProductPv'] = $clkSliderCardProductPv;
 
         return $this;
     }
@@ -20360,6 +21458,54 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets clkHotElementPv
+     *
+     * @return int|mixed
+     */
+    public function getClkHotElementPv()
+    {
+        return $this->container['clkHotElementPv'];
+    }
+
+    /**
+     * Sets clkHotElementPv
+     *
+     * @param int|mixed $clkHotElementPv clkHotElementPv
+     *
+     * @return $this
+     */
+    public function setClkHotElementPv($clkHotElementPv)
+    {
+        $this->container['clkHotElementPv'] = $clkHotElementPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets hotElementCtr
+     *
+     * @return double|mixed
+     */
+    public function getHotElementCtr()
+    {
+        return $this->container['hotElementCtr'];
+    }
+
+    /**
+     * Sets hotElementCtr
+     *
+     * @param double|mixed $hotElementCtr hotElementCtr
+     *
+     * @return $this
+     */
+    public function setHotElementCtr($hotElementCtr)
+    {
+        $this->container['hotElementCtr'] = $hotElementCtr;
+
+        return $this;
+    }
+
+    /**
      * Gets securityNegativeDedupPv
      *
      * @return int|mixed
@@ -20379,6 +21525,30 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setSecurityNegativeDedupPv($securityNegativeDedupPv)
     {
         $this->container['securityNegativeDedupPv'] = $securityNegativeDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkInterpageBtnPv
+     *
+     * @return int|mixed
+     */
+    public function getClkInterpageBtnPv()
+    {
+        return $this->container['clkInterpageBtnPv'];
+    }
+
+    /**
+     * Sets clkInterpageBtnPv
+     *
+     * @param int|mixed $clkInterpageBtnPv clkInterpageBtnPv
+     *
+     * @return $this
+     */
+    public function setClkInterpageBtnPv($clkInterpageBtnPv)
+    {
+        $this->container['clkInterpageBtnPv'] = $clkInterpageBtnPv;
 
         return $this;
     }
@@ -21032,6 +22202,30 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets clkSellingPointsElementPv
+     *
+     * @return int|mixed
+     */
+    public function getClkSellingPointsElementPv()
+    {
+        return $this->container['clkSellingPointsElementPv'];
+    }
+
+    /**
+     * Sets clkSellingPointsElementPv
+     *
+     * @param int|mixed $clkSellingPointsElementPv clkSellingPointsElementPv
+     *
+     * @return $this
+     */
+    public function setClkSellingPointsElementPv($clkSellingPointsElementPv)
+    {
+        $this->container['clkSellingPointsElementPv'] = $clkSellingPointsElementPv;
+
+        return $this;
+    }
+
+    /**
      * Gets visitStoreFirstDedupPv
      *
      * @return int|mixed
@@ -21051,6 +22245,54 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setVisitStoreFirstDedupPv($visitStoreFirstDedupPv)
     {
         $this->container['visitStoreFirstDedupPv'] = $visitStoreFirstDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkFullwidthBackgroundPv
+     *
+     * @return int|mixed
+     */
+    public function getClkFullwidthBackgroundPv()
+    {
+        return $this->container['clkFullwidthBackgroundPv'];
+    }
+
+    /**
+     * Sets clkFullwidthBackgroundPv
+     *
+     * @param int|mixed $clkFullwidthBackgroundPv clkFullwidthBackgroundPv
+     *
+     * @return $this
+     */
+    public function setClkFullwidthBackgroundPv($clkFullwidthBackgroundPv)
+    {
+        $this->container['clkFullwidthBackgroundPv'] = $clkFullwidthBackgroundPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkHeaderAreaPv
+     *
+     * @return int|mixed
+     */
+    public function getClkHeaderAreaPv()
+    {
+        return $this->container['clkHeaderAreaPv'];
+    }
+
+    /**
+     * Sets clkHeaderAreaPv
+     *
+     * @param int|mixed $clkHeaderAreaPv clkHeaderAreaPv
+     *
+     * @return $this
+     */
+    public function setClkHeaderAreaPv($clkHeaderAreaPv)
+    {
+        $this->container['clkHeaderAreaPv'] = $clkHeaderAreaPv;
 
         return $this;
     }
@@ -21195,6 +22437,30 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setStorePayPvOff($storePayPvOff)
     {
         $this->container['storePayPvOff'] = $storePayPvOff;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkSellingPointsElementUv
+     *
+     * @return int|mixed
+     */
+    public function getClkSellingPointsElementUv()
+    {
+        return $this->container['clkSellingPointsElementUv'];
+    }
+
+    /**
+     * Sets clkSellingPointsElementUv
+     *
+     * @param int|mixed $clkSellingPointsElementUv clkSellingPointsElementUv
+     *
+     * @return $this
+     */
+    public function setClkSellingPointsElementUv($clkSellingPointsElementUv)
+    {
+        $this->container['clkSellingPointsElementUv'] = $clkSellingPointsElementUv;
 
         return $this;
     }
@@ -23547,6 +24813,390 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setClkBhAnimPv($clkBhAnimPv)
     {
         $this->container['clkBhAnimPv'] = $clkBhAnimPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBredpocketPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBredpocketPv()
+    {
+        return $this->container['clkBredpocketPv'];
+    }
+
+    /**
+     * Sets clkBredpocketPv
+     *
+     * @param int|mixed $clkBredpocketPv clkBredpocketPv
+     *
+     * @return $this
+     */
+    public function setClkBredpocketPv($clkBredpocketPv)
+    {
+        $this->container['clkBredpocketPv'] = $clkBredpocketPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBrSubPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBrSubPv()
+    {
+        return $this->container['clkBrSubPv'];
+    }
+
+    /**
+     * Sets clkBrSubPv
+     *
+     * @param int|mixed $clkBrSubPv clkBrSubPv
+     *
+     * @return $this
+     */
+    public function setClkBrSubPv($clkBrSubPv)
+    {
+        $this->container['clkBrSubPv'] = $clkBrSubPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBrSharePv
+     *
+     * @return int|mixed
+     */
+    public function getClkBrSharePv()
+    {
+        return $this->container['clkBrSharePv'];
+    }
+
+    /**
+     * Sets clkBrSharePv
+     *
+     * @param int|mixed $clkBrSharePv clkBrSharePv
+     *
+     * @return $this
+     */
+    public function setClkBrSharePv($clkBrSharePv)
+    {
+        $this->container['clkBrSharePv'] = $clkBrSharePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBrBtnPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBrBtnPv()
+    {
+        return $this->container['clkBrBtnPv'];
+    }
+
+    /**
+     * Sets clkBrBtnPv
+     *
+     * @param int|mixed $clkBrBtnPv clkBrBtnPv
+     *
+     * @return $this
+     */
+    public function setClkBrBtnPv($clkBrBtnPv)
+    {
+        $this->container['clkBrBtnPv'] = $clkBrBtnPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBrDrivePv
+     *
+     * @return int|mixed
+     */
+    public function getClkBrDrivePv()
+    {
+        return $this->container['clkBrDrivePv'];
+    }
+
+    /**
+     * Sets clkBrDrivePv
+     *
+     * @param int|mixed $clkBrDrivePv clkBrDrivePv
+     *
+     * @return $this
+     */
+    public function setClkBrDrivePv($clkBrDrivePv)
+    {
+        $this->container['clkBrDrivePv'] = $clkBrDrivePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBquickPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBquickPv()
+    {
+        return $this->container['clkBquickPv'];
+    }
+
+    /**
+     * Sets clkBquickPv
+     *
+     * @param int|mixed $clkBquickPv clkBquickPv
+     *
+     * @return $this
+     */
+    public function setClkBquickPv($clkBquickPv)
+    {
+        $this->container['clkBquickPv'] = $clkBquickPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBappPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBappPv()
+    {
+        return $this->container['clkBappPv'];
+    }
+
+    /**
+     * Sets clkBappPv
+     *
+     * @param int|mixed $clkBappPv clkBappPv
+     *
+     * @return $this
+     */
+    public function setClkBappPv($clkBappPv)
+    {
+        $this->container['clkBappPv'] = $clkBappPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBacountPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBacountPv()
+    {
+        return $this->container['clkBacountPv'];
+    }
+
+    /**
+     * Sets clkBacountPv
+     *
+     * @param int|mixed $clkBacountPv clkBacountPv
+     *
+     * @return $this
+     */
+    public function setClkBacountPv($clkBacountPv)
+    {
+        $this->container['clkBacountPv'] = $clkBacountPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBaMorePv
+     *
+     * @return int|mixed
+     */
+    public function getClkBaMorePv()
+    {
+        return $this->container['clkBaMorePv'];
+    }
+
+    /**
+     * Sets clkBaMorePv
+     *
+     * @param int|mixed $clkBaMorePv clkBaMorePv
+     *
+     * @return $this
+     */
+    public function setClkBaMorePv($clkBaMorePv)
+    {
+        $this->container['clkBaMorePv'] = $clkBaMorePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBmActivityPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBmActivityPv()
+    {
+        return $this->container['clkBmActivityPv'];
+    }
+
+    /**
+     * Sets clkBmActivityPv
+     *
+     * @param int|mixed $clkBmActivityPv clkBmActivityPv
+     *
+     * @return $this
+     */
+    public function setClkBmActivityPv($clkBmActivityPv)
+    {
+        $this->container['clkBmActivityPv'] = $clkBmActivityPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBmVerticalPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBmVerticalPv()
+    {
+        return $this->container['clkBmVerticalPv'];
+    }
+
+    /**
+     * Sets clkBmVerticalPv
+     *
+     * @param int|mixed $clkBmVerticalPv clkBmVerticalPv
+     *
+     * @return $this
+     */
+    public function setClkBmVerticalPv($clkBmVerticalPv)
+    {
+        $this->container['clkBmVerticalPv'] = $clkBmVerticalPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBmPrivilegePv
+     *
+     * @return int|mixed
+     */
+    public function getClkBmPrivilegePv()
+    {
+        return $this->container['clkBmPrivilegePv'];
+    }
+
+    /**
+     * Sets clkBmPrivilegePv
+     *
+     * @param int|mixed $clkBmPrivilegePv clkBmPrivilegePv
+     *
+     * @return $this
+     */
+    public function setClkBmPrivilegePv($clkBmPrivilegePv)
+    {
+        $this->container['clkBmPrivilegePv'] = $clkBmPrivilegePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBmSeriesPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBmSeriesPv()
+    {
+        return $this->container['clkBmSeriesPv'];
+    }
+
+    /**
+     * Sets clkBmSeriesPv
+     *
+     * @param int|mixed $clkBmSeriesPv clkBmSeriesPv
+     *
+     * @return $this
+     */
+    public function setClkBmSeriesPv($clkBmSeriesPv)
+    {
+        $this->container['clkBmSeriesPv'] = $clkBmSeriesPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBmDetailPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBmDetailPv()
+    {
+        return $this->container['clkBmDetailPv'];
+    }
+
+    /**
+     * Sets clkBmDetailPv
+     *
+     * @param int|mixed $clkBmDetailPv clkBmDetailPv
+     *
+     * @return $this
+     */
+    public function setClkBmDetailPv($clkBmDetailPv)
+    {
+        $this->container['clkBmDetailPv'] = $clkBmDetailPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkRpsPv
+     *
+     * @return int|mixed
+     */
+    public function getClkRpsPv()
+    {
+        return $this->container['clkRpsPv'];
+    }
+
+    /**
+     * Sets clkRpsPv
+     *
+     * @param int|mixed $clkRpsPv clkRpsPv
+     *
+     * @return $this
+     */
+    public function setClkRpsPv($clkRpsPv)
+    {
+        $this->container['clkRpsPv'] = $clkRpsPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets sliderPv
+     *
+     * @return int|mixed
+     */
+    public function getSliderPv()
+    {
+        return $this->container['sliderPv'];
+    }
+
+    /**
+     * Sets sliderPv
+     *
+     * @param int|mixed $sliderPv sliderPv
+     *
+     * @return $this
+     */
+    public function setSliderPv($sliderPv)
+    {
+        $this->container['sliderPv'] = $sliderPv;
 
         return $this;
     }

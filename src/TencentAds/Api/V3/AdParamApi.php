@@ -103,15 +103,16 @@ class AdParamApi
      * @param  \TencentAds\Model\V3\MarketingAssetOuterSpec|mixed $marketingAssetOuterSpec marketingAssetOuterSpec (optional)
      * @param  \TencentAds\Model\V3\MpaSpec|mixed $mpaSpec mpaSpec (optional)
      * @param  string|mixed $dynamicAdType dynamicAdType (optional)
+     * @param  string|mixed $adgroupType adgroupType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\AdParamGetResponse|mixed
      */
-    public function adParamGet($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal = null, $marketingCarrierType = null, $marketingTargetType = null, $productCatalogId = null, $marketingAssetOuterSpec = null, $mpaSpec = null, $dynamicAdType = null, $fields = null)
+    public function adParamGet($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal = null, $marketingCarrierType = null, $marketingTargetType = null, $productCatalogId = null, $marketingAssetOuterSpec = null, $mpaSpec = null, $dynamicAdType = null, $adgroupType = null, $fields = null)
     {
-        list($response) = $this->adParamGetWithHttpInfo($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $fields);
+        list($response) = $this->adParamGetWithHttpInfo($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $adgroupType, $fields);
         return $response;
     }
 
@@ -131,16 +132,17 @@ class AdParamApi
      * @param  \TencentAds\Model\V3\MarketingAssetOuterSpec|mixed $marketingAssetOuterSpec (optional)
      * @param  \TencentAds\Model\V3\MpaSpec|mixed $mpaSpec (optional)
      * @param  string|mixed $dynamicAdType (optional)
+     * @param  string|mixed $adgroupType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\AdParamGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function adParamGetWithHttpInfo($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal = null, $marketingCarrierType = null, $marketingTargetType = null, $productCatalogId = null, $marketingAssetOuterSpec = null, $mpaSpec = null, $dynamicAdType = null, $fields = null)
+    public function adParamGetWithHttpInfo($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal = null, $marketingCarrierType = null, $marketingTargetType = null, $productCatalogId = null, $marketingAssetOuterSpec = null, $mpaSpec = null, $dynamicAdType = null, $adgroupType = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\AdParamGetResponse';
-        $request = $this->adParamGetRequest($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $fields);
+        $request = $this->adParamGetRequest($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $adgroupType, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -217,14 +219,15 @@ class AdParamApi
      * @param  \TencentAds\Model\V3\MarketingAssetOuterSpec|mixed $marketingAssetOuterSpec (optional)
      * @param  \TencentAds\Model\V3\MpaSpec|mixed $mpaSpec (optional)
      * @param  string|mixed $dynamicAdType (optional)
+     * @param  string|mixed $adgroupType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function adParamGetAsync($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal = null, $marketingCarrierType = null, $marketingTargetType = null, $productCatalogId = null, $marketingAssetOuterSpec = null, $mpaSpec = null, $dynamicAdType = null, $fields = null)
+    public function adParamGetAsync($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal = null, $marketingCarrierType = null, $marketingTargetType = null, $productCatalogId = null, $marketingAssetOuterSpec = null, $mpaSpec = null, $dynamicAdType = null, $adgroupType = null, $fields = null)
     {
-        return $this->adParamGetAsyncWithHttpInfo($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $fields)
+        return $this->adParamGetAsyncWithHttpInfo($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $adgroupType, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -248,15 +251,16 @@ class AdParamApi
      * @param  \TencentAds\Model\V3\MarketingAssetOuterSpec|mixed $marketingAssetOuterSpec (optional)
      * @param  \TencentAds\Model\V3\MpaSpec|mixed $mpaSpec (optional)
      * @param  string|mixed $dynamicAdType (optional)
+     * @param  string|mixed $adgroupType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function adParamGetAsyncWithHttpInfo($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal = null, $marketingCarrierType = null, $marketingTargetType = null, $productCatalogId = null, $marketingAssetOuterSpec = null, $mpaSpec = null, $dynamicAdType = null, $fields = null)
+    public function adParamGetAsyncWithHttpInfo($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal = null, $marketingCarrierType = null, $marketingTargetType = null, $productCatalogId = null, $marketingAssetOuterSpec = null, $mpaSpec = null, $dynamicAdType = null, $adgroupType = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\AdParamGetResponse';
-        $request = $this->adParamGetRequest($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $fields);
+        $request = $this->adParamGetRequest($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal, $marketingCarrierType, $marketingTargetType, $productCatalogId, $marketingAssetOuterSpec, $mpaSpec, $dynamicAdType, $adgroupType, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -309,12 +313,13 @@ class AdParamApi
      * @param  \TencentAds\Model\V3\MarketingAssetOuterSpec|mixed $marketingAssetOuterSpec (optional)
      * @param  \TencentAds\Model\V3\MpaSpec|mixed $mpaSpec (optional)
      * @param  string|mixed $dynamicAdType (optional)
+     * @param  string|mixed $adgroupType (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function adParamGetRequest($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal = null, $marketingCarrierType = null, $marketingTargetType = null, $productCatalogId = null, $marketingAssetOuterSpec = null, $mpaSpec = null, $dynamicAdType = null, $fields = null)
+    protected function adParamGetRequest($accountId, $marketingGoal, $creativeTemplateId, $siteSet, $marketingSubGoal = null, $marketingCarrierType = null, $marketingTargetType = null, $productCatalogId = null, $marketingAssetOuterSpec = null, $mpaSpec = null, $dynamicAdType = null, $adgroupType = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -394,6 +399,10 @@ class AdParamApi
         // query params
         if ($dynamicAdType !== null) {
             $queryParams['dynamic_ad_type'] = ObjectSerializer::toQueryValue($dynamicAdType);
+        }
+        // query params
+        if ($adgroupType !== null) {
+            $queryParams['adgroup_type'] = ObjectSerializer::toQueryValue($adgroupType);
         }
         // query params
         if (is_array($fields)) {

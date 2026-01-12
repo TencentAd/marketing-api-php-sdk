@@ -1,6 +1,6 @@
 <?php
 /**
- * VideoChannelsContentStruct
+ * AutoDerivedCreativePreference
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * VideoChannelsContentStruct Class Doc Comment
+ * AutoDerivedCreativePreference Class Doc Comment
  *
  * @category Class
- * @description 视频号内容组件
+ * @description 创意增强MAX偏好设置
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
+class AutoDerivedCreativePreference implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'video_channels_content_struct';
+    protected static $swaggerModelName = 'auto_derived_creative_preference';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adExportId' => 'string',
-        'wechatChannelsAccountId' => 'string',
-        'miniGameTrackingParameter' => 'string'
+        'autoDerivedCreativeMethodTypeList' => 'string[]'
     ];
 
     /**
@@ -69,9 +67,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adExportId' => null,
-        'wechatChannelsAccountId' => null,
-        'miniGameTrackingParameter' => null
+        'autoDerivedCreativeMethodTypeList' => null
     ];
 
     /**
@@ -101,9 +97,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adExportId' => 'ad_export_id',
-        'wechatChannelsAccountId' => 'wechat_channels_account_id',
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter'
+        'autoDerivedCreativeMethodTypeList' => 'auto_derived_creative_method_type_list'
     ];
 
     /**
@@ -112,9 +106,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adExportId' => 'setAdExportId',
-        'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter'
+        'autoDerivedCreativeMethodTypeList' => 'setAutoDerivedCreativeMethodTypeList'
     ];
 
     /**
@@ -123,9 +115,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adExportId' => 'getAdExportId',
-        'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter'
+        'autoDerivedCreativeMethodTypeList' => 'getAutoDerivedCreativeMethodTypeList'
     ];
 
     /**
@@ -188,9 +178,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adExportId'] = isset($data['adExportId']) ? $data['adExportId'] : null;
-        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
+        $this->container['autoDerivedCreativeMethodTypeList'] = isset($data['autoDerivedCreativeMethodTypeList']) ? $data['autoDerivedCreativeMethodTypeList'] : null;
     }
 
     /**
@@ -218,73 +206,25 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adExportId
+     * Gets autoDerivedCreativeMethodTypeList
      *
-     * @return string|mixed
+     * @return string[]|mixed
      */
-    public function getAdExportId()
+    public function getAutoDerivedCreativeMethodTypeList()
     {
-        return $this->container['adExportId'];
+        return $this->container['autoDerivedCreativeMethodTypeList'];
     }
 
     /**
-     * Sets adExportId
+     * Sets autoDerivedCreativeMethodTypeList
      *
-     * @param string|mixed $adExportId adExportId
+     * @param string[]|mixed $autoDerivedCreativeMethodTypeList autoDerivedCreativeMethodTypeList
      *
      * @return $this
      */
-    public function setAdExportId($adExportId)
+    public function setAutoDerivedCreativeMethodTypeList($autoDerivedCreativeMethodTypeList)
     {
-        $this->container['adExportId'] = $adExportId;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatChannelsAccountId
-     *
-     * @return string|mixed
-     */
-    public function getWechatChannelsAccountId()
-    {
-        return $this->container['wechatChannelsAccountId'];
-    }
-
-    /**
-     * Sets wechatChannelsAccountId
-     *
-     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
-     *
-     * @return $this
-     */
-    public function setWechatChannelsAccountId($wechatChannelsAccountId)
-    {
-        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameTrackingParameter
-     *
-     * @return string|mixed
-     */
-    public function getMiniGameTrackingParameter()
-    {
-        return $this->container['miniGameTrackingParameter'];
-    }
-
-    /**
-     * Sets miniGameTrackingParameter
-     *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
-     *
-     * @return $this
-     */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
-    {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['autoDerivedCreativeMethodTypeList'] = $autoDerivedCreativeMethodTypeList;
 
         return $this;
     }

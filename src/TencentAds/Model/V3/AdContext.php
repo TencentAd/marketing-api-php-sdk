@@ -71,7 +71,8 @@ class AdContext implements ModelInterface, ArrayAccess
         'optimizationGoalStruct' => '\TencentAds\Model\V3\AdContextOptimizationGoalStruct',
         'mpaSpec' => '\TencentAds\Model\V3\MpaSpec',
         'marketingAssetOuterSpec' => '\TencentAds\Model\V3\MarketingAssetOuterSpec',
-        'dynamicAdType' => '\TencentAds\Model\V3\DynamicAdType'
+        'dynamicAdType' => '\TencentAds\Model\V3\DynamicAdType',
+        'adgroupType' => '\TencentAds\Model\V3\AdgroupType'
     ];
 
     /**
@@ -93,7 +94,8 @@ class AdContext implements ModelInterface, ArrayAccess
         'optimizationGoalStruct' => null,
         'mpaSpec' => null,
         'marketingAssetOuterSpec' => null,
-        'dynamicAdType' => null
+        'dynamicAdType' => null,
+        'adgroupType' => null
     ];
 
     /**
@@ -136,7 +138,8 @@ class AdContext implements ModelInterface, ArrayAccess
         'optimizationGoalStruct' => 'optimization_goal_struct',
         'mpaSpec' => 'mpa_spec',
         'marketingAssetOuterSpec' => 'marketing_asset_outer_spec',
-        'dynamicAdType' => 'dynamic_ad_type'
+        'dynamicAdType' => 'dynamic_ad_type',
+        'adgroupType' => 'adgroup_type'
     ];
 
     /**
@@ -158,7 +161,8 @@ class AdContext implements ModelInterface, ArrayAccess
         'optimizationGoalStruct' => 'setOptimizationGoalStruct',
         'mpaSpec' => 'setMpaSpec',
         'marketingAssetOuterSpec' => 'setMarketingAssetOuterSpec',
-        'dynamicAdType' => 'setDynamicAdType'
+        'dynamicAdType' => 'setDynamicAdType',
+        'adgroupType' => 'setAdgroupType'
     ];
 
     /**
@@ -180,7 +184,8 @@ class AdContext implements ModelInterface, ArrayAccess
         'optimizationGoalStruct' => 'getOptimizationGoalStruct',
         'mpaSpec' => 'getMpaSpec',
         'marketingAssetOuterSpec' => 'getMarketingAssetOuterSpec',
-        'dynamicAdType' => 'getDynamicAdType'
+        'dynamicAdType' => 'getDynamicAdType',
+        'adgroupType' => 'getAdgroupType'
     ];
 
     /**
@@ -257,6 +262,7 @@ class AdContext implements ModelInterface, ArrayAccess
         $this->container['mpaSpec'] = isset($data['mpaSpec']) ? $data['mpaSpec'] : null;
         $this->container['marketingAssetOuterSpec'] = isset($data['marketingAssetOuterSpec']) ? $data['marketingAssetOuterSpec'] : null;
         $this->container['dynamicAdType'] = isset($data['dynamicAdType']) ? $data['dynamicAdType'] : null;
+        $this->container['adgroupType'] = isset($data['adgroupType']) ? $data['adgroupType'] : null;
     }
 
     /**
@@ -615,6 +621,30 @@ class AdContext implements ModelInterface, ArrayAccess
     public function setDynamicAdType($dynamicAdType)
     {
         $this->container['dynamicAdType'] = $dynamicAdType;
+
+        return $this;
+    }
+
+    /**
+     * Gets adgroupType
+     *
+     * @return \TencentAds\Model\V3\AdgroupType|mixed
+     */
+    public function getAdgroupType()
+    {
+        return $this->container['adgroupType'];
+    }
+
+    /**
+     * Sets adgroupType
+     *
+     * @param \TencentAds\Model\V3\AdgroupType|mixed $adgroupType adgroupType
+     *
+     * @return $this
+     */
+    public function setAdgroupType($adgroupType)
+    {
+        $this->container['adgroupType'] = $adgroupType;
 
         return $this;
     }

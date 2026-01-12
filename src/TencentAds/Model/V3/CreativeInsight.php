@@ -1,6 +1,6 @@
 <?php
 /**
- * VideoChannelsContentStruct
+ * CreativeInsight
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * VideoChannelsContentStruct Class Doc Comment
+ * CreativeInsight Class Doc Comment
  *
  * @category Class
- * @description 视频号内容组件
+ * @description 创意洞察数据
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
+class CreativeInsight implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'video_channels_content_struct';
+    protected static $swaggerModelName = 'creative_insight';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adExportId' => 'string',
-        'wechatChannelsAccountId' => 'string',
-        'miniGameTrackingParameter' => 'string'
+        'duplicateComponentIdList' => 'int[]'
     ];
 
     /**
@@ -69,9 +67,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adExportId' => null,
-        'wechatChannelsAccountId' => null,
-        'miniGameTrackingParameter' => null
+        'duplicateComponentIdList' => 'int64'
     ];
 
     /**
@@ -101,9 +97,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adExportId' => 'ad_export_id',
-        'wechatChannelsAccountId' => 'wechat_channels_account_id',
-        'miniGameTrackingParameter' => 'mini_game_tracking_parameter'
+        'duplicateComponentIdList' => 'duplicate_component_id_list'
     ];
 
     /**
@@ -112,9 +106,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adExportId' => 'setAdExportId',
-        'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
-        'miniGameTrackingParameter' => 'setMiniGameTrackingParameter'
+        'duplicateComponentIdList' => 'setDuplicateComponentIdList'
     ];
 
     /**
@@ -123,9 +115,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adExportId' => 'getAdExportId',
-        'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
-        'miniGameTrackingParameter' => 'getMiniGameTrackingParameter'
+        'duplicateComponentIdList' => 'getDuplicateComponentIdList'
     ];
 
     /**
@@ -188,9 +178,7 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adExportId'] = isset($data['adExportId']) ? $data['adExportId'] : null;
-        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
-        $this->container['miniGameTrackingParameter'] = isset($data['miniGameTrackingParameter']) ? $data['miniGameTrackingParameter'] : null;
+        $this->container['duplicateComponentIdList'] = isset($data['duplicateComponentIdList']) ? $data['duplicateComponentIdList'] : null;
     }
 
     /**
@@ -218,73 +206,25 @@ class VideoChannelsContentStruct implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adExportId
+     * Gets duplicateComponentIdList
      *
-     * @return string|mixed
+     * @return int[]|mixed
      */
-    public function getAdExportId()
+    public function getDuplicateComponentIdList()
     {
-        return $this->container['adExportId'];
+        return $this->container['duplicateComponentIdList'];
     }
 
     /**
-     * Sets adExportId
+     * Sets duplicateComponentIdList
      *
-     * @param string|mixed $adExportId adExportId
+     * @param int[]|mixed $duplicateComponentIdList duplicateComponentIdList
      *
      * @return $this
      */
-    public function setAdExportId($adExportId)
+    public function setDuplicateComponentIdList($duplicateComponentIdList)
     {
-        $this->container['adExportId'] = $adExportId;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatChannelsAccountId
-     *
-     * @return string|mixed
-     */
-    public function getWechatChannelsAccountId()
-    {
-        return $this->container['wechatChannelsAccountId'];
-    }
-
-    /**
-     * Sets wechatChannelsAccountId
-     *
-     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
-     *
-     * @return $this
-     */
-    public function setWechatChannelsAccountId($wechatChannelsAccountId)
-    {
-        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets miniGameTrackingParameter
-     *
-     * @return string|mixed
-     */
-    public function getMiniGameTrackingParameter()
-    {
-        return $this->container['miniGameTrackingParameter'];
-    }
-
-    /**
-     * Sets miniGameTrackingParameter
-     *
-     * @param string|mixed $miniGameTrackingParameter miniGameTrackingParameter
-     *
-     * @return $this
-     */
-    public function setMiniGameTrackingParameter($miniGameTrackingParameter)
-    {
-        $this->container['miniGameTrackingParameter'] = $miniGameTrackingParameter;
+        $this->container['duplicateComponentIdList'] = $duplicateComponentIdList;
 
         return $this;
     }
