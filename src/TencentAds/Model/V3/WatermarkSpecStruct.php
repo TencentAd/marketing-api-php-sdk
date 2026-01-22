@@ -1,6 +1,6 @@
 <?php
 /**
- * VideoChannelsContentComponent
+ * WatermarkSpecStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * VideoChannelsContentComponent Class Doc Comment
+ * WatermarkSpecStruct Class Doc Comment
  *
  * @category Class
- * @description 视频号主页视频组件
+ * @description 警示语任务配置
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
+class WatermarkSpecStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'video_channels_content_component';
+    protected static $swaggerModelName = 'watermark_spec_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,7 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'componentId' => 'int',
-        'value' => '\TencentAds\Model\V3\VideoChannelsContentStruct',
-        'isDeleted' => 'bool'
+        'text' => 'string[]'
     ];
 
     /**
@@ -69,9 +67,7 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'componentId' => 'int64',
-        'value' => null,
-        'isDeleted' => null
+        'text' => null
     ];
 
     /**
@@ -101,9 +97,7 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'componentId' => 'component_id',
-        'value' => 'value',
-        'isDeleted' => 'is_deleted'
+        'text' => 'text'
     ];
 
     /**
@@ -112,9 +106,7 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'componentId' => 'setComponentId',
-        'value' => 'setValue',
-        'isDeleted' => 'setIsDeleted'
+        'text' => 'setText'
     ];
 
     /**
@@ -123,9 +115,7 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'componentId' => 'getComponentId',
-        'value' => 'getValue',
-        'isDeleted' => 'getIsDeleted'
+        'text' => 'getText'
     ];
 
     /**
@@ -188,9 +178,7 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
-        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
-        $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
+        $this->container['text'] = isset($data['text']) ? $data['text'] : null;
     }
 
     /**
@@ -218,73 +206,25 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets componentId
+     * Gets text
      *
-     * @return int|mixed
+     * @return string[]|mixed
      */
-    public function getComponentId()
+    public function getText()
     {
-        return $this->container['componentId'];
+        return $this->container['text'];
     }
 
     /**
-     * Sets componentId
+     * Sets text
      *
-     * @param int|mixed $componentId componentId
+     * @param string[]|mixed $text text
      *
      * @return $this
      */
-    public function setComponentId($componentId)
+    public function setText($text)
     {
-        $this->container['componentId'] = $componentId;
-
-        return $this;
-    }
-
-    /**
-     * Gets value
-     *
-     * @return \TencentAds\Model\V3\VideoChannelsContentStruct|mixed
-     */
-    public function getValue()
-    {
-        return $this->container['value'];
-    }
-
-    /**
-     * Sets value
-     *
-     * @param \TencentAds\Model\V3\VideoChannelsContentStruct|mixed $value value
-     *
-     * @return $this
-     */
-    public function setValue($value)
-    {
-        $this->container['value'] = $value;
-
-        return $this;
-    }
-
-    /**
-     * Gets isDeleted
-     *
-     * @return bool|mixed
-     */
-    public function getIsDeleted()
-    {
-        return $this->container['isDeleted'];
-    }
-
-    /**
-     * Sets isDeleted
-     *
-     * @param bool|mixed $isDeleted isDeleted
-     *
-     * @return $this
-     */
-    public function setIsDeleted($isDeleted)
-    {
-        $this->container['isDeleted'] = $isDeleted;
+        $this->container['text'] = $text;
 
         return $this;
     }

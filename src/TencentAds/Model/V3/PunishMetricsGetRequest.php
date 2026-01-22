@@ -65,7 +65,8 @@ class PunishMetricsGetRequest implements ModelInterface, ArrayAccess
         'zcAgentGroup' => 'string',
         'firstLevelIndustryName' => 'string',
         'secondLevelIndustryName' => 'string',
-        'pageConf' => '\TencentAds\Model\V3\PunishMetricsPageConf'
+        'pageNum' => 'int',
+        'pageSize' => 'int'
     ];
 
     /**
@@ -82,7 +83,8 @@ class PunishMetricsGetRequest implements ModelInterface, ArrayAccess
         'zcAgentGroup' => null,
         'firstLevelIndustryName' => null,
         'secondLevelIndustryName' => null,
-        'pageConf' => null
+        'pageNum' => 'int64',
+        'pageSize' => 'int64'
     ];
 
     /**
@@ -120,7 +122,8 @@ class PunishMetricsGetRequest implements ModelInterface, ArrayAccess
         'zcAgentGroup' => 'zc_agent_group',
         'firstLevelIndustryName' => 'first_level_industry_name',
         'secondLevelIndustryName' => 'second_level_industry_name',
-        'pageConf' => 'page_conf'
+        'pageNum' => 'page_num',
+        'pageSize' => 'page_size'
     ];
 
     /**
@@ -137,7 +140,8 @@ class PunishMetricsGetRequest implements ModelInterface, ArrayAccess
         'zcAgentGroup' => 'setZcAgentGroup',
         'firstLevelIndustryName' => 'setFirstLevelIndustryName',
         'secondLevelIndustryName' => 'setSecondLevelIndustryName',
-        'pageConf' => 'setPageConf'
+        'pageNum' => 'setPageNum',
+        'pageSize' => 'setPageSize'
     ];
 
     /**
@@ -154,7 +158,8 @@ class PunishMetricsGetRequest implements ModelInterface, ArrayAccess
         'zcAgentGroup' => 'getZcAgentGroup',
         'firstLevelIndustryName' => 'getFirstLevelIndustryName',
         'secondLevelIndustryName' => 'getSecondLevelIndustryName',
-        'pageConf' => 'getPageConf'
+        'pageNum' => 'getPageNum',
+        'pageSize' => 'getPageSize'
     ];
 
     /**
@@ -225,7 +230,8 @@ class PunishMetricsGetRequest implements ModelInterface, ArrayAccess
         $this->container['zcAgentGroup'] = isset($data['zcAgentGroup']) ? $data['zcAgentGroup'] : null;
         $this->container['firstLevelIndustryName'] = isset($data['firstLevelIndustryName']) ? $data['firstLevelIndustryName'] : null;
         $this->container['secondLevelIndustryName'] = isset($data['secondLevelIndustryName']) ? $data['secondLevelIndustryName'] : null;
-        $this->container['pageConf'] = isset($data['pageConf']) ? $data['pageConf'] : null;
+        $this->container['pageNum'] = isset($data['pageNum']) ? $data['pageNum'] : null;
+        $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
     }
 
     /**
@@ -445,25 +451,49 @@ class PunishMetricsGetRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets pageConf
+     * Gets pageNum
      *
-     * @return \TencentAds\Model\V3\PunishMetricsPageConf|mixed
+     * @return int|mixed
      */
-    public function getPageConf()
+    public function getPageNum()
     {
-        return $this->container['pageConf'];
+        return $this->container['pageNum'];
     }
 
     /**
-     * Sets pageConf
+     * Sets pageNum
      *
-     * @param \TencentAds\Model\V3\PunishMetricsPageConf|mixed $pageConf pageConf
+     * @param int|mixed $pageNum pageNum
      *
      * @return $this
      */
-    public function setPageConf($pageConf)
+    public function setPageNum($pageNum)
     {
-        $this->container['pageConf'] = $pageConf;
+        $this->container['pageNum'] = $pageNum;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageSize
+     *
+     * @return int|mixed
+     */
+    public function getPageSize()
+    {
+        return $this->container['pageSize'];
+    }
+
+    /**
+     * Sets pageSize
+     *
+     * @param int|mixed $pageSize pageSize
+     *
+     * @return $this
+     */
+    public function setPageSize($pageSize)
+    {
+        $this->container['pageSize'] = $pageSize;
 
         return $this;
     }

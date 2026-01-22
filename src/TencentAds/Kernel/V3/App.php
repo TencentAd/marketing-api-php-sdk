@@ -121,6 +121,7 @@ use TencentAds\Container\V3\MarketingTargetAssetPropertiesApiContainer;
 use TencentAds\Container\V3\MarketingTargetAssetPropertyValuesApiContainer;
 use TencentAds\Container\V3\MarketingTargetAssetsApiContainer;
 use TencentAds\Container\V3\MarketingTargetTypesApiContainer;
+use TencentAds\Container\V3\MaterialAsyncTasksApiContainer;
 use TencentAds\Container\V3\MaterialDcasetApiContainer;
 use TencentAds\Container\V3\MaterialDcatagApiContainer;
 use TencentAds\Container\V3\MaterialLabelsApiContainer;
@@ -593,6 +594,9 @@ class App
 
     /** @var MarketingTargetTypesApiContainer */
     public $marketingTargetTypesApiContainer;
+
+    /** @var MaterialAsyncTasksApiContainer */
+    public $materialAsyncTasksApiContainer;
 
     /** @var MaterialDcasetApiContainer */
     public $materialDcasetApiContainer;
@@ -2600,6 +2604,20 @@ class App
             $this->marketingTargetTypesApiContainer = $container;
         }
         return $this->marketingTargetTypesApiContainer;
+    }
+
+
+    /**
+     * @return MaterialAsyncTasksApiContainer
+     */
+    public function materialAsyncTasks()
+    {
+        if (empty($this->materialAsyncTasksApiContainer)) {
+            $container = new MaterialAsyncTasksApiContainer();
+            $container->init($this, $this->getClient());
+            $this->materialAsyncTasksApiContainer = $container;
+        }
+        return $this->materialAsyncTasksApiContainer;
     }
 
 

@@ -153,6 +153,7 @@ class OptimizationGoal
     const _30_DAY_UNSUBSCRIBE_RATE = 'OPTIMIZATIONGOAL_30DAY_UNSUBSCRIBE_RATE';
     const NET_PROFIT_24_H = 'OPTIMIZATIONGOAL_NET_PROFIT_24H';
     const EFFECTIVE_INSURE = 'OPTIMIZATIONGOAL_EFFECTIVE_INSURE';
+    const COLLECT = 'OPTIMIZATIONGOAL_COLLECT';
     
     /**
      * Gets allowable values of the enum
@@ -270,6 +271,7 @@ class OptimizationGoal
             self::_30_DAY_UNSUBSCRIBE_RATE,
             self::NET_PROFIT_24_H,
             self::EFFECTIVE_INSURE,
+            self::COLLECT,
         ];
     }
 }

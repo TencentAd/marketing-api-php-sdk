@@ -161,6 +161,7 @@ class OptimizationGoal
     const CLUE_PAY_SUCCEED = 'OPTIMIZATIONGOAL_CLUE_PAY_SUCCEED';
     const _30_DAY_UNSUBSCRIBE_RATE = 'OPTIMIZATIONGOAL_30DAY_UNSUBSCRIBE_RATE';
     const EFFECTIVE_INSURE = 'OPTIMIZATIONGOAL_EFFECTIVE_INSURE';
+    const COLLECT = 'OPTIMIZATIONGOAL_COLLECT';
     
     /**
      * Gets allowable values of the enum
@@ -286,6 +287,7 @@ class OptimizationGoal
             self::CLUE_PAY_SUCCEED,
             self::_30_DAY_UNSUBSCRIBE_RATE,
             self::EFFECTIVE_INSURE,
+            self::COLLECT,
         ];
     }
 }

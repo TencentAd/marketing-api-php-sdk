@@ -77,7 +77,8 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
         'reviewBeginTime' => 'string',
         'reviewEndTime' => 'string',
         'queryAccountIdList' => 'int[]',
-        'pageConf' => '\TencentAds\Model\V3\PunishDetailPageConf'
+        'pageNum' => 'int',
+        'pageSize' => 'int'
     ];
 
     /**
@@ -106,7 +107,8 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
         'reviewBeginTime' => null,
         'reviewEndTime' => null,
         'queryAccountIdList' => 'int64',
-        'pageConf' => null
+        'pageNum' => 'int64',
+        'pageSize' => 'int64'
     ];
 
     /**
@@ -156,7 +158,8 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
         'reviewBeginTime' => 'review_begin_time',
         'reviewEndTime' => 'review_end_time',
         'queryAccountIdList' => 'query_account_id_list',
-        'pageConf' => 'page_conf'
+        'pageNum' => 'page_num',
+        'pageSize' => 'page_size'
     ];
 
     /**
@@ -185,7 +188,8 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
         'reviewBeginTime' => 'setReviewBeginTime',
         'reviewEndTime' => 'setReviewEndTime',
         'queryAccountIdList' => 'setQueryAccountIdList',
-        'pageConf' => 'setPageConf'
+        'pageNum' => 'setPageNum',
+        'pageSize' => 'setPageSize'
     ];
 
     /**
@@ -214,7 +218,8 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
         'reviewBeginTime' => 'getReviewBeginTime',
         'reviewEndTime' => 'getReviewEndTime',
         'queryAccountIdList' => 'getQueryAccountIdList',
-        'pageConf' => 'getPageConf'
+        'pageNum' => 'getPageNum',
+        'pageSize' => 'getPageSize'
     ];
 
     /**
@@ -297,7 +302,8 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
         $this->container['reviewBeginTime'] = isset($data['reviewBeginTime']) ? $data['reviewBeginTime'] : null;
         $this->container['reviewEndTime'] = isset($data['reviewEndTime']) ? $data['reviewEndTime'] : null;
         $this->container['queryAccountIdList'] = isset($data['queryAccountIdList']) ? $data['queryAccountIdList'] : null;
-        $this->container['pageConf'] = isset($data['pageConf']) ? $data['pageConf'] : null;
+        $this->container['pageNum'] = isset($data['pageNum']) ? $data['pageNum'] : null;
+        $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
     }
 
     /**
@@ -805,25 +811,49 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets pageConf
+     * Gets pageNum
      *
-     * @return \TencentAds\Model\V3\PunishDetailPageConf|mixed
+     * @return int|mixed
      */
-    public function getPageConf()
+    public function getPageNum()
     {
-        return $this->container['pageConf'];
+        return $this->container['pageNum'];
     }
 
     /**
-     * Sets pageConf
+     * Sets pageNum
      *
-     * @param \TencentAds\Model\V3\PunishDetailPageConf|mixed $pageConf pageConf
+     * @param int|mixed $pageNum pageNum
      *
      * @return $this
      */
-    public function setPageConf($pageConf)
+    public function setPageNum($pageNum)
     {
-        $this->container['pageConf'] = $pageConf;
+        $this->container['pageNum'] = $pageNum;
+
+        return $this;
+    }
+
+    /**
+     * Gets pageSize
+     *
+     * @return int|mixed
+     */
+    public function getPageSize()
+    {
+        return $this->container['pageSize'];
+    }
+
+    /**
+     * Sets pageSize
+     *
+     * @param int|mixed $pageSize pageSize
+     *
+     * @return $this
+     */
+    public function setPageSize($pageSize)
+    {
+        $this->container['pageSize'] = $pageSize;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * VideoChannelsContentComponent
+ * MaterialAsyncTaskFilteringStruct
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * VideoChannelsContentComponent Class Doc Comment
+ * MaterialAsyncTaskFilteringStruct Class Doc Comment
  *
  * @category Class
- * @description 视频号主页视频组件
+ * @description 过滤条件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
+class MaterialAsyncTaskFilteringStruct implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'video_channels_content_component';
+    protected static $swaggerModelName = 'material_async_task_filtering_struct';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,9 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'componentId' => 'int',
-        'value' => '\TencentAds\Model\V3\VideoChannelsContentStruct',
-        'isDeleted' => 'bool'
+        'field' => 'string',
+        'operator' => '\TencentAds\Model\V3\FilterOperator',
+        'values' => 'string[]'
     ];
 
     /**
@@ -69,9 +69,9 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'componentId' => 'int64',
-        'value' => null,
-        'isDeleted' => null
+        'field' => null,
+        'operator' => null,
+        'values' => null
     ];
 
     /**
@@ -101,9 +101,9 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'componentId' => 'component_id',
-        'value' => 'value',
-        'isDeleted' => 'is_deleted'
+        'field' => 'field',
+        'operator' => 'operator',
+        'values' => 'values'
     ];
 
     /**
@@ -112,9 +112,9 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'componentId' => 'setComponentId',
-        'value' => 'setValue',
-        'isDeleted' => 'setIsDeleted'
+        'field' => 'setField',
+        'operator' => 'setOperator',
+        'values' => 'setValues'
     ];
 
     /**
@@ -123,9 +123,9 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'componentId' => 'getComponentId',
-        'value' => 'getValue',
-        'isDeleted' => 'getIsDeleted'
+        'field' => 'getField',
+        'operator' => 'getOperator',
+        'values' => 'getValues'
     ];
 
     /**
@@ -188,9 +188,9 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
-        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
-        $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
+        $this->container['field'] = isset($data['field']) ? $data['field'] : null;
+        $this->container['operator'] = isset($data['operator']) ? $data['operator'] : null;
+        $this->container['values'] = isset($data['values']) ? $data['values'] : null;
     }
 
     /**
@@ -218,73 +218,73 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets componentId
+     * Gets field
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getComponentId()
+    public function getField()
     {
-        return $this->container['componentId'];
+        return $this->container['field'];
     }
 
     /**
-     * Sets componentId
+     * Sets field
      *
-     * @param int|mixed $componentId componentId
+     * @param string|mixed $field field
      *
      * @return $this
      */
-    public function setComponentId($componentId)
+    public function setField($field)
     {
-        $this->container['componentId'] = $componentId;
+        $this->container['field'] = $field;
 
         return $this;
     }
 
     /**
-     * Gets value
+     * Gets operator
      *
-     * @return \TencentAds\Model\V3\VideoChannelsContentStruct|mixed
+     * @return \TencentAds\Model\V3\FilterOperator|mixed
      */
-    public function getValue()
+    public function getOperator()
     {
-        return $this->container['value'];
+        return $this->container['operator'];
     }
 
     /**
-     * Sets value
+     * Sets operator
      *
-     * @param \TencentAds\Model\V3\VideoChannelsContentStruct|mixed $value value
+     * @param \TencentAds\Model\V3\FilterOperator|mixed $operator operator
      *
      * @return $this
      */
-    public function setValue($value)
+    public function setOperator($operator)
     {
-        $this->container['value'] = $value;
+        $this->container['operator'] = $operator;
 
         return $this;
     }
 
     /**
-     * Gets isDeleted
+     * Gets values
      *
-     * @return bool|mixed
+     * @return string[]|mixed
      */
-    public function getIsDeleted()
+    public function getValues()
     {
-        return $this->container['isDeleted'];
+        return $this->container['values'];
     }
 
     /**
-     * Sets isDeleted
+     * Sets values
      *
-     * @param bool|mixed $isDeleted isDeleted
+     * @param string[]|mixed $values values
      *
      * @return $this
      */
-    public function setIsDeleted($isDeleted)
+    public function setValues($values)
     {
-        $this->container['isDeleted'] = $isDeleted;
+        $this->container['values'] = $values;
 
         return $this;
     }

@@ -695,6 +695,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'adMonetizationActive7dPv' => 'int',
         'adMonetizationDedupActive7dPv' => 'int',
         'clkRedpocketBtnSubscribePv' => 'int',
+        'clkBlessingCardPv' => 'int',
         'clkShortcutMenusPv' => 'int',
         'channelsDetailBtnPv' => 'int',
         'zoneHeaderLiveClickCnt' => 'int',
@@ -1597,6 +1598,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'adMonetizationActive7dPv' => 'int64',
         'adMonetizationDedupActive7dPv' => 'int64',
         'clkRedpocketBtnSubscribePv' => 'int64',
+        'clkBlessingCardPv' => 'int64',
         'clkShortcutMenusPv' => 'int64',
         'channelsDetailBtnPv' => 'int64',
         'zoneHeaderLiveClickCnt' => 'int64',
@@ -2520,6 +2522,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'adMonetizationActive7dPv' => 'ad_monetization_active_7d_pv',
         'adMonetizationDedupActive7dPv' => 'ad_monetization_dedup_active_7d_pv',
         'clkRedpocketBtnSubscribePv' => 'clk_redpocket_btn_subscribe_pv',
+        'clkBlessingCardPv' => 'clk_blessing_card_pv',
         'clkShortcutMenusPv' => 'clk_shortcut_menus_pv',
         'channelsDetailBtnPv' => 'channels_detail_btn_pv',
         'zoneHeaderLiveClickCnt' => 'zone_header_live_click_cnt',
@@ -3422,6 +3425,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'adMonetizationActive7dPv' => 'setAdMonetizationActive7dPv',
         'adMonetizationDedupActive7dPv' => 'setAdMonetizationDedupActive7dPv',
         'clkRedpocketBtnSubscribePv' => 'setClkRedpocketBtnSubscribePv',
+        'clkBlessingCardPv' => 'setClkBlessingCardPv',
         'clkShortcutMenusPv' => 'setClkShortcutMenusPv',
         'channelsDetailBtnPv' => 'setChannelsDetailBtnPv',
         'zoneHeaderLiveClickCnt' => 'setZoneHeaderLiveClickCnt',
@@ -4324,6 +4328,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         'adMonetizationActive7dPv' => 'getAdMonetizationActive7dPv',
         'adMonetizationDedupActive7dPv' => 'getAdMonetizationDedupActive7dPv',
         'clkRedpocketBtnSubscribePv' => 'getClkRedpocketBtnSubscribePv',
+        'clkBlessingCardPv' => 'getClkBlessingCardPv',
         'clkShortcutMenusPv' => 'getClkShortcutMenusPv',
         'channelsDetailBtnPv' => 'getChannelsDetailBtnPv',
         'zoneHeaderLiveClickCnt' => 'getZoneHeaderLiveClickCnt',
@@ -5280,6 +5285,7 @@ class ReportStruct implements ModelInterface, ArrayAccess
         $this->container['adMonetizationActive7dPv'] = isset($data['adMonetizationActive7dPv']) ? $data['adMonetizationActive7dPv'] : null;
         $this->container['adMonetizationDedupActive7dPv'] = isset($data['adMonetizationDedupActive7dPv']) ? $data['adMonetizationDedupActive7dPv'] : null;
         $this->container['clkRedpocketBtnSubscribePv'] = isset($data['clkRedpocketBtnSubscribePv']) ? $data['clkRedpocketBtnSubscribePv'] : null;
+        $this->container['clkBlessingCardPv'] = isset($data['clkBlessingCardPv']) ? $data['clkBlessingCardPv'] : null;
         $this->container['clkShortcutMenusPv'] = isset($data['clkShortcutMenusPv']) ? $data['clkShortcutMenusPv'] : null;
         $this->container['channelsDetailBtnPv'] = isset($data['channelsDetailBtnPv']) ? $data['channelsDetailBtnPv'] : null;
         $this->container['zoneHeaderLiveClickCnt'] = isset($data['zoneHeaderLiveClickCnt']) ? $data['zoneHeaderLiveClickCnt'] : null;
@@ -20847,6 +20853,30 @@ class ReportStruct implements ModelInterface, ArrayAccess
     public function setClkRedpocketBtnSubscribePv($clkRedpocketBtnSubscribePv)
     {
         $this->container['clkRedpocketBtnSubscribePv'] = $clkRedpocketBtnSubscribePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBlessingCardPv
+     *
+     * @return int|mixed
+     */
+    public function getClkBlessingCardPv()
+    {
+        return $this->container['clkBlessingCardPv'];
+    }
+
+    /**
+     * Sets clkBlessingCardPv
+     *
+     * @param int|mixed $clkBlessingCardPv clkBlessingCardPv
+     *
+     * @return $this
+     */
+    public function setClkBlessingCardPv($clkBlessingCardPv)
+    {
+        $this->container['clkBlessingCardPv'] = $clkBlessingCardPv;
 
         return $this;
     }

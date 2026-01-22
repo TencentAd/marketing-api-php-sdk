@@ -1,6 +1,6 @@
 <?php
 /**
- * VideoChannelsContentComponent
+ * MaterialAsyncTasksGetResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * VideoChannelsContentComponent Class Doc Comment
+ * MaterialAsyncTasksGetResponse Class Doc Comment
  *
  * @category Class
- * @description 视频号主页视频组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
+class MaterialAsyncTasksGetResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'video_channels_content_component';
+    protected static $swaggerModelName = 'MaterialAsyncTasksGetResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,11 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'componentId' => 'int',
-        'value' => '\TencentAds\Model\V3\VideoChannelsContentStruct',
-        'isDeleted' => 'bool'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]',
+        'data' => '\TencentAds\Model\V3\MaterialAsyncTasksGetResponseData'
     ];
 
     /**
@@ -69,9 +70,11 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'componentId' => 'int64',
-        'value' => null,
-        'isDeleted' => null
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null,
+        'data' => null
     ];
 
     /**
@@ -101,9 +104,11 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'componentId' => 'component_id',
-        'value' => 'value',
-        'isDeleted' => 'is_deleted'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors',
+        'data' => 'data'
     ];
 
     /**
@@ -112,9 +117,11 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'componentId' => 'setComponentId',
-        'value' => 'setValue',
-        'isDeleted' => 'setIsDeleted'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors',
+        'data' => 'setData'
     ];
 
     /**
@@ -123,9 +130,11 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'componentId' => 'getComponentId',
-        'value' => 'getValue',
-        'isDeleted' => 'getIsDeleted'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors',
+        'data' => 'getData'
     ];
 
     /**
@@ -188,9 +197,11 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
-        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
-        $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
+        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
     /**
@@ -218,73 +229,121 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets componentId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getComponentId()
+    public function getCode()
     {
-        return $this->container['componentId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets componentId
+     * Sets code
      *
-     * @param int|mixed $componentId componentId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setComponentId($componentId)
+    public function setCode($code)
     {
-        $this->container['componentId'] = $componentId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets value
+     * Gets message
      *
-     * @return \TencentAds\Model\V3\VideoChannelsContentStruct|mixed
+     * @return string|mixed
      */
-    public function getValue()
+    public function getMessage()
     {
-        return $this->container['value'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets value
+     * Sets message
      *
-     * @param \TencentAds\Model\V3\VideoChannelsContentStruct|mixed $value value
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setValue($value)
+    public function setMessage($message)
     {
-        $this->container['value'] = $value;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets isDeleted
+     * Gets messageCn
      *
-     * @return bool|mixed
+     * @return string|mixed
      */
-    public function getIsDeleted()
+    public function getMessageCn()
     {
-        return $this->container['isDeleted'];
+        return $this->container['messageCn'];
     }
 
     /**
-     * Sets isDeleted
+     * Sets messageCn
      *
-     * @param bool|mixed $isDeleted isDeleted
+     * @param string|mixed $messageCn messageCn
      *
      * @return $this
      */
-    public function setIsDeleted($isDeleted)
+    public function setMessageCn($messageCn)
     {
-        $this->container['isDeleted'] = $isDeleted;
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
+
+        return $this;
+    }
+
+    /**
+     * Gets data
+     *
+     * @return \TencentAds\Model\V3\MaterialAsyncTasksGetResponseData|mixed
+     */
+    public function getData()
+    {
+        return $this->container['data'];
+    }
+
+    /**
+     * Sets data
+     *
+     * @param \TencentAds\Model\V3\MaterialAsyncTasksGetResponseData|mixed $data data
+     *
+     * @return $this
+     */
+    public function setData($data)
+    {
+        $this->container['data'] = $data;
 
         return $this;
     }

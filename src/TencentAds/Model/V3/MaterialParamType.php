@@ -1,6 +1,6 @@
 <?php
 /**
- * TemplateType
+ * MaterialParamType
  *
  * PHP version 5
  *
@@ -31,21 +31,21 @@ namespace TencentAds\Model\V3;
 use \TencentAds\ObjectSerializer;
 
 /**
- * TemplateType Class Doc Comment
+ * MaterialParamType Class Doc Comment
  *
  * @category Class
- * @description 素材类型
+ * @description 素材传参类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class TemplateType
+class MaterialParamType
 {
     /**
      * Possible values of this enum
      */
-    const IMAGE = 'IMAGE';
-    const VIDEO = 'VIDEO';
+    const ID = 'MATERIAL_PARAM_TYPE_ID';
+    const URL = 'MATERIAL_PARAM_TYPE_URL';
     
     /**
      * Gets allowable values of the enum
@@ -54,8 +54,8 @@ class TemplateType
     public static function getAllowableEnumValues()
     {
         return [
-            self::IMAGE,
-            self::VIDEO,
+            self::ID,
+            self::URL,
         ];
     }
 }

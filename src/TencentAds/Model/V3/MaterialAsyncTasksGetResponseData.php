@@ -1,6 +1,6 @@
 <?php
 /**
- * VideoChannelsContentComponent
+ * MaterialAsyncTasksGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * VideoChannelsContentComponent Class Doc Comment
+ * MaterialAsyncTasksGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 视频号主页视频组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
+class MaterialAsyncTasksGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'video_channels_content_component';
+    protected static $swaggerModelName = 'MaterialAsyncTasksGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,8 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'componentId' => 'int',
-        'value' => '\TencentAds\Model\V3\VideoChannelsContentStruct',
-        'isDeleted' => 'bool'
+        'list' => '\TencentAds\Model\V3\MaterialAsyncTasksGetListStruct[]',
+        'pageInfo' => '\TencentAds\Model\V3\PageInfo'
     ];
 
     /**
@@ -69,9 +67,8 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'componentId' => 'int64',
-        'value' => null,
-        'isDeleted' => null
+        'list' => null,
+        'pageInfo' => null
     ];
 
     /**
@@ -101,9 +98,8 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'componentId' => 'component_id',
-        'value' => 'value',
-        'isDeleted' => 'is_deleted'
+        'list' => 'list',
+        'pageInfo' => 'page_info'
     ];
 
     /**
@@ -112,9 +108,8 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'componentId' => 'setComponentId',
-        'value' => 'setValue',
-        'isDeleted' => 'setIsDeleted'
+        'list' => 'setList',
+        'pageInfo' => 'setPageInfo'
     ];
 
     /**
@@ -123,9 +118,8 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'componentId' => 'getComponentId',
-        'value' => 'getValue',
-        'isDeleted' => 'getIsDeleted'
+        'list' => 'getList',
+        'pageInfo' => 'getPageInfo'
     ];
 
     /**
@@ -188,9 +182,8 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
-        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
-        $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
+        $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['pageInfo'] = isset($data['pageInfo']) ? $data['pageInfo'] : null;
     }
 
     /**
@@ -218,73 +211,49 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets componentId
+     * Gets list
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\MaterialAsyncTasksGetListStruct[]|mixed
      */
-    public function getComponentId()
+    public function getList()
     {
-        return $this->container['componentId'];
+        return $this->container['list'];
     }
 
     /**
-     * Sets componentId
+     * Sets list
      *
-     * @param int|mixed $componentId componentId
+     * @param \TencentAds\Model\V3\MaterialAsyncTasksGetListStruct[]|mixed $list list
      *
      * @return $this
      */
-    public function setComponentId($componentId)
+    public function setList($list)
     {
-        $this->container['componentId'] = $componentId;
+        $this->container['list'] = $list;
 
         return $this;
     }
 
     /**
-     * Gets value
+     * Gets pageInfo
      *
-     * @return \TencentAds\Model\V3\VideoChannelsContentStruct|mixed
+     * @return \TencentAds\Model\V3\PageInfo|mixed
      */
-    public function getValue()
+    public function getPageInfo()
     {
-        return $this->container['value'];
+        return $this->container['pageInfo'];
     }
 
     /**
-     * Sets value
+     * Sets pageInfo
      *
-     * @param \TencentAds\Model\V3\VideoChannelsContentStruct|mixed $value value
+     * @param \TencentAds\Model\V3\PageInfo|mixed $pageInfo pageInfo
      *
      * @return $this
      */
-    public function setValue($value)
+    public function setPageInfo($pageInfo)
     {
-        $this->container['value'] = $value;
-
-        return $this;
-    }
-
-    /**
-     * Gets isDeleted
-     *
-     * @return bool|mixed
-     */
-    public function getIsDeleted()
-    {
-        return $this->container['isDeleted'];
-    }
-
-    /**
-     * Sets isDeleted
-     *
-     * @param bool|mixed $isDeleted isDeleted
-     *
-     * @return $this
-     */
-    public function setIsDeleted($isDeleted)
-    {
-        $this->container['isDeleted'] = $isDeleted;
+        $this->container['pageInfo'] = $pageInfo;
 
         return $this;
     }

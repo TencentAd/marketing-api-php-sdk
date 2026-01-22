@@ -58,8 +58,10 @@ class PunishMetricsPageConf implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pageNum' => 'int',
-        'pageSize' => 'int'
+        'page' => 'int',
+        'pageSize' => 'int',
+        'totalPage' => 'int',
+        'totalNum' => 'int'
     ];
 
     /**
@@ -68,8 +70,10 @@ class PunishMetricsPageConf implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'pageNum' => 'int64',
-        'pageSize' => 'int64'
+        'page' => 'int64',
+        'pageSize' => 'int64',
+        'totalPage' => 'int64',
+        'totalNum' => 'int64'
     ];
 
     /**
@@ -99,8 +103,10 @@ class PunishMetricsPageConf implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'pageNum' => 'page_num',
-        'pageSize' => 'page_size'
+        'page' => 'page',
+        'pageSize' => 'pageSize',
+        'totalPage' => 'totalPage',
+        'totalNum' => 'totalNum'
     ];
 
     /**
@@ -109,8 +115,10 @@ class PunishMetricsPageConf implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'pageNum' => 'setPageNum',
-        'pageSize' => 'setPageSize'
+        'page' => 'setPage',
+        'pageSize' => 'setPageSize',
+        'totalPage' => 'setTotalPage',
+        'totalNum' => 'setTotalNum'
     ];
 
     /**
@@ -119,8 +127,10 @@ class PunishMetricsPageConf implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'pageNum' => 'getPageNum',
-        'pageSize' => 'getPageSize'
+        'page' => 'getPage',
+        'pageSize' => 'getPageSize',
+        'totalPage' => 'getTotalPage',
+        'totalNum' => 'getTotalNum'
     ];
 
     /**
@@ -183,8 +193,10 @@ class PunishMetricsPageConf implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pageNum'] = isset($data['pageNum']) ? $data['pageNum'] : null;
+        $this->container['page'] = isset($data['page']) ? $data['page'] : null;
         $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
+        $this->container['totalPage'] = isset($data['totalPage']) ? $data['totalPage'] : null;
+        $this->container['totalNum'] = isset($data['totalNum']) ? $data['totalNum'] : null;
     }
 
     /**
@@ -212,25 +224,25 @@ class PunishMetricsPageConf implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets pageNum
+     * Gets page
      *
      * @return int|mixed
      */
-    public function getPageNum()
+    public function getPage()
     {
-        return $this->container['pageNum'];
+        return $this->container['page'];
     }
 
     /**
-     * Sets pageNum
+     * Sets page
      *
-     * @param int|mixed $pageNum pageNum
+     * @param int|mixed $page page
      *
      * @return $this
      */
-    public function setPageNum($pageNum)
+    public function setPage($page)
     {
-        $this->container['pageNum'] = $pageNum;
+        $this->container['page'] = $page;
 
         return $this;
     }
@@ -255,6 +267,54 @@ class PunishMetricsPageConf implements ModelInterface, ArrayAccess
     public function setPageSize($pageSize)
     {
         $this->container['pageSize'] = $pageSize;
+
+        return $this;
+    }
+
+    /**
+     * Gets totalPage
+     *
+     * @return int|mixed
+     */
+    public function getTotalPage()
+    {
+        return $this->container['totalPage'];
+    }
+
+    /**
+     * Sets totalPage
+     *
+     * @param int|mixed $totalPage totalPage
+     *
+     * @return $this
+     */
+    public function setTotalPage($totalPage)
+    {
+        $this->container['totalPage'] = $totalPage;
+
+        return $this;
+    }
+
+    /**
+     * Gets totalNum
+     *
+     * @return int|mixed
+     */
+    public function getTotalNum()
+    {
+        return $this->container['totalNum'];
+    }
+
+    /**
+     * Sets totalNum
+     *
+     * @param int|mixed $totalNum totalNum
+     *
+     * @return $this
+     */
+    public function setTotalNum($totalNum)
+    {
+        $this->container['totalNum'] = $totalNum;
 
         return $this;
     }

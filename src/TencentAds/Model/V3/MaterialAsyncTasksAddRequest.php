@@ -1,6 +1,6 @@
 <?php
 /**
- * VideoChannelsContentComponent
+ * MaterialAsyncTasksAddRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * VideoChannelsContentComponent Class Doc Comment
+ * MaterialAsyncTasksAddRequest Class Doc Comment
  *
  * @category Class
- * @description 视频号主页视频组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
+class MaterialAsyncTasksAddRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'video_channels_content_component';
+    protected static $swaggerModelName = 'MaterialAsyncTasksAddRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +57,12 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'componentId' => 'int',
-        'value' => '\TencentAds\Model\V3\VideoChannelsContentStruct',
-        'isDeleted' => 'bool'
+        'accountId' => 'int',
+        'organizationId' => 'int',
+        'materialParamType' => '\TencentAds\Model\V3\MaterialParamType',
+        'materialType' => '\TencentAds\Model\V3\TemplateType',
+        'materialDetail' => '\TencentAds\Model\V3\MaterialDetailStruct[]',
+        'taskSpecs' => '\TencentAds\Model\V3\TaskSpecsStruct'
     ];
 
     /**
@@ -69,9 +71,12 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'componentId' => 'int64',
-        'value' => null,
-        'isDeleted' => null
+        'accountId' => 'int64',
+        'organizationId' => 'int64',
+        'materialParamType' => null,
+        'materialType' => null,
+        'materialDetail' => null,
+        'taskSpecs' => null
     ];
 
     /**
@@ -101,9 +106,12 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'componentId' => 'component_id',
-        'value' => 'value',
-        'isDeleted' => 'is_deleted'
+        'accountId' => 'account_id',
+        'organizationId' => 'organization_id',
+        'materialParamType' => 'material_param_type',
+        'materialType' => 'material_type',
+        'materialDetail' => 'material_detail',
+        'taskSpecs' => 'task_specs'
     ];
 
     /**
@@ -112,9 +120,12 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'componentId' => 'setComponentId',
-        'value' => 'setValue',
-        'isDeleted' => 'setIsDeleted'
+        'accountId' => 'setAccountId',
+        'organizationId' => 'setOrganizationId',
+        'materialParamType' => 'setMaterialParamType',
+        'materialType' => 'setMaterialType',
+        'materialDetail' => 'setMaterialDetail',
+        'taskSpecs' => 'setTaskSpecs'
     ];
 
     /**
@@ -123,9 +134,12 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'componentId' => 'getComponentId',
-        'value' => 'getValue',
-        'isDeleted' => 'getIsDeleted'
+        'accountId' => 'getAccountId',
+        'organizationId' => 'getOrganizationId',
+        'materialParamType' => 'getMaterialParamType',
+        'materialType' => 'getMaterialType',
+        'materialDetail' => 'getMaterialDetail',
+        'taskSpecs' => 'getTaskSpecs'
     ];
 
     /**
@@ -188,9 +202,12 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['componentId'] = isset($data['componentId']) ? $data['componentId'] : null;
-        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
-        $this->container['isDeleted'] = isset($data['isDeleted']) ? $data['isDeleted'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
+        $this->container['materialParamType'] = isset($data['materialParamType']) ? $data['materialParamType'] : null;
+        $this->container['materialType'] = isset($data['materialType']) ? $data['materialType'] : null;
+        $this->container['materialDetail'] = isset($data['materialDetail']) ? $data['materialDetail'] : null;
+        $this->container['taskSpecs'] = isset($data['taskSpecs']) ? $data['taskSpecs'] : null;
     }
 
     /**
@@ -218,73 +235,145 @@ class VideoChannelsContentComponent implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets componentId
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getComponentId()
+    public function getAccountId()
     {
-        return $this->container['componentId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets componentId
+     * Sets accountId
      *
-     * @param int|mixed $componentId componentId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setComponentId($componentId)
+    public function setAccountId($accountId)
     {
-        $this->container['componentId'] = $componentId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets value
+     * Gets organizationId
      *
-     * @return \TencentAds\Model\V3\VideoChannelsContentStruct|mixed
+     * @return int|mixed
      */
-    public function getValue()
+    public function getOrganizationId()
     {
-        return $this->container['value'];
+        return $this->container['organizationId'];
     }
 
     /**
-     * Sets value
+     * Sets organizationId
      *
-     * @param \TencentAds\Model\V3\VideoChannelsContentStruct|mixed $value value
+     * @param int|mixed $organizationId organizationId
      *
      * @return $this
      */
-    public function setValue($value)
+    public function setOrganizationId($organizationId)
     {
-        $this->container['value'] = $value;
+        $this->container['organizationId'] = $organizationId;
 
         return $this;
     }
 
     /**
-     * Gets isDeleted
+     * Gets materialParamType
      *
-     * @return bool|mixed
+     * @return \TencentAds\Model\V3\MaterialParamType|mixed
      */
-    public function getIsDeleted()
+    public function getMaterialParamType()
     {
-        return $this->container['isDeleted'];
+        return $this->container['materialParamType'];
     }
 
     /**
-     * Sets isDeleted
+     * Sets materialParamType
      *
-     * @param bool|mixed $isDeleted isDeleted
+     * @param \TencentAds\Model\V3\MaterialParamType|mixed $materialParamType materialParamType
      *
      * @return $this
      */
-    public function setIsDeleted($isDeleted)
+    public function setMaterialParamType($materialParamType)
     {
-        $this->container['isDeleted'] = $isDeleted;
+        $this->container['materialParamType'] = $materialParamType;
+
+        return $this;
+    }
+
+    /**
+     * Gets materialType
+     *
+     * @return \TencentAds\Model\V3\TemplateType|mixed
+     */
+    public function getMaterialType()
+    {
+        return $this->container['materialType'];
+    }
+
+    /**
+     * Sets materialType
+     *
+     * @param \TencentAds\Model\V3\TemplateType|mixed $materialType materialType
+     *
+     * @return $this
+     */
+    public function setMaterialType($materialType)
+    {
+        $this->container['materialType'] = $materialType;
+
+        return $this;
+    }
+
+    /**
+     * Gets materialDetail
+     *
+     * @return \TencentAds\Model\V3\MaterialDetailStruct[]|mixed
+     */
+    public function getMaterialDetail()
+    {
+        return $this->container['materialDetail'];
+    }
+
+    /**
+     * Sets materialDetail
+     *
+     * @param \TencentAds\Model\V3\MaterialDetailStruct[]|mixed $materialDetail materialDetail
+     *
+     * @return $this
+     */
+    public function setMaterialDetail($materialDetail)
+    {
+        $this->container['materialDetail'] = $materialDetail;
+
+        return $this;
+    }
+
+    /**
+     * Gets taskSpecs
+     *
+     * @return \TencentAds\Model\V3\TaskSpecsStruct|mixed
+     */
+    public function getTaskSpecs()
+    {
+        return $this->container['taskSpecs'];
+    }
+
+    /**
+     * Sets taskSpecs
+     *
+     * @param \TencentAds\Model\V3\TaskSpecsStruct|mixed $taskSpecs taskSpecs
+     *
+     * @return $this
+     */
+    public function setTaskSpecs($taskSpecs)
+    {
+        $this->container['taskSpecs'] = $taskSpecs;
 
         return $this;
     }

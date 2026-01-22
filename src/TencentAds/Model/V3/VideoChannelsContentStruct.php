@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * VideoChannelsContentStruct Class Doc Comment
  *
  * @category Class
- * @description 视频号内容组件
+ * @description 视频号主页视频组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
