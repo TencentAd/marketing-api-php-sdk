@@ -1,6 +1,6 @@
 <?php
 /**
- * UpdateUnionPositionPackageItem
+ * WxgWechatChannelsComponent
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * UpdateUnionPositionPackageItem Class Doc Comment
+ * WxgWechatChannelsComponent Class Doc Comment
  *
  * @category Class
- * @description 修改广告定投腾讯广告联盟流量包信息
+ * @description 视频号动态组件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
+class WxgWechatChannelsComponent implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'update_union_position_package_item';
+    protected static $swaggerModelName = 'wxg_wechat_channels_component';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'unionPositionPackage' => 'int[]'
+        'componentType' => '\TencentAds\Model\V3\WechatChannelsComponentType',
+        'icon' => 'string',
+        'wording' => 'string',
+        'componentUuid' => 'string'
     ];
 
     /**
@@ -68,8 +70,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'unionPositionPackage' => 'int64'
+        'componentType' => null,
+        'icon' => null,
+        'wording' => null,
+        'componentUuid' => null
     ];
 
     /**
@@ -99,8 +103,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'unionPositionPackage' => 'union_position_package'
+        'componentType' => 'component_type',
+        'icon' => 'icon',
+        'wording' => 'wording',
+        'componentUuid' => 'component_uuid'
     ];
 
     /**
@@ -109,8 +115,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'unionPositionPackage' => 'setUnionPositionPackage'
+        'componentType' => 'setComponentType',
+        'icon' => 'setIcon',
+        'wording' => 'setWording',
+        'componentUuid' => 'setComponentUuid'
     ];
 
     /**
@@ -119,8 +127,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'unionPositionPackage' => 'getUnionPositionPackage'
+        'componentType' => 'getComponentType',
+        'icon' => 'getIcon',
+        'wording' => 'getWording',
+        'componentUuid' => 'getComponentUuid'
     ];
 
     /**
@@ -183,8 +193,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['unionPositionPackage'] = isset($data['unionPositionPackage']) ? $data['unionPositionPackage'] : null;
+        $this->container['componentType'] = isset($data['componentType']) ? $data['componentType'] : null;
+        $this->container['icon'] = isset($data['icon']) ? $data['icon'] : null;
+        $this->container['wording'] = isset($data['wording']) ? $data['wording'] : null;
+        $this->container['componentUuid'] = isset($data['componentUuid']) ? $data['componentUuid'] : null;
     }
 
     /**
@@ -212,49 +224,97 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adgroupId
+     * Gets componentType
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\WechatChannelsComponentType|mixed
      */
-    public function getAdgroupId()
+    public function getComponentType()
     {
-        return $this->container['adgroupId'];
+        return $this->container['componentType'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets componentType
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param \TencentAds\Model\V3\WechatChannelsComponentType|mixed $componentType componentType
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setComponentType($componentType)
     {
-        $this->container['adgroupId'] = $adgroupId;
+        $this->container['componentType'] = $componentType;
 
         return $this;
     }
 
     /**
-     * Gets unionPositionPackage
+     * Gets icon
      *
-     * @return int[]|mixed
+     * @return string|mixed
      */
-    public function getUnionPositionPackage()
+    public function getIcon()
     {
-        return $this->container['unionPositionPackage'];
+        return $this->container['icon'];
     }
 
     /**
-     * Sets unionPositionPackage
+     * Sets icon
      *
-     * @param int[]|mixed $unionPositionPackage unionPositionPackage
+     * @param string|mixed $icon icon
      *
      * @return $this
      */
-    public function setUnionPositionPackage($unionPositionPackage)
+    public function setIcon($icon)
     {
-        $this->container['unionPositionPackage'] = $unionPositionPackage;
+        $this->container['icon'] = $icon;
+
+        return $this;
+    }
+
+    /**
+     * Gets wording
+     *
+     * @return string|mixed
+     */
+    public function getWording()
+    {
+        return $this->container['wording'];
+    }
+
+    /**
+     * Sets wording
+     *
+     * @param string|mixed $wording wording
+     *
+     * @return $this
+     */
+    public function setWording($wording)
+    {
+        $this->container['wording'] = $wording;
+
+        return $this;
+    }
+
+    /**
+     * Gets componentUuid
+     *
+     * @return string|mixed
+     */
+    public function getComponentUuid()
+    {
+        return $this->container['componentUuid'];
+    }
+
+    /**
+     * Sets componentUuid
+     *
+     * @param string|mixed $componentUuid componentUuid
+     *
+     * @return $this
+     */
+    public function setComponentUuid($componentUuid)
+    {
+        $this->container['componentUuid'] = $componentUuid;
 
         return $this;
     }

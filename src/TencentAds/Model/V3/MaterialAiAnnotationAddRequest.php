@@ -1,6 +1,6 @@
 <?php
 /**
- * UpdateUnionPositionPackageItem
+ * MaterialAiAnnotationAddRequest
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * UpdateUnionPositionPackageItem Class Doc Comment
+ * MaterialAiAnnotationAddRequest Class Doc Comment
  *
  * @category Class
- * @description 修改广告定投腾讯广告联盟流量包信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
+class MaterialAiAnnotationAddRequest implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'update_union_position_package_item';
+    protected static $swaggerModelName = 'MaterialAiAnnotationAddRequest';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'unionPositionPackage' => 'int[]'
+        'accountId' => 'int',
+        'organizationId' => 'int',
+        'annotationList' => '\TencentAds\Model\V3\Annotation[]',
+        'resourceType' => 'string'
     ];
 
     /**
@@ -68,8 +69,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'unionPositionPackage' => 'int64'
+        'accountId' => 'int64',
+        'organizationId' => 'int64',
+        'annotationList' => null,
+        'resourceType' => null
     ];
 
     /**
@@ -99,8 +102,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'unionPositionPackage' => 'union_position_package'
+        'accountId' => 'account_id',
+        'organizationId' => 'organization_id',
+        'annotationList' => 'annotation_list',
+        'resourceType' => 'resource_type'
     ];
 
     /**
@@ -109,8 +114,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'unionPositionPackage' => 'setUnionPositionPackage'
+        'accountId' => 'setAccountId',
+        'organizationId' => 'setOrganizationId',
+        'annotationList' => 'setAnnotationList',
+        'resourceType' => 'setResourceType'
     ];
 
     /**
@@ -119,8 +126,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'unionPositionPackage' => 'getUnionPositionPackage'
+        'accountId' => 'getAccountId',
+        'organizationId' => 'getOrganizationId',
+        'annotationList' => 'getAnnotationList',
+        'resourceType' => 'getResourceType'
     ];
 
     /**
@@ -183,8 +192,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['unionPositionPackage'] = isset($data['unionPositionPackage']) ? $data['unionPositionPackage'] : null;
+        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
+        $this->container['organizationId'] = isset($data['organizationId']) ? $data['organizationId'] : null;
+        $this->container['annotationList'] = isset($data['annotationList']) ? $data['annotationList'] : null;
+        $this->container['resourceType'] = isset($data['resourceType']) ? $data['resourceType'] : null;
     }
 
     /**
@@ -212,49 +223,97 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adgroupId
+     * Gets accountId
      *
      * @return int|mixed
      */
-    public function getAdgroupId()
+    public function getAccountId()
     {
-        return $this->container['adgroupId'];
+        return $this->container['accountId'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets accountId
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param int|mixed $accountId accountId
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setAccountId($accountId)
     {
-        $this->container['adgroupId'] = $adgroupId;
+        $this->container['accountId'] = $accountId;
 
         return $this;
     }
 
     /**
-     * Gets unionPositionPackage
+     * Gets organizationId
      *
-     * @return int[]|mixed
+     * @return int|mixed
      */
-    public function getUnionPositionPackage()
+    public function getOrganizationId()
     {
-        return $this->container['unionPositionPackage'];
+        return $this->container['organizationId'];
     }
 
     /**
-     * Sets unionPositionPackage
+     * Sets organizationId
      *
-     * @param int[]|mixed $unionPositionPackage unionPositionPackage
+     * @param int|mixed $organizationId organizationId
      *
      * @return $this
      */
-    public function setUnionPositionPackage($unionPositionPackage)
+    public function setOrganizationId($organizationId)
     {
-        $this->container['unionPositionPackage'] = $unionPositionPackage;
+        $this->container['organizationId'] = $organizationId;
+
+        return $this;
+    }
+
+    /**
+     * Gets annotationList
+     *
+     * @return \TencentAds\Model\V3\Annotation[]|mixed
+     */
+    public function getAnnotationList()
+    {
+        return $this->container['annotationList'];
+    }
+
+    /**
+     * Sets annotationList
+     *
+     * @param \TencentAds\Model\V3\Annotation[]|mixed $annotationList annotationList
+     *
+     * @return $this
+     */
+    public function setAnnotationList($annotationList)
+    {
+        $this->container['annotationList'] = $annotationList;
+
+        return $this;
+    }
+
+    /**
+     * Gets resourceType
+     *
+     * @return string|mixed
+     */
+    public function getResourceType()
+    {
+        return $this->container['resourceType'];
+    }
+
+    /**
+     * Sets resourceType
+     *
+     * @param string|mixed $resourceType resourceType
+     *
+     * @return $this
+     */
+    public function setResourceType($resourceType)
+    {
+        $this->container['resourceType'] = $resourceType;
 
         return $this;
     }

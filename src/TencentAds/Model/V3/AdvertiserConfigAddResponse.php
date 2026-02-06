@@ -1,6 +1,6 @@
 <?php
 /**
- * UpdateUnionPositionPackageItem
+ * AdvertiserConfigAddResponse
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * UpdateUnionPositionPackageItem Class Doc Comment
+ * AdvertiserConfigAddResponse Class Doc Comment
  *
  * @category Class
- * @description 修改广告定投腾讯广告联盟流量包信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
+class AdvertiserConfigAddResponse implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'update_union_position_package_item';
+    protected static $swaggerModelName = 'AdvertiserConfigAddResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'unionPositionPackage' => 'int[]'
+        'code' => 'int',
+        'message' => 'string',
+        'messageCn' => 'string',
+        'errors' => '\TencentAds\Model\V3\ApiErrorStruct[]'
     ];
 
     /**
@@ -68,8 +69,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'unionPositionPackage' => 'int64'
+        'code' => 'int64',
+        'message' => null,
+        'messageCn' => null,
+        'errors' => null
     ];
 
     /**
@@ -99,8 +102,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'unionPositionPackage' => 'union_position_package'
+        'code' => 'code',
+        'message' => 'message',
+        'messageCn' => 'message_cn',
+        'errors' => 'errors'
     ];
 
     /**
@@ -109,8 +114,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'unionPositionPackage' => 'setUnionPositionPackage'
+        'code' => 'setCode',
+        'message' => 'setMessage',
+        'messageCn' => 'setMessageCn',
+        'errors' => 'setErrors'
     ];
 
     /**
@@ -119,8 +126,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'unionPositionPackage' => 'getUnionPositionPackage'
+        'code' => 'getCode',
+        'message' => 'getMessage',
+        'messageCn' => 'getMessageCn',
+        'errors' => 'getErrors'
     ];
 
     /**
@@ -183,8 +192,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['unionPositionPackage'] = isset($data['unionPositionPackage']) ? $data['unionPositionPackage'] : null;
+        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['messageCn'] = isset($data['messageCn']) ? $data['messageCn'] : null;
+        $this->container['errors'] = isset($data['errors']) ? $data['errors'] : null;
     }
 
     /**
@@ -212,49 +223,97 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adgroupId
+     * Gets code
      *
      * @return int|mixed
      */
-    public function getAdgroupId()
+    public function getCode()
     {
-        return $this->container['adgroupId'];
+        return $this->container['code'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets code
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param int|mixed $code code
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setCode($code)
     {
-        $this->container['adgroupId'] = $adgroupId;
+        $this->container['code'] = $code;
 
         return $this;
     }
 
     /**
-     * Gets unionPositionPackage
+     * Gets message
      *
-     * @return int[]|mixed
+     * @return string|mixed
      */
-    public function getUnionPositionPackage()
+    public function getMessage()
     {
-        return $this->container['unionPositionPackage'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets unionPositionPackage
+     * Sets message
      *
-     * @param int[]|mixed $unionPositionPackage unionPositionPackage
+     * @param string|mixed $message message
      *
      * @return $this
      */
-    public function setUnionPositionPackage($unionPositionPackage)
+    public function setMessage($message)
     {
-        $this->container['unionPositionPackage'] = $unionPositionPackage;
+        $this->container['message'] = $message;
+
+        return $this;
+    }
+
+    /**
+     * Gets messageCn
+     *
+     * @return string|mixed
+     */
+    public function getMessageCn()
+    {
+        return $this->container['messageCn'];
+    }
+
+    /**
+     * Sets messageCn
+     *
+     * @param string|mixed $messageCn messageCn
+     *
+     * @return $this
+     */
+    public function setMessageCn($messageCn)
+    {
+        $this->container['messageCn'] = $messageCn;
+
+        return $this;
+    }
+
+    /**
+     * Gets errors
+     *
+     * @return \TencentAds\Model\V3\ApiErrorStruct[]|mixed
+     */
+    public function getErrors()
+    {
+        return $this->container['errors'];
+    }
+
+    /**
+     * Sets errors
+     *
+     * @param \TencentAds\Model\V3\ApiErrorStruct[]|mixed $errors errors
+     *
+     * @return $this
+     */
+    public function setErrors($errors)
+    {
+        $this->container['errors'] = $errors;
 
         return $this;
     }

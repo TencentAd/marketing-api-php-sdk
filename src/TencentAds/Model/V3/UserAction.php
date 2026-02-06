@@ -67,8 +67,7 @@ class UserAction implements ModelInterface, ArrayAccess
         'trace' => '\TencentAds\Model\V3\Trace',
         'url' => 'string',
         'productInform' => '\TencentAds\Model\V3\ProductInform',
-        'channel' => '\TencentAds\Model\V3\ActionChannelType',
-        'extInfo' => '\TencentAds\Model\V3\DeviceInfo'
+        'channel' => '\TencentAds\Model\V3\ActionChannelType'
     ];
 
     /**
@@ -86,8 +85,7 @@ class UserAction implements ModelInterface, ArrayAccess
         'trace' => null,
         'url' => null,
         'productInform' => null,
-        'channel' => null,
-        'extInfo' => null
+        'channel' => null
     ];
 
     /**
@@ -126,8 +124,7 @@ class UserAction implements ModelInterface, ArrayAccess
         'trace' => 'trace',
         'url' => 'url',
         'productInform' => 'product_inform',
-        'channel' => 'channel',
-        'extInfo' => 'ext_info'
+        'channel' => 'channel'
     ];
 
     /**
@@ -145,8 +142,7 @@ class UserAction implements ModelInterface, ArrayAccess
         'trace' => 'setTrace',
         'url' => 'setUrl',
         'productInform' => 'setProductInform',
-        'channel' => 'setChannel',
-        'extInfo' => 'setExtInfo'
+        'channel' => 'setChannel'
     ];
 
     /**
@@ -164,8 +160,7 @@ class UserAction implements ModelInterface, ArrayAccess
         'trace' => 'getTrace',
         'url' => 'getUrl',
         'productInform' => 'getProductInform',
-        'channel' => 'getChannel',
-        'extInfo' => 'getExtInfo'
+        'channel' => 'getChannel'
     ];
 
     /**
@@ -238,7 +233,6 @@ class UserAction implements ModelInterface, ArrayAccess
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['productInform'] = isset($data['productInform']) ? $data['productInform'] : null;
         $this->container['channel'] = isset($data['channel']) ? $data['channel'] : null;
-        $this->container['extInfo'] = isset($data['extInfo']) ? $data['extInfo'] : null;
     }
 
     /**
@@ -501,30 +495,6 @@ class UserAction implements ModelInterface, ArrayAccess
     public function setChannel($channel)
     {
         $this->container['channel'] = $channel;
-
-        return $this;
-    }
-
-    /**
-     * Gets extInfo
-     *
-     * @return \TencentAds\Model\V3\DeviceInfo|mixed
-     */
-    public function getExtInfo()
-    {
-        return $this->container['extInfo'];
-    }
-
-    /**
-     * Sets extInfo
-     *
-     * @param \TencentAds\Model\V3\DeviceInfo|mixed $extInfo extInfo
-     *
-     * @return $this
-     */
-    public function setExtInfo($extInfo)
-    {
-        $this->container['extInfo'] = $extInfo;
 
         return $this;
     }

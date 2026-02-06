@@ -65,7 +65,8 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageTriggerTypes' => 'string[]',
         'wxgamePlayablePageTriggerText' => 'string',
         'wxgamePlayablePageCardLinkImage' => 'string',
-        'wxgamePlayablePageCardLinkDescription' => 'string'
+        'wxgamePlayablePageCardLinkDescription' => 'string',
+        'wxgamePlayablePageEndTimeType' => '\TencentAds\Model\V3\WxgamePlayablePageEndTimeType'
     ];
 
     /**
@@ -81,7 +82,8 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageTriggerTypes' => null,
         'wxgamePlayablePageTriggerText' => null,
         'wxgamePlayablePageCardLinkImage' => null,
-        'wxgamePlayablePageCardLinkDescription' => null
+        'wxgamePlayablePageCardLinkDescription' => null,
+        'wxgamePlayablePageEndTimeType' => null
     ];
 
     /**
@@ -118,7 +120,8 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageTriggerTypes' => 'wxgame_playable_page_trigger_types',
         'wxgamePlayablePageTriggerText' => 'wxgame_playable_page_trigger_text',
         'wxgamePlayablePageCardLinkImage' => 'wxgame_playable_page_card_link_image',
-        'wxgamePlayablePageCardLinkDescription' => 'wxgame_playable_page_card_link_description'
+        'wxgamePlayablePageCardLinkDescription' => 'wxgame_playable_page_card_link_description',
+        'wxgamePlayablePageEndTimeType' => 'wxgame_playable_page_end_time_type'
     ];
 
     /**
@@ -134,7 +137,8 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageTriggerTypes' => 'setWxgamePlayablePageTriggerTypes',
         'wxgamePlayablePageTriggerText' => 'setWxgamePlayablePageTriggerText',
         'wxgamePlayablePageCardLinkImage' => 'setWxgamePlayablePageCardLinkImage',
-        'wxgamePlayablePageCardLinkDescription' => 'setWxgamePlayablePageCardLinkDescription'
+        'wxgamePlayablePageCardLinkDescription' => 'setWxgamePlayablePageCardLinkDescription',
+        'wxgamePlayablePageEndTimeType' => 'setWxgamePlayablePageEndTimeType'
     ];
 
     /**
@@ -150,7 +154,8 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         'wxgamePlayablePageTriggerTypes' => 'getWxgamePlayablePageTriggerTypes',
         'wxgamePlayablePageTriggerText' => 'getWxgamePlayablePageTriggerText',
         'wxgamePlayablePageCardLinkImage' => 'getWxgamePlayablePageCardLinkImage',
-        'wxgamePlayablePageCardLinkDescription' => 'getWxgamePlayablePageCardLinkDescription'
+        'wxgamePlayablePageCardLinkDescription' => 'getWxgamePlayablePageCardLinkDescription',
+        'wxgamePlayablePageEndTimeType' => 'getWxgamePlayablePageEndTimeType'
     ];
 
     /**
@@ -221,6 +226,7 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
         $this->container['wxgamePlayablePageTriggerText'] = isset($data['wxgamePlayablePageTriggerText']) ? $data['wxgamePlayablePageTriggerText'] : null;
         $this->container['wxgamePlayablePageCardLinkImage'] = isset($data['wxgamePlayablePageCardLinkImage']) ? $data['wxgamePlayablePageCardLinkImage'] : null;
         $this->container['wxgamePlayablePageCardLinkDescription'] = isset($data['wxgamePlayablePageCardLinkDescription']) ? $data['wxgamePlayablePageCardLinkDescription'] : null;
+        $this->container['wxgamePlayablePageEndTimeType'] = isset($data['wxgamePlayablePageEndTimeType']) ? $data['wxgamePlayablePageEndTimeType'] : null;
     }
 
     /**
@@ -435,6 +441,30 @@ class WxgamePlayablePageStruct implements ModelInterface, ArrayAccess
     public function setWxgamePlayablePageCardLinkDescription($wxgamePlayablePageCardLinkDescription)
     {
         $this->container['wxgamePlayablePageCardLinkDescription'] = $wxgamePlayablePageCardLinkDescription;
+
+        return $this;
+    }
+
+    /**
+     * Gets wxgamePlayablePageEndTimeType
+     *
+     * @return \TencentAds\Model\V3\WxgamePlayablePageEndTimeType|mixed
+     */
+    public function getWxgamePlayablePageEndTimeType()
+    {
+        return $this->container['wxgamePlayablePageEndTimeType'];
+    }
+
+    /**
+     * Sets wxgamePlayablePageEndTimeType
+     *
+     * @param \TencentAds\Model\V3\WxgamePlayablePageEndTimeType|mixed $wxgamePlayablePageEndTimeType wxgamePlayablePageEndTimeType
+     *
+     * @return $this
+     */
+    public function setWxgamePlayablePageEndTimeType($wxgamePlayablePageEndTimeType)
+    {
+        $this->container['wxgamePlayablePageEndTimeType'] = $wxgamePlayablePageEndTimeType;
 
         return $this;
     }

@@ -104,7 +104,8 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'qytNetProfitSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalQytSpec',
         'qytNetProfitRoiSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalQytSpec',
         'wechatStoreNetProfitRoiSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalWechatStoreNetProfitRoiSpec',
-        'wechatStoreNetProfitSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalWechatStoreNetProfitSpec'
+        'wechatStoreNetProfitSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalWechatStoreNetProfitSpec',
+        'qytCollectSpec' => '\TencentAds\Model\V3\SmartDeliveryGoalQytSpec'
     ];
 
     /**
@@ -159,7 +160,8 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'qytNetProfitSpec' => null,
         'qytNetProfitRoiSpec' => null,
         'wechatStoreNetProfitRoiSpec' => null,
-        'wechatStoreNetProfitSpec' => null
+        'wechatStoreNetProfitSpec' => null,
+        'qytCollectSpec' => null
     ];
 
     /**
@@ -235,7 +237,8 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'qytNetProfitSpec' => 'qyt_net_profit_spec',
         'qytNetProfitRoiSpec' => 'qyt_net_profit_roi_spec',
         'wechatStoreNetProfitRoiSpec' => 'wechat_store_net_profit_roi_spec',
-        'wechatStoreNetProfitSpec' => 'wechat_store_net_profit_spec'
+        'wechatStoreNetProfitSpec' => 'wechat_store_net_profit_spec',
+        'qytCollectSpec' => 'qyt_collect_spec'
     ];
 
     /**
@@ -290,7 +293,8 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'qytNetProfitSpec' => 'setQytNetProfitSpec',
         'qytNetProfitRoiSpec' => 'setQytNetProfitRoiSpec',
         'wechatStoreNetProfitRoiSpec' => 'setWechatStoreNetProfitRoiSpec',
-        'wechatStoreNetProfitSpec' => 'setWechatStoreNetProfitSpec'
+        'wechatStoreNetProfitSpec' => 'setWechatStoreNetProfitSpec',
+        'qytCollectSpec' => 'setQytCollectSpec'
     ];
 
     /**
@@ -345,7 +349,8 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         'qytNetProfitSpec' => 'getQytNetProfitSpec',
         'qytNetProfitRoiSpec' => 'getQytNetProfitRoiSpec',
         'wechatStoreNetProfitRoiSpec' => 'getWechatStoreNetProfitRoiSpec',
-        'wechatStoreNetProfitSpec' => 'getWechatStoreNetProfitSpec'
+        'wechatStoreNetProfitSpec' => 'getWechatStoreNetProfitSpec',
+        'qytCollectSpec' => 'getQytCollectSpec'
     ];
 
     /**
@@ -455,6 +460,7 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
         $this->container['qytNetProfitRoiSpec'] = isset($data['qytNetProfitRoiSpec']) ? $data['qytNetProfitRoiSpec'] : null;
         $this->container['wechatStoreNetProfitRoiSpec'] = isset($data['wechatStoreNetProfitRoiSpec']) ? $data['wechatStoreNetProfitRoiSpec'] : null;
         $this->container['wechatStoreNetProfitSpec'] = isset($data['wechatStoreNetProfitSpec']) ? $data['wechatStoreNetProfitSpec'] : null;
+        $this->container['qytCollectSpec'] = isset($data['qytCollectSpec']) ? $data['qytCollectSpec'] : null;
     }
 
     /**
@@ -1605,6 +1611,30 @@ class SmartDeliveryGoalSpec implements ModelInterface, ArrayAccess
     public function setWechatStoreNetProfitSpec($wechatStoreNetProfitSpec)
     {
         $this->container['wechatStoreNetProfitSpec'] = $wechatStoreNetProfitSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets qytCollectSpec
+     *
+     * @return \TencentAds\Model\V3\SmartDeliveryGoalQytSpec|mixed
+     */
+    public function getQytCollectSpec()
+    {
+        return $this->container['qytCollectSpec'];
+    }
+
+    /**
+     * Sets qytCollectSpec
+     *
+     * @param \TencentAds\Model\V3\SmartDeliveryGoalQytSpec|mixed $qytCollectSpec qytCollectSpec
+     *
+     * @return $this
+     */
+    public function setQytCollectSpec($qytCollectSpec)
+    {
+        $this->container['qytCollectSpec'] = $qytCollectSpec;
 
         return $this;
     }

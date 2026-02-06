@@ -1,6 +1,6 @@
 <?php
 /**
- * DeviceInfo
+ * AnnotationSuccessResult
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * DeviceInfo Class Doc Comment
+ * AnnotationSuccessResult Class Doc Comment
  *
  * @category Class
- * @description 拓展设备信息
+ * @description 标注结果
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class DeviceInfo implements ModelInterface, ArrayAccess
+class AnnotationSuccessResult implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class DeviceInfo implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'device_info';
+    protected static $swaggerModelName = 'annotation_success_result';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,16 +58,12 @@ class DeviceInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'packageName' => 'string',
-        'appVersion' => 'string',
-        'mac' => 'string',
-        'deviceBrand' => 'string',
-        'model' => 'string',
-        'osVersion' => 'string',
-        'language' => 'string',
-        'ip' => 'string',
-        'userAgent' => 'string',
-        'wifiName' => 'string'
+        'resourceId' => 'string',
+        'resourceType' => 'string',
+        'aigcFlag' => '\TencentAds\Model\V3\AigcFlag',
+        'aigcSource' => '\TencentAds\Model\V3\AigcSource',
+        'userAigcStatus' => '\TencentAds\Model\V3\AigcStatus',
+        'systemAigcStatus' => '\TencentAds\Model\V3\AigcStatus'
     ];
 
     /**
@@ -76,16 +72,12 @@ class DeviceInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'packageName' => null,
-        'appVersion' => null,
-        'mac' => null,
-        'deviceBrand' => null,
-        'model' => null,
-        'osVersion' => null,
-        'language' => null,
-        'ip' => null,
-        'userAgent' => null,
-        'wifiName' => null
+        'resourceId' => null,
+        'resourceType' => null,
+        'aigcFlag' => null,
+        'aigcSource' => null,
+        'userAigcStatus' => null,
+        'systemAigcStatus' => null
     ];
 
     /**
@@ -115,16 +107,12 @@ class DeviceInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'packageName' => 'package_name',
-        'appVersion' => 'app_version',
-        'mac' => 'mac',
-        'deviceBrand' => 'device_brand',
-        'model' => 'model',
-        'osVersion' => 'os_version',
-        'language' => 'language',
-        'ip' => 'ip',
-        'userAgent' => 'user_agent',
-        'wifiName' => 'wifi_name'
+        'resourceId' => 'resource_id',
+        'resourceType' => 'resource_type',
+        'aigcFlag' => 'aigc_flag',
+        'aigcSource' => 'aigc_source',
+        'userAigcStatus' => 'user_aigc_status',
+        'systemAigcStatus' => 'system_aigc_status'
     ];
 
     /**
@@ -133,16 +121,12 @@ class DeviceInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'packageName' => 'setPackageName',
-        'appVersion' => 'setAppVersion',
-        'mac' => 'setMac',
-        'deviceBrand' => 'setDeviceBrand',
-        'model' => 'setModel',
-        'osVersion' => 'setOsVersion',
-        'language' => 'setLanguage',
-        'ip' => 'setIp',
-        'userAgent' => 'setUserAgent',
-        'wifiName' => 'setWifiName'
+        'resourceId' => 'setResourceId',
+        'resourceType' => 'setResourceType',
+        'aigcFlag' => 'setAigcFlag',
+        'aigcSource' => 'setAigcSource',
+        'userAigcStatus' => 'setUserAigcStatus',
+        'systemAigcStatus' => 'setSystemAigcStatus'
     ];
 
     /**
@@ -151,16 +135,12 @@ class DeviceInfo implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'packageName' => 'getPackageName',
-        'appVersion' => 'getAppVersion',
-        'mac' => 'getMac',
-        'deviceBrand' => 'getDeviceBrand',
-        'model' => 'getModel',
-        'osVersion' => 'getOsVersion',
-        'language' => 'getLanguage',
-        'ip' => 'getIp',
-        'userAgent' => 'getUserAgent',
-        'wifiName' => 'getWifiName'
+        'resourceId' => 'getResourceId',
+        'resourceType' => 'getResourceType',
+        'aigcFlag' => 'getAigcFlag',
+        'aigcSource' => 'getAigcSource',
+        'userAigcStatus' => 'getUserAigcStatus',
+        'systemAigcStatus' => 'getSystemAigcStatus'
     ];
 
     /**
@@ -223,16 +203,12 @@ class DeviceInfo implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['packageName'] = isset($data['packageName']) ? $data['packageName'] : null;
-        $this->container['appVersion'] = isset($data['appVersion']) ? $data['appVersion'] : null;
-        $this->container['mac'] = isset($data['mac']) ? $data['mac'] : null;
-        $this->container['deviceBrand'] = isset($data['deviceBrand']) ? $data['deviceBrand'] : null;
-        $this->container['model'] = isset($data['model']) ? $data['model'] : null;
-        $this->container['osVersion'] = isset($data['osVersion']) ? $data['osVersion'] : null;
-        $this->container['language'] = isset($data['language']) ? $data['language'] : null;
-        $this->container['ip'] = isset($data['ip']) ? $data['ip'] : null;
-        $this->container['userAgent'] = isset($data['userAgent']) ? $data['userAgent'] : null;
-        $this->container['wifiName'] = isset($data['wifiName']) ? $data['wifiName'] : null;
+        $this->container['resourceId'] = isset($data['resourceId']) ? $data['resourceId'] : null;
+        $this->container['resourceType'] = isset($data['resourceType']) ? $data['resourceType'] : null;
+        $this->container['aigcFlag'] = isset($data['aigcFlag']) ? $data['aigcFlag'] : null;
+        $this->container['aigcSource'] = isset($data['aigcSource']) ? $data['aigcSource'] : null;
+        $this->container['userAigcStatus'] = isset($data['userAigcStatus']) ? $data['userAigcStatus'] : null;
+        $this->container['systemAigcStatus'] = isset($data['systemAigcStatus']) ? $data['systemAigcStatus'] : null;
     }
 
     /**
@@ -260,241 +236,145 @@ class DeviceInfo implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets packageName
+     * Gets resourceId
      *
      * @return string|mixed
      */
-    public function getPackageName()
+    public function getResourceId()
     {
-        return $this->container['packageName'];
+        return $this->container['resourceId'];
     }
 
     /**
-     * Sets packageName
+     * Sets resourceId
      *
-     * @param string|mixed $packageName packageName
+     * @param string|mixed $resourceId resourceId
      *
      * @return $this
      */
-    public function setPackageName($packageName)
+    public function setResourceId($resourceId)
     {
-        $this->container['packageName'] = $packageName;
+        $this->container['resourceId'] = $resourceId;
 
         return $this;
     }
 
     /**
-     * Gets appVersion
+     * Gets resourceType
      *
      * @return string|mixed
      */
-    public function getAppVersion()
+    public function getResourceType()
     {
-        return $this->container['appVersion'];
+        return $this->container['resourceType'];
     }
 
     /**
-     * Sets appVersion
+     * Sets resourceType
      *
-     * @param string|mixed $appVersion appVersion
+     * @param string|mixed $resourceType resourceType
      *
      * @return $this
      */
-    public function setAppVersion($appVersion)
+    public function setResourceType($resourceType)
     {
-        $this->container['appVersion'] = $appVersion;
+        $this->container['resourceType'] = $resourceType;
 
         return $this;
     }
 
     /**
-     * Gets mac
+     * Gets aigcFlag
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\AigcFlag|mixed
      */
-    public function getMac()
+    public function getAigcFlag()
     {
-        return $this->container['mac'];
+        return $this->container['aigcFlag'];
     }
 
     /**
-     * Sets mac
+     * Sets aigcFlag
      *
-     * @param string|mixed $mac mac
+     * @param \TencentAds\Model\V3\AigcFlag|mixed $aigcFlag aigcFlag
      *
      * @return $this
      */
-    public function setMac($mac)
+    public function setAigcFlag($aigcFlag)
     {
-        $this->container['mac'] = $mac;
+        $this->container['aigcFlag'] = $aigcFlag;
 
         return $this;
     }
 
     /**
-     * Gets deviceBrand
+     * Gets aigcSource
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\AigcSource|mixed
      */
-    public function getDeviceBrand()
+    public function getAigcSource()
     {
-        return $this->container['deviceBrand'];
+        return $this->container['aigcSource'];
     }
 
     /**
-     * Sets deviceBrand
+     * Sets aigcSource
      *
-     * @param string|mixed $deviceBrand deviceBrand
+     * @param \TencentAds\Model\V3\AigcSource|mixed $aigcSource aigcSource
      *
      * @return $this
      */
-    public function setDeviceBrand($deviceBrand)
+    public function setAigcSource($aigcSource)
     {
-        $this->container['deviceBrand'] = $deviceBrand;
+        $this->container['aigcSource'] = $aigcSource;
 
         return $this;
     }
 
     /**
-     * Gets model
+     * Gets userAigcStatus
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\AigcStatus|mixed
      */
-    public function getModel()
+    public function getUserAigcStatus()
     {
-        return $this->container['model'];
+        return $this->container['userAigcStatus'];
     }
 
     /**
-     * Sets model
+     * Sets userAigcStatus
      *
-     * @param string|mixed $model model
+     * @param \TencentAds\Model\V3\AigcStatus|mixed $userAigcStatus userAigcStatus
      *
      * @return $this
      */
-    public function setModel($model)
+    public function setUserAigcStatus($userAigcStatus)
     {
-        $this->container['model'] = $model;
+        $this->container['userAigcStatus'] = $userAigcStatus;
 
         return $this;
     }
 
     /**
-     * Gets osVersion
+     * Gets systemAigcStatus
      *
-     * @return string|mixed
+     * @return \TencentAds\Model\V3\AigcStatus|mixed
      */
-    public function getOsVersion()
+    public function getSystemAigcStatus()
     {
-        return $this->container['osVersion'];
+        return $this->container['systemAigcStatus'];
     }
 
     /**
-     * Sets osVersion
+     * Sets systemAigcStatus
      *
-     * @param string|mixed $osVersion osVersion
+     * @param \TencentAds\Model\V3\AigcStatus|mixed $systemAigcStatus systemAigcStatus
      *
      * @return $this
      */
-    public function setOsVersion($osVersion)
+    public function setSystemAigcStatus($systemAigcStatus)
     {
-        $this->container['osVersion'] = $osVersion;
-
-        return $this;
-    }
-
-    /**
-     * Gets language
-     *
-     * @return string|mixed
-     */
-    public function getLanguage()
-    {
-        return $this->container['language'];
-    }
-
-    /**
-     * Sets language
-     *
-     * @param string|mixed $language language
-     *
-     * @return $this
-     */
-    public function setLanguage($language)
-    {
-        $this->container['language'] = $language;
-
-        return $this;
-    }
-
-    /**
-     * Gets ip
-     *
-     * @return string|mixed
-     */
-    public function getIp()
-    {
-        return $this->container['ip'];
-    }
-
-    /**
-     * Sets ip
-     *
-     * @param string|mixed $ip ip
-     *
-     * @return $this
-     */
-    public function setIp($ip)
-    {
-        $this->container['ip'] = $ip;
-
-        return $this;
-    }
-
-    /**
-     * Gets userAgent
-     *
-     * @return string|mixed
-     */
-    public function getUserAgent()
-    {
-        return $this->container['userAgent'];
-    }
-
-    /**
-     * Sets userAgent
-     *
-     * @param string|mixed $userAgent userAgent
-     *
-     * @return $this
-     */
-    public function setUserAgent($userAgent)
-    {
-        $this->container['userAgent'] = $userAgent;
-
-        return $this;
-    }
-
-    /**
-     * Gets wifiName
-     *
-     * @return string|mixed
-     */
-    public function getWifiName()
-    {
-        return $this->container['wifiName'];
-    }
-
-    /**
-     * Sets wifiName
-     *
-     * @param string|mixed $wifiName wifiName
-     *
-     * @return $this
-     */
-    public function setWifiName($wifiName)
-    {
-        $this->container['wifiName'] = $wifiName;
+        $this->container['systemAigcStatus'] = $systemAigcStatus;
 
         return $this;
     }

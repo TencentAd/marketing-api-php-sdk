@@ -70,8 +70,7 @@ class UserIdDn implements ModelInterface, ArrayAccess
         'wechatOpenid' => 'string',
         'wechatUnionid' => 'string',
         'wechatAppId' => 'string',
-        'caid' => 'string',
-        'caidVersion' => 'int'
+        'caid' => 'string'
     ];
 
     /**
@@ -92,8 +91,7 @@ class UserIdDn implements ModelInterface, ArrayAccess
         'wechatOpenid' => null,
         'wechatUnionid' => null,
         'wechatAppId' => null,
-        'caid' => null,
-        'caidVersion' => 'int64'
+        'caid' => null
     ];
 
     /**
@@ -135,8 +133,7 @@ class UserIdDn implements ModelInterface, ArrayAccess
         'wechatOpenid' => 'wechat_openid',
         'wechatUnionid' => 'wechat_unionid',
         'wechatAppId' => 'wechat_app_id',
-        'caid' => 'caid',
-        'caidVersion' => 'caid_version'
+        'caid' => 'caid'
     ];
 
     /**
@@ -157,8 +154,7 @@ class UserIdDn implements ModelInterface, ArrayAccess
         'wechatOpenid' => 'setWechatOpenid',
         'wechatUnionid' => 'setWechatUnionid',
         'wechatAppId' => 'setWechatAppId',
-        'caid' => 'setCaid',
-        'caidVersion' => 'setCaidVersion'
+        'caid' => 'setCaid'
     ];
 
     /**
@@ -179,8 +175,7 @@ class UserIdDn implements ModelInterface, ArrayAccess
         'wechatOpenid' => 'getWechatOpenid',
         'wechatUnionid' => 'getWechatUnionid',
         'wechatAppId' => 'getWechatAppId',
-        'caid' => 'getCaid',
-        'caidVersion' => 'getCaidVersion'
+        'caid' => 'getCaid'
     ];
 
     /**
@@ -256,7 +251,6 @@ class UserIdDn implements ModelInterface, ArrayAccess
         $this->container['wechatUnionid'] = isset($data['wechatUnionid']) ? $data['wechatUnionid'] : null;
         $this->container['wechatAppId'] = isset($data['wechatAppId']) ? $data['wechatAppId'] : null;
         $this->container['caid'] = isset($data['caid']) ? $data['caid'] : null;
-        $this->container['caidVersion'] = isset($data['caidVersion']) ? $data['caidVersion'] : null;
     }
 
     /**
@@ -591,30 +585,6 @@ class UserIdDn implements ModelInterface, ArrayAccess
     public function setCaid($caid)
     {
         $this->container['caid'] = $caid;
-
-        return $this;
-    }
-
-    /**
-     * Gets caidVersion
-     *
-     * @return int|mixed
-     */
-    public function getCaidVersion()
-    {
-        return $this->container['caidVersion'];
-    }
-
-    /**
-     * Sets caidVersion
-     *
-     * @param int|mixed $caidVersion caidVersion
-     *
-     * @return $this
-     */
-    public function setCaidVersion($caidVersion)
-    {
-        $this->container['caidVersion'] = $caidVersion;
 
         return $this;
     }

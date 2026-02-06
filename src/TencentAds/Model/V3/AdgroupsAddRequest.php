@@ -120,7 +120,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'searchExpansionSwitch' => '\TencentAds\Model\V3\SearchExpansionSwitch',
         'adxRealtimeType' => '\TencentAds\Model\V3\AdxRealtimeType',
         'enableSteadyExploration' => 'bool',
-        'smartTargetingMode' => '\TencentAds\Model\V3\SmartTargetingMode'
+        'smartTargetingMode' => '\TencentAds\Model\V3\SmartTargetingMode',
+        'smartCouponMode' => '\TencentAds\Model\V3\SmartCouponMode'
     ];
 
     /**
@@ -192,7 +193,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'searchExpansionSwitch' => null,
         'adxRealtimeType' => null,
         'enableSteadyExploration' => null,
-        'smartTargetingMode' => null
+        'smartTargetingMode' => null,
+        'smartCouponMode' => null
     ];
 
     /**
@@ -285,7 +287,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'searchExpansionSwitch' => 'search_expansion_switch',
         'adxRealtimeType' => 'adx_realtime_type',
         'enableSteadyExploration' => 'enable_steady_exploration',
-        'smartTargetingMode' => 'smart_targeting_mode'
+        'smartTargetingMode' => 'smart_targeting_mode',
+        'smartCouponMode' => 'smart_coupon_mode'
     ];
 
     /**
@@ -357,7 +360,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'searchExpansionSwitch' => 'setSearchExpansionSwitch',
         'adxRealtimeType' => 'setAdxRealtimeType',
         'enableSteadyExploration' => 'setEnableSteadyExploration',
-        'smartTargetingMode' => 'setSmartTargetingMode'
+        'smartTargetingMode' => 'setSmartTargetingMode',
+        'smartCouponMode' => 'setSmartCouponMode'
     ];
 
     /**
@@ -429,7 +433,8 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'searchExpansionSwitch' => 'getSearchExpansionSwitch',
         'adxRealtimeType' => 'getAdxRealtimeType',
         'enableSteadyExploration' => 'getEnableSteadyExploration',
-        'smartTargetingMode' => 'getSmartTargetingMode'
+        'smartTargetingMode' => 'getSmartTargetingMode',
+        'smartCouponMode' => 'getSmartCouponMode'
     ];
 
     /**
@@ -556,6 +561,7 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['adxRealtimeType'] = isset($data['adxRealtimeType']) ? $data['adxRealtimeType'] : null;
         $this->container['enableSteadyExploration'] = isset($data['enableSteadyExploration']) ? $data['enableSteadyExploration'] : null;
         $this->container['smartTargetingMode'] = isset($data['smartTargetingMode']) ? $data['smartTargetingMode'] : null;
+        $this->container['smartCouponMode'] = isset($data['smartCouponMode']) ? $data['smartCouponMode'] : null;
     }
 
     /**
@@ -2114,6 +2120,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setSmartTargetingMode($smartTargetingMode)
     {
         $this->container['smartTargetingMode'] = $smartTargetingMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets smartCouponMode
+     *
+     * @return \TencentAds\Model\V3\SmartCouponMode|mixed
+     */
+    public function getSmartCouponMode()
+    {
+        return $this->container['smartCouponMode'];
+    }
+
+    /**
+     * Sets smartCouponMode
+     *
+     * @param \TencentAds\Model\V3\SmartCouponMode|mixed $smartCouponMode smartCouponMode
+     *
+     * @return $this
+     */
+    public function setSmartCouponMode($smartCouponMode)
+    {
+        $this->container['smartCouponMode'] = $smartCouponMode;
 
         return $this;
     }

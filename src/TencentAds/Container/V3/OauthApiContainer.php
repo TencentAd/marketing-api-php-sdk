@@ -72,6 +72,46 @@ class OauthApiContainer extends ApiContainer
 
 
     /**
+     * Handle OauthApi oauthRefreshToken function
+     * @param array params
+     * @return mixed
+     * @throws \TencentAds\ApiException
+     * @throws \TencentAds\Exception\TencentAdsResponseException
+     */
+    public function refreshToken(array $params = [])
+    {
+        return $this->handleMiddleware('refreshToken', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $clientId = isset($params['client_id']) ? $params['client_id'] : null;
+            $clientSecret = isset($params['client_secret']) ? $params['client_secret'] : null;
+            $refreshToken = isset($params['refresh_token']) ? $params['refresh_token'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->oauthRefreshToken($clientId, $clientSecret, $refreshToken, $fields);
+            return $this->handleResponse($response);
+        });
+    }
+
+
+    /**
+     * Handle OauthApi oauthRefreshTokenAsync function
+     * @param array params
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function refreshTokenAsync(array $params = [])
+    {
+        return $this->handleMiddleware('refreshToken', $params, function(MiddlewareRequest $request) {
+            $params = $request->getApiMethodArguments();
+            $clientId = isset($params['client_id']) ? $params['client_id'] : null;
+            $clientSecret = isset($params['client_secret']) ? $params['client_secret'] : null;
+            $refreshToken = isset($params['refresh_token']) ? $params['refresh_token'] : null;
+            $fields = isset($params['fields']) ? $params['fields'] : null;
+            $response = $this->apiInstance->oauthRefreshTokenAsync($clientId, $clientSecret, $refreshToken, $fields);
+            return $response;
+        });
+    }
+
+
+    /**
      * Handle OauthApi oauthToken function
      * @param array params
      * @return mixed

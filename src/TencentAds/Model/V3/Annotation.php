@@ -1,6 +1,6 @@
 <?php
 /**
- * UpdateUnionPositionPackageItem
+ * Annotation
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * UpdateUnionPositionPackageItem Class Doc Comment
+ * Annotation Class Doc Comment
  *
  * @category Class
- * @description 修改广告定投腾讯广告联盟流量包信息
+ * @description 标注结果
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
+class Annotation implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'update_union_position_package_item';
+    protected static $swaggerModelName = 'annotation';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,8 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'unionPositionPackage' => 'int[]'
+        'resourceId' => 'string',
+        'aigcFlag' => '\TencentAds\Model\V3\AigcFlag'
     ];
 
     /**
@@ -68,8 +68,8 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'unionPositionPackage' => 'int64'
+        'resourceId' => null,
+        'aigcFlag' => null
     ];
 
     /**
@@ -99,8 +99,8 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'unionPositionPackage' => 'union_position_package'
+        'resourceId' => 'resource_id',
+        'aigcFlag' => 'aigc_flag'
     ];
 
     /**
@@ -109,8 +109,8 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'unionPositionPackage' => 'setUnionPositionPackage'
+        'resourceId' => 'setResourceId',
+        'aigcFlag' => 'setAigcFlag'
     ];
 
     /**
@@ -119,8 +119,8 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'unionPositionPackage' => 'getUnionPositionPackage'
+        'resourceId' => 'getResourceId',
+        'aigcFlag' => 'getAigcFlag'
     ];
 
     /**
@@ -183,8 +183,8 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['unionPositionPackage'] = isset($data['unionPositionPackage']) ? $data['unionPositionPackage'] : null;
+        $this->container['resourceId'] = isset($data['resourceId']) ? $data['resourceId'] : null;
+        $this->container['aigcFlag'] = isset($data['aigcFlag']) ? $data['aigcFlag'] : null;
     }
 
     /**
@@ -212,49 +212,49 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adgroupId
+     * Gets resourceId
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getAdgroupId()
+    public function getResourceId()
     {
-        return $this->container['adgroupId'];
+        return $this->container['resourceId'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets resourceId
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param string|mixed $resourceId resourceId
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setResourceId($resourceId)
     {
-        $this->container['adgroupId'] = $adgroupId;
+        $this->container['resourceId'] = $resourceId;
 
         return $this;
     }
 
     /**
-     * Gets unionPositionPackage
+     * Gets aigcFlag
      *
-     * @return int[]|mixed
+     * @return \TencentAds\Model\V3\AigcFlag|mixed
      */
-    public function getUnionPositionPackage()
+    public function getAigcFlag()
     {
-        return $this->container['unionPositionPackage'];
+        return $this->container['aigcFlag'];
     }
 
     /**
-     * Sets unionPositionPackage
+     * Sets aigcFlag
      *
-     * @param int[]|mixed $unionPositionPackage unionPositionPackage
+     * @param \TencentAds\Model\V3\AigcFlag|mixed $aigcFlag aigcFlag
      *
      * @return $this
      */
-    public function setUnionPositionPackage($unionPositionPackage)
+    public function setAigcFlag($aigcFlag)
     {
-        $this->container['unionPositionPackage'] = $unionPositionPackage;
+        $this->container['aigcFlag'] = $aigcFlag;
 
         return $this;
     }

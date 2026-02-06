@@ -1,6 +1,6 @@
 <?php
 /**
- * UpdateUnionPositionPackageItem
+ * AnnotationFailResult
  *
  * PHP version 5
  *
@@ -33,15 +33,15 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * UpdateUnionPositionPackageItem Class Doc Comment
+ * AnnotationFailResult Class Doc Comment
  *
  * @category Class
- * @description 修改广告定投腾讯广告联盟流量包信息
+ * @description 标注结果
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
+class AnnotationFailResult implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +50,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'update_union_position_package_item';
+    protected static $swaggerModelName = 'annotation_fail_result';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,9 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'unionPositionPackage' => 'int[]'
+        'resourceId' => 'string',
+        'resourceType' => 'string',
+        'reason' => 'string'
     ];
 
     /**
@@ -68,8 +69,9 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'unionPositionPackage' => 'int64'
+        'resourceId' => null,
+        'resourceType' => null,
+        'reason' => null
     ];
 
     /**
@@ -99,8 +101,9 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'unionPositionPackage' => 'union_position_package'
+        'resourceId' => 'resource_id',
+        'resourceType' => 'resource_type',
+        'reason' => 'reason'
     ];
 
     /**
@@ -109,8 +112,9 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'unionPositionPackage' => 'setUnionPositionPackage'
+        'resourceId' => 'setResourceId',
+        'resourceType' => 'setResourceType',
+        'reason' => 'setReason'
     ];
 
     /**
@@ -119,8 +123,9 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'unionPositionPackage' => 'getUnionPositionPackage'
+        'resourceId' => 'getResourceId',
+        'resourceType' => 'getResourceType',
+        'reason' => 'getReason'
     ];
 
     /**
@@ -183,8 +188,9 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['unionPositionPackage'] = isset($data['unionPositionPackage']) ? $data['unionPositionPackage'] : null;
+        $this->container['resourceId'] = isset($data['resourceId']) ? $data['resourceId'] : null;
+        $this->container['resourceType'] = isset($data['resourceType']) ? $data['resourceType'] : null;
+        $this->container['reason'] = isset($data['reason']) ? $data['reason'] : null;
     }
 
     /**
@@ -212,49 +218,73 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adgroupId
+     * Gets resourceId
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getAdgroupId()
+    public function getResourceId()
     {
-        return $this->container['adgroupId'];
+        return $this->container['resourceId'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets resourceId
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param string|mixed $resourceId resourceId
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setResourceId($resourceId)
     {
-        $this->container['adgroupId'] = $adgroupId;
+        $this->container['resourceId'] = $resourceId;
 
         return $this;
     }
 
     /**
-     * Gets unionPositionPackage
+     * Gets resourceType
      *
-     * @return int[]|mixed
+     * @return string|mixed
      */
-    public function getUnionPositionPackage()
+    public function getResourceType()
     {
-        return $this->container['unionPositionPackage'];
+        return $this->container['resourceType'];
     }
 
     /**
-     * Sets unionPositionPackage
+     * Sets resourceType
      *
-     * @param int[]|mixed $unionPositionPackage unionPositionPackage
+     * @param string|mixed $resourceType resourceType
      *
      * @return $this
      */
-    public function setUnionPositionPackage($unionPositionPackage)
+    public function setResourceType($resourceType)
     {
-        $this->container['unionPositionPackage'] = $unionPositionPackage;
+        $this->container['resourceType'] = $resourceType;
+
+        return $this;
+    }
+
+    /**
+     * Gets reason
+     *
+     * @return string|mixed
+     */
+    public function getReason()
+    {
+        return $this->container['reason'];
+    }
+
+    /**
+     * Sets reason
+     *
+     * @param string|mixed $reason reason
+     *
+     * @return $this
+     */
+    public function setReason($reason)
+    {
+        $this->container['reason'] = $reason;
 
         return $this;
     }

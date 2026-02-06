@@ -12,6 +12,7 @@ use TencentAds\Container\V3\AdcreativePreviewsQrcodeApiContainer;
 use TencentAds\Container\V3\AdgroupNegativewordsApiContainer;
 use TencentAds\Container\V3\AdgroupsApiContainer;
 use TencentAds\Container\V3\AdvertiserApiContainer;
+use TencentAds\Container\V3\AdvertiserConfigApiContainer;
 use TencentAds\Container\V3\AdvertiserDailyBudgetApiContainer;
 use TencentAds\Container\V3\AgencyApiContainer;
 use TencentAds\Container\V3\AgencyBusinessUnitApiContainer;
@@ -121,6 +122,7 @@ use TencentAds\Container\V3\MarketingTargetAssetPropertiesApiContainer;
 use TencentAds\Container\V3\MarketingTargetAssetPropertyValuesApiContainer;
 use TencentAds\Container\V3\MarketingTargetAssetsApiContainer;
 use TencentAds\Container\V3\MarketingTargetTypesApiContainer;
+use TencentAds\Container\V3\MaterialAiAnnotationApiContainer;
 use TencentAds\Container\V3\MaterialAsyncTasksApiContainer;
 use TencentAds\Container\V3\MaterialDcasetApiContainer;
 use TencentAds\Container\V3\MaterialDcatagApiContainer;
@@ -267,6 +269,9 @@ class App
 
     /** @var AdvertiserApiContainer */
     public $advertiserApiContainer;
+
+    /** @var AdvertiserConfigApiContainer */
+    public $advertiserConfigApiContainer;
 
     /** @var AdvertiserDailyBudgetApiContainer */
     public $advertiserDailyBudgetApiContainer;
@@ -594,6 +599,9 @@ class App
 
     /** @var MarketingTargetTypesApiContainer */
     public $marketingTargetTypesApiContainer;
+
+    /** @var MaterialAiAnnotationApiContainer */
+    public $materialAiAnnotationApiContainer;
 
     /** @var MaterialAsyncTasksApiContainer */
     public $materialAsyncTasksApiContainer;
@@ -1078,6 +1086,20 @@ class App
             $this->advertiserApiContainer = $container;
         }
         return $this->advertiserApiContainer;
+    }
+
+
+    /**
+     * @return AdvertiserConfigApiContainer
+     */
+    public function advertiserConfig()
+    {
+        if (empty($this->advertiserConfigApiContainer)) {
+            $container = new AdvertiserConfigApiContainer();
+            $container->init($this, $this->getClient());
+            $this->advertiserConfigApiContainer = $container;
+        }
+        return $this->advertiserConfigApiContainer;
     }
 
 
@@ -2604,6 +2626,20 @@ class App
             $this->marketingTargetTypesApiContainer = $container;
         }
         return $this->marketingTargetTypesApiContainer;
+    }
+
+
+    /**
+     * @return MaterialAiAnnotationApiContainer
+     */
+    public function materialAiAnnotation()
+    {
+        if (empty($this->materialAiAnnotationApiContainer)) {
+            $container = new MaterialAiAnnotationApiContainer();
+            $container->init($this, $this->getClient());
+            $this->materialAiAnnotationApiContainer = $container;
+        }
+        return $this->materialAiAnnotationApiContainer;
     }
 
 

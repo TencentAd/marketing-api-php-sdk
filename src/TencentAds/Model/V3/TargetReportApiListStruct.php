@@ -891,6 +891,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkBmDetailPv' => 'int',
         'clkRpsPv' => 'int',
         'sliderPv' => 'int',
+        'insuranceDedupPv' => 'int',
         'ageId' => 'int',
         'cityId' => 'int',
         'regionId' => 'int',
@@ -1739,6 +1740,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkBmDetailPv' => 'int64',
         'clkRpsPv' => 'int64',
         'sliderPv' => 'int64',
+        'insuranceDedupPv' => 'int64',
         'ageId' => 'int64',
         'cityId' => 'int64',
         'regionId' => 'int64',
@@ -2608,6 +2610,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkBmDetailPv' => 'clk_bm_detail_pv',
         'clkRpsPv' => 'clk_rps_pv',
         'sliderPv' => 'slider_pv',
+        'insuranceDedupPv' => 'insurance_dedup_pv',
         'ageId' => 'age_id',
         'cityId' => 'city_id',
         'regionId' => 'region_id',
@@ -3456,6 +3459,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkBmDetailPv' => 'setClkBmDetailPv',
         'clkRpsPv' => 'setClkRpsPv',
         'sliderPv' => 'setSliderPv',
+        'insuranceDedupPv' => 'setInsuranceDedupPv',
         'ageId' => 'setAgeId',
         'cityId' => 'setCityId',
         'regionId' => 'setRegionId',
@@ -4304,6 +4308,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'clkBmDetailPv' => 'getClkBmDetailPv',
         'clkRpsPv' => 'getClkRpsPv',
         'sliderPv' => 'getSliderPv',
+        'insuranceDedupPv' => 'getInsuranceDedupPv',
         'ageId' => 'getAgeId',
         'cityId' => 'getCityId',
         'regionId' => 'getRegionId',
@@ -5206,6 +5211,7 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['clkBmDetailPv'] = isset($data['clkBmDetailPv']) ? $data['clkBmDetailPv'] : null;
         $this->container['clkRpsPv'] = isset($data['clkRpsPv']) ? $data['clkRpsPv'] : null;
         $this->container['sliderPv'] = isset($data['sliderPv']) ? $data['sliderPv'] : null;
+        $this->container['insuranceDedupPv'] = isset($data['insuranceDedupPv']) ? $data['insuranceDedupPv'] : null;
         $this->container['ageId'] = isset($data['ageId']) ? $data['ageId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
@@ -25227,6 +25233,30 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setSliderPv($sliderPv)
     {
         $this->container['sliderPv'] = $sliderPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets insuranceDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getInsuranceDedupPv()
+    {
+        return $this->container['insuranceDedupPv'];
+    }
+
+    /**
+     * Sets insuranceDedupPv
+     *
+     * @param int|mixed $insuranceDedupPv insuranceDedupPv
+     *
+     * @return $this
+     */
+    public function setInsuranceDedupPv($insuranceDedupPv)
+    {
+        $this->container['insuranceDedupPv'] = $insuranceDedupPv;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * UpdateUnionPositionPackageItem
+ * AdvertiserConfigGetResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * UpdateUnionPositionPackageItem Class Doc Comment
+ * AdvertiserConfigGetResponseData Class Doc Comment
  *
  * @category Class
- * @description 修改广告定投腾讯广告联盟流量包信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
+class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'update_union_position_package_item';
+    protected static $swaggerModelName = 'AdvertiserConfigGetResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'unionPositionPackage' => 'int[]'
+        'coverImageSnapshotType' => '\TencentAds\Model\V3\CoverImageSnapshotType'
     ];
 
     /**
@@ -68,8 +66,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'unionPositionPackage' => 'int64'
+        'coverImageSnapshotType' => null
     ];
 
     /**
@@ -99,8 +96,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'unionPositionPackage' => 'union_position_package'
+        'coverImageSnapshotType' => 'cover_image_snapshot_type'
     ];
 
     /**
@@ -109,8 +105,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'unionPositionPackage' => 'setUnionPositionPackage'
+        'coverImageSnapshotType' => 'setCoverImageSnapshotType'
     ];
 
     /**
@@ -119,8 +114,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'unionPositionPackage' => 'getUnionPositionPackage'
+        'coverImageSnapshotType' => 'getCoverImageSnapshotType'
     ];
 
     /**
@@ -183,8 +177,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['unionPositionPackage'] = isset($data['unionPositionPackage']) ? $data['unionPositionPackage'] : null;
+        $this->container['coverImageSnapshotType'] = isset($data['coverImageSnapshotType']) ? $data['coverImageSnapshotType'] : null;
     }
 
     /**
@@ -212,49 +205,25 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adgroupId
+     * Gets coverImageSnapshotType
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\CoverImageSnapshotType|mixed
      */
-    public function getAdgroupId()
+    public function getCoverImageSnapshotType()
     {
-        return $this->container['adgroupId'];
+        return $this->container['coverImageSnapshotType'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets coverImageSnapshotType
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param \TencentAds\Model\V3\CoverImageSnapshotType|mixed $coverImageSnapshotType coverImageSnapshotType
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setCoverImageSnapshotType($coverImageSnapshotType)
     {
-        $this->container['adgroupId'] = $adgroupId;
-
-        return $this;
-    }
-
-    /**
-     * Gets unionPositionPackage
-     *
-     * @return int[]|mixed
-     */
-    public function getUnionPositionPackage()
-    {
-        return $this->container['unionPositionPackage'];
-    }
-
-    /**
-     * Sets unionPositionPackage
-     *
-     * @param int[]|mixed $unionPositionPackage unionPositionPackage
-     *
-     * @return $this
-     */
-    public function setUnionPositionPackage($unionPositionPackage)
-    {
-        $this->container['unionPositionPackage'] = $unionPositionPackage;
+        $this->container['coverImageSnapshotType'] = $coverImageSnapshotType;
 
         return $this;
     }

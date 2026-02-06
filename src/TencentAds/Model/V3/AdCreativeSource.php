@@ -55,6 +55,7 @@ class AdCreativeSource
     const HISTORY_COMP_REUSE = 'AD_CREATIVE_HISTORY_COMP_REUSE';
     const NEW_RECOMMEND = 'AD_CREATIVE_NEW_RECOMMEND';
     const TRANSFORMER_RESIZE = 'AD_CREATIVE_TRANSFORMER_RESIZE';
+    const AI_FLAG_EXPERIMENT = 'AD_CREATIVE_AI_FLAG_EXPERIMENT';
     
     /**
      * Gets allowable values of the enum
@@ -74,6 +75,7 @@ class AdCreativeSource
             self::HISTORY_COMP_REUSE,
             self::NEW_RECOMMEND,
             self::TRANSFORMER_RESIZE,
+            self::AI_FLAG_EXPERIMENT,
         ];
     }
 }

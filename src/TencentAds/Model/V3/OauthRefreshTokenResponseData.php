@@ -1,6 +1,6 @@
 <?php
 /**
- * UpdateUnionPositionPackageItem
+ * OauthRefreshTokenResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * UpdateUnionPositionPackageItem Class Doc Comment
+ * OauthRefreshTokenResponseData Class Doc Comment
  *
  * @category Class
- * @description 修改广告定投腾讯广告联盟流量包信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
+class OauthRefreshTokenResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'update_union_position_package_item';
+    protected static $swaggerModelName = 'OauthRefreshTokenResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'unionPositionPackage' => 'int[]'
+        'accessToken' => 'string',
+        'refreshToken' => 'string',
+        'accessTokenExpiresIn' => 'int',
+        'refreshTokenExpiresIn' => 'int'
     ];
 
     /**
@@ -68,8 +69,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'unionPositionPackage' => 'int64'
+        'accessToken' => null,
+        'refreshToken' => null,
+        'accessTokenExpiresIn' => 'int64',
+        'refreshTokenExpiresIn' => 'int64'
     ];
 
     /**
@@ -99,8 +102,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'unionPositionPackage' => 'union_position_package'
+        'accessToken' => 'access_token',
+        'refreshToken' => 'refresh_token',
+        'accessTokenExpiresIn' => 'access_token_expires_in',
+        'refreshTokenExpiresIn' => 'refresh_token_expires_in'
     ];
 
     /**
@@ -109,8 +114,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'unionPositionPackage' => 'setUnionPositionPackage'
+        'accessToken' => 'setAccessToken',
+        'refreshToken' => 'setRefreshToken',
+        'accessTokenExpiresIn' => 'setAccessTokenExpiresIn',
+        'refreshTokenExpiresIn' => 'setRefreshTokenExpiresIn'
     ];
 
     /**
@@ -119,8 +126,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'unionPositionPackage' => 'getUnionPositionPackage'
+        'accessToken' => 'getAccessToken',
+        'refreshToken' => 'getRefreshToken',
+        'accessTokenExpiresIn' => 'getAccessTokenExpiresIn',
+        'refreshTokenExpiresIn' => 'getRefreshTokenExpiresIn'
     ];
 
     /**
@@ -183,8 +192,10 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['unionPositionPackage'] = isset($data['unionPositionPackage']) ? $data['unionPositionPackage'] : null;
+        $this->container['accessToken'] = isset($data['accessToken']) ? $data['accessToken'] : null;
+        $this->container['refreshToken'] = isset($data['refreshToken']) ? $data['refreshToken'] : null;
+        $this->container['accessTokenExpiresIn'] = isset($data['accessTokenExpiresIn']) ? $data['accessTokenExpiresIn'] : null;
+        $this->container['refreshTokenExpiresIn'] = isset($data['refreshTokenExpiresIn']) ? $data['refreshTokenExpiresIn'] : null;
     }
 
     /**
@@ -212,49 +223,97 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adgroupId
+     * Gets accessToken
      *
-     * @return int|mixed
+     * @return string|mixed
      */
-    public function getAdgroupId()
+    public function getAccessToken()
     {
-        return $this->container['adgroupId'];
+        return $this->container['accessToken'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets accessToken
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param string|mixed $accessToken accessToken
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setAccessToken($accessToken)
     {
-        $this->container['adgroupId'] = $adgroupId;
+        $this->container['accessToken'] = $accessToken;
 
         return $this;
     }
 
     /**
-     * Gets unionPositionPackage
+     * Gets refreshToken
      *
-     * @return int[]|mixed
+     * @return string|mixed
      */
-    public function getUnionPositionPackage()
+    public function getRefreshToken()
     {
-        return $this->container['unionPositionPackage'];
+        return $this->container['refreshToken'];
     }
 
     /**
-     * Sets unionPositionPackage
+     * Sets refreshToken
      *
-     * @param int[]|mixed $unionPositionPackage unionPositionPackage
+     * @param string|mixed $refreshToken refreshToken
      *
      * @return $this
      */
-    public function setUnionPositionPackage($unionPositionPackage)
+    public function setRefreshToken($refreshToken)
     {
-        $this->container['unionPositionPackage'] = $unionPositionPackage;
+        $this->container['refreshToken'] = $refreshToken;
+
+        return $this;
+    }
+
+    /**
+     * Gets accessTokenExpiresIn
+     *
+     * @return int|mixed
+     */
+    public function getAccessTokenExpiresIn()
+    {
+        return $this->container['accessTokenExpiresIn'];
+    }
+
+    /**
+     * Sets accessTokenExpiresIn
+     *
+     * @param int|mixed $accessTokenExpiresIn accessTokenExpiresIn
+     *
+     * @return $this
+     */
+    public function setAccessTokenExpiresIn($accessTokenExpiresIn)
+    {
+        $this->container['accessTokenExpiresIn'] = $accessTokenExpiresIn;
+
+        return $this;
+    }
+
+    /**
+     * Gets refreshTokenExpiresIn
+     *
+     * @return int|mixed
+     */
+    public function getRefreshTokenExpiresIn()
+    {
+        return $this->container['refreshTokenExpiresIn'];
+    }
+
+    /**
+     * Sets refreshTokenExpiresIn
+     *
+     * @param int|mixed $refreshTokenExpiresIn refreshTokenExpiresIn
+     *
+     * @return $this
+     */
+    public function setRefreshTokenExpiresIn($refreshTokenExpiresIn)
+    {
+        $this->container['refreshTokenExpiresIn'] = $refreshTokenExpiresIn;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * UpdateUnionPositionPackageItem
+ * MaterialAiAnnotationAddResponseData
  *
  * PHP version 5
  *
@@ -33,15 +33,14 @@ use \ArrayAccess;
 use \TencentAds\ObjectSerializer;
 
 /**
- * UpdateUnionPositionPackageItem Class Doc Comment
+ * MaterialAiAnnotationAddResponseData Class Doc Comment
  *
  * @category Class
- * @description 修改广告定投腾讯广告联盟流量包信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
+class MaterialAiAnnotationAddResponseData implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -50,7 +49,7 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $swaggerModelName = 'update_union_position_package_item';
+    protected static $swaggerModelName = 'MaterialAiAnnotationAddResponseData';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +57,8 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'adgroupId' => 'int',
-        'unionPositionPackage' => 'int[]'
+        'successList' => '\TencentAds\Model\V3\AnnotationSuccessResult[]',
+        'failList' => '\TencentAds\Model\V3\AnnotationFailResult[]'
     ];
 
     /**
@@ -68,8 +67,8 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'adgroupId' => 'int64',
-        'unionPositionPackage' => 'int64'
+        'successList' => null,
+        'failList' => null
     ];
 
     /**
@@ -99,8 +98,8 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'adgroupId' => 'adgroup_id',
-        'unionPositionPackage' => 'union_position_package'
+        'successList' => 'success_list',
+        'failList' => 'fail_list'
     ];
 
     /**
@@ -109,8 +108,8 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'adgroupId' => 'setAdgroupId',
-        'unionPositionPackage' => 'setUnionPositionPackage'
+        'successList' => 'setSuccessList',
+        'failList' => 'setFailList'
     ];
 
     /**
@@ -119,8 +118,8 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'adgroupId' => 'getAdgroupId',
-        'unionPositionPackage' => 'getUnionPositionPackage'
+        'successList' => 'getSuccessList',
+        'failList' => 'getFailList'
     ];
 
     /**
@@ -183,8 +182,8 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['unionPositionPackage'] = isset($data['unionPositionPackage']) ? $data['unionPositionPackage'] : null;
+        $this->container['successList'] = isset($data['successList']) ? $data['successList'] : null;
+        $this->container['failList'] = isset($data['failList']) ? $data['failList'] : null;
     }
 
     /**
@@ -212,49 +211,49 @@ class UpdateUnionPositionPackageItem implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets adgroupId
+     * Gets successList
      *
-     * @return int|mixed
+     * @return \TencentAds\Model\V3\AnnotationSuccessResult[]|mixed
      */
-    public function getAdgroupId()
+    public function getSuccessList()
     {
-        return $this->container['adgroupId'];
+        return $this->container['successList'];
     }
 
     /**
-     * Sets adgroupId
+     * Sets successList
      *
-     * @param int|mixed $adgroupId adgroupId
+     * @param \TencentAds\Model\V3\AnnotationSuccessResult[]|mixed $successList successList
      *
      * @return $this
      */
-    public function setAdgroupId($adgroupId)
+    public function setSuccessList($successList)
     {
-        $this->container['adgroupId'] = $adgroupId;
+        $this->container['successList'] = $successList;
 
         return $this;
     }
 
     /**
-     * Gets unionPositionPackage
+     * Gets failList
      *
-     * @return int[]|mixed
+     * @return \TencentAds\Model\V3\AnnotationFailResult[]|mixed
      */
-    public function getUnionPositionPackage()
+    public function getFailList()
     {
-        return $this->container['unionPositionPackage'];
+        return $this->container['failList'];
     }
 
     /**
-     * Sets unionPositionPackage
+     * Sets failList
      *
-     * @param int[]|mixed $unionPositionPackage unionPositionPackage
+     * @param \TencentAds\Model\V3\AnnotationFailResult[]|mixed $failList failList
      *
      * @return $this
      */
-    public function setUnionPositionPackage($unionPositionPackage)
+    public function setFailList($failList)
     {
-        $this->container['unionPositionPackage'] = $unionPositionPackage;
+        $this->container['failList'] = $failList;
 
         return $this;
     }

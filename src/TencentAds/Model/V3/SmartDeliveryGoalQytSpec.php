@@ -69,7 +69,8 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'clickCost' => 'int',
         'firstTwentyFourHourEcommerceOrderCost' => 'int',
         'netProfitCost' => 'int',
-        'netProfitRoi' => 'double'
+        'netProfitRoi' => 'double',
+        'collectCost' => 'int'
     ];
 
     /**
@@ -89,7 +90,8 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'clickCost' => 'int64',
         'firstTwentyFourHourEcommerceOrderCost' => 'int64',
         'netProfitCost' => 'int64',
-        'netProfitRoi' => 'double'
+        'netProfitRoi' => 'double',
+        'collectCost' => 'int64'
     ];
 
     /**
@@ -130,7 +132,8 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'clickCost' => 'click_cost',
         'firstTwentyFourHourEcommerceOrderCost' => 'first_twenty_four_hour_ecommerce_order_cost',
         'netProfitCost' => 'net_profit_cost',
-        'netProfitRoi' => 'net_profit_roi'
+        'netProfitRoi' => 'net_profit_roi',
+        'collectCost' => 'collect_cost'
     ];
 
     /**
@@ -150,7 +153,8 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'clickCost' => 'setClickCost',
         'firstTwentyFourHourEcommerceOrderCost' => 'setFirstTwentyFourHourEcommerceOrderCost',
         'netProfitCost' => 'setNetProfitCost',
-        'netProfitRoi' => 'setNetProfitRoi'
+        'netProfitRoi' => 'setNetProfitRoi',
+        'collectCost' => 'setCollectCost'
     ];
 
     /**
@@ -170,7 +174,8 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         'clickCost' => 'getClickCost',
         'firstTwentyFourHourEcommerceOrderCost' => 'getFirstTwentyFourHourEcommerceOrderCost',
         'netProfitCost' => 'getNetProfitCost',
-        'netProfitRoi' => 'getNetProfitRoi'
+        'netProfitRoi' => 'getNetProfitRoi',
+        'collectCost' => 'getCollectCost'
     ];
 
     /**
@@ -245,6 +250,7 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
         $this->container['firstTwentyFourHourEcommerceOrderCost'] = isset($data['firstTwentyFourHourEcommerceOrderCost']) ? $data['firstTwentyFourHourEcommerceOrderCost'] : null;
         $this->container['netProfitCost'] = isset($data['netProfitCost']) ? $data['netProfitCost'] : null;
         $this->container['netProfitRoi'] = isset($data['netProfitRoi']) ? $data['netProfitRoi'] : null;
+        $this->container['collectCost'] = isset($data['collectCost']) ? $data['collectCost'] : null;
     }
 
     /**
@@ -555,6 +561,30 @@ class SmartDeliveryGoalQytSpec implements ModelInterface, ArrayAccess
     public function setNetProfitRoi($netProfitRoi)
     {
         $this->container['netProfitRoi'] = $netProfitRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets collectCost
+     *
+     * @return int|mixed
+     */
+    public function getCollectCost()
+    {
+        return $this->container['collectCost'];
+    }
+
+    /**
+     * Sets collectCost
+     *
+     * @param int|mixed $collectCost collectCost
+     *
+     * @return $this
+     */
+    public function setCollectCost($collectCost)
+    {
+        $this->container['collectCost'] = $collectCost;
 
         return $this;
     }

@@ -65,6 +65,9 @@ class FinderObject implements ModelInterface, ArrayAccess
         'medias' => '\TencentAds\Model\V3\WechatChannelsMedia[]',
         'finderUsername' => 'string',
         'wechatChannelsAccountId' => 'string',
+        'createdSource' => '\TencentAds\Model\V3\CreatedSourceType',
+        'wechatChannelsComponents' => '\TencentAds\Model\V3\WxgWechatChannelsComponent[]',
+        'feedsSourceType' => '\TencentAds\Model\V3\FeedsSourceType',
         'isDisable' => 'bool',
         'disableMessage' => 'string',
         'auditStatus' => '\TencentAds\Model\V3\AdStatus'
@@ -83,6 +86,9 @@ class FinderObject implements ModelInterface, ArrayAccess
         'medias' => null,
         'finderUsername' => null,
         'wechatChannelsAccountId' => null,
+        'createdSource' => null,
+        'wechatChannelsComponents' => null,
+        'feedsSourceType' => null,
         'isDisable' => null,
         'disableMessage' => null,
         'auditStatus' => null
@@ -122,6 +128,9 @@ class FinderObject implements ModelInterface, ArrayAccess
         'medias' => 'medias',
         'finderUsername' => 'finder_username',
         'wechatChannelsAccountId' => 'wechat_channels_account_id',
+        'createdSource' => 'created_source',
+        'wechatChannelsComponents' => 'wechat_channels_components',
+        'feedsSourceType' => 'feeds_source_type',
         'isDisable' => 'is_disable',
         'disableMessage' => 'disable_message',
         'auditStatus' => 'audit_status'
@@ -140,6 +149,9 @@ class FinderObject implements ModelInterface, ArrayAccess
         'medias' => 'setMedias',
         'finderUsername' => 'setFinderUsername',
         'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
+        'createdSource' => 'setCreatedSource',
+        'wechatChannelsComponents' => 'setWechatChannelsComponents',
+        'feedsSourceType' => 'setFeedsSourceType',
         'isDisable' => 'setIsDisable',
         'disableMessage' => 'setDisableMessage',
         'auditStatus' => 'setAuditStatus'
@@ -158,6 +170,9 @@ class FinderObject implements ModelInterface, ArrayAccess
         'medias' => 'getMedias',
         'finderUsername' => 'getFinderUsername',
         'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
+        'createdSource' => 'getCreatedSource',
+        'wechatChannelsComponents' => 'getWechatChannelsComponents',
+        'feedsSourceType' => 'getFeedsSourceType',
         'isDisable' => 'getIsDisable',
         'disableMessage' => 'getDisableMessage',
         'auditStatus' => 'getAuditStatus'
@@ -230,6 +245,9 @@ class FinderObject implements ModelInterface, ArrayAccess
         $this->container['medias'] = isset($data['medias']) ? $data['medias'] : null;
         $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
         $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
+        $this->container['createdSource'] = isset($data['createdSource']) ? $data['createdSource'] : null;
+        $this->container['wechatChannelsComponents'] = isset($data['wechatChannelsComponents']) ? $data['wechatChannelsComponents'] : null;
+        $this->container['feedsSourceType'] = isset($data['feedsSourceType']) ? $data['feedsSourceType'] : null;
         $this->container['isDisable'] = isset($data['isDisable']) ? $data['isDisable'] : null;
         $this->container['disableMessage'] = isset($data['disableMessage']) ? $data['disableMessage'] : null;
         $this->container['auditStatus'] = isset($data['auditStatus']) ? $data['auditStatus'] : null;
@@ -423,6 +441,78 @@ class FinderObject implements ModelInterface, ArrayAccess
     public function setWechatChannelsAccountId($wechatChannelsAccountId)
     {
         $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets createdSource
+     *
+     * @return \TencentAds\Model\V3\CreatedSourceType|mixed
+     */
+    public function getCreatedSource()
+    {
+        return $this->container['createdSource'];
+    }
+
+    /**
+     * Sets createdSource
+     *
+     * @param \TencentAds\Model\V3\CreatedSourceType|mixed $createdSource createdSource
+     *
+     * @return $this
+     */
+    public function setCreatedSource($createdSource)
+    {
+        $this->container['createdSource'] = $createdSource;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsComponents
+     *
+     * @return \TencentAds\Model\V3\WxgWechatChannelsComponent[]|mixed
+     */
+    public function getWechatChannelsComponents()
+    {
+        return $this->container['wechatChannelsComponents'];
+    }
+
+    /**
+     * Sets wechatChannelsComponents
+     *
+     * @param \TencentAds\Model\V3\WxgWechatChannelsComponent[]|mixed $wechatChannelsComponents wechatChannelsComponents
+     *
+     * @return $this
+     */
+    public function setWechatChannelsComponents($wechatChannelsComponents)
+    {
+        $this->container['wechatChannelsComponents'] = $wechatChannelsComponents;
+
+        return $this;
+    }
+
+    /**
+     * Gets feedsSourceType
+     *
+     * @return \TencentAds\Model\V3\FeedsSourceType|mixed
+     */
+    public function getFeedsSourceType()
+    {
+        return $this->container['feedsSourceType'];
+    }
+
+    /**
+     * Sets feedsSourceType
+     *
+     * @param \TencentAds\Model\V3\FeedsSourceType|mixed $feedsSourceType feedsSourceType
+     *
+     * @return $this
+     */
+    public function setFeedsSourceType($feedsSourceType)
+    {
+        $this->container['feedsSourceType'] = $feedsSourceType;
 
         return $this;
     }
