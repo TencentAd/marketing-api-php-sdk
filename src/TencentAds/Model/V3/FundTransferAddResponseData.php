@@ -62,7 +62,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
         'externalBillNo' => 'string',
         'time' => 'int',
         'isRepeated' => 'bool',
-        'recommendAmount' => 'int'
+        'recommendAmount' => 'int',
+        'checkResult' => '\TencentAds\Model\V3\CheckResult'
     ];
 
     /**
@@ -76,7 +77,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
         'externalBillNo' => null,
         'time' => 'int64',
         'isRepeated' => null,
-        'recommendAmount' => 'int64'
+        'recommendAmount' => 'int64',
+        'checkResult' => null
     ];
 
     /**
@@ -111,7 +113,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
         'externalBillNo' => 'external_bill_no',
         'time' => 'time',
         'isRepeated' => 'is_repeated',
-        'recommendAmount' => 'recommend_amount'
+        'recommendAmount' => 'recommend_amount',
+        'checkResult' => 'check_result'
     ];
 
     /**
@@ -125,7 +128,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
         'externalBillNo' => 'setExternalBillNo',
         'time' => 'setTime',
         'isRepeated' => 'setIsRepeated',
-        'recommendAmount' => 'setRecommendAmount'
+        'recommendAmount' => 'setRecommendAmount',
+        'checkResult' => 'setCheckResult'
     ];
 
     /**
@@ -139,7 +143,8 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
         'externalBillNo' => 'getExternalBillNo',
         'time' => 'getTime',
         'isRepeated' => 'getIsRepeated',
-        'recommendAmount' => 'getRecommendAmount'
+        'recommendAmount' => 'getRecommendAmount',
+        'checkResult' => 'getCheckResult'
     ];
 
     /**
@@ -208,6 +213,7 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
         $this->container['time'] = isset($data['time']) ? $data['time'] : null;
         $this->container['isRepeated'] = isset($data['isRepeated']) ? $data['isRepeated'] : null;
         $this->container['recommendAmount'] = isset($data['recommendAmount']) ? $data['recommendAmount'] : null;
+        $this->container['checkResult'] = isset($data['checkResult']) ? $data['checkResult'] : null;
     }
 
     /**
@@ -374,6 +380,30 @@ class FundTransferAddResponseData implements ModelInterface, ArrayAccess
     public function setRecommendAmount($recommendAmount)
     {
         $this->container['recommendAmount'] = $recommendAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets checkResult
+     *
+     * @return \TencentAds\Model\V3\CheckResult|mixed
+     */
+    public function getCheckResult()
+    {
+        return $this->container['checkResult'];
+    }
+
+    /**
+     * Sets checkResult
+     *
+     * @param \TencentAds\Model\V3\CheckResult|mixed $checkResult checkResult
+     *
+     * @return $this
+     */
+    public function setCheckResult($checkResult)
+    {
+        $this->container['checkResult'] = $checkResult;
 
         return $this;
     }

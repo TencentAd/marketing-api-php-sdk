@@ -982,6 +982,7 @@ class MaterialLabelsApi
      * @param  int[]|mixed $secondLabelLevelIdList 二级标签类目ID列表 (optional)
      * @param  bool|mixed $needCount needCount (optional)
      * @param  string|mixed $businessScenario businessScenario (optional)
+     * @param  string|mixed $ownershipType 素材归属类型过滤 (optional)
      * @param  \TencentAds\Model\V3\OrderByStruct[]|mixed $orderBy orderBy (optional)
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
@@ -991,9 +992,9 @@ class MaterialLabelsApi
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\MaterialLabelsGetResponse|mixed
      */
-    public function materialLabelsGet($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
+    public function materialLabelsGet($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $ownershipType = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->materialLabelsGetWithHttpInfo($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields);
+        list($response) = $this->materialLabelsGetWithHttpInfo($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $ownershipType, $orderBy, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -1010,6 +1011,7 @@ class MaterialLabelsApi
      * @param  int[]|mixed $secondLabelLevelIdList 二级标签类目ID列表 (optional)
      * @param  bool|mixed $needCount (optional)
      * @param  string|mixed $businessScenario (optional)
+     * @param  string|mixed $ownershipType 素材归属类型过滤 (optional)
      * @param  \TencentAds\Model\V3\OrderByStruct[]|mixed $orderBy (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -1019,10 +1021,10 @@ class MaterialLabelsApi
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\MaterialLabelsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function materialLabelsGetWithHttpInfo($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
+    public function materialLabelsGetWithHttpInfo($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $ownershipType = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\MaterialLabelsGetResponse';
-        $request = $this->materialLabelsGetRequest($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields);
+        $request = $this->materialLabelsGetRequest($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $ownershipType, $orderBy, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1096,6 +1098,7 @@ class MaterialLabelsApi
      * @param  int[]|mixed $secondLabelLevelIdList 二级标签类目ID列表 (optional)
      * @param  bool|mixed $needCount (optional)
      * @param  string|mixed $businessScenario (optional)
+     * @param  string|mixed $ownershipType 素材归属类型过滤 (optional)
      * @param  \TencentAds\Model\V3\OrderByStruct[]|mixed $orderBy (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -1104,9 +1107,9 @@ class MaterialLabelsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function materialLabelsGetAsync($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
+    public function materialLabelsGetAsync($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $ownershipType = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->materialLabelsGetAsyncWithHttpInfo($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields)
+        return $this->materialLabelsGetAsyncWithHttpInfo($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $ownershipType, $orderBy, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1127,6 +1130,7 @@ class MaterialLabelsApi
      * @param  int[]|mixed $secondLabelLevelIdList 二级标签类目ID列表 (optional)
      * @param  bool|mixed $needCount (optional)
      * @param  string|mixed $businessScenario (optional)
+     * @param  string|mixed $ownershipType 素材归属类型过滤 (optional)
      * @param  \TencentAds\Model\V3\OrderByStruct[]|mixed $orderBy (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -1135,10 +1139,10 @@ class MaterialLabelsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function materialLabelsGetAsyncWithHttpInfo($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
+    public function materialLabelsGetAsyncWithHttpInfo($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $ownershipType = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\MaterialLabelsGetResponse';
-        $request = $this->materialLabelsGetRequest($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $orderBy, $page, $pageSize, $fields);
+        $request = $this->materialLabelsGetRequest($accountId, $organizationId, $labelId, $labelName, $firstLabelLevelIdList, $secondLabelLevelIdList, $needCount, $businessScenario, $ownershipType, $orderBy, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1188,6 +1192,7 @@ class MaterialLabelsApi
      * @param  int[]|mixed $secondLabelLevelIdList 二级标签类目ID列表 (optional)
      * @param  bool|mixed $needCount (optional)
      * @param  string|mixed $businessScenario (optional)
+     * @param  string|mixed $ownershipType 素材归属类型过滤 (optional)
      * @param  \TencentAds\Model\V3\OrderByStruct[]|mixed $orderBy (optional)
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
@@ -1196,7 +1201,7 @@ class MaterialLabelsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function materialLabelsGetRequest($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
+    protected function materialLabelsGetRequest($accountId = null, $organizationId = null, $labelId = null, $labelName = null, $firstLabelLevelIdList = null, $secondLabelLevelIdList = null, $needCount = null, $businessScenario = null, $ownershipType = null, $orderBy = null, $page = null, $pageSize = null, $fields = null)
     {
 
         $resourcePath = '/material_labels/get';
@@ -1243,6 +1248,10 @@ class MaterialLabelsApi
         // query params
         if ($businessScenario !== null) {
             $queryParams['business_scenario'] = ObjectSerializer::toQueryValue($businessScenario);
+        }
+        // query params
+        if ($ownershipType !== null) {
+            $queryParams['ownership_type'] = ObjectSerializer::toQueryValue($ownershipType);
         }
         // query params
         if (is_array($orderBy)) {

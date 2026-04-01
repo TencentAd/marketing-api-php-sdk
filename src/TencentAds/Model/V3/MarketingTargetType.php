@@ -113,6 +113,7 @@ class MarketingTargetType
     const FUN_TEST = 'MARKETING_TARGET_TYPE_FUN_TEST';
     const MATERNITY_PARENTING = 'MARKETING_TARGET_TYPE_MATERNITY_PARENTING';
     const LEISURE_ENTERTAINMENT = 'MARKETING_TARGET_TYPE_LEISURE_ENTERTAINMENT';
+    const MEDICAL_INSTITUTION = 'MARKETING_TARGET_TYPE_MEDICAL_INSTITUTION';
     
     /**
      * Gets allowable values of the enum
@@ -190,6 +191,7 @@ class MarketingTargetType
             self::FUN_TEST,
             self::MATERNITY_PARENTING,
             self::LEISURE_ENTERTAINMENT,
+            self::MEDICAL_INSTITUTION,
         ];
     }
 }

@@ -47,6 +47,8 @@ class CoverImageSnapshotType
     const UNSPECIFIED = 'COVER_IMAGE_SNAPSHOT_TYPE_UNSPECIFIED';
     const FIRST_FRAME = 'COVER_IMAGE_SNAPSHOT_TYPE_FIRST_FRAME';
     const SMART_FRAME = 'COVER_IMAGE_SNAPSHOT_TYPE_SMART_FRAME';
+    const FIRST_FRAME_DEFAULT = 'COVER_IMAGE_SNAPSHOT_TYPE_FIRST_FRAME_DEFAULT';
+    const SMART_FRAME_DEFAULT = 'COVER_IMAGE_SNAPSHOT_TYPE_SMART_FRAME_DEFAULT';
     
     /**
      * Gets allowable values of the enum
@@ -58,6 +60,8 @@ class CoverImageSnapshotType
             self::UNSPECIFIED,
             self::FIRST_FRAME,
             self::SMART_FRAME,
+            self::FIRST_FRAME_DEFAULT,
+            self::SMART_FRAME_DEFAULT,
         ];
     }
 }

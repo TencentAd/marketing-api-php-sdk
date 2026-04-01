@@ -135,6 +135,7 @@ use TencentAds\Container\V3\MuseAiMaterialApiContainer;
 use TencentAds\Container\V3\MuseAiTaskApiContainer;
 use TencentAds\Container\V3\MuseAiUgcApiContainer;
 use TencentAds\Container\V3\MuseAudiosApiContainer;
+use TencentAds\Container\V3\MuseDeriveSwitchSettingsApiContainer;
 use TencentAds\Container\V3\NegativewordsApiContainer;
 use TencentAds\Container\V3\OauthApiContainer;
 use TencentAds\Container\V3\ObjectCommentFlagApiContainer;
@@ -638,6 +639,9 @@ class App
 
     /** @var MuseAudiosApiContainer */
     public $museAudiosApiContainer;
+
+    /** @var MuseDeriveSwitchSettingsApiContainer */
+    public $museDeriveSwitchSettingsApiContainer;
 
     /** @var NegativewordsApiContainer */
     public $negativewordsApiContainer;
@@ -2808,6 +2812,20 @@ class App
             $this->museAudiosApiContainer = $container;
         }
         return $this->museAudiosApiContainer;
+    }
+
+
+    /**
+     * @return MuseDeriveSwitchSettingsApiContainer
+     */
+    public function museDeriveSwitchSettings()
+    {
+        if (empty($this->museDeriveSwitchSettingsApiContainer)) {
+            $container = new MuseDeriveSwitchSettingsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->museDeriveSwitchSettingsApiContainer = $container;
+        }
+        return $this->museDeriveSwitchSettingsApiContainer;
     }
 
 

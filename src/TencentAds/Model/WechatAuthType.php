@@ -49,6 +49,9 @@ class WechatAuthType
     const OVER_CORPORATION = 'OVER_CORPORATION';
     const OVER_CORPORATION_SAME_GROUP = 'OVER_CORPORATION_SAME_GROUP';
     const OVER_CORPORATION_EMPLOYMENT = 'OVER_CORPORATION_EMPLOYMENT';
+    const CUSTOMER_MANAGER = 'CUSTOMER_MANAGER';
+    const CUSTOMER_BUSINESS_UNIT = 'CUSTOMER_BUSINESS_UNIT';
+    const GROUP_BUSINESS_UNIT = 'GROUP_BUSINESS_UNIT';
     
     /**
      * Gets allowable values of the enum
@@ -62,6 +65,9 @@ class WechatAuthType
             self::OVER_CORPORATION,
             self::OVER_CORPORATION_SAME_GROUP,
             self::OVER_CORPORATION_EMPLOYMENT,
+            self::CUSTOMER_MANAGER,
+            self::CUSTOMER_BUSINESS_UNIT,
+            self::GROUP_BUSINESS_UNIT,
         ];
     }
 }

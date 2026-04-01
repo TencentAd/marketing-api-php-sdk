@@ -56,6 +56,7 @@ class AdCreativeSource
     const NEW_RECOMMEND = 'AD_CREATIVE_NEW_RECOMMEND';
     const TRANSFORMER_RESIZE = 'AD_CREATIVE_TRANSFORMER_RESIZE';
     const AI_FLAG_EXPERIMENT = 'AD_CREATIVE_AI_FLAG_EXPERIMENT';
+    const NATIVE_FEED_MANAGEMENT = 'AD_CREATIVE_NATIVE_FEED_MANAGEMENT';
     
     /**
      * Gets allowable values of the enum
@@ -76,6 +77,7 @@ class AdCreativeSource
             self::NEW_RECOMMEND,
             self::TRANSFORMER_RESIZE,
             self::AI_FLAG_EXPERIMENT,
+            self::NATIVE_FEED_MANAGEMENT,
         ];
     }
 }

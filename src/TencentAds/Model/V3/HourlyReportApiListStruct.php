@@ -926,6 +926,7 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkRpsPv' => 'int',
         'sliderPv' => 'int',
         'insuranceDedupPv' => 'int',
+        'clkBmLivePv' => 'int',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -1819,6 +1820,7 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkRpsPv' => 'int64',
         'sliderPv' => 'int64',
         'insuranceDedupPv' => 'int64',
+        'clkBmLivePv' => 'int64',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -2733,6 +2735,7 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkRpsPv' => 'clk_rps_pv',
         'sliderPv' => 'slider_pv',
         'insuranceDedupPv' => 'insurance_dedup_pv',
+        'clkBmLivePv' => 'clk_bm_live_pv',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -3626,6 +3629,7 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkRpsPv' => 'setClkRpsPv',
         'sliderPv' => 'setSliderPv',
         'insuranceDedupPv' => 'setInsuranceDedupPv',
+        'clkBmLivePv' => 'setClkBmLivePv',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -4519,6 +4523,7 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'clkRpsPv' => 'getClkRpsPv',
         'sliderPv' => 'getSliderPv',
         'insuranceDedupPv' => 'getInsuranceDedupPv',
+        'clkBmLivePv' => 'getClkBmLivePv',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -5466,6 +5471,7 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['clkRpsPv'] = isset($data['clkRpsPv']) ? $data['clkRpsPv'] : null;
         $this->container['sliderPv'] = isset($data['sliderPv']) ? $data['sliderPv'] : null;
         $this->container['insuranceDedupPv'] = isset($data['insuranceDedupPv']) ? $data['insuranceDedupPv'] : null;
+        $this->container['clkBmLivePv'] = isset($data['clkBmLivePv']) ? $data['clkBmLivePv'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -26337,6 +26343,30 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setInsuranceDedupPv($insuranceDedupPv)
     {
         $this->container['insuranceDedupPv'] = $insuranceDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkBmLivePv
+     *
+     * @return int|mixed
+     */
+    public function getClkBmLivePv()
+    {
+        return $this->container['clkBmLivePv'];
+    }
+
+    /**
+     * Sets clkBmLivePv
+     *
+     * @param int|mixed $clkBmLivePv clkBmLivePv
+     *
+     * @return $this
+     */
+    public function setClkBmLivePv($clkBmLivePv)
+    {
+        $this->container['clkBmLivePv'] = $clkBmLivePv;
 
         return $this;
     }
