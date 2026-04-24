@@ -52,6 +52,7 @@ class OperatorPlatformType
     const SMART_ENGINE = 'OPERATOR_PLATFORM_SMART_ENGINE';
     const SEARCH_EDITOR = 'OPERATOR_PLATFORM_SEARCH_EDITOR';
     const MARKETING_ASSET = 'OPERATOR_PLATFORM_MARKETING_ASSET';
+    const API_KEY = 'OPERATOR_PLATFORM_API_KEY';
     
     /**
      * Gets allowable values of the enum
@@ -68,6 +69,7 @@ class OperatorPlatformType
             self::SMART_ENGINE,
             self::SEARCH_EDITOR,
             self::MARKETING_ASSET,
+            self::API_KEY,
         ];
     }
 }

@@ -66,7 +66,12 @@ class PunishMetricsDataItem implements ModelInterface, ArrayAccess
         'isPenalized' => 'int',
         'penaltyReviewTotal' => 'int',
         'penaltyReviewRejectCnt' => 'int',
-        'penaltyRejectRate' => 'string'
+        'penaltyRejectRate' => 'string',
+        'penaltyUnitPrice' => 'string',
+        'penaltyAmount' => 'string',
+        'penaltyUidCnt' => 'int',
+        'cappedRejectCnt' => 'int',
+        'finalPenaltyAmount' => 'string'
     ];
 
     /**
@@ -83,7 +88,12 @@ class PunishMetricsDataItem implements ModelInterface, ArrayAccess
         'isPenalized' => 'int64',
         'penaltyReviewTotal' => 'int64',
         'penaltyReviewRejectCnt' => 'int64',
-        'penaltyRejectRate' => null
+        'penaltyRejectRate' => null,
+        'penaltyUnitPrice' => null,
+        'penaltyAmount' => null,
+        'penaltyUidCnt' => 'int64',
+        'cappedRejectCnt' => 'int64',
+        'finalPenaltyAmount' => null
     ];
 
     /**
@@ -121,7 +131,12 @@ class PunishMetricsDataItem implements ModelInterface, ArrayAccess
         'isPenalized' => 'is_penalized',
         'penaltyReviewTotal' => 'penalty_review_total',
         'penaltyReviewRejectCnt' => 'penalty_review_reject_cnt',
-        'penaltyRejectRate' => 'penalty_reject_rate'
+        'penaltyRejectRate' => 'penalty_reject_rate',
+        'penaltyUnitPrice' => 'penalty_unit_price',
+        'penaltyAmount' => 'penalty_amount',
+        'penaltyUidCnt' => 'penalty_uid_cnt',
+        'cappedRejectCnt' => 'capped_reject_cnt',
+        'finalPenaltyAmount' => 'final_penalty_amount'
     ];
 
     /**
@@ -138,7 +153,12 @@ class PunishMetricsDataItem implements ModelInterface, ArrayAccess
         'isPenalized' => 'setIsPenalized',
         'penaltyReviewTotal' => 'setPenaltyReviewTotal',
         'penaltyReviewRejectCnt' => 'setPenaltyReviewRejectCnt',
-        'penaltyRejectRate' => 'setPenaltyRejectRate'
+        'penaltyRejectRate' => 'setPenaltyRejectRate',
+        'penaltyUnitPrice' => 'setPenaltyUnitPrice',
+        'penaltyAmount' => 'setPenaltyAmount',
+        'penaltyUidCnt' => 'setPenaltyUidCnt',
+        'cappedRejectCnt' => 'setCappedRejectCnt',
+        'finalPenaltyAmount' => 'setFinalPenaltyAmount'
     ];
 
     /**
@@ -155,7 +175,12 @@ class PunishMetricsDataItem implements ModelInterface, ArrayAccess
         'isPenalized' => 'getIsPenalized',
         'penaltyReviewTotal' => 'getPenaltyReviewTotal',
         'penaltyReviewRejectCnt' => 'getPenaltyReviewRejectCnt',
-        'penaltyRejectRate' => 'getPenaltyRejectRate'
+        'penaltyRejectRate' => 'getPenaltyRejectRate',
+        'penaltyUnitPrice' => 'getPenaltyUnitPrice',
+        'penaltyAmount' => 'getPenaltyAmount',
+        'penaltyUidCnt' => 'getPenaltyUidCnt',
+        'cappedRejectCnt' => 'getCappedRejectCnt',
+        'finalPenaltyAmount' => 'getFinalPenaltyAmount'
     ];
 
     /**
@@ -227,6 +252,11 @@ class PunishMetricsDataItem implements ModelInterface, ArrayAccess
         $this->container['penaltyReviewTotal'] = isset($data['penaltyReviewTotal']) ? $data['penaltyReviewTotal'] : null;
         $this->container['penaltyReviewRejectCnt'] = isset($data['penaltyReviewRejectCnt']) ? $data['penaltyReviewRejectCnt'] : null;
         $this->container['penaltyRejectRate'] = isset($data['penaltyRejectRate']) ? $data['penaltyRejectRate'] : null;
+        $this->container['penaltyUnitPrice'] = isset($data['penaltyUnitPrice']) ? $data['penaltyUnitPrice'] : null;
+        $this->container['penaltyAmount'] = isset($data['penaltyAmount']) ? $data['penaltyAmount'] : null;
+        $this->container['penaltyUidCnt'] = isset($data['penaltyUidCnt']) ? $data['penaltyUidCnt'] : null;
+        $this->container['cappedRejectCnt'] = isset($data['cappedRejectCnt']) ? $data['cappedRejectCnt'] : null;
+        $this->container['finalPenaltyAmount'] = isset($data['finalPenaltyAmount']) ? $data['finalPenaltyAmount'] : null;
     }
 
     /**
@@ -465,6 +495,126 @@ class PunishMetricsDataItem implements ModelInterface, ArrayAccess
     public function setPenaltyRejectRate($penaltyRejectRate)
     {
         $this->container['penaltyRejectRate'] = $penaltyRejectRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets penaltyUnitPrice
+     *
+     * @return string|mixed
+     */
+    public function getPenaltyUnitPrice()
+    {
+        return $this->container['penaltyUnitPrice'];
+    }
+
+    /**
+     * Sets penaltyUnitPrice
+     *
+     * @param string|mixed $penaltyUnitPrice penaltyUnitPrice
+     *
+     * @return $this
+     */
+    public function setPenaltyUnitPrice($penaltyUnitPrice)
+    {
+        $this->container['penaltyUnitPrice'] = $penaltyUnitPrice;
+
+        return $this;
+    }
+
+    /**
+     * Gets penaltyAmount
+     *
+     * @return string|mixed
+     */
+    public function getPenaltyAmount()
+    {
+        return $this->container['penaltyAmount'];
+    }
+
+    /**
+     * Sets penaltyAmount
+     *
+     * @param string|mixed $penaltyAmount penaltyAmount
+     *
+     * @return $this
+     */
+    public function setPenaltyAmount($penaltyAmount)
+    {
+        $this->container['penaltyAmount'] = $penaltyAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets penaltyUidCnt
+     *
+     * @return int|mixed
+     */
+    public function getPenaltyUidCnt()
+    {
+        return $this->container['penaltyUidCnt'];
+    }
+
+    /**
+     * Sets penaltyUidCnt
+     *
+     * @param int|mixed $penaltyUidCnt penaltyUidCnt
+     *
+     * @return $this
+     */
+    public function setPenaltyUidCnt($penaltyUidCnt)
+    {
+        $this->container['penaltyUidCnt'] = $penaltyUidCnt;
+
+        return $this;
+    }
+
+    /**
+     * Gets cappedRejectCnt
+     *
+     * @return int|mixed
+     */
+    public function getCappedRejectCnt()
+    {
+        return $this->container['cappedRejectCnt'];
+    }
+
+    /**
+     * Sets cappedRejectCnt
+     *
+     * @param int|mixed $cappedRejectCnt cappedRejectCnt
+     *
+     * @return $this
+     */
+    public function setCappedRejectCnt($cappedRejectCnt)
+    {
+        $this->container['cappedRejectCnt'] = $cappedRejectCnt;
+
+        return $this;
+    }
+
+    /**
+     * Gets finalPenaltyAmount
+     *
+     * @return string|mixed
+     */
+    public function getFinalPenaltyAmount()
+    {
+        return $this->container['finalPenaltyAmount'];
+    }
+
+    /**
+     * Sets finalPenaltyAmount
+     *
+     * @param string|mixed $finalPenaltyAmount finalPenaltyAmount
+     *
+     * @return $this
+     */
+    public function setFinalPenaltyAmount($finalPenaltyAmount)
+    {
+        $this->container['finalPenaltyAmount'] = $finalPenaltyAmount;
 
         return $this;
     }

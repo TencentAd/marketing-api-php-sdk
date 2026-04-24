@@ -117,6 +117,7 @@ class ComponentSubType
     const IMAGE_LIST_1_X1_1 = 'IMAGE_LIST_1X1_1';
     const IMAGE_LIST_16_X9_1 = 'IMAGE_LIST_16X9_1';
     const IMAGE_LIST_1_X1_9 = 'IMAGE_LIST_1X1_9';
+    const IMAGE_LIST_FLEX_N = 'IMAGE_LIST_FLEX_N';
     const ELEMENT_STORY = 'ELEMENT_STORY';
     const DESCRIPTION = 'DESCRIPTION';
     const TITLE = 'TITLE';
@@ -152,6 +153,7 @@ class ComponentSubType
     const AUDIO = 'AUDIO';
     const WECHAT_SHOP_ACTIVITY_BULK_BUY = 'WECHAT_SHOP_ACTIVITY_BULK_BUY';
     const WXGAME_DIRECT_PAGE = 'WXGAME_DIRECT_PAGE';
+    const VIDEO_LIST_FLEX_N = 'VIDEO_LIST_FLEX_N';
     const BRAND = 'BRAND';
     const BRAND_PAGE = 'BRAND_PAGE';
     const BRAND_SEARCH = 'BRAND_SEARCH';
@@ -160,6 +162,7 @@ class ComponentSubType
     const BRAND_WECOM = 'BRAND_WECOM';
     const BRAND_WECHAT_SHOP = 'BRAND_WECHAT_SHOP';
     const BRAND_CUSTOM_LINK = 'BRAND_CUSTOM_LINK';
+    const BRAND_WECHAT_CHANNELS_ACTIVITY = 'BRAND_WECHAT_CHANNELS_ACTIVITY';
     const JUMP_INFO_OFFICIAL = 'JUMP_INFO_OFFICIAL';
     const JUMP_INFO_XJ_ANDROID_APP_H5 = 'JUMP_INFO_XJ_ANDROID_APP_H5';
     const JUMP_INFO_XJ_IOS_APP_H5 = 'JUMP_INFO_XJ_IOS_APP_H5';
@@ -191,6 +194,7 @@ class ComponentSubType
     const JUMP_INFO_WECHAT_SHOP = 'JUMP_INFO_WECHAT_SHOP';
     const JUMP_INFO_SEARCH_BRAND_AREA = 'JUMP_INFO_SEARCH_BRAND_AREA';
     const JUMP_INFO_SEARCH_PC = 'JUMP_INFO_SEARCH_PC';
+    const JUMP_INFO_WECHAT_CHANNELS_ACTIVITY = 'JUMP_INFO_WECHAT_CHANNELS_ACTIVITY';
     const MARKETING_ASSET_PLAYLET = 'MARKETING_ASSET_PLAYLET';
     
     /**
@@ -273,6 +277,7 @@ class ComponentSubType
             self::IMAGE_LIST_1_X1_1,
             self::IMAGE_LIST_16_X9_1,
             self::IMAGE_LIST_1_X1_9,
+            self::IMAGE_LIST_FLEX_N,
             self::ELEMENT_STORY,
             self::DESCRIPTION,
             self::TITLE,
@@ -308,6 +313,7 @@ class ComponentSubType
             self::AUDIO,
             self::WECHAT_SHOP_ACTIVITY_BULK_BUY,
             self::WXGAME_DIRECT_PAGE,
+            self::VIDEO_LIST_FLEX_N,
             self::BRAND,
             self::BRAND_PAGE,
             self::BRAND_SEARCH,
@@ -316,6 +322,7 @@ class ComponentSubType
             self::BRAND_WECOM,
             self::BRAND_WECHAT_SHOP,
             self::BRAND_CUSTOM_LINK,
+            self::BRAND_WECHAT_CHANNELS_ACTIVITY,
             self::JUMP_INFO_OFFICIAL,
             self::JUMP_INFO_XJ_ANDROID_APP_H5,
             self::JUMP_INFO_XJ_IOS_APP_H5,
@@ -347,6 +354,7 @@ class ComponentSubType
             self::JUMP_INFO_WECHAT_SHOP,
             self::JUMP_INFO_SEARCH_BRAND_AREA,
             self::JUMP_INFO_SEARCH_PC,
+            self::JUMP_INFO_WECHAT_CHANNELS_ACTIVITY,
             self::MARKETING_ASSET_PLAYLET,
         ];
     }

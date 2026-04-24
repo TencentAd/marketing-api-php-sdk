@@ -927,6 +927,13 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'sliderPv' => 'int',
         'insuranceDedupPv' => 'int',
         'clkBmLivePv' => 'int',
+        'adMonetizationIpu' => 'int',
+        'adMonetizationLtv' => 'int',
+        'effectiveSeedingCount' => 'int',
+        'effectiveSeedingCost' => 'int',
+        'effectiveSeedingRate' => 'double',
+        'effectiveSeedingConvertionsRate' => 'double',
+        'adMonetizationPlaRegAmount' => 'int',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -1821,6 +1828,13 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'sliderPv' => 'int64',
         'insuranceDedupPv' => 'int64',
         'clkBmLivePv' => 'int64',
+        'adMonetizationIpu' => 'int64',
+        'adMonetizationLtv' => 'int64',
+        'effectiveSeedingCount' => 'int64',
+        'effectiveSeedingCost' => 'int64',
+        'effectiveSeedingRate' => 'double',
+        'effectiveSeedingConvertionsRate' => 'double',
+        'adMonetizationPlaRegAmount' => 'int64',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -2736,6 +2750,13 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'sliderPv' => 'slider_pv',
         'insuranceDedupPv' => 'insurance_dedup_pv',
         'clkBmLivePv' => 'clk_bm_live_pv',
+        'adMonetizationIpu' => 'ad_monetization_ipu',
+        'adMonetizationLtv' => 'ad_monetization_ltv',
+        'effectiveSeedingCount' => 'effective_seeding_count',
+        'effectiveSeedingCost' => 'effective_seeding_cost',
+        'effectiveSeedingRate' => 'effective_seeding_rate',
+        'effectiveSeedingConvertionsRate' => 'effective_seeding_convertions_rate',
+        'adMonetizationPlaRegAmount' => 'ad_monetization_pla_reg_amount',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -3630,6 +3651,13 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'sliderPv' => 'setSliderPv',
         'insuranceDedupPv' => 'setInsuranceDedupPv',
         'clkBmLivePv' => 'setClkBmLivePv',
+        'adMonetizationIpu' => 'setAdMonetizationIpu',
+        'adMonetizationLtv' => 'setAdMonetizationLtv',
+        'effectiveSeedingCount' => 'setEffectiveSeedingCount',
+        'effectiveSeedingCost' => 'setEffectiveSeedingCost',
+        'effectiveSeedingRate' => 'setEffectiveSeedingRate',
+        'effectiveSeedingConvertionsRate' => 'setEffectiveSeedingConvertionsRate',
+        'adMonetizationPlaRegAmount' => 'setAdMonetizationPlaRegAmount',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -4524,6 +4552,13 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'sliderPv' => 'getSliderPv',
         'insuranceDedupPv' => 'getInsuranceDedupPv',
         'clkBmLivePv' => 'getClkBmLivePv',
+        'adMonetizationIpu' => 'getAdMonetizationIpu',
+        'adMonetizationLtv' => 'getAdMonetizationLtv',
+        'effectiveSeedingCount' => 'getEffectiveSeedingCount',
+        'effectiveSeedingCost' => 'getEffectiveSeedingCost',
+        'effectiveSeedingRate' => 'getEffectiveSeedingRate',
+        'effectiveSeedingConvertionsRate' => 'getEffectiveSeedingConvertionsRate',
+        'adMonetizationPlaRegAmount' => 'getAdMonetizationPlaRegAmount',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -5472,6 +5507,13 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['sliderPv'] = isset($data['sliderPv']) ? $data['sliderPv'] : null;
         $this->container['insuranceDedupPv'] = isset($data['insuranceDedupPv']) ? $data['insuranceDedupPv'] : null;
         $this->container['clkBmLivePv'] = isset($data['clkBmLivePv']) ? $data['clkBmLivePv'] : null;
+        $this->container['adMonetizationIpu'] = isset($data['adMonetizationIpu']) ? $data['adMonetizationIpu'] : null;
+        $this->container['adMonetizationLtv'] = isset($data['adMonetizationLtv']) ? $data['adMonetizationLtv'] : null;
+        $this->container['effectiveSeedingCount'] = isset($data['effectiveSeedingCount']) ? $data['effectiveSeedingCount'] : null;
+        $this->container['effectiveSeedingCost'] = isset($data['effectiveSeedingCost']) ? $data['effectiveSeedingCost'] : null;
+        $this->container['effectiveSeedingRate'] = isset($data['effectiveSeedingRate']) ? $data['effectiveSeedingRate'] : null;
+        $this->container['effectiveSeedingConvertionsRate'] = isset($data['effectiveSeedingConvertionsRate']) ? $data['effectiveSeedingConvertionsRate'] : null;
+        $this->container['adMonetizationPlaRegAmount'] = isset($data['adMonetizationPlaRegAmount']) ? $data['adMonetizationPlaRegAmount'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -26367,6 +26409,174 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setClkBmLivePv($clkBmLivePv)
     {
         $this->container['clkBmLivePv'] = $clkBmLivePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationIpu
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationIpu()
+    {
+        return $this->container['adMonetizationIpu'];
+    }
+
+    /**
+     * Sets adMonetizationIpu
+     *
+     * @param int|mixed $adMonetizationIpu adMonetizationIpu
+     *
+     * @return $this
+     */
+    public function setAdMonetizationIpu($adMonetizationIpu)
+    {
+        $this->container['adMonetizationIpu'] = $adMonetizationIpu;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationLtv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationLtv()
+    {
+        return $this->container['adMonetizationLtv'];
+    }
+
+    /**
+     * Sets adMonetizationLtv
+     *
+     * @param int|mixed $adMonetizationLtv adMonetizationLtv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationLtv($adMonetizationLtv)
+    {
+        $this->container['adMonetizationLtv'] = $adMonetizationLtv;
+
+        return $this;
+    }
+
+    /**
+     * Gets effectiveSeedingCount
+     *
+     * @return int|mixed
+     */
+    public function getEffectiveSeedingCount()
+    {
+        return $this->container['effectiveSeedingCount'];
+    }
+
+    /**
+     * Sets effectiveSeedingCount
+     *
+     * @param int|mixed $effectiveSeedingCount effectiveSeedingCount
+     *
+     * @return $this
+     */
+    public function setEffectiveSeedingCount($effectiveSeedingCount)
+    {
+        $this->container['effectiveSeedingCount'] = $effectiveSeedingCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets effectiveSeedingCost
+     *
+     * @return int|mixed
+     */
+    public function getEffectiveSeedingCost()
+    {
+        return $this->container['effectiveSeedingCost'];
+    }
+
+    /**
+     * Sets effectiveSeedingCost
+     *
+     * @param int|mixed $effectiveSeedingCost effectiveSeedingCost
+     *
+     * @return $this
+     */
+    public function setEffectiveSeedingCost($effectiveSeedingCost)
+    {
+        $this->container['effectiveSeedingCost'] = $effectiveSeedingCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets effectiveSeedingRate
+     *
+     * @return double|mixed
+     */
+    public function getEffectiveSeedingRate()
+    {
+        return $this->container['effectiveSeedingRate'];
+    }
+
+    /**
+     * Sets effectiveSeedingRate
+     *
+     * @param double|mixed $effectiveSeedingRate effectiveSeedingRate
+     *
+     * @return $this
+     */
+    public function setEffectiveSeedingRate($effectiveSeedingRate)
+    {
+        $this->container['effectiveSeedingRate'] = $effectiveSeedingRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets effectiveSeedingConvertionsRate
+     *
+     * @return double|mixed
+     */
+    public function getEffectiveSeedingConvertionsRate()
+    {
+        return $this->container['effectiveSeedingConvertionsRate'];
+    }
+
+    /**
+     * Sets effectiveSeedingConvertionsRate
+     *
+     * @param double|mixed $effectiveSeedingConvertionsRate effectiveSeedingConvertionsRate
+     *
+     * @return $this
+     */
+    public function setEffectiveSeedingConvertionsRate($effectiveSeedingConvertionsRate)
+    {
+        $this->container['effectiveSeedingConvertionsRate'] = $effectiveSeedingConvertionsRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationPlaRegAmount
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationPlaRegAmount()
+    {
+        return $this->container['adMonetizationPlaRegAmount'];
+    }
+
+    /**
+     * Sets adMonetizationPlaRegAmount
+     *
+     * @param int|mixed $adMonetizationPlaRegAmount adMonetizationPlaRegAmount
+     *
+     * @return $this
+     */
+    public function setAdMonetizationPlaRegAmount($adMonetizationPlaRegAmount)
+    {
+        $this->container['adMonetizationPlaRegAmount'] = $adMonetizationPlaRegAmount;
 
         return $this;
     }

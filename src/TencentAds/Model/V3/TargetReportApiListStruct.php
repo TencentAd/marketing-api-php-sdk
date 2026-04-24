@@ -893,6 +893,9 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'sliderPv' => 'int',
         'insuranceDedupPv' => 'int',
         'clkBmLivePv' => 'int',
+        'adMonetizationIpu' => 'int',
+        'adMonetizationLtv' => 'int',
+        'adMonetizationPlaRegAmount' => 'int',
         'ageId' => 'int',
         'cityId' => 'int',
         'regionId' => 'int',
@@ -1743,6 +1746,9 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'sliderPv' => 'int64',
         'insuranceDedupPv' => 'int64',
         'clkBmLivePv' => 'int64',
+        'adMonetizationIpu' => 'int64',
+        'adMonetizationLtv' => 'int64',
+        'adMonetizationPlaRegAmount' => 'int64',
         'ageId' => 'int64',
         'cityId' => 'int64',
         'regionId' => 'int64',
@@ -2614,6 +2620,9 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'sliderPv' => 'slider_pv',
         'insuranceDedupPv' => 'insurance_dedup_pv',
         'clkBmLivePv' => 'clk_bm_live_pv',
+        'adMonetizationIpu' => 'ad_monetization_ipu',
+        'adMonetizationLtv' => 'ad_monetization_ltv',
+        'adMonetizationPlaRegAmount' => 'ad_monetization_pla_reg_amount',
         'ageId' => 'age_id',
         'cityId' => 'city_id',
         'regionId' => 'region_id',
@@ -3464,6 +3473,9 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'sliderPv' => 'setSliderPv',
         'insuranceDedupPv' => 'setInsuranceDedupPv',
         'clkBmLivePv' => 'setClkBmLivePv',
+        'adMonetizationIpu' => 'setAdMonetizationIpu',
+        'adMonetizationLtv' => 'setAdMonetizationLtv',
+        'adMonetizationPlaRegAmount' => 'setAdMonetizationPlaRegAmount',
         'ageId' => 'setAgeId',
         'cityId' => 'setCityId',
         'regionId' => 'setRegionId',
@@ -4314,6 +4326,9 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'sliderPv' => 'getSliderPv',
         'insuranceDedupPv' => 'getInsuranceDedupPv',
         'clkBmLivePv' => 'getClkBmLivePv',
+        'adMonetizationIpu' => 'getAdMonetizationIpu',
+        'adMonetizationLtv' => 'getAdMonetizationLtv',
+        'adMonetizationPlaRegAmount' => 'getAdMonetizationPlaRegAmount',
         'ageId' => 'getAgeId',
         'cityId' => 'getCityId',
         'regionId' => 'getRegionId',
@@ -5218,6 +5233,9 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['sliderPv'] = isset($data['sliderPv']) ? $data['sliderPv'] : null;
         $this->container['insuranceDedupPv'] = isset($data['insuranceDedupPv']) ? $data['insuranceDedupPv'] : null;
         $this->container['clkBmLivePv'] = isset($data['clkBmLivePv']) ? $data['clkBmLivePv'] : null;
+        $this->container['adMonetizationIpu'] = isset($data['adMonetizationIpu']) ? $data['adMonetizationIpu'] : null;
+        $this->container['adMonetizationLtv'] = isset($data['adMonetizationLtv']) ? $data['adMonetizationLtv'] : null;
+        $this->container['adMonetizationPlaRegAmount'] = isset($data['adMonetizationPlaRegAmount']) ? $data['adMonetizationPlaRegAmount'] : null;
         $this->container['ageId'] = isset($data['ageId']) ? $data['ageId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
@@ -25287,6 +25305,78 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setClkBmLivePv($clkBmLivePv)
     {
         $this->container['clkBmLivePv'] = $clkBmLivePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationIpu
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationIpu()
+    {
+        return $this->container['adMonetizationIpu'];
+    }
+
+    /**
+     * Sets adMonetizationIpu
+     *
+     * @param int|mixed $adMonetizationIpu adMonetizationIpu
+     *
+     * @return $this
+     */
+    public function setAdMonetizationIpu($adMonetizationIpu)
+    {
+        $this->container['adMonetizationIpu'] = $adMonetizationIpu;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationLtv
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationLtv()
+    {
+        return $this->container['adMonetizationLtv'];
+    }
+
+    /**
+     * Sets adMonetizationLtv
+     *
+     * @param int|mixed $adMonetizationLtv adMonetizationLtv
+     *
+     * @return $this
+     */
+    public function setAdMonetizationLtv($adMonetizationLtv)
+    {
+        $this->container['adMonetizationLtv'] = $adMonetizationLtv;
+
+        return $this;
+    }
+
+    /**
+     * Gets adMonetizationPlaRegAmount
+     *
+     * @return int|mixed
+     */
+    public function getAdMonetizationPlaRegAmount()
+    {
+        return $this->container['adMonetizationPlaRegAmount'];
+    }
+
+    /**
+     * Sets adMonetizationPlaRegAmount
+     *
+     * @param int|mixed $adMonetizationPlaRegAmount adMonetizationPlaRegAmount
+     *
+     * @return $this
+     */
+    public function setAdMonetizationPlaRegAmount($adMonetizationPlaRegAmount)
+    {
+        $this->container['adMonetizationPlaRegAmount'] = $adMonetizationPlaRegAmount;
 
         return $this;
     }

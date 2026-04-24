@@ -94,6 +94,7 @@ class DestinationTypeRead
     const PAGE_TYPE_NOT_USED = 'PAGE_TYPE_NOT_USED';
     const PAGE_TYPE_WECHAT_QUERY_PAGE_2 = 'PAGE_TYPE_WECHAT_QUERY_PAGE';
     const PAGE_TYPE_APP_HARMONY = 'PAGE_TYPE_APP_HARMONY';
+    const PAGE_TYPE_WECHAT_CHANNELS_ACTIVITY = 'PAGE_TYPE_WECHAT_CHANNELS_ACTIVITY';
     
     /**
      * Gets allowable values of the enum
@@ -152,6 +153,7 @@ class DestinationTypeRead
             self::PAGE_TYPE_NOT_USED,
             self::PAGE_TYPE_WECHAT_QUERY_PAGE_2,
             self::PAGE_TYPE_APP_HARMONY,
+            self::PAGE_TYPE_WECHAT_CHANNELS_ACTIVITY,
         ];
     }
 }

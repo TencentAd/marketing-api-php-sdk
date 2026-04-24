@@ -62,6 +62,7 @@ class ReportDailyLevel
     const CREATIVE_ASSET = 'REPORT_LEVEL_CREATIVE_ASSET';
     const PRODUCT_CREATIVE_TEMPLATE = 'REPORT_LEVEL_PRODUCT_CREATIVE_TEMPLATE';
     const WECHAT_SHOP_PRODUCT = 'REPORT_LEVEL_WECHAT_SHOP_PRODUCT';
+    const PLAYLET = 'REPORT_LEVEL_PLAYLET';
     
     /**
      * Gets allowable values of the enum
@@ -88,6 +89,7 @@ class ReportDailyLevel
             self::CREATIVE_ASSET,
             self::PRODUCT_CREATIVE_TEMPLATE,
             self::WECHAT_SHOP_PRODUCT,
+            self::PLAYLET,
         ];
     }
 }

@@ -54,6 +54,7 @@ class ComponentMetadataFieldValidType
     const LEADS = 'LEADS';
     const IMAGE_MULTI_FORMAT = 'IMAGE_MULTI_FORMAT';
     const AUDIO = 'AUDIO';
+    const VIDEO_MULTI_FORMAT = 'VIDEO_MULTI_FORMAT';
     
     /**
      * Gets allowable values of the enum
@@ -72,6 +73,7 @@ class ComponentMetadataFieldValidType
             self::LEADS,
             self::IMAGE_MULTI_FORMAT,
             self::AUDIO,
+            self::VIDEO_MULTI_FORMAT,
         ];
     }
 }

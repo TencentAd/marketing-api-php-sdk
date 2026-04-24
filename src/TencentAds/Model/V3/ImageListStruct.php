@@ -59,7 +59,8 @@ class ImageListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'jumpInfo' => '\TencentAds\Model\V3\JumpinfoStruct',
-        'list' => '\TencentAds\Model\V3\ImageListItem[]'
+        'list' => '\TencentAds\Model\V3\ImageListItem[]',
+        'displayMode' => '\TencentAds\Model\V3\DisplayMode'
     ];
 
     /**
@@ -69,7 +70,8 @@ class ImageListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'jumpInfo' => null,
-        'list' => null
+        'list' => null,
+        'displayMode' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class ImageListStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'jumpInfo' => 'jump_info',
-        'list' => 'list'
+        'list' => 'list',
+        'displayMode' => 'display_mode'
     ];
 
     /**
@@ -110,7 +113,8 @@ class ImageListStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'jumpInfo' => 'setJumpInfo',
-        'list' => 'setList'
+        'list' => 'setList',
+        'displayMode' => 'setDisplayMode'
     ];
 
     /**
@@ -120,7 +124,8 @@ class ImageListStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'jumpInfo' => 'getJumpInfo',
-        'list' => 'getList'
+        'list' => 'getList',
+        'displayMode' => 'getDisplayMode'
     ];
 
     /**
@@ -185,6 +190,7 @@ class ImageListStruct implements ModelInterface, ArrayAccess
     {
         $this->container['jumpInfo'] = isset($data['jumpInfo']) ? $data['jumpInfo'] : null;
         $this->container['list'] = isset($data['list']) ? $data['list'] : null;
+        $this->container['displayMode'] = isset($data['displayMode']) ? $data['displayMode'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class ImageListStruct implements ModelInterface, ArrayAccess
     public function setList($list)
     {
         $this->container['list'] = $list;
+
+        return $this;
+    }
+
+    /**
+     * Gets displayMode
+     *
+     * @return \TencentAds\Model\V3\DisplayMode|mixed
+     */
+    public function getDisplayMode()
+    {
+        return $this->container['displayMode'];
+    }
+
+    /**
+     * Sets displayMode
+     *
+     * @param \TencentAds\Model\V3\DisplayMode|mixed $displayMode displayMode
+     *
+     * @return $this
+     */
+    public function setDisplayMode($displayMode)
+    {
+        $this->container['displayMode'] = $displayMode;
 
         return $this;
     }

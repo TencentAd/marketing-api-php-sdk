@@ -76,6 +76,8 @@ class LinkPageType
     const LINGQUE_MINI_PROGRAM = 'LINK_PAGE_TYPE_LINGQUE_MINI_PROGRAM';
     const WECHAT_CHANNELS_SHOP_PRODUCT = 'LINK_PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT';
     const WECHAT_SHOP = 'LINK_PAGE_TYPE_WECHAT_SHOP';
+    const APP_HARMONY = 'LINK_PAGE_TYPE_APP_HARMONY';
+    const WECHAT_CHANNELS_ACTIVITY = 'LINK_PAGE_TYPE_WECHAT_CHANNELS_ACTIVITY';
     
     /**
      * Gets allowable values of the enum
@@ -116,6 +118,8 @@ class LinkPageType
             self::LINGQUE_MINI_PROGRAM,
             self::WECHAT_CHANNELS_SHOP_PRODUCT,
             self::WECHAT_SHOP,
+            self::APP_HARMONY,
+            self::WECHAT_CHANNELS_ACTIVITY,
         ];
     }
 }

@@ -82,7 +82,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'enumOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidEnumOption[]',
         'minDurationMillisecond' => 'int',
         'maxDurationMillisecond' => 'int',
-        'imageFormatOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidImageFormatOption[]'
+        'imageFormatOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidImageFormatOption[]',
+        'videoFormatOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidVideoFormatOption[]'
     ];
 
     /**
@@ -115,7 +116,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'enumOptions' => null,
         'minDurationMillisecond' => 'int64',
         'maxDurationMillisecond' => 'int64',
-        'imageFormatOptions' => null
+        'imageFormatOptions' => null,
+        'videoFormatOptions' => null
     ];
 
     /**
@@ -169,7 +171,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'enumOptions' => 'enum_options',
         'minDurationMillisecond' => 'min_duration_millisecond',
         'maxDurationMillisecond' => 'max_duration_millisecond',
-        'imageFormatOptions' => 'image_format_options'
+        'imageFormatOptions' => 'image_format_options',
+        'videoFormatOptions' => 'video_format_options'
     ];
 
     /**
@@ -202,7 +205,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'enumOptions' => 'setEnumOptions',
         'minDurationMillisecond' => 'setMinDurationMillisecond',
         'maxDurationMillisecond' => 'setMaxDurationMillisecond',
-        'imageFormatOptions' => 'setImageFormatOptions'
+        'imageFormatOptions' => 'setImageFormatOptions',
+        'videoFormatOptions' => 'setVideoFormatOptions'
     ];
 
     /**
@@ -235,7 +239,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'enumOptions' => 'getEnumOptions',
         'minDurationMillisecond' => 'getMinDurationMillisecond',
         'maxDurationMillisecond' => 'getMaxDurationMillisecond',
-        'imageFormatOptions' => 'getImageFormatOptions'
+        'imageFormatOptions' => 'getImageFormatOptions',
+        'videoFormatOptions' => 'getVideoFormatOptions'
     ];
 
     /**
@@ -323,6 +328,7 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         $this->container['minDurationMillisecond'] = isset($data['minDurationMillisecond']) ? $data['minDurationMillisecond'] : null;
         $this->container['maxDurationMillisecond'] = isset($data['maxDurationMillisecond']) ? $data['maxDurationMillisecond'] : null;
         $this->container['imageFormatOptions'] = isset($data['imageFormatOptions']) ? $data['imageFormatOptions'] : null;
+        $this->container['videoFormatOptions'] = isset($data['videoFormatOptions']) ? $data['videoFormatOptions'] : null;
     }
 
     /**
@@ -945,6 +951,30 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
     public function setImageFormatOptions($imageFormatOptions)
     {
         $this->container['imageFormatOptions'] = $imageFormatOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoFormatOptions
+     *
+     * @return \TencentAds\Model\V3\ComponentMetadataValueValidVideoFormatOption[]|mixed
+     */
+    public function getVideoFormatOptions()
+    {
+        return $this->container['videoFormatOptions'];
+    }
+
+    /**
+     * Sets videoFormatOptions
+     *
+     * @param \TencentAds\Model\V3\ComponentMetadataValueValidVideoFormatOption[]|mixed $videoFormatOptions videoFormatOptions
+     *
+     * @return $this
+     */
+    public function setVideoFormatOptions($videoFormatOptions)
+    {
+        $this->container['videoFormatOptions'] = $videoFormatOptions;
 
         return $this;
     }

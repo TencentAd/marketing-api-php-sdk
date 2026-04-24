@@ -87,6 +87,7 @@ class ComponentType
     const AUDIO = 'AUDIO';
     const WECHAT_SHOP_ACTIVITY = 'WECHAT_SHOP_ACTIVITY';
     const WXGAME_DIRECT_PAGE = 'WXGAME_DIRECT_PAGE';
+    const VIDEO_LIST = 'VIDEO_LIST';
     const V2_TITLE = 'V2_TITLE';
     const V2_DESCRIPTION = 'V2_DESCRIPTION';
     const V2_LONG_SUBLINK = 'V2_LONG_SUBLINK';
@@ -173,6 +174,7 @@ class ComponentType
             self::AUDIO,
             self::WECHAT_SHOP_ACTIVITY,
             self::WXGAME_DIRECT_PAGE,
+            self::VIDEO_LIST,
             self::V2_TITLE,
             self::V2_DESCRIPTION,
             self::V2_LONG_SUBLINK,

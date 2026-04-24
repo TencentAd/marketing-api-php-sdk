@@ -92,7 +92,8 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'miniCardLink' => '\TencentAds\Model\V3\MiniCardLinkComponent',
         'floatingZoneList' => '\TencentAds\Model\V3\FloatingZoneListComponent',
         'videoChannelsContent' => '\TencentAds\Model\V3\VideoChannelsContentComponent',
-        'wxgameDirectPage' => '\TencentAds\Model\V3\WxgameDirectPageComponent'
+        'wxgameDirectPage' => '\TencentAds\Model\V3\WxgameDirectPageComponent',
+        'videoList' => '\TencentAds\Model\V3\VideoListComponent'
     ];
 
     /**
@@ -135,7 +136,8 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'miniCardLink' => null,
         'floatingZoneList' => null,
         'videoChannelsContent' => null,
-        'wxgameDirectPage' => null
+        'wxgameDirectPage' => null,
+        'videoList' => null
     ];
 
     /**
@@ -199,7 +201,8 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'miniCardLink' => 'mini_card_link',
         'floatingZoneList' => 'floating_zone_list',
         'videoChannelsContent' => 'video_channels_content',
-        'wxgameDirectPage' => 'wxgame_direct_page'
+        'wxgameDirectPage' => 'wxgame_direct_page',
+        'videoList' => 'video_list'
     ];
 
     /**
@@ -242,7 +245,8 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'miniCardLink' => 'setMiniCardLink',
         'floatingZoneList' => 'setFloatingZoneList',
         'videoChannelsContent' => 'setVideoChannelsContent',
-        'wxgameDirectPage' => 'setWxgameDirectPage'
+        'wxgameDirectPage' => 'setWxgameDirectPage',
+        'videoList' => 'setVideoList'
     ];
 
     /**
@@ -285,7 +289,8 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'miniCardLink' => 'getMiniCardLink',
         'floatingZoneList' => 'getFloatingZoneList',
         'videoChannelsContent' => 'getVideoChannelsContent',
-        'wxgameDirectPage' => 'getWxgameDirectPage'
+        'wxgameDirectPage' => 'getWxgameDirectPage',
+        'videoList' => 'getVideoList'
     ];
 
     /**
@@ -383,6 +388,7 @@ class ComponentValue implements ModelInterface, ArrayAccess
         $this->container['floatingZoneList'] = isset($data['floatingZoneList']) ? $data['floatingZoneList'] : null;
         $this->container['videoChannelsContent'] = isset($data['videoChannelsContent']) ? $data['videoChannelsContent'] : null;
         $this->container['wxgameDirectPage'] = isset($data['wxgameDirectPage']) ? $data['wxgameDirectPage'] : null;
+        $this->container['videoList'] = isset($data['videoList']) ? $data['videoList'] : null;
     }
 
     /**
@@ -1245,6 +1251,30 @@ class ComponentValue implements ModelInterface, ArrayAccess
     public function setWxgameDirectPage($wxgameDirectPage)
     {
         $this->container['wxgameDirectPage'] = $wxgameDirectPage;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoList
+     *
+     * @return \TencentAds\Model\V3\VideoListComponent|mixed
+     */
+    public function getVideoList()
+    {
+        return $this->container['videoList'];
+    }
+
+    /**
+     * Sets videoList
+     *
+     * @param \TencentAds\Model\V3\VideoListComponent|mixed $videoList videoList
+     *
+     * @return $this
+     */
+    public function setVideoList($videoList)
+    {
+        $this->container['videoList'] = $videoList;
 
         return $this;
     }

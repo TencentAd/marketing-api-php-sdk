@@ -165,6 +165,7 @@ use TencentAds\Container\V3\ProgrammedMaterialMappingsApiContainer;
 use TencentAds\Container\V3\ProgrammedTemplateApiContainer;
 use TencentAds\Container\V3\PunishDetailApiContainer;
 use TencentAds\Container\V3\PunishMetricsApiContainer;
+use TencentAds\Container\V3\PunishUidMetricsApiContainer;
 use TencentAds\Container\V3\PunishmentConfigApiContainer;
 use TencentAds\Container\V3\PunishmentQueryApiContainer;
 use TencentAds\Container\V3\QualificationImagesApiContainer;
@@ -729,6 +730,9 @@ class App
 
     /** @var PunishMetricsApiContainer */
     public $punishMetricsApiContainer;
+
+    /** @var PunishUidMetricsApiContainer */
+    public $punishUidMetricsApiContainer;
 
     /** @var PunishmentConfigApiContainer */
     public $punishmentConfigApiContainer;
@@ -3232,6 +3236,20 @@ class App
             $this->punishMetricsApiContainer = $container;
         }
         return $this->punishMetricsApiContainer;
+    }
+
+
+    /**
+     * @return PunishUidMetricsApiContainer
+     */
+    public function punishUidMetrics()
+    {
+        if (empty($this->punishUidMetricsApiContainer)) {
+            $container = new PunishUidMetricsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->punishUidMetricsApiContainer = $container;
+        }
+        return $this->punishUidMetricsApiContainer;
     }
 
 

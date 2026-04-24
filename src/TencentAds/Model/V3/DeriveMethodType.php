@@ -59,6 +59,9 @@ class DeriveMethodType
     const MINIDRAMA_NINE_IMG = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_MINIDRAMA_NINE_IMG';
     const PRODUCT_IMAGE = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_PRODUCT_IMAGE';
     const SMARTGAME_VIDEO = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_SMARTGAME_VIDEO';
+    const EDU_NINE_IMG = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_EDU_NINE_IMG';
+    const HEALTH_NINE_IMG = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_HEALTH_NINE_IMG';
+    const LOCAL_NINE_IMG = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_LOCAL_NINE_IMG';
     
     /**
      * Gets allowable values of the enum
@@ -82,6 +85,9 @@ class DeriveMethodType
             self::MINIDRAMA_NINE_IMG,
             self::PRODUCT_IMAGE,
             self::SMARTGAME_VIDEO,
+            self::EDU_NINE_IMG,
+            self::HEALTH_NINE_IMG,
+            self::LOCAL_NINE_IMG,
         ];
     }
 }

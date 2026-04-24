@@ -49,6 +49,7 @@ class WechatChannelsComponentType
     const APP = 'APP';
     const DRAMA = 'DRAMA';
     const NATIVE_DRAMA = 'NATIVE_DRAMA';
+    const NATIVE_DRAMA_ATTACHMENT = 'NATIVE_DRAMA_ATTACHMENT';
     const WITHOUT_COMPONENT = 'WITHOUT_COMPONENT';
     
     /**
@@ -63,6 +64,7 @@ class WechatChannelsComponentType
             self::APP,
             self::DRAMA,
             self::NATIVE_DRAMA,
+            self::NATIVE_DRAMA_ATTACHMENT,
             self::WITHOUT_COMPONENT,
         ];
     }

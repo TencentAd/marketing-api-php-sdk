@@ -102,6 +102,7 @@ class PageTypeRead
     const WECHAT_SHOP = 'PAGE_TYPE_WECHAT_SHOP';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
     const APP_HARMONY = 'PAGE_TYPE_APP_HARMONY';
+    const WECHAT_CHANNELS_ACTIVITY = 'PAGE_TYPE_WECHAT_CHANNELS_ACTIVITY';
     
     /**
      * Gets allowable values of the enum
@@ -168,6 +169,7 @@ class PageTypeRead
             self::WECHAT_SHOP,
             self::TSA_OTT,
             self::APP_HARMONY,
+            self::WECHAT_CHANNELS_ACTIVITY,
         ];
     }
 }
