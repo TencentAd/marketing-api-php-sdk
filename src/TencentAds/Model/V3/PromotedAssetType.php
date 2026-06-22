@@ -114,6 +114,7 @@ class PromotedAssetType
     const MATERNITY_PARENTING = 'PROMOTED_ASSET_TYPE_MATERNITY_PARENTING';
     const LEISURE_ENTERTAINMENT = 'PROMOTED_ASSET_TYPE_LEISURE_ENTERTAINMENT';
     const MEDICAL_INSTITUTION = 'PROMOTED_ASSET_TYPE_MEDICAL_INSTITUTION';
+    const WECHAT_CHANNELS_ACTIVITY = 'PROMOTED_ASSET_TYPE_WECHAT_CHANNELS_ACTIVITY';
     
     /**
      * Gets allowable values of the enum
@@ -192,6 +193,7 @@ class PromotedAssetType
             self::MATERNITY_PARENTING,
             self::LEISURE_ENTERTAINMENT,
             self::MEDICAL_INSTITUTION,
+            self::WECHAT_CHANNELS_ACTIVITY,
         ];
     }
 }

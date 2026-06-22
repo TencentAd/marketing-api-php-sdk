@@ -45,6 +45,7 @@ class OperationObjectType
      * Possible values of this enum
      */
     const ADGROUP = 'OPERATION_OBJECT_TYPE_ADGROUP';
+    const DYNAMIC_CREATIVE = 'OPERATION_OBJECT_TYPE_DYNAMIC_CREATIVE';
     const MARKETING_TARGET_ASSETS = 'OPERATION_OBJECT_TYPE_MARKETING_TARGET_ASSETS';
     const JOINT_BUDGET = 'OPERATION_OBJECT_TYPE_JOINT_BUDGET';
     
@@ -56,6 +57,7 @@ class OperationObjectType
     {
         return [
             self::ADGROUP,
+            self::DYNAMIC_CREATIVE,
             self::MARKETING_TARGET_ASSETS,
             self::JOINT_BUDGET,
         ];

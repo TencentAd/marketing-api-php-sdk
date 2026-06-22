@@ -90,7 +90,7 @@ class AdUnionReportsApi
     /**
      * Operation adUnionReportsGet
      *
-     * 联盟广告位报表接口
+     * 联盟营销位报表接口
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange dateRange (required)
@@ -114,7 +114,7 @@ class AdUnionReportsApi
     /**
      * Operation adUnionReportsGetWithHttpInfo
      *
-     * 联盟广告位报表接口
+     * 联盟营销位报表接口
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange (required)
@@ -196,7 +196,7 @@ class AdUnionReportsApi
     /**
      * Operation adUnionReportsGetAsync
      *
-     * 联盟广告位报表接口
+     * 联盟营销位报表接口
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange (required)
@@ -223,7 +223,7 @@ class AdUnionReportsApi
     /**
      * Operation adUnionReportsGetAsyncWithHttpInfo
      *
-     * 联盟广告位报表接口
+     * 联盟营销位报表接口
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\V3\ReportDateRange|mixed $dateRange (required)

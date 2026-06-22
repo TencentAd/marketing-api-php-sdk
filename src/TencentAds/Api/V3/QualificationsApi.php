@@ -90,7 +90,7 @@ class QualificationsApi
     /**
      * Operation qualificationsAdd
      *
-     * 创建广告主资质
+     * 创建客户资质
      *
      * @param  \TencentAds\Model\V3\QualificationsAddRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class QualificationsApi
     /**
      * Operation qualificationsAddWithHttpInfo
      *
-     * 创建广告主资质
+     * 创建客户资质
      *
      * @param  \TencentAds\Model\V3\QualificationsAddRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class QualificationsApi
     /**
      * Operation qualificationsAddAsync
      *
-     * 创建广告主资质
+     * 创建客户资质
      *
      * @param  \TencentAds\Model\V3\QualificationsAddRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class QualificationsApi
     /**
      * Operation qualificationsAddAsyncWithHttpInfo
      *
-     * 创建广告主资质
+     * 创建客户资质
      *
      * @param  \TencentAds\Model\V3\QualificationsAddRequest|mixed $data (required)
      *
@@ -384,7 +384,7 @@ class QualificationsApi
     /**
      * Operation qualificationsDelete
      *
-     * 删除广告主资质
+     * 删除客户资质
      *
      * @param  \TencentAds\Model\V3\QualificationsDeleteRequest|mixed $data data (required)
      *
@@ -401,7 +401,7 @@ class QualificationsApi
     /**
      * Operation qualificationsDeleteWithHttpInfo
      *
-     * 删除广告主资质
+     * 删除客户资质
      *
      * @param  \TencentAds\Model\V3\QualificationsDeleteRequest|mixed $data (required)
      *
@@ -476,7 +476,7 @@ class QualificationsApi
     /**
      * Operation qualificationsDeleteAsync
      *
-     * 删除广告主资质
+     * 删除客户资质
      *
      * @param  \TencentAds\Model\V3\QualificationsDeleteRequest|mixed $data (required)
      *
@@ -496,7 +496,7 @@ class QualificationsApi
     /**
      * Operation qualificationsDeleteAsyncWithHttpInfo
      *
-     * 删除广告主资质
+     * 删除客户资质
      *
      * @param  \TencentAds\Model\V3\QualificationsDeleteRequest|mixed $data (required)
      *
@@ -678,7 +678,7 @@ class QualificationsApi
     /**
      * Operation qualificationsGet
      *
-     * 获取广告主资质
+     * 获取客户资质
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $qualificationType qualificationType (required)
@@ -698,7 +698,7 @@ class QualificationsApi
     /**
      * Operation qualificationsGetWithHttpInfo
      *
-     * 获取广告主资质
+     * 获取客户资质
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $qualificationType (required)
@@ -776,7 +776,7 @@ class QualificationsApi
     /**
      * Operation qualificationsGetAsync
      *
-     * 获取广告主资质
+     * 获取客户资质
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $qualificationType (required)
@@ -799,7 +799,7 @@ class QualificationsApi
     /**
      * Operation qualificationsGetAsyncWithHttpInfo
      *
-     * 获取广告主资质
+     * 获取客户资质
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $qualificationType (required)
@@ -1012,7 +1012,7 @@ class QualificationsApi
     /**
      * Operation qualificationsUpdate
      *
-     * 更新广告主资质
+     * 更新客户资质
      *
      * @param  \TencentAds\Model\V3\QualificationsUpdateRequest|mixed $data data (required)
      *
@@ -1029,7 +1029,7 @@ class QualificationsApi
     /**
      * Operation qualificationsUpdateWithHttpInfo
      *
-     * 更新广告主资质
+     * 更新客户资质
      *
      * @param  \TencentAds\Model\V3\QualificationsUpdateRequest|mixed $data (required)
      *
@@ -1104,7 +1104,7 @@ class QualificationsApi
     /**
      * Operation qualificationsUpdateAsync
      *
-     * 更新广告主资质
+     * 更新客户资质
      *
      * @param  \TencentAds\Model\V3\QualificationsUpdateRequest|mixed $data (required)
      *
@@ -1124,7 +1124,7 @@ class QualificationsApi
     /**
      * Operation qualificationsUpdateAsyncWithHttpInfo
      *
-     * 更新广告主资质
+     * 更新客户资质
      *
      * @param  \TencentAds\Model\V3\QualificationsUpdateRequest|mixed $data (required)
      *

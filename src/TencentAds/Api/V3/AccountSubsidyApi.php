@@ -90,7 +90,7 @@ class AccountSubsidyApi
     /**
      * Operation accountSubsidyGet
      *
-     * 获取广告主关联的补贴账号
+     * 获取客户关联的补贴账号
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -108,7 +108,7 @@ class AccountSubsidyApi
     /**
      * Operation accountSubsidyGetWithHttpInfo
      *
-     * 获取广告主关联的补贴账号
+     * 获取客户关联的补贴账号
      *
      * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -184,7 +184,7 @@ class AccountSubsidyApi
     /**
      * Operation accountSubsidyGetAsync
      *
-     * 获取广告主关联的补贴账号
+     * 获取客户关联的补贴账号
      *
      * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -205,7 +205,7 @@ class AccountSubsidyApi
     /**
      * Operation accountSubsidyGetAsyncWithHttpInfo
      *
-     * 获取广告主关联的补贴账号
+     * 获取客户关联的补贴账号
      *
      * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)

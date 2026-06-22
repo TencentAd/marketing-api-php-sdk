@@ -90,7 +90,7 @@ class AgencyBusinessUnitListAccountApi
     /**
      * Operation agencyBusinessUnitListAccountGet
      *
-     * 查询服务商业务单元下的广告主账号列表
+     * 查询服务商业务单元下的账号列表
      *
      * @param  int|mixed $organizationId organizationId (required)
      * @param  int|mixed $page page (required)
@@ -110,7 +110,7 @@ class AgencyBusinessUnitListAccountApi
     /**
      * Operation agencyBusinessUnitListAccountGetWithHttpInfo
      *
-     * 查询服务商业务单元下的广告主账号列表
+     * 查询服务商业务单元下的账号列表
      *
      * @param  int|mixed $organizationId (required)
      * @param  int|mixed $page (required)
@@ -188,7 +188,7 @@ class AgencyBusinessUnitListAccountApi
     /**
      * Operation agencyBusinessUnitListAccountGetAsync
      *
-     * 查询服务商业务单元下的广告主账号列表
+     * 查询服务商业务单元下的账号列表
      *
      * @param  int|mixed $organizationId (required)
      * @param  int|mixed $page (required)
@@ -211,7 +211,7 @@ class AgencyBusinessUnitListAccountApi
     /**
      * Operation agencyBusinessUnitListAccountGetAsyncWithHttpInfo
      *
-     * 查询服务商业务单元下的广告主账号列表
+     * 查询服务商业务单元下的账号列表
      *
      * @param  int|mixed $organizationId (required)
      * @param  int|mixed $page (required)

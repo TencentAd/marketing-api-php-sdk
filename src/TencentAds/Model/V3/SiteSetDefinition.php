@@ -101,6 +101,7 @@ class SiteSetDefinition
     const TENCENT_AD_NETWORK_OVERSEA = 'SITE_SET_TENCENT_AD_NETWORK_OVERSEA';
     const YUNXUAN = 'SITE_SET_YUNXUAN';
     const SEARCH_MOBILE_UNION = 'SITE_SET_SEARCH_MOBILE_UNION';
+    const WECHAT_NON_STANDARD = 'SITE_SET_WECHAT_NON_STANDARD';
     const EXPAND = 'SITE_SET_EXPAND';
     const SMART = 'SITE_SET_SMART';
     
@@ -168,6 +169,7 @@ class SiteSetDefinition
             self::TENCENT_AD_NETWORK_OVERSEA,
             self::YUNXUAN,
             self::SEARCH_MOBILE_UNION,
+            self::WECHAT_NON_STANDARD,
             self::EXPAND,
             self::SMART,
         ];

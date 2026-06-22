@@ -90,7 +90,7 @@ class AdvertiserConfigApi
     /**
      * Operation advertiserConfigAdd
      *
-     * 添加广告主配置
+     * 设置客户投放偏好
      *
      * @param  \TencentAds\Model\V3\AdvertiserConfigAddRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class AdvertiserConfigApi
     /**
      * Operation advertiserConfigAddWithHttpInfo
      *
-     * 添加广告主配置
+     * 设置客户投放偏好
      *
      * @param  \TencentAds\Model\V3\AdvertiserConfigAddRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class AdvertiserConfigApi
     /**
      * Operation advertiserConfigAddAsync
      *
-     * 添加广告主配置
+     * 设置客户投放偏好
      *
      * @param  \TencentAds\Model\V3\AdvertiserConfigAddRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class AdvertiserConfigApi
     /**
      * Operation advertiserConfigAddAsyncWithHttpInfo
      *
-     * 添加广告主配置
+     * 设置客户投放偏好
      *
      * @param  \TencentAds\Model\V3\AdvertiserConfigAddRequest|mixed $data (required)
      *
@@ -384,39 +384,39 @@ class AdvertiserConfigApi
     /**
      * Operation advertiserConfigGet
      *
-     * 查询广告主配置
+     * 获取客户投放偏好
      *
      * @param  int|mixed $accountId accountId (required)
+     * @param  string[]|mixed $fields fields (required)
      * @param  int|mixed $organizationId organizationId (optional)
-     * @param  string[]|mixed $fields fields (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\AdvertiserConfigGetResponse|mixed
      */
-    public function advertiserConfigGet($accountId, $organizationId = null, $fields = null)
+    public function advertiserConfigGet($accountId, $fields, $organizationId = null)
     {
-        list($response) = $this->advertiserConfigGetWithHttpInfo($accountId, $organizationId, $fields);
+        list($response) = $this->advertiserConfigGetWithHttpInfo($accountId, $fields, $organizationId);
         return $response;
     }
 
     /**
      * Operation advertiserConfigGetWithHttpInfo
      *
-     * 查询广告主配置
+     * 获取客户投放偏好
      *
      * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields (required)
      * @param  int|mixed $organizationId (optional)
-     * @param  string[]|mixed $fields (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\AdvertiserConfigGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function advertiserConfigGetWithHttpInfo($accountId, $organizationId = null, $fields = null)
+    public function advertiserConfigGetWithHttpInfo($accountId, $fields, $organizationId = null)
     {
         $returnType = '\TencentAds\Model\V3\AdvertiserConfigGetResponse';
-        $request = $this->advertiserConfigGetRequest($accountId, $organizationId, $fields);
+        $request = $this->advertiserConfigGetRequest($accountId, $fields, $organizationId);
 
         try {
             $options = $this->createHttpClientOption();
@@ -480,18 +480,18 @@ class AdvertiserConfigApi
     /**
      * Operation advertiserConfigGetAsync
      *
-     * 查询广告主配置
+     * 获取客户投放偏好
      *
      * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields (required)
      * @param  int|mixed $organizationId (optional)
-     * @param  string[]|mixed $fields (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function advertiserConfigGetAsync($accountId, $organizationId = null, $fields = null)
+    public function advertiserConfigGetAsync($accountId, $fields, $organizationId = null)
     {
-        return $this->advertiserConfigGetAsyncWithHttpInfo($accountId, $organizationId, $fields)
+        return $this->advertiserConfigGetAsyncWithHttpInfo($accountId, $fields, $organizationId)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -502,19 +502,19 @@ class AdvertiserConfigApi
     /**
      * Operation advertiserConfigGetAsyncWithHttpInfo
      *
-     * 查询广告主配置
+     * 获取客户投放偏好
      *
      * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields (required)
      * @param  int|mixed $organizationId (optional)
-     * @param  string[]|mixed $fields (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function advertiserConfigGetAsyncWithHttpInfo($accountId, $organizationId = null, $fields = null)
+    public function advertiserConfigGetAsyncWithHttpInfo($accountId, $fields, $organizationId = null)
     {
         $returnType = '\TencentAds\Model\V3\AdvertiserConfigGetResponse';
-        $request = $this->advertiserConfigGetRequest($accountId, $organizationId, $fields);
+        $request = $this->advertiserConfigGetRequest($accountId, $fields, $organizationId);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -557,18 +557,24 @@ class AdvertiserConfigApi
      * Create request for operation 'advertiserConfigGet'
      *
      * @param  int|mixed $accountId (required)
+     * @param  string[]|mixed $fields (required)
      * @param  int|mixed $organizationId (optional)
-     * @param  string[]|mixed $fields (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function advertiserConfigGetRequest($accountId, $organizationId = null, $fields = null)
+    protected function advertiserConfigGetRequest($accountId, $fields, $organizationId = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
             throw new \InvalidArgumentException(
                 'Missing the required parameter $accountId when calling advertiserConfigGet'
+            );
+        }
+        // verify the required parameter 'fields' is set
+        if ($fields === null || (is_array($fields) && count($fields) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $fields when calling advertiserConfigGet'
             );
         }
 

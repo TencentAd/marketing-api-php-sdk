@@ -66,7 +66,9 @@ class PunishUidMetricsGetRequest implements ModelInterface, ArrayAccess
         'firstLevelIndustryName' => 'string',
         'secondLevelIndustryName' => 'string',
         'queryAccountIdList' => 'int[]',
-        'pageConf' => '\TencentAds\Model\V3\PunishUidMetricsReqPageConf'
+        'pageConf' => '\TencentAds\Model\V3\PunishUidMetricsReqPageConf',
+        'accountOperateIdentityList' => 'string[]',
+        'complianceOwnerList' => 'string[]'
     ];
 
     /**
@@ -84,7 +86,9 @@ class PunishUidMetricsGetRequest implements ModelInterface, ArrayAccess
         'firstLevelIndustryName' => null,
         'secondLevelIndustryName' => null,
         'queryAccountIdList' => 'int64',
-        'pageConf' => null
+        'pageConf' => null,
+        'accountOperateIdentityList' => null,
+        'complianceOwnerList' => null
     ];
 
     /**
@@ -123,7 +127,9 @@ class PunishUidMetricsGetRequest implements ModelInterface, ArrayAccess
         'firstLevelIndustryName' => 'first_level_industry_name',
         'secondLevelIndustryName' => 'second_level_industry_name',
         'queryAccountIdList' => 'query_account_id_list',
-        'pageConf' => 'page_conf'
+        'pageConf' => 'page_conf',
+        'accountOperateIdentityList' => 'account_operate_identity_list',
+        'complianceOwnerList' => 'compliance_owner_list'
     ];
 
     /**
@@ -141,7 +147,9 @@ class PunishUidMetricsGetRequest implements ModelInterface, ArrayAccess
         'firstLevelIndustryName' => 'setFirstLevelIndustryName',
         'secondLevelIndustryName' => 'setSecondLevelIndustryName',
         'queryAccountIdList' => 'setQueryAccountIdList',
-        'pageConf' => 'setPageConf'
+        'pageConf' => 'setPageConf',
+        'accountOperateIdentityList' => 'setAccountOperateIdentityList',
+        'complianceOwnerList' => 'setComplianceOwnerList'
     ];
 
     /**
@@ -159,7 +167,9 @@ class PunishUidMetricsGetRequest implements ModelInterface, ArrayAccess
         'firstLevelIndustryName' => 'getFirstLevelIndustryName',
         'secondLevelIndustryName' => 'getSecondLevelIndustryName',
         'queryAccountIdList' => 'getQueryAccountIdList',
-        'pageConf' => 'getPageConf'
+        'pageConf' => 'getPageConf',
+        'accountOperateIdentityList' => 'getAccountOperateIdentityList',
+        'complianceOwnerList' => 'getComplianceOwnerList'
     ];
 
     /**
@@ -232,6 +242,8 @@ class PunishUidMetricsGetRequest implements ModelInterface, ArrayAccess
         $this->container['secondLevelIndustryName'] = isset($data['secondLevelIndustryName']) ? $data['secondLevelIndustryName'] : null;
         $this->container['queryAccountIdList'] = isset($data['queryAccountIdList']) ? $data['queryAccountIdList'] : null;
         $this->container['pageConf'] = isset($data['pageConf']) ? $data['pageConf'] : null;
+        $this->container['accountOperateIdentityList'] = isset($data['accountOperateIdentityList']) ? $data['accountOperateIdentityList'] : null;
+        $this->container['complianceOwnerList'] = isset($data['complianceOwnerList']) ? $data['complianceOwnerList'] : null;
     }
 
     /**
@@ -494,6 +506,54 @@ class PunishUidMetricsGetRequest implements ModelInterface, ArrayAccess
     public function setPageConf($pageConf)
     {
         $this->container['pageConf'] = $pageConf;
+
+        return $this;
+    }
+
+    /**
+     * Gets accountOperateIdentityList
+     *
+     * @return string[]|mixed
+     */
+    public function getAccountOperateIdentityList()
+    {
+        return $this->container['accountOperateIdentityList'];
+    }
+
+    /**
+     * Sets accountOperateIdentityList
+     *
+     * @param string[]|mixed $accountOperateIdentityList accountOperateIdentityList
+     *
+     * @return $this
+     */
+    public function setAccountOperateIdentityList($accountOperateIdentityList)
+    {
+        $this->container['accountOperateIdentityList'] = $accountOperateIdentityList;
+
+        return $this;
+    }
+
+    /**
+     * Gets complianceOwnerList
+     *
+     * @return string[]|mixed
+     */
+    public function getComplianceOwnerList()
+    {
+        return $this->container['complianceOwnerList'];
+    }
+
+    /**
+     * Sets complianceOwnerList
+     *
+     * @param string[]|mixed $complianceOwnerList complianceOwnerList
+     *
+     * @return $this
+     */
+    public function setComplianceOwnerList($complianceOwnerList)
+    {
+        $this->container['complianceOwnerList'] = $complianceOwnerList;
 
         return $this;
     }

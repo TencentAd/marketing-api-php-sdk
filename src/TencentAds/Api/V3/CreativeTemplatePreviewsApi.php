@@ -90,7 +90,7 @@ class CreativeTemplatePreviewsApi
     /**
      * Operation creativeTemplatePreviewsGet
      *
-     * 获取广告创意预览
+     * 获取创意预览
      *
      * @param  \TencentAds\Model\V3\CreativeTemplatePreviewsGetRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class CreativeTemplatePreviewsApi
     /**
      * Operation creativeTemplatePreviewsGetWithHttpInfo
      *
-     * 获取广告创意预览
+     * 获取创意预览
      *
      * @param  \TencentAds\Model\V3\CreativeTemplatePreviewsGetRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class CreativeTemplatePreviewsApi
     /**
      * Operation creativeTemplatePreviewsGetAsync
      *
-     * 获取广告创意预览
+     * 获取创意预览
      *
      * @param  \TencentAds\Model\V3\CreativeTemplatePreviewsGetRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class CreativeTemplatePreviewsApi
     /**
      * Operation creativeTemplatePreviewsGetAsyncWithHttpInfo
      *
-     * 获取广告创意预览
+     * 获取创意预览
      *
      * @param  \TencentAds\Model\V3\CreativeTemplatePreviewsGetRequest|mixed $data (required)
      *

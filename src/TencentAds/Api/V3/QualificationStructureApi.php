@@ -90,7 +90,7 @@ class QualificationStructureApi
     /**
      * Operation qualificationStructureGet
      *
-     * 获取广告主资质结构
+     * 获取客户资质结构
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $qualificationCode qualificationCode (required)
@@ -109,7 +109,7 @@ class QualificationStructureApi
     /**
      * Operation qualificationStructureGetWithHttpInfo
      *
-     * 获取广告主资质结构
+     * 获取客户资质结构
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $qualificationCode (required)
@@ -186,7 +186,7 @@ class QualificationStructureApi
     /**
      * Operation qualificationStructureGetAsync
      *
-     * 获取广告主资质结构
+     * 获取客户资质结构
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $qualificationCode (required)
@@ -208,7 +208,7 @@ class QualificationStructureApi
     /**
      * Operation qualificationStructureGetAsyncWithHttpInfo
      *
-     * 获取广告主资质结构
+     * 获取客户资质结构
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $qualificationCode (required)

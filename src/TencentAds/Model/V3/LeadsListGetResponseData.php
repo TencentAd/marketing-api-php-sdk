@@ -57,7 +57,7 @@ class LeadsListGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'leadsInfo' => '\TencentAds\Model\V3\LeadsListStruct',
+        'leadsInfo' => '\TencentAds\Model\V3\LeadsListStruct[]',
         'pageInfo' => '\TencentAds\Model\V3\PageInfo'
     ];
 
@@ -213,7 +213,7 @@ class LeadsListGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Gets leadsInfo
      *
-     * @return \TencentAds\Model\V3\LeadsListStruct|mixed
+     * @return \TencentAds\Model\V3\LeadsListStruct[]|mixed
      */
     public function getLeadsInfo()
     {
@@ -223,7 +223,7 @@ class LeadsListGetResponseData implements ModelInterface, ArrayAccess
     /**
      * Sets leadsInfo
      *
-     * @param \TencentAds\Model\V3\LeadsListStruct|mixed $leadsInfo leadsInfo
+     * @param \TencentAds\Model\V3\LeadsListStruct[]|mixed $leadsInfo leadsInfo
      *
      * @return $this
      */

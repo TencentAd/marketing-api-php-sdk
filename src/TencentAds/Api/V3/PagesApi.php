@@ -97,15 +97,17 @@ class PagesApi
      * @param  int|mixed $page page (optional)
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  \TencentAds\Model\V3\AdContext|mixed $adContext adContext (optional)
+     * @param  string|mixed $paginationMode paginationMode (optional)
+     * @param  string|mixed $cursor cursor (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\PagesGetResponse|mixed
      */
-    public function pagesGet($accountId, $filtering = null, $page = null, $pageSize = null, $adContext = null, $fields = null)
+    public function pagesGet($accountId, $filtering = null, $page = null, $pageSize = null, $adContext = null, $paginationMode = null, $cursor = null, $fields = null)
     {
-        list($response) = $this->pagesGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $adContext, $fields);
+        list($response) = $this->pagesGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $adContext, $paginationMode, $cursor, $fields);
         return $response;
     }
 
@@ -119,16 +121,18 @@ class PagesApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  \TencentAds\Model\V3\AdContext|mixed $adContext (optional)
+     * @param  string|mixed $paginationMode (optional)
+     * @param  string|mixed $cursor (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\PagesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function pagesGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $adContext = null, $fields = null)
+    public function pagesGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $adContext = null, $paginationMode = null, $cursor = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\PagesGetResponse';
-        $request = $this->pagesGetRequest($accountId, $filtering, $page, $pageSize, $adContext, $fields);
+        $request = $this->pagesGetRequest($accountId, $filtering, $page, $pageSize, $adContext, $paginationMode, $cursor, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -199,14 +203,16 @@ class PagesApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  \TencentAds\Model\V3\AdContext|mixed $adContext (optional)
+     * @param  string|mixed $paginationMode (optional)
+     * @param  string|mixed $cursor (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function pagesGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $adContext = null, $fields = null)
+    public function pagesGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $adContext = null, $paginationMode = null, $cursor = null, $fields = null)
     {
-        return $this->pagesGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $adContext, $fields)
+        return $this->pagesGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $adContext, $paginationMode, $cursor, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -224,15 +230,17 @@ class PagesApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  \TencentAds\Model\V3\AdContext|mixed $adContext (optional)
+     * @param  string|mixed $paginationMode (optional)
+     * @param  string|mixed $cursor (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function pagesGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $adContext = null, $fields = null)
+    public function pagesGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $adContext = null, $paginationMode = null, $cursor = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\PagesGetResponse';
-        $request = $this->pagesGetRequest($accountId, $filtering, $page, $pageSize, $adContext, $fields);
+        $request = $this->pagesGetRequest($accountId, $filtering, $page, $pageSize, $adContext, $paginationMode, $cursor, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -279,12 +287,14 @@ class PagesApi
      * @param  int|mixed $page (optional)
      * @param  int|mixed $pageSize (optional)
      * @param  \TencentAds\Model\V3\AdContext|mixed $adContext (optional)
+     * @param  string|mixed $paginationMode (optional)
+     * @param  string|mixed $cursor (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function pagesGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $adContext = null, $fields = null)
+    protected function pagesGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $adContext = null, $paginationMode = null, $cursor = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -322,6 +332,14 @@ class PagesApi
         // query params
         if ($adContext !== null) {
             $queryParams['ad_context'] = ObjectSerializer::toQueryValue($adContext);
+        }
+        // query params
+        if ($paginationMode !== null) {
+            $queryParams['pagination_mode'] = ObjectSerializer::toQueryValue($paginationMode);
+        }
+        // query params
+        if ($cursor !== null) {
+            $queryParams['cursor'] = ObjectSerializer::toQueryValue($cursor);
         }
         // query params
         if (is_array($fields)) {

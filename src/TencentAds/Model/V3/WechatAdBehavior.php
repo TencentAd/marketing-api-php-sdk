@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * WechatAdBehavior Class Doc Comment
  *
  * @category Class
- * @description 微信广告行为定向
+ * @description 微信营销行为定向
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

@@ -65,7 +65,9 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => 'string',
         'wechatChannelsAccountName' => 'string',
         'bulletCommentSwitchOpen' => 'bool',
-        'bulletCommentSupported' => 'bool'
+        'bulletCommentSupported' => 'bool',
+        'objectPrivateSwitchOpen' => 'bool',
+        'objectPrivateDisableCode' => '\TencentAds\Model\V3\ObjectPrivateDisableCode'
     ];
 
     /**
@@ -81,7 +83,9 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => null,
         'wechatChannelsAccountName' => null,
         'bulletCommentSwitchOpen' => null,
-        'bulletCommentSupported' => null
+        'bulletCommentSupported' => null,
+        'objectPrivateSwitchOpen' => null,
+        'objectPrivateDisableCode' => null
     ];
 
     /**
@@ -118,7 +122,9 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => 'wechat_channels_account_id',
         'wechatChannelsAccountName' => 'wechat_channels_account_name',
         'bulletCommentSwitchOpen' => 'bullet_comment_switch_open',
-        'bulletCommentSupported' => 'bullet_comment_supported'
+        'bulletCommentSupported' => 'bullet_comment_supported',
+        'objectPrivateSwitchOpen' => 'object_private_switch_open',
+        'objectPrivateDisableCode' => 'object_private_disable_code'
     ];
 
     /**
@@ -134,7 +140,9 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
         'wechatChannelsAccountName' => 'setWechatChannelsAccountName',
         'bulletCommentSwitchOpen' => 'setBulletCommentSwitchOpen',
-        'bulletCommentSupported' => 'setBulletCommentSupported'
+        'bulletCommentSupported' => 'setBulletCommentSupported',
+        'objectPrivateSwitchOpen' => 'setObjectPrivateSwitchOpen',
+        'objectPrivateDisableCode' => 'setObjectPrivateDisableCode'
     ];
 
     /**
@@ -150,7 +158,9 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
         'wechatChannelsAccountName' => 'getWechatChannelsAccountName',
         'bulletCommentSwitchOpen' => 'getBulletCommentSwitchOpen',
-        'bulletCommentSupported' => 'getBulletCommentSupported'
+        'bulletCommentSupported' => 'getBulletCommentSupported',
+        'objectPrivateSwitchOpen' => 'getObjectPrivateSwitchOpen',
+        'objectPrivateDisableCode' => 'getObjectPrivateDisableCode'
     ];
 
     /**
@@ -221,6 +231,8 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         $this->container['wechatChannelsAccountName'] = isset($data['wechatChannelsAccountName']) ? $data['wechatChannelsAccountName'] : null;
         $this->container['bulletCommentSwitchOpen'] = isset($data['bulletCommentSwitchOpen']) ? $data['bulletCommentSwitchOpen'] : null;
         $this->container['bulletCommentSupported'] = isset($data['bulletCommentSupported']) ? $data['bulletCommentSupported'] : null;
+        $this->container['objectPrivateSwitchOpen'] = isset($data['objectPrivateSwitchOpen']) ? $data['objectPrivateSwitchOpen'] : null;
+        $this->container['objectPrivateDisableCode'] = isset($data['objectPrivateDisableCode']) ? $data['objectPrivateDisableCode'] : null;
     }
 
     /**
@@ -435,6 +447,54 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
     public function setBulletCommentSupported($bulletCommentSupported)
     {
         $this->container['bulletCommentSupported'] = $bulletCommentSupported;
+
+        return $this;
+    }
+
+    /**
+     * Gets objectPrivateSwitchOpen
+     *
+     * @return bool|mixed
+     */
+    public function getObjectPrivateSwitchOpen()
+    {
+        return $this->container['objectPrivateSwitchOpen'];
+    }
+
+    /**
+     * Sets objectPrivateSwitchOpen
+     *
+     * @param bool|mixed $objectPrivateSwitchOpen objectPrivateSwitchOpen
+     *
+     * @return $this
+     */
+    public function setObjectPrivateSwitchOpen($objectPrivateSwitchOpen)
+    {
+        $this->container['objectPrivateSwitchOpen'] = $objectPrivateSwitchOpen;
+
+        return $this;
+    }
+
+    /**
+     * Gets objectPrivateDisableCode
+     *
+     * @return \TencentAds\Model\V3\ObjectPrivateDisableCode|mixed
+     */
+    public function getObjectPrivateDisableCode()
+    {
+        return $this->container['objectPrivateDisableCode'];
+    }
+
+    /**
+     * Sets objectPrivateDisableCode
+     *
+     * @param \TencentAds\Model\V3\ObjectPrivateDisableCode|mixed $objectPrivateDisableCode objectPrivateDisableCode
+     *
+     * @return $this
+     */
+    public function setObjectPrivateDisableCode($objectPrivateDisableCode)
+    {
+        $this->container['objectPrivateDisableCode'] = $objectPrivateDisableCode;
 
         return $this;
     }

@@ -78,7 +78,9 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
         'reviewEndTime' => 'string',
         'queryAccountIdList' => 'int[]',
         'pageNum' => 'int',
-        'pageSize' => 'int'
+        'pageSize' => 'int',
+        'accountOperateIdentityList' => 'string[]',
+        'complianceOwnerList' => 'string[]'
     ];
 
     /**
@@ -108,7 +110,9 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
         'reviewEndTime' => null,
         'queryAccountIdList' => 'int64',
         'pageNum' => 'int64',
-        'pageSize' => 'int64'
+        'pageSize' => 'int64',
+        'accountOperateIdentityList' => null,
+        'complianceOwnerList' => null
     ];
 
     /**
@@ -159,7 +163,9 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
         'reviewEndTime' => 'review_end_time',
         'queryAccountIdList' => 'query_account_id_list',
         'pageNum' => 'page_num',
-        'pageSize' => 'page_size'
+        'pageSize' => 'page_size',
+        'accountOperateIdentityList' => 'account_operate_identity_list',
+        'complianceOwnerList' => 'compliance_owner_list'
     ];
 
     /**
@@ -189,7 +195,9 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
         'reviewEndTime' => 'setReviewEndTime',
         'queryAccountIdList' => 'setQueryAccountIdList',
         'pageNum' => 'setPageNum',
-        'pageSize' => 'setPageSize'
+        'pageSize' => 'setPageSize',
+        'accountOperateIdentityList' => 'setAccountOperateIdentityList',
+        'complianceOwnerList' => 'setComplianceOwnerList'
     ];
 
     /**
@@ -219,7 +227,9 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
         'reviewEndTime' => 'getReviewEndTime',
         'queryAccountIdList' => 'getQueryAccountIdList',
         'pageNum' => 'getPageNum',
-        'pageSize' => 'getPageSize'
+        'pageSize' => 'getPageSize',
+        'accountOperateIdentityList' => 'getAccountOperateIdentityList',
+        'complianceOwnerList' => 'getComplianceOwnerList'
     ];
 
     /**
@@ -304,6 +314,8 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
         $this->container['queryAccountIdList'] = isset($data['queryAccountIdList']) ? $data['queryAccountIdList'] : null;
         $this->container['pageNum'] = isset($data['pageNum']) ? $data['pageNum'] : null;
         $this->container['pageSize'] = isset($data['pageSize']) ? $data['pageSize'] : null;
+        $this->container['accountOperateIdentityList'] = isset($data['accountOperateIdentityList']) ? $data['accountOperateIdentityList'] : null;
+        $this->container['complianceOwnerList'] = isset($data['complianceOwnerList']) ? $data['complianceOwnerList'] : null;
     }
 
     /**
@@ -854,6 +866,54 @@ class PunishDetailGetRequest implements ModelInterface, ArrayAccess
     public function setPageSize($pageSize)
     {
         $this->container['pageSize'] = $pageSize;
+
+        return $this;
+    }
+
+    /**
+     * Gets accountOperateIdentityList
+     *
+     * @return string[]|mixed
+     */
+    public function getAccountOperateIdentityList()
+    {
+        return $this->container['accountOperateIdentityList'];
+    }
+
+    /**
+     * Sets accountOperateIdentityList
+     *
+     * @param string[]|mixed $accountOperateIdentityList accountOperateIdentityList
+     *
+     * @return $this
+     */
+    public function setAccountOperateIdentityList($accountOperateIdentityList)
+    {
+        $this->container['accountOperateIdentityList'] = $accountOperateIdentityList;
+
+        return $this;
+    }
+
+    /**
+     * Gets complianceOwnerList
+     *
+     * @return string[]|mixed
+     */
+    public function getComplianceOwnerList()
+    {
+        return $this->container['complianceOwnerList'];
+    }
+
+    /**
+     * Sets complianceOwnerList
+     *
+     * @param string[]|mixed $complianceOwnerList complianceOwnerList
+     *
+     * @return $this
+     */
+    public function setComplianceOwnerList($complianceOwnerList)
+    {
+        $this->container['complianceOwnerList'] = $complianceOwnerList;
 
         return $this;
     }

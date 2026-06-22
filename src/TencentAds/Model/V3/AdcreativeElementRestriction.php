@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * AdcreativeElementRestriction Class Doc Comment
  *
  * @category Class
- * @description 广告创意元素需满足的限制条件
+ * @description 创意元素需满足的限制条件
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

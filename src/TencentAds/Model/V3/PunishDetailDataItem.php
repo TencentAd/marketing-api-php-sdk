@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * PunishDetailDataItem Class Doc Comment
  *
  * @category Class
- * @description 计量处罚明细数据项
+ * @description 计量治理明细数据项
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -75,7 +75,9 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
         'rejectReason' => 'string',
         'isElementAppeal' => 'int',
         'agencyName' => 'string',
-        'accountFrame' => 'string'
+        'accountFrame' => 'string',
+        'accountOperateIdentity' => 'string',
+        'complianceOwner' => 'string'
     ];
 
     /**
@@ -101,7 +103,9 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
         'rejectReason' => null,
         'isElementAppeal' => 'int64',
         'agencyName' => null,
-        'accountFrame' => null
+        'accountFrame' => null,
+        'accountOperateIdentity' => null,
+        'complianceOwner' => null
     ];
 
     /**
@@ -148,7 +152,9 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
         'rejectReason' => 'reject_reason',
         'isElementAppeal' => 'is_element_appeal',
         'agencyName' => 'agency_name',
-        'accountFrame' => 'account_frame'
+        'accountFrame' => 'account_frame',
+        'accountOperateIdentity' => 'account_operate_identity',
+        'complianceOwner' => 'compliance_owner'
     ];
 
     /**
@@ -174,7 +180,9 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
         'rejectReason' => 'setRejectReason',
         'isElementAppeal' => 'setIsElementAppeal',
         'agencyName' => 'setAgencyName',
-        'accountFrame' => 'setAccountFrame'
+        'accountFrame' => 'setAccountFrame',
+        'accountOperateIdentity' => 'setAccountOperateIdentity',
+        'complianceOwner' => 'setComplianceOwner'
     ];
 
     /**
@@ -200,7 +208,9 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
         'rejectReason' => 'getRejectReason',
         'isElementAppeal' => 'getIsElementAppeal',
         'agencyName' => 'getAgencyName',
-        'accountFrame' => 'getAccountFrame'
+        'accountFrame' => 'getAccountFrame',
+        'accountOperateIdentity' => 'getAccountOperateIdentity',
+        'complianceOwner' => 'getComplianceOwner'
     ];
 
     /**
@@ -281,6 +291,8 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
         $this->container['isElementAppeal'] = isset($data['isElementAppeal']) ? $data['isElementAppeal'] : null;
         $this->container['agencyName'] = isset($data['agencyName']) ? $data['agencyName'] : null;
         $this->container['accountFrame'] = isset($data['accountFrame']) ? $data['accountFrame'] : null;
+        $this->container['accountOperateIdentity'] = isset($data['accountOperateIdentity']) ? $data['accountOperateIdentity'] : null;
+        $this->container['complianceOwner'] = isset($data['complianceOwner']) ? $data['complianceOwner'] : null;
     }
 
     /**
@@ -735,6 +747,54 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
     public function setAccountFrame($accountFrame)
     {
         $this->container['accountFrame'] = $accountFrame;
+
+        return $this;
+    }
+
+    /**
+     * Gets accountOperateIdentity
+     *
+     * @return string|mixed
+     */
+    public function getAccountOperateIdentity()
+    {
+        return $this->container['accountOperateIdentity'];
+    }
+
+    /**
+     * Sets accountOperateIdentity
+     *
+     * @param string|mixed $accountOperateIdentity accountOperateIdentity
+     *
+     * @return $this
+     */
+    public function setAccountOperateIdentity($accountOperateIdentity)
+    {
+        $this->container['accountOperateIdentity'] = $accountOperateIdentity;
+
+        return $this;
+    }
+
+    /**
+     * Gets complianceOwner
+     *
+     * @return string|mixed
+     */
+    public function getComplianceOwner()
+    {
+        return $this->container['complianceOwner'];
+    }
+
+    /**
+     * Sets complianceOwner
+     *
+     * @param string|mixed $complianceOwner complianceOwner
+     *
+     * @return $this
+     */
+    public function setComplianceOwner($complianceOwner)
+    {
+        $this->container['complianceOwner'] = $complianceOwner;
 
         return $this;
     }

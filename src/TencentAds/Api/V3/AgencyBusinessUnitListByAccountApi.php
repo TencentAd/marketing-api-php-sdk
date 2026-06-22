@@ -90,7 +90,7 @@ class AgencyBusinessUnitListByAccountApi
     /**
      * Operation agencyBusinessUnitListByAccountGet
      *
-     * 查询广告主账号所属的服务商业务单元
+     * 查询账号所属的服务商业务单元
      *
      * @param  \TencentAds\Model\V3\AgencyBusinessUnitListByAccountGetRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class AgencyBusinessUnitListByAccountApi
     /**
      * Operation agencyBusinessUnitListByAccountGetWithHttpInfo
      *
-     * 查询广告主账号所属的服务商业务单元
+     * 查询账号所属的服务商业务单元
      *
      * @param  \TencentAds\Model\V3\AgencyBusinessUnitListByAccountGetRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class AgencyBusinessUnitListByAccountApi
     /**
      * Operation agencyBusinessUnitListByAccountGetAsync
      *
-     * 查询广告主账号所属的服务商业务单元
+     * 查询账号所属的服务商业务单元
      *
      * @param  \TencentAds\Model\V3\AgencyBusinessUnitListByAccountGetRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class AgencyBusinessUnitListByAccountApi
     /**
      * Operation agencyBusinessUnitListByAccountGetAsyncWithHttpInfo
      *
-     * 查询广告主账号所属的服务商业务单元
+     * 查询账号所属的服务商业务单元
      *
      * @param  \TencentAds\Model\V3\AgencyBusinessUnitListByAccountGetRequest|mixed $data (required)
      *

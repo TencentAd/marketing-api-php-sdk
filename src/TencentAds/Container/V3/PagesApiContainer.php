@@ -43,8 +43,10 @@ class PagesApiContainer extends ApiContainer
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $adContext = isset($params['ad_context']) ? $params['ad_context'] : null;
+            $paginationMode = isset($params['pagination_mode']) ? $params['pagination_mode'] : null;
+            $cursor = isset($params['cursor']) ? $params['cursor'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->pagesGet($accountId, $filtering, $page, $pageSize, $adContext, $fields);
+            $response = $this->apiInstance->pagesGet($accountId, $filtering, $page, $pageSize, $adContext, $paginationMode, $cursor, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -64,8 +66,10 @@ class PagesApiContainer extends ApiContainer
             $page = isset($params['page']) ? $params['page'] : null;
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $adContext = isset($params['ad_context']) ? $params['ad_context'] : null;
+            $paginationMode = isset($params['pagination_mode']) ? $params['pagination_mode'] : null;
+            $cursor = isset($params['cursor']) ? $params['cursor'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->pagesGetAsync($accountId, $filtering, $page, $pageSize, $adContext, $fields);
+            $response = $this->apiInstance->pagesGetAsync($accountId, $filtering, $page, $pageSize, $adContext, $paginationMode, $cursor, $fields);
             return $response;
         });
     }

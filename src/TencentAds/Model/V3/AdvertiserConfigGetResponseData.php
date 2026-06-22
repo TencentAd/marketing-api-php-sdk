@@ -57,7 +57,9 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'coverImageSnapshotType' => '\TencentAds\Model\V3\CoverImageSnapshotType'
+        'coverImageSnapshotType' => '\TencentAds\Model\V3\CoverImageSnapshotType',
+        'multiImageCollageStatus' => '\TencentAds\Model\V3\MultiImageCollageStatus',
+        'multiImageCollageAigcStatus' => '\TencentAds\Model\V3\MultiImageCollageAigcStatus'
     ];
 
     /**
@@ -66,7 +68,9 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'coverImageSnapshotType' => null
+        'coverImageSnapshotType' => null,
+        'multiImageCollageStatus' => null,
+        'multiImageCollageAigcStatus' => null
     ];
 
     /**
@@ -96,7 +100,9 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'coverImageSnapshotType' => 'cover_image_snapshot_type'
+        'coverImageSnapshotType' => 'cover_image_snapshot_type',
+        'multiImageCollageStatus' => 'multi_image_collage_status',
+        'multiImageCollageAigcStatus' => 'multi_image_collage_aigc_status'
     ];
 
     /**
@@ -105,7 +111,9 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'coverImageSnapshotType' => 'setCoverImageSnapshotType'
+        'coverImageSnapshotType' => 'setCoverImageSnapshotType',
+        'multiImageCollageStatus' => 'setMultiImageCollageStatus',
+        'multiImageCollageAigcStatus' => 'setMultiImageCollageAigcStatus'
     ];
 
     /**
@@ -114,7 +122,9 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'coverImageSnapshotType' => 'getCoverImageSnapshotType'
+        'coverImageSnapshotType' => 'getCoverImageSnapshotType',
+        'multiImageCollageStatus' => 'getMultiImageCollageStatus',
+        'multiImageCollageAigcStatus' => 'getMultiImageCollageAigcStatus'
     ];
 
     /**
@@ -178,6 +188,8 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['coverImageSnapshotType'] = isset($data['coverImageSnapshotType']) ? $data['coverImageSnapshotType'] : null;
+        $this->container['multiImageCollageStatus'] = isset($data['multiImageCollageStatus']) ? $data['multiImageCollageStatus'] : null;
+        $this->container['multiImageCollageAigcStatus'] = isset($data['multiImageCollageAigcStatus']) ? $data['multiImageCollageAigcStatus'] : null;
     }
 
     /**
@@ -224,6 +236,54 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
     public function setCoverImageSnapshotType($coverImageSnapshotType)
     {
         $this->container['coverImageSnapshotType'] = $coverImageSnapshotType;
+
+        return $this;
+    }
+
+    /**
+     * Gets multiImageCollageStatus
+     *
+     * @return \TencentAds\Model\V3\MultiImageCollageStatus|mixed
+     */
+    public function getMultiImageCollageStatus()
+    {
+        return $this->container['multiImageCollageStatus'];
+    }
+
+    /**
+     * Sets multiImageCollageStatus
+     *
+     * @param \TencentAds\Model\V3\MultiImageCollageStatus|mixed $multiImageCollageStatus multiImageCollageStatus
+     *
+     * @return $this
+     */
+    public function setMultiImageCollageStatus($multiImageCollageStatus)
+    {
+        $this->container['multiImageCollageStatus'] = $multiImageCollageStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets multiImageCollageAigcStatus
+     *
+     * @return \TencentAds\Model\V3\MultiImageCollageAigcStatus|mixed
+     */
+    public function getMultiImageCollageAigcStatus()
+    {
+        return $this->container['multiImageCollageAigcStatus'];
+    }
+
+    /**
+     * Sets multiImageCollageAigcStatus
+     *
+     * @param \TencentAds\Model\V3\MultiImageCollageAigcStatus|mixed $multiImageCollageAigcStatus multiImageCollageAigcStatus
+     *
+     * @return $this
+     */
+    public function setMultiImageCollageAigcStatus($multiImageCollageAigcStatus)
+    {
+        $this->container['multiImageCollageAigcStatus'] = $multiImageCollageAigcStatus;
 
         return $this;
     }

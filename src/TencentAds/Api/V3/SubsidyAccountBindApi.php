@@ -90,7 +90,7 @@ class SubsidyAccountBindApi
     /**
      * Operation subsidyAccountBindAdd
      *
-     * 补贴账号绑定或解绑广告账户
+     * 补贴账号绑定或解绑账户
      *
      * @param  \TencentAds\Model\V3\SubsidyAccountBindAddRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class SubsidyAccountBindApi
     /**
      * Operation subsidyAccountBindAddWithHttpInfo
      *
-     * 补贴账号绑定或解绑广告账户
+     * 补贴账号绑定或解绑账户
      *
      * @param  \TencentAds\Model\V3\SubsidyAccountBindAddRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class SubsidyAccountBindApi
     /**
      * Operation subsidyAccountBindAddAsync
      *
-     * 补贴账号绑定或解绑广告账户
+     * 补贴账号绑定或解绑账户
      *
      * @param  \TencentAds\Model\V3\SubsidyAccountBindAddRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class SubsidyAccountBindApi
     /**
      * Operation subsidyAccountBindAddAsyncWithHttpInfo
      *
-     * 补贴账号绑定或解绑广告账户
+     * 补贴账号绑定或解绑账户
      *
      * @param  \TencentAds\Model\V3\SubsidyAccountBindAddRequest|mixed $data (required)
      *

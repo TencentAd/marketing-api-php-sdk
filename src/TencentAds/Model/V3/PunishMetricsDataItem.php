@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * PunishMetricsDataItem Class Doc Comment
  *
  * @category Class
- * @description 处罚指标数据项
+ * @description 计量治理指标数据项
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

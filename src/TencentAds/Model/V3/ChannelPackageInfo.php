@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * ChannelPackageInfo Class Doc Comment
  *
  * @category Class
- * @description 广告渠道包任务处理信息
+ * @description 营销渠道包任务处理信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

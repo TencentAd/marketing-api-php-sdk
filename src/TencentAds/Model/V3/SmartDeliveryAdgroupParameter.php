@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * SmartDeliveryAdgroupParameter Class Doc Comment
  *
  * @category Class
- * @description 智投广告组参数列表
+ * @description 智投营销组参数列表
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

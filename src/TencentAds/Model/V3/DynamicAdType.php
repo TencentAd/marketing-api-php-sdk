@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * DynamicAdType Class Doc Comment
  *
  * @category Class
- * @description 动态广告类型
+ * @description 动态营销类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

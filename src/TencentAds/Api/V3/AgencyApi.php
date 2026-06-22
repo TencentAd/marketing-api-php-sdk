@@ -90,7 +90,7 @@ class AgencyApi
     /**
      * Operation agencyGet
      *
-     * 查询腾讯广告服务商信息
+     * 查询服务商信息
      *
      * @param  string[]|mixed $fields fields (required)
      * @param  int|mixed $page page (required)
@@ -110,7 +110,7 @@ class AgencyApi
     /**
      * Operation agencyGetWithHttpInfo
      *
-     * 查询腾讯广告服务商信息
+     * 查询服务商信息
      *
      * @param  string[]|mixed $fields (required)
      * @param  int|mixed $page (required)
@@ -188,7 +188,7 @@ class AgencyApi
     /**
      * Operation agencyGetAsync
      *
-     * 查询腾讯广告服务商信息
+     * 查询服务商信息
      *
      * @param  string[]|mixed $fields (required)
      * @param  int|mixed $page (required)
@@ -211,7 +211,7 @@ class AgencyApi
     /**
      * Operation agencyGetAsyncWithHttpInfo
      *
-     * 查询腾讯广告服务商信息
+     * 查询服务商信息
      *
      * @param  string[]|mixed $fields (required)
      * @param  int|mixed $page (required)

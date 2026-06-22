@@ -90,7 +90,7 @@ class IllegalComplaintApi
     /**
      * Operation illegalComplaintAdd
      *
-     * 新增广告主违规申述
+     * 新增客户违规申述
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $illegalOrderId illegalOrderId (required)
@@ -110,7 +110,7 @@ class IllegalComplaintApi
     /**
      * Operation illegalComplaintAddWithHttpInfo
      *
-     * 新增广告主违规申述
+     * 新增客户违规申述
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $illegalOrderId (required)
@@ -188,7 +188,7 @@ class IllegalComplaintApi
     /**
      * Operation illegalComplaintAddAsync
      *
-     * 新增广告主违规申述
+     * 新增客户违规申述
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $illegalOrderId (required)
@@ -211,7 +211,7 @@ class IllegalComplaintApi
     /**
      * Operation illegalComplaintAddAsyncWithHttpInfo
      *
-     * 新增广告主违规申述
+     * 新增客户违规申述
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $illegalOrderId (required)
@@ -435,7 +435,7 @@ class IllegalComplaintApi
     /**
      * Operation illegalComplaintGet
      *
-     * 获取直客广告主违规申述列表
+     * 获取直客客户违规申述列表
      *
      * @param  \TencentAds\Model\V3\IllegalComplaintGetRequest|mixed $data data (required)
      *
@@ -452,7 +452,7 @@ class IllegalComplaintApi
     /**
      * Operation illegalComplaintGetWithHttpInfo
      *
-     * 获取直客广告主违规申述列表
+     * 获取直客客户违规申述列表
      *
      * @param  \TencentAds\Model\V3\IllegalComplaintGetRequest|mixed $data (required)
      *
@@ -527,7 +527,7 @@ class IllegalComplaintApi
     /**
      * Operation illegalComplaintGetAsync
      *
-     * 获取直客广告主违规申述列表
+     * 获取直客客户违规申述列表
      *
      * @param  \TencentAds\Model\V3\IllegalComplaintGetRequest|mixed $data (required)
      *
@@ -547,7 +547,7 @@ class IllegalComplaintApi
     /**
      * Operation illegalComplaintGetAsyncWithHttpInfo
      *
-     * 获取直客广告主违规申述列表
+     * 获取直客客户违规申述列表
      *
      * @param  \TencentAds\Model\V3\IllegalComplaintGetRequest|mixed $data (required)
      *

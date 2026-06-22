@@ -934,6 +934,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'effectiveSeedingRate' => 'double',
         'effectiveSeedingConvertionsRate' => 'double',
         'adMonetizationPlaRegAmount' => 'int',
+        'realCostValueExplore' => 'int',
+        'clkActionContentPv' => 'int',
+        'clkActionContentUv' => 'int',
+        'retention14dDedupPv' => 'int',
+        'retention30dDedupPv' => 'int',
+        'retentionRateD14' => 'double',
+        'retentionRateD30' => 'double',
+        'appRetentionD14Cost' => 'int',
+        'appRetentionD30Cost' => 'int',
+        'clkFifaIpPv' => 'int',
+        'landingFifaIpGenPv' => 'int',
+        'landingFifaIpGenUv' => 'int',
+        'afterAddWecomDeletePv' => 'int',
+        'afterAddWecomDeleteRate' => 'double',
+        'afterAddWecomConsultDedupRate' => 'double',
+        'afterAddWecomClassParticipatedFisrtUvRate' => 'double',
+        'orderCouponAmount' => 'int',
         'adgroupId' => 'int',
         'adgroupName' => 'string',
         'dynamicCreativeId' => 'int',
@@ -1835,6 +1852,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'effectiveSeedingRate' => 'double',
         'effectiveSeedingConvertionsRate' => 'double',
         'adMonetizationPlaRegAmount' => 'int64',
+        'realCostValueExplore' => 'int64',
+        'clkActionContentPv' => 'int64',
+        'clkActionContentUv' => 'int64',
+        'retention14dDedupPv' => 'int64',
+        'retention30dDedupPv' => 'int64',
+        'retentionRateD14' => 'double',
+        'retentionRateD30' => 'double',
+        'appRetentionD14Cost' => 'int64',
+        'appRetentionD30Cost' => 'int64',
+        'clkFifaIpPv' => 'int64',
+        'landingFifaIpGenPv' => 'int64',
+        'landingFifaIpGenUv' => 'int64',
+        'afterAddWecomDeletePv' => 'int64',
+        'afterAddWecomDeleteRate' => 'double',
+        'afterAddWecomConsultDedupRate' => 'double',
+        'afterAddWecomClassParticipatedFisrtUvRate' => 'double',
+        'orderCouponAmount' => 'int64',
         'adgroupId' => 'int64',
         'adgroupName' => null,
         'dynamicCreativeId' => 'int64',
@@ -2757,6 +2791,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'effectiveSeedingRate' => 'effective_seeding_rate',
         'effectiveSeedingConvertionsRate' => 'effective_seeding_convertions_rate',
         'adMonetizationPlaRegAmount' => 'ad_monetization_pla_reg_amount',
+        'realCostValueExplore' => 'real_cost_value_explore',
+        'clkActionContentPv' => 'clk_action_content_pv',
+        'clkActionContentUv' => 'clk_action_content_uv',
+        'retention14dDedupPv' => 'retention_14d_dedup_pv',
+        'retention30dDedupPv' => 'retention_30d_dedup_pv',
+        'retentionRateD14' => 'retention_rate_d14',
+        'retentionRateD30' => 'retention_rate_d30',
+        'appRetentionD14Cost' => 'app_retention_d14_cost',
+        'appRetentionD30Cost' => 'app_retention_d30_cost',
+        'clkFifaIpPv' => 'clk_fifa_ip_pv',
+        'landingFifaIpGenPv' => 'landing_fifa_ip_gen_pv',
+        'landingFifaIpGenUv' => 'landing_fifa_ip_gen_uv',
+        'afterAddWecomDeletePv' => 'after_add_wecom_delete_pv',
+        'afterAddWecomDeleteRate' => 'after_add_wecom_delete_rate',
+        'afterAddWecomConsultDedupRate' => 'after_add_wecom_consult_dedup_rate',
+        'afterAddWecomClassParticipatedFisrtUvRate' => 'after_add_wecom_class_participated_fisrt_uv_rate',
+        'orderCouponAmount' => 'order_coupon_amount',
         'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'dynamicCreativeId' => 'dynamic_creative_id',
@@ -3658,6 +3709,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'effectiveSeedingRate' => 'setEffectiveSeedingRate',
         'effectiveSeedingConvertionsRate' => 'setEffectiveSeedingConvertionsRate',
         'adMonetizationPlaRegAmount' => 'setAdMonetizationPlaRegAmount',
+        'realCostValueExplore' => 'setRealCostValueExplore',
+        'clkActionContentPv' => 'setClkActionContentPv',
+        'clkActionContentUv' => 'setClkActionContentUv',
+        'retention14dDedupPv' => 'setRetention14dDedupPv',
+        'retention30dDedupPv' => 'setRetention30dDedupPv',
+        'retentionRateD14' => 'setRetentionRateD14',
+        'retentionRateD30' => 'setRetentionRateD30',
+        'appRetentionD14Cost' => 'setAppRetentionD14Cost',
+        'appRetentionD30Cost' => 'setAppRetentionD30Cost',
+        'clkFifaIpPv' => 'setClkFifaIpPv',
+        'landingFifaIpGenPv' => 'setLandingFifaIpGenPv',
+        'landingFifaIpGenUv' => 'setLandingFifaIpGenUv',
+        'afterAddWecomDeletePv' => 'setAfterAddWecomDeletePv',
+        'afterAddWecomDeleteRate' => 'setAfterAddWecomDeleteRate',
+        'afterAddWecomConsultDedupRate' => 'setAfterAddWecomConsultDedupRate',
+        'afterAddWecomClassParticipatedFisrtUvRate' => 'setAfterAddWecomClassParticipatedFisrtUvRate',
+        'orderCouponAmount' => 'setOrderCouponAmount',
         'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'dynamicCreativeId' => 'setDynamicCreativeId',
@@ -4559,6 +4627,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         'effectiveSeedingRate' => 'getEffectiveSeedingRate',
         'effectiveSeedingConvertionsRate' => 'getEffectiveSeedingConvertionsRate',
         'adMonetizationPlaRegAmount' => 'getAdMonetizationPlaRegAmount',
+        'realCostValueExplore' => 'getRealCostValueExplore',
+        'clkActionContentPv' => 'getClkActionContentPv',
+        'clkActionContentUv' => 'getClkActionContentUv',
+        'retention14dDedupPv' => 'getRetention14dDedupPv',
+        'retention30dDedupPv' => 'getRetention30dDedupPv',
+        'retentionRateD14' => 'getRetentionRateD14',
+        'retentionRateD30' => 'getRetentionRateD30',
+        'appRetentionD14Cost' => 'getAppRetentionD14Cost',
+        'appRetentionD30Cost' => 'getAppRetentionD30Cost',
+        'clkFifaIpPv' => 'getClkFifaIpPv',
+        'landingFifaIpGenPv' => 'getLandingFifaIpGenPv',
+        'landingFifaIpGenUv' => 'getLandingFifaIpGenUv',
+        'afterAddWecomDeletePv' => 'getAfterAddWecomDeletePv',
+        'afterAddWecomDeleteRate' => 'getAfterAddWecomDeleteRate',
+        'afterAddWecomConsultDedupRate' => 'getAfterAddWecomConsultDedupRate',
+        'afterAddWecomClassParticipatedFisrtUvRate' => 'getAfterAddWecomClassParticipatedFisrtUvRate',
+        'orderCouponAmount' => 'getOrderCouponAmount',
         'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'dynamicCreativeId' => 'getDynamicCreativeId',
@@ -5514,6 +5599,23 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['effectiveSeedingRate'] = isset($data['effectiveSeedingRate']) ? $data['effectiveSeedingRate'] : null;
         $this->container['effectiveSeedingConvertionsRate'] = isset($data['effectiveSeedingConvertionsRate']) ? $data['effectiveSeedingConvertionsRate'] : null;
         $this->container['adMonetizationPlaRegAmount'] = isset($data['adMonetizationPlaRegAmount']) ? $data['adMonetizationPlaRegAmount'] : null;
+        $this->container['realCostValueExplore'] = isset($data['realCostValueExplore']) ? $data['realCostValueExplore'] : null;
+        $this->container['clkActionContentPv'] = isset($data['clkActionContentPv']) ? $data['clkActionContentPv'] : null;
+        $this->container['clkActionContentUv'] = isset($data['clkActionContentUv']) ? $data['clkActionContentUv'] : null;
+        $this->container['retention14dDedupPv'] = isset($data['retention14dDedupPv']) ? $data['retention14dDedupPv'] : null;
+        $this->container['retention30dDedupPv'] = isset($data['retention30dDedupPv']) ? $data['retention30dDedupPv'] : null;
+        $this->container['retentionRateD14'] = isset($data['retentionRateD14']) ? $data['retentionRateD14'] : null;
+        $this->container['retentionRateD30'] = isset($data['retentionRateD30']) ? $data['retentionRateD30'] : null;
+        $this->container['appRetentionD14Cost'] = isset($data['appRetentionD14Cost']) ? $data['appRetentionD14Cost'] : null;
+        $this->container['appRetentionD30Cost'] = isset($data['appRetentionD30Cost']) ? $data['appRetentionD30Cost'] : null;
+        $this->container['clkFifaIpPv'] = isset($data['clkFifaIpPv']) ? $data['clkFifaIpPv'] : null;
+        $this->container['landingFifaIpGenPv'] = isset($data['landingFifaIpGenPv']) ? $data['landingFifaIpGenPv'] : null;
+        $this->container['landingFifaIpGenUv'] = isset($data['landingFifaIpGenUv']) ? $data['landingFifaIpGenUv'] : null;
+        $this->container['afterAddWecomDeletePv'] = isset($data['afterAddWecomDeletePv']) ? $data['afterAddWecomDeletePv'] : null;
+        $this->container['afterAddWecomDeleteRate'] = isset($data['afterAddWecomDeleteRate']) ? $data['afterAddWecomDeleteRate'] : null;
+        $this->container['afterAddWecomConsultDedupRate'] = isset($data['afterAddWecomConsultDedupRate']) ? $data['afterAddWecomConsultDedupRate'] : null;
+        $this->container['afterAddWecomClassParticipatedFisrtUvRate'] = isset($data['afterAddWecomClassParticipatedFisrtUvRate']) ? $data['afterAddWecomClassParticipatedFisrtUvRate'] : null;
+        $this->container['orderCouponAmount'] = isset($data['orderCouponAmount']) ? $data['orderCouponAmount'] : null;
         $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
@@ -26577,6 +26679,414 @@ class HourlyReportApiListStruct implements ModelInterface, ArrayAccess
     public function setAdMonetizationPlaRegAmount($adMonetizationPlaRegAmount)
     {
         $this->container['adMonetizationPlaRegAmount'] = $adMonetizationPlaRegAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets realCostValueExplore
+     *
+     * @return int|mixed
+     */
+    public function getRealCostValueExplore()
+    {
+        return $this->container['realCostValueExplore'];
+    }
+
+    /**
+     * Sets realCostValueExplore
+     *
+     * @param int|mixed $realCostValueExplore realCostValueExplore
+     *
+     * @return $this
+     */
+    public function setRealCostValueExplore($realCostValueExplore)
+    {
+        $this->container['realCostValueExplore'] = $realCostValueExplore;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkActionContentPv
+     *
+     * @return int|mixed
+     */
+    public function getClkActionContentPv()
+    {
+        return $this->container['clkActionContentPv'];
+    }
+
+    /**
+     * Sets clkActionContentPv
+     *
+     * @param int|mixed $clkActionContentPv clkActionContentPv
+     *
+     * @return $this
+     */
+    public function setClkActionContentPv($clkActionContentPv)
+    {
+        $this->container['clkActionContentPv'] = $clkActionContentPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkActionContentUv
+     *
+     * @return int|mixed
+     */
+    public function getClkActionContentUv()
+    {
+        return $this->container['clkActionContentUv'];
+    }
+
+    /**
+     * Sets clkActionContentUv
+     *
+     * @param int|mixed $clkActionContentUv clkActionContentUv
+     *
+     * @return $this
+     */
+    public function setClkActionContentUv($clkActionContentUv)
+    {
+        $this->container['clkActionContentUv'] = $clkActionContentUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets retention14dDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getRetention14dDedupPv()
+    {
+        return $this->container['retention14dDedupPv'];
+    }
+
+    /**
+     * Sets retention14dDedupPv
+     *
+     * @param int|mixed $retention14dDedupPv retention14dDedupPv
+     *
+     * @return $this
+     */
+    public function setRetention14dDedupPv($retention14dDedupPv)
+    {
+        $this->container['retention14dDedupPv'] = $retention14dDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets retention30dDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getRetention30dDedupPv()
+    {
+        return $this->container['retention30dDedupPv'];
+    }
+
+    /**
+     * Sets retention30dDedupPv
+     *
+     * @param int|mixed $retention30dDedupPv retention30dDedupPv
+     *
+     * @return $this
+     */
+    public function setRetention30dDedupPv($retention30dDedupPv)
+    {
+        $this->container['retention30dDedupPv'] = $retention30dDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets retentionRateD14
+     *
+     * @return double|mixed
+     */
+    public function getRetentionRateD14()
+    {
+        return $this->container['retentionRateD14'];
+    }
+
+    /**
+     * Sets retentionRateD14
+     *
+     * @param double|mixed $retentionRateD14 retentionRateD14
+     *
+     * @return $this
+     */
+    public function setRetentionRateD14($retentionRateD14)
+    {
+        $this->container['retentionRateD14'] = $retentionRateD14;
+
+        return $this;
+    }
+
+    /**
+     * Gets retentionRateD30
+     *
+     * @return double|mixed
+     */
+    public function getRetentionRateD30()
+    {
+        return $this->container['retentionRateD30'];
+    }
+
+    /**
+     * Sets retentionRateD30
+     *
+     * @param double|mixed $retentionRateD30 retentionRateD30
+     *
+     * @return $this
+     */
+    public function setRetentionRateD30($retentionRateD30)
+    {
+        $this->container['retentionRateD30'] = $retentionRateD30;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionD14Cost
+     *
+     * @return int|mixed
+     */
+    public function getAppRetentionD14Cost()
+    {
+        return $this->container['appRetentionD14Cost'];
+    }
+
+    /**
+     * Sets appRetentionD14Cost
+     *
+     * @param int|mixed $appRetentionD14Cost appRetentionD14Cost
+     *
+     * @return $this
+     */
+    public function setAppRetentionD14Cost($appRetentionD14Cost)
+    {
+        $this->container['appRetentionD14Cost'] = $appRetentionD14Cost;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionD30Cost
+     *
+     * @return int|mixed
+     */
+    public function getAppRetentionD30Cost()
+    {
+        return $this->container['appRetentionD30Cost'];
+    }
+
+    /**
+     * Sets appRetentionD30Cost
+     *
+     * @param int|mixed $appRetentionD30Cost appRetentionD30Cost
+     *
+     * @return $this
+     */
+    public function setAppRetentionD30Cost($appRetentionD30Cost)
+    {
+        $this->container['appRetentionD30Cost'] = $appRetentionD30Cost;
+
+        return $this;
+    }
+
+    /**
+     * Gets clkFifaIpPv
+     *
+     * @return int|mixed
+     */
+    public function getClkFifaIpPv()
+    {
+        return $this->container['clkFifaIpPv'];
+    }
+
+    /**
+     * Sets clkFifaIpPv
+     *
+     * @param int|mixed $clkFifaIpPv clkFifaIpPv
+     *
+     * @return $this
+     */
+    public function setClkFifaIpPv($clkFifaIpPv)
+    {
+        $this->container['clkFifaIpPv'] = $clkFifaIpPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets landingFifaIpGenPv
+     *
+     * @return int|mixed
+     */
+    public function getLandingFifaIpGenPv()
+    {
+        return $this->container['landingFifaIpGenPv'];
+    }
+
+    /**
+     * Sets landingFifaIpGenPv
+     *
+     * @param int|mixed $landingFifaIpGenPv landingFifaIpGenPv
+     *
+     * @return $this
+     */
+    public function setLandingFifaIpGenPv($landingFifaIpGenPv)
+    {
+        $this->container['landingFifaIpGenPv'] = $landingFifaIpGenPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets landingFifaIpGenUv
+     *
+     * @return int|mixed
+     */
+    public function getLandingFifaIpGenUv()
+    {
+        return $this->container['landingFifaIpGenUv'];
+    }
+
+    /**
+     * Sets landingFifaIpGenUv
+     *
+     * @param int|mixed $landingFifaIpGenUv landingFifaIpGenUv
+     *
+     * @return $this
+     */
+    public function setLandingFifaIpGenUv($landingFifaIpGenUv)
+    {
+        $this->container['landingFifaIpGenUv'] = $landingFifaIpGenUv;
+
+        return $this;
+    }
+
+    /**
+     * Gets afterAddWecomDeletePv
+     *
+     * @return int|mixed
+     */
+    public function getAfterAddWecomDeletePv()
+    {
+        return $this->container['afterAddWecomDeletePv'];
+    }
+
+    /**
+     * Sets afterAddWecomDeletePv
+     *
+     * @param int|mixed $afterAddWecomDeletePv afterAddWecomDeletePv
+     *
+     * @return $this
+     */
+    public function setAfterAddWecomDeletePv($afterAddWecomDeletePv)
+    {
+        $this->container['afterAddWecomDeletePv'] = $afterAddWecomDeletePv;
+
+        return $this;
+    }
+
+    /**
+     * Gets afterAddWecomDeleteRate
+     *
+     * @return double|mixed
+     */
+    public function getAfterAddWecomDeleteRate()
+    {
+        return $this->container['afterAddWecomDeleteRate'];
+    }
+
+    /**
+     * Sets afterAddWecomDeleteRate
+     *
+     * @param double|mixed $afterAddWecomDeleteRate afterAddWecomDeleteRate
+     *
+     * @return $this
+     */
+    public function setAfterAddWecomDeleteRate($afterAddWecomDeleteRate)
+    {
+        $this->container['afterAddWecomDeleteRate'] = $afterAddWecomDeleteRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets afterAddWecomConsultDedupRate
+     *
+     * @return double|mixed
+     */
+    public function getAfterAddWecomConsultDedupRate()
+    {
+        return $this->container['afterAddWecomConsultDedupRate'];
+    }
+
+    /**
+     * Sets afterAddWecomConsultDedupRate
+     *
+     * @param double|mixed $afterAddWecomConsultDedupRate afterAddWecomConsultDedupRate
+     *
+     * @return $this
+     */
+    public function setAfterAddWecomConsultDedupRate($afterAddWecomConsultDedupRate)
+    {
+        $this->container['afterAddWecomConsultDedupRate'] = $afterAddWecomConsultDedupRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets afterAddWecomClassParticipatedFisrtUvRate
+     *
+     * @return double|mixed
+     */
+    public function getAfterAddWecomClassParticipatedFisrtUvRate()
+    {
+        return $this->container['afterAddWecomClassParticipatedFisrtUvRate'];
+    }
+
+    /**
+     * Sets afterAddWecomClassParticipatedFisrtUvRate
+     *
+     * @param double|mixed $afterAddWecomClassParticipatedFisrtUvRate afterAddWecomClassParticipatedFisrtUvRate
+     *
+     * @return $this
+     */
+    public function setAfterAddWecomClassParticipatedFisrtUvRate($afterAddWecomClassParticipatedFisrtUvRate)
+    {
+        $this->container['afterAddWecomClassParticipatedFisrtUvRate'] = $afterAddWecomClassParticipatedFisrtUvRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets orderCouponAmount
+     *
+     * @return int|mixed
+     */
+    public function getOrderCouponAmount()
+    {
+        return $this->container['orderCouponAmount'];
+    }
+
+    /**
+     * Sets orderCouponAmount
+     *
+     * @param int|mixed $orderCouponAmount orderCouponAmount
+     *
+     * @return $this
+     */
+    public function setOrderCouponAmount($orderCouponAmount)
+    {
+        $this->container['orderCouponAmount'] = $orderCouponAmount;
 
         return $this;
     }

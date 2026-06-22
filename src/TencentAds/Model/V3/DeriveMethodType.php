@@ -62,6 +62,8 @@ class DeriveMethodType
     const EDU_NINE_IMG = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_EDU_NINE_IMG';
     const HEALTH_NINE_IMG = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_HEALTH_NINE_IMG';
     const LOCAL_NINE_IMG = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_LOCAL_NINE_IMG';
+    const FINANCE_NINE_IMG = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_FINANCE_NINE_IMG';
+    const VIDEO_GENERATION = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_VIDEO_GENERATION';
     
     /**
      * Gets allowable values of the enum
@@ -88,6 +90,8 @@ class DeriveMethodType
             self::EDU_NINE_IMG,
             self::HEALTH_NINE_IMG,
             self::LOCAL_NINE_IMG,
+            self::FINANCE_NINE_IMG,
+            self::VIDEO_GENERATION,
         ];
     }
 }

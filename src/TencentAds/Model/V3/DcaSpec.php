@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * DcaSpec Class Doc Comment
  *
  * @category Class
- * @description 动态内容广告属性
+ * @description 动态内容营销属性
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

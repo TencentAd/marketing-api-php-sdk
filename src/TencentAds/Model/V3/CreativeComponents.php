@@ -94,7 +94,9 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'videoChannelsContent' => '\TencentAds\Model\V3\VideoChannelsContentComponent[]',
         'audio' => '\TencentAds\Model\V3\AudioComponent[]',
         'wxgameDirectPage' => '\TencentAds\Model\V3\WxgameDirectPageComponent[]',
-        'videoList' => '\TencentAds\Model\V3\VideoListComponent[]'
+        'videoList' => '\TencentAds\Model\V3\VideoListComponent[]',
+        'doctorCard' => '\TencentAds\Model\V3\DoctorCardComponent[]',
+        'channelsLiveFeed' => '\TencentAds\Model\V3\ChannelsLiveFeedComponent[]'
     ];
 
     /**
@@ -139,7 +141,9 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'videoChannelsContent' => null,
         'audio' => null,
         'wxgameDirectPage' => null,
-        'videoList' => null
+        'videoList' => null,
+        'doctorCard' => null,
+        'channelsLiveFeed' => null
     ];
 
     /**
@@ -205,7 +209,9 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'videoChannelsContent' => 'video_channels_content',
         'audio' => 'audio',
         'wxgameDirectPage' => 'wxgame_direct_page',
-        'videoList' => 'video_list'
+        'videoList' => 'video_list',
+        'doctorCard' => 'doctor_card',
+        'channelsLiveFeed' => 'channels_live_feed'
     ];
 
     /**
@@ -250,7 +256,9 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'videoChannelsContent' => 'setVideoChannelsContent',
         'audio' => 'setAudio',
         'wxgameDirectPage' => 'setWxgameDirectPage',
-        'videoList' => 'setVideoList'
+        'videoList' => 'setVideoList',
+        'doctorCard' => 'setDoctorCard',
+        'channelsLiveFeed' => 'setChannelsLiveFeed'
     ];
 
     /**
@@ -295,7 +303,9 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         'videoChannelsContent' => 'getVideoChannelsContent',
         'audio' => 'getAudio',
         'wxgameDirectPage' => 'getWxgameDirectPage',
-        'videoList' => 'getVideoList'
+        'videoList' => 'getVideoList',
+        'doctorCard' => 'getDoctorCard',
+        'channelsLiveFeed' => 'getChannelsLiveFeed'
     ];
 
     /**
@@ -395,6 +405,8 @@ class CreativeComponents implements ModelInterface, ArrayAccess
         $this->container['audio'] = isset($data['audio']) ? $data['audio'] : null;
         $this->container['wxgameDirectPage'] = isset($data['wxgameDirectPage']) ? $data['wxgameDirectPage'] : null;
         $this->container['videoList'] = isset($data['videoList']) ? $data['videoList'] : null;
+        $this->container['doctorCard'] = isset($data['doctorCard']) ? $data['doctorCard'] : null;
+        $this->container['channelsLiveFeed'] = isset($data['channelsLiveFeed']) ? $data['channelsLiveFeed'] : null;
     }
 
     /**
@@ -1305,6 +1317,54 @@ class CreativeComponents implements ModelInterface, ArrayAccess
     public function setVideoList($videoList)
     {
         $this->container['videoList'] = $videoList;
+
+        return $this;
+    }
+
+    /**
+     * Gets doctorCard
+     *
+     * @return \TencentAds\Model\V3\DoctorCardComponent[]|mixed
+     */
+    public function getDoctorCard()
+    {
+        return $this->container['doctorCard'];
+    }
+
+    /**
+     * Sets doctorCard
+     *
+     * @param \TencentAds\Model\V3\DoctorCardComponent[]|mixed $doctorCard doctorCard
+     *
+     * @return $this
+     */
+    public function setDoctorCard($doctorCard)
+    {
+        $this->container['doctorCard'] = $doctorCard;
+
+        return $this;
+    }
+
+    /**
+     * Gets channelsLiveFeed
+     *
+     * @return \TencentAds\Model\V3\ChannelsLiveFeedComponent[]|mixed
+     */
+    public function getChannelsLiveFeed()
+    {
+        return $this->container['channelsLiveFeed'];
+    }
+
+    /**
+     * Sets channelsLiveFeed
+     *
+     * @param \TencentAds\Model\V3\ChannelsLiveFeedComponent[]|mixed $channelsLiveFeed channelsLiveFeed
+     *
+     * @return $this
+     */
+    public function setChannelsLiveFeed($channelsLiveFeed)
+    {
+        $this->container['channelsLiveFeed'] = $channelsLiveFeed;
 
         return $this;
     }

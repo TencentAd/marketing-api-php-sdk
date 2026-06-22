@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * ProductMode Class Doc Comment
  *
  * @category Class
- * @description 标明适用的动态商品广告类型
+ * @description 标明适用的动态商品营销类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

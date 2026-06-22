@@ -58,7 +58,9 @@ class WechatChannelsActivitySpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'activityId' => 'string'
+        'activityId' => 'string',
+        'wechatChannelsAccountId' => 'string',
+        'activityName' => 'string'
     ];
 
     /**
@@ -67,7 +69,9 @@ class WechatChannelsActivitySpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'activityId' => null
+        'activityId' => null,
+        'wechatChannelsAccountId' => null,
+        'activityName' => null
     ];
 
     /**
@@ -97,7 +101,9 @@ class WechatChannelsActivitySpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'activityId' => 'activity_id'
+        'activityId' => 'activity_id',
+        'wechatChannelsAccountId' => 'wechat_channels_account_id',
+        'activityName' => 'activity_name'
     ];
 
     /**
@@ -106,7 +112,9 @@ class WechatChannelsActivitySpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'activityId' => 'setActivityId'
+        'activityId' => 'setActivityId',
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
+        'activityName' => 'setActivityName'
     ];
 
     /**
@@ -115,7 +123,9 @@ class WechatChannelsActivitySpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'activityId' => 'getActivityId'
+        'activityId' => 'getActivityId',
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
+        'activityName' => 'getActivityName'
     ];
 
     /**
@@ -179,6 +189,8 @@ class WechatChannelsActivitySpec implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['activityId'] = isset($data['activityId']) ? $data['activityId'] : null;
+        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
+        $this->container['activityName'] = isset($data['activityName']) ? $data['activityName'] : null;
     }
 
     /**
@@ -225,6 +237,54 @@ class WechatChannelsActivitySpec implements ModelInterface, ArrayAccess
     public function setActivityId($activityId)
     {
         $this->container['activityId'] = $activityId;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountId
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountId()
+    {
+        return $this->container['wechatChannelsAccountId'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountId
+     *
+     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountId($wechatChannelsAccountId)
+    {
+        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets activityName
+     *
+     * @return string|mixed
+     */
+    public function getActivityName()
+    {
+        return $this->container['activityName'];
+    }
+
+    /**
+     * Sets activityName
+     *
+     * @param string|mixed $activityName activityName
+     *
+     * @return $this
+     */
+    public function setActivityName($activityName)
+    {
+        $this->container['activityName'] = $activityName;
 
         return $this;
     }

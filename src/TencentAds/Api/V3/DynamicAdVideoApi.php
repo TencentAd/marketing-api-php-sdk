@@ -90,7 +90,7 @@ class DynamicAdVideoApi
     /**
      * Operation dynamicAdVideoAdd
      *
-     * 创建用于广告投放的动态广告视频
+     * 创建用于投放的动态投放视频
      *
      * @param  \TencentAds\Model\V3\DynamicAdVideoAddRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class DynamicAdVideoApi
     /**
      * Operation dynamicAdVideoAddWithHttpInfo
      *
-     * 创建用于广告投放的动态广告视频
+     * 创建用于投放的动态投放视频
      *
      * @param  \TencentAds\Model\V3\DynamicAdVideoAddRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class DynamicAdVideoApi
     /**
      * Operation dynamicAdVideoAddAsync
      *
-     * 创建用于广告投放的动态广告视频
+     * 创建用于投放的动态投放视频
      *
      * @param  \TencentAds\Model\V3\DynamicAdVideoAddRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class DynamicAdVideoApi
     /**
      * Operation dynamicAdVideoAddAsyncWithHttpInfo
      *
-     * 创建用于广告投放的动态广告视频
+     * 创建用于投放的动态投放视频
      *
      * @param  \TencentAds\Model\V3\DynamicAdVideoAddRequest|mixed $data (required)
      *
@@ -384,7 +384,7 @@ class DynamicAdVideoApi
     /**
      * Operation dynamicAdVideoGet
      *
-     * 获取广告投放的动态广告视频
+     * 获取投放的动态营销视频
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  int|mixed $productCatalogId productCatalogId (required)
@@ -406,7 +406,7 @@ class DynamicAdVideoApi
     /**
      * Operation dynamicAdVideoGetWithHttpInfo
      *
-     * 获取广告投放的动态广告视频
+     * 获取投放的动态营销视频
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $productCatalogId (required)
@@ -486,7 +486,7 @@ class DynamicAdVideoApi
     /**
      * Operation dynamicAdVideoGetAsync
      *
-     * 获取广告投放的动态广告视频
+     * 获取投放的动态营销视频
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $productCatalogId (required)
@@ -511,7 +511,7 @@ class DynamicAdVideoApi
     /**
      * Operation dynamicAdVideoGetAsyncWithHttpInfo
      *
-     * 获取广告投放的动态广告视频
+     * 获取投放的动态营销视频
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $productCatalogId (required)

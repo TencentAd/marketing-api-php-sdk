@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * GrantBusinessPermission Class Doc Comment
  *
  * @category Class
- * @description 授权给商务管家账号认领所有广告账号的权限信息
+ * @description 授权给商务管家账号认领所有营销账号的权限信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

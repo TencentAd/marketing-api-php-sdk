@@ -64,7 +64,9 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
         'commentFlag' => '\TencentAds\Model\V3\FinderCommentFlag',
         'finderAdObjectId' => 'int',
         'authorReplys' => '\TencentAds\Model\V3\ReplyCommentInfoItem[]',
-        'commentLevel' => 'int'
+        'commentLevel' => 'int',
+        'contentType' => '\TencentAds\Model\V3\FinderCommentContentType',
+        'imageCommentInfo' => '\TencentAds\Model\V3\ImageCommentInfo'
     ];
 
     /**
@@ -79,7 +81,9 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
         'commentFlag' => null,
         'finderAdObjectId' => 'int64',
         'authorReplys' => null,
-        'commentLevel' => 'int64'
+        'commentLevel' => 'int64',
+        'contentType' => null,
+        'imageCommentInfo' => null
     ];
 
     /**
@@ -115,7 +119,9 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
         'commentFlag' => 'comment_flag',
         'finderAdObjectId' => 'finder_ad_object_id',
         'authorReplys' => 'author_replys',
-        'commentLevel' => 'comment_level'
+        'commentLevel' => 'comment_level',
+        'contentType' => 'content_type',
+        'imageCommentInfo' => 'image_comment_info'
     ];
 
     /**
@@ -130,7 +136,9 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
         'commentFlag' => 'setCommentFlag',
         'finderAdObjectId' => 'setFinderAdObjectId',
         'authorReplys' => 'setAuthorReplys',
-        'commentLevel' => 'setCommentLevel'
+        'commentLevel' => 'setCommentLevel',
+        'contentType' => 'setContentType',
+        'imageCommentInfo' => 'setImageCommentInfo'
     ];
 
     /**
@@ -145,7 +153,9 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
         'commentFlag' => 'getCommentFlag',
         'finderAdObjectId' => 'getFinderAdObjectId',
         'authorReplys' => 'getAuthorReplys',
-        'commentLevel' => 'getCommentLevel'
+        'commentLevel' => 'getCommentLevel',
+        'contentType' => 'getContentType',
+        'imageCommentInfo' => 'getImageCommentInfo'
     ];
 
     /**
@@ -215,6 +225,8 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
         $this->container['finderAdObjectId'] = isset($data['finderAdObjectId']) ? $data['finderAdObjectId'] : null;
         $this->container['authorReplys'] = isset($data['authorReplys']) ? $data['authorReplys'] : null;
         $this->container['commentLevel'] = isset($data['commentLevel']) ? $data['commentLevel'] : null;
+        $this->container['contentType'] = isset($data['contentType']) ? $data['contentType'] : null;
+        $this->container['imageCommentInfo'] = isset($data['imageCommentInfo']) ? $data['imageCommentInfo'] : null;
     }
 
     /**
@@ -405,6 +417,54 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
     public function setCommentLevel($commentLevel)
     {
         $this->container['commentLevel'] = $commentLevel;
+
+        return $this;
+    }
+
+    /**
+     * Gets contentType
+     *
+     * @return \TencentAds\Model\V3\FinderCommentContentType|mixed
+     */
+    public function getContentType()
+    {
+        return $this->container['contentType'];
+    }
+
+    /**
+     * Sets contentType
+     *
+     * @param \TencentAds\Model\V3\FinderCommentContentType|mixed $contentType contentType
+     *
+     * @return $this
+     */
+    public function setContentType($contentType)
+    {
+        $this->container['contentType'] = $contentType;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageCommentInfo
+     *
+     * @return \TencentAds\Model\V3\ImageCommentInfo|mixed
+     */
+    public function getImageCommentInfo()
+    {
+        return $this->container['imageCommentInfo'];
+    }
+
+    /**
+     * Sets imageCommentInfo
+     *
+     * @param \TencentAds\Model\V3\ImageCommentInfo|mixed $imageCommentInfo imageCommentInfo
+     *
+     * @return $this
+     */
+    public function setImageCommentInfo($imageCommentInfo)
+    {
+        $this->container['imageCommentInfo'] = $imageCommentInfo;
 
         return $this;
     }

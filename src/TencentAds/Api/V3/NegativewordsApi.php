@@ -90,7 +90,7 @@ class NegativewordsApi
     /**
      * Operation negativewordsAdd
      *
-     * 新增否定词，可在广告、创意上新增
+     * 新增否定词，可在营销单元、创意上新增
      *
      * @param  \TencentAds\Model\V3\NegativewordsAddRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class NegativewordsApi
     /**
      * Operation negativewordsAddWithHttpInfo
      *
-     * 新增否定词，可在广告、创意上新增
+     * 新增否定词，可在营销单元、创意上新增
      *
      * @param  \TencentAds\Model\V3\NegativewordsAddRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class NegativewordsApi
     /**
      * Operation negativewordsAddAsync
      *
-     * 新增否定词，可在广告、创意上新增
+     * 新增否定词，可在营销单元、创意上新增
      *
      * @param  \TencentAds\Model\V3\NegativewordsAddRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class NegativewordsApi
     /**
      * Operation negativewordsAddAsyncWithHttpInfo
      *
-     * 新增否定词，可在广告、创意上新增
+     * 新增否定词，可在营销单元、创意上新增
      *
      * @param  \TencentAds\Model\V3\NegativewordsAddRequest|mixed $data (required)
      *
@@ -384,7 +384,7 @@ class NegativewordsApi
     /**
      * Operation negativewordsGet
      *
-     * 查询否定词，可查询广告、创意的否词
+     * 查询否定词，可查询营销单元、创意的否词
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  int[]|mixed $adgroupIds adgroupIds (optional)
@@ -404,7 +404,7 @@ class NegativewordsApi
     /**
      * Operation negativewordsGetWithHttpInfo
      *
-     * 查询否定词，可查询广告、创意的否词
+     * 查询否定词，可查询营销单元、创意的否词
      *
      * @param  int|mixed $accountId (required)
      * @param  int[]|mixed $adgroupIds (optional)
@@ -482,7 +482,7 @@ class NegativewordsApi
     /**
      * Operation negativewordsGetAsync
      *
-     * 查询否定词，可查询广告、创意的否词
+     * 查询否定词，可查询营销单元、创意的否词
      *
      * @param  int|mixed $accountId (required)
      * @param  int[]|mixed $adgroupIds (optional)
@@ -505,7 +505,7 @@ class NegativewordsApi
     /**
      * Operation negativewordsGetAsyncWithHttpInfo
      *
-     * 查询否定词，可查询广告、创意的否词
+     * 查询否定词，可查询营销单元、创意的否词
      *
      * @param  int|mixed $accountId (required)
      * @param  int[]|mixed $adgroupIds (optional)
@@ -715,7 +715,7 @@ class NegativewordsApi
     /**
      * Operation negativewordsUpdate
      *
-     * 更新否定词，可在广告、创意上更新
+     * 更新否定词，可在营销单元、创意上更新
      *
      * @param  \TencentAds\Model\V3\NegativewordsUpdateRequest|mixed $data data (required)
      *
@@ -732,7 +732,7 @@ class NegativewordsApi
     /**
      * Operation negativewordsUpdateWithHttpInfo
      *
-     * 更新否定词，可在广告、创意上更新
+     * 更新否定词，可在营销单元、创意上更新
      *
      * @param  \TencentAds\Model\V3\NegativewordsUpdateRequest|mixed $data (required)
      *
@@ -807,7 +807,7 @@ class NegativewordsApi
     /**
      * Operation negativewordsUpdateAsync
      *
-     * 更新否定词，可在广告、创意上更新
+     * 更新否定词，可在营销单元、创意上更新
      *
      * @param  \TencentAds\Model\V3\NegativewordsUpdateRequest|mixed $data (required)
      *
@@ -827,7 +827,7 @@ class NegativewordsApi
     /**
      * Operation negativewordsUpdateAsyncWithHttpInfo
      *
-     * 更新否定词，可在广告、创意上更新
+     * 更新否定词，可在营销单元、创意上更新
      *
      * @param  \TencentAds\Model\V3\NegativewordsUpdateRequest|mixed $data (required)
      *

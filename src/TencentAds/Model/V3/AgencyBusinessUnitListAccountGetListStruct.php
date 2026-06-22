@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * AgencyBusinessUnitListAccountGetListStruct Class Doc Comment
  *
  * @category Class
- * @description 广告主账号ID
+ * @description 账户ID
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

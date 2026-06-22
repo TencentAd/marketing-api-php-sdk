@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * PunishUidMetricsDataItem Class Doc Comment
  *
  * @category Class
- * @description 处罚指标数据项
+ * @description 治理账户指标数据项
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -70,7 +70,9 @@ class PunishUidMetricsDataItem implements ModelInterface, ArrayAccess
         'penaltyRejectRate' => 'string',
         'uidCappedRejectCnt' => 'int',
         'penaltyUnitPrice' => 'string',
-        'uidFinalPenaltyAmount' => 'string'
+        'uidFinalPenaltyAmount' => 'string',
+        'accountOperateIdentity' => 'string',
+        'complianceOwner' => 'string'
     ];
 
     /**
@@ -91,7 +93,9 @@ class PunishUidMetricsDataItem implements ModelInterface, ArrayAccess
         'penaltyRejectRate' => null,
         'uidCappedRejectCnt' => 'int64',
         'penaltyUnitPrice' => null,
-        'uidFinalPenaltyAmount' => null
+        'uidFinalPenaltyAmount' => null,
+        'accountOperateIdentity' => null,
+        'complianceOwner' => null
     ];
 
     /**
@@ -133,7 +137,9 @@ class PunishUidMetricsDataItem implements ModelInterface, ArrayAccess
         'penaltyRejectRate' => 'penalty_reject_rate',
         'uidCappedRejectCnt' => 'uid_capped_reject_cnt',
         'penaltyUnitPrice' => 'penalty_unit_price',
-        'uidFinalPenaltyAmount' => 'uid_final_penalty_amount'
+        'uidFinalPenaltyAmount' => 'uid_final_penalty_amount',
+        'accountOperateIdentity' => 'account_operate_identity',
+        'complianceOwner' => 'compliance_owner'
     ];
 
     /**
@@ -154,7 +160,9 @@ class PunishUidMetricsDataItem implements ModelInterface, ArrayAccess
         'penaltyRejectRate' => 'setPenaltyRejectRate',
         'uidCappedRejectCnt' => 'setUidCappedRejectCnt',
         'penaltyUnitPrice' => 'setPenaltyUnitPrice',
-        'uidFinalPenaltyAmount' => 'setUidFinalPenaltyAmount'
+        'uidFinalPenaltyAmount' => 'setUidFinalPenaltyAmount',
+        'accountOperateIdentity' => 'setAccountOperateIdentity',
+        'complianceOwner' => 'setComplianceOwner'
     ];
 
     /**
@@ -175,7 +183,9 @@ class PunishUidMetricsDataItem implements ModelInterface, ArrayAccess
         'penaltyRejectRate' => 'getPenaltyRejectRate',
         'uidCappedRejectCnt' => 'getUidCappedRejectCnt',
         'penaltyUnitPrice' => 'getPenaltyUnitPrice',
-        'uidFinalPenaltyAmount' => 'getUidFinalPenaltyAmount'
+        'uidFinalPenaltyAmount' => 'getUidFinalPenaltyAmount',
+        'accountOperateIdentity' => 'getAccountOperateIdentity',
+        'complianceOwner' => 'getComplianceOwner'
     ];
 
     /**
@@ -251,6 +261,8 @@ class PunishUidMetricsDataItem implements ModelInterface, ArrayAccess
         $this->container['uidCappedRejectCnt'] = isset($data['uidCappedRejectCnt']) ? $data['uidCappedRejectCnt'] : null;
         $this->container['penaltyUnitPrice'] = isset($data['penaltyUnitPrice']) ? $data['penaltyUnitPrice'] : null;
         $this->container['uidFinalPenaltyAmount'] = isset($data['uidFinalPenaltyAmount']) ? $data['uidFinalPenaltyAmount'] : null;
+        $this->container['accountOperateIdentity'] = isset($data['accountOperateIdentity']) ? $data['accountOperateIdentity'] : null;
+        $this->container['complianceOwner'] = isset($data['complianceOwner']) ? $data['complianceOwner'] : null;
     }
 
     /**
@@ -585,6 +597,54 @@ class PunishUidMetricsDataItem implements ModelInterface, ArrayAccess
     public function setUidFinalPenaltyAmount($uidFinalPenaltyAmount)
     {
         $this->container['uidFinalPenaltyAmount'] = $uidFinalPenaltyAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets accountOperateIdentity
+     *
+     * @return string|mixed
+     */
+    public function getAccountOperateIdentity()
+    {
+        return $this->container['accountOperateIdentity'];
+    }
+
+    /**
+     * Sets accountOperateIdentity
+     *
+     * @param string|mixed $accountOperateIdentity accountOperateIdentity
+     *
+     * @return $this
+     */
+    public function setAccountOperateIdentity($accountOperateIdentity)
+    {
+        $this->container['accountOperateIdentity'] = $accountOperateIdentity;
+
+        return $this;
+    }
+
+    /**
+     * Gets complianceOwner
+     *
+     * @return string|mixed
+     */
+    public function getComplianceOwner()
+    {
+        return $this->container['complianceOwner'];
+    }
+
+    /**
+     * Sets complianceOwner
+     *
+     * @param string|mixed $complianceOwner complianceOwner
+     *
+     * @return $this
+     */
+    public function setComplianceOwner($complianceOwner)
+    {
+        $this->container['complianceOwner'] = $complianceOwner;
 
         return $this;
     }

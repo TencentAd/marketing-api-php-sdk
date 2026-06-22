@@ -90,7 +90,7 @@ class DynamicAdImagesApi
     /**
      * Operation dynamicAdImagesAdd
      *
-     * 创建用于广告投放的动态广告图片
+     * 创建用于投放的动态营销图片
      *
      * @param  \TencentAds\Model\V3\DynamicAdImagesAddRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class DynamicAdImagesApi
     /**
      * Operation dynamicAdImagesAddWithHttpInfo
      *
-     * 创建用于广告投放的动态广告图片
+     * 创建用于投放的动态营销图片
      *
      * @param  \TencentAds\Model\V3\DynamicAdImagesAddRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class DynamicAdImagesApi
     /**
      * Operation dynamicAdImagesAddAsync
      *
-     * 创建用于广告投放的动态广告图片
+     * 创建用于投放的动态营销图片
      *
      * @param  \TencentAds\Model\V3\DynamicAdImagesAddRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class DynamicAdImagesApi
     /**
      * Operation dynamicAdImagesAddAsyncWithHttpInfo
      *
-     * 创建用于广告投放的动态广告图片
+     * 创建用于投放的动态营销图片
      *
      * @param  \TencentAds\Model\V3\DynamicAdImagesAddRequest|mixed $data (required)
      *
@@ -384,7 +384,7 @@ class DynamicAdImagesApi
     /**
      * Operation dynamicAdImagesGet
      *
-     * 获取动态广告图片信息
+     * 获取动态营销图片信息
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
@@ -405,7 +405,7 @@ class DynamicAdImagesApi
     /**
      * Operation dynamicAdImagesGetWithHttpInfo
      *
-     * 获取动态广告图片信息
+     * 获取动态营销图片信息
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
@@ -484,7 +484,7 @@ class DynamicAdImagesApi
     /**
      * Operation dynamicAdImagesGetAsync
      *
-     * 获取动态广告图片信息
+     * 获取动态营销图片信息
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
@@ -508,7 +508,7 @@ class DynamicAdImagesApi
     /**
      * Operation dynamicAdImagesGetAsyncWithHttpInfo
      *
-     * 获取动态广告图片信息
+     * 获取动态营销图片信息
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)

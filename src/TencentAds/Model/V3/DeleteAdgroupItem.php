@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * DeleteAdgroupItem Class Doc Comment
  *
  * @category Class
- * @description 删除广告
+ * @description 删除营销单元
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

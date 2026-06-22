@@ -88,6 +88,7 @@ class ComponentType
     const WECHAT_SHOP_ACTIVITY = 'WECHAT_SHOP_ACTIVITY';
     const WXGAME_DIRECT_PAGE = 'WXGAME_DIRECT_PAGE';
     const VIDEO_LIST = 'VIDEO_LIST';
+    const CHANNELS_LIVE_FEED = 'CHANNELS_LIVE_FEED';
     const V2_TITLE = 'V2_TITLE';
     const V2_DESCRIPTION = 'V2_DESCRIPTION';
     const V2_LONG_SUBLINK = 'V2_LONG_SUBLINK';
@@ -119,6 +120,7 @@ class ComponentType
     const V2_LIST_SUBLINK = 'V2_LIST_SUBLINK';
     const V2_MDPA_TITLE = 'V2_MDPA_TITLE';
     const V2_MDPA_DESCRIPTION = 'V2_MDPA_DESCRIPTION';
+    const V2_DOCTOR_CARD = 'V2_DOCTOR_CARD';
     const SEARCH_ALGORITHM_GEN = 'SEARCH_ALGORITHM_GEN';
     const SEARCH_DERIVATIVE_TITLE = 'SEARCH_DERIVATIVE_TITLE';
     const SMART_DELIVERY_AIGC = 'SMART_DELIVERY_AIGC';
@@ -175,6 +177,7 @@ class ComponentType
             self::WECHAT_SHOP_ACTIVITY,
             self::WXGAME_DIRECT_PAGE,
             self::VIDEO_LIST,
+            self::CHANNELS_LIVE_FEED,
             self::V2_TITLE,
             self::V2_DESCRIPTION,
             self::V2_LONG_SUBLINK,
@@ -206,6 +209,7 @@ class ComponentType
             self::V2_LIST_SUBLINK,
             self::V2_MDPA_TITLE,
             self::V2_MDPA_DESCRIPTION,
+            self::V2_DOCTOR_CARD,
             self::SEARCH_ALGORITHM_GEN,
             self::SEARCH_DERIVATIVE_TITLE,
             self::SMART_DELIVERY_AIGC,

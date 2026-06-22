@@ -75,6 +75,7 @@ class ComponentSubType
     const SEARCH_LIST_SUBLINK = 'SEARCH_LIST_SUBLINK';
     const SEARCH_MDPA_TITLE = 'SEARCH_MDPA_TITLE';
     const SEARCH_MDPA_DESCRIPTION = 'SEARCH_MDPA_DESCRIPTION';
+    const SEARCH_DOCTOR_CARD = 'SEARCH_DOCTOR_CARD';
     const VIDEO_16_X9 = 'VIDEO_16X9';
     const VIDEO_9_X16 = 'VIDEO_9X16';
     const VIDEO_4_X3 = 'VIDEO_4X3';
@@ -153,6 +154,7 @@ class ComponentSubType
     const AUDIO = 'AUDIO';
     const WECHAT_SHOP_ACTIVITY_BULK_BUY = 'WECHAT_SHOP_ACTIVITY_BULK_BUY';
     const WXGAME_DIRECT_PAGE = 'WXGAME_DIRECT_PAGE';
+    const CHANNELS_LIVE_FEED = 'CHANNELS_LIVE_FEED';
     const VIDEO_LIST_FLEX_N = 'VIDEO_LIST_FLEX_N';
     const BRAND = 'BRAND';
     const BRAND_PAGE = 'BRAND_PAGE';
@@ -235,6 +237,7 @@ class ComponentSubType
             self::SEARCH_LIST_SUBLINK,
             self::SEARCH_MDPA_TITLE,
             self::SEARCH_MDPA_DESCRIPTION,
+            self::SEARCH_DOCTOR_CARD,
             self::VIDEO_16_X9,
             self::VIDEO_9_X16,
             self::VIDEO_4_X3,
@@ -313,6 +316,7 @@ class ComponentSubType
             self::AUDIO,
             self::WECHAT_SHOP_ACTIVITY_BULK_BUY,
             self::WXGAME_DIRECT_PAGE,
+            self::CHANNELS_LIVE_FEED,
             self::VIDEO_LIST_FLEX_N,
             self::BRAND,
             self::BRAND_PAGE,

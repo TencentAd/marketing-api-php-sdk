@@ -90,7 +90,7 @@ class MuseDeriveSwitchSettingsApi
     /**
      * Operation museDeriveSwitchSettingsGet
      *
-     * 创意增强配置
+     * 查询生成偏好设置
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  string|mixed $marketingTargetType marketingTargetType (required)
@@ -112,7 +112,7 @@ class MuseDeriveSwitchSettingsApi
     /**
      * Operation museDeriveSwitchSettingsGetWithHttpInfo
      *
-     * 创意增强配置
+     * 查询生成偏好设置
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)
@@ -192,7 +192,7 @@ class MuseDeriveSwitchSettingsApi
     /**
      * Operation museDeriveSwitchSettingsGetAsync
      *
-     * 创意增强配置
+     * 查询生成偏好设置
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)
@@ -217,7 +217,7 @@ class MuseDeriveSwitchSettingsApi
     /**
      * Operation museDeriveSwitchSettingsGetAsyncWithHttpInfo
      *
-     * 创意增强配置
+     * 查询生成偏好设置
      *
      * @param  int|mixed $accountId (required)
      * @param  string|mixed $marketingTargetType (required)

@@ -90,7 +90,9 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => 'string',
         'ownerAccountId' => 'string',
         'status' => '\TencentAds\Model\V3\MediaStatusType',
-        'similarityStatus' => '\TencentAds\Model\V3\SimilarityStatus'
+        'similarityStatus' => '\TencentAds\Model\V3\SimilarityStatus',
+        'aigcFlag' => '\TencentAds\Model\V3\AigcFlag',
+        'coverId' => 'string'
     ];
 
     /**
@@ -131,7 +133,9 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => null,
         'ownerAccountId' => null,
         'status' => null,
-        'similarityStatus' => null
+        'similarityStatus' => null,
+        'aigcFlag' => null,
+        'coverId' => null
     ];
 
     /**
@@ -193,7 +197,9 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => 'source_reference_id',
         'ownerAccountId' => 'owner_account_id',
         'status' => 'status',
-        'similarityStatus' => 'similarity_status'
+        'similarityStatus' => 'similarity_status',
+        'aigcFlag' => 'aigc_flag',
+        'coverId' => 'cover_id'
     ];
 
     /**
@@ -234,7 +240,9 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => 'setSourceReferenceId',
         'ownerAccountId' => 'setOwnerAccountId',
         'status' => 'setStatus',
-        'similarityStatus' => 'setSimilarityStatus'
+        'similarityStatus' => 'setSimilarityStatus',
+        'aigcFlag' => 'setAigcFlag',
+        'coverId' => 'setCoverId'
     ];
 
     /**
@@ -275,7 +283,9 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         'sourceReferenceId' => 'getSourceReferenceId',
         'ownerAccountId' => 'getOwnerAccountId',
         'status' => 'getStatus',
-        'similarityStatus' => 'getSimilarityStatus'
+        'similarityStatus' => 'getSimilarityStatus',
+        'aigcFlag' => 'getAigcFlag',
+        'coverId' => 'getCoverId'
     ];
 
     /**
@@ -371,6 +381,8 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
         $this->container['ownerAccountId'] = isset($data['ownerAccountId']) ? $data['ownerAccountId'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
         $this->container['similarityStatus'] = isset($data['similarityStatus']) ? $data['similarityStatus'] : null;
+        $this->container['aigcFlag'] = isset($data['aigcFlag']) ? $data['aigcFlag'] : null;
+        $this->container['coverId'] = isset($data['coverId']) ? $data['coverId'] : null;
     }
 
     /**
@@ -1185,6 +1197,54 @@ class VideosGetListStruct implements ModelInterface, ArrayAccess
     public function setSimilarityStatus($similarityStatus)
     {
         $this->container['similarityStatus'] = $similarityStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets aigcFlag
+     *
+     * @return \TencentAds\Model\V3\AigcFlag|mixed
+     */
+    public function getAigcFlag()
+    {
+        return $this->container['aigcFlag'];
+    }
+
+    /**
+     * Sets aigcFlag
+     *
+     * @param \TencentAds\Model\V3\AigcFlag|mixed $aigcFlag aigcFlag
+     *
+     * @return $this
+     */
+    public function setAigcFlag($aigcFlag)
+    {
+        $this->container['aigcFlag'] = $aigcFlag;
+
+        return $this;
+    }
+
+    /**
+     * Gets coverId
+     *
+     * @return string|mixed
+     */
+    public function getCoverId()
+    {
+        return $this->container['coverId'];
+    }
+
+    /**
+     * Sets coverId
+     *
+     * @param string|mixed $coverId coverId
+     *
+     * @return $this
+     */
+    public function setCoverId($coverId)
+    {
+        $this->container['coverId'] = $coverId;
 
         return $this;
     }

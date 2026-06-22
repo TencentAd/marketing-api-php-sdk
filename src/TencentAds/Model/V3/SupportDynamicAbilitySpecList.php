@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * SupportDynamicAbilitySpecList Class Doc Comment
  *
  * @category Class
- * @description 动态广告支持情况
+ * @description 动态营销支持情况
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

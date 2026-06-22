@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * CommentDataStruct Class Doc Comment
  *
  * @category Class
- * @description 广告主备注struct
+ * @description 客户备注struct
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

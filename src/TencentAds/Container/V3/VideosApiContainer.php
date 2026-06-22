@@ -123,8 +123,9 @@ class VideosApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $labelId = isset($params['label_id']) ? $params['label_id'] : null;
             $businessScenario = isset($params['business_scenario']) ? $params['business_scenario'] : null;
+            $needAigcFlag = isset($params['need_aigc_flag']) ? $params['need_aigc_flag'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->videosGet($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
+            $response = $this->apiInstance->videosGet($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $needAigcFlag, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -146,8 +147,9 @@ class VideosApiContainer extends ApiContainer
             $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $labelId = isset($params['label_id']) ? $params['label_id'] : null;
             $businessScenario = isset($params['business_scenario']) ? $params['business_scenario'] : null;
+            $needAigcFlag = isset($params['need_aigc_flag']) ? $params['need_aigc_flag'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->videosGetAsync($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
+            $response = $this->apiInstance->videosGetAsync($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $needAigcFlag, $fields);
             return $response;
         });
     }

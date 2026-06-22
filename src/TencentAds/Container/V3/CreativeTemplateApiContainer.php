@@ -39,19 +39,20 @@ class CreativeTemplateApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $deliveryMode = isset($params['delivery_mode']) ? $params['delivery_mode'] : null;
             $marketingGoal = isset($params['marketing_goal']) ? $params['marketing_goal'] : null;
+            $marketingSubGoal = isset($params['marketing_sub_goal']) ? $params['marketing_sub_goal'] : null;
             $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
             $marketingCarrierType = isset($params['marketing_carrier_type']) ? $params['marketing_carrier_type'] : null;
-            $deliveryMode = isset($params['delivery_mode']) ? $params['delivery_mode'] : null;
-            $marketingSubGoal = isset($params['marketing_sub_goal']) ? $params['marketing_sub_goal'] : null;
             $automaticSiteEnabled = isset($params['automatic_site_enabled']) ? $params['automatic_site_enabled'] : null;
             $siteSet = isset($params['site_set']) ? $params['site_set'] : null;
             $dynamicCreativeType = isset($params['dynamic_creative_type']) ? $params['dynamic_creative_type'] : null;
             $creativeTemplateId = isset($params['creative_template_id']) ? $params['creative_template_id'] : null;
             $useNewVersion = isset($params['use_new_version']) ? $params['use_new_version'] : null;
+            $adgroupId = isset($params['adgroup_id']) ? $params['adgroup_id'] : null;
             $adgroupType = isset($params['adgroup_type']) ? $params['adgroup_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->creativeTemplateGet($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $useNewVersion, $adgroupType, $fields);
+            $response = $this->apiInstance->creativeTemplateGet($accountId, $deliveryMode, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $useNewVersion, $adgroupId, $adgroupType, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -67,19 +68,20 @@ class CreativeTemplateApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $deliveryMode = isset($params['delivery_mode']) ? $params['delivery_mode'] : null;
             $marketingGoal = isset($params['marketing_goal']) ? $params['marketing_goal'] : null;
+            $marketingSubGoal = isset($params['marketing_sub_goal']) ? $params['marketing_sub_goal'] : null;
             $marketingTargetType = isset($params['marketing_target_type']) ? $params['marketing_target_type'] : null;
             $marketingCarrierType = isset($params['marketing_carrier_type']) ? $params['marketing_carrier_type'] : null;
-            $deliveryMode = isset($params['delivery_mode']) ? $params['delivery_mode'] : null;
-            $marketingSubGoal = isset($params['marketing_sub_goal']) ? $params['marketing_sub_goal'] : null;
             $automaticSiteEnabled = isset($params['automatic_site_enabled']) ? $params['automatic_site_enabled'] : null;
             $siteSet = isset($params['site_set']) ? $params['site_set'] : null;
             $dynamicCreativeType = isset($params['dynamic_creative_type']) ? $params['dynamic_creative_type'] : null;
             $creativeTemplateId = isset($params['creative_template_id']) ? $params['creative_template_id'] : null;
             $useNewVersion = isset($params['use_new_version']) ? $params['use_new_version'] : null;
+            $adgroupId = isset($params['adgroup_id']) ? $params['adgroup_id'] : null;
             $adgroupType = isset($params['adgroup_type']) ? $params['adgroup_type'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->creativeTemplateGetAsync($accountId, $marketingGoal, $marketingTargetType, $marketingCarrierType, $deliveryMode, $marketingSubGoal, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $useNewVersion, $adgroupType, $fields);
+            $response = $this->apiInstance->creativeTemplateGetAsync($accountId, $deliveryMode, $marketingGoal, $marketingSubGoal, $marketingTargetType, $marketingCarrierType, $automaticSiteEnabled, $siteSet, $dynamicCreativeType, $creativeTemplateId, $useNewVersion, $adgroupId, $adgroupType, $fields);
             return $response;
         });
     }

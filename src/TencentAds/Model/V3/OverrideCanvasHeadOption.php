@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * OverrideCanvasHeadOption Class Doc Comment
  *
  * @category Class
- * @description 原生推广页顶部素材和广告创意素材之间的替换关系
+ * @description 原生推广页顶部素材和创意素材之间的替换关系
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

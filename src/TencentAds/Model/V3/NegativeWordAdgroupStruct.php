@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * NegativeWordAdgroupStruct Class Doc Comment
  *
  * @category Class
- * @description 广告否定词
+ * @description 否定词
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

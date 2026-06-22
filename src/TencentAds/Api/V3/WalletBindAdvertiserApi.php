@@ -90,7 +90,7 @@ class WalletBindAdvertiserApi
     /**
      * Operation walletBindAdvertiserAdd
      *
-     * 共享钱包绑定或解绑广告账户
+     * 共享钱包绑定或解绑投放账户
      *
      * @param  \TencentAds\Model\V3\WalletBindAdvertiserAddRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class WalletBindAdvertiserApi
     /**
      * Operation walletBindAdvertiserAddWithHttpInfo
      *
-     * 共享钱包绑定或解绑广告账户
+     * 共享钱包绑定或解绑投放账户
      *
      * @param  \TencentAds\Model\V3\WalletBindAdvertiserAddRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class WalletBindAdvertiserApi
     /**
      * Operation walletBindAdvertiserAddAsync
      *
-     * 共享钱包绑定或解绑广告账户
+     * 共享钱包绑定或解绑投放账户
      *
      * @param  \TencentAds\Model\V3\WalletBindAdvertiserAddRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class WalletBindAdvertiserApi
     /**
      * Operation walletBindAdvertiserAddAsyncWithHttpInfo
      *
-     * 共享钱包绑定或解绑广告账户
+     * 共享钱包绑定或解绑投放账户
      *
      * @param  \TencentAds\Model\V3\WalletBindAdvertiserAddRequest|mixed $data (required)
      *

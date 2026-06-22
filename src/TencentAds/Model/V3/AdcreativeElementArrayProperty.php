@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * AdcreativeElementArrayProperty Class Doc Comment
  *
  * @category Class
- * @description 广告创意元素数组特性
+ * @description 创意元素数组特性
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

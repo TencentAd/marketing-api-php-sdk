@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * UpdateAdgroupConfiguredStatusItem Class Doc Comment
  *
  * @category Class
- * @description 修改广告客户设置的状态
+ * @description 修改客户设置的状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

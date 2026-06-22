@@ -219,7 +219,12 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'businessPrice' => '\TencentAds\Model\V3\BusinessPrice',
         'initialTotalInvestment' => '\TencentAds\Model\V3\InitialTotalInvestment',
         'businessAudience' => '\TencentAds\Model\V3\BusinessAudience',
-        'serviceTag' => 'string[]'
+        'serviceTag' => 'string[]',
+        'streetNumber' => 'string',
+        'commercialArea' => 'string[]',
+        'starsLevel' => 'int',
+        'departure' => 'string',
+        'destination' => 'string'
     ];
 
     /**
@@ -389,7 +394,12 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'businessPrice' => null,
         'initialTotalInvestment' => null,
         'businessAudience' => null,
-        'serviceTag' => null
+        'serviceTag' => null,
+        'streetNumber' => null,
+        'commercialArea' => null,
+        'starsLevel' => 'int64',
+        'departure' => null,
+        'destination' => null
     ];
 
     /**
@@ -580,7 +590,12 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'businessPrice' => 'business_price',
         'initialTotalInvestment' => 'initial_total_investment',
         'businessAudience' => 'business_audience',
-        'serviceTag' => 'service_tag'
+        'serviceTag' => 'service_tag',
+        'streetNumber' => 'street_number',
+        'commercialArea' => 'commercial_area',
+        'starsLevel' => 'stars_level',
+        'departure' => 'departure',
+        'destination' => 'destination'
     ];
 
     /**
@@ -750,7 +765,12 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'businessPrice' => 'setBusinessPrice',
         'initialTotalInvestment' => 'setInitialTotalInvestment',
         'businessAudience' => 'setBusinessAudience',
-        'serviceTag' => 'setServiceTag'
+        'serviceTag' => 'setServiceTag',
+        'streetNumber' => 'setStreetNumber',
+        'commercialArea' => 'setCommercialArea',
+        'starsLevel' => 'setStarsLevel',
+        'departure' => 'setDeparture',
+        'destination' => 'setDestination'
     ];
 
     /**
@@ -920,7 +940,12 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         'businessPrice' => 'getBusinessPrice',
         'initialTotalInvestment' => 'getInitialTotalInvestment',
         'businessAudience' => 'getBusinessAudience',
-        'serviceTag' => 'getServiceTag'
+        'serviceTag' => 'getServiceTag',
+        'streetNumber' => 'getStreetNumber',
+        'commercialArea' => 'getCommercialArea',
+        'starsLevel' => 'getStarsLevel',
+        'departure' => 'getDeparture',
+        'destination' => 'getDestination'
     ];
 
     /**
@@ -1145,6 +1170,11 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
         $this->container['initialTotalInvestment'] = isset($data['initialTotalInvestment']) ? $data['initialTotalInvestment'] : null;
         $this->container['businessAudience'] = isset($data['businessAudience']) ? $data['businessAudience'] : null;
         $this->container['serviceTag'] = isset($data['serviceTag']) ? $data['serviceTag'] : null;
+        $this->container['streetNumber'] = isset($data['streetNumber']) ? $data['streetNumber'] : null;
+        $this->container['commercialArea'] = isset($data['commercialArea']) ? $data['commercialArea'] : null;
+        $this->container['starsLevel'] = isset($data['starsLevel']) ? $data['starsLevel'] : null;
+        $this->container['departure'] = isset($data['departure']) ? $data['departure'] : null;
+        $this->container['destination'] = isset($data['destination']) ? $data['destination'] : null;
     }
 
     /**
@@ -5055,6 +5085,126 @@ class ProductItemSpec implements ModelInterface, ArrayAccess
     public function setServiceTag($serviceTag)
     {
         $this->container['serviceTag'] = $serviceTag;
+
+        return $this;
+    }
+
+    /**
+     * Gets streetNumber
+     *
+     * @return string|mixed
+     */
+    public function getStreetNumber()
+    {
+        return $this->container['streetNumber'];
+    }
+
+    /**
+     * Sets streetNumber
+     *
+     * @param string|mixed $streetNumber streetNumber
+     *
+     * @return $this
+     */
+    public function setStreetNumber($streetNumber)
+    {
+        $this->container['streetNumber'] = $streetNumber;
+
+        return $this;
+    }
+
+    /**
+     * Gets commercialArea
+     *
+     * @return string[]|mixed
+     */
+    public function getCommercialArea()
+    {
+        return $this->container['commercialArea'];
+    }
+
+    /**
+     * Sets commercialArea
+     *
+     * @param string[]|mixed $commercialArea commercialArea
+     *
+     * @return $this
+     */
+    public function setCommercialArea($commercialArea)
+    {
+        $this->container['commercialArea'] = $commercialArea;
+
+        return $this;
+    }
+
+    /**
+     * Gets starsLevel
+     *
+     * @return int|mixed
+     */
+    public function getStarsLevel()
+    {
+        return $this->container['starsLevel'];
+    }
+
+    /**
+     * Sets starsLevel
+     *
+     * @param int|mixed $starsLevel starsLevel
+     *
+     * @return $this
+     */
+    public function setStarsLevel($starsLevel)
+    {
+        $this->container['starsLevel'] = $starsLevel;
+
+        return $this;
+    }
+
+    /**
+     * Gets departure
+     *
+     * @return string|mixed
+     */
+    public function getDeparture()
+    {
+        return $this->container['departure'];
+    }
+
+    /**
+     * Sets departure
+     *
+     * @param string|mixed $departure departure
+     *
+     * @return $this
+     */
+    public function setDeparture($departure)
+    {
+        $this->container['departure'] = $departure;
+
+        return $this;
+    }
+
+    /**
+     * Gets destination
+     *
+     * @return string|mixed
+     */
+    public function getDestination()
+    {
+        return $this->container['destination'];
+    }
+
+    /**
+     * Sets destination
+     *
+     * @param string|mixed $destination destination
+     *
+     * @return $this
+     */
+    public function setDestination($destination)
+    {
+        $this->container['destination'] = $destination;
 
         return $this;
     }

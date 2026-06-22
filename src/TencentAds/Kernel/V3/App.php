@@ -22,6 +22,9 @@ use TencentAds\Container\V3\AgencyBusinessUnitListByAccountApiContainer;
 use TencentAds\Container\V3\AgencyRealtimeCostApiContainer;
 use TencentAds\Container\V3\AgencyWalletListApiContainer;
 use TencentAds\Container\V3\AndroidChannelApiContainer;
+use TencentAds\Container\V3\AssetPermissionsApiContainer;
+use TencentAds\Container\V3\AssetPrePermissionsApiContainer;
+use TencentAds\Container\V3\AssetSimilarityDetailApiContainer;
 use TencentAds\Container\V3\AsyncReportFilesApiContainer;
 use TencentAds\Container\V3\AsyncReportsApiContainer;
 use TencentAds\Container\V3\AsyncTasksApiContainer;
@@ -68,6 +71,7 @@ use TencentAds\Container\V3\CustomAudiencesApiContainer;
 use TencentAds\Container\V3\DailyBalanceReportApiContainer;
 use TencentAds\Container\V3\DailyReportsApiContainer;
 use TencentAds\Container\V3\DataSourceDispatchApiContainer;
+use TencentAds\Container\V3\DcComponentSummaryInfoApiContainer;
 use TencentAds\Container\V3\DynamicAdImageTemplatesApiContainer;
 use TencentAds\Container\V3\DynamicAdImagesApiContainer;
 use TencentAds\Container\V3\DynamicAdVideoApiContainer;
@@ -122,7 +126,6 @@ use TencentAds\Container\V3\MarketingTargetAssetPropertiesApiContainer;
 use TencentAds\Container\V3\MarketingTargetAssetPropertyValuesApiContainer;
 use TencentAds\Container\V3\MarketingTargetAssetsApiContainer;
 use TencentAds\Container\V3\MarketingTargetTypesApiContainer;
-use TencentAds\Container\V3\MaterialAiAnnotationApiContainer;
 use TencentAds\Container\V3\MaterialAsyncTasksApiContainer;
 use TencentAds\Container\V3\MaterialDcasetApiContainer;
 use TencentAds\Container\V3\MaterialDcatagApiContainer;
@@ -131,9 +134,6 @@ use TencentAds\Container\V3\MergeFundTypeDailyBalanceReportApiContainer;
 use TencentAds\Container\V3\MergeFundTypeFundStatementsDetailedApiContainer;
 use TencentAds\Container\V3\MergeFundTypeFundsApiContainer;
 use TencentAds\Container\V3\MergeFundTypeSubcustomerTransferApiContainer;
-use TencentAds\Container\V3\MuseAiMaterialApiContainer;
-use TencentAds\Container\V3\MuseAiTaskApiContainer;
-use TencentAds\Container\V3\MuseAiUgcApiContainer;
 use TencentAds\Container\V3\MuseAudiosApiContainer;
 use TencentAds\Container\V3\MuseDeriveSwitchSettingsApiContainer;
 use TencentAds\Container\V3\NegativewordsApiContainer;
@@ -207,7 +207,6 @@ use TencentAds\Container\V3\WalletEditApiContainer;
 use TencentAds\Container\V3\WalletGetBindingAdvertiserApiContainer;
 use TencentAds\Container\V3\WalletInvoiceApiContainer;
 use TencentAds\Container\V3\WalletTransferApiContainer;
-use TencentAds\Container\V3\WatermarksApiContainer;
 use TencentAds\Container\V3\WechatChannelsAccountsApiContainer;
 use TencentAds\Container\V3\WechatChannelsAdAccountApiContainer;
 use TencentAds\Container\V3\WechatChannelsAdAccountCertificationFileApiContainer;
@@ -301,6 +300,15 @@ class App
 
     /** @var AndroidChannelApiContainer */
     public $androidChannelApiContainer;
+
+    /** @var AssetPermissionsApiContainer */
+    public $assetPermissionsApiContainer;
+
+    /** @var AssetPrePermissionsApiContainer */
+    public $assetPrePermissionsApiContainer;
+
+    /** @var AssetSimilarityDetailApiContainer */
+    public $assetSimilarityDetailApiContainer;
 
     /** @var AsyncReportFilesApiContainer */
     public $asyncReportFilesApiContainer;
@@ -439,6 +447,9 @@ class App
 
     /** @var DataSourceDispatchApiContainer */
     public $dataSourceDispatchApiContainer;
+
+    /** @var DcComponentSummaryInfoApiContainer */
+    public $dcComponentSummaryInfoApiContainer;
 
     /** @var DynamicAdImageTemplatesApiContainer */
     public $dynamicAdImageTemplatesApiContainer;
@@ -602,9 +613,6 @@ class App
     /** @var MarketingTargetTypesApiContainer */
     public $marketingTargetTypesApiContainer;
 
-    /** @var MaterialAiAnnotationApiContainer */
-    public $materialAiAnnotationApiContainer;
-
     /** @var MaterialAsyncTasksApiContainer */
     public $materialAsyncTasksApiContainer;
 
@@ -628,15 +636,6 @@ class App
 
     /** @var MergeFundTypeSubcustomerTransferApiContainer */
     public $mergeFundTypeSubcustomerTransferApiContainer;
-
-    /** @var MuseAiMaterialApiContainer */
-    public $museAiMaterialApiContainer;
-
-    /** @var MuseAiTaskApiContainer */
-    public $museAiTaskApiContainer;
-
-    /** @var MuseAiUgcApiContainer */
-    public $museAiUgcApiContainer;
 
     /** @var MuseAudiosApiContainer */
     public $museAudiosApiContainer;
@@ -856,9 +855,6 @@ class App
 
     /** @var WalletTransferApiContainer */
     public $walletTransferApiContainer;
-
-    /** @var WatermarksApiContainer */
-    public $watermarksApiContainer;
 
     /** @var WechatChannelsAccountsApiContainer */
     public $wechatChannelsAccountsApiContainer;
@@ -1234,6 +1230,48 @@ class App
             $this->androidChannelApiContainer = $container;
         }
         return $this->androidChannelApiContainer;
+    }
+
+
+    /**
+     * @return AssetPermissionsApiContainer
+     */
+    public function assetPermissions()
+    {
+        if (empty($this->assetPermissionsApiContainer)) {
+            $container = new AssetPermissionsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->assetPermissionsApiContainer = $container;
+        }
+        return $this->assetPermissionsApiContainer;
+    }
+
+
+    /**
+     * @return AssetPrePermissionsApiContainer
+     */
+    public function assetPrePermissions()
+    {
+        if (empty($this->assetPrePermissionsApiContainer)) {
+            $container = new AssetPrePermissionsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->assetPrePermissionsApiContainer = $container;
+        }
+        return $this->assetPrePermissionsApiContainer;
+    }
+
+
+    /**
+     * @return AssetSimilarityDetailApiContainer
+     */
+    public function assetSimilarityDetail()
+    {
+        if (empty($this->assetSimilarityDetailApiContainer)) {
+            $container = new AssetSimilarityDetailApiContainer();
+            $container->init($this, $this->getClient());
+            $this->assetSimilarityDetailApiContainer = $container;
+        }
+        return $this->assetSimilarityDetailApiContainer;
     }
 
 
@@ -1878,6 +1916,20 @@ class App
             $this->dataSourceDispatchApiContainer = $container;
         }
         return $this->dataSourceDispatchApiContainer;
+    }
+
+
+    /**
+     * @return DcComponentSummaryInfoApiContainer
+     */
+    public function dcComponentSummaryInfo()
+    {
+        if (empty($this->dcComponentSummaryInfoApiContainer)) {
+            $container = new DcComponentSummaryInfoApiContainer();
+            $container->init($this, $this->getClient());
+            $this->dcComponentSummaryInfoApiContainer = $container;
+        }
+        return $this->dcComponentSummaryInfoApiContainer;
     }
 
 
@@ -2638,20 +2690,6 @@ class App
 
 
     /**
-     * @return MaterialAiAnnotationApiContainer
-     */
-    public function materialAiAnnotation()
-    {
-        if (empty($this->materialAiAnnotationApiContainer)) {
-            $container = new MaterialAiAnnotationApiContainer();
-            $container->init($this, $this->getClient());
-            $this->materialAiAnnotationApiContainer = $container;
-        }
-        return $this->materialAiAnnotationApiContainer;
-    }
-
-
-    /**
      * @return MaterialAsyncTasksApiContainer
      */
     public function materialAsyncTasks()
@@ -2760,48 +2798,6 @@ class App
             $this->mergeFundTypeSubcustomerTransferApiContainer = $container;
         }
         return $this->mergeFundTypeSubcustomerTransferApiContainer;
-    }
-
-
-    /**
-     * @return MuseAiMaterialApiContainer
-     */
-    public function museAiMaterial()
-    {
-        if (empty($this->museAiMaterialApiContainer)) {
-            $container = new MuseAiMaterialApiContainer();
-            $container->init($this, $this->getClient());
-            $this->museAiMaterialApiContainer = $container;
-        }
-        return $this->museAiMaterialApiContainer;
-    }
-
-
-    /**
-     * @return MuseAiTaskApiContainer
-     */
-    public function museAiTask()
-    {
-        if (empty($this->museAiTaskApiContainer)) {
-            $container = new MuseAiTaskApiContainer();
-            $container->init($this, $this->getClient());
-            $this->museAiTaskApiContainer = $container;
-        }
-        return $this->museAiTaskApiContainer;
-    }
-
-
-    /**
-     * @return MuseAiUgcApiContainer
-     */
-    public function museAiUgc()
-    {
-        if (empty($this->museAiUgcApiContainer)) {
-            $container = new MuseAiUgcApiContainer();
-            $container->init($this, $this->getClient());
-            $this->museAiUgcApiContainer = $container;
-        }
-        return $this->museAiUgcApiContainer;
     }
 
 
@@ -3824,20 +3820,6 @@ class App
             $this->walletTransferApiContainer = $container;
         }
         return $this->walletTransferApiContainer;
-    }
-
-
-    /**
-     * @return WatermarksApiContainer
-     */
-    public function watermarks()
-    {
-        if (empty($this->watermarksApiContainer)) {
-            $container = new WatermarksApiContainer();
-            $container->init($this, $this->getClient());
-            $this->watermarksApiContainer = $container;
-        }
-        return $this->watermarksApiContainer;
     }
 
 

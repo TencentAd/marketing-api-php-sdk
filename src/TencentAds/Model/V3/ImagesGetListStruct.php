@@ -77,7 +77,8 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'ownerAccountId' => 'string',
         'status' => '\TencentAds\Model\V3\AdStatus',
         'sampleAspectRatio' => 'string',
-        'similarityStatus' => '\TencentAds\Model\V3\SimilarityStatus'
+        'similarityStatus' => '\TencentAds\Model\V3\SimilarityStatus',
+        'aigcFlag' => '\TencentAds\Model\V3\AigcFlag'
     ];
 
     /**
@@ -105,7 +106,8 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'ownerAccountId' => null,
         'status' => null,
         'sampleAspectRatio' => null,
-        'similarityStatus' => null
+        'similarityStatus' => null,
+        'aigcFlag' => null
     ];
 
     /**
@@ -154,7 +156,8 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'ownerAccountId' => 'owner_account_id',
         'status' => 'status',
         'sampleAspectRatio' => 'sample_aspect_ratio',
-        'similarityStatus' => 'similarity_status'
+        'similarityStatus' => 'similarity_status',
+        'aigcFlag' => 'aigc_flag'
     ];
 
     /**
@@ -182,7 +185,8 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'ownerAccountId' => 'setOwnerAccountId',
         'status' => 'setStatus',
         'sampleAspectRatio' => 'setSampleAspectRatio',
-        'similarityStatus' => 'setSimilarityStatus'
+        'similarityStatus' => 'setSimilarityStatus',
+        'aigcFlag' => 'setAigcFlag'
     ];
 
     /**
@@ -210,7 +214,8 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         'ownerAccountId' => 'getOwnerAccountId',
         'status' => 'getStatus',
         'sampleAspectRatio' => 'getSampleAspectRatio',
-        'similarityStatus' => 'getSimilarityStatus'
+        'similarityStatus' => 'getSimilarityStatus',
+        'aigcFlag' => 'getAigcFlag'
     ];
 
     /**
@@ -293,6 +298,7 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
         $this->container['sampleAspectRatio'] = isset($data['sampleAspectRatio']) ? $data['sampleAspectRatio'] : null;
         $this->container['similarityStatus'] = isset($data['similarityStatus']) ? $data['similarityStatus'] : null;
+        $this->container['aigcFlag'] = isset($data['aigcFlag']) ? $data['aigcFlag'] : null;
     }
 
     /**
@@ -795,6 +801,30 @@ class ImagesGetListStruct implements ModelInterface, ArrayAccess
     public function setSimilarityStatus($similarityStatus)
     {
         $this->container['similarityStatus'] = $similarityStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets aigcFlag
+     *
+     * @return \TencentAds\Model\V3\AigcFlag|mixed
+     */
+    public function getAigcFlag()
+    {
+        return $this->container['aigcFlag'];
+    }
+
+    /**
+     * Sets aigcFlag
+     *
+     * @param \TencentAds\Model\V3\AigcFlag|mixed $aigcFlag aigcFlag
+     *
+     * @return $this
+     */
+    public function setAigcFlag($aigcFlag)
+    {
+        $this->container['aigcFlag'] = $aigcFlag;
 
         return $this;
     }

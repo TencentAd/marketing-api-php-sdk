@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * SmartTargetingMode Class Doc Comment
  *
  * @category Class
- * @description 广告智能定向功能
+ * @description 营销智能定向功能
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

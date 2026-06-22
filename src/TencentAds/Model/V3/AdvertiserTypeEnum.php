@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * AdvertiserTypeEnum Class Doc Comment
  *
  * @category Class
- * @description 广告主类型
+ * @description 客户类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

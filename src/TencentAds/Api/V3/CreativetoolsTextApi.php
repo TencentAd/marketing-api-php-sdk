@@ -90,7 +90,7 @@ class CreativetoolsTextApi
     /**
      * Operation creativetoolsTextGet
      *
-     * 获取广告文案
+     * 获取创意文案
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  int|mixed $maxTextLength maxTextLength (required)
@@ -117,7 +117,7 @@ class CreativetoolsTextApi
     /**
      * Operation creativetoolsTextGetWithHttpInfo
      *
-     * 获取广告文案
+     * 获取创意文案
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $maxTextLength (required)
@@ -202,7 +202,7 @@ class CreativetoolsTextApi
     /**
      * Operation creativetoolsTextGetAsync
      *
-     * 获取广告文案
+     * 获取创意文案
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $maxTextLength (required)
@@ -232,7 +232,7 @@ class CreativetoolsTextApi
     /**
      * Operation creativetoolsTextGetAsyncWithHttpInfo
      *
-     * 获取广告文案
+     * 获取创意文案
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $maxTextLength (required)

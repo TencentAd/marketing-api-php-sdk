@@ -90,7 +90,7 @@ class PunishUidMetricsApi
     /**
      * Operation punishUidMetricsGet
      *
-     * 获取处罚UID维度指标数据
+     * 获取素材计量治理账户指标数据
      *
      * @param  \TencentAds\Model\V3\PunishUidMetricsGetRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class PunishUidMetricsApi
     /**
      * Operation punishUidMetricsGetWithHttpInfo
      *
-     * 获取处罚UID维度指标数据
+     * 获取素材计量治理账户指标数据
      *
      * @param  \TencentAds\Model\V3\PunishUidMetricsGetRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class PunishUidMetricsApi
     /**
      * Operation punishUidMetricsGetAsync
      *
-     * 获取处罚UID维度指标数据
+     * 获取素材计量治理账户指标数据
      *
      * @param  \TencentAds\Model\V3\PunishUidMetricsGetRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class PunishUidMetricsApi
     /**
      * Operation punishUidMetricsGetAsyncWithHttpInfo
      *
-     * 获取处罚UID维度指标数据
+     * 获取素材计量治理账户指标数据
      *
      * @param  \TencentAds\Model\V3\PunishUidMetricsGetRequest|mixed $data (required)
      *

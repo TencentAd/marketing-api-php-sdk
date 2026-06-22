@@ -93,15 +93,18 @@ class WechatOfficialAccountsApi
      * 获取公众号列表
      *
      * @param  int|mixed $accountId accountId (required)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (optional)
+     * @param  int|mixed $page page (optional)
+     * @param  int|mixed $pageSize pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\WechatOfficialAccountsGetResponse|mixed
      */
-    public function wechatOfficialAccountsGet($accountId, $fields = null)
+    public function wechatOfficialAccountsGet($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        list($response) = $this->wechatOfficialAccountsGetWithHttpInfo($accountId, $fields);
+        list($response) = $this->wechatOfficialAccountsGetWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields);
         return $response;
     }
 
@@ -111,16 +114,19 @@ class WechatOfficialAccountsApi
      * 获取公众号列表
      *
      * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\WechatOfficialAccountsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function wechatOfficialAccountsGetWithHttpInfo($accountId, $fields = null)
+    public function wechatOfficialAccountsGetWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WechatOfficialAccountsGetResponse';
-        $request = $this->wechatOfficialAccountsGetRequest($accountId, $fields);
+        $request = $this->wechatOfficialAccountsGetRequest($accountId, $filtering, $page, $pageSize, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -187,14 +193,17 @@ class WechatOfficialAccountsApi
      * 获取公众号列表
      *
      * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatOfficialAccountsGetAsync($accountId, $fields = null)
+    public function wechatOfficialAccountsGetAsync($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
-        return $this->wechatOfficialAccountsGetAsyncWithHttpInfo($accountId, $fields)
+        return $this->wechatOfficialAccountsGetAsyncWithHttpInfo($accountId, $filtering, $page, $pageSize, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -208,15 +217,18 @@ class WechatOfficialAccountsApi
      * 获取公众号列表
      *
      * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function wechatOfficialAccountsGetAsyncWithHttpInfo($accountId, $fields = null)
+    public function wechatOfficialAccountsGetAsyncWithHttpInfo($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\WechatOfficialAccountsGetResponse';
-        $request = $this->wechatOfficialAccountsGetRequest($accountId, $fields);
+        $request = $this->wechatOfficialAccountsGetRequest($accountId, $filtering, $page, $pageSize, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -259,12 +271,15 @@ class WechatOfficialAccountsApi
      * Create request for operation 'wechatOfficialAccountsGet'
      *
      * @param  int|mixed $accountId (required)
+     * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (optional)
+     * @param  int|mixed $page (optional)
+     * @param  int|mixed $pageSize (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function wechatOfficialAccountsGetRequest($accountId, $fields = null)
+    protected function wechatOfficialAccountsGetRequest($accountId, $filtering = null, $page = null, $pageSize = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -283,6 +298,21 @@ class WechatOfficialAccountsApi
         // query params
         if ($accountId !== null) {
             $queryParams['account_id'] = ObjectSerializer::toQueryValue($accountId);
+        }
+        // query params
+        if (is_array($filtering)) {
+           $queryParams['filtering'] = json_encode($filtering);
+        } else
+        if ($filtering !== null) {
+            $queryParams['filtering'] = ObjectSerializer::toQueryValue($filtering);
+        }
+        // query params
+        if ($page !== null) {
+            $queryParams['page'] = ObjectSerializer::toQueryValue($page);
+        }
+        // query params
+        if ($pageSize !== null) {
+            $queryParams['page_size'] = ObjectSerializer::toQueryValue($pageSize);
         }
         // query params
         if (is_array($fields)) {

@@ -90,7 +90,7 @@ class AdLabelApi
     /**
      * Operation adLabelGet
      *
-     * 获取广告标签
+     * 获取创意标签
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -108,7 +108,7 @@ class AdLabelApi
     /**
      * Operation adLabelGetWithHttpInfo
      *
-     * 获取广告标签
+     * 获取创意标签
      *
      * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -184,7 +184,7 @@ class AdLabelApi
     /**
      * Operation adLabelGetAsync
      *
-     * 获取广告标签
+     * 获取创意标签
      *
      * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -205,7 +205,7 @@ class AdLabelApi
     /**
      * Operation adLabelGetAsyncWithHttpInfo
      *
-     * 获取广告标签
+     * 获取创意标签
      *
      * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)

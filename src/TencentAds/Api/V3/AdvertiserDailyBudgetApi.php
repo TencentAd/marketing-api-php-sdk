@@ -90,7 +90,7 @@ class AdvertiserDailyBudgetApi
     /**
      * Operation advertiserDailyBudgetGet
      *
-     * 获取竞价广告账户日预算
+     * 获取竞价账户日预算
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  string[]|mixed $fields fields (required)
@@ -108,7 +108,7 @@ class AdvertiserDailyBudgetApi
     /**
      * Operation advertiserDailyBudgetGetWithHttpInfo
      *
-     * 获取竞价广告账户日预算
+     * 获取竞价账户日预算
      *
      * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields (required)
@@ -184,7 +184,7 @@ class AdvertiserDailyBudgetApi
     /**
      * Operation advertiserDailyBudgetGetAsync
      *
-     * 获取竞价广告账户日预算
+     * 获取竞价账户日预算
      *
      * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields (required)
@@ -205,7 +205,7 @@ class AdvertiserDailyBudgetApi
     /**
      * Operation advertiserDailyBudgetGetAsyncWithHttpInfo
      *
-     * 获取竞价广告账户日预算
+     * 获取竞价账户日预算
      *
      * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields (required)
@@ -403,7 +403,7 @@ class AdvertiserDailyBudgetApi
     /**
      * Operation advertiserDailyBudgetUpdate
      *
-     * 更新竞价广告账户日预算
+     * 更新竞价账户日预算
      *
      * @param  \TencentAds\Model\V3\AdvertiserDailyBudgetUpdateRequest|mixed $data data (required)
      *
@@ -420,7 +420,7 @@ class AdvertiserDailyBudgetApi
     /**
      * Operation advertiserDailyBudgetUpdateWithHttpInfo
      *
-     * 更新竞价广告账户日预算
+     * 更新竞价账户日预算
      *
      * @param  \TencentAds\Model\V3\AdvertiserDailyBudgetUpdateRequest|mixed $data (required)
      *
@@ -495,7 +495,7 @@ class AdvertiserDailyBudgetApi
     /**
      * Operation advertiserDailyBudgetUpdateAsync
      *
-     * 更新竞价广告账户日预算
+     * 更新竞价账户日预算
      *
      * @param  \TencentAds\Model\V3\AdvertiserDailyBudgetUpdateRequest|mixed $data (required)
      *
@@ -515,7 +515,7 @@ class AdvertiserDailyBudgetApi
     /**
      * Operation advertiserDailyBudgetUpdateAsyncWithHttpInfo
      *
-     * 更新竞价广告账户日预算
+     * 更新竞价账户日预算
      *
      * @param  \TencentAds\Model\V3\AdvertiserDailyBudgetUpdateRequest|mixed $data (required)
      *

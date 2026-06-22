@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * AdxRealtimeType Class Doc Comment
  *
  * @category Class
- * @description ADX程序化广告素材实时回复类型
+ * @description ADX程序化投放素材实时回复类型
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

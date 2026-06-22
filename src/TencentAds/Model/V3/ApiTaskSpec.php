@@ -59,7 +59,8 @@ class ApiTaskSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'taskTypeCreateAndroidChannelPackageSpec' => '\TencentAds\Model\V3\TaskTypeCreateAndroidChannelPackageSpec',
-        'taskTypeUpdateAndroidChannelPackageSpec' => '\TencentAds\Model\V3\TaskTypeUpdateAndroidChannelPackageSpec'
+        'taskTypeUpdateAndroidChannelPackageSpec' => '\TencentAds\Model\V3\TaskTypeUpdateAndroidChannelPackageSpec',
+        'taskTypeDeleteCreativeAssetSpec' => '\TencentAds\Model\V3\TaskTypeDeleteCreativeAssetSpec'
     ];
 
     /**
@@ -69,7 +70,8 @@ class ApiTaskSpec implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'taskTypeCreateAndroidChannelPackageSpec' => null,
-        'taskTypeUpdateAndroidChannelPackageSpec' => null
+        'taskTypeUpdateAndroidChannelPackageSpec' => null,
+        'taskTypeDeleteCreativeAssetSpec' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class ApiTaskSpec implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'taskTypeCreateAndroidChannelPackageSpec' => 'task_type_create_android_channel_package_spec',
-        'taskTypeUpdateAndroidChannelPackageSpec' => 'task_type_update_android_channel_package_spec'
+        'taskTypeUpdateAndroidChannelPackageSpec' => 'task_type_update_android_channel_package_spec',
+        'taskTypeDeleteCreativeAssetSpec' => 'task_type_delete_creative_asset_spec'
     ];
 
     /**
@@ -110,7 +113,8 @@ class ApiTaskSpec implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'taskTypeCreateAndroidChannelPackageSpec' => 'setTaskTypeCreateAndroidChannelPackageSpec',
-        'taskTypeUpdateAndroidChannelPackageSpec' => 'setTaskTypeUpdateAndroidChannelPackageSpec'
+        'taskTypeUpdateAndroidChannelPackageSpec' => 'setTaskTypeUpdateAndroidChannelPackageSpec',
+        'taskTypeDeleteCreativeAssetSpec' => 'setTaskTypeDeleteCreativeAssetSpec'
     ];
 
     /**
@@ -120,7 +124,8 @@ class ApiTaskSpec implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'taskTypeCreateAndroidChannelPackageSpec' => 'getTaskTypeCreateAndroidChannelPackageSpec',
-        'taskTypeUpdateAndroidChannelPackageSpec' => 'getTaskTypeUpdateAndroidChannelPackageSpec'
+        'taskTypeUpdateAndroidChannelPackageSpec' => 'getTaskTypeUpdateAndroidChannelPackageSpec',
+        'taskTypeDeleteCreativeAssetSpec' => 'getTaskTypeDeleteCreativeAssetSpec'
     ];
 
     /**
@@ -185,6 +190,7 @@ class ApiTaskSpec implements ModelInterface, ArrayAccess
     {
         $this->container['taskTypeCreateAndroidChannelPackageSpec'] = isset($data['taskTypeCreateAndroidChannelPackageSpec']) ? $data['taskTypeCreateAndroidChannelPackageSpec'] : null;
         $this->container['taskTypeUpdateAndroidChannelPackageSpec'] = isset($data['taskTypeUpdateAndroidChannelPackageSpec']) ? $data['taskTypeUpdateAndroidChannelPackageSpec'] : null;
+        $this->container['taskTypeDeleteCreativeAssetSpec'] = isset($data['taskTypeDeleteCreativeAssetSpec']) ? $data['taskTypeDeleteCreativeAssetSpec'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class ApiTaskSpec implements ModelInterface, ArrayAccess
     public function setTaskTypeUpdateAndroidChannelPackageSpec($taskTypeUpdateAndroidChannelPackageSpec)
     {
         $this->container['taskTypeUpdateAndroidChannelPackageSpec'] = $taskTypeUpdateAndroidChannelPackageSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets taskTypeDeleteCreativeAssetSpec
+     *
+     * @return \TencentAds\Model\V3\TaskTypeDeleteCreativeAssetSpec|mixed
+     */
+    public function getTaskTypeDeleteCreativeAssetSpec()
+    {
+        return $this->container['taskTypeDeleteCreativeAssetSpec'];
+    }
+
+    /**
+     * Sets taskTypeDeleteCreativeAssetSpec
+     *
+     * @param \TencentAds\Model\V3\TaskTypeDeleteCreativeAssetSpec|mixed $taskTypeDeleteCreativeAssetSpec taskTypeDeleteCreativeAssetSpec
+     *
+     * @return $this
+     */
+    public function setTaskTypeDeleteCreativeAssetSpec($taskTypeDeleteCreativeAssetSpec)
+    {
+        $this->container['taskTypeDeleteCreativeAssetSpec'] = $taskTypeDeleteCreativeAssetSpec;
 
         return $this;
     }

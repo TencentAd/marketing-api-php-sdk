@@ -59,9 +59,7 @@ class IndividualQualificationRsp implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'name' => 'string',
-        'identificationNumber' => 'string',
-        'identificationFrontImageId' => 'string',
-        'identificationBackImageId' => 'string'
+        'identificationNumber' => 'string'
     ];
 
     /**
@@ -71,9 +69,7 @@ class IndividualQualificationRsp implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'name' => null,
-        'identificationNumber' => null,
-        'identificationFrontImageId' => null,
-        'identificationBackImageId' => null
+        'identificationNumber' => null
     ];
 
     /**
@@ -104,9 +100,7 @@ class IndividualQualificationRsp implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'name' => 'name',
-        'identificationNumber' => 'identification_number',
-        'identificationFrontImageId' => 'identification_front_image_id',
-        'identificationBackImageId' => 'identification_back_image_id'
+        'identificationNumber' => 'identification_number'
     ];
 
     /**
@@ -116,9 +110,7 @@ class IndividualQualificationRsp implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'name' => 'setName',
-        'identificationNumber' => 'setIdentificationNumber',
-        'identificationFrontImageId' => 'setIdentificationFrontImageId',
-        'identificationBackImageId' => 'setIdentificationBackImageId'
+        'identificationNumber' => 'setIdentificationNumber'
     ];
 
     /**
@@ -128,9 +120,7 @@ class IndividualQualificationRsp implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'name' => 'getName',
-        'identificationNumber' => 'getIdentificationNumber',
-        'identificationFrontImageId' => 'getIdentificationFrontImageId',
-        'identificationBackImageId' => 'getIdentificationBackImageId'
+        'identificationNumber' => 'getIdentificationNumber'
     ];
 
     /**
@@ -195,8 +185,6 @@ class IndividualQualificationRsp implements ModelInterface, ArrayAccess
     {
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;
         $this->container['identificationNumber'] = isset($data['identificationNumber']) ? $data['identificationNumber'] : null;
-        $this->container['identificationFrontImageId'] = isset($data['identificationFrontImageId']) ? $data['identificationFrontImageId'] : null;
-        $this->container['identificationBackImageId'] = isset($data['identificationBackImageId']) ? $data['identificationBackImageId'] : null;
     }
 
     /**
@@ -267,54 +255,6 @@ class IndividualQualificationRsp implements ModelInterface, ArrayAccess
     public function setIdentificationNumber($identificationNumber)
     {
         $this->container['identificationNumber'] = $identificationNumber;
-
-        return $this;
-    }
-
-    /**
-     * Gets identificationFrontImageId
-     *
-     * @return string|mixed
-     */
-    public function getIdentificationFrontImageId()
-    {
-        return $this->container['identificationFrontImageId'];
-    }
-
-    /**
-     * Sets identificationFrontImageId
-     *
-     * @param string|mixed $identificationFrontImageId identificationFrontImageId
-     *
-     * @return $this
-     */
-    public function setIdentificationFrontImageId($identificationFrontImageId)
-    {
-        $this->container['identificationFrontImageId'] = $identificationFrontImageId;
-
-        return $this;
-    }
-
-    /**
-     * Gets identificationBackImageId
-     *
-     * @return string|mixed
-     */
-    public function getIdentificationBackImageId()
-    {
-        return $this->container['identificationBackImageId'];
-    }
-
-    /**
-     * Sets identificationBackImageId
-     *
-     * @param string|mixed $identificationBackImageId identificationBackImageId
-     *
-     * @return $this
-     */
-    public function setIdentificationBackImageId($identificationBackImageId)
-    {
-        $this->container['identificationBackImageId'] = $identificationBackImageId;
 
         return $this;
     }

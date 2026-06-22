@@ -34,7 +34,7 @@ use \TencentAds\ObjectSerializer;
  * CalcAdGroupStatus Class Doc Comment
  *
  * @category Class
- * @description 广告在系统中的状态
+ * @description 营销单元在系统中的状态
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

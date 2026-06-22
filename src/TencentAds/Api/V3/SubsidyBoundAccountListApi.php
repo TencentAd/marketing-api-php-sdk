@@ -90,7 +90,7 @@ class SubsidyBoundAccountListApi
     /**
      * Operation subsidyBoundAccountListGet
      *
-     * 获取补贴账号关联的广告主账号列表
+     * 获取补贴账号关联的账号列表
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  int|mixed $page page (required)
@@ -110,7 +110,7 @@ class SubsidyBoundAccountListApi
     /**
      * Operation subsidyBoundAccountListGetWithHttpInfo
      *
-     * 获取补贴账号关联的广告主账号列表
+     * 获取补贴账号关联的账号列表
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $page (required)
@@ -188,7 +188,7 @@ class SubsidyBoundAccountListApi
     /**
      * Operation subsidyBoundAccountListGetAsync
      *
-     * 获取补贴账号关联的广告主账号列表
+     * 获取补贴账号关联的账号列表
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $page (required)
@@ -211,7 +211,7 @@ class SubsidyBoundAccountListApi
     /**
      * Operation subsidyBoundAccountListGetAsyncWithHttpInfo
      *
-     * 获取补贴账号关联的广告主账号列表
+     * 获取补贴账号关联的账号列表
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $page (required)

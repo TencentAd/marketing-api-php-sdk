@@ -384,7 +384,7 @@ class DynamicCreativesApi
     /**
      * Operation dynamicCreativesDelete
      *
-     * 删除广告创意
+     * 删除创意
      *
      * @param  \TencentAds\Model\V3\DynamicCreativesDeleteRequest|mixed $data data (required)
      *
@@ -401,7 +401,7 @@ class DynamicCreativesApi
     /**
      * Operation dynamicCreativesDeleteWithHttpInfo
      *
-     * 删除广告创意
+     * 删除创意
      *
      * @param  \TencentAds\Model\V3\DynamicCreativesDeleteRequest|mixed $data (required)
      *
@@ -476,7 +476,7 @@ class DynamicCreativesApi
     /**
      * Operation dynamicCreativesDeleteAsync
      *
-     * 删除广告创意
+     * 删除创意
      *
      * @param  \TencentAds\Model\V3\DynamicCreativesDeleteRequest|mixed $data (required)
      *
@@ -496,7 +496,7 @@ class DynamicCreativesApi
     /**
      * Operation dynamicCreativesDeleteAsyncWithHttpInfo
      *
-     * 删除广告创意
+     * 删除创意
      *
      * @param  \TencentAds\Model\V3\DynamicCreativesDeleteRequest|mixed $data (required)
      *

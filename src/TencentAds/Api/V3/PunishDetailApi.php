@@ -90,7 +90,7 @@ class PunishDetailApi
     /**
      * Operation punishDetailGet
      *
-     * 获取计量处罚明细
+     * 获取素材计量治理明细数据
      *
      * @param  \TencentAds\Model\V3\PunishDetailGetRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class PunishDetailApi
     /**
      * Operation punishDetailGetWithHttpInfo
      *
-     * 获取计量处罚明细
+     * 获取素材计量治理明细数据
      *
      * @param  \TencentAds\Model\V3\PunishDetailGetRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class PunishDetailApi
     /**
      * Operation punishDetailGetAsync
      *
-     * 获取计量处罚明细
+     * 获取素材计量治理明细数据
      *
      * @param  \TencentAds\Model\V3\PunishDetailGetRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class PunishDetailApi
     /**
      * Operation punishDetailGetAsyncWithHttpInfo
      *
-     * 获取计量处罚明细
+     * 获取素材计量治理明细数据
      *
      * @param  \TencentAds\Model\V3\PunishDetailGetRequest|mixed $data (required)
      *

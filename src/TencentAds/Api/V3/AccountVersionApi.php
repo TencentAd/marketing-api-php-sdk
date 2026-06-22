@@ -90,7 +90,7 @@ class AccountVersionApi
     /**
      * Operation accountVersionGet
      *
-     * 获取广告主新版API投放状态版本
+     * 获取客户新版API投放状态版本
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -108,7 +108,7 @@ class AccountVersionApi
     /**
      * Operation accountVersionGetWithHttpInfo
      *
-     * 获取广告主新版API投放状态版本
+     * 获取客户新版API投放状态版本
      *
      * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -184,7 +184,7 @@ class AccountVersionApi
     /**
      * Operation accountVersionGetAsync
      *
-     * 获取广告主新版API投放状态版本
+     * 获取客户新版API投放状态版本
      *
      * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
@@ -205,7 +205,7 @@ class AccountVersionApi
     /**
      * Operation accountVersionGetAsyncWithHttpInfo
      *
-     * 获取广告主新版API投放状态版本
+     * 获取客户新版API投放状态版本
      *
      * @param  int|mixed $accountId (required)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)

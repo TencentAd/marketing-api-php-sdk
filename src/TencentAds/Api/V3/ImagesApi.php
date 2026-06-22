@@ -789,15 +789,16 @@ class ImagesApi
      * @param  int|mixed $pageSize pageSize (optional)
      * @param  int|mixed $labelId labelId (optional)
      * @param  int|mixed $businessScenario businessScenario (optional)
+     * @param  bool|mixed $needAigcFlag needAigcFlag (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\ImagesGetResponse|mixed
      */
-    public function imagesGet($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
+    public function imagesGet($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $needAigcFlag = null, $fields = null)
     {
-        list($response) = $this->imagesGetWithHttpInfo($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
+        list($response) = $this->imagesGetWithHttpInfo($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $needAigcFlag, $fields);
         return $response;
     }
 
@@ -813,16 +814,17 @@ class ImagesApi
      * @param  int|mixed $pageSize (optional)
      * @param  int|mixed $labelId (optional)
      * @param  int|mixed $businessScenario (optional)
+     * @param  bool|mixed $needAigcFlag (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\ImagesGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function imagesGetWithHttpInfo($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
+    public function imagesGetWithHttpInfo($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $needAigcFlag = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\ImagesGetResponse';
-        $request = $this->imagesGetRequest($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
+        $request = $this->imagesGetRequest($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $needAigcFlag, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -895,14 +897,15 @@ class ImagesApi
      * @param  int|mixed $pageSize (optional)
      * @param  int|mixed $labelId (optional)
      * @param  int|mixed $businessScenario (optional)
+     * @param  bool|mixed $needAigcFlag (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function imagesGetAsync($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
+    public function imagesGetAsync($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $needAigcFlag = null, $fields = null)
     {
-        return $this->imagesGetAsyncWithHttpInfo($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields)
+        return $this->imagesGetAsyncWithHttpInfo($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $needAigcFlag, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -922,15 +925,16 @@ class ImagesApi
      * @param  int|mixed $pageSize (optional)
      * @param  int|mixed $labelId (optional)
      * @param  int|mixed $businessScenario (optional)
+     * @param  bool|mixed $needAigcFlag (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function imagesGetAsyncWithHttpInfo($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
+    public function imagesGetAsyncWithHttpInfo($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $needAigcFlag = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\ImagesGetResponse';
-        $request = $this->imagesGetRequest($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $fields);
+        $request = $this->imagesGetRequest($accountId, $organizationId, $filtering, $page, $pageSize, $labelId, $businessScenario, $needAigcFlag, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -979,12 +983,13 @@ class ImagesApi
      * @param  int|mixed $pageSize (optional)
      * @param  int|mixed $labelId (optional)
      * @param  int|mixed $businessScenario (optional)
+     * @param  bool|mixed $needAigcFlag (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function imagesGetRequest($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $fields = null)
+    protected function imagesGetRequest($accountId = null, $organizationId = null, $filtering = null, $page = null, $pageSize = null, $labelId = null, $businessScenario = null, $needAigcFlag = null, $fields = null)
     {
 
         $resourcePath = '/images/get';
@@ -1024,6 +1029,10 @@ class ImagesApi
         // query params
         if ($businessScenario !== null) {
             $queryParams['business_scenario'] = ObjectSerializer::toQueryValue($businessScenario);
+        }
+        // query params
+        if ($needAigcFlag !== null) {
+            $queryParams['need_aigc_flag'] = ObjectSerializer::toQueryValue($needAigcFlag);
         }
         // query params
         if (is_array($fields)) {

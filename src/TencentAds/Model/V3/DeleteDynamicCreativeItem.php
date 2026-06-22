@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * DeleteDynamicCreativeItem Class Doc Comment
  *
  * @category Class
- * @description 删除广告创意
+ * @description 删除创意
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

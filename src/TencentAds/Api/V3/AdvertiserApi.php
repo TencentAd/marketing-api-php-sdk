@@ -90,7 +90,7 @@ class AdvertiserApi
     /**
      * Operation advertiserAdd
      *
-     * 添加腾讯广告服务商子客
+     * 添加服务商子客
      *
      * @param  \TencentAds\Model\V3\AdvertiserAddRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class AdvertiserApi
     /**
      * Operation advertiserAddWithHttpInfo
      *
-     * 添加腾讯广告服务商子客
+     * 添加服务商子客
      *
      * @param  \TencentAds\Model\V3\AdvertiserAddRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class AdvertiserApi
     /**
      * Operation advertiserAddAsync
      *
-     * 添加腾讯广告服务商子客
+     * 添加服务商子客
      *
      * @param  \TencentAds\Model\V3\AdvertiserAddRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class AdvertiserApi
     /**
      * Operation advertiserAddAsyncWithHttpInfo
      *
-     * 添加腾讯广告服务商子客
+     * 添加服务商子客
      *
      * @param  \TencentAds\Model\V3\AdvertiserAddRequest|mixed $data (required)
      *
@@ -384,7 +384,7 @@ class AdvertiserApi
     /**
      * Operation advertiserGet
      *
-     * 查询腾讯广告广告主信息
+     * 查询客户信息
      *
      * @param  string[]|mixed $fields fields (required)
      * @param  string|mixed $paginationMode paginationMode (required)
@@ -408,7 +408,7 @@ class AdvertiserApi
     /**
      * Operation advertiserGetWithHttpInfo
      *
-     * 查询腾讯广告广告主信息
+     * 查询客户信息
      *
      * @param  string[]|mixed $fields (required)
      * @param  string|mixed $paginationMode (required)
@@ -490,7 +490,7 @@ class AdvertiserApi
     /**
      * Operation advertiserGetAsync
      *
-     * 查询腾讯广告广告主信息
+     * 查询客户信息
      *
      * @param  string[]|mixed $fields (required)
      * @param  string|mixed $paginationMode (required)
@@ -517,7 +517,7 @@ class AdvertiserApi
     /**
      * Operation advertiserGetAsyncWithHttpInfo
      *
-     * 查询腾讯广告广告主信息
+     * 查询客户信息
      *
      * @param  string[]|mixed $fields (required)
      * @param  string|mixed $paginationMode (required)
@@ -760,7 +760,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdate
      *
-     * 更新腾讯广告广告主信息
+     * 更新客户信息
      *
      * @param  \TencentAds\Model\V3\AdvertiserUpdateRequest|mixed $data data (required)
      *
@@ -777,7 +777,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateWithHttpInfo
      *
-     * 更新腾讯广告广告主信息
+     * 更新客户信息
      *
      * @param  \TencentAds\Model\V3\AdvertiserUpdateRequest|mixed $data (required)
      *
@@ -852,7 +852,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateAsync
      *
-     * 更新腾讯广告广告主信息
+     * 更新客户信息
      *
      * @param  \TencentAds\Model\V3\AdvertiserUpdateRequest|mixed $data (required)
      *
@@ -872,7 +872,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateAsyncWithHttpInfo
      *
-     * 更新腾讯广告广告主信息
+     * 更新客户信息
      *
      * @param  \TencentAds\Model\V3\AdvertiserUpdateRequest|mixed $data (required)
      *
@@ -1054,7 +1054,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateDailyBudget
      *
-     * 批量修改广告主日限额
+     * 批量修改账户日预算
      *
      * @param  \TencentAds\Model\V3\AdvertiserUpdateDailyBudgetRequest|mixed $data data (required)
      *
@@ -1071,7 +1071,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateDailyBudgetWithHttpInfo
      *
-     * 批量修改广告主日限额
+     * 批量修改账户日预算
      *
      * @param  \TencentAds\Model\V3\AdvertiserUpdateDailyBudgetRequest|mixed $data (required)
      *
@@ -1146,7 +1146,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateDailyBudgetAsync
      *
-     * 批量修改广告主日限额
+     * 批量修改账户日预算
      *
      * @param  \TencentAds\Model\V3\AdvertiserUpdateDailyBudgetRequest|mixed $data (required)
      *
@@ -1166,7 +1166,7 @@ class AdvertiserApi
     /**
      * Operation advertiserUpdateDailyBudgetAsyncWithHttpInfo
      *
-     * 批量修改广告主日限额
+     * 批量修改账户日预算
      *
      * @param  \TencentAds\Model\V3\AdvertiserUpdateDailyBudgetRequest|mixed $data (required)
      *

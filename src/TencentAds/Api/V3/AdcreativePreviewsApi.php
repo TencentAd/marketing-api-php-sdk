@@ -90,7 +90,7 @@ class AdcreativePreviewsApi
     /**
      * Operation adcreativePreviewsAdd
      *
-     * 绑定广告预览受众
+     * 绑定营销预览受众
      *
      * @param  \TencentAds\Model\V3\AdcreativePreviewsAddRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class AdcreativePreviewsApi
     /**
      * Operation adcreativePreviewsAddWithHttpInfo
      *
-     * 绑定广告预览受众
+     * 绑定营销预览受众
      *
      * @param  \TencentAds\Model\V3\AdcreativePreviewsAddRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class AdcreativePreviewsApi
     /**
      * Operation adcreativePreviewsAddAsync
      *
-     * 绑定广告预览受众
+     * 绑定营销预览受众
      *
      * @param  \TencentAds\Model\V3\AdcreativePreviewsAddRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class AdcreativePreviewsApi
     /**
      * Operation adcreativePreviewsAddAsyncWithHttpInfo
      *
-     * 绑定广告预览受众
+     * 绑定营销预览受众
      *
      * @param  \TencentAds\Model\V3\AdcreativePreviewsAddRequest|mixed $data (required)
      *
@@ -384,7 +384,7 @@ class AdcreativePreviewsApi
     /**
      * Operation adcreativePreviewsGet
      *
-     * 获取绑定的广告预览受众列表
+     * 获取绑定的营销预览受众列表
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering filtering (required)
@@ -403,7 +403,7 @@ class AdcreativePreviewsApi
     /**
      * Operation adcreativePreviewsGetWithHttpInfo
      *
-     * 获取绑定的广告预览受众列表
+     * 获取绑定的营销预览受众列表
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (required)
@@ -480,7 +480,7 @@ class AdcreativePreviewsApi
     /**
      * Operation adcreativePreviewsGetAsync
      *
-     * 获取绑定的广告预览受众列表
+     * 获取绑定的营销预览受众列表
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (required)
@@ -502,7 +502,7 @@ class AdcreativePreviewsApi
     /**
      * Operation adcreativePreviewsGetAsyncWithHttpInfo
      *
-     * 获取绑定的广告预览受众列表
+     * 获取绑定的营销预览受众列表
      *
      * @param  int|mixed $accountId (required)
      * @param  \TencentAds\Model\V3\FilteringStruct[]|mixed $filtering (required)

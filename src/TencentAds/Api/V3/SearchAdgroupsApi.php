@@ -90,7 +90,7 @@ class SearchAdgroupsApi
     /**
      * Operation searchAdgroupsAdd
      *
-     * 创建搜索广告
+     * 创建营销单元
      *
      * @param  \TencentAds\Model\V3\SearchAdgroupsAddRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class SearchAdgroupsApi
     /**
      * Operation searchAdgroupsAddWithHttpInfo
      *
-     * 创建搜索广告
+     * 创建营销单元
      *
      * @param  \TencentAds\Model\V3\SearchAdgroupsAddRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class SearchAdgroupsApi
     /**
      * Operation searchAdgroupsAddAsync
      *
-     * 创建搜索广告
+     * 创建营销单元
      *
      * @param  \TencentAds\Model\V3\SearchAdgroupsAddRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class SearchAdgroupsApi
     /**
      * Operation searchAdgroupsAddAsyncWithHttpInfo
      *
-     * 创建搜索广告
+     * 创建营销单元
      *
      * @param  \TencentAds\Model\V3\SearchAdgroupsAddRequest|mixed $data (required)
      *
@@ -384,7 +384,7 @@ class SearchAdgroupsApi
     /**
      * Operation searchAdgroupsUpdate
      *
-     * 更新搜索广告
+     * 更新营销单元
      *
      * @param  \TencentAds\Model\V3\SearchAdgroupsUpdateRequest|mixed $data data (required)
      *
@@ -401,7 +401,7 @@ class SearchAdgroupsApi
     /**
      * Operation searchAdgroupsUpdateWithHttpInfo
      *
-     * 更新搜索广告
+     * 更新营销单元
      *
      * @param  \TencentAds\Model\V3\SearchAdgroupsUpdateRequest|mixed $data (required)
      *
@@ -476,7 +476,7 @@ class SearchAdgroupsApi
     /**
      * Operation searchAdgroupsUpdateAsync
      *
-     * 更新搜索广告
+     * 更新营销单元
      *
      * @param  \TencentAds\Model\V3\SearchAdgroupsUpdateRequest|mixed $data (required)
      *
@@ -496,7 +496,7 @@ class SearchAdgroupsApi
     /**
      * Operation searchAdgroupsUpdateAsyncWithHttpInfo
      *
-     * 更新搜索广告
+     * 更新营销单元
      *
      * @param  \TencentAds\Model\V3\SearchAdgroupsUpdateRequest|mixed $data (required)
      *

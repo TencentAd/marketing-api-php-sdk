@@ -73,9 +73,9 @@ class AdvertiserConfigApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
-            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->advertiserConfigGet($accountId, $organizationId, $fields);
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
+            $response = $this->apiInstance->advertiserConfigGet($accountId, $fields, $organizationId);
             return $this->handleResponse($response);
         });
     }
@@ -91,9 +91,9 @@ class AdvertiserConfigApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
-            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->advertiserConfigGetAsync($accountId, $organizationId, $fields);
+            $organizationId = isset($params['organization_id']) ? $params['organization_id'] : null;
+            $response = $this->apiInstance->advertiserConfigGetAsync($accountId, $fields, $organizationId);
             return $response;
         });
     }

@@ -90,7 +90,7 @@ class AdcreativePreviewsQrcodeApi
     /**
      * Operation adcreativePreviewsQrcodeGet
      *
-     * 获取广告预览二维码
+     * 获取营销单元预览二维码
      *
      * @param  int|mixed $accountId accountId (required)
      * @param  int|mixed $adgroupId adgroupId (required)
@@ -109,7 +109,7 @@ class AdcreativePreviewsQrcodeApi
     /**
      * Operation adcreativePreviewsQrcodeGetWithHttpInfo
      *
-     * 获取广告预览二维码
+     * 获取营销单元预览二维码
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $adgroupId (required)
@@ -186,7 +186,7 @@ class AdcreativePreviewsQrcodeApi
     /**
      * Operation adcreativePreviewsQrcodeGetAsync
      *
-     * 获取广告预览二维码
+     * 获取营销单元预览二维码
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $adgroupId (required)
@@ -208,7 +208,7 @@ class AdcreativePreviewsQrcodeApi
     /**
      * Operation adcreativePreviewsQrcodeGetAsyncWithHttpInfo
      *
-     * 获取广告预览二维码
+     * 获取营销单元预览二维码
      *
      * @param  int|mixed $accountId (required)
      * @param  int|mixed $adgroupId (required)

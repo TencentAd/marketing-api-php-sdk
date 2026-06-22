@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * AdvertiserIllegalComplaint Class Doc Comment
  *
  * @category Class
- * @description 广告主违规申述信息
+ * @description 客户违规申述信息
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen

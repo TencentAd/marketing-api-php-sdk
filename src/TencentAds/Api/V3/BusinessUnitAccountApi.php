@@ -90,7 +90,7 @@ class BusinessUnitAccountApi
     /**
      * Operation businessUnitAccountGet
      *
-     * 查询广告主账号所属的业务单元
+     * 查询账号所属的业务单元
      *
      * @param  \TencentAds\Model\V3\BusinessUnitAccountGetRequest|mixed $data data (required)
      *
@@ -107,7 +107,7 @@ class BusinessUnitAccountApi
     /**
      * Operation businessUnitAccountGetWithHttpInfo
      *
-     * 查询广告主账号所属的业务单元
+     * 查询账号所属的业务单元
      *
      * @param  \TencentAds\Model\V3\BusinessUnitAccountGetRequest|mixed $data (required)
      *
@@ -182,7 +182,7 @@ class BusinessUnitAccountApi
     /**
      * Operation businessUnitAccountGetAsync
      *
-     * 查询广告主账号所属的业务单元
+     * 查询账号所属的业务单元
      *
      * @param  \TencentAds\Model\V3\BusinessUnitAccountGetRequest|mixed $data (required)
      *
@@ -202,7 +202,7 @@ class BusinessUnitAccountApi
     /**
      * Operation businessUnitAccountGetAsyncWithHttpInfo
      *
-     * 查询广告主账号所属的业务单元
+     * 查询账号所属的业务单元
      *
      * @param  \TencentAds\Model\V3\BusinessUnitAccountGetRequest|mixed $data (required)
      *

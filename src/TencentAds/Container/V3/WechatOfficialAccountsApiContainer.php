@@ -39,8 +39,11 @@ class WechatOfficialAccountsApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $filtering = isset($params['filtering']) ? $params['filtering'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->wechatOfficialAccountsGet($accountId, $fields);
+            $response = $this->apiInstance->wechatOfficialAccountsGet($accountId, $filtering, $page, $pageSize, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -56,8 +59,11 @@ class WechatOfficialAccountsApiContainer extends ApiContainer
         return $this->handleMiddleware('get', $params, function(MiddlewareRequest $request) {
             $params = $request->getApiMethodArguments();
             $accountId = isset($params['account_id']) ? $params['account_id'] : null;
+            $filtering = isset($params['filtering']) ? $params['filtering'] : null;
+            $page = isset($params['page']) ? $params['page'] : null;
+            $pageSize = isset($params['page_size']) ? $params['page_size'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->wechatOfficialAccountsGetAsync($accountId, $fields);
+            $response = $this->apiInstance->wechatOfficialAccountsGetAsync($accountId, $filtering, $page, $pageSize, $fields);
             return $response;
         });
     }

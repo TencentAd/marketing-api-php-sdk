@@ -36,7 +36,7 @@ use \TencentAds\ObjectSerializer;
  * UpdateAdgroupDeriveConfItem Class Doc Comment
  *
  * @category Class
- * @description 修改广告衍生创意配置出价
+ * @description 修改营销衍生创意配置出价
  * @package  TencentAds
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
