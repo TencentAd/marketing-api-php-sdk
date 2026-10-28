@@ -131,7 +131,6 @@ class ProductInfoSpec implements ModelInterface, ArrayAccess
         'authorFansCount' => 'int',
         'semanticLabels' => 'string[]',
         'detailImg' => 'string[]',
-        'highInfoTag' => 'int',
         'showCount' => 'int',
         'playRate' => 'double',
         'makeMoneyOnline' => 'string',
@@ -297,7 +296,6 @@ class ProductInfoSpec implements ModelInterface, ArrayAccess
         'authorFansCount' => 'int64',
         'semanticLabels' => null,
         'detailImg' => null,
-        'highInfoTag' => 'int64',
         'showCount' => 'int64',
         'playRate' => 'double',
         'makeMoneyOnline' => null,
@@ -484,7 +482,6 @@ class ProductInfoSpec implements ModelInterface, ArrayAccess
         'authorFansCount' => 'author_fans_count',
         'semanticLabels' => 'semantic_labels',
         'detailImg' => 'detail_img',
-        'highInfoTag' => 'high_info_tag',
         'showCount' => 'show_count',
         'playRate' => 'play_rate',
         'makeMoneyOnline' => 'make_money_online',
@@ -650,7 +647,6 @@ class ProductInfoSpec implements ModelInterface, ArrayAccess
         'authorFansCount' => 'setAuthorFansCount',
         'semanticLabels' => 'setSemanticLabels',
         'detailImg' => 'setDetailImg',
-        'highInfoTag' => 'setHighInfoTag',
         'showCount' => 'setShowCount',
         'playRate' => 'setPlayRate',
         'makeMoneyOnline' => 'setMakeMoneyOnline',
@@ -816,7 +812,6 @@ class ProductInfoSpec implements ModelInterface, ArrayAccess
         'authorFansCount' => 'getAuthorFansCount',
         'semanticLabels' => 'getSemanticLabels',
         'detailImg' => 'getDetailImg',
-        'highInfoTag' => 'getHighInfoTag',
         'showCount' => 'getShowCount',
         'playRate' => 'getPlayRate',
         'makeMoneyOnline' => 'getMakeMoneyOnline',
@@ -1036,7 +1031,6 @@ class ProductInfoSpec implements ModelInterface, ArrayAccess
         $this->container['authorFansCount'] = isset($data['authorFansCount']) ? $data['authorFansCount'] : null;
         $this->container['semanticLabels'] = isset($data['semanticLabels']) ? $data['semanticLabels'] : null;
         $this->container['detailImg'] = isset($data['detailImg']) ? $data['detailImg'] : null;
-        $this->container['highInfoTag'] = isset($data['highInfoTag']) ? $data['highInfoTag'] : null;
         $this->container['showCount'] = isset($data['showCount']) ? $data['showCount'] : null;
         $this->container['playRate'] = isset($data['playRate']) ? $data['playRate'] : null;
         $this->container['makeMoneyOnline'] = isset($data['makeMoneyOnline']) ? $data['makeMoneyOnline'] : null;
@@ -2895,30 +2889,6 @@ class ProductInfoSpec implements ModelInterface, ArrayAccess
     public function setDetailImg($detailImg)
     {
         $this->container['detailImg'] = $detailImg;
-
-        return $this;
-    }
-
-    /**
-     * Gets highInfoTag
-     *
-     * @return int|mixed
-     */
-    public function getHighInfoTag()
-    {
-        return $this->container['highInfoTag'];
-    }
-
-    /**
-     * Sets highInfoTag
-     *
-     * @param int|mixed $highInfoTag highInfoTag
-     *
-     * @return $this
-     */
-    public function setHighInfoTag($highInfoTag)
-    {
-        $this->container['highInfoTag'] = $highInfoTag;
 
         return $this;
     }

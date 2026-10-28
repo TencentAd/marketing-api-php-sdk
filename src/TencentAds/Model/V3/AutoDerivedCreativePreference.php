@@ -58,7 +58,8 @@ class AutoDerivedCreativePreference implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'autoDerivedCreativeMethodTypeList' => 'string[]'
+        'autoDerivedCreativeMethodTypeList' => 'string[]',
+        'autoDerivedCreativeSelectProductList' => '\TencentAds\Model\V3\AutoDerivedCreativeSelectProductStruct[]'
     ];
 
     /**
@@ -67,7 +68,8 @@ class AutoDerivedCreativePreference implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'autoDerivedCreativeMethodTypeList' => null
+        'autoDerivedCreativeMethodTypeList' => null,
+        'autoDerivedCreativeSelectProductList' => null
     ];
 
     /**
@@ -97,7 +99,8 @@ class AutoDerivedCreativePreference implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'autoDerivedCreativeMethodTypeList' => 'auto_derived_creative_method_type_list'
+        'autoDerivedCreativeMethodTypeList' => 'auto_derived_creative_method_type_list',
+        'autoDerivedCreativeSelectProductList' => 'auto_derived_creative_select_product_list'
     ];
 
     /**
@@ -106,7 +109,8 @@ class AutoDerivedCreativePreference implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'autoDerivedCreativeMethodTypeList' => 'setAutoDerivedCreativeMethodTypeList'
+        'autoDerivedCreativeMethodTypeList' => 'setAutoDerivedCreativeMethodTypeList',
+        'autoDerivedCreativeSelectProductList' => 'setAutoDerivedCreativeSelectProductList'
     ];
 
     /**
@@ -115,7 +119,8 @@ class AutoDerivedCreativePreference implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'autoDerivedCreativeMethodTypeList' => 'getAutoDerivedCreativeMethodTypeList'
+        'autoDerivedCreativeMethodTypeList' => 'getAutoDerivedCreativeMethodTypeList',
+        'autoDerivedCreativeSelectProductList' => 'getAutoDerivedCreativeSelectProductList'
     ];
 
     /**
@@ -179,6 +184,7 @@ class AutoDerivedCreativePreference implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['autoDerivedCreativeMethodTypeList'] = isset($data['autoDerivedCreativeMethodTypeList']) ? $data['autoDerivedCreativeMethodTypeList'] : null;
+        $this->container['autoDerivedCreativeSelectProductList'] = isset($data['autoDerivedCreativeSelectProductList']) ? $data['autoDerivedCreativeSelectProductList'] : null;
     }
 
     /**
@@ -225,6 +231,30 @@ class AutoDerivedCreativePreference implements ModelInterface, ArrayAccess
     public function setAutoDerivedCreativeMethodTypeList($autoDerivedCreativeMethodTypeList)
     {
         $this->container['autoDerivedCreativeMethodTypeList'] = $autoDerivedCreativeMethodTypeList;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoDerivedCreativeSelectProductList
+     *
+     * @return \TencentAds\Model\V3\AutoDerivedCreativeSelectProductStruct[]|mixed
+     */
+    public function getAutoDerivedCreativeSelectProductList()
+    {
+        return $this->container['autoDerivedCreativeSelectProductList'];
+    }
+
+    /**
+     * Sets autoDerivedCreativeSelectProductList
+     *
+     * @param \TencentAds\Model\V3\AutoDerivedCreativeSelectProductStruct[]|mixed $autoDerivedCreativeSelectProductList autoDerivedCreativeSelectProductList
+     *
+     * @return $this
+     */
+    public function setAutoDerivedCreativeSelectProductList($autoDerivedCreativeSelectProductList)
+    {
+        $this->container['autoDerivedCreativeSelectProductList'] = $autoDerivedCreativeSelectProductList;
 
         return $this;
     }

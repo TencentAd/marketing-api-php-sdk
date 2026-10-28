@@ -61,6 +61,7 @@ use TencentAds\Container\V3\ConversionLinkAssetsApiContainer;
 use TencentAds\Container\V3\ConversionLinksApiContainer;
 use TencentAds\Container\V3\ConversionsApiContainer;
 use TencentAds\Container\V3\CreativeRecommendApiContainer;
+use TencentAds\Container\V3\CreativeReviewApiContainer;
 use TencentAds\Container\V3\CreativeTemplateApiContainer;
 use TencentAds\Container\V3\CreativeTemplateListApiContainer;
 use TencentAds\Container\V3\CreativeTemplatePreviewsApiContainer;
@@ -76,10 +77,8 @@ use TencentAds\Container\V3\DynamicAdImageTemplatesApiContainer;
 use TencentAds\Container\V3\DynamicAdImagesApiContainer;
 use TencentAds\Container\V3\DynamicAdVideoApiContainer;
 use TencentAds\Container\V3\DynamicAdVideoTemplatesApiContainer;
-use TencentAds\Container\V3\DynamicCreativePreviewsApiContainer;
 use TencentAds\Container\V3\DynamicCreativeReviewResultsApiContainer;
 use TencentAds\Container\V3\DynamicCreativesApiContainer;
-use TencentAds\Container\V3\EcommerceOrderApiContainer;
 use TencentAds\Container\V3\ElementAppealQuotaApiContainer;
 use TencentAds\Container\V3\ElementAppealReviewApiContainer;
 use TencentAds\Container\V3\EstimationApiContainer;
@@ -149,6 +148,7 @@ use TencentAds\Container\V3\OperationLogListApiContainer;
 use TencentAds\Container\V3\OptimizationGoalPermissionsApiContainer;
 use TencentAds\Container\V3\OrganizationAccountRelationApiContainer;
 use TencentAds\Container\V3\PagesApiContainer;
+use TencentAds\Container\V3\PreReviewTaskApiContainer;
 use TencentAds\Container\V3\ProductCatalogsApiContainer;
 use TencentAds\Container\V3\ProductCategoriesListApiContainer;
 use TencentAds\Container\V3\ProductItemsApiContainer;
@@ -179,6 +179,7 @@ use TencentAds\Container\V3\RtaexpDataRoiApiContainer;
 use TencentAds\Container\V3\RtaexpDspTagDataApiContainer;
 use TencentAds\Container\V3\RtatargetApiContainer;
 use TencentAds\Container\V3\RtatargetBindApiContainer;
+use TencentAds\Container\V3\SaasMiniprogramPrereviewApiContainer;
 use TencentAds\Container\V3\SceneSpecTagsApiContainer;
 use TencentAds\Container\V3\SearchAdgroupsApiContainer;
 use TencentAds\Container\V3\SearchDynamicCreativesApiContainer;
@@ -220,12 +221,16 @@ use TencentAds\Container\V3\WechatPagesCsgroupUserApiContainer;
 use TencentAds\Container\V3\WechatPagesCsgrouplistApiContainer;
 use TencentAds\Container\V3\WechatPagesCustomApiContainer;
 use TencentAds\Container\V3\WechatPagesGrantinfoApiContainer;
+use TencentAds\Container\V3\WechatShopActivityApiContainer;
+use TencentAds\Container\V3\WechatShopActivityListApiContainer;
 use TencentAds\Container\V3\WechatShopApiContainer;
 use TencentAds\Container\V3\WechatShopAuthorizationApiContainer;
 use TencentAds\Container\V3\WechatShopAuthorizationStatusApiContainer;
 use TencentAds\Container\V3\WechatShopAuthorizationValidationApiContainer;
 use TencentAds\Container\V3\WechatStoreCatalogsApiContainer;
 use TencentAds\Container\V3\WechatStoreProductItemsApiContainer;
+use TencentAds\Container\V3\WecomCustomerAcquisitionLinkApiContainer;
+use TencentAds\Container\V3\WecomDepartmentUserApiContainer;
 use TencentAds\Container\V3\WildcardsApiContainer;
 use TencentAds\Container\V3\WxGamePlayablePageApiContainer;
 use TencentAds\Container\V3\XijingComplexTemplateApiContainer;
@@ -418,6 +423,9 @@ class App
     /** @var CreativeRecommendApiContainer */
     public $creativeRecommendApiContainer;
 
+    /** @var CreativeReviewApiContainer */
+    public $creativeReviewApiContainer;
+
     /** @var CreativeTemplateApiContainer */
     public $creativeTemplateApiContainer;
 
@@ -463,17 +471,11 @@ class App
     /** @var DynamicAdVideoTemplatesApiContainer */
     public $dynamicAdVideoTemplatesApiContainer;
 
-    /** @var DynamicCreativePreviewsApiContainer */
-    public $dynamicCreativePreviewsApiContainer;
-
     /** @var DynamicCreativeReviewResultsApiContainer */
     public $dynamicCreativeReviewResultsApiContainer;
 
     /** @var DynamicCreativesApiContainer */
     public $dynamicCreativesApiContainer;
-
-    /** @var EcommerceOrderApiContainer */
-    public $ecommerceOrderApiContainer;
 
     /** @var ElementAppealQuotaApiContainer */
     public $elementAppealQuotaApiContainer;
@@ -682,6 +684,9 @@ class App
     /** @var PagesApiContainer */
     public $pagesApiContainer;
 
+    /** @var PreReviewTaskApiContainer */
+    public $preReviewTaskApiContainer;
+
     /** @var ProductCatalogsApiContainer */
     public $productCatalogsApiContainer;
 
@@ -771,6 +776,9 @@ class App
 
     /** @var RtatargetBindApiContainer */
     public $rtatargetBindApiContainer;
+
+    /** @var SaasMiniprogramPrereviewApiContainer */
+    public $saasMiniprogramPrereviewApiContainer;
 
     /** @var SceneSpecTagsApiContainer */
     public $sceneSpecTagsApiContainer;
@@ -895,6 +903,12 @@ class App
     /** @var WechatPagesGrantinfoApiContainer */
     public $wechatPagesGrantinfoApiContainer;
 
+    /** @var WechatShopActivityApiContainer */
+    public $wechatShopActivityApiContainer;
+
+    /** @var WechatShopActivityListApiContainer */
+    public $wechatShopActivityListApiContainer;
+
     /** @var WechatShopApiContainer */
     public $wechatShopApiContainer;
 
@@ -912,6 +926,12 @@ class App
 
     /** @var WechatStoreProductItemsApiContainer */
     public $wechatStoreProductItemsApiContainer;
+
+    /** @var WecomCustomerAcquisitionLinkApiContainer */
+    public $wecomCustomerAcquisitionLinkApiContainer;
+
+    /** @var WecomDepartmentUserApiContainer */
+    public $wecomDepartmentUserApiContainer;
 
     /** @var WildcardsApiContainer */
     public $wildcardsApiContainer;
@@ -1780,6 +1800,20 @@ class App
 
 
     /**
+     * @return CreativeReviewApiContainer
+     */
+    public function creativeReview()
+    {
+        if (empty($this->creativeReviewApiContainer)) {
+            $container = new CreativeReviewApiContainer();
+            $container->init($this, $this->getClient());
+            $this->creativeReviewApiContainer = $container;
+        }
+        return $this->creativeReviewApiContainer;
+    }
+
+
+    /**
      * @return CreativeTemplateApiContainer
      */
     public function creativeTemplate()
@@ -1990,20 +2024,6 @@ class App
 
 
     /**
-     * @return DynamicCreativePreviewsApiContainer
-     */
-    public function dynamicCreativePreviews()
-    {
-        if (empty($this->dynamicCreativePreviewsApiContainer)) {
-            $container = new DynamicCreativePreviewsApiContainer();
-            $container->init($this, $this->getClient());
-            $this->dynamicCreativePreviewsApiContainer = $container;
-        }
-        return $this->dynamicCreativePreviewsApiContainer;
-    }
-
-
-    /**
      * @return DynamicCreativeReviewResultsApiContainer
      */
     public function dynamicCreativeReviewResults()
@@ -2028,20 +2048,6 @@ class App
             $this->dynamicCreativesApiContainer = $container;
         }
         return $this->dynamicCreativesApiContainer;
-    }
-
-
-    /**
-     * @return EcommerceOrderApiContainer
-     */
-    public function ecommerceOrder()
-    {
-        if (empty($this->ecommerceOrderApiContainer)) {
-            $container = new EcommerceOrderApiContainer();
-            $container->init($this, $this->getClient());
-            $this->ecommerceOrderApiContainer = $container;
-        }
-        return $this->ecommerceOrderApiContainer;
     }
 
 
@@ -3012,6 +3018,20 @@ class App
 
 
     /**
+     * @return PreReviewTaskApiContainer
+     */
+    public function preReviewTask()
+    {
+        if (empty($this->preReviewTaskApiContainer)) {
+            $container = new PreReviewTaskApiContainer();
+            $container->init($this, $this->getClient());
+            $this->preReviewTaskApiContainer = $container;
+        }
+        return $this->preReviewTaskApiContainer;
+    }
+
+
+    /**
      * @return ProductCatalogsApiContainer
      */
     public function productCatalogs()
@@ -3428,6 +3448,20 @@ class App
             $this->rtatargetBindApiContainer = $container;
         }
         return $this->rtatargetBindApiContainer;
+    }
+
+
+    /**
+     * @return SaasMiniprogramPrereviewApiContainer
+     */
+    public function saasMiniprogramPrereview()
+    {
+        if (empty($this->saasMiniprogramPrereviewApiContainer)) {
+            $container = new SaasMiniprogramPrereviewApiContainer();
+            $container->init($this, $this->getClient());
+            $this->saasMiniprogramPrereviewApiContainer = $container;
+        }
+        return $this->saasMiniprogramPrereviewApiContainer;
     }
 
 
@@ -4006,6 +4040,34 @@ class App
 
 
     /**
+     * @return WechatShopActivityApiContainer
+     */
+    public function wechatShopActivity()
+    {
+        if (empty($this->wechatShopActivityApiContainer)) {
+            $container = new WechatShopActivityApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatShopActivityApiContainer = $container;
+        }
+        return $this->wechatShopActivityApiContainer;
+    }
+
+
+    /**
+     * @return WechatShopActivityListApiContainer
+     */
+    public function wechatShopActivityList()
+    {
+        if (empty($this->wechatShopActivityListApiContainer)) {
+            $container = new WechatShopActivityListApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wechatShopActivityListApiContainer = $container;
+        }
+        return $this->wechatShopActivityListApiContainer;
+    }
+
+
+    /**
      * @return WechatShopApiContainer
      */
     public function wechatShop()
@@ -4086,6 +4148,34 @@ class App
             $this->wechatStoreProductItemsApiContainer = $container;
         }
         return $this->wechatStoreProductItemsApiContainer;
+    }
+
+
+    /**
+     * @return WecomCustomerAcquisitionLinkApiContainer
+     */
+    public function wecomCustomerAcquisitionLink()
+    {
+        if (empty($this->wecomCustomerAcquisitionLinkApiContainer)) {
+            $container = new WecomCustomerAcquisitionLinkApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wecomCustomerAcquisitionLinkApiContainer = $container;
+        }
+        return $this->wecomCustomerAcquisitionLinkApiContainer;
+    }
+
+
+    /**
+     * @return WecomDepartmentUserApiContainer
+     */
+    public function wecomDepartmentUser()
+    {
+        if (empty($this->wecomDepartmentUserApiContainer)) {
+            $container = new WecomDepartmentUserApiContainer();
+            $container->init($this, $this->getClient());
+            $this->wecomDepartmentUserApiContainer = $container;
+        }
+        return $this->wecomDepartmentUserApiContainer;
     }
 
 

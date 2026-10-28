@@ -77,7 +77,9 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
         'agencyName' => 'string',
         'accountFrame' => 'string',
         'accountOperateIdentity' => 'string',
-        'complianceOwner' => 'string'
+        'complianceOwner' => 'string',
+        'elementId' => 'int',
+        'elementFingerPrint' => 'string'
     ];
 
     /**
@@ -105,7 +107,9 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
         'agencyName' => null,
         'accountFrame' => null,
         'accountOperateIdentity' => null,
-        'complianceOwner' => null
+        'complianceOwner' => null,
+        'elementId' => 'int64',
+        'elementFingerPrint' => null
     ];
 
     /**
@@ -154,7 +158,9 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
         'agencyName' => 'agency_name',
         'accountFrame' => 'account_frame',
         'accountOperateIdentity' => 'account_operate_identity',
-        'complianceOwner' => 'compliance_owner'
+        'complianceOwner' => 'compliance_owner',
+        'elementId' => 'element_id',
+        'elementFingerPrint' => 'element_finger_print'
     ];
 
     /**
@@ -182,7 +188,9 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
         'agencyName' => 'setAgencyName',
         'accountFrame' => 'setAccountFrame',
         'accountOperateIdentity' => 'setAccountOperateIdentity',
-        'complianceOwner' => 'setComplianceOwner'
+        'complianceOwner' => 'setComplianceOwner',
+        'elementId' => 'setElementId',
+        'elementFingerPrint' => 'setElementFingerPrint'
     ];
 
     /**
@@ -210,7 +218,9 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
         'agencyName' => 'getAgencyName',
         'accountFrame' => 'getAccountFrame',
         'accountOperateIdentity' => 'getAccountOperateIdentity',
-        'complianceOwner' => 'getComplianceOwner'
+        'complianceOwner' => 'getComplianceOwner',
+        'elementId' => 'getElementId',
+        'elementFingerPrint' => 'getElementFingerPrint'
     ];
 
     /**
@@ -293,6 +303,8 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
         $this->container['accountFrame'] = isset($data['accountFrame']) ? $data['accountFrame'] : null;
         $this->container['accountOperateIdentity'] = isset($data['accountOperateIdentity']) ? $data['accountOperateIdentity'] : null;
         $this->container['complianceOwner'] = isset($data['complianceOwner']) ? $data['complianceOwner'] : null;
+        $this->container['elementId'] = isset($data['elementId']) ? $data['elementId'] : null;
+        $this->container['elementFingerPrint'] = isset($data['elementFingerPrint']) ? $data['elementFingerPrint'] : null;
     }
 
     /**
@@ -795,6 +807,54 @@ class PunishDetailDataItem implements ModelInterface, ArrayAccess
     public function setComplianceOwner($complianceOwner)
     {
         $this->container['complianceOwner'] = $complianceOwner;
+
+        return $this;
+    }
+
+    /**
+     * Gets elementId
+     *
+     * @return int|mixed
+     */
+    public function getElementId()
+    {
+        return $this->container['elementId'];
+    }
+
+    /**
+     * Sets elementId
+     *
+     * @param int|mixed $elementId elementId
+     *
+     * @return $this
+     */
+    public function setElementId($elementId)
+    {
+        $this->container['elementId'] = $elementId;
+
+        return $this;
+    }
+
+    /**
+     * Gets elementFingerPrint
+     *
+     * @return string|mixed
+     */
+    public function getElementFingerPrint()
+    {
+        return $this->container['elementFingerPrint'];
+    }
+
+    /**
+     * Sets elementFingerPrint
+     *
+     * @param string|mixed $elementFingerPrint elementFingerPrint
+     *
+     * @return $this
+     */
+    public function setElementFingerPrint($elementFingerPrint)
+    {
+        $this->container['elementFingerPrint'] = $elementFingerPrint;
 
         return $this;
     }

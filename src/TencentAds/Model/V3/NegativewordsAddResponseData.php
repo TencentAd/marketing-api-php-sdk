@@ -64,7 +64,9 @@ class NegativewordsAddResponseData implements ModelInterface, ArrayAccess
         'exceedLengthWords' => '\TencentAds\Model\V3\ExceedLengthNegativeWordStruct',
         'exceedLimitWords' => '\TencentAds\Model\V3\ExceedLimitNegativeWordStruct',
         'hasSpecialWords' => '\TencentAds\Model\V3\HasSpecialNegativeWordStruct',
-        'successWords' => '\TencentAds\Model\V3\SuccessNegativeWordStruct'
+        'successWords' => '\TencentAds\Model\V3\SuccessNegativeWordStruct',
+        'duplicateWithBidWords' => '\TencentAds\Model\V3\DuplicateNegativeWordStruct',
+        'duplicateWithExistingWords' => '\TencentAds\Model\V3\DuplicateNegativeWordStruct'
     ];
 
     /**
@@ -80,7 +82,9 @@ class NegativewordsAddResponseData implements ModelInterface, ArrayAccess
         'exceedLengthWords' => null,
         'exceedLimitWords' => null,
         'hasSpecialWords' => null,
-        'successWords' => null
+        'successWords' => null,
+        'duplicateWithBidWords' => null,
+        'duplicateWithExistingWords' => null
     ];
 
     /**
@@ -117,7 +121,9 @@ class NegativewordsAddResponseData implements ModelInterface, ArrayAccess
         'exceedLengthWords' => 'exceed_length_words',
         'exceedLimitWords' => 'exceed_limit_words',
         'hasSpecialWords' => 'has_special_words',
-        'successWords' => 'success_words'
+        'successWords' => 'success_words',
+        'duplicateWithBidWords' => 'duplicate_with_bid_words',
+        'duplicateWithExistingWords' => 'duplicate_with_existing_words'
     ];
 
     /**
@@ -133,7 +139,9 @@ class NegativewordsAddResponseData implements ModelInterface, ArrayAccess
         'exceedLengthWords' => 'setExceedLengthWords',
         'exceedLimitWords' => 'setExceedLimitWords',
         'hasSpecialWords' => 'setHasSpecialWords',
-        'successWords' => 'setSuccessWords'
+        'successWords' => 'setSuccessWords',
+        'duplicateWithBidWords' => 'setDuplicateWithBidWords',
+        'duplicateWithExistingWords' => 'setDuplicateWithExistingWords'
     ];
 
     /**
@@ -149,7 +157,9 @@ class NegativewordsAddResponseData implements ModelInterface, ArrayAccess
         'exceedLengthWords' => 'getExceedLengthWords',
         'exceedLimitWords' => 'getExceedLimitWords',
         'hasSpecialWords' => 'getHasSpecialWords',
-        'successWords' => 'getSuccessWords'
+        'successWords' => 'getSuccessWords',
+        'duplicateWithBidWords' => 'getDuplicateWithBidWords',
+        'duplicateWithExistingWords' => 'getDuplicateWithExistingWords'
     ];
 
     /**
@@ -220,6 +230,8 @@ class NegativewordsAddResponseData implements ModelInterface, ArrayAccess
         $this->container['exceedLimitWords'] = isset($data['exceedLimitWords']) ? $data['exceedLimitWords'] : null;
         $this->container['hasSpecialWords'] = isset($data['hasSpecialWords']) ? $data['hasSpecialWords'] : null;
         $this->container['successWords'] = isset($data['successWords']) ? $data['successWords'] : null;
+        $this->container['duplicateWithBidWords'] = isset($data['duplicateWithBidWords']) ? $data['duplicateWithBidWords'] : null;
+        $this->container['duplicateWithExistingWords'] = isset($data['duplicateWithExistingWords']) ? $data['duplicateWithExistingWords'] : null;
     }
 
     /**
@@ -434,6 +446,54 @@ class NegativewordsAddResponseData implements ModelInterface, ArrayAccess
     public function setSuccessWords($successWords)
     {
         $this->container['successWords'] = $successWords;
+
+        return $this;
+    }
+
+    /**
+     * Gets duplicateWithBidWords
+     *
+     * @return \TencentAds\Model\V3\DuplicateNegativeWordStruct|mixed
+     */
+    public function getDuplicateWithBidWords()
+    {
+        return $this->container['duplicateWithBidWords'];
+    }
+
+    /**
+     * Sets duplicateWithBidWords
+     *
+     * @param \TencentAds\Model\V3\DuplicateNegativeWordStruct|mixed $duplicateWithBidWords duplicateWithBidWords
+     *
+     * @return $this
+     */
+    public function setDuplicateWithBidWords($duplicateWithBidWords)
+    {
+        $this->container['duplicateWithBidWords'] = $duplicateWithBidWords;
+
+        return $this;
+    }
+
+    /**
+     * Gets duplicateWithExistingWords
+     *
+     * @return \TencentAds\Model\V3\DuplicateNegativeWordStruct|mixed
+     */
+    public function getDuplicateWithExistingWords()
+    {
+        return $this->container['duplicateWithExistingWords'];
+    }
+
+    /**
+     * Sets duplicateWithExistingWords
+     *
+     * @param \TencentAds\Model\V3\DuplicateNegativeWordStruct|mixed $duplicateWithExistingWords duplicateWithExistingWords
+     *
+     * @return $this
+     */
+    public function setDuplicateWithExistingWords($duplicateWithExistingWords)
+    {
+        $this->container['duplicateWithExistingWords'] = $duplicateWithExistingWords;
 
         return $this;
     }

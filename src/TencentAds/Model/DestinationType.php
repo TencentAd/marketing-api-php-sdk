@@ -51,6 +51,7 @@ class DestinationType
     const MINI_PROGRAM_WECHAT = 'PAGE_TYPE_MINI_PROGRAM_WECHAT';
     const FENGYE_ECOMMERCE = 'PAGE_TYPE_FENGYE_ECOMMERCE';
     const MINI_GAME_WECHAT = 'PAGE_TYPE_MINI_GAME_WECHAT';
+    const WECHAT_CHANNELS_ACTIVITY = 'PAGE_TYPE_WECHAT_CHANNELS_ACTIVITY';
     const FENGYE_EC_WECHAT_MINIPROGRAM = 'PAGE_TYPE_FENGYE_EC_WECHAT_MINIPROGRAM';
     const IOS_APP = 'PAGE_TYPE_IOS_APP';
     const MINI_PROGRAM_QQ = 'PAGE_TYPE_MINI_PROGRAM_QQ';
@@ -101,7 +102,6 @@ class DestinationType
     const WECHAT_QUERY_PAGE = 'PAGE_TYPE_WECHAT_QUERY_PAGE';
     const WECHAT_SHOP = 'PAGE_TYPE_WECHAT_SHOP';
     const APP_HARMONY = 'PAGE_TYPE_APP_HARMONY';
-    const WECHAT_CHANNELS_ACTIVITY = 'PAGE_TYPE_WECHAT_CHANNELS_ACTIVITY';
     
     /**
      * Gets allowable values of the enum
@@ -117,6 +117,7 @@ class DestinationType
             self::MINI_PROGRAM_WECHAT,
             self::FENGYE_ECOMMERCE,
             self::MINI_GAME_WECHAT,
+            self::WECHAT_CHANNELS_ACTIVITY,
             self::FENGYE_EC_WECHAT_MINIPROGRAM,
             self::IOS_APP,
             self::MINI_PROGRAM_QQ,
@@ -167,7 +168,6 @@ class DestinationType
             self::WECHAT_QUERY_PAGE,
             self::WECHAT_SHOP,
             self::APP_HARMONY,
-            self::WECHAT_CHANNELS_ACTIVITY,
         ];
     }
 }

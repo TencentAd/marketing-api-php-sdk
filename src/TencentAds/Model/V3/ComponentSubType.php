@@ -75,7 +75,13 @@ class ComponentSubType
     const SEARCH_LIST_SUBLINK = 'SEARCH_LIST_SUBLINK';
     const SEARCH_MDPA_TITLE = 'SEARCH_MDPA_TITLE';
     const SEARCH_MDPA_DESCRIPTION = 'SEARCH_MDPA_DESCRIPTION';
+    const SEARCH_FLOATING_ZONE_IMAGE_TEXT = 'SEARCH_FLOATING_ZONE_IMAGE_TEXT';
     const SEARCH_DOCTOR_CARD = 'SEARCH_DOCTOR_CARD';
+    const SEARCH_IMAGE_LIST_16_X9 = 'SEARCH_IMAGE_LIST_16X9';
+    const SEARCH_CHANNELS_LIVE_FEED = 'SEARCH_CHANNELS_LIVE_FEED';
+    const SEARCH_CHANNELS_BRAND = 'SEARCH_CHANNELS_BRAND';
+    const SEARCH_IMAGE_JUMP_1_X1 = 'SEARCH_IMAGE_JUMP_1X1';
+    const SEARCH_IMAGE_JUMP_16_X9 = 'SEARCH_IMAGE_JUMP_16X9';
     const VIDEO_16_X9 = 'VIDEO_16X9';
     const VIDEO_9_X16 = 'VIDEO_9X16';
     const VIDEO_4_X3 = 'VIDEO_4X3';
@@ -91,6 +97,7 @@ class ComponentSubType
     const VIDEO_978_X886 = 'VIDEO_978X886';
     const APP_PROMOTION_VIDEO_16_X9 = 'APP_PROMOTION_VIDEO_16X9';
     const VIDEO_CHANNELS_CONTENT = 'VIDEO_CHANNELS_CONTENT';
+    const REWARDED_BROWSE = 'REWARDED_BROWSE';
     const IMAGE_16_X9 = 'IMAGE_16X9';
     const IMAGE_9_X16 = 'IMAGE_9X16';
     const IMAGE_1_X1 = 'IMAGE_1X1';
@@ -237,7 +244,13 @@ class ComponentSubType
             self::SEARCH_LIST_SUBLINK,
             self::SEARCH_MDPA_TITLE,
             self::SEARCH_MDPA_DESCRIPTION,
+            self::SEARCH_FLOATING_ZONE_IMAGE_TEXT,
             self::SEARCH_DOCTOR_CARD,
+            self::SEARCH_IMAGE_LIST_16_X9,
+            self::SEARCH_CHANNELS_LIVE_FEED,
+            self::SEARCH_CHANNELS_BRAND,
+            self::SEARCH_IMAGE_JUMP_1_X1,
+            self::SEARCH_IMAGE_JUMP_16_X9,
             self::VIDEO_16_X9,
             self::VIDEO_9_X16,
             self::VIDEO_4_X3,
@@ -253,6 +266,7 @@ class ComponentSubType
             self::VIDEO_978_X886,
             self::APP_PROMOTION_VIDEO_16_X9,
             self::VIDEO_CHANNELS_CONTENT,
+            self::REWARDED_BROWSE,
             self::IMAGE_16_X9,
             self::IMAGE_9_X16,
             self::IMAGE_1_X1,

@@ -57,12 +57,12 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'finderUsername' => 'string',
         'authorizationQrCodeUrl' => 'string',
         'authorizationDescription' => 'string',
         'authorizationExpiredTime' => 'int',
         'authorizationAgreement' => 'string',
-        'wechatChannelsAccountId' => 'string'
+        'wechatChannelsAccountId' => 'string',
+        'authorizationId' => 'string'
     ];
 
     /**
@@ -71,12 +71,12 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'finderUsername' => null,
         'authorizationQrCodeUrl' => null,
         'authorizationDescription' => null,
         'authorizationExpiredTime' => 'int64',
         'authorizationAgreement' => null,
-        'wechatChannelsAccountId' => null
+        'wechatChannelsAccountId' => null,
+        'authorizationId' => null
     ];
 
     /**
@@ -106,12 +106,12 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
      * @var string[]
      */
     protected static $attributeMap = [
-        'finderUsername' => 'finder_username',
         'authorizationQrCodeUrl' => 'authorization_qr_code_url',
         'authorizationDescription' => 'authorization_description',
         'authorizationExpiredTime' => 'authorization_expired_time',
         'authorizationAgreement' => 'authorization_agreement',
-        'wechatChannelsAccountId' => 'wechat_channels_account_id'
+        'wechatChannelsAccountId' => 'wechat_channels_account_id',
+        'authorizationId' => 'authorization_id'
     ];
 
     /**
@@ -120,12 +120,12 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'finderUsername' => 'setFinderUsername',
         'authorizationQrCodeUrl' => 'setAuthorizationQrCodeUrl',
         'authorizationDescription' => 'setAuthorizationDescription',
         'authorizationExpiredTime' => 'setAuthorizationExpiredTime',
         'authorizationAgreement' => 'setAuthorizationAgreement',
-        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
+        'authorizationId' => 'setAuthorizationId'
     ];
 
     /**
@@ -134,12 +134,12 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'finderUsername' => 'getFinderUsername',
         'authorizationQrCodeUrl' => 'getAuthorizationQrCodeUrl',
         'authorizationDescription' => 'getAuthorizationDescription',
         'authorizationExpiredTime' => 'getAuthorizationExpiredTime',
         'authorizationAgreement' => 'getAuthorizationAgreement',
-        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
+        'authorizationId' => 'getAuthorizationId'
     ];
 
     /**
@@ -202,12 +202,12 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
      */
     public function __construct(array $data = null)
     {
-        $this->container['finderUsername'] = isset($data['finderUsername']) ? $data['finderUsername'] : null;
         $this->container['authorizationQrCodeUrl'] = isset($data['authorizationQrCodeUrl']) ? $data['authorizationQrCodeUrl'] : null;
         $this->container['authorizationDescription'] = isset($data['authorizationDescription']) ? $data['authorizationDescription'] : null;
         $this->container['authorizationExpiredTime'] = isset($data['authorizationExpiredTime']) ? $data['authorizationExpiredTime'] : null;
         $this->container['authorizationAgreement'] = isset($data['authorizationAgreement']) ? $data['authorizationAgreement'] : null;
         $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
+        $this->container['authorizationId'] = isset($data['authorizationId']) ? $data['authorizationId'] : null;
     }
 
     /**
@@ -233,30 +233,6 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets finderUsername
-     *
-     * @return string|mixed
-     */
-    public function getFinderUsername()
-    {
-        return $this->container['finderUsername'];
-    }
-
-    /**
-     * Sets finderUsername
-     *
-     * @param string|mixed $finderUsername finderUsername
-     *
-     * @return $this
-     */
-    public function setFinderUsername($finderUsername)
-    {
-        $this->container['finderUsername'] = $finderUsername;
-
-        return $this;
-    }
 
     /**
      * Gets authorizationQrCodeUrl
@@ -374,6 +350,30 @@ class WechatChannelsAuthorizationAddResponseData implements ModelInterface, Arra
     public function setWechatChannelsAccountId($wechatChannelsAccountId)
     {
         $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets authorizationId
+     *
+     * @return string|mixed
+     */
+    public function getAuthorizationId()
+    {
+        return $this->container['authorizationId'];
+    }
+
+    /**
+     * Sets authorizationId
+     *
+     * @param string|mixed $authorizationId authorizationId
+     *
+     * @return $this
+     */
+    public function setAuthorizationId($authorizationId)
+    {
+        $this->container['authorizationId'] = $authorizationId;
 
         return $this;
     }

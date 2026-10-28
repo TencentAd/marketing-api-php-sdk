@@ -83,7 +83,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'minDurationMillisecond' => 'int',
         'maxDurationMillisecond' => 'int',
         'imageFormatOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidImageFormatOption[]',
-        'videoFormatOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidVideoFormatOption[]'
+        'videoFormatOptions' => '\TencentAds\Model\V3\ComponentMetadataValueValidVideoFormatOption[]',
+        'tileFixedOccurs' => 'int[]'
     ];
 
     /**
@@ -117,7 +118,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'minDurationMillisecond' => 'int64',
         'maxDurationMillisecond' => 'int64',
         'imageFormatOptions' => null,
-        'videoFormatOptions' => null
+        'videoFormatOptions' => null,
+        'tileFixedOccurs' => 'int64'
     ];
 
     /**
@@ -172,7 +174,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'minDurationMillisecond' => 'min_duration_millisecond',
         'maxDurationMillisecond' => 'max_duration_millisecond',
         'imageFormatOptions' => 'image_format_options',
-        'videoFormatOptions' => 'video_format_options'
+        'videoFormatOptions' => 'video_format_options',
+        'tileFixedOccurs' => 'tile_fixed_occurs'
     ];
 
     /**
@@ -206,7 +209,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'minDurationMillisecond' => 'setMinDurationMillisecond',
         'maxDurationMillisecond' => 'setMaxDurationMillisecond',
         'imageFormatOptions' => 'setImageFormatOptions',
-        'videoFormatOptions' => 'setVideoFormatOptions'
+        'videoFormatOptions' => 'setVideoFormatOptions',
+        'tileFixedOccurs' => 'setTileFixedOccurs'
     ];
 
     /**
@@ -240,7 +244,8 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         'minDurationMillisecond' => 'getMinDurationMillisecond',
         'maxDurationMillisecond' => 'getMaxDurationMillisecond',
         'imageFormatOptions' => 'getImageFormatOptions',
-        'videoFormatOptions' => 'getVideoFormatOptions'
+        'videoFormatOptions' => 'getVideoFormatOptions',
+        'tileFixedOccurs' => 'getTileFixedOccurs'
     ];
 
     /**
@@ -329,6 +334,7 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
         $this->container['maxDurationMillisecond'] = isset($data['maxDurationMillisecond']) ? $data['maxDurationMillisecond'] : null;
         $this->container['imageFormatOptions'] = isset($data['imageFormatOptions']) ? $data['imageFormatOptions'] : null;
         $this->container['videoFormatOptions'] = isset($data['videoFormatOptions']) ? $data['videoFormatOptions'] : null;
+        $this->container['tileFixedOccurs'] = isset($data['tileFixedOccurs']) ? $data['tileFixedOccurs'] : null;
     }
 
     /**
@@ -975,6 +981,30 @@ class CreativeComponentValueValid implements ModelInterface, ArrayAccess
     public function setVideoFormatOptions($videoFormatOptions)
     {
         $this->container['videoFormatOptions'] = $videoFormatOptions;
+
+        return $this;
+    }
+
+    /**
+     * Gets tileFixedOccurs
+     *
+     * @return int[]|mixed
+     */
+    public function getTileFixedOccurs()
+    {
+        return $this->container['tileFixedOccurs'];
+    }
+
+    /**
+     * Sets tileFixedOccurs
+     *
+     * @param int[]|mixed $tileFixedOccurs tileFixedOccurs
+     *
+     * @return $this
+     */
+    public function setTileFixedOccurs($tileFixedOccurs)
+    {
+        $this->container['tileFixedOccurs'] = $tileFixedOccurs;
 
         return $this;
     }

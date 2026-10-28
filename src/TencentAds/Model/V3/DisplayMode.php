@@ -46,6 +46,7 @@ class DisplayMode
      */
     const _DEFAULT = 'DEFAULT';
     const CAROUSEL = 'CAROUSEL';
+    const TILE = 'TILE';
     
     /**
      * Gets allowable values of the enum
@@ -56,6 +57,7 @@ class DisplayMode
         return [
             self::_DEFAULT,
             self::CAROUSEL,
+            self::TILE,
         ];
     }
 }

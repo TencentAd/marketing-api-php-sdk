@@ -61,7 +61,8 @@ class MaterialDeriveInfoStruct implements ModelInterface, ArrayAccess
         'originalMaterialIdList' => 'string[]',
         'originalAdcreativeTemplateIdList' => 'int[]',
         'originalCoverImageId' => 'string',
-        'deriveDataList' => '\TencentAds\Model\V3\DeriveDataStruct[]'
+        'deriveDataList' => '\TencentAds\Model\V3\DeriveDataStruct[]',
+        'originalComponentId' => 'int'
     ];
 
     /**
@@ -73,7 +74,8 @@ class MaterialDeriveInfoStruct implements ModelInterface, ArrayAccess
         'originalMaterialIdList' => null,
         'originalAdcreativeTemplateIdList' => 'int64',
         'originalCoverImageId' => null,
-        'deriveDataList' => null
+        'deriveDataList' => null,
+        'originalComponentId' => 'int64'
     ];
 
     /**
@@ -106,7 +108,8 @@ class MaterialDeriveInfoStruct implements ModelInterface, ArrayAccess
         'originalMaterialIdList' => 'original_material_id_list',
         'originalAdcreativeTemplateIdList' => 'original_adcreative_template_id_list',
         'originalCoverImageId' => 'original_cover_image_id',
-        'deriveDataList' => 'derive_data_list'
+        'deriveDataList' => 'derive_data_list',
+        'originalComponentId' => 'original_component_id'
     ];
 
     /**
@@ -118,7 +121,8 @@ class MaterialDeriveInfoStruct implements ModelInterface, ArrayAccess
         'originalMaterialIdList' => 'setOriginalMaterialIdList',
         'originalAdcreativeTemplateIdList' => 'setOriginalAdcreativeTemplateIdList',
         'originalCoverImageId' => 'setOriginalCoverImageId',
-        'deriveDataList' => 'setDeriveDataList'
+        'deriveDataList' => 'setDeriveDataList',
+        'originalComponentId' => 'setOriginalComponentId'
     ];
 
     /**
@@ -130,7 +134,8 @@ class MaterialDeriveInfoStruct implements ModelInterface, ArrayAccess
         'originalMaterialIdList' => 'getOriginalMaterialIdList',
         'originalAdcreativeTemplateIdList' => 'getOriginalAdcreativeTemplateIdList',
         'originalCoverImageId' => 'getOriginalCoverImageId',
-        'deriveDataList' => 'getDeriveDataList'
+        'deriveDataList' => 'getDeriveDataList',
+        'originalComponentId' => 'getOriginalComponentId'
     ];
 
     /**
@@ -197,6 +202,7 @@ class MaterialDeriveInfoStruct implements ModelInterface, ArrayAccess
         $this->container['originalAdcreativeTemplateIdList'] = isset($data['originalAdcreativeTemplateIdList']) ? $data['originalAdcreativeTemplateIdList'] : null;
         $this->container['originalCoverImageId'] = isset($data['originalCoverImageId']) ? $data['originalCoverImageId'] : null;
         $this->container['deriveDataList'] = isset($data['deriveDataList']) ? $data['deriveDataList'] : null;
+        $this->container['originalComponentId'] = isset($data['originalComponentId']) ? $data['originalComponentId'] : null;
     }
 
     /**
@@ -315,6 +321,30 @@ class MaterialDeriveInfoStruct implements ModelInterface, ArrayAccess
     public function setDeriveDataList($deriveDataList)
     {
         $this->container['deriveDataList'] = $deriveDataList;
+
+        return $this;
+    }
+
+    /**
+     * Gets originalComponentId
+     *
+     * @return int|mixed
+     */
+    public function getOriginalComponentId()
+    {
+        return $this->container['originalComponentId'];
+    }
+
+    /**
+     * Sets originalComponentId
+     *
+     * @param int|mixed $originalComponentId originalComponentId
+     *
+     * @return $this
+     */
+    public function setOriginalComponentId($originalComponentId)
+    {
+        $this->container['originalComponentId'] = $originalComponentId;
 
         return $this;
     }

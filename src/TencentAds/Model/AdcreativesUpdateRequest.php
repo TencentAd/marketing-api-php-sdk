@@ -94,6 +94,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'unionMarketSpec' => '\TencentAds\Model\UnionMarketSpec',
         'androidQuickAppSpec' => '\TencentAds\Model\AndroidQuickAppSpec',
         'linkNameText' => 'string',
+        'macDeepLinkAppId' => 'string',
         'accountId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
     ];
@@ -141,6 +142,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'unionMarketSpec' => null,
         'androidQuickAppSpec' => null,
         'linkNameText' => null,
+        'macDeepLinkAppId' => null,
         'accountId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -209,6 +211,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'unionMarketSpec' => 'union_market_spec',
         'androidQuickAppSpec' => 'android_quick_app_spec',
         'linkNameText' => 'link_name_text',
+        'macDeepLinkAppId' => 'mac_deep_link_app_id',
         'accountId' => 'account_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -256,6 +259,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'unionMarketSpec' => 'setUnionMarketSpec',
         'androidQuickAppSpec' => 'setAndroidQuickAppSpec',
         'linkNameText' => 'setLinkNameText',
+        'macDeepLinkAppId' => 'setMacDeepLinkAppId',
         'accountId' => 'setAccountId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -303,6 +307,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         'unionMarketSpec' => 'getUnionMarketSpec',
         'androidQuickAppSpec' => 'getAndroidQuickAppSpec',
         'linkNameText' => 'getLinkNameText',
+        'macDeepLinkAppId' => 'getMacDeepLinkAppId',
         'accountId' => 'getAccountId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -404,6 +409,7 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['unionMarketSpec'] = isset($data['unionMarketSpec']) ? $data['unionMarketSpec'] : null;
         $this->container['androidQuickAppSpec'] = isset($data['androidQuickAppSpec']) ? $data['androidQuickAppSpec'] : null;
         $this->container['linkNameText'] = isset($data['linkNameText']) ? $data['linkNameText'] : null;
+        $this->container['macDeepLinkAppId'] = isset($data['macDeepLinkAppId']) ? $data['macDeepLinkAppId'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1316,6 +1322,30 @@ class AdcreativesUpdateRequest implements ModelInterface, ArrayAccess
     public function setLinkNameText($linkNameText)
     {
         $this->container['linkNameText'] = $linkNameText;
+
+        return $this;
+    }
+
+    /**
+     * Gets macDeepLinkAppId
+     *
+     * @return string|mixed
+     */
+    public function getMacDeepLinkAppId()
+    {
+        return $this->container['macDeepLinkAppId'];
+    }
+
+    /**
+     * Sets macDeepLinkAppId
+     *
+     * @param string|mixed $macDeepLinkAppId macDeepLinkAppId
+     *
+     * @return $this
+     */
+    public function setMacDeepLinkAppId($macDeepLinkAppId)
+    {
+        $this->container['macDeepLinkAppId'] = $macDeepLinkAppId;
 
         return $this;
     }

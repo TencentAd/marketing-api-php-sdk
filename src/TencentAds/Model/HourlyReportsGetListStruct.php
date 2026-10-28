@@ -60,6 +60,10 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'accountId' => 'int',
         'hour' => 'int',
+        'campaignId' => 'int',
+        'adgroupId' => 'int',
+        'adId' => 'int',
+        'adName' => 'string',
         'viewCount' => 'int',
         'downloadCount' => 'int',
         'activatedCount' => 'int',
@@ -98,6 +102,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'pageReservationRate' => 'double',
         'pageReservationCost' => 'int',
         'pageReservationCostWithPeople' => 'int',
+        'webAddToCartCount' => 'int',
+        'webAddToCartCost' => 'int',
         'addToCartPrice' => 'int',
         'ownPageCouponGetCount' => 'int',
         'ownPageCouponGetCost' => 'int',
@@ -495,20 +501,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7Roi' => 'double',
         'miniGamePayD14Roi' => 'double',
         'miniGamePayD30Roi' => 'double',
-        'videoFollowCount' => 'int',
-        'videoHeartCount' => 'int',
-        'videoCommentCount' => 'int',
-        'videoLiveSubscribeCount' => 'int',
-        'videoLiveExpCount' => 'int',
-        'videoLiveHeartCount' => 'int',
-        'videoLiveCommentCount' => 'int',
-        'videoLiveShareCount' => 'int',
-        'videoLiveCickCommodityCount' => 'int',
-        'videoLiveHeartUserCount' => 'int',
-        'videoLiveCommentUserCount' => 'int',
-        'videoLiveShareUserCount' => 'int',
-        'videoLiveClickCommodityUserCount' => 'int',
-        'videoLiveCommodityBubbleExpCount' => 'int',
         'scanCodeAddFansUv' => 'int',
         'scanCodeAddFansCount' => 'int',
         'scanCodeAddFansUvCost' => 'int',
@@ -652,6 +644,50 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupPvCost' => 'int',
         'afterAddWecomIntentionDedupPv' => 'int',
         'afterAddWecomIntentionDedupPvCost' => 'int',
+        'expPv' => 'int',
+        'impression' => 'int',
+        'exposure' => 'int',
+        'download' => 'int',
+        'activation' => 'int',
+        'appActivatedCount' => 'int',
+        'appActivatedRate' => 'double',
+        'thousandDisplayCost' => 'int',
+        'click' => 'int',
+        'webConsultCount' => 'int',
+        'webConsultCost' => 'int',
+        'webPhoneCallDirectCount' => 'int',
+        'webPhoneCallDirectCost' => 'int',
+        'webPhoneCallBackCount' => 'int',
+        'webPhoneCallBackCost' => 'int',
+        'ownPageNavigationCost' => 'int',
+        'reservation' => 'int',
+        'webPageReservationCount' => 'int',
+        'webPageReservationRate' => 'double',
+        'webPageReservationCost' => 'int',
+        'webAddToCarCount' => 'int',
+        'webAddToCarCost' => 'int',
+        'webOrderUnitPrice' => 'int',
+        'webOrderRoi' => 'double',
+        'webDeliverCount' => 'int',
+        'webDeliverCost' => 'int',
+        'webSignInCount' => 'int',
+        'webSignInCost' => 'int',
+        'appInstallation' => 'int',
+        'appActivatedCost' => 'int',
+        'appRetentionCount' => 'int',
+        'appRetentionRate' => 'double',
+        'appRetentionCost' => 'int',
+        'appAddToCarCount' => 'int',
+        'appAddToCarAmount' => 'int',
+        'appCartAmount' => 'int',
+        'appAddToCarCost' => 'int',
+        'appPaymentCount' => 'int',
+        'appPaymentAmount' => 'int',
+        'platformCouponClick' => 'int',
+        'follow' => 'int',
+        'share' => 'int',
+        'read' => 'int',
+        'intelligentPhoneCallDirectCount' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
         'incomeVal1' => 'int',
@@ -729,97 +765,32 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7PlaRoi' => 'double',
         'miniGamePayD14PlaRoi' => 'double',
         'miniGamePayD30PlaRoi' => 'double',
-        'campaignId' => 'int',
-        'campaignName' => 'string',
-        'webAddToCartCount' => 'int',
-        'webAddToCartCost' => 'int',
-        'adgroupId' => 'int',
         'adgroupName' => 'string',
         'previewConversionsCount' => 'int',
         'previewDeepConversionsCount' => 'int',
         'acquisitionCost' => 'int',
-        'adId' => 'int',
-        'adName' => 'string',
-        'promotedObjectType' => 'string',
-        'promotedObjectId' => 'string',
-        'date' => 'string',
-        'matchType' => 'int',
-        'bidwordId' => 'int',
-        'bidword' => 'string',
+        'videoFollowCount' => 'int',
+        'videoHeartCount' => 'int',
+        'videoCommentCount' => 'int',
+        'videoLiveSubscribeCount' => 'int',
+        'videoLiveExpCount' => 'int',
+        'videoLiveHeartCount' => 'int',
+        'videoLiveCommentCount' => 'int',
+        'videoLiveShareCount' => 'int',
+        'videoLiveCickCommodityCount' => 'int',
+        'videoLiveHeartUserCount' => 'int',
+        'videoLiveCommentUserCount' => 'int',
+        'videoLiveShareUserCount' => 'int',
+        'videoLiveClickCommodityUserCount' => 'int',
+        'videoLiveCommodityBubbleExpCount' => 'int',
         'liveStreamExpUv' => 'int',
         'liveStreamAvgTime' => 'double',
         'expOverallTopPv' => 'int',
         'expAvgRank' => 'double',
         'clkTopPv' => 'int',
         'realCostTop' => 'int',
-        'wechatAccountId' => 'string',
-        'wechatAgencyId' => 'string',
-        'costDeviationRate' => 'double',
-        'compensationAmount' => 'int',
-        'avgViewPerUser' => 'double',
-        'imageClickUserCount' => 'int',
-        'videoClickUserCount' => 'int',
-        'linkClickUserCount' => 'int',
-        'portraitClickUserCount' => 'int',
-        'nicknameClickUserCount' => 'int',
-        'poiClickUserCount' => 'int',
-        'platformKeyPageViewUserCount' => 'int',
-        'platformKeyPageAvgViewPerUser' => 'double',
-        'platformKeyPageViewDuration' => 'double',
-        'cpnClickButtonCost' => 'int',
-        'praiseUserCount' => 'int',
-        'commentUserCount' => 'int',
-        'orderCount' => 'int',
-        'orderRate' => 'double',
-        'questReservationPvCost' => 'int',
-        'leadsRate' => 'double',
-        'leadsUserCount' => 'int',
-        'leadsCost' => 'int',
-        'leadsUserRate' => 'double',
-        'validLeadsCost' => 'int',
-        'validLeadsRate' => 'double',
-        'pageConsultUserCount' => 'int',
-        'validPageConsultUserCount' => 'int',
-        'withdrDepWebUserCount' => 'int',
-        'wechatMinigameRegisterCost' => 'int',
-        'wechatMinigameRegisterRate' => 'double',
-        'wechatMinigameArpu' => 'double',
-        'wechatMinigameRetentionCount' => 'int',
-        'wechatMinigameCheckoutCount' => 'int',
-        'wechatMinigameCheckoutAmount' => 'int',
-        'officialAccountFollowCount' => 'int',
-        'officialAccountFollowCost' => 'int',
-        'officialAccountFollowRate' => 'double',
-        'officialAccountRegisterUserCount' => 'int',
-        'officialAccountRegisterRate' => 'double',
-        'officialAccountRegisterCost' => 'int',
-        'officialAccountRegisterAmount' => 'int',
-        'officialAccountRegisterRoi' => 'int',
-        'officialAccountApplyCount' => 'int',
-        'officialAccountApplyUserCount' => 'int',
-        'officialAccountApplyRate' => 'double',
-        'officialAccountApplyCost' => 'int',
-        'officialAccountApplyAmount' => 'int',
-        'officialAccountApplyRoi' => 'int',
-        'officialAccountOrderCount' => 'int',
-        'officialAccountFirstDayOrderCount' => 'int',
-        'officialAccountOrderUserCount' => 'int',
-        'officialAccountOrderRate' => 'double',
-        'officialAccountOrderCost' => 'int',
-        'officialAccountOrderAmount' => 'int',
-        'officialAccountFirstDayOrderAmount' => 'int',
-        'officialAccountOrderRoi' => 'int',
-        'officialAccountConsultCount' => 'int',
-        'officialAccountReaderCount' => 'int',
-        'officialAccountCreditApplyUserCount' => 'int',
-        'officialAccountCreditUserCount' => 'int',
-        'couponGetCost' => 'int',
-        'couponGetRate' => 'double',
-        'couponUseCount' => 'int',
-        'forwardUserCount' => 'int',
-        'videoOuterPlayUserCount' => 'int',
-        'videoInnerPlayUserCount' => 'int',
-        'poiId' => 'string',
+        'videoLiveExpUserCount' => 'int',
+        'campaignName' => 'string',
         'projectId' => 'int',
         'projectName' => 'string',
         'purchasePv' => 'int',
@@ -836,6 +807,10 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'accountId' => 'int64',
         'hour' => 'int64',
+        'campaignId' => 'int64',
+        'adgroupId' => 'int64',
+        'adId' => 'int64',
+        'adName' => null,
         'viewCount' => 'int64',
         'downloadCount' => 'int64',
         'activatedCount' => 'int64',
@@ -874,6 +849,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'pageReservationRate' => 'double',
         'pageReservationCost' => 'int64',
         'pageReservationCostWithPeople' => 'int64',
+        'webAddToCartCount' => 'int64',
+        'webAddToCartCost' => 'int64',
         'addToCartPrice' => 'int64',
         'ownPageCouponGetCount' => 'int64',
         'ownPageCouponGetCost' => 'int64',
@@ -1271,20 +1248,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7Roi' => 'double',
         'miniGamePayD14Roi' => 'double',
         'miniGamePayD30Roi' => 'double',
-        'videoFollowCount' => 'int64',
-        'videoHeartCount' => 'int64',
-        'videoCommentCount' => 'int64',
-        'videoLiveSubscribeCount' => 'int64',
-        'videoLiveExpCount' => 'int64',
-        'videoLiveHeartCount' => 'int64',
-        'videoLiveCommentCount' => 'int64',
-        'videoLiveShareCount' => 'int64',
-        'videoLiveCickCommodityCount' => 'int64',
-        'videoLiveHeartUserCount' => 'int64',
-        'videoLiveCommentUserCount' => 'int64',
-        'videoLiveShareUserCount' => 'int64',
-        'videoLiveClickCommodityUserCount' => 'int64',
-        'videoLiveCommodityBubbleExpCount' => 'int64',
         'scanCodeAddFansUv' => 'int64',
         'scanCodeAddFansCount' => 'int64',
         'scanCodeAddFansUvCost' => 'int64',
@@ -1428,6 +1391,50 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupPvCost' => 'int64',
         'afterAddWecomIntentionDedupPv' => 'int64',
         'afterAddWecomIntentionDedupPvCost' => 'int64',
+        'expPv' => 'int64',
+        'impression' => 'int64',
+        'exposure' => 'int64',
+        'download' => 'int64',
+        'activation' => 'int64',
+        'appActivatedCount' => 'int64',
+        'appActivatedRate' => 'double',
+        'thousandDisplayCost' => 'int64',
+        'click' => 'int64',
+        'webConsultCount' => 'int64',
+        'webConsultCost' => 'int64',
+        'webPhoneCallDirectCount' => 'int64',
+        'webPhoneCallDirectCost' => 'int64',
+        'webPhoneCallBackCount' => 'int64',
+        'webPhoneCallBackCost' => 'int64',
+        'ownPageNavigationCost' => 'int64',
+        'reservation' => 'int64',
+        'webPageReservationCount' => 'int64',
+        'webPageReservationRate' => 'double',
+        'webPageReservationCost' => 'int64',
+        'webAddToCarCount' => 'int64',
+        'webAddToCarCost' => 'int64',
+        'webOrderUnitPrice' => 'int64',
+        'webOrderRoi' => 'double',
+        'webDeliverCount' => 'int64',
+        'webDeliverCost' => 'int64',
+        'webSignInCount' => 'int64',
+        'webSignInCost' => 'int64',
+        'appInstallation' => 'int64',
+        'appActivatedCost' => 'int64',
+        'appRetentionCount' => 'int64',
+        'appRetentionRate' => 'double',
+        'appRetentionCost' => 'int64',
+        'appAddToCarCount' => 'int64',
+        'appAddToCarAmount' => 'int64',
+        'appCartAmount' => 'int64',
+        'appAddToCarCost' => 'int64',
+        'appPaymentCount' => 'int64',
+        'appPaymentAmount' => 'int64',
+        'platformCouponClick' => 'int64',
+        'follow' => 'int64',
+        'share' => 'int64',
+        'read' => 'int64',
+        'intelligentPhoneCallDirectCount' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
         'incomeVal1' => 'int64',
@@ -1505,97 +1512,32 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7PlaRoi' => 'double',
         'miniGamePayD14PlaRoi' => 'double',
         'miniGamePayD30PlaRoi' => 'double',
-        'campaignId' => 'int64',
-        'campaignName' => null,
-        'webAddToCartCount' => 'int64',
-        'webAddToCartCost' => 'int64',
-        'adgroupId' => 'int64',
         'adgroupName' => null,
         'previewConversionsCount' => 'int64',
         'previewDeepConversionsCount' => 'int64',
         'acquisitionCost' => 'int64',
-        'adId' => 'int64',
-        'adName' => null,
-        'promotedObjectType' => null,
-        'promotedObjectId' => null,
-        'date' => null,
-        'matchType' => 'int64',
-        'bidwordId' => 'int64',
-        'bidword' => null,
+        'videoFollowCount' => 'int64',
+        'videoHeartCount' => 'int64',
+        'videoCommentCount' => 'int64',
+        'videoLiveSubscribeCount' => 'int64',
+        'videoLiveExpCount' => 'int64',
+        'videoLiveHeartCount' => 'int64',
+        'videoLiveCommentCount' => 'int64',
+        'videoLiveShareCount' => 'int64',
+        'videoLiveCickCommodityCount' => 'int64',
+        'videoLiveHeartUserCount' => 'int64',
+        'videoLiveCommentUserCount' => 'int64',
+        'videoLiveShareUserCount' => 'int64',
+        'videoLiveClickCommodityUserCount' => 'int64',
+        'videoLiveCommodityBubbleExpCount' => 'int64',
         'liveStreamExpUv' => 'int64',
         'liveStreamAvgTime' => 'double',
         'expOverallTopPv' => 'int64',
         'expAvgRank' => 'double',
         'clkTopPv' => 'int64',
         'realCostTop' => 'int64',
-        'wechatAccountId' => null,
-        'wechatAgencyId' => null,
-        'costDeviationRate' => 'double',
-        'compensationAmount' => 'int64',
-        'avgViewPerUser' => 'double',
-        'imageClickUserCount' => 'int64',
-        'videoClickUserCount' => 'int64',
-        'linkClickUserCount' => 'int64',
-        'portraitClickUserCount' => 'int64',
-        'nicknameClickUserCount' => 'int64',
-        'poiClickUserCount' => 'int64',
-        'platformKeyPageViewUserCount' => 'int64',
-        'platformKeyPageAvgViewPerUser' => 'double',
-        'platformKeyPageViewDuration' => 'double',
-        'cpnClickButtonCost' => 'int64',
-        'praiseUserCount' => 'int64',
-        'commentUserCount' => 'int64',
-        'orderCount' => 'int64',
-        'orderRate' => 'double',
-        'questReservationPvCost' => 'int64',
-        'leadsRate' => 'double',
-        'leadsUserCount' => 'int64',
-        'leadsCost' => 'int64',
-        'leadsUserRate' => 'double',
-        'validLeadsCost' => 'int64',
-        'validLeadsRate' => 'double',
-        'pageConsultUserCount' => 'int64',
-        'validPageConsultUserCount' => 'int64',
-        'withdrDepWebUserCount' => 'int64',
-        'wechatMinigameRegisterCost' => 'int64',
-        'wechatMinigameRegisterRate' => 'double',
-        'wechatMinigameArpu' => 'double',
-        'wechatMinigameRetentionCount' => 'int64',
-        'wechatMinigameCheckoutCount' => 'int64',
-        'wechatMinigameCheckoutAmount' => 'int64',
-        'officialAccountFollowCount' => 'int64',
-        'officialAccountFollowCost' => 'int64',
-        'officialAccountFollowRate' => 'double',
-        'officialAccountRegisterUserCount' => 'int64',
-        'officialAccountRegisterRate' => 'double',
-        'officialAccountRegisterCost' => 'int64',
-        'officialAccountRegisterAmount' => 'int64',
-        'officialAccountRegisterRoi' => 'int64',
-        'officialAccountApplyCount' => 'int64',
-        'officialAccountApplyUserCount' => 'int64',
-        'officialAccountApplyRate' => 'double',
-        'officialAccountApplyCost' => 'int64',
-        'officialAccountApplyAmount' => 'int64',
-        'officialAccountApplyRoi' => 'int64',
-        'officialAccountOrderCount' => 'int64',
-        'officialAccountFirstDayOrderCount' => 'int64',
-        'officialAccountOrderUserCount' => 'int64',
-        'officialAccountOrderRate' => 'double',
-        'officialAccountOrderCost' => 'int64',
-        'officialAccountOrderAmount' => 'int64',
-        'officialAccountFirstDayOrderAmount' => 'int64',
-        'officialAccountOrderRoi' => 'int64',
-        'officialAccountConsultCount' => 'int64',
-        'officialAccountReaderCount' => 'int64',
-        'officialAccountCreditApplyUserCount' => 'int64',
-        'officialAccountCreditUserCount' => 'int64',
-        'couponGetCost' => 'int64',
-        'couponGetRate' => 'double',
-        'couponUseCount' => 'int64',
-        'forwardUserCount' => 'int64',
-        'videoOuterPlayUserCount' => 'int64',
-        'videoInnerPlayUserCount' => 'int64',
-        'poiId' => null,
+        'videoLiveExpUserCount' => 'int64',
+        'campaignName' => null,
         'projectId' => 'int64',
         'projectName' => null,
         'purchasePv' => 'int64',
@@ -1633,6 +1575,10 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'accountId' => 'account_id',
         'hour' => 'hour',
+        'campaignId' => 'campaign_id',
+        'adgroupId' => 'adgroup_id',
+        'adId' => 'ad_id',
+        'adName' => 'ad_name',
         'viewCount' => 'view_count',
         'downloadCount' => 'download_count',
         'activatedCount' => 'activated_count',
@@ -1671,6 +1617,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'pageReservationRate' => 'page_reservation_rate',
         'pageReservationCost' => 'page_reservation_cost',
         'pageReservationCostWithPeople' => 'page_reservation_cost_with_people',
+        'webAddToCartCount' => 'web_add_to_cart_count',
+        'webAddToCartCost' => 'web_add_to_cart_cost',
         'addToCartPrice' => 'add_to_cart_price',
         'ownPageCouponGetCount' => 'own_page_coupon_get_count',
         'ownPageCouponGetCost' => 'own_page_coupon_get_cost',
@@ -2068,20 +2016,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7Roi' => 'mini_game_pay_d7_roi',
         'miniGamePayD14Roi' => 'mini_game_pay_d14_roi',
         'miniGamePayD30Roi' => 'mini_game_pay_d30_roi',
-        'videoFollowCount' => 'video_follow_count',
-        'videoHeartCount' => 'video_heart_count',
-        'videoCommentCount' => 'video_comment_count',
-        'videoLiveSubscribeCount' => 'video_live_subscribe_count',
-        'videoLiveExpCount' => 'video_live_exp_count',
-        'videoLiveHeartCount' => 'video_live_heart_count',
-        'videoLiveCommentCount' => 'video_live_comment_count',
-        'videoLiveShareCount' => 'video_live_share_count',
-        'videoLiveCickCommodityCount' => 'video_live_cick_commodity_count',
-        'videoLiveHeartUserCount' => 'video_live_heart_user_count',
-        'videoLiveCommentUserCount' => 'video_live_comment_user_count',
-        'videoLiveShareUserCount' => 'video_live_share_user_count',
-        'videoLiveClickCommodityUserCount' => 'video_live_click_commodity_user_count',
-        'videoLiveCommodityBubbleExpCount' => 'video_live_commodity_bubble_exp_count',
         'scanCodeAddFansUv' => 'scan_code_add_fans_uv',
         'scanCodeAddFansCount' => 'scan_code_add_fans_count',
         'scanCodeAddFansUvCost' => 'scan_code_add_fans_uv_cost',
@@ -2225,6 +2159,50 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupPvCost' => 'after_add_wecom_consult_dedup_pv_cost',
         'afterAddWecomIntentionDedupPv' => 'after_add_wecom_intention_dedup_pv',
         'afterAddWecomIntentionDedupPvCost' => 'after_add_wecom_intention_dedup_pv_cost',
+        'expPv' => 'exp_pv',
+        'impression' => 'impression',
+        'exposure' => 'exposure',
+        'download' => 'download',
+        'activation' => 'activation',
+        'appActivatedCount' => 'app_activated_count',
+        'appActivatedRate' => 'app_activated_rate',
+        'thousandDisplayCost' => 'thousand_display_cost',
+        'click' => 'click',
+        'webConsultCount' => 'web_consult_count',
+        'webConsultCost' => 'web_consult_cost',
+        'webPhoneCallDirectCount' => 'web_phone_call_direct_count',
+        'webPhoneCallDirectCost' => 'web_phone_call_direct_cost',
+        'webPhoneCallBackCount' => 'web_phone_call_back_count',
+        'webPhoneCallBackCost' => 'web_phone_call_back_cost',
+        'ownPageNavigationCost' => 'own_page_navigation_cost',
+        'reservation' => 'reservation',
+        'webPageReservationCount' => 'web_page_reservation_count',
+        'webPageReservationRate' => 'web_page_reservation_rate',
+        'webPageReservationCost' => 'web_page_reservation_cost',
+        'webAddToCarCount' => 'web_add_to_car_count',
+        'webAddToCarCost' => 'web_add_to_car_cost',
+        'webOrderUnitPrice' => 'web_order_unit_price',
+        'webOrderRoi' => 'web_order_roi',
+        'webDeliverCount' => 'web_deliver_count',
+        'webDeliverCost' => 'web_deliver_cost',
+        'webSignInCount' => 'web_sign_in_count',
+        'webSignInCost' => 'web_sign_in_cost',
+        'appInstallation' => 'app_installation',
+        'appActivatedCost' => 'app_activated_cost',
+        'appRetentionCount' => 'app_retention_count',
+        'appRetentionRate' => 'app_retention_rate',
+        'appRetentionCost' => 'app_retention_cost',
+        'appAddToCarCount' => 'app_add_to_car_count',
+        'appAddToCarAmount' => 'app_add_to_car_amount',
+        'appCartAmount' => 'app_cart_amount',
+        'appAddToCarCost' => 'app_add_to_car_cost',
+        'appPaymentCount' => 'app_payment_count',
+        'appPaymentAmount' => 'app_payment_amount',
+        'platformCouponClick' => 'platform_coupon_click',
+        'follow' => 'follow',
+        'share' => 'share',
+        'read' => 'read',
+        'intelligentPhoneCallDirectCount' => 'intelligent_phone_call_direct_count',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
         'incomeVal1' => 'income_val_1',
@@ -2302,97 +2280,32 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7PlaRoi' => 'mini_game_pay_d7_pla_roi',
         'miniGamePayD14PlaRoi' => 'mini_game_pay_d14_pla_roi',
         'miniGamePayD30PlaRoi' => 'mini_game_pay_d30_pla_roi',
-        'campaignId' => 'campaign_id',
-        'campaignName' => 'campaign_name',
-        'webAddToCartCount' => 'web_add_to_cart_count',
-        'webAddToCartCost' => 'web_add_to_cart_cost',
-        'adgroupId' => 'adgroup_id',
         'adgroupName' => 'adgroup_name',
         'previewConversionsCount' => 'preview_conversions_count',
         'previewDeepConversionsCount' => 'preview_deep_conversions_count',
         'acquisitionCost' => 'acquisition_cost',
-        'adId' => 'ad_id',
-        'adName' => 'ad_name',
-        'promotedObjectType' => 'promoted_object_type',
-        'promotedObjectId' => 'promoted_object_id',
-        'date' => 'date',
-        'matchType' => 'match_type',
-        'bidwordId' => 'bidword_id',
-        'bidword' => 'bidword',
+        'videoFollowCount' => 'video_follow_count',
+        'videoHeartCount' => 'video_heart_count',
+        'videoCommentCount' => 'video_comment_count',
+        'videoLiveSubscribeCount' => 'video_live_subscribe_count',
+        'videoLiveExpCount' => 'video_live_exp_count',
+        'videoLiveHeartCount' => 'video_live_heart_count',
+        'videoLiveCommentCount' => 'video_live_comment_count',
+        'videoLiveShareCount' => 'video_live_share_count',
+        'videoLiveCickCommodityCount' => 'video_live_cick_commodity_count',
+        'videoLiveHeartUserCount' => 'video_live_heart_user_count',
+        'videoLiveCommentUserCount' => 'video_live_comment_user_count',
+        'videoLiveShareUserCount' => 'video_live_share_user_count',
+        'videoLiveClickCommodityUserCount' => 'video_live_click_commodity_user_count',
+        'videoLiveCommodityBubbleExpCount' => 'video_live_commodity_bubble_exp_count',
         'liveStreamExpUv' => 'live_stream_exp_uv',
         'liveStreamAvgTime' => 'live_stream_avg_time',
         'expOverallTopPv' => 'exp_overall_top_pv',
         'expAvgRank' => 'exp_avg_rank',
         'clkTopPv' => 'clk_top_pv',
         'realCostTop' => 'real_cost_top',
-        'wechatAccountId' => 'wechat_account_id',
-        'wechatAgencyId' => 'wechat_agency_id',
-        'costDeviationRate' => 'cost_deviation_rate',
-        'compensationAmount' => 'compensation_amount',
-        'avgViewPerUser' => 'avg_view_per_user',
-        'imageClickUserCount' => 'image_click_user_count',
-        'videoClickUserCount' => 'video_click_user_count',
-        'linkClickUserCount' => 'link_click_user_count',
-        'portraitClickUserCount' => 'portrait_click_user_count',
-        'nicknameClickUserCount' => 'nickname_click_user_count',
-        'poiClickUserCount' => 'poi_click_user_count',
-        'platformKeyPageViewUserCount' => 'platform_key_page_view_user_count',
-        'platformKeyPageAvgViewPerUser' => 'platform_key_page_avg_view_per_user',
-        'platformKeyPageViewDuration' => 'platform_key_page_view_duration',
-        'cpnClickButtonCost' => 'cpn_click_button_cost',
-        'praiseUserCount' => 'praise_user_count',
-        'commentUserCount' => 'comment_user_count',
-        'orderCount' => 'order_count',
-        'orderRate' => 'order_rate',
-        'questReservationPvCost' => 'quest_reservation_pv_cost',
-        'leadsRate' => 'leads_rate',
-        'leadsUserCount' => 'leads_user_count',
-        'leadsCost' => 'leads_cost',
-        'leadsUserRate' => 'leads_user_rate',
-        'validLeadsCost' => 'valid_leads_cost',
-        'validLeadsRate' => 'valid_leads_rate',
-        'pageConsultUserCount' => 'page_consult_user_count',
-        'validPageConsultUserCount' => 'valid_page_consult_user_count',
-        'withdrDepWebUserCount' => 'withdr_dep_web_user_count',
-        'wechatMinigameRegisterCost' => 'wechat_minigame_register_cost',
-        'wechatMinigameRegisterRate' => 'wechat_minigame_register_rate',
-        'wechatMinigameArpu' => 'wechat_minigame_arpu',
-        'wechatMinigameRetentionCount' => 'wechat_minigame_retention_count',
-        'wechatMinigameCheckoutCount' => 'wechat_minigame_checkout_count',
-        'wechatMinigameCheckoutAmount' => 'wechat_minigame_checkout_amount',
-        'officialAccountFollowCount' => 'official_account_follow_count',
-        'officialAccountFollowCost' => 'official_account_follow_cost',
-        'officialAccountFollowRate' => 'official_account_follow_rate',
-        'officialAccountRegisterUserCount' => 'official_account_register_user_count',
-        'officialAccountRegisterRate' => 'official_account_register_rate',
-        'officialAccountRegisterCost' => 'official_account_register_cost',
-        'officialAccountRegisterAmount' => 'official_account_register_amount',
-        'officialAccountRegisterRoi' => 'official_account_register_roi',
-        'officialAccountApplyCount' => 'official_account_apply_count',
-        'officialAccountApplyUserCount' => 'official_account_apply_user_count',
-        'officialAccountApplyRate' => 'official_account_apply_rate',
-        'officialAccountApplyCost' => 'official_account_apply_cost',
-        'officialAccountApplyAmount' => 'official_account_apply_amount',
-        'officialAccountApplyRoi' => 'official_account_apply_roi',
-        'officialAccountOrderCount' => 'official_account_order_count',
-        'officialAccountFirstDayOrderCount' => 'official_account_first_day_order_count',
-        'officialAccountOrderUserCount' => 'official_account_order_user_count',
-        'officialAccountOrderRate' => 'official_account_order_rate',
-        'officialAccountOrderCost' => 'official_account_order_cost',
-        'officialAccountOrderAmount' => 'official_account_order_amount',
-        'officialAccountFirstDayOrderAmount' => 'official_account_first_day_order_amount',
-        'officialAccountOrderRoi' => 'official_account_order_roi',
-        'officialAccountConsultCount' => 'official_account_consult_count',
-        'officialAccountReaderCount' => 'official_account_reader_count',
-        'officialAccountCreditApplyUserCount' => 'official_account_credit_apply_user_count',
-        'officialAccountCreditUserCount' => 'official_account_credit_user_count',
-        'couponGetCost' => 'coupon_get_cost',
-        'couponGetRate' => 'coupon_get_rate',
-        'couponUseCount' => 'coupon_use_count',
-        'forwardUserCount' => 'forward_user_count',
-        'videoOuterPlayUserCount' => 'video_outer_play_user_count',
-        'videoInnerPlayUserCount' => 'video_inner_play_user_count',
-        'poiId' => 'poi_id',
+        'videoLiveExpUserCount' => 'video_live_exp_user_count',
+        'campaignName' => 'campaign_name',
         'projectId' => 'project_id',
         'projectName' => 'project_name',
         'purchasePv' => 'purchase_pv',
@@ -2409,6 +2322,10 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     protected static $setters = [
         'accountId' => 'setAccountId',
         'hour' => 'setHour',
+        'campaignId' => 'setCampaignId',
+        'adgroupId' => 'setAdgroupId',
+        'adId' => 'setAdId',
+        'adName' => 'setAdName',
         'viewCount' => 'setViewCount',
         'downloadCount' => 'setDownloadCount',
         'activatedCount' => 'setActivatedCount',
@@ -2447,6 +2364,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'pageReservationRate' => 'setPageReservationRate',
         'pageReservationCost' => 'setPageReservationCost',
         'pageReservationCostWithPeople' => 'setPageReservationCostWithPeople',
+        'webAddToCartCount' => 'setWebAddToCartCount',
+        'webAddToCartCost' => 'setWebAddToCartCost',
         'addToCartPrice' => 'setAddToCartPrice',
         'ownPageCouponGetCount' => 'setOwnPageCouponGetCount',
         'ownPageCouponGetCost' => 'setOwnPageCouponGetCost',
@@ -2844,20 +2763,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7Roi' => 'setMiniGamePayD7Roi',
         'miniGamePayD14Roi' => 'setMiniGamePayD14Roi',
         'miniGamePayD30Roi' => 'setMiniGamePayD30Roi',
-        'videoFollowCount' => 'setVideoFollowCount',
-        'videoHeartCount' => 'setVideoHeartCount',
-        'videoCommentCount' => 'setVideoCommentCount',
-        'videoLiveSubscribeCount' => 'setVideoLiveSubscribeCount',
-        'videoLiveExpCount' => 'setVideoLiveExpCount',
-        'videoLiveHeartCount' => 'setVideoLiveHeartCount',
-        'videoLiveCommentCount' => 'setVideoLiveCommentCount',
-        'videoLiveShareCount' => 'setVideoLiveShareCount',
-        'videoLiveCickCommodityCount' => 'setVideoLiveCickCommodityCount',
-        'videoLiveHeartUserCount' => 'setVideoLiveHeartUserCount',
-        'videoLiveCommentUserCount' => 'setVideoLiveCommentUserCount',
-        'videoLiveShareUserCount' => 'setVideoLiveShareUserCount',
-        'videoLiveClickCommodityUserCount' => 'setVideoLiveClickCommodityUserCount',
-        'videoLiveCommodityBubbleExpCount' => 'setVideoLiveCommodityBubbleExpCount',
         'scanCodeAddFansUv' => 'setScanCodeAddFansUv',
         'scanCodeAddFansCount' => 'setScanCodeAddFansCount',
         'scanCodeAddFansUvCost' => 'setScanCodeAddFansUvCost',
@@ -3001,6 +2906,50 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupPvCost' => 'setAfterAddWecomConsultDedupPvCost',
         'afterAddWecomIntentionDedupPv' => 'setAfterAddWecomIntentionDedupPv',
         'afterAddWecomIntentionDedupPvCost' => 'setAfterAddWecomIntentionDedupPvCost',
+        'expPv' => 'setExpPv',
+        'impression' => 'setImpression',
+        'exposure' => 'setExposure',
+        'download' => 'setDownload',
+        'activation' => 'setActivation',
+        'appActivatedCount' => 'setAppActivatedCount',
+        'appActivatedRate' => 'setAppActivatedRate',
+        'thousandDisplayCost' => 'setThousandDisplayCost',
+        'click' => 'setClick',
+        'webConsultCount' => 'setWebConsultCount',
+        'webConsultCost' => 'setWebConsultCost',
+        'webPhoneCallDirectCount' => 'setWebPhoneCallDirectCount',
+        'webPhoneCallDirectCost' => 'setWebPhoneCallDirectCost',
+        'webPhoneCallBackCount' => 'setWebPhoneCallBackCount',
+        'webPhoneCallBackCost' => 'setWebPhoneCallBackCost',
+        'ownPageNavigationCost' => 'setOwnPageNavigationCost',
+        'reservation' => 'setReservation',
+        'webPageReservationCount' => 'setWebPageReservationCount',
+        'webPageReservationRate' => 'setWebPageReservationRate',
+        'webPageReservationCost' => 'setWebPageReservationCost',
+        'webAddToCarCount' => 'setWebAddToCarCount',
+        'webAddToCarCost' => 'setWebAddToCarCost',
+        'webOrderUnitPrice' => 'setWebOrderUnitPrice',
+        'webOrderRoi' => 'setWebOrderRoi',
+        'webDeliverCount' => 'setWebDeliverCount',
+        'webDeliverCost' => 'setWebDeliverCost',
+        'webSignInCount' => 'setWebSignInCount',
+        'webSignInCost' => 'setWebSignInCost',
+        'appInstallation' => 'setAppInstallation',
+        'appActivatedCost' => 'setAppActivatedCost',
+        'appRetentionCount' => 'setAppRetentionCount',
+        'appRetentionRate' => 'setAppRetentionRate',
+        'appRetentionCost' => 'setAppRetentionCost',
+        'appAddToCarCount' => 'setAppAddToCarCount',
+        'appAddToCarAmount' => 'setAppAddToCarAmount',
+        'appCartAmount' => 'setAppCartAmount',
+        'appAddToCarCost' => 'setAppAddToCarCost',
+        'appPaymentCount' => 'setAppPaymentCount',
+        'appPaymentAmount' => 'setAppPaymentAmount',
+        'platformCouponClick' => 'setPlatformCouponClick',
+        'follow' => 'setFollow',
+        'share' => 'setShare',
+        'read' => 'setRead',
+        'intelligentPhoneCallDirectCount' => 'setIntelligentPhoneCallDirectCount',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
         'incomeVal1' => 'setIncomeVal1',
@@ -3078,97 +3027,32 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7PlaRoi' => 'setMiniGamePayD7PlaRoi',
         'miniGamePayD14PlaRoi' => 'setMiniGamePayD14PlaRoi',
         'miniGamePayD30PlaRoi' => 'setMiniGamePayD30PlaRoi',
-        'campaignId' => 'setCampaignId',
-        'campaignName' => 'setCampaignName',
-        'webAddToCartCount' => 'setWebAddToCartCount',
-        'webAddToCartCost' => 'setWebAddToCartCost',
-        'adgroupId' => 'setAdgroupId',
         'adgroupName' => 'setAdgroupName',
         'previewConversionsCount' => 'setPreviewConversionsCount',
         'previewDeepConversionsCount' => 'setPreviewDeepConversionsCount',
         'acquisitionCost' => 'setAcquisitionCost',
-        'adId' => 'setAdId',
-        'adName' => 'setAdName',
-        'promotedObjectType' => 'setPromotedObjectType',
-        'promotedObjectId' => 'setPromotedObjectId',
-        'date' => 'setDate',
-        'matchType' => 'setMatchType',
-        'bidwordId' => 'setBidwordId',
-        'bidword' => 'setBidword',
+        'videoFollowCount' => 'setVideoFollowCount',
+        'videoHeartCount' => 'setVideoHeartCount',
+        'videoCommentCount' => 'setVideoCommentCount',
+        'videoLiveSubscribeCount' => 'setVideoLiveSubscribeCount',
+        'videoLiveExpCount' => 'setVideoLiveExpCount',
+        'videoLiveHeartCount' => 'setVideoLiveHeartCount',
+        'videoLiveCommentCount' => 'setVideoLiveCommentCount',
+        'videoLiveShareCount' => 'setVideoLiveShareCount',
+        'videoLiveCickCommodityCount' => 'setVideoLiveCickCommodityCount',
+        'videoLiveHeartUserCount' => 'setVideoLiveHeartUserCount',
+        'videoLiveCommentUserCount' => 'setVideoLiveCommentUserCount',
+        'videoLiveShareUserCount' => 'setVideoLiveShareUserCount',
+        'videoLiveClickCommodityUserCount' => 'setVideoLiveClickCommodityUserCount',
+        'videoLiveCommodityBubbleExpCount' => 'setVideoLiveCommodityBubbleExpCount',
         'liveStreamExpUv' => 'setLiveStreamExpUv',
         'liveStreamAvgTime' => 'setLiveStreamAvgTime',
         'expOverallTopPv' => 'setExpOverallTopPv',
         'expAvgRank' => 'setExpAvgRank',
         'clkTopPv' => 'setClkTopPv',
         'realCostTop' => 'setRealCostTop',
-        'wechatAccountId' => 'setWechatAccountId',
-        'wechatAgencyId' => 'setWechatAgencyId',
-        'costDeviationRate' => 'setCostDeviationRate',
-        'compensationAmount' => 'setCompensationAmount',
-        'avgViewPerUser' => 'setAvgViewPerUser',
-        'imageClickUserCount' => 'setImageClickUserCount',
-        'videoClickUserCount' => 'setVideoClickUserCount',
-        'linkClickUserCount' => 'setLinkClickUserCount',
-        'portraitClickUserCount' => 'setPortraitClickUserCount',
-        'nicknameClickUserCount' => 'setNicknameClickUserCount',
-        'poiClickUserCount' => 'setPoiClickUserCount',
-        'platformKeyPageViewUserCount' => 'setPlatformKeyPageViewUserCount',
-        'platformKeyPageAvgViewPerUser' => 'setPlatformKeyPageAvgViewPerUser',
-        'platformKeyPageViewDuration' => 'setPlatformKeyPageViewDuration',
-        'cpnClickButtonCost' => 'setCpnClickButtonCost',
-        'praiseUserCount' => 'setPraiseUserCount',
-        'commentUserCount' => 'setCommentUserCount',
-        'orderCount' => 'setOrderCount',
-        'orderRate' => 'setOrderRate',
-        'questReservationPvCost' => 'setQuestReservationPvCost',
-        'leadsRate' => 'setLeadsRate',
-        'leadsUserCount' => 'setLeadsUserCount',
-        'leadsCost' => 'setLeadsCost',
-        'leadsUserRate' => 'setLeadsUserRate',
-        'validLeadsCost' => 'setValidLeadsCost',
-        'validLeadsRate' => 'setValidLeadsRate',
-        'pageConsultUserCount' => 'setPageConsultUserCount',
-        'validPageConsultUserCount' => 'setValidPageConsultUserCount',
-        'withdrDepWebUserCount' => 'setWithdrDepWebUserCount',
-        'wechatMinigameRegisterCost' => 'setWechatMinigameRegisterCost',
-        'wechatMinigameRegisterRate' => 'setWechatMinigameRegisterRate',
-        'wechatMinigameArpu' => 'setWechatMinigameArpu',
-        'wechatMinigameRetentionCount' => 'setWechatMinigameRetentionCount',
-        'wechatMinigameCheckoutCount' => 'setWechatMinigameCheckoutCount',
-        'wechatMinigameCheckoutAmount' => 'setWechatMinigameCheckoutAmount',
-        'officialAccountFollowCount' => 'setOfficialAccountFollowCount',
-        'officialAccountFollowCost' => 'setOfficialAccountFollowCost',
-        'officialAccountFollowRate' => 'setOfficialAccountFollowRate',
-        'officialAccountRegisterUserCount' => 'setOfficialAccountRegisterUserCount',
-        'officialAccountRegisterRate' => 'setOfficialAccountRegisterRate',
-        'officialAccountRegisterCost' => 'setOfficialAccountRegisterCost',
-        'officialAccountRegisterAmount' => 'setOfficialAccountRegisterAmount',
-        'officialAccountRegisterRoi' => 'setOfficialAccountRegisterRoi',
-        'officialAccountApplyCount' => 'setOfficialAccountApplyCount',
-        'officialAccountApplyUserCount' => 'setOfficialAccountApplyUserCount',
-        'officialAccountApplyRate' => 'setOfficialAccountApplyRate',
-        'officialAccountApplyCost' => 'setOfficialAccountApplyCost',
-        'officialAccountApplyAmount' => 'setOfficialAccountApplyAmount',
-        'officialAccountApplyRoi' => 'setOfficialAccountApplyRoi',
-        'officialAccountOrderCount' => 'setOfficialAccountOrderCount',
-        'officialAccountFirstDayOrderCount' => 'setOfficialAccountFirstDayOrderCount',
-        'officialAccountOrderUserCount' => 'setOfficialAccountOrderUserCount',
-        'officialAccountOrderRate' => 'setOfficialAccountOrderRate',
-        'officialAccountOrderCost' => 'setOfficialAccountOrderCost',
-        'officialAccountOrderAmount' => 'setOfficialAccountOrderAmount',
-        'officialAccountFirstDayOrderAmount' => 'setOfficialAccountFirstDayOrderAmount',
-        'officialAccountOrderRoi' => 'setOfficialAccountOrderRoi',
-        'officialAccountConsultCount' => 'setOfficialAccountConsultCount',
-        'officialAccountReaderCount' => 'setOfficialAccountReaderCount',
-        'officialAccountCreditApplyUserCount' => 'setOfficialAccountCreditApplyUserCount',
-        'officialAccountCreditUserCount' => 'setOfficialAccountCreditUserCount',
-        'couponGetCost' => 'setCouponGetCost',
-        'couponGetRate' => 'setCouponGetRate',
-        'couponUseCount' => 'setCouponUseCount',
-        'forwardUserCount' => 'setForwardUserCount',
-        'videoOuterPlayUserCount' => 'setVideoOuterPlayUserCount',
-        'videoInnerPlayUserCount' => 'setVideoInnerPlayUserCount',
-        'poiId' => 'setPoiId',
+        'videoLiveExpUserCount' => 'setVideoLiveExpUserCount',
+        'campaignName' => 'setCampaignName',
         'projectId' => 'setProjectId',
         'projectName' => 'setProjectName',
         'purchasePv' => 'setPurchasePv',
@@ -3185,6 +3069,10 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     protected static $getters = [
         'accountId' => 'getAccountId',
         'hour' => 'getHour',
+        'campaignId' => 'getCampaignId',
+        'adgroupId' => 'getAdgroupId',
+        'adId' => 'getAdId',
+        'adName' => 'getAdName',
         'viewCount' => 'getViewCount',
         'downloadCount' => 'getDownloadCount',
         'activatedCount' => 'getActivatedCount',
@@ -3223,6 +3111,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'pageReservationRate' => 'getPageReservationRate',
         'pageReservationCost' => 'getPageReservationCost',
         'pageReservationCostWithPeople' => 'getPageReservationCostWithPeople',
+        'webAddToCartCount' => 'getWebAddToCartCount',
+        'webAddToCartCost' => 'getWebAddToCartCost',
         'addToCartPrice' => 'getAddToCartPrice',
         'ownPageCouponGetCount' => 'getOwnPageCouponGetCount',
         'ownPageCouponGetCost' => 'getOwnPageCouponGetCost',
@@ -3620,20 +3510,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7Roi' => 'getMiniGamePayD7Roi',
         'miniGamePayD14Roi' => 'getMiniGamePayD14Roi',
         'miniGamePayD30Roi' => 'getMiniGamePayD30Roi',
-        'videoFollowCount' => 'getVideoFollowCount',
-        'videoHeartCount' => 'getVideoHeartCount',
-        'videoCommentCount' => 'getVideoCommentCount',
-        'videoLiveSubscribeCount' => 'getVideoLiveSubscribeCount',
-        'videoLiveExpCount' => 'getVideoLiveExpCount',
-        'videoLiveHeartCount' => 'getVideoLiveHeartCount',
-        'videoLiveCommentCount' => 'getVideoLiveCommentCount',
-        'videoLiveShareCount' => 'getVideoLiveShareCount',
-        'videoLiveCickCommodityCount' => 'getVideoLiveCickCommodityCount',
-        'videoLiveHeartUserCount' => 'getVideoLiveHeartUserCount',
-        'videoLiveCommentUserCount' => 'getVideoLiveCommentUserCount',
-        'videoLiveShareUserCount' => 'getVideoLiveShareUserCount',
-        'videoLiveClickCommodityUserCount' => 'getVideoLiveClickCommodityUserCount',
-        'videoLiveCommodityBubbleExpCount' => 'getVideoLiveCommodityBubbleExpCount',
         'scanCodeAddFansUv' => 'getScanCodeAddFansUv',
         'scanCodeAddFansCount' => 'getScanCodeAddFansCount',
         'scanCodeAddFansUvCost' => 'getScanCodeAddFansUvCost',
@@ -3777,6 +3653,50 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupPvCost' => 'getAfterAddWecomConsultDedupPvCost',
         'afterAddWecomIntentionDedupPv' => 'getAfterAddWecomIntentionDedupPv',
         'afterAddWecomIntentionDedupPvCost' => 'getAfterAddWecomIntentionDedupPvCost',
+        'expPv' => 'getExpPv',
+        'impression' => 'getImpression',
+        'exposure' => 'getExposure',
+        'download' => 'getDownload',
+        'activation' => 'getActivation',
+        'appActivatedCount' => 'getAppActivatedCount',
+        'appActivatedRate' => 'getAppActivatedRate',
+        'thousandDisplayCost' => 'getThousandDisplayCost',
+        'click' => 'getClick',
+        'webConsultCount' => 'getWebConsultCount',
+        'webConsultCost' => 'getWebConsultCost',
+        'webPhoneCallDirectCount' => 'getWebPhoneCallDirectCount',
+        'webPhoneCallDirectCost' => 'getWebPhoneCallDirectCost',
+        'webPhoneCallBackCount' => 'getWebPhoneCallBackCount',
+        'webPhoneCallBackCost' => 'getWebPhoneCallBackCost',
+        'ownPageNavigationCost' => 'getOwnPageNavigationCost',
+        'reservation' => 'getReservation',
+        'webPageReservationCount' => 'getWebPageReservationCount',
+        'webPageReservationRate' => 'getWebPageReservationRate',
+        'webPageReservationCost' => 'getWebPageReservationCost',
+        'webAddToCarCount' => 'getWebAddToCarCount',
+        'webAddToCarCost' => 'getWebAddToCarCost',
+        'webOrderUnitPrice' => 'getWebOrderUnitPrice',
+        'webOrderRoi' => 'getWebOrderRoi',
+        'webDeliverCount' => 'getWebDeliverCount',
+        'webDeliverCost' => 'getWebDeliverCost',
+        'webSignInCount' => 'getWebSignInCount',
+        'webSignInCost' => 'getWebSignInCost',
+        'appInstallation' => 'getAppInstallation',
+        'appActivatedCost' => 'getAppActivatedCost',
+        'appRetentionCount' => 'getAppRetentionCount',
+        'appRetentionRate' => 'getAppRetentionRate',
+        'appRetentionCost' => 'getAppRetentionCost',
+        'appAddToCarCount' => 'getAppAddToCarCount',
+        'appAddToCarAmount' => 'getAppAddToCarAmount',
+        'appCartAmount' => 'getAppCartAmount',
+        'appAddToCarCost' => 'getAppAddToCarCost',
+        'appPaymentCount' => 'getAppPaymentCount',
+        'appPaymentAmount' => 'getAppPaymentAmount',
+        'platformCouponClick' => 'getPlatformCouponClick',
+        'follow' => 'getFollow',
+        'share' => 'getShare',
+        'read' => 'getRead',
+        'intelligentPhoneCallDirectCount' => 'getIntelligentPhoneCallDirectCount',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
         'incomeVal1' => 'getIncomeVal1',
@@ -3854,97 +3774,32 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7PlaRoi' => 'getMiniGamePayD7PlaRoi',
         'miniGamePayD14PlaRoi' => 'getMiniGamePayD14PlaRoi',
         'miniGamePayD30PlaRoi' => 'getMiniGamePayD30PlaRoi',
-        'campaignId' => 'getCampaignId',
-        'campaignName' => 'getCampaignName',
-        'webAddToCartCount' => 'getWebAddToCartCount',
-        'webAddToCartCost' => 'getWebAddToCartCost',
-        'adgroupId' => 'getAdgroupId',
         'adgroupName' => 'getAdgroupName',
         'previewConversionsCount' => 'getPreviewConversionsCount',
         'previewDeepConversionsCount' => 'getPreviewDeepConversionsCount',
         'acquisitionCost' => 'getAcquisitionCost',
-        'adId' => 'getAdId',
-        'adName' => 'getAdName',
-        'promotedObjectType' => 'getPromotedObjectType',
-        'promotedObjectId' => 'getPromotedObjectId',
-        'date' => 'getDate',
-        'matchType' => 'getMatchType',
-        'bidwordId' => 'getBidwordId',
-        'bidword' => 'getBidword',
+        'videoFollowCount' => 'getVideoFollowCount',
+        'videoHeartCount' => 'getVideoHeartCount',
+        'videoCommentCount' => 'getVideoCommentCount',
+        'videoLiveSubscribeCount' => 'getVideoLiveSubscribeCount',
+        'videoLiveExpCount' => 'getVideoLiveExpCount',
+        'videoLiveHeartCount' => 'getVideoLiveHeartCount',
+        'videoLiveCommentCount' => 'getVideoLiveCommentCount',
+        'videoLiveShareCount' => 'getVideoLiveShareCount',
+        'videoLiveCickCommodityCount' => 'getVideoLiveCickCommodityCount',
+        'videoLiveHeartUserCount' => 'getVideoLiveHeartUserCount',
+        'videoLiveCommentUserCount' => 'getVideoLiveCommentUserCount',
+        'videoLiveShareUserCount' => 'getVideoLiveShareUserCount',
+        'videoLiveClickCommodityUserCount' => 'getVideoLiveClickCommodityUserCount',
+        'videoLiveCommodityBubbleExpCount' => 'getVideoLiveCommodityBubbleExpCount',
         'liveStreamExpUv' => 'getLiveStreamExpUv',
         'liveStreamAvgTime' => 'getLiveStreamAvgTime',
         'expOverallTopPv' => 'getExpOverallTopPv',
         'expAvgRank' => 'getExpAvgRank',
         'clkTopPv' => 'getClkTopPv',
         'realCostTop' => 'getRealCostTop',
-        'wechatAccountId' => 'getWechatAccountId',
-        'wechatAgencyId' => 'getWechatAgencyId',
-        'costDeviationRate' => 'getCostDeviationRate',
-        'compensationAmount' => 'getCompensationAmount',
-        'avgViewPerUser' => 'getAvgViewPerUser',
-        'imageClickUserCount' => 'getImageClickUserCount',
-        'videoClickUserCount' => 'getVideoClickUserCount',
-        'linkClickUserCount' => 'getLinkClickUserCount',
-        'portraitClickUserCount' => 'getPortraitClickUserCount',
-        'nicknameClickUserCount' => 'getNicknameClickUserCount',
-        'poiClickUserCount' => 'getPoiClickUserCount',
-        'platformKeyPageViewUserCount' => 'getPlatformKeyPageViewUserCount',
-        'platformKeyPageAvgViewPerUser' => 'getPlatformKeyPageAvgViewPerUser',
-        'platformKeyPageViewDuration' => 'getPlatformKeyPageViewDuration',
-        'cpnClickButtonCost' => 'getCpnClickButtonCost',
-        'praiseUserCount' => 'getPraiseUserCount',
-        'commentUserCount' => 'getCommentUserCount',
-        'orderCount' => 'getOrderCount',
-        'orderRate' => 'getOrderRate',
-        'questReservationPvCost' => 'getQuestReservationPvCost',
-        'leadsRate' => 'getLeadsRate',
-        'leadsUserCount' => 'getLeadsUserCount',
-        'leadsCost' => 'getLeadsCost',
-        'leadsUserRate' => 'getLeadsUserRate',
-        'validLeadsCost' => 'getValidLeadsCost',
-        'validLeadsRate' => 'getValidLeadsRate',
-        'pageConsultUserCount' => 'getPageConsultUserCount',
-        'validPageConsultUserCount' => 'getValidPageConsultUserCount',
-        'withdrDepWebUserCount' => 'getWithdrDepWebUserCount',
-        'wechatMinigameRegisterCost' => 'getWechatMinigameRegisterCost',
-        'wechatMinigameRegisterRate' => 'getWechatMinigameRegisterRate',
-        'wechatMinigameArpu' => 'getWechatMinigameArpu',
-        'wechatMinigameRetentionCount' => 'getWechatMinigameRetentionCount',
-        'wechatMinigameCheckoutCount' => 'getWechatMinigameCheckoutCount',
-        'wechatMinigameCheckoutAmount' => 'getWechatMinigameCheckoutAmount',
-        'officialAccountFollowCount' => 'getOfficialAccountFollowCount',
-        'officialAccountFollowCost' => 'getOfficialAccountFollowCost',
-        'officialAccountFollowRate' => 'getOfficialAccountFollowRate',
-        'officialAccountRegisterUserCount' => 'getOfficialAccountRegisterUserCount',
-        'officialAccountRegisterRate' => 'getOfficialAccountRegisterRate',
-        'officialAccountRegisterCost' => 'getOfficialAccountRegisterCost',
-        'officialAccountRegisterAmount' => 'getOfficialAccountRegisterAmount',
-        'officialAccountRegisterRoi' => 'getOfficialAccountRegisterRoi',
-        'officialAccountApplyCount' => 'getOfficialAccountApplyCount',
-        'officialAccountApplyUserCount' => 'getOfficialAccountApplyUserCount',
-        'officialAccountApplyRate' => 'getOfficialAccountApplyRate',
-        'officialAccountApplyCost' => 'getOfficialAccountApplyCost',
-        'officialAccountApplyAmount' => 'getOfficialAccountApplyAmount',
-        'officialAccountApplyRoi' => 'getOfficialAccountApplyRoi',
-        'officialAccountOrderCount' => 'getOfficialAccountOrderCount',
-        'officialAccountFirstDayOrderCount' => 'getOfficialAccountFirstDayOrderCount',
-        'officialAccountOrderUserCount' => 'getOfficialAccountOrderUserCount',
-        'officialAccountOrderRate' => 'getOfficialAccountOrderRate',
-        'officialAccountOrderCost' => 'getOfficialAccountOrderCost',
-        'officialAccountOrderAmount' => 'getOfficialAccountOrderAmount',
-        'officialAccountFirstDayOrderAmount' => 'getOfficialAccountFirstDayOrderAmount',
-        'officialAccountOrderRoi' => 'getOfficialAccountOrderRoi',
-        'officialAccountConsultCount' => 'getOfficialAccountConsultCount',
-        'officialAccountReaderCount' => 'getOfficialAccountReaderCount',
-        'officialAccountCreditApplyUserCount' => 'getOfficialAccountCreditApplyUserCount',
-        'officialAccountCreditUserCount' => 'getOfficialAccountCreditUserCount',
-        'couponGetCost' => 'getCouponGetCost',
-        'couponGetRate' => 'getCouponGetRate',
-        'couponUseCount' => 'getCouponUseCount',
-        'forwardUserCount' => 'getForwardUserCount',
-        'videoOuterPlayUserCount' => 'getVideoOuterPlayUserCount',
-        'videoInnerPlayUserCount' => 'getVideoInnerPlayUserCount',
-        'poiId' => 'getPoiId',
+        'videoLiveExpUserCount' => 'getVideoLiveExpUserCount',
+        'campaignName' => 'getCampaignName',
         'projectId' => 'getProjectId',
         'projectName' => 'getProjectName',
         'purchasePv' => 'getPurchasePv',
@@ -4015,6 +3870,10 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     {
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['hour'] = isset($data['hour']) ? $data['hour'] : null;
+        $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
+        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
+        $this->container['adId'] = isset($data['adId']) ? $data['adId'] : null;
+        $this->container['adName'] = isset($data['adName']) ? $data['adName'] : null;
         $this->container['viewCount'] = isset($data['viewCount']) ? $data['viewCount'] : null;
         $this->container['downloadCount'] = isset($data['downloadCount']) ? $data['downloadCount'] : null;
         $this->container['activatedCount'] = isset($data['activatedCount']) ? $data['activatedCount'] : null;
@@ -4053,6 +3912,8 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['pageReservationRate'] = isset($data['pageReservationRate']) ? $data['pageReservationRate'] : null;
         $this->container['pageReservationCost'] = isset($data['pageReservationCost']) ? $data['pageReservationCost'] : null;
         $this->container['pageReservationCostWithPeople'] = isset($data['pageReservationCostWithPeople']) ? $data['pageReservationCostWithPeople'] : null;
+        $this->container['webAddToCartCount'] = isset($data['webAddToCartCount']) ? $data['webAddToCartCount'] : null;
+        $this->container['webAddToCartCost'] = isset($data['webAddToCartCost']) ? $data['webAddToCartCost'] : null;
         $this->container['addToCartPrice'] = isset($data['addToCartPrice']) ? $data['addToCartPrice'] : null;
         $this->container['ownPageCouponGetCount'] = isset($data['ownPageCouponGetCount']) ? $data['ownPageCouponGetCount'] : null;
         $this->container['ownPageCouponGetCost'] = isset($data['ownPageCouponGetCost']) ? $data['ownPageCouponGetCost'] : null;
@@ -4450,20 +4311,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGamePayD7Roi'] = isset($data['miniGamePayD7Roi']) ? $data['miniGamePayD7Roi'] : null;
         $this->container['miniGamePayD14Roi'] = isset($data['miniGamePayD14Roi']) ? $data['miniGamePayD14Roi'] : null;
         $this->container['miniGamePayD30Roi'] = isset($data['miniGamePayD30Roi']) ? $data['miniGamePayD30Roi'] : null;
-        $this->container['videoFollowCount'] = isset($data['videoFollowCount']) ? $data['videoFollowCount'] : null;
-        $this->container['videoHeartCount'] = isset($data['videoHeartCount']) ? $data['videoHeartCount'] : null;
-        $this->container['videoCommentCount'] = isset($data['videoCommentCount']) ? $data['videoCommentCount'] : null;
-        $this->container['videoLiveSubscribeCount'] = isset($data['videoLiveSubscribeCount']) ? $data['videoLiveSubscribeCount'] : null;
-        $this->container['videoLiveExpCount'] = isset($data['videoLiveExpCount']) ? $data['videoLiveExpCount'] : null;
-        $this->container['videoLiveHeartCount'] = isset($data['videoLiveHeartCount']) ? $data['videoLiveHeartCount'] : null;
-        $this->container['videoLiveCommentCount'] = isset($data['videoLiveCommentCount']) ? $data['videoLiveCommentCount'] : null;
-        $this->container['videoLiveShareCount'] = isset($data['videoLiveShareCount']) ? $data['videoLiveShareCount'] : null;
-        $this->container['videoLiveCickCommodityCount'] = isset($data['videoLiveCickCommodityCount']) ? $data['videoLiveCickCommodityCount'] : null;
-        $this->container['videoLiveHeartUserCount'] = isset($data['videoLiveHeartUserCount']) ? $data['videoLiveHeartUserCount'] : null;
-        $this->container['videoLiveCommentUserCount'] = isset($data['videoLiveCommentUserCount']) ? $data['videoLiveCommentUserCount'] : null;
-        $this->container['videoLiveShareUserCount'] = isset($data['videoLiveShareUserCount']) ? $data['videoLiveShareUserCount'] : null;
-        $this->container['videoLiveClickCommodityUserCount'] = isset($data['videoLiveClickCommodityUserCount']) ? $data['videoLiveClickCommodityUserCount'] : null;
-        $this->container['videoLiveCommodityBubbleExpCount'] = isset($data['videoLiveCommodityBubbleExpCount']) ? $data['videoLiveCommodityBubbleExpCount'] : null;
         $this->container['scanCodeAddFansUv'] = isset($data['scanCodeAddFansUv']) ? $data['scanCodeAddFansUv'] : null;
         $this->container['scanCodeAddFansCount'] = isset($data['scanCodeAddFansCount']) ? $data['scanCodeAddFansCount'] : null;
         $this->container['scanCodeAddFansUvCost'] = isset($data['scanCodeAddFansUvCost']) ? $data['scanCodeAddFansUvCost'] : null;
@@ -4607,6 +4454,50 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['afterAddWecomConsultDedupPvCost'] = isset($data['afterAddWecomConsultDedupPvCost']) ? $data['afterAddWecomConsultDedupPvCost'] : null;
         $this->container['afterAddWecomIntentionDedupPv'] = isset($data['afterAddWecomIntentionDedupPv']) ? $data['afterAddWecomIntentionDedupPv'] : null;
         $this->container['afterAddWecomIntentionDedupPvCost'] = isset($data['afterAddWecomIntentionDedupPvCost']) ? $data['afterAddWecomIntentionDedupPvCost'] : null;
+        $this->container['expPv'] = isset($data['expPv']) ? $data['expPv'] : null;
+        $this->container['impression'] = isset($data['impression']) ? $data['impression'] : null;
+        $this->container['exposure'] = isset($data['exposure']) ? $data['exposure'] : null;
+        $this->container['download'] = isset($data['download']) ? $data['download'] : null;
+        $this->container['activation'] = isset($data['activation']) ? $data['activation'] : null;
+        $this->container['appActivatedCount'] = isset($data['appActivatedCount']) ? $data['appActivatedCount'] : null;
+        $this->container['appActivatedRate'] = isset($data['appActivatedRate']) ? $data['appActivatedRate'] : null;
+        $this->container['thousandDisplayCost'] = isset($data['thousandDisplayCost']) ? $data['thousandDisplayCost'] : null;
+        $this->container['click'] = isset($data['click']) ? $data['click'] : null;
+        $this->container['webConsultCount'] = isset($data['webConsultCount']) ? $data['webConsultCount'] : null;
+        $this->container['webConsultCost'] = isset($data['webConsultCost']) ? $data['webConsultCost'] : null;
+        $this->container['webPhoneCallDirectCount'] = isset($data['webPhoneCallDirectCount']) ? $data['webPhoneCallDirectCount'] : null;
+        $this->container['webPhoneCallDirectCost'] = isset($data['webPhoneCallDirectCost']) ? $data['webPhoneCallDirectCost'] : null;
+        $this->container['webPhoneCallBackCount'] = isset($data['webPhoneCallBackCount']) ? $data['webPhoneCallBackCount'] : null;
+        $this->container['webPhoneCallBackCost'] = isset($data['webPhoneCallBackCost']) ? $data['webPhoneCallBackCost'] : null;
+        $this->container['ownPageNavigationCost'] = isset($data['ownPageNavigationCost']) ? $data['ownPageNavigationCost'] : null;
+        $this->container['reservation'] = isset($data['reservation']) ? $data['reservation'] : null;
+        $this->container['webPageReservationCount'] = isset($data['webPageReservationCount']) ? $data['webPageReservationCount'] : null;
+        $this->container['webPageReservationRate'] = isset($data['webPageReservationRate']) ? $data['webPageReservationRate'] : null;
+        $this->container['webPageReservationCost'] = isset($data['webPageReservationCost']) ? $data['webPageReservationCost'] : null;
+        $this->container['webAddToCarCount'] = isset($data['webAddToCarCount']) ? $data['webAddToCarCount'] : null;
+        $this->container['webAddToCarCost'] = isset($data['webAddToCarCost']) ? $data['webAddToCarCost'] : null;
+        $this->container['webOrderUnitPrice'] = isset($data['webOrderUnitPrice']) ? $data['webOrderUnitPrice'] : null;
+        $this->container['webOrderRoi'] = isset($data['webOrderRoi']) ? $data['webOrderRoi'] : null;
+        $this->container['webDeliverCount'] = isset($data['webDeliverCount']) ? $data['webDeliverCount'] : null;
+        $this->container['webDeliverCost'] = isset($data['webDeliverCost']) ? $data['webDeliverCost'] : null;
+        $this->container['webSignInCount'] = isset($data['webSignInCount']) ? $data['webSignInCount'] : null;
+        $this->container['webSignInCost'] = isset($data['webSignInCost']) ? $data['webSignInCost'] : null;
+        $this->container['appInstallation'] = isset($data['appInstallation']) ? $data['appInstallation'] : null;
+        $this->container['appActivatedCost'] = isset($data['appActivatedCost']) ? $data['appActivatedCost'] : null;
+        $this->container['appRetentionCount'] = isset($data['appRetentionCount']) ? $data['appRetentionCount'] : null;
+        $this->container['appRetentionRate'] = isset($data['appRetentionRate']) ? $data['appRetentionRate'] : null;
+        $this->container['appRetentionCost'] = isset($data['appRetentionCost']) ? $data['appRetentionCost'] : null;
+        $this->container['appAddToCarCount'] = isset($data['appAddToCarCount']) ? $data['appAddToCarCount'] : null;
+        $this->container['appAddToCarAmount'] = isset($data['appAddToCarAmount']) ? $data['appAddToCarAmount'] : null;
+        $this->container['appCartAmount'] = isset($data['appCartAmount']) ? $data['appCartAmount'] : null;
+        $this->container['appAddToCarCost'] = isset($data['appAddToCarCost']) ? $data['appAddToCarCost'] : null;
+        $this->container['appPaymentCount'] = isset($data['appPaymentCount']) ? $data['appPaymentCount'] : null;
+        $this->container['appPaymentAmount'] = isset($data['appPaymentAmount']) ? $data['appPaymentAmount'] : null;
+        $this->container['platformCouponClick'] = isset($data['platformCouponClick']) ? $data['platformCouponClick'] : null;
+        $this->container['follow'] = isset($data['follow']) ? $data['follow'] : null;
+        $this->container['share'] = isset($data['share']) ? $data['share'] : null;
+        $this->container['read'] = isset($data['read']) ? $data['read'] : null;
+        $this->container['intelligentPhoneCallDirectCount'] = isset($data['intelligentPhoneCallDirectCount']) ? $data['intelligentPhoneCallDirectCount'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
@@ -4684,97 +4575,32 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGamePayD7PlaRoi'] = isset($data['miniGamePayD7PlaRoi']) ? $data['miniGamePayD7PlaRoi'] : null;
         $this->container['miniGamePayD14PlaRoi'] = isset($data['miniGamePayD14PlaRoi']) ? $data['miniGamePayD14PlaRoi'] : null;
         $this->container['miniGamePayD30PlaRoi'] = isset($data['miniGamePayD30PlaRoi']) ? $data['miniGamePayD30PlaRoi'] : null;
-        $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
-        $this->container['campaignName'] = isset($data['campaignName']) ? $data['campaignName'] : null;
-        $this->container['webAddToCartCount'] = isset($data['webAddToCartCount']) ? $data['webAddToCartCount'] : null;
-        $this->container['webAddToCartCost'] = isset($data['webAddToCartCost']) ? $data['webAddToCartCost'] : null;
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['adgroupName'] = isset($data['adgroupName']) ? $data['adgroupName'] : null;
         $this->container['previewConversionsCount'] = isset($data['previewConversionsCount']) ? $data['previewConversionsCount'] : null;
         $this->container['previewDeepConversionsCount'] = isset($data['previewDeepConversionsCount']) ? $data['previewDeepConversionsCount'] : null;
         $this->container['acquisitionCost'] = isset($data['acquisitionCost']) ? $data['acquisitionCost'] : null;
-        $this->container['adId'] = isset($data['adId']) ? $data['adId'] : null;
-        $this->container['adName'] = isset($data['adName']) ? $data['adName'] : null;
-        $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
-        $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
-        $this->container['date'] = isset($data['date']) ? $data['date'] : null;
-        $this->container['matchType'] = isset($data['matchType']) ? $data['matchType'] : null;
-        $this->container['bidwordId'] = isset($data['bidwordId']) ? $data['bidwordId'] : null;
-        $this->container['bidword'] = isset($data['bidword']) ? $data['bidword'] : null;
+        $this->container['videoFollowCount'] = isset($data['videoFollowCount']) ? $data['videoFollowCount'] : null;
+        $this->container['videoHeartCount'] = isset($data['videoHeartCount']) ? $data['videoHeartCount'] : null;
+        $this->container['videoCommentCount'] = isset($data['videoCommentCount']) ? $data['videoCommentCount'] : null;
+        $this->container['videoLiveSubscribeCount'] = isset($data['videoLiveSubscribeCount']) ? $data['videoLiveSubscribeCount'] : null;
+        $this->container['videoLiveExpCount'] = isset($data['videoLiveExpCount']) ? $data['videoLiveExpCount'] : null;
+        $this->container['videoLiveHeartCount'] = isset($data['videoLiveHeartCount']) ? $data['videoLiveHeartCount'] : null;
+        $this->container['videoLiveCommentCount'] = isset($data['videoLiveCommentCount']) ? $data['videoLiveCommentCount'] : null;
+        $this->container['videoLiveShareCount'] = isset($data['videoLiveShareCount']) ? $data['videoLiveShareCount'] : null;
+        $this->container['videoLiveCickCommodityCount'] = isset($data['videoLiveCickCommodityCount']) ? $data['videoLiveCickCommodityCount'] : null;
+        $this->container['videoLiveHeartUserCount'] = isset($data['videoLiveHeartUserCount']) ? $data['videoLiveHeartUserCount'] : null;
+        $this->container['videoLiveCommentUserCount'] = isset($data['videoLiveCommentUserCount']) ? $data['videoLiveCommentUserCount'] : null;
+        $this->container['videoLiveShareUserCount'] = isset($data['videoLiveShareUserCount']) ? $data['videoLiveShareUserCount'] : null;
+        $this->container['videoLiveClickCommodityUserCount'] = isset($data['videoLiveClickCommodityUserCount']) ? $data['videoLiveClickCommodityUserCount'] : null;
+        $this->container['videoLiveCommodityBubbleExpCount'] = isset($data['videoLiveCommodityBubbleExpCount']) ? $data['videoLiveCommodityBubbleExpCount'] : null;
         $this->container['liveStreamExpUv'] = isset($data['liveStreamExpUv']) ? $data['liveStreamExpUv'] : null;
         $this->container['liveStreamAvgTime'] = isset($data['liveStreamAvgTime']) ? $data['liveStreamAvgTime'] : null;
         $this->container['expOverallTopPv'] = isset($data['expOverallTopPv']) ? $data['expOverallTopPv'] : null;
         $this->container['expAvgRank'] = isset($data['expAvgRank']) ? $data['expAvgRank'] : null;
         $this->container['clkTopPv'] = isset($data['clkTopPv']) ? $data['clkTopPv'] : null;
         $this->container['realCostTop'] = isset($data['realCostTop']) ? $data['realCostTop'] : null;
-        $this->container['wechatAccountId'] = isset($data['wechatAccountId']) ? $data['wechatAccountId'] : null;
-        $this->container['wechatAgencyId'] = isset($data['wechatAgencyId']) ? $data['wechatAgencyId'] : null;
-        $this->container['costDeviationRate'] = isset($data['costDeviationRate']) ? $data['costDeviationRate'] : null;
-        $this->container['compensationAmount'] = isset($data['compensationAmount']) ? $data['compensationAmount'] : null;
-        $this->container['avgViewPerUser'] = isset($data['avgViewPerUser']) ? $data['avgViewPerUser'] : null;
-        $this->container['imageClickUserCount'] = isset($data['imageClickUserCount']) ? $data['imageClickUserCount'] : null;
-        $this->container['videoClickUserCount'] = isset($data['videoClickUserCount']) ? $data['videoClickUserCount'] : null;
-        $this->container['linkClickUserCount'] = isset($data['linkClickUserCount']) ? $data['linkClickUserCount'] : null;
-        $this->container['portraitClickUserCount'] = isset($data['portraitClickUserCount']) ? $data['portraitClickUserCount'] : null;
-        $this->container['nicknameClickUserCount'] = isset($data['nicknameClickUserCount']) ? $data['nicknameClickUserCount'] : null;
-        $this->container['poiClickUserCount'] = isset($data['poiClickUserCount']) ? $data['poiClickUserCount'] : null;
-        $this->container['platformKeyPageViewUserCount'] = isset($data['platformKeyPageViewUserCount']) ? $data['platformKeyPageViewUserCount'] : null;
-        $this->container['platformKeyPageAvgViewPerUser'] = isset($data['platformKeyPageAvgViewPerUser']) ? $data['platformKeyPageAvgViewPerUser'] : null;
-        $this->container['platformKeyPageViewDuration'] = isset($data['platformKeyPageViewDuration']) ? $data['platformKeyPageViewDuration'] : null;
-        $this->container['cpnClickButtonCost'] = isset($data['cpnClickButtonCost']) ? $data['cpnClickButtonCost'] : null;
-        $this->container['praiseUserCount'] = isset($data['praiseUserCount']) ? $data['praiseUserCount'] : null;
-        $this->container['commentUserCount'] = isset($data['commentUserCount']) ? $data['commentUserCount'] : null;
-        $this->container['orderCount'] = isset($data['orderCount']) ? $data['orderCount'] : null;
-        $this->container['orderRate'] = isset($data['orderRate']) ? $data['orderRate'] : null;
-        $this->container['questReservationPvCost'] = isset($data['questReservationPvCost']) ? $data['questReservationPvCost'] : null;
-        $this->container['leadsRate'] = isset($data['leadsRate']) ? $data['leadsRate'] : null;
-        $this->container['leadsUserCount'] = isset($data['leadsUserCount']) ? $data['leadsUserCount'] : null;
-        $this->container['leadsCost'] = isset($data['leadsCost']) ? $data['leadsCost'] : null;
-        $this->container['leadsUserRate'] = isset($data['leadsUserRate']) ? $data['leadsUserRate'] : null;
-        $this->container['validLeadsCost'] = isset($data['validLeadsCost']) ? $data['validLeadsCost'] : null;
-        $this->container['validLeadsRate'] = isset($data['validLeadsRate']) ? $data['validLeadsRate'] : null;
-        $this->container['pageConsultUserCount'] = isset($data['pageConsultUserCount']) ? $data['pageConsultUserCount'] : null;
-        $this->container['validPageConsultUserCount'] = isset($data['validPageConsultUserCount']) ? $data['validPageConsultUserCount'] : null;
-        $this->container['withdrDepWebUserCount'] = isset($data['withdrDepWebUserCount']) ? $data['withdrDepWebUserCount'] : null;
-        $this->container['wechatMinigameRegisterCost'] = isset($data['wechatMinigameRegisterCost']) ? $data['wechatMinigameRegisterCost'] : null;
-        $this->container['wechatMinigameRegisterRate'] = isset($data['wechatMinigameRegisterRate']) ? $data['wechatMinigameRegisterRate'] : null;
-        $this->container['wechatMinigameArpu'] = isset($data['wechatMinigameArpu']) ? $data['wechatMinigameArpu'] : null;
-        $this->container['wechatMinigameRetentionCount'] = isset($data['wechatMinigameRetentionCount']) ? $data['wechatMinigameRetentionCount'] : null;
-        $this->container['wechatMinigameCheckoutCount'] = isset($data['wechatMinigameCheckoutCount']) ? $data['wechatMinigameCheckoutCount'] : null;
-        $this->container['wechatMinigameCheckoutAmount'] = isset($data['wechatMinigameCheckoutAmount']) ? $data['wechatMinigameCheckoutAmount'] : null;
-        $this->container['officialAccountFollowCount'] = isset($data['officialAccountFollowCount']) ? $data['officialAccountFollowCount'] : null;
-        $this->container['officialAccountFollowCost'] = isset($data['officialAccountFollowCost']) ? $data['officialAccountFollowCost'] : null;
-        $this->container['officialAccountFollowRate'] = isset($data['officialAccountFollowRate']) ? $data['officialAccountFollowRate'] : null;
-        $this->container['officialAccountRegisterUserCount'] = isset($data['officialAccountRegisterUserCount']) ? $data['officialAccountRegisterUserCount'] : null;
-        $this->container['officialAccountRegisterRate'] = isset($data['officialAccountRegisterRate']) ? $data['officialAccountRegisterRate'] : null;
-        $this->container['officialAccountRegisterCost'] = isset($data['officialAccountRegisterCost']) ? $data['officialAccountRegisterCost'] : null;
-        $this->container['officialAccountRegisterAmount'] = isset($data['officialAccountRegisterAmount']) ? $data['officialAccountRegisterAmount'] : null;
-        $this->container['officialAccountRegisterRoi'] = isset($data['officialAccountRegisterRoi']) ? $data['officialAccountRegisterRoi'] : null;
-        $this->container['officialAccountApplyCount'] = isset($data['officialAccountApplyCount']) ? $data['officialAccountApplyCount'] : null;
-        $this->container['officialAccountApplyUserCount'] = isset($data['officialAccountApplyUserCount']) ? $data['officialAccountApplyUserCount'] : null;
-        $this->container['officialAccountApplyRate'] = isset($data['officialAccountApplyRate']) ? $data['officialAccountApplyRate'] : null;
-        $this->container['officialAccountApplyCost'] = isset($data['officialAccountApplyCost']) ? $data['officialAccountApplyCost'] : null;
-        $this->container['officialAccountApplyAmount'] = isset($data['officialAccountApplyAmount']) ? $data['officialAccountApplyAmount'] : null;
-        $this->container['officialAccountApplyRoi'] = isset($data['officialAccountApplyRoi']) ? $data['officialAccountApplyRoi'] : null;
-        $this->container['officialAccountOrderCount'] = isset($data['officialAccountOrderCount']) ? $data['officialAccountOrderCount'] : null;
-        $this->container['officialAccountFirstDayOrderCount'] = isset($data['officialAccountFirstDayOrderCount']) ? $data['officialAccountFirstDayOrderCount'] : null;
-        $this->container['officialAccountOrderUserCount'] = isset($data['officialAccountOrderUserCount']) ? $data['officialAccountOrderUserCount'] : null;
-        $this->container['officialAccountOrderRate'] = isset($data['officialAccountOrderRate']) ? $data['officialAccountOrderRate'] : null;
-        $this->container['officialAccountOrderCost'] = isset($data['officialAccountOrderCost']) ? $data['officialAccountOrderCost'] : null;
-        $this->container['officialAccountOrderAmount'] = isset($data['officialAccountOrderAmount']) ? $data['officialAccountOrderAmount'] : null;
-        $this->container['officialAccountFirstDayOrderAmount'] = isset($data['officialAccountFirstDayOrderAmount']) ? $data['officialAccountFirstDayOrderAmount'] : null;
-        $this->container['officialAccountOrderRoi'] = isset($data['officialAccountOrderRoi']) ? $data['officialAccountOrderRoi'] : null;
-        $this->container['officialAccountConsultCount'] = isset($data['officialAccountConsultCount']) ? $data['officialAccountConsultCount'] : null;
-        $this->container['officialAccountReaderCount'] = isset($data['officialAccountReaderCount']) ? $data['officialAccountReaderCount'] : null;
-        $this->container['officialAccountCreditApplyUserCount'] = isset($data['officialAccountCreditApplyUserCount']) ? $data['officialAccountCreditApplyUserCount'] : null;
-        $this->container['officialAccountCreditUserCount'] = isset($data['officialAccountCreditUserCount']) ? $data['officialAccountCreditUserCount'] : null;
-        $this->container['couponGetCost'] = isset($data['couponGetCost']) ? $data['couponGetCost'] : null;
-        $this->container['couponGetRate'] = isset($data['couponGetRate']) ? $data['couponGetRate'] : null;
-        $this->container['couponUseCount'] = isset($data['couponUseCount']) ? $data['couponUseCount'] : null;
-        $this->container['forwardUserCount'] = isset($data['forwardUserCount']) ? $data['forwardUserCount'] : null;
-        $this->container['videoOuterPlayUserCount'] = isset($data['videoOuterPlayUserCount']) ? $data['videoOuterPlayUserCount'] : null;
-        $this->container['videoInnerPlayUserCount'] = isset($data['videoInnerPlayUserCount']) ? $data['videoInnerPlayUserCount'] : null;
-        $this->container['poiId'] = isset($data['poiId']) ? $data['poiId'] : null;
+        $this->container['videoLiveExpUserCount'] = isset($data['videoLiveExpUserCount']) ? $data['videoLiveExpUserCount'] : null;
+        $this->container['campaignName'] = isset($data['campaignName']) ? $data['campaignName'] : null;
         $this->container['projectId'] = isset($data['projectId']) ? $data['projectId'] : null;
         $this->container['projectName'] = isset($data['projectName']) ? $data['projectName'] : null;
         $this->container['purchasePv'] = isset($data['purchasePv']) ? $data['purchasePv'] : null;
@@ -4851,6 +4677,102 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setHour($hour)
     {
         $this->container['hour'] = $hour;
+
+        return $this;
+    }
+
+    /**
+     * Gets campaignId
+     *
+     * @return int|mixed
+     */
+    public function getCampaignId()
+    {
+        return $this->container['campaignId'];
+    }
+
+    /**
+     * Sets campaignId
+     *
+     * @param int|mixed $campaignId campaignId
+     *
+     * @return $this
+     */
+    public function setCampaignId($campaignId)
+    {
+        $this->container['campaignId'] = $campaignId;
+
+        return $this;
+    }
+
+    /**
+     * Gets adgroupId
+     *
+     * @return int|mixed
+     */
+    public function getAdgroupId()
+    {
+        return $this->container['adgroupId'];
+    }
+
+    /**
+     * Sets adgroupId
+     *
+     * @param int|mixed $adgroupId adgroupId
+     *
+     * @return $this
+     */
+    public function setAdgroupId($adgroupId)
+    {
+        $this->container['adgroupId'] = $adgroupId;
+
+        return $this;
+    }
+
+    /**
+     * Gets adId
+     *
+     * @return int|mixed
+     */
+    public function getAdId()
+    {
+        return $this->container['adId'];
+    }
+
+    /**
+     * Sets adId
+     *
+     * @param int|mixed $adId adId
+     *
+     * @return $this
+     */
+    public function setAdId($adId)
+    {
+        $this->container['adId'] = $adId;
+
+        return $this;
+    }
+
+    /**
+     * Gets adName
+     *
+     * @return string|mixed
+     */
+    public function getAdName()
+    {
+        return $this->container['adName'];
+    }
+
+    /**
+     * Sets adName
+     *
+     * @param string|mixed $adName adName
+     *
+     * @return $this
+     */
+    public function setAdName($adName)
+    {
+        $this->container['adName'] = $adName;
 
         return $this;
     }
@@ -5763,6 +5685,54 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setPageReservationCostWithPeople($pageReservationCostWithPeople)
     {
         $this->container['pageReservationCostWithPeople'] = $pageReservationCostWithPeople;
+
+        return $this;
+    }
+
+    /**
+     * Gets webAddToCartCount
+     *
+     * @return int|mixed
+     */
+    public function getWebAddToCartCount()
+    {
+        return $this->container['webAddToCartCount'];
+    }
+
+    /**
+     * Sets webAddToCartCount
+     *
+     * @param int|mixed $webAddToCartCount webAddToCartCount
+     *
+     * @return $this
+     */
+    public function setWebAddToCartCount($webAddToCartCount)
+    {
+        $this->container['webAddToCartCount'] = $webAddToCartCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets webAddToCartCost
+     *
+     * @return int|mixed
+     */
+    public function getWebAddToCartCost()
+    {
+        return $this->container['webAddToCartCost'];
+    }
+
+    /**
+     * Sets webAddToCartCost
+     *
+     * @param int|mixed $webAddToCartCost webAddToCartCost
+     *
+     * @return $this
+     */
+    public function setWebAddToCartCost($webAddToCartCost)
+    {
+        $this->container['webAddToCartCost'] = $webAddToCartCost;
 
         return $this;
     }
@@ -15296,342 +15266,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets videoFollowCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoFollowCount()
-    {
-        return $this->container['videoFollowCount'];
-    }
-
-    /**
-     * Sets videoFollowCount
-     *
-     * @param int|mixed $videoFollowCount videoFollowCount
-     *
-     * @return $this
-     */
-    public function setVideoFollowCount($videoFollowCount)
-    {
-        $this->container['videoFollowCount'] = $videoFollowCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoHeartCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoHeartCount()
-    {
-        return $this->container['videoHeartCount'];
-    }
-
-    /**
-     * Sets videoHeartCount
-     *
-     * @param int|mixed $videoHeartCount videoHeartCount
-     *
-     * @return $this
-     */
-    public function setVideoHeartCount($videoHeartCount)
-    {
-        $this->container['videoHeartCount'] = $videoHeartCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoCommentCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoCommentCount()
-    {
-        return $this->container['videoCommentCount'];
-    }
-
-    /**
-     * Sets videoCommentCount
-     *
-     * @param int|mixed $videoCommentCount videoCommentCount
-     *
-     * @return $this
-     */
-    public function setVideoCommentCount($videoCommentCount)
-    {
-        $this->container['videoCommentCount'] = $videoCommentCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoLiveSubscribeCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoLiveSubscribeCount()
-    {
-        return $this->container['videoLiveSubscribeCount'];
-    }
-
-    /**
-     * Sets videoLiveSubscribeCount
-     *
-     * @param int|mixed $videoLiveSubscribeCount videoLiveSubscribeCount
-     *
-     * @return $this
-     */
-    public function setVideoLiveSubscribeCount($videoLiveSubscribeCount)
-    {
-        $this->container['videoLiveSubscribeCount'] = $videoLiveSubscribeCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoLiveExpCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoLiveExpCount()
-    {
-        return $this->container['videoLiveExpCount'];
-    }
-
-    /**
-     * Sets videoLiveExpCount
-     *
-     * @param int|mixed $videoLiveExpCount videoLiveExpCount
-     *
-     * @return $this
-     */
-    public function setVideoLiveExpCount($videoLiveExpCount)
-    {
-        $this->container['videoLiveExpCount'] = $videoLiveExpCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoLiveHeartCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoLiveHeartCount()
-    {
-        return $this->container['videoLiveHeartCount'];
-    }
-
-    /**
-     * Sets videoLiveHeartCount
-     *
-     * @param int|mixed $videoLiveHeartCount videoLiveHeartCount
-     *
-     * @return $this
-     */
-    public function setVideoLiveHeartCount($videoLiveHeartCount)
-    {
-        $this->container['videoLiveHeartCount'] = $videoLiveHeartCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoLiveCommentCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoLiveCommentCount()
-    {
-        return $this->container['videoLiveCommentCount'];
-    }
-
-    /**
-     * Sets videoLiveCommentCount
-     *
-     * @param int|mixed $videoLiveCommentCount videoLiveCommentCount
-     *
-     * @return $this
-     */
-    public function setVideoLiveCommentCount($videoLiveCommentCount)
-    {
-        $this->container['videoLiveCommentCount'] = $videoLiveCommentCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoLiveShareCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoLiveShareCount()
-    {
-        return $this->container['videoLiveShareCount'];
-    }
-
-    /**
-     * Sets videoLiveShareCount
-     *
-     * @param int|mixed $videoLiveShareCount videoLiveShareCount
-     *
-     * @return $this
-     */
-    public function setVideoLiveShareCount($videoLiveShareCount)
-    {
-        $this->container['videoLiveShareCount'] = $videoLiveShareCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoLiveCickCommodityCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoLiveCickCommodityCount()
-    {
-        return $this->container['videoLiveCickCommodityCount'];
-    }
-
-    /**
-     * Sets videoLiveCickCommodityCount
-     *
-     * @param int|mixed $videoLiveCickCommodityCount videoLiveCickCommodityCount
-     *
-     * @return $this
-     */
-    public function setVideoLiveCickCommodityCount($videoLiveCickCommodityCount)
-    {
-        $this->container['videoLiveCickCommodityCount'] = $videoLiveCickCommodityCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoLiveHeartUserCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoLiveHeartUserCount()
-    {
-        return $this->container['videoLiveHeartUserCount'];
-    }
-
-    /**
-     * Sets videoLiveHeartUserCount
-     *
-     * @param int|mixed $videoLiveHeartUserCount videoLiveHeartUserCount
-     *
-     * @return $this
-     */
-    public function setVideoLiveHeartUserCount($videoLiveHeartUserCount)
-    {
-        $this->container['videoLiveHeartUserCount'] = $videoLiveHeartUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoLiveCommentUserCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoLiveCommentUserCount()
-    {
-        return $this->container['videoLiveCommentUserCount'];
-    }
-
-    /**
-     * Sets videoLiveCommentUserCount
-     *
-     * @param int|mixed $videoLiveCommentUserCount videoLiveCommentUserCount
-     *
-     * @return $this
-     */
-    public function setVideoLiveCommentUserCount($videoLiveCommentUserCount)
-    {
-        $this->container['videoLiveCommentUserCount'] = $videoLiveCommentUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoLiveShareUserCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoLiveShareUserCount()
-    {
-        return $this->container['videoLiveShareUserCount'];
-    }
-
-    /**
-     * Sets videoLiveShareUserCount
-     *
-     * @param int|mixed $videoLiveShareUserCount videoLiveShareUserCount
-     *
-     * @return $this
-     */
-    public function setVideoLiveShareUserCount($videoLiveShareUserCount)
-    {
-        $this->container['videoLiveShareUserCount'] = $videoLiveShareUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoLiveClickCommodityUserCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoLiveClickCommodityUserCount()
-    {
-        return $this->container['videoLiveClickCommodityUserCount'];
-    }
-
-    /**
-     * Sets videoLiveClickCommodityUserCount
-     *
-     * @param int|mixed $videoLiveClickCommodityUserCount videoLiveClickCommodityUserCount
-     *
-     * @return $this
-     */
-    public function setVideoLiveClickCommodityUserCount($videoLiveClickCommodityUserCount)
-    {
-        $this->container['videoLiveClickCommodityUserCount'] = $videoLiveClickCommodityUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoLiveCommodityBubbleExpCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoLiveCommodityBubbleExpCount()
-    {
-        return $this->container['videoLiveCommodityBubbleExpCount'];
-    }
-
-    /**
-     * Sets videoLiveCommodityBubbleExpCount
-     *
-     * @param int|mixed $videoLiveCommodityBubbleExpCount videoLiveCommodityBubbleExpCount
-     *
-     * @return $this
-     */
-    public function setVideoLiveCommodityBubbleExpCount($videoLiveCommodityBubbleExpCount)
-    {
-        $this->container['videoLiveCommodityBubbleExpCount'] = $videoLiveCommodityBubbleExpCount;
-
-        return $this;
-    }
-
-    /**
      * Gets scanCodeAddFansUv
      *
      * @return int|mixed
@@ -19064,6 +18698,1062 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets expPv
+     *
+     * @return int|mixed
+     */
+    public function getExpPv()
+    {
+        return $this->container['expPv'];
+    }
+
+    /**
+     * Sets expPv
+     *
+     * @param int|mixed $expPv expPv
+     *
+     * @return $this
+     */
+    public function setExpPv($expPv)
+    {
+        $this->container['expPv'] = $expPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets impression
+     *
+     * @return int|mixed
+     */
+    public function getImpression()
+    {
+        return $this->container['impression'];
+    }
+
+    /**
+     * Sets impression
+     *
+     * @param int|mixed $impression impression
+     *
+     * @return $this
+     */
+    public function setImpression($impression)
+    {
+        $this->container['impression'] = $impression;
+
+        return $this;
+    }
+
+    /**
+     * Gets exposure
+     *
+     * @return int|mixed
+     */
+    public function getExposure()
+    {
+        return $this->container['exposure'];
+    }
+
+    /**
+     * Sets exposure
+     *
+     * @param int|mixed $exposure exposure
+     *
+     * @return $this
+     */
+    public function setExposure($exposure)
+    {
+        $this->container['exposure'] = $exposure;
+
+        return $this;
+    }
+
+    /**
+     * Gets download
+     *
+     * @return int|mixed
+     */
+    public function getDownload()
+    {
+        return $this->container['download'];
+    }
+
+    /**
+     * Sets download
+     *
+     * @param int|mixed $download download
+     *
+     * @return $this
+     */
+    public function setDownload($download)
+    {
+        $this->container['download'] = $download;
+
+        return $this;
+    }
+
+    /**
+     * Gets activation
+     *
+     * @return int|mixed
+     */
+    public function getActivation()
+    {
+        return $this->container['activation'];
+    }
+
+    /**
+     * Sets activation
+     *
+     * @param int|mixed $activation activation
+     *
+     * @return $this
+     */
+    public function setActivation($activation)
+    {
+        $this->container['activation'] = $activation;
+
+        return $this;
+    }
+
+    /**
+     * Gets appActivatedCount
+     *
+     * @return int|mixed
+     */
+    public function getAppActivatedCount()
+    {
+        return $this->container['appActivatedCount'];
+    }
+
+    /**
+     * Sets appActivatedCount
+     *
+     * @param int|mixed $appActivatedCount appActivatedCount
+     *
+     * @return $this
+     */
+    public function setAppActivatedCount($appActivatedCount)
+    {
+        $this->container['appActivatedCount'] = $appActivatedCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appActivatedRate
+     *
+     * @return double|mixed
+     */
+    public function getAppActivatedRate()
+    {
+        return $this->container['appActivatedRate'];
+    }
+
+    /**
+     * Sets appActivatedRate
+     *
+     * @param double|mixed $appActivatedRate appActivatedRate
+     *
+     * @return $this
+     */
+    public function setAppActivatedRate($appActivatedRate)
+    {
+        $this->container['appActivatedRate'] = $appActivatedRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets thousandDisplayCost
+     *
+     * @return int|mixed
+     */
+    public function getThousandDisplayCost()
+    {
+        return $this->container['thousandDisplayCost'];
+    }
+
+    /**
+     * Sets thousandDisplayCost
+     *
+     * @param int|mixed $thousandDisplayCost thousandDisplayCost
+     *
+     * @return $this
+     */
+    public function setThousandDisplayCost($thousandDisplayCost)
+    {
+        $this->container['thousandDisplayCost'] = $thousandDisplayCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets click
+     *
+     * @return int|mixed
+     */
+    public function getClick()
+    {
+        return $this->container['click'];
+    }
+
+    /**
+     * Sets click
+     *
+     * @param int|mixed $click click
+     *
+     * @return $this
+     */
+    public function setClick($click)
+    {
+        $this->container['click'] = $click;
+
+        return $this;
+    }
+
+    /**
+     * Gets webConsultCount
+     *
+     * @return int|mixed
+     */
+    public function getWebConsultCount()
+    {
+        return $this->container['webConsultCount'];
+    }
+
+    /**
+     * Sets webConsultCount
+     *
+     * @param int|mixed $webConsultCount webConsultCount
+     *
+     * @return $this
+     */
+    public function setWebConsultCount($webConsultCount)
+    {
+        $this->container['webConsultCount'] = $webConsultCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets webConsultCost
+     *
+     * @return int|mixed
+     */
+    public function getWebConsultCost()
+    {
+        return $this->container['webConsultCost'];
+    }
+
+    /**
+     * Sets webConsultCost
+     *
+     * @param int|mixed $webConsultCost webConsultCost
+     *
+     * @return $this
+     */
+    public function setWebConsultCost($webConsultCost)
+    {
+        $this->container['webConsultCost'] = $webConsultCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets webPhoneCallDirectCount
+     *
+     * @return int|mixed
+     */
+    public function getWebPhoneCallDirectCount()
+    {
+        return $this->container['webPhoneCallDirectCount'];
+    }
+
+    /**
+     * Sets webPhoneCallDirectCount
+     *
+     * @param int|mixed $webPhoneCallDirectCount webPhoneCallDirectCount
+     *
+     * @return $this
+     */
+    public function setWebPhoneCallDirectCount($webPhoneCallDirectCount)
+    {
+        $this->container['webPhoneCallDirectCount'] = $webPhoneCallDirectCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets webPhoneCallDirectCost
+     *
+     * @return int|mixed
+     */
+    public function getWebPhoneCallDirectCost()
+    {
+        return $this->container['webPhoneCallDirectCost'];
+    }
+
+    /**
+     * Sets webPhoneCallDirectCost
+     *
+     * @param int|mixed $webPhoneCallDirectCost webPhoneCallDirectCost
+     *
+     * @return $this
+     */
+    public function setWebPhoneCallDirectCost($webPhoneCallDirectCost)
+    {
+        $this->container['webPhoneCallDirectCost'] = $webPhoneCallDirectCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets webPhoneCallBackCount
+     *
+     * @return int|mixed
+     */
+    public function getWebPhoneCallBackCount()
+    {
+        return $this->container['webPhoneCallBackCount'];
+    }
+
+    /**
+     * Sets webPhoneCallBackCount
+     *
+     * @param int|mixed $webPhoneCallBackCount webPhoneCallBackCount
+     *
+     * @return $this
+     */
+    public function setWebPhoneCallBackCount($webPhoneCallBackCount)
+    {
+        $this->container['webPhoneCallBackCount'] = $webPhoneCallBackCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets webPhoneCallBackCost
+     *
+     * @return int|mixed
+     */
+    public function getWebPhoneCallBackCost()
+    {
+        return $this->container['webPhoneCallBackCost'];
+    }
+
+    /**
+     * Sets webPhoneCallBackCost
+     *
+     * @param int|mixed $webPhoneCallBackCost webPhoneCallBackCost
+     *
+     * @return $this
+     */
+    public function setWebPhoneCallBackCost($webPhoneCallBackCost)
+    {
+        $this->container['webPhoneCallBackCost'] = $webPhoneCallBackCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets ownPageNavigationCost
+     *
+     * @return int|mixed
+     */
+    public function getOwnPageNavigationCost()
+    {
+        return $this->container['ownPageNavigationCost'];
+    }
+
+    /**
+     * Sets ownPageNavigationCost
+     *
+     * @param int|mixed $ownPageNavigationCost ownPageNavigationCost
+     *
+     * @return $this
+     */
+    public function setOwnPageNavigationCost($ownPageNavigationCost)
+    {
+        $this->container['ownPageNavigationCost'] = $ownPageNavigationCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets reservation
+     *
+     * @return int|mixed
+     */
+    public function getReservation()
+    {
+        return $this->container['reservation'];
+    }
+
+    /**
+     * Sets reservation
+     *
+     * @param int|mixed $reservation reservation
+     *
+     * @return $this
+     */
+    public function setReservation($reservation)
+    {
+        $this->container['reservation'] = $reservation;
+
+        return $this;
+    }
+
+    /**
+     * Gets webPageReservationCount
+     *
+     * @return int|mixed
+     */
+    public function getWebPageReservationCount()
+    {
+        return $this->container['webPageReservationCount'];
+    }
+
+    /**
+     * Sets webPageReservationCount
+     *
+     * @param int|mixed $webPageReservationCount webPageReservationCount
+     *
+     * @return $this
+     */
+    public function setWebPageReservationCount($webPageReservationCount)
+    {
+        $this->container['webPageReservationCount'] = $webPageReservationCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets webPageReservationRate
+     *
+     * @return double|mixed
+     */
+    public function getWebPageReservationRate()
+    {
+        return $this->container['webPageReservationRate'];
+    }
+
+    /**
+     * Sets webPageReservationRate
+     *
+     * @param double|mixed $webPageReservationRate webPageReservationRate
+     *
+     * @return $this
+     */
+    public function setWebPageReservationRate($webPageReservationRate)
+    {
+        $this->container['webPageReservationRate'] = $webPageReservationRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets webPageReservationCost
+     *
+     * @return int|mixed
+     */
+    public function getWebPageReservationCost()
+    {
+        return $this->container['webPageReservationCost'];
+    }
+
+    /**
+     * Sets webPageReservationCost
+     *
+     * @param int|mixed $webPageReservationCost webPageReservationCost
+     *
+     * @return $this
+     */
+    public function setWebPageReservationCost($webPageReservationCost)
+    {
+        $this->container['webPageReservationCost'] = $webPageReservationCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets webAddToCarCount
+     *
+     * @return int|mixed
+     */
+    public function getWebAddToCarCount()
+    {
+        return $this->container['webAddToCarCount'];
+    }
+
+    /**
+     * Sets webAddToCarCount
+     *
+     * @param int|mixed $webAddToCarCount webAddToCarCount
+     *
+     * @return $this
+     */
+    public function setWebAddToCarCount($webAddToCarCount)
+    {
+        $this->container['webAddToCarCount'] = $webAddToCarCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets webAddToCarCost
+     *
+     * @return int|mixed
+     */
+    public function getWebAddToCarCost()
+    {
+        return $this->container['webAddToCarCost'];
+    }
+
+    /**
+     * Sets webAddToCarCost
+     *
+     * @param int|mixed $webAddToCarCost webAddToCarCost
+     *
+     * @return $this
+     */
+    public function setWebAddToCarCost($webAddToCarCost)
+    {
+        $this->container['webAddToCarCost'] = $webAddToCarCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets webOrderUnitPrice
+     *
+     * @return int|mixed
+     */
+    public function getWebOrderUnitPrice()
+    {
+        return $this->container['webOrderUnitPrice'];
+    }
+
+    /**
+     * Sets webOrderUnitPrice
+     *
+     * @param int|mixed $webOrderUnitPrice webOrderUnitPrice
+     *
+     * @return $this
+     */
+    public function setWebOrderUnitPrice($webOrderUnitPrice)
+    {
+        $this->container['webOrderUnitPrice'] = $webOrderUnitPrice;
+
+        return $this;
+    }
+
+    /**
+     * Gets webOrderRoi
+     *
+     * @return double|mixed
+     */
+    public function getWebOrderRoi()
+    {
+        return $this->container['webOrderRoi'];
+    }
+
+    /**
+     * Sets webOrderRoi
+     *
+     * @param double|mixed $webOrderRoi webOrderRoi
+     *
+     * @return $this
+     */
+    public function setWebOrderRoi($webOrderRoi)
+    {
+        $this->container['webOrderRoi'] = $webOrderRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets webDeliverCount
+     *
+     * @return int|mixed
+     */
+    public function getWebDeliverCount()
+    {
+        return $this->container['webDeliverCount'];
+    }
+
+    /**
+     * Sets webDeliverCount
+     *
+     * @param int|mixed $webDeliverCount webDeliverCount
+     *
+     * @return $this
+     */
+    public function setWebDeliverCount($webDeliverCount)
+    {
+        $this->container['webDeliverCount'] = $webDeliverCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets webDeliverCost
+     *
+     * @return int|mixed
+     */
+    public function getWebDeliverCost()
+    {
+        return $this->container['webDeliverCost'];
+    }
+
+    /**
+     * Sets webDeliverCost
+     *
+     * @param int|mixed $webDeliverCost webDeliverCost
+     *
+     * @return $this
+     */
+    public function setWebDeliverCost($webDeliverCost)
+    {
+        $this->container['webDeliverCost'] = $webDeliverCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets webSignInCount
+     *
+     * @return int|mixed
+     */
+    public function getWebSignInCount()
+    {
+        return $this->container['webSignInCount'];
+    }
+
+    /**
+     * Sets webSignInCount
+     *
+     * @param int|mixed $webSignInCount webSignInCount
+     *
+     * @return $this
+     */
+    public function setWebSignInCount($webSignInCount)
+    {
+        $this->container['webSignInCount'] = $webSignInCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets webSignInCost
+     *
+     * @return int|mixed
+     */
+    public function getWebSignInCost()
+    {
+        return $this->container['webSignInCost'];
+    }
+
+    /**
+     * Sets webSignInCost
+     *
+     * @param int|mixed $webSignInCost webSignInCost
+     *
+     * @return $this
+     */
+    public function setWebSignInCost($webSignInCost)
+    {
+        $this->container['webSignInCost'] = $webSignInCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets appInstallation
+     *
+     * @return int|mixed
+     */
+    public function getAppInstallation()
+    {
+        return $this->container['appInstallation'];
+    }
+
+    /**
+     * Sets appInstallation
+     *
+     * @param int|mixed $appInstallation appInstallation
+     *
+     * @return $this
+     */
+    public function setAppInstallation($appInstallation)
+    {
+        $this->container['appInstallation'] = $appInstallation;
+
+        return $this;
+    }
+
+    /**
+     * Gets appActivatedCost
+     *
+     * @return int|mixed
+     */
+    public function getAppActivatedCost()
+    {
+        return $this->container['appActivatedCost'];
+    }
+
+    /**
+     * Sets appActivatedCost
+     *
+     * @param int|mixed $appActivatedCost appActivatedCost
+     *
+     * @return $this
+     */
+    public function setAppActivatedCost($appActivatedCost)
+    {
+        $this->container['appActivatedCost'] = $appActivatedCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionCount
+     *
+     * @return int|mixed
+     */
+    public function getAppRetentionCount()
+    {
+        return $this->container['appRetentionCount'];
+    }
+
+    /**
+     * Sets appRetentionCount
+     *
+     * @param int|mixed $appRetentionCount appRetentionCount
+     *
+     * @return $this
+     */
+    public function setAppRetentionCount($appRetentionCount)
+    {
+        $this->container['appRetentionCount'] = $appRetentionCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionRate
+     *
+     * @return double|mixed
+     */
+    public function getAppRetentionRate()
+    {
+        return $this->container['appRetentionRate'];
+    }
+
+    /**
+     * Sets appRetentionRate
+     *
+     * @param double|mixed $appRetentionRate appRetentionRate
+     *
+     * @return $this
+     */
+    public function setAppRetentionRate($appRetentionRate)
+    {
+        $this->container['appRetentionRate'] = $appRetentionRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionCost
+     *
+     * @return int|mixed
+     */
+    public function getAppRetentionCost()
+    {
+        return $this->container['appRetentionCost'];
+    }
+
+    /**
+     * Sets appRetentionCost
+     *
+     * @param int|mixed $appRetentionCost appRetentionCost
+     *
+     * @return $this
+     */
+    public function setAppRetentionCost($appRetentionCost)
+    {
+        $this->container['appRetentionCost'] = $appRetentionCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets appAddToCarCount
+     *
+     * @return int|mixed
+     */
+    public function getAppAddToCarCount()
+    {
+        return $this->container['appAddToCarCount'];
+    }
+
+    /**
+     * Sets appAddToCarCount
+     *
+     * @param int|mixed $appAddToCarCount appAddToCarCount
+     *
+     * @return $this
+     */
+    public function setAppAddToCarCount($appAddToCarCount)
+    {
+        $this->container['appAddToCarCount'] = $appAddToCarCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appAddToCarAmount
+     *
+     * @return int|mixed
+     */
+    public function getAppAddToCarAmount()
+    {
+        return $this->container['appAddToCarAmount'];
+    }
+
+    /**
+     * Sets appAddToCarAmount
+     *
+     * @param int|mixed $appAddToCarAmount appAddToCarAmount
+     *
+     * @return $this
+     */
+    public function setAppAddToCarAmount($appAddToCarAmount)
+    {
+        $this->container['appAddToCarAmount'] = $appAddToCarAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appCartAmount
+     *
+     * @return int|mixed
+     */
+    public function getAppCartAmount()
+    {
+        return $this->container['appCartAmount'];
+    }
+
+    /**
+     * Sets appCartAmount
+     *
+     * @param int|mixed $appCartAmount appCartAmount
+     *
+     * @return $this
+     */
+    public function setAppCartAmount($appCartAmount)
+    {
+        $this->container['appCartAmount'] = $appCartAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appAddToCarCost
+     *
+     * @return int|mixed
+     */
+    public function getAppAddToCarCost()
+    {
+        return $this->container['appAddToCarCost'];
+    }
+
+    /**
+     * Sets appAddToCarCost
+     *
+     * @param int|mixed $appAddToCarCost appAddToCarCost
+     *
+     * @return $this
+     */
+    public function setAppAddToCarCost($appAddToCarCost)
+    {
+        $this->container['appAddToCarCost'] = $appAddToCarCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets appPaymentCount
+     *
+     * @return int|mixed
+     */
+    public function getAppPaymentCount()
+    {
+        return $this->container['appPaymentCount'];
+    }
+
+    /**
+     * Sets appPaymentCount
+     *
+     * @param int|mixed $appPaymentCount appPaymentCount
+     *
+     * @return $this
+     */
+    public function setAppPaymentCount($appPaymentCount)
+    {
+        $this->container['appPaymentCount'] = $appPaymentCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appPaymentAmount
+     *
+     * @return int|mixed
+     */
+    public function getAppPaymentAmount()
+    {
+        return $this->container['appPaymentAmount'];
+    }
+
+    /**
+     * Sets appPaymentAmount
+     *
+     * @param int|mixed $appPaymentAmount appPaymentAmount
+     *
+     * @return $this
+     */
+    public function setAppPaymentAmount($appPaymentAmount)
+    {
+        $this->container['appPaymentAmount'] = $appPaymentAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets platformCouponClick
+     *
+     * @return int|mixed
+     */
+    public function getPlatformCouponClick()
+    {
+        return $this->container['platformCouponClick'];
+    }
+
+    /**
+     * Sets platformCouponClick
+     *
+     * @param int|mixed $platformCouponClick platformCouponClick
+     *
+     * @return $this
+     */
+    public function setPlatformCouponClick($platformCouponClick)
+    {
+        $this->container['platformCouponClick'] = $platformCouponClick;
+
+        return $this;
+    }
+
+    /**
+     * Gets follow
+     *
+     * @return int|mixed
+     */
+    public function getFollow()
+    {
+        return $this->container['follow'];
+    }
+
+    /**
+     * Sets follow
+     *
+     * @param int|mixed $follow follow
+     *
+     * @return $this
+     */
+    public function setFollow($follow)
+    {
+        $this->container['follow'] = $follow;
+
+        return $this;
+    }
+
+    /**
+     * Gets share
+     *
+     * @return int|mixed
+     */
+    public function getShare()
+    {
+        return $this->container['share'];
+    }
+
+    /**
+     * Sets share
+     *
+     * @param int|mixed $share share
+     *
+     * @return $this
+     */
+    public function setShare($share)
+    {
+        $this->container['share'] = $share;
+
+        return $this;
+    }
+
+    /**
+     * Gets read
+     *
+     * @return int|mixed
+     */
+    public function getRead()
+    {
+        return $this->container['read'];
+    }
+
+    /**
+     * Sets read
+     *
+     * @param int|mixed $read read
+     *
+     * @return $this
+     */
+    public function setRead($read)
+    {
+        $this->container['read'] = $read;
+
+        return $this;
+    }
+
+    /**
+     * Gets intelligentPhoneCallDirectCount
+     *
+     * @return int|mixed
+     */
+    public function getIntelligentPhoneCallDirectCount()
+    {
+        return $this->container['intelligentPhoneCallDirectCount'];
+    }
+
+    /**
+     * Sets intelligentPhoneCallDirectCount
+     *
+     * @param int|mixed $intelligentPhoneCallDirectCount intelligentPhoneCallDirectCount
+     *
+     * @return $this
+     */
+    public function setIntelligentPhoneCallDirectCount($intelligentPhoneCallDirectCount)
+    {
+        $this->container['intelligentPhoneCallDirectCount'] = $intelligentPhoneCallDirectCount;
+
+        return $this;
+    }
+
+    /**
      * Gets requestConversionsCount
      *
      * @return int|mixed
@@ -20912,126 +21602,6 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets campaignId
-     *
-     * @return int|mixed
-     */
-    public function getCampaignId()
-    {
-        return $this->container['campaignId'];
-    }
-
-    /**
-     * Sets campaignId
-     *
-     * @param int|mixed $campaignId campaignId
-     *
-     * @return $this
-     */
-    public function setCampaignId($campaignId)
-    {
-        $this->container['campaignId'] = $campaignId;
-
-        return $this;
-    }
-
-    /**
-     * Gets campaignName
-     *
-     * @return string|mixed
-     */
-    public function getCampaignName()
-    {
-        return $this->container['campaignName'];
-    }
-
-    /**
-     * Sets campaignName
-     *
-     * @param string|mixed $campaignName campaignName
-     *
-     * @return $this
-     */
-    public function setCampaignName($campaignName)
-    {
-        $this->container['campaignName'] = $campaignName;
-
-        return $this;
-    }
-
-    /**
-     * Gets webAddToCartCount
-     *
-     * @return int|mixed
-     */
-    public function getWebAddToCartCount()
-    {
-        return $this->container['webAddToCartCount'];
-    }
-
-    /**
-     * Sets webAddToCartCount
-     *
-     * @param int|mixed $webAddToCartCount webAddToCartCount
-     *
-     * @return $this
-     */
-    public function setWebAddToCartCount($webAddToCartCount)
-    {
-        $this->container['webAddToCartCount'] = $webAddToCartCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets webAddToCartCost
-     *
-     * @return int|mixed
-     */
-    public function getWebAddToCartCost()
-    {
-        return $this->container['webAddToCartCost'];
-    }
-
-    /**
-     * Sets webAddToCartCost
-     *
-     * @param int|mixed $webAddToCartCost webAddToCartCost
-     *
-     * @return $this
-     */
-    public function setWebAddToCartCost($webAddToCartCost)
-    {
-        $this->container['webAddToCartCost'] = $webAddToCartCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets adgroupId
-     *
-     * @return int|mixed
-     */
-    public function getAdgroupId()
-    {
-        return $this->container['adgroupId'];
-    }
-
-    /**
-     * Sets adgroupId
-     *
-     * @param int|mixed $adgroupId adgroupId
-     *
-     * @return $this
-     */
-    public function setAdgroupId($adgroupId)
-    {
-        $this->container['adgroupId'] = $adgroupId;
-
-        return $this;
-    }
-
-    /**
      * Gets adgroupName
      *
      * @return string|mixed
@@ -21128,193 +21698,337 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets adId
+     * Gets videoFollowCount
      *
      * @return int|mixed
      */
-    public function getAdId()
+    public function getVideoFollowCount()
     {
-        return $this->container['adId'];
+        return $this->container['videoFollowCount'];
     }
 
     /**
-     * Sets adId
+     * Sets videoFollowCount
      *
-     * @param int|mixed $adId adId
+     * @param int|mixed $videoFollowCount videoFollowCount
      *
      * @return $this
      */
-    public function setAdId($adId)
+    public function setVideoFollowCount($videoFollowCount)
     {
-        $this->container['adId'] = $adId;
+        $this->container['videoFollowCount'] = $videoFollowCount;
 
         return $this;
     }
 
     /**
-     * Gets adName
-     *
-     * @return string|mixed
-     */
-    public function getAdName()
-    {
-        return $this->container['adName'];
-    }
-
-    /**
-     * Sets adName
-     *
-     * @param string|mixed $adName adName
-     *
-     * @return $this
-     */
-    public function setAdName($adName)
-    {
-        $this->container['adName'] = $adName;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotedObjectType
-     *
-     * @return string|mixed
-     */
-    public function getPromotedObjectType()
-    {
-        return $this->container['promotedObjectType'];
-    }
-
-    /**
-     * Sets promotedObjectType
-     *
-     * @param string|mixed $promotedObjectType promotedObjectType
-     *
-     * @return $this
-     */
-    public function setPromotedObjectType($promotedObjectType)
-    {
-        $this->container['promotedObjectType'] = $promotedObjectType;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotedObjectId
-     *
-     * @return string|mixed
-     */
-    public function getPromotedObjectId()
-    {
-        return $this->container['promotedObjectId'];
-    }
-
-    /**
-     * Sets promotedObjectId
-     *
-     * @param string|mixed $promotedObjectId promotedObjectId
-     *
-     * @return $this
-     */
-    public function setPromotedObjectId($promotedObjectId)
-    {
-        $this->container['promotedObjectId'] = $promotedObjectId;
-
-        return $this;
-    }
-
-    /**
-     * Gets date
-     *
-     * @return string|mixed
-     */
-    public function getDate()
-    {
-        return $this->container['date'];
-    }
-
-    /**
-     * Sets date
-     *
-     * @param string|mixed $date date
-     *
-     * @return $this
-     */
-    public function setDate($date)
-    {
-        $this->container['date'] = $date;
-
-        return $this;
-    }
-
-    /**
-     * Gets matchType
+     * Gets videoHeartCount
      *
      * @return int|mixed
      */
-    public function getMatchType()
+    public function getVideoHeartCount()
     {
-        return $this->container['matchType'];
+        return $this->container['videoHeartCount'];
     }
 
     /**
-     * Sets matchType
+     * Sets videoHeartCount
      *
-     * @param int|mixed $matchType matchType
+     * @param int|mixed $videoHeartCount videoHeartCount
      *
      * @return $this
      */
-    public function setMatchType($matchType)
+    public function setVideoHeartCount($videoHeartCount)
     {
-        $this->container['matchType'] = $matchType;
+        $this->container['videoHeartCount'] = $videoHeartCount;
 
         return $this;
     }
 
     /**
-     * Gets bidwordId
+     * Gets videoCommentCount
      *
      * @return int|mixed
      */
-    public function getBidwordId()
+    public function getVideoCommentCount()
     {
-        return $this->container['bidwordId'];
+        return $this->container['videoCommentCount'];
     }
 
     /**
-     * Sets bidwordId
+     * Sets videoCommentCount
      *
-     * @param int|mixed $bidwordId bidwordId
+     * @param int|mixed $videoCommentCount videoCommentCount
      *
      * @return $this
      */
-    public function setBidwordId($bidwordId)
+    public function setVideoCommentCount($videoCommentCount)
     {
-        $this->container['bidwordId'] = $bidwordId;
+        $this->container['videoCommentCount'] = $videoCommentCount;
 
         return $this;
     }
 
     /**
-     * Gets bidword
+     * Gets videoLiveSubscribeCount
      *
-     * @return string|mixed
+     * @return int|mixed
      */
-    public function getBidword()
+    public function getVideoLiveSubscribeCount()
     {
-        return $this->container['bidword'];
+        return $this->container['videoLiveSubscribeCount'];
     }
 
     /**
-     * Sets bidword
+     * Sets videoLiveSubscribeCount
      *
-     * @param string|mixed $bidword bidword
+     * @param int|mixed $videoLiveSubscribeCount videoLiveSubscribeCount
      *
      * @return $this
      */
-    public function setBidword($bidword)
+    public function setVideoLiveSubscribeCount($videoLiveSubscribeCount)
     {
-        $this->container['bidword'] = $bidword;
+        $this->container['videoLiveSubscribeCount'] = $videoLiveSubscribeCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveExpCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveExpCount()
+    {
+        return $this->container['videoLiveExpCount'];
+    }
+
+    /**
+     * Sets videoLiveExpCount
+     *
+     * @param int|mixed $videoLiveExpCount videoLiveExpCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveExpCount($videoLiveExpCount)
+    {
+        $this->container['videoLiveExpCount'] = $videoLiveExpCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveHeartCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveHeartCount()
+    {
+        return $this->container['videoLiveHeartCount'];
+    }
+
+    /**
+     * Sets videoLiveHeartCount
+     *
+     * @param int|mixed $videoLiveHeartCount videoLiveHeartCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveHeartCount($videoLiveHeartCount)
+    {
+        $this->container['videoLiveHeartCount'] = $videoLiveHeartCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveCommentCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveCommentCount()
+    {
+        return $this->container['videoLiveCommentCount'];
+    }
+
+    /**
+     * Sets videoLiveCommentCount
+     *
+     * @param int|mixed $videoLiveCommentCount videoLiveCommentCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveCommentCount($videoLiveCommentCount)
+    {
+        $this->container['videoLiveCommentCount'] = $videoLiveCommentCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveShareCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveShareCount()
+    {
+        return $this->container['videoLiveShareCount'];
+    }
+
+    /**
+     * Sets videoLiveShareCount
+     *
+     * @param int|mixed $videoLiveShareCount videoLiveShareCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveShareCount($videoLiveShareCount)
+    {
+        $this->container['videoLiveShareCount'] = $videoLiveShareCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveCickCommodityCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveCickCommodityCount()
+    {
+        return $this->container['videoLiveCickCommodityCount'];
+    }
+
+    /**
+     * Sets videoLiveCickCommodityCount
+     *
+     * @param int|mixed $videoLiveCickCommodityCount videoLiveCickCommodityCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveCickCommodityCount($videoLiveCickCommodityCount)
+    {
+        $this->container['videoLiveCickCommodityCount'] = $videoLiveCickCommodityCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveHeartUserCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveHeartUserCount()
+    {
+        return $this->container['videoLiveHeartUserCount'];
+    }
+
+    /**
+     * Sets videoLiveHeartUserCount
+     *
+     * @param int|mixed $videoLiveHeartUserCount videoLiveHeartUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveHeartUserCount($videoLiveHeartUserCount)
+    {
+        $this->container['videoLiveHeartUserCount'] = $videoLiveHeartUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveCommentUserCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveCommentUserCount()
+    {
+        return $this->container['videoLiveCommentUserCount'];
+    }
+
+    /**
+     * Sets videoLiveCommentUserCount
+     *
+     * @param int|mixed $videoLiveCommentUserCount videoLiveCommentUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveCommentUserCount($videoLiveCommentUserCount)
+    {
+        $this->container['videoLiveCommentUserCount'] = $videoLiveCommentUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveShareUserCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveShareUserCount()
+    {
+        return $this->container['videoLiveShareUserCount'];
+    }
+
+    /**
+     * Sets videoLiveShareUserCount
+     *
+     * @param int|mixed $videoLiveShareUserCount videoLiveShareUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveShareUserCount($videoLiveShareUserCount)
+    {
+        $this->container['videoLiveShareUserCount'] = $videoLiveShareUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveClickCommodityUserCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveClickCommodityUserCount()
+    {
+        return $this->container['videoLiveClickCommodityUserCount'];
+    }
+
+    /**
+     * Sets videoLiveClickCommodityUserCount
+     *
+     * @param int|mixed $videoLiveClickCommodityUserCount videoLiveClickCommodityUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveClickCommodityUserCount($videoLiveClickCommodityUserCount)
+    {
+        $this->container['videoLiveClickCommodityUserCount'] = $videoLiveClickCommodityUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveCommodityBubbleExpCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveCommodityBubbleExpCount()
+    {
+        return $this->container['videoLiveCommodityBubbleExpCount'];
+    }
+
+    /**
+     * Sets videoLiveCommodityBubbleExpCount
+     *
+     * @param int|mixed $videoLiveCommodityBubbleExpCount videoLiveCommodityBubbleExpCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveCommodityBubbleExpCount($videoLiveCommodityBubbleExpCount)
+    {
+        $this->container['videoLiveCommodityBubbleExpCount'] = $videoLiveCommodityBubbleExpCount;
 
         return $this;
     }
@@ -21464,1633 +22178,49 @@ class HourlyReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets wechatAccountId
+     * Gets videoLiveExpUserCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveExpUserCount()
+    {
+        return $this->container['videoLiveExpUserCount'];
+    }
+
+    /**
+     * Sets videoLiveExpUserCount
+     *
+     * @param int|mixed $videoLiveExpUserCount videoLiveExpUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveExpUserCount($videoLiveExpUserCount)
+    {
+        $this->container['videoLiveExpUserCount'] = $videoLiveExpUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets campaignName
      *
      * @return string|mixed
      */
-    public function getWechatAccountId()
+    public function getCampaignName()
     {
-        return $this->container['wechatAccountId'];
+        return $this->container['campaignName'];
     }
 
     /**
-     * Sets wechatAccountId
+     * Sets campaignName
      *
-     * @param string|mixed $wechatAccountId wechatAccountId
+     * @param string|mixed $campaignName campaignName
      *
      * @return $this
      */
-    public function setWechatAccountId($wechatAccountId)
+    public function setCampaignName($campaignName)
     {
-        $this->container['wechatAccountId'] = $wechatAccountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatAgencyId
-     *
-     * @return string|mixed
-     */
-    public function getWechatAgencyId()
-    {
-        return $this->container['wechatAgencyId'];
-    }
-
-    /**
-     * Sets wechatAgencyId
-     *
-     * @param string|mixed $wechatAgencyId wechatAgencyId
-     *
-     * @return $this
-     */
-    public function setWechatAgencyId($wechatAgencyId)
-    {
-        $this->container['wechatAgencyId'] = $wechatAgencyId;
-
-        return $this;
-    }
-
-    /**
-     * Gets costDeviationRate
-     *
-     * @return double|mixed
-     */
-    public function getCostDeviationRate()
-    {
-        return $this->container['costDeviationRate'];
-    }
-
-    /**
-     * Sets costDeviationRate
-     *
-     * @param double|mixed $costDeviationRate costDeviationRate
-     *
-     * @return $this
-     */
-    public function setCostDeviationRate($costDeviationRate)
-    {
-        $this->container['costDeviationRate'] = $costDeviationRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets compensationAmount
-     *
-     * @return int|mixed
-     */
-    public function getCompensationAmount()
-    {
-        return $this->container['compensationAmount'];
-    }
-
-    /**
-     * Sets compensationAmount
-     *
-     * @param int|mixed $compensationAmount compensationAmount
-     *
-     * @return $this
-     */
-    public function setCompensationAmount($compensationAmount)
-    {
-        $this->container['compensationAmount'] = $compensationAmount;
-
-        return $this;
-    }
-
-    /**
-     * Gets avgViewPerUser
-     *
-     * @return double|mixed
-     */
-    public function getAvgViewPerUser()
-    {
-        return $this->container['avgViewPerUser'];
-    }
-
-    /**
-     * Sets avgViewPerUser
-     *
-     * @param double|mixed $avgViewPerUser avgViewPerUser
-     *
-     * @return $this
-     */
-    public function setAvgViewPerUser($avgViewPerUser)
-    {
-        $this->container['avgViewPerUser'] = $avgViewPerUser;
-
-        return $this;
-    }
-
-    /**
-     * Gets imageClickUserCount
-     *
-     * @return int|mixed
-     */
-    public function getImageClickUserCount()
-    {
-        return $this->container['imageClickUserCount'];
-    }
-
-    /**
-     * Sets imageClickUserCount
-     *
-     * @param int|mixed $imageClickUserCount imageClickUserCount
-     *
-     * @return $this
-     */
-    public function setImageClickUserCount($imageClickUserCount)
-    {
-        $this->container['imageClickUserCount'] = $imageClickUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoClickUserCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoClickUserCount()
-    {
-        return $this->container['videoClickUserCount'];
-    }
-
-    /**
-     * Sets videoClickUserCount
-     *
-     * @param int|mixed $videoClickUserCount videoClickUserCount
-     *
-     * @return $this
-     */
-    public function setVideoClickUserCount($videoClickUserCount)
-    {
-        $this->container['videoClickUserCount'] = $videoClickUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets linkClickUserCount
-     *
-     * @return int|mixed
-     */
-    public function getLinkClickUserCount()
-    {
-        return $this->container['linkClickUserCount'];
-    }
-
-    /**
-     * Sets linkClickUserCount
-     *
-     * @param int|mixed $linkClickUserCount linkClickUserCount
-     *
-     * @return $this
-     */
-    public function setLinkClickUserCount($linkClickUserCount)
-    {
-        $this->container['linkClickUserCount'] = $linkClickUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets portraitClickUserCount
-     *
-     * @return int|mixed
-     */
-    public function getPortraitClickUserCount()
-    {
-        return $this->container['portraitClickUserCount'];
-    }
-
-    /**
-     * Sets portraitClickUserCount
-     *
-     * @param int|mixed $portraitClickUserCount portraitClickUserCount
-     *
-     * @return $this
-     */
-    public function setPortraitClickUserCount($portraitClickUserCount)
-    {
-        $this->container['portraitClickUserCount'] = $portraitClickUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets nicknameClickUserCount
-     *
-     * @return int|mixed
-     */
-    public function getNicknameClickUserCount()
-    {
-        return $this->container['nicknameClickUserCount'];
-    }
-
-    /**
-     * Sets nicknameClickUserCount
-     *
-     * @param int|mixed $nicknameClickUserCount nicknameClickUserCount
-     *
-     * @return $this
-     */
-    public function setNicknameClickUserCount($nicknameClickUserCount)
-    {
-        $this->container['nicknameClickUserCount'] = $nicknameClickUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets poiClickUserCount
-     *
-     * @return int|mixed
-     */
-    public function getPoiClickUserCount()
-    {
-        return $this->container['poiClickUserCount'];
-    }
-
-    /**
-     * Sets poiClickUserCount
-     *
-     * @param int|mixed $poiClickUserCount poiClickUserCount
-     *
-     * @return $this
-     */
-    public function setPoiClickUserCount($poiClickUserCount)
-    {
-        $this->container['poiClickUserCount'] = $poiClickUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets platformKeyPageViewUserCount
-     *
-     * @return int|mixed
-     */
-    public function getPlatformKeyPageViewUserCount()
-    {
-        return $this->container['platformKeyPageViewUserCount'];
-    }
-
-    /**
-     * Sets platformKeyPageViewUserCount
-     *
-     * @param int|mixed $platformKeyPageViewUserCount platformKeyPageViewUserCount
-     *
-     * @return $this
-     */
-    public function setPlatformKeyPageViewUserCount($platformKeyPageViewUserCount)
-    {
-        $this->container['platformKeyPageViewUserCount'] = $platformKeyPageViewUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets platformKeyPageAvgViewPerUser
-     *
-     * @return double|mixed
-     */
-    public function getPlatformKeyPageAvgViewPerUser()
-    {
-        return $this->container['platformKeyPageAvgViewPerUser'];
-    }
-
-    /**
-     * Sets platformKeyPageAvgViewPerUser
-     *
-     * @param double|mixed $platformKeyPageAvgViewPerUser platformKeyPageAvgViewPerUser
-     *
-     * @return $this
-     */
-    public function setPlatformKeyPageAvgViewPerUser($platformKeyPageAvgViewPerUser)
-    {
-        $this->container['platformKeyPageAvgViewPerUser'] = $platformKeyPageAvgViewPerUser;
-
-        return $this;
-    }
-
-    /**
-     * Gets platformKeyPageViewDuration
-     *
-     * @return double|mixed
-     */
-    public function getPlatformKeyPageViewDuration()
-    {
-        return $this->container['platformKeyPageViewDuration'];
-    }
-
-    /**
-     * Sets platformKeyPageViewDuration
-     *
-     * @param double|mixed $platformKeyPageViewDuration platformKeyPageViewDuration
-     *
-     * @return $this
-     */
-    public function setPlatformKeyPageViewDuration($platformKeyPageViewDuration)
-    {
-        $this->container['platformKeyPageViewDuration'] = $platformKeyPageViewDuration;
-
-        return $this;
-    }
-
-    /**
-     * Gets cpnClickButtonCost
-     *
-     * @return int|mixed
-     */
-    public function getCpnClickButtonCost()
-    {
-        return $this->container['cpnClickButtonCost'];
-    }
-
-    /**
-     * Sets cpnClickButtonCost
-     *
-     * @param int|mixed $cpnClickButtonCost cpnClickButtonCost
-     *
-     * @return $this
-     */
-    public function setCpnClickButtonCost($cpnClickButtonCost)
-    {
-        $this->container['cpnClickButtonCost'] = $cpnClickButtonCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets praiseUserCount
-     *
-     * @return int|mixed
-     */
-    public function getPraiseUserCount()
-    {
-        return $this->container['praiseUserCount'];
-    }
-
-    /**
-     * Sets praiseUserCount
-     *
-     * @param int|mixed $praiseUserCount praiseUserCount
-     *
-     * @return $this
-     */
-    public function setPraiseUserCount($praiseUserCount)
-    {
-        $this->container['praiseUserCount'] = $praiseUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets commentUserCount
-     *
-     * @return int|mixed
-     */
-    public function getCommentUserCount()
-    {
-        return $this->container['commentUserCount'];
-    }
-
-    /**
-     * Sets commentUserCount
-     *
-     * @param int|mixed $commentUserCount commentUserCount
-     *
-     * @return $this
-     */
-    public function setCommentUserCount($commentUserCount)
-    {
-        $this->container['commentUserCount'] = $commentUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets orderCount
-     *
-     * @return int|mixed
-     */
-    public function getOrderCount()
-    {
-        return $this->container['orderCount'];
-    }
-
-    /**
-     * Sets orderCount
-     *
-     * @param int|mixed $orderCount orderCount
-     *
-     * @return $this
-     */
-    public function setOrderCount($orderCount)
-    {
-        $this->container['orderCount'] = $orderCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets orderRate
-     *
-     * @return double|mixed
-     */
-    public function getOrderRate()
-    {
-        return $this->container['orderRate'];
-    }
-
-    /**
-     * Sets orderRate
-     *
-     * @param double|mixed $orderRate orderRate
-     *
-     * @return $this
-     */
-    public function setOrderRate($orderRate)
-    {
-        $this->container['orderRate'] = $orderRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets questReservationPvCost
-     *
-     * @return int|mixed
-     */
-    public function getQuestReservationPvCost()
-    {
-        return $this->container['questReservationPvCost'];
-    }
-
-    /**
-     * Sets questReservationPvCost
-     *
-     * @param int|mixed $questReservationPvCost questReservationPvCost
-     *
-     * @return $this
-     */
-    public function setQuestReservationPvCost($questReservationPvCost)
-    {
-        $this->container['questReservationPvCost'] = $questReservationPvCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets leadsRate
-     *
-     * @return double|mixed
-     */
-    public function getLeadsRate()
-    {
-        return $this->container['leadsRate'];
-    }
-
-    /**
-     * Sets leadsRate
-     *
-     * @param double|mixed $leadsRate leadsRate
-     *
-     * @return $this
-     */
-    public function setLeadsRate($leadsRate)
-    {
-        $this->container['leadsRate'] = $leadsRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets leadsUserCount
-     *
-     * @return int|mixed
-     */
-    public function getLeadsUserCount()
-    {
-        return $this->container['leadsUserCount'];
-    }
-
-    /**
-     * Sets leadsUserCount
-     *
-     * @param int|mixed $leadsUserCount leadsUserCount
-     *
-     * @return $this
-     */
-    public function setLeadsUserCount($leadsUserCount)
-    {
-        $this->container['leadsUserCount'] = $leadsUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets leadsCost
-     *
-     * @return int|mixed
-     */
-    public function getLeadsCost()
-    {
-        return $this->container['leadsCost'];
-    }
-
-    /**
-     * Sets leadsCost
-     *
-     * @param int|mixed $leadsCost leadsCost
-     *
-     * @return $this
-     */
-    public function setLeadsCost($leadsCost)
-    {
-        $this->container['leadsCost'] = $leadsCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets leadsUserRate
-     *
-     * @return double|mixed
-     */
-    public function getLeadsUserRate()
-    {
-        return $this->container['leadsUserRate'];
-    }
-
-    /**
-     * Sets leadsUserRate
-     *
-     * @param double|mixed $leadsUserRate leadsUserRate
-     *
-     * @return $this
-     */
-    public function setLeadsUserRate($leadsUserRate)
-    {
-        $this->container['leadsUserRate'] = $leadsUserRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets validLeadsCost
-     *
-     * @return int|mixed
-     */
-    public function getValidLeadsCost()
-    {
-        return $this->container['validLeadsCost'];
-    }
-
-    /**
-     * Sets validLeadsCost
-     *
-     * @param int|mixed $validLeadsCost validLeadsCost
-     *
-     * @return $this
-     */
-    public function setValidLeadsCost($validLeadsCost)
-    {
-        $this->container['validLeadsCost'] = $validLeadsCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets validLeadsRate
-     *
-     * @return double|mixed
-     */
-    public function getValidLeadsRate()
-    {
-        return $this->container['validLeadsRate'];
-    }
-
-    /**
-     * Sets validLeadsRate
-     *
-     * @param double|mixed $validLeadsRate validLeadsRate
-     *
-     * @return $this
-     */
-    public function setValidLeadsRate($validLeadsRate)
-    {
-        $this->container['validLeadsRate'] = $validLeadsRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets pageConsultUserCount
-     *
-     * @return int|mixed
-     */
-    public function getPageConsultUserCount()
-    {
-        return $this->container['pageConsultUserCount'];
-    }
-
-    /**
-     * Sets pageConsultUserCount
-     *
-     * @param int|mixed $pageConsultUserCount pageConsultUserCount
-     *
-     * @return $this
-     */
-    public function setPageConsultUserCount($pageConsultUserCount)
-    {
-        $this->container['pageConsultUserCount'] = $pageConsultUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets validPageConsultUserCount
-     *
-     * @return int|mixed
-     */
-    public function getValidPageConsultUserCount()
-    {
-        return $this->container['validPageConsultUserCount'];
-    }
-
-    /**
-     * Sets validPageConsultUserCount
-     *
-     * @param int|mixed $validPageConsultUserCount validPageConsultUserCount
-     *
-     * @return $this
-     */
-    public function setValidPageConsultUserCount($validPageConsultUserCount)
-    {
-        $this->container['validPageConsultUserCount'] = $validPageConsultUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets withdrDepWebUserCount
-     *
-     * @return int|mixed
-     */
-    public function getWithdrDepWebUserCount()
-    {
-        return $this->container['withdrDepWebUserCount'];
-    }
-
-    /**
-     * Sets withdrDepWebUserCount
-     *
-     * @param int|mixed $withdrDepWebUserCount withdrDepWebUserCount
-     *
-     * @return $this
-     */
-    public function setWithdrDepWebUserCount($withdrDepWebUserCount)
-    {
-        $this->container['withdrDepWebUserCount'] = $withdrDepWebUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatMinigameRegisterCost
-     *
-     * @return int|mixed
-     */
-    public function getWechatMinigameRegisterCost()
-    {
-        return $this->container['wechatMinigameRegisterCost'];
-    }
-
-    /**
-     * Sets wechatMinigameRegisterCost
-     *
-     * @param int|mixed $wechatMinigameRegisterCost wechatMinigameRegisterCost
-     *
-     * @return $this
-     */
-    public function setWechatMinigameRegisterCost($wechatMinigameRegisterCost)
-    {
-        $this->container['wechatMinigameRegisterCost'] = $wechatMinigameRegisterCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatMinigameRegisterRate
-     *
-     * @return double|mixed
-     */
-    public function getWechatMinigameRegisterRate()
-    {
-        return $this->container['wechatMinigameRegisterRate'];
-    }
-
-    /**
-     * Sets wechatMinigameRegisterRate
-     *
-     * @param double|mixed $wechatMinigameRegisterRate wechatMinigameRegisterRate
-     *
-     * @return $this
-     */
-    public function setWechatMinigameRegisterRate($wechatMinigameRegisterRate)
-    {
-        $this->container['wechatMinigameRegisterRate'] = $wechatMinigameRegisterRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatMinigameArpu
-     *
-     * @return double|mixed
-     */
-    public function getWechatMinigameArpu()
-    {
-        return $this->container['wechatMinigameArpu'];
-    }
-
-    /**
-     * Sets wechatMinigameArpu
-     *
-     * @param double|mixed $wechatMinigameArpu wechatMinigameArpu
-     *
-     * @return $this
-     */
-    public function setWechatMinigameArpu($wechatMinigameArpu)
-    {
-        $this->container['wechatMinigameArpu'] = $wechatMinigameArpu;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatMinigameRetentionCount
-     *
-     * @return int|mixed
-     */
-    public function getWechatMinigameRetentionCount()
-    {
-        return $this->container['wechatMinigameRetentionCount'];
-    }
-
-    /**
-     * Sets wechatMinigameRetentionCount
-     *
-     * @param int|mixed $wechatMinigameRetentionCount wechatMinigameRetentionCount
-     *
-     * @return $this
-     */
-    public function setWechatMinigameRetentionCount($wechatMinigameRetentionCount)
-    {
-        $this->container['wechatMinigameRetentionCount'] = $wechatMinigameRetentionCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatMinigameCheckoutCount
-     *
-     * @return int|mixed
-     */
-    public function getWechatMinigameCheckoutCount()
-    {
-        return $this->container['wechatMinigameCheckoutCount'];
-    }
-
-    /**
-     * Sets wechatMinigameCheckoutCount
-     *
-     * @param int|mixed $wechatMinigameCheckoutCount wechatMinigameCheckoutCount
-     *
-     * @return $this
-     */
-    public function setWechatMinigameCheckoutCount($wechatMinigameCheckoutCount)
-    {
-        $this->container['wechatMinigameCheckoutCount'] = $wechatMinigameCheckoutCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets wechatMinigameCheckoutAmount
-     *
-     * @return int|mixed
-     */
-    public function getWechatMinigameCheckoutAmount()
-    {
-        return $this->container['wechatMinigameCheckoutAmount'];
-    }
-
-    /**
-     * Sets wechatMinigameCheckoutAmount
-     *
-     * @param int|mixed $wechatMinigameCheckoutAmount wechatMinigameCheckoutAmount
-     *
-     * @return $this
-     */
-    public function setWechatMinigameCheckoutAmount($wechatMinigameCheckoutAmount)
-    {
-        $this->container['wechatMinigameCheckoutAmount'] = $wechatMinigameCheckoutAmount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountFollowCount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountFollowCount()
-    {
-        return $this->container['officialAccountFollowCount'];
-    }
-
-    /**
-     * Sets officialAccountFollowCount
-     *
-     * @param int|mixed $officialAccountFollowCount officialAccountFollowCount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountFollowCount($officialAccountFollowCount)
-    {
-        $this->container['officialAccountFollowCount'] = $officialAccountFollowCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountFollowCost
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountFollowCost()
-    {
-        return $this->container['officialAccountFollowCost'];
-    }
-
-    /**
-     * Sets officialAccountFollowCost
-     *
-     * @param int|mixed $officialAccountFollowCost officialAccountFollowCost
-     *
-     * @return $this
-     */
-    public function setOfficialAccountFollowCost($officialAccountFollowCost)
-    {
-        $this->container['officialAccountFollowCost'] = $officialAccountFollowCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountFollowRate
-     *
-     * @return double|mixed
-     */
-    public function getOfficialAccountFollowRate()
-    {
-        return $this->container['officialAccountFollowRate'];
-    }
-
-    /**
-     * Sets officialAccountFollowRate
-     *
-     * @param double|mixed $officialAccountFollowRate officialAccountFollowRate
-     *
-     * @return $this
-     */
-    public function setOfficialAccountFollowRate($officialAccountFollowRate)
-    {
-        $this->container['officialAccountFollowRate'] = $officialAccountFollowRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountRegisterUserCount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountRegisterUserCount()
-    {
-        return $this->container['officialAccountRegisterUserCount'];
-    }
-
-    /**
-     * Sets officialAccountRegisterUserCount
-     *
-     * @param int|mixed $officialAccountRegisterUserCount officialAccountRegisterUserCount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountRegisterUserCount($officialAccountRegisterUserCount)
-    {
-        $this->container['officialAccountRegisterUserCount'] = $officialAccountRegisterUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountRegisterRate
-     *
-     * @return double|mixed
-     */
-    public function getOfficialAccountRegisterRate()
-    {
-        return $this->container['officialAccountRegisterRate'];
-    }
-
-    /**
-     * Sets officialAccountRegisterRate
-     *
-     * @param double|mixed $officialAccountRegisterRate officialAccountRegisterRate
-     *
-     * @return $this
-     */
-    public function setOfficialAccountRegisterRate($officialAccountRegisterRate)
-    {
-        $this->container['officialAccountRegisterRate'] = $officialAccountRegisterRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountRegisterCost
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountRegisterCost()
-    {
-        return $this->container['officialAccountRegisterCost'];
-    }
-
-    /**
-     * Sets officialAccountRegisterCost
-     *
-     * @param int|mixed $officialAccountRegisterCost officialAccountRegisterCost
-     *
-     * @return $this
-     */
-    public function setOfficialAccountRegisterCost($officialAccountRegisterCost)
-    {
-        $this->container['officialAccountRegisterCost'] = $officialAccountRegisterCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountRegisterAmount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountRegisterAmount()
-    {
-        return $this->container['officialAccountRegisterAmount'];
-    }
-
-    /**
-     * Sets officialAccountRegisterAmount
-     *
-     * @param int|mixed $officialAccountRegisterAmount officialAccountRegisterAmount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountRegisterAmount($officialAccountRegisterAmount)
-    {
-        $this->container['officialAccountRegisterAmount'] = $officialAccountRegisterAmount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountRegisterRoi
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountRegisterRoi()
-    {
-        return $this->container['officialAccountRegisterRoi'];
-    }
-
-    /**
-     * Sets officialAccountRegisterRoi
-     *
-     * @param int|mixed $officialAccountRegisterRoi officialAccountRegisterRoi
-     *
-     * @return $this
-     */
-    public function setOfficialAccountRegisterRoi($officialAccountRegisterRoi)
-    {
-        $this->container['officialAccountRegisterRoi'] = $officialAccountRegisterRoi;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountApplyCount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountApplyCount()
-    {
-        return $this->container['officialAccountApplyCount'];
-    }
-
-    /**
-     * Sets officialAccountApplyCount
-     *
-     * @param int|mixed $officialAccountApplyCount officialAccountApplyCount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountApplyCount($officialAccountApplyCount)
-    {
-        $this->container['officialAccountApplyCount'] = $officialAccountApplyCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountApplyUserCount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountApplyUserCount()
-    {
-        return $this->container['officialAccountApplyUserCount'];
-    }
-
-    /**
-     * Sets officialAccountApplyUserCount
-     *
-     * @param int|mixed $officialAccountApplyUserCount officialAccountApplyUserCount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountApplyUserCount($officialAccountApplyUserCount)
-    {
-        $this->container['officialAccountApplyUserCount'] = $officialAccountApplyUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountApplyRate
-     *
-     * @return double|mixed
-     */
-    public function getOfficialAccountApplyRate()
-    {
-        return $this->container['officialAccountApplyRate'];
-    }
-
-    /**
-     * Sets officialAccountApplyRate
-     *
-     * @param double|mixed $officialAccountApplyRate officialAccountApplyRate
-     *
-     * @return $this
-     */
-    public function setOfficialAccountApplyRate($officialAccountApplyRate)
-    {
-        $this->container['officialAccountApplyRate'] = $officialAccountApplyRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountApplyCost
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountApplyCost()
-    {
-        return $this->container['officialAccountApplyCost'];
-    }
-
-    /**
-     * Sets officialAccountApplyCost
-     *
-     * @param int|mixed $officialAccountApplyCost officialAccountApplyCost
-     *
-     * @return $this
-     */
-    public function setOfficialAccountApplyCost($officialAccountApplyCost)
-    {
-        $this->container['officialAccountApplyCost'] = $officialAccountApplyCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountApplyAmount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountApplyAmount()
-    {
-        return $this->container['officialAccountApplyAmount'];
-    }
-
-    /**
-     * Sets officialAccountApplyAmount
-     *
-     * @param int|mixed $officialAccountApplyAmount officialAccountApplyAmount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountApplyAmount($officialAccountApplyAmount)
-    {
-        $this->container['officialAccountApplyAmount'] = $officialAccountApplyAmount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountApplyRoi
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountApplyRoi()
-    {
-        return $this->container['officialAccountApplyRoi'];
-    }
-
-    /**
-     * Sets officialAccountApplyRoi
-     *
-     * @param int|mixed $officialAccountApplyRoi officialAccountApplyRoi
-     *
-     * @return $this
-     */
-    public function setOfficialAccountApplyRoi($officialAccountApplyRoi)
-    {
-        $this->container['officialAccountApplyRoi'] = $officialAccountApplyRoi;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountOrderCount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountOrderCount()
-    {
-        return $this->container['officialAccountOrderCount'];
-    }
-
-    /**
-     * Sets officialAccountOrderCount
-     *
-     * @param int|mixed $officialAccountOrderCount officialAccountOrderCount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountOrderCount($officialAccountOrderCount)
-    {
-        $this->container['officialAccountOrderCount'] = $officialAccountOrderCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountFirstDayOrderCount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountFirstDayOrderCount()
-    {
-        return $this->container['officialAccountFirstDayOrderCount'];
-    }
-
-    /**
-     * Sets officialAccountFirstDayOrderCount
-     *
-     * @param int|mixed $officialAccountFirstDayOrderCount officialAccountFirstDayOrderCount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountFirstDayOrderCount($officialAccountFirstDayOrderCount)
-    {
-        $this->container['officialAccountFirstDayOrderCount'] = $officialAccountFirstDayOrderCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountOrderUserCount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountOrderUserCount()
-    {
-        return $this->container['officialAccountOrderUserCount'];
-    }
-
-    /**
-     * Sets officialAccountOrderUserCount
-     *
-     * @param int|mixed $officialAccountOrderUserCount officialAccountOrderUserCount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountOrderUserCount($officialAccountOrderUserCount)
-    {
-        $this->container['officialAccountOrderUserCount'] = $officialAccountOrderUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountOrderRate
-     *
-     * @return double|mixed
-     */
-    public function getOfficialAccountOrderRate()
-    {
-        return $this->container['officialAccountOrderRate'];
-    }
-
-    /**
-     * Sets officialAccountOrderRate
-     *
-     * @param double|mixed $officialAccountOrderRate officialAccountOrderRate
-     *
-     * @return $this
-     */
-    public function setOfficialAccountOrderRate($officialAccountOrderRate)
-    {
-        $this->container['officialAccountOrderRate'] = $officialAccountOrderRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountOrderCost
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountOrderCost()
-    {
-        return $this->container['officialAccountOrderCost'];
-    }
-
-    /**
-     * Sets officialAccountOrderCost
-     *
-     * @param int|mixed $officialAccountOrderCost officialAccountOrderCost
-     *
-     * @return $this
-     */
-    public function setOfficialAccountOrderCost($officialAccountOrderCost)
-    {
-        $this->container['officialAccountOrderCost'] = $officialAccountOrderCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountOrderAmount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountOrderAmount()
-    {
-        return $this->container['officialAccountOrderAmount'];
-    }
-
-    /**
-     * Sets officialAccountOrderAmount
-     *
-     * @param int|mixed $officialAccountOrderAmount officialAccountOrderAmount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountOrderAmount($officialAccountOrderAmount)
-    {
-        $this->container['officialAccountOrderAmount'] = $officialAccountOrderAmount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountFirstDayOrderAmount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountFirstDayOrderAmount()
-    {
-        return $this->container['officialAccountFirstDayOrderAmount'];
-    }
-
-    /**
-     * Sets officialAccountFirstDayOrderAmount
-     *
-     * @param int|mixed $officialAccountFirstDayOrderAmount officialAccountFirstDayOrderAmount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountFirstDayOrderAmount($officialAccountFirstDayOrderAmount)
-    {
-        $this->container['officialAccountFirstDayOrderAmount'] = $officialAccountFirstDayOrderAmount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountOrderRoi
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountOrderRoi()
-    {
-        return $this->container['officialAccountOrderRoi'];
-    }
-
-    /**
-     * Sets officialAccountOrderRoi
-     *
-     * @param int|mixed $officialAccountOrderRoi officialAccountOrderRoi
-     *
-     * @return $this
-     */
-    public function setOfficialAccountOrderRoi($officialAccountOrderRoi)
-    {
-        $this->container['officialAccountOrderRoi'] = $officialAccountOrderRoi;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountConsultCount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountConsultCount()
-    {
-        return $this->container['officialAccountConsultCount'];
-    }
-
-    /**
-     * Sets officialAccountConsultCount
-     *
-     * @param int|mixed $officialAccountConsultCount officialAccountConsultCount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountConsultCount($officialAccountConsultCount)
-    {
-        $this->container['officialAccountConsultCount'] = $officialAccountConsultCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountReaderCount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountReaderCount()
-    {
-        return $this->container['officialAccountReaderCount'];
-    }
-
-    /**
-     * Sets officialAccountReaderCount
-     *
-     * @param int|mixed $officialAccountReaderCount officialAccountReaderCount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountReaderCount($officialAccountReaderCount)
-    {
-        $this->container['officialAccountReaderCount'] = $officialAccountReaderCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountCreditApplyUserCount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountCreditApplyUserCount()
-    {
-        return $this->container['officialAccountCreditApplyUserCount'];
-    }
-
-    /**
-     * Sets officialAccountCreditApplyUserCount
-     *
-     * @param int|mixed $officialAccountCreditApplyUserCount officialAccountCreditApplyUserCount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountCreditApplyUserCount($officialAccountCreditApplyUserCount)
-    {
-        $this->container['officialAccountCreditApplyUserCount'] = $officialAccountCreditApplyUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets officialAccountCreditUserCount
-     *
-     * @return int|mixed
-     */
-    public function getOfficialAccountCreditUserCount()
-    {
-        return $this->container['officialAccountCreditUserCount'];
-    }
-
-    /**
-     * Sets officialAccountCreditUserCount
-     *
-     * @param int|mixed $officialAccountCreditUserCount officialAccountCreditUserCount
-     *
-     * @return $this
-     */
-    public function setOfficialAccountCreditUserCount($officialAccountCreditUserCount)
-    {
-        $this->container['officialAccountCreditUserCount'] = $officialAccountCreditUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets couponGetCost
-     *
-     * @return int|mixed
-     */
-    public function getCouponGetCost()
-    {
-        return $this->container['couponGetCost'];
-    }
-
-    /**
-     * Sets couponGetCost
-     *
-     * @param int|mixed $couponGetCost couponGetCost
-     *
-     * @return $this
-     */
-    public function setCouponGetCost($couponGetCost)
-    {
-        $this->container['couponGetCost'] = $couponGetCost;
-
-        return $this;
-    }
-
-    /**
-     * Gets couponGetRate
-     *
-     * @return double|mixed
-     */
-    public function getCouponGetRate()
-    {
-        return $this->container['couponGetRate'];
-    }
-
-    /**
-     * Sets couponGetRate
-     *
-     * @param double|mixed $couponGetRate couponGetRate
-     *
-     * @return $this
-     */
-    public function setCouponGetRate($couponGetRate)
-    {
-        $this->container['couponGetRate'] = $couponGetRate;
-
-        return $this;
-    }
-
-    /**
-     * Gets couponUseCount
-     *
-     * @return int|mixed
-     */
-    public function getCouponUseCount()
-    {
-        return $this->container['couponUseCount'];
-    }
-
-    /**
-     * Sets couponUseCount
-     *
-     * @param int|mixed $couponUseCount couponUseCount
-     *
-     * @return $this
-     */
-    public function setCouponUseCount($couponUseCount)
-    {
-        $this->container['couponUseCount'] = $couponUseCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets forwardUserCount
-     *
-     * @return int|mixed
-     */
-    public function getForwardUserCount()
-    {
-        return $this->container['forwardUserCount'];
-    }
-
-    /**
-     * Sets forwardUserCount
-     *
-     * @param int|mixed $forwardUserCount forwardUserCount
-     *
-     * @return $this
-     */
-    public function setForwardUserCount($forwardUserCount)
-    {
-        $this->container['forwardUserCount'] = $forwardUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoOuterPlayUserCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoOuterPlayUserCount()
-    {
-        return $this->container['videoOuterPlayUserCount'];
-    }
-
-    /**
-     * Sets videoOuterPlayUserCount
-     *
-     * @param int|mixed $videoOuterPlayUserCount videoOuterPlayUserCount
-     *
-     * @return $this
-     */
-    public function setVideoOuterPlayUserCount($videoOuterPlayUserCount)
-    {
-        $this->container['videoOuterPlayUserCount'] = $videoOuterPlayUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets videoInnerPlayUserCount
-     *
-     * @return int|mixed
-     */
-    public function getVideoInnerPlayUserCount()
-    {
-        return $this->container['videoInnerPlayUserCount'];
-    }
-
-    /**
-     * Sets videoInnerPlayUserCount
-     *
-     * @param int|mixed $videoInnerPlayUserCount videoInnerPlayUserCount
-     *
-     * @return $this
-     */
-    public function setVideoInnerPlayUserCount($videoInnerPlayUserCount)
-    {
-        $this->container['videoInnerPlayUserCount'] = $videoInnerPlayUserCount;
-
-        return $this;
-    }
-
-    /**
-     * Gets poiId
-     *
-     * @return string|mixed
-     */
-    public function getPoiId()
-    {
-        return $this->container['poiId'];
-    }
-
-    /**
-     * Sets poiId
-     *
-     * @param string|mixed $poiId poiId
-     *
-     * @return $this
-     */
-    public function setPoiId($poiId)
-    {
-        $this->container['poiId'] = $poiId;
+        $this->container['campaignName'] = $campaignName;
 
         return $this;
     }

@@ -101,6 +101,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'liveVideoMode' => '\TencentAds\Model\LiveVideoMode',
         'liveVideoSubMode' => '\TencentAds\Model\LiveVideoSubMode',
         'linkNameText' => 'string',
+        'macDeepLinkAppId' => 'string',
         'accountId' => 'int',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsMp'
@@ -156,6 +157,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'liveVideoMode' => null,
         'liveVideoSubMode' => null,
         'linkNameText' => null,
+        'macDeepLinkAppId' => null,
         'accountId' => 'int64',
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
@@ -232,6 +234,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'liveVideoMode' => 'live_video_mode',
         'liveVideoSubMode' => 'live_video_sub_mode',
         'linkNameText' => 'link_name_text',
+        'macDeepLinkAppId' => 'mac_deep_link_app_id',
         'accountId' => 'account_id',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
@@ -287,6 +290,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'liveVideoMode' => 'setLiveVideoMode',
         'liveVideoSubMode' => 'setLiveVideoSubMode',
         'linkNameText' => 'setLinkNameText',
+        'macDeepLinkAppId' => 'setMacDeepLinkAppId',
         'accountId' => 'setAccountId',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
@@ -342,6 +346,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         'liveVideoMode' => 'getLiveVideoMode',
         'liveVideoSubMode' => 'getLiveVideoSubMode',
         'linkNameText' => 'getLinkNameText',
+        'macDeepLinkAppId' => 'getMacDeepLinkAppId',
         'accountId' => 'getAccountId',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
@@ -451,6 +456,7 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
         $this->container['liveVideoMode'] = isset($data['liveVideoMode']) ? $data['liveVideoMode'] : null;
         $this->container['liveVideoSubMode'] = isset($data['liveVideoSubMode']) ? $data['liveVideoSubMode'] : null;
         $this->container['linkNameText'] = isset($data['linkNameText']) ? $data['linkNameText'] : null;
+        $this->container['macDeepLinkAppId'] = isset($data['macDeepLinkAppId']) ? $data['macDeepLinkAppId'] : null;
         $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
@@ -1532,6 +1538,30 @@ class AdcreativesAddRequest implements ModelInterface, ArrayAccess
     public function setLinkNameText($linkNameText)
     {
         $this->container['linkNameText'] = $linkNameText;
+
+        return $this;
+    }
+
+    /**
+     * Gets macDeepLinkAppId
+     *
+     * @return string|mixed
+     */
+    public function getMacDeepLinkAppId()
+    {
+        return $this->container['macDeepLinkAppId'];
+    }
+
+    /**
+     * Sets macDeepLinkAppId
+     *
+     * @param string|mixed $macDeepLinkAppId macDeepLinkAppId
+     *
+     * @return $this
+     */
+    public function setMacDeepLinkAppId($macDeepLinkAppId)
+    {
+        $this->container['macDeepLinkAppId'] = $macDeepLinkAppId;
 
         return $this;
     }

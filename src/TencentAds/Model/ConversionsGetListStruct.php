@@ -88,7 +88,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => '\TencentAds\Model\IntOptimizationGoal',
         'incubationOptimizationGoal' => '\TencentAds\Model\IntOptimizationGoal',
         'disableMessage' => 'string',
-        'inspectionFreeSwitch' => 'bool'
+        'inspectionFreeSwitch' => 'bool',
+        'dowGradeFlag' => 'int'
     ];
 
     /**
@@ -127,7 +128,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => null,
         'incubationOptimizationGoal' => null,
         'disableMessage' => null,
-        'inspectionFreeSwitch' => null
+        'inspectionFreeSwitch' => null,
+        'dowGradeFlag' => 'int64'
     ];
 
     /**
@@ -187,7 +189,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => 'forward_link_assist',
         'incubationOptimizationGoal' => 'incubation_optimization_goal',
         'disableMessage' => 'disable_message',
-        'inspectionFreeSwitch' => 'inspection_free_switch'
+        'inspectionFreeSwitch' => 'inspection_free_switch',
+        'dowGradeFlag' => 'dow_grade_flag'
     ];
 
     /**
@@ -226,7 +229,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => 'setForwardLinkAssist',
         'incubationOptimizationGoal' => 'setIncubationOptimizationGoal',
         'disableMessage' => 'setDisableMessage',
-        'inspectionFreeSwitch' => 'setInspectionFreeSwitch'
+        'inspectionFreeSwitch' => 'setInspectionFreeSwitch',
+        'dowGradeFlag' => 'setDowGradeFlag'
     ];
 
     /**
@@ -265,7 +269,8 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         'forwardLinkAssist' => 'getForwardLinkAssist',
         'incubationOptimizationGoal' => 'getIncubationOptimizationGoal',
         'disableMessage' => 'getDisableMessage',
-        'inspectionFreeSwitch' => 'getInspectionFreeSwitch'
+        'inspectionFreeSwitch' => 'getInspectionFreeSwitch',
+        'dowGradeFlag' => 'getDowGradeFlag'
     ];
 
     /**
@@ -359,6 +364,7 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['incubationOptimizationGoal'] = isset($data['incubationOptimizationGoal']) ? $data['incubationOptimizationGoal'] : null;
         $this->container['disableMessage'] = isset($data['disableMessage']) ? $data['disableMessage'] : null;
         $this->container['inspectionFreeSwitch'] = isset($data['inspectionFreeSwitch']) ? $data['inspectionFreeSwitch'] : null;
+        $this->container['dowGradeFlag'] = isset($data['dowGradeFlag']) ? $data['dowGradeFlag'] : null;
     }
 
     /**
@@ -1125,6 +1131,30 @@ class ConversionsGetListStruct implements ModelInterface, ArrayAccess
     public function setInspectionFreeSwitch($inspectionFreeSwitch)
     {
         $this->container['inspectionFreeSwitch'] = $inspectionFreeSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets dowGradeFlag
+     *
+     * @return int|mixed
+     */
+    public function getDowGradeFlag()
+    {
+        return $this->container['dowGradeFlag'];
+    }
+
+    /**
+     * Sets dowGradeFlag
+     *
+     * @param int|mixed $dowGradeFlag dowGradeFlag
+     *
+     * @return $this
+     */
+    public function setDowGradeFlag($dowGradeFlag)
+    {
+        $this->container['dowGradeFlag'] = $dowGradeFlag;
 
         return $this;
     }

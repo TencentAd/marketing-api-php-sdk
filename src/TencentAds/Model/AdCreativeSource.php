@@ -56,6 +56,9 @@ class AdCreativeSource
     const NEW_RECOMMEND = 'AD_CREATIVE_NEW_RECOMMEND';
     const TRANSFORMER_RESIZE = 'AD_CREATIVE_TRANSFORMER_RESIZE';
     const AGGREGATION_PROMOTION = 'AD_CREATIVE_AGGREGATION_PROMOTION';
+    const QYT_SMART_AIGC = 'AD_CREATIVE_QYT_SMART_AIGC';
+    const SMART_DELIVERY_AIGC_ENHANCE = 'AD_CREATIVE_SMART_DELIVERY_AIGC_ENHANCE';
+    const MANAGEMENT_AIGC = 'AD_CREATIVE_MANAGEMENT_AIGC';
     
     /**
      * Gets allowable values of the enum
@@ -76,6 +79,9 @@ class AdCreativeSource
             self::NEW_RECOMMEND,
             self::TRANSFORMER_RESIZE,
             self::AGGREGATION_PROMOTION,
+            self::QYT_SMART_AIGC,
+            self::SMART_DELIVERY_AIGC_ENHANCE,
+            self::MANAGEMENT_AIGC,
         ];
     }
 }

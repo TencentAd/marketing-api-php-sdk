@@ -70,7 +70,8 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'supportMpaImageTemplate' => 'bool',
         'supportMpaVideoTemplate' => 'bool',
         'creativePermissions' => '\TencentAds\Model\V3\CreativePermissions',
-        'livePromotedType' => '\TencentAds\Model\V3\LivePromotedType'
+        'livePromotedType' => '\TencentAds\Model\V3\LivePromotedType',
+        'defaultEnableRules' => '\TencentAds\Model\V3\DefaultEnableRule[]'
     ];
 
     /**
@@ -91,7 +92,8 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'supportMpaImageTemplate' => null,
         'supportMpaVideoTemplate' => null,
         'creativePermissions' => null,
-        'livePromotedType' => null
+        'livePromotedType' => null,
+        'defaultEnableRules' => null
     ];
 
     /**
@@ -133,7 +135,8 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'supportMpaImageTemplate' => 'support_mpa_image_template',
         'supportMpaVideoTemplate' => 'support_mpa_video_template',
         'creativePermissions' => 'creative_permissions',
-        'livePromotedType' => 'live_promoted_type'
+        'livePromotedType' => 'live_promoted_type',
+        'defaultEnableRules' => 'default_enable_rules'
     ];
 
     /**
@@ -154,7 +157,8 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'supportMpaImageTemplate' => 'setSupportMpaImageTemplate',
         'supportMpaVideoTemplate' => 'setSupportMpaVideoTemplate',
         'creativePermissions' => 'setCreativePermissions',
-        'livePromotedType' => 'setLivePromotedType'
+        'livePromotedType' => 'setLivePromotedType',
+        'defaultEnableRules' => 'setDefaultEnableRules'
     ];
 
     /**
@@ -175,7 +179,8 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         'supportMpaImageTemplate' => 'getSupportMpaImageTemplate',
         'supportMpaVideoTemplate' => 'getSupportMpaVideoTemplate',
         'creativePermissions' => 'getCreativePermissions',
-        'livePromotedType' => 'getLivePromotedType'
+        'livePromotedType' => 'getLivePromotedType',
+        'defaultEnableRules' => 'getDefaultEnableRules'
     ];
 
     /**
@@ -251,6 +256,7 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
         $this->container['supportMpaVideoTemplate'] = isset($data['supportMpaVideoTemplate']) ? $data['supportMpaVideoTemplate'] : null;
         $this->container['creativePermissions'] = isset($data['creativePermissions']) ? $data['creativePermissions'] : null;
         $this->container['livePromotedType'] = isset($data['livePromotedType']) ? $data['livePromotedType'] : null;
+        $this->container['defaultEnableRules'] = isset($data['defaultEnableRules']) ? $data['defaultEnableRules'] : null;
     }
 
     /**
@@ -585,6 +591,30 @@ class AdcreativeTemplateStructAdpermit implements ModelInterface, ArrayAccess
     public function setLivePromotedType($livePromotedType)
     {
         $this->container['livePromotedType'] = $livePromotedType;
+
+        return $this;
+    }
+
+    /**
+     * Gets defaultEnableRules
+     *
+     * @return \TencentAds\Model\V3\DefaultEnableRule[]|mixed
+     */
+    public function getDefaultEnableRules()
+    {
+        return $this->container['defaultEnableRules'];
+    }
+
+    /**
+     * Sets defaultEnableRules
+     *
+     * @param \TencentAds\Model\V3\DefaultEnableRule[]|mixed $defaultEnableRules defaultEnableRules
+     *
+     * @return $this
+     */
+    public function setDefaultEnableRules($defaultEnableRules)
+    {
+        $this->container['defaultEnableRules'] = $defaultEnableRules;
 
         return $this;
     }

@@ -61,7 +61,8 @@ class WalletTransferAddResponseData implements ModelInterface, ArrayAccess
         'amount' => 'int',
         'externalBillNo' => 'string',
         'time' => 'int',
-        'isRepeated' => 'bool'
+        'isRepeated' => 'bool',
+        'checkResult' => '\TencentAds\Model\V3\CheckResult'
     ];
 
     /**
@@ -74,7 +75,8 @@ class WalletTransferAddResponseData implements ModelInterface, ArrayAccess
         'amount' => 'int64',
         'externalBillNo' => null,
         'time' => 'int64',
-        'isRepeated' => null
+        'isRepeated' => null,
+        'checkResult' => null
     ];
 
     /**
@@ -108,7 +110,8 @@ class WalletTransferAddResponseData implements ModelInterface, ArrayAccess
         'amount' => 'amount',
         'externalBillNo' => 'external_bill_no',
         'time' => 'time',
-        'isRepeated' => 'is_repeated'
+        'isRepeated' => 'is_repeated',
+        'checkResult' => 'check_result'
     ];
 
     /**
@@ -121,7 +124,8 @@ class WalletTransferAddResponseData implements ModelInterface, ArrayAccess
         'amount' => 'setAmount',
         'externalBillNo' => 'setExternalBillNo',
         'time' => 'setTime',
-        'isRepeated' => 'setIsRepeated'
+        'isRepeated' => 'setIsRepeated',
+        'checkResult' => 'setCheckResult'
     ];
 
     /**
@@ -134,7 +138,8 @@ class WalletTransferAddResponseData implements ModelInterface, ArrayAccess
         'amount' => 'getAmount',
         'externalBillNo' => 'getExternalBillNo',
         'time' => 'getTime',
-        'isRepeated' => 'getIsRepeated'
+        'isRepeated' => 'getIsRepeated',
+        'checkResult' => 'getCheckResult'
     ];
 
     /**
@@ -202,6 +207,7 @@ class WalletTransferAddResponseData implements ModelInterface, ArrayAccess
         $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
         $this->container['time'] = isset($data['time']) ? $data['time'] : null;
         $this->container['isRepeated'] = isset($data['isRepeated']) ? $data['isRepeated'] : null;
+        $this->container['checkResult'] = isset($data['checkResult']) ? $data['checkResult'] : null;
     }
 
     /**
@@ -344,6 +350,30 @@ class WalletTransferAddResponseData implements ModelInterface, ArrayAccess
     public function setIsRepeated($isRepeated)
     {
         $this->container['isRepeated'] = $isRepeated;
+
+        return $this;
+    }
+
+    /**
+     * Gets checkResult
+     *
+     * @return \TencentAds\Model\V3\CheckResult|mixed
+     */
+    public function getCheckResult()
+    {
+        return $this->container['checkResult'];
+    }
+
+    /**
+     * Sets checkResult
+     *
+     * @param \TencentAds\Model\V3\CheckResult|mixed $checkResult checkResult
+     *
+     * @return $this
+     */
+    public function setCheckResult($checkResult)
+    {
+        $this->container['checkResult'] = $checkResult;
 
         return $this;
     }

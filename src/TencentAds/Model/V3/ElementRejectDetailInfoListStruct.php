@@ -64,7 +64,10 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
         'componentInfo' => '\TencentAds\Model\V3\ComponentInfoCanEmpty',
         'reason' => 'string',
         'reviewStatus' => '\TencentAds\Model\V3\ReviewResultStatus',
-        'rejectInfoLocation' => '\TencentAds\Model\V3\RejectInfoLocationListStruct[]'
+        'rejectInfoLocation' => '\TencentAds\Model\V3\RejectInfoLocationListStruct[]',
+        'videoAsrInfos' => '\TencentAds\Model\V3\VideoAsrInfoStruct[]',
+        'videoOcrInfos' => '\TencentAds\Model\V3\VideoOcrInfoStruct[]',
+        'captionInfos' => '\TencentAds\Model\V3\CaptionInfoStruct[]'
     ];
 
     /**
@@ -79,7 +82,10 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
         'componentInfo' => null,
         'reason' => null,
         'reviewStatus' => null,
-        'rejectInfoLocation' => null
+        'rejectInfoLocation' => null,
+        'videoAsrInfos' => null,
+        'videoOcrInfos' => null,
+        'captionInfos' => null
     ];
 
     /**
@@ -115,7 +121,10 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
         'componentInfo' => 'component_info',
         'reason' => 'reason',
         'reviewStatus' => 'review_status',
-        'rejectInfoLocation' => 'reject_info_location'
+        'rejectInfoLocation' => 'reject_info_location',
+        'videoAsrInfos' => 'video_asr_infos',
+        'videoOcrInfos' => 'video_ocr_infos',
+        'captionInfos' => 'caption_infos'
     ];
 
     /**
@@ -130,7 +139,10 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
         'componentInfo' => 'setComponentInfo',
         'reason' => 'setReason',
         'reviewStatus' => 'setReviewStatus',
-        'rejectInfoLocation' => 'setRejectInfoLocation'
+        'rejectInfoLocation' => 'setRejectInfoLocation',
+        'videoAsrInfos' => 'setVideoAsrInfos',
+        'videoOcrInfos' => 'setVideoOcrInfos',
+        'captionInfos' => 'setCaptionInfos'
     ];
 
     /**
@@ -145,7 +157,10 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
         'componentInfo' => 'getComponentInfo',
         'reason' => 'getReason',
         'reviewStatus' => 'getReviewStatus',
-        'rejectInfoLocation' => 'getRejectInfoLocation'
+        'rejectInfoLocation' => 'getRejectInfoLocation',
+        'videoAsrInfos' => 'getVideoAsrInfos',
+        'videoOcrInfos' => 'getVideoOcrInfos',
+        'captionInfos' => 'getCaptionInfos'
     ];
 
     /**
@@ -215,6 +230,9 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
         $this->container['reason'] = isset($data['reason']) ? $data['reason'] : null;
         $this->container['reviewStatus'] = isset($data['reviewStatus']) ? $data['reviewStatus'] : null;
         $this->container['rejectInfoLocation'] = isset($data['rejectInfoLocation']) ? $data['rejectInfoLocation'] : null;
+        $this->container['videoAsrInfos'] = isset($data['videoAsrInfos']) ? $data['videoAsrInfos'] : null;
+        $this->container['videoOcrInfos'] = isset($data['videoOcrInfos']) ? $data['videoOcrInfos'] : null;
+        $this->container['captionInfos'] = isset($data['captionInfos']) ? $data['captionInfos'] : null;
     }
 
     /**
@@ -405,6 +423,78 @@ class ElementRejectDetailInfoListStruct implements ModelInterface, ArrayAccess
     public function setRejectInfoLocation($rejectInfoLocation)
     {
         $this->container['rejectInfoLocation'] = $rejectInfoLocation;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoAsrInfos
+     *
+     * @return \TencentAds\Model\V3\VideoAsrInfoStruct[]|mixed
+     */
+    public function getVideoAsrInfos()
+    {
+        return $this->container['videoAsrInfos'];
+    }
+
+    /**
+     * Sets videoAsrInfos
+     *
+     * @param \TencentAds\Model\V3\VideoAsrInfoStruct[]|mixed $videoAsrInfos videoAsrInfos
+     *
+     * @return $this
+     */
+    public function setVideoAsrInfos($videoAsrInfos)
+    {
+        $this->container['videoAsrInfos'] = $videoAsrInfos;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoOcrInfos
+     *
+     * @return \TencentAds\Model\V3\VideoOcrInfoStruct[]|mixed
+     */
+    public function getVideoOcrInfos()
+    {
+        return $this->container['videoOcrInfos'];
+    }
+
+    /**
+     * Sets videoOcrInfos
+     *
+     * @param \TencentAds\Model\V3\VideoOcrInfoStruct[]|mixed $videoOcrInfos videoOcrInfos
+     *
+     * @return $this
+     */
+    public function setVideoOcrInfos($videoOcrInfos)
+    {
+        $this->container['videoOcrInfos'] = $videoOcrInfos;
+
+        return $this;
+    }
+
+    /**
+     * Gets captionInfos
+     *
+     * @return \TencentAds\Model\V3\CaptionInfoStruct[]|mixed
+     */
+    public function getCaptionInfos()
+    {
+        return $this->container['captionInfos'];
+    }
+
+    /**
+     * Sets captionInfos
+     *
+     * @param \TencentAds\Model\V3\CaptionInfoStruct[]|mixed $captionInfos captionInfos
+     *
+     * @return $this
+     */
+    public function setCaptionInfos($captionInfos)
+    {
+        $this->container['captionInfos'] = $captionInfos;
 
         return $this;
     }

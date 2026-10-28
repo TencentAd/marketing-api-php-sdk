@@ -85,7 +85,7 @@ class LeadsListStruct implements ModelInterface, ArrayAccess
         'leadsEmail' => 'string',
         'leadsQq' => 'string',
         'leadsWechat' => 'string',
-        'leadsGender' => '\TencentAds\Model\V3\LeadsGenderType',
+        'leadsGender' => '\TencentAds\Model\V3\GenderType',
         'nationality' => 'string',
         'workingYears' => 'string',
         'age' => 'string',
@@ -112,7 +112,12 @@ class LeadsListStruct implements ModelInterface, ArrayAccess
         'allFollowRecords' => 'string',
         'correlationFactorRank' => 'string',
         'claimAccountId' => 'int',
-        'leadsResponseDuration' => 'int'
+        'leadsResponseDuration' => 'int',
+        'leadsIpLocation' => 'string',
+        'finderNickName' => 'string',
+        'fanStatus' => 'int',
+        'staffName' => 'string',
+        'commonPageId' => 'string'
     ];
 
     /**
@@ -175,7 +180,12 @@ class LeadsListStruct implements ModelInterface, ArrayAccess
         'allFollowRecords' => null,
         'correlationFactorRank' => null,
         'claimAccountId' => 'int64',
-        'leadsResponseDuration' => 'int64'
+        'leadsResponseDuration' => 'int64',
+        'leadsIpLocation' => null,
+        'finderNickName' => null,
+        'fanStatus' => 'int64',
+        'staffName' => null,
+        'commonPageId' => null
     ];
 
     /**
@@ -259,7 +269,12 @@ class LeadsListStruct implements ModelInterface, ArrayAccess
         'allFollowRecords' => 'all_follow_records',
         'correlationFactorRank' => 'correlation_factor_rank',
         'claimAccountId' => 'claim_account_id',
-        'leadsResponseDuration' => 'leads_response_duration'
+        'leadsResponseDuration' => 'leads_response_duration',
+        'leadsIpLocation' => 'leads_ip_location',
+        'finderNickName' => 'finder_nick_name',
+        'fanStatus' => 'fan_status',
+        'staffName' => 'staff_name',
+        'commonPageId' => 'common_page_id'
     ];
 
     /**
@@ -322,7 +337,12 @@ class LeadsListStruct implements ModelInterface, ArrayAccess
         'allFollowRecords' => 'setAllFollowRecords',
         'correlationFactorRank' => 'setCorrelationFactorRank',
         'claimAccountId' => 'setClaimAccountId',
-        'leadsResponseDuration' => 'setLeadsResponseDuration'
+        'leadsResponseDuration' => 'setLeadsResponseDuration',
+        'leadsIpLocation' => 'setLeadsIpLocation',
+        'finderNickName' => 'setFinderNickName',
+        'fanStatus' => 'setFanStatus',
+        'staffName' => 'setStaffName',
+        'commonPageId' => 'setCommonPageId'
     ];
 
     /**
@@ -385,7 +405,12 @@ class LeadsListStruct implements ModelInterface, ArrayAccess
         'allFollowRecords' => 'getAllFollowRecords',
         'correlationFactorRank' => 'getCorrelationFactorRank',
         'claimAccountId' => 'getClaimAccountId',
-        'leadsResponseDuration' => 'getLeadsResponseDuration'
+        'leadsResponseDuration' => 'getLeadsResponseDuration',
+        'leadsIpLocation' => 'getLeadsIpLocation',
+        'finderNickName' => 'getFinderNickName',
+        'fanStatus' => 'getFanStatus',
+        'staffName' => 'getStaffName',
+        'commonPageId' => 'getCommonPageId'
     ];
 
     /**
@@ -503,6 +528,11 @@ class LeadsListStruct implements ModelInterface, ArrayAccess
         $this->container['correlationFactorRank'] = isset($data['correlationFactorRank']) ? $data['correlationFactorRank'] : null;
         $this->container['claimAccountId'] = isset($data['claimAccountId']) ? $data['claimAccountId'] : null;
         $this->container['leadsResponseDuration'] = isset($data['leadsResponseDuration']) ? $data['leadsResponseDuration'] : null;
+        $this->container['leadsIpLocation'] = isset($data['leadsIpLocation']) ? $data['leadsIpLocation'] : null;
+        $this->container['finderNickName'] = isset($data['finderNickName']) ? $data['finderNickName'] : null;
+        $this->container['fanStatus'] = isset($data['fanStatus']) ? $data['fanStatus'] : null;
+        $this->container['staffName'] = isset($data['staffName']) ? $data['staffName'] : null;
+        $this->container['commonPageId'] = isset($data['commonPageId']) ? $data['commonPageId'] : null;
     }
 
     /**
@@ -1180,7 +1210,7 @@ class LeadsListStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsGender
      *
-     * @return \TencentAds\Model\V3\LeadsGenderType|mixed
+     * @return \TencentAds\Model\V3\GenderType|mixed
      */
     public function getLeadsGender()
     {
@@ -1190,7 +1220,7 @@ class LeadsListStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsGender
      *
-     * @param \TencentAds\Model\V3\LeadsGenderType|mixed $leadsGender leadsGender
+     * @param \TencentAds\Model\V3\GenderType|mixed $leadsGender leadsGender
      *
      * @return $this
      */
@@ -1845,6 +1875,126 @@ class LeadsListStruct implements ModelInterface, ArrayAccess
     public function setLeadsResponseDuration($leadsResponseDuration)
     {
         $this->container['leadsResponseDuration'] = $leadsResponseDuration;
+
+        return $this;
+    }
+
+    /**
+     * Gets leadsIpLocation
+     *
+     * @return string|mixed
+     */
+    public function getLeadsIpLocation()
+    {
+        return $this->container['leadsIpLocation'];
+    }
+
+    /**
+     * Sets leadsIpLocation
+     *
+     * @param string|mixed $leadsIpLocation leadsIpLocation
+     *
+     * @return $this
+     */
+    public function setLeadsIpLocation($leadsIpLocation)
+    {
+        $this->container['leadsIpLocation'] = $leadsIpLocation;
+
+        return $this;
+    }
+
+    /**
+     * Gets finderNickName
+     *
+     * @return string|mixed
+     */
+    public function getFinderNickName()
+    {
+        return $this->container['finderNickName'];
+    }
+
+    /**
+     * Sets finderNickName
+     *
+     * @param string|mixed $finderNickName finderNickName
+     *
+     * @return $this
+     */
+    public function setFinderNickName($finderNickName)
+    {
+        $this->container['finderNickName'] = $finderNickName;
+
+        return $this;
+    }
+
+    /**
+     * Gets fanStatus
+     *
+     * @return int|mixed
+     */
+    public function getFanStatus()
+    {
+        return $this->container['fanStatus'];
+    }
+
+    /**
+     * Sets fanStatus
+     *
+     * @param int|mixed $fanStatus fanStatus
+     *
+     * @return $this
+     */
+    public function setFanStatus($fanStatus)
+    {
+        $this->container['fanStatus'] = $fanStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets staffName
+     *
+     * @return string|mixed
+     */
+    public function getStaffName()
+    {
+        return $this->container['staffName'];
+    }
+
+    /**
+     * Sets staffName
+     *
+     * @param string|mixed $staffName staffName
+     *
+     * @return $this
+     */
+    public function setStaffName($staffName)
+    {
+        $this->container['staffName'] = $staffName;
+
+        return $this;
+    }
+
+    /**
+     * Gets commonPageId
+     *
+     * @return string|mixed
+     */
+    public function getCommonPageId()
+    {
+        return $this->container['commonPageId'];
+    }
+
+    /**
+     * Sets commonPageId
+     *
+     * @param string|mixed $commonPageId commonPageId
+     *
+     * @return $this
+     */
+    public function setCommonPageId($commonPageId)
+    {
+        $this->container['commonPageId'] = $commonPageId;
 
         return $this;
     }

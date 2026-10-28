@@ -67,7 +67,8 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'bulletCommentSwitchOpen' => 'bool',
         'bulletCommentSupported' => 'bool',
         'objectPrivateSwitchOpen' => 'bool',
-        'objectPrivateDisableCode' => '\TencentAds\Model\V3\ObjectPrivateDisableCode'
+        'objectPrivateDisableCode' => '\TencentAds\Model\V3\ObjectPrivateDisableCode',
+        'wechatChannelsAccountIcon' => 'string'
     ];
 
     /**
@@ -85,7 +86,8 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'bulletCommentSwitchOpen' => null,
         'bulletCommentSupported' => null,
         'objectPrivateSwitchOpen' => null,
-        'objectPrivateDisableCode' => null
+        'objectPrivateDisableCode' => null,
+        'wechatChannelsAccountIcon' => null
     ];
 
     /**
@@ -124,7 +126,8 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'bulletCommentSwitchOpen' => 'bullet_comment_switch_open',
         'bulletCommentSupported' => 'bullet_comment_supported',
         'objectPrivateSwitchOpen' => 'object_private_switch_open',
-        'objectPrivateDisableCode' => 'object_private_disable_code'
+        'objectPrivateDisableCode' => 'object_private_disable_code',
+        'wechatChannelsAccountIcon' => 'wechat_channels_account_icon'
     ];
 
     /**
@@ -142,7 +145,8 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'bulletCommentSwitchOpen' => 'setBulletCommentSwitchOpen',
         'bulletCommentSupported' => 'setBulletCommentSupported',
         'objectPrivateSwitchOpen' => 'setObjectPrivateSwitchOpen',
-        'objectPrivateDisableCode' => 'setObjectPrivateDisableCode'
+        'objectPrivateDisableCode' => 'setObjectPrivateDisableCode',
+        'wechatChannelsAccountIcon' => 'setWechatChannelsAccountIcon'
     ];
 
     /**
@@ -160,7 +164,8 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         'bulletCommentSwitchOpen' => 'getBulletCommentSwitchOpen',
         'bulletCommentSupported' => 'getBulletCommentSupported',
         'objectPrivateSwitchOpen' => 'getObjectPrivateSwitchOpen',
-        'objectPrivateDisableCode' => 'getObjectPrivateDisableCode'
+        'objectPrivateDisableCode' => 'getObjectPrivateDisableCode',
+        'wechatChannelsAccountIcon' => 'getWechatChannelsAccountIcon'
     ];
 
     /**
@@ -233,6 +238,7 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
         $this->container['bulletCommentSupported'] = isset($data['bulletCommentSupported']) ? $data['bulletCommentSupported'] : null;
         $this->container['objectPrivateSwitchOpen'] = isset($data['objectPrivateSwitchOpen']) ? $data['objectPrivateSwitchOpen'] : null;
         $this->container['objectPrivateDisableCode'] = isset($data['objectPrivateDisableCode']) ? $data['objectPrivateDisableCode'] : null;
+        $this->container['wechatChannelsAccountIcon'] = isset($data['wechatChannelsAccountIcon']) ? $data['wechatChannelsAccountIcon'] : null;
     }
 
     /**
@@ -495,6 +501,30 @@ class FinderObjectStruct implements ModelInterface, ArrayAccess
     public function setObjectPrivateDisableCode($objectPrivateDisableCode)
     {
         $this->container['objectPrivateDisableCode'] = $objectPrivateDisableCode;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountIcon
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountIcon()
+    {
+        return $this->container['wechatChannelsAccountIcon'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountIcon
+     *
+     * @param string|mixed $wechatChannelsAccountIcon wechatChannelsAccountIcon
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountIcon($wechatChannelsAccountIcon)
+    {
+        $this->container['wechatChannelsAccountIcon'] = $wechatChannelsAccountIcon;
 
         return $this;
     }

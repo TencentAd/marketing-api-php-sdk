@@ -63,7 +63,8 @@ class OfficialPageStruct implements ModelInterface, ArrayAccess
         'pageName' => 'string',
         'pageTitle' => 'string',
         'pageType' => '\TencentAds\Model\V3\OfficialPageType',
-        'pageStatus' => '\TencentAds\Model\V3\OfficialPageStatus'
+        'pageStatus' => '\TencentAds\Model\V3\OfficialPageStatus',
+        'rejectReason' => 'string'
     ];
 
     /**
@@ -77,7 +78,8 @@ class OfficialPageStruct implements ModelInterface, ArrayAccess
         'pageName' => null,
         'pageTitle' => null,
         'pageType' => null,
-        'pageStatus' => null
+        'pageStatus' => null,
+        'rejectReason' => null
     ];
 
     /**
@@ -112,7 +114,8 @@ class OfficialPageStruct implements ModelInterface, ArrayAccess
         'pageName' => 'page_name',
         'pageTitle' => 'page_title',
         'pageType' => 'page_type',
-        'pageStatus' => 'page_status'
+        'pageStatus' => 'page_status',
+        'rejectReason' => 'reject_reason'
     ];
 
     /**
@@ -126,7 +129,8 @@ class OfficialPageStruct implements ModelInterface, ArrayAccess
         'pageName' => 'setPageName',
         'pageTitle' => 'setPageTitle',
         'pageType' => 'setPageType',
-        'pageStatus' => 'setPageStatus'
+        'pageStatus' => 'setPageStatus',
+        'rejectReason' => 'setRejectReason'
     ];
 
     /**
@@ -140,7 +144,8 @@ class OfficialPageStruct implements ModelInterface, ArrayAccess
         'pageName' => 'getPageName',
         'pageTitle' => 'getPageTitle',
         'pageType' => 'getPageType',
-        'pageStatus' => 'getPageStatus'
+        'pageStatus' => 'getPageStatus',
+        'rejectReason' => 'getRejectReason'
     ];
 
     /**
@@ -209,6 +214,7 @@ class OfficialPageStruct implements ModelInterface, ArrayAccess
         $this->container['pageTitle'] = isset($data['pageTitle']) ? $data['pageTitle'] : null;
         $this->container['pageType'] = isset($data['pageType']) ? $data['pageType'] : null;
         $this->container['pageStatus'] = isset($data['pageStatus']) ? $data['pageStatus'] : null;
+        $this->container['rejectReason'] = isset($data['rejectReason']) ? $data['rejectReason'] : null;
     }
 
     /**
@@ -375,6 +381,30 @@ class OfficialPageStruct implements ModelInterface, ArrayAccess
     public function setPageStatus($pageStatus)
     {
         $this->container['pageStatus'] = $pageStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets rejectReason
+     *
+     * @return string|mixed
+     */
+    public function getRejectReason()
+    {
+        return $this->container['rejectReason'];
+    }
+
+    /**
+     * Sets rejectReason
+     *
+     * @param string|mixed $rejectReason rejectReason
+     *
+     * @return $this
+     */
+    public function setRejectReason($rejectReason)
+    {
+        $this->container['rejectReason'] = $rejectReason;
 
         return $this;
     }

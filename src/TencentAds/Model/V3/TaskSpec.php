@@ -87,7 +87,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateComponentSharingSpec' => '\TencentAds\Model\V3\UpdateComponentSharingItem[]',
         'updateAdgroupSmartDeliveryGoalSpec' => '\TencentAds\Model\V3\UpdateAdgroupSmartDeliveryGoalItem[]',
         'deleteAccountComponentSpec' => '\TencentAds\Model\V3\DeleteAccountComponentItem[]',
-        'updateDynamicCreativeSearchIntelligentExtensionSpec' => '\TencentAds\Model\V3\UpdateDynamicCreativeSearchIntelligentExtensionItem[]'
+        'updateDynamicCreativeSearchIntelligentExtensionSpec' => '\TencentAds\Model\V3\UpdateDynamicCreativeSearchIntelligentExtensionItem[]',
+        'dpadbuddySpec' => '\TencentAds\Model\V3\DpadbuddyItem[]',
+        'commonStringSpec' => 'string'
     ];
 
     /**
@@ -125,7 +127,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateComponentSharingSpec' => null,
         'updateAdgroupSmartDeliveryGoalSpec' => null,
         'deleteAccountComponentSpec' => null,
-        'updateDynamicCreativeSearchIntelligentExtensionSpec' => null
+        'updateDynamicCreativeSearchIntelligentExtensionSpec' => null,
+        'dpadbuddySpec' => null,
+        'commonStringSpec' => null
     ];
 
     /**
@@ -184,7 +188,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateComponentSharingSpec' => 'update_component_sharing_spec',
         'updateAdgroupSmartDeliveryGoalSpec' => 'update_adgroup_smart_delivery_goal_spec',
         'deleteAccountComponentSpec' => 'delete_account_component_spec',
-        'updateDynamicCreativeSearchIntelligentExtensionSpec' => 'update_dynamic_creative_search_intelligent_extension_spec'
+        'updateDynamicCreativeSearchIntelligentExtensionSpec' => 'update_dynamic_creative_search_intelligent_extension_spec',
+        'dpadbuddySpec' => 'dpadbuddy_spec',
+        'commonStringSpec' => 'common_string_spec'
     ];
 
     /**
@@ -222,7 +228,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateComponentSharingSpec' => 'setUpdateComponentSharingSpec',
         'updateAdgroupSmartDeliveryGoalSpec' => 'setUpdateAdgroupSmartDeliveryGoalSpec',
         'deleteAccountComponentSpec' => 'setDeleteAccountComponentSpec',
-        'updateDynamicCreativeSearchIntelligentExtensionSpec' => 'setUpdateDynamicCreativeSearchIntelligentExtensionSpec'
+        'updateDynamicCreativeSearchIntelligentExtensionSpec' => 'setUpdateDynamicCreativeSearchIntelligentExtensionSpec',
+        'dpadbuddySpec' => 'setDpadbuddySpec',
+        'commonStringSpec' => 'setCommonStringSpec'
     ];
 
     /**
@@ -260,7 +268,9 @@ class TaskSpec implements ModelInterface, ArrayAccess
         'updateComponentSharingSpec' => 'getUpdateComponentSharingSpec',
         'updateAdgroupSmartDeliveryGoalSpec' => 'getUpdateAdgroupSmartDeliveryGoalSpec',
         'deleteAccountComponentSpec' => 'getDeleteAccountComponentSpec',
-        'updateDynamicCreativeSearchIntelligentExtensionSpec' => 'getUpdateDynamicCreativeSearchIntelligentExtensionSpec'
+        'updateDynamicCreativeSearchIntelligentExtensionSpec' => 'getUpdateDynamicCreativeSearchIntelligentExtensionSpec',
+        'dpadbuddySpec' => 'getDpadbuddySpec',
+        'commonStringSpec' => 'getCommonStringSpec'
     ];
 
     /**
@@ -353,6 +363,8 @@ class TaskSpec implements ModelInterface, ArrayAccess
         $this->container['updateAdgroupSmartDeliveryGoalSpec'] = isset($data['updateAdgroupSmartDeliveryGoalSpec']) ? $data['updateAdgroupSmartDeliveryGoalSpec'] : null;
         $this->container['deleteAccountComponentSpec'] = isset($data['deleteAccountComponentSpec']) ? $data['deleteAccountComponentSpec'] : null;
         $this->container['updateDynamicCreativeSearchIntelligentExtensionSpec'] = isset($data['updateDynamicCreativeSearchIntelligentExtensionSpec']) ? $data['updateDynamicCreativeSearchIntelligentExtensionSpec'] : null;
+        $this->container['dpadbuddySpec'] = isset($data['dpadbuddySpec']) ? $data['dpadbuddySpec'] : null;
+        $this->container['commonStringSpec'] = isset($data['commonStringSpec']) ? $data['commonStringSpec'] : null;
     }
 
     /**
@@ -1095,6 +1107,54 @@ class TaskSpec implements ModelInterface, ArrayAccess
     public function setUpdateDynamicCreativeSearchIntelligentExtensionSpec($updateDynamicCreativeSearchIntelligentExtensionSpec)
     {
         $this->container['updateDynamicCreativeSearchIntelligentExtensionSpec'] = $updateDynamicCreativeSearchIntelligentExtensionSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets dpadbuddySpec
+     *
+     * @return \TencentAds\Model\V3\DpadbuddyItem[]|mixed
+     */
+    public function getDpadbuddySpec()
+    {
+        return $this->container['dpadbuddySpec'];
+    }
+
+    /**
+     * Sets dpadbuddySpec
+     *
+     * @param \TencentAds\Model\V3\DpadbuddyItem[]|mixed $dpadbuddySpec dpadbuddySpec
+     *
+     * @return $this
+     */
+    public function setDpadbuddySpec($dpadbuddySpec)
+    {
+        $this->container['dpadbuddySpec'] = $dpadbuddySpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets commonStringSpec
+     *
+     * @return string|mixed
+     */
+    public function getCommonStringSpec()
+    {
+        return $this->container['commonStringSpec'];
+    }
+
+    /**
+     * Sets commonStringSpec
+     *
+     * @param string|mixed $commonStringSpec commonStringSpec
+     *
+     * @return $this
+     */
+    public function setCommonStringSpec($commonStringSpec)
+    {
+        $this->container['commonStringSpec'] = $commonStringSpec;
 
         return $this;
     }

@@ -66,7 +66,11 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
         'authorReplys' => '\TencentAds\Model\V3\ReplyCommentInfoItem[]',
         'commentLevel' => 'int',
         'contentType' => '\TencentAds\Model\V3\FinderCommentContentType',
-        'imageCommentInfo' => '\TencentAds\Model\V3\ImageCommentInfo'
+        'imageCommentInfo' => '\TencentAds\Model\V3\ImageCommentInfo',
+        'wechatChannelsAccountId' => 'string',
+        'dynamicCreativeId' => 'int',
+        'marketingAssetOuterSpec' => '\TencentAds\Model\V3\MarketingAssetOuterSpec',
+        'componentList' => '\TencentAds\Model\V3\CommentComponentStruct[]'
     ];
 
     /**
@@ -83,7 +87,11 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
         'authorReplys' => null,
         'commentLevel' => 'int64',
         'contentType' => null,
-        'imageCommentInfo' => null
+        'imageCommentInfo' => null,
+        'wechatChannelsAccountId' => null,
+        'dynamicCreativeId' => 'int64',
+        'marketingAssetOuterSpec' => null,
+        'componentList' => null
     ];
 
     /**
@@ -121,7 +129,11 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
         'authorReplys' => 'author_replys',
         'commentLevel' => 'comment_level',
         'contentType' => 'content_type',
-        'imageCommentInfo' => 'image_comment_info'
+        'imageCommentInfo' => 'image_comment_info',
+        'wechatChannelsAccountId' => 'wechat_channels_account_id',
+        'dynamicCreativeId' => 'dynamic_creative_id',
+        'marketingAssetOuterSpec' => 'marketing_asset_outer_spec',
+        'componentList' => 'component_list'
     ];
 
     /**
@@ -138,7 +150,11 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
         'authorReplys' => 'setAuthorReplys',
         'commentLevel' => 'setCommentLevel',
         'contentType' => 'setContentType',
-        'imageCommentInfo' => 'setImageCommentInfo'
+        'imageCommentInfo' => 'setImageCommentInfo',
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
+        'dynamicCreativeId' => 'setDynamicCreativeId',
+        'marketingAssetOuterSpec' => 'setMarketingAssetOuterSpec',
+        'componentList' => 'setComponentList'
     ];
 
     /**
@@ -155,7 +171,11 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
         'authorReplys' => 'getAuthorReplys',
         'commentLevel' => 'getCommentLevel',
         'contentType' => 'getContentType',
-        'imageCommentInfo' => 'getImageCommentInfo'
+        'imageCommentInfo' => 'getImageCommentInfo',
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
+        'dynamicCreativeId' => 'getDynamicCreativeId',
+        'marketingAssetOuterSpec' => 'getMarketingAssetOuterSpec',
+        'componentList' => 'getComponentList'
     ];
 
     /**
@@ -227,6 +247,10 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
         $this->container['commentLevel'] = isset($data['commentLevel']) ? $data['commentLevel'] : null;
         $this->container['contentType'] = isset($data['contentType']) ? $data['contentType'] : null;
         $this->container['imageCommentInfo'] = isset($data['imageCommentInfo']) ? $data['imageCommentInfo'] : null;
+        $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
+        $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
+        $this->container['marketingAssetOuterSpec'] = isset($data['marketingAssetOuterSpec']) ? $data['marketingAssetOuterSpec'] : null;
+        $this->container['componentList'] = isset($data['componentList']) ? $data['componentList'] : null;
     }
 
     /**
@@ -465,6 +489,102 @@ class CommentListGetListStruct implements ModelInterface, ArrayAccess
     public function setImageCommentInfo($imageCommentInfo)
     {
         $this->container['imageCommentInfo'] = $imageCommentInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets wechatChannelsAccountId
+     *
+     * @return string|mixed
+     */
+    public function getWechatChannelsAccountId()
+    {
+        return $this->container['wechatChannelsAccountId'];
+    }
+
+    /**
+     * Sets wechatChannelsAccountId
+     *
+     * @param string|mixed $wechatChannelsAccountId wechatChannelsAccountId
+     *
+     * @return $this
+     */
+    public function setWechatChannelsAccountId($wechatChannelsAccountId)
+    {
+        $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets dynamicCreativeId
+     *
+     * @return int|mixed
+     */
+    public function getDynamicCreativeId()
+    {
+        return $this->container['dynamicCreativeId'];
+    }
+
+    /**
+     * Sets dynamicCreativeId
+     *
+     * @param int|mixed $dynamicCreativeId dynamicCreativeId
+     *
+     * @return $this
+     */
+    public function setDynamicCreativeId($dynamicCreativeId)
+    {
+        $this->container['dynamicCreativeId'] = $dynamicCreativeId;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketingAssetOuterSpec
+     *
+     * @return \TencentAds\Model\V3\MarketingAssetOuterSpec|mixed
+     */
+    public function getMarketingAssetOuterSpec()
+    {
+        return $this->container['marketingAssetOuterSpec'];
+    }
+
+    /**
+     * Sets marketingAssetOuterSpec
+     *
+     * @param \TencentAds\Model\V3\MarketingAssetOuterSpec|mixed $marketingAssetOuterSpec marketingAssetOuterSpec
+     *
+     * @return $this
+     */
+    public function setMarketingAssetOuterSpec($marketingAssetOuterSpec)
+    {
+        $this->container['marketingAssetOuterSpec'] = $marketingAssetOuterSpec;
+
+        return $this;
+    }
+
+    /**
+     * Gets componentList
+     *
+     * @return \TencentAds\Model\V3\CommentComponentStruct[]|mixed
+     */
+    public function getComponentList()
+    {
+        return $this->container['componentList'];
+    }
+
+    /**
+     * Sets componentList
+     *
+     * @param \TencentAds\Model\V3\CommentComponentStruct[]|mixed $componentList componentList
+     *
+     * @return $this
+     */
+    public function setComponentList($componentList)
+    {
+        $this->container['componentList'] = $componentList;
 
         return $this;
     }

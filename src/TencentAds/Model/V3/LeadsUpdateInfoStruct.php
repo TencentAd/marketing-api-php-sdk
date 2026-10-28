@@ -68,7 +68,7 @@ class LeadsUpdateInfoStruct implements ModelInterface, ArrayAccess
         'leadsQq' => 'int',
         'leadsWechat' => 'string',
         'leadsName' => 'string',
-        'leadsGender' => '\TencentAds\Model\V3\LeadsGenderType',
+        'leadsGender' => '\TencentAds\Model\V3\GenderType',
         'leadsEmail' => 'string',
         'leadsArea' => 'string',
         'bundle' => 'string',
@@ -538,7 +538,7 @@ class LeadsUpdateInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Gets leadsGender
      *
-     * @return \TencentAds\Model\V3\LeadsGenderType|mixed
+     * @return \TencentAds\Model\V3\GenderType|mixed
      */
     public function getLeadsGender()
     {
@@ -548,7 +548,7 @@ class LeadsUpdateInfoStruct implements ModelInterface, ArrayAccess
     /**
      * Sets leadsGender
      *
-     * @param \TencentAds\Model\V3\LeadsGenderType|mixed $leadsGender leadsGender
+     * @param \TencentAds\Model\V3\GenderType|mixed $leadsGender leadsGender
      *
      * @return $this
      */

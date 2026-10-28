@@ -99,15 +99,17 @@ class ChannelsUserpageobjectsApi
      * @param  int|mixed $count count (optional)
      * @param  string|mixed $wechatChannelsAccountId wechatChannelsAccountId (optional)
      * @param  \TencentAds\Model\V3\AdContext|mixed $adContext adContext (optional)
+     * @param  string[]|mixed $componentTypeList componentTypeList (optional)
+     * @param  string|mixed $componentUuid componentUuid (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \TencentAds\Model\V3\ChannelsUserpageobjectsGetResponse|mixed
      */
-    public function channelsUserpageobjectsGet($accountId, $finderUsername = null, $nickname = null, $lastBuffer = null, $count = null, $wechatChannelsAccountId = null, $adContext = null, $fields = null)
+    public function channelsUserpageobjectsGet($accountId, $finderUsername = null, $nickname = null, $lastBuffer = null, $count = null, $wechatChannelsAccountId = null, $adContext = null, $componentTypeList = null, $componentUuid = null, $fields = null)
     {
-        list($response) = $this->channelsUserpageobjectsGetWithHttpInfo($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $adContext, $fields);
+        list($response) = $this->channelsUserpageobjectsGetWithHttpInfo($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $adContext, $componentTypeList, $componentUuid, $fields);
         return $response;
     }
 
@@ -123,16 +125,18 @@ class ChannelsUserpageobjectsApi
      * @param  int|mixed $count (optional)
      * @param  string|mixed $wechatChannelsAccountId (optional)
      * @param  \TencentAds\Model\V3\AdContext|mixed $adContext (optional)
+     * @param  string[]|mixed $componentTypeList (optional)
+     * @param  string|mixed $componentUuid (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \TencentAds\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \TencentAds\Model\V3\ChannelsUserpageobjectsGetResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function channelsUserpageobjectsGetWithHttpInfo($accountId, $finderUsername = null, $nickname = null, $lastBuffer = null, $count = null, $wechatChannelsAccountId = null, $adContext = null, $fields = null)
+    public function channelsUserpageobjectsGetWithHttpInfo($accountId, $finderUsername = null, $nickname = null, $lastBuffer = null, $count = null, $wechatChannelsAccountId = null, $adContext = null, $componentTypeList = null, $componentUuid = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\ChannelsUserpageobjectsGetResponse';
-        $request = $this->channelsUserpageobjectsGetRequest($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $adContext, $fields);
+        $request = $this->channelsUserpageobjectsGetRequest($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $adContext, $componentTypeList, $componentUuid, $fields);
 
         try {
             $options = $this->createHttpClientOption();
@@ -205,14 +209,16 @@ class ChannelsUserpageobjectsApi
      * @param  int|mixed $count (optional)
      * @param  string|mixed $wechatChannelsAccountId (optional)
      * @param  \TencentAds\Model\V3\AdContext|mixed $adContext (optional)
+     * @param  string[]|mixed $componentTypeList (optional)
+     * @param  string|mixed $componentUuid (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function channelsUserpageobjectsGetAsync($accountId, $finderUsername = null, $nickname = null, $lastBuffer = null, $count = null, $wechatChannelsAccountId = null, $adContext = null, $fields = null)
+    public function channelsUserpageobjectsGetAsync($accountId, $finderUsername = null, $nickname = null, $lastBuffer = null, $count = null, $wechatChannelsAccountId = null, $adContext = null, $componentTypeList = null, $componentUuid = null, $fields = null)
     {
-        return $this->channelsUserpageobjectsGetAsyncWithHttpInfo($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $adContext, $fields)
+        return $this->channelsUserpageobjectsGetAsyncWithHttpInfo($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $adContext, $componentTypeList, $componentUuid, $fields)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -232,15 +238,17 @@ class ChannelsUserpageobjectsApi
      * @param  int|mixed $count (optional)
      * @param  string|mixed $wechatChannelsAccountId (optional)
      * @param  \TencentAds\Model\V3\AdContext|mixed $adContext (optional)
+     * @param  string[]|mixed $componentTypeList (optional)
+     * @param  string|mixed $componentUuid (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function channelsUserpageobjectsGetAsyncWithHttpInfo($accountId, $finderUsername = null, $nickname = null, $lastBuffer = null, $count = null, $wechatChannelsAccountId = null, $adContext = null, $fields = null)
+    public function channelsUserpageobjectsGetAsyncWithHttpInfo($accountId, $finderUsername = null, $nickname = null, $lastBuffer = null, $count = null, $wechatChannelsAccountId = null, $adContext = null, $componentTypeList = null, $componentUuid = null, $fields = null)
     {
         $returnType = '\TencentAds\Model\V3\ChannelsUserpageobjectsGetResponse';
-        $request = $this->channelsUserpageobjectsGetRequest($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $adContext, $fields);
+        $request = $this->channelsUserpageobjectsGetRequest($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $adContext, $componentTypeList, $componentUuid, $fields);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -289,12 +297,14 @@ class ChannelsUserpageobjectsApi
      * @param  int|mixed $count (optional)
      * @param  string|mixed $wechatChannelsAccountId (optional)
      * @param  \TencentAds\Model\V3\AdContext|mixed $adContext (optional)
+     * @param  string[]|mixed $componentTypeList (optional)
+     * @param  string|mixed $componentUuid (optional)
      * @param  string[]|mixed $fields 返回参数的字段列表 (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function channelsUserpageobjectsGetRequest($accountId, $finderUsername = null, $nickname = null, $lastBuffer = null, $count = null, $wechatChannelsAccountId = null, $adContext = null, $fields = null)
+    protected function channelsUserpageobjectsGetRequest($accountId, $finderUsername = null, $nickname = null, $lastBuffer = null, $count = null, $wechatChannelsAccountId = null, $adContext = null, $componentTypeList = null, $componentUuid = null, $fields = null)
     {
         // verify the required parameter 'accountId' is set
         if ($accountId === null || (is_array($accountId) && count($accountId) === 0)) {
@@ -337,6 +347,17 @@ class ChannelsUserpageobjectsApi
         // query params
         if ($adContext !== null) {
             $queryParams['ad_context'] = ObjectSerializer::toQueryValue($adContext);
+        }
+        // query params
+        if (is_array($componentTypeList)) {
+           $queryParams['component_type_list'] = json_encode($componentTypeList);
+        } else
+        if ($componentTypeList !== null) {
+            $queryParams['component_type_list'] = ObjectSerializer::toQueryValue($componentTypeList);
+        }
+        // query params
+        if ($componentUuid !== null) {
+            $queryParams['component_uuid'] = ObjectSerializer::toQueryValue($componentUuid);
         }
         // query params
         if (is_array($fields)) {

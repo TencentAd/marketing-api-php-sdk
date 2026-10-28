@@ -100,9 +100,9 @@ class PageTypeRead
     const WECHAT_CHANNELS_SHOP_PRODUCT = 'PAGE_TYPE_WECHAT_CHANNELS_SHOP_PRODUCT';
     const WECHAT_QUERY_PAGE = 'PAGE_TYPE_WECHAT_QUERY_PAGE';
     const WECHAT_SHOP = 'PAGE_TYPE_WECHAT_SHOP';
+    const WECHAT_CHANNELS_ACTIVITY = 'PAGE_TYPE_WECHAT_CHANNELS_ACTIVITY';
     const TSA_OTT = 'PAGE_TYPE_TSA_OTT';
     const APP_HARMONY = 'PAGE_TYPE_APP_HARMONY';
-    const WECHAT_CHANNELS_ACTIVITY = 'PAGE_TYPE_WECHAT_CHANNELS_ACTIVITY';
     
     /**
      * Gets allowable values of the enum
@@ -167,9 +167,9 @@ class PageTypeRead
             self::WECHAT_CHANNELS_SHOP_PRODUCT,
             self::WECHAT_QUERY_PAGE,
             self::WECHAT_SHOP,
+            self::WECHAT_CHANNELS_ACTIVITY,
             self::TSA_OTT,
             self::APP_HARMONY,
-            self::WECHAT_CHANNELS_ACTIVITY,
         ];
     }
 }

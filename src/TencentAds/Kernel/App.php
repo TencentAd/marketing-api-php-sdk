@@ -52,6 +52,8 @@ use TencentAds\Container\CampaignNegativewordsApiContainer;
 use TencentAds\Container\CampaignsApiContainer;
 use TencentAds\Container\CapabilitiesApiContainer;
 use TencentAds\Container\ComplianceValidationApiContainer;
+use TencentAds\Container\ContractPagesApiContainer;
+use TencentAds\Container\ContractPromotedObjectsApiContainer;
 use TencentAds\Container\ConversionsApiContainer;
 use TencentAds\Container\CreativeComponentsApiContainer;
 use TencentAds\Container\CreativeSampleProductsApiContainer;
@@ -335,6 +337,12 @@ class App
 
     /** @var ComplianceValidationApiContainer */
     public $complianceValidationApiContainer;
+
+    /** @var ContractPagesApiContainer */
+    public $contractPagesApiContainer;
+
+    /** @var ContractPromotedObjectsApiContainer */
+    public $contractPromotedObjectsApiContainer;
 
     /** @var ConversionsApiContainer */
     public $conversionsApiContainer;
@@ -1430,6 +1438,34 @@ class App
             $this->complianceValidationApiContainer = $container;
         }
         return $this->complianceValidationApiContainer;
+    }
+
+
+    /**
+     * @return ContractPagesApiContainer
+     */
+    public function contractPages()
+    {
+        if (empty($this->contractPagesApiContainer)) {
+            $container = new ContractPagesApiContainer();
+            $container->init($this, $this->getClient());
+            $this->contractPagesApiContainer = $container;
+        }
+        return $this->contractPagesApiContainer;
+    }
+
+
+    /**
+     * @return ContractPromotedObjectsApiContainer
+     */
+    public function contractPromotedObjects()
+    {
+        if (empty($this->contractPromotedObjectsApiContainer)) {
+            $container = new ContractPromotedObjectsApiContainer();
+            $container->init($this, $this->getClient());
+            $this->contractPromotedObjectsApiContainer = $container;
+        }
+        return $this->contractPromotedObjectsApiContainer;
     }
 
 

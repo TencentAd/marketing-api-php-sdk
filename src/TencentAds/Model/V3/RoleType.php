@@ -70,6 +70,8 @@ class RoleType
     const AGENCY_ORBAC = 'ROLE_TYPE_AGENCY_ORBAC';
     const AGENCY_DESIGNER = 'ROLE_TYPE_AGENCY_DESIGNER';
     const SUB_AGENCY_ADMIN = 'ROLE_TYPE_SUB_AGENCY_ADMIN';
+    const BOP_SUPER_ADMIN = 'ROLE_TYPE_BOP_SUPER_ADMIN';
+    const BOP_ADMIN = 'ROLE_TYPE_BOP_ADMIN';
     
     /**
      * Gets allowable values of the enum
@@ -104,6 +106,8 @@ class RoleType
             self::AGENCY_ORBAC,
             self::AGENCY_DESIGNER,
             self::SUB_AGENCY_ADMIN,
+            self::BOP_SUPER_ADMIN,
+            self::BOP_ADMIN,
         ];
     }
 }

@@ -92,10 +92,14 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'miniCardLink' => '\TencentAds\Model\V3\MiniCardLinkComponent',
         'floatingZoneList' => '\TencentAds\Model\V3\FloatingZoneListComponent',
         'videoChannelsContent' => '\TencentAds\Model\V3\VideoChannelsContentComponent',
+        'wechatShopActivity' => '\TencentAds\Model\V3\WechatShopActivityComponent',
         'wxgameDirectPage' => '\TencentAds\Model\V3\WxgameDirectPageComponent',
         'videoList' => '\TencentAds\Model\V3\VideoListComponent',
         'channelsLiveFeed' => '\TencentAds\Model\V3\ChannelsLiveFeedComponent',
-        'doctorCard' => '\TencentAds\Model\V3\DoctorCardComponent'
+        'doctorCard' => '\TencentAds\Model\V3\DoctorCardComponent',
+        'rewardedBrowse' => '\TencentAds\Model\V3\RewardedBrowseComponent',
+        'mdpaTitle' => '\TencentAds\Model\V3\MdpaTitleComponent',
+        'mdpaDescription' => '\TencentAds\Model\V3\MdpaDescriptionComponent'
     ];
 
     /**
@@ -138,10 +142,14 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'miniCardLink' => null,
         'floatingZoneList' => null,
         'videoChannelsContent' => null,
+        'wechatShopActivity' => null,
         'wxgameDirectPage' => null,
         'videoList' => null,
         'channelsLiveFeed' => null,
-        'doctorCard' => null
+        'doctorCard' => null,
+        'rewardedBrowse' => null,
+        'mdpaTitle' => null,
+        'mdpaDescription' => null
     ];
 
     /**
@@ -205,10 +213,14 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'miniCardLink' => 'mini_card_link',
         'floatingZoneList' => 'floating_zone_list',
         'videoChannelsContent' => 'video_channels_content',
+        'wechatShopActivity' => 'wechat_shop_activity',
         'wxgameDirectPage' => 'wxgame_direct_page',
         'videoList' => 'video_list',
         'channelsLiveFeed' => 'channels_live_feed',
-        'doctorCard' => 'doctor_card'
+        'doctorCard' => 'doctor_card',
+        'rewardedBrowse' => 'rewarded_browse',
+        'mdpaTitle' => 'mdpa_title',
+        'mdpaDescription' => 'mdpa_description'
     ];
 
     /**
@@ -251,10 +263,14 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'miniCardLink' => 'setMiniCardLink',
         'floatingZoneList' => 'setFloatingZoneList',
         'videoChannelsContent' => 'setVideoChannelsContent',
+        'wechatShopActivity' => 'setWechatShopActivity',
         'wxgameDirectPage' => 'setWxgameDirectPage',
         'videoList' => 'setVideoList',
         'channelsLiveFeed' => 'setChannelsLiveFeed',
-        'doctorCard' => 'setDoctorCard'
+        'doctorCard' => 'setDoctorCard',
+        'rewardedBrowse' => 'setRewardedBrowse',
+        'mdpaTitle' => 'setMdpaTitle',
+        'mdpaDescription' => 'setMdpaDescription'
     ];
 
     /**
@@ -297,10 +313,14 @@ class ComponentValue implements ModelInterface, ArrayAccess
         'miniCardLink' => 'getMiniCardLink',
         'floatingZoneList' => 'getFloatingZoneList',
         'videoChannelsContent' => 'getVideoChannelsContent',
+        'wechatShopActivity' => 'getWechatShopActivity',
         'wxgameDirectPage' => 'getWxgameDirectPage',
         'videoList' => 'getVideoList',
         'channelsLiveFeed' => 'getChannelsLiveFeed',
-        'doctorCard' => 'getDoctorCard'
+        'doctorCard' => 'getDoctorCard',
+        'rewardedBrowse' => 'getRewardedBrowse',
+        'mdpaTitle' => 'getMdpaTitle',
+        'mdpaDescription' => 'getMdpaDescription'
     ];
 
     /**
@@ -397,10 +417,14 @@ class ComponentValue implements ModelInterface, ArrayAccess
         $this->container['miniCardLink'] = isset($data['miniCardLink']) ? $data['miniCardLink'] : null;
         $this->container['floatingZoneList'] = isset($data['floatingZoneList']) ? $data['floatingZoneList'] : null;
         $this->container['videoChannelsContent'] = isset($data['videoChannelsContent']) ? $data['videoChannelsContent'] : null;
+        $this->container['wechatShopActivity'] = isset($data['wechatShopActivity']) ? $data['wechatShopActivity'] : null;
         $this->container['wxgameDirectPage'] = isset($data['wxgameDirectPage']) ? $data['wxgameDirectPage'] : null;
         $this->container['videoList'] = isset($data['videoList']) ? $data['videoList'] : null;
         $this->container['channelsLiveFeed'] = isset($data['channelsLiveFeed']) ? $data['channelsLiveFeed'] : null;
         $this->container['doctorCard'] = isset($data['doctorCard']) ? $data['doctorCard'] : null;
+        $this->container['rewardedBrowse'] = isset($data['rewardedBrowse']) ? $data['rewardedBrowse'] : null;
+        $this->container['mdpaTitle'] = isset($data['mdpaTitle']) ? $data['mdpaTitle'] : null;
+        $this->container['mdpaDescription'] = isset($data['mdpaDescription']) ? $data['mdpaDescription'] : null;
     }
 
     /**
@@ -1244,6 +1268,30 @@ class ComponentValue implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets wechatShopActivity
+     *
+     * @return \TencentAds\Model\V3\WechatShopActivityComponent|mixed
+     */
+    public function getWechatShopActivity()
+    {
+        return $this->container['wechatShopActivity'];
+    }
+
+    /**
+     * Sets wechatShopActivity
+     *
+     * @param \TencentAds\Model\V3\WechatShopActivityComponent|mixed $wechatShopActivity wechatShopActivity
+     *
+     * @return $this
+     */
+    public function setWechatShopActivity($wechatShopActivity)
+    {
+        $this->container['wechatShopActivity'] = $wechatShopActivity;
+
+        return $this;
+    }
+
+    /**
      * Gets wxgameDirectPage
      *
      * @return \TencentAds\Model\V3\WxgameDirectPageComponent|mixed
@@ -1335,6 +1383,78 @@ class ComponentValue implements ModelInterface, ArrayAccess
     public function setDoctorCard($doctorCard)
     {
         $this->container['doctorCard'] = $doctorCard;
+
+        return $this;
+    }
+
+    /**
+     * Gets rewardedBrowse
+     *
+     * @return \TencentAds\Model\V3\RewardedBrowseComponent|mixed
+     */
+    public function getRewardedBrowse()
+    {
+        return $this->container['rewardedBrowse'];
+    }
+
+    /**
+     * Sets rewardedBrowse
+     *
+     * @param \TencentAds\Model\V3\RewardedBrowseComponent|mixed $rewardedBrowse rewardedBrowse
+     *
+     * @return $this
+     */
+    public function setRewardedBrowse($rewardedBrowse)
+    {
+        $this->container['rewardedBrowse'] = $rewardedBrowse;
+
+        return $this;
+    }
+
+    /**
+     * Gets mdpaTitle
+     *
+     * @return \TencentAds\Model\V3\MdpaTitleComponent|mixed
+     */
+    public function getMdpaTitle()
+    {
+        return $this->container['mdpaTitle'];
+    }
+
+    /**
+     * Sets mdpaTitle
+     *
+     * @param \TencentAds\Model\V3\MdpaTitleComponent|mixed $mdpaTitle mdpaTitle
+     *
+     * @return $this
+     */
+    public function setMdpaTitle($mdpaTitle)
+    {
+        $this->container['mdpaTitle'] = $mdpaTitle;
+
+        return $this;
+    }
+
+    /**
+     * Gets mdpaDescription
+     *
+     * @return \TencentAds\Model\V3\MdpaDescriptionComponent|mixed
+     */
+    public function getMdpaDescription()
+    {
+        return $this->container['mdpaDescription'];
+    }
+
+    /**
+     * Sets mdpaDescription
+     *
+     * @param \TencentAds\Model\V3\MdpaDescriptionComponent|mixed $mdpaDescription mdpaDescription
+     *
+     * @return $this
+     */
+    public function setMdpaDescription($mdpaDescription)
+    {
+        $this->container['mdpaDescription'] = $mdpaDescription;
 
         return $this;
     }

@@ -59,7 +59,6 @@ class ChannelsLiveFeedStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'wechatChannelsAccountId' => 'string',
-        'coverId' => 'string',
         'rewardedMaskSwitch' => 'bool'
     ];
 
@@ -70,7 +69,6 @@ class ChannelsLiveFeedStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'wechatChannelsAccountId' => null,
-        'coverId' => null,
         'rewardedMaskSwitch' => null
     ];
 
@@ -102,7 +100,6 @@ class ChannelsLiveFeedStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'wechatChannelsAccountId' => 'wechat_channels_account_id',
-        'coverId' => 'cover_id',
         'rewardedMaskSwitch' => 'rewarded_mask_switch'
     ];
 
@@ -113,7 +110,6 @@ class ChannelsLiveFeedStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
-        'coverId' => 'setCoverId',
         'rewardedMaskSwitch' => 'setRewardedMaskSwitch'
     ];
 
@@ -124,7 +120,6 @@ class ChannelsLiveFeedStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
-        'coverId' => 'getCoverId',
         'rewardedMaskSwitch' => 'getRewardedMaskSwitch'
     ];
 
@@ -189,7 +184,6 @@ class ChannelsLiveFeedStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
-        $this->container['coverId'] = isset($data['coverId']) ? $data['coverId'] : null;
         $this->container['rewardedMaskSwitch'] = isset($data['rewardedMaskSwitch']) ? $data['rewardedMaskSwitch'] : null;
     }
 
@@ -237,30 +231,6 @@ class ChannelsLiveFeedStruct implements ModelInterface, ArrayAccess
     public function setWechatChannelsAccountId($wechatChannelsAccountId)
     {
         $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
-
-        return $this;
-    }
-
-    /**
-     * Gets coverId
-     *
-     * @return string|mixed
-     */
-    public function getCoverId()
-    {
-        return $this->container['coverId'];
-    }
-
-    /**
-     * Sets coverId
-     *
-     * @param string|mixed $coverId coverId
-     *
-     * @return $this
-     */
-    public function setCoverId($coverId)
-    {
-        $this->container['coverId'] = $coverId;
 
         return $this;
     }

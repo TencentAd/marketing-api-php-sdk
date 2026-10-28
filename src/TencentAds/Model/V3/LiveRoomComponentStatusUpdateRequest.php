@@ -61,7 +61,10 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
         'componentId' => 'int',
         'componentType' => '\TencentAds\Model\V3\CreativeComponentType',
         'status' => '\TencentAds\Model\V3\SysStatus',
-        'liveBeginTime' => 'int'
+        'liveBeginTime' => 'int',
+        'isAutoPublishEnabled' => 'bool',
+        'autoPublishBeginTime' => 'int',
+        'autoPublishEndTime' => 'int'
     ];
 
     /**
@@ -74,7 +77,10 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
         'componentId' => 'int64',
         'componentType' => null,
         'status' => null,
-        'liveBeginTime' => 'int64'
+        'liveBeginTime' => 'int64',
+        'isAutoPublishEnabled' => null,
+        'autoPublishBeginTime' => 'int64',
+        'autoPublishEndTime' => 'int64'
     ];
 
     /**
@@ -108,7 +114,10 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
         'componentId' => 'component_id',
         'componentType' => 'component_type',
         'status' => 'status',
-        'liveBeginTime' => 'live_begin_time'
+        'liveBeginTime' => 'live_begin_time',
+        'isAutoPublishEnabled' => 'is_auto_publish_enabled',
+        'autoPublishBeginTime' => 'auto_publish_begin_time',
+        'autoPublishEndTime' => 'auto_publish_end_time'
     ];
 
     /**
@@ -121,7 +130,10 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
         'componentId' => 'setComponentId',
         'componentType' => 'setComponentType',
         'status' => 'setStatus',
-        'liveBeginTime' => 'setLiveBeginTime'
+        'liveBeginTime' => 'setLiveBeginTime',
+        'isAutoPublishEnabled' => 'setIsAutoPublishEnabled',
+        'autoPublishBeginTime' => 'setAutoPublishBeginTime',
+        'autoPublishEndTime' => 'setAutoPublishEndTime'
     ];
 
     /**
@@ -134,7 +146,10 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
         'componentId' => 'getComponentId',
         'componentType' => 'getComponentType',
         'status' => 'getStatus',
-        'liveBeginTime' => 'getLiveBeginTime'
+        'liveBeginTime' => 'getLiveBeginTime',
+        'isAutoPublishEnabled' => 'getIsAutoPublishEnabled',
+        'autoPublishBeginTime' => 'getAutoPublishBeginTime',
+        'autoPublishEndTime' => 'getAutoPublishEndTime'
     ];
 
     /**
@@ -202,6 +217,9 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
         $this->container['componentType'] = isset($data['componentType']) ? $data['componentType'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
         $this->container['liveBeginTime'] = isset($data['liveBeginTime']) ? $data['liveBeginTime'] : null;
+        $this->container['isAutoPublishEnabled'] = isset($data['isAutoPublishEnabled']) ? $data['isAutoPublishEnabled'] : null;
+        $this->container['autoPublishBeginTime'] = isset($data['autoPublishBeginTime']) ? $data['autoPublishBeginTime'] : null;
+        $this->container['autoPublishEndTime'] = isset($data['autoPublishEndTime']) ? $data['autoPublishEndTime'] : null;
     }
 
     /**
@@ -344,6 +362,78 @@ class LiveRoomComponentStatusUpdateRequest implements ModelInterface, ArrayAcces
     public function setLiveBeginTime($liveBeginTime)
     {
         $this->container['liveBeginTime'] = $liveBeginTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets isAutoPublishEnabled
+     *
+     * @return bool|mixed
+     */
+    public function getIsAutoPublishEnabled()
+    {
+        return $this->container['isAutoPublishEnabled'];
+    }
+
+    /**
+     * Sets isAutoPublishEnabled
+     *
+     * @param bool|mixed $isAutoPublishEnabled isAutoPublishEnabled
+     *
+     * @return $this
+     */
+    public function setIsAutoPublishEnabled($isAutoPublishEnabled)
+    {
+        $this->container['isAutoPublishEnabled'] = $isAutoPublishEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoPublishBeginTime
+     *
+     * @return int|mixed
+     */
+    public function getAutoPublishBeginTime()
+    {
+        return $this->container['autoPublishBeginTime'];
+    }
+
+    /**
+     * Sets autoPublishBeginTime
+     *
+     * @param int|mixed $autoPublishBeginTime autoPublishBeginTime
+     *
+     * @return $this
+     */
+    public function setAutoPublishBeginTime($autoPublishBeginTime)
+    {
+        $this->container['autoPublishBeginTime'] = $autoPublishBeginTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoPublishEndTime
+     *
+     * @return int|mixed
+     */
+    public function getAutoPublishEndTime()
+    {
+        return $this->container['autoPublishEndTime'];
+    }
+
+    /**
+     * Sets autoPublishEndTime
+     *
+     * @param int|mixed $autoPublishEndTime autoPublishEndTime
+     *
+     * @return $this
+     */
+    public function setAutoPublishEndTime($autoPublishEndTime)
+    {
+        $this->container['autoPublishEndTime'] = $autoPublishEndTime;
 
         return $this;
     }

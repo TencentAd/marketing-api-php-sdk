@@ -912,6 +912,16 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupRate' => 'double',
         'afterAddWecomClassParticipatedFisrtUvRate' => 'double',
         'orderCouponAmount' => 'int',
+        'effectiveConsultDedupPv' => 'int',
+        'effectiveConsultDedupCost' => 'int',
+        'effectiveConsultDedupRate' => 'double',
+        'paymentAmountActivatedMultipleD7' => 'double',
+        'wecomEffectiveAddGroupDedupPv' => 'int',
+        'mixIncomeRoi1d' => 'double',
+        'mixIncomeRoi3d' => 'double',
+        'mixIncomeRoi7d' => 'double',
+        'mixIncomeRoi14d' => 'double',
+        'mixIncomeRoi' => 'double',
         'ageId' => 'int',
         'cityId' => 'int',
         'regionId' => 'int',
@@ -1781,6 +1791,16 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupRate' => 'double',
         'afterAddWecomClassParticipatedFisrtUvRate' => 'double',
         'orderCouponAmount' => 'int64',
+        'effectiveConsultDedupPv' => 'int64',
+        'effectiveConsultDedupCost' => 'int64',
+        'effectiveConsultDedupRate' => 'double',
+        'paymentAmountActivatedMultipleD7' => 'double',
+        'wecomEffectiveAddGroupDedupPv' => 'int64',
+        'mixIncomeRoi1d' => 'double',
+        'mixIncomeRoi3d' => 'double',
+        'mixIncomeRoi7d' => 'double',
+        'mixIncomeRoi14d' => 'double',
+        'mixIncomeRoi' => 'double',
         'ageId' => 'int64',
         'cityId' => 'int64',
         'regionId' => 'int64',
@@ -2671,6 +2691,16 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupRate' => 'after_add_wecom_consult_dedup_rate',
         'afterAddWecomClassParticipatedFisrtUvRate' => 'after_add_wecom_class_participated_fisrt_uv_rate',
         'orderCouponAmount' => 'order_coupon_amount',
+        'effectiveConsultDedupPv' => 'effective_consult_dedup_pv',
+        'effectiveConsultDedupCost' => 'effective_consult_dedup_cost',
+        'effectiveConsultDedupRate' => 'effective_consult_dedup_rate',
+        'paymentAmountActivatedMultipleD7' => 'payment_amount_activated_multiple_d7',
+        'wecomEffectiveAddGroupDedupPv' => 'wecom_effective_add_group_dedup_pv',
+        'mixIncomeRoi1d' => 'mix_income_roi_1d',
+        'mixIncomeRoi3d' => 'mix_income_roi_3d',
+        'mixIncomeRoi7d' => 'mix_income_roi_7d',
+        'mixIncomeRoi14d' => 'mix_income_roi_14d',
+        'mixIncomeRoi' => 'mix_income_roi',
         'ageId' => 'age_id',
         'cityId' => 'city_id',
         'regionId' => 'region_id',
@@ -3540,6 +3570,16 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupRate' => 'setAfterAddWecomConsultDedupRate',
         'afterAddWecomClassParticipatedFisrtUvRate' => 'setAfterAddWecomClassParticipatedFisrtUvRate',
         'orderCouponAmount' => 'setOrderCouponAmount',
+        'effectiveConsultDedupPv' => 'setEffectiveConsultDedupPv',
+        'effectiveConsultDedupCost' => 'setEffectiveConsultDedupCost',
+        'effectiveConsultDedupRate' => 'setEffectiveConsultDedupRate',
+        'paymentAmountActivatedMultipleD7' => 'setPaymentAmountActivatedMultipleD7',
+        'wecomEffectiveAddGroupDedupPv' => 'setWecomEffectiveAddGroupDedupPv',
+        'mixIncomeRoi1d' => 'setMixIncomeRoi1d',
+        'mixIncomeRoi3d' => 'setMixIncomeRoi3d',
+        'mixIncomeRoi7d' => 'setMixIncomeRoi7d',
+        'mixIncomeRoi14d' => 'setMixIncomeRoi14d',
+        'mixIncomeRoi' => 'setMixIncomeRoi',
         'ageId' => 'setAgeId',
         'cityId' => 'setCityId',
         'regionId' => 'setRegionId',
@@ -4409,6 +4449,16 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupRate' => 'getAfterAddWecomConsultDedupRate',
         'afterAddWecomClassParticipatedFisrtUvRate' => 'getAfterAddWecomClassParticipatedFisrtUvRate',
         'orderCouponAmount' => 'getOrderCouponAmount',
+        'effectiveConsultDedupPv' => 'getEffectiveConsultDedupPv',
+        'effectiveConsultDedupCost' => 'getEffectiveConsultDedupCost',
+        'effectiveConsultDedupRate' => 'getEffectiveConsultDedupRate',
+        'paymentAmountActivatedMultipleD7' => 'getPaymentAmountActivatedMultipleD7',
+        'wecomEffectiveAddGroupDedupPv' => 'getWecomEffectiveAddGroupDedupPv',
+        'mixIncomeRoi1d' => 'getMixIncomeRoi1d',
+        'mixIncomeRoi3d' => 'getMixIncomeRoi3d',
+        'mixIncomeRoi7d' => 'getMixIncomeRoi7d',
+        'mixIncomeRoi14d' => 'getMixIncomeRoi14d',
+        'mixIncomeRoi' => 'getMixIncomeRoi',
         'ageId' => 'getAgeId',
         'cityId' => 'getCityId',
         'regionId' => 'getRegionId',
@@ -5332,6 +5382,16 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
         $this->container['afterAddWecomConsultDedupRate'] = isset($data['afterAddWecomConsultDedupRate']) ? $data['afterAddWecomConsultDedupRate'] : null;
         $this->container['afterAddWecomClassParticipatedFisrtUvRate'] = isset($data['afterAddWecomClassParticipatedFisrtUvRate']) ? $data['afterAddWecomClassParticipatedFisrtUvRate'] : null;
         $this->container['orderCouponAmount'] = isset($data['orderCouponAmount']) ? $data['orderCouponAmount'] : null;
+        $this->container['effectiveConsultDedupPv'] = isset($data['effectiveConsultDedupPv']) ? $data['effectiveConsultDedupPv'] : null;
+        $this->container['effectiveConsultDedupCost'] = isset($data['effectiveConsultDedupCost']) ? $data['effectiveConsultDedupCost'] : null;
+        $this->container['effectiveConsultDedupRate'] = isset($data['effectiveConsultDedupRate']) ? $data['effectiveConsultDedupRate'] : null;
+        $this->container['paymentAmountActivatedMultipleD7'] = isset($data['paymentAmountActivatedMultipleD7']) ? $data['paymentAmountActivatedMultipleD7'] : null;
+        $this->container['wecomEffectiveAddGroupDedupPv'] = isset($data['wecomEffectiveAddGroupDedupPv']) ? $data['wecomEffectiveAddGroupDedupPv'] : null;
+        $this->container['mixIncomeRoi1d'] = isset($data['mixIncomeRoi1d']) ? $data['mixIncomeRoi1d'] : null;
+        $this->container['mixIncomeRoi3d'] = isset($data['mixIncomeRoi3d']) ? $data['mixIncomeRoi3d'] : null;
+        $this->container['mixIncomeRoi7d'] = isset($data['mixIncomeRoi7d']) ? $data['mixIncomeRoi7d'] : null;
+        $this->container['mixIncomeRoi14d'] = isset($data['mixIncomeRoi14d']) ? $data['mixIncomeRoi14d'] : null;
+        $this->container['mixIncomeRoi'] = isset($data['mixIncomeRoi']) ? $data['mixIncomeRoi'] : null;
         $this->container['ageId'] = isset($data['ageId']) ? $data['ageId'] : null;
         $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
         $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
@@ -25857,6 +25917,246 @@ class TargetReportApiListStruct implements ModelInterface, ArrayAccess
     public function setOrderCouponAmount($orderCouponAmount)
     {
         $this->container['orderCouponAmount'] = $orderCouponAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets effectiveConsultDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getEffectiveConsultDedupPv()
+    {
+        return $this->container['effectiveConsultDedupPv'];
+    }
+
+    /**
+     * Sets effectiveConsultDedupPv
+     *
+     * @param int|mixed $effectiveConsultDedupPv effectiveConsultDedupPv
+     *
+     * @return $this
+     */
+    public function setEffectiveConsultDedupPv($effectiveConsultDedupPv)
+    {
+        $this->container['effectiveConsultDedupPv'] = $effectiveConsultDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets effectiveConsultDedupCost
+     *
+     * @return int|mixed
+     */
+    public function getEffectiveConsultDedupCost()
+    {
+        return $this->container['effectiveConsultDedupCost'];
+    }
+
+    /**
+     * Sets effectiveConsultDedupCost
+     *
+     * @param int|mixed $effectiveConsultDedupCost effectiveConsultDedupCost
+     *
+     * @return $this
+     */
+    public function setEffectiveConsultDedupCost($effectiveConsultDedupCost)
+    {
+        $this->container['effectiveConsultDedupCost'] = $effectiveConsultDedupCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets effectiveConsultDedupRate
+     *
+     * @return double|mixed
+     */
+    public function getEffectiveConsultDedupRate()
+    {
+        return $this->container['effectiveConsultDedupRate'];
+    }
+
+    /**
+     * Sets effectiveConsultDedupRate
+     *
+     * @param double|mixed $effectiveConsultDedupRate effectiveConsultDedupRate
+     *
+     * @return $this
+     */
+    public function setEffectiveConsultDedupRate($effectiveConsultDedupRate)
+    {
+        $this->container['effectiveConsultDedupRate'] = $effectiveConsultDedupRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets paymentAmountActivatedMultipleD7
+     *
+     * @return double|mixed
+     */
+    public function getPaymentAmountActivatedMultipleD7()
+    {
+        return $this->container['paymentAmountActivatedMultipleD7'];
+    }
+
+    /**
+     * Sets paymentAmountActivatedMultipleD7
+     *
+     * @param double|mixed $paymentAmountActivatedMultipleD7 paymentAmountActivatedMultipleD7
+     *
+     * @return $this
+     */
+    public function setPaymentAmountActivatedMultipleD7($paymentAmountActivatedMultipleD7)
+    {
+        $this->container['paymentAmountActivatedMultipleD7'] = $paymentAmountActivatedMultipleD7;
+
+        return $this;
+    }
+
+    /**
+     * Gets wecomEffectiveAddGroupDedupPv
+     *
+     * @return int|mixed
+     */
+    public function getWecomEffectiveAddGroupDedupPv()
+    {
+        return $this->container['wecomEffectiveAddGroupDedupPv'];
+    }
+
+    /**
+     * Sets wecomEffectiveAddGroupDedupPv
+     *
+     * @param int|mixed $wecomEffectiveAddGroupDedupPv wecomEffectiveAddGroupDedupPv
+     *
+     * @return $this
+     */
+    public function setWecomEffectiveAddGroupDedupPv($wecomEffectiveAddGroupDedupPv)
+    {
+        $this->container['wecomEffectiveAddGroupDedupPv'] = $wecomEffectiveAddGroupDedupPv;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixIncomeRoi1d
+     *
+     * @return double|mixed
+     */
+    public function getMixIncomeRoi1d()
+    {
+        return $this->container['mixIncomeRoi1d'];
+    }
+
+    /**
+     * Sets mixIncomeRoi1d
+     *
+     * @param double|mixed $mixIncomeRoi1d mixIncomeRoi1d
+     *
+     * @return $this
+     */
+    public function setMixIncomeRoi1d($mixIncomeRoi1d)
+    {
+        $this->container['mixIncomeRoi1d'] = $mixIncomeRoi1d;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixIncomeRoi3d
+     *
+     * @return double|mixed
+     */
+    public function getMixIncomeRoi3d()
+    {
+        return $this->container['mixIncomeRoi3d'];
+    }
+
+    /**
+     * Sets mixIncomeRoi3d
+     *
+     * @param double|mixed $mixIncomeRoi3d mixIncomeRoi3d
+     *
+     * @return $this
+     */
+    public function setMixIncomeRoi3d($mixIncomeRoi3d)
+    {
+        $this->container['mixIncomeRoi3d'] = $mixIncomeRoi3d;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixIncomeRoi7d
+     *
+     * @return double|mixed
+     */
+    public function getMixIncomeRoi7d()
+    {
+        return $this->container['mixIncomeRoi7d'];
+    }
+
+    /**
+     * Sets mixIncomeRoi7d
+     *
+     * @param double|mixed $mixIncomeRoi7d mixIncomeRoi7d
+     *
+     * @return $this
+     */
+    public function setMixIncomeRoi7d($mixIncomeRoi7d)
+    {
+        $this->container['mixIncomeRoi7d'] = $mixIncomeRoi7d;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixIncomeRoi14d
+     *
+     * @return double|mixed
+     */
+    public function getMixIncomeRoi14d()
+    {
+        return $this->container['mixIncomeRoi14d'];
+    }
+
+    /**
+     * Sets mixIncomeRoi14d
+     *
+     * @param double|mixed $mixIncomeRoi14d mixIncomeRoi14d
+     *
+     * @return $this
+     */
+    public function setMixIncomeRoi14d($mixIncomeRoi14d)
+    {
+        $this->container['mixIncomeRoi14d'] = $mixIncomeRoi14d;
+
+        return $this;
+    }
+
+    /**
+     * Gets mixIncomeRoi
+     *
+     * @return double|mixed
+     */
+    public function getMixIncomeRoi()
+    {
+        return $this->container['mixIncomeRoi'];
+    }
+
+    /**
+     * Sets mixIncomeRoi
+     *
+     * @param double|mixed $mixIncomeRoi mixIncomeRoi
+     *
+     * @return $this
+     */
+    public function setMixIncomeRoi($mixIncomeRoi)
+    {
+        $this->container['mixIncomeRoi'] = $mixIncomeRoi;
 
         return $this;
     }

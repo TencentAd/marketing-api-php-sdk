@@ -113,6 +113,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'liveVideoSubMode' => '\TencentAds\Model\LiveVideoSubMode',
         'linkNameText' => 'string',
         'dynamicCreativeId' => 'int',
+        'contractUniversalLinkUrl' => 'string',
+        'macDeepLinkAppId' => 'string',
         'adcreativeTemplateId' => 'int',
         'adcreativeElements' => '\TencentAds\Model\AdcreativeCreativeElementsReadMp'
     ];
@@ -178,6 +180,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'liveVideoSubMode' => null,
         'linkNameText' => null,
         'dynamicCreativeId' => 'int64',
+        'contractUniversalLinkUrl' => null,
+        'macDeepLinkAppId' => null,
         'adcreativeTemplateId' => 'int64',
         'adcreativeElements' => null
     ];
@@ -264,6 +268,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'liveVideoSubMode' => 'live_video_sub_mode',
         'linkNameText' => 'link_name_text',
         'dynamicCreativeId' => 'dynamic_creative_id',
+        'contractUniversalLinkUrl' => 'contract_universal_link_url',
+        'macDeepLinkAppId' => 'mac_deep_link_app_id',
         'adcreativeTemplateId' => 'adcreative_template_id',
         'adcreativeElements' => 'adcreative_elements'
     ];
@@ -329,6 +335,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'liveVideoSubMode' => 'setLiveVideoSubMode',
         'linkNameText' => 'setLinkNameText',
         'dynamicCreativeId' => 'setDynamicCreativeId',
+        'contractUniversalLinkUrl' => 'setContractUniversalLinkUrl',
+        'macDeepLinkAppId' => 'setMacDeepLinkAppId',
         'adcreativeTemplateId' => 'setAdcreativeTemplateId',
         'adcreativeElements' => 'setAdcreativeElements'
     ];
@@ -394,6 +402,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         'liveVideoSubMode' => 'getLiveVideoSubMode',
         'linkNameText' => 'getLinkNameText',
         'dynamicCreativeId' => 'getDynamicCreativeId',
+        'contractUniversalLinkUrl' => 'getContractUniversalLinkUrl',
+        'macDeepLinkAppId' => 'getMacDeepLinkAppId',
         'adcreativeTemplateId' => 'getAdcreativeTemplateId',
         'adcreativeElements' => 'getAdcreativeElements'
     ];
@@ -513,6 +523,8 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
         $this->container['liveVideoSubMode'] = isset($data['liveVideoSubMode']) ? $data['liveVideoSubMode'] : null;
         $this->container['linkNameText'] = isset($data['linkNameText']) ? $data['linkNameText'] : null;
         $this->container['dynamicCreativeId'] = isset($data['dynamicCreativeId']) ? $data['dynamicCreativeId'] : null;
+        $this->container['contractUniversalLinkUrl'] = isset($data['contractUniversalLinkUrl']) ? $data['contractUniversalLinkUrl'] : null;
+        $this->container['macDeepLinkAppId'] = isset($data['macDeepLinkAppId']) ? $data['macDeepLinkAppId'] : null;
         $this->container['adcreativeTemplateId'] = isset($data['adcreativeTemplateId']) ? $data['adcreativeTemplateId'] : null;
         $this->container['adcreativeElements'] = isset($data['adcreativeElements']) ? $data['adcreativeElements'] : null;
     }
@@ -1857,6 +1869,54 @@ class AdcreativesGetListStruct implements ModelInterface, ArrayAccess
     public function setDynamicCreativeId($dynamicCreativeId)
     {
         $this->container['dynamicCreativeId'] = $dynamicCreativeId;
+
+        return $this;
+    }
+
+    /**
+     * Gets contractUniversalLinkUrl
+     *
+     * @return string|mixed
+     */
+    public function getContractUniversalLinkUrl()
+    {
+        return $this->container['contractUniversalLinkUrl'];
+    }
+
+    /**
+     * Sets contractUniversalLinkUrl
+     *
+     * @param string|mixed $contractUniversalLinkUrl contractUniversalLinkUrl
+     *
+     * @return $this
+     */
+    public function setContractUniversalLinkUrl($contractUniversalLinkUrl)
+    {
+        $this->container['contractUniversalLinkUrl'] = $contractUniversalLinkUrl;
+
+        return $this;
+    }
+
+    /**
+     * Gets macDeepLinkAppId
+     *
+     * @return string|mixed
+     */
+    public function getMacDeepLinkAppId()
+    {
+        return $this->container['macDeepLinkAppId'];
+    }
+
+    /**
+     * Sets macDeepLinkAppId
+     *
+     * @param string|mixed $macDeepLinkAppId macDeepLinkAppId
+     *
+     * @return $this
+     */
+    public function setMacDeepLinkAppId($macDeepLinkAppId)
+    {
+        $this->container['macDeepLinkAppId'] = $macDeepLinkAppId;
 
         return $this;
     }

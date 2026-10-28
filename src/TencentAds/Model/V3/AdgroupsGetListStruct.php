@@ -134,6 +134,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'bool',
         'liveRecommendStrategyEnabled' => 'bool',
         'customCostRoiCap' => 'double',
+        'industryValueExplore' => '\TencentAds\Model\V3\IndustryValueExplore',
         'enableSteadyExploration' => 'bool',
         'adxRealtimeType' => '\TencentAds\Model\V3\AdxRealtimeType',
         'smartTargetingStatus' => '\TencentAds\Model\V3\SmartTargetingStatus'
@@ -221,6 +222,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => null,
         'liveRecommendStrategyEnabled' => null,
         'customCostRoiCap' => 'double',
+        'industryValueExplore' => null,
         'enableSteadyExploration' => null,
         'adxRealtimeType' => null,
         'smartTargetingStatus' => null
@@ -329,6 +331,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'enable_breakthrough_siteset',
         'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled',
         'customCostRoiCap' => 'custom_cost_roi_cap',
+        'industryValueExplore' => 'industry_value_explore',
         'enableSteadyExploration' => 'enable_steady_exploration',
         'adxRealtimeType' => 'adx_realtime_type',
         'smartTargetingStatus' => 'smart_targeting_status'
@@ -416,6 +419,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'setEnableBreakthroughSiteset',
         'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled',
         'customCostRoiCap' => 'setCustomCostRoiCap',
+        'industryValueExplore' => 'setIndustryValueExplore',
         'enableSteadyExploration' => 'setEnableSteadyExploration',
         'adxRealtimeType' => 'setAdxRealtimeType',
         'smartTargetingStatus' => 'setSmartTargetingStatus'
@@ -503,6 +507,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         'enableBreakthroughSiteset' => 'getEnableBreakthroughSiteset',
         'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled',
         'customCostRoiCap' => 'getCustomCostRoiCap',
+        'industryValueExplore' => 'getIndustryValueExplore',
         'enableSteadyExploration' => 'getEnableSteadyExploration',
         'adxRealtimeType' => 'getAdxRealtimeType',
         'smartTargetingStatus' => 'getSmartTargetingStatus'
@@ -644,6 +649,7 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['enableBreakthroughSiteset'] = isset($data['enableBreakthroughSiteset']) ? $data['enableBreakthroughSiteset'] : null;
         $this->container['liveRecommendStrategyEnabled'] = isset($data['liveRecommendStrategyEnabled']) ? $data['liveRecommendStrategyEnabled'] : null;
         $this->container['customCostRoiCap'] = isset($data['customCostRoiCap']) ? $data['customCostRoiCap'] : null;
+        $this->container['industryValueExplore'] = isset($data['industryValueExplore']) ? $data['industryValueExplore'] : null;
         $this->container['enableSteadyExploration'] = isset($data['enableSteadyExploration']) ? $data['enableSteadyExploration'] : null;
         $this->container['adxRealtimeType'] = isset($data['adxRealtimeType']) ? $data['adxRealtimeType'] : null;
         $this->container['smartTargetingStatus'] = isset($data['smartTargetingStatus']) ? $data['smartTargetingStatus'] : null;
@@ -2493,6 +2499,30 @@ class AdgroupsGetListStruct implements ModelInterface, ArrayAccess
     public function setCustomCostRoiCap($customCostRoiCap)
     {
         $this->container['customCostRoiCap'] = $customCostRoiCap;
+
+        return $this;
+    }
+
+    /**
+     * Gets industryValueExplore
+     *
+     * @return \TencentAds\Model\V3\IndustryValueExplore|mixed
+     */
+    public function getIndustryValueExplore()
+    {
+        return $this->container['industryValueExplore'];
+    }
+
+    /**
+     * Sets industryValueExplore
+     *
+     * @param \TencentAds\Model\V3\IndustryValueExplore|mixed $industryValueExplore industryValueExplore
+     *
+     * @return $this
+     */
+    public function setIndustryValueExplore($industryValueExplore)
+    {
+        $this->container['industryValueExplore'] = $industryValueExplore;
 
         return $this;
     }

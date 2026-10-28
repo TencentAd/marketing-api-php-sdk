@@ -162,6 +162,9 @@ class OptimizationGoal
     const _30_DAY_UNSUBSCRIBE_RATE = 'OPTIMIZATIONGOAL_30DAY_UNSUBSCRIBE_RATE';
     const EFFECTIVE_INSURE = 'OPTIMIZATIONGOAL_EFFECTIVE_INSURE';
     const COLLECT = 'OPTIMIZATIONGOAL_COLLECT';
+    const COUPON_AMOUNT = 'OPTIMIZATIONGOAL_COUPON_AMOUNT';
+    const EFFECTIVE_CONSULT = 'OPTIMIZATIONGOAL_EFFECTIVE_CONSULT';
+    const EFFECTIVE_ADD_GROUP = 'OPTIMIZATIONGOAL_EFFECTIVE_ADD_GROUP';
     
     /**
      * Gets allowable values of the enum
@@ -288,6 +291,9 @@ class OptimizationGoal
             self::_30_DAY_UNSUBSCRIBE_RATE,
             self::EFFECTIVE_INSURE,
             self::COLLECT,
+            self::COUPON_AMOUNT,
+            self::EFFECTIVE_CONSULT,
+            self::EFFECTIVE_ADD_GROUP,
         ];
     }
 }

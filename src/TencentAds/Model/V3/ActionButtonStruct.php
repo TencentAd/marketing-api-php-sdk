@@ -59,7 +59,8 @@ class ActionButtonStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'buttonText' => 'string',
-        'jumpInfo' => '\TencentAds\Model\V3\JumpinfoStruct'
+        'jumpInfo' => '\TencentAds\Model\V3\JumpinfoStruct',
+        'miniProgramButtonText' => 'string'
     ];
 
     /**
@@ -69,7 +70,8 @@ class ActionButtonStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'buttonText' => null,
-        'jumpInfo' => null
+        'jumpInfo' => null,
+        'miniProgramButtonText' => null
     ];
 
     /**
@@ -100,7 +102,8 @@ class ActionButtonStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'buttonText' => 'button_text',
-        'jumpInfo' => 'jump_info'
+        'jumpInfo' => 'jump_info',
+        'miniProgramButtonText' => 'mini_program_button_text'
     ];
 
     /**
@@ -110,7 +113,8 @@ class ActionButtonStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'buttonText' => 'setButtonText',
-        'jumpInfo' => 'setJumpInfo'
+        'jumpInfo' => 'setJumpInfo',
+        'miniProgramButtonText' => 'setMiniProgramButtonText'
     ];
 
     /**
@@ -120,7 +124,8 @@ class ActionButtonStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'buttonText' => 'getButtonText',
-        'jumpInfo' => 'getJumpInfo'
+        'jumpInfo' => 'getJumpInfo',
+        'miniProgramButtonText' => 'getMiniProgramButtonText'
     ];
 
     /**
@@ -185,6 +190,7 @@ class ActionButtonStruct implements ModelInterface, ArrayAccess
     {
         $this->container['buttonText'] = isset($data['buttonText']) ? $data['buttonText'] : null;
         $this->container['jumpInfo'] = isset($data['jumpInfo']) ? $data['jumpInfo'] : null;
+        $this->container['miniProgramButtonText'] = isset($data['miniProgramButtonText']) ? $data['miniProgramButtonText'] : null;
     }
 
     /**
@@ -255,6 +261,30 @@ class ActionButtonStruct implements ModelInterface, ArrayAccess
     public function setJumpInfo($jumpInfo)
     {
         $this->container['jumpInfo'] = $jumpInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets miniProgramButtonText
+     *
+     * @return string|mixed
+     */
+    public function getMiniProgramButtonText()
+    {
+        return $this->container['miniProgramButtonText'];
+    }
+
+    /**
+     * Sets miniProgramButtonText
+     *
+     * @param string|mixed $miniProgramButtonText miniProgramButtonText
+     *
+     * @return $this
+     */
+    public function setMiniProgramButtonText($miniProgramButtonText)
+    {
+        $this->container['miniProgramButtonText'] = $miniProgramButtonText;
 
         return $this;
     }

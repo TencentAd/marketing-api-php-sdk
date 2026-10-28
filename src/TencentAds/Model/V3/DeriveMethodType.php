@@ -64,6 +64,7 @@ class DeriveMethodType
     const LOCAL_NINE_IMG = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_LOCAL_NINE_IMG';
     const FINANCE_NINE_IMG = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_FINANCE_NINE_IMG';
     const VIDEO_GENERATION = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_VIDEO_GENERATION';
+    const LIVE_REALTIME_SCREEN = 'AUTO_DERIVED_CREATIVE_METHOD_TYPE_LIVE_REALTIME_SCREEN';
     
     /**
      * Gets allowable values of the enum
@@ -92,6 +93,7 @@ class DeriveMethodType
             self::LOCAL_NINE_IMG,
             self::FINANCE_NINE_IMG,
             self::VIDEO_GENERATION,
+            self::LIVE_REALTIME_SCREEN,
         ];
     }
 }

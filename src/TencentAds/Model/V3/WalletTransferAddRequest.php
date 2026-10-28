@@ -64,7 +64,8 @@ class WalletTransferAddRequest implements ModelInterface, ArrayAccess
         'transferType' => 'string',
         'transferTryBest' => 'int',
         'externalBillNo' => 'string',
-        'memo' => 'string'
+        'memo' => 'string',
+        'preCheck' => 'int'
     ];
 
     /**
@@ -80,7 +81,8 @@ class WalletTransferAddRequest implements ModelInterface, ArrayAccess
         'transferType' => null,
         'transferTryBest' => 'int64',
         'externalBillNo' => null,
-        'memo' => null
+        'memo' => null,
+        'preCheck' => 'int64'
     ];
 
     /**
@@ -117,7 +119,8 @@ class WalletTransferAddRequest implements ModelInterface, ArrayAccess
         'transferType' => 'transfer_type',
         'transferTryBest' => 'transfer_try_best',
         'externalBillNo' => 'external_bill_no',
-        'memo' => 'memo'
+        'memo' => 'memo',
+        'preCheck' => 'pre_check'
     ];
 
     /**
@@ -133,7 +136,8 @@ class WalletTransferAddRequest implements ModelInterface, ArrayAccess
         'transferType' => 'setTransferType',
         'transferTryBest' => 'setTransferTryBest',
         'externalBillNo' => 'setExternalBillNo',
-        'memo' => 'setMemo'
+        'memo' => 'setMemo',
+        'preCheck' => 'setPreCheck'
     ];
 
     /**
@@ -149,7 +153,8 @@ class WalletTransferAddRequest implements ModelInterface, ArrayAccess
         'transferType' => 'getTransferType',
         'transferTryBest' => 'getTransferTryBest',
         'externalBillNo' => 'getExternalBillNo',
-        'memo' => 'getMemo'
+        'memo' => 'getMemo',
+        'preCheck' => 'getPreCheck'
     ];
 
     /**
@@ -220,6 +225,7 @@ class WalletTransferAddRequest implements ModelInterface, ArrayAccess
         $this->container['transferTryBest'] = isset($data['transferTryBest']) ? $data['transferTryBest'] : null;
         $this->container['externalBillNo'] = isset($data['externalBillNo']) ? $data['externalBillNo'] : null;
         $this->container['memo'] = isset($data['memo']) ? $data['memo'] : null;
+        $this->container['preCheck'] = isset($data['preCheck']) ? $data['preCheck'] : null;
     }
 
     /**
@@ -434,6 +440,30 @@ class WalletTransferAddRequest implements ModelInterface, ArrayAccess
     public function setMemo($memo)
     {
         $this->container['memo'] = $memo;
+
+        return $this;
+    }
+
+    /**
+     * Gets preCheck
+     *
+     * @return int|mixed
+     */
+    public function getPreCheck()
+    {
+        return $this->container['preCheck'];
+    }
+
+    /**
+     * Sets preCheck
+     *
+     * @param int|mixed $preCheck preCheck
+     *
+     * @return $this
+     */
+    public function setPreCheck($preCheck)
+    {
+        $this->container['preCheck'] = $preCheck;
 
         return $this;
     }

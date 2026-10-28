@@ -117,7 +117,11 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'mainJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
         'wechatChannelsCoverImgShowType' => '\TencentAds\Model\WechatChannelsCoverImgShowType',
         'miniCardLink' => '\TencentAds\Model\AdCreativeMiniCardLink',
-        'redEnvelopePacketList' => '\TencentAds\Model\RedEnvelopePacketSpec[]'
+        'redEnvelopePacketList' => '\TencentAds\Model\RedEnvelopePacketSpec[]',
+        'descriptionEn' => 'string',
+        'descriptionTw' => 'string',
+        'imageListDisplayMode' => 'int',
+        'multiMaterialsDisplayMode' => 'int'
     ];
 
     /**
@@ -185,7 +189,11 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'mainJumpInfo' => null,
         'wechatChannelsCoverImgShowType' => null,
         'miniCardLink' => null,
-        'redEnvelopePacketList' => null
+        'redEnvelopePacketList' => null,
+        'descriptionEn' => null,
+        'descriptionTw' => null,
+        'imageListDisplayMode' => 'int64',
+        'multiMaterialsDisplayMode' => 'int64'
     ];
 
     /**
@@ -274,7 +282,11 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'mainJumpInfo' => 'main_jump_info',
         'wechatChannelsCoverImgShowType' => 'wechat_channels_cover_img_show_type',
         'miniCardLink' => 'mini_card_link',
-        'redEnvelopePacketList' => 'red_envelope_packet_list'
+        'redEnvelopePacketList' => 'red_envelope_packet_list',
+        'descriptionEn' => 'description_en',
+        'descriptionTw' => 'description_tw',
+        'imageListDisplayMode' => 'image_list_display_mode',
+        'multiMaterialsDisplayMode' => 'multi_materials_display_mode'
     ];
 
     /**
@@ -342,7 +354,11 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'mainJumpInfo' => 'setMainJumpInfo',
         'wechatChannelsCoverImgShowType' => 'setWechatChannelsCoverImgShowType',
         'miniCardLink' => 'setMiniCardLink',
-        'redEnvelopePacketList' => 'setRedEnvelopePacketList'
+        'redEnvelopePacketList' => 'setRedEnvelopePacketList',
+        'descriptionEn' => 'setDescriptionEn',
+        'descriptionTw' => 'setDescriptionTw',
+        'imageListDisplayMode' => 'setImageListDisplayMode',
+        'multiMaterialsDisplayMode' => 'setMultiMaterialsDisplayMode'
     ];
 
     /**
@@ -410,7 +426,11 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         'mainJumpInfo' => 'getMainJumpInfo',
         'wechatChannelsCoverImgShowType' => 'getWechatChannelsCoverImgShowType',
         'miniCardLink' => 'getMiniCardLink',
-        'redEnvelopePacketList' => 'getRedEnvelopePacketList'
+        'redEnvelopePacketList' => 'getRedEnvelopePacketList',
+        'descriptionEn' => 'getDescriptionEn',
+        'descriptionTw' => 'getDescriptionTw',
+        'imageListDisplayMode' => 'getImageListDisplayMode',
+        'multiMaterialsDisplayMode' => 'getMultiMaterialsDisplayMode'
     ];
 
     /**
@@ -533,6 +553,10 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
         $this->container['wechatChannelsCoverImgShowType'] = isset($data['wechatChannelsCoverImgShowType']) ? $data['wechatChannelsCoverImgShowType'] : null;
         $this->container['miniCardLink'] = isset($data['miniCardLink']) ? $data['miniCardLink'] : null;
         $this->container['redEnvelopePacketList'] = isset($data['redEnvelopePacketList']) ? $data['redEnvelopePacketList'] : null;
+        $this->container['descriptionEn'] = isset($data['descriptionEn']) ? $data['descriptionEn'] : null;
+        $this->container['descriptionTw'] = isset($data['descriptionTw']) ? $data['descriptionTw'] : null;
+        $this->container['imageListDisplayMode'] = isset($data['imageListDisplayMode']) ? $data['imageListDisplayMode'] : null;
+        $this->container['multiMaterialsDisplayMode'] = isset($data['multiMaterialsDisplayMode']) ? $data['multiMaterialsDisplayMode'] : null;
     }
 
     /**
@@ -1995,6 +2019,102 @@ class AdcreativeCreativeElementsMp implements ModelInterface, ArrayAccess
     public function setRedEnvelopePacketList($redEnvelopePacketList)
     {
         $this->container['redEnvelopePacketList'] = $redEnvelopePacketList;
+
+        return $this;
+    }
+
+    /**
+     * Gets descriptionEn
+     *
+     * @return string|mixed
+     */
+    public function getDescriptionEn()
+    {
+        return $this->container['descriptionEn'];
+    }
+
+    /**
+     * Sets descriptionEn
+     *
+     * @param string|mixed $descriptionEn descriptionEn
+     *
+     * @return $this
+     */
+    public function setDescriptionEn($descriptionEn)
+    {
+        $this->container['descriptionEn'] = $descriptionEn;
+
+        return $this;
+    }
+
+    /**
+     * Gets descriptionTw
+     *
+     * @return string|mixed
+     */
+    public function getDescriptionTw()
+    {
+        return $this->container['descriptionTw'];
+    }
+
+    /**
+     * Sets descriptionTw
+     *
+     * @param string|mixed $descriptionTw descriptionTw
+     *
+     * @return $this
+     */
+    public function setDescriptionTw($descriptionTw)
+    {
+        $this->container['descriptionTw'] = $descriptionTw;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageListDisplayMode
+     *
+     * @return int|mixed
+     */
+    public function getImageListDisplayMode()
+    {
+        return $this->container['imageListDisplayMode'];
+    }
+
+    /**
+     * Sets imageListDisplayMode
+     *
+     * @param int|mixed $imageListDisplayMode imageListDisplayMode
+     *
+     * @return $this
+     */
+    public function setImageListDisplayMode($imageListDisplayMode)
+    {
+        $this->container['imageListDisplayMode'] = $imageListDisplayMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets multiMaterialsDisplayMode
+     *
+     * @return int|mixed
+     */
+    public function getMultiMaterialsDisplayMode()
+    {
+        return $this->container['multiMaterialsDisplayMode'];
+    }
+
+    /**
+     * Sets multiMaterialsDisplayMode
+     *
+     * @param int|mixed $multiMaterialsDisplayMode multiMaterialsDisplayMode
+     *
+     * @return $this
+     */
+    public function setMultiMaterialsDisplayMode($multiMaterialsDisplayMode)
+    {
+        $this->container['multiMaterialsDisplayMode'] = $multiMaterialsDisplayMode;
 
         return $this;
     }

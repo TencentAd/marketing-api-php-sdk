@@ -72,7 +72,10 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int',
         'lastModifiedTime' => 'int',
         'isPublishEnabled' => 'bool',
-        'wechatChannelsAccountId' => 'string'
+        'wechatChannelsAccountId' => 'string',
+        'isAutoPublishEnabled' => 'bool',
+        'autoPublishBeginTime' => 'int',
+        'autoPublishEndTime' => 'int'
     ];
 
     /**
@@ -95,7 +98,10 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'int64',
         'lastModifiedTime' => 'int64',
         'isPublishEnabled' => null,
-        'wechatChannelsAccountId' => null
+        'wechatChannelsAccountId' => null,
+        'isAutoPublishEnabled' => null,
+        'autoPublishBeginTime' => 'int64',
+        'autoPublishEndTime' => 'int64'
     ];
 
     /**
@@ -139,7 +145,10 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'created_time',
         'lastModifiedTime' => 'last_modified_time',
         'isPublishEnabled' => 'is_publish_enabled',
-        'wechatChannelsAccountId' => 'wechat_channels_account_id'
+        'wechatChannelsAccountId' => 'wechat_channels_account_id',
+        'isAutoPublishEnabled' => 'is_auto_publish_enabled',
+        'autoPublishBeginTime' => 'auto_publish_begin_time',
+        'autoPublishEndTime' => 'auto_publish_end_time'
     ];
 
     /**
@@ -162,7 +171,10 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'setCreatedTime',
         'lastModifiedTime' => 'setLastModifiedTime',
         'isPublishEnabled' => 'setIsPublishEnabled',
-        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
+        'isAutoPublishEnabled' => 'setIsAutoPublishEnabled',
+        'autoPublishBeginTime' => 'setAutoPublishBeginTime',
+        'autoPublishEndTime' => 'setAutoPublishEndTime'
     ];
 
     /**
@@ -185,7 +197,10 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
         'createdTime' => 'getCreatedTime',
         'lastModifiedTime' => 'getLastModifiedTime',
         'isPublishEnabled' => 'getIsPublishEnabled',
-        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
+        'isAutoPublishEnabled' => 'getIsAutoPublishEnabled',
+        'autoPublishBeginTime' => 'getAutoPublishBeginTime',
+        'autoPublishEndTime' => 'getAutoPublishEndTime'
     ];
 
     /**
@@ -263,6 +278,9 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
         $this->container['lastModifiedTime'] = isset($data['lastModifiedTime']) ? $data['lastModifiedTime'] : null;
         $this->container['isPublishEnabled'] = isset($data['isPublishEnabled']) ? $data['isPublishEnabled'] : null;
         $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
+        $this->container['isAutoPublishEnabled'] = isset($data['isAutoPublishEnabled']) ? $data['isAutoPublishEnabled'] : null;
+        $this->container['autoPublishBeginTime'] = isset($data['autoPublishBeginTime']) ? $data['autoPublishBeginTime'] : null;
+        $this->container['autoPublishEndTime'] = isset($data['autoPublishEndTime']) ? $data['autoPublishEndTime'] : null;
     }
 
     /**
@@ -645,6 +663,78 @@ class LiveRoomComponentStruct implements ModelInterface, ArrayAccess
     public function setWechatChannelsAccountId($wechatChannelsAccountId)
     {
         $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets isAutoPublishEnabled
+     *
+     * @return bool|mixed
+     */
+    public function getIsAutoPublishEnabled()
+    {
+        return $this->container['isAutoPublishEnabled'];
+    }
+
+    /**
+     * Sets isAutoPublishEnabled
+     *
+     * @param bool|mixed $isAutoPublishEnabled isAutoPublishEnabled
+     *
+     * @return $this
+     */
+    public function setIsAutoPublishEnabled($isAutoPublishEnabled)
+    {
+        $this->container['isAutoPublishEnabled'] = $isAutoPublishEnabled;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoPublishBeginTime
+     *
+     * @return int|mixed
+     */
+    public function getAutoPublishBeginTime()
+    {
+        return $this->container['autoPublishBeginTime'];
+    }
+
+    /**
+     * Sets autoPublishBeginTime
+     *
+     * @param int|mixed $autoPublishBeginTime autoPublishBeginTime
+     *
+     * @return $this
+     */
+    public function setAutoPublishBeginTime($autoPublishBeginTime)
+    {
+        $this->container['autoPublishBeginTime'] = $autoPublishBeginTime;
+
+        return $this;
+    }
+
+    /**
+     * Gets autoPublishEndTime
+     *
+     * @return int|mixed
+     */
+    public function getAutoPublishEndTime()
+    {
+        return $this->container['autoPublishEndTime'];
+    }
+
+    /**
+     * Sets autoPublishEndTime
+     *
+     * @param int|mixed $autoPublishEndTime autoPublishEndTime
+     *
+     * @return $this
+     */
+    public function setAutoPublishEndTime($autoPublishEndTime)
+    {
+        $this->container['autoPublishEndTime'] = $autoPublishEndTime;
 
         return $this;
     }

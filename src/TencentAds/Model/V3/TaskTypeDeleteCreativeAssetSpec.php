@@ -58,7 +58,6 @@ class TaskTypeDeleteCreativeAssetSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accountId' => 'int',
         'componentIdList' => 'int[]',
         'imageIdList' => 'string[]',
         'videoIdList' => 'string[]',
@@ -71,7 +70,6 @@ class TaskTypeDeleteCreativeAssetSpec implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'accountId' => 'int64',
         'componentIdList' => 'int64',
         'imageIdList' => null,
         'videoIdList' => null,
@@ -105,7 +103,6 @@ class TaskTypeDeleteCreativeAssetSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'accountId' => 'account_id',
         'componentIdList' => 'component_id_list',
         'imageIdList' => 'image_id_list',
         'videoIdList' => 'video_id_list',
@@ -118,7 +115,6 @@ class TaskTypeDeleteCreativeAssetSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'accountId' => 'setAccountId',
         'componentIdList' => 'setComponentIdList',
         'imageIdList' => 'setImageIdList',
         'videoIdList' => 'setVideoIdList',
@@ -131,7 +127,6 @@ class TaskTypeDeleteCreativeAssetSpec implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'accountId' => 'getAccountId',
         'componentIdList' => 'getComponentIdList',
         'imageIdList' => 'getImageIdList',
         'videoIdList' => 'getVideoIdList',
@@ -198,7 +193,6 @@ class TaskTypeDeleteCreativeAssetSpec implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
         $this->container['componentIdList'] = isset($data['componentIdList']) ? $data['componentIdList'] : null;
         $this->container['imageIdList'] = isset($data['imageIdList']) ? $data['imageIdList'] : null;
         $this->container['videoIdList'] = isset($data['videoIdList']) ? $data['videoIdList'] : null;
@@ -228,30 +222,6 @@ class TaskTypeDeleteCreativeAssetSpec implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets accountId
-     *
-     * @return int|mixed
-     */
-    public function getAccountId()
-    {
-        return $this->container['accountId'];
-    }
-
-    /**
-     * Sets accountId
-     *
-     * @param int|mixed $accountId accountId
-     *
-     * @return $this
-     */
-    public function setAccountId($accountId)
-    {
-        $this->container['accountId'] = $accountId;
-
-        return $this;
-    }
 
     /**
      * Gets componentIdList

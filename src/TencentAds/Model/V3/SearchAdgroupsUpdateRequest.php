@@ -79,7 +79,8 @@ class SearchAdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'bidMode' => '\TencentAds\Model\V3\BidMode',
         'configuredStatus' => '\TencentAds\Model\V3\ConfiguredStatus',
         'feedbackId' => 'int',
-        'searchExpandTargetingSwitch' => '\TencentAds\Model\V3\SearchExpandTargetingSwitch'
+        'searchExpandTargetingSwitch' => '\TencentAds\Model\V3\SearchExpandTargetingSwitch',
+        'industryValueExplore' => '\TencentAds\Model\V3\IndustryValueExplore'
     ];
 
     /**
@@ -110,7 +111,8 @@ class SearchAdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'bidMode' => null,
         'configuredStatus' => null,
         'feedbackId' => 'int64',
-        'searchExpandTargetingSwitch' => null
+        'searchExpandTargetingSwitch' => null,
+        'industryValueExplore' => null
     ];
 
     /**
@@ -162,7 +164,8 @@ class SearchAdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'bidMode' => 'bid_mode',
         'configuredStatus' => 'configured_status',
         'feedbackId' => 'feedback_id',
-        'searchExpandTargetingSwitch' => 'search_expand_targeting_switch'
+        'searchExpandTargetingSwitch' => 'search_expand_targeting_switch',
+        'industryValueExplore' => 'industry_value_explore'
     ];
 
     /**
@@ -193,7 +196,8 @@ class SearchAdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'bidMode' => 'setBidMode',
         'configuredStatus' => 'setConfiguredStatus',
         'feedbackId' => 'setFeedbackId',
-        'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch'
+        'searchExpandTargetingSwitch' => 'setSearchExpandTargetingSwitch',
+        'industryValueExplore' => 'setIndustryValueExplore'
     ];
 
     /**
@@ -224,7 +228,8 @@ class SearchAdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'bidMode' => 'getBidMode',
         'configuredStatus' => 'getConfiguredStatus',
         'feedbackId' => 'getFeedbackId',
-        'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch'
+        'searchExpandTargetingSwitch' => 'getSearchExpandTargetingSwitch',
+        'industryValueExplore' => 'getIndustryValueExplore'
     ];
 
     /**
@@ -310,6 +315,7 @@ class SearchAdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['configuredStatus'] = isset($data['configuredStatus']) ? $data['configuredStatus'] : null;
         $this->container['feedbackId'] = isset($data['feedbackId']) ? $data['feedbackId'] : null;
         $this->container['searchExpandTargetingSwitch'] = isset($data['searchExpandTargetingSwitch']) ? $data['searchExpandTargetingSwitch'] : null;
+        $this->container['industryValueExplore'] = isset($data['industryValueExplore']) ? $data['industryValueExplore'] : null;
     }
 
     /**
@@ -884,6 +890,30 @@ class SearchAdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setSearchExpandTargetingSwitch($searchExpandTargetingSwitch)
     {
         $this->container['searchExpandTargetingSwitch'] = $searchExpandTargetingSwitch;
+
+        return $this;
+    }
+
+    /**
+     * Gets industryValueExplore
+     *
+     * @return \TencentAds\Model\V3\IndustryValueExplore|mixed
+     */
+    public function getIndustryValueExplore()
+    {
+        return $this->container['industryValueExplore'];
+    }
+
+    /**
+     * Sets industryValueExplore
+     *
+     * @param \TencentAds\Model\V3\IndustryValueExplore|mixed $industryValueExplore industryValueExplore
+     *
+     * @return $this
+     */
+    public function setIndustryValueExplore($industryValueExplore)
+    {
+        $this->container['industryValueExplore'] = $industryValueExplore;
 
         return $this;
     }

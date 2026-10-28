@@ -33,7 +33,7 @@ class TencentAds extends Tools
      * SDK version
      * @var string
      */
-    protected $version = '1.1.95';
+    protected $version = '1.1.141';
 
     /**
      * SDK version
@@ -387,3 +387,5 @@ class TencentAds extends Tools
         return $this->middlewareInstance;
     }
 }
+
+

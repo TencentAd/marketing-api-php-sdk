@@ -160,7 +160,11 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'mdpaDescComponentOptions' => '\TencentAds\Model\MdpaDescComponentOption[]',
         'listSublinkComponentOptions' => '\TencentAds\Model\ListSublinkComponentOption[]',
         'imageList3ComponentOptions' => '\TencentAds\Model\ImageListComponentOption[]',
-        'redEnvelopePacketList' => '\TencentAds\Model\RedEnvelopePacketSpec[]'
+        'redEnvelopePacketList' => '\TencentAds\Model\RedEnvelopePacketSpec[]',
+        'descriptionEn' => 'string',
+        'descriptionTw' => 'string',
+        'imageListDisplayMode' => 'int',
+        'multiMaterialsDisplayMode' => 'int'
     ];
 
     /**
@@ -271,7 +275,11 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'mdpaDescComponentOptions' => null,
         'listSublinkComponentOptions' => null,
         'imageList3ComponentOptions' => null,
-        'redEnvelopePacketList' => null
+        'redEnvelopePacketList' => null,
+        'descriptionEn' => null,
+        'descriptionTw' => null,
+        'imageListDisplayMode' => 'int64',
+        'multiMaterialsDisplayMode' => 'int64'
     ];
 
     /**
@@ -403,7 +411,11 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'mdpaDescComponentOptions' => 'mdpa_desc_component_options',
         'listSublinkComponentOptions' => 'list_sublink_component_options',
         'imageList3ComponentOptions' => 'image_list3_component_options',
-        'redEnvelopePacketList' => 'red_envelope_packet_list'
+        'redEnvelopePacketList' => 'red_envelope_packet_list',
+        'descriptionEn' => 'description_en',
+        'descriptionTw' => 'description_tw',
+        'imageListDisplayMode' => 'image_list_display_mode',
+        'multiMaterialsDisplayMode' => 'multi_materials_display_mode'
     ];
 
     /**
@@ -514,7 +526,11 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'mdpaDescComponentOptions' => 'setMdpaDescComponentOptions',
         'listSublinkComponentOptions' => 'setListSublinkComponentOptions',
         'imageList3ComponentOptions' => 'setImageList3ComponentOptions',
-        'redEnvelopePacketList' => 'setRedEnvelopePacketList'
+        'redEnvelopePacketList' => 'setRedEnvelopePacketList',
+        'descriptionEn' => 'setDescriptionEn',
+        'descriptionTw' => 'setDescriptionTw',
+        'imageListDisplayMode' => 'setImageListDisplayMode',
+        'multiMaterialsDisplayMode' => 'setMultiMaterialsDisplayMode'
     ];
 
     /**
@@ -625,7 +641,11 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         'mdpaDescComponentOptions' => 'getMdpaDescComponentOptions',
         'listSublinkComponentOptions' => 'getListSublinkComponentOptions',
         'imageList3ComponentOptions' => 'getImageList3ComponentOptions',
-        'redEnvelopePacketList' => 'getRedEnvelopePacketList'
+        'redEnvelopePacketList' => 'getRedEnvelopePacketList',
+        'descriptionEn' => 'getDescriptionEn',
+        'descriptionTw' => 'getDescriptionTw',
+        'imageListDisplayMode' => 'getImageListDisplayMode',
+        'multiMaterialsDisplayMode' => 'getMultiMaterialsDisplayMode'
     ];
 
     /**
@@ -791,6 +811,10 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
         $this->container['listSublinkComponentOptions'] = isset($data['listSublinkComponentOptions']) ? $data['listSublinkComponentOptions'] : null;
         $this->container['imageList3ComponentOptions'] = isset($data['imageList3ComponentOptions']) ? $data['imageList3ComponentOptions'] : null;
         $this->container['redEnvelopePacketList'] = isset($data['redEnvelopePacketList']) ? $data['redEnvelopePacketList'] : null;
+        $this->container['descriptionEn'] = isset($data['descriptionEn']) ? $data['descriptionEn'] : null;
+        $this->container['descriptionTw'] = isset($data['descriptionTw']) ? $data['descriptionTw'] : null;
+        $this->container['imageListDisplayMode'] = isset($data['imageListDisplayMode']) ? $data['imageListDisplayMode'] : null;
+        $this->container['multiMaterialsDisplayMode'] = isset($data['multiMaterialsDisplayMode']) ? $data['multiMaterialsDisplayMode'] : null;
     }
 
     /**
@@ -3285,6 +3309,102 @@ class AdcreativeCreativeElementsReadMp implements ModelInterface, ArrayAccess
     public function setRedEnvelopePacketList($redEnvelopePacketList)
     {
         $this->container['redEnvelopePacketList'] = $redEnvelopePacketList;
+
+        return $this;
+    }
+
+    /**
+     * Gets descriptionEn
+     *
+     * @return string|mixed
+     */
+    public function getDescriptionEn()
+    {
+        return $this->container['descriptionEn'];
+    }
+
+    /**
+     * Sets descriptionEn
+     *
+     * @param string|mixed $descriptionEn descriptionEn
+     *
+     * @return $this
+     */
+    public function setDescriptionEn($descriptionEn)
+    {
+        $this->container['descriptionEn'] = $descriptionEn;
+
+        return $this;
+    }
+
+    /**
+     * Gets descriptionTw
+     *
+     * @return string|mixed
+     */
+    public function getDescriptionTw()
+    {
+        return $this->container['descriptionTw'];
+    }
+
+    /**
+     * Sets descriptionTw
+     *
+     * @param string|mixed $descriptionTw descriptionTw
+     *
+     * @return $this
+     */
+    public function setDescriptionTw($descriptionTw)
+    {
+        $this->container['descriptionTw'] = $descriptionTw;
+
+        return $this;
+    }
+
+    /**
+     * Gets imageListDisplayMode
+     *
+     * @return int|mixed
+     */
+    public function getImageListDisplayMode()
+    {
+        return $this->container['imageListDisplayMode'];
+    }
+
+    /**
+     * Sets imageListDisplayMode
+     *
+     * @param int|mixed $imageListDisplayMode imageListDisplayMode
+     *
+     * @return $this
+     */
+    public function setImageListDisplayMode($imageListDisplayMode)
+    {
+        $this->container['imageListDisplayMode'] = $imageListDisplayMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets multiMaterialsDisplayMode
+     *
+     * @return int|mixed
+     */
+    public function getMultiMaterialsDisplayMode()
+    {
+        return $this->container['multiMaterialsDisplayMode'];
+    }
+
+    /**
+     * Sets multiMaterialsDisplayMode
+     *
+     * @param int|mixed $multiMaterialsDisplayMode multiMaterialsDisplayMode
+     *
+     * @return $this
+     */
+    public function setMultiMaterialsDisplayMode($multiMaterialsDisplayMode)
+    {
+        $this->container['multiMaterialsDisplayMode'] = $multiMaterialsDisplayMode;
 
         return $this;
     }

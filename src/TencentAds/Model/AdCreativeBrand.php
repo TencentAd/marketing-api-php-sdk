@@ -61,7 +61,9 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
         'brandName' => 'string',
         'brandImg' => 'string',
         'brandDescription' => 'string',
-        'mainJumpInfo' => '\TencentAds\Model\LandingPageStructure[]'
+        'mainJumpInfo' => '\TencentAds\Model\LandingPageStructure[]',
+        'brandNameEn' => 'string',
+        'brandNameTw' => 'string'
     ];
 
     /**
@@ -73,7 +75,9 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
         'brandName' => null,
         'brandImg' => null,
         'brandDescription' => null,
-        'mainJumpInfo' => null
+        'mainJumpInfo' => null,
+        'brandNameEn' => null,
+        'brandNameTw' => null
     ];
 
     /**
@@ -106,7 +110,9 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
         'brandName' => 'brand_name',
         'brandImg' => 'brand_img',
         'brandDescription' => 'brand_description',
-        'mainJumpInfo' => 'main_jump_info'
+        'mainJumpInfo' => 'main_jump_info',
+        'brandNameEn' => 'brand_name_en',
+        'brandNameTw' => 'brand_name_tw'
     ];
 
     /**
@@ -118,7 +124,9 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
         'brandName' => 'setBrandName',
         'brandImg' => 'setBrandImg',
         'brandDescription' => 'setBrandDescription',
-        'mainJumpInfo' => 'setMainJumpInfo'
+        'mainJumpInfo' => 'setMainJumpInfo',
+        'brandNameEn' => 'setBrandNameEn',
+        'brandNameTw' => 'setBrandNameTw'
     ];
 
     /**
@@ -130,7 +138,9 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
         'brandName' => 'getBrandName',
         'brandImg' => 'getBrandImg',
         'brandDescription' => 'getBrandDescription',
-        'mainJumpInfo' => 'getMainJumpInfo'
+        'mainJumpInfo' => 'getMainJumpInfo',
+        'brandNameEn' => 'getBrandNameEn',
+        'brandNameTw' => 'getBrandNameTw'
     ];
 
     /**
@@ -197,6 +207,8 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
         $this->container['brandImg'] = isset($data['brandImg']) ? $data['brandImg'] : null;
         $this->container['brandDescription'] = isset($data['brandDescription']) ? $data['brandDescription'] : null;
         $this->container['mainJumpInfo'] = isset($data['mainJumpInfo']) ? $data['mainJumpInfo'] : null;
+        $this->container['brandNameEn'] = isset($data['brandNameEn']) ? $data['brandNameEn'] : null;
+        $this->container['brandNameTw'] = isset($data['brandNameTw']) ? $data['brandNameTw'] : null;
     }
 
     /**
@@ -315,6 +327,54 @@ class AdCreativeBrand implements ModelInterface, ArrayAccess
     public function setMainJumpInfo($mainJumpInfo)
     {
         $this->container['mainJumpInfo'] = $mainJumpInfo;
+
+        return $this;
+    }
+
+    /**
+     * Gets brandNameEn
+     *
+     * @return string|mixed
+     */
+    public function getBrandNameEn()
+    {
+        return $this->container['brandNameEn'];
+    }
+
+    /**
+     * Sets brandNameEn
+     *
+     * @param string|mixed $brandNameEn brandNameEn
+     *
+     * @return $this
+     */
+    public function setBrandNameEn($brandNameEn)
+    {
+        $this->container['brandNameEn'] = $brandNameEn;
+
+        return $this;
+    }
+
+    /**
+     * Gets brandNameTw
+     *
+     * @return string|mixed
+     */
+    public function getBrandNameTw()
+    {
+        return $this->container['brandNameTw'];
+    }
+
+    /**
+     * Sets brandNameTw
+     *
+     * @param string|mixed $brandNameTw brandNameTw
+     *
+     * @return $this
+     */
+    public function setBrandNameTw($brandNameTw)
+    {
+        $this->container['brandNameTw'] = $brandNameTw;
 
         return $this;
     }

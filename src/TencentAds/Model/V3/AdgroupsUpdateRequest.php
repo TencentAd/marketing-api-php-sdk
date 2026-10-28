@@ -96,6 +96,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'cloudUnionSpec' => '\TencentAds\Model\V3\CloudUnionSpec',
         'liveRecommendStrategyEnabled' => 'bool',
         'customCostRoiCap' => 'double',
+        'industryValueExplore' => '\TencentAds\Model\V3\IndustryValueExplore',
         'smartTargetingMode' => '\TencentAds\Model\V3\SmartTargetingMode',
         'smartCouponMode' => '\TencentAds\Model\V3\SmartCouponMode'
     ];
@@ -145,6 +146,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'cloudUnionSpec' => null,
         'liveRecommendStrategyEnabled' => null,
         'customCostRoiCap' => 'double',
+        'industryValueExplore' => null,
         'smartTargetingMode' => null,
         'smartCouponMode' => null
     ];
@@ -215,6 +217,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'cloudUnionSpec' => 'cloud_union_spec',
         'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled',
         'customCostRoiCap' => 'custom_cost_roi_cap',
+        'industryValueExplore' => 'industry_value_explore',
         'smartTargetingMode' => 'smart_targeting_mode',
         'smartCouponMode' => 'smart_coupon_mode'
     ];
@@ -264,6 +267,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'cloudUnionSpec' => 'setCloudUnionSpec',
         'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled',
         'customCostRoiCap' => 'setCustomCostRoiCap',
+        'industryValueExplore' => 'setIndustryValueExplore',
         'smartTargetingMode' => 'setSmartTargetingMode',
         'smartCouponMode' => 'setSmartCouponMode'
     ];
@@ -313,6 +317,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         'cloudUnionSpec' => 'getCloudUnionSpec',
         'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled',
         'customCostRoiCap' => 'getCustomCostRoiCap',
+        'industryValueExplore' => 'getIndustryValueExplore',
         'smartTargetingMode' => 'getSmartTargetingMode',
         'smartCouponMode' => 'getSmartCouponMode'
     ];
@@ -416,6 +421,7 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
         $this->container['cloudUnionSpec'] = isset($data['cloudUnionSpec']) ? $data['cloudUnionSpec'] : null;
         $this->container['liveRecommendStrategyEnabled'] = isset($data['liveRecommendStrategyEnabled']) ? $data['liveRecommendStrategyEnabled'] : null;
         $this->container['customCostRoiCap'] = isset($data['customCostRoiCap']) ? $data['customCostRoiCap'] : null;
+        $this->container['industryValueExplore'] = isset($data['industryValueExplore']) ? $data['industryValueExplore'] : null;
         $this->container['smartTargetingMode'] = isset($data['smartTargetingMode']) ? $data['smartTargetingMode'] : null;
         $this->container['smartCouponMode'] = isset($data['smartCouponMode']) ? $data['smartCouponMode'] : null;
     }
@@ -1376,6 +1382,30 @@ class AdgroupsUpdateRequest implements ModelInterface, ArrayAccess
     public function setCustomCostRoiCap($customCostRoiCap)
     {
         $this->container['customCostRoiCap'] = $customCostRoiCap;
+
+        return $this;
+    }
+
+    /**
+     * Gets industryValueExplore
+     *
+     * @return \TencentAds\Model\V3\IndustryValueExplore|mixed
+     */
+    public function getIndustryValueExplore()
+    {
+        return $this->container['industryValueExplore'];
+    }
+
+    /**
+     * Sets industryValueExplore
+     *
+     * @param \TencentAds\Model\V3\IndustryValueExplore|mixed $industryValueExplore industryValueExplore
+     *
+     * @return $this
+     */
+    public function setIndustryValueExplore($industryValueExplore)
+    {
+        $this->container['industryValueExplore'] = $industryValueExplore;
 
         return $this;
     }

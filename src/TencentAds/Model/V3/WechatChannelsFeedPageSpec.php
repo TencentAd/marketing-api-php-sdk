@@ -60,7 +60,9 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'feedId' => 'string',
         'actionButton' => '\TencentAds\Model\V3\ActionButtonStructForWechatChannelsFeedPageSpec',
-        'wechatChannelsAccountId' => 'string'
+        'wechatChannelsAccountId' => 'string',
+        'exportNativeDramaId' => 'string',
+        'nativeDramaSortId' => 'int'
     ];
 
     /**
@@ -71,7 +73,9 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'feedId' => null,
         'actionButton' => null,
-        'wechatChannelsAccountId' => null
+        'wechatChannelsAccountId' => null,
+        'exportNativeDramaId' => null,
+        'nativeDramaSortId' => 'int64'
     ];
 
     /**
@@ -103,7 +107,9 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'feedId' => 'feed_id',
         'actionButton' => 'action_button',
-        'wechatChannelsAccountId' => 'wechat_channels_account_id'
+        'wechatChannelsAccountId' => 'wechat_channels_account_id',
+        'exportNativeDramaId' => 'export_native_drama_id',
+        'nativeDramaSortId' => 'native_drama_sort_id'
     ];
 
     /**
@@ -114,7 +120,9 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
     protected static $setters = [
         'feedId' => 'setFeedId',
         'actionButton' => 'setActionButton',
-        'wechatChannelsAccountId' => 'setWechatChannelsAccountId'
+        'wechatChannelsAccountId' => 'setWechatChannelsAccountId',
+        'exportNativeDramaId' => 'setExportNativeDramaId',
+        'nativeDramaSortId' => 'setNativeDramaSortId'
     ];
 
     /**
@@ -125,7 +133,9 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
     protected static $getters = [
         'feedId' => 'getFeedId',
         'actionButton' => 'getActionButton',
-        'wechatChannelsAccountId' => 'getWechatChannelsAccountId'
+        'wechatChannelsAccountId' => 'getWechatChannelsAccountId',
+        'exportNativeDramaId' => 'getExportNativeDramaId',
+        'nativeDramaSortId' => 'getNativeDramaSortId'
     ];
 
     /**
@@ -191,6 +201,8 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
         $this->container['feedId'] = isset($data['feedId']) ? $data['feedId'] : null;
         $this->container['actionButton'] = isset($data['actionButton']) ? $data['actionButton'] : null;
         $this->container['wechatChannelsAccountId'] = isset($data['wechatChannelsAccountId']) ? $data['wechatChannelsAccountId'] : null;
+        $this->container['exportNativeDramaId'] = isset($data['exportNativeDramaId']) ? $data['exportNativeDramaId'] : null;
+        $this->container['nativeDramaSortId'] = isset($data['nativeDramaSortId']) ? $data['nativeDramaSortId'] : null;
     }
 
     /**
@@ -285,6 +297,54 @@ class WechatChannelsFeedPageSpec implements ModelInterface, ArrayAccess
     public function setWechatChannelsAccountId($wechatChannelsAccountId)
     {
         $this->container['wechatChannelsAccountId'] = $wechatChannelsAccountId;
+
+        return $this;
+    }
+
+    /**
+     * Gets exportNativeDramaId
+     *
+     * @return string|mixed
+     */
+    public function getExportNativeDramaId()
+    {
+        return $this->container['exportNativeDramaId'];
+    }
+
+    /**
+     * Sets exportNativeDramaId
+     *
+     * @param string|mixed $exportNativeDramaId exportNativeDramaId
+     *
+     * @return $this
+     */
+    public function setExportNativeDramaId($exportNativeDramaId)
+    {
+        $this->container['exportNativeDramaId'] = $exportNativeDramaId;
+
+        return $this;
+    }
+
+    /**
+     * Gets nativeDramaSortId
+     *
+     * @return int|mixed
+     */
+    public function getNativeDramaSortId()
+    {
+        return $this->container['nativeDramaSortId'];
+    }
+
+    /**
+     * Sets nativeDramaSortId
+     *
+     * @param int|mixed $nativeDramaSortId nativeDramaSortId
+     *
+     * @return $this
+     */
+    public function setNativeDramaSortId($nativeDramaSortId)
+    {
+        $this->container['nativeDramaSortId'] = $nativeDramaSortId;
 
         return $this;
     }

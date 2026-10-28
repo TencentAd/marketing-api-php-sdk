@@ -59,7 +59,8 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'coverImageSnapshotType' => '\TencentAds\Model\V3\CoverImageSnapshotType',
         'multiImageCollageStatus' => '\TencentAds\Model\V3\MultiImageCollageStatus',
-        'multiImageCollageAigcStatus' => '\TencentAds\Model\V3\MultiImageCollageAigcStatus'
+        'multiImageCollageAigcStatus' => '\TencentAds\Model\V3\MultiImageCollageAigcStatus',
+        'multiImageDisplayArea' => '\TencentAds\Model\V3\MultiImageDisplayArea'
     ];
 
     /**
@@ -70,7 +71,8 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
     protected static $swaggerFormats = [
         'coverImageSnapshotType' => null,
         'multiImageCollageStatus' => null,
-        'multiImageCollageAigcStatus' => null
+        'multiImageCollageAigcStatus' => null,
+        'multiImageDisplayArea' => null
     ];
 
     /**
@@ -102,7 +104,8 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
     protected static $attributeMap = [
         'coverImageSnapshotType' => 'cover_image_snapshot_type',
         'multiImageCollageStatus' => 'multi_image_collage_status',
-        'multiImageCollageAigcStatus' => 'multi_image_collage_aigc_status'
+        'multiImageCollageAigcStatus' => 'multi_image_collage_aigc_status',
+        'multiImageDisplayArea' => 'multi_image_display_area'
     ];
 
     /**
@@ -113,7 +116,8 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
     protected static $setters = [
         'coverImageSnapshotType' => 'setCoverImageSnapshotType',
         'multiImageCollageStatus' => 'setMultiImageCollageStatus',
-        'multiImageCollageAigcStatus' => 'setMultiImageCollageAigcStatus'
+        'multiImageCollageAigcStatus' => 'setMultiImageCollageAigcStatus',
+        'multiImageDisplayArea' => 'setMultiImageDisplayArea'
     ];
 
     /**
@@ -124,7 +128,8 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
     protected static $getters = [
         'coverImageSnapshotType' => 'getCoverImageSnapshotType',
         'multiImageCollageStatus' => 'getMultiImageCollageStatus',
-        'multiImageCollageAigcStatus' => 'getMultiImageCollageAigcStatus'
+        'multiImageCollageAigcStatus' => 'getMultiImageCollageAigcStatus',
+        'multiImageDisplayArea' => 'getMultiImageDisplayArea'
     ];
 
     /**
@@ -190,6 +195,7 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
         $this->container['coverImageSnapshotType'] = isset($data['coverImageSnapshotType']) ? $data['coverImageSnapshotType'] : null;
         $this->container['multiImageCollageStatus'] = isset($data['multiImageCollageStatus']) ? $data['multiImageCollageStatus'] : null;
         $this->container['multiImageCollageAigcStatus'] = isset($data['multiImageCollageAigcStatus']) ? $data['multiImageCollageAigcStatus'] : null;
+        $this->container['multiImageDisplayArea'] = isset($data['multiImageDisplayArea']) ? $data['multiImageDisplayArea'] : null;
     }
 
     /**
@@ -284,6 +290,30 @@ class AdvertiserConfigGetResponseData implements ModelInterface, ArrayAccess
     public function setMultiImageCollageAigcStatus($multiImageCollageAigcStatus)
     {
         $this->container['multiImageCollageAigcStatus'] = $multiImageCollageAigcStatus;
+
+        return $this;
+    }
+
+    /**
+     * Gets multiImageDisplayArea
+     *
+     * @return \TencentAds\Model\V3\MultiImageDisplayArea|mixed
+     */
+    public function getMultiImageDisplayArea()
+    {
+        return $this->container['multiImageDisplayArea'];
+    }
+
+    /**
+     * Sets multiImageDisplayArea
+     *
+     * @param \TencentAds\Model\V3\MultiImageDisplayArea|mixed $multiImageDisplayArea multiImageDisplayArea
+     *
+     * @return $this
+     */
+    public function setMultiImageDisplayArea($multiImageDisplayArea)
+    {
+        $this->container['multiImageDisplayArea'] = $multiImageDisplayArea;
 
         return $this;
     }

@@ -58,6 +58,7 @@ class DoctorCardStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'doctorHeadImageId' => 'string',
         'doctorHeadUrl' => 'string',
         'doctorName' => 'string',
         'doctorTitle' => 'string',
@@ -72,6 +73,7 @@ class DoctorCardStruct implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        'doctorHeadImageId' => null,
         'doctorHeadUrl' => null,
         'doctorName' => null,
         'doctorTitle' => null,
@@ -107,6 +109,7 @@ class DoctorCardStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'doctorHeadImageId' => 'doctor_head_image_id',
         'doctorHeadUrl' => 'doctor_head_url',
         'doctorName' => 'doctor_name',
         'doctorTitle' => 'doctor_title',
@@ -121,6 +124,7 @@ class DoctorCardStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'doctorHeadImageId' => 'setDoctorHeadImageId',
         'doctorHeadUrl' => 'setDoctorHeadUrl',
         'doctorName' => 'setDoctorName',
         'doctorTitle' => 'setDoctorTitle',
@@ -135,6 +139,7 @@ class DoctorCardStruct implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'doctorHeadImageId' => 'getDoctorHeadImageId',
         'doctorHeadUrl' => 'getDoctorHeadUrl',
         'doctorName' => 'getDoctorName',
         'doctorTitle' => 'getDoctorTitle',
@@ -203,6 +208,7 @@ class DoctorCardStruct implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['doctorHeadImageId'] = isset($data['doctorHeadImageId']) ? $data['doctorHeadImageId'] : null;
         $this->container['doctorHeadUrl'] = isset($data['doctorHeadUrl']) ? $data['doctorHeadUrl'] : null;
         $this->container['doctorName'] = isset($data['doctorName']) ? $data['doctorName'] : null;
         $this->container['doctorTitle'] = isset($data['doctorTitle']) ? $data['doctorTitle'] : null;
@@ -234,6 +240,30 @@ class DoctorCardStruct implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets doctorHeadImageId
+     *
+     * @return string|mixed
+     */
+    public function getDoctorHeadImageId()
+    {
+        return $this->container['doctorHeadImageId'];
+    }
+
+    /**
+     * Sets doctorHeadImageId
+     *
+     * @param string|mixed $doctorHeadImageId doctorHeadImageId
+     *
+     * @return $this
+     */
+    public function setDoctorHeadImageId($doctorHeadImageId)
+    {
+        $this->container['doctorHeadImageId'] = $doctorHeadImageId;
+
+        return $this;
+    }
 
     /**
      * Gets doctorHeadUrl

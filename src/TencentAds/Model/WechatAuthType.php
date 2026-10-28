@@ -52,6 +52,8 @@ class WechatAuthType
     const CUSTOMER_MANAGER = 'CUSTOMER_MANAGER';
     const CUSTOMER_BUSINESS_UNIT = 'CUSTOMER_BUSINESS_UNIT';
     const GROUP_BUSINESS_UNIT = 'GROUP_BUSINESS_UNIT';
+    const WECHAT_SHOP_LEAGUE = 'WECHAT_SHOP_LEAGUE';
+    const AGENCY_BUSINESS_UNIT = 'AGENCY_BUSINESS_UNIT';
     
     /**
      * Gets allowable values of the enum
@@ -68,6 +70,8 @@ class WechatAuthType
             self::CUSTOMER_MANAGER,
             self::CUSTOMER_BUSINESS_UNIT,
             self::GROUP_BUSINESS_UNIT,
+            self::WECHAT_SHOP_LEAGUE,
+            self::AGENCY_BUSINESS_UNIT,
         ];
     }
 }

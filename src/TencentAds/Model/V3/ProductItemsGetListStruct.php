@@ -76,8 +76,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         'description' => 'string',
         'customData' => 'string',
         'isVideo' => 'bool',
-        'dataSource' => 'string',
-        'productSelectScore' => 'double'
+        'dataSource' => 'string'
     ];
 
     /**
@@ -104,8 +103,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         'description' => null,
         'customData' => null,
         'isVideo' => null,
-        'dataSource' => null,
-        'productSelectScore' => 'double'
+        'dataSource' => null
     ];
 
     /**
@@ -153,8 +151,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         'description' => 'description',
         'customData' => 'custom_data',
         'isVideo' => 'is_video',
-        'dataSource' => 'data_source',
-        'productSelectScore' => 'product_select_score'
+        'dataSource' => 'data_source'
     ];
 
     /**
@@ -181,8 +178,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         'description' => 'setDescription',
         'customData' => 'setCustomData',
         'isVideo' => 'setIsVideo',
-        'dataSource' => 'setDataSource',
-        'productSelectScore' => 'setProductSelectScore'
+        'dataSource' => 'setDataSource'
     ];
 
     /**
@@ -209,8 +205,7 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         'description' => 'getDescription',
         'customData' => 'getCustomData',
         'isVideo' => 'getIsVideo',
-        'dataSource' => 'getDataSource',
-        'productSelectScore' => 'getProductSelectScore'
+        'dataSource' => 'getDataSource'
     ];
 
     /**
@@ -292,7 +287,6 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['customData'] = isset($data['customData']) ? $data['customData'] : null;
         $this->container['isVideo'] = isset($data['isVideo']) ? $data['isVideo'] : null;
         $this->container['dataSource'] = isset($data['dataSource']) ? $data['dataSource'] : null;
-        $this->container['productSelectScore'] = isset($data['productSelectScore']) ? $data['productSelectScore'] : null;
     }
 
     /**
@@ -771,30 +765,6 @@ class ProductItemsGetListStruct implements ModelInterface, ArrayAccess
     public function setDataSource($dataSource)
     {
         $this->container['dataSource'] = $dataSource;
-
-        return $this;
-    }
-
-    /**
-     * Gets productSelectScore
-     *
-     * @return double|mixed
-     */
-    public function getProductSelectScore()
-    {
-        return $this->container['productSelectScore'];
-    }
-
-    /**
-     * Sets productSelectScore
-     *
-     * @param double|mixed $productSelectScore productSelectScore
-     *
-     * @return $this
-     */
-    public function setProductSelectScore($productSelectScore)
-    {
-        $this->container['productSelectScore'] = $productSelectScore;
 
         return $this;
     }

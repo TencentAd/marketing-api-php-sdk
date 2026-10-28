@@ -59,7 +59,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'date' => 'string',
-        'gender' => 'string',
+        'age' => 'string',
         'viewCount' => 'int',
         'downloadCount' => 'int',
         'activatedCount' => 'int',
@@ -622,41 +622,65 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupPvCost' => 'int',
         'afterAddWecomIntentionDedupPv' => 'int',
         'afterAddWecomIntentionDedupPvCost' => 'int',
-        'age' => 'string',
-        'regionId' => 'int',
-        'cityId' => 'int',
-        'province' => 'string',
-        'city' => 'string',
-        'viewUserCount' => 'int',
-        'avgViewPerUser' => 'double',
-        'clickUserCount' => 'int',
-        'linkClickUserCount' => 'int',
-        'portraitClickUserCount' => 'int',
-        'nicknameClickUserCount' => 'int',
-        'poiClickUserCount' => 'int',
-        'praiseUserCount' => 'int',
-        'commentUserCount' => 'int',
-        'orderCount' => 'int',
-        'leadsUserCount' => 'int',
-        'validLeadsCost' => 'int',
-        'officialAccountFollowCount' => 'int',
-        'couponUseCount' => 'int',
+        'expPv' => 'int',
+        'impression' => 'int',
+        'exposure' => 'int',
+        'download' => 'int',
+        'activation' => 'int',
+        'appActivatedCount' => 'int',
+        'appActivatedRate' => 'double',
+        'thousandDisplayCost' => 'int',
+        'click' => 'int',
+        'webConsultCount' => 'int',
+        'webConsultCost' => 'int',
+        'webPhoneCallDirectCount' => 'int',
+        'webPhoneCallDirectCost' => 'int',
+        'webPhoneCallBackCount' => 'int',
+        'webPhoneCallBackCost' => 'int',
+        'ownPageNavigationCost' => 'int',
+        'reservation' => 'int',
+        'webPageReservationCount' => 'int',
+        'webPageReservationRate' => 'double',
+        'webPageReservationCost' => 'int',
+        'webAddToCarCount' => 'int',
+        'webAddToCarCost' => 'int',
+        'webOrderUnitPrice' => 'int',
+        'webOrderRoi' => 'double',
+        'webDeliverCount' => 'int',
+        'webDeliverCost' => 'int',
+        'webSignInCount' => 'int',
+        'webSignInCost' => 'int',
+        'appInstallation' => 'int',
+        'appActivatedCost' => 'int',
+        'appRetentionCount' => 'int',
+        'appRetentionRate' => 'double',
+        'appRetentionCost' => 'int',
+        'appAddToCarCount' => 'int',
+        'appAddToCarAmount' => 'int',
+        'appCartAmount' => 'int',
+        'appAddToCarCost' => 'int',
+        'appPaymentCount' => 'int',
+        'appPaymentAmount' => 'int',
+        'platformCouponClick' => 'int',
+        'follow' => 'int',
+        'share' => 'int',
+        'read' => 'int',
+        'intelligentPhoneCallDirectCount' => 'int',
+        'videoLiveExpUserCount' => 'int',
+        'campaignId' => 'int',
+        'adgroupId' => 'int',
         'targetingType' => 'string',
         'targetingTag' => 'string',
         'tagClass' => 'string',
         'behaviorScene' => 'string',
         'behaviorTimeWindow' => 'string',
         'behaviorIntensity' => 'string',
-        'genderName' => 'string',
-        'accountId' => 'int',
-        'campaignId' => 'int',
-        'adgroupId' => 'int',
-        'adId' => 'int',
-        'audienceId' => 'int',
-        'promotedObjectType' => 'string',
-        'promotedObjectId' => 'string',
+        'regionId' => 'int',
+        'cityId' => 'int',
         'requestConversionsCount' => 'int',
         'requestConversionsCost' => 'int',
+        'adId' => 'int',
+        'audienceId' => 'int',
         'incomeVal1' => 'int',
         'incomeVal3' => 'int',
         'incomeVal7' => 'int',
@@ -732,6 +756,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7PlaRoi' => 'double',
         'miniGamePayD14PlaRoi' => 'double',
         'miniGamePayD30PlaRoi' => 'double',
+        'gender' => 'string',
         'projectId' => 'int',
         'projectName' => 'string',
         'purchasePv' => 'int',
@@ -747,7 +772,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'date' => null,
-        'gender' => null,
+        'age' => null,
         'viewCount' => 'int64',
         'downloadCount' => 'int64',
         'activatedCount' => 'int64',
@@ -1310,41 +1335,65 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupPvCost' => 'int64',
         'afterAddWecomIntentionDedupPv' => 'int64',
         'afterAddWecomIntentionDedupPvCost' => 'int64',
-        'age' => null,
-        'regionId' => 'int64',
-        'cityId' => 'int64',
-        'province' => null,
-        'city' => null,
-        'viewUserCount' => 'int64',
-        'avgViewPerUser' => 'double',
-        'clickUserCount' => 'int64',
-        'linkClickUserCount' => 'int64',
-        'portraitClickUserCount' => 'int64',
-        'nicknameClickUserCount' => 'int64',
-        'poiClickUserCount' => 'int64',
-        'praiseUserCount' => 'int64',
-        'commentUserCount' => 'int64',
-        'orderCount' => 'int64',
-        'leadsUserCount' => 'int64',
-        'validLeadsCost' => 'int64',
-        'officialAccountFollowCount' => 'int64',
-        'couponUseCount' => 'int64',
+        'expPv' => 'int64',
+        'impression' => 'int64',
+        'exposure' => 'int64',
+        'download' => 'int64',
+        'activation' => 'int64',
+        'appActivatedCount' => 'int64',
+        'appActivatedRate' => 'double',
+        'thousandDisplayCost' => 'int64',
+        'click' => 'int64',
+        'webConsultCount' => 'int64',
+        'webConsultCost' => 'int64',
+        'webPhoneCallDirectCount' => 'int64',
+        'webPhoneCallDirectCost' => 'int64',
+        'webPhoneCallBackCount' => 'int64',
+        'webPhoneCallBackCost' => 'int64',
+        'ownPageNavigationCost' => 'int64',
+        'reservation' => 'int64',
+        'webPageReservationCount' => 'int64',
+        'webPageReservationRate' => 'double',
+        'webPageReservationCost' => 'int64',
+        'webAddToCarCount' => 'int64',
+        'webAddToCarCost' => 'int64',
+        'webOrderUnitPrice' => 'int64',
+        'webOrderRoi' => 'double',
+        'webDeliverCount' => 'int64',
+        'webDeliverCost' => 'int64',
+        'webSignInCount' => 'int64',
+        'webSignInCost' => 'int64',
+        'appInstallation' => 'int64',
+        'appActivatedCost' => 'int64',
+        'appRetentionCount' => 'int64',
+        'appRetentionRate' => 'double',
+        'appRetentionCost' => 'int64',
+        'appAddToCarCount' => 'int64',
+        'appAddToCarAmount' => 'int64',
+        'appCartAmount' => 'int64',
+        'appAddToCarCost' => 'int64',
+        'appPaymentCount' => 'int64',
+        'appPaymentAmount' => 'int64',
+        'platformCouponClick' => 'int64',
+        'follow' => 'int64',
+        'share' => 'int64',
+        'read' => 'int64',
+        'intelligentPhoneCallDirectCount' => 'int64',
+        'videoLiveExpUserCount' => 'int64',
+        'campaignId' => 'int64',
+        'adgroupId' => 'int64',
         'targetingType' => null,
         'targetingTag' => null,
         'tagClass' => null,
         'behaviorScene' => null,
         'behaviorTimeWindow' => null,
         'behaviorIntensity' => null,
-        'genderName' => null,
-        'accountId' => 'int64',
-        'campaignId' => 'int64',
-        'adgroupId' => 'int64',
-        'adId' => 'int64',
-        'audienceId' => 'int64',
-        'promotedObjectType' => null,
-        'promotedObjectId' => null,
+        'regionId' => 'int64',
+        'cityId' => 'int64',
         'requestConversionsCount' => 'int64',
         'requestConversionsCost' => 'int64',
+        'adId' => 'int64',
+        'audienceId' => 'int64',
         'incomeVal1' => 'int64',
         'incomeVal3' => 'int64',
         'incomeVal7' => 'int64',
@@ -1420,6 +1469,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7PlaRoi' => 'double',
         'miniGamePayD14PlaRoi' => 'double',
         'miniGamePayD30PlaRoi' => 'double',
+        'gender' => null,
         'projectId' => 'int64',
         'projectName' => null,
         'purchasePv' => 'int64',
@@ -1456,7 +1506,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'date' => 'date',
-        'gender' => 'gender',
+        'age' => 'age',
         'viewCount' => 'view_count',
         'downloadCount' => 'download_count',
         'activatedCount' => 'activated_count',
@@ -2019,41 +2069,65 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupPvCost' => 'after_add_wecom_consult_dedup_pv_cost',
         'afterAddWecomIntentionDedupPv' => 'after_add_wecom_intention_dedup_pv',
         'afterAddWecomIntentionDedupPvCost' => 'after_add_wecom_intention_dedup_pv_cost',
-        'age' => 'age',
-        'regionId' => 'region_id',
-        'cityId' => 'city_id',
-        'province' => 'province',
-        'city' => 'city',
-        'viewUserCount' => 'view_user_count',
-        'avgViewPerUser' => 'avg_view_per_user',
-        'clickUserCount' => 'click_user_count',
-        'linkClickUserCount' => 'link_click_user_count',
-        'portraitClickUserCount' => 'portrait_click_user_count',
-        'nicknameClickUserCount' => 'nickname_click_user_count',
-        'poiClickUserCount' => 'poi_click_user_count',
-        'praiseUserCount' => 'praise_user_count',
-        'commentUserCount' => 'comment_user_count',
-        'orderCount' => 'order_count',
-        'leadsUserCount' => 'leads_user_count',
-        'validLeadsCost' => 'valid_leads_cost',
-        'officialAccountFollowCount' => 'official_account_follow_count',
-        'couponUseCount' => 'coupon_use_count',
+        'expPv' => 'exp_pv',
+        'impression' => 'impression',
+        'exposure' => 'exposure',
+        'download' => 'download',
+        'activation' => 'activation',
+        'appActivatedCount' => 'app_activated_count',
+        'appActivatedRate' => 'app_activated_rate',
+        'thousandDisplayCost' => 'thousand_display_cost',
+        'click' => 'click',
+        'webConsultCount' => 'web_consult_count',
+        'webConsultCost' => 'web_consult_cost',
+        'webPhoneCallDirectCount' => 'web_phone_call_direct_count',
+        'webPhoneCallDirectCost' => 'web_phone_call_direct_cost',
+        'webPhoneCallBackCount' => 'web_phone_call_back_count',
+        'webPhoneCallBackCost' => 'web_phone_call_back_cost',
+        'ownPageNavigationCost' => 'own_page_navigation_cost',
+        'reservation' => 'reservation',
+        'webPageReservationCount' => 'web_page_reservation_count',
+        'webPageReservationRate' => 'web_page_reservation_rate',
+        'webPageReservationCost' => 'web_page_reservation_cost',
+        'webAddToCarCount' => 'web_add_to_car_count',
+        'webAddToCarCost' => 'web_add_to_car_cost',
+        'webOrderUnitPrice' => 'web_order_unit_price',
+        'webOrderRoi' => 'web_order_roi',
+        'webDeliverCount' => 'web_deliver_count',
+        'webDeliverCost' => 'web_deliver_cost',
+        'webSignInCount' => 'web_sign_in_count',
+        'webSignInCost' => 'web_sign_in_cost',
+        'appInstallation' => 'app_installation',
+        'appActivatedCost' => 'app_activated_cost',
+        'appRetentionCount' => 'app_retention_count',
+        'appRetentionRate' => 'app_retention_rate',
+        'appRetentionCost' => 'app_retention_cost',
+        'appAddToCarCount' => 'app_add_to_car_count',
+        'appAddToCarAmount' => 'app_add_to_car_amount',
+        'appCartAmount' => 'app_cart_amount',
+        'appAddToCarCost' => 'app_add_to_car_cost',
+        'appPaymentCount' => 'app_payment_count',
+        'appPaymentAmount' => 'app_payment_amount',
+        'platformCouponClick' => 'platform_coupon_click',
+        'follow' => 'follow',
+        'share' => 'share',
+        'read' => 'read',
+        'intelligentPhoneCallDirectCount' => 'intelligent_phone_call_direct_count',
+        'videoLiveExpUserCount' => 'video_live_exp_user_count',
+        'campaignId' => 'campaign_id',
+        'adgroupId' => 'adgroup_id',
         'targetingType' => 'targeting_type',
         'targetingTag' => 'targeting_tag',
         'tagClass' => 'tag_class',
         'behaviorScene' => 'behavior_scene',
         'behaviorTimeWindow' => 'behavior_time_window',
         'behaviorIntensity' => 'behavior_intensity',
-        'genderName' => 'gender_name',
-        'accountId' => 'account_id',
-        'campaignId' => 'campaign_id',
-        'adgroupId' => 'adgroup_id',
-        'adId' => 'ad_id',
-        'audienceId' => 'audience_id',
-        'promotedObjectType' => 'promoted_object_type',
-        'promotedObjectId' => 'promoted_object_id',
+        'regionId' => 'region_id',
+        'cityId' => 'city_id',
         'requestConversionsCount' => 'request_conversions_count',
         'requestConversionsCost' => 'request_conversions_cost',
+        'adId' => 'ad_id',
+        'audienceId' => 'audience_id',
         'incomeVal1' => 'income_val_1',
         'incomeVal3' => 'income_val_3',
         'incomeVal7' => 'income_val_7',
@@ -2129,6 +2203,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7PlaRoi' => 'mini_game_pay_d7_pla_roi',
         'miniGamePayD14PlaRoi' => 'mini_game_pay_d14_pla_roi',
         'miniGamePayD30PlaRoi' => 'mini_game_pay_d30_pla_roi',
+        'gender' => 'gender',
         'projectId' => 'project_id',
         'projectName' => 'project_name',
         'purchasePv' => 'purchase_pv',
@@ -2144,7 +2219,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'date' => 'setDate',
-        'gender' => 'setGender',
+        'age' => 'setAge',
         'viewCount' => 'setViewCount',
         'downloadCount' => 'setDownloadCount',
         'activatedCount' => 'setActivatedCount',
@@ -2707,41 +2782,65 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupPvCost' => 'setAfterAddWecomConsultDedupPvCost',
         'afterAddWecomIntentionDedupPv' => 'setAfterAddWecomIntentionDedupPv',
         'afterAddWecomIntentionDedupPvCost' => 'setAfterAddWecomIntentionDedupPvCost',
-        'age' => 'setAge',
-        'regionId' => 'setRegionId',
-        'cityId' => 'setCityId',
-        'province' => 'setProvince',
-        'city' => 'setCity',
-        'viewUserCount' => 'setViewUserCount',
-        'avgViewPerUser' => 'setAvgViewPerUser',
-        'clickUserCount' => 'setClickUserCount',
-        'linkClickUserCount' => 'setLinkClickUserCount',
-        'portraitClickUserCount' => 'setPortraitClickUserCount',
-        'nicknameClickUserCount' => 'setNicknameClickUserCount',
-        'poiClickUserCount' => 'setPoiClickUserCount',
-        'praiseUserCount' => 'setPraiseUserCount',
-        'commentUserCount' => 'setCommentUserCount',
-        'orderCount' => 'setOrderCount',
-        'leadsUserCount' => 'setLeadsUserCount',
-        'validLeadsCost' => 'setValidLeadsCost',
-        'officialAccountFollowCount' => 'setOfficialAccountFollowCount',
-        'couponUseCount' => 'setCouponUseCount',
+        'expPv' => 'setExpPv',
+        'impression' => 'setImpression',
+        'exposure' => 'setExposure',
+        'download' => 'setDownload',
+        'activation' => 'setActivation',
+        'appActivatedCount' => 'setAppActivatedCount',
+        'appActivatedRate' => 'setAppActivatedRate',
+        'thousandDisplayCost' => 'setThousandDisplayCost',
+        'click' => 'setClick',
+        'webConsultCount' => 'setWebConsultCount',
+        'webConsultCost' => 'setWebConsultCost',
+        'webPhoneCallDirectCount' => 'setWebPhoneCallDirectCount',
+        'webPhoneCallDirectCost' => 'setWebPhoneCallDirectCost',
+        'webPhoneCallBackCount' => 'setWebPhoneCallBackCount',
+        'webPhoneCallBackCost' => 'setWebPhoneCallBackCost',
+        'ownPageNavigationCost' => 'setOwnPageNavigationCost',
+        'reservation' => 'setReservation',
+        'webPageReservationCount' => 'setWebPageReservationCount',
+        'webPageReservationRate' => 'setWebPageReservationRate',
+        'webPageReservationCost' => 'setWebPageReservationCost',
+        'webAddToCarCount' => 'setWebAddToCarCount',
+        'webAddToCarCost' => 'setWebAddToCarCost',
+        'webOrderUnitPrice' => 'setWebOrderUnitPrice',
+        'webOrderRoi' => 'setWebOrderRoi',
+        'webDeliverCount' => 'setWebDeliverCount',
+        'webDeliverCost' => 'setWebDeliverCost',
+        'webSignInCount' => 'setWebSignInCount',
+        'webSignInCost' => 'setWebSignInCost',
+        'appInstallation' => 'setAppInstallation',
+        'appActivatedCost' => 'setAppActivatedCost',
+        'appRetentionCount' => 'setAppRetentionCount',
+        'appRetentionRate' => 'setAppRetentionRate',
+        'appRetentionCost' => 'setAppRetentionCost',
+        'appAddToCarCount' => 'setAppAddToCarCount',
+        'appAddToCarAmount' => 'setAppAddToCarAmount',
+        'appCartAmount' => 'setAppCartAmount',
+        'appAddToCarCost' => 'setAppAddToCarCost',
+        'appPaymentCount' => 'setAppPaymentCount',
+        'appPaymentAmount' => 'setAppPaymentAmount',
+        'platformCouponClick' => 'setPlatformCouponClick',
+        'follow' => 'setFollow',
+        'share' => 'setShare',
+        'read' => 'setRead',
+        'intelligentPhoneCallDirectCount' => 'setIntelligentPhoneCallDirectCount',
+        'videoLiveExpUserCount' => 'setVideoLiveExpUserCount',
+        'campaignId' => 'setCampaignId',
+        'adgroupId' => 'setAdgroupId',
         'targetingType' => 'setTargetingType',
         'targetingTag' => 'setTargetingTag',
         'tagClass' => 'setTagClass',
         'behaviorScene' => 'setBehaviorScene',
         'behaviorTimeWindow' => 'setBehaviorTimeWindow',
         'behaviorIntensity' => 'setBehaviorIntensity',
-        'genderName' => 'setGenderName',
-        'accountId' => 'setAccountId',
-        'campaignId' => 'setCampaignId',
-        'adgroupId' => 'setAdgroupId',
-        'adId' => 'setAdId',
-        'audienceId' => 'setAudienceId',
-        'promotedObjectType' => 'setPromotedObjectType',
-        'promotedObjectId' => 'setPromotedObjectId',
+        'regionId' => 'setRegionId',
+        'cityId' => 'setCityId',
         'requestConversionsCount' => 'setRequestConversionsCount',
         'requestConversionsCost' => 'setRequestConversionsCost',
+        'adId' => 'setAdId',
+        'audienceId' => 'setAudienceId',
         'incomeVal1' => 'setIncomeVal1',
         'incomeVal3' => 'setIncomeVal3',
         'incomeVal7' => 'setIncomeVal7',
@@ -2817,6 +2916,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7PlaRoi' => 'setMiniGamePayD7PlaRoi',
         'miniGamePayD14PlaRoi' => 'setMiniGamePayD14PlaRoi',
         'miniGamePayD30PlaRoi' => 'setMiniGamePayD30PlaRoi',
+        'gender' => 'setGender',
         'projectId' => 'setProjectId',
         'projectName' => 'setProjectName',
         'purchasePv' => 'setPurchasePv',
@@ -2832,7 +2932,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'date' => 'getDate',
-        'gender' => 'getGender',
+        'age' => 'getAge',
         'viewCount' => 'getViewCount',
         'downloadCount' => 'getDownloadCount',
         'activatedCount' => 'getActivatedCount',
@@ -3395,41 +3495,65 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'afterAddWecomConsultDedupPvCost' => 'getAfterAddWecomConsultDedupPvCost',
         'afterAddWecomIntentionDedupPv' => 'getAfterAddWecomIntentionDedupPv',
         'afterAddWecomIntentionDedupPvCost' => 'getAfterAddWecomIntentionDedupPvCost',
-        'age' => 'getAge',
-        'regionId' => 'getRegionId',
-        'cityId' => 'getCityId',
-        'province' => 'getProvince',
-        'city' => 'getCity',
-        'viewUserCount' => 'getViewUserCount',
-        'avgViewPerUser' => 'getAvgViewPerUser',
-        'clickUserCount' => 'getClickUserCount',
-        'linkClickUserCount' => 'getLinkClickUserCount',
-        'portraitClickUserCount' => 'getPortraitClickUserCount',
-        'nicknameClickUserCount' => 'getNicknameClickUserCount',
-        'poiClickUserCount' => 'getPoiClickUserCount',
-        'praiseUserCount' => 'getPraiseUserCount',
-        'commentUserCount' => 'getCommentUserCount',
-        'orderCount' => 'getOrderCount',
-        'leadsUserCount' => 'getLeadsUserCount',
-        'validLeadsCost' => 'getValidLeadsCost',
-        'officialAccountFollowCount' => 'getOfficialAccountFollowCount',
-        'couponUseCount' => 'getCouponUseCount',
+        'expPv' => 'getExpPv',
+        'impression' => 'getImpression',
+        'exposure' => 'getExposure',
+        'download' => 'getDownload',
+        'activation' => 'getActivation',
+        'appActivatedCount' => 'getAppActivatedCount',
+        'appActivatedRate' => 'getAppActivatedRate',
+        'thousandDisplayCost' => 'getThousandDisplayCost',
+        'click' => 'getClick',
+        'webConsultCount' => 'getWebConsultCount',
+        'webConsultCost' => 'getWebConsultCost',
+        'webPhoneCallDirectCount' => 'getWebPhoneCallDirectCount',
+        'webPhoneCallDirectCost' => 'getWebPhoneCallDirectCost',
+        'webPhoneCallBackCount' => 'getWebPhoneCallBackCount',
+        'webPhoneCallBackCost' => 'getWebPhoneCallBackCost',
+        'ownPageNavigationCost' => 'getOwnPageNavigationCost',
+        'reservation' => 'getReservation',
+        'webPageReservationCount' => 'getWebPageReservationCount',
+        'webPageReservationRate' => 'getWebPageReservationRate',
+        'webPageReservationCost' => 'getWebPageReservationCost',
+        'webAddToCarCount' => 'getWebAddToCarCount',
+        'webAddToCarCost' => 'getWebAddToCarCost',
+        'webOrderUnitPrice' => 'getWebOrderUnitPrice',
+        'webOrderRoi' => 'getWebOrderRoi',
+        'webDeliverCount' => 'getWebDeliverCount',
+        'webDeliverCost' => 'getWebDeliverCost',
+        'webSignInCount' => 'getWebSignInCount',
+        'webSignInCost' => 'getWebSignInCost',
+        'appInstallation' => 'getAppInstallation',
+        'appActivatedCost' => 'getAppActivatedCost',
+        'appRetentionCount' => 'getAppRetentionCount',
+        'appRetentionRate' => 'getAppRetentionRate',
+        'appRetentionCost' => 'getAppRetentionCost',
+        'appAddToCarCount' => 'getAppAddToCarCount',
+        'appAddToCarAmount' => 'getAppAddToCarAmount',
+        'appCartAmount' => 'getAppCartAmount',
+        'appAddToCarCost' => 'getAppAddToCarCost',
+        'appPaymentCount' => 'getAppPaymentCount',
+        'appPaymentAmount' => 'getAppPaymentAmount',
+        'platformCouponClick' => 'getPlatformCouponClick',
+        'follow' => 'getFollow',
+        'share' => 'getShare',
+        'read' => 'getRead',
+        'intelligentPhoneCallDirectCount' => 'getIntelligentPhoneCallDirectCount',
+        'videoLiveExpUserCount' => 'getVideoLiveExpUserCount',
+        'campaignId' => 'getCampaignId',
+        'adgroupId' => 'getAdgroupId',
         'targetingType' => 'getTargetingType',
         'targetingTag' => 'getTargetingTag',
         'tagClass' => 'getTagClass',
         'behaviorScene' => 'getBehaviorScene',
         'behaviorTimeWindow' => 'getBehaviorTimeWindow',
         'behaviorIntensity' => 'getBehaviorIntensity',
-        'genderName' => 'getGenderName',
-        'accountId' => 'getAccountId',
-        'campaignId' => 'getCampaignId',
-        'adgroupId' => 'getAdgroupId',
-        'adId' => 'getAdId',
-        'audienceId' => 'getAudienceId',
-        'promotedObjectType' => 'getPromotedObjectType',
-        'promotedObjectId' => 'getPromotedObjectId',
+        'regionId' => 'getRegionId',
+        'cityId' => 'getCityId',
         'requestConversionsCount' => 'getRequestConversionsCount',
         'requestConversionsCost' => 'getRequestConversionsCost',
+        'adId' => 'getAdId',
+        'audienceId' => 'getAudienceId',
         'incomeVal1' => 'getIncomeVal1',
         'incomeVal3' => 'getIncomeVal3',
         'incomeVal7' => 'getIncomeVal7',
@@ -3505,6 +3629,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         'miniGamePayD7PlaRoi' => 'getMiniGamePayD7PlaRoi',
         'miniGamePayD14PlaRoi' => 'getMiniGamePayD14PlaRoi',
         'miniGamePayD30PlaRoi' => 'getMiniGamePayD30PlaRoi',
+        'gender' => 'getGender',
         'projectId' => 'getProjectId',
         'projectName' => 'getProjectName',
         'purchasePv' => 'getPurchasePv',
@@ -3574,7 +3699,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['date'] = isset($data['date']) ? $data['date'] : null;
-        $this->container['gender'] = isset($data['gender']) ? $data['gender'] : null;
+        $this->container['age'] = isset($data['age']) ? $data['age'] : null;
         $this->container['viewCount'] = isset($data['viewCount']) ? $data['viewCount'] : null;
         $this->container['downloadCount'] = isset($data['downloadCount']) ? $data['downloadCount'] : null;
         $this->container['activatedCount'] = isset($data['activatedCount']) ? $data['activatedCount'] : null;
@@ -4137,41 +4262,65 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['afterAddWecomConsultDedupPvCost'] = isset($data['afterAddWecomConsultDedupPvCost']) ? $data['afterAddWecomConsultDedupPvCost'] : null;
         $this->container['afterAddWecomIntentionDedupPv'] = isset($data['afterAddWecomIntentionDedupPv']) ? $data['afterAddWecomIntentionDedupPv'] : null;
         $this->container['afterAddWecomIntentionDedupPvCost'] = isset($data['afterAddWecomIntentionDedupPvCost']) ? $data['afterAddWecomIntentionDedupPvCost'] : null;
-        $this->container['age'] = isset($data['age']) ? $data['age'] : null;
-        $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
-        $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
-        $this->container['province'] = isset($data['province']) ? $data['province'] : null;
-        $this->container['city'] = isset($data['city']) ? $data['city'] : null;
-        $this->container['viewUserCount'] = isset($data['viewUserCount']) ? $data['viewUserCount'] : null;
-        $this->container['avgViewPerUser'] = isset($data['avgViewPerUser']) ? $data['avgViewPerUser'] : null;
-        $this->container['clickUserCount'] = isset($data['clickUserCount']) ? $data['clickUserCount'] : null;
-        $this->container['linkClickUserCount'] = isset($data['linkClickUserCount']) ? $data['linkClickUserCount'] : null;
-        $this->container['portraitClickUserCount'] = isset($data['portraitClickUserCount']) ? $data['portraitClickUserCount'] : null;
-        $this->container['nicknameClickUserCount'] = isset($data['nicknameClickUserCount']) ? $data['nicknameClickUserCount'] : null;
-        $this->container['poiClickUserCount'] = isset($data['poiClickUserCount']) ? $data['poiClickUserCount'] : null;
-        $this->container['praiseUserCount'] = isset($data['praiseUserCount']) ? $data['praiseUserCount'] : null;
-        $this->container['commentUserCount'] = isset($data['commentUserCount']) ? $data['commentUserCount'] : null;
-        $this->container['orderCount'] = isset($data['orderCount']) ? $data['orderCount'] : null;
-        $this->container['leadsUserCount'] = isset($data['leadsUserCount']) ? $data['leadsUserCount'] : null;
-        $this->container['validLeadsCost'] = isset($data['validLeadsCost']) ? $data['validLeadsCost'] : null;
-        $this->container['officialAccountFollowCount'] = isset($data['officialAccountFollowCount']) ? $data['officialAccountFollowCount'] : null;
-        $this->container['couponUseCount'] = isset($data['couponUseCount']) ? $data['couponUseCount'] : null;
+        $this->container['expPv'] = isset($data['expPv']) ? $data['expPv'] : null;
+        $this->container['impression'] = isset($data['impression']) ? $data['impression'] : null;
+        $this->container['exposure'] = isset($data['exposure']) ? $data['exposure'] : null;
+        $this->container['download'] = isset($data['download']) ? $data['download'] : null;
+        $this->container['activation'] = isset($data['activation']) ? $data['activation'] : null;
+        $this->container['appActivatedCount'] = isset($data['appActivatedCount']) ? $data['appActivatedCount'] : null;
+        $this->container['appActivatedRate'] = isset($data['appActivatedRate']) ? $data['appActivatedRate'] : null;
+        $this->container['thousandDisplayCost'] = isset($data['thousandDisplayCost']) ? $data['thousandDisplayCost'] : null;
+        $this->container['click'] = isset($data['click']) ? $data['click'] : null;
+        $this->container['webConsultCount'] = isset($data['webConsultCount']) ? $data['webConsultCount'] : null;
+        $this->container['webConsultCost'] = isset($data['webConsultCost']) ? $data['webConsultCost'] : null;
+        $this->container['webPhoneCallDirectCount'] = isset($data['webPhoneCallDirectCount']) ? $data['webPhoneCallDirectCount'] : null;
+        $this->container['webPhoneCallDirectCost'] = isset($data['webPhoneCallDirectCost']) ? $data['webPhoneCallDirectCost'] : null;
+        $this->container['webPhoneCallBackCount'] = isset($data['webPhoneCallBackCount']) ? $data['webPhoneCallBackCount'] : null;
+        $this->container['webPhoneCallBackCost'] = isset($data['webPhoneCallBackCost']) ? $data['webPhoneCallBackCost'] : null;
+        $this->container['ownPageNavigationCost'] = isset($data['ownPageNavigationCost']) ? $data['ownPageNavigationCost'] : null;
+        $this->container['reservation'] = isset($data['reservation']) ? $data['reservation'] : null;
+        $this->container['webPageReservationCount'] = isset($data['webPageReservationCount']) ? $data['webPageReservationCount'] : null;
+        $this->container['webPageReservationRate'] = isset($data['webPageReservationRate']) ? $data['webPageReservationRate'] : null;
+        $this->container['webPageReservationCost'] = isset($data['webPageReservationCost']) ? $data['webPageReservationCost'] : null;
+        $this->container['webAddToCarCount'] = isset($data['webAddToCarCount']) ? $data['webAddToCarCount'] : null;
+        $this->container['webAddToCarCost'] = isset($data['webAddToCarCost']) ? $data['webAddToCarCost'] : null;
+        $this->container['webOrderUnitPrice'] = isset($data['webOrderUnitPrice']) ? $data['webOrderUnitPrice'] : null;
+        $this->container['webOrderRoi'] = isset($data['webOrderRoi']) ? $data['webOrderRoi'] : null;
+        $this->container['webDeliverCount'] = isset($data['webDeliverCount']) ? $data['webDeliverCount'] : null;
+        $this->container['webDeliverCost'] = isset($data['webDeliverCost']) ? $data['webDeliverCost'] : null;
+        $this->container['webSignInCount'] = isset($data['webSignInCount']) ? $data['webSignInCount'] : null;
+        $this->container['webSignInCost'] = isset($data['webSignInCost']) ? $data['webSignInCost'] : null;
+        $this->container['appInstallation'] = isset($data['appInstallation']) ? $data['appInstallation'] : null;
+        $this->container['appActivatedCost'] = isset($data['appActivatedCost']) ? $data['appActivatedCost'] : null;
+        $this->container['appRetentionCount'] = isset($data['appRetentionCount']) ? $data['appRetentionCount'] : null;
+        $this->container['appRetentionRate'] = isset($data['appRetentionRate']) ? $data['appRetentionRate'] : null;
+        $this->container['appRetentionCost'] = isset($data['appRetentionCost']) ? $data['appRetentionCost'] : null;
+        $this->container['appAddToCarCount'] = isset($data['appAddToCarCount']) ? $data['appAddToCarCount'] : null;
+        $this->container['appAddToCarAmount'] = isset($data['appAddToCarAmount']) ? $data['appAddToCarAmount'] : null;
+        $this->container['appCartAmount'] = isset($data['appCartAmount']) ? $data['appCartAmount'] : null;
+        $this->container['appAddToCarCost'] = isset($data['appAddToCarCost']) ? $data['appAddToCarCost'] : null;
+        $this->container['appPaymentCount'] = isset($data['appPaymentCount']) ? $data['appPaymentCount'] : null;
+        $this->container['appPaymentAmount'] = isset($data['appPaymentAmount']) ? $data['appPaymentAmount'] : null;
+        $this->container['platformCouponClick'] = isset($data['platformCouponClick']) ? $data['platformCouponClick'] : null;
+        $this->container['follow'] = isset($data['follow']) ? $data['follow'] : null;
+        $this->container['share'] = isset($data['share']) ? $data['share'] : null;
+        $this->container['read'] = isset($data['read']) ? $data['read'] : null;
+        $this->container['intelligentPhoneCallDirectCount'] = isset($data['intelligentPhoneCallDirectCount']) ? $data['intelligentPhoneCallDirectCount'] : null;
+        $this->container['videoLiveExpUserCount'] = isset($data['videoLiveExpUserCount']) ? $data['videoLiveExpUserCount'] : null;
+        $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
+        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
         $this->container['targetingType'] = isset($data['targetingType']) ? $data['targetingType'] : null;
         $this->container['targetingTag'] = isset($data['targetingTag']) ? $data['targetingTag'] : null;
         $this->container['tagClass'] = isset($data['tagClass']) ? $data['tagClass'] : null;
         $this->container['behaviorScene'] = isset($data['behaviorScene']) ? $data['behaviorScene'] : null;
         $this->container['behaviorTimeWindow'] = isset($data['behaviorTimeWindow']) ? $data['behaviorTimeWindow'] : null;
         $this->container['behaviorIntensity'] = isset($data['behaviorIntensity']) ? $data['behaviorIntensity'] : null;
-        $this->container['genderName'] = isset($data['genderName']) ? $data['genderName'] : null;
-        $this->container['accountId'] = isset($data['accountId']) ? $data['accountId'] : null;
-        $this->container['campaignId'] = isset($data['campaignId']) ? $data['campaignId'] : null;
-        $this->container['adgroupId'] = isset($data['adgroupId']) ? $data['adgroupId'] : null;
-        $this->container['adId'] = isset($data['adId']) ? $data['adId'] : null;
-        $this->container['audienceId'] = isset($data['audienceId']) ? $data['audienceId'] : null;
-        $this->container['promotedObjectType'] = isset($data['promotedObjectType']) ? $data['promotedObjectType'] : null;
-        $this->container['promotedObjectId'] = isset($data['promotedObjectId']) ? $data['promotedObjectId'] : null;
+        $this->container['regionId'] = isset($data['regionId']) ? $data['regionId'] : null;
+        $this->container['cityId'] = isset($data['cityId']) ? $data['cityId'] : null;
         $this->container['requestConversionsCount'] = isset($data['requestConversionsCount']) ? $data['requestConversionsCount'] : null;
         $this->container['requestConversionsCost'] = isset($data['requestConversionsCost']) ? $data['requestConversionsCost'] : null;
+        $this->container['adId'] = isset($data['adId']) ? $data['adId'] : null;
+        $this->container['audienceId'] = isset($data['audienceId']) ? $data['audienceId'] : null;
         $this->container['incomeVal1'] = isset($data['incomeVal1']) ? $data['incomeVal1'] : null;
         $this->container['incomeVal3'] = isset($data['incomeVal3']) ? $data['incomeVal3'] : null;
         $this->container['incomeVal7'] = isset($data['incomeVal7']) ? $data['incomeVal7'] : null;
@@ -4247,6 +4396,7 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
         $this->container['miniGamePayD7PlaRoi'] = isset($data['miniGamePayD7PlaRoi']) ? $data['miniGamePayD7PlaRoi'] : null;
         $this->container['miniGamePayD14PlaRoi'] = isset($data['miniGamePayD14PlaRoi']) ? $data['miniGamePayD14PlaRoi'] : null;
         $this->container['miniGamePayD30PlaRoi'] = isset($data['miniGamePayD30PlaRoi']) ? $data['miniGamePayD30PlaRoi'] : null;
+        $this->container['gender'] = isset($data['gender']) ? $data['gender'] : null;
         $this->container['projectId'] = isset($data['projectId']) ? $data['projectId'] : null;
         $this->container['projectName'] = isset($data['projectName']) ? $data['projectName'] : null;
         $this->container['purchasePv'] = isset($data['purchasePv']) ? $data['purchasePv'] : null;
@@ -4304,25 +4454,25 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets gender
+     * Gets age
      *
      * @return string|mixed
      */
-    public function getGender()
+    public function getAge()
     {
-        return $this->container['gender'];
+        return $this->container['age'];
     }
 
     /**
-     * Sets gender
+     * Sets age
      *
-     * @param string|mixed $gender gender
+     * @param string|mixed $age age
      *
      * @return $this
      */
-    public function setGender($gender)
+    public function setAge($age)
     {
-        $this->container['gender'] = $gender;
+        $this->container['age'] = $age;
 
         return $this;
     }
@@ -17816,457 +17966,1129 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets age
-     *
-     * @return string|mixed
-     */
-    public function getAge()
-    {
-        return $this->container['age'];
-    }
-
-    /**
-     * Sets age
-     *
-     * @param string|mixed $age age
-     *
-     * @return $this
-     */
-    public function setAge($age)
-    {
-        $this->container['age'] = $age;
-
-        return $this;
-    }
-
-    /**
-     * Gets regionId
+     * Gets expPv
      *
      * @return int|mixed
      */
-    public function getRegionId()
+    public function getExpPv()
     {
-        return $this->container['regionId'];
+        return $this->container['expPv'];
     }
 
     /**
-     * Sets regionId
+     * Sets expPv
      *
-     * @param int|mixed $regionId regionId
+     * @param int|mixed $expPv expPv
      *
      * @return $this
      */
-    public function setRegionId($regionId)
+    public function setExpPv($expPv)
     {
-        $this->container['regionId'] = $regionId;
+        $this->container['expPv'] = $expPv;
 
         return $this;
     }
 
     /**
-     * Gets cityId
+     * Gets impression
      *
      * @return int|mixed
      */
-    public function getCityId()
+    public function getImpression()
     {
-        return $this->container['cityId'];
+        return $this->container['impression'];
     }
 
     /**
-     * Sets cityId
+     * Sets impression
      *
-     * @param int|mixed $cityId cityId
+     * @param int|mixed $impression impression
      *
      * @return $this
      */
-    public function setCityId($cityId)
+    public function setImpression($impression)
     {
-        $this->container['cityId'] = $cityId;
+        $this->container['impression'] = $impression;
 
         return $this;
     }
 
     /**
-     * Gets province
-     *
-     * @return string|mixed
-     */
-    public function getProvince()
-    {
-        return $this->container['province'];
-    }
-
-    /**
-     * Sets province
-     *
-     * @param string|mixed $province province
-     *
-     * @return $this
-     */
-    public function setProvince($province)
-    {
-        $this->container['province'] = $province;
-
-        return $this;
-    }
-
-    /**
-     * Gets city
-     *
-     * @return string|mixed
-     */
-    public function getCity()
-    {
-        return $this->container['city'];
-    }
-
-    /**
-     * Sets city
-     *
-     * @param string|mixed $city city
-     *
-     * @return $this
-     */
-    public function setCity($city)
-    {
-        $this->container['city'] = $city;
-
-        return $this;
-    }
-
-    /**
-     * Gets viewUserCount
+     * Gets exposure
      *
      * @return int|mixed
      */
-    public function getViewUserCount()
+    public function getExposure()
     {
-        return $this->container['viewUserCount'];
+        return $this->container['exposure'];
     }
 
     /**
-     * Sets viewUserCount
+     * Sets exposure
      *
-     * @param int|mixed $viewUserCount viewUserCount
+     * @param int|mixed $exposure exposure
      *
      * @return $this
      */
-    public function setViewUserCount($viewUserCount)
+    public function setExposure($exposure)
     {
-        $this->container['viewUserCount'] = $viewUserCount;
+        $this->container['exposure'] = $exposure;
 
         return $this;
     }
 
     /**
-     * Gets avgViewPerUser
+     * Gets download
+     *
+     * @return int|mixed
+     */
+    public function getDownload()
+    {
+        return $this->container['download'];
+    }
+
+    /**
+     * Sets download
+     *
+     * @param int|mixed $download download
+     *
+     * @return $this
+     */
+    public function setDownload($download)
+    {
+        $this->container['download'] = $download;
+
+        return $this;
+    }
+
+    /**
+     * Gets activation
+     *
+     * @return int|mixed
+     */
+    public function getActivation()
+    {
+        return $this->container['activation'];
+    }
+
+    /**
+     * Sets activation
+     *
+     * @param int|mixed $activation activation
+     *
+     * @return $this
+     */
+    public function setActivation($activation)
+    {
+        $this->container['activation'] = $activation;
+
+        return $this;
+    }
+
+    /**
+     * Gets appActivatedCount
+     *
+     * @return int|mixed
+     */
+    public function getAppActivatedCount()
+    {
+        return $this->container['appActivatedCount'];
+    }
+
+    /**
+     * Sets appActivatedCount
+     *
+     * @param int|mixed $appActivatedCount appActivatedCount
+     *
+     * @return $this
+     */
+    public function setAppActivatedCount($appActivatedCount)
+    {
+        $this->container['appActivatedCount'] = $appActivatedCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appActivatedRate
      *
      * @return double|mixed
      */
-    public function getAvgViewPerUser()
+    public function getAppActivatedRate()
     {
-        return $this->container['avgViewPerUser'];
+        return $this->container['appActivatedRate'];
     }
 
     /**
-     * Sets avgViewPerUser
+     * Sets appActivatedRate
      *
-     * @param double|mixed $avgViewPerUser avgViewPerUser
+     * @param double|mixed $appActivatedRate appActivatedRate
      *
      * @return $this
      */
-    public function setAvgViewPerUser($avgViewPerUser)
+    public function setAppActivatedRate($appActivatedRate)
     {
-        $this->container['avgViewPerUser'] = $avgViewPerUser;
+        $this->container['appActivatedRate'] = $appActivatedRate;
 
         return $this;
     }
 
     /**
-     * Gets clickUserCount
+     * Gets thousandDisplayCost
      *
      * @return int|mixed
      */
-    public function getClickUserCount()
+    public function getThousandDisplayCost()
     {
-        return $this->container['clickUserCount'];
+        return $this->container['thousandDisplayCost'];
     }
 
     /**
-     * Sets clickUserCount
+     * Sets thousandDisplayCost
      *
-     * @param int|mixed $clickUserCount clickUserCount
+     * @param int|mixed $thousandDisplayCost thousandDisplayCost
      *
      * @return $this
      */
-    public function setClickUserCount($clickUserCount)
+    public function setThousandDisplayCost($thousandDisplayCost)
     {
-        $this->container['clickUserCount'] = $clickUserCount;
+        $this->container['thousandDisplayCost'] = $thousandDisplayCost;
 
         return $this;
     }
 
     /**
-     * Gets linkClickUserCount
+     * Gets click
      *
      * @return int|mixed
      */
-    public function getLinkClickUserCount()
+    public function getClick()
     {
-        return $this->container['linkClickUserCount'];
+        return $this->container['click'];
     }
 
     /**
-     * Sets linkClickUserCount
+     * Sets click
      *
-     * @param int|mixed $linkClickUserCount linkClickUserCount
+     * @param int|mixed $click click
      *
      * @return $this
      */
-    public function setLinkClickUserCount($linkClickUserCount)
+    public function setClick($click)
     {
-        $this->container['linkClickUserCount'] = $linkClickUserCount;
+        $this->container['click'] = $click;
 
         return $this;
     }
 
     /**
-     * Gets portraitClickUserCount
+     * Gets webConsultCount
      *
      * @return int|mixed
      */
-    public function getPortraitClickUserCount()
+    public function getWebConsultCount()
     {
-        return $this->container['portraitClickUserCount'];
+        return $this->container['webConsultCount'];
     }
 
     /**
-     * Sets portraitClickUserCount
+     * Sets webConsultCount
      *
-     * @param int|mixed $portraitClickUserCount portraitClickUserCount
+     * @param int|mixed $webConsultCount webConsultCount
      *
      * @return $this
      */
-    public function setPortraitClickUserCount($portraitClickUserCount)
+    public function setWebConsultCount($webConsultCount)
     {
-        $this->container['portraitClickUserCount'] = $portraitClickUserCount;
+        $this->container['webConsultCount'] = $webConsultCount;
 
         return $this;
     }
 
     /**
-     * Gets nicknameClickUserCount
+     * Gets webConsultCost
      *
      * @return int|mixed
      */
-    public function getNicknameClickUserCount()
+    public function getWebConsultCost()
     {
-        return $this->container['nicknameClickUserCount'];
+        return $this->container['webConsultCost'];
     }
 
     /**
-     * Sets nicknameClickUserCount
+     * Sets webConsultCost
      *
-     * @param int|mixed $nicknameClickUserCount nicknameClickUserCount
+     * @param int|mixed $webConsultCost webConsultCost
      *
      * @return $this
      */
-    public function setNicknameClickUserCount($nicknameClickUserCount)
+    public function setWebConsultCost($webConsultCost)
     {
-        $this->container['nicknameClickUserCount'] = $nicknameClickUserCount;
+        $this->container['webConsultCost'] = $webConsultCost;
 
         return $this;
     }
 
     /**
-     * Gets poiClickUserCount
+     * Gets webPhoneCallDirectCount
      *
      * @return int|mixed
      */
-    public function getPoiClickUserCount()
+    public function getWebPhoneCallDirectCount()
     {
-        return $this->container['poiClickUserCount'];
+        return $this->container['webPhoneCallDirectCount'];
     }
 
     /**
-     * Sets poiClickUserCount
+     * Sets webPhoneCallDirectCount
      *
-     * @param int|mixed $poiClickUserCount poiClickUserCount
+     * @param int|mixed $webPhoneCallDirectCount webPhoneCallDirectCount
      *
      * @return $this
      */
-    public function setPoiClickUserCount($poiClickUserCount)
+    public function setWebPhoneCallDirectCount($webPhoneCallDirectCount)
     {
-        $this->container['poiClickUserCount'] = $poiClickUserCount;
+        $this->container['webPhoneCallDirectCount'] = $webPhoneCallDirectCount;
 
         return $this;
     }
 
     /**
-     * Gets praiseUserCount
+     * Gets webPhoneCallDirectCost
      *
      * @return int|mixed
      */
-    public function getPraiseUserCount()
+    public function getWebPhoneCallDirectCost()
     {
-        return $this->container['praiseUserCount'];
+        return $this->container['webPhoneCallDirectCost'];
     }
 
     /**
-     * Sets praiseUserCount
+     * Sets webPhoneCallDirectCost
      *
-     * @param int|mixed $praiseUserCount praiseUserCount
+     * @param int|mixed $webPhoneCallDirectCost webPhoneCallDirectCost
      *
      * @return $this
      */
-    public function setPraiseUserCount($praiseUserCount)
+    public function setWebPhoneCallDirectCost($webPhoneCallDirectCost)
     {
-        $this->container['praiseUserCount'] = $praiseUserCount;
+        $this->container['webPhoneCallDirectCost'] = $webPhoneCallDirectCost;
 
         return $this;
     }
 
     /**
-     * Gets commentUserCount
+     * Gets webPhoneCallBackCount
      *
      * @return int|mixed
      */
-    public function getCommentUserCount()
+    public function getWebPhoneCallBackCount()
     {
-        return $this->container['commentUserCount'];
+        return $this->container['webPhoneCallBackCount'];
     }
 
     /**
-     * Sets commentUserCount
+     * Sets webPhoneCallBackCount
      *
-     * @param int|mixed $commentUserCount commentUserCount
+     * @param int|mixed $webPhoneCallBackCount webPhoneCallBackCount
      *
      * @return $this
      */
-    public function setCommentUserCount($commentUserCount)
+    public function setWebPhoneCallBackCount($webPhoneCallBackCount)
     {
-        $this->container['commentUserCount'] = $commentUserCount;
+        $this->container['webPhoneCallBackCount'] = $webPhoneCallBackCount;
 
         return $this;
     }
 
     /**
-     * Gets orderCount
+     * Gets webPhoneCallBackCost
      *
      * @return int|mixed
      */
-    public function getOrderCount()
+    public function getWebPhoneCallBackCost()
     {
-        return $this->container['orderCount'];
+        return $this->container['webPhoneCallBackCost'];
     }
 
     /**
-     * Sets orderCount
+     * Sets webPhoneCallBackCost
      *
-     * @param int|mixed $orderCount orderCount
+     * @param int|mixed $webPhoneCallBackCost webPhoneCallBackCost
      *
      * @return $this
      */
-    public function setOrderCount($orderCount)
+    public function setWebPhoneCallBackCost($webPhoneCallBackCost)
     {
-        $this->container['orderCount'] = $orderCount;
+        $this->container['webPhoneCallBackCost'] = $webPhoneCallBackCost;
 
         return $this;
     }
 
     /**
-     * Gets leadsUserCount
+     * Gets ownPageNavigationCost
      *
      * @return int|mixed
      */
-    public function getLeadsUserCount()
+    public function getOwnPageNavigationCost()
     {
-        return $this->container['leadsUserCount'];
+        return $this->container['ownPageNavigationCost'];
     }
 
     /**
-     * Sets leadsUserCount
+     * Sets ownPageNavigationCost
      *
-     * @param int|mixed $leadsUserCount leadsUserCount
+     * @param int|mixed $ownPageNavigationCost ownPageNavigationCost
      *
      * @return $this
      */
-    public function setLeadsUserCount($leadsUserCount)
+    public function setOwnPageNavigationCost($ownPageNavigationCost)
     {
-        $this->container['leadsUserCount'] = $leadsUserCount;
+        $this->container['ownPageNavigationCost'] = $ownPageNavigationCost;
 
         return $this;
     }
 
     /**
-     * Gets validLeadsCost
+     * Gets reservation
      *
      * @return int|mixed
      */
-    public function getValidLeadsCost()
+    public function getReservation()
     {
-        return $this->container['validLeadsCost'];
+        return $this->container['reservation'];
     }
 
     /**
-     * Sets validLeadsCost
+     * Sets reservation
      *
-     * @param int|mixed $validLeadsCost validLeadsCost
+     * @param int|mixed $reservation reservation
      *
      * @return $this
      */
-    public function setValidLeadsCost($validLeadsCost)
+    public function setReservation($reservation)
     {
-        $this->container['validLeadsCost'] = $validLeadsCost;
+        $this->container['reservation'] = $reservation;
 
         return $this;
     }
 
     /**
-     * Gets officialAccountFollowCount
+     * Gets webPageReservationCount
      *
      * @return int|mixed
      */
-    public function getOfficialAccountFollowCount()
+    public function getWebPageReservationCount()
     {
-        return $this->container['officialAccountFollowCount'];
+        return $this->container['webPageReservationCount'];
     }
 
     /**
-     * Sets officialAccountFollowCount
+     * Sets webPageReservationCount
      *
-     * @param int|mixed $officialAccountFollowCount officialAccountFollowCount
+     * @param int|mixed $webPageReservationCount webPageReservationCount
      *
      * @return $this
      */
-    public function setOfficialAccountFollowCount($officialAccountFollowCount)
+    public function setWebPageReservationCount($webPageReservationCount)
     {
-        $this->container['officialAccountFollowCount'] = $officialAccountFollowCount;
+        $this->container['webPageReservationCount'] = $webPageReservationCount;
 
         return $this;
     }
 
     /**
-     * Gets couponUseCount
+     * Gets webPageReservationRate
      *
-     * @return int|mixed
+     * @return double|mixed
      */
-    public function getCouponUseCount()
+    public function getWebPageReservationRate()
     {
-        return $this->container['couponUseCount'];
+        return $this->container['webPageReservationRate'];
     }
 
     /**
-     * Sets couponUseCount
+     * Sets webPageReservationRate
      *
-     * @param int|mixed $couponUseCount couponUseCount
+     * @param double|mixed $webPageReservationRate webPageReservationRate
      *
      * @return $this
      */
-    public function setCouponUseCount($couponUseCount)
+    public function setWebPageReservationRate($webPageReservationRate)
     {
-        $this->container['couponUseCount'] = $couponUseCount;
+        $this->container['webPageReservationRate'] = $webPageReservationRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets webPageReservationCost
+     *
+     * @return int|mixed
+     */
+    public function getWebPageReservationCost()
+    {
+        return $this->container['webPageReservationCost'];
+    }
+
+    /**
+     * Sets webPageReservationCost
+     *
+     * @param int|mixed $webPageReservationCost webPageReservationCost
+     *
+     * @return $this
+     */
+    public function setWebPageReservationCost($webPageReservationCost)
+    {
+        $this->container['webPageReservationCost'] = $webPageReservationCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets webAddToCarCount
+     *
+     * @return int|mixed
+     */
+    public function getWebAddToCarCount()
+    {
+        return $this->container['webAddToCarCount'];
+    }
+
+    /**
+     * Sets webAddToCarCount
+     *
+     * @param int|mixed $webAddToCarCount webAddToCarCount
+     *
+     * @return $this
+     */
+    public function setWebAddToCarCount($webAddToCarCount)
+    {
+        $this->container['webAddToCarCount'] = $webAddToCarCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets webAddToCarCost
+     *
+     * @return int|mixed
+     */
+    public function getWebAddToCarCost()
+    {
+        return $this->container['webAddToCarCost'];
+    }
+
+    /**
+     * Sets webAddToCarCost
+     *
+     * @param int|mixed $webAddToCarCost webAddToCarCost
+     *
+     * @return $this
+     */
+    public function setWebAddToCarCost($webAddToCarCost)
+    {
+        $this->container['webAddToCarCost'] = $webAddToCarCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets webOrderUnitPrice
+     *
+     * @return int|mixed
+     */
+    public function getWebOrderUnitPrice()
+    {
+        return $this->container['webOrderUnitPrice'];
+    }
+
+    /**
+     * Sets webOrderUnitPrice
+     *
+     * @param int|mixed $webOrderUnitPrice webOrderUnitPrice
+     *
+     * @return $this
+     */
+    public function setWebOrderUnitPrice($webOrderUnitPrice)
+    {
+        $this->container['webOrderUnitPrice'] = $webOrderUnitPrice;
+
+        return $this;
+    }
+
+    /**
+     * Gets webOrderRoi
+     *
+     * @return double|mixed
+     */
+    public function getWebOrderRoi()
+    {
+        return $this->container['webOrderRoi'];
+    }
+
+    /**
+     * Sets webOrderRoi
+     *
+     * @param double|mixed $webOrderRoi webOrderRoi
+     *
+     * @return $this
+     */
+    public function setWebOrderRoi($webOrderRoi)
+    {
+        $this->container['webOrderRoi'] = $webOrderRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets webDeliverCount
+     *
+     * @return int|mixed
+     */
+    public function getWebDeliverCount()
+    {
+        return $this->container['webDeliverCount'];
+    }
+
+    /**
+     * Sets webDeliverCount
+     *
+     * @param int|mixed $webDeliverCount webDeliverCount
+     *
+     * @return $this
+     */
+    public function setWebDeliverCount($webDeliverCount)
+    {
+        $this->container['webDeliverCount'] = $webDeliverCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets webDeliverCost
+     *
+     * @return int|mixed
+     */
+    public function getWebDeliverCost()
+    {
+        return $this->container['webDeliverCost'];
+    }
+
+    /**
+     * Sets webDeliverCost
+     *
+     * @param int|mixed $webDeliverCost webDeliverCost
+     *
+     * @return $this
+     */
+    public function setWebDeliverCost($webDeliverCost)
+    {
+        $this->container['webDeliverCost'] = $webDeliverCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets webSignInCount
+     *
+     * @return int|mixed
+     */
+    public function getWebSignInCount()
+    {
+        return $this->container['webSignInCount'];
+    }
+
+    /**
+     * Sets webSignInCount
+     *
+     * @param int|mixed $webSignInCount webSignInCount
+     *
+     * @return $this
+     */
+    public function setWebSignInCount($webSignInCount)
+    {
+        $this->container['webSignInCount'] = $webSignInCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets webSignInCost
+     *
+     * @return int|mixed
+     */
+    public function getWebSignInCost()
+    {
+        return $this->container['webSignInCost'];
+    }
+
+    /**
+     * Sets webSignInCost
+     *
+     * @param int|mixed $webSignInCost webSignInCost
+     *
+     * @return $this
+     */
+    public function setWebSignInCost($webSignInCost)
+    {
+        $this->container['webSignInCost'] = $webSignInCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets appInstallation
+     *
+     * @return int|mixed
+     */
+    public function getAppInstallation()
+    {
+        return $this->container['appInstallation'];
+    }
+
+    /**
+     * Sets appInstallation
+     *
+     * @param int|mixed $appInstallation appInstallation
+     *
+     * @return $this
+     */
+    public function setAppInstallation($appInstallation)
+    {
+        $this->container['appInstallation'] = $appInstallation;
+
+        return $this;
+    }
+
+    /**
+     * Gets appActivatedCost
+     *
+     * @return int|mixed
+     */
+    public function getAppActivatedCost()
+    {
+        return $this->container['appActivatedCost'];
+    }
+
+    /**
+     * Sets appActivatedCost
+     *
+     * @param int|mixed $appActivatedCost appActivatedCost
+     *
+     * @return $this
+     */
+    public function setAppActivatedCost($appActivatedCost)
+    {
+        $this->container['appActivatedCost'] = $appActivatedCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionCount
+     *
+     * @return int|mixed
+     */
+    public function getAppRetentionCount()
+    {
+        return $this->container['appRetentionCount'];
+    }
+
+    /**
+     * Sets appRetentionCount
+     *
+     * @param int|mixed $appRetentionCount appRetentionCount
+     *
+     * @return $this
+     */
+    public function setAppRetentionCount($appRetentionCount)
+    {
+        $this->container['appRetentionCount'] = $appRetentionCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionRate
+     *
+     * @return double|mixed
+     */
+    public function getAppRetentionRate()
+    {
+        return $this->container['appRetentionRate'];
+    }
+
+    /**
+     * Sets appRetentionRate
+     *
+     * @param double|mixed $appRetentionRate appRetentionRate
+     *
+     * @return $this
+     */
+    public function setAppRetentionRate($appRetentionRate)
+    {
+        $this->container['appRetentionRate'] = $appRetentionRate;
+
+        return $this;
+    }
+
+    /**
+     * Gets appRetentionCost
+     *
+     * @return int|mixed
+     */
+    public function getAppRetentionCost()
+    {
+        return $this->container['appRetentionCost'];
+    }
+
+    /**
+     * Sets appRetentionCost
+     *
+     * @param int|mixed $appRetentionCost appRetentionCost
+     *
+     * @return $this
+     */
+    public function setAppRetentionCost($appRetentionCost)
+    {
+        $this->container['appRetentionCost'] = $appRetentionCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets appAddToCarCount
+     *
+     * @return int|mixed
+     */
+    public function getAppAddToCarCount()
+    {
+        return $this->container['appAddToCarCount'];
+    }
+
+    /**
+     * Sets appAddToCarCount
+     *
+     * @param int|mixed $appAddToCarCount appAddToCarCount
+     *
+     * @return $this
+     */
+    public function setAppAddToCarCount($appAddToCarCount)
+    {
+        $this->container['appAddToCarCount'] = $appAddToCarCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appAddToCarAmount
+     *
+     * @return int|mixed
+     */
+    public function getAppAddToCarAmount()
+    {
+        return $this->container['appAddToCarAmount'];
+    }
+
+    /**
+     * Sets appAddToCarAmount
+     *
+     * @param int|mixed $appAddToCarAmount appAddToCarAmount
+     *
+     * @return $this
+     */
+    public function setAppAddToCarAmount($appAddToCarAmount)
+    {
+        $this->container['appAddToCarAmount'] = $appAddToCarAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appCartAmount
+     *
+     * @return int|mixed
+     */
+    public function getAppCartAmount()
+    {
+        return $this->container['appCartAmount'];
+    }
+
+    /**
+     * Sets appCartAmount
+     *
+     * @param int|mixed $appCartAmount appCartAmount
+     *
+     * @return $this
+     */
+    public function setAppCartAmount($appCartAmount)
+    {
+        $this->container['appCartAmount'] = $appCartAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appAddToCarCost
+     *
+     * @return int|mixed
+     */
+    public function getAppAddToCarCost()
+    {
+        return $this->container['appAddToCarCost'];
+    }
+
+    /**
+     * Sets appAddToCarCost
+     *
+     * @param int|mixed $appAddToCarCost appAddToCarCost
+     *
+     * @return $this
+     */
+    public function setAppAddToCarCost($appAddToCarCost)
+    {
+        $this->container['appAddToCarCost'] = $appAddToCarCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets appPaymentCount
+     *
+     * @return int|mixed
+     */
+    public function getAppPaymentCount()
+    {
+        return $this->container['appPaymentCount'];
+    }
+
+    /**
+     * Sets appPaymentCount
+     *
+     * @param int|mixed $appPaymentCount appPaymentCount
+     *
+     * @return $this
+     */
+    public function setAppPaymentCount($appPaymentCount)
+    {
+        $this->container['appPaymentCount'] = $appPaymentCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets appPaymentAmount
+     *
+     * @return int|mixed
+     */
+    public function getAppPaymentAmount()
+    {
+        return $this->container['appPaymentAmount'];
+    }
+
+    /**
+     * Sets appPaymentAmount
+     *
+     * @param int|mixed $appPaymentAmount appPaymentAmount
+     *
+     * @return $this
+     */
+    public function setAppPaymentAmount($appPaymentAmount)
+    {
+        $this->container['appPaymentAmount'] = $appPaymentAmount;
+
+        return $this;
+    }
+
+    /**
+     * Gets platformCouponClick
+     *
+     * @return int|mixed
+     */
+    public function getPlatformCouponClick()
+    {
+        return $this->container['platformCouponClick'];
+    }
+
+    /**
+     * Sets platformCouponClick
+     *
+     * @param int|mixed $platformCouponClick platformCouponClick
+     *
+     * @return $this
+     */
+    public function setPlatformCouponClick($platformCouponClick)
+    {
+        $this->container['platformCouponClick'] = $platformCouponClick;
+
+        return $this;
+    }
+
+    /**
+     * Gets follow
+     *
+     * @return int|mixed
+     */
+    public function getFollow()
+    {
+        return $this->container['follow'];
+    }
+
+    /**
+     * Sets follow
+     *
+     * @param int|mixed $follow follow
+     *
+     * @return $this
+     */
+    public function setFollow($follow)
+    {
+        $this->container['follow'] = $follow;
+
+        return $this;
+    }
+
+    /**
+     * Gets share
+     *
+     * @return int|mixed
+     */
+    public function getShare()
+    {
+        return $this->container['share'];
+    }
+
+    /**
+     * Sets share
+     *
+     * @param int|mixed $share share
+     *
+     * @return $this
+     */
+    public function setShare($share)
+    {
+        $this->container['share'] = $share;
+
+        return $this;
+    }
+
+    /**
+     * Gets read
+     *
+     * @return int|mixed
+     */
+    public function getRead()
+    {
+        return $this->container['read'];
+    }
+
+    /**
+     * Sets read
+     *
+     * @param int|mixed $read read
+     *
+     * @return $this
+     */
+    public function setRead($read)
+    {
+        $this->container['read'] = $read;
+
+        return $this;
+    }
+
+    /**
+     * Gets intelligentPhoneCallDirectCount
+     *
+     * @return int|mixed
+     */
+    public function getIntelligentPhoneCallDirectCount()
+    {
+        return $this->container['intelligentPhoneCallDirectCount'];
+    }
+
+    /**
+     * Sets intelligentPhoneCallDirectCount
+     *
+     * @param int|mixed $intelligentPhoneCallDirectCount intelligentPhoneCallDirectCount
+     *
+     * @return $this
+     */
+    public function setIntelligentPhoneCallDirectCount($intelligentPhoneCallDirectCount)
+    {
+        $this->container['intelligentPhoneCallDirectCount'] = $intelligentPhoneCallDirectCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets videoLiveExpUserCount
+     *
+     * @return int|mixed
+     */
+    public function getVideoLiveExpUserCount()
+    {
+        return $this->container['videoLiveExpUserCount'];
+    }
+
+    /**
+     * Sets videoLiveExpUserCount
+     *
+     * @param int|mixed $videoLiveExpUserCount videoLiveExpUserCount
+     *
+     * @return $this
+     */
+    public function setVideoLiveExpUserCount($videoLiveExpUserCount)
+    {
+        $this->container['videoLiveExpUserCount'] = $videoLiveExpUserCount;
+
+        return $this;
+    }
+
+    /**
+     * Gets campaignId
+     *
+     * @return int|mixed
+     */
+    public function getCampaignId()
+    {
+        return $this->container['campaignId'];
+    }
+
+    /**
+     * Sets campaignId
+     *
+     * @param int|mixed $campaignId campaignId
+     *
+     * @return $this
+     */
+    public function setCampaignId($campaignId)
+    {
+        $this->container['campaignId'] = $campaignId;
+
+        return $this;
+    }
+
+    /**
+     * Gets adgroupId
+     *
+     * @return int|mixed
+     */
+    public function getAdgroupId()
+    {
+        return $this->container['adgroupId'];
+    }
+
+    /**
+     * Sets adgroupId
+     *
+     * @param int|mixed $adgroupId adgroupId
+     *
+     * @return $this
+     */
+    public function setAdgroupId($adgroupId)
+    {
+        $this->container['adgroupId'] = $adgroupId;
 
         return $this;
     }
@@ -18416,193 +19238,49 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets genderName
-     *
-     * @return string|mixed
-     */
-    public function getGenderName()
-    {
-        return $this->container['genderName'];
-    }
-
-    /**
-     * Sets genderName
-     *
-     * @param string|mixed $genderName genderName
-     *
-     * @return $this
-     */
-    public function setGenderName($genderName)
-    {
-        $this->container['genderName'] = $genderName;
-
-        return $this;
-    }
-
-    /**
-     * Gets accountId
+     * Gets regionId
      *
      * @return int|mixed
      */
-    public function getAccountId()
+    public function getRegionId()
     {
-        return $this->container['accountId'];
+        return $this->container['regionId'];
     }
 
     /**
-     * Sets accountId
+     * Sets regionId
      *
-     * @param int|mixed $accountId accountId
+     * @param int|mixed $regionId regionId
      *
      * @return $this
      */
-    public function setAccountId($accountId)
+    public function setRegionId($regionId)
     {
-        $this->container['accountId'] = $accountId;
+        $this->container['regionId'] = $regionId;
 
         return $this;
     }
 
     /**
-     * Gets campaignId
+     * Gets cityId
      *
      * @return int|mixed
      */
-    public function getCampaignId()
+    public function getCityId()
     {
-        return $this->container['campaignId'];
+        return $this->container['cityId'];
     }
 
     /**
-     * Sets campaignId
+     * Sets cityId
      *
-     * @param int|mixed $campaignId campaignId
+     * @param int|mixed $cityId cityId
      *
      * @return $this
      */
-    public function setCampaignId($campaignId)
+    public function setCityId($cityId)
     {
-        $this->container['campaignId'] = $campaignId;
-
-        return $this;
-    }
-
-    /**
-     * Gets adgroupId
-     *
-     * @return int|mixed
-     */
-    public function getAdgroupId()
-    {
-        return $this->container['adgroupId'];
-    }
-
-    /**
-     * Sets adgroupId
-     *
-     * @param int|mixed $adgroupId adgroupId
-     *
-     * @return $this
-     */
-    public function setAdgroupId($adgroupId)
-    {
-        $this->container['adgroupId'] = $adgroupId;
-
-        return $this;
-    }
-
-    /**
-     * Gets adId
-     *
-     * @return int|mixed
-     */
-    public function getAdId()
-    {
-        return $this->container['adId'];
-    }
-
-    /**
-     * Sets adId
-     *
-     * @param int|mixed $adId adId
-     *
-     * @return $this
-     */
-    public function setAdId($adId)
-    {
-        $this->container['adId'] = $adId;
-
-        return $this;
-    }
-
-    /**
-     * Gets audienceId
-     *
-     * @return int|mixed
-     */
-    public function getAudienceId()
-    {
-        return $this->container['audienceId'];
-    }
-
-    /**
-     * Sets audienceId
-     *
-     * @param int|mixed $audienceId audienceId
-     *
-     * @return $this
-     */
-    public function setAudienceId($audienceId)
-    {
-        $this->container['audienceId'] = $audienceId;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotedObjectType
-     *
-     * @return string|mixed
-     */
-    public function getPromotedObjectType()
-    {
-        return $this->container['promotedObjectType'];
-    }
-
-    /**
-     * Sets promotedObjectType
-     *
-     * @param string|mixed $promotedObjectType promotedObjectType
-     *
-     * @return $this
-     */
-    public function setPromotedObjectType($promotedObjectType)
-    {
-        $this->container['promotedObjectType'] = $promotedObjectType;
-
-        return $this;
-    }
-
-    /**
-     * Gets promotedObjectId
-     *
-     * @return string|mixed
-     */
-    public function getPromotedObjectId()
-    {
-        return $this->container['promotedObjectId'];
-    }
-
-    /**
-     * Sets promotedObjectId
-     *
-     * @param string|mixed $promotedObjectId promotedObjectId
-     *
-     * @return $this
-     */
-    public function setPromotedObjectId($promotedObjectId)
-    {
-        $this->container['promotedObjectId'] = $promotedObjectId;
+        $this->container['cityId'] = $cityId;
 
         return $this;
     }
@@ -18651,6 +19329,54 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setRequestConversionsCost($requestConversionsCost)
     {
         $this->container['requestConversionsCost'] = $requestConversionsCost;
+
+        return $this;
+    }
+
+    /**
+     * Gets adId
+     *
+     * @return int|mixed
+     */
+    public function getAdId()
+    {
+        return $this->container['adId'];
+    }
+
+    /**
+     * Sets adId
+     *
+     * @param int|mixed $adId adId
+     *
+     * @return $this
+     */
+    public function setAdId($adId)
+    {
+        $this->container['adId'] = $adId;
+
+        return $this;
+    }
+
+    /**
+     * Gets audienceId
+     *
+     * @return int|mixed
+     */
+    public function getAudienceId()
+    {
+        return $this->container['audienceId'];
+    }
+
+    /**
+     * Sets audienceId
+     *
+     * @param int|mixed $audienceId audienceId
+     *
+     * @return $this
+     */
+    public function setAudienceId($audienceId)
+    {
+        $this->container['audienceId'] = $audienceId;
 
         return $this;
     }
@@ -20451,6 +21177,30 @@ class TargetingTagReportsGetListStruct implements ModelInterface, ArrayAccess
     public function setMiniGamePayD30PlaRoi($miniGamePayD30PlaRoi)
     {
         $this->container['miniGamePayD30PlaRoi'] = $miniGamePayD30PlaRoi;
+
+        return $this;
+    }
+
+    /**
+     * Gets gender
+     *
+     * @return string|mixed
+     */
+    public function getGender()
+    {
+        return $this->container['gender'];
+    }
+
+    /**
+     * Sets gender
+     *
+     * @param string|mixed $gender gender
+     *
+     * @return $this
+     */
+    public function setGender($gender)
+    {
+        $this->container['gender'] = $gender;
 
         return $this;
     }

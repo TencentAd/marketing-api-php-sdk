@@ -58,6 +58,9 @@ class AdCreativeSource
     const AI_FLAG_EXPERIMENT = 'AD_CREATIVE_AI_FLAG_EXPERIMENT';
     const NATIVE_FEED_MANAGEMENT = 'AD_CREATIVE_NATIVE_FEED_MANAGEMENT';
     const AGGREGATION_PROMOTION = 'AD_CREATIVE_AGGREGATION_PROMOTION';
+    const QYT_SMART_AIGC = 'AD_CREATIVE_QYT_SMART_AIGC';
+    const SMART_DELIVERY_AIGC_ENHANCE = 'AD_CREATIVE_SMART_DELIVERY_AIGC_ENHANCE';
+    const MANAGEMENT_AIGC = 'AD_CREATIVE_MANAGEMENT_AIGC';
     
     /**
      * Gets allowable values of the enum
@@ -80,6 +83,9 @@ class AdCreativeSource
             self::AI_FLAG_EXPERIMENT,
             self::NATIVE_FEED_MANAGEMENT,
             self::AGGREGATION_PROMOTION,
+            self::QYT_SMART_AIGC,
+            self::SMART_DELIVERY_AIGC_ENHANCE,
+            self::MANAGEMENT_AIGC,
         ];
     }
 }

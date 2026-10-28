@@ -118,10 +118,12 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'liveRecommendStrategyEnabled' => 'bool',
         'customCostRoiCap' => 'double',
         'searchExpansionSwitch' => '\TencentAds\Model\V3\SearchExpansionSwitch',
+        'industryValueExplore' => '\TencentAds\Model\V3\IndustryValueExplore',
         'adxRealtimeType' => '\TencentAds\Model\V3\AdxRealtimeType',
         'enableSteadyExploration' => 'bool',
         'smartTargetingMode' => '\TencentAds\Model\V3\SmartTargetingMode',
-        'smartCouponMode' => '\TencentAds\Model\V3\SmartCouponMode'
+        'smartCouponMode' => '\TencentAds\Model\V3\SmartCouponMode',
+        'isSmartDeliveryUpgradeProject' => 'bool'
     ];
 
     /**
@@ -191,10 +193,12 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'liveRecommendStrategyEnabled' => null,
         'customCostRoiCap' => 'double',
         'searchExpansionSwitch' => null,
+        'industryValueExplore' => null,
         'adxRealtimeType' => null,
         'enableSteadyExploration' => null,
         'smartTargetingMode' => null,
-        'smartCouponMode' => null
+        'smartCouponMode' => null,
+        'isSmartDeliveryUpgradeProject' => null
     ];
 
     /**
@@ -285,10 +289,12 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'liveRecommendStrategyEnabled' => 'live_recommend_strategy_enabled',
         'customCostRoiCap' => 'custom_cost_roi_cap',
         'searchExpansionSwitch' => 'search_expansion_switch',
+        'industryValueExplore' => 'industry_value_explore',
         'adxRealtimeType' => 'adx_realtime_type',
         'enableSteadyExploration' => 'enable_steady_exploration',
         'smartTargetingMode' => 'smart_targeting_mode',
-        'smartCouponMode' => 'smart_coupon_mode'
+        'smartCouponMode' => 'smart_coupon_mode',
+        'isSmartDeliveryUpgradeProject' => 'is_smart_delivery_upgrade_project'
     ];
 
     /**
@@ -358,10 +364,12 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'liveRecommendStrategyEnabled' => 'setLiveRecommendStrategyEnabled',
         'customCostRoiCap' => 'setCustomCostRoiCap',
         'searchExpansionSwitch' => 'setSearchExpansionSwitch',
+        'industryValueExplore' => 'setIndustryValueExplore',
         'adxRealtimeType' => 'setAdxRealtimeType',
         'enableSteadyExploration' => 'setEnableSteadyExploration',
         'smartTargetingMode' => 'setSmartTargetingMode',
-        'smartCouponMode' => 'setSmartCouponMode'
+        'smartCouponMode' => 'setSmartCouponMode',
+        'isSmartDeliveryUpgradeProject' => 'setIsSmartDeliveryUpgradeProject'
     ];
 
     /**
@@ -431,10 +439,12 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         'liveRecommendStrategyEnabled' => 'getLiveRecommendStrategyEnabled',
         'customCostRoiCap' => 'getCustomCostRoiCap',
         'searchExpansionSwitch' => 'getSearchExpansionSwitch',
+        'industryValueExplore' => 'getIndustryValueExplore',
         'adxRealtimeType' => 'getAdxRealtimeType',
         'enableSteadyExploration' => 'getEnableSteadyExploration',
         'smartTargetingMode' => 'getSmartTargetingMode',
-        'smartCouponMode' => 'getSmartCouponMode'
+        'smartCouponMode' => 'getSmartCouponMode',
+        'isSmartDeliveryUpgradeProject' => 'getIsSmartDeliveryUpgradeProject'
     ];
 
     /**
@@ -558,10 +568,12 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
         $this->container['liveRecommendStrategyEnabled'] = isset($data['liveRecommendStrategyEnabled']) ? $data['liveRecommendStrategyEnabled'] : null;
         $this->container['customCostRoiCap'] = isset($data['customCostRoiCap']) ? $data['customCostRoiCap'] : null;
         $this->container['searchExpansionSwitch'] = isset($data['searchExpansionSwitch']) ? $data['searchExpansionSwitch'] : null;
+        $this->container['industryValueExplore'] = isset($data['industryValueExplore']) ? $data['industryValueExplore'] : null;
         $this->container['adxRealtimeType'] = isset($data['adxRealtimeType']) ? $data['adxRealtimeType'] : null;
         $this->container['enableSteadyExploration'] = isset($data['enableSteadyExploration']) ? $data['enableSteadyExploration'] : null;
         $this->container['smartTargetingMode'] = isset($data['smartTargetingMode']) ? $data['smartTargetingMode'] : null;
         $this->container['smartCouponMode'] = isset($data['smartCouponMode']) ? $data['smartCouponMode'] : null;
+        $this->container['isSmartDeliveryUpgradeProject'] = isset($data['isSmartDeliveryUpgradeProject']) ? $data['isSmartDeliveryUpgradeProject'] : null;
     }
 
     /**
@@ -2053,6 +2065,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets industryValueExplore
+     *
+     * @return \TencentAds\Model\V3\IndustryValueExplore|mixed
+     */
+    public function getIndustryValueExplore()
+    {
+        return $this->container['industryValueExplore'];
+    }
+
+    /**
+     * Sets industryValueExplore
+     *
+     * @param \TencentAds\Model\V3\IndustryValueExplore|mixed $industryValueExplore industryValueExplore
+     *
+     * @return $this
+     */
+    public function setIndustryValueExplore($industryValueExplore)
+    {
+        $this->container['industryValueExplore'] = $industryValueExplore;
+
+        return $this;
+    }
+
+    /**
      * Gets adxRealtimeType
      *
      * @return \TencentAds\Model\V3\AdxRealtimeType|mixed
@@ -2144,6 +2180,30 @@ class AdgroupsAddRequest implements ModelInterface, ArrayAccess
     public function setSmartCouponMode($smartCouponMode)
     {
         $this->container['smartCouponMode'] = $smartCouponMode;
+
+        return $this;
+    }
+
+    /**
+     * Gets isSmartDeliveryUpgradeProject
+     *
+     * @return bool|mixed
+     */
+    public function getIsSmartDeliveryUpgradeProject()
+    {
+        return $this->container['isSmartDeliveryUpgradeProject'];
+    }
+
+    /**
+     * Sets isSmartDeliveryUpgradeProject
+     *
+     * @param bool|mixed $isSmartDeliveryUpgradeProject isSmartDeliveryUpgradeProject
+     *
+     * @return $this
+     */
+    public function setIsSmartDeliveryUpgradeProject($isSmartDeliveryUpgradeProject)
+    {
+        $this->container['isSmartDeliveryUpgradeProject'] = $isSmartDeliveryUpgradeProject;
 
         return $this;
     }

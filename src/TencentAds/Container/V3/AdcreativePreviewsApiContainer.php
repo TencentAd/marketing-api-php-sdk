@@ -28,40 +28,6 @@ class AdcreativePreviewsApiContainer extends ApiContainer
 
 
     /**
-     * Handle AdcreativePreviewsApi adcreativePreviewsAdd function
-     * @param array params
-     * @return mixed
-     * @throws \TencentAds\ApiException
-     * @throws \TencentAds\Exception\TencentAdsResponseException
-     */
-    public function add(array $params = [])
-    {
-        return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
-            $params = $request->getApiMethodArguments();
-            $data = $params;
-            $response = $this->apiInstance->adcreativePreviewsAdd($data);
-            return $this->handleResponse($response);
-        });
-    }
-
-
-    /**
-     * Handle AdcreativePreviewsApi adcreativePreviewsAddAsync function
-     * @param array params
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function addAsync(array $params = [])
-    {
-        return $this->handleMiddleware('add', $params, function(MiddlewareRequest $request) {
-            $params = $request->getApiMethodArguments();
-            $data = $params;
-            $response = $this->apiInstance->adcreativePreviewsAddAsync($data);
-            return $response;
-        });
-    }
-
-
-    /**
      * Handle AdcreativePreviewsApi adcreativePreviewsGet function
      * @param array params
      * @return mixed

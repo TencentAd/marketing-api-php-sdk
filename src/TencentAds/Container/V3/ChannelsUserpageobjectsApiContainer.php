@@ -45,8 +45,10 @@ class ChannelsUserpageobjectsApiContainer extends ApiContainer
             $count = isset($params['count']) ? $params['count'] : null;
             $wechatChannelsAccountId = isset($params['wechat_channels_account_id']) ? $params['wechat_channels_account_id'] : null;
             $adContext = isset($params['ad_context']) ? $params['ad_context'] : null;
+            $componentTypeList = isset($params['component_type_list']) ? $params['component_type_list'] : null;
+            $componentUuid = isset($params['component_uuid']) ? $params['component_uuid'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->channelsUserpageobjectsGet($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $adContext, $fields);
+            $response = $this->apiInstance->channelsUserpageobjectsGet($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $adContext, $componentTypeList, $componentUuid, $fields);
             return $this->handleResponse($response);
         });
     }
@@ -68,8 +70,10 @@ class ChannelsUserpageobjectsApiContainer extends ApiContainer
             $count = isset($params['count']) ? $params['count'] : null;
             $wechatChannelsAccountId = isset($params['wechat_channels_account_id']) ? $params['wechat_channels_account_id'] : null;
             $adContext = isset($params['ad_context']) ? $params['ad_context'] : null;
+            $componentTypeList = isset($params['component_type_list']) ? $params['component_type_list'] : null;
+            $componentUuid = isset($params['component_uuid']) ? $params['component_uuid'] : null;
             $fields = isset($params['fields']) ? $params['fields'] : null;
-            $response = $this->apiInstance->channelsUserpageobjectsGetAsync($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $adContext, $fields);
+            $response = $this->apiInstance->channelsUserpageobjectsGetAsync($accountId, $finderUsername, $nickname, $lastBuffer, $count, $wechatChannelsAccountId, $adContext, $componentTypeList, $componentUuid, $fields);
             return $response;
         });
     }
